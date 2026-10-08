@@ -43,8 +43,8 @@ for (const file of pages) {
 }
 // A redirect must never shadow a page that exists in this build (Cloudflare evaluates _redirects before assets).
 for (const file of pages) {
-  const route = '/' + file.replace(/\/g, '/').replace(/^dist//, '').replace(/.html$/, '').replace(/(^|/)index$/, '');
-  const r = redirects.find((r) => (r.from.endsWith('*') ? route.startsWith(r.from.slice(0, -1)) : route === r.from.replace(//$/, '')));
+  const route = '/' + file.split('\\').join('/').replace(/^dist\//, '').replace(/\.html$/, '').replace(/(^|\/)index$/, '');
+  const r = redirects.find((r) => (r.from.endsWith('*') ? route.startsWith(r.from.slice(0, -1)) : route === r.from.replace(/\/$/, '')));
   if (r) { failed++; console.error(`links: redirect ${r.from} → ${r.to} shadows the existing page ${route}`); }
 }
 for (const r of redirects) {
