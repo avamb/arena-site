@@ -93,7 +93,16 @@ redirects:
   - { from: /et/tag/*, to: /blog }
   # WooCommerce test shop → buyer help
   - { from: /shop/, to: /help/tickets }
-  - { from: /product/*, to: /help/tickets }
+  # old WooCommerce test products, listed one by one: /product/ is now the product section of the site
+  - { from: /product/noch-otkrytoj-sczeny/, to: /help/tickets }
+  - { from: /product/channel-key-check-riga-night/, to: /help/tickets }
+  - { from: /product/berlin-chamber-night-2/, to: /help/tickets }
+  - { from: /product/riga-organ-evening/, to: /help/tickets }
+  - { from: /product/baltic-strings-tallinn/, to: /help/tickets }
+  - { from: /product/midnight-jazz-new-york/, to: /help/tickets }
+  - { from: /product/berlin-chamber-night/, to: /help/tickets }
+  - { from: /product/nordic-lights-prague-night-2/, to: /help/tickets }
+  - { from: /product/nordic-lights-prague-night/, to: /help/tickets }
   - { from: /cart/, to: /help/tickets }
   - { from: /checkout/, to: /help/tickets }
   - { from: /my-account/, to: /help/tickets }

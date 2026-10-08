@@ -41,6 +41,12 @@ for (const file of pages) {
     if (!seen.has(key)) { seen.set(key, file); failed++; console.error(`links: ${file}: ${href} does not exist`); }
   }
 }
+// A redirect must never shadow a page that exists in this build (Cloudflare evaluates _redirects before assets).
+for (const file of pages) {
+  const route = '/' + file.replace(/\/g, '/').replace(/^dist//, '').replace(/.html$/, '').replace(/(^|/)index$/, '');
+  const r = redirects.find((r) => (r.from.endsWith('*') ? route.startsWith(r.from.slice(0, -1)) : route === r.from.replace(//$/, '')));
+  if (r) { failed++; console.error(`links: redirect ${r.from} → ${r.to} shadows the existing page ${route}`); }
+}
 for (const r of redirects) {
   const target = r.to.replace(/#.*$/, '');
   if (!exists(target) && !redirected(target)) { failed++; console.error(`links: redirect ${r.from} → ${r.to}: target does not exist`); }
