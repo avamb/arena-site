@@ -79,8 +79,8 @@ jobs:
           loc=$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' http://127.0.0.1:8080/prices/); echo "$loc"; [[ "$loc" == 301* && "$loc" == *"/pricing" ]]
           curl -sI http://127.0.0.1:8080/ | tee /tmp/h; grep -qi 'x-content-type-options: nosniff' /tmp/h; grep -qi 'content-security-policy' /tmp/h; grep -qi 'x-robots-tag: noindex' /tmp/h
           curl -sI http://127.0.0.1:8080/index.md | grep -qi 'content-type: text/markdown'
-          curl -fsS http://127.0.0.1:8080/llms.txt | head -3
-          curl -fsS http://127.0.0.1:8080/facts.json | head -c 200; echo
+          curl -fsS -o /tmp/llms.txt http://127.0.0.1:8080/llms.txt && head -3 /tmp/llms.txt
+          curl -fsS -o /tmp/facts.json http://127.0.0.1:8080/facts.json && head -c 200 /tmp/facts.json && echo
           docker stop site
 
   deploy:
@@ -109,4 +109,4 @@ jobs:
           curl -fsS -o /dev/null -w 'llms %{http_code}\n' "$SITE_URL/llms.txt"
           curl -fsS -o /dev/null -w 'md %{http_code}\n' "$SITE_URL/index.md"
           curl -fsS -o /dev/null -w 'facts %{http_code}\n' "$SITE_URL/facts.json"
-          curl -fsS "$SITE_URL/robots.txt" | head -3
+          curl -fsS -o /tmp/robots.txt "$SITE_URL/robots.txt" && head -3 /tmp/robots.txt
