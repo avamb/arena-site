@@ -1,0 +1,110 @@
+# CI for arenasoldout.com (doc 33 §3.7a, QA-CHECKLIST). One build of dist/ feeds every job:
+# checks, Lighthouse, the nginx parity image, and the Cloudflare deploy on push to main.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  SITE_URL: https://new.arenasoldout.com
+  SITE_INDEXING: 'false'   # flip to 'true' on launch day together with wrangler.toml routes and site.config.ts
+
+jobs:
+  build:
+    name: build and check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm run build
+      - run: npm run check:types
+      - run: npm run check:anti-slop
+      - run: npm run check:i18n
+      - run: npm run check:edge
+      - run: npm run check:jsonld
+      - run: npm run check:agents
+      - run: npm run forms:test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: |
+            dist
+            ops/nginx/redirects.conf
+            ops/nginx/headers.conf
+          retention-days: 7
+
+  lighthouse:
+    name: lighthouse 100
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with: { name: dist, path: . }
+      - run: npm run lhci
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+
+  parity:
+    name: nginx image parity
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { name: dist, path: . }
+      - name: build image
+        run: docker build -f ops/nginx/Dockerfile -t arena-site:ci .
+      - name: smoke
+        run: |
+          set -euo pipefail
+          docker run -d --rm --name site -p 8080:8080 -e FORMS_UPSTREAM=127.0.0.1:8787 arena-site:ci
+          for i in $(seq 1 20); do curl -fsS http://127.0.0.1:8080/healthz >/dev/null && break; sleep 1; done
+          code=$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/); test "$code" = 200
+          code=$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/pricing); test "$code" = 200
+          loc=$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' http://127.0.0.1:8080/prices/); echo "$loc"; [[ "$loc" == 301* && "$loc" == *"/pricing" ]]
+          curl -sI http://127.0.0.1:8080/ | tee /tmp/h; grep -qi 'x-content-type-options: nosniff' /tmp/h; grep -qi 'content-security-policy' /tmp/h; grep -qi 'x-robots-tag: noindex' /tmp/h
+          curl -sI http://127.0.0.1:8080/index.md | grep -qi 'content-type: text/markdown'
+          curl -fsS http://127.0.0.1:8080/llms.txt | head -3
+          curl -fsS http://127.0.0.1:8080/facts.json | head -c 200; echo
+          docker stop site
+
+  deploy:
+    name: deploy to cloudflare
+    runs-on: ubuntu-latest
+    needs: [build, lighthouse, parity]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with: { name: dist, path: . }
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
+      - name: smoke on the live host
+        run: |
+          set -euo pipefail
+          sleep 10
+          curl -fsS -o /dev/null -w 'home %{http_code}\n' "$SITE_URL/"
+          curl -fsS -o /dev/null -w 'llms %{http_code}\n' "$SITE_URL/llms.txt"
+          curl -fsS -o /dev/null -w 'md %{http_code}\n' "$SITE_URL/index.md"
+          curl -fsS -o /dev/null -w 'facts %{http_code}\n' "$SITE_URL/facts.json"
+          curl -fsS "$SITE_URL/robots.txt" | head -3
