@@ -6,7 +6,7 @@
   "description": "arenasoldout.com marketing site: Astro static, Cloudflare Workers Static Assets, portable to nginx",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/build-edge.mjs && node scripts/gen-markdown.mjs",
+    "build": "astro build && node scripts/build-edge.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "check": "npm run check:types && npm run check:anti-slop && npm run check:i18n && npm run check:edge && npm run check:jsonld && npm run check:agents",
