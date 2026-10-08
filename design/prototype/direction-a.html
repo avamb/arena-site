@@ -1,0 +1,760 @@
+<title>Arena Site Direction A</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+/* Variant 1 (08.10): the brand navy #001489 is the platform colour; reworked against the design-anti-slop catalog.
+   Conscious keeps: hero mesh (T22, one bold move), 3 real steps (T17), header blur (single use).
+   Layout concept: an engineered, light page with one deep navy band for the hero and one for
+   developers; a 12-column grid at 1200px; hairline borders; the live widget is the hero image. */
+:root{
+  --logo:#001489;
+  --bg:#F6F7FB; --surface:#FCFCFE; --surface-2:#EDEFF6; --fg:#0B1020; --fg-2:#4D536B; --fg-3:#7B819A;
+  --line:#DDE0EB; --line-2:#C9CDDD;
+  --accent:#001489; --accent-hover:#1527A6; --accent-fg:#F7F8FF; --accent-soft:#E7EAF9; --accent-line:#A6B0E3;
+  --cat2:#0F9F9A; --cat2-soft:#D7F3F1;
+  --band:#0B1020; --band-2:#121A36; --band-fg:#F2F4FB; --band-fg-2:#AEB4CF; --band-line:#263055;
+  --mesh-1:#1E3BD1; --mesh-2:#4A66F0; --mesh-3:#F05537;
+  --code-bg:#0B1020; --code-fg:#D9DCEC; --code-key:#9DD6FF; --code-str:#7DD3C0; --code-attr:#B9C6FF;
+  --ok:#15803D; --ok-soft:#DCFCE7; --warn:#B45309; --warn-soft:#FEF3C7;
+  --shadow:0 1px 2px rgba(11,16,32,.05),0 12px 32px -12px rgba(11,16,32,.18);
+  --shadow-lg:0 2px 6px rgba(11,16,32,.08),0 40px 80px -24px rgba(11,16,32,.35);
+  --sold:#CDD1DE; --held:#9AA1BB;
+  --arena-accent:var(--accent); --arena-radius:12px; --arena-bg:var(--surface); --arena-border-color:var(--line);
+  --font:"Onest",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --ctl:46px; --ctl-sm:38px; --ctl-xs:28px; --r:12px; --r-lg:18px; --max:1200px; --gutter:clamp(16px,4vw,40px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B1020; --surface:#121831; --surface-2:#182043; --fg:#EEF0F8; --fg-2:#B2B7D0; --fg-3:#7E86A8;
+    --line:#242D4F; --line-2:#334071;
+    --accent:#6F8CFF; --accent-hover:#8FA3FF; --accent-fg:#0B1020; --accent-soft:#1A2452; --accent-line:#3B4C9E;
+    --cat2:#2DD4C8; --cat2-soft:#113C3A;
+    --band:#070B18; --band-2:#0E1430; --band-fg:#F2F4FB; --band-fg-2:#AEB4CF; --band-line:#1F2848;
+    --code-bg:#070B18; --code-fg:#D9DCEC;
+    --ok:#4ADE80; --ok-soft:#113A24; --warn:#FBBF24; --warn-soft:#3A2A08;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 32px -12px rgba(0,0,0,.6);
+    --shadow-lg:0 2px 6px rgba(0,0,0,.5),0 40px 80px -24px rgba(0,0,0,.8);
+    --sold:#2B3356; --held:#4A5480;
+    color-scheme:dark; --logo:#F2F4FB;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B1020; --surface:#121831; --surface-2:#182043; --fg:#EEF0F8; --fg-2:#B2B7D0; --fg-3:#7E86A8;
+  --line:#242D4F; --line-2:#334071;
+  --accent:#6F8CFF; --accent-hover:#8FA3FF; --accent-fg:#0B1020; --accent-soft:#1A2452; --accent-line:#3B4C9E;
+  --cat2:#2DD4C8; --cat2-soft:#113C3A;
+  --band:#070B18; --band-2:#0E1430; --band-fg:#F2F4FB; --band-fg-2:#AEB4CF; --band-line:#1F2848;
+  --code-bg:#070B18; --code-fg:#D9DCEC;
+  --ok:#4ADE80; --ok-soft:#113A24; --warn:#FBBF24; --warn-soft:#3A2A08;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 32px -12px rgba(0,0,0,.6);
+  --shadow-lg:0 2px 6px rgba(0,0,0,.5),0 40px 80px -24px rgba(0,0,0,.8);
+  --sold:#2B3356; --held:#4A5480;
+  color-scheme:dark; --logo:#F2F4FB;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-0.03em;text-wrap:balance;line-height:1.08}
+p{margin:0}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:clamp(56px,8vw,104px)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-2)}
+.h2{font-size:clamp(30px,4.2vw,46px);margin-top:12px}
+.lead{font-size:clamp(17px,1.4vw,19px);color:var(--fg-2);max-width:62ch;margin-top:16px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
+.btn{display:inline-flex;align-items:center;gap:8px;height:var(--ctl);padding-inline:20px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .15s ease,background .15s ease,border-color .15s ease}
+.btn-primary{background:var(--accent);color:var(--accent-fg)}
+.btn-primary:hover{background:var(--accent-hover);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--line-2);color:var(--fg)}
+.btn-ghost:hover{border-color:var(--fg-3)}
+.btn-band{border-color:var(--band-line);color:var(--band-fg)}
+.btn-band:hover{border-color:var(--band-fg-2)}
+.btn-sm{height:var(--ctl-sm);padding-inline:16px;font-size:14px}
+.pill{display:inline-flex;align-items:center;gap:6px;height:var(--ctl-xs);padding-inline:10px;border-radius:999px;font-size:12.5px;font-weight:600;border:1px solid var(--line)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg)}
+
+/* Header */
+.header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:28px;height:64px}
+.wordmark{font-weight:800;letter-spacing:-0.04em;font-size:19px;line-height:1;display:flex;align-items:baseline;gap:7px}
+.nav-links{display:flex;gap:22px;margin-inline-start:12px;font-size:14.5px;font-weight:500;color:var(--fg-2)}
+.nav-links a:hover{color:var(--fg)}
+.nav-right{margin-inline-start:auto;display:flex;align-items:center;gap:10px}
+.nav-right .signin{font-size:14.5px;font-weight:500;color:var(--fg-2);padding-inline:8px}
+.lang{display:inline-flex;align-items:center;gap:6px;height:var(--ctl-sm);padding-inline:12px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:600}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;width:var(--ctl-sm);height:var(--ctl-sm);border:1px solid var(--line);border-radius:999px;color:var(--fg-2)}
+.icon-btn:hover{color:var(--fg);border-color:var(--line-2)}
+.icon-btn svg{width:17px;height:17px}
+@media (max-width:900px){.nav-links,.nav-right .signin{display:none}.nav{gap:16px}}
+
+/* Hero band */
+.hero{position:relative;background:var(--band);color:var(--band-fg);overflow:hidden;isolation:isolate}
+.mesh{position:absolute;inset:-20% -10%;z-index:-1;filter:blur(56px);opacity:.85;pointer-events:none}
+.blob{position:absolute;border-radius:50%;will-change:transform}
+.b1{width:52vw;height:52vw;max-width:780px;max-height:780px;background:radial-gradient(circle at 40% 40%,var(--mesh-1),transparent 62%);top:-4%;left:2%;animation:drift1 26s ease-in-out infinite alternate}
+.b2{width:40vw;height:40vw;max-width:600px;max-height:600px;background:radial-gradient(circle at 50% 50%,var(--mesh-2),transparent 65%);bottom:-18%;left:36%;animation:drift2 32s ease-in-out infinite alternate}
+.b3{width:40vw;height:40vw;max-width:600px;max-height:600px;background:radial-gradient(circle at 50% 50%,var(--mesh-3),transparent 62%);top:-6%;right:4%;animation:drift3 29s ease-in-out infinite alternate}
+@keyframes drift1{to{transform:translate(12%,18%) scale(1.08)}}
+@keyframes drift2{to{transform:translate(-14%,-16%) scale(1.12)}}
+@keyframes drift3{to{transform:translate(-10%,22%) scale(.94)}}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(32px,5vw,72px);align-items:center;padding-block:clamp(56px,7vw,96px)}
+.hero-copy .eyebrow{color:var(--band-fg-2)}
+.hero h1{font-size:clamp(42px,6.2vw,76px);font-weight:800;letter-spacing:-0.045em;margin-top:18px;max-width:11ch}
+.hero .lead{color:var(--band-fg-2);font-size:clamp(17px,1.5vw,20px);max-width:48ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-note{margin-top:16px;font-size:13.5px;color:var(--band-fg-2)}
+.reveal{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.reveal:nth-child(2){animation-delay:.08s}.reveal:nth-child(3){animation-delay:.16s}.reveal:nth-child(4){animation-delay:.24s}.reveal:nth-child(5){animation-delay:.32s}
+@keyframes rise{from{opacity:.001;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (max-width:980px){.hero-grid{grid-template-columns:minmax(0,1fr)}.hero h1{max-width:none}}
+
+/* Widget mock */
+.widget{background:var(--arena-bg);color:var(--fg);border:1px solid var(--arena-border-color);border-radius:var(--r-lg);box-shadow:var(--shadow-lg);overflow:hidden;animation:rise .8s .2s cubic-bezier(.2,.7,.2,1) both}
+.w-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:18px 20px 14px;border-bottom:1px solid var(--line)}
+.w-title{font-weight:700;font-size:17px;letter-spacing:-0.02em}
+.w-meta{font-size:13px;color:var(--fg-2);margin-top:3px}
+.w-chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.chip{height:var(--ctl-xs);padding-inline:10px;border-radius:8px;border:1px solid var(--line);font-size:12.5px;font-weight:600;color:var(--fg-2);display:inline-flex;align-items:center;white-space:nowrap}
+.chip.on{background:var(--accent-soft);border-color:var(--accent-line);color:var(--fg)}
+.w-map{padding:14px 20px 6px}
+.stage{height:22px;border-radius:6px;background:var(--surface-2);color:var(--fg-3);font-size:11px;letter-spacing:.02em;font-weight:600;display:flex;align-items:center;justify-content:center;margin:0 10% 10px}
+.seatmap{width:100%;height:auto}
+.seat{transition:transform .12s ease}
+.seat.av{fill:var(--accent-soft);stroke:var(--accent-line);stroke-width:1}
+.seat.av2{fill:var(--cat2-soft);stroke:var(--cat2);stroke-width:1}
+.seat.sold{fill:var(--sold);stroke:none}
+.seat.held{fill:var(--held);opacity:.55}
+.seat.sel{fill:var(--accent);stroke:none}
+.seat.sel{transform-box:fill-box;transform-origin:center;animation:pop .35s cubic-bezier(.2,.7,.2,1) both}
+@keyframes pop{from{transform:scale(1.45)}}
+.rowlbl{font-family:var(--mono);font-size:8.5px;fill:var(--fg-3)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--fg-2);padding:8px 20px 14px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
+.l1{background:var(--accent-soft);border:1px solid var(--accent-line)}.l2{background:var(--cat2-soft);border:1px solid var(--cat2)}.l3{background:var(--sold)}.l4{background:var(--accent)}
+.w-cart{border-top:1px solid var(--line);padding:14px 20px 18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 16px;align-items:center}
+.w-line{display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.w-line b{font-weight:600}
+.w-sub{font-size:12.5px;color:var(--fg-2)}
+.w-total{display:flex;justify-content:space-between;align-items:baseline;border-top:1px dashed var(--line);padding-top:10px;margin-top:4px}
+.w-total .sum{font-weight:700;font-size:20px;letter-spacing:-0.02em}
+.timer{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--warn);background:var(--warn-soft);border-radius:999px;height:var(--ctl-xs);padding-inline:10px;font-weight:600}
+.timer .mono{font-weight:600}
+.w-pay{grid-column:1/-1;height:var(--ctl);border-radius:calc(var(--arena-radius) - 2px);background:var(--arena-accent);color:var(--accent-fg);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;gap:8px}
+.w-pay:hover{background:var(--accent-hover)}
+.w-left{display:grid;gap:4px}
+
+/* Trust */
+.trust{border-bottom:1px solid var(--line)}
+.trust-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 36px;padding-block:22px}
+.marks{display:flex;flex-wrap:wrap;gap:10px 28px;color:var(--fg-3);font-weight:700;letter-spacing:-0.02em;font-size:15px}
+.facts{margin-inline-start:auto;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:14px;color:var(--fg-2)}
+.facts b{color:var(--fg);font-weight:700}
+@media (max-width:900px){.facts{margin-inline-start:0}}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:40px;counter-reset:step}
+.step{position:relative;padding:24px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface)}
+.step::before{counter-increment:step;content:counter(step);font-family:var(--mono);font-size:13px;font-weight:600;color:var(--fg);background:var(--surface-2);width:30px;height:30px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center}
+.step h3{font-size:19px;margin-top:16px;letter-spacing:-0.02em}
+.step p{color:var(--fg-2);margin-top:8px;font-size:15px}
+@media (max-width:900px){.steps{grid-template-columns:minmax(0,1fr)}}
+
+/* Bento */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;margin-top:40px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;display:flex;flex-direction:column;gap:14px;min-width:0;position:relative;overflow:hidden;transition:border-color .15s ease}
+.tile:hover{border-color:var(--line-2)}
+.tile h3{font-size:19px;letter-spacing:-0.02em}
+.tile p{color:var(--fg-2);font-size:15px}
+.tile .vis{margin-top:auto;min-width:0}
+.t-4{grid-column:span 4}.t-2{grid-column:span 2}.t-6{grid-column:span 6}
+.t-6{flex-direction:row;align-items:center;gap:32px}
+.t-6 .txt{flex:1 1 0;min-width:0}
+.t-6 .vis{flex:0 1 420px;margin-top:0}
+@media (max-width:980px){.t-4,.t-2{grid-column:span 3}}
+@media (max-width:700px){.t-4,.t-2,.t-6{grid-column:span 6}.t-6{flex-direction:column;align-items:stretch}.t-6 .vis{flex-basis:auto}}
+
+/* Visuals */
+.hall{width:100%;height:auto}
+.hall .sec{fill:var(--accent-soft);stroke:var(--accent-line);stroke-width:1}
+.hall .sec2{fill:var(--cat2-soft);stroke:var(--cat2);stroke-width:1}
+.hall .lbl{font-family:var(--mono);font-size:9px;fill:var(--fg-2)}
+.hall .stg{fill:var(--surface-2)}
+.tg{background:var(--surface-2);border-radius:14px;padding:12px 14px;max-width:320px;font-size:13.5px;line-height:1.45}
+.tg .from{font-weight:700;font-size:12.5px;color:var(--fg)}
+.tg .t{color:var(--fg-3);font-size:11.5px;text-align:right;margin-top:4px;font-family:var(--mono)}
+.tg b{font-weight:600}
+.ladder{display:grid;gap:8px}
+.rung{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;font-size:13px}
+.rung .bar{height:8px;border-radius:999px;background:var(--surface-2);overflow:hidden}
+.rung .bar i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.rung .bar.next i{background:var(--cat2)}
+.rung .pr{font-family:var(--mono);font-weight:600}
+.rung .lb{color:var(--fg-2)}
+.ticket{display:flex;gap:0;background:var(--surface-2);border-radius:10px;overflow:hidden;max-width:360px}
+.ticket .stub{flex:1;padding:12px 14px;min-width:0}
+.ticket .stub .ev{font-weight:700;font-size:13.5px;letter-spacing:-0.01em}
+.ticket .stub .md{font-size:11.5px;color:var(--fg-2);margin-top:2px}
+.ticket .stub .seat{font-family:var(--mono);font-size:11.5px;margin-top:8px}
+.ticket .code{width:118px;border-inline-start:2px dashed var(--line-2);padding:10px;display:grid;gap:6px;align-content:center;justify-items:center;background:var(--surface)}
+.ticket .code svg{width:96px;height:auto}
+.ticket .code .n{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;color:var(--fg-2)}
+.code{background:var(--code-bg);color:var(--code-fg);border-radius:12px;padding:16px 18px;font-family:var(--mono);font-size:12.5px;line-height:1.6;overflow-x:auto;white-space:pre}
+.code .k{color:var(--code-key)}.code .s{color:var(--code-str)}.code .a{color:var(--code-attr)}
+.mail{background:var(--surface-2);border-radius:14px;padding:14px 16px;font-size:13.5px}
+.mail .hd{display:flex;justify-content:space-between;gap:10px;color:var(--fg-3);font-size:12px}
+.mail .sj{font-weight:700;margin-top:6px;letter-spacing:-0.01em}
+.mail .bd{color:var(--fg-2);margin-top:6px;line-height:1.5}
+.mail .att{display:inline-flex;align-items:center;gap:6px;margin-top:10px;height:var(--ctl-xs);padding-inline:10px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-size:12px;font-family:var(--mono)}
+.mail .att svg{width:13px;height:13px}
+
+/* Money */
+.money{background:var(--surface-2);border-block:1px solid var(--line)}
+.money-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.flow{display:grid;gap:10px}
+.flow-row{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:8px}
+.node{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13.5px;font-weight:600;min-width:0;text-align:center}
+.node small{display:block;font-weight:500;color:var(--fg-2);font-size:12px;margin-top:2px}
+.node.hi{border-color:var(--accent-line);background:var(--accent-soft)}
+.arrow{color:var(--fg-3);font-family:var(--mono);font-size:14px}
+.flow-note{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--fg-2);margin-top:4px}
+.flow-note i{width:28px;border-top:2px dashed var(--line-2);display:inline-block}
+@media (max-width:900px){.money-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Pricing */
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+.plan{padding:26px 24px;display:flex;flex-direction:column;gap:14px}
+.plan .reg{font-size:14.5px;font-weight:600;color:var(--fg-2)}
+.plan .big{font-size:44px;font-weight:800;letter-spacing:-0.04em;line-height:1}
+.plan .big small{font-size:15px;font-weight:600;letter-spacing:0;color:var(--fg-2);margin-inline-start:6px}
+.plan ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:14.5px;color:var(--fg-2)}
+.plan li{display:block;position:relative;padding-inline-start:26px}
+.plan li::before{content:"";position:absolute;left:0;top:3px;width:16px;height:16px;border-radius:50%;background:var(--accent-soft);background-image:linear-gradient(var(--fg-3),var(--fg-3));background-size:6px 6px;background-repeat:no-repeat;background-position:center}
+.plan li b{color:var(--fg);font-weight:600}
+.plan .btn{margin-top:auto;justify-content:center}
+.plan.hi{border-color:var(--accent-line);box-shadow:var(--shadow)}
+.venues{margin-top:16px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:20px;align-items:center;padding:22px 24px}
+.venues .big{font-size:34px;font-weight:800;letter-spacing:-0.04em;white-space:nowrap}
+.venues p{color:var(--fg-2);font-size:14.5px}
+.pr-note{margin-top:14px;font-size:13.5px;color:var(--fg-3)}
+.calc{margin-top:16px;padding:20px 24px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:end}
+.calc label{display:grid;gap:6px;font-size:12.5px;color:var(--fg-2);font-weight:600}
+.calc input[type=number]{height:var(--ctl);border:1px solid var(--line-2);border-radius:10px;padding-inline:12px;font:inherit;font-family:var(--mono);background:var(--surface);color:var(--fg);width:100%}
+.calc .tog{display:flex;align-items:center;gap:10px;height:var(--ctl);font-size:14px;color:var(--fg);font-weight:500}
+.calc .out{text-align:right}
+.calc .out .v{font-size:30px;font-weight:800;letter-spacing:-0.04em;font-variant-numeric:tabular-nums}
+.calc .out .l{font-size:12.5px;color:var(--fg-2)}
+@media (max-width:980px){.plans{grid-template-columns:minmax(0,1fr)}.calc{grid-template-columns:repeat(2,minmax(0,1fr))}.calc .out{text-align:left}}
+@media (max-width:700px){.venues{grid-template-columns:minmax(0,1fr)}}
+
+/* Solutions */
+.sols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:40px}
+.sol{padding:22px;display:grid;gap:10px;min-width:0}
+.sol .ic{width:40px;height:40px;border-radius:10px;background:var(--surface-2);display:grid;place-items:center;color:var(--fg)}
+.sol .ic svg{width:20px;height:20px}
+.sol h3{font-size:18px;letter-spacing:-0.02em}
+.sol p{font-size:14.5px;color:var(--fg-2)}
+.sol a{font-size:14px;font-weight:600;color:var(--accent)}
+@media (max-width:980px){.sols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.sols{grid-template-columns:minmax(0,1fr)}}
+
+/* Developers band */
+.dev{background:var(--band);color:var(--band-fg)}
+.dev .eyebrow{color:var(--band-fg-2)}
+.dev-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.dev .lead{color:var(--band-fg-2)}
+.dev .code{border:1px solid var(--band-line);background:var(--band-2)}
+.devlist{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px;font-size:15px}
+.devlist li{display:flex;gap:12px;align-items:center;padding-block:10px;border-bottom:1px solid var(--band-line)}
+.devlist li span.k{font-family:var(--mono);font-size:12.5px;color:var(--code-key)}
+@media (max-width:900px){.dev-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Live */
+.events{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+.ev{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;padding:20px;min-width:0}
+.ev .date{width:58px;text-align:center;border-radius:10px;background:var(--surface-2);padding-block:8px}
+.ev .date b{display:block;font-size:22px;font-weight:800;letter-spacing:-0.03em;line-height:1}
+.ev .date span{font-size:12px;color:var(--fg-2);font-weight:600}
+.ev h3{font-size:17px;letter-spacing:-0.02em}
+.ev p{font-size:13.5px;color:var(--fg-2);margin-top:4px}
+.ev .pill{margin-top:10px;color:var(--ok);background:var(--ok-soft);border-color:transparent}
+.ev .pill i{width:6px;height:6px;border-radius:50%;background:var(--ok);display:inline-block}
+.caption{margin-top:16px;font-size:13.5px;color:var(--fg-3)}
+@media (max-width:980px){.events{grid-template-columns:minmax(0,1fr)}}
+
+/* Changelog */
+.log{margin-top:28px;border-top:1px solid var(--line)}
+.log li{list-style:none;display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;padding-block:14px;border-bottom:1px solid var(--line);font-size:15px}
+.log ul{margin:0;padding:0}
+.log .d{font-family:var(--mono);font-size:13px;color:var(--fg-3);padding-top:2px;white-space:nowrap}
+.log a.more{display:inline-block;margin-top:16px;font-weight:600;color:var(--accent);font-size:14.5px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(28px,5vw,64px);align-items:start}
+@media (max-width:900px){.two{grid-template-columns:minmax(0,1fr)}}
+
+/* CTA */
+.cta{position:relative;overflow:hidden;border-radius:var(--r-lg);background:var(--band);color:var(--band-fg);padding:clamp(36px,6vw,72px);isolation:isolate;text-align:center}
+.cta .mesh{opacity:.5}
+.cta h2{font-size:clamp(30px,4.6vw,52px);letter-spacing:-0.04em}
+.cta p{color:var(--band-fg-2);max-width:52ch;margin:16px auto 0;font-size:17px}
+.cta .hero-actions{justify-content:center}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding-block:48px 28px;font-size:14px}
+.fgrid{display:grid;grid-template-columns:1.4fr repeat(5,minmax(0,1fr));gap:24px}
+.fcol h4{font-size:14px;color:var(--fg);font-weight:700;margin-bottom:12px}
+.fcol ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fcol a{color:var(--fg-2)}.fcol a:hover{color:var(--fg)}
+.fbot{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;margin-top:36px;padding-top:20px;border-top:1px solid var(--line);color:var(--fg-3);font-size:13px}
+.fbot .r{display:flex;align-items:center;gap:10px}
+@media (max-width:980px){.fgrid{grid-template-columns:repeat(3,minmax(0,1fr))}.fcol.brand{grid-column:1/-1}}
+@media (max-width:560px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.badge{position:fixed;left:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:60;font-family:var(--mono);font-size:11px;background:var(--band);color:var(--band-fg);padding:6px 10px;border-radius:999px;opacity:.85;pointer-events:none}
+
+@media (prefers-reduced-motion: reduce){
+  .blob,.reveal,.widget,.seat.sel{animation:none !important}
+  .btn-primary:hover{transform:none}
+  html{scroll-behavior:auto}
+}
+.logo{display:inline-block;width:var(--logo-w,118px);aspect-ratio:275.42/116;background:var(--logo);-webkit-mask:url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 275.42 116%22%3E%3Cg transform=%22matrix(1 0 0 -1 0 116)%22 fill=%22%23000%22%3E%3Cpath d=%22M35.78 57.47C35.28 58.39 34.83 59.41 34.43 60.55 34.02 61.68 33.67 62.85 33.39 64.06 31.69 61.68 29.63 59.79 27.22 58.4 24.81 56.99 21.89 56.29 18.45 56.29 12.99 56.29 8.55 57.87 5.13 61.03 1.71 64.18 0 68.38 0 73.62 0 79.33 2.14 83.74 6.41 86.84 10.68 89.94 17.17 91.49 25.89 91.49H32.43V95.58C32.43 98.03 31.86 99.91 30.7 101.22 29.55 102.53 27.77 103.19 25.36 103.19 23.3 103.19 21.77 102.7 20.76 101.72 19.75 100.75 19.25 99.23 19.25 97.18L1.86 97.23 1.75 97.55C1.51 102.8 3.69 107.18 8.29 110.71 12.9 114.23 19 116 26.58 116 33.67 116 39.42 114.23 43.84 110.68 48.25 107.14 50.45 102.07 50.45 95.48V73.78C50.45 70.7 50.71 67.85 51.23 65.23 51.74 62.6 52.51 60 53.54 57.41ZM23.93 69.11C25.7 69.11 27.33 69.46 28.82 70.17 30.3 70.88 31.51 71.8 32.43 72.93V81.92H26.05C23.21 81.92 21.15 81.23 19.86 79.85 18.56 78.47 17.92 76.71 17.92 74.58 17.92 72.95 18.48 71.63 19.59 70.62 20.71 69.61 22.15 69.11 23.93 69.11ZM23.93 69.11%22/%3E%3Cpath d=%22M92.93 99.09 86.39 99.14C84.34 99.14 82.66 98.8 81.34 98.11 80.03 97.42 79.06 96.43 78.42 95.16V57.41H60.45V114.94H77.36L78 106.48C79.2 109.5 80.79 111.84 82.78 113.5 84.77 115.17 87.09 116 89.75 116 90.59 116 91.47 115.94 92.35 115.81 93.23 115.69 94.02 115.54 94.69 115.36ZM92.93 99.09%22/%3E%3Cpath d=%22M125.95 56.29C117.48 56.29 110.72 58.95 105.67 64.27 100.62 69.59 98.09 76.25 98.09 84.26V86.28C98.09 95.03 100.39 102.18 104.98 107.73 109.57 113.28 116.13 116.03 124.68 116 132.47 116 138.59 113.66 143.02 108.98 147.45 104.31 149.66 97.96 149.66 89.95V80.54H116.81L116.7 80.22C117.09 77.28 118.29 74.86 120.32 72.96 122.34 71.07 125.03 70.12 128.4 70.12 131.8 70.12 134.52 70.38 136.56 70.91 138.59 71.44 141.17 72.37 144.29 73.68L148.55 62.73C146.03 60.88 142.78 59.35 138.79 58.13 134.8 56.91 130.52 56.29 125.95 56.29ZM124.68 102.18C122.09 102.18 120.15 101.25 118.85 99.41 117.56 97.57 116.77 95.11 116.49 92.02L116.64 91.76H132.12V93.14C132.12 96.04 131.52 98.28 130.31 99.84 129.1 101.4 127.23 102.18 124.68 102.18ZM124.68 102.18%22/%3E%3Cpath d=%22M173.8 114.94 174.49 106.86C176.37 109.73 178.69 111.97 181.46 113.58 184.22 115.19 187.31 116 190.71 116 196.34 116 200.75 114.18 203.92 110.52 207.09 106.87 208.68 101.06 208.68 93.09V57.41H190.71V93.14C190.71 96.43 190.02 98.77 188.66 100.13 187.3 101.5 185.28 102.18 182.62 102.18 180.96 102.18 179.48 101.88 178.19 101.27 176.89 100.67 175.78 99.84 174.86 98.77V57.41H156.94V114.94ZM173.8 114.94%22/%3E%3Cpath d=%22M262.18 58.92C260.35 59.18 258.72 59.91 257.32 61.1 256.77 61.6 256.18 62.27 255.57 63.11 254.73 64.31 254.06 65.18 253.62 65.74 248.55 71.68 242.55 75.53 235.64 77.28 232.41 78.06 229.49 78.21 226.87 77.68 224.1 77.13 221.89 75.91 220.28 73.95 225.18 83.98 227.92 89.57 228.5 90.71 230.16 93.94 233.02 95.63 237.04 95.81 238.32 95.84 239.87 95.75 241.67 95.49 243.97 95.14 245.14 94.96 245.2 94.96 248.34 94.76 250.91 95.69 252.92 97.76 254.93 99.83 255.81 102.42 255.48 105.51 266.15 84.03 271.68 72.82 272.09 71.86 273.06 69.58 273.08 67.28 272.24 64.98 271.39 62.65 269.85 60.93 267.61 59.82 265.89 58.98 264.08 58.66 262.18 58.92ZM256.36 109.41C255.34 111.43 253.88 113.03 251.96 114.22 250.06 115.42 247.97 116 245.66 116 243.39 116 241.29 115.42 239.4 114.22 237.5 113.03 236.05 111.43 235.03 109.41L235 109.33C223.43 86.07 217.43 73.93 216.97 72.85 215.77 69.96 215.71 67.02 216.79 64.08 217.9 61.13 219.85 58.98 222.65 57.58 225.35 56.21 228.15 55.95 231.07 56.73 233.98 57.52 236.25 59.18 237.91 61.72 239.75 64.51 242.34 65.91 245.69 65.91 249.04 65.91 251.64 64.51 253.47 61.72 255.83 58.13 259.16 56.32 263.44 56.32 267.69 56.32 270.98 58.1 273.34 61.66 275.7 65.21 276.06 68.94 274.39 72.85 273.93 73.95 267.93 86.11 256.39 109.33ZM256.36 109.41%22/%3E%3Cpath d=%22M31.38 9.57C32.5 9.57 33.47 9.53 34.27 9.43 35.07 9.34 35.74 9.2 36.29 9.02 36.84 8.84 37.28 8.62 37.6 8.35 37.93 8.08 38.18 7.77 38.36 7.43 38.53 7.09 38.65 6.7 38.7 6.27 38.76 5.85 38.78 5.39 38.78 4.89 38.78 4.39 38.74 3.93 38.65 3.49 38.56 3.06 38.41 2.66 38.18 2.3 37.95 1.94 37.65 1.61 37.25 1.33 36.86 1.05 36.37 .805 35.77 .605 35.16 .406 34.44 .258 33.59 .152 32.74 .051 31.75 0 30.62 0H27.89C26.88 0 25.98 .039 25.21 .117 24.45 .195 23.79 .313 23.23 .473 22.68 .633 22.23 .836 21.86 1.08 21.5 1.32 21.21 1.61 21 1.94 20.78 2.27 20.63 2.65 20.55 3.07 20.46 3.49 20.42 3.96 20.42 4.46H22.46C22.46 3.83 22.55 3.33 22.73 2.97 22.92 2.6 23.23 2.34 23.65 2.15 24.08 1.97 24.63 1.86 25.32 1.81 26.02 1.77 26.88 1.75 27.89 1.75H30.62C31.81 1.75 32.8 1.8 33.59 1.91 34.37 2.03 35 2.21 35.47 2.46 35.93 2.7 36.27 3.03 36.46 3.43 36.65 3.83 36.74 4.32 36.74 4.89 36.74 5.46 36.68 5.95 36.55 6.33 36.41 6.71 36.16 7.02 35.77 7.24 35.38 7.47 34.84 7.63 34.14 7.73 33.43 7.82 32.52 7.87 31.38 7.87H28.57C27.33 7.87 26.26 7.92 25.37 8.01 24.48 8.1 23.73 8.23 23.13 8.41 22.53 8.58 22.05 8.8 21.68 9.05 21.32 9.32 21.05 9.61 20.86 9.95 20.67 10.28 20.55 10.65 20.49 11.05 20.43 11.46 20.41 11.9 20.41 12.38 20.41 12.88 20.45 13.34 20.54 13.76 20.63 14.19 20.79 14.57 21.04 14.91 21.28 15.26 21.61 15.57 22.02 15.84 22.44 16.11 22.98 16.33 23.64 16.51 24.29 16.69 25.08 16.83 26 16.92 26.92 17.01 28.01 17.06 29.25 17.06H31.3C32.32 17.06 33.21 17.02 33.98 16.95 34.74 16.87 35.4 16.75 35.96 16.6 36.51 16.44 36.97 16.24 37.33 16 37.7 15.76 37.99 15.48 38.21 15.15 38.42 14.82 38.57 14.45 38.66 14.03 38.74 13.61 38.78 13.14 38.78 12.63H36.74C36.74 13.27 36.65 13.77 36.47 14.13 36.28 14.5 35.98 14.77 35.55 14.95 35.12 15.13 34.57 15.24 33.87 15.29 33.18 15.34 32.32 15.36 31.3 15.36H29.25C27.89 15.36 26.77 15.31 25.89 15.21 25.02 15.12 24.32 14.96 23.81 14.73 23.3 14.5 22.95 14.2 22.75 13.82 22.55 13.43 22.45 12.95 22.45 12.38 22.45 12.02 22.47 11.71 22.52 11.43 22.57 11.16 22.68 10.91 22.83 10.7 22.98 10.5 23.2 10.32 23.47 10.18 23.75 10.04 24.11 9.92 24.57 9.83 25.02 9.73 25.57 9.67 26.23 9.63 26.89 9.59 27.67 9.57 28.57 9.57ZM66.48 17.06C67.72 17.06 68.77 16.98 69.63 16.83 70.48 16.68 71.19 16.45 71.74 16.14 72.29 15.83 72.72 15.44 73.02 14.97 73.31 14.51 73.53 13.96 73.67 13.32 73.81 12.7 73.89 11.98 73.91 11.19 73.94 10.39 73.95 9.52 73.95 8.55 73.95 7.59 73.94 6.71 73.91 5.91 73.89 5.12 73.81 4.41 73.67 3.78 73.53 3.15 73.31 2.59 73.02 2.13 72.72 1.66 72.29 1.27 71.74 .961 71.19 .652 70.48 .422 69.63 .27 68.77 .117 67.72 .043 66.48 .043H60.33C59.08 .043 58.03 .117 57.18 .27 56.32 .422 55.62 .652 55.06 .961 54.51 1.27 54.08 1.66 53.78 2.13 53.48 2.59 53.26 3.15 53.12 3.78 52.98 4.41 52.91 5.12 52.88 5.91 52.86 6.71 52.85 7.59 52.85 8.55 52.85 9.52 52.86 10.39 52.88 11.19 52.91 11.98 52.98 12.7 53.12 13.32 53.26 13.96 53.48 14.51 53.78 14.97 54.08 15.44 54.51 15.83 55.06 16.14 55.62 16.45 56.32 16.68 57.18 16.83 58.03 16.98 59.08 17.06 60.33 17.06ZM66.48 1.75C67.38 1.75 68.14 1.77 68.76 1.82 69.38 1.88 69.89 1.98 70.29 2.15 70.7 2.31 71.01 2.55 71.23 2.85 71.45 3.16 71.61 3.56 71.71 4.06 71.81 4.57 71.87 5.18 71.88 5.92 71.9 6.65 71.91 7.53 71.91 8.55 71.91 9.57 71.9 10.45 71.88 11.18 71.87 11.92 71.81 12.54 71.71 13.04 71.61 13.54 71.45 13.95 71.23 14.25 71.01 14.55 70.7 14.79 70.3 14.95 69.9 15.12 69.39 15.22 68.77 15.28 68.15 15.33 67.38 15.36 66.48 15.36H60.33C59.42 15.36 58.66 15.33 58.03 15.28 57.41 15.22 56.9 15.12 56.5 14.95 56.09 14.79 55.78 14.55 55.56 14.25 55.34 13.95 55.18 13.54 55.09 13.04 54.98 12.54 54.93 11.92 54.91 11.18 54.9 10.45 54.9 9.57 54.9 8.55 54.9 7.53 54.9 6.65 54.92 5.92 54.94 5.18 55 4.57 55.09 4.06 55.2 3.56 55.35 3.16 55.57 2.85 55.78 2.55 56.09 2.31 56.5 2.15 56.9 1.98 57.41 1.88 58.03 1.82 58.66 1.77 59.42 1.75 60.33 1.75ZM88.7 .383V16.72H90.74V2.09H103.67V.383ZM129.98 2.09C130.88 2.09 131.65 2.11 132.27 2.16 132.89 2.21 133.41 2.31 133.81 2.46 134.22 2.61 134.53 2.84 134.75 3.12 134.97 3.42 135.13 3.8 135.23 4.28 135.33 4.76 135.4 5.35 135.41 6.05 135.43 6.75 135.44 7.58 135.44 8.55 135.44 9.52 135.43 10.36 135.41 11.05 135.4 11.75 135.33 12.34 135.23 12.82 135.13 13.3 134.97 13.68 134.75 13.98 134.53 14.27 134.22 14.49 133.81 14.64 133.41 14.79 132.9 14.89 132.27 14.94 131.65 14.99 130.89 15.02 129.98 15.02H119.78V2.09ZM117.74 .383V16.72H129.98C131.23 16.72 132.28 16.64 133.13 16.5 133.99 16.36 134.69 16.13 135.25 15.84 135.81 15.54 136.24 15.16 136.54 14.72 136.84 14.27 137.06 13.75 137.2 13.14 137.34 12.54 137.42 11.85 137.44 11.09 137.47 10.32 137.48 9.48 137.48 8.55 137.48 7.62 137.47 6.78 137.44 6.02 137.42 5.25 137.34 4.57 137.2 3.96 137.06 3.35 136.84 2.83 136.54 2.38 136.24 1.94 135.81 1.56 135.25 1.27 134.69 .969 133.99 .746 133.13 .602 132.28 .457 131.23 .383 129.98 .383ZM181.28 17.06C182.53 17.06 183.58 16.98 184.43 16.83 185.28 16.68 185.99 16.45 186.54 16.14 187.1 15.83 187.52 15.44 187.82 14.97 188.12 14.51 188.34 13.96 188.47 13.32 188.61 12.7 188.69 11.98 188.72 11.19 188.74 10.39 188.75 9.52 188.75 8.55 188.75 7.59 188.74 6.71 188.72 5.91 188.69 5.12 188.61 4.41 188.47 3.78 188.34 3.15 188.12 2.59 187.82 2.13 187.52 1.66 187.1 1.27 186.54 .961 185.99 .652 185.28 .422 184.43 .27 183.58 .117 182.53 .043 181.28 .043H175.13C173.88 .043 172.83 .117 171.98 .27 171.12 .422 170.42 .652 169.87 .961 169.31 1.27 168.89 1.66 168.59 2.13 168.28 2.59 168.06 3.15 167.93 3.78 167.79 4.41 167.71 5.12 167.69 5.91 167.66 6.71 167.66 7.59 167.66 8.55 167.66 9.52 167.66 10.39 167.69 11.19 167.71 11.98 167.79 12.7 167.93 13.32 168.06 13.96 168.28 14.51 168.59 14.97 168.89 15.44 169.31 15.83 169.87 16.14 170.42 16.45 171.12 16.68 171.98 16.83 172.83 16.98 173.88 17.06 175.13 17.06ZM181.28 1.75C182.18 1.75 182.94 1.77 183.56 1.82 184.18 1.88 184.69 1.98 185.1 2.15 185.5 2.31 185.81 2.55 186.03 2.85 186.25 3.16 186.41 3.56 186.51 4.06 186.61 4.57 186.67 5.18 186.69 5.92 186.7 6.65 186.72 7.53 186.72 8.55 186.72 9.57 186.7 10.45 186.69 11.18 186.67 11.92 186.61 12.54 186.51 13.04 186.41 13.54 186.25 13.95 186.03 14.25 185.81 14.55 185.5 14.79 185.1 14.95 184.7 15.12 184.19 15.22 183.57 15.28 182.95 15.33 182.19 15.36 181.28 15.36H175.13C174.22 15.36 173.46 15.33 172.84 15.28 172.22 15.22 171.71 15.12 171.3 14.95 170.9 14.79 170.59 14.55 170.37 14.25 170.15 13.95 169.99 13.54 169.89 13.04 169.79 12.54 169.73 11.92 169.72 11.18 169.7 10.45 169.69 9.57 169.69 8.55 169.69 7.53 169.71 6.65 169.72 5.92 169.74 5.18 169.8 4.57 169.9 4.06 170 3.56 170.16 3.16 170.37 2.85 170.59 2.55 170.9 2.31 171.3 2.15 171.71 1.98 172.22 1.88 172.84 1.82 173.46 1.77 174.22 1.75 175.13 1.75ZM222.57 16.72V8.55C222.57 7.59 222.56 6.71 222.53 5.91 222.51 5.12 222.43 4.41 222.29 3.78 222.15 3.15 221.93 2.59 221.64 2.13 221.34 1.66 220.91 1.27 220.36 .961 219.81 .652 219.1 .422 218.25 .27 217.4 .117 216.34 .043 215.09 .043H210.31C209.06 .043 208.01 .117 207.16 .27 206.3 .422 205.6 .652 205.04 .961 204.49 1.27 204.06 1.66 203.76 2.13 203.46 2.59 203.24 3.15 203.1 3.78 202.97 4.41 202.89 5.12 202.86 5.91 202.84 6.71 202.83 7.59 202.83 8.55V16.72H204.88V8.55C204.88 7.53 204.88 6.65 204.9 5.92 204.92 5.18 204.98 4.57 205.08 4.06 205.18 3.56 205.33 3.16 205.55 2.85 205.77 2.55 206.07 2.31 206.48 2.15 206.88 1.98 207.4 1.88 208.02 1.82 208.64 1.77 209.4 1.75 210.31 1.75H215.09C216 1.75 216.76 1.77 217.38 1.82 218 1.88 218.52 1.98 218.92 2.15 219.32 2.31 219.63 2.55 219.85 2.85 220.07 3.16 220.23 3.56 220.33 4.06 220.43 4.57 220.49 5.18 220.51 5.92 220.52 6.65 220.53 7.53 220.53 8.55L220.52 16.72ZM255.02 16.72V15.02H246.85V.383H244.81V15.02H236.64V16.72ZM255.02 16.72%22/%3E%3Cpath d=%22M0 36.68H275.42V35.7H0Z%22/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 275.42 116%22%3E%3Cg transform=%22matrix(1 0 0 -1 0 116)%22 fill=%22%23000%22%3E%3Cpath d=%22M35.78 57.47C35.28 58.39 34.83 59.41 34.43 60.55 34.02 61.68 33.67 62.85 33.39 64.06 31.69 61.68 29.63 59.79 27.22 58.4 24.81 56.99 21.89 56.29 18.45 56.29 12.99 56.29 8.55 57.87 5.13 61.03 1.71 64.18 0 68.38 0 73.62 0 79.33 2.14 83.74 6.41 86.84 10.68 89.94 17.17 91.49 25.89 91.49H32.43V95.58C32.43 98.03 31.86 99.91 30.7 101.22 29.55 102.53 27.77 103.19 25.36 103.19 23.3 103.19 21.77 102.7 20.76 101.72 19.75 100.75 19.25 99.23 19.25 97.18L1.86 97.23 1.75 97.55C1.51 102.8 3.69 107.18 8.29 110.71 12.9 114.23 19 116 26.58 116 33.67 116 39.42 114.23 43.84 110.68 48.25 107.14 50.45 102.07 50.45 95.48V73.78C50.45 70.7 50.71 67.85 51.23 65.23 51.74 62.6 52.51 60 53.54 57.41ZM23.93 69.11C25.7 69.11 27.33 69.46 28.82 70.17 30.3 70.88 31.51 71.8 32.43 72.93V81.92H26.05C23.21 81.92 21.15 81.23 19.86 79.85 18.56 78.47 17.92 76.71 17.92 74.58 17.92 72.95 18.48 71.63 19.59 70.62 20.71 69.61 22.15 69.11 23.93 69.11ZM23.93 69.11%22/%3E%3Cpath d=%22M92.93 99.09 86.39 99.14C84.34 99.14 82.66 98.8 81.34 98.11 80.03 97.42 79.06 96.43 78.42 95.16V57.41H60.45V114.94H77.36L78 106.48C79.2 109.5 80.79 111.84 82.78 113.5 84.77 115.17 87.09 116 89.75 116 90.59 116 91.47 115.94 92.35 115.81 93.23 115.69 94.02 115.54 94.69 115.36ZM92.93 99.09%22/%3E%3Cpath d=%22M125.95 56.29C117.48 56.29 110.72 58.95 105.67 64.27 100.62 69.59 98.09 76.25 98.09 84.26V86.28C98.09 95.03 100.39 102.18 104.98 107.73 109.57 113.28 116.13 116.03 124.68 116 132.47 116 138.59 113.66 143.02 108.98 147.45 104.31 149.66 97.96 149.66 89.95V80.54H116.81L116.7 80.22C117.09 77.28 118.29 74.86 120.32 72.96 122.34 71.07 125.03 70.12 128.4 70.12 131.8 70.12 134.52 70.38 136.56 70.91 138.59 71.44 141.17 72.37 144.29 73.68L148.55 62.73C146.03 60.88 142.78 59.35 138.79 58.13 134.8 56.91 130.52 56.29 125.95 56.29ZM124.68 102.18C122.09 102.18 120.15 101.25 118.85 99.41 117.56 97.57 116.77 95.11 116.49 92.02L116.64 91.76H132.12V93.14C132.12 96.04 131.52 98.28 130.31 99.84 129.1 101.4 127.23 102.18 124.68 102.18ZM124.68 102.18%22/%3E%3Cpath d=%22M173.8 114.94 174.49 106.86C176.37 109.73 178.69 111.97 181.46 113.58 184.22 115.19 187.31 116 190.71 116 196.34 116 200.75 114.18 203.92 110.52 207.09 106.87 208.68 101.06 208.68 93.09V57.41H190.71V93.14C190.71 96.43 190.02 98.77 188.66 100.13 187.3 101.5 185.28 102.18 182.62 102.18 180.96 102.18 179.48 101.88 178.19 101.27 176.89 100.67 175.78 99.84 174.86 98.77V57.41H156.94V114.94ZM173.8 114.94%22/%3E%3Cpath d=%22M262.18 58.92C260.35 59.18 258.72 59.91 257.32 61.1 256.77 61.6 256.18 62.27 255.57 63.11 254.73 64.31 254.06 65.18 253.62 65.74 248.55 71.68 242.55 75.53 235.64 77.28 232.41 78.06 229.49 78.21 226.87 77.68 224.1 77.13 221.89 75.91 220.28 73.95 225.18 83.98 227.92 89.57 228.5 90.71 230.16 93.94 233.02 95.63 237.04 95.81 238.32 95.84 239.87 95.75 241.67 95.49 243.97 95.14 245.14 94.96 245.2 94.96 248.34 94.76 250.91 95.69 252.92 97.76 254.93 99.83 255.81 102.42 255.48 105.51 266.15 84.03 271.68 72.82 272.09 71.86 273.06 69.58 273.08 67.28 272.24 64.98 271.39 62.65 269.85 60.93 267.61 59.82 265.89 58.98 264.08 58.66 262.18 58.92ZM256.36 109.41C255.34 111.43 253.88 113.03 251.96 114.22 250.06 115.42 247.97 116 245.66 116 243.39 116 241.29 115.42 239.4 114.22 237.5 113.03 236.05 111.43 235.03 109.41L235 109.33C223.43 86.07 217.43 73.93 216.97 72.85 215.77 69.96 215.71 67.02 216.79 64.08 217.9 61.13 219.85 58.98 222.65 57.58 225.35 56.21 228.15 55.95 231.07 56.73 233.98 57.52 236.25 59.18 237.91 61.72 239.75 64.51 242.34 65.91 245.69 65.91 249.04 65.91 251.64 64.51 253.47 61.72 255.83 58.13 259.16 56.32 263.44 56.32 267.69 56.32 270.98 58.1 273.34 61.66 275.7 65.21 276.06 68.94 274.39 72.85 273.93 73.95 267.93 86.11 256.39 109.33ZM256.36 109.41%22/%3E%3Cpath d=%22M31.38 9.57C32.5 9.57 33.47 9.53 34.27 9.43 35.07 9.34 35.74 9.2 36.29 9.02 36.84 8.84 37.28 8.62 37.6 8.35 37.93 8.08 38.18 7.77 38.36 7.43 38.53 7.09 38.65 6.7 38.7 6.27 38.76 5.85 38.78 5.39 38.78 4.89 38.78 4.39 38.74 3.93 38.65 3.49 38.56 3.06 38.41 2.66 38.18 2.3 37.95 1.94 37.65 1.61 37.25 1.33 36.86 1.05 36.37 .805 35.77 .605 35.16 .406 34.44 .258 33.59 .152 32.74 .051 31.75 0 30.62 0H27.89C26.88 0 25.98 .039 25.21 .117 24.45 .195 23.79 .313 23.23 .473 22.68 .633 22.23 .836 21.86 1.08 21.5 1.32 21.21 1.61 21 1.94 20.78 2.27 20.63 2.65 20.55 3.07 20.46 3.49 20.42 3.96 20.42 4.46H22.46C22.46 3.83 22.55 3.33 22.73 2.97 22.92 2.6 23.23 2.34 23.65 2.15 24.08 1.97 24.63 1.86 25.32 1.81 26.02 1.77 26.88 1.75 27.89 1.75H30.62C31.81 1.75 32.8 1.8 33.59 1.91 34.37 2.03 35 2.21 35.47 2.46 35.93 2.7 36.27 3.03 36.46 3.43 36.65 3.83 36.74 4.32 36.74 4.89 36.74 5.46 36.68 5.95 36.55 6.33 36.41 6.71 36.16 7.02 35.77 7.24 35.38 7.47 34.84 7.63 34.14 7.73 33.43 7.82 32.52 7.87 31.38 7.87H28.57C27.33 7.87 26.26 7.92 25.37 8.01 24.48 8.1 23.73 8.23 23.13 8.41 22.53 8.58 22.05 8.8 21.68 9.05 21.32 9.32 21.05 9.61 20.86 9.95 20.67 10.28 20.55 10.65 20.49 11.05 20.43 11.46 20.41 11.9 20.41 12.38 20.41 12.88 20.45 13.34 20.54 13.76 20.63 14.19 20.79 14.57 21.04 14.91 21.28 15.26 21.61 15.57 22.02 15.84 22.44 16.11 22.98 16.33 23.64 16.51 24.29 16.69 25.08 16.83 26 16.92 26.92 17.01 28.01 17.06 29.25 17.06H31.3C32.32 17.06 33.21 17.02 33.98 16.95 34.74 16.87 35.4 16.75 35.96 16.6 36.51 16.44 36.97 16.24 37.33 16 37.7 15.76 37.99 15.48 38.21 15.15 38.42 14.82 38.57 14.45 38.66 14.03 38.74 13.61 38.78 13.14 38.78 12.63H36.74C36.74 13.27 36.65 13.77 36.47 14.13 36.28 14.5 35.98 14.77 35.55 14.95 35.12 15.13 34.57 15.24 33.87 15.29 33.18 15.34 32.32 15.36 31.3 15.36H29.25C27.89 15.36 26.77 15.31 25.89 15.21 25.02 15.12 24.32 14.96 23.81 14.73 23.3 14.5 22.95 14.2 22.75 13.82 22.55 13.43 22.45 12.95 22.45 12.38 22.45 12.02 22.47 11.71 22.52 11.43 22.57 11.16 22.68 10.91 22.83 10.7 22.98 10.5 23.2 10.32 23.47 10.18 23.75 10.04 24.11 9.92 24.57 9.83 25.02 9.73 25.57 9.67 26.23 9.63 26.89 9.59 27.67 9.57 28.57 9.57ZM66.48 17.06C67.72 17.06 68.77 16.98 69.63 16.83 70.48 16.68 71.19 16.45 71.74 16.14 72.29 15.83 72.72 15.44 73.02 14.97 73.31 14.51 73.53 13.96 73.67 13.32 73.81 12.7 73.89 11.98 73.91 11.19 73.94 10.39 73.95 9.52 73.95 8.55 73.95 7.59 73.94 6.71 73.91 5.91 73.89 5.12 73.81 4.41 73.67 3.78 73.53 3.15 73.31 2.59 73.02 2.13 72.72 1.66 72.29 1.27 71.74 .961 71.19 .652 70.48 .422 69.63 .27 68.77 .117 67.72 .043 66.48 .043H60.33C59.08 .043 58.03 .117 57.18 .27 56.32 .422 55.62 .652 55.06 .961 54.51 1.27 54.08 1.66 53.78 2.13 53.48 2.59 53.26 3.15 53.12 3.78 52.98 4.41 52.91 5.12 52.88 5.91 52.86 6.71 52.85 7.59 52.85 8.55 52.85 9.52 52.86 10.39 52.88 11.19 52.91 11.98 52.98 12.7 53.12 13.32 53.26 13.96 53.48 14.51 53.78 14.97 54.08 15.44 54.51 15.83 55.06 16.14 55.62 16.45 56.32 16.68 57.18 16.83 58.03 16.98 59.08 17.06 60.33 17.06ZM66.48 1.75C67.38 1.75 68.14 1.77 68.76 1.82 69.38 1.88 69.89 1.98 70.29 2.15 70.7 2.31 71.01 2.55 71.23 2.85 71.45 3.16 71.61 3.56 71.71 4.06 71.81 4.57 71.87 5.18 71.88 5.92 71.9 6.65 71.91 7.53 71.91 8.55 71.91 9.57 71.9 10.45 71.88 11.18 71.87 11.92 71.81 12.54 71.71 13.04 71.61 13.54 71.45 13.95 71.23 14.25 71.01 14.55 70.7 14.79 70.3 14.95 69.9 15.12 69.39 15.22 68.77 15.28 68.15 15.33 67.38 15.36 66.48 15.36H60.33C59.42 15.36 58.66 15.33 58.03 15.28 57.41 15.22 56.9 15.12 56.5 14.95 56.09 14.79 55.78 14.55 55.56 14.25 55.34 13.95 55.18 13.54 55.09 13.04 54.98 12.54 54.93 11.92 54.91 11.18 54.9 10.45 54.9 9.57 54.9 8.55 54.9 7.53 54.9 6.65 54.92 5.92 54.94 5.18 55 4.57 55.09 4.06 55.2 3.56 55.35 3.16 55.57 2.85 55.78 2.55 56.09 2.31 56.5 2.15 56.9 1.98 57.41 1.88 58.03 1.82 58.66 1.77 59.42 1.75 60.33 1.75ZM88.7 .383V16.72H90.74V2.09H103.67V.383ZM129.98 2.09C130.88 2.09 131.65 2.11 132.27 2.16 132.89 2.21 133.41 2.31 133.81 2.46 134.22 2.61 134.53 2.84 134.75 3.12 134.97 3.42 135.13 3.8 135.23 4.28 135.33 4.76 135.4 5.35 135.41 6.05 135.43 6.75 135.44 7.58 135.44 8.55 135.44 9.52 135.43 10.36 135.41 11.05 135.4 11.75 135.33 12.34 135.23 12.82 135.13 13.3 134.97 13.68 134.75 13.98 134.53 14.27 134.22 14.49 133.81 14.64 133.41 14.79 132.9 14.89 132.27 14.94 131.65 14.99 130.89 15.02 129.98 15.02H119.78V2.09ZM117.74 .383V16.72H129.98C131.23 16.72 132.28 16.64 133.13 16.5 133.99 16.36 134.69 16.13 135.25 15.84 135.81 15.54 136.24 15.16 136.54 14.72 136.84 14.27 137.06 13.75 137.2 13.14 137.34 12.54 137.42 11.85 137.44 11.09 137.47 10.32 137.48 9.48 137.48 8.55 137.48 7.62 137.47 6.78 137.44 6.02 137.42 5.25 137.34 4.57 137.2 3.96 137.06 3.35 136.84 2.83 136.54 2.38 136.24 1.94 135.81 1.56 135.25 1.27 134.69 .969 133.99 .746 133.13 .602 132.28 .457 131.23 .383 129.98 .383ZM181.28 17.06C182.53 17.06 183.58 16.98 184.43 16.83 185.28 16.68 185.99 16.45 186.54 16.14 187.1 15.83 187.52 15.44 187.82 14.97 188.12 14.51 188.34 13.96 188.47 13.32 188.61 12.7 188.69 11.98 188.72 11.19 188.74 10.39 188.75 9.52 188.75 8.55 188.75 7.59 188.74 6.71 188.72 5.91 188.69 5.12 188.61 4.41 188.47 3.78 188.34 3.15 188.12 2.59 187.82 2.13 187.52 1.66 187.1 1.27 186.54 .961 185.99 .652 185.28 .422 184.43 .27 183.58 .117 182.53 .043 181.28 .043H175.13C173.88 .043 172.83 .117 171.98 .27 171.12 .422 170.42 .652 169.87 .961 169.31 1.27 168.89 1.66 168.59 2.13 168.28 2.59 168.06 3.15 167.93 3.78 167.79 4.41 167.71 5.12 167.69 5.91 167.66 6.71 167.66 7.59 167.66 8.55 167.66 9.52 167.66 10.39 167.69 11.19 167.71 11.98 167.79 12.7 167.93 13.32 168.06 13.96 168.28 14.51 168.59 14.97 168.89 15.44 169.31 15.83 169.87 16.14 170.42 16.45 171.12 16.68 171.98 16.83 172.83 16.98 173.88 17.06 175.13 17.06ZM181.28 1.75C182.18 1.75 182.94 1.77 183.56 1.82 184.18 1.88 184.69 1.98 185.1 2.15 185.5 2.31 185.81 2.55 186.03 2.85 186.25 3.16 186.41 3.56 186.51 4.06 186.61 4.57 186.67 5.18 186.69 5.92 186.7 6.65 186.72 7.53 186.72 8.55 186.72 9.57 186.7 10.45 186.69 11.18 186.67 11.92 186.61 12.54 186.51 13.04 186.41 13.54 186.25 13.95 186.03 14.25 185.81 14.55 185.5 14.79 185.1 14.95 184.7 15.12 184.19 15.22 183.57 15.28 182.95 15.33 182.19 15.36 181.28 15.36H175.13C174.22 15.36 173.46 15.33 172.84 15.28 172.22 15.22 171.71 15.12 171.3 14.95 170.9 14.79 170.59 14.55 170.37 14.25 170.15 13.95 169.99 13.54 169.89 13.04 169.79 12.54 169.73 11.92 169.72 11.18 169.7 10.45 169.69 9.57 169.69 8.55 169.69 7.53 169.71 6.65 169.72 5.92 169.74 5.18 169.8 4.57 169.9 4.06 170 3.56 170.16 3.16 170.37 2.85 170.59 2.55 170.9 2.31 171.3 2.15 171.71 1.98 172.22 1.88 172.84 1.82 173.46 1.77 174.22 1.75 175.13 1.75ZM222.57 16.72V8.55C222.57 7.59 222.56 6.71 222.53 5.91 222.51 5.12 222.43 4.41 222.29 3.78 222.15 3.15 221.93 2.59 221.64 2.13 221.34 1.66 220.91 1.27 220.36 .961 219.81 .652 219.1 .422 218.25 .27 217.4 .117 216.34 .043 215.09 .043H210.31C209.06 .043 208.01 .117 207.16 .27 206.3 .422 205.6 .652 205.04 .961 204.49 1.27 204.06 1.66 203.76 2.13 203.46 2.59 203.24 3.15 203.1 3.78 202.97 4.41 202.89 5.12 202.86 5.91 202.84 6.71 202.83 7.59 202.83 8.55V16.72H204.88V8.55C204.88 7.53 204.88 6.65 204.9 5.92 204.92 5.18 204.98 4.57 205.08 4.06 205.18 3.56 205.33 3.16 205.55 2.85 205.77 2.55 206.07 2.31 206.48 2.15 206.88 1.98 207.4 1.88 208.02 1.82 208.64 1.77 209.4 1.75 210.31 1.75H215.09C216 1.75 216.76 1.77 217.38 1.82 218 1.88 218.52 1.98 218.92 2.15 219.32 2.31 219.63 2.55 219.85 2.85 220.07 3.16 220.23 3.56 220.33 4.06 220.43 4.57 220.49 5.18 220.51 5.92 220.52 6.65 220.53 7.53 220.53 8.55L220.52 16.72ZM255.02 16.72V15.02H246.85V.383H244.81V15.02H236.64V16.72ZM255.02 16.72%22/%3E%3Cpath d=%22M0 36.68H275.42V35.7H0Z%22/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat}
+.logo-sm{--logo-w:96px}
+.mark{display:inline-block;width:var(--mark-w,28px);aspect-ratio:60.4/60.06;background:var(--logo);-webkit-mask:url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22215.7 0 60.4 60.06%22%3E%3Cg transform=%22matrix(1 0 0 -1 0 116)%22 fill=%22%23000%22%3E%3Cpath d=%22M262.18 58.92C260.35 59.18 258.72 59.91 257.32 61.1 256.77 61.6 256.18 62.27 255.57 63.11 254.73 64.31 254.06 65.18 253.62 65.74 248.55 71.68 242.55 75.53 235.64 77.28 232.41 78.06 229.49 78.21 226.87 77.68 224.1 77.13 221.89 75.91 220.28 73.95 225.18 83.98 227.92 89.57 228.5 90.71 230.16 93.94 233.02 95.63 237.04 95.81 238.32 95.84 239.87 95.75 241.67 95.49 243.97 95.14 245.14 94.96 245.2 94.96 248.34 94.76 250.91 95.69 252.92 97.76 254.93 99.83 255.81 102.42 255.48 105.51 266.15 84.03 271.68 72.82 272.09 71.86 273.06 69.58 273.08 67.28 272.24 64.98 271.39 62.65 269.85 60.93 267.61 59.82 265.89 58.98 264.08 58.66 262.18 58.92ZM256.36 109.41C255.34 111.43 253.88 113.03 251.96 114.22 250.06 115.42 247.97 116 245.66 116 243.39 116 241.29 115.42 239.4 114.22 237.5 113.03 236.05 111.43 235.03 109.41L235 109.33C223.43 86.07 217.43 73.93 216.97 72.85 215.77 69.96 215.71 67.02 216.79 64.08 217.9 61.13 219.85 58.98 222.65 57.58 225.35 56.21 228.15 55.95 231.07 56.73 233.98 57.52 236.25 59.18 237.91 61.72 239.75 64.51 242.34 65.91 245.69 65.91 249.04 65.91 251.64 64.51 253.47 61.72 255.83 58.13 259.16 56.32 263.44 56.32 267.69 56.32 270.98 58.1 273.34 61.66 275.7 65.21 276.06 68.94 274.39 72.85 273.93 73.95 267.93 86.11 256.39 109.33ZM256.36 109.41%22/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22215.7 0 60.4 60.06%22%3E%3Cg transform=%22matrix(1 0 0 -1 0 116)%22 fill=%22%23000%22%3E%3Cpath d=%22M262.18 58.92C260.35 59.18 258.72 59.91 257.32 61.1 256.77 61.6 256.18 62.27 255.57 63.11 254.73 64.31 254.06 65.18 253.62 65.74 248.55 71.68 242.55 75.53 235.64 77.28 232.41 78.06 229.49 78.21 226.87 77.68 224.1 77.13 221.89 75.91 220.28 73.95 225.18 83.98 227.92 89.57 228.5 90.71 230.16 93.94 233.02 95.63 237.04 95.81 238.32 95.84 239.87 95.75 241.67 95.49 243.97 95.14 245.14 94.96 245.2 94.96 248.34 94.76 250.91 95.69 252.92 97.76 254.93 99.83 255.81 102.42 255.48 105.51 266.15 84.03 271.68 72.82 272.09 71.86 273.06 69.58 273.08 67.28 272.24 64.98 271.39 62.65 269.85 60.93 267.61 59.82 265.89 58.98 264.08 58.66 262.18 58.92ZM256.36 109.41C255.34 111.43 253.88 113.03 251.96 114.22 250.06 115.42 247.97 116 245.66 116 243.39 116 241.29 115.42 239.4 114.22 237.5 113.03 236.05 111.43 235.03 109.41L235 109.33C223.43 86.07 217.43 73.93 216.97 72.85 215.77 69.96 215.71 67.02 216.79 64.08 217.9 61.13 219.85 58.98 222.65 57.58 225.35 56.21 228.15 55.95 231.07 56.73 233.98 57.52 236.25 59.18 237.91 61.72 239.75 64.51 242.34 65.91 245.69 65.91 249.04 65.91 251.64 64.51 253.47 61.72 255.83 58.13 259.16 56.32 263.44 56.32 267.69 56.32 270.98 58.1 273.34 61.66 275.7 65.21 276.06 68.94 274.39 72.85 273.93 73.95 267.93 86.11 256.39 109.33ZM256.36 109.41%22/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat}
+
+/* Iteration 2 (founders' review 08.10) */
+.ways{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:40px}
+.way{padding:26px 24px;display:grid;gap:12px;align-content:start}
+.way h3{font-size:21px;letter-spacing:-0.02em}
+.way p{color:var(--fg-2);font-size:15.5px}
+.way-list{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:8px;font-size:14.5px;color:var(--fg-2)}
+.way-list li{position:relative;padding-inline-start:22px}
+.way-list li::before{content:"";position:absolute;left:0;top:7px;width:12px;height:12px;border-radius:50%;background:var(--surface-2);background-image:linear-gradient(var(--fg-3),var(--fg-3));background-size:5px 5px;background-repeat:no-repeat;background-position:center}
+@media (max-width:760px){.ways{grid-template-columns:minmax(0,1fr)}}
+.bento.qa .tile{gap:10px}
+.bento.qa .tile h3{font-size:18px}
+.bento.qa .tile p{font-size:14.5px}
+.bento.qa .tile .vis{margin-top:6px}
+@media (max-width:980px){.bento.qa .t-2{grid-column:span 3}}
+@media (max-width:700px){.bento.qa .t-2{grid-column:span 6}}
+.ec-band{background:var(--surface-2);border-block:1px solid var(--line)}
+.ec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(28px,5vw,64px);align-items:center}
+.ec .devlist li{border-bottom-color:var(--line);font-size:15px}
+.ec-mock{padding:18px 18px 14px;display:grid;gap:12px;overflow:hidden}
+.ec-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:14.5px}
+.ec-head .pill{color:var(--ok);background:var(--ok-soft);border-color:transparent}
+.ec-k{color:var(--fg-3);font-size:13px;margin-inline-start:auto}
+.ec-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.ec-table th{text-align:left;font-weight:600;color:var(--fg-3);font-size:12.5px;padding:6px 8px;border-bottom:1px solid var(--line)}
+.ec-table td{padding:9px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+.ec-table .num{text-align:right}
+.ec-table .mono{font-size:12.5px;color:var(--fg-2)}
+.st{display:inline-block;padding:2px 8px;border-radius:6px;font-size:12px;font-weight:600;background:var(--surface-2);color:var(--fg-2)}
+.st.ok{background:var(--ok-soft);color:var(--ok)}
+.st.warn{background:var(--warn-soft);color:var(--warn)}
+.ec-foot{display:flex;gap:14px;font-size:13px;color:var(--accent);font-weight:600;flex-wrap:wrap}
+@media (max-width:900px){.ec{grid-template-columns:minmax(0,1fr)}.ec-table th:nth-child(3),.ec-table td:nth-child(3){display:none}}
+.flow-row.five{grid-template-columns:1fr auto 1fr auto 1fr auto 1fr auto 1fr}
+.flow-row .node{font-size:13px;padding:10px 10px}
+@media (max-width:900px){.flow-row,.flow-row.five{grid-template-columns:minmax(0,1fr);gap:6px}.flow-row .arrow{justify-self:center;transform:rotate(90deg)}}
+.sols.six{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:980px){.sols.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.sols.six{grid-template-columns:minmax(0,1fr)}}
+.clients{border-top:1px solid var(--line)}
+.marks-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.marks-grid span{display:grid;gap:3px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);font-weight:700;letter-spacing:-0.02em;font-size:15px}
+.marks-grid small{font-weight:500;color:var(--fg-3);font-size:12.5px}
+@media (max-width:560px){.marks-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.log.scroll{max-height:360px;overflow:auto;padding-inline-end:6px;scrollbar-width:thin}
+
+/* Iteration 3 (founders' second review 08.10) */
+.ec-v3{grid-template-columns:minmax(0,1fr)}
+.ec-strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(min(420px,88vw),1fr);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-block:4px 10px;scrollbar-width:thin}
+.ec-strip .ec-mock{scroll-snap-align:start;min-width:0}
+.ec-form{display:grid;gap:8px;font-size:13.5px}
+.ec-row{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}
+.ec-row span{color:var(--fg-3)}
+.ec-row b{font-weight:600}
+.ec-cap{font-family:var(--mono);font-size:12px;color:var(--fg-3);margin-top:auto}
+.ec-ladder .rung{grid-template-columns:52px 1fr auto}
+.sols.many{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:980px){.sols.many{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.sols.many{grid-template-columns:minmax(0,1fr)}}
+.marks-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:900px){.marks-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.marks-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+
+<header class="header">
+  <div class="wrap nav">
+    <a class="wordmark" href="#top" aria-label="arena sold out, home"><span class="logo" role="img" aria-label="arena sold out"></span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#how">How it works</a><a href="#who">Who it is for</a><a href="#pricing">Pricing</a><a href="#center">Event center</a><a href="#changes">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <a class="signin" href="#start">Sign in</a>
+      <button class="lang" type="button" aria-label="Language: English">EN <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+      <button class="icon-btn" type="button" id="themeBtn" aria-label="Toggle dark theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm" href="#start">Start selling</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="mesh" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">Ticketing platform for organizers</p>
+      <h1 class="reveal">Sell seats. Sell tickets. Keep the money.</h1>
+      <p class="lead reveal">Put your event on sale in minutes, on your own site or on a page we host. Buyers pay into your own payment account. Every ticket and every payout stays under your control.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#start">Start selling</a>
+        <a class="btn btn-band" href="#how">Create your event</a>
+      </div>
+      <p class="hero-note reveal">Connect your payment account in minutes. Events without a seating plan go on sale today.</p>
+    </div>
+
+    <div class="widget" role="group" aria-label="Ticket widget preview">
+      <div class="w-head">
+        <div>
+          <div class="w-title">Autumn Jazz Night</div>
+          <div class="w-meta">Fri 24 Oct · 19:30 · Palác Akropolis, Prague</div>
+        </div>
+        <div class="w-chips"><span class="chip on">Fri 24 Oct</span><span class="chip">Sat 25 Oct</span></div>
+      </div>
+      <div class="w-map">
+        <div class="stage">Stage</div>
+        <svg class="seatmap" id="seatmap" viewBox="0 0 420 206" role="img" aria-label="Seat map: rows A to J, two seats selected in row G"></svg>
+      </div>
+      <div class="legend">
+        <span><i class="l1"></i>Parterre €38</span><span><i class="l2"></i>Balcony €24</span><span><i class="l3"></i>Sold</span><span><i class="l4"></i>Selected</span>
+      </div>
+      <div class="w-cart">
+        <div class="w-left">
+          <div class="w-line"><b>Row G · Seats 7, 8</b><span class="num">2 × €38.00</span></div>
+          <div class="w-sub">Parterre</div>
+          <div class="w-line w-sub"><span>Service fee 5%</span><span class="num">€3.80</span></div>
+          <div class="w-total"><span class="timer"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Held for <span class="mono" id="timer">09:41</span></span><span class="sum num">€79.80</span></div>
+        </div>
+        <button class="w-pay" type="button">Pay €79.80
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap trust-row">
+    <div class="facts" style="margin-inline-start:0"><span>Organizers in <b>35</b> countries since 2019</span><span><b>800</b> orders a minute in load tests</span><span>Tickets in <b>7</b> languages</span><span>Payouts go to <b>your</b> account</span></div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 class="h2">On sale today. Three questions organizers ask first.</h2>
+    <ol class="steps" style="padding:0;margin-block:40px 0;list-style:none">
+      <li class="step"><h3>How fast can I go on sale?</h3><p>An event without a seating plan is on sale within the hour: name, dates, prices, your poster, your payment account, done. A seated venue takes a seating plan, which we draw with you from your plan or SVG, usually within a day.</p></li>
+      <li class="step"><h3>What do I need?</h3><p>The event name and schedule, your ticket prices, your poster, and your own payment account: Stripe, Flitt, AllPay or another provider of your country. Money goes to you from the first ticket.</p></li>
+      <li class="step"><h3>Which way do I set it up?</h3><p>In the browser, in the event center. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. Or send it to us and we set it up.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="where" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Where you sell</p>
+    <h2 class="h2">Your site, or ours. The money goes to you either way.</h2>
+    <div class="ways">
+      <article class="card way">
+        <h3>You have a site</h3>
+        <p>Your site is the checkout. Embed the ticket widget on any page: WordPress, Tilda, Wix, Webflow or custom code. Buyers never leave your domain.</p>
+        <ul class="way-list"><li>Widget on any site, three lines of code</li><li>WordPress plugin with WooCommerce orders</li><li>Your colours, your fonts, your language</li></ul>
+      </article>
+      <article class="card way">
+        <h3>You do not have a site</h3>
+        <p>We host the sales page: tickets.arenasoldout.com/your-name/your-event. Share one link in social media, messengers and on the poster.</p>
+        <ul class="way-list"><li>A page per organizer and per event</li><li>A separate page for each promoter</li><li>Ready in minutes, no design work</li><li>Links to your partner sellers on the same page</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="answers" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">What organizers ask next</p>
+    <h2 class="h2">Yes. And here is how.</h2>
+    <div class="bento qa">
+      <article class="tile t-2"><h3>Can I use promo codes?</h3><p>Yes. A code can apply to one event, one session or one category, with a window, a minimum and a per-buyer limit.</p></article>
+      <article class="tile t-2"><h3>Can prices change on a date I set?</h3><p>Yes. Early-bird windows switch by date and time. Quantity steps open the next price when the current one sells out.</p>
+        <div class="vis ladder">
+          <div class="rung"><span class="pr">€24</span><span class="bar"><i style="width:100%"></i></span><span class="lb">first 100 · sold</span></div>
+          <div class="rung"><span class="pr">€32</span><span class="bar"><i style="width:62%"></i></span><span class="lb">next 150 · selling</span></div>
+          <div class="rung"><span class="pr">€38</span><span class="bar next"><i style="width:0"></i></span><span class="lb">opens after</span></div>
+        </div></article>
+      <article class="tile t-2"><h3>Several prices for one event?</h3><p>Yes. Categories with their own price, quota and sale window, plus free and pay-what-you-want tickets.</p></article>
+      <article class="tile t-2"><h3>Can I add a service fee?</h3><p>Yes. A percentage per sales channel, shown to the buyer as a separate line and paid into your account with the ticket.</p></article>
+      <article class="tile t-2"><h3>With seats and without?</h3><p>Yes, and both in one event: a seating plan with categories, standing areas with quotas. Send us your venue plan as a PDF, a spreadsheet or a hand sketch: we build it into your event. You never draw it yourself.</p>
+        <div class="vis">
+          <svg class="hall" viewBox="0 0 640 220" role="img" aria-label="Venue plan with parterre, two loges, a balcony and a standing area">
+            <rect class="stg" x="200" y="10" width="240" height="18" rx="6"/><text class="lbl" x="320" y="23" text-anchor="middle">Stage</text>
+            <path class="sec" d="M160 48 h320 l20 70 h-360 z"/><text class="lbl" x="320" y="90" text-anchor="middle">Parterre · 312</text>
+            <path class="sec2" d="M20 60 l120 -8 v70 l-120 20 z"/><text class="lbl" x="80" y="100" text-anchor="middle">Loge L · 48</text>
+            <path class="sec2" d="M620 60 l-120 -8 v70 l120 20 z"/><text class="lbl" x="560" y="100" text-anchor="middle">Loge R · 48</text>
+            <path class="sec2" d="M120 140 h400 l30 60 h-460 z"/><text class="lbl" x="320" y="176" text-anchor="middle">Balcony · 180</text>
+            <rect class="sec" x="20" y="150" width="80" height="50" rx="6" style="fill:var(--surface-2);stroke:var(--line-2);stroke-dasharray:3 3"/><text class="lbl" x="60" y="179" text-anchor="middle">Standing</text>
+          </svg>
+        </div></article>
+      <article class="tile t-2"><h3>Does a scanner work with the tickets?</h3><p>Yes. Every ticket is a PDF with an EAN-13 barcode and a QR, in the buyer's language. Scan at the door with the scanner app for iOS and Android or a handheld scanner. The app also takes tickets sold by your partners in other systems.</p>
+        <div class="vis">
+          <div class="ticket">
+            <div class="stub"><div class="ev">Autumn Jazz Night</div><div class="md">Fri 24 Oct · 19:30 · Palác Akropolis</div><div class="seat">Parterre · Row G · Seat 7</div></div>
+            <div class="code"><svg viewBox="0 0 96 40" aria-hidden="true" id="ean"></svg><span class="n">2 1 7 3 0 4 9 1 8 8 2 5 6</span></div>
+          </div>
+        </div></article>
+      <article class="tile t-2"><h3>How do I see my sales?</h3><p>In seconds: every sale and refund lands in your Telegram group with the buyer's contact. And in your own account on this site, the event center: open it on a phone or a computer, nothing to install. All your events, every order, refunds and per-session totals, visible to you and your team only. <a href="#center" style="color:var(--accent);font-weight:600">See the event center below →</a></p>
+        <div class="vis"><div class="tg"><div class="from">Arena Sales</div><div><b>Paid</b> · Autumn Jazz Night · Fri 24 Oct<br>Row G 7–8 · Parterre<br><b>€76.00</b> · Anna K. · +420 ••• 41 18</div><div class="t">19:42</div></div></div></article>
+      <article class="tile t-2"><h3>Refunds, invitations, date changes?</h3><p>Yes, from your event center account. Refund a ticket, issue invitations, move or cancel a session: buyers get an e-mail in their language with the updated ticket.</p></article>
+      <article class="tile t-2"><h3>Will it hold a stadium?</h3><p>Yes. 800 orders a minute with 1,000 buyers on the page at once in load tests, nightly encrypted backups, a watchdog that alerts us before you notice.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section ec-band" id="center">
+  <div class="wrap ec ec-v3">
+    <div>
+      <p class="eyebrow">Event center</p>
+      <h2 class="h2">Orders, tickets, refunds and invitations in one place</h2>
+      <p class="lead">The event center is your own account on arenasoldout.com. Open it on a phone or a computer, nothing to install. Every event you run, every order, refunds, invitations and sales figures: visible to you and your team only. Scroll the screens to see what it does.</p>
+      <ul class="devlist" style="margin-top:22px">
+        <li>Orders and buyers, with search and CSV reports per session</li>
+        <li>Tickets: resend, refund, invite</li>
+        <li>Sessions: add dates, move or cancel with buyer e-mails</li>
+        <li>Prices, categories, promo codes, service fee</li>
+        <li>Team roles: owner, manager</li>
+      </ul>
+      <p class="hero-note" style="margin-top:18px">Prefer Telegram? The same event center lives in the bot: create an event from a poster photo, get every sale in your group.</p>
+    </div>
+    <div class="ec-strip" aria-label="Event center screens, scroll sideways">
+      <div class="card ec-mock" role="img" aria-label="Event center: orders list">
+        <div class="ec-head"><b>Autumn Jazz Night</b><span class="pill">On sale</span><span class="ec-k">Fri 24 Oct · 312 of 408 sold</span></div>
+        <table class="ec-table">
+          <thead><tr><th>Order</th><th>Buyer</th><th>Seats</th><th class="num">Total</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">1000000512</td><td>Anna K.</td><td>G 7–8</td><td class="num">€79.80</td><td><span class="st ok">Paid</span></td></tr>
+            <tr><td class="mono">1000000511</td><td>Tomáš V.</td><td>H 6–7</td><td class="num">€51.00</td><td><span class="st ok">Paid</span></td></tr>
+            <tr><td class="mono">1000000509</td><td>Marta S.</td><td>C 2</td><td class="num">€38.00</td><td><span class="st">Refunded</span></td></tr>
+            <tr><td class="mono">1000000508</td><td>Press</td><td>A 1–4</td><td class="num">€0.00</td><td><span class="st">Invitation</span></td></tr>
+            <tr><td class="mono">1000000507</td><td>Jana R.</td><td>I 8–9</td><td class="num">€48.00</td><td><span class="st warn">Pending</span></td></tr>
+          </tbody>
+        </table>
+        <div class="ec-foot"><span>Export CSV</span><span>Send invitations</span><span>Move session</span></div>
+        <div class="ec-cap">1 · Orders</div>
+      </div>
+      <div class="card ec-mock" role="img" aria-label="Event center: refund a ticket">
+        <div class="ec-head"><b>Order 1000000509</b><span class="st">Refund</span><span class="ec-k">Marta S. · C 2 · €38.00</span></div>
+        <div class="ec-form">
+          <div class="ec-row"><span>Ticket</span><b>Parterre · Row C · Seat 2</b></div>
+          <div class="ec-row"><span>Paid</span><b>€38.00 · card · 12 Oct</b></div>
+          <div class="ec-row"><span>Refund</span><b>€38.00 to the buyer's card</b></div>
+          <div class="ec-row"><span>Seat</span><b>returns to sale</b></div>
+          <div class="ec-row"><span>Buyer e-mail</span><b>sent in Czech</b></div>
+        </div>
+        <div class="ec-foot"><span class="btn btn-primary btn-sm" style="pointer-events:none">Refund ticket</span><span>Cancel</span></div>
+        <div class="ec-cap">2 · Refund a ticket</div>
+      </div>
+      <div class="card ec-mock" role="img" aria-label="Event center: sales by session">
+        <div class="ec-head"><b>Sales by session</b><span class="ec-k">October · €11,284 · 4 sessions</span></div>
+        <div class="ladder ec-ladder">
+          <div class="rung"><span class="pr">Fri 24</span><span class="bar"><i style="width:76%"></i></span><span class="lb">312 / 408 · €8,940</span></div>
+          <div class="rung"><span class="pr">Sat 25</span><span class="bar"><i style="width:34%"></i></span><span class="lb">139 / 408 · €2,344</span></div>
+          <div class="rung"><span class="pr">Sun 26</span><span class="bar"><i style="width:0"></i></span><span class="lb">not on sale yet</span></div>
+        </div>
+        <div class="ec-form" style="margin-top:4px">
+          <div class="ec-row"><span>Sources</span><b>your site 61% · hosted page 29% · partners 10%</b></div>
+          <div class="ec-row"><span>Refunds</span><b>3 tickets · €114.00</b></div>
+        </div>
+        <div class="ec-foot"><span>CSV per session</span><span>Export to CRM</span></div>
+        <div class="ec-cap">3 · Sales and sources</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="money section" id="money">
+  <div class="wrap">
+    <div class="money-grid">
+      <div>
+        <p class="eyebrow">Money</p>
+        <h2 class="h2">Buyers pay you. Not us.</h2>
+        <p class="lead">100% of every sale goes to you. The buyer pays the ticket price, and the service fee if you add one, straight into your own payment account, in your currency, on your statement. Arena never holds your money. After each session you pay Arena for the platform service, per event. Refunds and chargebacks are your decision, not a platform policy.</p>
+      </div>
+      <div class="flow" aria-label="Payment flow">
+        <div class="flow-row five">
+          <div class="node">Buyer<small>card, Apple Pay, Google Pay</small></div><span class="arrow">→</span>
+          <div class="node">Your site<small>or the sales page we host</small></div><span class="arrow">→</span>
+          <div class="node">Arena<small>order, seats, ticket</small></div><span class="arrow">→</span>
+          <div class="node hi">Your payment account<small>Stripe · Flitt · AllPay</small></div><span class="arrow">→</span>
+          <div class="node">Your bank<small>on the provider's schedule</small></div>
+        </div>
+        <div class="flow-note"><i aria-hidden="true"></i>After each session you pay Arena for the platform service. Nothing is deducted from your sales, nothing is held.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h2 class="h2">Per ticket. No subscription.</h2>
+    <p class="lead">Platform fee only. Card acquiring is paid to your provider on its own terms, which depend on your acquirer and your bank.</p>
+    <div class="plans">
+      <div class="card plan hi"><div class="reg">EU</div><div class="big num">€1.00<small>per ticket</small></div>
+        <ul><li><b>+€0.50</b> per ticket on events with a seating plan</li><li><b>Free</b> invitations and refunds, no fee</li><li>Name Arena Sold Out as the ticketing partner on your event page</li></ul>
+        <a class="btn btn-primary" href="#start">Start selling</a></div>
+      <div class="card plan"><div class="reg">US</div><div class="big num">$1.00<small>per ticket</small></div>
+        <ul><li><b>+$0.50</b> per ticket on events with a seating plan</li><li><b>Free</b> invitations and refunds, no fee</li><li>Name Arena Sold Out as the ticketing partner on your event page</li></ul>
+        <a class="btn btn-ghost" href="#start">Start selling</a></div>
+      <div class="card plan"><div class="reg">World</div><div class="big num">$1.00<small>per ticket</small></div>
+        <ul><li><b>+$0.50</b> per ticket on events with a seating plan</li><li><b>Free</b> invitations and refunds, no fee</li><li>Name Arena Sold Out as the ticketing partner on your event page</li></ul>
+        <a class="btn btn-ghost" href="#start">Start selling</a></div>
+    </div>
+    <div class="card venues"><div class="big num">2%</div><p><b style="color:var(--fg)">Owners of permanent venues</b> (theatres, clubs, stadiums, circuses): separate terms, 2% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds.</p><a class="btn btn-ghost btn-sm" href="#start">Talk to us</a></div>
+    <form class="card calc" id="calc" aria-label="Fee calculator">
+      <label for="cPrice">Ticket price, €<input type="number" id="cPrice" value="38" min="0" step="1"></label>
+      <label for="cQty">Tickets sold<input type="number" id="cQty" value="120" min="0" step="1"></label>
+      <div class="tog"><input type="checkbox" id="cSeat" style="width:18px;height:18px;accent-color:var(--accent)"><label for="cSeat" style="font-weight:500;color:var(--fg)">Event with a seating plan</label></div>
+      <div class="out"><div class="v num" id="cOut">€120.00</div><div class="l">Platform service, paid after the session · your sales <span class="num" id="cNet">€4,560.00</span>, acquiring not included</div></div>
+    </form>
+    <p class="pr-note">Standard terms; volume and individual terms on request. You pay for the platform service after each session; for events on sale for several months, monthly. <a href="#pricing" style="color:var(--accent);font-weight:600">Detailed terms →</a></p>
+  </div>
+</section>
+
+<section class="section" id="who" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Who it is for</p>
+    <h2 class="h2">Organizers who sell their own tickets</h2>
+    <div class="sols many">
+      <article class="card sol"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><h3>Concerts</h3><p>Standing and seated, several price categories, early bird, scanning at the door.</p><a href="#start">For concerts →</a></article>
+      <article class="card sol"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 10h18M5 10v9h14v-9M8 19v-5h8v5M12 3l8 4H4z"/></svg></div><h3>Theatre</h3><p>Seating plans that match the venue, repeat dates, invitations for press and partners.</p><a href="#start">For theatres →</a></article>
+      <article class="card sol"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M12 3v18M3 7l9 4 9-4"/></svg></div><h3>Shows</h3><p>Ice shows, circus, dance: many dates, many cities, one plan per venue reused.</p><a href="#start">For shows →</a></article>
+      <article class="card sol"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20l4-14 4 8 3-5 5 11z"/></svg></div><h3>Festivals</h3><p>Several days, many categories, categories that hand over unsold places to the next one.</p><a href="#start">For festivals →</a></article>
+      <article class="card sol"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="12" r="2.5"/><circle cx="8" cy="18" r="2.5"/><path d="M8 7.5l8 3.5M16 13.5l-6 3"/></svg></div><h3>Concert tours</h3><p>One show, many cities and dates, a page per promoter with its own link.</p><a href="#start">For tours →</a></article>
+      <article class="card sol"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 3h8v5a4 4 0 0 1-8 0zM12 12v6M8 21h8"/></svg></div><h3>Master classes and trainings</h3><p>Small groups, recurring dates, the host's own e-mails and language.</p><a href="#start">For hosts →</a></article>
+      <article class="card sol"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div><h3>Venues and clubs</h3><p>Your own venue, many events a month, one seating plan reused, separate terms.</p><a href="#start">For venues →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section clients" id="clients">
+  <div class="wrap two">
+    <div><p class="eyebrow">Clients</p><h2 class="h2">Organizers in 35 countries</h2><p class="lead">Arena Sold Out has sold tickets for organizers since 2019; the platform behind it was rebuilt in 2026 and the organizers moved with it. The founders' earlier platforms served Cirque du Soleil shows, FIFA 2018 stadiums, the World Choir Games and 800 ice shows. Their words and logos are on the clients page.</p><a class="btn btn-ghost" href="#clients" style="margin-top:22px">Clients and testimonials</a></div>
+    <div class="marks-grid" aria-label="Clients"><span>Lampyris Events<small>Prague</small></span><span>Vino&amp;Co<small>Israel</small></span><span>Teatro Escuela Madrid<small>Madrid</small></span><span>Actorre<small>Guardamar</small></span><span>Family Theatre Kolybel<small>Spain</small></span><span>MyEventsArt<small>France, Georgia</small></span><span>WOW Rock<small>concerts</small></span><span>WOW Cuba Fest<small>festival</small></span><span>Dance.Dance.Dance<small>show</small></span><span>Legends<small>show</small></span><span>L Ivan O Ostro<small>concerts</small></span><span>D Performance<small>show</small></span><span>WOW Immersive Museum<small>museum</small></span><span>Río Safari Park<small>park</small></span><span>Luna Park<small>park</small></span><span>Sport events<small>tournaments</small></span></div>
+  </div>
+</section>
+
+<section class="section" id="changes" style="padding-top:0">
+  <div class="wrap two">
+    <div><p class="eyebrow">Latest changes</p><h2 class="h2">The platform grows every week</h2><p class="lead">A line for every feature that reached organizers. Tell us what you need next: most requests from organizers ship within weeks, and the team answers in person.</p><a class="btn btn-ghost" href="#start" style="margin-top:22px">Tell us what you need</a></div>
+    <div class="log scroll"><ul>
+      <li><span class="d">7 Oct</span><span>Spanish in the organizer bot; one ticket e-mail per order in the site design</span></li>
+      <li><span class="d">3 Oct</span><span>Buyers get an e-mail when a session moves or is cancelled, with the updated ticket</span></li>
+      <li><span class="d">1 Oct</span><span>Flitt payments (EUR, GEL); French ticket e-mails</span></li>
+      <li><span class="d">29 Sep</span><span>Telegram bot creates events from a poster photo; promoter pages</span></li>
+      <li><span class="d">28 Sep</span><span>Quantity price steps and category chains</span></li>
+      <li><span class="d">24 Sep</span><span>Sales notifications to the organizer's Telegram group</span></li>
+      <li><span class="d">22 Sep</span><span>Promo codes with scope, windows and per-buyer limits</span></li>
+      <li><span class="d">20 Sep</span><span>Hosted checkout with your own Stripe account; e-ticket with EAN-13 and QR</span></li>
+      <li><span class="d">14 Sep</span><span>Per-category quotas for standing areas</span></li>
+      <li><span class="d">13 Sep</span><span>800 orders a minute in load tests</span></li>
+    </ul><a class="more" href="#changes">Full list →</a></div>
+  </div>
+</section>
+
+<section class="section" id="start" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <div class="mesh" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+      <h2>Start selling today</h2>
+      <p>Create the event, connect your payment account, share the link. An event without a seating plan is on sale within the hour; a seating plan we draw with you.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#start">Create your event</a><a class="btn btn-band" href="#start">Open the Telegram bot</a></div>
+      <p class="hero-note" style="margin-top:18px">Or write to us: we set everything up with you on a call.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fcol brand"><a class="wordmark" href="#top"><span class="logo logo-sm" role="img" aria-label="arena sold out"></span></a><p style="color:var(--fg-2);margin-top:14px;max-width:28ch">Ticketing platform for organizers. Seats and tickets, your own payment account, an event center for the team.</p></div>
+      <div class="fcol"><h4>Product</h4><ul><li><a href="#how">How it works</a></li><li><a href="#where">Where you sell</a></li><li><a href="#answers">Seating and prices</a></li><li><a href="#center">Event center</a></li><li><a href="#money">Payments</a></li><li><a href="#center">Telegram bot</a></li></ul></div>
+      <div class="fcol"><h4>Who it is for</h4><ul><li><a href="#who">Concerts</a></li><li><a href="#who">Theatre</a></li><li><a href="#who">Shows</a></li><li><a href="#who">Festivals</a></li><li><a href="#who">Concert tours</a></li><li><a href="#who">Venues and clubs</a></li></ul></div>
+      <div class="fcol"><h4>For developers</h4><ul><li><a href="#top">Docs</a></li><li><a href="#top">Public API</a></li><li><a href="#top">Widget</a></li><li><a href="#top">Webhooks</a></li><li><a href="#top">WordPress plugin</a></li></ul></div>
+      <div class="fcol"><h4>Company</h4><ul><li><a href="#top">About</a></li><li><a href="#clients">Clients</a></li><li><a href="#changes">Blog</a></li><li><a href="#changes">Latest changes</a></li><li><a href="#start">Contact</a></li></ul></div>
+      <div class="fcol"><h4>Legal</h4><ul><li><a href="#top">Terms</a></li><li><a href="#pricing">Detailed pricing terms</a></li><li><a href="#top">Privacy</a></li></ul></div>
+    </div>
+    <div class="fbot"><span>© 2019–2026 Arena Sold Out · ABH TEAM OÜ · EU</span><div class="r"><button class="lang" type="button" aria-label="Language: English">EN</button><a class="icon-btn" href="#start" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6L3.3 11.8c-1.2.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.4.8.8.8.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.8-.8l3.2-15.2c.3-1.3-.5-1.9-1.8-1.4zM9.3 14.4l8.9-5.6c.4-.3.8-.1.5.2l-7.4 6.7-.3 3.1z"/></svg></a></div></div>
+  </div>
+</footer>
+
+<div class="badge">Direction A · prototype · not live data</div>
+
+<script>
+(function(){
+  // Theme toggle
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  try{var saved=localStorage.getItem('aso-theme'); if(saved) root.setAttribute('data-theme',saved);}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')==='dark' || (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next=dark?'light':'dark'; root.setAttribute('data-theme',next);
+    try{localStorage.setItem('aso-theme',next);}catch(e){}
+  });
+
+  // Seat map: rows A–J, 14 seats, aisle after seat 7. Deterministic states.
+  var svg=document.getElementById('seatmap'), NS='http://www.w3.org/2000/svg';
+  var rows='ABCDEFGHIJ', cols=14, sw=22, sh=16, gap=4, aisle=14, x0=22, y0=6;
+  var sold={A:[1,2,3,4,5,6,7,8,9,10,11,12,13,14],B:[1,2,3,4,5,6,7,8,9,10,11,12,13,14],C:[1,2,3,4,5,6,7,8,9,10,11,12,13,14],D:[1,2,3,4,5,6,7,8,9,10,11,12],E:[1,2,3,4,5,6,7,8,9,10,11],F:[1,2,3,4,5,6,7,8,9,10],G:[1,2,3,4,5,6,9,10,11],H:[1,2,3],I:[1,2],J:[1]};
+  var held={G:[12,13],H:[6,7],I:[8,9]}, sel={G:[7,8]};
+  function has(m,r,c){return m[r]&&m[r].indexOf(c)>=0}
+  for(var ri=0;ri<rows.length;ri++){
+    var r=rows[ri], y=y0+ri*(sh+gap);
+    var lbl=document.createElementNS(NS,'text'); lbl.setAttribute('x',8); lbl.setAttribute('y',y+sh-4); lbl.setAttribute('class','rowlbl'); lbl.textContent=r; svg.appendChild(lbl);
+    for(var c=1;c<=cols;c++){
+      var x=x0+(c-1)*(sw+gap)+(c>7?aisle:0);
+      var rect=document.createElementNS(NS,'rect');
+      rect.setAttribute('x',x); rect.setAttribute('y',y); rect.setAttribute('width',sw); rect.setAttribute('height',sh); rect.setAttribute('rx',4);
+      var cls='seat '+(has(sel,r,c)?'sel':has(sold,r,c)?'sold':has(held,r,c)?'held':(ri<7?'av':'av2'));
+      rect.setAttribute('class',cls);
+      var t=document.createElementNS(NS,'title'); t.textContent='Row '+r+', seat '+c; rect.appendChild(t);
+      svg.appendChild(rect);
+      if(has(sel,r,c)){var ck=document.createElementNS(NS,'path'); ck.setAttribute('d','M'+(x+6)+' '+(y+8.5)+' l3.5 3.5 l6.5 -7'); ck.setAttribute('fill','none'); ck.setAttribute('stroke','var(--accent-fg)'); ck.setAttribute('stroke-width','2'); ck.setAttribute('stroke-linecap','round'); svg.appendChild(ck);}
+    }
+  }
+
+  // EAN-13-like bars (decorative, from the digit string)
+  var ean=document.getElementById('ean'), digits='2173049188256', bx=2;
+  for(var i=0;i<digits.length*4;i++){var w=((digits.charCodeAt(i%13)+i)%3)+1; if(i%2===0){var b=document.createElementNS(NS,'rect'); b.setAttribute('x',bx); b.setAttribute('y',0); b.setAttribute('width',w); b.setAttribute('height',(i<3||i>48)?40:34); b.setAttribute('fill','var(--fg)'); ean.appendChild(b);} bx+=w;}
+
+  // Timer countdown
+  var t=document.getElementById('timer'), s=9*60+41, rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!rm){setInterval(function(){s=s>0?s-1:9*60+41; var m=Math.floor(s/60), x=s%60; t.textContent=(m<10?'0':'')+m+':'+(x<10?'0':'')+x;},1000);}
+
+  // Calculator
+  var p=document.getElementById('cPrice'), q=document.getElementById('cQty'), st=document.getElementById('cSeat'), out=document.getElementById('cOut'), net=document.getElementById('cNet');
+  function fmt(n){return '€'+n.toLocaleString('en-GB',{minimumFractionDigits:2,maximumFractionDigits:2});}
+  function calc(){var price=+p.value||0, qty=+q.value||0, fee=qty*(st.checked?1.5:1); out.textContent=fmt(fee); net.textContent=fmt(price*qty);}
+  [p,q,st].forEach(function(el){el.addEventListener('input',calc);}); calc();
+  document.getElementById('calc').addEventListener('submit',function(e){e.preventDefault();});
+})();
+</script>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arena · витрина · направления дизайна</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#0B1020;--bar:#121831;--fg:#EEF0F8;--fg-2:#AEB4CF;--line:#27304F;--accent:#8F88FF;--accent-fg:#0B1020;--phone:#1a2140}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Onest",system-ui,sans-serif;display:flex;flex-direction:column;font-size:14px}
+.bar{display:flex;align-items:center;gap:10px;padding:8px 14px;background:var(--bar);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:-0.03em;display:flex;align-items:center;gap:8px;margin-right:6px}
+.brand i{width:9px;height:9px;background:var(--accent);transform:rotate(45deg);border-radius:2px;display:inline-block}
+.tabs{display:flex;gap:4px;background:var(--bg);padding:3px;border-radius:999px;border:1px solid var(--line)}
+.tab{border:0;background:none;color:var(--fg-2);font:inherit;font-weight:600;padding:7px 14px;border-radius:999px;cursor:pointer;display:flex;align-items:center;gap:8px}
+.tab b{font-family:"JetBrains Mono",monospace;font-size:11px;opacity:.7}
+.tab.on{background:var(--accent);color:var(--accent-fg)}.tab.on b{opacity:.8}
+.tab:hover:not(.on){color:var(--fg)}
+.grp{display:flex;gap:4px;margin-left:auto;align-items:center}
+.sw{border:1px solid var(--line);background:none;color:var(--fg-2);font:inherit;font-weight:600;padding:6px 11px;border-radius:999px;cursor:pointer}
+.sw.on{color:var(--fg);border-color:var(--accent);background:rgba(143,136,255,.12)}
+.lnk{color:var(--fg-2);text-decoration:none;font-weight:600;padding:6px 10px;border-radius:999px;border:1px solid var(--line)}
+.lnk:hover{color:var(--fg)}
+.desc{color:var(--fg-2);font-size:12.5px;padding:0 14px 8px;background:var(--bar);border-bottom:1px solid var(--line)}
+.stage{flex:1;min-height:0;display:flex;justify-content:center;align-items:stretch;background:var(--bg);padding:0}
+.frame{width:100%;height:100%;border:0;background:#fff;transition:width .25s ease}
+.stage.phone{padding:18px 0;align-items:center}
+.stage.phone .frame{width:390px;height:min(844px,100%);border-radius:28px;border:8px solid var(--phone);box-shadow:0 30px 80px -30px rgba(0,0,0,.8)}
+.hint{position:fixed;right:14px;bottom:10px;font-size:11px;color:var(--fg-2);font-family:"JetBrains Mono",monospace;opacity:.7}
+@media (max-width:760px){.desc{display:none}.grp{margin-left:0}}
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="brand"><i></i>arena sold out · витрина</div>
+  <div class="tabs" role="tablist">
+    <button class="tab" data-id="moodboard" role="tab"><b>0</b>Мудборд</button>
+    <button class="tab" data-id="a" role="tab"><b>A</b>Инфраструктура</button>
+    <button class="tab" data-id="b" role="tab"><b>B</b>Сцена</button>
+    <button class="tab" data-id="c" role="tab"><b>C</b>Продукт вперёд</button>
+  </div>
+  <div class="grp">
+    <button class="sw" id="thLight">Светлая</button>
+    <button class="sw" id="thDark">Тёмная</button>
+    <button class="sw" id="devDesk">Десктоп</button>
+    <button class="sw" id="devPhone">Телефон</button>
+    <a class="lnk" id="openFull" href="#" target="_blank" rel="noopener">Открыть отдельно ↗</a>
+  </div>
+</div>
+<div class="desc" id="desc"></div>
+<div class="stage" id="stage"><iframe class="frame" id="frame" title="Прототип"></iframe></div>
+<div class="hint">клавиши 0 1 2 3 · t тема · m телефон</div>
+<script>
+(function(){
+  var pages={
+    moodboard:{file:'moodboard.html',desc:'Общая основа: палитра, живые шрифты, шкала, знак, сетка, движение, тон, что откуда взято, что решить.'},
+    a:{file:'direction-a.html',desc:'A · «Инфраструктура». Уровень Stripe, тема организатора: светлая страница, навий hero со свечением, bento, код рядом с результатом. Onest + JetBrains Mono.'},
+    b:{file:'direction-b.html',desc:'B · «Сцена». Тёмный зал, прожектор, Playfair Display с янтарным курсивом, зерно, тарифы как афишные панели; светлая тема — афиша на бумаге.'},
+    c:{file:'direction-c.html',desc:'C · «Продукт вперёд». Белый лист, монохром, один акцент; виджет под заголовком и есть дизайн. Golos Text + Onest.'}
+  };
+  var state={id:'a',theme:'light',dev:'desk'};
+  try{var s=JSON.parse(localStorage.getItem('aso-proto')||'{}'); Object.assign(state,s);}catch(e){}
+  var h=location.hash.replace('#',''); if(pages[h]) state.id=h;
+  var frame=document.getElementById('frame'), stage=document.getElementById('stage'), desc=document.getElementById('desc'), openFull=document.getElementById('openFull');
+  function render(){
+    document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('on',t.dataset.id===state.id); t.setAttribute('aria-selected',t.dataset.id===state.id);});
+    document.getElementById('thLight').classList.toggle('on',state.theme==='light');
+    document.getElementById('thDark').classList.toggle('on',state.theme==='dark');
+    document.getElementById('devDesk').classList.toggle('on',state.dev==='desk');
+    document.getElementById('devPhone').classList.toggle('on',state.dev==='phone');
+    stage.classList.toggle('phone',state.dev==='phone');
+    var url=pages[state.id].file+'?theme='+state.theme;
+    if(frame.getAttribute('src')!==url) frame.setAttribute('src',url);
+    openFull.href=url; desc.textContent=pages[state.id].desc;
+    if(location.hash!=='#'+state.id) history.replaceState(null,'','#'+state.id);
+    try{localStorage.setItem('aso-proto',JSON.stringify(state));}catch(e){}
+  }
+  document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){state.id=t.dataset.id;render();});});
+  document.getElementById('thLight').onclick=function(){state.theme='light';render();};
+  document.getElementById('thDark').onclick=function(){state.theme='dark';render();};
+  document.getElementById('devDesk').onclick=function(){state.dev='desk';render();};
+  document.getElementById('devPhone').onclick=function(){state.dev='phone';render();};
+  window.addEventListener('hashchange',function(){var x=location.hash.replace('#',''); if(pages[x]){state.id=x;render();}});
+  document.addEventListener('keydown',function(e){
+    if(e.target.tagName==='INPUT') return;
+    var map={'0':'moodboard','1':'a','2':'b','3':'c'};
+    if(map[e.key]){state.id=map[e.key];render();}
+    else if(e.key==='t'){state.theme=state.theme==='light'?'dark':'light';render();}
+    else if(e.key==='m'){state.dev=state.dev==='desk'?'phone':'desk';render();}
+  });
+  render();
+})();
+</script>
+</body>
+</html>

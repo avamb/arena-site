@@ -1,0 +1,23 @@
+# build
+dist/
+.astro/
+node_modules/
+.wrangler/
+.lighthouseci/
+ops/nginx/redirects.conf
+ops/nginx/headers.conf
+
+# env and secrets (never commit; see .env.example)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# os / editors
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+.vscode/
+.idea/
