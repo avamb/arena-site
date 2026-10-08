@@ -16,7 +16,9 @@ if (!indexing) headers[0].values['X-Robots-Tag'] = 'noindex, nofollow';
 const variants = (p) => (p.endsWith('*') ? [p] : p.endsWith('/') && p !== '/' ? [p, p.slice(0, -1)] : p.includes('.') ? [p] : [p, p + '/']);
 
 /* Cloudflare */
-const cfRedirects = redirects.flatMap((r) => variants(r.from).map((f) => `${f} ${r.to} ${r.code ?? 301}`)).join('\n') + '\n';
+// Cloudflare: static rules first, dynamic (splat) rules last; 2,000 static + 100 dynamic allowed.
+const isDynamic = (r) => /[*:]/.test(r.from);
+const cfRedirects = [...redirects.filter((r) => !isDynamic(r)), ...redirects.filter(isDynamic)].flatMap((r) => variants(r.from).map((f) => `${f} ${r.to} ${r.code ?? 301}`)).join('\n') + '\n';
 const cfHeaders = headers.map((h) => [h.pattern, ...Object.entries(h.values).map(([k, v]) => (k.startsWith('!') ? `  ${k}` : `  ${k}: ${v}`))].join('\n')).join('\n\n') + '\n';
 
 /* nginx */
