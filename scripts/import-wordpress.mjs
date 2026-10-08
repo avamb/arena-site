@@ -72,6 +72,15 @@ async function download(url, dir, slugHint) {
   return name;
 }
 
+/** Old posts start at h3 under the page h1; lift the body so its top level is h2 (heading order for screen readers). */
+function shiftHeadings(md) {
+  const levels = [...md.matchAll(/^(#{1,6})s/gm)].map((m) => m[1].length);
+  if (!levels.length) return md;
+  const shift = Math.min(...levels) - 2;
+  if (shift <= 0) return md;
+  return md.replace(/^(#{1,6})(s)/gm, (m, h, sp) => '#'.repeat(Math.max(2, h.length - shift)) + sp);
+}
+
 async function run() {
   const redirects = pageRedirects();
   // First pass: collect every post in every language so cross-links can be resolved.
@@ -112,6 +121,9 @@ async function run() {
         html = html.replace(m[1], name ? `./images/${slug}/${name}` : '');
       }
       html = html.replace(/\ssrcset="[^"]*"/g, '').replace(/\ssizes="[^"]*"/g, '');
+      // Images without alt text get the post title: Astro drops an empty alt, and a missing alt fails accessibility.
+      const altText = plain(p.title.rendered).replace(/"/g, '');
+      html = html.replace(/<img(?![^>]*\salt="[^"]+")([^>]*)>/g, (m, attrs) => `<img alt="${altText}"${attrs.replace(/\salt=""/g, '')}>`);
       let md = td.turndown(html).replace(/\n{3,}/g, '\n\n').trim();
       md = md.replace(/!\[\]\(\)\n?/g, '');
       const fm = await media(p.featured_media);

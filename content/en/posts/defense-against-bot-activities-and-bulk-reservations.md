@@ -22,7 +22,7 @@ Moreover, you have limited control over or ability to prevent such occurrences.
 
 As a result, only those who verify their emails are able to reserve seats.
 
-![](./images/defense-against-bot-activities-and-bulk-reservations/stadion-2.jpg)
+![Defense against bot activities and bulk reservations](./images/defense-against-bot-activities-and-bulk-reservations/stadion-2.jpg)
 
 This mechanism safeguards your seating arrangements against bot interference.
 
@@ -32,7 +32,7 @@ All customers consistently receive their tickets via email.
 
 In addition, with email confirmation, you are spared from requesting extraneous information such as phone numbers. Since you won’t need it for tracking down missing tickets. Buyers can complete their purchases quicker and with greater satisfaction, as they are not required to provide unnecessary details during the checkout process.
 
-### YOU MIGHT ALSO LIKE:
+## YOU MIGHT ALSO LIKE:
 
 [Why STRESS Testing Ticket Platforms Matters: Benefits for Organizers and Buyers](/blog/why-stress-testing-ticket-platforms-matters-benefits-for-organizers-and-buyers)
 

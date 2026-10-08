@@ -5,7 +5,7 @@
 import type { APIRoute, GetStaticPaths } from 'astro';
 import { loadPage, pageRoutes, slugToPath } from '@/lib/pages';
 import { getPosts } from '@/lib/data';
-import { localePath } from '@/lib/i18n';
+import { localePath, postPath } from '@/lib/i18n';
 import { siteUrl, languages } from '@config';
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -18,7 +18,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   for (const l of languages) {
     for (const post of await getPosts(l.code)) {
       const id = post.id.split('/').pop()!;
-      out.push({ params: { path: localePath(l.code, `/blog/${id}`).slice(1) }, props: { lang: l.code, postId: post.id } });
+      out.push({ params: { path: postPath(l.code, id).slice(1) }, props: { lang: l.code, postId: post.id } });
     }
   }
   return out;
@@ -30,7 +30,7 @@ export const GET: APIRoute = async ({ props }) => {
   if (postId) {
     const post = (await getPosts(lang)).find((p) => p.id === postId)!;
     const id = post.id.split('/').pop()!;
-    body = `<!-- ${post.data.title} · ${new URL(localePath(lang, `/blog/${id}`), siteUrl)} -->\n\n# ${post.data.title}\n\n${post.data.description}\n\n${post.body ?? ''}\n`;
+    body = `<!-- ${post.data.title} · ${new URL(postPath(lang, id), siteUrl)} -->\n\n# ${post.data.title}\n\n${post.data.description}\n\n${post.body ?? ''}\n`;
   } else {
     body = (await loadPage(lang, slug!)).markdown;
   }

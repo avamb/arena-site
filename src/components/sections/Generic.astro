@@ -10,7 +10,7 @@ import { turnstileSiteKey } from '@config';
 import { marked } from 'marked';
 import { inline } from '@/lib/inline';
 import { clients, facts } from '@/lib/data';
-import { localePath, formatDate, tObject, t, getLanguage } from '@/lib/i18n';
+import { localePath, postPath, formatDate, tObject, t } from '@/lib/i18n';
 import { getPosts } from '@/lib/data';
 import { languages } from '@config';
 import Icon from '@/components/Icon.astro';
@@ -119,7 +119,7 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
 
     {s.type === 'posts' && (posts.length ? (
       <ul class="post-list">
-        {posts.map((p) => <li><span class="d"><time datetime={p.data.date.toISOString().slice(0, 10)}>{formatDate(lang, p.data.date, postFmt)}</time></span><div><h3><a href={localePath(lang, `/blog/${p.id.split('/').pop()}`)}>{p.data.title}</a></h3><p>{p.data.description}</p></div></li>)}
+        {posts.map((p) => <li><span class="d"><time datetime={p.data.date.toISOString().slice(0, 10)}>{formatDate(lang, p.data.date, postFmt)}</time></span><div><h3><a href={postPath(lang, p.id.split('/').pop()!)}>{p.data.title}</a></h3><p>{p.data.description}</p></div></li>)}
       </ul>
     ) : (
       <p class="empty">{s.empty}</p>

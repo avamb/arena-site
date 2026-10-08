@@ -32,11 +32,11 @@ Seats without assigned placement (Fan Zone, Dance Floor): 6,000
 
 Total: 31,841
 
-![](./images/stress-testing-technical-report/tez-testing.jpg)
+![STRESS TESTING: Technical Report](./images/stress-testing-technical-report/tez-testing.jpg)
 
 A utility was developed specifically for the stress testing, which emulates simultaneous activity from a specified number of buyers. During the initial tests, it was discovered that the platform’s behavior for venues with a large number of seats fundamentally differs from its behavior for smaller venue (less than 5,000 seats). Based on this finding, further tests were conducted solely with the layout of this sufficiently large stadium. As a result of the tests, optimization and acceleration mechanisms were added to the platform, which are triggered during sales for venues with a capacity of over 5,000 people, as these mechanisms are not efficient for venues with smaller capacities.
 
-### **Testing Methodology**
+## **Testing Methodology**
 
 The first and most crucial step in ticket sales is the need to show the buyer a stadium layout with the CURRENT seat statuses (available, occupied, reserved) at the given moment. The buyer can reserve seats on the layout and purchase tickets for them only if they can see the seating plan. Preparing and delivering the stadium layout to a large number of buyers is the most resource-intensive task for the server. Testing the platform’s capabilities for simultaneously sending the Current Layout data to a large number of buyers became the main focus of the testing.
 
@@ -56,7 +56,7 @@ For Stadium 1, the response size for the GET\_SCHEMA command is 2.25 MB uncompre
 
 By default, the ArenaSoldOut.com platform utilizes data compression with gzip. This efficiently compresses JSON format data. However, when selling tickets for stadiums to the largest number of buyers, compression quickly leads to 100% utilization of all server processor cores. To overcome this issue, pre-compressed cache is used when receiving the response for GET\_SCHEMA (compression occurs once). Otherwise, gzip compression continues to be a performance limiter for the server.
 
-### **Testing Utility**
+## **Testing Utility**
 
 A special testing program, called the testing utility, was created for the tests. The utility establishes a specified number of connections with the central server ArenaSoldOut.com (emulating the number of concurrent buyers), and tests the server’s ability to show them the Current Layout using either the first or second method. The test results are output to the console. Here is an example of the console output for a test using the first method (transferring the layout in SVG format) after applying optimization and acceleration mechanisms in the platform’s test environment:
 
@@ -112,11 +112,11 @@ From the console data, we can infer the following:
 
 **The results of this test indicate that within 30.93 seconds, one thousand buyers are guaranteed to receive the Current Layout for a large stadium**.
 
-### **Testing Results**
+## **Testing Results**
 
 During the initial runs of the testing utility, the platform was able to handle only around 130 users within 30 seconds. However, after applying the optimization and acceleration mechanisms developed during the tests, the following performance indicators were achieved:
 
-##### **First Method (SVG Layout Delivery)**
+#### **First Method (SVG Layout Delivery)**
 
 Zone: test
 
@@ -222,7 +222,7 @@ total max| | 29579 ms | | |
 
 Total time: 30.93 s
 
-##### **Second Method (GET\_SCHEMA and GET\_SEAT\_LIST Commands’ Responses)**
+#### **Second Method (GET\_SCHEMA and GET\_SEAT\_LIST Commands’ Responses)**
 
 Zone: test
 
@@ -344,7 +344,7 @@ Total time: 34.80 s
 
 It is worth noting that the testing was conducted under more stringent conditions (simultaneous user access, local network) than the conditions that occur during real high-demand scenarios, where customers are spread out in time and space. It can be assumed that under real sales conditions, the server will serve a slightly larger number of customers than in the described tests.
 
-### **Optimization and Acceleration**
+## **Optimization and Acceleration**
 
 The utilization of the load testing utility promptly identified system overload points (bottlenecks), which were systematically overcome through the implementation of the following optimization and acceleration mechanisms:
 
@@ -360,7 +360,7 @@ The utilization of the load testing utility promptly identified system overload 
 
 **These mechanisms enabled a performance increase of approximately 10 times for the platform during high-demand scenarios and large schemas. When working with smaller schemas and in the absence of high-demand scenarios, the performance improvement predictably remained less significant but still noticeable**.
 
-### **Full Ticket Sales Cycle**
+## **Full Ticket Sales Cycle**
 
 In previous load tests, the platform’s ability to display the Actual schema to the maximum number of users was the primary focus. While this is a crucial part of the ticket purchase process, it is not the only aspect. The following commands are utilized for the complete ticket purchasing process:
 
@@ -454,7 +454,7 @@ total max| 29311 ms | 5070 ms | 24747 ms | 24650 ms | 24559 ms
   
   
 
-### **Results:**
+## **Results:**
 
 **In 53.62 seconds, 1000 users were able to purchase 4000 tickets. Thus, with an average of 4 tickets per order and high demand, a 25,000-seat stadium would be sold out in approximately 6 minutes after the start of sales**.
 
@@ -462,11 +462,11 @@ total max| 29311 ms | 5070 ms | 24747 ms | 24650 ms | 24559 ms
 
 As mentioned earlier, the optimization and acceleration mechanisms developed as a result of the tests apply to venues with a capacity of over 5000 seats. For the purpose of example and testing, we selected another stadium (Stadium 2). In this configuration, the stadium has 5261 seats for the event. For testing purposes, an event was created at this stadium with 5137 available seats.
 
-![](./images/stress-testing-technical-report/nagruzochnoe-testirovanie-stress-testing-2-1.png)
+![STRESS TESTING: Technical Report](./images/stress-testing-technical-report/nagruzochnoe-testirovanie-stress-testing-2-1.png)
 
-### **Results of Testing the Display of the Current Scheme:**
+## **Results of Testing the Display of the Current Scheme:**
 
-### **Method 1 (Transmitting the Scheme in SVG Format)**
+## **Method 1 (Transmitting the Scheme in SVG Format)**
 
 Zone: test  
 FID: 1264  
@@ -526,7 +526,7 @@ total max| | 27790 ms | | |
 Total time: 31.21 s  
   
 
-### **Method 2 (GET\_SCHEMA and GET\_SEAT\_LIST Command Responses)**
+## **Method 2 (GET\_SCHEMA and GET\_SEAT\_LIST Command Responses)**
 
 Zone: test  
 FID: 1264  
@@ -591,7 +591,7 @@ total max| | 29827 ms | 15186 ms | | |
   
 Total time: 37.71 s
 
-### **Let’s compare the test results for an event at Stadium 1 (25,841 seats) and an event at Stadium 2 (5,137 seats).**
+## **Let’s compare the test results for an event at Stadium 1 (25,841 seats) and an event at Stadium 2 (5,137 seats).**
 
 **Method 1 (Obtaining SVG Scheme):**
 
@@ -605,7 +605,7 @@ Total time: 37.71 s
 
 **Stadium 2 – 37.71 seconds. Out of 3,200 buyers, 3,199 successfully received the current scheme data.**
 
-### YOU MIGHT ALSO LIKE:
+## YOU MIGHT ALSO LIKE:
 
 [Why STRESS Testing Ticket Platforms Matters: Benefits for Organizers and Buyers](/blog/why-stress-testing-ticket-platforms-matters-benefits-for-organizers-and-buyers)
 

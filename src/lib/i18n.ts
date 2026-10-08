@@ -67,6 +67,11 @@ export function localePath(lang: LanguageCode, href: string): string {
   return `/${lang}${href}`;
 }
 
+/** Blog posts always live under their own language prefix, even for languages outside the menu (archive policy). */
+export function postPath(lang: LanguageCode, slug: string): string {
+  return lang === defaultLanguage ? `/blog/${slug}` : `/${lang}/blog/${slug}`;
+}
+
 /** Static paths for the `[...locale]` rest parameter: undefined for the default language. */
 export function localeStaticPaths() {
   return activeLanguages().map((l) => ({

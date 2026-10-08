@@ -10,7 +10,7 @@ import Base from '@/layouts/Base.astro';
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import Related from '@/components/Related.astro';
 import { getPosts } from '@/lib/data';
-import { localePath, formatDate, tObject, t, getLanguage } from '@/lib/i18n';
+import { localePath, postPath, formatDate, tObject, t } from '@/lib/i18n';
 import { languages, defaultLanguage, hosts } from '@config';
 
 export async function getStaticPaths() {
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 const { lang, post } = Astro.props;
 const { Content } = await render(post);
 const slug = post.id.split('/').pop()!;
-const path = localePath(lang, `/blog/${slug}`);
+const path = postPath(lang, slug);
 const fmt = tObject<Intl.DateTimeFormatOptions>(lang, 'post.date');
 const all = (await getPosts(lang)).filter((p) => p.id !== post.id);
 // Read next: the two newest other posts plus the one right after this one chronologically.
@@ -60,13 +60,13 @@ const crumbs = [{ name: 'Home', path: localePath(lang, '/') }, { name: t(lang, '
         <b>{t(lang, 'archive.title')}.</b> {t(lang, 'archive.text', { year: post.data.date.getUTCFullYear() })} <a href={localePath(lang, '/changes')}>{t(lang, 'archive.link')}</a>
       </aside>
     )}
-    {post.data.cover && <Image class="post-cover" src={post.data.cover} alt={post.data.cover_alt ?? ''} width={1200} densities={[1, 2]} loading="eager" />}
+    {post.data.cover && <Image class="post-cover" src={post.data.cover} alt={post.data.cover_alt ?? ''} width={900} densities={[1, 2]} loading="eager" />}
     <div class="prose post-body"><Content /></div>
     <footer class="post-foot">
       <p class="hero-note" style="color:var(--fg-2)">{t(lang, 'post.author', { author: post.data.author })} · <a href={blogIndex} style="color:var(--accent);font-weight:600">{t(lang, 'blog.backToIndex')}</a> · <a href={hosts.telegramChat} style="color:var(--accent);font-weight:600">Telegram</a></p>
     </footer>
   </article>
-  {next.length > 0 && <Related lang={lang} title={t(lang, 'blog.readNext')} items={next.map((p) => ({ label: p.data.title, href: `/blog/${p.id.split('/').pop()}`, text: p.data.description.slice(0, 120) }))} />}
+  {next.length > 0 && <Related lang={lang} title={t(lang, 'blog.readNext')} items={next.map((p) => ({ label: p.data.title, href: postPath(lang, p.id.split('/').pop()!), text: p.data.description.slice(0, 120) }))} />}
   <Related lang={lang} title={t(lang, 'blog.related')} items={related} />
 </Base>
 <style is:global>

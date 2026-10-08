@@ -56,7 +56,7 @@ archive: true
 
 Вот пять советов, которые помогут вам выделиться и привлечь трафик из ваших электронных писем в список событий.
 
-![](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-001.jpg)
+![Как увеличивать продажи билетов: Руководство для Организаторов Мероприятий](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-001.jpg)
 
 #### **Ретаргетинг на посетителей прошедших мероприятий**
 
@@ -78,7 +78,7 @@ archive: true
 
 ### **Подключайте партнеров и афиши к продажам билетов.**
 
-![](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-002.jpg)
+![Как увеличивать продажи билетов: Руководство для Организаторов Мероприятий](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-002.jpg)
 
 Вы можете подключить любое количество партнеров к продажам ваших билетов и каждому дать индивидуальные условия.
 
@@ -114,7 +114,7 @@ archive: true
 
 Благодаря функционалу ArenaSoldOut.com вы можете создавать и раздавать виджеты (уникальные ссылки) для каждого партнера (Агента) продаж. Вашими партнерами по продажам могут быть блогеры, лидеры мнений, афиши, новостные сайты, телеграмм каналы, группы в мессенджерах, страницы в соцсетях, радиостанции, локальные СМИ и тп — те, кто имеют контакты с вашей целевой аудиторией. В десктопном приложении платформы ArenaSoldOut.com вы будете точно видеть сколько продаж, на какую сумму вам обеспечил каждый партнёр, или блогер. Это точные данные, которые будут являться для вас основанием для расчетов с вашими партнерами по продажам.  Также Вы сможете установить индивидуальный сервисный сбор для каждого агента. Каждого агента вы сможете подключить к отчетам, чтобы ваши агенты могли видеть только их продажи. Таким образом ваши отношения с партнерами станут максимально прозрачными.
 
-![](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-003-blogery-i-partnery.jpg)
+![Как увеличивать продажи билетов: Руководство для Организаторов Мероприятий](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-003-blogery-i-partnery.jpg)
 *TixGear Platform Editor — ArenaSoldOut.com*
 
 ### **Дополнительные методы, увеличивающие присутствие и охваты информации о ваших мероприятиях в соцсетях:**
@@ -123,7 +123,7 @@ archive: true
 
 Создание оригинальных видеороликов, роликов в Facebook, Instagram, TikToks и прямых трансляций может расширить охват и заметность вашего бренда. Вы можете рассмотреть возможность найма фрилансера или агентства, чтобы помочь создать контент, подходящий для вашей аудитории и ориентированного на разные соцсети — с таким количеством платформ для размещения вашего контента это не так просто, как загружать одно и то же видео в несколько потоков. Каждая соцсеть имеет свой собственный набор правил размещения контента.
 
-![](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-004-neobychnyj-kontent.jpg)
+![Как увеличивать продажи билетов: Руководство для Организаторов Мероприятий](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-004-neobychnyj-kontent.jpg)
 *TixGear Platform Editor — ArenaSoldOut.com*
 
 #### **Перекрестное продвижение**
@@ -182,7 +182,7 @@ archive: true
 
 Более 80% трафика сегодня приходится на мобильных пользователей. Оптимизация сайта для мобильных устройств дает не только лояльных пользователей, но и более широкий охват.
 
-![](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-005-mobilnye-polzovateli.jpg)
+![Как увеличивать продажи билетов: Руководство для Организаторов Мероприятий](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-005-mobilnye-polzovateli.jpg)
 *TixGear Platform Editor — ArenaSoldOut.com*
 
 #### **Используйте рекламные инструменты, которые оптимизируют ваш бюджет**
@@ -201,7 +201,7 @@ archive: true
 
 Вы будете видеть кто из партнеров и блогеров принес вам продажи, какие рекламные объявления были эффективны, а какие нет. Это возможно благодаря архитектуре платформы, где каждый Агент может создавать любое количество источников продаж, называемых в платформе «Фронт-эндами».
 
-![](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-006-analitika-prodazh-reporter-prodazha-biletov.jpg)
+![Как увеличивать продажи билетов: Руководство для Организаторов Мероприятий](./images/kak-uvelichivat-prodazhi-biletov-rukovodstvo-dlya-organizatorov-meropriyatij/kartinka-006-analitika-prodazh-reporter-prodazha-biletov.jpg)
 **
 
 Это имеет существенное отличие от Google аналитики, так как вы видите не количество кликов, переходов, вы видите реальные продажи сопоставленные с источником  и можете оптимизировать свои маркетинговые усилия и рекламные кампании используя эти данные.

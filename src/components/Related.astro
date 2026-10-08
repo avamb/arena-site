@@ -10,7 +10,7 @@ const { lang, items, title } = Astro.props;
     <div class="wrap">
       <h2 id="related-title" class="related-title">{title ?? t(lang, 'blog.readNext')}</h2>
       <ul class="related-list">
-        {items.map((i) => <li><a href={localePath(lang, i.href)}>{i.label}</a>{i.text && <p>{i.text}</p>}</li>)}
+        {items.map((i) => <li><a href={i.href.startsWith(`/${lang}/`) ? i.href : localePath(lang, i.href)}>{i.label}</a>{i.text && <p>{i.text}</p>}</li>)}
       </ul>
     </div>
   </section>

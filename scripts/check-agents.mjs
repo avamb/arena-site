@@ -26,6 +26,7 @@ for (const u of urls) {
     const robots = text.match(/<meta name="robots" content="([^"]+)"/)?.[1] ?? '';
     if (!indexing && !robots.includes('noindex')) fail(`${u}: indexing is off but page is not noindex`);
     if (indexing && robots.includes('noindex') && !u.includes('thanks')) fail(`${u}: indexing is on but page is noindex`);
+    if (/class="archive-note"/.test(text)) continue; // archive posts are kept as written; T21 applies to the site's own copy
     const main = text.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1] ?? '';
     const words = main.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().split(' ').slice(0, 60).join(' ');
     if (/\b(Elevate|Unlock|Supercharge|Seamless|Empower|Streamline|Leverage|best-in-class|world-class)\b/i.test(words)) fail(`${u}: first 60 words contain a marketing adjective`);

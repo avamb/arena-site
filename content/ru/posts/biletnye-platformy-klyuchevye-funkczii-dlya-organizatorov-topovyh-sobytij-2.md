@@ -24,7 +24,7 @@ archive: true
 
 ### **Мгновенные доходы: обеспечение финансового контроля для организаторов топовых мероприятий**
 
-![](./images/biletnye-platformy-klyuchevye-funkczii-dlya-organizatorov-topovyh-sobytij-2/kartinka-02-pryamye-platezhi-3.jpg)
+![Билетные платформы: Ключевые функции для организаторов топовых событий](./images/biletnye-platformy-klyuchevye-funkczii-dlya-organizatorov-topovyh-sobytij-2/kartinka-02-pryamye-platezhi-3.jpg)
 
 ##### Эффективный денежный поток: неотъемлемая часть планов организаторов мероприятий
 
@@ -70,7 +70,7 @@ archive: true
 
 Сохранение базы данных покупателей на платформе — это не только удобство, но и стратегическое преимущество. Организаторы, имея доступ к данным о предыдущих клиентах, могут уменьшить затраты на маркетинг следующих событий, создавая таргетированные кампании для уже заинтересованной аудитории.
 
-![](./images/biletnye-platformy-klyuchevye-funkczii-dlya-organizatorov-topovyh-sobytij-2/kartinka-3-klyuchevye-funkczii-dlya-organizatorov-topovyh-sobytij-74.jpg)
+![Билетные платформы: Ключевые функции для организаторов топовых событий](./images/biletnye-platformy-klyuchevye-funkczii-dlya-organizatorov-topovyh-sobytij-2/kartinka-3-klyuchevye-funkczii-dlya-organizatorov-topovyh-sobytij-74.jpg)
 
 [Подробнее о работе с базой покупателей](/ru/blog/baza-pokupatelej-klyuchevoj-aktiv-organizatorov-meropriyatij-na-biletnyh-platformah)
 

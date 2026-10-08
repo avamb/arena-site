@@ -7,7 +7,7 @@ import type { Section } from '../content.config';
 import { siteUrl, type LanguageCode } from '@config';
 import { plain, fill } from './inline';
 import { clients, tariff, facts, liveProviderNames, type Nav } from './data';
-import { formatDate, currencySymbol } from './i18n';
+import { formatDate, currencySymbol, postPath } from './i18n';
 
 export type PageData = {
   lang: LanguageCode;
@@ -132,7 +132,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
     case 'posts':
       h2(s.title); lead(s.lead);
       if (!d.posts.length) out.push(plain(s.empty), '');
-      d.posts.forEach((p) => out.push(`- ${p.data.date.toISOString().slice(0, 10)}: [${p.data.title}](${abs(`/${d.lang === 'en' ? '' : d.lang + '/'}blog/${p.id.split('/').pop()}`)})`));
+      d.posts.forEach((p) => out.push(`- ${p.data.date.toISOString().slice(0, 10)}: [${p.data.title}](${abs(postPath(d.lang, p.id.split('/').pop()!))})`));
       out.push('');
       break;
     case 'facts-table':

@@ -38,7 +38,7 @@ Tokyo Jazz Festival увеличил цены на 7%, но уделяет бо�
 
 В среднем в Японии цены оставались стабильными, в то время как в Китае они увеличиваются на 8–12%..
 
-![](./images/dzhazovye-festivali-v-2023-globalnye-tendenczii-czen-i-marketingovye-strategii/35.jpg)
+![Джазовые фестивали в 2023: глобальные тенденции цен и маркетинговые стратегии](./images/dzhazovye-festivali-v-2023-globalnye-tendenczii-czen-i-marketingovye-strategii/35.jpg)
 
 ### **Маркетинговые Стратегии: Как Продать Джазовый Ритм**
 

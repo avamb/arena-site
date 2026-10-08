@@ -10,13 +10,13 @@ archive: true
 
 There are numerous websites for ticket sales, with the best ones enabling users to swiftly select events and venues and easily purchase tickets. Despite the outward simplicity of these websites, they are supported by complex interconnected systems: ticket processing, API gateways, online payment processing, reporting systems, online checkout, and many other features. This backend infrastructure remains hidden from ticket buyers, and the apparent simplicity of existing websites often misleads both clients and developers of new solutions.
 
-![](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/kvadrat-make-own-ticketing-platform-for-1000.jpg)
+![How to create a website for ticket sales, concerts, cinemas, theaters, ticket services, exhibitions, museums, tours, excursions, goods, boat-tours and parks](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/kvadrat-make-own-ticketing-platform-for-1000.jpg)
 
 Regardless of the choice of CMS or framework for website creation (client-side), it is crucial to recognize the presence of complex functionality on its server-side. The backend comprises the bulk of the ticket sales system. Ideally, one of the many ticketing platforms should handle the backend functions.
 
 To avoid taking the difficult path, making mistakes, or reinventing the wheel, it is advisable to study the accumulated experience of creating websites for ticket sales by clients of the ArenaSoldOut.com platform on this page.
 
-#### **ARTICLES ON WEBSITE CREATION**
+### **ARTICLES ON WEBSITE CREATION**
 
 **We recommend reading articles on creating websites for ticket sales:**
 
@@ -40,19 +40,19 @@ The platform provides all the tools for creating events and managing ticket sale
 
 **ArenaSoldOut.com offers two zones: Testing and Live**. All platform applications, including the Editor, connect to both the Testing and Live zones. This allows for the creation of events in both zones, and numerous events in the testing zone of the platform are available for website development purposes.
 
-### **SOLD-OUT WEBSITE BUILDER**
+## **SOLD-OUT WEBSITE BUILDER**
 
 The Sold-out website builder allows you to generate a website for selling tickets, goods, and services uploaded to the ArenaSoldOut.com platform in a matter of minutes. The website is created from a template with a simple design and can be installed either as a standalone site (in the root directory) or as a subdirectory, becoming a subsection of an existing site.
 
-![](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/sold-out-3-engl-ready.jpg)
+![How to create a website for ticket sales, concerts, cinemas, theaters, ticket services, exhibitions, museums, tours, excursions, goods, boat-tours and parks](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/sold-out-3-engl-ready.jpg)
 
 OR
 
-![](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/merch-str-1-ready.jpg)
+![How to create a website for ticket sales, concerts, cinemas, theaters, ticket services, exhibitions, museums, tours, excursions, goods, boat-tours and parks](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/merch-str-1-ready.jpg)
 
 Utilizing Sold-OUT is the simplest and quickest way to start selling tickets, goods, or services, as described in the guide “How to Start Selling Tickets to Events from Scratch.”
 
-### **AN OPTIMAL PATHWAY TO WEBSITE CREATION**
+## **AN OPTIMAL PATHWAY TO WEBSITE CREATION**
 
 The most straightforward and effective method to create a website for ticket sales is to utilize a ticketing platform as the backend. ArenaSoldOut.com offers the following options for this purpose (from simple to complex):
 
@@ -64,19 +64,19 @@ To create a site, fill out the form, download the archive, deploy it on your own
 
 Some examples of a websites using integration scripts with WordPress and connected to the platform’s test zone:
 
-![](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/sold-out-1-eng-ready-1.jpg)
+![How to create a website for ticket sales, concerts, cinemas, theaters, ticket services, exhibitions, museums, tours, excursions, goods, boat-tours and parks](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/sold-out-1-eng-ready-1.jpg)
 
 .
 
 Or
 
-![](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/sold-out-4-eng-ready.jpg)
+![How to create a website for ticket sales, concerts, cinemas, theaters, ticket services, exhibitions, museums, tours, excursions, goods, boat-tours and parks](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/sold-out-4-eng-ready.jpg)
 
 .
 
 One more example:
 
-![](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/sold-out-5-eng-ready.jpg)
+![How to create a website for ticket sales, concerts, cinemas, theaters, ticket services, exhibitions, museums, tours, excursions, goods, boat-tours and parks](./images/how-to-create-a-website-for-ticket-sales-concerts-cinemas-theaters-ticket-services-exhibitions-museums-tours-excursions-goods-boat-tours-and-parks/sold-out-5-eng-ready.jpg)
 
 You can also see some examples using this link
 
@@ -86,7 +86,7 @@ You can also see some examples using this link
 
 **4\. Implement the ArenaSoldOut.com API into the created website independently**, creating a custom solution from start to finish.
 
-### **CONNECTING PAYMENT PROCESSING**
+## **CONNECTING PAYMENT PROCESSING**
 
 Having your own internet payment gateway makes selling tickets, goods, and services simpler, safer, and more efficient. In many ticketing systems, it is necessary to use a “common” internet payment gateway registered under the system operator. Through this gateway, all tickets are sold, and organizers and agents must wait for the operator to transfer the money earned from sales to them. This process is inconvenient and not profitable.
 
@@ -102,19 +102,19 @@ Currently, the following integrated solutions are implemented on the ArenaSoldOu
 
 We can implement other payment gateways, which is a separate and serious task that requires discussion.
 
-### **USING WIDGETS**
+## **USING WIDGETS**
 
 Widgets of the platform are essential for selling tickets. Most often, when creating a website, a link to the widget is set on the “Buy Tickets” button. After clicking this button, the ticket buyer is directed to the widget, where they can select seats and make payment for the tickets.
 
-### **WHITE LABEL CONCEPT**
+## **WHITE LABEL CONCEPT**
 
 The “White Label” concept involves the possibility of using the ArenaSoldOut.com platform under your brand. You can upload and sell your own events, goods, and services, perceiving the platform as your own ticketing system. At the same time, you can connect various partners and agents to sales, assigning them different roles under contractual terms.
 
-### **ROLES ON THE PLATFORM**
+## **ROLES ON THE PLATFORM**
 
 The platform allows for combining user roles. For example, a promoter, festival organizer, or artist, an excursion organizer, or a provider of any other service can organize and sell everything independently. In this case, they simultaneously act as the Organizer, the Sales Organizer, and the Sales Agent. They can also assign necessary roles to other participants in the ticketing market.
 
-### **WHY IS IT BENEFICIAL?**
+## **WHY IS IT BENEFICIAL?**
 
 The ArenaSoldOut.com platform has undergone a long journey of evolutionary development and is a convenient, efficient, and well-balanced solution for the ticketing market. The platform developers have accumulated vast experience in automating business processes for such solutions and continue to enhance ArenaSoldOut.com.
 
@@ -130,7 +130,7 @@ The platform serves as the backend for the websites and applications of its user
 
 *ArenaSoldOut.com – Worldwide representative of TixGear*
 
-##### **For more insights into how ticketing websites are structured, read the articles:**
+#### **For more insights into how ticketing websites are structured, read the articles:**
 
 [“Custom ticketing platform: how to build your own”](/blog/custom-ticketing-platform-how-to-build-your-own)
 
@@ -148,7 +148,7 @@ The platform serves as the backend for the websites and applications of its user
 
 [“Make own ticketing platform for 1000 USD. Myth or reality?”](/blog/make-own-ticketing-platform-for-1000-usd-myth-or-reality)
 
-##### **You might also find these articles interesting:**
+#### **You might also find these articles interesting:**
 
 – [Tools for events from 5,000 to 100K+ participants: functional features of ticketing platforms](/blog/tools-for-events-from-5000-to-100k-participants-functional-features-of-ticketing-platforms)
 

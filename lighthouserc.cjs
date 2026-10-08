@@ -3,7 +3,7 @@ module.exports = {
   ci: {
     collect: {
       staticDistDir: './dist',
-      url: ['http://localhost/index.html', 'http://localhost/pricing.html'],
+      url: ['http://localhost/index.html', 'http://localhost/pricing.html', 'http://localhost/product/seating.html', 'http://localhost/blog/service-fees-in-ticket-sales-size-matters.html'],
       numberOfRuns: 3,
       settings: { preset: 'desktop', chromeFlags: '--no-sandbox --headless=new' },
     },

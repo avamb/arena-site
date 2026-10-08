@@ -11,11 +11,11 @@ This article serves as a simple and concise guide on how to transition from the 
 
 There are many ticket-selling websites, the best of which allow users to quickly select events and seats and easily purchase tickets for them. Despite the apparent simplicity of these sites, they are backed by complex interconnected systems: ticket processing, API gateways, online acquiring, reporting systems, online cash registers, and a multitude of other necessary functions. This “backend” is not visible to ticket buyers, and the apparent simplicity of existing sites often misleads both clients and developers of new solutions.
 
-![](./images/mastering-ticket-sales-a-guide-to-building-your-ticketing-website/bil-platforma-kartinka-2-1.jpg)
+![Mastering ticket sales: a Guide to building your ticketing website](./images/mastering-ticket-sales-a-guide-to-building-your-ticketing-website/bil-platforma-kartinka-2-1.jpg)
 
 This guide can be used to organize ticket sales for concerts, shows, sports events, festivals, tours, as well as for selling merchandise, related goods, and services.
 
-##### A couple of important notes:
+#### A couple of important notes:
 
 1\. **About the Place of DESIGN on the Road to Sales:** We often meet projects where everything started and ended with the discussion and creation of website design. This process often stretched out for months. As a result, there was neither time nor desire to move forward. “Getting creative” with a designer is enjoyable, but it’s better to first go through the “mandatory program” and start selling tickets, and then proceed to design the “best website in the world.”
 
@@ -23,7 +23,7 @@ This guide can be used to organize ticket sales for concerts, shows, sports even
 
 *ArenaSoldOut.com – Worldwide representative of TixGear*
 
-### **Step-by-Step Guide to Creating a Ticket Selling Website:**
+## **Step-by-Step Guide to Creating a Ticket Selling Website:**
 
 1\. **Domain Name for the Website**: You may already have a website and its domain name, or you can purchase one from one of the many domain name registration services. When buying a domain, it’s advisable to choose a short, memorable name that reflects your activities. Also, aim for a .com domain as it tends to index better on Google. Avoid free domain offers like .online that might come with unexpected costs after the initial free period.
 
@@ -61,7 +61,7 @@ P.P.S. ArenaSoldOut.com is a professional ticketing platform designed for variou
 
 *Marina Bakanova, Co-founder of ArenaSoldOut.com ticketing platform for event organizers*
 
-#### **For more insights into how ticket sales websites are structured, read the following articles:**
+### **For more insights into how ticket sales websites are structured, read the following articles:**
 
 – [“Into the Future: tour sales automation – exploring new frontiers in the travel industry'”](/blog/into-the-future-tour-sales-automation-exploring-new-frontiers-in-the-travel-industry)
 
