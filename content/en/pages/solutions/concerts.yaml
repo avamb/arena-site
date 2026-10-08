@@ -1,0 +1,38 @@
+title: "Ticketing for concerts: standing and seated, early bird, scanning at the door"
+description: "Sell concert tickets on your own site or a hosted page: standing areas with quotas, seated categories, early-bird windows, promo codes for partners, scanning with the app. Money goes to your own payment account."
+h1: Concerts
+lead: Standing and seated in one event, several price categories, an early-bird window that switches on a date, and a door that scans every ticket. Buyers pay into your own account from the first ticket.
+related:
+  - { label: Promo codes and price windows, href: /product/pricing-tools }
+  - { label: E-tickets and scanning, href: /product/tickets }
+  - { label: Festivals, href: /solutions/festivals }
+sections:
+  - type: cards
+    id: what
+    eyebrow: For concerts
+    title: What matters for a concert?
+    items:
+      - { title: Standing and seated together, text: "A standing area with a quota next to seated categories, in one plan and one checkout.", link: { label: Seating plans →, href: /product/seating } }
+      - { title: Early bird that switches itself, text: "A price window by date and time, or a quantity step that opens the next price when the first one sells out.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: Partners and promoters, text: "A page per promoter with its own link, promo codes per partner, every channel in one event center.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: The door, text: "Scanner app for iOS and Android, EAN-13 and QR on every ticket, partners' tickets from other systems accepted too.", link: { label: Tickets →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: What do concert organizers ask first?
+    items:
+      - q: How fast can a concert go on sale?
+        a: "Without a seating plan, within the hour: name, date, prices, poster, your payment account. With seats, usually within a day, after the team builds the plan from your file."
+      - q: Can I sell a VIP category with a limited quota?
+        a: Yes. Each category has its own price, quota and sale window; a sold-out category can hand its unsold places to the next one.
+      - q: What does a ticket cost me?
+        a: "A fixed amount per ticket sold, invoiced after the session; see [pricing](/pricing). Invitations and refunds are free."
+      - q: Can I see sales as they happen?
+        a: Yes. Every sale lands in your Telegram group within seconds and in the event center with per-session totals and a CSV export.
+  - type: cta
+    id: start
+    title: Put the concert on sale today
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Or write to us: we set everything up with you on a call."

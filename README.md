@@ -36,7 +36,10 @@ Every text is a file; no component contains prose (doc 33 §3.8).
 | Facts table (`/facts`, `facts.json`) | `content/data/facts.yaml` |
 | Header, footer, tagline, copyright | `content/data/nav.yaml` |
 | Interface strings (buttons, labels) | `i18n/en.json` |
-| Blog posts | `content/en/posts/<date>-<slug>.md` (frontmatter + Markdown; `draft: true` hides) |
+| Blog posts | `content/<lang>/posts/<slug>.md` (frontmatter + Markdown; `draft: true` hides; images next to the post in `images/<slug>/`) |
+| Legal pages (terms, privacy) | `content/en/pages/legal/*.yaml` (transferred from the previous site, under review) |
+| Product, solutions, company pages | `content/en/pages/product/*.yaml`, `solutions/*.yaml`, `company.yaml`, `contact.yaml`, `partners.yaml`, `help/tickets.yaml` |
+| "Read next" links of a page | `related:` list at the top of the page YAML (label, href, optional text) |
 
 Inline marks allowed inside YAML strings: `**bold**` and `[text](href)`. Nothing else is interpreted.
 Small fix without a laptop: open the file on GitHub, press the pencil, edit, "Commit changes" to
@@ -50,6 +53,24 @@ Adding a language (doc 33 §3.6): one line in `site.config.ts` (`inMenu: true`) 
 `content/<code>/` mirroring `content/en/`; untranslated pages show English with a note and `noindex`.
 Adding a provider or a market (doc 33 §3.9): one YAML file; the home page, `/payments`, `/start`
 and `facts.json` follow.
+
+## Blog archive and redirects
+
+The 75 posts of the previous WordPress site (en 30, ru 43, es 1, no 1) were imported with
+`npm run import:wordpress` (`scripts/import-wordpress.mjs`): REST API to Markdown, images downloaded
+next to the post, internal links rewritten to the new addresses, the old address kept as `legacy_url`.
+Texts are not edited (archive policy): every imported post shows a "From the archive" note linking to
+the changes page. Russian posts live under `/ru/blog/<slug>`; Russian is not in the menu yet, so only
+the blog index and the posts exist in Russian and every other link on those pages goes to English.
+
+Redirects: `redirects.yaml` holds the old pages (71 pages, shop, categories, tags); every post's 301 is
+derived from its `legacy_url` by `scripts/lib/legacy.mjs`, including the pre-WPML addresses without the
+`/ru/` prefix. `npm run check:links` verifies that every internal link and every redirect target exists.
+
+Internal linking (SEO): breadcrumbs on every inner page (visible and as BreadcrumbList), a "Read next"
+block from `related:` before the final CTA, product and solution pages cross-linked in their cards and
+FAQ answers, blog posts with "Read next" (newest posts) and "Related pages" (product pages), home
+"Who it is for" cards linking to the solution pages, footer with product, solutions, company and legal.
 
 ## Deploy
 

@@ -1,44 +1,26 @@
 ---
-/** Dispatches a page's `sections` array to components. The order on the page is the order in YAML. */
+/** Renders a page: breadcrumbs and h1 (inner pages), sections in YAML order, "Read next" before the final CTA. */
 import type { LoadedPage } from '@/lib/pages';
-import Hero from './sections/Hero.astro';
-import Facts from './sections/Facts.astro';
-import Steps from './sections/Steps.astro';
-import Ways from './sections/Ways.astro';
-import Qa from './sections/Qa.astro';
-import Center from './sections/Center.astro';
-import Money from './sections/Money.astro';
-import Pricing from './sections/Pricing.astro';
-import Who from './sections/Who.astro';
-import Clients from './sections/Clients.astro';
-import Changes from './sections/Changes.astro';
-import Cta from './sections/Cta.astro';
-import Generic from './sections/Generic.astro';
+import Section from './Section.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import Related from './Related.astro';
 interface Props { p: LoadedPage }
 const { p } = Astro.props;
-const { lang, page, providers, markets, pricing, changelog, posts } = p;
+const { lang, page } = p;
 const hasHero = page.data.sections.some((s) => s.type === 'hero');
+const sections = page.data.sections;
+const lastIsCta = sections.length > 0 && sections[sections.length - 1].type === 'cta';
+const body = lastIsCta ? sections.slice(0, -1) : sections;
+const tail = lastIsCta ? sections[sections.length - 1] : null;
+const related = page.data.related ?? [];
 ---
 {!hasHero && (
   <div class="wrap page-head">
+    <Breadcrumbs lang={lang} items={p.jsonld.breadcrumbs ?? []} />
     <h1>{page.data.h1 ?? page.data.title}</h1>
     {page.data.lead && <p class="lead">{page.data.lead}</p>}
   </div>
 )}
-{page.data.sections.map((s, i) => {
-  switch (s.type) {
-    case 'hero': return <Hero s={s} lang={lang} />;
-    case 'facts': return <Facts s={s} />;
-    case 'steps': return <Steps s={s} />;
-    case 'ways': return <Ways s={s} />;
-    case 'qa': return <Qa s={s} />;
-    case 'center': return <Center s={s} />;
-    case 'money': return <Money s={s} providers={providers} />;
-    case 'pricing': return <Pricing s={s} pricing={pricing} lang={lang} top={!hasHero && i === 0} />;
-    case 'who': return <Who s={s} lang={lang} />;
-    case 'clients': return <Clients s={s} lang={lang} />;
-    case 'changes': return <Changes s={s} changelog={changelog} lang={lang} />;
-    case 'cta': return <Cta s={s} lang={lang} />;
-    default: return <Generic s={s} lang={lang} providers={providers} markets={markets} changelog={changelog} posts={posts} first={!hasHero && i === 0} />;
-  }
-})}
+{body.map((s, i) => <Section p={p} s={s} first={!hasHero && i === 0} />)}
+<Related lang={lang} items={related} />
+{tail && <Section p={p} s={tail} first={false} />}

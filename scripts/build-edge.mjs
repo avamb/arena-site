@@ -5,14 +5,15 @@
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { parse } from 'yaml';
+import { allRedirects } from './lib/legacy.mjs';
 
 const check = process.argv.includes('--check');
 const indexing = process.env.SITE_INDEXING === 'true';
-const redirects = parse(readFileSync('redirects.yaml', 'utf8')).redirects;
+const redirects = allRedirects(); // redirects.yaml + legacy_url of every imported post
 const headers = parse(readFileSync('headers.yaml', 'utf8')).headers;
 if (!indexing) headers[0].values['X-Robots-Tag'] = 'noindex, nofollow';
 
-const variants = (p) => (p.endsWith('/') && p !== '/' ? [p, p.slice(0, -1)] : p.includes('.') ? [p] : [p, p + '/']);
+const variants = (p) => (p.endsWith('*') ? [p] : p.endsWith('/') && p !== '/' ? [p, p.slice(0, -1)] : p.includes('.') ? [p] : [p, p + '/']);
 
 /* Cloudflare */
 const cfRedirects = redirects.flatMap((r) => variants(r.from).map((f) => `${f} ${r.to} ${r.code ?? 301}`)).join('\n') + '\n';
@@ -20,9 +21,14 @@ const cfHeaders = headers.map((h) => [h.pattern, ...Object.entries(h.values).map
 
 /* nginx */
 const esc = (s) => s.replace(/[.+?^${}()|[\]\\]/g, '\\$&');
-const ngxRedirects = redirects
-  .map((r) => `location = ${r.from.endsWith('/') && r.from !== '/' ? r.from.slice(0, -1) : r.from} { return ${r.code ?? 301} ${r.to}; }` + (r.from.endsWith('/') && r.from !== '/' ? `\nlocation = ${r.from} { return ${r.code ?? 301} ${r.to}; }` : r.from.includes('.') ? '' : `\nlocation = ${r.from}/ { return ${r.code ?? 301} ${r.to}; }`))
-  .join('\n') + '\n';
+const ngxRedirect = (r) => {
+  const code = r.code ?? 301;
+  if (r.from.endsWith('*')) return `location ^~ ${r.from.slice(0, -1)} { return ${code} ${r.to}; }`;
+  const bare = r.from.endsWith('/') && r.from !== '/' ? r.from.slice(0, -1) : r.from;
+  if (bare.includes('.')) return `location = ${bare} { return ${code} ${r.to}; }`;
+  return `location = ${bare} { return ${code} ${r.to}; }\nlocation = ${bare}/ { return ${code} ${r.to}; }`;
+};
+const ngxRedirects = redirects.map(ngxRedirect).join('\n') + '\n';
 const toNginx = (h) => {
   const lines = Object.entries(h.values)
     .filter(([k]) => k.toLowerCase() !== 'content-type' && !k.startsWith('!'))

@@ -110,7 +110,7 @@ export function buildGraph(input: JsonLdInput): Graph {
       headline: input.article.headline,
       datePublished: input.article.date.toISOString(),
       dateModified: (input.article.updated ?? input.article.date).toISOString(),
-      author: { '@type': 'Organization', name: input.article.author },
+      author: input.article.author === org.name ? { '@id': `${siteUrl}/#organization` } : { '@type': 'Person', name: input.article.author },
       publisher: { '@id': `${siteUrl}/#organization` },
       mainEntityOfPage: absolute(input.path),
       inLanguage: input.lang,

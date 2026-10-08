@@ -1,0 +1,36 @@
+# Buyer help (doc 33 §3.4): not a form. Keeps buyers' questions out of the organizer funnel.
+title: "I bought a ticket: where is it, what do I show at the door"
+description: "Help for ticket buyers: the ticket is a PDF in the confirmation e-mail with an EAN-13 and a QR code; show it on the phone or printed. Refunds and date changes are handled by the organizer of the event."
+h1: Help for ticket buyers
+lead: Your ticket is a PDF attached to the confirmation e-mail, with a barcode and a QR code. Show it on your phone or printed. Questions about refunds and dates go to the organizer of the event, whose contact is on the sales page and in the e-mail.
+related:
+  - { label: E-tickets and scanning, href: /product/tickets }
+  - { label: Contact, href: /contact }
+  - { label: Privacy policy, href: /legal/privacy }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Buyers
+    title: Where is my ticket?
+    items:
+      - q: I paid but have no e-mail
+        a: Check the spam folder and the address you typed at checkout. If the e-mail is not there after a few minutes, write to the organizer with your name and the time of purchase; they can resend the ticket to another address.
+      - q: What do I show at the door?
+        a: The PDF on your phone or printed. The barcode and the QR code are scanned once; a screenshot of the code works too.
+      - q: Can I get a refund?
+        a: Refunds are decided by the organizer of the event, under the terms shown at checkout. Write to the organizer; the refund goes back to the card you paid with.
+      - q: The date has changed
+        a: You get an e-mail from the organizer with the updated ticket attached. The old ticket stops working.
+      - q: Can I transfer the ticket to a friend?
+        a: Forward the PDF. The ticket is scanned once, whoever brings it.
+      - q: I have a question about my payment
+        a: The payment went to the organizer's own payment account; the organizer sees it in the event center and can answer. Arena Sold Out does not hold buyers' money.
+      - q: Where does my data go?
+        a: "To the organizer of the event, to deliver the ticket, and to the payment provider for the payment. See the [privacy policy](/legal/privacy)."
+  - type: cta
+    id: organizers
+    title: Are you an organizer?
+    text: Create the event, connect your payment account, share the link. Buyers pay into your own account from the first ticket.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: How it works, href: /#how }
+    note: Ticket buyers write to the organizer of their event.

@@ -1,0 +1,41 @@
+title: "Seating plans: reserved seats, standing areas, both in one event"
+description: "Seating plans with versions, SVG import, mixed seated and general admission, prices per category. The organizer never draws the plan: send a PDF, a spreadsheet or a sketch."
+h1: Seating plans that match the venue
+lead: Reserved seating is in the core of the platform, not an add-on. The team builds your plan from whatever you have, usually within a day, and reuses it for every date.
+related:
+  - { label: "Promo codes, price windows and quantity steps", href: /product/pricing-tools }
+  - { label: E-tickets with EAN-13 and QR, href: /product/tickets }
+  - { label: For theatres, href: /solutions/theatre }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Seating
+    title: How does seating work with Arena?
+    items:
+      - q: Do I have to draw the plan myself?
+        a: "No, never. Send the plan as a PDF, a spreadsheet or a hand sketch and the team builds it into your event. Vector files (SVG) are imported directly."
+      - q: Can one event have seats and standing places?
+        a: Yes, in one plan. Reserved rows with categories, standing areas with quotas, every category with its own price and sale window.
+      - q: Can I change the plan after sales started?
+        a: Yes. Plans have versions, so a new layout for the next session does not touch the tickets already sold.
+      - q: How much does a seated ticket cost me?
+        a: "The per-ticket price plus 0.50 in your currency. The plan itself is free. See [pricing](/pricing)."
+      - q: Does the buyer pick the seat on a phone?
+        a: Yes. The seat map is the same in the widget and on the hosted page, with pinch zoom on phones, a legend per category and a hold timer for selected seats.
+      - q: What about invitations and press seats?
+        a: Issue free tickets for exact seats from the event center; they scan at the door like any ticket.
+  - type: cards
+    id: who
+    eyebrow: Typical venues
+    title: Who uses reserved seating?
+    items:
+      - { title: Theatres, text: "100 to 1,500 seats, repeat dates, press and partner invitations.", link: { label: For theatres →, href: /solutions/theatre } }
+      - { title: Concert venues and clubs, text: "One plan reused for many events a month, separate terms for permanent venues.", link: { label: For venues →, href: /solutions/venues } }
+      - { title: Touring shows, text: "One show, many cities, one plan per venue reused on the next visit.", link: { label: For concert tours →, href: /solutions/concert-tours } }
+  - type: cta
+    id: start
+    title: Send us your plan
+    text: A PDF, a spreadsheet or a photo of a sketch is enough. We build it into your event and show you the result before sales start.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: Events without a seating plan go on sale today.

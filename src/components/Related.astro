@@ -1,0 +1,26 @@
+---
+/** "Read next": hand-picked internal links from the page's frontmatter (SEO interlinking, descriptive anchors). */
+import type { LanguageCode } from '@config';
+import { t, localePath } from '@/lib/i18n';
+interface Props { lang: LanguageCode; items: { label: string; href: string; text?: string }[]; title?: string }
+const { lang, items, title } = Astro.props;
+---
+{items.length > 0 && (
+  <section class="section related" style="padding-top:0" aria-labelledby="related-title">
+    <div class="wrap">
+      <h2 id="related-title" class="related-title">{title ?? t(lang, 'blog.readNext')}</h2>
+      <ul class="related-list">
+        {items.map((i) => <li><a href={localePath(lang, i.href)}>{i.label}</a>{i.text && <p>{i.text}</p>}</li>)}
+      </ul>
+    </div>
+  </section>
+)}
+<style is:global>
+.related-title{font-size:19px;letter-spacing:-0.02em;margin-bottom:14px}
+.related-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.related-list li{border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;background:var(--surface);min-width:0}
+.related-list a{font-weight:600;color:var(--accent)}
+.related-list p{color:var(--fg-2);font-size:14px;margin-top:4px}
+@media (max-width:900px){.related-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.related-list{grid-template-columns:minmax(0,1fr)}}
+</style>

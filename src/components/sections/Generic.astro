@@ -10,7 +10,9 @@ import { turnstileSiteKey } from '@config';
 import { marked } from 'marked';
 import { inline } from '@/lib/inline';
 import { clients, facts } from '@/lib/data';
-import { localePath, formatDate, tObject, t } from '@/lib/i18n';
+import { localePath, formatDate, tObject, t, getLanguage } from '@/lib/i18n';
+import { getPosts } from '@/lib/data';
+import { languages } from '@config';
 import Icon from '@/components/Icon.astro';
 
 type Generic = Exclude<Section, { type: 'hero' | 'facts' | 'steps' | 'ways' | 'qa' | 'center' | 'money' | 'pricing' | 'who' | 'clients' | 'changes' | 'cta' }>;
@@ -34,6 +36,7 @@ const plannedGroups = [...new Set(markets.filter((m) => m.data.status === 'plann
 const marketName = (m: CollectionEntry<'markets'>) => m.data.name[lang] ?? m.data.name.en;
 const providerName = (id: string) => providers.find((p) => p.id === id)?.data.name ?? id;
 const countryOptions = [...liveMarkets, ...markets.filter((m) => m.data.status === 'planned')];
+const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) => l.code !== lang).map(async (l) => ({ l, n: (await getPosts(l.code)).length })))).filter((x) => x.n > 0) : [];
 ---
 <section class="section" id={s.id} style={pad}>
   <div class="wrap">
@@ -121,6 +124,9 @@ const countryOptions = [...liveMarkets, ...markets.filter((m) => m.data.status =
     ) : (
       <p class="empty">{s.empty}</p>
     ))}
+    {s.type === 'posts' && otherBlogs.length > 0 && (
+      <p class="pr-note" style="margin-top:28px">{t(lang, 'blog.otherLanguages')}: {otherBlogs.map((x, i) => <><a href={localePath(x.l.code, '/blog')} hreflang={x.l.code} style="color:var(--accent);font-weight:600">{t(lang, 'blog.inLanguage', { count: x.n, language: x.l.name })}</a>{i < otherBlogs.length - 1 ? ' · ' : ''}</>)}</p>
+    )}
 
     {s.type === 'facts-table' && (
       <>

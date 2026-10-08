@@ -32,6 +32,7 @@ jobs:
       - run: npm run check:edge
       - run: npm run check:jsonld
       - run: npm run check:agents
+      - run: npm run check:links
       - run: npm run forms:test
       - uses: actions/upload-artifact@v4
         with:

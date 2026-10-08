@@ -169,8 +169,8 @@ sections:
         title: Sales by session
         meta: October · €11,284 · 4 sessions
         rungs:
-          - { price: Fri 24, width: 76, label: 312 / 408 · €8,940 }
-          - { price: Sat 25, width: 34, label: 139 / 408 · €2,344 }
+          - { price: Fri 24, width: 76, label: "312 / 408 · €8,940" }
+          - { price: Sat 25, width: 34, label: "139 / 408 · €2,344" }
           - { price: Sun 26, width: 0, label: not on sale yet }
         rows:
           - { label: Sources, value: your site 61% · hosted page 29% · partners 10% }
@@ -220,13 +220,13 @@ sections:
     eyebrow: Who it is for
     title: Organizers who sell their own tickets
     items:
-      - { icon: music, title: Concerts, text: "Standing and seated, several price categories, early bird, scanning at the door.", link: { label: For concerts →, href: /start } }
-      - { icon: drama, title: Theatre, text: "Seating plans that match the venue, repeat dates, invitations for press and partners.", link: { label: For theatres →, href: /start } }
-      - { icon: box, title: Shows, text: "Ice shows, circus, dance: many dates, many cities, one plan per venue reused.", link: { label: For shows →, href: /start } }
-      - { icon: tent, title: Festivals, text: "Several days, many categories, categories that hand over unsold places to the next one.", link: { label: For festivals →, href: /start } }
-      - { icon: waypoints, title: Concert tours, text: "One show, many cities and dates, a page per promoter with its own link.", link: { label: For tours →, href: /start } }
-      - { icon: mic, title: Master classes and trainings, text: "Small groups, recurring dates, the host's own e-mails and language.", link: { label: For hosts →, href: /start } }
-      - { icon: building, title: Venues and clubs, text: "Your own venue, many events a month, one seating plan reused, separate terms.", link: { label: For venues →, href: /start } }
+      - { icon: music, title: Concerts, text: "Standing and seated, several price categories, early bird, scanning at the door.", link: { label: For concerts →, href: /solutions/concerts } }
+      - { icon: drama, title: Theatre, text: "Seating plans that match the venue, repeat dates, invitations for press and partners.", link: { label: For theatres →, href: /solutions/theatre } }
+      - { icon: box, title: Shows, text: "Ice shows, circus, dance: many dates, many cities, one plan per venue reused.", link: { label: For shows →, href: /solutions/shows } }
+      - { icon: tent, title: Festivals, text: "Several days, many categories, categories that hand over unsold places to the next one.", link: { label: For festivals →, href: /solutions/festivals } }
+      - { icon: waypoints, title: Concert tours, text: "One show, many cities and dates, a page per promoter with its own link.", link: { label: For tours →, href: /solutions/concert-tours } }
+      - { icon: mic, title: Master classes and trainings, text: "Small groups, recurring dates, the host's own e-mails and language.", link: { label: For hosts →, href: /solutions/master-classes } }
+      - { icon: building, title: Venues and clubs, text: "Your own venue, many events a month, one seating plan reused, separate terms.", link: { label: For venues →, href: /solutions/venues } }
 
   - type: clients
     id: clients

@@ -4,7 +4,7 @@
  * Nothing here is secret.
  */
 
-export type LanguageCode = 'en' | 'es' | 'cs' | 'ru';
+export type LanguageCode = 'en' | 'es' | 'cs' | 'ru' | 'no';
 
 export interface Language {
   code: LanguageCode;
@@ -22,6 +22,8 @@ export const languages: Language[] = [
   { code: 'es', name: 'Español', dir: 'ltr', intl: 'es-ES', inMenu: false },
   { code: 'cs', name: 'Čeština', dir: 'ltr', intl: 'cs-CZ', inMenu: false },
   { code: 'ru', name: 'Русский', dir: 'ltr', intl: 'ru-RU', inMenu: false },
+  /** Only one archive article exists in Norwegian; the language stays out of the menu. */
+  { code: 'no', name: 'Norsk', dir: 'ltr', intl: 'nb-NO', inMenu: false },
 ];
 
 export const defaultLanguage: LanguageCode = 'en';

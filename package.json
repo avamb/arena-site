@@ -9,7 +9,7 @@
     "build": "astro build && node scripts/build-edge.mjs",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "npm run check:types && npm run check:anti-slop && npm run check:i18n && npm run check:edge && npm run check:jsonld && npm run check:agents",
+    "check": "npm run check:types && npm run check:anti-slop && npm run check:i18n && npm run check:edge && npm run check:jsonld && npm run check:agents && npm run check:links",
     "check:types": "astro check",
     "check:anti-slop": "node scripts/check-anti-slop.mjs",
     "check:i18n": "node scripts/check-i18n.mjs",
@@ -19,7 +19,9 @@
     "lhci": "lhci autorun",
     "forms:dev": "node --import tsx forms/server-node.ts",
     "forms:test": "node --import tsx --test forms/app.test.ts",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "check:links": "node scripts/check-links.mjs",
+    "import:wordpress": "node scripts/import-wordpress.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
@@ -41,6 +43,8 @@
     "marked": "^18.1.0",
     "schema-dts": "^2.1.0",
     "tsx": "^4.20.0",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2",
     "typescript": "^5.9.0",
     "wrangler": "^4.148.0"
   },

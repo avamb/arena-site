@@ -1,0 +1,38 @@
+title: "Ticketing for master classes, trainings and tastings: small groups, recurring dates"
+description: "Sell places for master classes, trainings, wine tastings and workshops: small groups with a quota, recurring dates, the host's own e-mails and language, pay-what-you-want and free registrations."
+h1: Master classes and trainings
+lead: Small groups, recurring dates, your own e-mails in your language. A hosted page is ready in minutes; the widget fits the site you already have. Vino&Co in Israel sells its tastings this way.
+related:
+  - { label: Promo codes and price windows, href: /product/pricing-tools }
+  - { label: Where you sell, href: /product/sell }
+  - { label: Clients, href: /clients }
+sections:
+  - type: cards
+    id: what
+    eyebrow: For hosts
+    title: What matters for a workshop?
+    items:
+      - { title: A quota per date, text: "Twelve places on Tuesday, twenty on Saturday; sold-out dates close themselves.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: Recurring dates, text: "Add sessions to the same event; prices and categories carry over, buyers pick the date.", link: { label: Event center →, href: /#center } }
+      - { title: Free and pay-what-you-want, text: "Registrations without payment, or a minimum price and the buyer decides.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: Your language, text: "Page, widget, e-mail and ticket in the buyer's language, including Hebrew right-to-left.", link: { label: Tickets →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: What do hosts ask first?
+    items:
+      - q: I have no site. Where do people buy?
+        a: "On a hosted page, tickets.arenasoldout.com/your-name/your-event, ready in minutes. Share the link in messengers and social media."
+      - q: Can I collect a deposit only?
+        a: Set the ticket price to the deposit and collect the rest on site; or use pay-what-you-want with a minimum.
+      - q: Do buyers get a reminder?
+        a: Buyers get the ticket by e-mail and an e-mail when a date moves or is cancelled. Reminders before the date are not sent today.
+      - q: What does it cost?
+        a: "A fixed amount per paid ticket; free registrations cost nothing. See [pricing](/pricing)."
+  - type: cta
+    id: start
+    title: Start selling today
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Or write to us: we set everything up with you on a call."

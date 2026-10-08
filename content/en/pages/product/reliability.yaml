@@ -1,0 +1,31 @@
+title: "Reliability: 800 orders a minute, nightly backups, a watchdog that alerts us first"
+description: "Load tests at 800 orders a minute with 1,000 concurrent buyers, an ops watchdog with Telegram alerts, nightly encrypted backups, Cloudflare in front. Numbers with dates on the facts page."
+h1: Will it hold a stadium?
+lead: Yes. The platform is load-tested, watched around the clock and backed up every night. The numbers below carry dates and live on the facts page, where they are updated with every release.
+related:
+  - { label: Facts with dates, href: /facts }
+  - { label: Latest changes, href: /changes }
+  - { label: For developers, href: /developers }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Reliability
+    title: What has been measured?
+    items:
+      - q: How much load has been tested?
+        a: "800 orders a minute with 1,000 buyers on the page at the same time, in load tests of September 2026. The date and the figures are on the [facts page](/facts)."
+      - q: What happens if something breaks at night?
+        a: An ops watchdog checks the platform continuously and alerts the team in Telegram before organizers notice. Cloudflare sits in front of every page and the API.
+      - q: Are my data backed up?
+        a: Nightly, encrypted. Orders, buyers, seating plans and events.
+      - q: What about bots and bulk reservations?
+        a: Seat holds expire on a timer, orders are rate-limited, and Cloudflare filters abusive traffic before it reaches the platform.
+      - q: Can I see the history of changes?
+        a: "Yes, every feature that reached organizers is listed with its date on the [changes page](/changes)."
+  - type: cta
+    id: start
+    title: Start selling today
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: Read the facts, href: /facts }
+    note: "Or write to us: we set everything up with you on a call."

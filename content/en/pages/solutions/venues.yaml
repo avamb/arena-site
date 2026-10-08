@@ -1,0 +1,38 @@
+title: "Ticketing for venues and clubs: one plan reused, separate terms"
+description: "Owners of permanent venues, clubs, theatres and concert venues: one seating plan reused for every event, many events a month, scanning at the door, separate terms with a percentage of the ticket price instead of the per-ticket fee."
+h1: Venues and clubs
+lead: "Your own venue, many events a month. The plan is built once and reused, every promoter who rents the venue sells through your page or theirs, and the terms are different: a percentage of the ticket price instead of the per-ticket fee."
+related:
+  - { label: Pricing and detailed terms, href: /pricing }
+  - { label: Seating plans, href: /product/seating }
+  - { label: Theatre, href: /solutions/theatre }
+sections:
+  - type: cards
+    id: what
+    eyebrow: For venues
+    title: What matters for a venue?
+    items:
+      - { title: "One plan, every event", text: "Built once from your file, reused for every event; versions for stage layouts.", link: { label: Seating plans →, href: /product/seating } }
+      - { title: Promoters who rent the venue, text: "A page per promoter with its own link; the venue sees every event, the promoter sees its own.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: Separate terms, text: "Two percent of the ticket price instead of the per-ticket fee, no fee on invitations and refunds, volume terms on request.", link: { label: Pricing →, href: /pricing } }
+      - { title: The door, text: "Scanner app for iOS and Android, handheld scanners, partners' tickets from other systems accepted.", link: { label: Tickets →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: What do venue owners ask first?
+    items:
+      - q: What are the terms for a permanent venue?
+        a: "A percentage of the ticket price instead of the per-ticket fee, no fee on invitations and refunds. The number is on the [pricing page](/pricing); volume and individual terms on request."
+      - q: Can a promoter sell our events on their own site?
+        a: Yes, with the widget on their site or a promoter page we host. Sales from every channel appear in the venue's event center.
+      - q: Can we move from another ticketing system?
+        a: "Yes. Sessions, seating plans and customers were imported from Bil24 for two clients with zero downtime; other systems through the event bundle API. See [developers](/developers)."
+      - q: Who runs the event center?
+        a: Your team, with roles. The venue owns the organization; managers see what you allow.
+  - type: cta
+    id: start
+    title: Talk to us
+    text: Tell us about the venue and the number of events a month. We set up the plan and the terms with you.
+    primary: { label: Talk to us, href: /start }
+    secondary: { label: See pricing, href: /pricing }
+    note: "Or write to us: we set everything up with you on a call."

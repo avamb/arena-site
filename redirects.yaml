@@ -1,21 +1,105 @@
 # One source of truth for redirects (doc 33 §3.7a). scripts/build-edge.mjs turns this into
 # dist/_redirects (Cloudflare Workers Static Assets) and ops/nginx/redirects.conf (nginx).
-# `from` is the old WordPress path (trailing slash optional, both forms are generated),
-# `to` the new path, `code` 301 by default. Wave 2 adds the full 71 + 75 + 9 inventory from doc 33 §1.3.
+# `from` is the old WordPress path (with or without the trailing slash; both forms are generated),
+# `to` the new path, `code` 301 by default. A trailing `*` matches a whole folder.
+# Blog posts are NOT listed here: every imported post carries `legacy_url` in its frontmatter and
+# scripts/lib/legacy.mjs derives its 301 from that (75 posts, en/ru/es/no).
+# Inventory source: old sitemap 2026-10-08 (71 pages, 9 products, 6 categories, 6 tags).
 redirects:
+  # pricing
   - { from: /prices/, to: /pricing }
-  - { from: /special-offers-for-permanent-venues/, to: /pricing#venues }
-  - { from: /examples/, to: /clients }
-  - { from: /about/, to: /clients }
-  - { from: /contact-us/, to: /start }
-  - { from: /create-event/, to: /start }
-  - { from: /get-started/, to: /start }
+  - { from: /special-offers-for-permanent-venues/, to: /solutions/venues }
+  - { from: /termsconditions/, to: /legal/terms }
+  - { from: /privacy-policy/, to: /legal/privacy }
+  # product and features
+  - { from: /features/, to: /product/sell }
+  - { from: /my-site/, to: /product/sell }
+  - { from: /my-site-ticket-platform/, to: /product/sell }
+  - { from: /my-site-white/, to: /product/sell }
+  - { from: /my-site-bright/, to: /product/sell }
+  - { from: /your-event-landing-page/, to: /product/sell }
+  - { from: /technologies/, to: /product/reliability }
+  - { from: /download/, to: /product/tickets }
+  - { from: /tutorials/, to: /product/telegram }
+  - { from: /guides/, to: /blog }
+  - { from: /test-zone/, to: /developers }
+  - { from: /payout/, to: /payments }
   - { from: /connect-to-stripe/, to: /payments }
+  - { from: /wordpress-integration/, to: /solutions/wordpress }
   - { from: /for-developers/, to: /developers }
   - { from: /api-documents/, to: /developers }
-  - { from: /wordpress-integration/, to: /developers#wordpress }
-  - { from: /help/, to: /start }
+  # start, contact, help
+  - { from: /get-started/, to: /start }
+  - { from: /create-event/, to: /start }
+  - { from: /es/crear-evento/, to: /start }
+  - { from: /et/loo-sundmus/, to: /start }
+  - { from: /contact-us/, to: /contact }
+  - { from: /help/, to: /help/tickets }
+  - { from: /how-to-buy/, to: /help/tickets }
+  - { from: /failed/, to: /help/tickets }
+  - { from: /payment-successful/, to: /help/tickets }
+  - { from: /faq/, to: /facts }
+  # industries → solutions
+  - { from: /industries/, to: /solutions }
+  - { from: /industries/essential-features-for-concert-tours-shows-sport-events-galas-lectures-and-conferences/, to: /solutions/concert-tours }
+  - { from: /industries/essential-features-for-museums-and-parks/, to: /solutions/venues }
+  - { from: /industries/essential-features-for-ticket-systems-and-event-listings/, to: /solutions/venues }
+  - { from: /industries/excursions-and-boat-tours/, to: /solutions/master-classes }
+  - { from: /industries/welcome-to-arenasoldout-com-your-ultimate-event-management-solution/, to: /solutions }
+  - { from: /industries/welcome-to-arenasoldout-com-your-ultimate-event-management-solution-2/, to: /solutions }
+  - { from: /home-rus/biletnye-sistemy-afishi/, to: /solutions/venues }
+  - { from: /home-rus/muzei-i-parki-razvlechenij/, to: /solutions/venues }
+  - { from: /home-rus/festivali-spisok-naibolee-vostrebovannyh-funkczij/, to: /solutions/festivals }
+  - { from: /home-rus/konczertnye-tury-spektakli-gastroli-sportivnye-meropriyatiya-gala-konczerty-shou-lekczii-konferenczii/, to: /solutions/concert-tours }
+  - { from: /home-rus/for-venues-ru/, to: /solutions/venues }
+  # company
+  - { from: /about/, to: /company }
+  - { from: /examples/, to: /clients }
   - { from: /events/, to: /clients }
+  - { from: /events-prague/, to: /clients }
+  - { from: /vendors/, to: /partners }
+  - { from: /vendor-orders/, to: /partners }
+  - { from: /vendor-dashboard/, to: /partners }
+  # old event pages (2023–2025 promotions) → clients
+  - { from: /tarzan/, to: /clients }
+  - { from: /dyujmovochka/, to: /clients }
+  - { from: /standup-elena-borshheva/, to: /clients }
+  - { from: /dschinghis-khan/, to: /clients }
+  - { from: /rihanna/, to: /clients }
+  - { from: /ottawan-valencia/, to: /clients }
+  - { from: /stay-with-loved-ones/, to: /clients }
+  - { from: /anton-dolin-in-spain/, to: /clients }
+  - { from: /anton-dolin-in-spain-fb/, to: /clients }
+  - { from: /anton-dolin-in-spain-inst/, to: /clients }
+  - { from: /rolls-ru/, to: /clients }
+  # blog indexes, categories, tags
+  - { from: /articles/, to: /blog }
+  - { from: /articles-ru/*, to: /ru/blog }
+  - { from: /widget/*, to: /developers }
+  - { from: /news/, to: /blog }
+  - { from: /category/*, to: /blog }
+  - { from: /tag/*, to: /blog }
+  - { from: /ru/, to: /ru/blog }
+  - { from: /ru/stati/, to: /ru/blog }
+  - { from: /ru/category/*, to: /ru/blog }
+  - { from: /ru/tag/*, to: /ru/blog }
+  - { from: /es/category/*, to: /blog }
+  - { from: /es/tag/*, to: /blog }
+  - { from: /no/category/*, to: /blog }
+  - { from: /no/tag/*, to: /blog }
+  - { from: /et/, to: / }
+  - { from: /et/artiklid/, to: /blog }
+  - { from: /et/category/*, to: /blog }
+  - { from: /et/tag/*, to: /blog }
+  # WooCommerce test shop → buyer help
+  - { from: /shop/, to: /help/tickets }
+  - { from: /product/*, to: /help/tickets }
+  - { from: /cart/, to: /help/tickets }
+  - { from: /checkout/, to: /help/tickets }
+  - { from: /my-account/, to: /help/tickets }
+  # technical
   - { from: /sitemap_index.xml, to: /sitemap-index.xml }
+  - { from: /sitemap-post-type-post.xml, to: /sitemap-index.xml }
+  - { from: /sitemap-post-type-page.xml, to: /sitemap-index.xml }
   - { from: /changelog, to: /changes }
   - { from: /customers, to: /clients }

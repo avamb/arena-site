@@ -1,0 +1,29 @@
+title: "Who it is for: concerts, theatre, shows, festivals, concert tours, master classes, venues"
+description: "Arena Sold Out is used by organizers who sell their own tickets: concerts, theatre, shows, festivals, concert tours, master classes and trainings, venues and clubs, and sites on WordPress."
+h1: Organizers who sell their own tickets
+lead: One platform, different events. Pick yours to see which parts matter most, what the first week looks like and what other organizers in your field ask first.
+related:
+  - { label: How it works, href: /#how }
+  - { label: Pricing, href: /pricing }
+  - { label: Clients, href: /clients }
+sections:
+  - type: cards
+    id: list
+    eyebrow: Who it is for
+    title: Which kind of event do you run?
+    items:
+      - { title: Concerts, text: "Standing and seated, several price categories, early bird, scanning at the door.", link: { label: For concerts →, href: /solutions/concerts } }
+      - { title: Theatre, text: "Seating plans that match the venue, repeat dates, invitations for press and partners.", link: { label: For theatres →, href: /solutions/theatre } }
+      - { title: Shows, text: "Ice shows, circus, dance: many dates, many cities, one plan per venue reused.", link: { label: For shows →, href: /solutions/shows } }
+      - { title: Festivals, text: "Several days, many categories, categories that hand over unsold places to the next one.", link: { label: For festivals →, href: /solutions/festivals } }
+      - { title: Concert tours, text: "One show, many cities and dates, a page per promoter with its own link.", link: { label: For concert tours →, href: /solutions/concert-tours } }
+      - { title: Master classes and trainings, text: "Small groups, recurring dates, the host's own e-mails and language.", link: { label: For hosts →, href: /solutions/master-classes } }
+      - { title: Venues and clubs, text: "Your own venue, many events a month, one seating plan reused, separate terms.", link: { label: For venues →, href: /solutions/venues } }
+      - { title: Sites on WordPress, text: "Plugin with WooCommerce orders; the shop keeps working, tickets come from Arena.", link: { label: For WordPress sites →, href: /solutions/wordpress } }
+  - type: cta
+    id: start
+    title: Start selling today
+    text: Create the event, connect your payment account, share the link. An event without a seating plan is on sale within the hour; a seating plan we draw with you.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Or write to us: we set everything up with you on a call."

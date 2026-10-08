@@ -1,0 +1,34 @@
+---
+/** One section → one component. The switch lives in the template because Astro frontmatter cannot return JSX. */
+import type { LoadedPage } from '@/lib/pages';
+import Hero from './sections/Hero.astro';
+import Facts from './sections/Facts.astro';
+import Steps from './sections/Steps.astro';
+import Ways from './sections/Ways.astro';
+import Qa from './sections/Qa.astro';
+import Center from './sections/Center.astro';
+import Money from './sections/Money.astro';
+import Pricing from './sections/Pricing.astro';
+import Who from './sections/Who.astro';
+import Clients from './sections/Clients.astro';
+import Changes from './sections/Changes.astro';
+import Cta from './sections/Cta.astro';
+import Generic from './sections/Generic.astro';
+interface Props { p: LoadedPage; s: LoadedPage['page']['data']['sections'][number]; first: boolean }
+const { p, s, first } = Astro.props;
+const { lang, providers, markets, pricing, changelog, posts } = p;
+const generic = !['hero', 'facts', 'steps', 'ways', 'qa', 'center', 'money', 'pricing', 'who', 'clients', 'changes', 'cta'].includes(s.type);
+---
+{s.type === 'hero' && <Hero s={s} lang={lang} />}
+{s.type === 'facts' && <Facts s={s} />}
+{s.type === 'steps' && <Steps s={s} />}
+{s.type === 'ways' && <Ways s={s} />}
+{s.type === 'qa' && <Qa s={s} />}
+{s.type === 'center' && <Center s={s} />}
+{s.type === 'money' && <Money s={s} providers={providers} />}
+{s.type === 'pricing' && <Pricing s={s} pricing={pricing} lang={lang} top={first} />}
+{s.type === 'who' && <Who s={s} lang={lang} />}
+{s.type === 'clients' && <Clients s={s} lang={lang} />}
+{s.type === 'changes' && <Changes s={s} changelog={changelog} lang={lang} />}
+{s.type === 'cta' && <Cta s={s} lang={lang} />}
+{generic && <Generic s={s as any} lang={lang} providers={providers} markets={markets} changelog={changelog} posts={posts} first={first} />}

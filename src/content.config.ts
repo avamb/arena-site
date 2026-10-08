@@ -151,13 +151,19 @@ const pages = defineCollection({
     source_hash: z.string().optional(),
     h1: z.string().optional(),
     lead: z.string().optional(),
+    /** Internal links shown as "Read next" before the final CTA (SEO interlinking). */
+    related: z.array(z.object({ label: z.string(), href: z.string(), text: z.string().optional() })).optional(),
     sections: z.array(section),
   }),
 });
 
 const posts = defineCollection({
   loader: glob({ pattern: '*/posts/**/*.{md,mdx}', base: './content' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
+    cover: image().optional(),
+    cover_alt: z.string().optional(),
+    /** Hand-picked related site pages for internal linking (SEO); defaults are added by the layout. */
+    related: z.array(z.object({ label: z.string(), href: z.string() })).optional(),
     title: z.string(),
     description: z.string(),
     date: z.coerce.date(),

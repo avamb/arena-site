@@ -1,0 +1,18 @@
+{
+  "archive.title": "Из архива",
+  "archive.text": "Статья написана в {year} году, когда платформа работала на предыдущем ядре. В 2026 году платформа полностью переписана: текст сохранён как есть, продукт ушёл вперёд.",
+  "archive.link": "Что изменилось в 2026",
+  "blog.readNext": "Читать дальше",
+  "blog.related": "Страницы по теме",
+  "blog.otherLanguages": "Статьи на других языках",
+  "blog.inLanguage": "{count} статей: {language}",
+  "blog.backToIndex": "Все статьи",
+  "post.date": {
+    "day": "numeric",
+    "month": "long",
+    "year": "numeric"
+  },
+  "post.updated": "Обновлено {date}",
+  "notTranslated": "Эта страница ещё не переведена. Вы читаете английскую версию.",
+  "skip": "К содержанию"
+}

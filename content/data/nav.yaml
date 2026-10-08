@@ -3,7 +3,7 @@ header:
   - label: How it works
     href: /#how
   - label: Who it is for
-    href: /#who
+    href: /solutions
   - label: Pricing
     href: /pricing
   - label: Event center
@@ -20,38 +20,42 @@ tagline: Ticketing platform for organizers. Seats and tickets, your own payment 
 footer:
   - title: Product
     links:
-      - { label: How it works, href: /#how }
-      - { label: Where you sell, href: /#where }
-      - { label: Seating and prices, href: /#answers }
-      - { label: Event center, href: /#center }
+      - { label: Sell on your site or ours, href: /product/sell }
+      - { label: Seating plans, href: /product/seating }
+      - { label: Promo codes and price windows, href: /product/pricing-tools }
       - { label: Payments, href: /payments }
-      - { label: Telegram bot, href: https://t.me/EventsCentrBot }
+      - { label: Telegram bot, href: /product/telegram }
+      - { label: E-tickets and scanning, href: /product/tickets }
+      - { label: Reliability, href: /product/reliability }
   - title: Who it is for
     links:
-      - { label: Concerts, href: /#who }
-      - { label: Theatre, href: /#who }
-      - { label: Shows, href: /#who }
-      - { label: Festivals, href: /#who }
-      - { label: Concert tours, href: /#who }
-      - { label: Venues and clubs, href: /#who }
+      - { label: Concerts, href: /solutions/concerts }
+      - { label: Theatre, href: /solutions/theatre }
+      - { label: Shows, href: /solutions/shows }
+      - { label: Festivals, href: /solutions/festivals }
+      - { label: Concert tours, href: /solutions/concert-tours }
+      - { label: Master classes and trainings, href: /solutions/master-classes }
+      - { label: Venues and clubs, href: /solutions/venues }
+      - { label: WordPress sites, href: /solutions/wordpress }
   - title: For developers
     links:
       - { label: Docs, href: /developers }
       - { label: Public API, href: /developers#api }
       - { label: Widget, href: /developers#widget }
-      - { label: Webhooks, href: /developers#webhooks }
-      - { label: WordPress plugin, href: /developers#wordpress }
+      - { label: WordPress plugin, href: /solutions/wordpress }
+      - { label: Partners, href: /partners }
   - title: Company
     links:
-      - { label: About, href: /clients }
+      - { label: About, href: /company }
       - { label: Clients, href: /clients }
       - { label: Blog, href: /blog }
       - { label: Latest changes, href: /changes }
-      - { label: Contact, href: /start }
       - { label: Facts, href: /facts }
+      - { label: Contact, href: /contact }
+      - { label: Buyer help, href: /help/tickets }
   - title: Legal
     links:
-      - { label: Terms, href: /pricing/terms }
+      - { label: Terms and conditions, href: /legal/terms }
+      - { label: Privacy policy, href: /legal/privacy }
       - { label: Detailed pricing terms, href: /pricing/terms }
-      - { label: Privacy, href: /pricing/terms#privacy }
 copyright: "© 2019–2026 Arena Sold Out · ABH TEAM OÜ · EU"

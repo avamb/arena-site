@@ -1,0 +1,38 @@
+title: "Ticketing for theatres: seating plans, repeat dates, invitations"
+description: "Theatre ticketing with reserved seating that matches the venue, repeat dates on one plan, press and partner invitations, refunds and date changes with buyer e-mails. 100 to 1,500 seats."
+h1: Theatre
+lead: A plan that matches your venue, built by the team from your PDF or sketch and reused for every performance. Invitations for press and partners, refunds and moved dates handled from the event center.
+related:
+  - { label: Seating plans that match the venue, href: /product/seating }
+  - { label: "Venues and clubs: separate terms", href: /solutions/venues }
+  - { label: E-tickets and scanning, href: /product/tickets }
+sections:
+  - type: cards
+    id: what
+    eyebrow: For theatres
+    title: What matters for a theatre?
+    items:
+      - { title: The plan is yours, text: "Rows, loges, balcony, categories by price. Versions keep sold tickets safe when the layout changes.", link: { label: Seating plans →, href: /product/seating } }
+      - { title: Repeat dates, text: "Add sessions to the same event; the plan, prices and categories carry over. Move or cancel a date with buyer e-mails.", link: { label: Event center →, href: /#center } }
+      - { title: Invitations, text: "Free tickets for exact seats for press, partners and the cast, scanned like any other ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Your own box office, text: "Sell on your site with the widget or on the hosted page; money goes to your account, not through a marketplace.", link: { label: Where you sell →, href: /product/sell } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: What do theatres ask first?
+    items:
+      - q: Do you draw the seating plan?
+        a: Yes, the team does. Send a PDF, a spreadsheet or a hand sketch; the plan is built into your event, usually within a day, and you approve it before sales start.
+      - q: Can we have different prices for stalls and balcony?
+        a: Yes. Categories with their own prices, quotas and windows; early-bird windows switch by date.
+      - q: We run many performances a month. Is there a different deal?
+        a: "Yes. Permanent venues are offered a percentage of the ticket price instead of the per-ticket fee; see [venues](/solutions/venues) and [pricing](/pricing)."
+      - q: Can buyers choose seats on a phone?
+        a: Yes, the seat map works on phones with pinch zoom, in the buyer's language.
+  - type: cta
+    id: start
+    title: Send us your plan
+    text: A PDF, a spreadsheet or a photo of a sketch is enough. We build it into your event and show it to you before sales start.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Or write to us: we set everything up with you on a call."

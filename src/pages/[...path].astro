@@ -6,19 +6,16 @@
  */
 import Base from '@/layouts/Base.astro';
 import Sections from '@/components/Sections.astro';
-import { loadPage, pageSlugs, slugToPath } from '@/lib/pages';
-import { activeLanguages, localePath } from '@/lib/i18n';
+import { loadPage, pageRoutes, slugToPath } from '@/lib/pages';
+import { localePath } from '@/lib/i18n';
 import { defaultLanguage } from '@config';
 
 export async function getStaticPaths() {
-  const slugs = await pageSlugs();
-  return activeLanguages().flatMap((l) =>
-    slugs.map((slug) => {
-      const route = localePath(l.code, slugToPath(slug));
-      const path = route === '/' ? undefined : route.slice(1);
-      return { params: { path }, props: { lang: l.code, slug } };
-    }),
-  );
+  return (await pageRoutes()).map(({ lang, slug }) => {
+    const route = localePath(lang, slugToPath(slug));
+    const path = route === '/' ? undefined : route.slice(1);
+    return { params: { path }, props: { lang, slug } };
+  });
 }
 
 const { lang, slug } = Astro.props;

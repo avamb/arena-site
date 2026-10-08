@@ -1,0 +1,38 @@
+title: "Ticketing for shows: ice shows, circus, dance, many dates and cities"
+description: "Sell tickets for touring shows: one plan per venue reused, many dates, a page per promoter, sales from every city in one event center, money in your own payment account."
+h1: Shows
+lead: Ice shows, circus, dance and family shows run many dates in many venues. One event, a plan per venue, a page per promoter, and every city's sales in one place.
+related:
+  - { label: Concert tours, href: /solutions/concert-tours }
+  - { label: Seating plans, href: /product/seating }
+  - { label: Clients, href: /clients }
+sections:
+  - type: cards
+    id: what
+    eyebrow: For shows
+    title: What matters for a show?
+    items:
+      - { title: A plan per venue, text: "Each venue's plan is built once and reused on the next visit; versions keep history.", link: { label: Seating plans →, href: /product/seating } }
+      - { title: Many dates, text: "Sessions by city and day in one event; buyers pick the date in the widget, you see totals per session.", link: { label: Event center →, href: /#center } }
+      - { title: Local promoters, text: "A page per promoter with its own link and codes; every channel reports into one event center.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: Family tickets, text: "Categories for children and groups, quantity steps, free tickets for accompanying adults.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: What do show producers ask first?
+    items:
+      - q: Can one event cover a whole tour?
+        a: Yes. Sessions carry the city, the venue and the plan; totals and CSV reports come per session and for the whole event.
+      - q: How do we handle a venue we have not played before?
+        a: Send its plan in any readable form and the team builds it in. The next visit reuses it.
+      - q: Our tickets are also sold by local partners. Will the door cope?
+        a: Yes. The scanner app accepts partners' tickets from other systems next to Arena tickets.
+      - q: Where does the money go?
+        a: "Into your own payment account, in your currency, with every order. See [payments](/payments)."
+  - type: cta
+    id: start
+    title: Start selling today
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Or write to us: we set everything up with you on a call."

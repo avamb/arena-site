@@ -17,7 +17,7 @@ const keysOf = (obj, prefix = '') => Object.entries(obj ?? {}).flatMap(([k, v]) 
 const placeholders = (text) => [...text.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort().join(',');
 const frontmatter = (text) => { const m = text.match(/^---\n([\s\S]*?)\n---/); return m ? parse(m[1]) : {}; };
 
-const originals = walk(`content/${def}`);
+const originals = walk(`content/${def}`).filter((f) => /.(ya?ml|mdx?)$/.test(f)); // text files only, images sit next to posts
 let failed = false;
 const report = {};
 for (const lang of langs.filter((l) => l !== def)) {
@@ -44,7 +44,8 @@ for (const lang of langs) {
   }
 }
 for (const [lang, r] of Object.entries(report)) {
-  console.log(`i18n: ${lang}${active.includes(lang) ? '' : ' (not in menu)'}: ${r.translated} translated, ${r.missing.length} not translated${r.missing.length ? ': ' + r.missing.join(', ') : ''}`);
+  const list = r.missing.length <= 12 ? r.missing.join(', ') : `${r.missing.slice(0, 12).join(', ')} … (+${r.missing.length - 12})`;
+  console.log(`i18n: ${lang}${active.includes(lang) ? '' : ' (not in menu)'}: ${r.translated} translated, ${r.missing.length} not translated${r.missing.length ? ': ' + list : ''}`);
 }
 if (failed) process.exit(1);
 console.log(`i18n: parity ok for ${originals.length} original files`);

@@ -1,0 +1,14 @@
+{
+  "archive.title": "Del archivo",
+  "archive.text": "Escrito en {year}, cuando la plataforma funcionaba con su núcleo anterior. En 2026 la plataforma se reconstruyó por completo: el texto se conserva tal cual, el producto ha avanzado.",
+  "archive.link": "Qué cambió en 2026",
+  "blog.readNext": "Leer a continuación",
+  "blog.related": "Páginas relacionadas",
+  "blog.backToIndex": "Todos los artículos",
+  "post.date": {
+    "day": "numeric",
+    "month": "long",
+    "year": "numeric"
+  },
+  "notTranslated": "Esta página aún no está traducida. Estás leyendo la versión en inglés."
+}

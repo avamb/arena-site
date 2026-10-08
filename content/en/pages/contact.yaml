@@ -1,0 +1,36 @@
+title: "Contact Arena Sold Out: Telegram, e-mail, the application form"
+description: "How to reach the Arena Sold Out team: the Telegram chat and bot, e-mail, and the application form for organizers. Ticket buyers: your organizer and the buyer help page."
+h1: Contact
+lead: Organizers reach the team in Telegram or through the form; the same people answer. Ticket buyers should write to the organizer of their event first; the buyer help page explains where to find the ticket.
+related:
+  - { label: Start selling, href: /start }
+  - { label: Help for ticket buyers, href: /help/tickets }
+  - { label: Partners, href: /partners }
+sections:
+  - type: cards
+    id: ways
+    eyebrow: Contact
+    title: How do I reach the team?
+    items:
+      - { title: Telegram chat, text: "The fastest way. The team reads the chat during the day in Europe and Israel.", link: { label: Open the Telegram chat →, href: https://t.me/ArenaSoldOutChat } }
+      - { title: Telegram bot, text: "Create an event from a poster or just say hello; the team answers in the same bot.", link: { label: Open the Telegram bot →, href: https://t.me/EventsCentrBot } }
+      - { title: Application form, text: "Tell us about your event and where you sell; we set you up, usually within a day.", link: { label: Start selling →, href: /start } }
+      - { title: E-mail, text: "hello@arenasoldout.com for everything else, including partnerships and press.", link: { label: Write an e-mail →, href: "mailto:hello@arenasoldout.com" } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: Who should I contact?
+    items:
+      - q: I bought a ticket and have a question
+        a: "Write to the organizer of the event; their contact is on the sales page and in the ticket e-mail. The [buyer help page](/help/tickets) explains where the ticket is and what to do at the door."
+      - q: I am an organizer and want to start
+        a: "Use the [form](/start) or the Telegram bot. The team creates your organization, your sales page and connects your payment account with you."
+      - q: I am a developer or an agency
+        a: "The [developers page](/developers) has the widget and the API; [partners](/partners) explains how agencies and venues work with us."
+  - type: cta
+    id: start
+    title: Start selling today
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: Open the Telegram chat, href: https://t.me/ArenaSoldOutChat }
+    note: "ABH TEAM OÜ, European Union."

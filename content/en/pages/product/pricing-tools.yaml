@@ -1,0 +1,33 @@
+title: "Promo codes, early bird windows, quantity steps, free and pay-what-you-want tickets"
+description: "Pricing tools for organizers: promo codes with scope and limits, price windows by date, quantity steps and category chains, service fee per channel, free and pay-what-you-want tickets."
+h1: Prices that change the way you planned
+lead: Early bird by date, the next price when a step sells out, codes for partners, a service fee per channel. All of it set in the event center, applied in the widget and on the hosted page.
+related:
+  - { label: Seating plans, href: /product/seating }
+  - { label: "Pricing: per ticket, no subscription", href: /pricing }
+  - { label: For festivals, href: /solutions/festivals }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Pricing tools
+    title: What can I do with prices?
+    items:
+      - q: Can I use promo codes?
+        a: Yes. A code can apply to one event, one session or one category, with a sale window, a minimum order and a per-buyer limit. Partners get their own codes.
+      - q: Can prices change on a date I set?
+        a: Yes. Early-bird windows switch by date and time. Quantity steps open the next price when the current one sells out, so a sold-out tier never blocks sales.
+      - q: Several prices for one event?
+        a: Yes. Categories with their own price, quota and sale window. Categories can form chains that hand unsold places to the next one.
+      - q: Can I add a service fee?
+        a: Yes. A percentage per sales channel, shown to the buyer as a separate line and paid into your account together with the ticket price.
+      - q: Free tickets and pay what you want?
+        a: Yes, both. Free tickets for invitations and registrations, and pay-what-you-want tickets with a minimum you set.
+      - q: Do discounts work with seats?
+        a: Yes. Codes and windows apply to seated categories as well as to standing areas.
+  - type: cta
+    id: start
+    title: Set your prices today
+    text: Create the event, add categories and windows, connect your payment account, share the link.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: See pricing, href: /pricing }
+    note: Volume and individual terms on request.

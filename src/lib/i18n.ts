@@ -33,10 +33,36 @@ export function tObject<T>(lang: LanguageCode, key: string): T {
   return (dictionaries[lang]?.[key] ?? dictionaries[defaultLanguage]?.[key]) as T;
 }
 
+/**
+ * Pages that exist in each language, from the content folder: content/ru/pages/blog.yaml → ru has "/blog".
+ * A language in the menu gets every route (missing translations fall back to English with a note);
+ * a language outside the menu gets only the routes it has content for, everything else links to English.
+ */
+// Only the keys are used; `?raw` keeps Vite from parsing YAML as JavaScript.
+const pageFiles = import.meta.glob('../../content/*/pages/**/*.yaml', { query: '?raw', import: 'default' });
+const ownRoutes = new Map<string, Set<string>>();
+for (const key of Object.keys(pageFiles)) {
+  const m = key.match(/content\/(\w+)\/pages\/(.+)\.yaml$/);
+  if (!m) continue;
+  const [, code, slug] = m;
+  if (!ownRoutes.has(code)) ownRoutes.set(code, new Set());
+  ownRoutes.get(code)!.add(slug === 'home' ? '/' : `/${slug}`);
+}
+
+function hasRoute(lang: LanguageCode, href: string): boolean {
+  const path = href.replace(/[#?].*$/, '') || '/';
+  const own = ownRoutes.get(lang);
+  if (!own) return false;
+  if (own.has(path)) return true;
+  // blog posts live under the blog index
+  return path.startsWith('/blog/') && own.has('/blog');
+}
+
 /** Prefix a site route with the language segment; external links pass through. */
 export function localePath(lang: LanguageCode, href: string): string {
   if (/^(https?:)?\/\//.test(href) || href.startsWith('mailto:') || href.startsWith('#')) return href;
   if (lang === defaultLanguage) return href;
+  if (!getLanguage(lang).inMenu && !hasRoute(lang, href)) return href;
   if (href === '/') return `/${lang}`;
   return `/${lang}${href}`;
 }

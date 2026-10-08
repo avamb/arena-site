@@ -3,20 +3,19 @@
  * `/pricing`; a blog post's twin is its source. `headers.yaml` gives them `text/markdown`.
  */
 import type { APIRoute, GetStaticPaths } from 'astro';
-import { loadPage, pageSlugs, slugToPath } from '@/lib/pages';
+import { loadPage, pageRoutes, slugToPath } from '@/lib/pages';
 import { getPosts } from '@/lib/data';
-import { activeLanguages, localePath } from '@/lib/i18n';
-import { siteUrl } from '@config';
+import { localePath } from '@/lib/i18n';
+import { siteUrl, languages } from '@config';
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const slugs = await pageSlugs();
   const out: { params: { path: string }; props: { lang: string; slug?: string; postId?: string } }[] = [];
-  for (const l of activeLanguages()) {
-    for (const slug of slugs) {
-      const route = localePath(l.code, slugToPath(slug));
-      const path = route === '/' ? 'index' : route === `/${l.code}` ? `${l.code}/index` : route.slice(1);
-      out.push({ params: { path }, props: { lang: l.code, slug } });
-    }
+  for (const { lang, slug } of await pageRoutes()) {
+    const route = localePath(lang, slugToPath(slug));
+    const path = route === '/' ? 'index' : route === `/${lang}` ? `${lang}/index` : route.slice(1);
+    out.push({ params: { path }, props: { lang, slug } });
+  }
+  for (const l of languages) {
     for (const post of await getPosts(l.code)) {
       const id = post.id.split('/').pop()!;
       out.push({ params: { path: localePath(l.code, `/blog/${id}`).slice(1) }, props: { lang: l.code, postId: post.id } });

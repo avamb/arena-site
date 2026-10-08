@@ -11,7 +11,9 @@ const walk = (dir, exts) => readdirSync(dir).flatMap((f) => {
   return statSync(p).isDirectory() ? walk(p, exts) : exts.includes(extname(f)) ? [p] : [];
 });
 
-const content = [...walk('content', ['.yaml', '.yml', '.md', '.mdx']), ...walk('i18n', ['.json'])];
+// Archive posts and legal texts are transferred as they were (owner decision); copy rules apply to the site's own texts only.
+const isArchive = (f) => /[\\/]posts[\\/]|[\\/]pages[\\/]legal[\\/]/.test(f);
+const content = [...walk('content', ['.yaml', '.yml', '.md', '.mdx']).filter((f) => !isArchive(f)), ...walk('i18n', ['.json'])];
 const code = [...walk('src', ['.astro', '.svelte', '.css', '.ts'])];
 const findings = [];
 const flag = (file, line, rule, text) => findings.push({ file, line, rule, text: text.trim().slice(0, 100) });
@@ -66,6 +68,17 @@ for (const file of code.filter((f) => f.endsWith('.css'))) {
   for (const sel of upper) if (!sel.includes('.eyebrow')) flag(file, 0, 'T3 uppercase outside .eyebrow', sel);
 }
 
+/* YAML flow mappings: an unquoted text with a comma silently becomes extra keys ("One show, many cities") */
+import('yaml').then(({ parse }) => {
+  const visit = (o, f, trail) => {
+    if (Array.isArray(o)) o.forEach((x, i) => visit(x, f, `${trail}[${i}]`));
+    else if (o && typeof o === 'object') for (const [k, v] of Object.entries(o)) { if (/\s/.test(k) || v === null) flag(f, 0, 'YAML text broken by a comma (quote it)', `${trail} ${k}`); visit(v, f, `${trail}.${k}`); }
+  };
+  for (const f of walk('content', ['.yaml', '.yml'])) { try { visit(parse(readFileSync(f, 'utf8')), f, ''); } catch (e) { flag(f, 0, 'YAML parse error', e.message); } }
+  report();
+});
+
+function report() {
 /* T9 accent budget: count var(--accent) in the home sections (rough proxy, informational) */
 if (findings.length) {
   console.error(`anti-slop: ${findings.length} finding(s)`);
@@ -73,3 +86,4 @@ if (findings.length) {
   process.exit(1);
 }
 console.log(`anti-slop: clean (${content.length} content files, ${code.length} code files)`);
+}

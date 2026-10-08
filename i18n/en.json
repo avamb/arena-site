@@ -35,5 +35,16 @@
   "pricing.perTicket": "per ticket",
   "notFound.title": "Page not found",
   "notFound.text": "The address does not exist on this site. The home page has everything an organizer asks first.",
-  "notFound.cta": "Go to the home page"
+  "notFound.cta": "Go to the home page",
+  "archive.title": "From the archive",
+  "archive.text": "Written in {year}, when the platform ran on its previous core. In 2026 the platform was rebuilt from the ground up: the text is kept as it was, the product has moved on.",
+  "archive.link": "What changed in 2026",
+  "blog.readNext": "Read next",
+  "blog.related": "Related pages",
+  "blog.otherLanguages": "Articles in other languages",
+  "blog.inLanguage": "{count} articles in {language}",
+  "blog.backToIndex": "All articles",
+  "breadcrumbs": "Breadcrumbs",
+  "post.author": "By {author}",
+  "post.updated": "Updated {date}"
 }
