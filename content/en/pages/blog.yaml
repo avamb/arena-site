@@ -3,6 +3,10 @@ title: "Blog"
 description: "Articles for organizers: money and service fees, selling on your own site, seating, early starts, and notes from the team."
 h1: Blog
 lead: "Articles for organizers who sell their own tickets: money and service fees, selling on your own site, seating, early sales, marketing. The archive from the previous site is here with its original dates and an archive note; the platform was rebuilt in 2026."
+related:
+  - { label: Pricing, href: /pricing }
+  - { label: Latest changes to the platform, href: /changes }
+  - { label: Start selling, href: /start }
 sections:
   - type: posts
     id: posts
