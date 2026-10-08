@@ -16,7 +16,7 @@ const variants = (p) => (p.endsWith('/') && p !== '/' ? [p, p.slice(0, -1)] : p.
 
 /* Cloudflare */
 const cfRedirects = redirects.flatMap((r) => variants(r.from).map((f) => `${f} ${r.to} ${r.code ?? 301}`)).join('\n') + '\n';
-const cfHeaders = headers.map((h) => [h.pattern, ...Object.entries(h.values).map(([k, v]) => `  ${k}: ${v}`)].join('\n')).join('\n\n') + '\n';
+const cfHeaders = headers.map((h) => [h.pattern, ...Object.entries(h.values).map(([k, v]) => (k.startsWith('!') ? `  ${k}` : `  ${k}: ${v}`))].join('\n')).join('\n\n') + '\n';
 
 /* nginx */
 const esc = (s) => s.replace(/[.+?^${}()|[\]\\]/g, '\\$&');
@@ -25,7 +25,7 @@ const ngxRedirects = redirects
   .join('\n') + '\n';
 const toNginx = (h) => {
   const lines = Object.entries(h.values)
-    .filter(([k]) => k.toLowerCase() !== 'content-type')
+    .filter(([k]) => k.toLowerCase() !== 'content-type' && !k.startsWith('!'))
     .map(([k, v]) => `    add_header ${k} "${String(v).replace(/"/g, '\\"')}" always;`);
   const type = Object.entries(h.values).find(([k]) => k.toLowerCase() === 'content-type');
   if (type) lines.push(`    types { } default_type "${type[1]}";`);
@@ -36,9 +36,12 @@ const toNginx = (h) => {
   return `location = ${p} {\n${lines.join('\n')}\n    try_files $uri =404;\n}\n`;
 };
 // nginx: add_header in a location replaces the parent's headers, so repeat the global ones inside each location.
-const globalLines = Object.entries(headers[0].values).map(([k, v]) => `    add_header ${k} "${String(v).replace(/"/g, '\\"')}" always;`);
+// Headers the location sets itself (including "! Name" removals) are not repeated from the global rule.
+const globalLines = (h) => Object.entries(headers[0].values)
+  .filter(([k]) => !Object.keys(h.values).some((lk) => lk.replace(/^!\s*/, '').toLowerCase() === k.toLowerCase()))
+  .map(([k, v]) => `    add_header ${k} "${String(v).replace(/"/g, '\\"')}" always;`);
 const ngxHeaders = headers
-  .map((h) => (h.pattern === '/*' ? toNginx(h) : toNginx(h).replace('{\n', '{\n' + globalLines.join('\n') + '\n')))
+  .map((h) => (h.pattern === '/*' ? toNginx(h) : toNginx(h).replace('{\n', '{\n' + globalLines(h).join('\n') + '\n')))
   .join('\n');
 
 const outputs = {
@@ -60,7 +63,7 @@ if (check) {
       if (file.includes('redirects') && !text.includes(r.to)) { console.error(`edge: ${r.from} → ${r.to} missing in ${file}`); failed = true; }
     }
   }
-  for (const h of headers) for (const k of Object.keys(h.values)) {
+  for (const h of headers) for (const k of Object.keys(h.values).filter((k) => !k.startsWith('!'))) {
     if (!cfHeaders.includes(k) || (!ngxHeaders.includes(k) && k.toLowerCase() !== 'content-type')) { console.error(`edge: header ${k} missing`); failed = true; }
   }
   if (failed) process.exit(1);

@@ -67,7 +67,7 @@ export const umami = {
  * Turnstile site key is public by design (it is embedded in the HTML). The secret lives only
  * in `wrangler secret` / the container environment as TURNSTILE_SECRET_KEY. Empty = widget off.
  */
-export const turnstileSiteKey: string = '';
+export const turnstileSiteKey: string = '0x4AAAAAAFRfZMQDu7dPl6Rk'; // widget "arena-site forms": arenasoldout.com, new.arenasoldout.com, localhost
 
 /** AI crawlers explicitly allowed in robots.txt (doc 33 §3.10, item 9). Review quarterly. */
 export const allowedAgents = [
