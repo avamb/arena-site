@@ -13,7 +13,7 @@ only; a literal colour outside `tokens.css` fails the anti-slop check.
 | `--surface-2` | `#EDEFF6` | `#182043` | bands, chips, visual fills |
 | `--fg` | `#0B1020` | `#EEF0F8` | text |
 | `--fg-2` | `#4D536B` | `#B2B7D0` | secondary text |
-| `--fg-3` | `#7B819A` | `#7E86A8` | muted text, captions |
+| `--fg-3` | `#646A88` | `#858DAE` | muted text, captions (darkened from the prototype `#7B819A` / `#7E86A8` to reach 4.5:1 on every surface) |
 | `--line` | `#DDE0EB` | `#242D4F` | hairline borders |
 | `--line-2` | `#C9CDDD` | `#334071` | stronger borders, ghost buttons |
 | `--accent` | `#001489` | `#6F8CFF` | the platform colour: primary buttons, selected seats, links |

@@ -253,7 +253,7 @@ p{margin:0}
 /* Footer */
 footer{border-top:1px solid var(--line);padding-block:48px 28px;font-size:14px}
 .fgrid{display:grid;grid-template-columns:1.4fr repeat(5,minmax(0,1fr));gap:24px}
-.fcol h4{font-size:14px;color:var(--fg);font-weight:700;margin-bottom:12px}
+.fcol h3{font-size:14px;color:var(--fg);font-weight:700;margin-bottom:12px}
 .fcol ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .fcol a{color:var(--fg-2)}.fcol a:hover{color:var(--fg)}
 .fbot{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;margin-top:36px;padding-top:20px;border-top:1px solid var(--line);color:var(--fg-3);font-size:13px}

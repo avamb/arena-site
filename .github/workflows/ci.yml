@@ -51,8 +51,10 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - run: npm ci
-      - uses: actions/download-artifact@v4
-        with: { name: dist, path: . }
+      # Lighthouse runs against a launch-mode build (indexing on): the dev host is noindex by design,
+      # which would fail the SEO category for a reason that has nothing to do with the pages.
+      - run: npm run build
+        env: { SITE_INDEXING: 'true' }
       - run: npm run lhci
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
