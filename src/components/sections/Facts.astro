@@ -1,0 +1,11 @@
+---
+import type { Section } from '@/content.config';
+import { inline } from '@/lib/inline';
+interface Props { s: Extract<Section, { type: 'facts' }> }
+const { s } = Astro.props;
+---
+<section class="trust" id={s.id}>
+  <div class="wrap trust-row">
+    <div class="facts" style="margin-inline-start:0">{s.items.map((i) => <span set:html={inline(i)} />)}</div>
+  </div>
+</section>

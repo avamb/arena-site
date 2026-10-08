@@ -1,0 +1,15 @@
+# Latest changes (founders: "latest changes", not "changelog"). Entries in content/data/changelog/*.yaml.
+title: "Latest changes"
+description: "A line for every feature that reached organizers, with the date. The platform grows every week."
+h1: Latest changes
+lead: "A line for every feature that reached organizers. Tell us what you need next: most requests from organizers ship within weeks, and the team answers in person."
+sections:
+  - type: changelog
+    id: log
+  - type: cta
+    id: start
+    title: Tell us what you need
+    text: Most requests from organizers ship within weeks. Write what is missing for your event and the team answers in person.
+    primary: { label: Tell us what you need, href: /start }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Or write to us: we set everything up with you on a call."

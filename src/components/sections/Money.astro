@@ -1,0 +1,31 @@
+---
+import type { Section } from '@/content.config';
+import type { CollectionEntry } from 'astro:content';
+import { inline } from '@/lib/inline';
+import { liveProviderNames } from '@/lib/data';
+interface Props { s: Extract<Section, { type: 'money' }>; providers: CollectionEntry<'providers'>[] }
+const { s, providers } = Astro.props;
+const names = liveProviderNames(providers).join(' · ');
+---
+<section class="money section" id={s.id}>
+  <div class="wrap">
+    <div class="money-grid">
+      <div>
+        {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
+        {s.title && <h2 class="h2">{s.title}</h2>}
+        {s.lead && <p class="lead" set:html={inline(s.lead)} />}
+      </div>
+      <div class="flow" aria-label={s.flowAria}>
+        <div class="flow-row five">
+          {s.nodes.map((n, i) => (
+            <>
+              {i > 0 && <span class="arrow">→</span>}
+              <div class:list={['node', { hi: n.highlight }]}>{n.label}<small>{n.providers ? names : n.sub}</small></div>
+            </>
+          ))}
+        </div>
+        <div class="flow-note"><i aria-hidden="true"></i>{s.note}</div>
+      </div>
+    </div>
+  </div>
+</section>

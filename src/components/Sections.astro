@@ -1,0 +1,44 @@
+---
+/** Dispatches a page's `sections` array to components. The order on the page is the order in YAML. */
+import type { LoadedPage } from '@/lib/pages';
+import Hero from './sections/Hero.astro';
+import Facts from './sections/Facts.astro';
+import Steps from './sections/Steps.astro';
+import Ways from './sections/Ways.astro';
+import Qa from './sections/Qa.astro';
+import Center from './sections/Center.astro';
+import Money from './sections/Money.astro';
+import Pricing from './sections/Pricing.astro';
+import Who from './sections/Who.astro';
+import Clients from './sections/Clients.astro';
+import Changes from './sections/Changes.astro';
+import Cta from './sections/Cta.astro';
+import Generic from './sections/Generic.astro';
+interface Props { p: LoadedPage }
+const { p } = Astro.props;
+const { lang, page, providers, markets, pricing, changelog, posts } = p;
+const hasHero = page.data.sections.some((s) => s.type === 'hero');
+---
+{!hasHero && (
+  <div class="wrap page-head">
+    <h1>{page.data.h1 ?? page.data.title}</h1>
+    {page.data.lead && <p class="lead">{page.data.lead}</p>}
+  </div>
+)}
+{page.data.sections.map((s, i) => {
+  switch (s.type) {
+    case 'hero': return <Hero s={s} lang={lang} />;
+    case 'facts': return <Facts s={s} />;
+    case 'steps': return <Steps s={s} />;
+    case 'ways': return <Ways s={s} />;
+    case 'qa': return <Qa s={s} />;
+    case 'center': return <Center s={s} />;
+    case 'money': return <Money s={s} providers={providers} />;
+    case 'pricing': return <Pricing s={s} pricing={pricing} lang={lang} top={!hasHero && i === 0} />;
+    case 'who': return <Who s={s} lang={lang} />;
+    case 'clients': return <Clients s={s} lang={lang} />;
+    case 'changes': return <Changes s={s} changelog={changelog} lang={lang} />;
+    case 'cta': return <Cta s={s} lang={lang} />;
+    default: return <Generic s={s} lang={lang} providers={providers} markets={markets} changelog={changelog} posts={posts} first={!hasHero && i === 0} />;
+  }
+})}

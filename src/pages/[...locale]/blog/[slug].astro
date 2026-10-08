@@ -1,0 +1,38 @@
+---
+/** Blog post page. Posts are Markdown with frontmatter in content/<lang>/posts (wave 2 imports the archive). */
+import { render } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import { getPosts } from '@/lib/data';
+import { activeLanguages, localePath, formatDate, tObject } from '@/lib/i18n';
+import { defaultLanguage } from '@config';
+
+export async function getStaticPaths() {
+  const out = [];
+  for (const l of activeLanguages()) {
+    for (const post of await getPosts(l.code)) {
+      out.push({ params: { locale: l.code === defaultLanguage ? undefined : l.code, slug: post.id.split('/').pop() }, props: { lang: l.code, post } });
+    }
+  }
+  return out;
+}
+
+const { lang, post } = Astro.props;
+const { Content } = await render(post);
+const path = localePath(lang, `/blog/${post.id.split('/').pop()}`);
+const fmt = tObject<Intl.DateTimeFormatOptions>(lang, 'post.date');
+---
+<Base
+  lang={lang}
+  path={path}
+  title={post.data.title}
+  description={post.data.description}
+  markdownPath={`${path}.md`}
+  jsonld={{ path, title: post.data.title, description: post.data.description, lang, breadcrumbs: [{ name: 'Home', path: localePath(lang, '/') }, { name: 'Blog', path: localePath(lang, '/blog') }, { name: post.data.title, path }], article: { headline: post.data.title, date: post.data.date, updated: post.data.updated, author: post.data.author } }}
+>
+  <article class="wrap page-head" style="padding-bottom:clamp(56px,8vw,104px)">
+    <p class="eyebrow"><time datetime={post.data.date.toISOString().slice(0, 10)}>{formatDate(lang, post.data.date, fmt)}</time></p>
+    <h1 style="margin-top:12px">{post.data.title}</h1>
+    <p class="lead">{post.data.description}</p>
+    <div class="prose" style="margin-top:24px"><Content /></div>
+  </article>
+</Base>

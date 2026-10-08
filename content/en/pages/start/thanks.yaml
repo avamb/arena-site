@@ -1,0 +1,19 @@
+title: "Thank you, we have your application"
+description: "The team reads every application in person and answers within one working day."
+h1: Thank you
+lead: The team reads every application in person and answers within one working day, by e-mail or in the messenger you named.
+sections:
+  - type: cards
+    id: next
+    eyebrow: Meanwhile
+    title: What can I do now?
+    items:
+      - title: Prepare the poster and the prices
+        text: The event name, dates, ticket prices and a poster image are everything an event without a seating plan needs to go on sale.
+        link: { label: How it works →, href: /#how }
+      - title: Find your payment account keys
+        text: If you already have an account with a provider of your country, the API keys are in its dashboard. If not, we open one with you.
+        link: { label: Payments →, href: /payments }
+      - title: Try the Telegram bot
+        text: The bot creates an event from a poster photo and asks you to confirm dates, prices and the venue.
+        link: { label: Open the Telegram bot →, href: https://t.me/EventsCentrBot }

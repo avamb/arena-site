@@ -1,0 +1,31 @@
+---
+/**
+ * One route for every YAML page in every active language: `/`, `/pricing`, `/pricing/terms`,
+ * `/es/pricing`, ... The language comes from the first segment; a missing translation renders
+ * the English page with a note and noindex (doc 33 §3.6).
+ */
+import Base from '@/layouts/Base.astro';
+import Sections from '@/components/Sections.astro';
+import { loadPage, pageSlugs, slugToPath } from '@/lib/pages';
+import { activeLanguages, localePath } from '@/lib/i18n';
+import { defaultLanguage } from '@config';
+
+export async function getStaticPaths() {
+  const slugs = await pageSlugs();
+  return activeLanguages().flatMap((l) =>
+    slugs.map((slug) => {
+      const route = localePath(l.code, slugToPath(slug));
+      const path = route === '/' ? undefined : route.slice(1);
+      return { params: { path }, props: { lang: l.code, slug } };
+    }),
+  );
+}
+
+const { lang, slug } = Astro.props;
+const p = await loadPage(lang, slug);
+const mdPath = p.path === '/' ? '/index.md' : lang !== defaultLanguage && p.path === `/${lang}` ? `/${lang}/index.md` : `${p.path}.md`;
+const noindex = slug === 'start/thanks';
+---
+<Base lang={lang} path={p.path} title={p.page.data.title} description={p.page.data.description} translated={p.translated} jsonld={p.jsonld} markdownPath={mdPath} noindex={noindex}>
+  <Sections p={p} />
+</Base>

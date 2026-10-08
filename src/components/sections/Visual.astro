@@ -1,0 +1,58 @@
+---
+/** Small product visuals inside Q/A tiles, drawn from data (no images). */
+import type { Section } from '@/content.config';
+import { inline } from '@/lib/inline';
+type Qa = Extract<Section, { type: 'qa' }>;
+type V = NonNullable<Qa['items'][number]['visual']>;
+interface Props { v: V }
+const { v } = Astro.props;
+
+// EAN-13-like bars (decorative, derived from the digit string, same rule as the prototype)
+function bars(digits: string) {
+  const out: { x: number; w: number; h: number }[] = [];
+  let bx = 2;
+  for (let i = 0; i < digits.length * 4; i++) {
+    const w = ((digits.charCodeAt(i % 13) + i) % 3) + 1;
+    if (i % 2 === 0) out.push({ x: bx, w, h: i < 3 || i > 48 ? 40 : 34 });
+    bx += w;
+  }
+  return out;
+}
+---
+{v.type === 'ladder' && (
+  <div class="vis ladder">
+    {v.rungs.map((r) => <div class="rung"><span class="pr">{r.price}</span><span class:list={['bar', { next: r.next }]}><i style={`width:${r.width}%`}></i></span><span class="lb">{r.label}</span></div>)}
+  </div>
+)}
+{v.type === 'plan' && (
+  <div class="vis">
+    <svg class="hall" viewBox="0 0 640 220" role="img" aria-label={v.aria}>
+      <rect class="stg" x="200" y="10" width="240" height="18" rx="6"/><text class="lbl" x="320" y="23" text-anchor="middle">{v.stage}</text>
+      <path class="sec" d="M160 48 h320 l20 70 h-360 z"/><text class="lbl" x="320" y="90" text-anchor="middle">{v.parterre}</text>
+      <path class="sec2" d="M20 60 l120 -8 v70 l-120 20 z"/><text class="lbl" x="80" y="100" text-anchor="middle">{v.logeLeft}</text>
+      <path class="sec2" d="M620 60 l-120 -8 v70 l120 20 z"/><text class="lbl" x="560" y="100" text-anchor="middle">{v.logeRight}</text>
+      <path class="sec2" d="M120 140 h400 l30 60 h-460 z"/><text class="lbl" x="320" y="176" text-anchor="middle">{v.balcony}</text>
+      <rect class="sec" x="20" y="150" width="80" height="50" rx="6" style="fill:var(--surface-2);stroke:var(--line-2);stroke-dasharray:3 3"/><text class="lbl" x="60" y="179" text-anchor="middle">{v.standing}</text>
+    </svg>
+  </div>
+)}
+{v.type === 'ticket' && (
+  <div class="vis">
+    <div class="ticket">
+      <div class="stub"><div class="ev">{v.event}</div><div class="md">{v.meta}</div><div class="seat">{v.seat}</div></div>
+      <div class="code">
+        <svg viewBox="0 0 96 40" aria-hidden="true">{bars(v.code).map((b) => <rect x={b.x} y="0" width={b.w} height={b.h} fill="var(--fg)" />)}</svg>
+        <span class="n">{v.code.split('').join(' ')}</span>
+      </div>
+    </div>
+  </div>
+)}
+{v.type === 'telegram' && (
+  <div class="vis">
+    <div class="tg">
+      <div class="from">{v.from}</div>
+      <div set:html={v.lines.map((l) => inline(l)).join('<br>')} />
+      <div class="t">{v.time}</div>
+    </div>
+  </div>
+)}

@@ -1,0 +1,38 @@
+---
+import type { LanguageCode } from '@config';
+import { hosts } from '@config';
+import { nav } from '@/lib/data';
+import { t, localePath, activeLanguages, getLanguage } from '@/lib/i18n';
+import Logo from './Logo.astro';
+import ThemeToggle from './islands/ThemeToggle.svelte';
+import Icon from './Icon.astro';
+interface Props { lang: LanguageCode; path: string }
+const { lang, path } = Astro.props;
+const langs = activeLanguages();
+const current = getLanguage(lang);
+const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
+---
+<header class="header">
+  <div class="wrap nav">
+    <a class="wordmark" href={localePath(lang, '/')} aria-label={t(lang, 'home')}><Logo label={t(lang, 'logo')} /></a>
+    <nav class="nav-links" aria-label={t(lang, 'nav.main')}>
+      {nav.header.map((l) => <a href={localePath(lang, l.href)}>{l.label}</a>)}
+    </nav>
+    <div class="nav-right">
+      <a class="signin" href={nav.signin.href.startsWith('http') ? nav.signin.href : hosts.app}>{nav.signin.label}</a>
+      {langs.length > 1 ? (
+        <form class="lang-menu" method="get">
+          <label class="visually-hidden" for="lang-select">{t(lang, 'language')}</label>
+          <select id="lang-select" onchange="location.href=this.value">
+            {langs.map((l) => <option value={localePath(l.code, stripped)} selected={l.code === lang}>{l.code.toUpperCase()}</option>)}
+          </select>
+          <Icon name="chevron-down" size={10} />
+        </form>
+      ) : (
+        <span class="lang" aria-label={`${t(lang, 'language')}: ${current.name}`}>{lang.toUpperCase()} <Icon name="chevron-down" size={10} /></span>
+      )}
+      <ThemeToggle client:load label={t(lang, 'theme.toggle')} />
+      <a class="btn btn-primary btn-sm" href={localePath(lang, nav.start.href)}>{nav.start.label}</a>
+    </div>
+  </div>
+</header>

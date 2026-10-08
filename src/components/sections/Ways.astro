@@ -1,0 +1,21 @@
+---
+import type { Section } from '@/content.config';
+import { inline } from '@/lib/inline';
+interface Props { s: Extract<Section, { type: 'ways' }> }
+const { s } = Astro.props;
+---
+<section class="section" id={s.id} style="padding-top:0">
+  <div class="wrap">
+    {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
+    {s.title && <h2 class="h2">{s.title}</h2>}
+    <div class="ways">
+      {s.items.map((w) => (
+        <article class="card way">
+          <h3>{w.title}</h3>
+          <p set:html={inline(w.text)} />
+          <ul class="way-list">{w.bullets.map((b) => <li set:html={inline(b)} />)}</ul>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

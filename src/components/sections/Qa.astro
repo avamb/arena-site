@@ -1,0 +1,23 @@
+---
+import type { Section } from '@/content.config';
+import { inline } from '@/lib/inline';
+import Visual from './Visual.astro';
+interface Props { s: Extract<Section, { type: 'qa' }> }
+const { s } = Astro.props;
+---
+<section class="section" id={s.id} style="padding-top:0">
+  <div class="wrap">
+    {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
+    {s.title && <h2 class="h2">{s.title}</h2>}
+    <div class="bento qa">
+      {s.items.map((q) => (
+        <article class="tile t-2">
+          <h3>{q.title}</h3>
+          <p set:html={inline(q.text, { linkClass: 'inline-link' })} />
+          {q.visual && <Visual v={q.visual} />}
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+<style is:global>.inline-link{color:var(--accent);font-weight:600}</style>

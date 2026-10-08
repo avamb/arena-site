@@ -1,0 +1,54 @@
+# Pricing page. Numbers come from content/data/pricing/*.yaml and tariff.yaml, never from here.
+# Texts below the cards are drafts for the owner's review (PRD "Open questions").
+title: "Pricing: per ticket, no subscription"
+description: "Platform service per ticket sold: €1.00 in the EU, $1.00 in the US and worldwide, +0.50 on events with a seating plan. Invitations and refunds are free. Permanent venues: 2% instead."
+h1: Per ticket. No subscription.
+lead: You pay Arena for the platform service after each session, per ticket sold. Card acquiring is paid to your own payment provider on its terms.
+sections:
+  - type: pricing
+    id: plans
+    planBullets:
+      - "**+{seating}** per ticket on events with a seating plan"
+      - "**Free** invitations and refunds, no fee"
+      - Name Arena Sold Out as the ticketing partner on your event page
+    cta: { label: Start selling, href: /start }
+    venues:
+      text: "**Owners of permanent venues** (theatres, clubs, stadiums, circuses): separate terms, {percent}% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds."
+      cta: { label: Talk to us, href: /start }
+    calculator:
+      aria: Fee calculator
+      price: Ticket price, €
+      quantity: Tickets sold
+      seating: Event with a seating plan
+      result: Platform service, paid after the session
+      sales: your sales {net}, acquiring not included
+    note: "Standard terms; volume and individual terms on request. You pay for the platform service after each session; for events on sale for several months, monthly."
+    terms: { label: Detailed terms →, href: /pricing/terms }
+
+  - type: faq
+    id: questions
+    eyebrow: Questions about money
+    title: What does a ticket cost me, exactly?
+    items:
+      - q: How much is a ticket with a seat?
+        a: "The per-ticket price of your region plus 0.50 in the same currency: €1.50 in the EU, $1.50 elsewhere. The seating plan itself costs nothing; the team builds it from your PDF, spreadsheet or sketch."
+      - q: Where does the buyer's money go?
+        a: "Into your own payment account, with every order. Arena never holds funds. The buyer pays the ticket price and, if you add one, your service fee."
+      - q: When do I pay Arena?
+        a: "The day after each session, for the tickets sold for that session. For events on sale for several months you can ask for monthly invoicing instead."
+      - q: What about card acquiring?
+        a: Card acquiring is a contract between you and your payment provider, on the provider's terms. It is not part of the Arena price and Arena does not add anything to it.
+      - q: Are invitations and refunds free?
+        a: Yes. Free tickets, invitations and refunded tickets carry no platform service charge.
+      - q: What if I do not want to name Arena on my event page?
+        a: "A white-label condition applies per event. The amount and the wording are in the [detailed terms](/pricing/terms)."
+      - q: I own a venue and run many events a month. Is there a different deal?
+        a: "Yes. Owners of permanent venues are offered {percent}% of the ticket price instead of the per-ticket fee, with no fee on invitations and refunds. Write to us from the [start page](/start)."
+
+  - type: cta
+    id: start
+    title: Start selling today
+    text: Create the event, connect your payment account, share the link. An event without a seating plan is on sale within the hour; a seating plan we draw with you.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Or write to us: we set everything up with you on a call."

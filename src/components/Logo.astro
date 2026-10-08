@@ -1,0 +1,7 @@
+---
+/** The vector logo from design/brand as a CSS mask coloured by --logo (navy on light, light grey on dark). */
+interface Props { variant?: 'logo' | 'logo-sm' | 'mark'; label: string }
+const { variant = 'logo', label } = Astro.props;
+const cls = variant === 'mark' ? 'mark' : variant === 'logo-sm' ? 'logo logo-sm' : 'logo';
+---
+<span class={cls} role="img" aria-label={label}></span>

@@ -1,0 +1,51 @@
+---
+import type { Section } from '@/content.config';
+import { inline } from '@/lib/inline';
+interface Props { s: Extract<Section, { type: 'center' }> }
+const { s } = Astro.props;
+---
+<section class="section ec-band" id={s.id}>
+  <div class="wrap ec ec-v3">
+    <div>
+      {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
+      {s.title && <h2 class="h2">{s.title}</h2>}
+      {s.lead && <p class="lead" set:html={inline(s.lead)} />}
+      <ul class="devlist" style="margin-top:22px">{s.bullets.map((b) => <li set:html={inline(b)} />)}</ul>
+      <p class="hero-note" style="margin-top:18px" set:html={inline(s.note)} />
+    </div>
+    <div class="ec-strip" aria-label={s.stripAria}>
+      {s.screens.map((sc) => (
+        <div class="card ec-mock" role="img" aria-label={sc.aria}>
+          {sc.kind === 'orders' && (
+            <>
+              <div class="ec-head"><b>{sc.title}</b><span class="pill">{sc.status}</span><span class="ec-k">{sc.meta}</span></div>
+              <table class="ec-table">
+                <thead><tr>{sc.columns.map((c, i) => <th class:list={{ num: i === 3 }}>{c}</th>)}</tr></thead>
+                <tbody>
+                  {sc.rows.map((r) => <tr><td class="mono">{r.order}</td><td>{r.buyer}</td><td>{r.seats}</td><td class="num">{r.total}</td><td><span class:list={['st', { ok: r.tone === 'ok', warn: r.tone === 'warn' }]}>{r.status}</span></td></tr>)}
+                </tbody>
+              </table>
+              <div class="ec-foot">{sc.actions.map((a) => <span>{a}</span>)}</div>
+            </>
+          )}
+          {sc.kind === 'refund' && (
+            <>
+              <div class="ec-head"><b>{sc.title}</b><span class="st">{sc.tag}</span><span class="ec-k">{sc.meta}</span></div>
+              <div class="ec-form">{sc.rows.map((r) => <div class="ec-row"><span>{r.label}</span><b>{r.value}</b></div>)}</div>
+              <div class="ec-foot"><span class="btn btn-primary btn-sm" style="pointer-events:none">{sc.primary}</span><span>{sc.secondary}</span></div>
+            </>
+          )}
+          {sc.kind === 'sales' && (
+            <>
+              <div class="ec-head"><b>{sc.title}</b><span class="ec-k">{sc.meta}</span></div>
+              <div class="ladder ec-ladder">{sc.rungs.map((r) => <div class="rung"><span class="pr">{r.price}</span><span class="bar"><i style={`width:${r.width}%`}></i></span><span class="lb">{r.label}</span></div>)}</div>
+              <div class="ec-form" style="margin-top:4px">{sc.rows.map((r) => <div class="ec-row"><span>{r.label}</span><b>{r.value}</b></div>)}</div>
+              <div class="ec-foot">{sc.actions.map((a) => <span>{a}</span>)}</div>
+            </>
+          )}
+          <div class="ec-cap">{sc.caption}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

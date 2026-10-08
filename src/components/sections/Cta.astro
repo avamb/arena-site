@@ -1,0 +1,22 @@
+---
+import type { Section } from '@/content.config';
+import type { LanguageCode } from '@config';
+import { inline } from '@/lib/inline';
+import { localePath } from '@/lib/i18n';
+interface Props { s: Extract<Section, { type: 'cta' }>; lang: LanguageCode }
+const { s, lang } = Astro.props;
+---
+<section class="section" id={s.id} style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <div class="mesh" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+      <h2>{s.title}</h2>
+      <p set:html={inline(s.text)} />
+      <div class="hero-actions">
+        <a class="btn btn-primary" href={localePath(lang, s.primary.href)}>{s.primary.label}</a>
+        <a class="btn btn-band" href={localePath(lang, s.secondary.href)}>{s.secondary.label}</a>
+      </div>
+      <p class="hero-note" style="margin-top:18px">{s.note}</p>
+    </div>
+  </div>
+</section>

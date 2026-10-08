@@ -1,0 +1,49 @@
+# Developers page. Not on the home page by founders' decision; linked from the footer.
+title: "For developers: three lines on any site"
+description: "Embed the ticket widget with three lines, or use the public API: event bundle in one call, signed webhooks, scoped keys, widget events, WordPress plugin."
+h1: Three lines on any site
+lead: The widget is a web component. Drop it on any page, style it with CSS variables, listen to its events. Everything else is a public API with signed webhooks.
+sections:
+  - type: code
+    id: widget
+    eyebrow: Widget
+    title: How do I put tickets on my site?
+    code: |
+      <script type="module" src="https://tickets.arenasoldout.com/widget/v1/arena-tickets.js"></script>
+      <arena-tickets feed-token="YOUR_FEED_TOKEN" locale="en"></arena-tickets>
+    items:
+      - key: --arena-accent
+        text: "Your colours: the widget reads --arena-accent, --arena-radius, --arena-bg and --arena-border-color from your page"
+      - key: locale
+        text: "Buyer language: en, ru, cs, he, es; Hebrew is right-to-left"
+      - key: arena:order_paid
+        text: "Widget events arena:* for your analytics and your own thank-you pages"
+      - key: feed-token
+        text: One token per sales channel; revoke it in the event center at any time
+    cta: { label: Get a feed token, href: /start }
+
+  - type: cards
+    id: api
+    eyebrow: Public API
+    title: What can I do through the API?
+    items:
+      - title: Event bundle in one call
+        text: One request creates the event, its sessions, the venue, prices, the poster and the publication. The same shape the Telegram bot uses.
+      - title: Signed webhooks
+        text: Orders, payments, refunds and session changes are delivered to your endpoint with a signature you verify. Retries with backoff.
+      - title: Scoped API keys
+        text: A key sees one organization and only the scopes you grant. Rotate and revoke keys in the event center.
+      - title: WordPress plugin
+        text: Orders land in WooCommerce, the shop keeps working, the seating plan and the ticket come from Arena. The plugin is how two clients moved from Bil24 with zero downtime.
+      - title: Imports
+        text: Sessions, seating plans and customers imported from Bil24. Other systems through the event bundle and a CSV of customers.
+      - title: OpenAPI
+        text: The OpenAPI description is published with the API. Ask the team for the current file until it is linked here automatically.
+
+  - type: cta
+    id: start
+    title: Start building today
+    text: Ask for a feed token and a scoped API key. The team answers in person and can set up a test organization for you.
+    primary: { label: Request access, href: /start }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: Test payments run against your provider's test mode, never against live cards.

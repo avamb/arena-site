@@ -1,0 +1,35 @@
+# Detailed terms. Draft from doc 33 §4.3a (founders' answers 08.10.2026). Owner reviews before launch.
+title: "Detailed pricing terms"
+description: "Ticketing partner mention, invoicing after each session, reports, permanent venues: the detailed terms behind the per-ticket price."
+h1: Detailed terms
+lead: The conditions behind the per-ticket price. Standard terms; volume and individual terms on request.
+sections:
+  - type: prose
+    id: terms
+    body: |
+      ## Ticketing partner mention
+
+      The standard per-ticket fee assumes that the event page on your site names Arena Sold Out as the ticketing partner: a text line or the badge we provide, linking to arenasoldout.com. If you prefer not to mention us, a white-label fee of €45 applies per event, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee.
+
+      ## Invoicing
+
+      Our invoice for the platform service is issued the day after each session, for the tickets sold for that session. For events on sale for several months we can invoice monthly instead, on request. Card acquiring is paid to your payment provider on its own terms.
+
+      ## Reports
+
+      The event center gives per-session totals and a detailed CSV report per session. Exports to your CRM or accounting system are set up on request.
+
+      ## Permanent venues
+
+      Owners of permanent venues (theatres, clubs, stadiums, circuses) are offered separate terms: 2% of the ticket price instead of the per-ticket fee, no fee on invitations and refunds. Volume and individual terms on request.
+
+      ## Privacy
+
+      Arena Sold Out processes buyers' data on behalf of the organizer for the purpose of selling and delivering tickets. The full privacy notice and the organizer agreement move to this site from the previous one before launch; until then the texts on arenasoldout.com apply.
+  - type: cta
+    id: start
+    title: Start selling today
+    text: Create the event, connect your payment account, share the link. An event without a seating plan is on sale within the hour; a seating plan we draw with you.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Or write to us: we set everything up with you on a call."

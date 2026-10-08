@@ -1,0 +1,186 @@
+---
+/**
+ * Sections used by inner pages: prose, faq, providers, markets, cards, code, marks, changelog,
+ * posts, facts-table, form. Kept in one file because each is small and shares the page rhythm.
+ */
+import type { Section } from '@/content.config';
+import type { CollectionEntry } from 'astro:content';
+import type { LanguageCode } from '@config';
+import { turnstileSiteKey } from '@config';
+import { marked } from 'marked';
+import { inline } from '@/lib/inline';
+import { clients, facts } from '@/lib/data';
+import { localePath, formatDate, tObject, t } from '@/lib/i18n';
+import Icon from '@/components/Icon.astro';
+
+type Generic = Exclude<Section, { type: 'hero' | 'facts' | 'steps' | 'ways' | 'qa' | 'center' | 'money' | 'pricing' | 'who' | 'clients' | 'changes' | 'cta' }>;
+interface Props {
+  s: Generic;
+  lang: LanguageCode;
+  providers: CollectionEntry<'providers'>[];
+  markets: CollectionEntry<'markets'>[];
+  changelog: CollectionEntry<'changelog'>[];
+  posts: CollectionEntry<'posts'>[];
+  first?: boolean;
+}
+const { s, lang, providers, markets, changelog, posts, first = false } = Astro.props;
+const pad = first ? 'padding-top:40px' : 'padding-top:0';
+const dateFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'changes.date');
+const postFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'post.date');
+const factsStatus = tObject<Record<string, string>>(lang, 'facts.status');
+const factsCols = tObject<Record<string, string>>(lang, 'facts.columns');
+const liveMarkets = markets.filter((m) => m.data.status === 'live');
+const plannedGroups = [...new Set(markets.filter((m) => m.data.status === 'planned').map((m) => m.data.group ?? m.data.name.en))];
+const marketName = (m: CollectionEntry<'markets'>) => m.data.name[lang] ?? m.data.name.en;
+const providerName = (id: string) => providers.find((p) => p.id === id)?.data.name ?? id;
+const countryOptions = [...liveMarkets, ...markets.filter((m) => m.data.status === 'planned')];
+---
+<section class="section" id={s.id} style={pad}>
+  <div class="wrap">
+    {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
+    {s.title && <h2 class="h2">{s.title}</h2>}
+    {s.lead && <p class="lead" set:html={inline(s.lead)} />}
+
+    {s.type === 'prose' && <div class="prose" set:html={marked.parse(s.body)} />}
+
+    {s.type === 'faq' && (
+      <div class="faq">
+        {s.items.map((i) => (
+          <details>
+            <summary><span>{i.q}</span><Icon name="chevron-down" /></summary>
+            <div class="a" set:html={inline(i.a)} />
+          </details>
+        ))}
+      </div>
+    )}
+
+    {s.type === 'providers' && (
+      <div class="cards-3">
+        {providers.map((p) => (
+          <article class="card provider">
+            <h3>{p.data.name} <span class:list={['st', p.data.status]}>{s.labels.statuses[p.data.status] ?? p.data.status}</span></h3>
+            <dl>
+              <dt>{s.labels.regions}</dt><dd>{p.data.regions.map((r) => markets.find((m) => m.data.iso2 === r)).filter(Boolean).map((m) => marketName(m!)).join(', ') || p.data.regions.join(', ')}</dd>
+              <dt>{s.labels.currencies}</dt><dd>{p.data.currencies.join(', ')}</dd>
+              <dt>{s.labels.methods}</dt><dd>{p.data.methods.map((m) => s.labels.methods_map[m] ?? m).join(', ')}</dd>
+              <dt>{s.labels.checkout}</dt><dd>{p.data.hosted_checkout ? s.labels.statuses.checkout_yes ?? 'yes' : s.labels.statuses.checkout_no ?? 'no'}</dd>
+              {p.data.since && <><dt>{s.labels.since}</dt><dd><time datetime={p.data.since.toISOString().slice(0, 10)}>{formatDate(lang, p.data.since, postFmt)}</time></dd></>}
+            </dl>
+            {p.data.note && <p style="color:var(--fg-2);font-size:14px">{p.data.note}</p>}
+          </article>
+        ))}
+      </div>
+    )}
+
+    {s.type === 'markets' && (
+      <>
+        <table class="facts-table">
+          <thead><tr><th>Country</th><th>Buyer languages</th><th>Currencies</th><th>Providers</th></tr></thead>
+          <tbody>{liveMarkets.map((m) => <tr><td>{marketName(m)}</td><td>{m.data.languages.join(', ')}</td><td>{m.data.currencies.join(', ')}</td><td>{m.data.providers.map(providerName).join(', ')}</td></tr>)}</tbody>
+        </table>
+        <div class="card" style="margin-top:24px;padding:22px 24px">
+          <h3 style="font-size:19px;letter-spacing:-0.02em">{s.preparing.title}</h3>
+          <p style="color:var(--fg-2);margin-top:8px;max-width:62ch" set:html={inline(s.preparing.text)} />
+          <ul class="list-plain" style="margin-top:12px;color:var(--fg-2)">{plannedGroups.map((g) => <li>{g}</li>)}</ul>
+        </div>
+      </>
+    )}
+
+    {s.type === 'cards' && (
+      <div class="cards-3">
+        {s.items.map((i) => <article class="card sol"><h3>{i.title}</h3><p set:html={inline(i.text)} />{i.link && <a href={localePath(lang, i.link.href)}>{i.link.label}</a>}</article>)}
+      </div>
+    )}
+
+    {s.type === 'code' && (
+      <div class="dev-grid" style="margin-top:32px">
+        <pre class="code" style="margin:0"><code set:html={s.code.trim().replace(/&/g, '&amp;').replace(/</g, '&lt;')} /></pre>
+        <div>
+          <ul class="devlist" style="margin-top:0">{s.items.map((i) => <li><span class="k">{i.key}</span><span set:html={inline(i.text)} /></li>)}</ul>
+          <a class="btn btn-ghost" href={localePath(lang, s.cta.href)} style="margin-top:22px">{s.cta.label}</a>
+        </div>
+      </div>
+    )}
+
+    {s.type === 'marks' && (
+      <>
+        <div class="marks-grid" style="margin-top:32px" aria-label={s.title}>{clients.marks.map((m) => <span>{m.name}<small>{m.kind}</small></span>)}</div>
+      </>
+    )}
+
+    {s.type === 'changelog' && (
+      <div class="log full">
+        <ul>{changelog.map((c) => <li><span class="d"><time datetime={c.data.date.toISOString().slice(0, 10)}>{formatDate(lang, c.data.date, dateFmt)}</time></span><span>{c.data.title}{c.data.details && <span style="display:block;color:var(--fg-2);font-size:14px;margin-top:4px">{c.data.details}</span>}</span></li>)}</ul>
+      </div>
+    )}
+
+    {s.type === 'posts' && (posts.length ? (
+      <ul class="post-list">
+        {posts.map((p) => <li><span class="d"><time datetime={p.data.date.toISOString().slice(0, 10)}>{formatDate(lang, p.data.date, postFmt)}</time></span><div><h3><a href={localePath(lang, `/blog/${p.id.split('/').pop()}`)}>{p.data.title}</a></h3><p>{p.data.description}</p></div></li>)}
+      </ul>
+    ) : (
+      <p class="empty">{s.empty}</p>
+    ))}
+
+    {s.type === 'facts-table' && (
+      <>
+        <table class="facts-table">
+          <thead><tr><th>{factsCols.capability}</th><th>{factsCols.status}</th><th>{factsCols.since}</th><th>{factsCols.note}</th></tr></thead>
+          <tbody>
+            {facts.capabilities.map((c) => <tr><td>{c.name}</td><td><span class:list={['st', { ok: c.status === 'yes', warn: c.status === 'partial' }]}>{factsStatus[c.status]}</span></td><td class="mono">{c.since ? <time datetime={c.since.toISOString().slice(0, 10)}>{c.since.toISOString().slice(0, 10)}</time> : ''}</td><td>{c.note ?? ''}</td></tr>)}
+          </tbody>
+        </table>
+        <table class="facts-table" style="margin-top:32px">
+          <tbody>
+            <tr><th>Buyer page languages</th><td>{facts.languages.buyer_page.join(', ')}</td></tr>
+            <tr><th>E-mail languages</th><td>{facts.languages.emails}</td></tr>
+            <tr><th>Site languages</th><td>{facts.languages.site.join(', ')}</td></tr>
+            <tr><th>Load test</th><td>{facts.limits.orders_per_minute} orders a minute at {facts.limits.concurrent_visitors} concurrent visitors, <time datetime={facts.limits.load_test_date.toISOString().slice(0, 10)}>{facts.limits.load_test_date.toISOString().slice(0, 10)}</time></td></tr>
+            <tr><th>Backups</th><td>{facts.backups}</td></tr>
+            <tr><th>Updated</th><td><time datetime={facts.updated.toISOString().slice(0, 10)}>{facts.updated.toISOString().slice(0, 10)}</time></td></tr>
+          </tbody>
+        </table>
+        <p class="pr-note"><a href="/facts.json" style="color:var(--accent);font-weight:600">facts.json</a></p>
+      </>
+    )}
+
+    {s.type === 'form' && (
+      <form class="form" id="start-form" method="post" action="/api/forms/start" novalidate data-errors={JSON.stringify(s.errors)} data-sending={s.sending}>
+        <input type="hidden" name="lang" value={lang} />
+        <input type="hidden" name="redirect" value={localePath(lang, '/start/thanks')} />
+        <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+        <div class="field"><label for="f-org">{s.fields.organization}</label><input id="f-org" name="organization" required autocomplete="organization" /><span class="err"></span></div>
+        <div class="row">
+          <div class="field"><label for="f-country">{s.fields.country}</label>
+            <select id="f-country" name="country" required>
+              <option value="" selected disabled></option>
+              {countryOptions.map((m) => <option value={m.data.iso2}>{marketName(m)}</option>)}
+              <option value="other">{s.fields.countryOther}</option>
+            </select><span class="err"></span></div>
+          <div class="field"><label for="f-provider">{s.fields.provider}</label>
+            <select id="f-provider" name="provider">
+              <option value="none">{s.fields.providerNone}</option>
+              {providers.map((p) => <option value={p.id}>{p.data.name}</option>)}
+              <option value="other">{s.fields.providerOther}</option>
+            </select></div>
+        </div>
+        <div class="field"><label for="f-name">{s.fields.name}</label><input id="f-name" name="name" required autocomplete="name" /><span class="err"></span></div>
+        <div class="row">
+          <div class="field"><label for="f-email">{s.fields.email}</label><input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" /><span class="err"></span></div>
+          <div class="field"><label for="f-phone">{s.fields.phone}</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" /><span class="err"></span></div>
+        </div>
+        <div class="field"><label for="f-msg">{s.fields.message}</label><textarea id="f-msg" name="message"></textarea><span class="hint">{s.fields.messageHint}</span></div>
+        {turnstileSiteKey && <div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-size="flexible"></div>}
+        <p class="hint" style="font-size:13px;color:var(--fg-3)" set:html={inline(s.consent)} />
+        <div class="hero-actions" style="margin-top:4px">
+          <button class="btn btn-primary" type="submit">{s.submit}</button>
+          <a class="btn btn-ghost" href={localePath(lang, s.alt.link.href)}>{s.alt.link.label}</a>
+        </div>
+        <p class="form-status" role="status" aria-live="polite"></p>
+        <p style="color:var(--fg-2);font-size:14.5px" id="create" set:html={inline(s.alt.text)} />
+      </form>
+    )}
+  </div>
+</section>
+{s.type === 'form' && turnstileSiteKey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}
+{s.type === 'form' && <script src="@/scripts/start-form.ts"></script>}

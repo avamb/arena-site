@@ -1,0 +1,13 @@
+---
+import Base from '@/layouts/Base.astro';
+import { t } from '@/lib/i18n';
+import { defaultLanguage } from '@config';
+const lang = defaultLanguage;
+---
+<Base lang={lang} path="/404" title={t(lang, 'notFound.title')} description={t(lang, 'notFound.text')} noindex>
+  <div class="wrap page-head" style="padding-bottom:clamp(56px,8vw,104px)">
+    <h1>{t(lang, 'notFound.title')}</h1>
+    <p class="lead">{t(lang, 'notFound.text')}</p>
+    <a class="btn btn-primary" href="/" style="margin-top:24px">{t(lang, 'notFound.cta')}</a>
+  </div>
+</Base>

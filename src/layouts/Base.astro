@@ -1,0 +1,91 @@
+---
+/**
+ * Base layout: themes (doc 33 §3.11), robots/noindex switch (§3.7b), hreflang (§3.6), JSON-LD and
+ * the Markdown twin link (§3.10), self-hosted fonts, Umami theme statistics when configured.
+ */
+import '@fontsource-variable/onest';
+import '@fontsource-variable/jetbrains-mono';
+import '@/styles/global.css';
+import { readFileSync } from 'node:fs';
+import { indexing, siteUrl, umami, defaultLanguage, type LanguageCode } from '@config';
+import { t, localePath, activeLanguages, getLanguage } from '@/lib/i18n';
+import { buildGraph, type JsonLdInput } from '@/lib/jsonld';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+
+interface Props {
+  lang: LanguageCode;
+  path: string;
+  title: string;
+  description: string;
+  translated?: boolean;
+  jsonld?: JsonLdInput;
+  markdownPath?: string;
+  noindex?: boolean;
+}
+const { lang, path, title, description, translated = true, jsonld, markdownPath, noindex = false } = Astro.props;
+const language = getLanguage(lang);
+const robots = !indexing || !translated || noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
+const canonical = new URL(path, siteUrl).toString();
+const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
+const alternates = activeLanguages().map((l) => ({ code: l.code, href: new URL(localePath(l.code, stripped), siteUrl).toString() }));
+const graph = jsonld ? JSON.stringify(buildGraph(jsonld)) : undefined;
+
+const svgMask = (file: string) => {
+  const svg = readFileSync(new URL(`../../design/brand/${file}`, import.meta.url), 'utf8').replace(/fill="#001489"/g, 'fill="#000"');
+  return `url("data:image/svg+xml;utf8,${encodeURIComponent(svg).replace(/'/g, '%27').replace(/\(/g, '%28').replace(/\)/g, '%29')}")`;
+};
+const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${svgMask('arena-mark.svg')}}`;
+---
+<!doctype html>
+<html lang={lang} dir={language.dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <link rel="canonical" href={canonical} />
+    {alternates.length > 1 && alternates.map((a) => <link rel="alternate" hreflang={a.code} href={a.href} />)}
+    {alternates.length > 1 && <link rel="alternate" hreflang="x-default" href={alternates.find((a) => a.code === defaultLanguage)!.href} />}
+    {markdownPath && <link rel="alternate" type="text/markdown" href={markdownPath} title={t(lang, 'md.source')} />}
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={language.intl.replace('-', '_')} />
+    <meta name="theme-color" content="#F6F7FB" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)" />
+    <style is:inline set:html={maskCss}></style>
+    <script is:inline>
+      (function () { try { var t = localStorage.getItem('aso-theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
+    </script>
+    {graph && <script type="application/ld+json" set:html={graph}></script>}
+    {umami.src && umami.websiteId && <script defer src={umami.src} data-website-id={umami.websiteId} data-auto-track="true"></script>}
+  </head>
+  <body>
+    <a class="skip" href="#main">{t(lang, 'skip')}</a>
+    <Header lang={lang} path={path} />
+    {!translated && <p class="translation-note" role="status">{t(lang, 'notTranslated')}</p>}
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    {umami.src && umami.websiteId && (
+      <script is:inline>
+        /* Theme statistics (doc 33 §3.11, item 3): one event per view, no cookies. */
+        (function () {
+          function send(name, data) { if (window.umami && typeof window.umami.track === 'function') window.umami.track(name, data); }
+          var mq = matchMedia('(prefers-color-scheme: dark)');
+          function shown() { var e = document.documentElement.getAttribute('data-theme'); return e || (mq.matches ? 'dark' : 'light'); }
+          function source() { return document.documentElement.getAttribute('data-theme') ? 'choice' : 'device'; }
+          window.addEventListener('load', function () { send('theme_view', { system_theme: mq.matches ? 'dark' : 'light', theme: shown(), theme_source: source() }); });
+          window.addEventListener('aso:theme', function (ev) { send('theme_toggle', { theme: ev.detail.theme, theme_source: 'choice' }); });
+          mq.addEventListener('change', function () { send('theme_device_change', { system_theme: mq.matches ? 'dark' : 'light', theme: shown(), theme_source: source() }); });
+        })();
+      </script>
+    )}
+  </body>
+</html>

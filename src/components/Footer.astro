@@ -1,0 +1,33 @@
+---
+import type { LanguageCode } from '@config';
+import { hosts } from '@config';
+import { nav } from '@/lib/data';
+import { t, localePath, getLanguage } from '@/lib/i18n';
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+interface Props { lang: LanguageCode }
+const { lang } = Astro.props;
+---
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fcol brand">
+        <a class="wordmark" href={localePath(lang, '/')} aria-label={t(lang, 'home')}><Logo variant="logo-sm" label={t(lang, 'logo')} /></a>
+        <p style="color:var(--fg-2);margin-top:14px;max-width:28ch">{nav.tagline}</p>
+      </div>
+      {nav.footer.map((col) => (
+        <div class="fcol">
+          <h4>{col.title}</h4>
+          <ul>{col.links.map((l) => <li><a href={localePath(lang, l.href)}>{l.label}</a></li>)}</ul>
+        </div>
+      ))}
+    </div>
+    <div class="fbot">
+      <span>{nav.copyright}</span>
+      <div class="r">
+        <span class="lang" aria-label={`${t(lang, 'language')}: ${getLanguage(lang).name}`}>{lang.toUpperCase()}</span>
+        <a class="icon-btn" href={hosts.telegramChat} aria-label={t(lang, 'telegram')}><Icon name="telegram" /></a>
+      </div>
+    </div>
+  </div>
+</footer>

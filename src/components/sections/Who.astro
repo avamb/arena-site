@@ -1,0 +1,24 @@
+---
+import type { Section } from '@/content.config';
+import type { LanguageCode } from '@config';
+import { localePath } from '@/lib/i18n';
+import Icon from '@/components/Icon.astro';
+interface Props { s: Extract<Section, { type: 'who' }>; lang: LanguageCode }
+const { s, lang } = Astro.props;
+---
+<section class="section" id={s.id} style="padding-top:0">
+  <div class="wrap">
+    {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
+    {s.title && <h2 class="h2">{s.title}</h2>}
+    <div class="sols many">
+      {s.items.map((i) => (
+        <article class="card sol">
+          <div class="ic"><Icon name={i.icon as any} /></div>
+          <h3>{i.title}</h3>
+          <p>{i.text}</p>
+          <a href={localePath(lang, i.link.href)}>{i.link.label}</a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

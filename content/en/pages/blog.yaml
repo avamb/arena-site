@@ -1,0 +1,9 @@
+# Blog index (skeleton in wave 1; the archive of 75 posts is imported in wave 2 with 301 redirects).
+title: "Blog"
+description: "Articles for organizers: money and service fees, selling on your own site, seating, early starts, and notes from the team."
+h1: Blog
+lead: Articles for organizers who sell their own tickets. The archive from the previous site is being moved here with its original dates.
+sections:
+  - type: posts
+    id: posts
+    empty: The archive is being moved. Until then, the latest changes to the platform are listed on the changes page.

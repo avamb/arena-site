@@ -1,0 +1,16 @@
+---
+import type { Section } from '@/content.config';
+import { inline } from '@/lib/inline';
+interface Props { s: Extract<Section, { type: 'steps' }> }
+const { s } = Astro.props;
+---
+<section class="section" id={s.id}>
+  <div class="wrap">
+    {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
+    {s.title && <h2 class="h2">{s.title}</h2>}
+    {s.lead && <p class="lead" set:html={inline(s.lead)} />}
+    <ol class="steps" style="padding:0;margin-block:40px 0;list-style:none">
+      {s.items.map((i) => <li class="step"><h3>{i.title}</h3><p set:html={inline(i.text)} /></li>)}
+    </ol>
+  </div>
+</section>

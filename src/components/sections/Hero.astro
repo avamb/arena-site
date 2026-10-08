@@ -1,0 +1,25 @@
+---
+import type { Section } from '@/content.config';
+import type { LanguageCode } from '@config';
+import { inline } from '@/lib/inline';
+import { localePath } from '@/lib/i18n';
+import HeroWidget from '@/components/islands/HeroWidget.svelte';
+interface Props { s: Extract<Section, { type: 'hero' }>; lang: LanguageCode }
+const { s, lang } = Astro.props;
+---
+<section class="hero" id={s.id}>
+  <div class="mesh" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      {s.eyebrow && <p class="eyebrow reveal">{s.eyebrow}</p>}
+      <h1 class="reveal">{s.title}</h1>
+      {s.lead && <p class="lead reveal" set:html={inline(s.lead)} />}
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href={localePath(lang, s.primary.href)}>{s.primary.label}</a>
+        <a class="btn btn-band" href={localePath(lang, s.secondary.href)}>{s.secondary.label}</a>
+      </div>
+      <p class="hero-note reveal">{s.note}</p>
+    </div>
+    {s.widget && <HeroWidget client:idle w={s.widget} />}
+  </div>
+</section>

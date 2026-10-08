@@ -1,0 +1,25 @@
+---
+import type { Section } from '@/content.config';
+import type { CollectionEntry } from 'astro:content';
+import type { LanguageCode } from '@config';
+import { inline } from '@/lib/inline';
+import { localePath, formatDate, tObject } from '@/lib/i18n';
+interface Props { s: Extract<Section, { type: 'changes' }>; changelog: CollectionEntry<'changelog'>[]; lang: LanguageCode }
+const { s, changelog, lang } = Astro.props;
+const fmt = tObject<Intl.DateTimeFormatOptions>(lang, 'changes.date');
+const items = changelog.slice(0, s.limit);
+---
+<section class="section" id={s.id} style="padding-top:0">
+  <div class="wrap two">
+    <div>
+      {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
+      {s.title && <h2 class="h2">{s.title}</h2>}
+      {s.lead && <p class="lead" set:html={inline(s.lead)} />}
+      <a class="btn btn-ghost" href={localePath(lang, s.cta.href)} style="margin-top:22px">{s.cta.label}</a>
+    </div>
+    <div class="log scroll">
+      <ul>{items.map((c) => <li><span class="d"><time datetime={c.data.date.toISOString().slice(0, 10)}>{formatDate(lang, c.data.date, fmt)}</time></span><span>{c.data.title}</span></li>)}</ul>
+      <a class="more" href={localePath(lang, s.more.href)}>{s.more.label}</a>
+    </div>
+  </div>
+</section>

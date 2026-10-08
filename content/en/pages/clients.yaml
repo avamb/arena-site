@@ -1,0 +1,27 @@
+# Clients page. Wordmarks from content/data/clients.yaml; testimonial gallery is wave 2.
+title: "Clients: organizers in 35 countries since 2019"
+description: "Organizers who sell their own tickets with Arena Sold Out: theatres, festivals, concerts, master classes, parks. Founders' track record."
+h1: Organizers in 35 countries
+lead: Arena Sold Out has sold tickets for organizers since 2019. The platform behind it was rebuilt in 2026 and the organizers moved with it, two of them from Bil24 with zero downtime.
+sections:
+  - type: marks
+    id: marks
+    eyebrow: Clients
+    title: Who sells with Arena?
+
+  - type: prose
+    id: track-record
+    eyebrow: Track record
+    title: Who built this?
+    body: |
+      The founders' earlier platforms served Cirque du Soleil shows, FIFA 2018 stadiums, the World Choir Games and 800 ice shows. The team that runs Arena Sold Out today answers organizers in person, in English, Spanish, Czech, Russian and Hebrew.
+
+      Testimonials and photos from organizers are being moved from the previous site and will appear on this page.
+
+  - type: cta
+    id: start
+    title: Start selling today
+    text: Create the event, connect your payment account, share the link. An event without a seating plan is on sale within the hour; a seating plan we draw with you.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Or write to us: we set everything up with you on a call."
