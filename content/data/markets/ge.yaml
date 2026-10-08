@@ -1,0 +1,8 @@
+iso2: GE
+name:
+  en: Georgia
+languages: [en, ru]
+currencies: [GEL, EUR]
+providers: [flitt]
+status: live
+order: 4

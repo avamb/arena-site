@@ -1,0 +1,9 @@
+name: Stripe
+regions: [CZ, ES, FR]
+currencies: [EUR, CZK, USD, GBP]
+methods: [card, apple_pay, google_pay]
+hosted_checkout: true
+status: live
+since: 2026-09-20
+note: Hosted checkout in the widget and on hosted pages, webhooks per organization.
+order: 1

@@ -1,0 +1,9 @@
+iso2: AR
+name:
+  en: Argentina
+group: South America
+languages: [es, en]
+currencies: [ARS, USD]
+providers: []
+status: planned
+order: 21

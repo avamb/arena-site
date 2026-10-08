@@ -1,0 +1,6 @@
+region: World
+currency: USD
+per_ticket: 1.00
+seating_extra: 0.50
+white_label_per_event: 45
+order: 3

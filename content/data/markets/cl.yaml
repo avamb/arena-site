@@ -1,0 +1,9 @@
+iso2: CL
+name:
+  en: Chile
+group: South America
+languages: [es, en]
+currencies: [CLP, USD]
+providers: []
+status: planned
+order: 22

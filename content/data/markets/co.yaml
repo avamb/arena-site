@@ -1,0 +1,9 @@
+iso2: CO
+name:
+  en: Colombia
+group: South America
+languages: [es, en]
+currencies: [COP, USD]
+providers: []
+status: planned
+order: 23

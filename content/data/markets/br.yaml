@@ -1,0 +1,9 @@
+iso2: BR
+name:
+  en: Brazil
+group: South America
+languages: [en, es]
+currencies: [BRL]
+providers: []
+status: planned
+order: 20

@@ -1,0 +1,8 @@
+iso2: CZ
+name:
+  en: Czechia
+languages: [cs, en]
+currencies: [CZK, EUR]
+providers: [stripe]
+status: live
+order: 1

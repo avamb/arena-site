@@ -1,0 +1,9 @@
+iso2: UY
+name:
+  en: Uruguay
+group: South America
+languages: [es, en]
+currencies: [UYU, USD]
+providers: []
+status: planned
+order: 25

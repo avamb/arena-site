@@ -1,0 +1,8 @@
+iso2: IL
+name:
+  en: Israel
+languages: [he, en, ru]
+currencies: [ILS]
+providers: [allpay]
+status: live
+order: 5

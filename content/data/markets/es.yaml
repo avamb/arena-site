@@ -1,0 +1,8 @@
+iso2: ES
+name:
+  en: Spain
+languages: [es, en]
+currencies: [EUR]
+providers: [stripe]
+status: live
+order: 2

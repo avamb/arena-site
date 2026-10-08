@@ -1,0 +1,9 @@
+iso2: RS
+name:
+  en: Serbia
+group: Balkans
+languages: [en]
+currencies: [RSD, EUR]
+providers: []
+status: planned
+order: 10

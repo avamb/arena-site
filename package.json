@@ -1,0 +1,50 @@
+{
+  "name": "arena-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "arenasoldout.com marketing site: Astro static, Cloudflare Workers Static Assets, portable to nginx",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/build-edge.mjs && node scripts/gen-markdown.mjs",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "npm run check:types && npm run check:anti-slop && npm run check:i18n && npm run check:edge && npm run check:jsonld && npm run check:agents",
+    "check:types": "astro check",
+    "check:anti-slop": "node scripts/check-anti-slop.mjs",
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "check:edge": "node scripts/build-edge.mjs --check",
+    "check:jsonld": "node scripts/check-jsonld.mjs",
+    "check:agents": "node scripts/check-agents.mjs",
+    "lhci": "lhci autorun",
+    "forms:dev": "node --import tsx forms/server-node.ts",
+    "forms:test": "node --import tsx --test forms/app.test.ts",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@astrojs/svelte": "^7.2.5",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@fontsource-variable/onest": "^5.3.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^5.18.2",
+    "hono": "^4.13.13",
+    "svelte": "^5.57.2",
+    "tailwindcss": "^4.3.3",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@cloudflare/workers-types": "^5.20261008.1",
+    "@hono/node-server": "^2.1.4",
+    "@lhci/cli": "^0.15.1",
+    "marked": "^18.1.0",
+    "schema-dts": "^2.1.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "wrangler": "^4.148.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

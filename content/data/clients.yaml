@@ -1,0 +1,42 @@
+# Client wordmarks (consent confirmed by the owner 07.10.2026). Text only, no logos (open question).
+# `kind` is shown as the small line under the name.
+countries_since: 2019
+countries: 35
+marks:
+  - name: Lampyris Events
+    kind: Prague
+  - name: Vino&Co
+    kind: Israel
+  - name: Teatro Escuela Madrid
+    kind: Madrid
+  - name: Actorre
+    kind: Guardamar
+  - name: Family Theatre Kolybel
+    kind: Spain
+  - name: MyEventsArt
+    kind: France, Georgia
+  - name: WOW Rock
+    kind: concerts
+  - name: WOW Cuba Fest
+    kind: festival
+  - name: Dance.Dance.Dance
+    kind: show
+  - name: Legends
+    kind: show
+  - name: L Ivan O Ostro
+    kind: concerts
+  - name: D Performance
+    kind: show
+  - name: WOW Immersive Museum
+    kind: museum
+  - name: Río Safari Park
+    kind: park
+  - name: Luna Park
+    kind: park
+  - name: Sport events
+    kind: tournaments
+track_record:
+  - Cirque du Soleil shows
+  - FIFA 2018 stadiums
+  - World Choir Games
+  - 800 ice shows

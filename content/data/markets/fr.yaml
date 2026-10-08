@@ -1,0 +1,8 @@
+iso2: FR
+name:
+  en: France
+languages: [en]
+currencies: [EUR]
+providers: [stripe]
+status: live
+order: 3

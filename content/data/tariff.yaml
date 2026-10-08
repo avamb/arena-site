@@ -1,0 +1,10 @@
+# Terms that are not per-currency (per-currency prices live in pricing/*.yaml).
+# Numbers are the OLD price list kept for launch (owner decision 07.10); Marina will revisit after
+# the competitor pricing analysis. Edit here, every page and facts.json follow.
+venues_percent: 2
+invoicing: day after each session
+invoicing_monthly_after_months: 3
+calculator:
+  default_price: 38
+  default_quantity: 120
+  currency: EUR

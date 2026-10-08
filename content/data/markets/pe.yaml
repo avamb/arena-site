@@ -1,0 +1,9 @@
+iso2: PE
+name:
+  en: Peru
+group: South America
+languages: [es, en]
+currencies: [PEN, USD]
+providers: []
+status: planned
+order: 24

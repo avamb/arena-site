@@ -1,0 +1,9 @@
+iso2: CH
+name:
+  en: Switzerland
+group: Switzerland
+languages: [en]
+currencies: [CHF]
+providers: []
+status: planned
+order: 13

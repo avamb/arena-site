@@ -1,0 +1,9 @@
+name: Flitt
+regions: [GE]
+currencies: [EUR, GEL]
+methods: [card]
+hosted_checkout: true
+status: live
+since: 2026-10-01
+note: Hosted checkout in the widget, EUR and GEL.
+order: 2

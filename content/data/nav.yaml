@@ -1,0 +1,57 @@
+# Header and footer navigation. `href` values are site routes; the language prefix is added by the layout.
+header:
+  - label: How it works
+    href: /#how
+  - label: Who it is for
+    href: /#who
+  - label: Pricing
+    href: /pricing
+  - label: Event center
+    href: /#center
+  - label: Blog
+    href: /blog
+signin:
+  label: Sign in
+  href: https://app.arenasoldout.com
+start:
+  label: Start selling
+  href: /start
+tagline: Ticketing platform for organizers. Seats and tickets, your own payment account, an event center for the team.
+footer:
+  - title: Product
+    links:
+      - { label: How it works, href: /#how }
+      - { label: Where you sell, href: /#where }
+      - { label: Seating and prices, href: /#answers }
+      - { label: Event center, href: /#center }
+      - { label: Payments, href: /payments }
+      - { label: Telegram bot, href: https://t.me/EventsCentrBot }
+  - title: Who it is for
+    links:
+      - { label: Concerts, href: /#who }
+      - { label: Theatre, href: /#who }
+      - { label: Shows, href: /#who }
+      - { label: Festivals, href: /#who }
+      - { label: Concert tours, href: /#who }
+      - { label: Venues and clubs, href: /#who }
+  - title: For developers
+    links:
+      - { label: Docs, href: /developers }
+      - { label: Public API, href: /developers#api }
+      - { label: Widget, href: /developers#widget }
+      - { label: Webhooks, href: /developers#webhooks }
+      - { label: WordPress plugin, href: /developers#wordpress }
+  - title: Company
+    links:
+      - { label: About, href: /clients }
+      - { label: Clients, href: /clients }
+      - { label: Blog, href: /blog }
+      - { label: Latest changes, href: /changes }
+      - { label: Contact, href: /start }
+      - { label: Facts, href: /facts }
+  - title: Legal
+    links:
+      - { label: Terms, href: /pricing/terms }
+      - { label: Detailed pricing terms, href: /pricing/terms }
+      - { label: Privacy, href: /pricing/terms#privacy }
+copyright: "© 2019–2026 Arena Sold Out · ABH TEAM OÜ · EU"

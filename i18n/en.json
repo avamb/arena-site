@@ -1,0 +1,39 @@
+{
+  "skip": "Skip to content",
+  "home": "arena sold out, home",
+  "logo": "arena sold out",
+  "nav.main": "Main",
+  "nav.footer": "Footer",
+  "language": "Language",
+  "theme.toggle": "Toggle dark theme",
+  "theme.light": "Switch to light theme",
+  "theme.dark": "Switch to dark theme",
+  "telegram": "Telegram",
+  "changes.date": {
+    "day": "numeric",
+    "month": "short"
+  },
+  "post.date": {
+    "day": "numeric",
+    "month": "long",
+    "year": "numeric"
+  },
+  "notTranslated": "This page is not translated yet. You are reading the English version.",
+  "footer.copyright": "© 2019–2026 Arena Sold Out · ABH TEAM OÜ · EU",
+  "md.source": "Markdown version of this page",
+  "facts.status": {
+    "yes": "Yes",
+    "no": "No",
+    "partial": "Partly"
+  },
+  "facts.columns": {
+    "capability": "Capability",
+    "status": "Status",
+    "since": "Since",
+    "note": "Note"
+  },
+  "pricing.perTicket": "per ticket",
+  "notFound.title": "Page not found",
+  "notFound.text": "The address does not exist on this site. The home page has everything an organizer asks first.",
+  "notFound.cta": "Go to the home page"
+}
