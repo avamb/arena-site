@@ -1864,7 +1864,7 @@ By using the website or the services you agree to this Privacy Policy and to our
 
 ## 2. How we share the information
 
-2.1 Personal data held in the services is stored on servers of our hosting providers under data processing agreements, with nightly encrypted back-ups. Cloudflare, Inc. serves this website, protects the services and provides the Turnstile check on our forms.
+2.1 Personal data held in the services is stored on servers located in the European Union, operated by our hosting providers under data processing agreements, with nightly encrypted back-ups. Cloudflare, Inc. serves this website, protects the services and provides the Turnstile check on our forms.
 
 2.2 To operate the services, your personal data is shared, each only to the extent needed for its task, with: the organizer you bought a ticket from (ticket buyers); the payment provider connected by the organizer; e-mail delivery providers that send tickets and service e-mails; Telegram, through which the Telegram bot, the Telegram chat and notifications to organizers' groups are delivered under Telegram's own privacy policy; our hosting, analytics, automation and customer support providers. Following our instructions, these parties may access, process or store personal data while performing their duties for us.
 
