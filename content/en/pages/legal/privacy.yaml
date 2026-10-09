@@ -1,241 +1,146 @@
-# Privacy Policy: transferred from the previous site (WordPress page /privacy-policy/, modified 2023-08-05).
-# Text kept as it was; the owner reviews it before launch (PRD open questions). Edit the body below.
+# Privacy Policy. Transferred from the previous site (/privacy-policy/, 2023-08-05) and brought up
+# to date on 2026-10-09: company details unchanged (ABH TEAM OÜ, 14162982, Tallinn); PayPal, the
+# old hosting provider, Google Analytics and advertising cookies removed; the three groups the
+# platform actually serves (website visitors, organizers, ticket buyers) described from facts.yaml
+# and the payments page. Points the owner still has to confirm are listed in the hand-over note.
 title: "Privacy Policy"
-description: "How Arena Sold Out collects, uses and protects personal data of organizers and ticket buyers. Transferred from the previous site, under review."
+description: "How Arena Sold Out (ABH TEAM OÜ) processes personal data of website visitors, organizers and ticket buyers: what we collect, why, who receives it, how long we keep it, your rights, cookies."
 h1: "Privacy Policy"
-lead: "Transferred from the previous site on 2026-10-09; under review by the team. Last changed on the previous site: 2023-08-05."
+lead: "Version of 9 October 2026. Replaces the version of 5 August 2023. Applies to the website, the event center, the sales pages, the widget, the API, the Telegram bot and the scanner app."
 related:
-  - { label: Detailed pricing terms, href: /pricing/terms }
-  - { label: Pricing, href: /pricing }
   - { label: Terms and conditions, href: /legal/terms }
+  - { label: Help for ticket buyers, href: /help/tickets }
+  - { label: Payments, href: /payments }
 sections:
   - type: prose
     id: text
     body: |
-      Welcome to the ArenaSoldOut located at www.ArenaSoldOut.com (“website”).
+      This Privacy Policy explains how ABH TEAM OÜ, which operates the Arena Sold Out ticketing platform ("we", "Arena"), treats personal data that we collect and receive through the website arenasoldout.com, the event center at app.arenasoldout.com, the hosted sales pages and the ticket widget at tickets.arenasoldout.com, the public API, the Telegram bot and the scanner app (together, the "services").
 
-      This Privacy Policy (“Privacy Policy”) explains how ArenaSoldOut (“we”, “company”), treats information about you that we collect and receive through your use of the website and our services, including our content, accounts etc… (“services”).
+      It applies to three groups of people: visitors of the website; organizers who use the services and the members of their teams ("organizers"); and people who buy tickets from organizers through the services ("ticket buyers").
 
-      It governs our end users .
-
-      Your use of this website confirms your unconditional agreement to be bound by this Privacy Policy and our Terms of Use. If you do not agree to these terms, you may not visit, use, or access the website or website services as a website visitor, user or otherwise.
+      By using the website or the services you agree to this Privacy Policy and to our Terms and Conditions. If you do not agree, please do not use the website or the services.
 
       ## 1. What data we collect and process
 
-      1.1 In this Section we have set out:
+      1.1 In this section we set out: (a) the categories of personal data we may process; (b) the purposes for which we process it; and (c) the legal bases of the processing.
 
-      (a) the general categories of personal data that we may process;
+      1.2 We process account data of organizers ("account data"): the name of the organization and its country, the names, e-mail addresses and phone numbers of the account owner and the team members, the Telegram accounts of team members who use the Telegram bot, sign-in records, API keys and settings. The source of the account data is you. It is processed to operate the services, provide them to you, keep them secure, keep back-ups and communicate with you about your account and events. The legal basis is the performance of our contract with you (the Terms and Conditions) and our legitimate interest in keeping the services secure.
 
-      (b) the purposes for which we may process personal data; and
+      1.3 We process data about the use of the website and the services ("usage data"). The website may use cookie-free analytics hosted by us: pages viewed, referring site, browser type and version, operating system, country, and the theme chosen (light or dark). It does not store your full IP address and sets no cookies. The services keep server logs with the IP address, the time and the request, for security and troubleshooting. The legal basis is our legitimate interest in understanding how the website is used and in protecting the services.
 
-      (c) the legal bases of the processing.
+      1.4 We process the content organizers publish through the services ("publication data"): event titles and descriptions, posters, venue and session details, seating plans, prices and ticket conditions. It is processed to publish the event on the sales page, in the widget and on the organizer's own site, and to issue tickets. The legal basis is the performance of our contract with the organizer.
 
-      1.2 We may process your website user account data (“account data”).
+      1.5 We process the information in any enquiry you send us ("enquiry data"): the application form on this website (organization, country, payment provider, name, e-mail, phone, message), messages to the Telegram bot and the Telegram chat, and e-mails. It is processed to answer you and to set up your account. The legal basis is taking steps at your request before entering into a contract, and your consent where you contact us for another reason. The application form is protected by Cloudflare Turnstile, which checks that the sender is a person (see section 6).
 
-      When you create an account we ask you to provide information about yourself. You may not be able to use certain features if you choose not to submit the requested information.
+      1.6 We process ticket buyer and transaction data ("transaction data"). When you buy a ticket from an organizer through the services, we process your name, e-mail address, phone number where the organizer asks for it, the language you chose, the seats and tickets you bought, the amount and the status of the payment, your order history (refunds, resent and replaced tickets) and the scan of your ticket at the door. We process this data on behalf of the organizer, who is the controller, in order to issue and deliver your e-ticket, admit you at the door, process refunds the organizer decides and notify you when a session moves or is cancelled. The organizer sees your order in the event center and, if the organizer switched it on, in the organizer's own Telegram group. The payment itself is handled by the payment provider the organizer connected; the current list is on the payments page. We never receive your card or bank details and never hold the money. Questions about your ticket, a refund or the event go to the organizer; the help page for ticket buyers explains where to find your ticket.
 
-      The source of the account data is you. The account data may be processed for the purposes of operating our website, providing our services, ensuring the security of our website and services, maintaining back-ups of our databases and communicating with you. The legal basis for this processing is your consent.
+      1.7 We process the data you give us to receive our e-mails ("notification data"). Service e-mails and Telegram messages about your account, invoices and events are part of the contract. Newsletters are sent only with your consent, which you can withdraw through the link in every newsletter.
 
-      The information you provide to us or that we directly obtain from you includes without limitation the following:
+      1.8 We may process any of your personal data identified in this policy where necessary for the establishment, exercise or defence of legal claims, whether in court proceedings or in an administrative or out-of-court procedure. The legal basis is our legitimate interest in protecting and asserting our legal rights, your legal rights and the legal rights of others.
 
-      (a) When you register for a customer account, you agree to provide your contact information (your name, email address);
+      1.9 We may also process any of your personal data where the processing is necessary to protect your vital interests or the vital interests of another natural person.
 
-      (b) Information you as a customer or just visitor choose to share with us (when you submit an inquiry through an online form on our website and during your registration);
+      ## 2. How we share the information
 
-      (c) When you register for an account, we may request further details from you. This information is used for purposes of verifying your identity and communicating with you. 
+      2.1 Personal data held in the services is stored on servers of our hosting providers under data processing agreements, with nightly encrypted back-ups. Cloudflare, Inc. serves this website, protects the services and provides the Turnstile check on our forms.
 
-      1.3 We may process data about your use of our website and services (“usage data”).
+      2.2 To operate the services, your personal data is shared, each only to the extent needed for its task, with: the organizer you bought a ticket from (ticket buyers); the payment provider connected by the organizer; e-mail delivery providers that send tickets and service e-mails; Telegram, through which the Telegram bot, the Telegram chat and notifications to organizers' groups are delivered under Telegram's own privacy policy; our hosting, analytics, automation and customer support providers. Following our instructions, these parties may access, process or store personal data while performing their duties for us.
 
-      The source of the usage data is our analytics tracking system. This usage data may be processed for the purposes of analysing the use of the website and services. The legal basis for this processing is your consent.
+      2.3 If we are involved in a merger, acquisition, financing due diligence, reorganisation, bankruptcy, receivership, sale of all or a portion of our assets, or transition of a service to another provider, your personal data and other information may be transferred to a successor or affiliate as part of that transaction.
 
-      The usage data may include your IP address, geographical location, browser type and version, operating system, referral source, length of visit, page views and website navigation paths, courses accessed, as well as information about the timing, frequency and pattern of your service use.
+      2.4 We disclose personal data if required to do so by law or applicable regulation, or in the good-faith belief that such action is necessary to: (a) comply with a legal obligation; (b) protect and defend our rights or property; (c) act in urgent circumstances to protect the personal safety of users of the services or the public; or (d) protect us against legal liability, whether in court proceedings or in an administrative or out-of-court procedure.
 
-      1.4 We may process information that you post for publication on our website or through our services (“publication data”).
+      2.5 With your consent, we may share data with third parties outside the scope of this Privacy Policy.
 
-      The publication data may be processed for the purposes, such publication and administering our website and services. The legal basis for this processing is your consent.
+      2.6 Organizers change or correct their data in the event center or by writing to hello@arenasoldout.com. Ticket buyers write to the organizer of their event, or to us at the same address; where the organizer is the controller we forward the request to the organizer.
 
-      1.5 We may process information contained in any enquiry you submit to us regarding goods and/or services (“enquiry data”).
+      ## 3. How long we store data
 
-      The enquiry data may be processed for the purposes of offering, marketing and selling relevant goods and/or services to you. The legal basis for this processing is consent.
+      3.1 We store your information only: (a) as long as necessary to fulfil the purposes for which it was collected and processed; (b) where applicable law provides for a longer storage period; and (c) for the retention period required by law. After that, your personal data is deleted, blocked or anonymised, as provided by applicable law.
 
-      1.6 We may process information relating to transactions (“transaction data”).
+      3.2 We retain personal data as follows:
 
-      The transaction data we may process includes purchases of goods and/or services, that you enter into with us and/or through our website.
+      (a) account data: while the account is open and for up to 120 months after the last sign-in, as set out in the Terms and Conditions; we warn you by e-mail before deleting the account;
 
-      Transactions involving your billing and payment information are processed by PayPal and Stripe and other payment service are subject to their privacy policies. We do not store any of the credit card or banking information that you provide to these payment processors.
+      (b) usage data: analytics in aggregated form; server logs for the limited period needed for security and troubleshooting;
 
-      1.7 We may process information that you provide to us for the purpose of subscribing to our email notifications and/or newsletters (“notification data”).
+      (c) publication data: while the event is published and the organizer's account is open;
 
-      The notification data may be processed for the purposes of sending you the relevant notifications and/or newsletters. The legal basis for this processing is consent.
+      (d) enquiry data: applications that did not lead to an account are deleted 180 days after the last contact; other enquiries, until the matter is closed;
 
-      1.8 We may process any of your personal data identified in this policy where necessary for the establishment, exercise or defense of legal claims, whether in court proceedings or in an administrative or out-of-court procedure.
+      (e) transaction data: while the organizer's account is open and the organizer needs it for refunds, disputes and reports, and after that for the period required by accounting and tax law (in Estonia, seven years for accounting source documents);
 
-      The legal basis for this processing is our legitimate interests, namely the protection and assertion of our legal rights, your legal rights and the legal rights of others.
+      (f) notification data: until you withdraw your consent; we keep the record that you unsubscribed so that we do not write to you again.
 
-      1.9 In addition to the specific purposes for which we may process your personal data set out in this Section 1, we may also process any of your personal data where such processing is necessary in order to protect your vital interests or the vital interests of another natural person.
+      ## 4. Security
 
-      2.  **How we share the information**
+      4.1 We are committed to safeguarding the privacy of website visitors, organizers and ticket buyers. We take reasonable administrative and technical steps to protect personal data from loss, misuse and unauthorized access, disclosure, alteration or destruction: encrypted connections, nightly encrypted back-ups, access to ticket buyer data limited to the organizer's team and to our staff who need it, and monitoring of the services.
 
-      2.1 Your personal data held in our website database will be stored on the servers of our hosting services providers identified at https://iphoster.net/.
+      4.2 However, no method of transmission over the internet is completely secure. While we strive to protect your data, we cannot guarantee its absolute security.
 
-      2.3 To assist us in meeting business operations needs and to perform certain services and functions your personal data may be shared with third-party providers of hosting, email communication and customer support services, analytics, marketing, advertising.
+      ## 5. Rights under EU law
 
-      Following our instructions, these parties may access, process or store personal data in the course of performing their duties for us.
+      5.1 This section describes your rights under EU law (for these purposes, the EU includes the European Economic Area countries Iceland, Liechtenstein and Norway).
 
-      2.4 If we are involved in a merger, acquisition, financing due diligence, reorganisation, bankruptcy, receivership, sale of all or a portion of our assets, or transition of a service to another provider, your Personal Data and other information may be transferred to a successor or affiliate as part of that transaction.
-
-      2.5 If required to do so by law, applicable regulation or in the good faith belief that such action is necessary to:
-
-      (a) comply with a legal obligation;
-
-      (b) protect and defend our rights or property;
-
-      (c) act in urgent circumstances to protect the personal safety of users of the website or the public; or
-
-      (d) protect us against legal liability whether in court proceedings or in an administrative or out-of-court procedure.
-
-      2.6 With your consent and permission, we may share data to third parties outside the scope of this Privacy Policy.
-
-      2.7 If you need to change or correct your personal data, or wish to have it deleted from our systems, you may do so yourself via your user settings.
-
-      3.  **How long we store data**
-
-      3.1 We will only store your information:
-
-      (a) as long as necessary to fulfil the purposes for which the information is collected and processed;
-
-      (b) where the applicable law provides for longer storage and retention period;
-
-      (c) for the storage and retention period required by law.
-
-      After that your personal data will be deleted, blocked or anonymized, as provided by applicable law.
-
-      3.2 We will retain your personal data as follows:
-
-      (a) usage data will be retained for a minimum period of subscription following the date of collection, and for a maximum period of 1 month after the end of the subscription following that date;
-
-      (b) account data will be retained for a minimum period of subscription following the date of closure of the relevant account, and for a maximum period of 1 month after the end of the subscription following that date;
-
-      (c) publication data will be retained for a minimum period of subscriptions following the date when the relevant publication ceases to be published on our website or through our services, and for a maximum period of 1 month after the end of the subscription following that date;
-
-      (d) enquiry data will be retained for a minimum period of subscriptions following the date of the enquiry, and for a maximum period of 1 month after the end of the subscription following that date;
-
-      (e) transaction data will be retained for a minimum period of subscriptions following the date of the transaction, and for a maximum period of 1 month after the end of the subscription following that date;
-
-      (f) notification data will be retained for a minimum period of subscriptions following the date that we are instructed to cease sending the notifications, and for a maximum period of 1 month after the end of the subscription following that date (providing that we will retain notification data insofar as necessary to fulfil any request you make to actively suppress notifications).
-
-      4.  **Security**
-
-      4.1 We are committed to safeguarding the privacy of our website visitors and service users. We take reasonable administrative and technical steps to protect the personal data from loss, misuse and unauthorized access, disclosure, alteration, or destruction.
-
-      4.2 However, no method of transmission over the internet is 100% secure. Therefore, while we strive to protect your data, we cannot guarantee its absolute security.
-
-      5.  **Rights under EU law**
-
-      5.1 This section provides information on your rights under EU law (for these purposes, reference to the EU also includes the European Economic Area countries of Iceland, Liechtenstein and Norway).
-
-      “Legitimate interests” means our interests in conducting our business, managing and delivering the best services to you. This Privacy Policy describes when we process your personal data for our legitimate interests, what these interests are and your rights.
-
-      We will not use your personal data for activities where the impact on you overrides our interests, unless we have your consent or those activities are otherwise required or permitted by law.
+      "Legitimate interests" means our interests in conducting our business and in managing and delivering the services. This Privacy Policy describes when we process your personal data for our legitimate interests, what these interests are and your rights. We do not use your personal data for activities where the impact on you overrides our interests, unless we have your consent or those activities are otherwise required or permitted by law.
 
       5.2 You have the following rights in relation to your personal data:
 
-      (a) Right of access: If we are processing your personal data you can ask for a copy of that personal data;
+      (a) Right of access: if we process your personal data, you can ask for a copy of it.
 
-      (b) Right to rectification: If your personal data is inaccurate or incomplete, you are entitled to ask that we correct or complete it. If we shared your personal data with others, we will tell them about the correction where possible.
+      (b) Right to rectification: if your personal data is inaccurate or incomplete, you can ask us to correct or complete it. If we shared it with others, we tell them about the correction where possible.
 
-      (c) Right to erasure: You may ask us to erase your personal data in some circumstances, such as where we no longer need it or you withdraw your consent (where applicable). If we shared your data with others, we will alert them to the need for erasure where possible.
+      (c) Right to erasure: you can ask us to erase your personal data in some circumstances, for example where we no longer need it or you withdraw your consent. If we shared it with others, we alert them to the need for erasure where possible.
 
-      (d) Right to restrict processing: You may ask us to restrict or block the processing of your personal data in certain circumstances, such as where you contest the accuracy of the data or object to us processing it. If we shared your personal data with others, we will tell them about the restriction where possible.
+      (d) Right to restrict processing: you can ask us to restrict or block the processing of your personal data in certain circumstances, for example where you contest its accuracy or object to the processing. If we shared it with others, we tell them about the restriction where possible.
 
-      (e) Right to object: You may ask us at any time to stop processing your personal data, and we will do so if we are relying on a legitimate interest to process your personal data, unless we demonstrate compelling legitimate grounds for the processing or if we are processing your personal data for direct marketing.
+      (e) Right to object: you can ask us at any time to stop processing your personal data, and we do so where we rely on a legitimate interest, unless we demonstrate compelling legitimate grounds, and always where we process it for direct marketing.
 
-      (f) Right to data portability: You have the right to obtain your personal data from us that you consented to give us or that was provided to us as necessary in connection with our contract with you.
+      (f) Right to data portability: you can obtain the personal data you gave us with your consent or under our contract with you, in a structured, commonly used format.
 
-      (g) Right to withdraw consent: If we rely on your consent to process your personal data, you have the right to withdraw that consent at any time, but this will not affect any processing of your data that has already taken place.
+      (g) Right to withdraw consent: where we rely on your consent, you can withdraw it at any time; this does not affect processing that has already taken place.
 
-      (h) Right to lodge a complaint with the data protection authority: If you have a concern about our privacy practices, including the way we handled your personal data, you can report it to the data protection authority that is authorised to hear those concerns.
+      (h) Right to lodge a complaint: if you have a concern about our privacy practices, you can complain to the data protection authority of your country. Our supervisory authority is the Estonian Data Protection Inspectorate (Andmekaitse Inspektsioon, www.aki.ee).
 
-      Cookie Policy
+      5.3 To exercise these rights, write to hello@arenasoldout.com. We answer within one month. Ticket buyers can also contact the organizer of their event, who is the controller of their data.
 
-      6.  **Cookies we use**
+      ## 6. Cookies and similar technologies
 
-      6.1 A “cookie” is a piece of information sent to your browser by a website you visit. Our website uses cookies and other technologies to make it easier for you to use our services during future visits, monitor traffic on our website and to personalise instructional content, pursuant to our Privacy Policy.
+      6.1 A "cookie" is a small piece of information a website stores in your browser. Browsers also offer local storage, which works similarly but is not sent to the server with every request.
 
-      6.2 Some cookies expire after a certain amount of time, or upon logging out (session cookies), others remain on your computer or device for a longer period (persistent cookies). The Website uses first-party cookies (cookies set directly by ArenaSoldOut) as well as third-party cookies.
+      6.2 This website sets no cookies of its own and shows no cookie banner. Your theme choice (light or dark) is stored in your browser's local storage and is never sent to us. Analytics on the website is cookie-free. The application form uses Cloudflare Turnstile to tell people from automated submissions; the check runs from challenges.cloudflare.com and may use cookies or storage of its own, under Cloudflare's privacy policy.
 
-      6.3 We use cookies for the following purposes:
+      6.3 The event center, the hosted sales pages and the ticket widget use strictly necessary cookies and local storage: to keep organizers signed in, to hold your seats while you complete an order, to remember your language, and to protect accounts and orders against fraud. We do not use advertising cookies or third-party analytics cookies.
 
-      (a) authentication and status: we use cookies to identify you when you visit our website and as you navigate our website, and to determine if you are logged into the website;
+      ## 7. How to control cookies
 
-      (b) personalization: we use cookies to store information about your preferences and to personalise the website for you;
+      7.1 You can block or delete cookies and local storage in your browser settings; your browser's help explains how. Blocking strictly necessary cookies prevents signing in to the event center and completing a ticket order.
 
-      (c) security: we use cookies as an element of the security measures used to protect user accounts, including preventing fraudulent use of login credentials, and to protect our website and services generally;
+      ## 8. Revision and severability
 
-      (d) advertising: we use cookies to help us to display advertisements that will be relevant to you;
+      8.1 We may update this Privacy Policy from time to time by publishing a new version on this page with the date of the change. Check this page occasionally to make sure you are happy with any changes.
 
-      (e) analysis: we use cookies to help us to analyse the use and performance of our website and services; and
+      8.2 If a provision of this policy is determined by any court or other competent authority to be unlawful or unenforceable, the other provisions continue in effect.
 
-      (f) cookie consent: we use cookies to store your preferences in relation to the use of cookies more generally.
+      8.3 If any unlawful or unenforceable provision would be lawful or enforceable if part of it were deleted, that part is deemed deleted, and the rest of the provision continues in effect.
 
-      6.4 This website uses Google Analytics, a web analytics service provided by Google, Inc. (“Google”). Google Analytics uses cookies, which are text files placed on your advice, to help the website operators analyse how you use the website.
+      ## 9. How to contact us
 
-      The information generated by the cookie about your use of the website will generally be transmitted to and stored by Google on servers in the United States.
+      9.1 This website and the services are owned and operated by ABH TEAM OÜ.
 
-      You can find out more about Google’s use of information by visiting:
+      9.2 We are registered in the Estonian Commercial Register under registration number 14162982, and our registered office and place of business is at:
 
-      https://www.google.com/policies/privacy/partners/
-
-      and you can review Google’s privacy policy at:
-
-      https://policies.google.com/privacy.
-
-      7.  **How to control cookies**
-
-      7.1 You can control and manage cookies in various ways. Please keep in mind that removing or blocking cookies can negatively impact your user experience and parts of our website may no longer be fully accessible.
-
-      7.2 Most browsers automatically accept cookies, but you can choose whether or not to accept cookies through your browser controls, often found in your browser’s “Tools” or “Preferences” menu.
-
-      For more information on how to modify your browser settings or how to block, manage or delete cookies can be found in your browser’s help file or through such sites as:
-
-      (a) https://support.google.com/chrome/answer/95647 (Chrome);
-
-      (b) https://support.mozilla.org/en-US/kb/enable-and-disable-cookieswebsite-preferences (Firefox);
-
-      (c) https://help.opera.com/en/latest/security-and-privacy/ (Opera);
-
-      (d) https://support.microsoft.com/en-gb/help/17442/windows-internetexplorer-delete-manage-cookies (Internet Explorer);
-
-      (e) https://support.apple.com/en-gb/guide/safari/manage-cookies-andwebsite-data-sfri11471/mac (Safari); and
-
-      (f) https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-andprivacy (Edge).
-
-      8.  **Revision and severability**
-
-      8.1 We may update this Private Policy or Cookie Policy from time to time by publishing a new version on our website. You should check this page occasionally to ensure you are happy with any changes to this policy.
-
-      8.2 If a provision of these terms is determined by any court or other competent authority to be unlawful and/or unenforceable, the other provisions will continue in effect.
-
-      8.3 If any unlawful and/or unenforceable provision of these terms would be lawful or enforceable if part of it were deleted, that part will be deemed to be deleted, and the rest of the provision will continue in effect.
-
-      9.  **How to contact us**
-
-      9.1 This website is owned and operated by ABH TEAM OU.
-
-      9.2 We are registered in Estonia Commercial Register under registration number 14162982, and our registered office and place of business is at:
-
-      Narvamnt 5a, Kesklinna district,
-
+      Narva mnt 5a, Kesklinna district,
       Tallinn city, Harju county,
-
       10117 Estonia.
 
       9.3 You can contact us:
 
-      (a) by post, to the postal address given above;
+      (a) by e-mail, at hello@arenasoldout.com;
 
-      (b) using our website contact form;
+      (b) in the Telegram chat and the Telegram bot linked on the contact page;
 
-      (c) by telephone, on the contact number published on our website; or
+      (c) using the application form on this website;
 
-      (d) by email, using the email address published on our website.
+      (d) by post, to the address given above.
