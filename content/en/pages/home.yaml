@@ -17,20 +17,29 @@ sections:
       meta: "Fri 24 Oct · 19:30 · Palác Akropolis, Prague"
       sessions: [Fri 24 Oct, Sat 25 Oct]
       stage: Stage
-      mapAria: "Seat map: rows A to J, two seats selected in row G"
-      mapText: "Seat map of a 140-seat venue: rows A to J, seven seats either side of the aisle. Rows A to C are sold, the stalls fill from the front, two seats in row G are selected: Parterre, 2 × €38.00."
+      mapAria: "Seat map: rows A to J, pick free seats"
+      mapText: "Seat map of a 140-seat venue: rows A to J, seven seats either side of the aisle. Rows A to C are sold, the stalls fill from the front; two seats in row G are selected to start with. Pick free seats on the plan and the cart below recalculates."
       seatTitle: "Row {row}, seat {seat}"
-      legend: { cat1: Parterre €38, cat2: Balcony €24, sold: Sold, selected: Selected }
-      line: "Row G · Seats 7, 8"
-      qty: 2 × €38.00
-      category: Parterre
-      fee: Service fee 5%
-      feeValue: €3.80
+      legend: { cat1: Parterre €38, cat2: Balcony €24, sold: Sold, held: Reserved, selected: Selected }
+      # Prices per category (rows A to G Parterre, H to J Balcony) and the organizer's service fee; the cart is computed from these.
+      currency: "€"
+      prices: { cat1: 38, cat2: 24 }
+      categories: { cat1: Parterre, cat2: Balcony }
+      feePercent: 5
+      line: "Row {row} · Seats {seats}"
+      lineOne: "Row {row} · Seat {seat}"
+      qty: "{n} × {price}"
+      fee: "Service fee {percent}%"
       held: Held for
       heldFor: "09:41"
-      total: €79.80
-      pay: Pay €79.80
-
+      pay: "Pay {total}"
+      empty: Pick your seats on the plan
+      tips:
+        free: "{category}, {price}. Click to add"
+        selected: "In your cart. Click to remove"
+        sold: Already sold
+        held: Reserved by another buyer, not paid yet
+        blocked: Not for sale
   - type: facts
     items:
       - Organizers in **35** countries since 2019

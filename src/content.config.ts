@@ -71,16 +71,21 @@ const widget = z.object({
   mapAria: z.string(),
   mapText: z.string(),
   seatTitle: z.string(),
-  legend: z.object({ cat1: z.string(), cat2: z.string(), sold: z.string(), selected: z.string() }),
+  legend: z.object({ cat1: z.string(), cat2: z.string(), sold: z.string(), held: z.string(), selected: z.string() }),
+  /* Prices per category and the fee: the cart in the widget is computed from these. */
+  currency: z.string(),
+  prices: z.object({ cat1: z.number(), cat2: z.number() }),
+  categories: z.object({ cat1: z.string(), cat2: z.string() }),
+  feePercent: z.number(),
   line: z.string(),
+  lineOne: z.string(),
   qty: z.string(),
-  category: z.string(),
   fee: z.string(),
-  feeValue: z.string(),
   held: z.string(),
   heldFor: z.string(),
-  total: z.string(),
   pay: z.string(),
+  empty: z.string(),
+  tips: z.object({ free: z.string(), selected: z.string(), sold: z.string(), held: z.string(), blocked: z.string() }),
 });
 
 /* ---------- Page sections (discriminated by `type`) ---------- */
