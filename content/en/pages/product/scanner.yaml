@@ -1,0 +1,53 @@
+# MACS: the scanner app as a product of its own (owner decision 09.10.2026). Facts: facts.yaml,
+# BRIEF.md (EAN-13 and QR, iOS and Android, partners' tickets from other systems), store links in
+# macs_app/macs-apps.txt. Scanning-only terms for tickets sold elsewhere are not decided: "on request".
+title: "MACS scanner app: ticket scanning for any organizer, iOS and Android"
+description: "MACS is the Arena Sold Out access control app. It scans EAN-13 and QR tickets of any organizer on the platform and partners' tickets from other systems, on iPhone, iPad and Android, with handheld scanners too. Free in the App Store and Google Play."
+h1: "MACS: the app at the door"
+lead: One app for every entrance. Door staff sign in, pick the session and scan the EAN-13 or the QR on the ticket, on paper or on a screen. It takes tickets of any organizer who sells through Arena and partners' tickets from other systems, so a venue uses the same phones for every event.
+related:
+  - { label: E-tickets with EAN-13 and QR, href: /product/tickets }
+  - { label: "Venues and clubs: one plan, every event", href: /solutions/venues }
+  - { label: Partners and agencies, href: /partners }
+sections:
+  - type: cards
+    id: get
+    eyebrow: Get the app
+    title: Where do I install MACS?
+    lead: Free for organizers on the platform. Install it on as many phones as you have entrances and sign in with your event center account.
+    items:
+      - { title: iPhone and iPad, text: "MACS on the App Store. Sign in with your event center account; your events and sessions are already there.", link: { label: Open the App Store →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: Android, text: "MACS on Google Play. The same app and the same account; Android handheld scanners with a built-in laser work as well.", link: { label: Open Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
+      - { title: Handheld scanners, text: "A USB or Bluetooth barcode scanner connected to a phone or a laptop reads the same EAN-13; the app records the scan.", link: { label: How tickets are built →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: What does the scanner do?
+    items:
+      - q: Which tickets does it scan?
+        a: "Every ticket issued by Arena Sold Out: the PDF with the EAN-13 barcode and the QR code, printed or shown on a screen, and the e-mail with the ticket. Tickets sold by your partners in other systems are accepted next to them, so one door works for every sales channel."
+      - q: Can one app serve several organizers?
+        a: Yes. MACS scans tickets of any organizer on the platform. Door staff of a venue or a festival switch between events and sessions in the app; each organizer sees the scans of their own events in the event center.
+      - q: What does the staff see on a scan?
+        a: Whether the ticket is valid, with the seat or the category, or why it is not (already used, cancelled, another session). The organizer sees the admitted count per session in the event center.
+      - q: Do I need the Arena ticketing to use the scanner?
+        a: "Today MACS is included for organizers who sell through Arena, and it accepts partners' tickets from other systems next to Arena tickets. Scanning only, for tickets sold elsewhere, is offered on request: write to us with your ticket system and the event."
+      - q: How many phones can scan at once?
+        a: As many as you have entrances. Scans are recorded centrally, so a ticket admitted at one gate is not admitted again at another.
+      - q: What does it cost?
+        a: Nothing on top of the per-ticket price for organizers on the platform. Terms for scanning-only use are agreed per event; see the pricing page for the platform terms.
+  - type: cards
+    id: who
+    eyebrow: Who uses it
+    title: Who scans with MACS?
+    items:
+      - { title: Venues and clubs, text: "One app for every promoter who rents the venue; the venue sees every event, each promoter sees their own.", link: { label: For venues and clubs →, href: /solutions/venues } }
+      - { title: Festivals, text: "Several gates, many phones, one count. Partners' tickets accepted at the same gates.", link: { label: For festivals →, href: /solutions/festivals } }
+      - { title: Agencies and partners, text: "Scan tickets you sold through Arena and tickets from the systems your clients already use.", link: { label: Partners →, href: /partners } }
+  - type: cta
+    id: start
+    title: Put MACS at your door
+    text: "Install the app, sign in with your event center account, scan. Scanning for tickets sold elsewhere: write to us with your ticket system and the event."
+    primary: { label: Contact us, href: /contact }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Free in the App Store and Google Play for organizers on the platform."

@@ -24,7 +24,7 @@ sections:
       - q: Is there a referral or reseller fee?
         a: Partnership terms are agreed individually; write to the team with what you do and for whom.
       - q: Can a ticket sold by a partner be scanned at the door?
-        a: Yes. The scanner app accepts partners' tickets from other systems next to Arena tickets.
+        a: "Yes. The [MACS scanner app](/product/scanner) accepts partners' tickets from other systems next to Arena tickets, on iOS and Android."
       - q: Can an agency manage several organizers?
         a: Yes, with roles in each organization's event center and scoped API keys per organization.
   - type: cta

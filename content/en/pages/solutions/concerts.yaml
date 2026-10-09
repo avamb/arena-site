@@ -15,7 +15,7 @@ sections:
       - { title: Standing and seated together, text: "A standing area with a quota next to seated categories, in one plan and one checkout.", link: { label: Seating plans →, href: /product/seating } }
       - { title: Early bird that switches itself, text: "A price window by date and time, or a quantity step that opens the next price when the first one sells out.", link: { label: Pricing tools →, href: /product/pricing-tools } }
       - { title: Partners and promoters, text: "A page per promoter with its own link, promo codes per partner, every channel in one event center.", link: { label: Where you sell →, href: /product/sell } }
-      - { title: The door, text: "Scanner app for iOS and Android, EAN-13 and QR on every ticket, partners' tickets from other systems accepted too.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: The door, text: "Scanner app for iOS and Android, EAN-13 and QR on every ticket, partners' tickets from other systems accepted too.", link: { label: MACS scanner app →, href: /product/scanner } }
   - type: faq
     id: questions
     eyebrow: Questions

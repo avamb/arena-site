@@ -26,6 +26,7 @@ footer:
       - { label: Payments, href: /payments }
       - { label: Telegram bot, href: /product/telegram }
       - { label: E-tickets and scanning, href: /product/tickets }
+      - { label: MACS scanner app, href: /product/scanner }
       - { label: Reliability, href: /product/reliability }
   - title: Who it is for
     links:

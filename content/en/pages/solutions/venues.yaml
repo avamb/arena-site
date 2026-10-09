@@ -15,7 +15,7 @@ sections:
       - { title: "One plan, every event", text: "Built once from your file, reused for every event; versions for stage layouts.", link: { label: Seating plans →, href: /product/seating } }
       - { title: Promoters who rent the venue, text: "A page per promoter with its own link; the venue sees every event, the promoter sees its own.", link: { label: Where you sell →, href: /product/sell } }
       - { title: Separate terms, text: "Two percent of the ticket price instead of the per-ticket fee, no fee on invitations and refunds, volume terms on request.", link: { label: Pricing →, href: /pricing } }
-      - { title: The door, text: "Scanner app for iOS and Android, handheld scanners, partners' tickets from other systems accepted.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: The door, text: "Scanner app for iOS and Android, handheld scanners, partners' tickets from other systems accepted.", link: { label: MACS scanner app →, href: /product/scanner } }
   - type: faq
     id: questions
     eyebrow: Questions

@@ -14,7 +14,7 @@ sections:
     items:
       - { title: Categories with quotas, text: "Day one, day two, full pass, VIP, camping: each with its own price, quota and sale window.", link: { label: Pricing tools →, href: /product/pricing-tools } }
       - { title: Category chains, text: "When early bird sells out, its unsold places flow to the next category instead of blocking sales.", link: { label: Pricing tools →, href: /product/pricing-tools } }
-      - { title: Entrances, text: "Scanner app for iOS and Android at every gate; partners' tickets from other systems accepted too.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Entrances, text: "Scanner app for iOS and Android at every gate; partners' tickets from other systems accepted too.", link: { label: MACS scanner app →, href: /product/scanner } }
       - { title: Load, text: "800 orders a minute at 1,000 concurrent buyers in load tests; the opening minute of sales is covered.", link: { label: Reliability →, href: /product/reliability } }
   - type: faq
     id: questions

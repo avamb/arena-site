@@ -35,6 +35,8 @@ capabilities:
   - name: E-ticket PDF with EAN-13 and QR; scanning through the MACS access control app for iOS and Android
     status: yes
     since: 2026-09-20
+  - name: MACS scanner app in the App Store and Google Play; scans tickets of any organizer on the platform and partners' tickets from other systems
+    status: yes
   - name: Buyer e-mails when a session moves or is cancelled, with the updated ticket
     status: yes
     since: 2026-10-03
