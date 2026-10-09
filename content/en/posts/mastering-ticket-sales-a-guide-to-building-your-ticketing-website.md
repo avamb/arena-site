@@ -31,9 +31,9 @@ This guide can be used to organize ticket sales for concerts, shows, sports even
 
 3\. **Payment Processing (Equiring):** It’s important to note that having your own equiring allows you to receive money from each ticket sale directly into your account (Equiring) instead of waiting for a ticketing system or platform to transfer the funds to you.
 
-    Today, ArenaSoldOut.com is integrated with STRIPE, as well as with banking equirings in Armenia and Uzbekistan. Specific information about the banks with which equirings are implemented in Armenia and Uzbekistan can be obtained upon request.
+    Today, ArenaSoldOut.com is integrated with STRIPE, as well as with banking equirings in Armenia and Uzbekistan. Specific information about the banks with which equirings are implemented in Armenia and Uzbekistan can be obtained upon request.
 
-    Stripe is a versatile international payment platform, one of the largest in the world, specializing in payment processing for e-commerce and sales. It works with almost all currencies and companies from over 40 countries. You can quickly open a Stripe account and link it to your sales.
+    Stripe is a versatile international payment platform, one of the largest in the world, specializing in payment processing for e-commerce and sales. It works with almost all currencies and companies from over 40 countries. You can quickly open a Stripe account and link it to your sales.
 
 By following these steps, you can lay a strong foundation for your ticket selling website, ensuring smooth transactions and reliable performance.
 

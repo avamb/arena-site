@@ -48,11 +48,11 @@ Some airlines, for instance, hold unexpected 24-hour ticket sales to make custom
 
 Imagine you are promoting a football match and announce a “Flash Sale” on Thursday evening, where tickets are sold at a significant discount for only a few hours. Advertise the sale through email campaigns or social media to maximize attention.
 
-**Here’s a practical example for event promotions:** 
+**Here’s a practical example for event promotions:** 
 
 ***Flamenco Star Gala Concert is just around the corner! Today only, we’re offering an exclusive 24-hour deal: buy your tickets at the lowest price and experience the passion and magic of Flamenco live! Hurry, these prices won’t last!***
 
-For sports events, you could announce a similar flash sale: 
+For sports events, you could announce a similar flash sale: 
 
 ***The ultimate football showdown is approaching! Today only, for the fastest fans: a flash sale with 50% off match tickets! Offer valid for 12 hours only! Tickets are running out fast, claim your spot in the stadium now!***
 

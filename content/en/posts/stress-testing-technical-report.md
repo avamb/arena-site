@@ -46,9 +46,9 @@ Obtaining the Current Layout via the API can be done in two ways:
 
 2\. Obtaining it using two commands:
 
-   – GET\_SCHEMA: This method returns information about all seats with placement, including the x, y coordinates of each seat. This method allows for building a custom seating plan.
+   – GET\_SCHEMA: This method returns information about all seats with placement, including the x, y coordinates of each seat. This method allows for building a custom seating plan.
 
-   – GET\_SEAT\_LIST: This command retrieves a list of seats based on the session ID. This method does NOT involve transferring the Current Layout in SVG format and assumes that the external client ticketing system will independently build such a layout using the responses from these commands.
+   – GET\_SEAT\_LIST: This command retrieves a list of seats based on the session ID. This method does NOT involve transferring the Current Layout in SVG format and assumes that the external client ticketing system will independently build such a layout using the responses from these commands.
 
 Further testing was conducted separately for each of the aforementioned methods. All experiments were performed without using External Ticketing Systems (the event was loaded into ArenaSoldOut.com) as these systems operate slower than ArenaSoldOut.com, and measuring their performance was not the objective of these tests.
 

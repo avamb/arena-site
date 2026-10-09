@@ -76,9 +76,9 @@ Software architect and team lead TixGear — ArenaSoldOut.com
 
 ВАМ ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО:
 
-[Как начать продавать билеты на своем сайте. Пошаговый гайд](/ru/blog/kak-nachat-prodavat-bilety-na-svoem-sajte-poshagovyj-gajd) 
+[Как начать продавать билеты на своем сайте. Пошаговый гайд](/ru/blog/kak-nachat-prodavat-bilety-na-svoem-sajte-poshagovyj-gajd) 
 
-[Прочитать больше о том как сделать эффективный сайт для продажи билетов на мероприятия вы можете здесь](/ru/blog/11-sekretov-kak-sdelat-naibolee-privlekatelnuyu-i-prodayushhuyu-straniczu-vashego-meropriyatiya) 
+[Прочитать больше о том как сделать эффективный сайт для продажи билетов на мероприятия вы можете здесь](/ru/blog/11-sekretov-kak-sdelat-naibolee-privlekatelnuyu-i-prodayushhuyu-straniczu-vashego-meropriyatiya) 
 
 Share this article with a friend
 

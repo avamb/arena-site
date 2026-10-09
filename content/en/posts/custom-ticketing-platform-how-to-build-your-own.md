@@ -12,7 +12,7 @@ Professionals across various industries can now access a unique service – thei
 
 From organizing ticketing systems, events, tours, selling tickets, goods, and services — a custom platform is necessary to gather users of different roles and unite them in one ecosystem. It’s better to obtain a ready-made platform than to spend time and money inventing and developing another solution from scratch. Developing a platform with a “quick and cheap” mindset often leads to financial losses.
 
- Learn more in the article [“Make own ticketing platform for 1000 USD. Myth or reality?”](/blog/make-own-ticketing-platform-for-1000-usd-myth-or-reality)
+ Learn more in the article [“Make own ticketing platform for 1000 USD. Myth or reality?”](/blog/make-own-ticketing-platform-for-1000-usd-myth-or-reality)
 
 The “Custom Platform” service offers a full-fledged solution where the recipient of the service has Operator status (maximum rights) and can attract users to their platform: Organizers, Agents, Buyers. Such a platform is a network under full control of the Operator, who manages and develops it as an ecosystem for all market participants.
 
@@ -66,9 +66,9 @@ Undoubtedly, effectively utilizing the platform as an Operator can only be achie
 
 #### **For more insights into how ticket sales websites are structured, read the following articles:**
 
-– [“Into the Future: tour sales automation – exploring new frontiers in the travel industry’”](/blog/into-the-future-tour-sales-automation-exploring-new-frontiers-in-the-travel-industry)
+– [“Into the Future: tour sales automation – exploring new frontiers in the travel industry’”](/blog/into-the-future-tour-sales-automation-exploring-new-frontiers-in-the-travel-industry)
 
-– [“Make own ticketing platform for 1000 USD. Myth or reality?”](/blog/make-own-ticketing-platform-for-1000-usd-myth-or-reality)
+– [“Make own ticketing platform for 1000 USD. Myth or reality?”](/blog/make-own-ticketing-platform-for-1000-usd-myth-or-reality)
 
 – “[I Want My Own Website for Ticket Sales”](/blog/i-want-my-own-website-for-selling-tickets)
 

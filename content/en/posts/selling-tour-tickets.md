@@ -56,7 +56,7 @@ This excursion is an example of the implementation tour bus tickets with specifi
 
 **Buyer of the tour/excursion** in one order pays for the tour, and what he wants to eat / drink, and what he wants to buy as souvenirs / gifts. Not something that will be offered to him “on the go”, but to buy what he himself has chosen in a quiet atmosphere for himself, for family and as a souvenir to his friends. In addition, the tourist can choose several excursions, create his own “package tour”, pay for it with one order and get discounts.
 
-**For the organizer**, modern approach offers many advantages. Limitations on the capacity of buses, jeeps, and boats will not allow you to sell more tickets than necessary. 
+**For the organizer**, modern approach offers many advantages. Limitations on the capacity of buses, jeeps, and boats will not allow you to sell more tickets than necessary. 
 
 Even if the boat sells children’s and adult’s “admission tickets” (no seats indicated), both price categories (children’s and adult) can be combined into one capacity limit, for example, 100 seats. In this case it is guaranteed that no more than 100 tickets will be sold, no matter what the adult/children proportion is.
 

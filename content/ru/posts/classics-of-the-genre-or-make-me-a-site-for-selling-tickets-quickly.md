@@ -55,16 +55,16 @@ archive: true
 
 Необходимо создать сайт для продажи билетов, интегрированный с такой-то билетной системой или платформой, выступающей в качестве backend’а проекта.
 
-Первый случай – это много времени, денег и рисков, о чем заказчик и исполнитель могут не догадываться в начале проекта. Второй случай — это оптимальное решение, почитать о котором можно в статье [«Хочу свой сайт для продажи билетов…»](/ru/blog/my-own-site-for-tickets-sold) 
+Первый случай – это много времени, денег и рисков, о чем заказчик и исполнитель могут не догадываться в начале проекта. Второй случай — это оптимальное решение, почитать о котором можно в статье [«Хочу свой сайт для продажи билетов…»](/ru/blog/my-own-site-for-tickets-sold) 
 
 Александр Орлов  
 Software architect and team lead TixGear — ArenaSoldOut.com
 
 ВАМ ТАКЖЕ МОЖЕТ БЫТЬ ИНТЕРЕСНО:
 
-[Как начать продавать билеты на своем сайте. Пошаговый гайд](/ru/blog/kak-nachat-prodavat-bilety-na-svoem-sajte-poshagovyj-gajd) 
+[Как начать продавать билеты на своем сайте. Пошаговый гайд](/ru/blog/kak-nachat-prodavat-bilety-na-svoem-sajte-poshagovyj-gajd) 
 
-[Прочитать больше о том как сделать эффективный сайт для продажи билетов на мероприятия вы можете здесь](/ru/blog/11-sekretov-kak-sdelat-naibolee-privlekatelnuyu-i-prodayushhuyu-straniczu-vashego-meropriyatiya) 
+[Прочитать больше о том как сделать эффективный сайт для продажи билетов на мероприятия вы можете здесь](/ru/blog/11-sekretov-kak-sdelat-naibolee-privlekatelnuyu-i-prodayushhuyu-straniczu-vashego-meropriyatiya) 
 
 Share this article with a friend
 

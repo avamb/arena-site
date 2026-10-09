@@ -41,7 +41,7 @@ archive: true
 
 [![Экскурсии Картинка 3r](./images/release-of-excursions-for-sale-methods-tools-step-by-step-instructions/----3r.jpeg)](/developers#/?zone=test&frontendId=1261&token=8bbfd29fe18a87925f81&id=934&cityId=63&lng=en&agr=https://arenasoldout.com/termsconditions/&success=https://arenasoldout.com/test-payment-successful/&fail=https://arenasoldout.com/test-payment-failed/)
 
-Проблемой этого пляжа является овербукинг. На входе можно оплатить вход нга пляж, но это не гарантирует, что для посетителя будет свободный лежак. 
+Проблемой этого пляжа является овербукинг. На входе можно оплатить вход нга пляж, но это не гарантирует, что для посетителя будет свободный лежак. 
 
 Схема пляжа с лежаками и продажа «билетов» на них решают эту проблему. Можно оплатить конкретный лежак и занять именно его. Дополнительно можно заказывать и оплачивать еду и напитки.
 
@@ -77,7 +77,7 @@ archive: true
 Александр Орлов  
 Software architect and team lead TixGear — ArenaSoldOut.com
 
-[Прочитать новую статью и  дополнительную информацию об автоматизации продажи туров и экскурсий вы можете здесь](/ru/blog/vpered-v-budushhee-avtomatizacziya-prodazh-turov-novye-gorizonty-v-industrii-puteshestvij)
+[Прочитать новую статью и  дополнительную информацию об автоматизации продажи туров и экскурсий вы можете здесь](/ru/blog/vpered-v-budushhee-avtomatizacziya-prodazh-turov-novye-gorizonty-v-industrii-puteshestvij)
 
 Share this article with a friend
 

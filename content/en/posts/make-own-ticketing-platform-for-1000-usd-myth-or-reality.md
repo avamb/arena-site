@@ -101,13 +101,13 @@ Software architect and team lead TixGear – ArenaSoldOut.com
 
 ##### **You might also find these articles interesting:**
 
-– [Tools for events from 5,000 to 100K+ participants: functional features of ticketing platforms](/blog/tools-for-events-from-5000-to-100k-participants-functional-features-of-ticketing-platforms)
+– [Tools for events from 5,000 to 100K+ participants: functional features of ticketing platforms](/blog/tools-for-events-from-5000-to-100k-participants-functional-features-of-ticketing-platforms)
 
-– [STRESS TESTING: Technical Report 2023](/blog/stress-testing-technical-report)
+– [STRESS TESTING: Technical Report 2023](/blog/stress-testing-technical-report)
 
-– [Why STRESS Testing Ticket Platforms Matters: Benefits for Organizers and Buyers](/blog/why-stress-testing-ticket-platforms-matters-benefits-for-organizers-and-buyers)
+– [Why STRESS Testing Ticket Platforms Matters: Benefits for Organizers and Buyers](/blog/why-stress-testing-ticket-platforms-matters-benefits-for-organizers-and-buyers)
 
-– [Ticket platforms. Five generations.](/blog/ticket-platforms-five-generations)
+– [Ticket platforms. Five generations.](/blog/ticket-platforms-five-generations)
 
 ##### If you’re looking to create a ticketing platform or system, you might find the following information interesting:
 

@@ -114,9 +114,9 @@ archive: true
 
 Платформа является бэкендом для сайтов и приложений ее пользователей, основой для интеграции с другими системами. Также когда вы можете получить собственную платформу как услугу, вы можете сосредоточить усилия и ресурсы на создании сайтов и приложений, интеграции с различными системами через API. В этом случае вы получаете отличную фору для создания собственных решений и вывода их на рынок.
 
-*Александр* *Орлов**, Software architect and team lead TixGear — ArenaSoldOut.com*
+*Александр* *Орлов**, Software architect and team lead TixGear — ArenaSoldOut.com*
 
-*Марина* *Баканова**, Co-founder ArenaSoldOut.com ticketing platform for event organizers*
+*Марина* *Баканова**, Co-founder ArenaSoldOut.com ticketing platform for event organizers*
 
 *ArenaSoldOut.com – Worldwide representative of TixGear*
 
@@ -130,7 +130,7 @@ archive: true
 
 [Как начать продавать билеты на своем сайте. Пошаговый гайд](/ru/blog/kak-nachat-prodavat-bilety-na-svoem-sajte-poshagovyj-gajd)
 
-## **Вам** **также** **может** **быть** **интересно****:**
+## **Вам** **также** **может** **быть** **интересно****:**
 
 [Организаторы мероприятий в центре событий: блестящий переход к прямому доступу к выручке](/ru/blog/organizatory-meropriyatij-v-czentre-sobytij-blestyashhij-perehod-k-pryamomu-dostupu-k-vyruchke)
 

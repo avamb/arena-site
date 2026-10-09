@@ -62,7 +62,7 @@ Modern sales management software for tours and excursions empowers tourists to n
 
 ## **Overall, ArenaSoldOut.com enables tourism companies to:**
 
-– Showcase  products on  websites
+– Showcase  products on  websites
 
 – Accept online payments
 

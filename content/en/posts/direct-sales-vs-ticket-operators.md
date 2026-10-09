@@ -44,7 +44,7 @@ Ticket operators, by accepting money for sold tickets into their accounts, creat
 
 -   **Risks of financial issues with ticket operators and platforms**:
 
- Ticket systems are not banks and are not regulated as banks. They are not obligated to maintain mandatory fund reserves, presenting a potential financial risk for organizers. In the event of financial difficulties or a cash flow disruption with the ticket operator, organizers may face delays in receiving funds or, in some cases, may never receive them.
+ Ticket systems are not banks and are not regulated as banks. They are not obligated to maintain mandatory fund reserves, presenting a potential financial risk for organizers. In the event of financial difficulties or a cash flow disruption with the ticket operator, organizers may face delays in receiving funds or, in some cases, may never receive them.
 
 Risks of this type can significantly impact the financial health of event organizers, making direct sales on their websites and collaboration with platforms facilitating direct fund receipt more preferable options for ensuring financial stability and minimizing risks.
 
