@@ -71,21 +71,21 @@ const widget = z.object({
   mapAria: z.string(),
   mapText: z.string(),
   seatTitle: z.string(),
-  legend: z.object({ cat1: z.string(), cat2: z.string(), sold: z.string(), held: z.string(), selected: z.string() }),
-  /* Prices per category and the fee: the cart in the widget is computed from these. */
+  legend: z.object({ sold: z.string(), held: z.string(), wheelchair: z.string(), selected: z.string() }),
+  /* Price categories by rows (five), the organizer's fee and the hold time: the cart is computed from these. */
   currency: z.string(),
-  prices: z.object({ cat1: z.number(), cat2: z.number() }),
-  categories: z.object({ cat1: z.string(), cat2: z.string() }),
+  categories: z.array(z.object({ name: z.string(), price: z.number(), rows: z.string() })).min(1).max(5),
   feePercent: z.number(),
+  holdMinutes: z.number(),
   line: z.string(),
   lineOne: z.string(),
   qty: z.string(),
   fee: z.string(),
   held: z.string(),
-  heldFor: z.string(),
   pay: z.string(),
   empty: z.string(),
-  tips: z.object({ free: z.string(), selected: z.string(), sold: z.string(), held: z.string(), blocked: z.string() }),
+  tips: z.object({ free: z.string(), wheelchair: z.string(), selected: z.string(), sold: z.string(), held: z.string(), blocked: z.string() }),
+  modal: z.object({ title: z.string(), text: z.string(), primary: link, bot: link, close: z.string() }),
 });
 
 /* ---------- Page sections (discriminated by `type`) ---------- */

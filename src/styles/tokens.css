@@ -4,6 +4,8 @@
   --line:#DDE0EB; --line-2:#C9CDDD;
   --accent:#001489; --accent-hover:#1527A6; --accent-fg:#F7F8FF; --accent-soft:#E7EAF9; --accent-line:#A6B0E3;
   --cat2:#0F9F9A; --cat2-soft:#D7F3F1;
+  /* Seat map price categories (front rows to the back of the balcony) */
+  --c1:#7C3AED; --c1-soft:#EDE4FF; --c2:#1D4ED8; --c2-soft:#DEE7FF; --c3:#0F9F9A; --c3-soft:#D7F3F1; --c4:#D97706; --c4-soft:#FBEBD0; --c5:#BE185D; --c5-soft:#FBDCE8; --backdrop:rgba(11,16,32,.55);
   --band:#0B1020; --band-2:#121A36; --band-fg:#F2F4FB; --band-fg-2:#AEB4CF; --band-line:#263055;
   --mesh-1:#1E3BD1; --mesh-2:#4A66F0; --mesh-3:#F05537;
   --code-bg:#0B1020; --code-fg:#D9DCEC; --code-key:#9DD6FF; --code-str:#7DD3C0; --code-attr:#B9C6FF;
@@ -22,6 +24,8 @@
     --line:#242D4F; --line-2:#334071;
     --accent:#6F8CFF; --accent-hover:#8FA3FF; --accent-fg:#0B1020; --accent-soft:#1A2452; --accent-line:#3B4C9E;
     --cat2:#2DD4C8; --cat2-soft:#113C3A;
+  --c1:#B08CFF; --c1-soft:#2A1F4F; --c2:#7FA2FF; --c2-soft:#1A2452; --c3:#2DD4C8; --c3-soft:#113C3A; --c4:#F5B14A; --c4-soft:#3F2E10; --c5:#F472B6; --c5-soft:#4A1A35; --backdrop:rgba(0,0,0,.65);
+    --c1:#B08CFF; --c1-soft:#2A1F4F; --c2:#7FA2FF; --c2-soft:#1A2452; --c3:#2DD4C8; --c3-soft:#113C3A; --c4:#F5B14A; --c4-soft:#3F2E10; --c5:#F472B6; --c5-soft:#4A1A35; --backdrop:rgba(0,0,0,.65);
     --band:#070B18; --band-2:#0E1430; --band-fg:#F2F4FB; --band-fg-2:#AEB4CF; --band-line:#1F2848;
     --code-bg:#070B18; --code-fg:#D9DCEC;
     --ok:#4ADE80; --ok-soft:#113A24; --warn:#FBBF24; --warn-soft:#3A2A08;

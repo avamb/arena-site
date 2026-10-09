@@ -17,29 +17,40 @@ sections:
       meta: "Fri 24 Oct · 19:30 · Palác Akropolis, Prague"
       sessions: [Fri 24 Oct, Sat 25 Oct]
       stage: Stage
-      mapAria: "Seat map: rows A to J, pick free seats"
-      mapText: "Seat map of a 140-seat venue: rows A to J, seven seats either side of the aisle. Rows A to C are sold, the stalls fill from the front; two seats in row G are selected to start with. Pick free seats on the plan and the cart below recalculates."
+      mapAria: "Seat map: rows A to J, five price categories, pick free seats"
+      mapText: "Seat map of a 140-seat venue: rows A to J, seven seats either side of the aisle, five price categories from the front rows to the back of the balcony, about a third of the seats sold, wheelchair spaces at both ends of row J. Two seats in row G are selected to start with; pick free seats and the cart below recalculates. Seats are held for 10 minutes."
       seatTitle: "Row {row}, seat {seat}"
-      legend: { cat1: Parterre €38, cat2: Balcony €24, sold: Sold, held: Reserved, selected: Selected }
-      # Prices per category (rows A to G Parterre, H to J Balcony) and the organizer's service fee; the cart is computed from these.
+      legend: { sold: Sold, held: Reserved, wheelchair: Wheelchair space, selected: Selected }
+      # Price categories by rows and the organizer's service fee; the cart, the legend and the hints are computed from these.
       currency: "€"
-      prices: { cat1: 38, cat2: 24 }
-      categories: { cat1: Parterre, cat2: Balcony }
+      categories:
+        - { name: Front rows, price: 48, rows: AB }
+        - { name: Parterre, price: 38, rows: CDE }
+        - { name: "Parterre, back", price: 32, rows: FG }
+        - { name: Balcony, price: 24, rows: HI }
+        - { name: "Balcony, back", price: 18, rows: J }
       feePercent: 5
+      holdMinutes: 10
       line: "Row {row} · Seats {seats}"
       lineOne: "Row {row} · Seat {seat}"
       qty: "{n} × {price}"
       fee: "Service fee {percent}%"
       held: Held for
-      heldFor: "09:41"
       pay: "Pay {total}"
       empty: Pick your seats on the plan
       tips:
         free: "{category}, {price}. Click to add"
+        wheelchair: "Wheelchair space, {category}, {price}. Click to add"
         selected: "In your cart. Click to remove"
         sold: Already sold
         held: Reserved by another buyer, not paid yet
         blocked: Not for sale
+      modal:
+        title: This is what your buyers see
+        text: "A preview of the checkout on your sales page or in the widget on your site. Your buyers pay {total} into your own payment account; the seats, the ticket and the door are ours to handle. Set up your event and this plan is yours."
+        primary: { label: Start selling, href: /start }
+        bot: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+        close: Keep exploring
   - type: facts
     items:
       - Organizers in **35** countries since 2019
