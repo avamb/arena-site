@@ -1,7 +1,8 @@
 *,*::before,*::after{box-sizing:border-box}
-/* Smooth scrolling only after load: with it on from the start, Chromium abandons the scroll to a
-   fragment (/#how, /start#create) and the page stays at the top. Base.astro adds the class. */
-html.smooth{scroll-behavior:smooth}
+/* Fragment navigation is instant on purpose: scroll-behavior:smooth on the root made Chromium abandon
+   the scroll to a fragment on load (/#how, /start#create), and an animated same-page jump reads as
+   "did not scroll" to anyone checking right after the click. Base.astro re-positions deep links on load. */
+html{scroll-behavior:auto}
 /* Fragment targets (#how, #center, #api, #create) land below the sticky 64px header. */
 [id]{scroll-margin-top:80px}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -279,7 +280,6 @@ footer{border-top:1px solid var(--line);padding-block:48px 28px;font-size:14px}
 @media (prefers-reduced-motion: reduce){
   .blob,.reveal,.widget,.seat.sel{animation:none !important}
   .btn-primary:hover{transform:none}
-  html.smooth{scroll-behavior:auto}
 }
 /* Iteration 2 (founders' review 08.10) */
 .ways{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:40px}

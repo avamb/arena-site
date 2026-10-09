@@ -8,7 +8,7 @@
 @import './components.css';
 
 /* Site additions that the single-file prototype did not need */
-.skip{position:absolute;inset-inline-start:16px;top:-48px;z-index:100;height:var(--ctl-sm);display:inline-flex;align-items:center;padding-inline:14px;border-radius:999px;background:var(--accent);color:var(--accent-fg);font-weight:600;font-size:14px;transition:top .15s ease}
+.skip{position:absolute;inset-inline-start:16px;top:-48px;z-index:100;height:var(--ctl-sm);display:inline-flex;align-items:center;padding-inline:14px;border-radius:999px;background:var(--accent);color:var(--accent-fg);font-weight:600;font-size:14px}
 .skip:focus,.skip:focus-visible{top:12px}
 main:focus{outline:none}
 .logo{display:inline-block;width:var(--logo-w,118px);aspect-ratio:275.42/116;background:var(--logo);-webkit-mask:var(--logo-mask) center/contain no-repeat;mask:var(--logo-mask) center/contain no-repeat}

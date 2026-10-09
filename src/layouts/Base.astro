@@ -67,13 +67,11 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
   </head>
   <body>
     <script is:inline>
-      // A deep link (/#how, /start#create) lands on its section once everything above it has loaded;
-      // smooth scrolling (html.smooth) is switched on only after that, see components.css.
+      // A deep link (/#how, /start#create) lands on its section once everything above it has loaded.
       addEventListener('load', function () {
         var el = location.hash && location.hash !== '#main' ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
         setTimeout(function () {
           if (el) el.scrollIntoView({ behavior: 'instant', block: 'start' });
-          document.documentElement.classList.add('smooth');
         }, 0);
       });
     </script>

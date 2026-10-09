@@ -10,8 +10,10 @@
   let seating = $state(false);
 
   const fmt = (n: number) => symbol + n.toLocaleString(intl, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  const fee = $derived((+qty || 0) * (perTicket + (seating ? seatingExtra : 0)));
-  const net = $derived((+price || 0) * (+qty || 0));
+  /** Negative, empty or non-numeric input counts as zero: the browser flags it (min="0"), the sum never goes below zero. */
+  const num = (v: unknown) => Math.max(0, Number(v) || 0);
+  const fee = $derived(num(qty) * (perTicket + (seating ? seatingExtra : 0)));
+  const net = $derived(num(price) * num(qty));
   const salesText = $derived(labels.sales.replace('{net}', fmt(net)));
 </script>
 

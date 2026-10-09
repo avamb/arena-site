@@ -1,6 +1,6 @@
-# Тексты сайта на вычитку (сборка 2026-10-09, волна 2 + юридические тексты + QA)
+# Тексты сайта на вычитку (сборка 2026-10-09, волна 2 + юридические тексты + QA + сканер)
 
-Главная: прототип без изменений. Новые страницы (product, solutions, company, contact, partners, help) написаны по фактам брифа. Legal: перенос со старого сайта, актуализирован 09.10 (реквизиты компании без изменений). Статьи блога не включены: они перенесены как есть (75 штук, https://new.arenasoldout.com/blog и /ru/blog).
+Главная: прототип без изменений. Новые страницы (product, solutions, company, contact, partners, help, scanner) написаны по фактам брифа. Legal: перенос со старого сайта, актуализирован 09.10 (реквизиты компании без изменений). Статьи блога не включены: они перенесены как есть (75 штук, https://new.arenasoldout.com/blog и /ru/blog).
 
 # Arena Sold Out: full site
 
@@ -475,7 +475,7 @@ Event, session, seat or category, price, the buyer's name, an EAN-13 barcode and
 
 ### How do I scan at the door?
 
-With the scanner app for iOS and Android, or a handheld barcode scanner. The app also accepts tickets sold by your partners in other systems, so one door works for every channel.
+With the MACS scanner app for iOS and Android, or a handheld barcode scanner. The app also accepts tickets sold by your partners in other systems, so one door works for every channel.
 
 ### Can I see a ticket before sales start?
 
@@ -492,6 +492,28 @@ Yes, from the event center. Resend to a new address, refund to the buyer's card,
 ### Is there an app for buyers?
 
 No. The PDF and the e-mail are enough at the door; nothing to install.
+
+## Which app scans the tickets?
+
+MACS is the Arena Sold Out access control app. Install it on the phones of your door staff, sign in with your event center account and scan the EAN-13 or the QR on every ticket: paper, PDF on a screen, or the e-mail. One app scans tickets of any organizer on the platform and partners' tickets from other systems, so a venue, a festival or a promoter who rents a venue uses the same phones for every event.
+
+### iPhone and iPad
+
+MACS on the App Store. Sign in with your event center account; the event list and the sessions are already there.
+
+[Open the App Store →](https://apps.apple.com/app/id6770095694)
+
+### Android
+
+MACS on Google Play. The same app, the same account, handheld scanners with a camera or a laser work as well.
+
+[Open Google Play →](https://play.google.com/store/apps/details?id=com.arenasoldout.macs)
+
+### Any organizer, one app
+
+Door staff of a venue scan tickets of every organizer who sells through Arena, and tickets sold by partners in other systems, without switching apps.
+
+[MACS as a product →](https://new.arenasoldout.com/product/scanner)
 
 ## Start selling today
 
@@ -649,7 +671,7 @@ A page per promoter with its own link, promo codes per partner, every channel in
 
 Scanner app for iOS and Android, EAN-13 and QR on every ticket, partners' tickets from other systems accepted too.
 
-[Tickets →](https://new.arenasoldout.com/product/tickets)
+[MACS scanner app →](https://new.arenasoldout.com/product/scanner)
 
 ## What do concert organizers ask first?
 
@@ -835,7 +857,7 @@ When early bird sells out, its unsold places flow to the next category instead o
 
 Scanner app for iOS and Android at every gate; partners' tickets from other systems accepted too.
 
-[Tickets →](https://new.arenasoldout.com/product/tickets)
+[MACS scanner app →](https://new.arenasoldout.com/product/scanner)
 
 ### Load
 
@@ -1033,7 +1055,7 @@ Two percent of the ticket price instead of the per-ticket fee, no fee on invitat
 
 Scanner app for iOS and Android, handheld scanners, partners' tickets from other systems accepted.
 
-[Tickets →](https://new.arenasoldout.com/product/tickets)
+[MACS scanner app →](https://new.arenasoldout.com/product/scanner)
 
 ## What do venue owners ask first?
 
@@ -1414,6 +1436,7 @@ One table, maintained by the team with every release. Yes means it runs in produ
 | Promo codes with scope, windows and per-buyer limits | yes | 2026-09-22 |  |
 | Price windows (early bird), quantity steps, category chains, free and pay-what-you-want tickets | yes | 2026-09-28 |  |
 | E-ticket PDF with EAN-13 and QR; scanning through the MACS access control app for iOS and Android | yes | 2026-09-20 |  |
+| MACS scanner app in the App Store and Google Play; scans tickets of any organizer on the platform and partners' tickets from other systems | yes |  |  |
 | Buyer e-mails when a session moves or is cancelled, with the updated ticket | yes | 2026-10-03 |  |
 | 800 orders a minute at 1,000 concurrent visitors in load tests | yes | 2026-09-13 |  |
 | Ops watchdog with Telegram alerts, nightly encrypted backups, Cloudflare in front | yes |  |  |
@@ -1596,7 +1619,7 @@ Partnership terms are agreed individually; write to the team with what you do an
 
 ### Can a ticket sold by a partner be scanned at the door?
 
-Yes. The scanner app accepts partners' tickets from other systems next to Arena tickets.
+Yes. The MACS scanner app accepts partners' tickets from other systems next to Arena tickets, on iOS and Android.
 
 ### Can an agency manage several organizers?
 
@@ -1969,4 +1992,92 @@ Tallinn city, Harju county,
 ---
 
 © 2019–2026 Arena Sold Out · ABH TEAM OÜ · EU. Canonical: https://new.arenasoldout.com/legal/privacy. Facts: https://new.arenasoldout.com/facts. All pages: https://new.arenasoldout.com/llms.txt.
+
+
+<!-- MACS scanner app: ticket scanning for any organizer, iOS and Android · https://new.arenasoldout.com/product/scanner · generated from content/en/pages/product/scanner.yaml -->
+
+# MACS: the app at the door
+
+One app for every entrance. Door staff sign in, pick the session and scan the EAN-13 or the QR on the ticket, on paper or on a screen. It takes tickets of any organizer who sells through Arena and partners' tickets from other systems, so a venue uses the same phones for every event.
+
+## Where do I install MACS?
+
+Free for organizers on the platform. Install it on as many phones as you have entrances and sign in with your event center account.
+
+### iPhone and iPad
+
+MACS on the App Store. Sign in with your event center account; your events and sessions are already there.
+
+[Open the App Store →](https://apps.apple.com/app/id6770095694)
+
+### Android
+
+MACS on Google Play. The same app and the same account; Android handheld scanners with a built-in laser work as well.
+
+[Open Google Play →](https://play.google.com/store/apps/details?id=com.arenasoldout.macs)
+
+### Handheld scanners
+
+A USB or Bluetooth barcode scanner connected to a phone or a laptop reads the same EAN-13; the app records the scan.
+
+[How tickets are built →](https://new.arenasoldout.com/product/tickets)
+
+## What does the scanner do?
+
+### Which tickets does it scan?
+
+Every ticket issued by Arena Sold Out: the PDF with the EAN-13 barcode and the QR code, printed or shown on a screen, and the e-mail with the ticket. Tickets sold by your partners in other systems are accepted next to them, so one door works for every sales channel.
+
+### Can one app serve several organizers?
+
+Yes. MACS scans tickets of any organizer on the platform. Door staff of a venue or a festival switch between events and sessions in the app; each organizer sees the scans of their own events in the event center.
+
+### What does the staff see on a scan?
+
+Whether the ticket is valid, with the seat or the category, or why it is not (already used, cancelled, another session). The organizer sees the admitted count per session in the event center.
+
+### Do I need the Arena ticketing to use the scanner?
+
+Today MACS is included for organizers who sell through Arena, and it accepts partners' tickets from other systems next to Arena tickets. Scanning only, for tickets sold elsewhere, is offered on request: write to us with your ticket system and the event.
+
+### How many phones can scan at once?
+
+As many as you have entrances. Scans are recorded centrally, so a ticket admitted at one gate is not admitted again at another.
+
+### What does it cost?
+
+Nothing on top of the per-ticket price for organizers on the platform. Terms for scanning-only use are agreed per event; see the pricing page for the platform terms.
+
+## Who scans with MACS?
+
+### Venues and clubs
+
+One app for every promoter who rents the venue; the venue sees every event, each promoter sees their own.
+
+[For venues and clubs →](https://new.arenasoldout.com/solutions/venues)
+
+### Festivals
+
+Several gates, many phones, one count. Partners' tickets accepted at the same gates.
+
+[For festivals →](https://new.arenasoldout.com/solutions/festivals)
+
+### Agencies and partners
+
+Scan tickets you sold through Arena and tickets from the systems your clients already use.
+
+[Partners →](https://new.arenasoldout.com/partners)
+
+## Put MACS at your door
+
+Install the app, sign in with your event center account, scan. Scanning for tickets sold elsewhere: write to us with your ticket system and the event.
+
+- [Contact us](https://new.arenasoldout.com/contact)
+- [Open the Telegram bot](https://t.me/EventsCentrBot)
+
+Free in the App Store and Google Play for organizers on the platform.
+
+---
+
+© 2019–2026 Arena Sold Out · ABH TEAM OÜ · EU. Canonical: https://new.arenasoldout.com/product/scanner. Facts: https://new.arenasoldout.com/facts. All pages: https://new.arenasoldout.com/llms.txt.
 
