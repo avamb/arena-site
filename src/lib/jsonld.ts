@@ -4,7 +4,9 @@
  */
 import type { Graph, Thing, Organization, WebSite, WebPage, SoftwareApplication, FAQPage, HowTo, Offer, BreadcrumbList, Article } from 'schema-dts';
 import { org, siteUrl, hosts } from '@config';
-import { plain } from './inline';
+import { plain, fill } from './inline';
+import { tariff } from './data';
+import { currencySymbol } from './i18n';
 import type { CollectionEntry } from 'astro:content';
 
 export type JsonLdInput = {
@@ -64,10 +66,12 @@ export function softwareApplication(pricing: CollectionEntry<'pricing'>[]): Soft
 }
 
 export function faqPage(items: { q: string; a: string }[], path: string): FAQPage {
+  // Tariff placeholders ({percent}, {whitelabel}) are filled here as in the HTML and the Markdown twin.
+  const vars = { percent: tariff.venues_percent, whitelabel: currencySymbol(tariff.white_label_currency) + tariff.white_label_per_event };
   return {
     '@type': 'FAQPage',
     '@id': `${absolute(path)}#faq`,
-    mainEntity: items.map((i) => ({ '@type': 'Question', name: plain(i.q), acceptedAnswer: { '@type': 'Answer', text: plain(i.a) } })),
+    mainEntity: items.map((i) => ({ '@type': 'Question', name: plain(i.q), acceptedAnswer: { '@type': 'Answer', text: plain(fill(i.a, vars)) } })),
   };
 }
 

@@ -45,7 +45,7 @@ sections:
     lead: Three things, usually within a day.
     items:
       - title: Keys in your own account
-        text: You create API keys in your provider's dashboard and paste them into the event center or send them to the team. The account stays yours; Arena only initiates payments into it.
+        text: You create API keys in your provider's dashboard and paste them into the Event Center or send them to the team. The account stays yours; Arena only initiates payments into it.
       - title: Money to your account
         text: Every order is paid to your account directly. Payouts to your bank follow your provider's schedule. Refunds and chargebacks are decided by you.
       - title: Arena holds nothing

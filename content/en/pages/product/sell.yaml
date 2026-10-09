@@ -2,7 +2,7 @@
 title: "Sell tickets on your own site or on a page we host"
 description: "Embed the Arena ticket widget on any site with three lines, use the WordPress plugin, or share a hosted sales page. Buyers pay into your own payment account either way."
 h1: Your site, or ours. The money goes to you either way.
-lead: Two ways to sell, one event center behind them. Embed the widget on the site you already have, or share a hosted page we create in minutes. Every order lands in your own payment account.
+lead: Two ways to sell, one Event Center behind them. Embed the widget on the site you already have, or share a hosted page we create in minutes. Every order lands in your own payment account.
 related:
   - { label: Seating plans that match the venue, href: /product/seating, text: "Send a PDF, a spreadsheet or a sketch; the team builds the plan in." }
   - { label: Payments into your own account, href: /payments, text: "Providers by country, statuses, how to connect." }
@@ -38,7 +38,7 @@ sections:
       - q: Where does the buyer pay?
         a: "In the hosted checkout of your own payment provider, into your own account. Arena creates the order, holds the seats and issues the ticket; it never holds the money. See [payments](/payments)."
       - q: Can I sell through partners too?
-        a: Yes. Each promoter gets a page with its own link, and the hosted page can list your partner sellers. Sales from every channel appear in one event center.
+        a: Yes. Each promoter gets a page with its own link, and the hosted page can list your partner sellers. Sales from every channel appear in one Event Center.
       - q: What if I move my site to another platform?
         a: Nothing changes for buyers. The widget is a web component; it moves with your pages, and the hosted page keeps working as a fallback.
   - type: cta

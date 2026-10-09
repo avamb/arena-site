@@ -14,9 +14,9 @@ sections:
     id: get
     eyebrow: Get the app
     title: Where do I install MACS?
-    lead: Free for organizers on the platform. Install it on as many phones as you have entrances and sign in with your event center account.
+    lead: Free for organizers on the platform. Install it on as many phones as you have entrances and sign in with your Event Center account.
     items:
-      - { title: iPhone and iPad, text: "MACS on the App Store. Sign in with your event center account; your events and sessions are already there.", link: { label: Open the App Store →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: iPhone and iPad, text: "MACS on the App Store. Sign in with your Event Center account; your events and sessions are already there.", link: { label: Open the App Store →, href: "https://apps.apple.com/app/id6770095694" } }
       - { title: Android, text: "MACS on Google Play. The same app and the same account; Android handheld scanners with a built-in laser work as well.", link: { label: Open Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
       - { title: Handheld scanners, text: "A USB or Bluetooth barcode scanner connected to a phone or a laptop reads the same EAN-13; the app records the scan.", link: { label: How tickets are built →, href: /product/tickets } }
   - type: faq
@@ -27,9 +27,9 @@ sections:
       - q: Which tickets does it scan?
         a: "Every ticket issued by Arena Sold Out: the PDF with the EAN-13 barcode and the QR code, printed or shown on a screen, and the e-mail with the ticket. Tickets sold by your partners in other systems are accepted next to them, so one door works for every sales channel."
       - q: Can one app serve several organizers?
-        a: Yes. MACS scans tickets of any organizer on the platform. Door staff of a venue or a festival switch between events and sessions in the app; each organizer sees the scans of their own events in the event center.
+        a: Yes. MACS scans tickets of any organizer on the platform. Door staff of a venue or a festival switch between events and sessions in the app; each organizer sees the scans of their own events in the Event Center.
       - q: What does the staff see on a scan?
-        a: Whether the ticket is valid, with the seat or the category, or why it is not (already used, cancelled, another session). The organizer sees the admitted count per session in the event center.
+        a: Whether the ticket is valid, with the seat or the category, or why it is not (already used, cancelled, another session). The organizer sees the admitted count per session in the Event Center.
       - q: Do I need the Arena ticketing to use the scanner?
         a: "Today MACS is included for organizers who sell through Arena, and it accepts partners' tickets from other systems next to Arena tickets. Scanning only, for tickets sold elsewhere, is offered on request: write to us with your ticket system and the event."
       - q: How many phones can scan at once?
@@ -47,7 +47,7 @@ sections:
   - type: cta
     id: start
     title: Put MACS at your door
-    text: "Install the app, sign in with your event center account, scan. Scanning for tickets sold elsewhere: write to us with your ticket system and the event."
+    text: "Install the app, sign in with your Event Center account, scan. Scanning for tickets sold elsewhere: write to us with your ticket system and the event."
     primary: { label: Contact us, href: /contact }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
     note: "Free in the App Store and Google Play for organizers on the platform."

@@ -1,7 +1,7 @@
 title: "Ticketing for theatres: seating plans, repeat dates, invitations"
 description: "Theatre ticketing with reserved seating that matches the venue, repeat dates on one plan, press and partner invitations, refunds and date changes with buyer e-mails. 100 to 1,500 seats."
 h1: Theatre
-lead: A plan that matches your venue, built by the team from your PDF or sketch and reused for every performance. Invitations for press and partners, refunds and moved dates handled from the event center.
+lead: A plan that matches your venue, built by the team from your PDF or sketch and reused for every performance. Invitations for press and partners, refunds and moved dates handled from the Event Center.
 related:
   - { label: Seating plans that match the venue, href: /product/seating }
   - { label: "Venues and clubs: separate terms", href: /solutions/venues }
@@ -13,7 +13,7 @@ sections:
     title: What matters for a theatre?
     items:
       - { title: The plan is yours, text: "Rows, loges, balcony, categories by price. Versions keep sold tickets safe when the layout changes.", link: { label: Seating plans →, href: /product/seating } }
-      - { title: Repeat dates, text: "Add sessions to the same event; the plan, prices and categories carry over. Move or cancel a date with buyer e-mails.", link: { label: Event center →, href: /#center } }
+      - { title: Repeat dates, text: "Add sessions to the same event; the plan, prices and categories carry over. Move or cancel a date with buyer e-mails.", link: { label: Event Center →, href: /#center } }
       - { title: Invitations, text: "Free tickets for exact seats for press, partners and the cast, scanned like any other ticket.", link: { label: Tickets →, href: /product/tickets } }
       - { title: Your own box office, text: "Sell on your site with the widget or on the hosted page; money goes to your account, not through a marketplace.", link: { label: Where you sell →, href: /product/sell } }
   - type: faq

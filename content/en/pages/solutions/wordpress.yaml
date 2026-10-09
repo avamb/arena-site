@@ -13,7 +13,7 @@ sections:
     title: Which option fits my site?
     items:
       - { title: The plugin, text: "Orders land in WooCommerce, your shop and reports keep working; seats, tickets and the door are Arena's.", link: { label: Ask for the plugin →, href: /start } }
-      - { title: The widget, text: "Two lines on any page or in a block; buyers pay in the hosted checkout of your provider, orders live in the event center.", link: { label: Developers →, href: /developers } }
+      - { title: The widget, text: "Two lines on any page or in a block; buyers pay in the hosted checkout of your provider, orders live in the Event Center.", link: { label: Developers →, href: /developers } }
       - { title: Moving from Bil24, text: "Sessions, seating plans and customers imported; two clients moved with zero downtime.", link: { label: Clients →, href: /clients } }
   - type: faq
     id: questions

@@ -5,7 +5,7 @@ capabilities:
   - name: Reserved seating with seating plans (versions, SVG import, mixed seated and general admission, prices per category)
     status: yes
     since: 2026-09-20
-  - name: The organizer never draws the plan; send a PDF, a spreadsheet or a hand sketch and the team builds it in
+  - name: The organizer never enters the plan into the system; send a PDF, a spreadsheet or a hand sketch and the team creates the venue
     status: yes
   - name: Money goes straight to the organizer's own payment account; Arena never holds funds
     status: yes
@@ -49,7 +49,7 @@ capabilities:
     status: yes
   - name: Import from Bil24 (sessions, seating plans, customers); two clients moved with zero downtime
     status: yes
-  - name: Event center in the browser (orders, tickets, refunds, invitations, sessions, team)
+  - name: Event Center in the browser (orders, tickets, refunds, invitations, sessions, team)
     status: partial
     note: Runs for current clients today; moves into the platform next, in parallel with this site.
   - name: Web registration for "Create your event"

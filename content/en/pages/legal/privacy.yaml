@@ -6,7 +6,7 @@
 title: "Privacy Policy"
 description: "How Arena Sold Out (ABH TEAM OÜ) processes personal data of website visitors, organizers and ticket buyers: what we collect, why, who receives it, how long we keep it, your rights, cookies."
 h1: "Privacy Policy"
-lead: "Version of 9 October 2026. Replaces the version of 5 August 2023. Applies to the website, the event center, the sales pages, the widget, the API, the Telegram bot and the scanner app."
+lead: "Version of 9 October 2026. Replaces the version of 5 August 2023. Applies to the website, the Event Center, the sales pages, the widget, the API, the Telegram bot and the scanner app."
 related:
   - { label: Terms and conditions, href: /legal/terms }
   - { label: Help for ticket buyers, href: /help/tickets }
@@ -15,7 +15,7 @@ sections:
   - type: prose
     id: text
     body: |
-      This Privacy Policy explains how ABH TEAM OÜ, which operates the Arena Sold Out ticketing platform ("we", "Arena"), treats personal data that we collect and receive through the website arenasoldout.com, the event center at app.arenasoldout.com, the hosted sales pages and the ticket widget at tickets.arenasoldout.com, the public API, the Telegram bot and the scanner app (together, the "services").
+      This Privacy Policy explains how ABH TEAM OÜ, which operates the Arena Sold Out ticketing platform ("we", "Arena"), treats personal data that we collect and receive through the website arenasoldout.com, the Event Center at app.arenasoldout.com, the hosted sales pages and the ticket widget at tickets.arenasoldout.com, the public API, the Telegram bot and the scanner app (together, the "services").
 
       It applies to three groups of people: visitors of the website; organizers who use the services and the members of their teams ("organizers"); and people who buy tickets from organizers through the services ("ticket buyers").
 
@@ -33,7 +33,7 @@ sections:
 
       1.5 We process the information in any enquiry you send us ("enquiry data"): the application form on this website (organization, country, payment provider, name, e-mail, phone, message), messages to the Telegram bot and the Telegram chat, and e-mails. It is processed to answer you and to set up your account. The legal basis is taking steps at your request before entering into a contract, and your consent where you contact us for another reason. The application form is protected by Cloudflare Turnstile, which checks that the sender is a person (see section 6).
 
-      1.6 We process ticket buyer and transaction data ("transaction data"). When you buy a ticket from an organizer through the services, we process your name, e-mail address, phone number where the organizer asks for it, the language you chose, the seats and tickets you bought, the amount and the status of the payment, your order history (refunds, resent and replaced tickets) and the scan of your ticket at the door. We process this data on behalf of the organizer, who is the controller, in order to issue and deliver your e-ticket, admit you at the door, process refunds the organizer decides and notify you when a session moves or is cancelled. The organizer sees your order in the event center and, if the organizer switched it on, in the organizer's own Telegram group. The payment itself is handled by the payment provider the organizer connected; the current list is on the payments page. We never receive your card or bank details and never hold the money. Questions about your ticket, a refund or the event go to the organizer; the help page for ticket buyers explains where to find your ticket.
+      1.6 We process ticket buyer and transaction data ("transaction data"). When you buy a ticket from an organizer through the services, we process your name, e-mail address, phone number where the organizer asks for it, the language you chose, the seats and tickets you bought, the amount and the status of the payment, your order history (refunds, resent and replaced tickets) and the scan of your ticket at the door. We process this data on behalf of the organizer, who is the controller, in order to issue and deliver your e-ticket, admit you at the door, process refunds the organizer decides and notify you when a session moves or is cancelled. The organizer sees your order in the Event Center and, if the organizer switched it on, in the organizer's own Telegram group. The payment itself is handled by the payment provider the organizer connected; the current list is on the payments page. We never receive your card or bank details and never hold the money. Questions about your ticket, a refund or the event go to the organizer; the help page for ticket buyers explains where to find your ticket.
 
       1.7 We process the data you give us to receive our e-mails ("notification data"). Service e-mails and Telegram messages about your account, invoices and events are part of the contract. Newsletters are sent only with your consent, which you can withdraw through the link in every newsletter.
 
@@ -53,7 +53,7 @@ sections:
 
       2.5 With your consent, we may share data with third parties outside the scope of this Privacy Policy.
 
-      2.6 Organizers change or correct their data in the event center or by writing to hello@arenasoldout.com. Ticket buyers write to the organizer of their event, or to us at the same address; where the organizer is the controller we forward the request to the organizer.
+      2.6 Organizers change or correct their data in the Event Center or by writing to hello@arenasoldout.com. Ticket buyers write to the organizer of their event, or to us at the same address; where the organizer is the controller we forward the request to the organizer.
 
       ## 3. How long we store data
 
@@ -111,11 +111,11 @@ sections:
 
       6.2 This website sets no cookies of its own and shows no cookie banner. Your theme choice (light or dark) is stored in your browser's local storage and is never sent to us. Analytics on the website is cookie-free. The application form uses Cloudflare Turnstile to tell people from automated submissions; the check runs from challenges.cloudflare.com and may use cookies or storage of its own, under Cloudflare's privacy policy.
 
-      6.3 The event center, the hosted sales pages and the ticket widget use strictly necessary cookies and local storage: to keep organizers signed in, to hold your seats while you complete an order, to remember your language, and to protect accounts and orders against fraud. We do not use advertising cookies or third-party analytics cookies.
+      6.3 The Event Center, the hosted sales pages and the ticket widget use strictly necessary cookies and local storage: to keep organizers signed in, to hold your seats while you complete an order, to remember your language, and to protect accounts and orders against fraud. We do not use advertising cookies or third-party analytics cookies.
 
       ## 7. How to control cookies
 
-      7.1 You can block or delete cookies and local storage in your browser settings; your browser's help explains how. Blocking strictly necessary cookies prevents signing in to the event center and completing a ticket order.
+      7.1 You can block or delete cookies and local storage in your browser settings; your browser's help explains how. Blocking strictly necessary cookies prevents signing in to the Event Center and completing a ticket order.
 
       ## 8. Revision and severability
 

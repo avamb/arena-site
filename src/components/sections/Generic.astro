@@ -8,9 +8,9 @@ import type { CollectionEntry } from 'astro:content';
 import type { LanguageCode } from '@config';
 import { turnstileSiteKey } from '@config';
 import { marked } from 'marked';
-import { inline } from '@/lib/inline';
-import { clients, facts } from '@/lib/data';
-import { localePath, postPath, formatDate, tObject, t } from '@/lib/i18n';
+import { inline, fill } from '@/lib/inline';
+import { clients, facts, tariff } from '@/lib/data';
+import { localePath, postPath, formatDate, tObject, t, currencySymbol } from '@/lib/i18n';
 import { getPosts } from '@/lib/data';
 import { languages } from '@config';
 import Icon from '@/components/Icon.astro';
@@ -26,6 +26,8 @@ interface Props {
   first?: boolean;
 }
 const { s, lang, providers, markets, changelog, posts, first = false } = Astro.props;
+// Tariff numbers in prose and FAQ answers: {percent}, {whitelabel} (one source: content/data/tariff.yaml).
+const vars = { percent: tariff.venues_percent, whitelabel: `${currencySymbol(tariff.white_label_currency)}${tariff.white_label_per_event}` };
 const pad = first ? 'padding-top:40px' : 'padding-top:0';
 const dateFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'changes.date');
 const postFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'post.date');
@@ -44,14 +46,14 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
     {s.title && <h2 class="h2">{s.title}</h2>}
     {s.lead && <p class="lead" set:html={inline(s.lead)} />}
 
-    {s.type === 'prose' && <div class="prose" set:html={marked.parse(s.body)} />}
+    {s.type === 'prose' && <div class="prose" set:html={marked.parse(fill(s.body, vars))} />}
 
     {s.type === 'faq' && (
       <div class="faq">
         {s.items.map((i) => (
           <details>
             <summary><span>{i.q}</span><Icon name="chevron-down" /></summary>
-            <div class="a" set:html={inline(i.a)} />
+            <div class="a" set:html={inline(fill(i.a, vars))} />
           </details>
         ))}
       </div>

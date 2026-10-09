@@ -1,7 +1,7 @@
 title: "Ticketing for concert tours: one show, many cities, a page per promoter"
 description: "Sell a concert tour from one event: sessions by city, a seating plan per venue, promoter pages with their own links and codes, scanning in every city, money in your own account."
 h1: Concert tours
-lead: One show, many cities and dates. Each city gets its session and plan, each promoter gets a page with its own link, and you see the whole tour in one event center.
+lead: One show, many cities and dates. Each city gets its session and plan, each promoter gets a page with its own link, and you see the whole tour in one Event Center.
 related:
   - { label: Shows, href: /solutions/shows }
   - { label: Where you sell, href: /product/sell }
@@ -12,7 +12,7 @@ sections:
     eyebrow: For concert tours
     title: What matters on tour?
     items:
-      - { title: Sessions by city, text: "Dates and venues in one event; buyers choose the city, you see totals per session and for the tour.", link: { label: Event center →, href: /#center } }
+      - { title: Sessions by city, text: "Dates and venues in one event; buyers choose the city, you see totals per session and for the tour.", link: { label: Event Center →, href: /#center } }
       - { title: Promoter pages, text: "A separate page for each local promoter with its own link and promo codes; sales roll up to you.", link: { label: Where you sell →, href: /product/sell } }
       - { title: Several countries, text: "Sell in Czechia, Spain, France, Georgia or Israel with the provider of each country, into your own account.", link: { label: Payments →, href: /payments } }
       - { title: Buyers' languages, text: "Pages and tickets in the buyer's language, e-mails in seven languages, right-to-left for Hebrew.", link: { label: Tickets →, href: /product/tickets } }

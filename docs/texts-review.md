@@ -1,6 +1,6 @@
-# Тексты сайта на вычитку (сборка 2026-10-09, волна 2 + юридические тексты + QA + сканер)
+# Тексты сайта на вычитку (сборка 2026-10-09, правки Марины)
 
-Главная: прототип без изменений. Новые страницы (product, solutions, company, contact, partners, help, scanner) написаны по фактам брифа. Legal: перенос со старого сайта, актуализирован 09.10 (реквизиты компании без изменений). Статьи блога не включены: они перенесены как есть (75 штук, https://new.arenasoldout.com/blog и /ru/blog).
+Главная: прототип с правками владельца от 09.10 (lead, Event Center, план зала, продажи, сноска про ticketing partner). Новые страницы написаны по фактам брифа. Legal актуализированы 09.10. Статьи блога не включены (75 штук, перенесены как есть).
 
 # Arena Sold Out: full site
 
@@ -10,12 +10,12 @@ Generated from https://new.arenasoldout.com. Each section below is one page; its
 
 # Sell seats. Sell tickets. Keep the money.
 
-Put your event on sale in minutes, on your own site or on a page we host. Buyers pay into your own payment account. Every ticket and every payout stays under your control.
+Start selling in minutes, on your own site or on a page we host. Buyers pay into your own payment account. Every ticket and every payout stays under your control.
 
 - [Start selling](https://new.arenasoldout.com/start)
 - [Create your event](https://new.arenasoldout.com/start#create)
 
-Connect your payment account in minutes. Events without a seating plan go on sale today.
+Connect your payment account, share the link. Events without a seating plan go on sale today.
 
 - Organizers in 35 countries since 2019
 - 800 orders a minute in load tests
@@ -26,7 +26,9 @@ Connect your payment account in minutes. Events without a seating plan go on sal
 
 1. **How fast can I go on sale?** An event without a seating plan is on sale within the hour: name, dates, prices, your poster, your payment account, done. A seated venue takes a seating plan, which we draw with you from your plan or SVG, usually within a day.
 2. **What do I need?** The event name and schedule, your ticket prices, your poster, and your own payment account: Stripe, Flitt, AllPay or another provider of your country. Money goes to you from the first ticket.
-3. **Which way do I set it up?** In the browser, in the event center. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. Or send it to us and we set it up.
+3. **Which way do I set it up?** In the browser, in the “Event Center”*. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. Or send it to us and we set it up.
+
+* The “Event Center” is your organizer account on arenasoldout.com: every event, order, refund, invitation and session, for you and your team, in the browser and in Telegram. See the Event Center below →
 
 ## Your site, or ours. The money goes to you either way.
 
@@ -67,7 +69,7 @@ Yes. A percentage per sales channel, shown to the buyer as a separate line and p
 
 ### With seats and without?
 
-Yes, and both in one event: a seating plan with categories, standing areas with quotas. Send us your venue plan as a PDF, a spreadsheet or a hand sketch: we build it into your event. You never draw it yourself.
+Yes, and both in one event: a seating plan with categories, standing areas with quotas. Send us your venue plan as a PDF, a spreadsheet or a hand sketch, and we create your venue in the system ourselves. You never enter it by hand.
 
 ### Does a scanner work with the tickets?
 
@@ -75,11 +77,11 @@ Yes. Every ticket is a PDF with an EAN-13 barcode and a QR, in the buyer's langu
 
 ### How do I see my sales?
 
-In seconds: every sale and refund lands in your Telegram group with the buyer's contact. And in your own account on this site, the event center: open it on a phone or a computer, nothing to install. All your events, every order, refunds and per-session totals, visible to you and your team only. See the event center below →
+In your “Event Center”, your own account on this site: open it on a phone or a computer, nothing to install. All your events, every order, refunds and per-session totals, visible to you and your team only. Prefer Telegram? Every sale and refund also lands in your Telegram group within seconds, with the buyer's contact. See the Event Center below →
 
 ### Refunds, invitations, date changes?
 
-Yes, from your event center account. Refund a ticket, issue invitations, move or cancel a session: buyers get an e-mail in their language with the updated ticket.
+Yes, from your “Event Center” account. Refund a ticket, issue invitations, move or cancel a session: buyers get an e-mail in their language with the updated ticket.
 
 ### Will it hold a stadium?
 
@@ -87,7 +89,7 @@ Yes. 800 orders a minute with 1,000 buyers on the page at once in load tests, ni
 
 ## Orders, tickets, refunds and invitations in one place
 
-The event center is your own account on arenasoldout.com. Open it on a phone or a computer, nothing to install. Every event you run, every order, refunds, invitations and sales figures: visible to you and your team only. Scroll the screens to see what it does.
+The “Event Center” is your own account on arenasoldout.com. Open it on a phone or a computer, nothing to install. Every event you run, every order, refunds, invitations and sales figures: visible to you and your team only. Scroll the screens to see what it does.
 
 - Orders and buyers, with search and CSV reports per session
 - Tickets: resend, refund, invite
@@ -95,7 +97,7 @@ The event center is your own account on arenasoldout.com. Open it on a phone or 
 - Prices, categories, promo codes, service fee
 - Team roles: owner, manager
 
-Prefer Telegram? The same event center lives in the bot: create an event from a poster photo, get every sale in your group.
+Prefer Telegram? The same Event Center lives in the bot: create an event from a poster photo, get every sale in your group.
 
 ## Buyers pay you. Not us.
 
@@ -115,11 +117,13 @@ Platform fee only. Card acquiring is paid to your provider on its own terms, whi
 | US | US$1.00 | US$1.50 | free |
 | World | US$1.00 | US$1.50 | free |
 
-Owners of permanent venues (theatres, clubs, stadiums, circuses): separate terms, 2% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds.
+For owners of permanent venues (theatres, clubs, stadiums, circuses): separate terms, 2% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds.
 
 Standard terms; volume and individual terms on request. You pay for the platform service after each session; for events on sale for several months, monthly.
 
 [Detailed terms →](https://new.arenasoldout.com/pricing/terms)
+
+** These prices apply when your event page names Arena Sold Out as the ticketing partner, with a clickable link to arenasoldout.com. If you prefer not to mention us on your own site, white label costs €45 per event. Events sold on a page we host carry no white-label fee.
 
 ## Organizers who sell their own tickets
 
@@ -172,7 +176,7 @@ Or write to us: we set everything up with you on a call.
 
 # Your site, or ours. The money goes to you either way.
 
-Two ways to sell, one event center behind them. Embed the widget on the site you already have, or share a hosted page we create in minutes. Every order lands in your own payment account.
+Two ways to sell, one Event Center behind them. Embed the widget on the site you already have, or share a hosted page we create in minutes. Every order lands in your own payment account.
 
 ## Which way fits my event?
 
@@ -209,7 +213,7 @@ In the hosted checkout of your own payment provider, into your own account. Aren
 
 ### Can I sell through partners too?
 
-Yes. Each promoter gets a page with its own link, and the hosted page can list your partner sellers. Sales from every channel appear in one event center.
+Yes. Each promoter gets a page with its own link, and the hosted page can list your partner sellers. Sales from every channel appear in one Event Center.
 
 ### What if I move my site to another platform?
 
@@ -259,7 +263,7 @@ Yes. The seat map is the same in the widget and on the hosted page, with pinch z
 
 ### What about invitations and press seats?
 
-Issue free tickets for exact seats from the event center; they scan at the door like any ticket.
+Issue free tickets for exact seats from the Event Center; they scan at the door like any ticket.
 
 ## Who uses reserved seating?
 
@@ -299,7 +303,7 @@ Events without a seating plan go on sale today.
 
 # Prices that change the way you planned
 
-Early bird by date, the next price when a step sells out, codes for partners, a service fee per channel. All of it set in the event center, applied in the widget and on the hosted page.
+Early bird by date, the next price when a step sells out, codes for partners, a service fee per channel. All of it set in the Event Center, applied in the widget and on the hosted page.
 
 ## What can I do with prices?
 
@@ -387,7 +391,7 @@ Three things, usually within a day.
 
 ### Keys in your own account
 
-You create API keys in your provider's dashboard and paste them into the event center or send them to the team. The account stays yours; Arena only initiates payments into it.
+You create API keys in your provider's dashboard and paste them into the Event Center or send them to the team. The account stays yours; Arena only initiates payments into it.
 
 
 
@@ -421,7 +425,7 @@ Or write to us: we set everything up with you on a call.
 
 # Run the event from Telegram
 
-The event center lives in the bot too. A photo of the poster is enough to start; every reading is a button to confirm, nothing is published without you.
+The Event Center lives in the bot too. A photo of the poster is enough to start; every reading is a button to confirm, nothing is published without you.
 
 ## What does the bot do?
 
@@ -433,7 +437,7 @@ The event center lives in the bot too. A photo of the poster is enough to start;
 
 ### Do I need Telegram to use Arena?
 
-No. The same event center works in the browser on arenasoldout.com, and the team can set everything up for you. Telegram is one way, for organizers who live in the messenger.
+No. The same Event Center works in the browser on arenasoldout.com, and the team can set everything up for you. Telegram is one way, for organizers who live in the messenger.
 
 ### Which languages does the bot speak?
 
@@ -479,7 +483,7 @@ With the MACS scanner app for iOS and Android, or a handheld barcode scanner. Th
 
 ### Can I see a ticket before sales start?
 
-Yes. A sample ticket with a watermark comes with the event, from the event center or the Telegram bot.
+Yes. A sample ticket with a watermark comes with the event, from the Event Center or the Telegram bot.
 
 ### What happens when a date moves?
 
@@ -487,7 +491,7 @@ Buyers get an e-mail in their language with the updated ticket attached. The sam
 
 ### Can I resend or refund a ticket?
 
-Yes, from the event center. Resend to a new address, refund to the buyer's card, the seat returns to sale.
+Yes, from the Event Center. Resend to a new address, refund to the buyer's card, the seat returns to sale.
 
 ### Is there an app for buyers?
 
@@ -495,11 +499,11 @@ No. The PDF and the e-mail are enough at the door; nothing to install.
 
 ## Which app scans the tickets?
 
-MACS is the Arena Sold Out access control app. Install it on the phones of your door staff, sign in with your event center account and scan the EAN-13 or the QR on every ticket: paper, PDF on a screen, or the e-mail. One app scans tickets of any organizer on the platform and partners' tickets from other systems, so a venue, a festival or a promoter who rents a venue uses the same phones for every event.
+MACS is the Arena Sold Out access control app. Install it on the phones of your door staff, sign in with your Event Center account and scan the EAN-13 or the QR on every ticket: paper, PDF on a screen, or the e-mail. One app scans tickets of any organizer on the platform and partners' tickets from other systems, so a venue, a festival or a promoter who rents a venue uses the same phones for every event.
 
 ### iPhone and iPad
 
-MACS on the App Store. Sign in with your event center account; the event list and the sessions are already there.
+MACS on the App Store. Sign in with your Event Center account; the event list and the sessions are already there.
 
 [Open the App Store →](https://apps.apple.com/app/id6770095694)
 
@@ -663,7 +667,7 @@ A price window by date and time, or a quantity step that opens the next price wh
 
 ### Partners and promoters
 
-A page per promoter with its own link, promo codes per partner, every channel in one event center.
+A page per promoter with its own link, promo codes per partner, every channel in one Event Center.
 
 [Where you sell →](https://new.arenasoldout.com/product/sell)
 
@@ -689,7 +693,7 @@ A fixed amount per ticket sold, invoiced after the session; see pricing. Invitat
 
 ### Can I see sales as they happen?
 
-Yes. Every sale lands in your Telegram group within seconds and in the event center with per-session totals and a CSV export.
+Yes. Every sale lands in your Telegram group within seconds and in the Event Center with per-session totals and a CSV export.
 
 ## Put the concert on sale today
 
@@ -709,7 +713,7 @@ Or write to us: we set everything up with you on a call.
 
 # Theatre
 
-A plan that matches your venue, built by the team from your PDF or sketch and reused for every performance. Invitations for press and partners, refunds and moved dates handled from the event center.
+A plan that matches your venue, built by the team from your PDF or sketch and reused for every performance. Invitations for press and partners, refunds and moved dates handled from the Event Center.
 
 ## What matters for a theatre?
 
@@ -723,7 +727,7 @@ Rows, loges, balcony, categories by price. Versions keep sold tickets safe when 
 
 Add sessions to the same event; the plan, prices and categories carry over. Move or cancel a date with buyer e-mails.
 
-[Event center →](https://new.arenasoldout.com/#center)
+[Event Center →](https://new.arenasoldout.com/#center)
 
 ### Invitations
 
@@ -787,11 +791,11 @@ Each venue's plan is built once and reused on the next visit; versions keep hist
 
 Sessions by city and day in one event; buyers pick the date in the widget, you see totals per session.
 
-[Event center →](https://new.arenasoldout.com/#center)
+[Event Center →](https://new.arenasoldout.com/#center)
 
 ### Local promoters
 
-A page per promoter with its own link and codes; every channel reports into one event center.
+A page per promoter with its own link and codes; every channel reports into one Event Center.
 
 [Where you sell →](https://new.arenasoldout.com/product/sell)
 
@@ -877,7 +881,7 @@ Yes. Price windows switch by date and time; quantity steps open the next price w
 
 ### We have sponsors' free tickets. How?
 
-Free tickets and invitations from the event center, no platform charge, scanned like any ticket.
+Free tickets and invitations from the Event Center, no platform charge, scanned like any ticket.
 
 ### What does it cost?
 
@@ -901,7 +905,7 @@ Or write to us: we set everything up with you on a call.
 
 # Concert tours
 
-One show, many cities and dates. Each city gets its session and plan, each promoter gets a page with its own link, and you see the whole tour in one event center.
+One show, many cities and dates. Each city gets its session and plan, each promoter gets a page with its own link, and you see the whole tour in one Event Center.
 
 ## What matters on tour?
 
@@ -909,7 +913,7 @@ One show, many cities and dates. Each city gets its session and plan, each promo
 
 Dates and venues in one event; buyers choose the city, you see totals per session and for the tour.
 
-[Event center →](https://new.arenasoldout.com/#center)
+[Event Center →](https://new.arenasoldout.com/#center)
 
 ### Promoter pages
 
@@ -979,7 +983,7 @@ Twelve places on Tuesday, twenty on Saturday; sold-out dates close themselves.
 
 Add sessions to the same event; prices and categories carry over, buyers pick the date.
 
-[Event center →](https://new.arenasoldout.com/#center)
+[Event Center →](https://new.arenasoldout.com/#center)
 
 ### Free and pay-what-you-want
 
@@ -1065,13 +1069,13 @@ A percentage of the ticket price instead of the per-ticket fee, no fee on invita
 
 ### Can a promoter sell our events on their own site?
 
-Yes, with the widget on their site or a promoter page we host. Sales from every channel appear in the venue's event center.
+Yes, with the widget on their site or a promoter page we host. Sales from every channel appear in the venue's Event Center.
 
 ### Can we move from another ticketing system?
 
 Yes. Sessions, seating plans and customers were imported from Bil24 for two clients with zero downtime; other systems through the event bundle API. See developers.
 
-### Who runs the event center?
+### Who runs the Event Center?
 
 Your team, with roles. The venue owns the organization; managers see what you allow.
 
@@ -1105,7 +1109,7 @@ Orders land in WooCommerce, your shop and reports keep working; seats, tickets a
 
 ### The widget
 
-Two lines on any page or in a block; buyers pay in the hosted checkout of your provider, orders live in the event center.
+Two lines on any page or in a block; buyers pay in the hosted checkout of your provider, orders live in the Event Center.
 
 [Developers →](https://new.arenasoldout.com/developers)
 
@@ -1159,11 +1163,13 @@ You pay Arena for the platform service after each session, per ticket sold. Card
 | US | US$1.00 | US$1.50 | free |
 | World | US$1.00 | US$1.50 | free |
 
-Owners of permanent venues (theatres, clubs, stadiums, circuses): separate terms, 2% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds.
+For owners of permanent venues (theatres, clubs, stadiums, circuses): separate terms, 2% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds.
 
 Standard terms; volume and individual terms on request. You pay for the platform service after each session; for events on sale for several months, monthly.
 
 [Detailed terms →](https://new.arenasoldout.com/pricing/terms)
+
+** These prices apply when your event page names Arena Sold Out as the ticketing partner, with a clickable link to arenasoldout.com. If you prefer not to mention us on your own site, white label costs €45 per event. Events sold on a page we host carry no white-label fee.
 
 ## What does a ticket cost me, exactly?
 
@@ -1189,11 +1195,11 @@ Yes. Free tickets, invitations and refunded tickets carry no platform service ch
 
 ### What if I do not want to name Arena on my event page?
 
-Then a white-label fee of €45 per event applies, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee. The wording is in the detailed terms.
+Then white label costs €45 per event, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee. The wording is in the detailed terms.
 
 ### I own a venue and run many events a month. Is there a different deal?
 
-Yes. Owners of permanent venues are offered {percent}% of the ticket price instead of the per-ticket fee, with no fee on invitations and refunds. Write to us from the contact page.
+Yes. Owners of permanent venues are offered 2% of the ticket price instead of the per-ticket fee, with no fee on invitations and refunds. Write to us from the contact page.
 
 ## Start selling today
 
@@ -1225,7 +1231,7 @@ Our invoice for the platform service is issued the day after each session, for t
 
 ## Reports
 
-The event center gives per-session totals and a detailed CSV report per session. Exports to your CRM or accounting system are set up on request.
+The Event Center gives per-session totals and a detailed CSV report per session. Exports to your CRM or accounting system are set up on request.
 
 ## Permanent venues
 
@@ -1265,7 +1271,7 @@ The widget is a web component. Drop it on any page, style it with CSS variables,
 - `--arena-accent`: Your colours: the widget reads --arena-accent, --arena-radius, --arena-bg and --arena-border-color from your page
 - `locale`: Buyer language: en, ru, cs, he, es; Hebrew is right-to-left
 - `arena:order_paid`: Widget events arena:* for your analytics and your own thank-you pages
-- `feed-token`: One token per sales channel; revoke it in the event center at any time
+- `feed-token`: One token per sales channel; revoke it in the Event Center at any time
 
 [Get a feed token](https://new.arenasoldout.com/start)
 
@@ -1285,7 +1291,7 @@ Orders, payments, refunds and session changes are delivered to your endpoint wit
 
 ### Scoped API keys
 
-A key sees one organization and only the scopes you grant. Rotate and revoke keys in the event center.
+A key sees one organization and only the scopes you grant. Rotate and revoke keys in the Event Center.
 
 
 
@@ -1374,7 +1380,7 @@ A small team that builds ticketing infrastructure for organizers who sell their 
 
 ## What is Arena Sold Out?
 
-Arena Sold Out is a ticketing platform for organizers: reserved seating and general admission in one event, the organizer's own payment account, a sales page we host or a widget on the organizer's site, an event center in the browser and in Telegram. Buyers pay the organizer directly; the platform never holds the money.
+Arena Sold Out is a ticketing platform for organizers: reserved seating and general admission in one event, the organizer's own payment account, a sales page we host or a widget on the organizer's site, an Event Center in the browser and in Telegram. Buyers pay the organizer directly; the platform never holds the money.
 
 The company is ABH TEAM OÜ, registered in the European Union. The founders' earlier platforms served Cirque du Soleil shows, FIFA 2018 stadiums, the World Choir Games and 800 ice shows; Arena Sold Out has sold tickets for organizers since 2019 and was rebuilt from the ground up in 2026.
 
@@ -1425,7 +1431,7 @@ One table, maintained by the team with every release. Yes means it runs in produ
 | Capability | Status | Since | Note |
 |---|---|---|---|
 | Reserved seating with seating plans (versions, SVG import, mixed seated and general admission, prices per category) | yes | 2026-09-20 |  |
-| The organizer never draws the plan; send a PDF, a spreadsheet or a hand sketch and the team builds it in | yes |  |  |
+| The organizer never enters the plan into the system; send a PDF, a spreadsheet or a hand sketch and the team creates the venue | yes |  |  |
 | Money goes straight to the organizer's own payment account; Arena never holds funds | yes | 2026-09-20 |  |
 | Hosted sales page tickets.arenasoldout.com/{org}/{event} and a page per promoter | yes | 2026-09-29 |  |
 | Ticket widget <arena-tickets> on any site (three lines of code) | yes | 2026-09-20 |  |
@@ -1442,7 +1448,7 @@ One table, maintained by the team with every release. Yes means it runs in produ
 | Ops watchdog with Telegram alerts, nightly encrypted backups, Cloudflare in front | yes |  |  |
 | Public API, event-bundle import in one call, signed webhooks, scoped API keys, widget events arena:* | yes |  |  |
 | Import from Bil24 (sessions, seating plans, customers); two clients moved with zero downtime | yes |  |  |
-| Event center in the browser (orders, tickets, refunds, invitations, sessions, team) | partial |  | Runs for current clients today; moves into the platform next, in parallel with this site. |
+| Event Center in the browser (orders, tickets, refunds, invitations, sessions, team) | partial |  | Runs for current clients today; moves into the platform next, in parallel with this site. |
 | Web registration for "Create your event" | partial |  | Being built; today the Telegram bot and "Start, we set you up". |
 | AllPay inside the hosted checkout of the widget | partial |  | AllPay is live for WordPress sales through the API; the hosted checkout follows the Flitt pattern. |
 | Waitlists | no |  |  |
@@ -1506,7 +1512,7 @@ Tell us who you are and where you sell. We set up your organization, your sales 
 
 1. **You send the form** Organization, country, the payment provider you already use if any, and how to reach you. One minute.
 2. **We set you up** The team creates your organization and your sales page, connects your payment account with you and, if you have a seated venue, builds the seating plan from your PDF, spreadsheet or sketch.
-3. **You go on sale** Share one link, or put the widget on your site. Every sale lands in your event center and in your Telegram group.
+3. **You go on sale** Share one link, or put the widget on your site. Every sale lands in your Event Center and in your Telegram group.
 
 ## Tell us about yourself
 
@@ -1623,7 +1629,7 @@ Yes. The MACS scanner app accepts partners' tickets from other systems next to A
 
 ### Can an agency manage several organizers?
 
-Yes, with roles in each organization's event center and scoped API keys per organization.
+Yes, with roles in each organization's Event Center and scoped API keys per organization.
 
 ## Write to the team
 
@@ -1669,7 +1675,7 @@ Forward the PDF. The ticket is scanned once, whoever brings it.
 
 ### I have a question about my payment
 
-The payment went to the organizer's own payment account; the organizer sees it in the event center and can answer. Arena Sold Out does not hold buyers' money.
+The payment went to the organizer's own payment account; the organizer sees it in the Event Center and can answer. Arena Sold Out does not hold buyers' money.
 
 ### Where does my data go?
 
@@ -1697,13 +1703,13 @@ Version of 9 October 2026. Replaces the version of 6 May 2024. The platform reco
 
 ## 1. Introduction
 
-This page sets out the legal terms and conditions (the "Terms") on which ABH TEAM OÜ, operating under the Arena Sold Out brand at arenasoldout.com ("we", "us"), makes available to you our platform for selling event tickets and associated products and services (the "Service"). The Service includes the event center at app.arenasoldout.com, the hosted sales pages and the ticket widget at tickets.arenasoldout.com, the public API, the WordPress plugin, the Telegram bot and the scanner app for the door.
+This page sets out the legal terms and conditions (the "Terms") on which ABH TEAM OÜ, operating under the Arena Sold Out brand at arenasoldout.com ("we", "us"), makes available to you our platform for selling event tickets and associated products and services (the "Service"). The Service includes the Event Center at app.arenasoldout.com, the hosted sales pages and the ticket widget at tickets.arenasoldout.com, the public API, the WordPress plugin, the Telegram bot and the scanner app for the door.
 
 Please read these Terms carefully and make sure that you understand them before applying for an account or putting an event on sale through the Service.
 
 ## 2. Our contract with you
 
-You agree to these Terms and enter into a binding contract with ABH TEAM OÜ when you apply for an account through the form on this website or through the Telegram bot, when our team creates an account for you at your request, or when you or a member of your team first sign in to the event center or put an event on sale. If you do not agree to any part of these Terms, do not use or access the Service.
+You agree to these Terms and enter into a binding contract with ABH TEAM OÜ when you apply for an account through the form on this website or through the Telegram bot, when our team creates an account for you at your request, or when you or a member of your team first sign in to the Event Center or put an event on sale. If you do not agree to any part of these Terms, do not use or access the Service.
 
 We may amend these Terms from time to time. The current version is always published at arenasoldout.com/legal/terms with the date of the last change. The platform records the version in force when you accepted it and every later version. Continued use of the Service after a change means that you accept the amended Terms.
 
@@ -1857,9 +1863,9 @@ You can contact us:
 
 # Privacy Policy
 
-Version of 9 October 2026. Replaces the version of 5 August 2023. Applies to the website, the event center, the sales pages, the widget, the API, the Telegram bot and the scanner app.
+Version of 9 October 2026. Replaces the version of 5 August 2023. Applies to the website, the Event Center, the sales pages, the widget, the API, the Telegram bot and the scanner app.
 
-This Privacy Policy explains how ABH TEAM OÜ, which operates the Arena Sold Out ticketing platform ("we", "Arena"), treats personal data that we collect and receive through the website arenasoldout.com, the event center at app.arenasoldout.com, the hosted sales pages and the ticket widget at tickets.arenasoldout.com, the public API, the Telegram bot and the scanner app (together, the "services").
+This Privacy Policy explains how ABH TEAM OÜ, which operates the Arena Sold Out ticketing platform ("we", "Arena"), treats personal data that we collect and receive through the website arenasoldout.com, the Event Center at app.arenasoldout.com, the hosted sales pages and the ticket widget at tickets.arenasoldout.com, the public API, the Telegram bot and the scanner app (together, the "services").
 
 It applies to three groups of people: visitors of the website; organizers who use the services and the members of their teams ("organizers"); and people who buy tickets from organizers through the services ("ticket buyers").
 
@@ -1877,7 +1883,7 @@ By using the website or the services you agree to this Privacy Policy and to our
 
 1.5 We process the information in any enquiry you send us ("enquiry data"): the application form on this website (organization, country, payment provider, name, e-mail, phone, message), messages to the Telegram bot and the Telegram chat, and e-mails. It is processed to answer you and to set up your account. The legal basis is taking steps at your request before entering into a contract, and your consent where you contact us for another reason. The application form is protected by Cloudflare Turnstile, which checks that the sender is a person (see section 6).
 
-1.6 We process ticket buyer and transaction data ("transaction data"). When you buy a ticket from an organizer through the services, we process your name, e-mail address, phone number where the organizer asks for it, the language you chose, the seats and tickets you bought, the amount and the status of the payment, your order history (refunds, resent and replaced tickets) and the scan of your ticket at the door. We process this data on behalf of the organizer, who is the controller, in order to issue and deliver your e-ticket, admit you at the door, process refunds the organizer decides and notify you when a session moves or is cancelled. The organizer sees your order in the event center and, if the organizer switched it on, in the organizer's own Telegram group. The payment itself is handled by the payment provider the organizer connected; the current list is on the payments page. We never receive your card or bank details and never hold the money. Questions about your ticket, a refund or the event go to the organizer; the help page for ticket buyers explains where to find your ticket.
+1.6 We process ticket buyer and transaction data ("transaction data"). When you buy a ticket from an organizer through the services, we process your name, e-mail address, phone number where the organizer asks for it, the language you chose, the seats and tickets you bought, the amount and the status of the payment, your order history (refunds, resent and replaced tickets) and the scan of your ticket at the door. We process this data on behalf of the organizer, who is the controller, in order to issue and deliver your e-ticket, admit you at the door, process refunds the organizer decides and notify you when a session moves or is cancelled. The organizer sees your order in the Event Center and, if the organizer switched it on, in the organizer's own Telegram group. The payment itself is handled by the payment provider the organizer connected; the current list is on the payments page. We never receive your card or bank details and never hold the money. Questions about your ticket, a refund or the event go to the organizer; the help page for ticket buyers explains where to find your ticket.
 
 1.7 We process the data you give us to receive our e-mails ("notification data"). Service e-mails and Telegram messages about your account, invoices and events are part of the contract. Newsletters are sent only with your consent, which you can withdraw through the link in every newsletter.
 
@@ -1897,7 +1903,7 @@ By using the website or the services you agree to this Privacy Policy and to our
 
 2.5 With your consent, we may share data with third parties outside the scope of this Privacy Policy.
 
-2.6 Organizers change or correct their data in the event center or by writing to hello@arenasoldout.com. Ticket buyers write to the organizer of their event, or to us at the same address; where the organizer is the controller we forward the request to the organizer.
+2.6 Organizers change or correct their data in the Event Center or by writing to hello@arenasoldout.com. Ticket buyers write to the organizer of their event, or to us at the same address; where the organizer is the controller we forward the request to the organizer.
 
 ## 3. How long we store data
 
@@ -1955,11 +1961,11 @@ By using the website or the services you agree to this Privacy Policy and to our
 
 6.2 This website sets no cookies of its own and shows no cookie banner. Your theme choice (light or dark) is stored in your browser's local storage and is never sent to us. Analytics on the website is cookie-free. The application form uses Cloudflare Turnstile to tell people from automated submissions; the check runs from challenges.cloudflare.com and may use cookies or storage of its own, under Cloudflare's privacy policy.
 
-6.3 The event center, the hosted sales pages and the ticket widget use strictly necessary cookies and local storage: to keep organizers signed in, to hold your seats while you complete an order, to remember your language, and to protect accounts and orders against fraud. We do not use advertising cookies or third-party analytics cookies.
+6.3 The Event Center, the hosted sales pages and the ticket widget use strictly necessary cookies and local storage: to keep organizers signed in, to hold your seats while you complete an order, to remember your language, and to protect accounts and orders against fraud. We do not use advertising cookies or third-party analytics cookies.
 
 ## 7. How to control cookies
 
-7.1 You can block or delete cookies and local storage in your browser settings; your browser's help explains how. Blocking strictly necessary cookies prevents signing in to the event center and completing a ticket order.
+7.1 You can block or delete cookies and local storage in your browser settings; your browser's help explains how. Blocking strictly necessary cookies prevents signing in to the Event Center and completing a ticket order.
 
 ## 8. Revision and severability
 
@@ -2002,11 +2008,11 @@ One app for every entrance. Door staff sign in, pick the session and scan the EA
 
 ## Where do I install MACS?
 
-Free for organizers on the platform. Install it on as many phones as you have entrances and sign in with your event center account.
+Free for organizers on the platform. Install it on as many phones as you have entrances and sign in with your Event Center account.
 
 ### iPhone and iPad
 
-MACS on the App Store. Sign in with your event center account; your events and sessions are already there.
+MACS on the App Store. Sign in with your Event Center account; your events and sessions are already there.
 
 [Open the App Store →](https://apps.apple.com/app/id6770095694)
 
@@ -2030,11 +2036,11 @@ Every ticket issued by Arena Sold Out: the PDF with the EAN-13 barcode and the Q
 
 ### Can one app serve several organizers?
 
-Yes. MACS scans tickets of any organizer on the platform. Door staff of a venue or a festival switch between events and sessions in the app; each organizer sees the scans of their own events in the event center.
+Yes. MACS scans tickets of any organizer on the platform. Door staff of a venue or a festival switch between events and sessions in the app; each organizer sees the scans of their own events in the Event Center.
 
 ### What does the staff see on a scan?
 
-Whether the ticket is valid, with the seat or the category, or why it is not (already used, cancelled, another session). The organizer sees the admitted count per session in the event center.
+Whether the ticket is valid, with the seat or the category, or why it is not (already used, cancelled, another session). The organizer sees the admitted count per session in the Event Center.
 
 ### Do I need the Arena ticketing to use the scanner?
 
@@ -2070,7 +2076,7 @@ Scan tickets you sold through Arena and tickets from the systems your clients al
 
 ## Put MACS at your door
 
-Install the app, sign in with your event center account, scan. Scanning for tickets sold elsewhere: write to us with your ticket system and the event.
+Install the app, sign in with your Event Center account, scan. Scanning for tickets sold elsewhere: write to us with your ticket system and the event.
 
 - [Contact us](https://new.arenasoldout.com/contact)
 - [Open the Telegram bot](https://t.me/EventsCentrBot)

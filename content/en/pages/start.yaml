@@ -14,7 +14,7 @@ sections:
       - title: We set you up
         text: The team creates your organization and your sales page, connects your payment account with you and, if you have a seated venue, builds the seating plan from your PDF, spreadsheet or sketch.
       - title: You go on sale
-        text: Share one link, or put the widget on your site. Every sale lands in your event center and in your Telegram group.
+        text: Share one link, or put the widget on your site. Every sale lands in your Event Center and in your Telegram group.
   - type: form
     id: form
     eyebrow: Application

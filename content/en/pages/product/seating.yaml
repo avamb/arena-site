@@ -1,5 +1,5 @@
 title: "Seating plans: reserved seats, standing areas, both in one event"
-description: "Seating plans with versions, SVG import, mixed seated and general admission, prices per category. The organizer never draws the plan: send a PDF, a spreadsheet or a sketch."
+description: "Seating plans with versions, SVG import, mixed seated and general admission, prices per category. The organizer never enters the plan into the system: send a PDF, a spreadsheet or a sketch and we create the venue for you."
 h1: Seating plans that match the venue
 lead: Reserved seating is in the core of the platform, not an add-on. The team builds your plan from whatever you have, usually within a day, and reuses it for every date.
 related:
@@ -23,7 +23,7 @@ sections:
       - q: Does the buyer pick the seat on a phone?
         a: Yes. The seat map is the same in the widget and on the hosted page, with pinch zoom on phones, a legend per category and a hold timer for selected seats.
       - q: What about invitations and press seats?
-        a: Issue free tickets for exact seats from the event center; they scan at the door like any ticket.
+        a: Issue free tickets for exact seats from the Event Center; they scan at the door like any ticket.
   - type: cards
     id: who
     eyebrow: Typical venues

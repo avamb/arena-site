@@ -9,7 +9,7 @@ sections:
     body: |
       ## Ticketing partner mention
 
-      The standard per-ticket fee assumes that the event page on your site names Arena Sold Out as the ticketing partner: a text line or the badge we provide, linking to arenasoldout.com. If you prefer not to mention us, a white-label fee of €45 applies per event, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee.
+      The standard per-ticket fee assumes that the event page on your site names Arena Sold Out as the ticketing partner: a text line or the badge we provide, linking to arenasoldout.com. If you prefer not to mention us, a white-label fee of {whitelabel} applies per event, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee.
 
       ## Invoicing
 
@@ -17,7 +17,7 @@ sections:
 
       ## Reports
 
-      The event center gives per-session totals and a detailed CSV report per session. Exports to your CRM or accounting system are set up on request.
+      The Event Center gives per-session totals and a detailed CSV report per session. Exports to your CRM or accounting system are set up on request.
 
       ## Permanent venues
 

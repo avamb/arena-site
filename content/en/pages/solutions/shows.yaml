@@ -1,5 +1,5 @@
 title: "Ticketing for shows: ice shows, circus, dance, many dates and cities"
-description: "Sell tickets for touring shows: one plan per venue reused, many dates, a page per promoter, sales from every city in one event center, money in your own payment account."
+description: "Sell tickets for touring shows: one plan per venue reused, many dates, a page per promoter, sales from every city in one Event Center, money in your own payment account."
 h1: Shows
 lead: Ice shows, circus, dance and family shows run many dates in many venues. One event, a plan per venue, a page per promoter, and every city's sales in one place.
 related:
@@ -13,8 +13,8 @@ sections:
     title: What matters for a show?
     items:
       - { title: A plan per venue, text: "Each venue's plan is built once and reused on the next visit; versions keep history.", link: { label: Seating plans →, href: /product/seating } }
-      - { title: Many dates, text: "Sessions by city and day in one event; buyers pick the date in the widget, you see totals per session.", link: { label: Event center →, href: /#center } }
-      - { title: Local promoters, text: "A page per promoter with its own link and codes; every channel reports into one event center.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: Many dates, text: "Sessions by city and day in one event; buyers pick the date in the widget, you see totals per session.", link: { label: Event Center →, href: /#center } }
+      - { title: Local promoters, text: "A page per promoter with its own link and codes; every channel reports into one Event Center.", link: { label: Where you sell →, href: /product/sell } }
       - { title: Family tickets, text: "Categories for children and groups, quantity steps, free tickets for accompanying adults.", link: { label: Pricing tools →, href: /product/pricing-tools } }
   - type: faq
     id: questions

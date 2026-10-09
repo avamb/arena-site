@@ -22,6 +22,7 @@ export type PageData = {
 
 const abs = (p: string) => (p.startsWith('/') ? new URL(p, siteUrl).toString() : p);
 const money = (amount: number, currency: string) => `${currencySymbol(currency)}${amount.toFixed(2)}`;
+const vars = { percent: tariff.venues_percent, whitelabel: `${currencySymbol(tariff.white_label_currency)}${tariff.white_label_per_event}` };
 
 export function sectionToMarkdown(s: Section, d: PageData): string {
   const out: string[] = [];
@@ -39,6 +40,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       h2(s.title); lead(s.lead);
       s.items.forEach((i, n) => out.push(`${n + 1}. **${plain(i.title)}** ${plain(i.text)}`));
       out.push('');
+      if (s.note) out.push(plain(s.note), '');
       break;
     case 'ways':
       h2(s.title); lead(s.lead);
@@ -64,6 +66,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       out.push('| Region | Per ticket | With a seating plan | Invitations and refunds |', '|---|---|---|---|');
       d.pricing.forEach((p) => out.push(`| ${p.data.region} | ${money(p.data.per_ticket, p.data.currency)} | ${money(p.data.per_ticket + p.data.seating_extra, p.data.currency)} | free |`));
       out.push('', plain(fill(s.venues.text, { percent: tariff.venues_percent })), '', plain(s.note), '', `[${s.terms.label}](${abs(s.terms.href)})`, '');
+      if (s.footnote) out.push(plain(fill(s.footnote, vars)), '');
       break;
     }
     case 'who':
@@ -86,11 +89,11 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       out.push(plain(s.text), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, '', plain(s.note), '');
       break;
     case 'prose':
-      h2(s.title); out.push(s.body.trim(), '');
+      h2(s.title); out.push(fill(s.body, vars).trim(), '');
       break;
     case 'faq':
       h2(s.title); lead(s.lead);
-      s.items.forEach((i) => out.push(`### ${plain(i.q)}`, '', plain(i.a), ''));
+      s.items.forEach((i) => out.push(`### ${plain(i.q)}`, '', plain(fill(i.a, vars)), ''));
       break;
     case 'providers': {
       h2(s.title); lead(s.lead);

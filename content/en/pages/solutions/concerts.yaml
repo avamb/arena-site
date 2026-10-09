@@ -14,7 +14,7 @@ sections:
     items:
       - { title: Standing and seated together, text: "A standing area with a quota next to seated categories, in one plan and one checkout.", link: { label: Seating plans →, href: /product/seating } }
       - { title: Early bird that switches itself, text: "A price window by date and time, or a quantity step that opens the next price when the first one sells out.", link: { label: Pricing tools →, href: /product/pricing-tools } }
-      - { title: Partners and promoters, text: "A page per promoter with its own link, promo codes per partner, every channel in one event center.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: Partners and promoters, text: "A page per promoter with its own link, promo codes per partner, every channel in one Event Center.", link: { label: Where you sell →, href: /product/sell } }
       - { title: The door, text: "Scanner app for iOS and Android, EAN-13 and QR on every ticket, partners' tickets from other systems accepted too.", link: { label: MACS scanner app →, href: /product/scanner } }
   - type: faq
     id: questions
@@ -28,7 +28,7 @@ sections:
       - q: What does a ticket cost me?
         a: "A fixed amount per ticket sold, invoiced after the session; see [pricing](/pricing). Invitations and refunds are free."
       - q: Can I see sales as they happen?
-        a: Yes. Every sale lands in your Telegram group within seconds and in the event center with per-session totals and a CSV export.
+        a: Yes. Every sale lands in your Telegram group within seconds and in the Event Center with per-session totals and a CSV export.
   - type: cta
     id: start
     title: Put the concert on sale today

@@ -6,7 +6,7 @@ header:
     href: /solutions
   - label: Pricing
     href: /pricing
-  - label: Event center
+  - label: Event Center
     href: /#center
   - label: Blog
     href: /blog
@@ -16,7 +16,7 @@ signin:
 start:
   label: Start selling
   href: /start
-tagline: Ticketing platform for organizers. Seats and tickets, your own payment account, an event center for the team.
+tagline: Ticketing platform for organizers. Seats and tickets, your own payment account, an Event Center for the team.
 footer:
   - title: Product
     links:

@@ -26,7 +26,7 @@ sections:
       - q: Can we change prices for the last week?
         a: Yes. Price windows switch by date and time; quantity steps open the next price when a step sells out.
       - q: We have sponsors' free tickets. How?
-        a: Free tickets and invitations from the event center, no platform charge, scanned like any ticket.
+        a: Free tickets and invitations from the Event Center, no platform charge, scanned like any ticket.
       - q: What does it cost?
         a: "A fixed amount per ticket sold, invoiced after each session; see [pricing](/pricing)."
   - type: cta

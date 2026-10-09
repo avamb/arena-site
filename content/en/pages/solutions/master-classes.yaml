@@ -13,7 +13,7 @@ sections:
     title: What matters for a workshop?
     items:
       - { title: A quota per date, text: "Twelve places on Tuesday, twenty on Saturday; sold-out dates close themselves.", link: { label: Pricing tools →, href: /product/pricing-tools } }
-      - { title: Recurring dates, text: "Add sessions to the same event; prices and categories carry over, buyers pick the date.", link: { label: Event center →, href: /#center } }
+      - { title: Recurring dates, text: "Add sessions to the same event; prices and categories carry over, buyers pick the date.", link: { label: Event Center →, href: /#center } }
       - { title: Free and pay-what-you-want, text: "Registrations without payment, or a minimum price and the buyer decides.", link: { label: Pricing tools →, href: /product/pricing-tools } }
       - { title: Your language, text: "Page, widget, e-mail and ticket in the buyer's language, including Hebrew right-to-left.", link: { label: Tickets →, href: /product/tickets } }
   - type: faq

@@ -24,10 +24,10 @@ sections:
       - q: What are the terms for a permanent venue?
         a: "A percentage of the ticket price instead of the per-ticket fee, no fee on invitations and refunds. The number is on the [pricing page](/pricing); volume and individual terms on request."
       - q: Can a promoter sell our events on their own site?
-        a: Yes, with the widget on their site or a promoter page we host. Sales from every channel appear in the venue's event center.
+        a: Yes, with the widget on their site or a promoter page we host. Sales from every channel appear in the venue's Event Center.
       - q: Can we move from another ticketing system?
         a: "Yes. Sessions, seating plans and customers were imported from Bil24 for two clients with zero downtime; other systems through the event bundle API. See [developers](/developers)."
-      - q: Who runs the event center?
+      - q: Who runs the Event Center?
         a: Your team, with roles. The venue owns the organization; managers see what you allow.
   - type: cta
     id: start

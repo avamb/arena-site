@@ -1,9 +1,9 @@
 title: "The organizer bot in Telegram: event from a poster, every sale in your group"
 description: "Create an event from a poster photo, confirm what the bot read, add dates and team members, get a sample ticket. Every sale and refund is posted to your Telegram group within seconds."
 h1: Run the event from Telegram
-lead: The event center lives in the bot too. A photo of the poster is enough to start; every reading is a button to confirm, nothing is published without you.
+lead: The Event Center lives in the bot too. A photo of the poster is enough to start; every reading is a button to confirm, nothing is published without you.
 related:
-  - { label: Event center in the browser, href: /#center }
+  - { label: Event Center in the browser, href: /#center }
   - { label: Sell on your site or ours, href: /product/sell }
   - { label: Start selling, href: /start }
 sections:
@@ -24,7 +24,7 @@ sections:
     title: Is Telegram the only way?
     items:
       - q: Do I need Telegram to use Arena?
-        a: "No. The same event center works in the browser on arenasoldout.com, and the team can set everything up for you. Telegram is one way, for organizers who live in the messenger."
+        a: "No. The same Event Center works in the browser on arenasoldout.com, and the team can set everything up for you. Telegram is one way, for organizers who live in the messenger."
       - q: Which languages does the bot speak?
         a: English, Russian and Spanish today; more follow the site languages.
       - q: Can my team use it?

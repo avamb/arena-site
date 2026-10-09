@@ -19,7 +19,7 @@ sections:
       - key: arena:order_paid
         text: "Widget events arena:* for your analytics and your own thank-you pages"
       - key: feed-token
-        text: One token per sales channel; revoke it in the event center at any time
+        text: One token per sales channel; revoke it in the Event Center at any time
     cta: { label: Get a feed token, href: /start }
 
   - type: cards
@@ -32,7 +32,7 @@ sections:
       - title: Signed webhooks
         text: Orders, payments, refunds and session changes are delivered to your endpoint with a signature you verify. Retries with backoff.
       - title: Scoped API keys
-        text: A key sees one organization and only the scopes you grant. Rotate and revoke keys in the event center.
+        text: A key sees one organization and only the scopes you grant. Rotate and revoke keys in the Event Center.
       - title: WordPress plugin
         text: Orders land in WooCommerce, the shop keeps working, the seating plan and the ticket come from Arena. The plugin is how two clients moved from Bil24 with zero downtime.
       - title: Imports

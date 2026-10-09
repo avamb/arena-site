@@ -18,20 +18,20 @@ sections:
       - q: How do I scan at the door?
         a: "With the [MACS scanner app](#scanner) for iOS and Android, or a handheld barcode scanner. The app also accepts tickets sold by your partners in other systems, so one door works for every channel."
       - q: Can I see a ticket before sales start?
-        a: Yes. A sample ticket with a watermark comes with the event, from the event center or the Telegram bot.
+        a: Yes. A sample ticket with a watermark comes with the event, from the Event Center or the Telegram bot.
       - q: What happens when a date moves?
         a: Buyers get an e-mail in their language with the updated ticket attached. The same for a cancellation, with the refund handled by you.
       - q: Can I resend or refund a ticket?
-        a: Yes, from the event center. Resend to a new address, refund to the buyer's card, the seat returns to sale.
+        a: Yes, from the Event Center. Resend to a new address, refund to the buyer's card, the seat returns to sale.
       - q: Is there an app for buyers?
         a: No. The PDF and the e-mail are enough at the door; nothing to install.
   - type: cards
     id: scanner
     eyebrow: At the door
     title: Which app scans the tickets?
-    lead: "MACS is the Arena Sold Out access control app. Install it on the phones of your door staff, sign in with your event center account and scan the EAN-13 or the QR on every ticket: paper, PDF on a screen, or the e-mail. One app scans tickets of any organizer on the platform and partners' tickets from other systems, so a venue, a festival or a promoter who rents a venue uses the same phones for every event."
+    lead: "MACS is the Arena Sold Out access control app. Install it on the phones of your door staff, sign in with your Event Center account and scan the EAN-13 or the QR on every ticket: paper, PDF on a screen, or the e-mail. One app scans tickets of any organizer on the platform and partners' tickets from other systems, so a venue, a festival or a promoter who rents a venue uses the same phones for every event."
     items:
-      - { title: iPhone and iPad, text: "MACS on the App Store. Sign in with your event center account; the event list and the sessions are already there.", link: { label: Open the App Store →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: iPhone and iPad, text: "MACS on the App Store. Sign in with your Event Center account; the event list and the sessions are already there.", link: { label: Open the App Store →, href: "https://apps.apple.com/app/id6770095694" } }
       - { title: Android, text: "MACS on Google Play. The same app, the same account, handheld scanners with a camera or a laser work as well.", link: { label: Open Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
       - { title: "Any organizer, one app", text: "Door staff of a venue scan tickets of every organizer who sells through Arena, and tickets sold by partners in other systems, without switching apps.", link: { label: "MACS as a product →", href: /product/scanner } }
   - type: cta

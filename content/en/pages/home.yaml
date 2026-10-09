@@ -7,10 +7,10 @@ sections:
   - type: hero
     eyebrow: Ticketing platform for organizers
     title: Sell seats. Sell tickets. Keep the money.
-    lead: Put your event on sale in minutes, on your own site or on a page we host. Buyers pay into your own payment account. Every ticket and every payout stays under your control.
+    lead: Start selling in minutes, on your own site or on a page we host. Buyers pay into your own payment account. Every ticket and every payout stays under your control.
     primary: { label: Start selling, href: /start }
     secondary: { label: Create your event, href: /start#create }
-    note: Connect your payment account in minutes. Events without a seating plan go on sale today.
+    note: Connect your payment account, share the link. Events without a seating plan go on sale today.
     widget:
       aria: Ticket widget preview
       event: Autumn Jazz Night
@@ -48,7 +48,8 @@ sections:
       - title: What do I need?
         text: "The event name and schedule, your ticket prices, your poster, and your own payment account: Stripe, Flitt, AllPay or another provider of your country. Money goes to you from the first ticket."
       - title: Which way do I set it up?
-        text: In the browser, in the event center. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. Or send it to us and we set it up.
+        text: "In the browser, in the “Event Center”*. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. Or send it to us and we set it up."
+    note: "* The “Event Center” is your organizer account on arenasoldout.com: every event, order, refund, invitation and session, for you and your team, in the browser and in Telegram. [See the Event Center below →](#center)"
 
   - type: ways
     id: where
@@ -89,7 +90,7 @@ sections:
       - title: Can I add a service fee?
         text: Yes. A percentage per sales channel, shown to the buyer as a separate line and paid into your account with the ticket.
       - title: With seats and without?
-        text: "Yes, and both in one event: a seating plan with categories, standing areas with quotas. Send us your venue plan as a PDF, a spreadsheet or a hand sketch: we build it into your event. You never draw it yourself."
+        text: "Yes, and both in one event: a seating plan with categories, standing areas with quotas. Send us your venue plan as a PDF, a spreadsheet or a hand sketch, and we create your venue in the system ourselves. You never enter it by hand."
         visual:
           type: plan
           aria: Venue plan with parterre, two loges, a balcony and a standing area
@@ -108,7 +109,7 @@ sections:
           seat: Parterre · Row G · Seat 7
           code: "2173049188256"
       - title: How do I see my sales?
-        text: "In seconds: every sale and refund lands in your Telegram group with the buyer's contact. And in your own account on this site, the event center: open it on a phone or a computer, nothing to install. All your events, every order, refunds and per-session totals, visible to you and your team only. [See the event center below →](#center)"
+        text: "In your “Event Center”, your own account on this site: open it on a phone or a computer, nothing to install. All your events, every order, refunds and per-session totals, visible to you and your team only. Prefer Telegram? Every sale and refund also lands in your Telegram group within seconds, with the buyer's contact. [See the Event Center below →](#center)"
         visual:
           type: telegram
           from: Arena Sales
@@ -118,26 +119,26 @@ sections:
             - "**€76.00** · Anna K. · +420 ••• 41 18"
           time: "19:42"
       - title: Refunds, invitations, date changes?
-        text: "Yes, from your event center account. Refund a ticket, issue invitations, move or cancel a session: buyers get an e-mail in their language with the updated ticket."
+        text: "Yes, from your “Event Center” account. Refund a ticket, issue invitations, move or cancel a session: buyers get an e-mail in their language with the updated ticket."
       - title: Will it hold a stadium?
         text: Yes. 800 orders a minute with 1,000 buyers on the page at once in load tests, nightly encrypted backups, a watchdog that alerts us before you notice.
 
   - type: center
     id: center
-    eyebrow: Event center
+    eyebrow: Event Center
     title: Orders, tickets, refunds and invitations in one place
-    lead: "The event center is your own account on arenasoldout.com. Open it on a phone or a computer, nothing to install. Every event you run, every order, refunds, invitations and sales figures: visible to you and your team only. Scroll the screens to see what it does."
+    lead: "The “Event Center” is your own account on arenasoldout.com. Open it on a phone or a computer, nothing to install. Every event you run, every order, refunds, invitations and sales figures: visible to you and your team only. Scroll the screens to see what it does."
     bullets:
       - Orders and buyers, with search and CSV reports per session
       - "Tickets: resend, refund, invite"
       - "Sessions: add dates, move or cancel with buyer e-mails"
       - Prices, categories, promo codes, service fee
       - "Team roles: owner, manager"
-    note: "Prefer Telegram? The same event center lives in the bot: create an event from a poster photo, get every sale in your group."
-    stripAria: Event center screens, scroll sideways
+    note: "Prefer Telegram? The same Event Center lives in the bot: create an event from a poster photo, get every sale in your group."
+    stripAria: Event Center screens, scroll sideways
     screens:
       - kind: orders
-        aria: "Event center: orders list"
+        aria: "Event Center: orders list"
         title: Autumn Jazz Night
         status: On sale
         meta: Fri 24 Oct · 312 of 408 sold
@@ -151,7 +152,7 @@ sections:
         actions: [Export CSV, Send invitations, Move session]
         caption: 1 · Orders
       - kind: refund
-        aria: "Event center: refund a ticket"
+        aria: "Event Center: refund a ticket"
         title: Order 1000000509
         tag: Refund
         meta: Marta S. · C 2 · €38.00
@@ -165,7 +166,7 @@ sections:
         secondary: Cancel
         caption: 2 · Refund a ticket
       - kind: sales
-        aria: "Event center: sales by session"
+        aria: "Event Center: sales by session"
         title: Sales by session
         meta: October · €11,284 · 4 sessions
         rungs:
@@ -200,11 +201,11 @@ sections:
     planBullets:
       - "**+{seating}** per ticket on events with a seating plan"
       - "**Free** invitations and refunds, no fee"
-      - Name Arena Sold Out as the ticketing partner on your event page
+      - Name Arena Sold Out as the ticketing partner on your event page**
     cta: { label: Start selling, href: /start }
     venues:
-      text: "**Owners of permanent venues** (theatres, clubs, stadiums, circuses): separate terms, {percent}% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds."
-      cta: { label: Talk to us, href: /start }
+      text: "**For owners of permanent venues** (theatres, clubs, stadiums, circuses): separate terms, {percent}% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds."
+      cta: { label: Talk to us, href: /contact }
     calculator:
       aria: Fee calculator
       price: Ticket price, €
@@ -214,6 +215,7 @@ sections:
       sales: your sales {net}, acquiring not included
     note: "Standard terms; volume and individual terms on request. You pay for the platform service after each session; for events on sale for several months, monthly."
     terms: { label: Detailed terms →, href: /pricing/terms }
+    footnote: "** These prices apply when your event page names Arena Sold Out as the ticketing partner, with a clickable link to [arenasoldout.com](https://arenasoldout.com). If you prefer not to mention us on your own site, white label costs {whitelabel} per event. Events sold on a page we host carry no white-label fee."
 
   - type: who
     id: who

@@ -10,10 +10,10 @@ sections:
     planBullets:
       - "**+{seating}** per ticket on events with a seating plan"
       - "**Free** invitations and refunds, no fee"
-      - "Name Arena Sold Out as the ticketing partner on your event page; without the mention, €45 per event ([detailed terms](/pricing/terms)). No white-label fee on pages we host."
+      - Name Arena Sold Out as the ticketing partner on your event page**
     cta: { label: Start selling, href: /start }
     venues:
-      text: "**Owners of permanent venues** (theatres, clubs, stadiums, circuses): separate terms, {percent}% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds."
+      text: "**For owners of permanent venues** (theatres, clubs, stadiums, circuses): separate terms, {percent}% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds."
       cta: { label: Talk to us, href: /contact }
     calculator:
       aria: Fee calculator
@@ -24,6 +24,7 @@ sections:
       sales: your sales {net}, acquiring not included
     note: "Standard terms; volume and individual terms on request. You pay for the platform service after each session; for events on sale for several months, monthly."
     terms: { label: Detailed terms →, href: /pricing/terms }
+    footnote: "** These prices apply when your event page names Arena Sold Out as the ticketing partner, with a clickable link to [arenasoldout.com](https://arenasoldout.com). If you prefer not to mention us on your own site, white label costs {whitelabel} per event. Events sold on a page we host carry no white-label fee."
 
   - type: faq
     id: questions
@@ -41,7 +42,7 @@ sections:
       - q: Are invitations and refunds free?
         a: Yes. Free tickets, invitations and refunded tickets carry no platform service charge.
       - q: What if I do not want to name Arena on my event page?
-        a: "Then a white-label fee of €45 per event applies, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee. The wording is in the [detailed terms](/pricing/terms)."
+        a: "Then white label costs {whitelabel} per event, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee. The wording is in the [detailed terms](/pricing/terms)."
       - q: I own a venue and run many events a month. Is there a different deal?
         a: "Yes. Owners of permanent venues are offered {percent}% of the ticket price instead of the per-ticket fee, with no fee on invitations and refunds. Write to us from the [contact page](/contact)."
 

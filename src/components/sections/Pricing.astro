@@ -10,6 +10,7 @@ interface Props { s: Extract<Section, { type: 'pricing' }>; pricing: CollectionE
 const { s, pricing, lang, top = false } = Astro.props;
 const money = (n: number, c: string) => `${currencySymbol(c)}${n.toFixed(2)}`;
 const base = pricing.find((p) => p.data.currency === tariff.calculator.currency) ?? pricing[0];
+const vars = { percent: tariff.venues_percent, whitelabel: `${currencySymbol(tariff.white_label_currency)}${tariff.white_label_per_event}` };
 ---
 <section class="section" id={s.id} style={top ? 'padding-top:0' : undefined}>
   <div class="wrap">
@@ -42,5 +43,6 @@ const base = pricing.find((p) => p.data.currency === tariff.calculator.currency)
       intl={getLanguage(lang).intl}
     />
     <p class="pr-note">{s.note} <a href={localePath(lang, s.terms.href)} style="color:var(--accent);font-weight:600">{s.terms.label}</a></p>
+    {s.footnote && <p class="pr-note" set:html={inline(fill(s.footnote, vars))} />}
   </div>
 </section>

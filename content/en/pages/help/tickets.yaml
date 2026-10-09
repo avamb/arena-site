@@ -24,7 +24,7 @@ sections:
       - q: Can I transfer the ticket to a friend?
         a: Forward the PDF. The ticket is scanned once, whoever brings it.
       - q: I have a question about my payment
-        a: The payment went to the organizer's own payment account; the organizer sees it in the event center and can answer. Arena Sold Out does not hold buyers' money.
+        a: The payment went to the organizer's own payment account; the organizer sees it in the Event Center and can answer. Arena Sold Out does not hold buyers' money.
       - q: Where does my data go?
         a: "To the organizer of the event, to deliver the ticket, and to the payment provider for the payment. See the [privacy policy](/legal/privacy)."
   - type: cta
