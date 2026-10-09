@@ -77,10 +77,12 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
 
     {s.type === 'markets' && (
       <>
+        <div class="table-scroll" tabindex="0" role="region" aria-label={s.title ?? t(lang, 'table.details')}>
         <table class="facts-table">
           <thead><tr><th>Country</th><th>Buyer languages</th><th>Currencies</th><th>Providers</th></tr></thead>
           <tbody>{liveMarkets.map((m) => <tr><td>{marketName(m)}</td><td>{m.data.languages.join(', ')}</td><td>{m.data.currencies.join(', ')}</td><td>{m.data.providers.map(providerName).join(', ')}</td></tr>)}</tbody>
         </table>
+        </div>
         <div class="card" style="margin-top:24px;padding:22px 24px">
           <h3 style="font-size:19px;letter-spacing:-0.02em">{s.preparing.title}</h3>
           <p style="color:var(--fg-2);margin-top:8px;max-width:62ch" set:html={inline(s.preparing.text)} />
@@ -130,13 +132,16 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
 
     {s.type === 'facts-table' && (
       <>
+        <div class="table-scroll" tabindex="0" role="region" aria-label={s.title ?? t(lang, 'table.details')}>
         <table class="facts-table">
           <thead><tr><th>{factsCols.capability}</th><th>{factsCols.status}</th><th>{factsCols.since}</th><th>{factsCols.note}</th></tr></thead>
           <tbody>
             {facts.capabilities.map((c) => <tr><td>{c.name}</td><td><span class:list={['st', { ok: c.status === 'yes', warn: c.status === 'partial' }]}>{factsStatus[c.status]}</span></td><td class="mono">{c.since ? <time datetime={c.since.toISOString().slice(0, 10)}>{c.since.toISOString().slice(0, 10)}</time> : ''}</td><td>{c.note ?? ''}</td></tr>)}
           </tbody>
         </table>
-        <table class="facts-table" style="margin-top:32px">
+        </div>
+        <div class="table-scroll" tabindex="0" role="region" aria-label={t(lang, 'table.details')} style="margin-top:32px">
+        <table class="facts-table">
           <tbody>
             <tr><th>Buyer page languages</th><td>{facts.languages.buyer_page.join(', ')}</td></tr>
             <tr><th>E-mail languages</th><td>{facts.languages.emails}</td></tr>
@@ -146,6 +151,7 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
             <tr><th>Updated</th><td><time datetime={facts.updated.toISOString().slice(0, 10)}>{facts.updated.toISOString().slice(0, 10)}</time></td></tr>
           </tbody>
         </table>
+        </div>
         <p class="pr-note"><a href="/facts.json" style="color:var(--accent);font-weight:600">facts.json</a></p>
       </>
     )}

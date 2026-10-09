@@ -28,7 +28,7 @@ sections:
       providerOther: Another provider
       name: Your name
       email: E-mail
-      phone: Phone or WhatsApp
+      phone: Phone or WhatsApp, with country code
       message: What are you going to sell?
       messageHint: "Optional: the event, the venue, dates, how many tickets. A link to a poster helps."
     submit: Send
@@ -36,6 +36,7 @@ sections:
     errors:
       required: This field is required
       email: Check the e-mail address
+      phone: "Check the number: country code and digits, like +420 777 123 456"
       server: Could not send right now. Write to us in Telegram instead, or try again in a minute.
       turnstile: The anti-spam check did not pass. Reload the page and try again.
     consent: "By sending the form you agree that the team contacts you about your event. We store the application only to set you up and never pass it on. [Detailed terms](/pricing/terms)."

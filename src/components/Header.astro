@@ -10,6 +10,7 @@ interface Props { lang: LanguageCode; path: string }
 const { lang, path } = Astro.props;
 const langs = activeLanguages();
 const current = getLanguage(lang);
+const signinHref = nav.signin.href.startsWith('http') ? nav.signin.href : hosts.app;
 const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
 ---
 <header class="header">
@@ -19,7 +20,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
       {nav.header.map((l) => <a href={localePath(lang, l.href)}>{l.label}</a>)}
     </nav>
     <div class="nav-right">
-      <a class="signin" href={nav.signin.href.startsWith('http') ? nav.signin.href : hosts.app}>{nav.signin.label}</a>
+      <a class="signin" href={signinHref}>{nav.signin.label}</a>
       {langs.length > 1 ? (
         <form class="lang-menu" method="get">
           <label class="visually-hidden" for="lang-select">{t(lang, 'language')}</label>
@@ -33,6 +34,48 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
       )}
       <ThemeToggle client:load label={t(lang, 'theme.toggle')} />
       <a class="btn btn-primary btn-sm" href={localePath(lang, nav.start.href)}>{nav.start.label}</a>
+      <button type="button" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-menu" data-label-open={t(lang, 'nav.menu')} data-label-close={t(lang, 'nav.close')}>
+        <Icon name="menu" class="i-open" />
+        <Icon name="x" class="i-close" />
+        <span class="visually-hidden" data-label>{t(lang, 'nav.menu')}</span>
+      </button>
     </div>
   </div>
+  <div class="nav-menu" id="site-menu" hidden>
+    <nav class="wrap" aria-label={t(lang, 'nav.main')}>
+      {nav.header.map((l) => <a href={localePath(lang, l.href)}>{l.label}</a>)}
+      <a href={signinHref}>{nav.signin.label}</a>
+    </nav>
+    {langs.length > 1 && (
+      <form class="lang-menu" method="get">
+        <label class="visually-hidden" for="lang-select-menu">{t(lang, 'language')}</label>
+        <select id="lang-select-menu" onchange="location.href=this.value">
+          {langs.map((l) => <option value={localePath(l.code, stripped)} selected={l.code === lang}>{l.code.toUpperCase()}</option>)}
+        </select>
+        <Icon name="chevron-down" size={10} />
+      </form>
+    )}
+  </div>
 </header>
+<script>
+  const btn = document.querySelector<HTMLButtonElement>('.nav-toggle');
+  const menu = document.getElementById('site-menu');
+  if (btn && menu) {
+    const label = btn.querySelector('[data-label]');
+    const set = (open: boolean) => {
+      menu.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+      if (label) label.textContent = (open ? btn.dataset.labelClose : btn.dataset.labelOpen) ?? '';
+    };
+    const isOpen = () => btn.getAttribute('aria-expanded') === 'true';
+    btn.addEventListener('click', () => set(!isOpen()));
+    menu.addEventListener('click', (e) => { if ((e.target as Element).closest('a')) set(false); });
+    document.addEventListener('click', (e) => {
+      if (isOpen() && !menu.contains(e.target as Node) && !btn.contains(e.target as Node)) set(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && isOpen()) { set(false); btn.focus(); }
+    });
+    window.matchMedia('(min-width: 901px)').addEventListener('change', (e) => { if (e.matches && isOpen()) set(false); });
+  }
+</script>

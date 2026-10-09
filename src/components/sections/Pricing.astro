@@ -32,7 +32,7 @@ const base = pricing.find((p) => p.data.currency === tariff.calculator.currency)
       <a class="btn btn-ghost btn-sm" href={localePath(lang, s.venues.cta.href)}>{s.venues.cta.label}</a>
     </div>
     <FeeCalculator
-      client:visible
+      client:idle
       labels={s.calculator}
       perTicket={base.data.per_ticket}
       seatingExtra={base.data.seating_extra}

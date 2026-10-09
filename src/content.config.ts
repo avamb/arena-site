@@ -134,7 +134,7 @@ export const section = z.discriminatedUnion('type', [
     }),
     submit: z.string(),
     sending: z.string(),
-    errors: z.object({ required: z.string(), email: z.string(), server: z.string(), turnstile: z.string() }),
+    errors: z.object({ required: z.string(), email: z.string(), phone: z.string(), server: z.string(), turnstile: z.string() }),
     consent: z.string(),
     alt: z.object({ text: z.string(), link: link }),
   }),

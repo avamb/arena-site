@@ -19,6 +19,8 @@ if (form) {
     else { delete wrap.dataset.invalid; if (err) err.textContent = ''; }
   }
 
+  /** A plausible phone number: optional +, then 7 to 15 digits with spaces, dots, dashes or brackets between them. */
+  const phoneOk = (v: string) => /^[+]?[0-9 ().-]+$/.test(v) && v.replace(/[^0-9]/g, '').length >= 7 && v.replace(/[^0-9]/g, '').length <= 15;
   function validate(): boolean {
     let ok = true;
     (Array.from(form!.querySelectorAll('[required]')) as Field[]).forEach((el) => {
@@ -26,6 +28,7 @@ if (form) {
       let message = '';
       if (!value) message = errors.required;
       else if (el instanceof HTMLInputElement && el.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) message = errors.email;
+      else if (el instanceof HTMLInputElement && el.type === 'tel' && !phoneOk(value)) message = errors.phone;
       setError(el, message);
       if (message && ok) { ok = false; el.focus(); }
     });
@@ -44,9 +47,20 @@ if (form) {
     submit.textContent = sendingLabel;
     try {
       const res = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
-      const json = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string; redirect?: string };
+      const json = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string; redirect?: string; fields?: Record<string, string> };
       if (res.ok && json.ok) {
         window.location.href = json.redirect || (data.get('redirect') as string) || '/start/thanks';
+        return;
+      }
+      if (json.error === 'validation' && json.fields) {
+        // The server re-checks the fields; show its verdict next to the field, first invalid field focused.
+        let focused = false;
+        for (const [name, code] of Object.entries(json.fields)) {
+          const el = form.elements.namedItem(name) as Field | null;
+          if (!el) continue;
+          setError(el, errors[code] ?? errors.required);
+          if (!focused) { el.focus(); focused = true; }
+        }
         return;
       }
       status.dataset.state = 'error';

@@ -10,5 +10,8 @@
     "month": "long",
     "year": "numeric"
   },
-  "notTranslated": "Esta página aún no está traducida. Estás leyendo la versión en inglés."
+  "notTranslated": "Esta página aún no está traducida. Estás leyendo la versión en inglés.",
+  "nav.menu": "Menú",
+  "nav.close": "Cerrar",
+  "table.details": "Idiomas, límites y copias de seguridad"
 }

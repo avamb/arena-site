@@ -1,4 +1,4 @@
-# Тексты сайта на вычитку (сборка 2026-10-09, волна 2 + юридические тексты)
+# Тексты сайта на вычитку (сборка 2026-10-09, волна 2 + юридические тексты + QA)
 
 Главная: прототип без изменений. Новые страницы (product, solutions, company, contact, partners, help) написаны по фактам брифа. Legal: перенос со старого сайта, актуализирован 09.10 (реквизиты компании без изменений). Статьи блога не включены: они перенесены как есть (75 штук, https://new.arenasoldout.com/blog и /ru/blog).
 
@@ -1167,11 +1167,11 @@ Yes. Free tickets, invitations and refunded tickets carry no platform service ch
 
 ### What if I do not want to name Arena on my event page?
 
-A white-label condition applies per event. The amount and the wording are in the detailed terms.
+Then a white-label fee of €45 per event applies, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee. The wording is in the detailed terms.
 
 ### I own a venue and run many events a month. Is there a different deal?
 
-Yes. Owners of permanent venues are offered {percent}% of the ticket price instead of the per-ticket fee, with no fee on invitations and refunds. Write to us from the start page.
+Yes. Owners of permanent venues are offered {percent}% of the ticket price instead of the per-ticket fee, with no fee on invitations and refunds. Write to us from the contact page.
 
 ## Start selling today
 
@@ -1487,7 +1487,7 @@ Tell us who you are and where you sell. We set up your organization, your sales 
 
 ## Tell us about yourself
 
-Fields: Organization or event name, Country where you sell, Payment provider you already use, Your name, E-mail, Phone or WhatsApp, What are you going to sell?.
+Fields: Organization or event name, Country where you sell, Payment provider you already use, Your name, E-mail, Phone or WhatsApp, with country code, What are you going to sell?.
 
 Prefer Telegram? The bot creates your event from a poster photo and the same team answers there. [Open the Telegram bot](https://t.me/EventsCentrBot)
 

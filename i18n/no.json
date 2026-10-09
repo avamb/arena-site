@@ -9,5 +9,8 @@
     "day": "numeric",
     "month": "long",
     "year": "numeric"
-  }
+  },
+  "nav.menu": "Meny",
+  "nav.close": "Lukk",
+  "table.details": "Språk, grenser og sikkerhetskopier"
 }

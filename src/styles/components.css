@@ -1,5 +1,9 @@
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth}
+/* Smooth scrolling only after load: with it on from the start, Chromium abandons the scroll to a
+   fragment (/#how, /start#create) and the page stays at the top. Base.astro adds the class. */
+html.smooth{scroll-behavior:smooth}
+/* Fragment targets (#how, #center, #api, #create) land below the sticky 64px header. */
+[id]{scroll-margin-top:80px}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 img,svg{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
@@ -37,7 +41,17 @@ p{margin:0}
 .icon-btn{display:inline-flex;align-items:center;justify-content:center;width:var(--ctl-sm);height:var(--ctl-sm);border:1px solid var(--line);border-radius:999px;color:var(--fg-2)}
 .icon-btn:hover{color:var(--fg);border-color:var(--line-2)}
 .icon-btn svg{width:17px;height:17px}
-@media (max-width:900px){.nav-links,.nav-right .signin{display:none}.nav{gap:16px}}
+.nav-toggle,.nav-menu{display:none}
+.nav-toggle .i-close,.nav-toggle[aria-expanded="true"] .i-open{display:none}
+.nav-toggle[aria-expanded="true"] .i-close{display:block}
+.nav-menu{position:absolute;inset-inline:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+.nav-menu nav{display:flex;flex-direction:column;padding-block:8px 12px}
+.nav-menu a{display:flex;align-items:center;min-height:var(--ctl);padding-inline:12px;border-radius:var(--r);font-size:16px;font-weight:500;color:var(--fg-2)}
+.nav-menu a:hover{background:var(--surface);color:var(--fg)}
+.nav-menu .lang-menu{display:none;width:fit-content;margin:0 var(--gutter) 12px}
+@media (max-width:900px){.nav-links,.nav-right .signin{display:none}.nav{gap:16px}.nav-toggle{display:inline-flex}.nav-menu:not([hidden]){display:block}}
+@media (max-width:560px){.nav-right .lang,.nav-right .lang-menu{display:none}.nav-menu .lang-menu{display:block}}
+@media (max-width:420px){.nav{gap:8px}.wordmark{--logo-w:96px;flex:none}.nav-right{gap:4px;min-width:0}.nav-right>*{flex:none}.nav-right .icon-btn{width:34px;height:34px}.nav-right .btn{padding-inline:12px;white-space:nowrap}}
 
 /* Hero band */
 .hero{position:relative;background:var(--band);color:var(--band-fg);overflow:hidden;isolation:isolate}
@@ -265,7 +279,7 @@ footer{border-top:1px solid var(--line);padding-block:48px 28px;font-size:14px}
 @media (prefers-reduced-motion: reduce){
   .blob,.reveal,.widget,.seat.sel{animation:none !important}
   .btn-primary:hover{transform:none}
-  html{scroll-behavior:auto}
+  html.smooth{scroll-behavior:auto}
 }
 /* Iteration 2 (founders' review 08.10) */
 .ways{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:40px}

@@ -66,10 +66,21 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
     {umami.src && umami.websiteId && <script defer src={umami.src} data-website-id={umami.websiteId} data-auto-track="true"></script>}
   </head>
   <body>
+    <script is:inline>
+      // A deep link (/#how, /start#create) lands on its section once everything above it has loaded;
+      // smooth scrolling (html.smooth) is switched on only after that, see components.css.
+      addEventListener('load', function () {
+        var el = location.hash && location.hash !== '#main' ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
+        setTimeout(function () {
+          if (el) el.scrollIntoView({ behavior: 'instant', block: 'start' });
+          document.documentElement.classList.add('smooth');
+        }, 0);
+      });
+    </script>
     <a class="skip" href="#main">{t(lang, 'skip')}</a>
     <Header lang={lang} path={path} />
     {!translated && <p class="translation-note" role="status">{t(lang, 'notTranslated')}</p>}
-    <main id="main">
+    <main id="main" tabindex="-1">
       <slot />
     </main>
     <Footer lang={lang} />

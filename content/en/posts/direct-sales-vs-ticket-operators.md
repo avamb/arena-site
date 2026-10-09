@@ -1,5 +1,5 @@
 ---
-title: "Direct Sales vs Ticket Operators\\Systems"
+title: "Direct Sales vs Ticket Operators / Systems"
 description: "Financial and reputational risks of Event organizers. Problems and solutions."
 date: 2024-01-23
 updated: 2024-03-04
@@ -20,7 +20,7 @@ Many organizers believe that featuring their events on ticket platforms will att
 
 #### **Brand and Trust: direct sales as an investment in reputation**
 
-![Direct Sales vs Ticket Operators\\Systems](./images/direct-sales-vs-ticket-operators/kartinka-1-pryamye-prodazhi-foto-12.jpg)
+![Direct Sales vs Ticket Operators / Systems](./images/direct-sales-vs-ticket-operators/kartinka-1-pryamye-prodazhi-foto-12.jpg)
 
 Showcasing tickets on external platforms, ticket operators, and websites can impact the brand perception of the organizer. When a customer sees an event on a ticket operator’s platform, a portion of the trust built around the organizer and artist shifts to that ticket operator. This is trust painstakingly built by the organizer and artist over time. On the contrary, selling tickets directly on the organizer’s website creates a direct connection, strengthening trust and brand recognition.
 
@@ -28,7 +28,7 @@ Showcasing tickets on external platforms, ticket operators, and websites can imp
 
 ## **Search visibility: direct sales vs ticket operator advertising**
 
-![Direct Sales vs Ticket Operators\\Systems](./images/direct-sales-vs-ticket-operators/kartinka-3-pryamye-prodazhi-foto-4.jpg)
+![Direct Sales vs Ticket Operators / Systems](./images/direct-sales-vs-ticket-operators/kartinka-3-pryamye-prodazhi-foto-4.jpg)
 
 In the battle for user attention in search engines, organizers face a tough choice: advertise their site directly or pay for advertisement on ticket operators’ webpages.
 

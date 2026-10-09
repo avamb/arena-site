@@ -50,6 +50,9 @@ export function validate(fd: FormData): { ok: true; data: Application } | { ok: 
   const errors: Record<string, string> = {};
   for (const k of ['organization', 'country', 'name', 'email', 'phone'] as const) if (!data[k]) errors[k] = 'required';
   if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) errors.email = 'email';
+  // A plausible phone number: optional +, 7 to 15 digits, separators allowed (E.164 length limits).
+  const digits = data.phone.replace(/[^0-9]/g, '');
+  if (data.phone && (!/^[+]?[0-9 ().-]+$/.test(data.phone) || digits.length < 7 || digits.length > 15)) errors.phone = 'phone';
   return Object.keys(errors).length ? { ok: false, errors } : { ok: true, data };
 }
 

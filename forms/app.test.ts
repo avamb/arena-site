@@ -32,6 +32,19 @@ test('accepts a valid application and forwards it to the webhook', async () => {
   assert.equal((calls[0].body as { organization: string }).organization, 'Test Theatre');
 });
 
+test('rejects an implausible phone number with a field error', async () => {
+  for (const phone of ['abc', '12345', '+420 777 123 456 789 012', 'call me']) {
+    const res = await post(createApp(), form({ ...valid, phone }));
+    assert.equal(res.status, 422, phone);
+    const json = (await res.json()) as { error: string; fields: Record<string, string> };
+    assert.equal(json.fields.phone, 'phone', phone);
+  }
+  for (const phone of ['+420 777 123 456', '(034) 912-345-678', '+972-54-1234567']) {
+    const res = await post(createApp(), form({ ...valid, phone }), {}, {});
+    assert.equal(res.status, 303, phone);
+  }
+});
+
 test('redirects plain form posts (no JS)', async () => {
   const res = await post(createApp(), form(valid), {}, {});
   assert.equal(res.status, 303);

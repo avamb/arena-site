@@ -10,11 +10,11 @@ sections:
     planBullets:
       - "**+{seating}** per ticket on events with a seating plan"
       - "**Free** invitations and refunds, no fee"
-      - Name Arena Sold Out as the ticketing partner on your event page
+      - "Name Arena Sold Out as the ticketing partner on your event page; without the mention, €45 per event ([detailed terms](/pricing/terms)). No white-label fee on pages we host."
     cta: { label: Start selling, href: /start }
     venues:
       text: "**Owners of permanent venues** (theatres, clubs, stadiums, circuses): separate terms, {percent}% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds."
-      cta: { label: Talk to us, href: /start }
+      cta: { label: Talk to us, href: /contact }
     calculator:
       aria: Fee calculator
       price: Ticket price, €
@@ -41,9 +41,9 @@ sections:
       - q: Are invitations and refunds free?
         a: Yes. Free tickets, invitations and refunded tickets carry no platform service charge.
       - q: What if I do not want to name Arena on my event page?
-        a: "A white-label condition applies per event. The amount and the wording are in the [detailed terms](/pricing/terms)."
+        a: "Then a white-label fee of €45 per event applies, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee. The wording is in the [detailed terms](/pricing/terms)."
       - q: I own a venue and run many events a month. Is there a different deal?
-        a: "Yes. Owners of permanent venues are offered {percent}% of the ticket price instead of the per-ticket fee, with no fee on invitations and refunds. Write to us from the [start page](/start)."
+        a: "Yes. Owners of permanent venues are offered {percent}% of the ticket price instead of the per-ticket fee, with no fee on invitations and refunds. Write to us from the [contact page](/contact)."
 
   - type: cta
     id: start
