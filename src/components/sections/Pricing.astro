@@ -10,6 +10,7 @@ import FeeCalculator from '@/components/islands/FeeCalculator.svelte';
 interface Props { s: Extract<Section, { type: 'pricing' }>; pricing: CollectionEntry<'pricing'>[]; lang: LanguageCode; top?: boolean }
 const { s, pricing, lang, top = false } = Astro.props;
 const intl = getLanguage(lang).intl;
+const Sub = s.title ? 'h3' : 'h2';
 const fmt = (n: number, c: string) => `${currencySymbol(c)}${n.toLocaleString(intl, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 const base = pricing[0];
 const baseCur = base.data.currency;
@@ -53,7 +54,7 @@ const regions = pricing.map((p) => ({
 
     {!s.compact && s.packages && (
       <div class="card pkgs" id="packages">
-        <h3 class="h3">{s.packages.title}</h3>
+        <Sub class="h3">{s.packages.title}</Sub>
         <p class="pr-note" style="margin-top:6px" set:html={inline(s.packages.text)} />
         <div class="tbl-wrap">
           <table class="tbl">
@@ -85,7 +86,7 @@ const regions = pricing.map((p) => ({
     <div class="card venues" id="low-price">
       <div class="big num">{lp.percent}%</div>
       <div>
-        <h3 class="h3">{s.lowPrice.title.replace('{lowMax}', vars.lowMax)}</h3>
+        <Sub class="h3">{s.lowPrice.title.replace('{lowMax}', vars.lowMax)}</Sub>
         <p set:html={inline(fill(s.lowPrice.text, vars))} />
         {!s.compact && s.lowPrice.cols && (
           <>
@@ -108,7 +109,7 @@ const regions = pricing.map((p) => ({
     <div class="card venues" id="venues">
       <div class="big num">{tariff.venues_percent}%</div>
       <div>
-        <h3 class="h3">{s.venues.title}</h3>
+        <Sub class="h3">{s.venues.title}</Sub>
         <p set:html={inline(fill(s.venues.text, vars))} />
         {!s.compact && s.venues.example && <p class="pr-note" style="margin-top:10px">{fill(s.venues.example, { ...vars, ex25: fmt(25, baseCur), ex: fmt(venueFee(25, tariff.venues_percent, seated), baseCur), capAt: fmt(seated * 100 / tariff.venues_percent, baseCur) })}</p>}
       </div>

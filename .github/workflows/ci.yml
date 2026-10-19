@@ -78,7 +78,7 @@ jobs:
           code=$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/); test "$code" = 200
           code=$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/pricing); test "$code" = 200
           loc=$(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' http://127.0.0.1:8080/prices/); echo "$loc"; [[ "$loc" == 301* && "$loc" == *"/pricing" ]]
-          curl -sI http://127.0.0.1:8080/ | tee /tmp/h; grep -qi 'x-content-type-options: nosniff' /tmp/h; grep -qi 'content-security-policy' /tmp/h; grep -qi 'x-robots-tag: noindex' /tmp/h
+          curl -sI http://127.0.0.1:8080/ | tee /tmp/h; grep -qi 'x-content-type-options: nosniff' /tmp/h; grep -qi 'content-security-policy' /tmp/h; ! grep -qi 'x-robots-tag: noindex' /tmp/h
           curl -sI http://127.0.0.1:8080/index.md | grep -qi 'content-type: text/markdown'
           curl -fsS -o /tmp/llms.txt http://127.0.0.1:8080/llms.txt && head -3 /tmp/llms.txt
           curl -fsS -o /tmp/facts.json http://127.0.0.1:8080/facts.json && head -c 200 /tmp/facts.json && echo
