@@ -8,8 +8,6 @@ legacy_url: "https://arenasoldout.com/ticket-platforms-five-generations/"
 archive: true
 ---
 
-# Ticket platforms. Five generations.
-
 The inception of ticketing systems coincided with the advent of personal computers, local networks, and the internet. Today’s ticketing platforms are born into a vastly transformed world, radically distinct from the early systems. Examining the developmental journey of ticketing software reveals five generations of systems with similar functionality, architecture, and characteristics. The design timeline aligns with the global progression of information technology.
 
 The classification into generations is somewhat arbitrary, as individual systems may encompass features from different generations, with their development cycles extending beyond clear temporal boundaries. For instance, a second-generation system might have been under construction during the existence of third-generation systems. Some first-generation systems, continually refined, persist with functionalities accumulated from various time periods, carrying legacy elements and technological debt into the present.

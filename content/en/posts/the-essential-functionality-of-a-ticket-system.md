@@ -8,8 +8,6 @@ legacy_url: "https://arenasoldout.com/the-essential-functionality-of-a-ticket-sy
 archive: true
 ---
 
-# The Essential Functionality of a Ticket System
-
 #### The Essential Functionality of a Ticket System: Why Using Ready-Made Solutions Makes More Sense
 
 **Introduction:**

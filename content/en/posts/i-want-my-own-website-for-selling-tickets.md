@@ -8,8 +8,6 @@ legacy_url: "https://arenasoldout.com/i-want-my-own-website-for-selling-tickets/
 archive: true
 ---
 
-# I want my own website for selling tickets
-
 *I often see projects to create websites and mobile applications for selling tickets to various events, including those hosted on freelance exchanges. Thanks to my work, I know a lot of implementations of such projects, including those that disappointed both customers and contractors. This article is a short guide on the topic of creating such sites, written on the basis of personal experience*.
 
 #### Who are the Customers?

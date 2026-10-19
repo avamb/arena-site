@@ -8,8 +8,6 @@ legacy_url: "https://arenasoldout.com/the-money-saving-blueprint-for-event-organ
 archive: true
 ---
 
-# The money-saving blueprint for event organizers: unlocking additional earnings
-
 What we recommend and what we observe are the strategies and tactics of our clients – event organizers.
 
 In the event organization business, every detail matters – the speed and cost of sales, accurate software performance, payment processing speed, partner management, the opportunity for additional earnings through existing advertising channels, and much more.  

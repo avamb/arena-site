@@ -8,8 +8,6 @@ legacy_url: "https://arenasoldout.com/make-own-ticketing-platform-for-1000-usd-m
 archive: true
 ---
 
-# Make own ticketing platform for 1000 USD. Myth or reality?
-
 I see a lot of the same type of orders on freelance work marketplaces, which can be described something like this: “I need my own ticketing platform like Eventbrite or Ticketmaster, $1,000 budget.”  
 Such requests are placed almost daily and they do not differ very much from each other. Sometimes the difference is in the amount of money, sometimes in the description of the functionality, very often the request says that this needs to be done quickly, most requests indicate that applications are asked to be created needs to be created by specific application builder, for example, on WordPress, or on Bubble, or on another application builder.
 

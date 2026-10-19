@@ -8,8 +8,6 @@ legacy_url: "https://arenasoldout.com/platform-as-a-service-paas/"
 archive: true
 ---
 
-# PLATFORM as a SERVICE (PaaS)
-
 ![Logo](./images/platform-as-a-service-paas/logo-250.png)
 
 ![Frame](./images/platform-as-a-service-paas/frame-40.jpg)
