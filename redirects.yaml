@@ -28,6 +28,12 @@ redirects:
   - { from: /wordpress-integration/, to: /solutions/wordpress }
   - { from: /for-developers/, to: /developers }
   - { from: /api-documents/, to: /developers }
+  # es/no copies of the service-fee article carried the English text unchanged (SEO-003a):
+  # consolidate onto the English original, for both the new /blog/ and the old WordPress addresses
+  - { from: /es/blog/ticket-service-fee-cost-and-customer-loyalty-management, to: /blog/ticket-service-fee-cost-and-customer-loyalty-management }
+  - { from: /no/blog/ticket-service-fee-cost-and-customer-loyalty-management, to: /blog/ticket-service-fee-cost-and-customer-loyalty-management }
+  - { from: /es/ticket-service-fee-cost-and-customer-loyalty-management/, to: /blog/ticket-service-fee-cost-and-customer-loyalty-management }
+  - { from: /no/ticket-service-fee-cost-and-customer-loyalty-management/, to: /blog/ticket-service-fee-cost-and-customer-loyalty-management }
   # start, contact, help
   - { from: /get-started/, to: /start }
   - { from: /create-event/, to: /start }
