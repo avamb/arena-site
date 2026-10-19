@@ -106,7 +106,18 @@ redirects:
   - { from: /cart/, to: /help/tickets }
   - { from: /checkout/, to: /help/tickets }
   - { from: /my-account/, to: /help/tickets }
-  # technical
+  # WooCommerce product taxonomies
+  - { from: /product-category/*, to: /help/tickets }
+  - { from: /product-tag/*, to: /help/tickets }
+  # technical: the old robots.txt pointed at /sitemap.xml, the slim-seo sitemaps are listed one by one
+  - { from: /sitemap.xml, to: /sitemap-index.xml }
+  - { from: /sitemap-post-type-product.xml, to: /sitemap-index.xml }
+  - { from: /sitemap-taxonomy-category.xml, to: /sitemap-index.xml }
+  - { from: /sitemap-taxonomy-post_tag.xml, to: /sitemap-index.xml }
+  - { from: /sitemap-taxonomy-product_cat.xml, to: /sitemap-index.xml }
+  - { from: /sitemap-taxonomy-product_tag.xml, to: /sitemap-index.xml }
+  - { from: /feed/, to: /blog }
+  - { from: /comments/feed/, to: /blog }
   - { from: /sitemap_index.xml, to: /sitemap-index.xml }
   - { from: /sitemap-post-type-post.xml, to: /sitemap-index.xml }
   - { from: /sitemap-post-type-page.xml, to: /sitemap-index.xml }

@@ -133,6 +133,23 @@ WordPress stays on the apex. To switch (doc 33 §3.7b), one pull request:
    (strict), Always HTTPS.
 6. Rollback: revert the pull request; the custom domain goes back to `new.` within minutes.
 
+What a launch build (`SITE_URL=https://arenasoldout.com`, indexing on) does by itself, nothing to configure:
+
+- canonical, `og:url`, hreflang, sitemap and JSON-LD all use the apex; `index, follow` replaces `noindex`,
+  the `X-Robots-Tag: noindex` header disappears, `robots.txt` lists the sitemap;
+- every page has an Open Graph and Twitter card (`public/brand/og-default.png`, 1200x630; posts use their
+  own cover), `apple-touch-icon`, `og:site_name`;
+- `https://www.arenasoldout.com/*` and `https://new.arenasoldout.com/*` answer 301 to the apex with the path kept
+  (first lines of `dist/_redirects`; keep `new.` attached to the Worker as a custom domain for this);
+- 168 of 168 addresses of the old WordPress sitemaps are covered by a page or a 301 (`/prices/`, `/sitemap.xml`,
+  product and category taxonomies, feeds, 75 blog posts via `legacy_url`).
+
+Before the merge: re-run the old-sitemap audit (fetch `https://arenasoldout.com/sitemap.xml`, check every URL against
+`dist/_redirects` and `dist/`); after it: Search Console and Bing Webmaster (add the apex property, submit
+`sitemap-index.xml`, use "Change of address" only if the property was under another host), check
+`curl -I https://www.arenasoldout.com/pricing` → 301 to the apex, `curl -I https://new.arenasoldout.com/` → 301,
+the Turnstile widget lists `arenasoldout.com`, and paste a page into a link preview tester for the card.
+
 ## Repository map
 
 ```

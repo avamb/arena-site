@@ -5,7 +5,7 @@
  * Routes exist for every language that has posts, even languages not yet in the menu (doc 33 §3.3).
  */
 import { render } from 'astro:content';
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import Base from '@/layouts/Base.astro';
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import Related from '@/components/Related.astro';
@@ -37,6 +37,7 @@ const related = post.data.related ?? [
   { label: lang === 'ru' ? 'Где продавать: свой сайт или наша страница' : 'Where you sell: your site or ours', href: '/product/sell' },
   { label: lang === 'ru' ? 'Начать продавать' : 'Start selling', href: '/start' },
 ];
+const og = post.data.cover ? (await getImage({ src: post.data.cover, width: 1200, format: 'jpg' })).src : undefined;
 const blogIndex = localePath(lang, '/blog');
 const crumbs = [{ name: 'Home', path: localePath(lang, '/') }, { name: t(lang, 'blog.backToIndex'), path: blogIndex }, { name: post.data.title, path }];
 ---
@@ -46,6 +47,8 @@ const crumbs = [{ name: 'Home', path: localePath(lang, '/') }, { name: t(lang, '
   title={post.data.title}
   description={post.data.description}
   markdownPath={`${path}.md`}
+  image={og}
+  ogType="article"
   jsonld={{ path, title: post.data.title, description: post.data.description, lang, breadcrumbs: crumbs, article: { headline: post.data.title, date: post.data.date, updated: post.data.updated, author: post.data.author } }}
 >
   <article class="wrap post">

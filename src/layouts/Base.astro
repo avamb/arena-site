@@ -7,7 +7,7 @@ import '@fontsource-variable/onest';
 import '@fontsource-variable/jetbrains-mono';
 import '@/styles/global.css';
 import { readFileSync } from 'node:fs';
-import { indexing, siteUrl, umami, defaultLanguage, type LanguageCode } from '@config';
+import { indexing, siteUrl, org, umami, defaultLanguage, type LanguageCode } from '@config';
 import { t, localePath, activeLanguages, getLanguage } from '@/lib/i18n';
 import { buildGraph, type JsonLdInput } from '@/lib/jsonld';
 import Header from '@/components/Header.astro';
@@ -22,11 +22,16 @@ interface Props {
   jsonld?: JsonLdInput;
   markdownPath?: string;
   noindex?: boolean;
+  /** Absolute or site-relative path of the preview image; defaults to the brand card. */
+  image?: string;
+  ogType?: 'website' | 'article';
 }
-const { lang, path, title, description, translated = true, jsonld, markdownPath, noindex = false } = Astro.props;
+const { lang, path, title, description, translated = true, jsonld, markdownPath, noindex = false, image = '/brand/og-default.png', ogType = 'website' } = Astro.props;
 const language = getLanguage(lang);
 const robots = !indexing || !translated || noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
 const canonical = new URL(path, siteUrl).toString();
+const ogImage = new URL(image, siteUrl).toString();
+const isDefaultImage = image === '/brand/og-default.png';
 const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
 const alternates = activeLanguages().map((l) => ({ code: l.code, href: new URL(localePath(l.code, stripped), siteUrl).toString() }));
 const graph = jsonld ? JSON.stringify(buildGraph(jsonld)) : undefined;
@@ -53,9 +58,19 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
     <link rel="icon" href="/favicon.png" type="image/png" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={org.name} />
     <meta property="og:locale" content={language.intl.replace('-', '_')} />
+    <meta property="og:image" content={ogImage} />
+    {isDefaultImage && <meta property="og:image:width" content="1200" />}
+    {isDefaultImage && <meta property="og:image:height" content="630" />}
+    <meta property="og:image:alt" content={title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#F6F7FB" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)" />
     <style is:inline set:html={maskCss}></style>
