@@ -105,7 +105,6 @@ archive: true
 
 Share this article with a friend
 
-[Subscribe](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
 
 [ПредВы все еще продаете по телефону? Тогда мы идем к вам!](/ru/blog/are-you-still-selling-over-the-phone-then-we-go-to-you)
 

@@ -66,7 +66,6 @@ ArenaSoldOut.com Co-Founder
 
 Share this article with a friend
 
-[Subscribe](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
 
 [ПредМаркетинг и Реклама Мероприятий: Трансформации 2022-2023](/ru/blog/marketing-i-reklama-meropriyatij-transformaczii-2022-2023)
 

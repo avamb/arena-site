@@ -70,4 +70,4 @@ In this generation, there’s an increase in both the quantity and quality of in
 
 [“Custom ticketing platform: how to build your own”](/blog/custom-ticketing-platform-how-to-build-your-own)
 
-[Contact Us](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
+[Contact Us](/contact)

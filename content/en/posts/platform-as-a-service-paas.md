@@ -35,4 +35,4 @@ You know best what you need in a ticketing solution – make it a reality with y
 Customer Support: support@arenasoldout.com  
 New Business: support@arenasoldout.com
 
-[Contact Us](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
+[Contact Us](/contact)

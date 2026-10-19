@@ -73,4 +73,4 @@ Developing a website or a mobile application for selling tickets is a simple tas
 Alex Orlov  
 Software architect and team lead TixGear – ArenaSoldOut.com
 
-[Contact Us](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
+[Contact Us](/contact)

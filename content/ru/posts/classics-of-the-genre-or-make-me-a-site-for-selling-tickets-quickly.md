@@ -68,7 +68,6 @@ Software architect and team lead TixGear — ArenaSoldOut.com
 
 Share this article with a friend
 
-[Subscribe](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
 
 [ПредПредставьте себе мир, где организация мероприятий становится более удобной, эффективной и прибыльной](/ru/blog/ticketingsystemsadvantagesarenasoldoutru)
 

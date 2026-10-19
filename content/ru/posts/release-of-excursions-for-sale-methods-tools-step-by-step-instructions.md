@@ -39,7 +39,7 @@ archive: true
 
 #### Visit La MerMer Beach
 
-[![Экскурсии Картинка 3r](./images/release-of-excursions-for-sale-methods-tools-step-by-step-instructions/----3r.jpeg)](/developers#/?zone=test&frontendId=1261&token=8bbfd29fe18a87925f81&id=934&cityId=63&lng=en&agr=https://arenasoldout.com/termsconditions/&success=https://arenasoldout.com/test-payment-successful/&fail=https://arenasoldout.com/test-payment-failed/)
+![Экскурсии Картинка 3r](./images/release-of-excursions-for-sale-methods-tools-step-by-step-instructions/----3r.jpeg)
 
 Проблемой этого пляжа является овербукинг. На входе можно оплатить вход нга пляж, но это не гарантирует, что для посетителя будет свободный лежак. 
 
@@ -81,7 +81,6 @@ Software architect and team lead TixGear — ArenaSoldOut.com
 
 Share this article with a friend
 
-[Subscribe](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
 
 [ПредКак начать продавать билеты на своем сайте. Пошаговый гайд](/ru/blog/kak-nachat-prodavat-bilety-na-svoem-sajte-poshagovyj-gajd)
 

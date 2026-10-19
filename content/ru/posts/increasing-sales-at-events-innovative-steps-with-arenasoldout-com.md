@@ -53,7 +53,6 @@ ArenaSoldOut.com предоставляет возможность расшир�
 
 Share this article with a friend
 
-[Subscribe](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
 
 [Пред«Хочу свой сайт для продажи билетов…»](/ru/blog/my-own-site-for-tickets-sold)
 

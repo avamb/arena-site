@@ -82,7 +82,6 @@ Software architect and team lead TixGear — ArenaSoldOut.com
 
 Share this article with a friend
 
-[Subscribe](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
 
 [ПредЗачем нужно проводить нагрузочное тестирование билетных платформ: выгода для организаторов и покупателей](/ru/blog/why-the-tickets-platform-need-pay-load-tests-ru)
 

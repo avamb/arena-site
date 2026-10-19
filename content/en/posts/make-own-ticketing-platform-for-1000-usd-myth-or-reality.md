@@ -113,4 +113,4 @@ Software architect and team lead TixGear – ArenaSoldOut.com
 
 [Special offer and essential features for ticketing plarforms, ticketing systems and event listings](/solutions/venues)
 
-[Связаться с Нами](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
+[Связаться с Нами](/contact)

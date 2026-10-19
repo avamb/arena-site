@@ -42,7 +42,7 @@ Implemented ticket sales at different rates, payment for an additional service (
 
 ##### Visit La MerMer Beach
 
-[![Экскурсии Картинка 3r](./images/selling-tour-tickets/----3r.jpeg)](/developers#/?zone=test&frontendId=1261&token=8bbfd29fe18a87925f81&id=934&cityId=63&lng=en&agr=https://arenasoldout.com/termsconditions/&success=https://arenasoldout.com/test-payment-successful/&fail=https://arenasoldout.com/test-payment-failed/)
+![Экскурсии Картинка 3r](./images/selling-tour-tickets/----3r.jpeg)
 
 A constant situation at this beach is overbooking. You can pay for admission right at the entrance, but that does not guarantee that you will have a free sun lounger. You may have to walk around the beach for a while waiting for some sun lounger to become free. And if it ever does. The scheme of the beach with sun beds and selling “tickets” for them solve this problem. You can pay for a particular sun lounger and take it. Additionally the visitor can order and pay for food and drinks.
 

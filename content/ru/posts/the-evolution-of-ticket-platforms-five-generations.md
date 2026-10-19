@@ -74,7 +74,6 @@ Alex Orlov, Software architect and team lead ArenaSoldOut.com
 
 Share this article with a friend
 
-[Subscribe](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6MTM0LCJ0b2dnbGUiOmZhbHNlfQ%3D%3D)
 
 [ПредРабота с клиентами – залог успешности вашего бизнеса, или зачем и как поддерживать связь с клиентами](/ru/blog/rabota-s-klientami-zalog-uspeshnosti-vashego-biznesa-ili-zachem-i-kak-podderzhivat-svyaz-s-klientami)
 
