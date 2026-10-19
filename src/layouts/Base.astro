@@ -9,6 +9,7 @@ import '@/styles/global.css';
 import { readFileSync } from 'node:fs';
 import { indexing, siteUrl, org, umami, defaultLanguage, type LanguageCode } from '@config';
 import { t, localePath, activeLanguages, getLanguage } from '@/lib/i18n';
+import { translationsOf } from '@/lib/translations';
 import { buildGraph, type JsonLdInput } from '@/lib/jsonld';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
@@ -32,8 +33,8 @@ const robots = !indexing || !translated || noindex ? 'noindex, nofollow' : 'inde
 const canonical = new URL(path, siteUrl).toString();
 const ogImage = new URL(image, siteUrl).toString();
 const isDefaultImage = image === '/brand/og-default.png';
-const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
-const alternates = activeLanguages().map((l) => ({ code: l.code, href: new URL(localePath(l.code, stripped), siteUrl).toString() }));
+// hreflang only for genuine translations (src/lib/translations.ts); x-default is the English member.
+const alternates = translationsOf(path).map((x) => ({ code: x.lang, href: new URL(x.path, siteUrl).toString() }));
 const graph = jsonld ? JSON.stringify(buildGraph(jsonld)) : undefined;
 
 const svgMask = (file: string) => {
