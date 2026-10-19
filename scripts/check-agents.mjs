@@ -8,7 +8,7 @@ import { readFileSync, existsSync } from 'node:fs';
 
 let failed = false;
 const fail = (m) => { failed = true; console.error(`agents: ${m}`); };
-const indexing = process.env.SITE_INDEXING === 'true';
+const indexing = (process.env.SITE_INDEXING ?? 'true') === 'true'; // same default as site.config.ts
 
 for (const f of ['dist/llms.txt', 'dist/llms-full.txt', 'dist/facts.json', 'dist/robots.txt', 'dist/sitemap-index.xml', 'dist/_headers', 'dist/_redirects']) if (!existsSync(f)) fail(`missing ${f}`);
 

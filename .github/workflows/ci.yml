@@ -13,8 +13,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  SITE_URL: https://new.arenasoldout.com
-  SITE_INDEXING: 'false'   # flip to 'true' on launch day together with wrangler.toml routes and site.config.ts
+  SITE_URL: https://arenasoldout.com
+  SITE_INDEXING: 'true'
 
 jobs:
   build:
