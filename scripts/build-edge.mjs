@@ -22,7 +22,8 @@ const isDynamic = (r) => /[*:]/.test(r.from);
 // path and query kept, so every address has one canonical host. Host rules go first.
 const site = process.env.SITE_URL ?? 'https://arenasoldout.com'; // same default as site.config.ts
 const apex = new URL(site).hostname === 'arenasoldout.com';
-const hostRules = apex ? [`https://www.arenasoldout.com/* ${site}/:splat 301`, `https://new.arenasoldout.com/* ${site}/:splat 301`] : [];
+// Workers Static Assets refuses absolute URLs in _redirects, so the host redirects live in forms/worker.ts.
+const hostRules = [];
 const cfRedirects = hostRules.map((l) => `${l}\n`).join('') + [...redirects.filter((r) => !isDynamic(r)), ...redirects.filter(isDynamic)].flatMap((r) => variants(r.from).map((f) => `${f} ${r.to} ${r.code ?? 301}`)).join('\n') + '\n';
 const cfHeaders = headers.map((h) => [h.pattern, ...Object.entries(h.values).map(([k, v]) => (k.startsWith('!') ? `  ${k}` : `  ${k}: ${v}`))].join('\n')).join('\n\n') + '\n';
 
