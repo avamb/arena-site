@@ -1,7 +1,7 @@
 title: "Ticket sales on a WordPress site: plugin with WooCommerce orders or the widget"
-description: "Sell tickets on your WordPress site: the Arena plugin puts orders into WooCommerce while seating, tickets and scanning come from Arena; or embed the widget on any page. Two clients moved from Bil24 with zero downtime."
+description: "Sell tickets on your WordPress site: the ArenaSoldOut.com plugin puts orders into WooCommerce while seating, tickets and scanning come from ArenaSoldOut.com; or embed the widget on any page. Two clients moved from Bil24 with zero downtime."
 h1: Your WordPress, your checkout
-lead: Keep your site and your shop. The plugin creates WooCommerce orders for every ticket; the seating plan, the e-ticket and the scanning come from Arena. Or embed the widget on any page with two lines.
+lead: Keep your site and your shop. The plugin creates WooCommerce orders for every ticket; the seating plan, the e-ticket and the scanning come from ArenaSoldOut.com. Or embed the widget on any page with two lines.
 related:
   - { label: Where you sell, href: /product/sell }
   - { label: "For developers: widget and API", href: /developers }
@@ -12,7 +12,7 @@ sections:
     eyebrow: For WordPress sites
     title: Which option fits my site?
     items:
-      - { title: The plugin, text: "Orders land in WooCommerce, your shop and reports keep working; seats, tickets and the door are Arena's.", link: { label: Ask for the plugin →, href: /start } }
+      - { title: The plugin, text: "Orders land in WooCommerce, your shop and reports keep working; seats, tickets and the door are ArenaSoldOut.com's.", link: { label: Ask for the plugin →, href: /start } }
       - { title: The widget, text: "Two lines on any page or in a block; buyers pay in the hosted checkout of your provider, orders live in the Event Center.", link: { label: Developers →, href: /developers } }
       - { title: Moving from Bil24, text: "Sessions, seating plans and customers imported; two clients moved with zero downtime.", link: { label: Clients →, href: /clients } }
   - type: faq
@@ -21,7 +21,7 @@ sections:
     title: What do WordPress site owners ask first?
     items:
       - q: Will the plugin slow my site down?
-        a: The plugin talks to Arena's API on checkout; pages render as before. The widget is a web component loaded once.
+        a: The plugin talks to ArenaSoldOut.com's API on checkout; pages render as before. The widget is a web component loaded once.
       - q: Does the buyer leave my domain?
         a: With the widget the buyer stays on your page until the provider's hosted checkout, then returns. With the plugin the checkout is WooCommerce's own.
       - q: Which payment providers work?

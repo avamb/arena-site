@@ -174,7 +174,7 @@ const posts = defineCollection({
     description: z.string(),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
-    author: z.string().default('Arena Sold Out'),
+    author: z.string().default('ArenaSoldOut.com'),
     tags: z.array(z.string()).default([]),
     /** Old WordPress address, used to generate the 301 map. */
     legacy_url: z.string().optional(),

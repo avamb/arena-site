@@ -29,11 +29,11 @@ sections:
     id: scanner
     eyebrow: At the door
     title: Which app scans the tickets?
-    lead: "MACS is the Arena Sold Out access control app. Install it on the phones of your door staff, sign in with your Event Center account and scan the EAN-13 or the QR on every ticket: paper, PDF on a screen, or the e-mail. One app scans tickets of any organizer on the platform and partners' tickets from other systems, so a venue, a festival or a promoter who rents a venue uses the same phones for every event."
+    lead: "MACS is the ArenaSoldOut.com access control app. Install it on the phones of your door staff, sign in with your Event Center account and scan the EAN-13 or the QR on every ticket: paper, PDF on a screen, or the e-mail. One app scans tickets of any organizer on the platform and partners' tickets from other systems, so a venue, a festival or a promoter who rents a venue uses the same phones for every event."
     items:
       - { title: iPhone and iPad, text: "MACS on the App Store. Sign in with your Event Center account; the event list and the sessions are already there.", link: { label: Open the App Store →, href: "https://apps.apple.com/app/id6770095694" } }
       - { title: Android, text: "MACS on Google Play. The same app, the same account, handheld scanners with a camera or a laser work as well.", link: { label: Open Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
-      - { title: "Any organizer, one app", text: "Door staff of a venue scan tickets of every organizer who sells through Arena, and tickets sold by partners in other systems, without switching apps.", link: { label: "MACS as a product →", href: /product/scanner } }
+      - { title: "Any organizer, one app", text: "Door staff of a venue scan tickets of every organizer who sells through ArenaSoldOut.com, and tickets sold by partners in other systems, without switching apps.", link: { label: "MACS as a product →", href: /product/scanner } }
   - type: cta
     id: start
     title: Start selling today

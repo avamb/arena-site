@@ -41,7 +41,7 @@ export const indexing: boolean = envIndexing !== undefined ? envIndexing === 'tr
 export const siteUrl: string = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env?.SITE_URL ?? 'https://new.arenasoldout.com';
 
 export const org = {
-  name: 'Arena Sold Out',
+  name: 'ArenaSoldOut.com',
   legalName: 'ABH TEAM OÜ',
   foundingYear: 2019,
   region: 'EU',

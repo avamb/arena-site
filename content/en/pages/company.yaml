@@ -1,7 +1,7 @@
 # About the company. Facts: BRIEF.md, clients.yaml (track record), doc 33. The owner reviews before launch.
-title: "About Arena Sold Out: ticketing infrastructure for organizers since 2019"
-description: "Arena Sold Out is ticketing infrastructure for event organizers, run by ABH TEAM OÜ (EU). Organizers in 35 countries since 2019; the platform was rebuilt in 2026. Founders with Cirque du Soleil, FIFA 2018 and World Choir Games behind them."
-h1: Who is behind Arena Sold Out
+title: "About ArenaSoldOut.com: ticketing infrastructure for organizers since 2019"
+description: "ArenaSoldOut.com is ticketing infrastructure for event organizers, run by ABH TEAM OÜ (EU). Organizers in 35 countries since 2019; the platform was rebuilt in 2026. Founders with Cirque du Soleil, FIFA 2018 and World Choir Games behind them."
+h1: Who is behind ArenaSoldOut.com
 lead: A small team that builds ticketing infrastructure for organizers who sell their own tickets. Not a marketplace, not an event listing. Organizers in 35 countries since 2019; the platform behind them was rebuilt in 2026 and the organizers moved with it.
 related:
   - { label: Clients and track record, href: /clients }
@@ -11,11 +11,11 @@ sections:
   - type: prose
     id: story
     eyebrow: Company
-    title: What is Arena Sold Out?
+    title: What is ArenaSoldOut.com?
     body: |
-      Arena Sold Out is a ticketing platform for organizers: reserved seating and general admission in one event, the organizer's own payment account, a sales page we host or a widget on the organizer's site, an Event Center in the browser and in Telegram. Buyers pay the organizer directly; the platform never holds the money.
+      ArenaSoldOut.com is a ticketing platform for organizers: reserved seating and general admission in one event, the organizer's own payment account, a sales page we host or a widget on the organizer's site, an Event Center in the browser and in Telegram. Buyers pay the organizer directly; the platform never holds the money.
 
-      The company is ABH TEAM OÜ, registered in the European Union. The founders' earlier platforms served Cirque du Soleil shows, FIFA 2018 stadiums, the World Choir Games and 800 ice shows; Arena Sold Out has sold tickets for organizers since 2019 and was rebuilt from the ground up in 2026.
+      The company is ABH TEAM OÜ, registered in the European Union. The founders' earlier platforms served Cirque du Soleil shows, FIFA 2018 stadiums, the World Choir Games and 800 ice shows; ArenaSoldOut.com has sold tickets for organizers since 2019 and was rebuilt from the ground up in 2026.
 
       The team answers organizers in person, in English, Spanish, Czech, Russian and Hebrew. Most requests from organizers ship within weeks; every one that reached production is listed on the [changes page](/changes) with its date, and the [facts page](/facts) says what exists, what does not and since when.
   - type: cards

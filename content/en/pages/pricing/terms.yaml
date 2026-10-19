@@ -9,7 +9,7 @@ sections:
     body: |
       ## Ticketing partner mention
 
-      The standard per-ticket fee assumes that the event page on your site names Arena Sold Out as the ticketing partner: a text line or the badge we provide, linking to arenasoldout.com. If you prefer not to mention us, a white-label fee of {whitelabel} applies per event, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee.
+      The standard per-ticket fee assumes that the event page on your site names ArenaSoldOut.com as the ticketing partner: a text line or the badge we provide, linking to ArenaSoldOut.com. If you prefer not to mention us, a white-label fee of {whitelabel} applies per event, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee.
 
       ## Invoicing
 
@@ -25,7 +25,7 @@ sections:
 
       ## Privacy
 
-      Arena Sold Out processes buyers' data on behalf of the organizer for the purpose of selling and delivering tickets. The [privacy policy](/legal/privacy) describes what is processed and for how long; the [terms and conditions](/legal/terms) are the organizer agreement.
+      ArenaSoldOut.com processes buyers' data on behalf of the organizer for the purpose of selling and delivering tickets. The [privacy policy](/legal/privacy) describes what is processed and for how long; the [terms and conditions](/legal/terms) are the organizer agreement.
   - type: cta
     id: start
     title: Start selling today

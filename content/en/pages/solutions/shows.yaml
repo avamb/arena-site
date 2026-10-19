@@ -26,7 +26,7 @@ sections:
       - q: How do we handle a venue we have not played before?
         a: Send its plan in any readable form and the team builds it in. The next visit reuses it.
       - q: Our tickets are also sold by local partners. Will the door cope?
-        a: Yes. The scanner app accepts partners' tickets from other systems next to Arena tickets.
+        a: Yes. The scanner app accepts partners' tickets from other systems next to ArenaSoldOut.com tickets.
       - q: Where does the money go?
         a: "Into your own payment account, in your currency, with every order. See [payments](/payments)."
   - type: cta

@@ -1,7 +1,7 @@
 {
   "skip": "Skip to content",
-  "home": "arena sold out, home",
-  "logo": "arena sold out",
+  "home": "ArenaSoldOut.com, home",
+  "logo": "ArenaSoldOut.com",
   "nav.main": "Main",
   "nav.menu": "Menu",
   "nav.close": "Close",
@@ -22,7 +22,7 @@
     "year": "numeric"
   },
   "notTranslated": "This page is not translated yet. You are reading the English version.",
-  "footer.copyright": "© 2019–2026 Arena Sold Out · ABH TEAM OÜ · EU",
+  "footer.copyright": "© 2019–2026 ArenaSoldOut.com · ABH TEAM OÜ · EU",
   "md.source": "Markdown version of this page",
   "facts.status": {
     "yes": "Yes",

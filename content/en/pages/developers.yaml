@@ -34,7 +34,7 @@ sections:
       - title: Scoped API keys
         text: A key sees one organization and only the scopes you grant. Rotate and revoke keys in the Event Center.
       - title: WordPress plugin
-        text: Orders land in WooCommerce, the shop keeps working, the seating plan and the ticket come from Arena. The plugin is how two clients moved from Bil24 with zero downtime.
+        text: Orders land in WooCommerce, the shop keeps working, the seating plan and the ticket come from ArenaSoldOut.com. The plugin is how two clients moved from Bil24 with zero downtime.
       - title: Imports
         text: Sessions, seating plans and customers imported from Bil24. Other systems through the event bundle and a CSV of customers.
       - title: OpenAPI

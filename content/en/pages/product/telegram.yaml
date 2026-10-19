@@ -23,8 +23,8 @@ sections:
     eyebrow: Questions
     title: Is Telegram the only way?
     items:
-      - q: Do I need Telegram to use Arena?
-        a: "No. The same Event Center works in the browser on arenasoldout.com, and the team can set everything up for you. Telegram is one way, for organizers who live in the messenger."
+      - q: Do I need Telegram to use ArenaSoldOut.com?
+        a: "No. The same Event Center works in the browser on ArenaSoldOut.com, and the team can set everything up for you. Telegram is one way, for organizers who live in the messenger."
       - q: Which languages does the bot speak?
         a: English, Russian and Spanish today; more follow the site languages.
       - q: Can my team use it?

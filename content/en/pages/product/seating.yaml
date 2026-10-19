@@ -10,7 +10,7 @@ sections:
   - type: faq
     id: questions
     eyebrow: Seating
-    title: How does seating work with Arena?
+    title: How does seating work with ArenaSoldOut.com?
     items:
       - q: Do I have to draw the plan myself?
         a: "No, never. Send the plan as a PDF, a spreadsheet or a hand sketch and the team builds it into your event. Vector files (SVG) are imported directly."

@@ -1,5 +1,5 @@
 title: "Who it is for: concerts, theatre, shows, festivals, concert tours, master classes, venues"
-description: "Arena Sold Out is used by organizers who sell their own tickets: concerts, theatre, shows, festivals, concert tours, master classes and trainings, venues and clubs, and sites on WordPress."
+description: "ArenaSoldOut.com is used by organizers who sell their own tickets: concerts, theatre, shows, festivals, concert tours, master classes and trainings, venues and clubs, and sites on WordPress."
 h1: Organizers who sell their own tickets
 lead: One platform, different events. Pick yours to see which parts matter most, what the first week looks like and what other organizers in your field ask first.
 related:
@@ -19,7 +19,7 @@ sections:
       - { title: Concert tours, text: "One show, many cities and dates, a page per promoter with its own link.", link: { label: For concert tours →, href: /solutions/concert-tours } }
       - { title: Master classes and trainings, text: "Small groups, recurring dates, the host's own e-mails and language.", link: { label: For hosts →, href: /solutions/master-classes } }
       - { title: Venues and clubs, text: "Your own venue, many events a month, one seating plan reused, separate terms.", link: { label: For venues →, href: /solutions/venues } }
-      - { title: Sites on WordPress, text: "Plugin with WooCommerce orders; the shop keeps working, tickets come from Arena.", link: { label: For WordPress sites →, href: /solutions/wordpress } }
+      - { title: Sites on WordPress, text: "Plugin with WooCommerce orders; the shop keeps working, tickets come from ArenaSoldOut.com.", link: { label: For WordPress sites →, href: /solutions/wordpress } }
   - type: cta
     id: start
     title: Start selling today

@@ -1,5 +1,5 @@
 title: "Partners: venues, promoters, WordPress agencies and developers"
-description: "How venues, promoters, WordPress agencies and developers work with Arena Sold Out: promoter pages, the plugin, the widget and the public API, separate terms for permanent venues."
+description: "How venues, promoters, WordPress agencies and developers work with ArenaSoldOut.com: promoter pages, the plugin, the widget and the public API, separate terms for permanent venues."
 h1: Partners
 lead: Venues that host events, promoters who sell them, agencies that build organizers' sites, developers who integrate. Each has a place in the platform and a person on the team to talk to.
 related:
@@ -10,7 +10,7 @@ sections:
   - type: cards
     id: kinds
     eyebrow: Partners
-    title: How do partners work with Arena?
+    title: How do partners work with ArenaSoldOut.com?
     items:
       - { title: Venues, text: "A permanent venue brings its plan once and offers it to every organizer who rents it; separate terms with a percentage of the ticket price.", link: { label: Venues and clubs →, href: /solutions/venues } }
       - { title: Promoters, text: "A page per promoter with its own link and codes; the organizer sees every channel, the promoter sees its own.", link: { label: Where you sell →, href: /product/sell } }
@@ -24,7 +24,7 @@ sections:
       - q: Is there a referral or reseller fee?
         a: Partnership terms are agreed individually; write to the team with what you do and for whom.
       - q: Can a ticket sold by a partner be scanned at the door?
-        a: "Yes. The [MACS scanner app](/product/scanner) accepts partners' tickets from other systems next to Arena tickets, on iOS and Android."
+        a: "Yes. The [MACS scanner app](/product/scanner) accepts partners' tickets from other systems next to ArenaSoldOut.com tickets, on iOS and Android."
       - q: Can an agency manage several organizers?
         a: Yes, with roles in each organization's Event Center and scoped API keys per organization.
   - type: cta

@@ -2,7 +2,7 @@
 # Numbers are the OLD price list kept for launch (owner decision 07.10); Marina will revisit after
 # the competitor pricing analysis. Edit here, every page and facts.json follow.
 venues_percent: 2
-# White label: no mention of Arena Sold Out on the organizer's own event page, per event (Marina sets the number).
+# White label: no mention of ArenaSoldOut.com on the organizer's own event page, per event (Marina sets the number).
 white_label_per_event: 45
 white_label_currency: EUR
 invoicing: day after each session

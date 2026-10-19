@@ -2,12 +2,12 @@
 title: "Payments: your own payment account, in your country"
 description: "Buyers pay into the organizer's own payment account. Providers by region with status, methods and currencies; markets live today and regions in preparation."
 h1: Buyers pay into your own payment account
-lead: You connect the account you already have, or open one with a provider of your country. Every order goes straight to it. Arena never holds funds and never touches your payouts.
+lead: You connect the account you already have, or open one with a provider of your country. Every order goes straight to it. ArenaSoldOut.com never holds funds and never touches your payouts.
 sections:
   - type: providers
     id: providers
     eyebrow: Providers
-    title: Which payment providers work with Arena?
+    title: Which payment providers work with ArenaSoldOut.com?
     lead: The list is the list of what runs in production today. A provider is added when its adapter is in the code, never before.
     labels:
       regions: Countries
@@ -32,11 +32,11 @@ sections:
   - type: markets
     id: markets
     eyebrow: Markets
-    title: Where do organizers sell with Arena today?
+    title: Where do organizers sell with ArenaSoldOut.com today?
     lead: A market is a language, a currency, a provider and the local rules together. These are live.
     preparing:
       title: In preparation
-      text: Regions where organizers have asked for Arena and a local provider is being integrated. No dates and no provider names until the adapter is in the code.
+      text: Regions where organizers have asked for ArenaSoldOut.com and a local provider is being integrated. No dates and no provider names until the adapter is in the code.
 
   - type: cards
     id: connect
@@ -45,10 +45,10 @@ sections:
     lead: Three things, usually within a day.
     items:
       - title: Keys in your own account
-        text: You create API keys in your provider's dashboard and paste them into the Event Center or send them to the team. The account stays yours; Arena only initiates payments into it.
+        text: You create API keys in your provider's dashboard and paste them into the Event Center or send them to the team. The account stays yours; ArenaSoldOut.com only initiates payments into it.
       - title: Money to your account
         text: Every order is paid to your account directly. Payouts to your bank follow your provider's schedule. Refunds and chargebacks are decided by you.
-      - title: Arena holds nothing
+      - title: ArenaSoldOut.com holds nothing
         text: The platform service is invoiced after each session, separately. Nothing is deducted from your sales. If you ever leave, your payment account and your buyers' data stay with you.
 
   - type: cta

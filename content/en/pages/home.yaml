@@ -1,7 +1,7 @@
 # Home page. Every string here is the final English copy from design/prototype/direction-a.html
 # (direction A, iteration 3, founders' review 08.10.2026). Change texts here, not in components.
 # Inline marks: **bold**, [link text](href). Nothing else is interpreted.
-title: "Arena Sold Out: sell seats, sell tickets, keep the money"
+title: "ArenaSoldOut.com: sell seats, sell tickets, keep the money"
 description: "Ticketing platform for organizers. Put your event on sale in minutes, on your own site or on a page we host. Buyers pay into your own payment account."
 sections:
   - type: hero
@@ -69,7 +69,7 @@ sections:
         text: "The event name and schedule, your ticket prices, your poster, and your own payment account: Stripe, Flitt, AllPay or another provider of your country. Money goes to you from the first ticket."
       - title: Which way do I set it up?
         text: "In the browser, in the “Event Center”*. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. Or send it to us and we set it up."
-    note: "* The “Event Center” is your organizer account on arenasoldout.com: every event, order, refund, invitation and session, for you and your team, in the browser and in Telegram. [See the Event Center below →](#center)"
+    note: "* The “Event Center” is your organizer account on ArenaSoldOut.com: every event, order, refund, invitation and session, for you and your team, in the browser and in Telegram. [See the Event Center below →](#center)"
 
   - type: ways
     id: where
@@ -132,7 +132,7 @@ sections:
         text: "In your “Event Center”, your own account on this site: open it on a phone or a computer, nothing to install. All your events, every order, refunds and per-session totals, visible to you and your team only. Prefer Telegram? Every sale and refund also lands in your Telegram group within seconds, with the buyer's contact. [See the Event Center below →](#center)"
         visual:
           type: telegram
-          from: Arena Sales
+          from: ArenaSoldOut.com
           lines:
             - "**Paid** · Autumn Jazz Night · Fri 24 Oct"
             - Row G 7–8 · Parterre
@@ -147,7 +147,7 @@ sections:
     id: center
     eyebrow: Event Center
     title: Orders, tickets, refunds and invitations in one place
-    lead: "The “Event Center” is your own account on arenasoldout.com. Open it on a phone or a computer, nothing to install. Every event you run, every order, refunds, invitations and sales figures: visible to you and your team only. Scroll the screens to see what it does."
+    lead: "The “Event Center” is your own account on ArenaSoldOut.com. Open it on a phone or a computer, nothing to install. Every event you run, every order, refunds, invitations and sales figures: visible to you and your team only. Scroll the screens to see what it does."
     bullets:
       - Orders and buyers, with search and CSV reports per session
       - "Tickets: resend, refund, invite"
@@ -203,15 +203,15 @@ sections:
     id: money
     eyebrow: Money
     title: Buyers pay you. Not us.
-    lead: 100% of every sale goes to you. The buyer pays the ticket price, and the service fee if you add one, straight into your own payment account, in your currency, on your statement. Arena never holds your money. After each session you pay Arena for the platform service, per event. Refunds and chargebacks are your decision, not a platform policy.
+    lead: 100% of every sale goes to you. The buyer pays the ticket price, and the service fee if you add one, straight into your own payment account, in your currency, on your statement. ArenaSoldOut.com never holds your money. After each session you pay ArenaSoldOut.com for the platform service, per event. Refunds and chargebacks are your decision, not a platform policy.
     flowAria: Payment flow
     nodes:
       - { label: Buyer, sub: "card, Apple Pay, Google Pay" }
       - { label: Your site, sub: or the sales page we host }
-      - { label: Arena, sub: "order, seats, ticket" }
+      - { label: ArenaSoldOut.com, sub: "order, seats, ticket" }
       - { label: Your payment account, providers: true, highlight: true }
       - { label: Your bank, sub: on the provider's schedule }
-    note: After each session you pay Arena for the platform service. Nothing is deducted from your sales, nothing is held.
+    note: After each session you pay ArenaSoldOut.com for the platform service. Nothing is deducted from your sales, nothing is held.
 
   - type: pricing
     id: pricing
@@ -221,7 +221,7 @@ sections:
     planBullets:
       - "**+{seating}** per ticket on events with a seating plan"
       - "**Free** invitations and refunds, no fee"
-      - Name Arena Sold Out as the ticketing partner on your event page**
+      - Name ArenaSoldOut.com as the ticketing partner on your event page**
     cta: { label: Start selling, href: /start }
     venues:
       text: "**For owners of permanent venues** (theatres, clubs, stadiums, circuses): separate terms, {percent}% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds."
@@ -235,7 +235,7 @@ sections:
       sales: your sales {net}, acquiring not included
     note: "Standard terms; volume and individual terms on request. You pay for the platform service after each session; for events on sale for several months, monthly."
     terms: { label: Detailed terms →, href: /pricing/terms }
-    footnote: "** These prices apply when your event page names Arena Sold Out as the ticketing partner, with a clickable link to [arenasoldout.com](https://arenasoldout.com). If you prefer not to mention us on your own site, white label costs {whitelabel} per event. Events sold on a page we host carry no white-label fee."
+    footnote: "** These prices apply when your event page names ArenaSoldOut.com as the ticketing partner, with a clickable link to [ArenaSoldOut.com](https://arenasoldout.com). If you prefer not to mention us on your own site, white label costs {whitelabel} per event. Events sold on a page we host carry no white-label fee."
 
   - type: who
     id: who
@@ -254,7 +254,7 @@ sections:
     id: clients
     eyebrow: Clients
     title: Organizers in {countries} countries
-    lead: Arena Sold Out has sold tickets for organizers since {since}; the platform behind it was rebuilt in 2026 and the organizers moved with it. The founders' earlier platforms served {track}. Their words and logos are on the clients page.
+    lead: ArenaSoldOut.com has sold tickets for organizers since {since}; the platform behind it was rebuilt in 2026 and the organizers moved with it. The founders' earlier platforms served {track}. Their words and logos are on the clients page.
     cta: { label: Clients and testimonials, href: /clients }
     marksAria: Clients
 

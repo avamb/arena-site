@@ -4,7 +4,7 @@
 # platform actually serves (website visitors, organizers, ticket buyers) described from facts.yaml
 # and the payments page. Points the owner still has to confirm are listed in the hand-over note.
 title: "Privacy Policy"
-description: "How Arena Sold Out (ABH TEAM OÜ) processes personal data of website visitors, organizers and ticket buyers: what we collect, why, who receives it, how long we keep it, your rights, cookies."
+description: "How ArenaSoldOut.com (ABH TEAM OÜ) processes personal data of website visitors, organizers and ticket buyers: what we collect, why, who receives it, how long we keep it, your rights, cookies."
 h1: "Privacy Policy"
 lead: "Version of 9 October 2026. Replaces the version of 5 August 2023. Applies to the website, the Event Center, the sales pages, the widget, the API, the Telegram bot and the scanner app."
 related:
@@ -15,7 +15,7 @@ sections:
   - type: prose
     id: text
     body: |
-      This Privacy Policy explains how ABH TEAM OÜ, which operates the Arena Sold Out ticketing platform ("we", "Arena"), treats personal data that we collect and receive through the website arenasoldout.com, the Event Center at app.arenasoldout.com, the hosted sales pages and the ticket widget at tickets.arenasoldout.com, the public API, the Telegram bot and the scanner app (together, the "services").
+      This Privacy Policy explains how ABH TEAM OÜ, which operates the ArenaSoldOut.com ticketing platform ("we", "ArenaSoldOut.com"), treats personal data that we collect and receive through the website ArenaSoldOut.com, the Event Center at app.arenasoldout.com, the hosted sales pages and the ticket widget at tickets.arenasoldout.com, the public API, the Telegram bot and the scanner app (together, the "services").
 
       It applies to three groups of people: visitors of the website; organizers who use the services and the members of their teams ("organizers"); and people who buy tickets from organizers through the services ("ticket buyers").
 

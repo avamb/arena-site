@@ -7,7 +7,7 @@ capabilities:
     since: 2026-09-20
   - name: The organizer never enters the plan into the system; send a PDF, a spreadsheet or a hand sketch and the team creates the venue
     status: yes
-  - name: Money goes straight to the organizer's own payment account; Arena never holds funds
+  - name: Money goes straight to the organizer's own payment account; ArenaSoldOut.com never holds funds
     status: yes
     since: 2026-09-20
   - name: Hosted sales page tickets.arenasoldout.com/{org}/{event} and a page per promoter
@@ -79,7 +79,7 @@ capabilities:
     status: no
   - name: Event listing or marketplace
     status: no
-    note: Arena is infrastructure for organizers, not a catalogue.
+    note: ArenaSoldOut.com is infrastructure for organizers, not a catalogue.
 languages:
   buyer_page: [en, ru, cs, he, es]
   emails: 7
