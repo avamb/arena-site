@@ -1,12 +1,12 @@
 ---
 /**
  * Sections used by inner pages: prose, faq, providers, markets, cards, code, marks, changelog,
- * posts, facts-table, form. Kept in one file because each is small and shares the page rhythm.
+ * posts, facts-table, onboarding (the application form). Kept in one file because each is small and shares the page rhythm.
  */
 import type { Section } from '@/content.config';
 import type { CollectionEntry } from 'astro:content';
 import type { LanguageCode } from '@config';
-import { turnstileSiteKey } from '@config';
+import { hosts, onboardingTurnstileSiteKey } from '@config';
 import { marked } from 'marked';
 import { inline, fill } from '@/lib/inline';
 import { clients, facts, tariff } from '@/lib/data';
@@ -38,7 +38,6 @@ const liveMarkets = markets.filter((m) => m.data.status === 'live');
 const plannedGroups = [...new Set(markets.filter((m) => m.data.status === 'planned').map((m) => m.data.group ?? m.data.name.en))];
 const marketName = (m: CollectionEntry<'markets'>) => m.data.name[lang] ?? m.data.name.en;
 const providerName = (id: string) => providers.find((p) => p.id === id)?.data.name ?? id;
-const countryOptions = [...liveMarkets, ...markets.filter((m) => m.data.status === 'planned')];
 const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) => l.code !== lang).map(async (l) => ({ l, n: (await getPosts(l.code)).length })))).filter((x) => x.n > 0) : [];
 ---
 <section class="section" id={s.id} style={pad}>
@@ -159,43 +158,14 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
       </>
     )}
 
-    {s.type === 'form' && (
-      <form class="form" id="start-form" method="post" action="/api/forms/start" novalidate data-errors={JSON.stringify(s.errors)} data-sending={s.sending}>
-        <input type="hidden" name="lang" value={lang} />
-        <input type="hidden" name="redirect" value={localePath(lang, '/start/thanks')} />
-        <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
-        <div class="field"><label for="f-org">{s.fields.organization}</label><input id="f-org" name="organization" required autocomplete="organization" /><span class="err"></span></div>
-        <div class="row">
-          <div class="field"><label for="f-country">{s.fields.country}</label>
-            <select id="f-country" name="country" required>
-              <option value="" selected disabled></option>
-              {countryOptions.map((m) => <option value={m.data.iso2}>{marketName(m)}</option>)}
-              <option value="other">{s.fields.countryOther}</option>
-            </select><span class="err"></span></div>
-          <div class="field"><label for="f-provider">{s.fields.provider}</label>
-            <select id="f-provider" name="provider">
-              <option value="none">{s.fields.providerNone}</option>
-              {providers.map((p) => <option value={p.id}>{p.data.name}</option>)}
-              <option value="other">{s.fields.providerOther}</option>
-            </select></div>
-        </div>
-        <div class="field"><label for="f-name">{s.fields.name}</label><input id="f-name" name="name" required autocomplete="name" /><span class="err"></span></div>
-        <div class="row">
-          <div class="field"><label for="f-email">{s.fields.email}</label><input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" /><span class="err"></span></div>
-          <div class="field"><label for="f-phone">{s.fields.phone}</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" /><span class="err"></span></div>
-        </div>
-        <div class="field"><label for="f-msg">{s.fields.message}</label><textarea id="f-msg" name="message"></textarea><span class="hint">{s.fields.messageHint}</span></div>
-        {turnstileSiteKey && <div class="cf-turnstile" data-sitekey={turnstileSiteKey} data-size="flexible"></div>}
-        <p class="hint" style="font-size:13px;color:var(--fg-3)" set:html={inline(s.consent)} />
-        <div class="hero-actions" style="margin-top:4px">
-          <button class="btn btn-primary" type="submit">{s.submit}</button>
-          <a class="btn btn-ghost" href={localePath(lang, s.alt.link.href)}>{s.alt.link.label}</a>
-        </div>
-        <p class="form-status" role="status" aria-live="polite"></p>
-        <p style="color:var(--fg-2);font-size:14.5px" id="create" set:html={inline(s.alt.text)} />
-      </form>
+    {s.type === 'onboarding' && (
+      <>
+      <div id="onb" class="onb" data-mode={s.mode} data-api={hosts.api} data-lang={lang} data-sitekey={onboardingTurnstileSiteKey} data-ui={JSON.stringify(s.ui)} data-paths={JSON.stringify({ start: localePath(lang, '/start'), continue: localePath(lang, '/start/continue'), thanks: localePath(lang, '/start/thanks'), terms: localePath(lang, '/legal/terms'), privacy: localePath(lang, '/legal/privacy') })}>
+        <noscript><p class="form-status" data-state="error">{s.ui.noscript}</p></noscript>
+      </div>
+      {s.alt && <p style="color:var(--fg-2);font-size:14.5px;margin-top:20px" id="create"><span set:html={inline(s.alt.text)} /> <a href={s.alt.link.href} style="color:var(--accent);font-weight:600">{s.alt.link.label}</a></p>}
+      </>
     )}
   </div>
 </section>
-{s.type === 'form' && turnstileSiteKey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}
-{s.type === 'form' && <script src="@/scripts/start-form.ts"></script>}
+{s.type === 'onboarding' && <script src="@/scripts/onboarding.ts"></script>}

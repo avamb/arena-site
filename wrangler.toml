@@ -1,9 +1,9 @@
-# Cloudflare Worker "arena-site": Workers Static Assets serve dist/, the Worker handles /api/* only
-# (forms/worker.ts). No KV, D1, R2 or Durable Objects by rule (doc 33 §3.7a). No secrets here:
-# TURNSTILE_SECRET_KEY, FORMS_WEBHOOK_URL, FORMS_WEBHOOK_TOKEN are `wrangler secret put` values,
+# Cloudflare Worker "arena-site": Workers Static Assets serve dist/, the Worker only answers the
+# www./new. -> apex redirects (worker/index.ts). No KV, D1, R2 or Durable Objects by rule (doc 33 §3.7a).
+# No secrets here: the application form talks to the platform API from the browser, and
 # CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID come from the environment (GitHub Actions secrets).
 name = "arena-site"
-main = "forms/worker.ts"
+main = "worker/index.ts"
 compatibility_date = "2026-09-01"
 compatibility_flags = ["nodejs_compat"]
 workers_dev = false
@@ -14,7 +14,7 @@ directory = "./dist"
 binding = "ASSETS"
 not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"
-run_worker_first = true # the Worker also answers the www./new. -> apex redirects
+run_worker_first = true # the Worker answers the www./new. -> apex redirects
 
 # Development host (doc 33 §3.7b). On launch day replace with:
 #   { pattern = "arenasoldout.com", custom_domain = true },

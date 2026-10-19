@@ -142,17 +142,13 @@ export const section = z.discriminatedUnion('type', [
   z.object({ type: z.literal('posts'), ...sectionBase, empty: z.string() }),
   z.object({ type: z.literal('facts-table'), ...sectionBase }),
   z.object({
-    type: z.literal('form'),
+    type: z.literal('onboarding'),
     ...sectionBase,
-    fields: z.object({
-      organization: z.string(), country: z.string(), countryOther: z.string(), provider: z.string(), providerNone: z.string(), providerOther: z.string(),
-      name: z.string(), email: z.string(), phone: z.string(), message: z.string(), messageHint: z.string(),
-    }),
-    submit: z.string(),
-    sending: z.string(),
-    errors: z.object({ required: z.string(), email: z.string(), phone: z.string(), server: z.string(), turnstile: z.string() }),
-    consent: z.string(),
-    alt: z.object({ text: z.string(), link: link }),
+    /** Which page of the application this is: the steps, the e-mail for a new link, the e-mail confirmation. */
+    mode: z.enum(['apply', 'continue', 'confirm']),
+    /** Every UI string of the client script (labels of the form itself come from the platform's form-schema). */
+    ui: z.record(z.string(), z.string()),
+    alt: z.object({ text: z.string(), link: link }).optional(),
   }),
 ]);
 

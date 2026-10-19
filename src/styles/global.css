@@ -75,6 +75,19 @@ main:focus{outline:none}
 .form-status{font-size:14.5px;color:var(--fg-2);min-height:1.5em}
 .form-status[data-state="error"]{color:var(--warn)}
 .form-status[data-state="success"]{color:var(--ok)}
+.onb{max-width:640px;margin-top:32px}
+.onb .form{margin-top:0}
+.onb-progress{height:6px;border-radius:3px;background:var(--line-2);overflow:hidden;margin:8px 0 24px}
+.onb-progress span{display:block;height:100%;background:var(--accent);transition:width .25s}
+.onb-crumb{font-size:13.5px;color:var(--fg-3);font-weight:600;margin:0}
+.onb-h{font-size:22px;margin:0}
+.onb-note{font-size:13px;color:var(--fg-3)}
+.onb-ok{color:var(--ok);font-size:14.5px;margin:0}
+.onb-ask{color:var(--fg);background:var(--surface);border:1px solid var(--line-2);border-radius:10px;padding:12px 14px;font-size:14.5px;margin:0}
+.onb-checks{display:grid;gap:8px}
+.onb-check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:15px;color:var(--fg);cursor:pointer}
+.onb-check input{width:18px;height:18px;margin-top:2px;flex:none;accent-color:var(--accent)}
+.field-bool{gap:4px}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .list-plain{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .post-list{margin-top:32px;display:grid;gap:0;border-top:1px solid var(--line)}

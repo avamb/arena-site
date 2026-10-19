@@ -159,9 +159,9 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       facts.capabilities.forEach((c) => out.push(`| ${c.name} | ${c.status} | ${c.since ? c.since.toISOString().slice(0, 10) : ''} | ${c.note ?? ''} |`));
       out.push('', `Buyer page languages: ${facts.languages.buyer_page.join(', ')}. E-mails in ${facts.languages.emails} languages. Load test ${formatDate(d.lang, facts.limits.load_test_date, { dateStyle: 'medium' })}: ${facts.limits.orders_per_minute} orders a minute at ${facts.limits.concurrent_visitors} concurrent visitors. Backups: ${facts.backups}.`, '', `Updated ${facts.updated.toISOString().slice(0, 10)}.`, '');
       break;
-    case 'form':
+    case 'onboarding':
       h2(s.title); lead(s.lead);
-      out.push(`Fields: ${[s.fields.organization, s.fields.country, s.fields.provider, s.fields.name, s.fields.email, s.fields.phone, s.fields.message].join(', ')}.`, '', `${plain(s.alt.text)} [${s.alt.link.label}](${abs(s.alt.link.href)})`, '');
+      if (s.alt) out.push(`${plain(s.alt.text)} [${s.alt.link.label}](${abs(s.alt.link.href)})`, '');
       break;
   }
   return out.join('\n');

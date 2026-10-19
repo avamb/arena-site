@@ -71,6 +71,13 @@ export const umami = {
  */
 export const turnstileSiteKey: string = '0x4AAAAAAFRfZMQDu7dPl6Rk'; // widget "arena-site forms": arenasoldout.com, new.arenasoldout.com, localhost
 
+/**
+ * Turnstile widget of the application form. The platform verifies the token with ITS secret
+ * (ONBOARDING_TURNSTILE_SECRET), so the secret must belong to the widget whose site key is here.
+ * Until a dedicated "arena onboarding" widget exists this is the site's forms widget.
+ */
+export const onboardingTurnstileSiteKey: string = turnstileSiteKey;
+
 /** AI crawlers explicitly allowed in robots.txt (doc 33 §3.10, item 9). Review quarterly. */
 export const allowedAgents = [
   'GPTBot',

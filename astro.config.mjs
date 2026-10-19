@@ -26,7 +26,7 @@ export default defineConfig({
   integrations: [
     svelte(),
     sitemap({
-      filter: (page) => !page.includes('/start/thanks') && !page.endsWith('/404'),
+      filter: (page) => !/\/start\/(thanks|continue|confirm)/.test(page) && !page.endsWith('/404'),
       i18n: {
         defaultLocale: defaultLanguage,
         locales: Object.fromEntries(languages.map((l) => [l.code, l.intl])),

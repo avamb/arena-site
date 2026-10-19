@@ -33,7 +33,7 @@ jobs:
       - run: npm run check:jsonld
       - run: npm run check:agents
       - run: npm run check:links
-      - run: npm run forms:test
+      - run: npm run onboarding:test
       - uses: actions/upload-artifact@v4
         with:
           name: dist
@@ -73,7 +73,7 @@ jobs:
       - name: smoke
         run: |
           set -euo pipefail
-          docker run -d --rm --name site -p 8080:8080 -e FORMS_UPSTREAM=127.0.0.1:8787 arena-site:ci
+          docker run -d --rm --name site -p 8080:8080 arena-site:ci
           for i in $(seq 1 20); do curl -fsS http://127.0.0.1:8080/healthz >/dev/null && break; sleep 1; done
           code=$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/); test "$code" = 200
           code=$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/pricing); test "$code" = 200

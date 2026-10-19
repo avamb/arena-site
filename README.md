@@ -15,7 +15,7 @@ npm run dev
 Opens `http://localhost:4321`. `npm run build` writes `dist/` plus `_redirects`, `_headers` and the
 nginx includes; `npm run preview` serves the build. `npm run check` runs every CI check
 (types, anti-slop grep, translation parity, redirects/headers parity, JSON-LD, agent files).
-`npm run forms:test` tests the form handler; `npm run forms:dev` runs it on `http://localhost:8787`.
+`npm run onboarding:test` tests the pure helpers of the application form.
 
 Requirements: Node 22, npm 10. Lighthouse locally: `npm run lhci` (needs Chrome).
 
@@ -77,7 +77,7 @@ FAQ answers, blog posts with "Read next" (newest posts) and "Related pages" (pro
 Push to `main` → GitHub Actions (`.github/workflows/ci.yml`): build and checks → Lighthouse (all
 four categories 100 on `/` and `/pricing`) → nginx image parity smoke → `wrangler deploy` with the
 repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. The Worker `arena-site`
-serves `dist/` as static assets and runs `forms/worker.ts` for `/api/*` only.
+serves `dist/` as static assets; `worker/index.ts` only answers the `www.`/`new.` → apex redirects.
 
 Manual deploy from a machine with the token in the environment:
 
@@ -86,16 +86,17 @@ npm run build
 npx wrangler deploy
 ```
 
-Worker secrets (same names as `.env.example`), set once:
+The Worker needs no secrets. The application form (`/start`, `/start/continue`, `/start/confirm`) is
+drawn in the browser from the platform's `GET /v1/onboarding/form-schema` and posts to
+`https://api.arenasoldout.com/v1/onboarding/*` directly (`src/scripts/onboarding.ts`, contract in the
+platform repo `08_architecture/34_onboarding_applications_ru.md` §9, appendix A). The access token to the
+draft lives in the visitor's `localStorage`.
 
-```bash
-npx wrangler secret put TURNSTILE_SECRET_KEY
-npx wrangler secret put FORMS_WEBHOOK_URL
-```
-
-Turnstile: the site key is public and lives in `site.config.ts` (`turnstileSiteKey`); empty means the
-widget is off and the handler skips verification. The n8n webhook URL is `FORMS_WEBHOOK_URL`; while it
-is empty the handler accepts applications and logs them.
+Turnstile: the site key is public and lives in `site.config.ts` (`onboardingTurnstileSiteKey`). The
+platform verifies the token, so ITS secret (`ONBOARDING_TURNSTILE_SECRET`) must belong to the widget with
+this key. The platform also needs `https://arenasoldout.com` in `CORS_ALLOWED_ORIGINS`,
+`ONBOARDING_SITE_URL=https://arenasoldout.com` (the e-mailed link goes to `/start/confirm`) and
+`ONBOARDING_ENABLED` on; without CORS the browser blocks every request of the form.
 
 ### Own server instead of Cloudflare (doc 33 §3.7a)
 
@@ -107,9 +108,7 @@ server (domain stays proxied by Cloudflare), done. Redirects and headers come fr
 ```bash
 npm run build
 docker build -f ops/nginx/Dockerfile -t arena-site .
-docker build -f ops/forms/Dockerfile -t arena-site-forms .
-docker run -d -p 8787:8787 --env-file .env arena-site-forms
-docker run -d -p 8080:8080 -e FORMS_UPSTREAM=host.docker.internal:8787 arena-site
+docker run -d -p 8080:8080 arena-site
 ```
 
 ## Launch day: switch the domain to the apex
@@ -159,9 +158,9 @@ src/content.config.ts   zod schemas = editor fields
 src/pages/          one catch-all route per page + .md twins, llms.txt, facts.json, robots.txt
 src/components/     header, footer, icons, sections (data in, HTML out), Svelte islands
 src/styles/         tokens.css (both themes), components.css (prototype CSS), global.css
-forms/              Hono form handler: app.ts, worker.ts (Cloudflare), server-node.ts (container)
+worker/              Cloudflare Worker entry (apex redirects), index.ts
 scripts/            build-edge (redirects/headers), check-* (CI gates)
-ops/nginx, ops/forms   Dockerfiles and nginx config for the self-hosted variant
+ops/nginx           Dockerfile and nginx config for the self-hosted variant
 redirects.yaml, headers.yaml   single source for Cloudflare and nginx
 wrangler.toml       Worker config (no secrets)
 design/             brief, prototype, brand vectors, doc 33, anti-slop catalog

@@ -1,0 +1,36 @@
+# /start/confirm?token=...: opened from the e-mail. Confirms the address, stores the new access token
+# and sends the applicant back to the form.
+title: "Confirm your e-mail"
+description: "Confirming your e-mail address for the organizer application."
+h1: Confirm your e-mail
+lead: One moment, we are checking the link.
+sections:
+  - type: onboarding
+    id: form
+    mode: confirm
+    ui:
+      noscript: "The application form needs JavaScript. Write to us in Telegram instead and we will set you up by hand."
+      optional: "(optional)"
+      url_list_hint: "One link per line"
+      sending: "Sending…"
+      email: "E-mail"
+      err_required: "This field is required"
+      err_invalid: "Check this value"
+      err_too_long: "This is too long"
+      err_not_allowed: "We do not accept applications from this country yet"
+      e_generic: "Something went wrong. Try again in a minute, or write to us in Telegram."
+      e_network: "No connection to the server. Check your internet and try again."
+      e_unavailable: "The form is not available right now. Try again in a minute, or write to us in Telegram."
+      e_session: "Your draft is no longer available. Start again, it takes a minute."
+      e_incomplete: "Some required answers are missing. They are marked above."
+      e_email_not_confirmed: "Confirm your e-mail first: open the link in the message we sent you, then press Send again."
+      e_rate_limited: "Too many attempts. Wait a few minutes and try again."
+      e_turnstile_failed: "The anti-spam check did not pass. Wait a second for it to finish and try again."
+      e_captcha_not_configured: "The form is not available right now. Write to us in Telegram."
+      e_captcha_unavailable: "Could not run the anti-spam check. Try again in a minute."
+      e_locked: "This application is already sent and can no longer be edited."
+      confirming: "Confirming your e-mail…"
+      confirmed: "Your e-mail is confirmed. Your draft is waiting for you."
+      go_on: "Continue the application"
+      confirm_failed: "This link is expired or was already used. We can send a new one."
+      send_new_link: "Send me a new link"

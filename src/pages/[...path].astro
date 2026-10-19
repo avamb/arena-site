@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 const { lang, slug } = Astro.props;
 const p = await loadPage(lang, slug);
 const mdPath = p.path === '/' ? '/index.md' : lang !== defaultLanguage && p.path === `/${lang}` ? `/${lang}/index.md` : `${p.path}.md`;
-const noindex = slug === 'start/thanks';
+const noindex = slug.startsWith('start/') && slug !== 'start';
 ---
 <Base lang={lang} path={p.path} title={p.page.data.title} description={p.page.data.description} translated={p.translated} jsonld={p.jsonld} markdownPath={mdPath} noindex={noindex}>
   <Sections p={p} />

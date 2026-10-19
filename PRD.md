@@ -21,8 +21,9 @@ with `noindex`; the apex and `www` switch over on launch day.
 | `/clients` | Wordmarks (text), track record, link to testimonials (gallery later) | Full |
 | `/blog` | Skeleton: index reads the `posts` collection; archive import is wave 2 | Skeleton |
 | `/changes` | Skeleton: reads the `changelog` collection, same ten lines as the home page | Skeleton |
-| `/start` | Application form: organization, country, provider you already use, contact; Hono handler, Turnstile, webhook to n8n (URL from env) | Full (no n8n yet) |
-| `/start/thanks` | Success page (also for no-JS submissions) | Full |
+| `/start` | Organizer application drawn in the browser from the platform's `form-schema` (contact, organization, events, payments, consent), autosaved per step, Turnstile, created through `/v1/onboarding` | Full |
+| `/start/continue`, `/start/confirm` | A new link to an open draft by e-mail; confirmation of the e-mail from the link | Full |
+| `/start/thanks` | Success page after the application is sent | Full |
 | `/llms.txt`, `/llms-full.txt`, `/*.md`, `/robots.txt`, `/sitemap-index.xml` | Generated from the same data | Full |
 | `/404` | Not found page | Full |
 
@@ -73,7 +74,7 @@ because every collection already has a zod schema.
 - Both themes, prefers-color-scheme + visitor choice, no flash (section 3.11).
 - Portability: `redirects.yaml` and `headers.yaml` generate both `_redirects`/`_headers` and
   nginx config; nginx image built on every push with a smoke test (section 3.7a).
-- Form handler on Hono with Worker and Node entry points; secrets by the same names in both.
+- No form backend on the site: the application form calls the platform API from the browser (doc 34 §9), the platform verifies Turnstile and notifies the operator.
 - Agents: `llms.txt`, `llms-full.txt`, Markdown twin per page, JSON-LD on every page, `/facts`,
   robots allowing AI crawlers (section 3.10). On `new.` everything is `noindex` until launch.
 
@@ -88,8 +89,8 @@ because every collection already has a zod schema.
    `Disallow: /`; `/llms.txt`, `/index.md`, `/facts.json` return 200 with correct content types.
 5. The nginx image built in CI serves `/` with 200, an entry from `redirects.yaml` with 301, and
    the security headers from `headers.yaml`.
-6. `POST /api/forms/start` validates, checks Turnstile, forwards to `FORMS_WEBHOOK_URL` when
-   set, returns JSON for fetch and a redirect for plain form posts.
+6. A test application passes every step on `/start`, the confirmation e-mail arrives, after submit the
+   application is visible in the platform's "Onboarding" admin section and the operator gets the Telegram message.
 7. No secret in the repository; CI deploys with `CLOUDFLARE_API_TOKEN` and
    `CLOUDFLARE_ACCOUNT_ID` only.
 8. README explains local run, deploy, text editing, and the launch-day domain switch.
