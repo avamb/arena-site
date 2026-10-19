@@ -4,20 +4,17 @@ import type { LanguageCode } from '@config';
 import { inline, fill } from '@/lib/inline';
 import { clients } from '@/lib/data';
 import { localePath } from '@/lib/i18n';
+import Marquee from '@/components/Marquee.astro';
 interface Props { s: Extract<Section, { type: 'clients' }>; lang: LanguageCode }
 const { s, lang } = Astro.props;
 const vars = { countries: clients.countries, since: clients.countries_since, track: clients.track_record.join(', ') };
 ---
 <section class="section clients" id={s.id}>
-  <div class="wrap two">
-    <div>
-      {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
-      {s.title && <h2 class="h2">{fill(s.title, vars)}</h2>}
-      {s.lead && <p class="lead" set:html={inline(fill(s.lead, vars))} />}
-      <a class="btn btn-ghost" href={localePath(lang, s.cta.href)} style="margin-top:22px">{s.cta.label}</a>
-    </div>
-    <div class="marks-grid" aria-label={s.marksAria}>
-      {clients.marks.map((m) => <span>{m.name}<small>{m.kind}</small></span>)}
-    </div>
+  <div class="wrap">
+    {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
+    {s.title && <h2 class="h2">{fill(s.title, vars)}</h2>}
+    {s.lead && <p class="lead" set:html={inline(fill(s.lead, vars))} />}
+    <a class="btn btn-ghost" href={localePath(lang, s.cta.href)} style="margin-top:22px">{s.cta.label}</a>
   </div>
+  <div class="clients-run"><Marquee names={clients.marks.map((m) => m.name)} label={s.marksAria} /></div>
 </section>

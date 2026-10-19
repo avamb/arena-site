@@ -364,3 +364,14 @@ footer{border-top:1px solid var(--line);padding-block:48px 28px;font-size:14px}
 .marks-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media (max-width:900px){.marks-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:560px){.marks-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Clients: endless running line of names */
+.clients-run{margin-top:36px}
+.marquee{display:grid;gap:14px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,var(--fg) 6%,var(--fg) 94%,transparent);mask-image:linear-gradient(90deg,transparent,var(--fg) 6%,var(--fg) 94%,transparent)}
+.marquee-row{overflow:hidden}
+.marquee-track{display:flex;width:max-content;gap:12px;animation:marquee 70s linear infinite}
+.marquee-row.rev .marquee-track{animation-direction:reverse;animation-duration:80s}
+.marquee-track span{flex:none;padding:12px 22px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-weight:700;letter-spacing:-0.02em;font-size:16px;white-space:nowrap;color:var(--fg)}
+.marquee:hover .marquee-track,.marquee:focus-within .marquee-track{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(calc(-50% - 6px))}}
+@media (prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;width:auto}.marquee-row{overflow:visible}.marquee-track .dup{display:none}.marquee{-webkit-mask-image:none;mask-image:none}}
+

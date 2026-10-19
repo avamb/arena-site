@@ -1,0 +1,21 @@
+---
+/**
+ * Endless running line of client names (text only). Two rows moving in opposite directions;
+ * the list is rendered twice per row so the loop has no seam, the copy is hidden from
+ * assistive tech. Motion stops on hover/focus and with prefers-reduced-motion (see components.css).
+ */
+interface Props { names: string[]; label: string }
+const { names, label } = Astro.props;
+const half = Math.ceil(names.length / 2);
+const rows = [names.slice(0, half), names.slice(half)];
+---
+<div class="marquee" role="group" aria-label={label}>
+  <ul class="visually-hidden">{names.map((n) => <li>{n}</li>)}</ul>
+  {rows.map((row, i) => (
+    <div class:list={['marquee-row', { rev: i === 1 }]} aria-hidden="true">
+      <div class="marquee-track">
+        {[0, 1].map((copy) => row.map((n) => <span class:list={{ dup: copy === 1 }}>{n}</span>))}
+      </div>
+    </div>
+  ))}
+</div>

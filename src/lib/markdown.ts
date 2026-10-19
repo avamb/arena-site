@@ -77,7 +77,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
     case 'clients':
       h2(fill(s.title ?? '', { countries: clients.countries }));
       lead(fill(s.lead ?? '', { since: clients.countries_since, track: clients.track_record.join(', ') }));
-      out.push(clients.marks.map((m) => `${m.name} (${m.kind})`).join(', '), '');
+      out.push(clients.marks.map((m) => m.name).join(', '), '');
       break;
     case 'changes':
       h2(s.title); lead(s.lead);
@@ -124,7 +124,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       break;
     case 'marks':
       h2(s.title); lead(s.lead);
-      clients.marks.forEach((m) => out.push(`- ${m.name} (${m.kind})`));
+      clients.marks.forEach((m) => out.push(`- ${m.name}`));
       out.push('');
       break;
     case 'changelog':

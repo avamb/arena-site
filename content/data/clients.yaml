@@ -1,5 +1,6 @@
 # Client wordmarks (consent confirmed by the owner 07.10.2026). Text only, no logos (open question).
-# `kind` is shown as the small line under the name.
+# `kind` is optional. The home and clients pages show the names only, in a running line.
+# Names after "Sport events" come from the previous site's client strip (logos not used).
 countries_since: 2019
 countries: 35
 marks:
@@ -35,6 +36,34 @@ marks:
     kind: park
   - name: Sport events
     kind: tournaments
+  - name: "Alicante Wow Time"
+  - name: "Music Yard Fest"
+  - name: "Salsa Wow Fest"
+  - name: "Tangomania"
+  - name: "SOL International Film Festival"
+  - name: "Multicolored Fest"
+  - name: "Musical Expedition: Magic of Venice"
+  - name: "Tango Travel"
+  - name: "WorldBalletClass"
+  - name: "World Charity Marathon Music Saves the World"
+  - name: "ArtistsFest"
+  - name: "Crossover"
+  - name: "Fest October Best"
+  - name: "Dance. Move. Improve."
+  - name: "No Borders"
+  - name: "Semushkina Cultlab"
+  - name: "Dance Magic"
+  - name: "Lazure Fest"
+  - name: "Teatro Vega"
+  - name: "Bird&Carrot"
+  - name: "PointProduction"
+  - name: "Ad Libitum"
+  - name: "Viva Ballet"
+  - name: "Teatro Yulia Vashchenko"
+  - name: "Dobra Notch"
+  - name: "Techno Sport"
+  - name: "2Together Agency"
+  - name: "Asociación Amigos del Rock de Torrevieja"
 track_record:
   - Cirque du Soleil shows
   - FIFA 2018 stadiums

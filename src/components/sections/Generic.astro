@@ -10,6 +10,7 @@ import { turnstileSiteKey } from '@config';
 import { marked } from 'marked';
 import { inline, fill } from '@/lib/inline';
 import { clients, facts, tariff } from '@/lib/data';
+import Marquee from '@/components/Marquee.astro';
 import { localePath, postPath, formatDate, tObject, t, currencySymbol } from '@/lib/i18n';
 import { getPosts } from '@/lib/data';
 import { languages } from '@config';
@@ -111,7 +112,7 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
 
     {s.type === 'marks' && (
       <>
-        <div class="marks-grid" style="margin-top:32px" aria-label={s.title}>{clients.marks.map((m) => <span>{m.name}<small>{m.kind}</small></span>)}</div>
+        <div style="margin-top:32px"><Marquee names={clients.marks.map((m) => m.name)} label={s.title ?? ''} /></div>
       </>
     )}
 

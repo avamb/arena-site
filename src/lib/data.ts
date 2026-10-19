@@ -29,7 +29,7 @@ export const navSchema = z.object({
 export const clientsSchema = z.object({
   countries_since: z.number(),
   countries: z.number(),
-  marks: z.array(z.object({ name: z.string(), kind: z.string() })),
+  marks: z.array(z.object({ name: z.string(), kind: z.string().optional() })),
   track_record: z.array(z.string()),
 });
 
