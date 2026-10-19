@@ -5,12 +5,34 @@ import type { LanguageCode } from '@config';
 import { inline, fill } from '@/lib/inline';
 import { tariff } from '@/lib/data';
 import { localePath, currencySymbol, getLanguage, t } from '@/lib/i18n';
+import { lowPriceFee, packageFee, packageCapacity, venueFee } from '@/lib/fees';
 import FeeCalculator from '@/components/islands/FeeCalculator.svelte';
 interface Props { s: Extract<Section, { type: 'pricing' }>; pricing: CollectionEntry<'pricing'>[]; lang: LanguageCode; top?: boolean }
 const { s, pricing, lang, top = false } = Astro.props;
-const money = (n: number, c: string) => `${currencySymbol(c)}${n.toFixed(2)}`;
-const base = pricing.find((p) => p.data.currency === tariff.calculator.currency) ?? pricing[0];
-const vars = { percent: tariff.venues_percent, whitelabel: `${currencySymbol(tariff.white_label_currency)}${tariff.white_label_per_event}` };
+const intl = getLanguage(lang).intl;
+const fmt = (n: number, c: string) => `${currencySymbol(c)}${n.toLocaleString(intl, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+const base = pricing[0];
+const baseCur = base.data.currency;
+const seated = +(base.data.per_ticket + base.data.seating_extra).toFixed(2);
+const lp = tariff.low_price;
+// Placeholders of the copy; amounts are shown in the first region's currency, the numbers are equal everywhere.
+const vars = {
+  percent: tariff.venues_percent,
+  lowPercent: lp.percent, lowMax: `${currencySymbol(baseCur)}${lp.max_ticket}`, lowMin: fmt(lp.min, baseCur), lowCap: fmt(lp.max, baseCur), lowSeat: fmt(lp.seating_extra, baseCur),
+  cap: fmt(seated, baseCur),
+};
+const lowExamples = [2, 5, 9, 10];
+const exOf = (price: number) => ({ price, plain: lowPriceFee(price, lp, false), seat: lowPriceFee(price, lp, true) });
+const ps = tariff.package_seating_extra;
+const saving = (fee: number) => Math.round((1 - fee / base.data.per_ticket) * 100);
+const calcText = s.calculator;
+const regions = pricing.map((p) => ({
+  id: p.id,
+  label: p.data.region,
+  symbol: currencySymbol(p.data.currency),
+  perTicket: p.data.per_ticket,
+  seatingExtra: p.data.seating_extra,
+}));
 ---
 <section class="section" id={s.id} style={top ? 'padding-top:0' : undefined}>
   <div class="wrap">
@@ -21,28 +43,91 @@ const vars = { percent: tariff.venues_percent, whitelabel: `${currencySymbol(tar
       {pricing.map((p) => (
         <div class:list={['card plan', { hi: p.data.highlighted }]}>
           <div class="reg">{p.data.region}</div>
-          <div class="big num">{money(p.data.per_ticket, p.data.currency)}<small>{t(lang, 'pricing.perTicket')}</small></div>
-          <ul>{s.planBullets.map((b) => <li set:html={inline(fill(b, { seating: money(p.data.seating_extra, p.data.currency) }))} />)}</ul>
+          <div class="big num">{fmt(p.data.per_ticket, p.data.currency)}<small>{t(lang, 'pricing.perTicket')}</small></div>
+          <ul>{s.planBullets.map((b) => <li set:html={inline(fill(b, { seated: fmt(p.data.per_ticket + p.data.seating_extra, p.data.currency) }))} />)}</ul>
           <a class:list={['btn', p.data.highlighted ? 'btn-primary' : 'btn-ghost']} href={localePath(lang, s.cta.href)}>{s.cta.label}</a>
         </div>
       ))}
     </div>
+    <p class="pr-note" set:html={inline(s.currencyNote)} />
+
+    {!s.compact && s.packages && (
+      <div class="card pkgs" id="packages">
+        <h3 class="h3">{s.packages.title}</h3>
+        <p class="pr-note" style="margin-top:6px" set:html={inline(s.packages.text)} />
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>{s.packages.cols.name}</th><th>{s.packages.cols.prepay}</th><th>{s.packages.cols.plain}</th><th>{s.packages.cols.seated}</th>
+                <th>{s.packages.cols.plainCount}</th><th>{s.packages.cols.seatedCount}</th><th>{s.packages.cols.saving}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tariff.packages.map((p) => (
+                <tr>
+                  <th scope="row">{p.name}</th>
+                  <td class="num">{fmt(p.prepay, baseCur)}</td>
+                  <td class="num">{fmt(packageFee(p, ps, false), baseCur)}</td>
+                  <td class="num">{fmt(packageFee(p, ps, true), baseCur)}</td>
+                  <td class="num">{packageCapacity(p, ps, false).toLocaleString(intl)}</td>
+                  <td class="num">{packageCapacity(p, ps, true).toLocaleString(intl)}</td>
+                  <td class="num">{saving(p.per_ticket)}%</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="pr-note" set:html={inline(s.packages.note)} />
+      </div>
+    )}
+
+    <div class="card venues" id="low-price">
+      <div class="big num">{lp.percent}%</div>
+      <div>
+        <h3 class="h3">{s.lowPrice.title.replace('{lowMax}', vars.lowMax)}</h3>
+        <p set:html={inline(fill(s.lowPrice.text, vars))} />
+        {!s.compact && s.lowPrice.cols && (
+          <>
+            <p class="pr-note" style="margin-top:10px">{s.lowPrice.example}</p>
+            <div class="tbl-wrap">
+              <table class="tbl tbl-sm">
+                <thead><tr><th>{s.lowPrice.cols.price}</th><th>{s.lowPrice.cols.plain}</th><th>{s.lowPrice.cols.seated}</th></tr></thead>
+                <tbody>
+                  {lowExamples.map(exOf).map((e) => (
+                    <tr><th scope="row">{fmt(e.price, baseCur)}</th><td class="num">{fmt(e.plain, baseCur)}</td><td class="num">{fmt(e.seat, baseCur)}</td></tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+
     <div class="card venues" id="venues">
       <div class="big num">{tariff.venues_percent}%</div>
-      <p set:html={inline(fill(s.venues.text, { percent: tariff.venues_percent })).replace('<b>', '<b style="color:var(--fg)">')} />
+      <div>
+        <h3 class="h3">{s.venues.title}</h3>
+        <p set:html={inline(fill(s.venues.text, vars))} />
+        {!s.compact && s.venues.example && <p class="pr-note" style="margin-top:10px">{fill(s.venues.example, { ...vars, ex25: fmt(25, baseCur), ex: fmt(venueFee(25, tariff.venues_percent, seated), baseCur), capAt: fmt(seated * 100 / tariff.venues_percent, baseCur) })}</p>}
+      </div>
       <a class="btn btn-ghost btn-sm" href={localePath(lang, s.venues.cta.href)}>{s.venues.cta.label}</a>
     </div>
-    <FeeCalculator
-      client:idle
-      labels={s.calculator}
-      perTicket={base.data.per_ticket}
-      seatingExtra={base.data.seating_extra}
-      symbol={currencySymbol(base.data.currency)}
-      defaultPrice={tariff.calculator.default_price}
-      defaultQuantity={tariff.calculator.default_quantity}
-      intl={getLanguage(lang).intl}
-    />
+
+    {!s.compact && s.calculator && (
+      <FeeCalculator
+        client:idle
+        labels={s.calculator}
+        regions={regions.map((r, i) => ({ ...r, label: i === 0 ? calcText!.regionEu : calcText!.regionWorld }))}
+        lowPrice={lp}
+        packages={tariff.packages}
+        packageSeatingExtra={ps}
+        defaultPrice={tariff.calculator.default_price}
+        defaultQuantity={tariff.calculator.default_quantity}
+        intl={intl}
+      />
+    )}
     <p class="pr-note">{s.note} <a href={localePath(lang, s.terms.href)} style="color:var(--accent);font-weight:600">{s.terms.label}</a></p>
-    {s.footnote && <p class="pr-note" set:html={inline(fill(s.footnote, vars))} />}
   </div>
 </section>

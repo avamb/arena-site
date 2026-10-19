@@ -6,7 +6,6 @@ import type { Graph, Thing, Organization, WebSite, WebPage, SoftwareApplication,
 import { org, siteUrl, hosts } from '@config';
 import { plain, fill } from './inline';
 import { tariff } from './data';
-import { currencySymbol } from './i18n';
 import type { CollectionEntry } from 'astro:content';
 
 export type JsonLdInput = {
@@ -48,7 +47,7 @@ export function softwareApplication(pricing: CollectionEntry<'pricing'>[]): Soft
     name: `${p.data.region}: per ticket sold`,
     price: p.data.per_ticket.toFixed(2),
     priceCurrency: p.data.currency,
-    description: `Platform service per ticket sold. Events with a seating plan add ${p.data.seating_extra.toFixed(2)} ${p.data.currency} per ticket. Invitations and refunds are free.`,
+    description: `Platform commission per ticket sold: ${p.data.per_ticket.toFixed(2)} ${p.data.currency} without a seat, ${(p.data.per_ticket + p.data.seating_extra).toFixed(2)} ${p.data.currency} with a seat. Prepaid packages lower it. Invitations are free.`,
     url: absolute('/pricing'),
   }));
   return {
@@ -66,8 +65,8 @@ export function softwareApplication(pricing: CollectionEntry<'pricing'>[]): Soft
 }
 
 export function faqPage(items: { q: string; a: string }[], path: string): FAQPage {
-  // Tariff placeholders ({percent}, {whitelabel}) are filled here as in the HTML and the Markdown twin.
-  const vars = { percent: tariff.venues_percent, whitelabel: currencySymbol(tariff.white_label_currency) + tariff.white_label_per_event };
+  // Tariff placeholders ({percent}) are filled here as in the HTML and the Markdown twin.
+  const vars = { percent: tariff.venues_percent };
   return {
     '@type': 'FAQPage',
     '@id': `${absolute(path)}#faq`,

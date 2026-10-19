@@ -1,7 +1,6 @@
-region: EU
+region: EU countries
 currency: EUR
-per_ticket: 1.00
+per_ticket: 0.59
 seating_extra: 0.50
-white_label_per_event: 45
 highlighted: true
 order: 1

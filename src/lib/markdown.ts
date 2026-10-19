@@ -22,7 +22,7 @@ export type PageData = {
 
 const abs = (p: string) => (p.startsWith('/') ? new URL(p, siteUrl).toString() : p);
 const money = (amount: number, currency: string) => `${currencySymbol(currency)}${amount.toFixed(2)}`;
-const vars = { percent: tariff.venues_percent, whitelabel: `${currencySymbol(tariff.white_label_currency)}${tariff.white_label_per_event}` };
+const vars = { percent: tariff.venues_percent };
 
 export function sectionToMarkdown(s: Section, d: PageData): string {
   const out: string[] = [];
@@ -63,10 +63,25 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
     }
     case 'pricing': {
       h2(s.title); lead(s.lead);
-      out.push('| Region | Per ticket | With a seating plan | Invitations and refunds |', '|---|---|---|---|');
+      const cur = d.pricing[0].data.currency;
+      const seat = d.pricing[0].data.per_ticket + d.pricing[0].data.seating_extra;
+      const lp = tariff.low_price;
+      out.push('| Region | Without a seat | With a seat | Invitations |', '|---|---|---|---|');
       d.pricing.forEach((p) => out.push(`| ${p.data.region} | ${money(p.data.per_ticket, p.data.currency)} | ${money(p.data.per_ticket + p.data.seating_extra, p.data.currency)} | free |`));
-      out.push('', plain(fill(s.venues.text, { percent: tariff.venues_percent })), '', plain(s.note), '', `[${s.terms.label}](${abs(s.terms.href)})`, '');
-      if (s.footnote) out.push(plain(fill(s.footnote, vars)), '');
+      out.push('', plain(s.currencyNote), '');
+      if (s.packages) {
+        out.push(`**${s.packages.title}**`, '', plain(s.packages.text), '');
+        const c = s.packages.cols;
+        out.push(`| ${c.name} | ${c.prepay} | ${c.plain} | ${c.seated} | ${c.plainCount} | ${c.seatedCount} | ${c.saving} |`, '|---|---|---|---|---|---|---|');
+        tariff.packages.forEach((k) => {
+          const f = (x: number) => Math.round(x * 100);
+          out.push(`| ${k.name} | ${money(k.prepay, cur)} | ${money(k.per_ticket, cur)} | ${money(k.per_ticket + tariff.package_seating_extra, cur)} | ${Math.floor(f(k.prepay) / f(k.per_ticket))} | ${Math.floor(f(k.prepay) / f(k.per_ticket + tariff.package_seating_extra))} | ${Math.round((1 - k.per_ticket / d.pricing[0].data.per_ticket) * 100)}% |`);
+        });
+        out.push('', plain(s.packages.note), '');
+      }
+      const lpv = { lowMax: `${currencySymbol(cur)}${lp.max_ticket}`, lowPercent: lp.percent, lowMin: money(lp.min, cur), lowCap: money(lp.max, cur), lowSeat: money(lp.seating_extra, cur), percent: tariff.venues_percent, cap: money(seat, cur) };
+      out.push(`**${plain(fill(s.lowPrice.title, lpv))}**`, '', plain(fill(s.lowPrice.text, lpv)), '');
+      out.push(`**${s.venues.title}**`, '', plain(fill(s.venues.text, lpv)), '', plain(s.note), '', `[${s.terms.label}](${abs(s.terms.href)})`, '');
       break;
     }
     case 'who':

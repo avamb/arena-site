@@ -49,7 +49,7 @@ sections:
       - title: Money to your account
         text: Every order is paid to your account directly. Payouts to your bank follow your provider's schedule. Refunds and chargebacks are decided by you.
       - title: ArenaSoldOut.com holds nothing
-        text: The platform service is invoiced after each session, separately. Nothing is deducted from your sales. If you ever leave, your payment account and your buyers' data stay with you.
+        text: The platform commission is invoiced after the event or taken from a prepaid package, separately. Nothing is deducted from your sales. If you ever leave, your payment account and your buyers' data stay with you.
 
   - type: cta
     id: start

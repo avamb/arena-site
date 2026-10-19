@@ -203,7 +203,7 @@ sections:
     id: money
     eyebrow: Money
     title: Buyers pay you. Not us.
-    lead: 100% of every sale goes to you. The buyer pays the ticket price, and the service fee if you add one, straight into your own payment account, in your currency, on your statement. ArenaSoldOut.com never holds your money. After each session you pay ArenaSoldOut.com for the platform service, per event. Refunds and chargebacks are your decision, not a platform policy.
+    lead: 100% of every sale goes to you. The buyer pays the ticket price, and the service fee if you add one, straight into your own payment account, in your currency, on your statement. ArenaSoldOut.com never holds your money. You pay ArenaSoldOut.com the platform commission per ticket sold, after the event or from a prepaid package. Refunds and chargebacks are your decision, not a platform policy.
     flowAria: Payment flow
     nodes:
       - { label: Buyer, sub: "card, Apple Pay, Google Pay" }
@@ -211,31 +211,29 @@ sections:
       - { label: ArenaSoldOut.com, sub: "order, seats, ticket" }
       - { label: Your payment account, providers: true, highlight: true }
       - { label: Your bank, sub: on the provider's schedule }
-    note: After each session you pay ArenaSoldOut.com for the platform service. Nothing is deducted from your sales, nothing is held.
+    note: You pay ArenaSoldOut.com the platform commission per ticket sold. Nothing is deducted from your sales, nothing is held.
 
   - type: pricing
     id: pricing
     eyebrow: Pricing
     title: Per ticket. No subscription.
-    lead: Platform fee only. Card acquiring is paid to your provider on its own terms, which depend on your acquirer and your bank.
+    lead: Platform commission only. Card acquiring is paid to your provider on its own terms, which depend on your acquirer and your bank.
+    compact: true
     planBullets:
-      - "**+{seating}** per ticket on events with a seating plan"
-      - "**Free** invitations and refunds, no fee"
-      - Name ArenaSoldOut.com as the ticketing partner on your event page**
+      - "**{seated}** per ticket with a seat chosen on the venue plan"
+      - "**Free** invitations and free tickets to paid events: no commission"
+      - "**Prepaid packages** lower the commission per ticket"
     cta: { label: Start selling, href: /start }
+    currencyNote: "Commission in **euro** for venues in EU countries and in **US dollars** for every other country. The numbers are the same in both currencies. Amounts are without VAT."
+    lowPrice:
+      title: "Events where every ticket costs {lowMax} or less"
+      text: "{lowPercent}% of the ticket price, at least {lowMin} and at most {lowCap} per ticket; {lowSeat} more with a seat. It applies to the whole event, only if no ticket of any category costs more than {lowMax}."
     venues:
-      text: "**For owners of permanent venues** (theatres, clubs, stadiums, circuses): separate terms, {percent}% of the ticket price instead of the per-ticket fee. No fee on invitations and refunds."
+      title: Permanent venues
+      text: "Theatres, clubs, stadiums, circuses: **{percent}% of the ticket price**, at most **{cap}** per ticket, the same with and without a seat. Invoiced monthly."
       cta: { label: Talk to us, href: /contact }
-    calculator:
-      aria: Fee calculator
-      price: Ticket price, €
-      quantity: Tickets sold
-      seating: Event with a seating plan
-      result: Platform service, paid after the session
-      sales: your sales {net}, acquiring not included
-    note: "Standard terms; volume and individual terms on request. You pay for the platform service after each session; for events on sale for several months, monthly."
-    terms: { label: Detailed terms →, href: /pricing/terms }
-    footnote: "** These prices apply when your event page names ArenaSoldOut.com as the ticketing partner, with a clickable link to [ArenaSoldOut.com](https://arenasoldout.com). If you prefer not to mention us on your own site, white label costs {whitelabel} per event. Events sold on a page we host carry no white-label fee."
+    note: "You pay after the event, or prepay a package and pay less per ticket. Packages, the calculator and the detailed terms are on the pricing page."
+    terms: { label: All prices and the calculator →, href: /pricing }
 
   - type: who
     id: who

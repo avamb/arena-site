@@ -35,8 +35,9 @@ export const clientsSchema = z.object({
 
 export const tariffSchema = z.object({
   venues_percent: z.number(),
-  white_label_per_event: z.number(),
-  white_label_currency: z.string(),
+  low_price: z.object({ max_ticket: z.number(), percent: z.number(), min: z.number(), max: z.number(), seating_extra: z.number() }),
+  package_seating_extra: z.number(),
+  packages: z.array(z.object({ name: z.string(), prepay: z.number(), per_ticket: z.number() })),
   invoicing: z.string(),
   invoicing_monthly_after_months: z.number(),
   calculator: z.object({ default_price: z.number(), default_quantity: z.number(), currency: z.string() }),

@@ -1,11 +1,37 @@
 # Terms that are not per-currency (per-currency prices live in pricing/*.yaml).
-# Numbers are the OLD price list kept for launch (owner decision 07.10); Marina will revisit after
-# the competitor pricing analysis. Edit here, every page and facts.json follow.
+# Source: pricing policy, revision 3 of 18.10.2026 (docs/pricing in the arena_new repo) and the
+# owner's decisions of 19.10: only approved numbers are public. Package steps above 5K, the
+# prepaid branch of the low-price tariff, the venue minimum for cinemas and the cancellation
+# bonus are proposals and stay off the site. Edit here, every page and facts.json follow.
+# The same numbers apply in EUR (EU countries) and USD (every other country): a decision, not a rate.
+
+# Permanent venues: percent of the ticket price (after promo codes, without our fee), capped per
+# ticket at the venue's own seated pay-as-you-go price (1.09 in the EU, 1.09 in USD elsewhere).
 venues_percent: 2
-# White label: no mention of ArenaSoldOut.com on the organizer's own event page, per event (Marina sets the number).
-white_label_per_event: 45
-white_label_currency: EUR
-invoicing: day after each session
+
+# Events where EVERY ticket costs at most `max_ticket` before promo codes (inclusive), all categories
+# and price steps counted. One more expensive ticket moves the whole event to the standard price.
+low_price:
+  max_ticket: 10
+  percent: 4
+  min: 0.10
+  max: 0.35
+  seating_extra: 0.20
+
+# Prepaid packages. `prepay` is paid once, the commission per ticket depends on the package.
+# A seat adds `package_seating_extra` to the package commission. Ticket counts are computed:
+# floor(prepay / commission).
+package_seating_extra: 0.35
+packages:
+  - { name: S, prepay: 16.50, per_ticket: 0.55 }
+  - { name: M, prepay: 52, per_ticket: 0.52 }
+  - { name: L, prepay: 147, per_ticket: 0.49 }
+  - { name: XL, prepay: 230, per_ticket: 0.46 }
+  - { name: 1K, prepay: 430, per_ticket: 0.43 }
+  - { name: 2.5K, prepay: 1000, per_ticket: 0.40 }
+  - { name: 5K, prepay: 1900, per_ticket: 0.38 }
+
+invoicing: after the event
 invoicing_monthly_after_months: 3
 calculator:
   default_price: 38

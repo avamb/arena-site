@@ -1,27 +1,43 @@
-# Detailed terms. Draft from doc 33 §4.3a (founders' answers 08.10.2026). Owner reviews before launch.
+# Detailed terms. Source: pricing policy rev. 3 (18.10.2026); approved terms only (owner, 19.10.2026).
 title: "Detailed pricing terms"
-description: "Ticketing partner mention, invoicing after each session, reports, permanent venues: the detailed terms behind the per-ticket price."
+description: "How the platform commission is charged: pay after the event, prepaid packages, events with tickets up to €10, permanent venues, refunds, currency, reports."
 h1: Detailed terms
-lead: The conditions behind the per-ticket price. Standard terms; volume and individual terms on request.
+lead: The conditions behind the per-ticket price. Standard terms; volume and individual terms on request. All amounts are without VAT.
 sections:
   - type: prose
     id: terms
     body: |
-      ## Ticketing partner mention
+      ## What we charge for
 
-      The standard per-ticket fee assumes that the event page on your site names ArenaSoldOut.com as the ticketing partner: a text line or the badge we provide, linking to ArenaSoldOut.com. If you prefer not to mention us, a white-label fee of {whitelabel} applies per event, invoiced with the event's first invoice. Events sold on a page we host carry no white-label fee.
+      The platform commission is charged per ticket sold, not as a percentage of your revenue, except for the two cases below. A ticket for €15 and a ticket for €150 cost you the same. Invitations and free tickets to paid events carry no commission.
 
-      ## Invoicing
+      ## Pay after the event
 
-      Our invoice for the platform service is issued the day after each session, for the tickets sold for that session. For events on sale for several months we can invoice monthly instead, on request. Card acquiring is paid to your payment provider on its own terms.
+      €0.59 per ticket without a seat and €1.09 per ticket with a seat chosen on the venue plan. We invoice after the event, for the tickets sold, and you pay by bank transfer. For events on sale for several months and for permanent venues we invoice once a month. Paying after the event is open to organizations confirmed on the platform. Card acquiring is paid to your payment provider on its own terms.
+
+      ## Prepaid packages
+
+      You buy a package once and every ticket takes its commission from it at the rate of that package. A seat adds 0.35 to the package rate. The prepayment is money on your account: it never expires, you can buy packages as often as you like, and it is spent only on our services. It cannot be withdrawn, transferred or cashed out. If the prepayment runs out in the middle of sales, sales do not stop: the tickets it did not cover are invoiced at the pay-after-the-event price. You can switch on an automatic top-up. The packages and their rates are on the [pricing page](/pricing#packages).
+
+      ## Events where every ticket costs €10 or less
+
+      The lower rate is a property of the whole event: it applies only if the highest price of any ticket of the event, before promo codes, is €10 or less, **€10 included**. All categories and price steps count, including those added later. If there is a ticket above €10, the standard price applies to every ticket of the event, the cheap ones too: an event with tickets at €5 and €25 is at the standard price. The rate is 4% of the ticket price, at least €0.10 and at most €0.35 per ticket, and €0.20 more for a ticket with a seat.
+
+      ## Permanent venues
+
+      Venues that hold events themselves, all year or by season, pay 2% of the ticket price (after promo codes, without the service fee), at most €1.09 per ticket, the same with and without a seat. We invoice monthly. The venue status is connected by our team: write to us from the [contact page](/contact).
+
+      ## Refunds, date changes and cancellation
+
+      When a buyer returns a ticket, the refund is paid to the buyer by you, the organizer. The commission for a sale that already happened stays. We do not charge a separate commission for processing a refund, for moving the date or for the e-mails to buyers. The payment provider's own terms apply as the provider states them. If an event is cancelled, the commission already charged is not returned in money.
+
+      ## Currency
+
+      The commission is in euro for venues in EU countries and in US dollars for every other country, including European countries outside the EU, Asia and the Middle East. The numbers are the same in both currencies. The currency of the commission does not change the currency in which you sell tickets. If one organization has venues in both groups, it gets two accounts.
 
       ## Reports
 
       The Event Center gives per-session totals and a detailed CSV report per session. Exports to your CRM or accounting system are set up on request.
-
-      ## Permanent venues
-
-      Owners of permanent venues (theatres, clubs, stadiums, circuses) are offered separate terms: 2% of the ticket price instead of the per-ticket fee, no fee on invitations and refunds. Volume and individual terms on request.
 
       ## Privacy
 

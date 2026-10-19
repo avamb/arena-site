@@ -27,8 +27,8 @@ interface Props {
   first?: boolean;
 }
 const { s, lang, providers, markets, changelog, posts, first = false } = Astro.props;
-// Tariff numbers in prose and FAQ answers: {percent}, {whitelabel} (one source: content/data/tariff.yaml).
-const vars = { percent: tariff.venues_percent, whitelabel: `${currencySymbol(tariff.white_label_currency)}${tariff.white_label_per_event}` };
+// Tariff numbers in prose and FAQ answers: {percent} (one source: content/data/tariff.yaml).
+const vars = { percent: tariff.venues_percent };
 const pad = first ? 'padding-top:40px' : 'padding-top:0';
 const dateFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'changes.date');
 const postFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'post.date');
