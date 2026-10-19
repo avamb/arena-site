@@ -1,5 +1,5 @@
 ---
-title: "💰 “Service Fees in ticket sales: size matters”"
+title: "Service fees in ticket sales: size matters"
 description: "Maximizing revenue with strategic ticketing service fees"
 date: 2024-11-13
 cover: ./images/service-fees-in-ticket-sales-size-matters/145.jpg
