@@ -29,16 +29,16 @@ export const languages: Language[] = [
 export const defaultLanguage: LanguageCode = 'en';
 
 /**
- * Indexing switch (doc 33 §3.7b, §3.10). `false` on new.arenasoldout.com: robots.txt disallows
+
  * everything, every page carries `noindex`, `_headers` adds X-Robots-Tag. Flip to `true` on
  * launch day together with the custom-domain switch. Can be overridden by SITE_INDEXING=true/false
  * at build time (CI uses it for the launch build).
  */
 const envIndexing = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env?.SITE_INDEXING;
-export const indexing: boolean = envIndexing !== undefined ? envIndexing === 'true' : false;
+export const indexing: boolean = envIndexing !== undefined ? envIndexing === 'true' : true;
 
 /** Public origin of this build. The same code serves new., apex and the nginx container. */
-export const siteUrl: string = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env?.SITE_URL ?? 'https://new.arenasoldout.com';
+export const siteUrl: string = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env?.SITE_URL ?? 'https://arenasoldout.com';
 
 export const org = {
   name: 'ArenaSoldOut.com',

@@ -21,11 +21,14 @@ run_worker_first = ["/api/*"]
 #   { pattern = "www.arenasoldout.com", custom_domain = true }
 # and set `indexing: true` in site.config.ts. Rollback = the reverse edit, minutes.
 routes = [
+  { pattern = "arenasoldout.com", custom_domain = true },
+  { pattern = "www.arenasoldout.com", custom_domain = true },
+  # new. stays attached: the first lines of _redirects send it to the apex with a 301
   { pattern = "new.arenasoldout.com", custom_domain = true }
 ]
 
 [vars]
-SITE_URL = "https://new.arenasoldout.com"
+SITE_URL = "https://arenasoldout.com"
 
 [observability]
 enabled = true
