@@ -79,7 +79,6 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
       (function () { try { var t = localStorage.getItem('aso-theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
     </script>
     {graph && <script type="application/ld+json" set:html={graph}></script>}
-    {umami.src && umami.websiteId && <script defer src={umami.src} data-website-id={umami.websiteId} data-auto-track="true"></script>}
   </head>
   <body>
     <script is:inline>
@@ -99,14 +98,21 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
     </main>
     <Footer lang={lang} />
     {umami.src && umami.websiteId && (
-      <script is:inline>
+      <script is:inline define:vars={{ umamiSrc: umami.src, umamiId: umami.websiteId }}>
         /* Theme statistics (doc 33 §3.11, item 3): one event per view, no cookies. */
         (function () {
           function send(name, data) { if (window.umami && typeof window.umami.track === 'function') window.umami.track(name, data); }
           var mq = matchMedia('(prefers-color-scheme: dark)');
           function shown() { var e = document.documentElement.getAttribute('data-theme'); return e || (mq.matches ? 'dark' : 'light'); }
           function source() { return document.documentElement.getAttribute('data-theme') ? 'choice' : 'device'; }
-          window.addEventListener('load', function () { send('theme_view', { system_theme: mq.matches ? 'dark' : 'light', theme: shown(), theme_source: source() }); });
+          /* Loaded after the page is idle so third-party analytics never competes with first paint (Lighthouse gate). */
+          function load() {
+            var el = document.createElement('script');
+            el.src = umamiSrc; el.defer = true; el.setAttribute('data-website-id', umamiId); el.setAttribute('data-auto-track', 'true');
+            el.onload = function () { send('theme_view', { system_theme: mq.matches ? 'dark' : 'light', theme: shown(), theme_source: source() }); };
+            document.head.appendChild(el);
+          }
+          window.addEventListener('load', function () { (window.requestIdleCallback || function (f) { setTimeout(f, 2000); })(load); });
           window.addEventListener('aso:theme', function (ev) { send('theme_toggle', { theme: ev.detail.theme, theme_source: 'choice' }); });
           mq.addEventListener('change', function () { send('theme_device_change', { system_theme: mq.matches ? 'dark' : 'light', theme: shown(), theme_source: source() }); });
         })();
