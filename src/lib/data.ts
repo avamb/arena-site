@@ -51,6 +51,9 @@ export const factsSchema = z.object({
   backups: z.string(),
 });
 
+/** Stripe Payment Links of the prepaid packages: links[package][currency]. Empty until scripts/stripe-packages.mjs has run. */
+export const packageLinksSchema = z.object({ links: z.record(z.string(), z.record(z.string(), z.string().url())).default({}) });
+
 export type Nav = z.infer<typeof navSchema>;
 export type Clients = z.infer<typeof clientsSchema>;
 export type Tariff = z.infer<typeof tariffSchema>;
@@ -60,6 +63,7 @@ export const nav: Nav = load('nav.yaml', navSchema);
 export const clients: Clients = load('clients.yaml', clientsSchema);
 export const tariff: Tariff = load('tariff.yaml', tariffSchema);
 export const facts: Facts = load('facts.yaml', factsSchema);
+export const packageLinks: Record<string, Record<string, string>> = (load('package-links.yaml', packageLinksSchema).links ?? {});
 
 const byOrder = <T extends { data: { order: number } }>(a: T, b: T) => a.data.order - b.data.order;
 

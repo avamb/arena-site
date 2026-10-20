@@ -3,7 +3,7 @@ import type { Section } from '@/content.config';
 import type { CollectionEntry } from 'astro:content';
 import type { LanguageCode } from '@config';
 import { inline, fill } from '@/lib/inline';
-import { tariff } from '@/lib/data';
+import { tariff, packageLinks } from '@/lib/data';
 import { localePath, currencySymbol, getLanguage, t } from '@/lib/i18n';
 import { lowPriceFee, packageFee, packageCapacity, venueFee } from '@/lib/fees';
 import FeeCalculator from '@/components/islands/FeeCalculator.svelte';
@@ -27,6 +27,8 @@ const exOf = (price: number) => ({ price, plain: lowPriceFee(price, lp, false), 
 const ps = tariff.package_seating_extra;
 const saving = (fee: number) => Math.round((1 - fee / base.data.per_ticket) * 100);
 const calcText = s.calculator;
+const buy = s.packages?.buy;
+const buyCurrencies = [{ id: 'usd', sym: 'US$' }, { id: 'eur', sym: '€' }];
 const regions = pricing.map((p) => ({
   id: p.id,
   label: p.data.region,
@@ -51,17 +53,25 @@ const regions = pricing.map((p) => ({
       ))}
     </div>
     <p class="pr-note" set:html={inline(s.currencyNote)} />
+    {s.buyCredits && <p style="margin-top:18px"><a class="btn btn-primary" href={localePath(lang, s.buyCredits.href)}>{s.buyCredits.label}</a></p>}
 
     {!s.compact && s.packages && (
       <div class="card pkgs" id="packages">
         <Sub class="h3">{s.packages.title}</Sub>
         <p class="pr-note" style="margin-top:6px" set:html={inline(s.packages.text)} />
+        {buy && (
+          <fieldset class="cur-pick">
+            <legend>{buy.currency}</legend>
+            {buyCurrencies.map((c, i) => <><input type="radio" name="buyCur" id={`cur-${c.id}`} checked={i === 0} /><label for={`cur-${c.id}`}>{c.sym}</label></>)}
+          </fieldset>
+        )}
+        {buy?.note && <p class="pr-note" style="margin-top:8px"><strong>{buy.note}</strong></p>}
         <div class="tbl-wrap">
           <table class="tbl">
             <thead>
               <tr>
                 <th>{s.packages.cols.name}</th><th>{s.packages.cols.prepay}</th><th>{s.packages.cols.plain}</th><th>{s.packages.cols.seated}</th>
-                <th>{s.packages.cols.plainCount}</th><th>{s.packages.cols.seatedCount}</th><th>{s.packages.cols.saving}</th>
+                <th>{s.packages.cols.plainCount}</th><th>{s.packages.cols.seatedCount}</th><th>{s.packages.cols.saving}</th>{buy && <th>{s.packages.cols.buy}</th>}
               </tr>
             </thead>
             <tbody>
@@ -74,6 +84,13 @@ const regions = pricing.map((p) => ({
                   <td class="num">{packageCapacity(p, ps, false).toLocaleString(intl)}</td>
                   <td class="num">{packageCapacity(p, ps, true).toLocaleString(intl)}</td>
                   <td class="num">{saving(p.per_ticket)}%</td>
+                  {buy && (
+                    <td class="buy-cell">
+                      {buyCurrencies.map((c) => packageLinks[p.name]?.[c.id]
+                        ? <a class={`btn btn-primary btn-sm buy-${c.id}`} href={packageLinks[p.name][c.id]} rel="noopener">{buy.label} · {c.sym}{p.prepay.toLocaleString(intl, { minimumFractionDigits: Number.isInteger(p.prepay) ? 0 : 2, maximumFractionDigits: 2 })}</a>
+                        : <a class={`btn btn-ghost btn-sm buy-${c.id}`} href={localePath(lang, buy.noneHref)}>{buy.none}</a>)}
+                    </td>
+                  )}
                 </tr>
               ))}
             </tbody>
@@ -120,7 +137,7 @@ const regions = pricing.map((p) => ({
       <FeeCalculator
         client:idle
         labels={s.calculator}
-        regions={regions.map((r, i) => ({ ...r, label: r.id === 'eu' ? calcText!.regionEu : calcText!.regionWorld }))}
+        regions={regions.map((r) => ({ ...r, label: r.id === 'eu' ? calcText!.regionEu : calcText!.regionWorld }))}
         lowPrice={lp}
         packages={tariff.packages}
         packageSeatingExtra={ps}

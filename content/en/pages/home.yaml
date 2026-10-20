@@ -224,6 +224,7 @@ sections:
       - "**Free** invitations and free tickets to paid events: no commission"
       - "**[Prepaid packages](/pricing#packages)** lower the commission per ticket"
     cta: { label: Start selling, href: /start }
+    buyCredits: { label: Buy credits, href: /pricing#packages }
     currencyNote: "Commission in **US dollars** for every country outside the EU and in **euro** for venues in EU countries. The numbers are the same in both currencies. Amounts are without VAT."
     lowPrice:
       title: "Events where every ticket costs {lowMax} or less"

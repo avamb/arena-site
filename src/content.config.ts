@@ -116,7 +116,8 @@ export const section = z.discriminatedUnion('type', [
     lowPrice: z.object({ title: z.string(), text: z.string(), example: z.string().optional(), cols: z.object({ price: z.string(), plain: z.string(), seated: z.string() }).optional() }),
     packages: z.object({
       title: z.string(), text: z.string(), note: z.string(),
-      cols: z.object({ name: z.string(), prepay: z.string(), plain: z.string(), seated: z.string(), plainCount: z.string(), seatedCount: z.string(), saving: z.string() }),
+      cols: z.object({ name: z.string(), prepay: z.string(), plain: z.string(), seated: z.string(), plainCount: z.string(), seatedCount: z.string(), saving: z.string(), buy: z.string().optional() }),
+      buy: z.object({ label: z.string(), currency: z.string(), none: z.string(), noneHref: z.string(), note: z.string().optional() }).optional(),
     }).optional(),
     venues: z.object({ title: z.string(), text: z.string(), example: z.string().optional(), cta: link }),
     calculator: z.object({
@@ -124,6 +125,7 @@ export const section = z.discriminatedUnion('type', [
       result: z.string(), sales: z.string(), needMax: z.string(), maxBelowPrice: z.string(), lowRate: z.string(), package: z.string(), noPackage: z.string(),
     }).optional(),
     note: z.string(),
+    buyCredits: link.optional(),
     terms: link,
   }),
   z.object({ type: z.literal('who'), ...sectionBase, items: z.array(z.object({ icon: z.string(), title: z.string(), text: z.string(), link: link })) }),

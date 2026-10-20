@@ -1,0 +1,24 @@
+# Stripe Payment Links of the prepaid packages, one per package and currency. Written by scripts/stripe-packages.mjs.
+# A package without a link shows "Talk to us" instead of "Buy" on the pricing page. Mode of the last run: LIVE.
+links:
+  S:
+    usd: https://buy.stripe.com/00w28sfgC0Ct5s24ew2wU06
+    eur: https://buy.stripe.com/28E8wQ8Sebh73jUh1i2wU07
+  M:
+    usd: https://buy.stripe.com/14A14o2tQdpf8EebGY2wU08
+    eur: https://buy.stripe.com/fZu6oI0lI70RcUu12k2wU09
+  L:
+    usd: https://buy.stripe.com/aFa7sM3xU1GxbQqeTa2wU0a
+    eur: https://buy.stripe.com/8x27sM6K6ad3g6GfXe2wU0b
+  XL:
+    usd: https://buy.stripe.com/aFafZid8u0Ct2fQ9yQ2wU0c
+    eur: https://buy.stripe.com/6oUcN62tQad34nYaCU2wU0d
+  1K:
+    usd: https://buy.stripe.com/14AcN6gkG1Gxf2CeTa2wU0e
+    eur: https://buy.stripe.com/00w00kfgCetj7Aa4ew2wU0f
+  2.5K:
+    usd: https://buy.stripe.com/cNi4gAecybh7cUu12k2wU0g
+    eur: https://buy.stripe.com/28E7sM1pMetj6w6h1i2wU0h
+  5K:
+    usd: https://buy.stripe.com/4gM4gA2tQad36w67qI2wU0i
+    eur: https://buy.stripe.com/dRm3cw6K62KB3jU7qI2wU0j

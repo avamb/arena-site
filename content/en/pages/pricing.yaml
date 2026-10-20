@@ -16,7 +16,8 @@ sections:
     packages:
       title: Prepay a package, pay less per ticket
       text: "You buy a package once; every ticket sold takes its commission from it, at the rate of that package. The prepayment never expires and is spent only on our services. If it runs out in the middle of sales, sales go on: the remaining tickets are invoiced at the pay-after-the-event price."
-      cols: { name: Package, prepay: Prepayment, plain: "Commission, no seat", seated: "Commission, with a seat", plainCount: "Tickets without a seat", seatedCount: "Or tickets with a seat", saving: "Saving vs. pay-after" }
+      cols: { name: Package, prepay: Prepayment, plain: "Commission, no seat", seated: "Commission, with a seat", plainCount: "Tickets without a seat", seatedCount: "Or tickets with a seat", saving: "Saving vs. pay-after", buy: Buy }
+      buy: { label: Buy, currency: Pay in, none: Talk to us, noneHref: /contact, note: "At checkout Stripe asks for the e-mail your organization is registered with on ArenaSoldOut.com. Enter exactly that e-mail: the credits are added to the organization it belongs to. No organization yet? Enter the e-mail you will register with, and the credits will be tied to it." }
       note: "Packages can be bought as often as you like; a ticket takes its commission from the package it is paid from. You can switch on an automatic top-up. For volumes above 5,000 tickets a year: individual terms, write to us."
     lowPrice:
       title: "Events where every ticket costs {lowMax} or less"
