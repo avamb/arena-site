@@ -39,7 +39,7 @@ scan(content, [
   ['Em-dash', /—/],
   ['Exclamation mark', /!(?!=)(?!\[)/],
   ['Providers in prose (§3.9)', /Stripe or Flitt|Stripe и Flitt|your Stripe or Flitt/],
-], { 'Forbidden promise': ['content/data/facts.yaml'] /* the explicit "we do not offer" table */ });
+], { 'Forbidden promise': ['content/data/facts.yaml'] /* the explicit "we do not offer" table */, 'Word rule: hall': ['content/data/clients.yaml'] /* proper names of venues */ });
 
 /* Code (catalog bans and system rules) */
 scan(code.filter((f) => !f.endsWith('tokens.css')), [
