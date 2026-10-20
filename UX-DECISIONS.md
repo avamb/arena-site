@@ -38,7 +38,7 @@ Header carries one button only ("Start selling").
 1. Hero: "Sell seats. Sell tickets. Keep the money." Value for the organizer first, never
    "reserved seating" first. Note under the buttons: "Connect your payment account in minutes.
    Events without a seating plan go on sale today."
-2. Trust row: facts only (35 countries since 2019, 800 orders a minute, 7 languages, payouts to
+2. Trust row: facts only (31 countries since 2019, 800 orders a minute, 7 languages, payouts to
    your account). No client marks here.
 3. How it works: three questions organizers ask first (how fast, what do I need, which way).
    Telegram is one way, never the only one.
@@ -50,7 +50,7 @@ Header carries one button only ("Start selling").
 8. Pricing: per ticket, platform service only, no "card processing" wording, no white-label
    price on the cards. Venues: 2% instead of, never on top of.
 9. Who it is for: seven cards.
-10. Clients: 35 countries since 2019, sixteen wordmarks as text, founders' track record.
+10. Clients: 31 countries since 2019, sixteen wordmarks as text, founders' track record.
 11. Latest changes: weekly one-liners, scrollable.
 12. Final CTA: "Start selling today" + what to do now.
 13. Not on the home page: Developers (footer link + own page), "Live now" (returns at 50+ events).
@@ -61,7 +61,7 @@ Only what `design/prototype/BRIEF.md` lists as verified, and what `content/data/
 records with a date:
 
 - 800 orders a minute at 1,000 concurrent buyers in load tests (report 23.09.2026).
-- Organizers in 35 countries since 2019 (owner's figure; Marina exports the exact count from Bil24).
+- Organizers in 31 countries since 2019 (31 countries in the Forzum Editor list, Russia excluded, 20.10.2026).
 - Tickets and e-mails in 7 languages; sales page in en/ru/cs/he/es; RTL for Hebrew.
 - Payment providers live today: Stripe, Flitt, AllPay (always from `content/data/providers`).
 - Markets live today: Czechia, Spain, France, Georgia, Israel (from `content/data/markets`).
