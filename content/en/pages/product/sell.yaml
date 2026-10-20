@@ -6,7 +6,7 @@ lead: Two ways to sell, one Event Center behind them. Embed the widget on the si
 related:
   - { label: Seating plans that match the venue, href: /product/seating, text: "Send a PDF, a spreadsheet or a sketch; the team builds the plan in." }
   - { label: Payments into your own account, href: /payments, text: "Providers by country, statuses, how to connect." }
-  - { label: WordPress sites, href: /solutions/wordpress, text: "Plugin with WooCommerce orders, two clients moved from Bil24 without downtime." }
+  - { label: WordPress sites, href: /solutions/wordpress, text: "Plugin with WooCommerce orders, two clients moved from ArenaSoldOut.com without downtime." }
 sections:
   - type: ways
     id: ways

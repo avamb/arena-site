@@ -145,7 +145,7 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
         <div class="table-scroll" tabindex="0" role="region" aria-label={t(lang, 'table.details')} style="margin-top:32px">
         <table class="facts-table">
           <tbody>
-            <tr><th>Buyer page languages</th><td>{facts.languages.buyer_page.join(', ')}</td></tr>
+            <tr><th>Buyer page languages</th><td>{facts.languages.buyer_page.join(', ')}. Any other language can be integrated on request.</td></tr>
             <tr><th>E-mail languages</th><td>{facts.languages.emails}</td></tr>
             <tr><th>Site languages</th><td>{facts.languages.site.join(', ')}</td></tr>
             <tr><th>Load test</th><td>{facts.limits.orders_per_minute} orders a minute at {facts.limits.concurrent_visitors} concurrent visitors, <time datetime={facts.limits.load_test_date.toISOString().slice(0, 10)}>{facts.limits.load_test_date.toISOString().slice(0, 10)}</time></td></tr>

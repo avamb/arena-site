@@ -2,5 +2,4 @@ region: EU countries
 currency: EUR
 per_ticket: 0.59
 seating_extra: 0.50
-highlighted: true
-order: 1
+order: 2

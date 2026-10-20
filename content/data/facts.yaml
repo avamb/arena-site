@@ -24,7 +24,7 @@ capabilities:
   - name: Every sale and refund posted to the organizer's Telegram group within seconds, with buyer contact
     status: yes
     since: 2026-09-24
-  - name: Buyer page, widget, e-mail and PDF ticket in the buyer's language (page en, ru, cs, he, es; e-mails in 7 languages; RTL for Hebrew)
+  - name: Buyer page, widget, e-mail and PDF ticket in the buyer's language (page en, ru, cs, he, es; e-mails in 7 languages; RTL for Hebrew; any other language can be integrated on request)
     status: yes
   - name: Promo codes with scope, windows and per-buyer limits
     status: yes
@@ -47,7 +47,7 @@ capabilities:
     status: yes
   - name: Public API, event-bundle import in one call, signed webhooks, scoped API keys, widget events arena:*
     status: yes
-  - name: Import from Bil24 (sessions, seating plans, customers); two clients moved with zero downtime
+  - name: Import from ArenaSoldOut.com (sessions, seating plans, customers); two clients moved with zero downtime
     status: yes
   - name: Event Center in the browser (orders, tickets, refunds, invitations, sessions, team)
     status: partial

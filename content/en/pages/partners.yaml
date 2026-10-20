@@ -15,7 +15,7 @@ sections:
       - { title: Venues, text: "A permanent venue brings its plan once and offers it to every organizer who rents it; separate terms with a percentage of the ticket price.", link: { label: Venues and clubs →, href: /solutions/venues } }
       - { title: Promoters, text: "A page per promoter with its own link and codes; the organizer sees every channel, the promoter sees its own.", link: { label: Where you sell →, href: /product/sell } }
       - { title: WordPress agencies, text: "The plugin puts orders into WooCommerce; the widget fits any theme. The team supports the agency during the launch.", link: { label: WordPress →, href: /solutions/wordpress } }
-      - { title: Developers, text: "Public API, event bundle in one call, signed webhooks, scoped keys, widget events; imports from Bil24 and others.", link: { label: Developers →, href: /developers } }
+      - { title: Developers, text: "Public API, event bundle in one call, signed webhooks, scoped keys, widget events; imports from ArenaSoldOut.com and others.", link: { label: Developers →, href: /developers } }
   - type: faq
     id: questions
     eyebrow: Questions

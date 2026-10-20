@@ -13,7 +13,7 @@ const rows = [names.slice(0, half), names.slice(half)];
   <ul class="visually-hidden">{names.map((n) => <li>{n}</li>)}</ul>
   {rows.map((row, i) => (
     <div class:list={['marquee-row', { rev: i === 1 }]} aria-hidden="true">
-      <div class="marquee-track">
+      <div class="marquee-track" style={`animation-duration:${Math.max(70, Math.round(row.length * 3 + (i ? 10 : 0)))}s`}>
         {[0, 1].map((copy) => row.map((n) => <span class:list={{ dup: copy === 1 }}>{n}</span>))}
       </div>
     </div>

@@ -7,7 +7,7 @@
   import { standardFee, lowPriceFee, isLowPriceEvent, packageFor, packageFee, round2, type LowPrice, type Package } from '../../lib/fees';
   type Region = { id: string; label: string; symbol: string; perTicket: number; seatingExtra: number };
   type Labels = {
-    aria: string; region: string; price: string; maxPrice: string; quantity: string; seating: string; result: string; sales: string;
+    aria: string; button?: string; hint?: string; region: string; price: string; maxPrice: string; quantity: string; seating: string; result: string; sales: string;
     needMax: string; maxBelowPrice: string; lowRate: string; package: string; noPackage: string;
   };
   let { labels, regions, lowPrice, packages, packageSeatingExtra, defaultPrice, defaultQuantity, intl }: {
@@ -20,6 +20,9 @@
   let maxPrice = $state(defaultPrice);
   let qty = $state(defaultQuantity);
   let seated = $state(false);
+  let outEl: HTMLElement | undefined = $state();
+  /** The result is live; the button brings it into view and confirms the numbers were read. */
+  const show = (e: Event) => { e.preventDefault(); outEl?.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); };
 
   const region = $derived(regions.find((r) => r.id === regionId) ?? regions[0]);
   const fmt = (n: number) => region.symbol + n.toLocaleString(intl, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -51,7 +54,7 @@
   });
 </script>
 
-<form class="card calc" aria-label={labels.aria} onsubmit={(e) => e.preventDefault()}>
+<form class="card calc" aria-label={labels.aria} onsubmit={show}>
   <label for="cRegion">{labels.region}
     <select id="cRegion" bind:value={regionId}>{#each regions as r}<option value={r.id}>{r.label}</option>{/each}</select>
   </label>
@@ -59,7 +62,8 @@
   <label for="cMax">{labels.maxPrice} ({region.symbol})<input type="number" id="cMax" bind:value={maxPrice} min="0" step="1" inputmode="decimal"></label>
   <label for="cQty">{labels.quantity}<input type="number" id="cQty" bind:value={qty} min="0" step="1" inputmode="numeric"></label>
   <div class="tog"><input type="checkbox" id="cSeat" bind:checked={seated} style="width:18px;height:18px;accent-color:var(--accent)"><label for="cSeat" style="font-weight:500;color:var(--fg)">{labels.seating}</label></div>
-  <div class="out" aria-live="polite">
+  {#if labels.button}<button type="submit" class="btn btn-primary calc-go">{labels.button}</button>{/if}
+  <div class="out" aria-live="polite" bind:this={outEl}>
     {#if 'error' in calc}
       <div class="l">{calc.error}</div>
     {:else}
@@ -68,4 +72,5 @@
       {#if calc.extra}<div class="l" style="margin-top:6px">{calc.extra}</div>{/if}
     {/if}
   </div>
+  {#if labels.hint}<p class="l calc-hint">{labels.hint}</p>{/if}
 </form>

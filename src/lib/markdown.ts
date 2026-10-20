@@ -157,7 +157,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       h2(s.title); lead(s.lead);
       out.push('| Capability | Status | Since | Note |', '|---|---|---|---|');
       facts.capabilities.forEach((c) => out.push(`| ${c.name} | ${c.status} | ${c.since ? c.since.toISOString().slice(0, 10) : ''} | ${c.note ?? ''} |`));
-      out.push('', `Buyer page languages: ${facts.languages.buyer_page.join(', ')}. E-mails in ${facts.languages.emails} languages. Load test ${formatDate(d.lang, facts.limits.load_test_date, { dateStyle: 'medium' })}: ${facts.limits.orders_per_minute} orders a minute at ${facts.limits.concurrent_visitors} concurrent visitors. Backups: ${facts.backups}.`, '', `Updated ${facts.updated.toISOString().slice(0, 10)}.`, '');
+      out.push('', `Buyer page languages: ${facts.languages.buyer_page.join(', ')}; any other language can be integrated on request. E-mails in ${facts.languages.emails} languages. Load test ${formatDate(d.lang, facts.limits.load_test_date, { dateStyle: 'medium' })}: ${facts.limits.orders_per_minute} orders a minute at ${facts.limits.concurrent_visitors} concurrent visitors. Backups: ${facts.backups}.`, '', `Updated ${facts.updated.toISOString().slice(0, 10)}.`, '');
       break;
     case 'onboarding':
       h2(s.title); lead(s.lead);

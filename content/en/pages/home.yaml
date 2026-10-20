@@ -68,7 +68,7 @@ sections:
       - title: What do I need?
         text: "The event name and schedule, your ticket prices, your poster, and your own payment account: Stripe, Flitt, AllPay or another provider of your country. Money goes to you from the first ticket."
       - title: Which way do I set it up?
-        text: "In the browser, in the “Event Center”*. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. Or send it to us and we set it up."
+        text: "In the browser on a computer or a phone, in the “Event Center”*. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. Or send it to us and we set it up."
     note: "* The “Event Center” is your organizer account on ArenaSoldOut.com: every event, order, refund, invitation and session, for you and your team, in the browser and in Telegram. [See the Event Center below →](#center)"
 
   - type: ways
@@ -102,13 +102,13 @@ sections:
         visual:
           type: ladder
           rungs:
-            - { price: €24, width: 100, label: first 100 · sold }
-            - { price: €32, width: 62, label: next 150 · selling }
-            - { price: €38, width: 0, label: opens after, next: true }
+            - { price: US$24, width: 100, label: first 100 · sold }
+            - { price: US$119, width: 62, label: next 150 · selling }
+            - { price: US$599, width: 0, label: opens after, next: true }
       - title: Several prices for one event?
         text: Yes. Categories with their own price, quota and sale window, plus free and pay-what-you-want tickets.
       - title: Can I add a service fee?
-        text: Yes. A percentage per sales channel, shown to the buyer as a separate line and paid into your account with the ticket.
+        text: Yes. A percentage per sales channel, shown to the buyer as a separate line and paid into your account with the ticket. Check that your country allows a service fee on ticket sales.
       - title: With seats and without?
         text: "Yes, and both in one event: a seating plan with categories, standing areas with quotas. Send us your venue plan as a PDF, a spreadsheet or a hand sketch, and we create your venue in the system ourselves. You never enter it by hand."
         visual:
@@ -222,9 +222,9 @@ sections:
     planBullets:
       - "**{seated}** per ticket with a seat chosen on the venue plan"
       - "**Free** invitations and free tickets to paid events: no commission"
-      - "**Prepaid packages** lower the commission per ticket"
+      - "**[Prepaid packages](/pricing#packages)** lower the commission per ticket"
     cta: { label: Start selling, href: /start }
-    currencyNote: "Commission in **euro** for venues in EU countries and in **US dollars** for every other country. The numbers are the same in both currencies. Amounts are without VAT."
+    currencyNote: "Commission in **US dollars** for every country outside the EU and in **euro** for venues in EU countries. The numbers are the same in both currencies. Amounts are without VAT."
     lowPrice:
       title: "Events where every ticket costs {lowMax} or less"
       text: "{lowPercent}% of the ticket price, at least {lowMin} and at most {lowCap} per ticket; {lowSeat} more with a seat. It applies to the whole event, only if no ticket of any category costs more than {lowMax}."
@@ -232,7 +232,7 @@ sections:
       title: Permanent venues
       text: "Theatres, clubs, stadiums, circuses: **{percent}% of the ticket price**, at most **{cap}** per ticket, the same with and without a seat. Invoiced monthly."
       cta: { label: Talk to us, href: /contact }
-    note: "You pay after the event, or prepay a package and pay less per ticket. Packages, the calculator and the detailed terms are on the pricing page."
+    note: "You pay after the event, or prepay a package and pay less per ticket. Packages, the calculator and the detailed terms are on the pricing page: [prepaid packages and their rates →](/pricing#packages)"
     terms: { label: All prices and the calculator →, href: /pricing }
 
   - type: who

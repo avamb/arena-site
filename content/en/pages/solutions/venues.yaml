@@ -26,7 +26,7 @@ sections:
       - q: Can a promoter sell our events on their own site?
         a: Yes, with the widget on their site or a promoter page we host. Sales from every channel appear in the venue's Event Center.
       - q: Can we move from another ticketing system?
-        a: "Yes. Sessions, seating plans and customers were imported from Bil24 for two clients with zero downtime; other systems through the event bundle API. See [developers](/developers)."
+        a: "Yes. Sessions, seating plans and customers were imported from ArenaSoldOut.com for two clients with zero downtime; other systems through the event bundle API. See [developers](/developers)."
       - q: Who runs the Event Center?
         a: Your team, with roles. The venue owns the organization; managers see what you allow.
   - type: cta

@@ -2,4 +2,5 @@ region: All other countries
 currency: USD
 per_ticket: 0.59
 seating_extra: 0.50
-order: 2
+highlighted: true
+order: 1

@@ -120,7 +120,7 @@ export const section = z.discriminatedUnion('type', [
     }).optional(),
     venues: z.object({ title: z.string(), text: z.string(), example: z.string().optional(), cta: link }),
     calculator: z.object({
-      aria: z.string(), region: z.string(), regionEu: z.string(), regionWorld: z.string(), price: z.string(), maxPrice: z.string(), quantity: z.string(), seating: z.string(),
+      aria: z.string(), button: z.string().optional(), hint: z.string().optional(), region: z.string(), regionEu: z.string(), regionWorld: z.string(), price: z.string(), maxPrice: z.string(), quantity: z.string(), seating: z.string(),
       result: z.string(), sales: z.string(), needMax: z.string(), maxBelowPrice: z.string(), lowRate: z.string(), package: z.string(), noPackage: z.string(),
     }).optional(),
     note: z.string(),
