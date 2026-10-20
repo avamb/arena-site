@@ -59,10 +59,10 @@ export const hosts = {
   telegramChat: 'https://t.me/ArenaSoldOutChat',
 };
 
-/** Umami is self-hosted on lead-parser and not up yet; empty values disable the script. */
+/** Umami (https://app.pr-top.com); empty values disable the script. The website id is public by design. */
 export const umami = {
-  src: '',
-  websiteId: '',
+  src: 'https://app.pr-top.com/script.js',
+  websiteId: '66156eeb-85a9-461f-a89c-49b1116ba31b',
 };
 
 /**
