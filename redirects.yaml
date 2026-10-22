@@ -97,6 +97,12 @@ redirects:
   - { from: /et/artiklid/, to: /blog }
   - { from: /et/category/*, to: /blog }
   - { from: /et/tag/*, to: /blog }
+  # legacy locale roots and pages that still get impressions in Search Console (SEO-005)
+  - { from: /et/hinnad/, to: /pricing }      # Estonian: prices
+  - { from: /et/kkk/, to: /facts }           # Estonian: KKK = frequently asked questions
+  - { from: /et/omadused/, to: /product/sell }  # Estonian: features, same target as /features/
+  - { from: /my/, to: / }
+  - { from: /no/, to: / }
   # WooCommerce test shop → buyer help
   - { from: /shop/, to: /help/tickets }
   # old WooCommerce test products, listed one by one: /product/ is now the product section of the site
