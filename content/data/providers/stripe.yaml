@@ -4,6 +4,6 @@ currencies: [EUR, CZK, USD, GBP]
 methods: [card, apple_pay, google_pay]
 hosted_checkout: true
 status: live
-since: 2026-09-20
 note: Hosted checkout in the widget and on hosted pages, webhooks per organization.
+entity_countries: [AU, AT, BE, BR, BG, CA, HR, CY, CZ, DK, EE, FI, FR, DE, GI, GR, HK, HU, IE, IT, JP, LV, LI, LT, LU, MY, MT, MX, NL, NZ, NO, PL, PT, RO, SG, SK, SI, ES, SE, CH, TH, AE, GB, US]
 order: 1

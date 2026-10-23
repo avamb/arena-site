@@ -21,7 +21,7 @@ export const GET: APIRoute = async () => {
       invoicing: tariff.invoicing,
       terms_url: `${siteUrl}/pricing/terms`,
     },
-    providers: providers.map((p) => ({ id: p.id, name: p.data.name, status: p.data.status, hosted_checkout: p.data.hosted_checkout, regions: p.data.regions, currencies: p.data.currencies, methods: p.data.methods, since: p.data.since?.toISOString().slice(0, 10), note: p.data.note })),
+    providers: providers.map((p) => ({ id: p.id, name: p.data.name, status: p.data.status, hosted_checkout: p.data.hosted_checkout, regions: p.data.regions, currencies: p.data.currencies, methods: p.data.methods, entity_countries: p.data.entity_countries, note: p.data.note })),
     markets: markets.map((m) => ({ iso2: m.data.iso2, name: m.data.name.en, status: m.data.status, group: m.data.group, currencies: m.data.currencies, providers: m.data.providers, languages: m.data.languages })),
     languages: { site: languages.filter((l) => l.inMenu).map((l) => l.code), site_planned: languages.filter((l) => !l.inMenu).map((l) => l.code), buyer_page: facts.languages.buyer_page, emails: facts.languages.emails },
     limits: { orders_per_minute: facts.limits.orders_per_minute, concurrent_visitors: facts.limits.concurrent_visitors, load_test_date: facts.limits.load_test_date.toISOString().slice(0, 10) },

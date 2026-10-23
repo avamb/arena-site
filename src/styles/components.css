@@ -416,3 +416,15 @@ footer{border-top:1px solid var(--line);padding-block:48px 28px;font-size:14px}
 .tbl th:first-child,.tbl td:first-child{text-align:left}
 .tbl tbody th{font-weight:700;color:var(--fg)}
 .tbl-sm{min-width:0;max-width:420px}
+
+/* Payment coverage: one card, one row per provider, countries as compact chips */
+.cov{margin-top:32px;padding:8px 28px 22px}
+.cov-row{display:grid;grid-template-columns:200px minmax(0,1fr);gap:8px 32px;padding:22px 0;border-bottom:1px solid var(--line)}
+.cov-row h3{font-size:22px;letter-spacing:-.02em}
+.cov-n{margin-top:6px;color:var(--fg-2);font-size:14px}
+.cov-n .mono{font-size:15px;font-weight:600;color:var(--fg)}
+.cov-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.cov-list li{display:inline-flex;align-items:center;height:30px;padding-inline:11px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);font-size:13.5px;font-weight:500}
+.cov-foot{margin-top:18px;display:flex;justify-content:space-between;gap:8px 24px;flex-wrap:wrap;font-size:14px;color:var(--fg-2)}
+.cov-foot a{color:var(--fg);font-weight:600}
+@media (max-width:900px){.cov{padding-inline:20px}.cov-row{grid-template-columns:1fr}}

@@ -4,6 +4,6 @@ currencies: [EUR, GEL]
 methods: [card]
 hosted_checkout: true
 status: live
-since: 2026-10-01
 note: Hosted checkout in the widget, EUR and GEL.
+entity_countries: [GE, UZ, MD, AM]
 order: 2

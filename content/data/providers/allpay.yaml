@@ -5,4 +5,5 @@ methods: [card, bit, installments]
 hosted_checkout: false
 status: api
 note: Isracard, Leumi Card, Bit and instalments. Live for sales on the organizer's WordPress site through the API; hosted checkout in the widget is being added on the Flitt pattern.
+entity_countries: [IL]
 order: 3

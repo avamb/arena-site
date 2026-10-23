@@ -28,7 +28,7 @@ interface Props {
 }
 const { s, lang, providers, markets, changelog, posts, first = false } = Astro.props;
 // Tariff numbers in prose and FAQ answers: {percent} (one source: content/data/tariff.yaml).
-const vars = { percent: tariff.venues_percent };
+const vars = { percent: tariff.venues_percent, countries: clients.countries, since: clients.countries_since };
 const pad = first ? 'padding-top:40px' : 'padding-top:0';
 const dateFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'changes.date');
 const postFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'post.date');
@@ -37,6 +37,8 @@ const factsCols = tObject<Record<string, string>>(lang, 'facts.columns');
 const liveMarkets = markets.filter((m) => m.data.status === 'live');
 const plannedGroups = [...new Set(markets.filter((m) => m.data.status === 'planned').map((m) => m.data.group ?? m.data.name.en))];
 const marketName = (m: CollectionEntry<'markets'>) => m.data.name[lang] ?? m.data.name.en;
+const regionNames = new Intl.DisplayNames([lang], { type: 'region' });
+const coverageNames = (codes: string[]) => codes.map((c) => (c === 'HK' && lang === 'en' ? 'Hong Kong' : regionNames.of(c) ?? c)).sort((x, y) => x.localeCompare(y, lang));
 const providerName = (id: string) => providers.find((p) => p.id === id)?.data.name ?? id;
 const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) => l.code !== lang).map(async (l) => ({ l, n: (await getPosts(l.code)).length })))).filter((x) => x.n > 0) : [];
 ---
@@ -44,7 +46,7 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
   <div class="wrap">
     {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
     {s.title && <h2 class="h2">{s.title}</h2>}
-    {s.lead && <p class="lead" set:html={inline(s.lead)} />}
+    {s.lead && <p class="lead" set:html={inline(fill(s.lead, vars))} />}
 
     {s.type === 'prose' && <div class="prose" set:html={marked.parse(fill(s.body, vars))} />}
 
@@ -65,15 +67,29 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
           <article class="card provider">
             <h3>{p.data.name} <span class:list={['st', p.data.status]}>{s.labels.statuses[p.data.status] ?? p.data.status}</span></h3>
             <dl>
-              <dt>{s.labels.regions}</dt><dd>{p.data.regions.map((r) => markets.find((m) => m.data.iso2 === r)).filter(Boolean).map((m) => marketName(m!)).join(', ') || p.data.regions.join(', ')}</dd>
               <dt>{s.labels.currencies}</dt><dd>{p.data.currencies.join(', ')}</dd>
               <dt>{s.labels.methods}</dt><dd>{p.data.methods.map((m) => s.labels.methods_map[m] ?? m).join(', ')}</dd>
               <dt>{s.labels.checkout}</dt><dd>{p.data.hosted_checkout ? s.labels.statuses.checkout_yes ?? 'yes' : s.labels.statuses.checkout_no ?? 'no'}</dd>
-              {p.data.since && <><dt>{s.labels.since}</dt><dd><time datetime={p.data.since.toISOString().slice(0, 10)}>{formatDate(lang, p.data.since, postFmt)}</time></dd></>}
+              
             </dl>
             {p.data.note && <p style="color:var(--fg-2);font-size:14px">{p.data.note}</p>}
           </article>
         ))}
+      </div>
+    )}
+
+    {s.type === 'coverage' && (
+      <div class="card cov">
+        {providers.filter((p) => p.data.entity_countries.length).map((p) => (
+          <section class="cov-row">
+            <header>
+              <h3>{p.data.name}</h3>
+              <p class="cov-n">{s.labels.countries}: <span class="mono">{p.data.entity_countries.length}</span></p>
+            </header>
+            <ul class="cov-list">{coverageNames(p.data.entity_countries).map((n) => <li>{n}</li>)}</ul>
+          </section>
+        ))}
+        <p class="cov-foot"><span>{s.labels.note}</span> <span>{s.labels.missing} <a href={localePath(lang, s.cta.href)}>{s.cta.label}</a></span></p>
       </div>
     )}
 

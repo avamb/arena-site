@@ -112,11 +112,18 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       break;
     case 'providers': {
       h2(s.title); lead(s.lead);
-      out.push(`| Provider | Status | ${s.labels.regions} | ${s.labels.currencies} | ${s.labels.methods} | ${s.labels.checkout} |`, '|---|---|---|---|---|---|');
-      d.providers.forEach((p) => out.push(`| ${p.data.name} | ${s.labels.statuses[p.data.status] ?? p.data.status} | ${p.data.regions.join(', ')} | ${p.data.currencies.join(', ')} | ${p.data.methods.map((m) => s.labels.methods_map[m] ?? m).join(', ')} | ${p.data.hosted_checkout ? 'yes' : 'no'} |`));
+      out.push(`| Provider | Status | ${s.labels.currencies} | ${s.labels.methods} | ${s.labels.checkout} |`, '|---|---|---|---|---|');
+      d.providers.forEach((p) => out.push(`| ${p.data.name} | ${s.labels.statuses[p.data.status] ?? p.data.status} | ${p.data.currencies.join(', ')} | ${p.data.methods.map((m) => s.labels.methods_map[m] ?? m).join(', ')} | ${p.data.hosted_checkout ? 'yes' : 'no'} |`));
       out.push('');
       d.providers.forEach((p) => p.data.note && out.push(`- **${p.data.name}**: ${p.data.note}`));
       out.push('');
+      break;
+    }
+    case 'coverage': {
+      h2(s.title); lead(fill(s.lead ?? '', { countries: clients.countries, since: clients.countries_since }));
+      const names = new Intl.DisplayNames([d.lang], { type: 'region' });
+      d.providers.filter((p) => p.data.entity_countries.length).forEach((p) => out.push(`### ${p.data.name} (${p.data.entity_countries.length})`, '', p.data.entity_countries.map((c) => names.of(c) ?? c).sort((a, b) => a.localeCompare(b, d.lang)).join(', '), ''));
+      out.push(`${s.labels.note} ${s.labels.missing} [${s.cta.label}](${abs(s.cta.href)})`, '');
       break;
     }
     case 'markets': {

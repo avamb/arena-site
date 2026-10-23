@@ -135,7 +135,8 @@ export const section = z.discriminatedUnion('type', [
   /* generic blocks for inner pages */
   z.object({ type: z.literal('prose'), ...sectionBase, body: z.string() }),
   z.object({ type: z.literal('faq'), ...sectionBase, items: z.array(z.object({ q: z.string(), a: z.string() })) }),
-  z.object({ type: z.literal('providers'), ...sectionBase, labels: z.object({ regions: z.string(), currencies: z.string(), methods: z.string(), checkout: z.string(), since: z.string(), statuses: z.record(z.string()), methods_map: z.record(z.string()) }) }),
+  z.object({ type: z.literal('providers'), ...sectionBase, labels: z.object({ currencies: z.string(), methods: z.string(), checkout: z.string(), statuses: z.record(z.string()), methods_map: z.record(z.string()) }) }),
+  z.object({ type: z.literal('coverage'), ...sectionBase, labels: z.object({ countries: z.string(), note: z.string(), missing: z.string() }), cta: link }),
   z.object({ type: z.literal('markets'), ...sectionBase, preparing: z.object({ title: z.string(), text: z.string() }) }),
   z.object({ type: z.literal('cards'), ...sectionBase, items: z.array(z.object({ title: z.string(), text: z.string(), link: link.optional() })) }),
   z.object({ type: z.literal('code'), ...sectionBase, code: z.string(), items: z.array(z.object({ key: z.string(), text: z.string() })), cta: link }),
@@ -215,7 +216,7 @@ const providers = defineCollection({
     methods: z.array(z.enum(['card', 'apple_pay', 'google_pay', 'bit', 'installments', 'bank_transfer'])),
     hosted_checkout: z.boolean(),
     status: z.enum(['live', 'api', 'planned']),
-    since: z.coerce.date().optional(),
+    entity_countries: z.array(z.string().length(2)).default([]),
     note: z.string().optional(),
     order: z.number().default(100),
   }),
