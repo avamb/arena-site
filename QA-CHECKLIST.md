@@ -14,7 +14,7 @@ Run before every PR and on every screen. Automated parts run in CI (`npm run che
       `{{placeholders}}` as the `en` original; report of untranslated pages per language.
 - [ ] `scripts/check-jsonld.mjs`: every HTML page in `dist/` has at least one valid JSON-LD
       block with `@context` and `@type`; required fields per type present; Organization on every
-      page; SoftwareApplication with offers on `/` and `/pricing`; FAQPage where there are
+      page; Service with offers on `/` and `/pricing`; FAQPage where there are
       questions; HowTo on `/` and `/start`.
 - [ ] `scripts/check-agents.mjs`: `/llms.txt`, `/llms-full.txt` exist; every page in the sitemap
       has a `.md` twin; `/facts.json` parses; `robots.txt` lists GPTBot, OAI-SearchBot,

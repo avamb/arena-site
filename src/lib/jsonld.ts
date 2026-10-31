@@ -2,7 +2,7 @@
  * JSON-LD from the same data as the HTML (doc 33 §3.10, item 3). One graph per page; CI checks
  * every page has Organization and the page-specific types.
  */
-import type { Graph, Thing, Organization, WebSite, WebPage, SoftwareApplication, FAQPage, HowTo, Offer, BreadcrumbList, Article } from 'schema-dts';
+import type { Graph, Thing, Organization, WebSite, WebPage, Service, FAQPage, HowTo, Offer, BreadcrumbList, Article } from 'schema-dts';
 import { org, siteUrl, hosts } from '@config';
 import { plain, fill } from './inline';
 import { tariff } from './data';
@@ -41,7 +41,8 @@ export function website(): WebSite {
   return { '@type': 'WebSite', '@id': `${siteUrl}/#website`, url: siteUrl, name: org.name, publisher: { '@id': `${siteUrl}/#organization` } };
 }
 
-export function softwareApplication(pricing: CollectionEntry<'pricing'>[]): SoftwareApplication {
+// A SaaS ticketing service, typed as Service: SoftwareApplication is flagged by Semrush without a rating, which we do not have.
+export function ticketingService(pricing: CollectionEntry<'pricing'>[]): Service {
   const offers: Offer[] = pricing.map((p) => ({
     '@type': 'Offer',
     name: `${p.data.region}: per ticket sold`,
@@ -51,15 +52,15 @@ export function softwareApplication(pricing: CollectionEntry<'pricing'>[]): Soft
     url: absolute('/pricing'),
   }));
   return {
-    '@type': 'SoftwareApplication',
-    '@id': `${siteUrl}/#software`,
+    '@type': 'Service',
+    '@id': `${siteUrl}/#service`,
     name: org.name,
-    applicationCategory: 'BusinessApplication',
-    applicationSubCategory: 'Ticketing',
-    operatingSystem: 'Web, Telegram',
+    serviceType: 'Online ticketing platform (SaaS)',
+    category: 'Ticketing',
     url: siteUrl,
-    installUrl: hosts.telegramBot,
+    availableChannel: { '@type': 'ServiceChannel', serviceUrl: hosts.telegramBot },
     provider: { '@id': `${siteUrl}/#organization` },
+    areaServed: org.region,
     offers,
   };
 }
@@ -103,7 +104,7 @@ export function buildGraph(input: JsonLdInput): Graph {
   };
   const graph: Thing[] = [organization(), website(), page];
   if (input.breadcrumbs && input.breadcrumbs.length > 1) graph.push(breadcrumbs(input.breadcrumbs));
-  if (input.pricing) graph.push(softwareApplication(input.pricing));
+  if (input.pricing) graph.push(ticketingService(input.pricing));
   if (input.faq && input.faq.length) graph.push(faqPage(input.faq, input.path));
   if (input.howTo) graph.push(howTo(input.howTo, input.path));
   if (input.article) {

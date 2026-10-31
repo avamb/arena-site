@@ -1,6 +1,6 @@
 /**
  * JSON-LD validity (doc 33 §3.10, item 3): every HTML page in dist/ has a parseable ld+json block
- * with @context and @type/@graph; Organization on every page; SoftwareApplication with offers on
+ * with @context and @type/@graph; Organization on every page; Service with offers on
  * / and /pricing; FAQPage where the page has questions; HowTo on / and /start; Article on posts.
  */
 import { readFileSync, readdirSync, statSync } from 'node:fs';
@@ -15,7 +15,7 @@ const required = {
   Organization: ['name', 'url', 'legalName'],
   WebSite: ['url', 'name'],
   WebPage: ['url', 'name', 'description'],
-  SoftwareApplication: ['name', 'applicationCategory', 'offers'],
+  Service: ['name', 'serviceType', 'offers'],
   Offer: ['price', 'priceCurrency'],
   FAQPage: ['mainEntity'],
   Question: ['name', 'acceptedAnswer'],
@@ -50,7 +50,7 @@ for (const p of pages) {
   if (!types.has('Organization')) fail(p, 'no Organization');
   if (!types.has('WebPage')) fail(p, 'no WebPage');
   const rel = p.replace(/\\/g, '/').replace('dist/', '/');
-  if ((rel === '/index.html' || rel === '/pricing.html') && (!types.has('SoftwareApplication') || !types.has('Offer'))) fail(p, 'no SoftwareApplication with offers');
+  if ((rel === '/index.html' || rel === '/pricing.html') && (!types.has('Service') || !types.has('Offer'))) fail(p, 'no Service with offers');
   if ((rel === '/index.html' || rel === '/start.html') && !types.has('HowTo')) fail(p, 'no HowTo');
   if ((rel === '/index.html' || rel === '/pricing.html') && !types.has('FAQPage')) fail(p, 'no FAQPage');
   if (/<details/.test(html) && !types.has('FAQPage')) fail(p, 'page has questions but no FAQPage');
