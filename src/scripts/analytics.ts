@@ -10,7 +10,8 @@
  *    that records the choice itself;
  *  - `aid` is a random visitor id in the first-party cookie `aso_aid` (13 months). It exists only after
  *    "accept" and is deleted, and no longer sent, on "decline" or withdrawal;
- *  - `cid` rides in the first batch of the visit only, and is removed from the address bar at once.
+ *  - `cid` rides in the first batch of the visit, and is removed from the address bar at once. It is kept in memory
+ *    for the page life only: an Accept on the same page repeats it once with the new aid.
  */
 import { createTracker, type Tracker, type TrackerContext } from '../lib/arena-track.ts';
 import {
@@ -72,6 +73,8 @@ export function createAnalytics(env: AnalyticsEnv): Analytics {
   let memAid: string | null = null;
   /** The contact code still waiting for its first batch. */
   let pendingCid: string | null = null;
+  /** The code of this page load, kept in memory only (never in a cookie or storage), so a later Accept can join it with the aid. */
+  let visitCid: string | null = null;
   /** Opened for one batch that may leave without consent (the e-mail click, the consent event itself). */
   let burst = false;
 
@@ -169,6 +172,7 @@ export function createAnalytics(env: AnalyticsEnv): Analytics {
       }
       if (!endpoint) return;
       pendingCid = cid;
+      visitCid = cid;
       if (choice === 'granted') {
         aidNow();
         report();
@@ -184,6 +188,9 @@ export function createAnalytics(env: AnalyticsEnv): Analytics {
       choice = 'granted';
       writeCookie(CONSENT_COOKIE, '1', CONSENT_MAX_AGE);
       aidNow();
+      // A new visitor who came through an e-mail link and now accepts: the first batch with the new aid carries
+      // the code once more (same pv, so the server counts one click) and the contact is joined to the visitor.
+      pendingCid = visitCid;
       if (!reported) report();
       tracker.track('consent', { analytics: true });
       tracker.flush();

@@ -252,14 +252,30 @@ test('a stored decline still lets the e-mail click through, without aid', () => 
   assert.equal(b.requests[0].body.aid, undefined);
 });
 
-test('accept after the e-mail click does not count the page a second time', () => {
+test('accept after the e-mail click does not count the page twice and joins cid with the new aid', () => {
   const b = browser({ url: `https://arenasoldout.com/?cid=${CID}` });
   const a = createAnalytics({ win: b.win, endpoint: b.endpoint });
   a.start();
   a.accept();
   assert.deepEqual(names(b), ['page_view', 'consent']);
-  assert.equal(b.requests[1].body.cid, undefined);
+  // The first batch with the new aid repeats the code once, under the same page view id.
+  assert.equal(b.requests[1].body.cid, CID);
   assert.ok(b.requests[1].body.aid);
+  assert.equal(b.requests[1].body.pv, b.requests[0].body.pv);
+  assert.equal(b.requests[0].body.aid, undefined);
+  // Later batches carry the aid only, and the code is nowhere in storage.
+  clickOn(b.doc);
+  b.rawWin.dispatchEvent(new Event('pagehide'));
+  assert.equal(b.requests[2].body.cid, undefined);
+  assert.ok(![...b.jar].some(([k, v]) => k.includes('cid') || v.includes(CID)));
+});
+
+test('a visitor without an e-mail link never gets a cid after accept', () => {
+  const b = browser();
+  const a = createAnalytics({ win: b.win, endpoint: b.endpoint });
+  a.start();
+  a.accept();
+  assert.ok(b.requests.every((r) => r.body.cid === undefined));
 });
 
 test('withdrawing and accepting again gives a new visitor id', () => {
