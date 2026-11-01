@@ -3,6 +3,7 @@ import type { Section } from '@/content.config';
 import type { LanguageCode } from '@config';
 import { inline } from '@/lib/inline';
 import { localePath } from '@/lib/i18n';
+import { trackLabel } from '@/lib/track';
 interface Props { s: Extract<Section, { type: 'cta' }>; lang: LanguageCode }
 const { s, lang } = Astro.props;
 ---
@@ -13,8 +14,8 @@ const { s, lang } = Astro.props;
       <h2>{s.title}</h2>
       <p set:html={inline(s.text)} />
       <div class="hero-actions">
-        <a class="btn btn-primary" href={localePath(lang, s.primary.href)}>{s.primary.label}</a>
-        <a class="btn btn-band" href={localePath(lang, s.secondary.href)}>{s.secondary.label}</a>
+        <a class="btn btn-primary" href={localePath(lang, s.primary.href)} data-track={trackLabel(s.primary.href, 'cta')}>{s.primary.label}</a>
+        <a class="btn btn-band" href={localePath(lang, s.secondary.href)} data-track={trackLabel(s.secondary.href, 'cta_secondary')}>{s.secondary.label}</a>
       </div>
       <p class="hero-note" style="margin-top:18px">{s.note}</p>
     </div>

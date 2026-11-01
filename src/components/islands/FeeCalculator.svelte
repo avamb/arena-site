@@ -62,7 +62,7 @@
   <label for="cMax">{labels.maxPrice} ({region.symbol})<input type="number" id="cMax" bind:value={maxPrice} min="0" step="1" inputmode="decimal"></label>
   <label for="cQty">{labels.quantity}<input type="number" id="cQty" bind:value={qty} min="0" step="1" inputmode="numeric"></label>
   <div class="tog"><input type="checkbox" id="cSeat" bind:checked={seated} style="width:18px;height:18px;accent-color:var(--accent)"><label for="cSeat" style="font-weight:500;color:var(--fg)">{labels.seating}</label></div>
-  {#if labels.button}<button type="submit" class="btn btn-primary calc-go">{labels.button}</button>{/if}
+  {#if labels.button}<button type="submit" class="btn btn-primary calc-go" data-track="calc.submit">{labels.button}</button>{/if}
   <div class="out" aria-live="polite" bind:this={outEl}>
     {#if 'error' in calc}
       <div class="l">{calc.error}</div>

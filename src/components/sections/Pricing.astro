@@ -6,6 +6,7 @@ import { inline, fill } from '@/lib/inline';
 import { tariff, packageLinks } from '@/lib/data';
 import { localePath, currencySymbol, getLanguage, t } from '@/lib/i18n';
 import { lowPriceFee, packageFee, packageCapacity, venueFee } from '@/lib/fees';
+import { trackLabel } from '@/lib/track';
 import FeeCalculator from '@/components/islands/FeeCalculator.svelte';
 interface Props { s: Extract<Section, { type: 'pricing' }>; pricing: CollectionEntry<'pricing'>[]; lang: LanguageCode; top?: boolean }
 const { s, pricing, lang, top = false } = Astro.props;
@@ -48,12 +49,12 @@ const regions = pricing.map((p) => ({
           <div class="reg">{p.data.region}</div>
           <div class="big num">{fmt(p.data.per_ticket, p.data.currency)}<small>{t(lang, 'pricing.perTicket')}</small></div>
           <ul>{s.planBullets.map((b) => <li set:html={inline(fill(b, { seated: fmt(p.data.per_ticket + p.data.seating_extra, p.data.currency) }))} />)}</ul>
-          <a class:list={['btn', p.data.highlighted ? 'btn-primary' : 'btn-ghost']} href={localePath(lang, s.cta.href)}>{s.cta.label}</a>
+          <a class:list={['btn', p.data.highlighted ? 'btn-primary' : 'btn-ghost']} href={localePath(lang, s.cta.href)} data-track={trackLabel(s.cta.href, 'plan')}>{s.cta.label}</a>
         </div>
       ))}
     </div>
     <p class="pr-note" set:html={inline(s.currencyNote)} />
-    {s.buyCredits && <p style="margin-top:18px"><a class="btn btn-primary" href={localePath(lang, s.buyCredits.href)}>{s.buyCredits.label}</a></p>}
+    {s.buyCredits && <p style="margin-top:18px"><a class="btn btn-primary" href={localePath(lang, s.buyCredits.href)} data-track="credits.buy">{s.buyCredits.label}</a></p>}
 
     {!s.compact && s.packages && (
       <div class="card pkgs" id="packages">
@@ -130,7 +131,7 @@ const regions = pricing.map((p) => ({
         <p set:html={inline(fill(s.venues.text, vars))} />
         {!s.compact && s.venues.example && <p class="pr-note" style="margin-top:10px">{fill(s.venues.example, { ...vars, ex25: fmt(25, baseCur), ex: fmt(venueFee(25, tariff.venues_percent, seated), baseCur), capAt: fmt(seated * 100 / tariff.venues_percent, baseCur) })}</p>}
       </div>
-      <a class="btn btn-ghost btn-sm" href={localePath(lang, s.venues.cta.href)}>{s.venues.cta.label}</a>
+      <a class="btn btn-ghost btn-sm" href={localePath(lang, s.venues.cta.href)} data-track={trackLabel(s.venues.cta.href, 'venues')}>{s.venues.cta.label}</a>
     </div>
 
     {!s.compact && s.calculator && (

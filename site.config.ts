@@ -66,6 +66,17 @@ export const umami = {
 };
 
 /**
+ * Own product analytics (spec 50, stage A2). `endpoint` is the collector URL, for example
+ * `https://api.arenasoldout.com/v1/t`, set at build time through ANALYTICS_ENDPOINT. Empty (the default)
+ * means the tracker, the consent banner and the footer link do not exist and nothing is ever sent.
+ * The API origin must also list this site in its CORS_ALLOWED_ORIGINS; the CSP `connect-src` follows
+ * the endpoint automatically (scripts/build-edge.mjs).
+ */
+export const analytics = {
+  endpoint: ((globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env?.ANALYTICS_ENDPOINT ?? '').trim(),
+};
+
+/**
  * Turnstile site key is public by design (it is embedded in the HTML). The secret lives only
  * in `wrangler secret` / the container environment as TURNSTILE_SECRET_KEY. Empty = widget off.
  */

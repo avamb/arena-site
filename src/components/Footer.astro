@@ -1,6 +1,6 @@
 ---
 import type { LanguageCode } from '@config';
-import { hosts } from '@config';
+import { hosts, analytics } from '@config';
 import { nav } from '@/lib/data';
 import { t, localePath, getLanguage } from '@/lib/i18n';
 import Logo from './Logo.astro';
@@ -25,6 +25,7 @@ const { lang } = Astro.props;
     <div class="fbot">
       <span>{nav.copyright}</span>
       <div class="r">
+        {analytics.endpoint && <button type="button" class="linkbtn" data-consent-open>{t(lang, 'consent.settings')}</button>}
         <span class="lang" aria-label={`${t(lang, 'language')}: ${getLanguage(lang).name}`}>{lang.toUpperCase()}</span>
         <a class="icon-btn" href={hosts.telegramChat} aria-label={t(lang, 'telegram')}><Icon name="telegram" /></a>
       </div>

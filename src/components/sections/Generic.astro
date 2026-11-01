@@ -12,6 +12,7 @@ import { inline, fill } from '@/lib/inline';
 import { clients, facts, tariff } from '@/lib/data';
 import Marquee from '@/components/Marquee.astro';
 import { localePath, postPath, formatDate, tObject, t, currencySymbol } from '@/lib/i18n';
+import { trackLabel } from '@/lib/track';
 import { getPosts } from '@/lib/data';
 import { languages } from '@config';
 import Icon from '@/components/Icon.astro';
@@ -120,7 +121,7 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
         <pre class="code" style="margin:0"><code set:html={s.code.trim().replace(/&/g, '&amp;').replace(/</g, '&lt;')} /></pre>
         <div>
           <ul class="devlist" style="margin-top:0">{s.items.map((i) => <li><span class="k">{i.key}</span><span set:html={inline(i.text)} /></li>)}</ul>
-          <a class="btn btn-ghost" href={localePath(lang, s.cta.href)} style="margin-top:22px">{s.cta.label}</a>
+          <a class="btn btn-ghost" href={localePath(lang, s.cta.href)} data-track={trackLabel(s.cta.href, 'page')} style="margin-top:22px">{s.cta.label}</a>
         </div>
       </div>
     )}
