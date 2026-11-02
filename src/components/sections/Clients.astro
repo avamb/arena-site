@@ -9,7 +9,7 @@ interface Props { s: Extract<Section, { type: 'clients' }>; lang: LanguageCode }
 const { s, lang } = Astro.props;
 const vars = { countries: clients.countries, since: clients.countries_since, track: clients.track_record.join(', ') };
 ---
-<section class="section clients" id={s.id}>
+<section class="section clients" id={s.id} data-nosnippet>
   <div class="wrap">
     {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
     {s.title && <h2 class="h2">{fill(s.title, vars)}</h2>}

@@ -4,7 +4,7 @@
 # platform actually serves (website visitors, organizers, ticket buyers) described from facts.yaml
 # and the payments page. Points the owner still has to confirm are listed in the hand-over note.
 title: "Privacy Policy"
-description: "How ArenaSoldOut.com (ABH TEAM OÜ) processes personal data of website visitors, organizers and ticket buyers: what we collect, why, who receives it, how long we keep it, your rights, cookies."
+description: "How ArenaSoldOut.com (ABH TEAM OÜ) processes personal data of visitors, organizers and ticket buyers: what, why, recipients, retention, your rights, cookies."
 h1: "Privacy Policy"
 lead: "Version of 9 October 2026. Replaces the version of 5 August 2023. Applies to the website, the Event Center, the sales pages, the widget, the API, the Telegram bot and the scanner app."
 related:

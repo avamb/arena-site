@@ -1,8 +1,8 @@
 # MACS: the scanner app as a product of its own (owner decision 09.10.2026). Facts: facts.yaml,
 # BRIEF.md (EAN-13 and QR, iOS and Android, partners' tickets from other systems), store links in
 # macs_app/macs-apps.txt. Scanning-only terms for tickets sold elsewhere are not decided: "on request".
-title: "MACS scanner app: ticket scanning for any organizer, iOS and Android"
-description: "MACS is the ArenaSoldOut.com access control app. It scans EAN-13 and QR tickets of any organizer on the platform and partners' tickets from other systems, on iPhone, iPad and Android, with handheld scanners too. Free in the App Store and Google Play."
+title: "MACS scanner app: ticket scanning on iOS and Android"
+description: "MACS scans EAN-13 and QR tickets of any organizer on the platform and partners' tickets, on iPhone, iPad, Android and handheld scanners. Free in the app stores."
 h1: "MACS: the app at the door"
 lead: One app for every entrance. Door staff sign in, pick the session and scan the EAN-13 or the QR on the ticket, on paper or on a screen. It takes tickets of any organizer who sells through ArenaSoldOut.com and partners' tickets from other systems, so a venue uses the same phones for every event.
 related:

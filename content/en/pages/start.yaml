@@ -2,7 +2,7 @@
 # GET /v1/onboarding/form-schema (fields, lists and labels are not in this file) and posts to the
 # platform API directly (doc 34 §9). Only the form's own UI strings live here.
 title: "Start selling: apply as an organizer"
-description: "Tell us about your organization and your events. The team reads every application and sets up your organization, your sales page and your payment account, usually within a day."
+description: "Tell us about your organization and events. The team sets up your organization, sales page and payment account, usually within a day."
 h1: Start selling
 lead: "Tell us who you are and where you sell. We set up your organization, your sales page and connect your payment account, usually within a day. Events without a seating plan go on sale today."
 sections:

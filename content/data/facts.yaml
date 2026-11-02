@@ -50,8 +50,8 @@ capabilities:
   - name: Import from ArenaSoldOut.com (sessions, seating plans, customers); two clients moved with zero downtime
     status: yes
   - name: Event Center in the browser (orders, tickets, refunds, invitations, sessions, team)
-    status: partial
-    note: Runs for current clients today; moves into the platform next, in parallel with this site.
+    status: yes
+    note: Runs in production for current clients; moves into the new platform next, in parallel with this site.
   - name: Web registration for "Create your event"
     status: partial
     note: Being built; today the Telegram bot and "Start, we set you up".

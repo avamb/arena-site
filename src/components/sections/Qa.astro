@@ -5,7 +5,7 @@ import Visual from './Visual.astro';
 interface Props { s: Extract<Section, { type: 'qa' }> }
 const { s } = Astro.props;
 ---
-<section class="section" id={s.id} style="padding-top:0">
+<section class="section" id={s.id} style="padding-top:0" data-nosnippet>
   <div class="wrap">
     {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
     {s.title && <h2 class="h2">{s.title}</h2>}

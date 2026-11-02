@@ -1,5 +1,5 @@
-title: "E-tickets with EAN-13 and QR, scanning at the door, buyer e-mails"
-description: "PDF tickets with EAN-13 and QR in the buyer's language, the MACS scanner app for iOS and Android that scans tickets of any organizer, sample tickets, e-mails when a session moves or is cancelled."
+title: "E-tickets with EAN-13 and QR, scanning, buyer e-mails"
+description: "PDF tickets with EAN-13 and QR in the buyer's language, the MACS scanner app for iOS and Android, sample tickets, e-mails when a session moves or is cancelled."
 h1: A ticket that scans
 lead: Every ticket is a PDF with an EAN-13 barcode and a QR code, in the buyer's language. Scan it with the app or a handheld scanner, resend it, refund it, replace it when a date moves.
 related:

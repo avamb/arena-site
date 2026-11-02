@@ -1,5 +1,5 @@
-title: "Reliability: 800 orders a minute, nightly backups, a watchdog that alerts us first"
-description: "Load tests at 800 orders a minute with 1,000 concurrent buyers, an ops watchdog with Telegram alerts, nightly encrypted backups, Cloudflare in front. Numbers with dates on the facts page."
+title: "Reliability: 800 orders a minute, nightly backups"
+description: "Load tested at 800 orders a minute with 1,000 concurrent buyers. Ops watchdog with Telegram alerts, nightly encrypted backups, Cloudflare in front."
 h1: Will it hold a stadium?
 lead: Yes. The platform is load-tested, watched around the clock and backed up every night. The numbers below carry dates and live on the facts page, where they are updated with every release.
 related:

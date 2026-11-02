@@ -1,10 +1,10 @@
 # /facts: the page an agent quotes instead of marketing (doc 33 §3.10, item 4). Data from content/data/facts.yaml.
-title: "Facts: what ArenaSoldOut.com does, and does not, with dates"
-description: "A plain table of capabilities with status and date, pricing, providers, markets, languages, load limits and backups. The list of things we do not promise is explicit."
-h1: What is true about ArenaSoldOut.com today
-lead: One table, maintained by the team with every release. Yes means it runs in production. Partly means it runs for some organizers or in one channel. No means we do not offer it and do not promise it.
+title: "ArenaSoldOut.com features in production today, with dates"
+description: "What organizers get with ArenaSoldOut.com and since when: reserved seating, own payment account, Telegram bot, widget, e-tickets, API. Load tested."
+h1: What ArenaSoldOut.com does today
+lead: Everything below runs in production, with the date it went live. Features still being built are listed separately, and so is what the product does not include.
 sections:
   - type: facts-table
     id: table
     eyebrow: Facts
-    title: What exists, what does not, since when?
+    title: What works, since when

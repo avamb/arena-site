@@ -14,12 +14,12 @@ const { s, lang } = Astro.props;
       {s.eyebrow && <p class="eyebrow reveal">{s.eyebrow}</p>}
       <h1 class="reveal">{s.title}</h1>
       {s.lead && <p class="lead reveal" set:html={inline(s.lead)} />}
-      <div class="hero-actions reveal">
+      <div class="hero-actions reveal" data-nosnippet>
         <a class="btn btn-primary" href={localePath(lang, s.primary.href)}>{s.primary.label}</a>
         <a class="btn btn-band" href={localePath(lang, s.secondary.href)}>{s.secondary.label}</a>
       </div>
-      <p class="hero-note reveal">{s.note}</p>
+      <p class="hero-note reveal" data-nosnippet>{s.note}</p>
     </div>
-    {s.widget && <HeroWidget client:idle w={s.widget} />}
+    {s.widget && <div data-nosnippet style="display:contents"><HeroWidget client:idle w={s.widget} /></div>}
   </div>
 </section>
