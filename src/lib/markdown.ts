@@ -4,9 +4,9 @@
  */
 import type { CollectionEntry } from 'astro:content';
 import type { Section } from '../content.config';
-import { siteUrl, type LanguageCode } from '@config';
+import { siteUrl, org, type LanguageCode } from '@config';
 import { plain, fill } from './inline';
-import { clients, tariff, facts, liveProviderNames, type Nav } from './data';
+import { clients, tariff, facts, liveProviderNames, reasonVars, type Nav } from './data';
 import { formatDate, currencySymbol, postPath } from './i18n';
 
 export type PageData = {
@@ -89,6 +89,17 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       s.items.forEach((i) => out.push(`- **${plain(i.title)}**: ${plain(i.text)}`));
       out.push('');
       break;
+    case 'reasons': {
+      const rv = reasonVars(d.pricing);
+      h2(s.title); lead(s.lead && fill(s.lead, rv));
+      s.items.forEach((i) => {
+        out.push(`### ${plain(fill(i.title, rv))}`, '', plain(fill(i.text, rv)), '');
+        i.bullets?.forEach((b) => out.push(`- ${plain(fill(b, rv))}`));
+        if (i.bullets) out.push('');
+        if (i.link) out.push(`[${i.link.label}](${abs(i.link.href)})`, '');
+      });
+      break;
+    }
     case 'clients':
       h2(fill(s.title ?? '', { countries: clients.countries }));
       lead(fill(s.lead ?? '', { since: clients.countries_since, track: clients.track_record.join(', ') }));
@@ -165,6 +176,10 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       out.push('| Capability | Status | Since | Note |', '|---|---|---|---|');
       facts.capabilities.forEach((c) => out.push(`| ${c.name} | ${c.status} | ${c.since ? c.since.toISOString().slice(0, 10) : ''} | ${c.note ?? ''} |`));
       out.push('', `Buyer page languages: ${facts.languages.buyer_page.join(', ')}; any other language can be integrated on request. E-mails in ${facts.languages.emails} languages. Load test ${formatDate(d.lang, facts.limits.load_test_date, { dateStyle: 'medium' })}: ${facts.limits.orders_per_minute} orders a minute at ${facts.limits.concurrent_visitors} concurrent visitors. Backups: ${facts.backups}.`, '', `Updated ${facts.updated.toISOString().slice(0, 10)}.`, '');
+      break;
+    case 'contact-form':
+      h2(s.title); lead(s.lead);
+      out.push(`Fields: name, e-mail, topic, question. Or write to ${org.contactEmail}.`, '');
       break;
     case 'onboarding':
       h2(s.title); lead(s.lead);

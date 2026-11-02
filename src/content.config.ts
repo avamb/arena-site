@@ -129,6 +129,8 @@ export const section = z.discriminatedUnion('type', [
     terms: link,
   }),
   z.object({ type: z.literal('who'), ...sectionBase, items: z.array(z.object({ icon: z.string(), title: z.string(), text: z.string(), link: link })) }),
+  /* Home: the four reasons (doc 51 §1): benefit, speed, convenience, reliability. {price}, {seated}, {countries}, {since} come from data. */
+  z.object({ type: z.literal('reasons'), ...sectionBase, items: z.array(z.object({ icon: z.string(), title: z.string(), text: z.string(), bullets: z.array(z.string()).optional(), link: link.optional() })).length(4) }),
   z.object({ type: z.literal('clients'), ...sectionBase, cta: link, marksAria: z.string() }),
   z.object({ type: z.literal('changes'), ...sectionBase, cta: link, more: link, limit: z.number().optional() }),
   z.object({ type: z.literal('cta'), ...sectionBase, title: z.string(), text: z.string(), primary: link, secondary: link, note: z.string() }),
@@ -144,6 +146,8 @@ export const section = z.discriminatedUnion('type', [
   z.object({ type: z.literal('changelog'), ...sectionBase }),
   z.object({ type: z.literal('posts'), ...sectionBase, empty: z.string() }),
   z.object({ type: z.literal('facts-table'), ...sectionBase }),
+  /* "Contact the team" form inline (doc 51 §1.3); its fields and messages are interface strings (i18n contact.*). */
+  z.object({ type: z.literal('contact-form'), ...sectionBase }),
   z.object({
     type: z.literal('onboarding'),
     ...sectionBase,

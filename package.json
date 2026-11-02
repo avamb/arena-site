@@ -21,6 +21,7 @@
     "check:agents": "node scripts/check-agents.mjs",
     "lhci": "lhci autorun",
     "onboarding:test": "node --import tsx --test src/scripts/onboarding-lib.test.ts",
+    "contact:test": "node --import tsx --test worker/contact.test.ts",
     "deploy": "wrangler deploy",
     "check:links": "node scripts/check-links.mjs",
     "import:wordpress": "node scripts/import-wordpress.mjs"

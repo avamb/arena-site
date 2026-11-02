@@ -56,7 +56,7 @@ sections:
     title: What does a ticket cost me, exactly?
     items:
       - q: How much is a ticket with a seat?
-        a: "Paying after the event: US$1.09 outside the EU, €1.09 in the EU. A ticket without a seat is US$0.59 or €0.59. The seating plan itself costs nothing; the team builds it from your PDF, spreadsheet or sketch. With a prepaid package the commission is lower, and a seat adds 0.35 to the package rate."
+        a: "Paying after the event: US$1.09 outside the EU, €1.09 in the EU. A ticket without a seat is US$0.59 or €0.59. The seating plan itself costs nothing: we draw it for free from a PDF, a photo of a hand sketch or a table of rows and seats. With a prepaid package the commission is lower, and a seat adds 0.35 to the package rate."
       - q: How does a prepaid package work?
         a: "You pay the package once. Every sold ticket takes its commission from it at the rate of the package, until it runs out. The prepayment never expires, can be topped up at any time and is spent only on our services: it cannot be withdrawn or transferred."
       - q: What if the prepayment runs out in the middle of sales?
@@ -69,6 +69,8 @@ sections:
         a: "After the event, by bank transfer, for the tickets sold. For events on sale for several months and for permanent venues, once a month. A prepaid package is paid when you buy it."
       - q: What about card acquiring?
         a: Card acquiring is a contract between you and your payment provider, on the provider's terms. It is not part of our commission and we do not add anything to it.
+      - q: Do I have to mention ArenaSoldOut.com on my site?
+        a: "The prices assume that the event page names ArenaSoldOut.com as the ticketing operator, with a link to us; the ticket widget shows that line by default. To sell without our name, white label costs €45 a month per brand in the EU and US$45 elsewhere, charged by days for a month that is not full. The [detailed terms](/pricing/terms) explain what a brand is and what white label hides."
       - q: Are invitations free?
         a: Yes. Invitations and free tickets to paid events carry no commission.
       - q: What happens to the commission when a ticket is refunded or the date moves?
@@ -83,7 +85,7 @@ sections:
   - type: cta
     id: start
     title: Start selling today
-    text: Create the event, connect your payment account, share the link. An event without a seating plan is on sale within the hour; a seating plan we draw with you.
+    text: "Create the event, connect your payment account, share the link. An event without a seating plan is on sale in 10 minutes; a seating plan we draw for you, free of charge."
     primary: { label: Create your event, href: /start#create }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
     note: "Or write to us: we set everything up with you on a call."

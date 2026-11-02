@@ -33,6 +33,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
         <span class="lang" aria-label={`${t(lang, 'language')}: ${current.name}`}>{lang.toUpperCase()} <Icon name="chevron-down" size={10} /></span>
       )}
       <ThemeToggle client:load label={t(lang, 'theme.toggle')} />
+      <a class="btn btn-ghost btn-sm contact-btn" href={localePath(lang, nav.contact.href)} data-contact-open><Icon name="message-circle" size={16} /><span>{nav.contact.label}</span></a>
       <a class="btn btn-primary btn-sm" href={localePath(lang, nav.start.href)}>{nav.start.label}</a>
       <button type="button" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-menu" data-label-open={t(lang, 'nav.menu')} data-label-close={t(lang, 'nav.close')}>
         <Icon name="menu" class="i-open" />
@@ -45,6 +46,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
     <nav class="wrap" aria-label={t(lang, 'nav.main')}>
       {nav.header.map((l) => <a href={localePath(lang, l.href)}>{l.label}</a>)}
       <a href={signinHref}>{nav.signin.label}</a>
+      <a href={localePath(lang, nav.contact.href)} data-contact-open>{nav.contact.label}</a>
     </nav>
     {langs.length > 1 && (
       <form class="lang-menu" method="get">

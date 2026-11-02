@@ -1,10 +1,13 @@
 /// <reference types="@cloudflare/workers-types" />
 /**
- * Cloudflare Worker entry: answers the www./new. -> apex redirects (wrangler.toml run_worker_first),
- * everything else is served by Workers Static Assets from dist/. No form handler: the application form
- * talks to the platform API from the browser (doc 34 §9). No KV, D1, R2 or Durable Objects (doc 33 §3.7a).
+ * Cloudflare Worker entry: answers the www./new. -> apex redirects (wrangler.toml run_worker_first) and
+ * POST /api/contact, the "Contact the team" form (worker/contact.ts); everything else is served by Workers
+ * Static Assets from dist/. The application form talks to the platform API from the browser (doc 34 §9).
+ * No KV, D1, R2 or Durable Objects (doc 33 §3.7a).
  */
-type Env = { SITE_URL?: string; ASSETS?: { fetch: (req: Request) => Promise<Response> } };
+import { handleContact, type ContactEnv } from './contact';
+
+type Env = ContactEnv & { SITE_URL?: string; ASSETS?: { fetch: (req: Request) => Promise<Response> } };
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
@@ -14,6 +17,7 @@ export default {
     if (site && new URL(site).hostname === 'arenasoldout.com' && (url.hostname === 'www.arenasoldout.com' || url.hostname === 'new.arenasoldout.com')) {
       return Response.redirect(`${site}${url.pathname}${url.search}`, 301);
     }
+    if (url.pathname === '/api/contact') return handleContact(request, env);
     if (env.ASSETS) return env.ASSETS.fetch(request);
     return new Response('Not found', { status: 404 });
   },

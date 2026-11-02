@@ -21,6 +21,8 @@ export const navSchema = z.object({
   header: z.array(linkSchema),
   signin: linkSchema,
   start: linkSchema,
+  /** "Contact the team" (doc 51 §1.3): opens the dialog; without JavaScript the link goes to the form on /contact. */
+  contact: linkSchema,
   tagline: z.string(),
   footer: z.array(z.object({ title: z.string(), links: z.array(linkSchema) })),
   copyright: z.string(),
@@ -125,4 +127,19 @@ export function liveProviderNames(providers: CollectionEntry<'providers'>[]): st
 
 export function liveMarketNames(markets: CollectionEntry<'markets'>[], lang: LanguageCode): string[] {
   return markets.filter((m) => m.data.status === 'live').map((m) => m.data.name[lang] ?? m.data.name[defaultLanguage]);
+}
+
+/**
+ * Placeholders of the home "reasons" block, from the price and client data so the copy never
+ * carries a number of its own: {price} and {seated} per ticket in both currencies, {countries}, {since}.
+ */
+export function reasonVars(pricing: CollectionEntry<'pricing'>[]): Record<string, string | number> {
+  const sym = (c: string) => new Intl.NumberFormat('en-GB', { style: 'currency', currency: c }).formatToParts(1).find((p) => p.type === 'currency')?.value ?? c;
+  const both = (f: (p: CollectionEntry<'pricing'>) => number) => pricing.map((p) => `${sym(p.data.currency)}${f(p).toFixed(2)}`).join(' / ');
+  return {
+    price: both((p) => p.data.per_ticket),
+    seated: both((p) => p.data.per_ticket + p.data.seating_extra),
+    countries: clients.countries,
+    since: clients.countries_since,
+  };
 }

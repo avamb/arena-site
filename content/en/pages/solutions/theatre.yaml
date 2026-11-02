@@ -1,7 +1,7 @@
 title: "Theatre ticketing: seating plans, repeat dates"
 description: "Theatre ticketing with reserved seating that matches the venue, repeat dates on one plan, invitations, refunds and date changes. 100 to 1,500 seats."
 h1: Theatre
-lead: A plan that matches your venue, built by the team from your PDF or sketch and reused for every performance. Invitations for press and partners, refunds and moved dates handled from the Event Center.
+lead: A plan that matches your venue, drawn by us for free from your PDF, sketch or table of rows, and reused for every performance. Invitations for press and partners, refunds and moved dates handled from the Event Center.
 related:
   - { label: Seating plans that match the venue, href: /product/seating }
   - { label: "Venues and clubs: separate terms", href: /solutions/venues }
@@ -22,7 +22,7 @@ sections:
     title: What do theatres ask first?
     items:
       - q: Do you draw the seating plan?
-        a: Yes, the team does. Send a PDF, a spreadsheet or a hand sketch; the plan is built into your event, usually within a day, and you approve it before sales start.
+        a: Yes, for free. Send a PDF of the plan, a photo of a hand sketch or a table of rows with the seats in each row; we draw it into your event, usually within a day, and you approve it before sales start.
       - q: Can we have different prices for stalls and balcony?
         a: Yes. Categories with their own prices, quotas and windows; early-bird windows switch by date.
       - q: We run many performances a month. Is there a different deal?
@@ -32,7 +32,7 @@ sections:
   - type: cta
     id: start
     title: Send us your plan
-    text: A PDF, a spreadsheet or a photo of a sketch is enough. We build it into your event and show it to you before sales start.
+    text: "A PDF, a photo of a hand sketch or a table of rows and seats is enough. We draw it into your event for free and show it to you before sales start."
     primary: { label: Start selling, href: /start }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
     note: "Or write to us: we set everything up with you on a call."

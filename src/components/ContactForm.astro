@@ -1,0 +1,53 @@
+---
+/**
+ * "Contact the team" form (doc 51 §1.3). One markup for the dialog on every page and for the inline
+ * form on /contact. Posts JSON to /api/contact (worker/contact.ts): Turnstile there, then n8n, which
+ * stores the inquiry in Twenty (question, answer, topic, language, date) and alerts the team.
+ * Strings: i18n `contact.*` with fallback to English. Client logic: src/scripts/contact.ts.
+ */
+import type { LanguageCode } from '@config';
+import { turnstileSiteKey, hosts, org } from '@config';
+import { t } from '@/lib/i18n';
+import { inline } from '@/lib/inline';
+import { CONTACT_TOPICS } from '../../worker/contact';
+/** `inline`: the form on /contact, where the section heading names it; the dialog shows its own title. */
+interface Props { lang: LanguageCode; prefix: string; inline?: boolean }
+const { lang, prefix, inline: isInline = false } = Astro.props;
+const id = (k: string) => `${prefix}-${k}`;
+const errors = ['invalid', 'turnstile', 'rate', 'unavailable', 'network'].reduce<Record<string, string>>((m, k) => ({ ...m, [k]: t(lang, `contact.error.${k}`, { email: org.contactEmail }) }), {});
+---
+<form class="contact-form" novalidate data-contact-form data-lang={lang} data-sitekey={turnstileSiteKey} data-errors={JSON.stringify(errors)} data-sent={t(lang, 'contact.sent')} data-sending={t(lang, 'contact.sending')} aria-labelledby={isInline ? undefined : id('title')} aria-label={isInline ? t(lang, 'contact.title') : undefined}>
+  {!isInline && <h2 class="contact-title" id={id('title')}>{t(lang, 'contact.title')}</h2>}
+  {!isInline && <p class="contact-lead">{t(lang, 'contact.lead')}</p>}
+  <div class="contact-grid">
+    <div class="field">
+      <label for={id('name')}>{t(lang, 'contact.name')}</label>
+      <input id={id('name')} name="name" autocomplete="name" maxlength="100" required />
+    </div>
+    <div class="field">
+      <label for={id('email')}>{t(lang, 'contact.email')}</label>
+      <input id={id('email')} name="email" type="email" autocomplete="email" maxlength="200" required />
+    </div>
+  </div>
+  <div class="field">
+    <label for={id('topic')}>{t(lang, 'contact.topic')}</label>
+    <select id={id('topic')} name="topic">
+      {CONTACT_TOPICS.map((k) => <option value={k}>{t(lang, `contact.topic.${k}`)}</option>)}
+    </select>
+  </div>
+  <div class="field">
+    <label for={id('message')}>{t(lang, 'contact.message')}</label>
+    <textarea id={id('message')} name="message" rows="5" minlength="10" maxlength="4000" required></textarea>
+  </div>
+  <div class="contact-hp" aria-hidden="true">
+    <label for={id('website')}>Website</label>
+    <input id={id('website')} name="website" tabindex="-1" autocomplete="off" />
+  </div>
+  <div class="cf-turnstile-box" data-turnstile></div>
+  <p class="contact-privacy" set:html={inline(t(lang, 'contact.privacy'))} />
+  <div class="contact-actions">
+    <button class="btn btn-primary" type="submit">{t(lang, 'contact.send')}</button>
+    <a class="contact-alt" href={hosts.telegramChat}>{t(lang, 'contact.alt')}</a>
+  </div>
+  <p class="form-status" role="status" aria-live="polite" data-status></p>
+</form>

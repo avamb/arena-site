@@ -92,6 +92,17 @@ drawn in the browser from the platform's `GET /v1/onboarding/form-schema` and po
 platform repo `08_architecture/34_onboarding_applications_ru.md` §9, appendix A). The access token to the
 draft lives in the visitor's `localStorage`.
 
+"Contact the team" (doc 51 §1.3): a button in the header of every page opens a dialog; `/contact#write` has the
+same form inline and is where the link goes without JavaScript. The form posts to `POST /api/contact`, the one
+route the Worker answers itself (`worker/contact.ts`, tests: `npm run contact:test`): fields and honeypot,
+Turnstile (widget "arena-site forms"), five messages a minute per IP, then the n8n webhook. The n8n workflow
+"Arena site: contact the team" stores the inquiry in Twenty, object Site inquiries (question, answer, topic,
+language, receivedAt, person, page, country, status), sends it to the team in Telegram and to hello@ by e-mail
+with reply-to the sender. The team writes its answer into the record: the records become the FAQ and the site
+chat bot. Worker secrets: `TURNSTILE_SECRET_KEY`, `CONTACT_WEBHOOK_URL`, `CONTACT_WEBHOOK_TOKEN`; without them
+the form says it is unavailable and points to Telegram and e-mail. On the nginx server there is no `/api/contact`
+yet, so the form answers the same way there.
+
 Turnstile: the site key is public and lives in `site.config.ts` (`onboardingTurnstileSiteKey`). The
 platform verifies the token, so ITS secret (`ONBOARDING_TURNSTILE_SECRET`) must belong to the widget with
 this key. The platform also needs `https://arenasoldout.com` in `CORS_ALLOWED_ORIGINS`,

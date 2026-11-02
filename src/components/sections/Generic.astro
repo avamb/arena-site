@@ -15,8 +15,9 @@ import { localePath, postPath, formatDate, tObject, t, currencySymbol } from '@/
 import { getPosts } from '@/lib/data';
 import { languages } from '@config';
 import Icon from '@/components/Icon.astro';
+import ContactForm from '@/components/ContactForm.astro';
 
-type Generic = Exclude<Section, { type: 'hero' | 'facts' | 'steps' | 'ways' | 'qa' | 'center' | 'money' | 'pricing' | 'who' | 'clients' | 'changes' | 'cta' }>;
+type Generic = Exclude<Section, { type: 'hero' | 'facts' | 'steps' | 'ways' | 'qa' | 'center' | 'money' | 'pricing' | 'who' | 'reasons' | 'clients' | 'changes' | 'cta' }>;
 interface Props {
   s: Generic;
   lang: LanguageCode;
@@ -177,6 +178,8 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
         <p class="pr-note"><a href="/facts.json" style="color:var(--accent);font-weight:600">facts.json</a></p>
       </>
     )}
+
+    {s.type === 'contact-form' && <div class="card contact-inline" style="margin-top:32px"><ContactForm lang={lang} prefix="cp" inline /></div>}
 
     {s.type === 'onboarding' && (
       <>

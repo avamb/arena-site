@@ -2,6 +2,9 @@
 # www./new. -> apex redirects (worker/index.ts). No KV, D1, R2 or Durable Objects by rule (doc 33 §3.7a).
 # No secrets here: the application form talks to the platform API from the browser, and
 # CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID come from the environment (GitHub Actions secrets).
+# The "Contact the team" form (POST /api/contact, worker/contact.ts) needs three Worker secrets, set once with
+# `npx wrangler secret put <NAME>`: TURNSTILE_SECRET_KEY (widget "arena-site forms"), CONTACT_WEBHOOK_URL and
+# CONTACT_WEBHOOK_TOKEN (the n8n webhook "Arena site: contact the team"). Without them the form answers 503.
 name = "arena-site"
 main = "worker/index.ts"
 compatibility_date = "2026-09-01"
@@ -29,6 +32,12 @@ routes = [
 
 [vars]
 SITE_URL = "https://arenasoldout.com"
+
+# Five messages a minute per IP for /api/contact (Workers rate limiting, no storage involved).
+[[ratelimits]]
+name = "CONTACT_LIMIT"
+namespace_id = "1001"
+simple = { limit = 5, period = 60 }
 
 [observability]
 enabled = true
