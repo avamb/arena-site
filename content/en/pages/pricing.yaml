@@ -1,7 +1,7 @@
 # Pricing page. Numbers come from content/data/pricing/*.yaml and tariff.yaml, never from here.
 # Source: pricing policy rev. 3 (18.10.2026) and the owner's decision of 19.10 to publish approved terms only.
 title: "Pricing: per ticket, no subscription"
-description: "Platform commission per ticket sold: US$0.59 without a seat and US$1.09 with a seat (the same numbers in euro for EU countries), less with prepaid packages. 4% for events where every ticket costs US$10 or less, 2% for permanent venues. Invitations are free."
+description: "Commission per ticket sold, no subscription. Pay after the event or prepay a package for less. Lower rates for venues and cheap events. Invitations free."
 h1: Per ticket. No subscription.
 lead: You pay ArenaSoldOut.com a platform commission per ticket sold. Pay after the event, or prepay a package and pay less per ticket. Card acquiring is paid to your own payment provider on its terms.
 sections:

@@ -34,7 +34,8 @@ const pad = first ? 'padding-top:40px' : 'padding-top:0';
 const dateFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'changes.date');
 const postFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'post.date');
 const factsStatus = tObject<Record<string, string>>(lang, 'facts.status');
-const factsCols = tObject<Record<string, string>>(lang, 'facts.columns');
+const factsGroups = tObject<Record<string, string>>(lang, 'facts.groups');
+const factsCols =tObject<Record<string, string>>(lang, 'facts.columns');
 const liveMarkets = markets.filter((m) => m.data.status === 'live');
 const plannedGroups = [...new Set(markets.filter((m) => m.data.status === 'planned').map((m) => m.data.group ?? m.data.name.en))];
 const marketName = (m: CollectionEntry<'markets'>) => m.data.name[lang] ?? m.data.name.en;
@@ -154,9 +155,12 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
         <div class="table-scroll" tabindex="0" role="region" aria-label={s.title ?? t(lang, 'table.details')}>
         <table class="facts-table">
           <thead><tr><th>{factsCols.capability}</th><th>{factsCols.status}</th><th>{factsCols.since}</th><th>{factsCols.note}</th></tr></thead>
-          <tbody>
-            {facts.capabilities.map((c) => <tr><td>{c.name}</td><td><span class:list={['st', { ok: c.status === 'yes', warn: c.status === 'partial' }]}>{factsStatus[c.status]}</span></td><td class="mono">{c.since ? <time datetime={c.since.toISOString().slice(0, 10)}>{c.since.toISOString().slice(0, 10)}</time> : ''}</td><td>{c.note ?? ''}</td></tr>)}
-          </tbody>
+          {(['yes', 'partial', 'no'] as const).map((st) => (
+            <tbody>
+              <tr><th colspan="4" scope="colgroup" style="text-align:left">{factsGroups[st]}</th></tr>
+              {facts.capabilities.filter((c) => c.status === st).map((c) => <tr><td>{c.name}</td><td><span class:list={['st', { ok: c.status === 'yes', warn: c.status === 'partial' }]}>{factsStatus[c.status]}</span></td><td class="mono">{c.since ? <time datetime={c.since.toISOString().slice(0, 10)}>{c.since.toISOString().slice(0, 10)}</time> : ''}</td><td>{c.note ?? ''}</td></tr>)}
+            </tbody>
+          ))}
         </table>
         </div>
         <div class="table-scroll" tabindex="0" role="region" aria-label={t(lang, 'table.details')} style="margin-top:32px">

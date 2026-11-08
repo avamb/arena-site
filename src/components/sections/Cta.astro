@@ -7,7 +7,7 @@ import { trackLabel } from '@/lib/track';
 interface Props { s: Extract<Section, { type: 'cta' }>; lang: LanguageCode }
 const { s, lang } = Astro.props;
 ---
-<section class="section" id={s.id} style="padding-top:0">
+<section class="section" id={s.id} style="padding-top:0" data-nosnippet>
   <div class="wrap">
     <div class="cta">
       <div class="mesh" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>

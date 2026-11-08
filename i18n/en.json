@@ -27,7 +27,12 @@
   "facts.status": {
     "yes": "Yes",
     "no": "No",
-    "partial": "Partly"
+    "partial": "In progress"
+  },
+  "facts.groups": {
+    "yes": "Works in production",
+    "partial": "Being finished",
+    "no": "Not part of the product"
   },
   "facts.columns": {
     "capability": "Capability",
