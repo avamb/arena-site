@@ -11,6 +11,7 @@
   /* Mobile hero: pastel blobs on the light page; the dark theme keeps the saturated mesh */
   --hero-m1:#9DB0FF; --hero-m2:#FFC2B0; --hero-m3:#B9E9E5; --hero-mesh-opacity:.6;
   --code-bg:#0B1020; --code-fg:#D9DCEC; --code-key:#9DD6FF; --code-str:#7DD3C0; --code-attr:#B9C6FF;
+  --credits:#15803D; --credits-hover:#166534; --credits-fg:#FFFFFF;
   --ok:#15803D; --ok-soft:#DCFCE7; --warn:#B45309; --warn-soft:#FEF3C7;
   --shadow:0 1px 2px rgba(11,16,32,.05),0 12px 32px -12px rgba(11,16,32,.18);
   --shadow-lg:0 2px 6px rgba(11,16,32,.08),0 40px 80px -24px rgba(11,16,32,.35);
@@ -30,6 +31,7 @@
     --c1:#B08CFF; --c1-soft:#2A1F4F; --c2:#7FA2FF; --c2-soft:#1A2452; --c3:#2DD4C8; --c3-soft:#113C3A; --c4:#F5B14A; --c4-soft:#3F2E10; --c5:#F472B6; --c5-soft:#4A1A35; --backdrop:rgba(0,0,0,.65);
     --band:#070B18; --band-2:#0E1430; --band-fg:#F2F4FB; --band-fg-2:#AEB4CF; --band-line:#1F2848;
     --code-bg:#070B18; --code-fg:#D9DCEC;
+    --credits:#22C55E; --credits-hover:#4ADE80; --credits-fg:#05200F;
     --ok:#4ADE80; --ok-soft:#113A24; --warn:#FBBF24; --warn-soft:#3A2A08;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 32px -12px rgba(0,0,0,.6);
     --shadow-lg:0 2px 6px rgba(0,0,0,.5),0 40px 80px -24px rgba(0,0,0,.8);
@@ -45,6 +47,7 @@
   --cat2:#2DD4C8; --cat2-soft:#113C3A;
   --band:#070B18; --band-2:#0E1430; --band-fg:#F2F4FB; --band-fg-2:#AEB4CF; --band-line:#1F2848;
   --code-bg:#070B18; --code-fg:#D9DCEC;
+  --credits:#22C55E; --credits-hover:#4ADE80; --credits-fg:#05200F;
   --ok:#4ADE80; --ok-soft:#113A24; --warn:#FBBF24; --warn-soft:#3A2A08;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 32px -12px rgba(0,0,0,.6);
   --shadow-lg:0 2px 6px rgba(0,0,0,.5),0 40px 80px -24px rgba(0,0,0,.8);

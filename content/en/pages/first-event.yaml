@@ -44,7 +44,7 @@ sections:
       - q: Can the team set it up for me?
         a: "Yes. Send the details in the [Telegram bot](https://t.me/EventsCentrBot) or through the contact form and we create the event with you; you check it before sales start."
       - q: What does the first event cost?
-        a: "The same as any other: a commission per ticket sold, invoiced after the event, or less with a prepaid package. Seating plans and invitations cost nothing. Prices are on the [pricing page](/pricing)."
+        a: "The same as any other: a commission per ticket sold, invoiced after the event, or less with credits bought upfront. Seating plans and invitations cost nothing. Prices are on the [pricing page](/pricing)."
   - type: cta
     id: start
     title: Start with the application

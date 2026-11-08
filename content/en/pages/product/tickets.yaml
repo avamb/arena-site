@@ -14,7 +14,11 @@ sections:
     title: What does the buyer get?
     items:
       - q: What is on the ticket?
-        a: "Event, session, seat or category, price, the buyer's name, an EAN-13 barcode and a QR code. One PDF per order, in the buyer's language: English, Russian, Czech, Hebrew or Spanish on the page, seven languages in e-mails."
+        a: "Event, session, seat or category, price, the buyer's name, an EAN-13 barcode and a QR code. One PDF per order, in the buyer's language: English, Russian, Czech, Hebrew or Spanish on the page, seven languages in e-mails. We add any new language within 40 hours."
+      - q: Is the payment receipt in the e-mail?
+        a: "Yes. The payment receipt comes attached to the ticket e-mail, and the e-mail names who received the payment: your organization and your payment provider."
+      - q: Can I check that the buyer got the ticket?
+        a: "Yes. Every e-mail shows its status in the order card: Sent, Delivered, Read. You always see whether the buyer received the ticket, and you can send it again if they lost it."
       - q: How do I scan at the door?
         a: "With the [MACS scanner app](#scanner) for iOS and Android, or a handheld barcode scanner. The app also accepts tickets sold by your partners in other systems, so one door works for every channel."
       - q: Can I see a ticket before sales start?

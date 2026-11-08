@@ -191,6 +191,7 @@ sections:
       - "Tickets: resend, refund, invite"
       - "Sessions: add dates, move or cancel with buyer e-mails"
       - Prices, categories, promo codes, service fee
+      - "Sales analytics: views, carts, payments"
       - "Team roles: owner, manager"
     note: "Prefer Telegram? The same Event Center lives in the bot: create an event from a poster photo, get every sale in your group."
     stripAria: Event Center screens, scroll sideways
@@ -260,9 +261,32 @@ sections:
     planBullets:
       - "**{seated}** per ticket with a seat chosen on the venue plan"
       - "**Free** invitations and free tickets to paid events: no commission"
-      - "**[Prepaid packages](/pricing#packages)** lower the commission per ticket"
+      - "**[Credits](/pricing#packages)** lower the commission per ticket"
     cta: { label: Start selling, href: /start }
     buyCredits: { label: Buy credits, href: /pricing#packages }
+    plans:
+      currency: "Show prices in"
+      payg:
+        name: Pay as you go
+        text: A simple flat fee per ticket sold, paid after the event.
+        bullets:
+          - "**{seated}** per ticket with a seat chosen on the venue plan"
+          - "Invoiced after the event, by bank transfer"
+          - "No subscription, no contract"
+      upfront:
+        name: Pay upfront with credits
+        text: "Buy credits in advance and pay up to {saving}% less on every ticket."
+        from: from
+        bullets:
+          - "**{fromSeated}** per ticket with a seat"
+          - "Credits never expire; top up when you like"
+          - "Sales never stop: if credits run out, the rest is invoiced at the pay-as-you-go price"
+      perks:
+        - { big: "50%", title: Registered charities, text: "50% off our commission. Write to us and we switch it on." }
+        - { big: "Free", title: Invitations, text: "No commission on invitations and free tickets to paid events." }
+        - { big: "Free", title: Seating plan, text: "We draw your plan from a PDF, a photo of a sketch or a table of rows and seats." }
+        - { big: "{lowPercent}%", title: "Tickets up to {lowMax}", text: "For events where every ticket costs {lowMax} or less. [How it works](#low-price)" }
+      brand: "The prices assume the line **Tickets: ArenaSoldOut.com** with a link to us on your event page; the ticket widget shows it by default. To sell without it, white label costs **US$45 a month per brand**, or **€45** for venues in EU countries. [Detailed terms →](/pricing/terms)"
     currencyNote: "Commission in **US dollars** for every country outside the EU and in **euro** for venues in EU countries. The numbers are the same in both currencies. Amounts are without VAT."
     lowPrice:
       title: "Events where every ticket costs {lowMax} or less"
@@ -271,7 +295,7 @@ sections:
       title: Permanent venues
       text: "Theatres, clubs, stadiums, circuses: **{percent}% of the ticket price**, at most **{cap}** per ticket, the same with and without a seat. Invoiced monthly."
       cta: { label: Talk to us, href: /contact }
-    note: "You pay after the event, or prepay a package and pay less per ticket. Packages, the calculator and the detailed terms are on the pricing page: [prepaid packages and their rates →](/pricing#packages)"
+    note: "You pay after the event, or buy credits upfront and pay less per ticket. Credit packs, the calculator and the detailed terms are on the pricing page: [credits and their rates →](/pricing#packages)"
     terms: { label: All prices and the calculator →, href: /pricing }
 
   - type: who

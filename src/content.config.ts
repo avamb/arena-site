@@ -126,6 +126,14 @@ export const section = z.discriminatedUnion('type', [
     }).optional(),
     note: z.string(),
     buyCredits: link.optional(),
+    /** Two plan cards as on the reference pricing page: pay as you go and pay upfront with credits, a $/€ switch, perks and the brand line. */
+    plans: z.object({
+      currency: z.string(),
+      payg: z.object({ name: z.string(), text: z.string(), bullets: z.array(z.string()) }),
+      upfront: z.object({ name: z.string(), text: z.string(), from: z.string(), bullets: z.array(z.string()) }),
+      perks: z.array(z.object({ big: z.string(), title: z.string(), text: z.string() })),
+      brand: z.string(),
+    }).optional(),
     terms: link,
   }),
   z.object({ type: z.literal('who'), ...sectionBase, items: z.array(z.object({ icon: z.string(), title: z.string(), text: z.string(), link: link })) }),

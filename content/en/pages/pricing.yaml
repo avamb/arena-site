@@ -1,24 +1,48 @@
 # Pricing page. Numbers come from content/data/pricing/*.yaml and tariff.yaml, never from here.
 # Source: pricing policy rev. 3 (18.10.2026) and the owner's decision of 19.10 to publish approved terms only.
 title: "Pricing: per ticket, no subscription"
-description: "Commission per ticket sold, no subscription. Pay after the event or prepay a package for less. Lower rates for venues and cheap events. Invitations free."
+description: "Commission per ticket sold, no subscription. Pay after the event or buy credits upfront for less. Lower rates for venues and cheap events. Invitations free."
 h1: Per ticket. No subscription.
-lead: You pay ArenaSoldOut.com a platform commission per ticket sold. Pay after the event, or prepay a package and pay less per ticket. Card acquiring is paid to your own payment provider on its terms.
+lead: You pay ArenaSoldOut.com a platform commission per ticket sold. Pay as you go after the event, or buy credits upfront and pay less per ticket. Card acquiring is paid to your own payment provider on its terms.
 sections:
   - type: pricing
     id: plans
     planBullets:
       - "**{seated}** per ticket with a seat chosen on the venue plan"
       - "**Free** invitations and free tickets to paid events: no commission"
-      - "**Prepaid packages** lower the commission per ticket, see below"
+      - "**Credits** lower the commission per ticket, see below"
     cta: { label: Start selling, href: /start }
+    buyCredits: { label: Buy credits, href: "#packages" }
+    plans:
+      currency: "Show prices in"
+      payg:
+        name: Pay as you go
+        text: A simple flat fee per ticket sold, paid after the event.
+        bullets:
+          - "**{seated}** per ticket with a seat chosen on the venue plan"
+          - "Invoiced after the event, by bank transfer"
+          - "No subscription, no contract"
+      upfront:
+        name: Pay upfront with credits
+        text: "Buy credits in advance and pay up to {saving}% less on every ticket."
+        from: from
+        bullets:
+          - "**{fromSeated}** per ticket with a seat"
+          - "Credits never expire; top up when you like"
+          - "Sales never stop: if credits run out, the rest is invoiced at the pay-as-you-go price"
+      perks:
+        - { big: "50%", title: Registered charities, text: "50% off our commission. Write to us and we switch it on." }
+        - { big: "Free", title: Invitations, text: "No commission on invitations and free tickets to paid events." }
+        - { big: "Free", title: Seating plan, text: "We draw your plan from a PDF, a photo of a sketch or a table of rows and seats." }
+        - { big: "{lowPercent}%", title: "Tickets up to {lowMax}", text: "For events where every ticket costs {lowMax} or less. [How it works](#low-price)" }
+      brand: "The prices assume the line **Tickets: ArenaSoldOut.com** with a link to us on your event page; the ticket widget shows it by default. To sell without it, white label costs **US$45 a month per brand**, or **€45** for venues in EU countries. [Detailed terms →](/pricing/terms)"
     currencyNote: "Commission in **US dollars** for every country outside the EU, including European countries outside the EU, Asia and the Middle East, and in **euro** for venues in EU countries. The numbers are the same in both currencies. This is our commission only: tickets are sold in the currency of your payment account. Amounts are without VAT."
     packages:
-      title: Prepay a package, pay less per ticket
-      text: "You buy a package once; every ticket sold takes its commission from it, at the rate of that package. The prepayment never expires and is spent only on our services. If it runs out in the middle of sales, sales go on: the remaining tickets are invoiced at the pay-after-the-event price."
-      cols: { name: Package, prepay: Prepayment, plain: "Commission, no seat", seated: "Commission, with a seat", plainCount: "Tickets without a seat", seatedCount: "Or tickets with a seat", saving: "Saving vs. pay-after", buy: Buy }
+      title: Buy credits upfront, pay less per ticket
+      text: "You buy a credit pack once; every ticket sold takes its commission from your credits, at the rate of that pack. Credits never expire and is spent only on our services. If credits run out in the middle of sales, sales go on: the remaining tickets are invoiced at the pay-after-the-event price."
+      cols: { name: Credit pack, prepay: Price, plain: "Commission, no seat", seated: "Commission, with a seat", plainCount: "Tickets without a seat", seatedCount: "Or tickets with a seat", saving: "Saving vs. pay-after", buy: Buy }
       buy: { label: Buy, currency: Pay in, none: Talk to us, noneHref: /contact, note: "At checkout Stripe asks for the e-mail your organization is registered with on ArenaSoldOut.com. Enter exactly that e-mail: the credits are added to the organization it belongs to. No organization yet? Enter the e-mail you will register with, and the credits will be tied to it." }
-      note: "Packages can be bought as often as you like; a ticket takes its commission from the package it is paid from. You can switch on an automatic top-up. For volumes above 5,000 tickets a year: individual terms, write to us."
+      note: "Credit packs can be bought as often as you like; a ticket takes its commission from the pack it is paid from. You can switch on an automatic top-up. For volumes above 5,000 tickets a year: individual terms, write to us."
     lowPrice:
       title: "Events where every ticket costs {lowMax} or less"
       text: "{lowPercent}% of the ticket price, at least {lowMin} and at most {lowCap} per ticket; {lowSeat} more for a ticket with a seat. For discos, runs, marathons, children's parties, excursions. It applies to the whole event, and only if **no ticket of any category or price step**, including later ones, costs more than {lowMax} before promo codes. One ticket above that and the standard price applies to all tickets of the event, the cheap ones too."
@@ -40,13 +64,13 @@ sections:
       seating: Seat chosen on the plan
       result: Commission, paid after the event
       button: Find out the price
-      hint: "The result updates as you type. The commission depends on the number of tickets and on seats, not on the ticket price, except for events where every ticket costs US$10 or less. This is the price when you pay after the event; the prepaid package option is shown below it."
+      hint: "The result updates as you type. The commission depends on the number of tickets and on seats, not on the ticket price, except for events where every ticket costs US$10 or less. This is the price when you pay after the event; the credits option is shown below it."
       sales: your sales {net}, acquiring not included
       needMax: Enter the highest ticket price of the event to see the commission.
       maxBelowPrice: The highest price in the event cannot be lower than the price of this ticket.
       lowRate: "Every ticket costs {max} or less, so {percent}% applies, at least {min} and at most {cap} per ticket."
-      package: "Prepaid package {name} ({prepay}) covers it: {cost} for these tickets, {left} stays on your balance for the next events."
-      noPackage: "More tickets than the biggest package covers: write to us for volume terms."
+      package: "Credit pack {name} ({prepay}) covers it: {cost} for these tickets, {left} stays on your balance for the next events."
+      noPackage: "More tickets than the biggest credit pack covers: write to us for volume terms."
     note: "You pay after the event by bank transfer. For events on sale for several months and for permanent venues we invoice monthly. Paying after the event is open to organizations confirmed on the platform. Volume and individual terms on request."
     terms: { label: Detailed terms →, href: /pricing/terms }
 
@@ -56,21 +80,23 @@ sections:
     title: What does a ticket cost me, exactly?
     items:
       - q: How much is a ticket with a seat?
-        a: "Paying after the event: US$1.09 outside the EU, €1.09 in the EU. A ticket without a seat is US$0.59 or €0.59. The seating plan itself costs nothing: we draw it for free from a PDF, a photo of a hand sketch or a table of rows and seats. With a prepaid package the commission is lower, and a seat adds 0.35 to the package rate."
-      - q: How does a prepaid package work?
-        a: "You pay the package once. Every sold ticket takes its commission from it at the rate of the package, until it runs out. The prepayment never expires, can be topped up at any time and is spent only on our services: it cannot be withdrawn or transferred."
-      - q: What if the prepayment runs out in the middle of sales?
-        a: Sales do not stop. The tickets the package did not cover go into the usual invoice at the pay-after-the-event price.
+        a: "Paying after the event: US$1.09 outside the EU, €1.09 in the EU. A ticket without a seat is US$0.59 or €0.59. The seating plan itself costs nothing: we draw it for free from a PDF, a photo of a hand sketch or a table of rows and seats. With credits the commission is lower, and a seat adds 0.35 to the credit rate."
+      - q: How do credits work?
+        a: "You buy a credit pack once. Every sold ticket takes its commission from your credits at the rate of the pack, until they run out. Credits never expire, can be topped up at any time and is spent only on our services: it cannot be withdrawn or transferred."
+      - q: What if credits run out in the middle of sales?
+        a: Sales do not stop. The tickets your credits did not cover go into the usual invoice at the pay-after-the-event price.
       - q: Is there an automatic top-up?
-        a: Yes. You can switch it on, and when the balance falls below your threshold the next package is bought for you.
+        a: Yes. You can switch it on, and when your credits fall below your threshold the next pack is bought for you.
       - q: Where does the buyer's money go?
         a: "Into your own payment account, with every order. ArenaSoldOut.com never holds funds. The buyer pays the ticket price and, if you add one, your service fee."
       - q: When do I pay ArenaSoldOut.com?
-        a: "After the event, by bank transfer, for the tickets sold. For events on sale for several months and for permanent venues, once a month. A prepaid package is paid when you buy it."
+        a: "After the event, by bank transfer, for the tickets sold. For events on sale for several months and for permanent venues, once a month. Credits are paid when you buy them."
       - q: What about card acquiring?
         a: Card acquiring is a contract between you and your payment provider, on the provider's terms. It is not part of our commission and we do not add anything to it.
       - q: Do I have to mention ArenaSoldOut.com on my site?
         a: "The prices assume that the event page names ArenaSoldOut.com as the ticketing operator, with a link to us; the ticket widget shows that line by default. To sell without our name, white label costs €45 a month per brand in the EU and US$45 elsewhere, charged by days for a month that is not full. The [detailed terms](/pricing/terms) explain what a brand is and what white label hides."
+      - q: Is there a discount for charities?
+        a: "Yes. Registered charities pay 50% of our commission, with pay as you go and with credits. Write to us from the [contact page](/contact) and we switch it on for your organization."
       - q: Are invitations free?
         a: Yes. Invitations and free tickets to paid events carry no commission.
       - q: What happens to the commission when a ticket is refunded or the date moves?

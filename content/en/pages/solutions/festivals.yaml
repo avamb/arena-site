@@ -28,7 +28,7 @@ sections:
       - q: We have sponsors' free tickets. How?
         a: Free tickets and invitations from the Event Center, no platform charge, scanned like any ticket.
       - q: What does it cost?
-        a: "A fixed commission per ticket sold, invoiced after the event or taken from a prepaid package, monthly for events on sale for months; see [pricing](/pricing)."
+        a: "A fixed commission per ticket sold, invoiced after the event or taken from your credits, monthly for events on sale for months; see [pricing](/pricing)."
   - type: cta
     id: start
     title: Start selling today

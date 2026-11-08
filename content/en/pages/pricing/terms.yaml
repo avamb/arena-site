@@ -2,7 +2,7 @@
 # White label: €45 / US$45 a month per brand (doc 51 R-1, owner 01.11.2026; spec 52 decisions В-1..В-7 of 02.11.2026,
 # platform PR avamb/arena-platform#361). Replaces the "€45 per event" draft of doc 33 §4.3a.
 title: "Detailed pricing terms"
-description: "Platform commission: pay after the event, prepaid packages, tickets up to US$10, venues, white label €45/US$45 a month per brand, refunds, currency."
+description: "Platform commission: pay after the event, credits, tickets up to US$10, charities 50% off, venues, white label €45/US$45 a month per brand, refunds, currency."
 h1: Detailed terms
 lead: The conditions behind the per-ticket price. Standard terms; volume and individual terms on request. All amounts are without VAT.
 sections:
@@ -17,9 +17,13 @@ sections:
 
       US$0.59 per ticket without a seat and US$1.09 per ticket with a seat chosen on the venue plan (€0.59 and €1.09 for venues in EU countries). We invoice after the event, for the tickets sold, and you pay by bank transfer. For events on sale for several months and for permanent venues we invoice once a month. Paying after the event is open to organizations confirmed on the platform. Card acquiring is paid to your payment provider on its own terms.
 
-      ## Prepaid packages
+      ## Credits
 
-      You buy a package once and every ticket takes its commission from it at the rate of that package. A seat adds 0.35 to the package rate. The prepayment is money on your account: it never expires, you can buy packages as often as you like, and it is spent only on our services. It cannot be withdrawn, transferred or cashed out. If the prepayment runs out in the middle of sales, sales do not stop: the tickets it did not cover are invoiced at the pay-after-the-event price. You can switch on an automatic top-up. The packages and their rates are on the [pricing page](/pricing#packages).
+      You buy a credit pack once and every ticket takes its commission from your credits at the rate of that pack. A seat adds 0.35 to the credit rate. Credits are money on your account: they never expire, you can buy credit packs as often as you like, and it is spent only on our services. It cannot be withdrawn, transferred or cashed out. If credits run out in the middle of sales, sales do not stop: the tickets they did not cover are invoiced at the pay-after-the-event price. You can switch on an automatic top-up. The credit packs and their rates are on the [pricing page](/pricing#packages).
+
+      ## Registered charities
+
+      Registered charities pay 50% of the commission set out on this page, with pay as you go and with credits. Our team switches the discount on for your organization once it has seen the registration: write to us from the [contact page](/contact).
 
       ## Events where every ticket costs US$10 or less
 
@@ -33,7 +37,7 @@ sections:
 
       The prices on this page assume that the page where you sell names ArenaSoldOut.com as the ticketing operator, with a link to arenasoldout.com. A line such as "Tickets: ArenaSoldOut.com" next to the tickets is enough, and the ticket widget shows such a line by default, so with the widget there is nothing to add. The sales pages we host always carry our name.
 
-      If you prefer to sell without naming us, white label costs **€45 a month per brand** for venues in EU countries and **US$45 a month per brand** elsewhere, in the currency of your commission. A brand is the promoter of the event, or your organization for events without a promoter: two promoters that both sell without our name are two brands. A month that is not full is charged by days. The charge is a line of your monthly invoice; prepaid packages do not pay it.
+      If you prefer to sell without naming us, white label costs **€45 a month per brand** for venues in EU countries and **US$45 a month per brand** elsewhere, in the currency of your commission. A brand is the promoter of the event, or your organization for events without a promoter: two promoters that both sell without our name are two brands. A month that is not full is charged by days. The charge is a line of your monthly invoice; credits do not pay it.
 
       While white label is on, the widget line, the footer of your shop and the platform line in buyer e-mails are gone, and the e-mails go out under the brand's name. What stays: the sales pages we host, the links to the platform's terms and privacy policy at checkout and the seller details, as the law requires. Our team switches white label on and off for a brand from a date you choose: write to us from the [contact page](/contact).
 
