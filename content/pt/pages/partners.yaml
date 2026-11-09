@@ -1,0 +1,36 @@
+title: "Parceiros: locais, promotores, agências e desenvolvedores"
+description: "Como locais, promotores, agências WordPress e desenvolvedores usam o ArenaSoldOut.com: páginas de promotor, plugin, widget, API e condições para locais."
+h1: Parceiros
+lead: Locais que recebem eventos, promotores que os vendem, agências que constroem os sites dos organizadores, desenvolvedores que integram. Cada um tem um lugar na plataforma e uma pessoa da equipe para conversar.
+related:
+  - { label: Para desenvolvedores, href: /developers }
+  - { label: Locais e casas de show, href: /solutions/venues }
+  - { label: Contato, href: /contact }
+sections:
+  - type: cards
+    id: kinds
+    eyebrow: Parceiros
+    title: Como os parceiros trabalham com o ArenaSoldOut.com?
+    items:
+      - { title: Locais, text: "Um local permanente traz o seu mapa uma vez e o oferece a cada organizador que o aluga; condições separadas com uma porcentagem do preço do ingresso.", link: { label: Locais e casas de show →, href: /solutions/venues } }
+      - { title: Promotores, text: "Uma página por promotor com link e códigos próprios; o organizador vê todos os canais, o promotor vê o seu.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Agências WordPress, text: "O plugin envia os pedidos ao WooCommerce; o widget se encaixa em qualquer tema. A equipe apoia a agência durante o lançamento.", link: { label: WordPress →, href: /solutions/wordpress } }
+      - { title: Desenvolvedores, text: "API pública, pacote de evento em uma chamada, webhooks assinados, chaves com escopo, eventos do widget; importações do ArenaSoldOut.com e de outros.", link: { label: Desenvolvedores →, href: /developers } }
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O que os parceiros perguntam primeiro?
+    items:
+      - q: Existe comissão de indicação ou de revenda?
+        a: As condições de parceria são combinadas individualmente; escreva à equipe contando o que você faz e para quem.
+      - q: Um ingresso vendido por um parceiro pode ser lido na portaria?
+        a: "Sim. O [aplicativo leitor MACS](/product/scanner) aceita ingressos de parceiros vindos de outros sistemas ao lado dos ingressos do ArenaSoldOut.com, no iOS e no Android."
+      - q: Uma agência pode gerenciar vários organizadores?
+        a: Sim, com funções no Event Center de cada organização e chaves de API com escopo por organização.
+  - type: cta
+    id: start
+    title: Escreva para a equipe
+    text: Conte-nos quem você é e com quem trabalha. Respondemos pessoalmente em até um dia útil.
+    primary: { label: Fale conosco, href: /contact }
+    secondary: { label: Ler a documentação para desenvolvedores, href: /developers }
+    note: "Ou no Telegram: o chat é lido durante o dia na Europa e em Israel."

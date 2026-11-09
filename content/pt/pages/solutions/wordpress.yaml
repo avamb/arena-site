@@ -1,0 +1,37 @@
+title: "Venda de ingressos no WordPress: plugin com WooCommerce"
+description: "O plugin do ArenaSoldOut.com envia pedidos ao WooCommerce, com assentos, ingressos e leitura da plataforma. Ou incorpore o widget em qualquer página."
+h1: Seu WordPress, seu checkout
+lead: Fique com o seu site e a sua loja. O plugin cria pedidos do WooCommerce para cada ingresso; o mapa de assentos, o ingresso eletrônico e a leitura vêm do ArenaSoldOut.com. Ou incorpore o widget em qualquer página com duas linhas.
+related:
+  - { label: Onde você vende, href: /product/sell }
+  - { label: "Para desenvolvedores: widget e API", href: /developers }
+  - { label: Pagamentos, href: /payments }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para sites WordPress
+    title: Qual opção serve para o meu site?
+    items:
+      - { title: O plugin, text: "Os pedidos chegam ao WooCommerce, sua loja e seus relatórios continuam funcionando; assentos, ingressos e portaria são do ArenaSoldOut.com.", link: { label: Peça o plugin →, href: /start } }
+      - { title: O widget, text: "Duas linhas em qualquer página ou bloco; os compradores pagam no checkout hospedado do seu provedor, e os pedidos ficam no Event Center.", link: { label: Desenvolvedores →, href: /developers } }
+      - { title: Migrando do ArenaSoldOut.com, text: "Sessões, mapas de assentos e clientes importados; dois clientes migraram sem nenhuma interrupção.", link: { label: Clientes →, href: /clients } }
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O que donos de sites WordPress perguntam primeiro?
+    items:
+      - q: O plugin deixa meu site mais lento?
+        a: O plugin consulta a API do ArenaSoldOut.com no checkout; as páginas são renderizadas como antes. O widget é um web component carregado uma única vez.
+      - q: O comprador sai do meu domínio?
+        a: Com o widget, o comprador fica na sua página até o checkout hospedado do provedor e depois volta. Com o plugin, o checkout é o próprio do WooCommerce.
+      - q: Quais provedores de pagamento funcionam?
+        a: "Sua própria conta em um provedor do seu país; a lista com os status está na [página de pagamentos](/payments). Em Israel, o AllPay funciona hoje para vendas no WordPress."
+      - q: Quem instala?
+        a: A equipe pode instalar e configurar o plugin junto com o administrador do seu site; o widget não precisa de instalação.
+  - type: cta
+    id: start
+    title: Comece a vender no seu site
+    text: Informe o endereço do site e o provedor que você usa. Configuramos o plugin ou o widget com você.
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Ler a documentação para desenvolvedores, href: /developers }
+    note: Sites com WooCommerce mantêm a sua loja.

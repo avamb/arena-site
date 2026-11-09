@@ -1,0 +1,38 @@
+title: "Venda de ingressos para turnês: cidades e promotores"
+description: "Venda uma turnê em um único evento: sessões por cidade, mapa de assentos por local, páginas de promotor com links e códigos próprios, leitura em cada cidade."
+h1: Turnês de shows
+lead: Um show, várias cidades e datas. Cada cidade tem sua sessão e seu mapa, cada promotor tem uma página com link próprio, e você vê a turnê inteira em um único Event Center.
+related:
+  - { label: Shows, href: /solutions/shows }
+  - { label: Onde você vende, href: /product/sell }
+  - { label: Pagamentos por país, href: /payments }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para turnês de shows
+    title: O que importa em uma turnê?
+    items:
+      - { title: Sessões por cidade, text: "Datas e locais em um só evento; o público escolhe a cidade e você vê os totais por sessão e da turnê.", link: { label: Event Center →, href: /#center } }
+      - { title: Páginas de promotor, text: "Uma página separada para cada promotor local, com link e códigos promocionais próprios; as vendas chegam consolidadas para você.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Vários países, text: "Venda na República Tcheca, Espanha, França, Geórgia ou Israel com o provedor de cada país, direto na sua própria conta.", link: { label: Pagamentos →, href: /payments } }
+      - { title: Idiomas do público, text: "Páginas e ingressos no idioma do comprador, e-mails em sete idiomas, escrita da direita para a esquerda no hebraico.", link: { label: Ingressos →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O que organizadores de turnês perguntam primeiro?
+    items:
+      - q: Um evento pode abranger vários países e moedas?
+        a: As sessões podem ficar em países diferentes; a conta de pagamentos e a moeda seguem a organização. Para moedas separadas, a equipe configura um canal por país.
+      - q: Os promotores veem as vendas uns dos outros?
+        a: Não. Cada promotor vê apenas a própria página; o organizador vê tudo.
+      - q: Uma cidade muda de local. O que acontece com os ingressos vendidos?
+        a: A sessão é movida com e-mails para os compradores e ingressos atualizados; os assentos são remapeados com você no novo mapa.
+      - q: Quanto um ingresso me custa em turnê?
+        a: "O mesmo valor por ingresso em todas as cidades; veja os [preços](/pricing)."
+  - type: cta
+    id: start
+    title: Comece a vender hoje
+    text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
+    primary: { label: Criar seu evento, href: /start#create }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."

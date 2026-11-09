@@ -1,0 +1,38 @@
+title: "Venda de ingressos para festivais: dias e categorias"
+description: "Ingressos para festivais com passes diários e completos, categorias com cotas, cadeias que repassam lugares não vendidos, lote por data, leitura na entrada."
+h1: Festivais
+lead: Passes diários e passes completos, muitas categorias com cotas, lote promocional que liga em uma data e uma cadeia que repassa os lugares não vendidos de uma categoria para a seguinte. Leitura em cada entrada com o aplicativo.
+related:
+  - { label: Códigos promocionais e janelas de preço, href: /product/pricing-tools }
+  - { label: Shows, href: /solutions/concerts }
+  - { label: Confiabilidade, href: /product/reliability }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para festivais
+    title: O que importa em um festival?
+    items:
+      - { title: Categorias com cotas, text: "Dia um, dia dois, passe completo, VIP, camping: cada um com seu preço, sua cota e sua janela de venda.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Cadeias de categorias, text: "Quando o lote promocional esgota, os lugares não vendidos passam para a categoria seguinte em vez de travar as vendas.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Entradas, text: "Aplicativo leitor para iOS e Android em cada portão; ingressos de parceiros vindos de outros sistemas também são aceitos.", link: { label: Aplicativo leitor MACS →, href: /product/scanner } }
+      - { title: Carga, text: "800 pedidos por minuto com 1.000 compradores simultâneos em testes de carga; o primeiro minuto de vendas está coberto.", link: { label: Confiabilidade →, href: /product/reliability } }
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O que organizadores de festivais perguntam primeiro?
+    items:
+      - q: O comprador pode combinar um passe diário e camping no mesmo pedido?
+        a: Sim, várias categorias de um mesmo evento em um só checkout.
+      - q: Podemos mudar os preços na última semana?
+        a: Sim. As janelas de preço trocam por data e hora; as faixas de quantidade abrem o preço seguinte quando uma faixa esgota.
+      - q: Temos ingressos gratuitos de patrocinadores. Como fazer?
+        a: Ingressos gratuitos e convites pelo Event Center, sem cobrança da plataforma, lidos como qualquer ingresso.
+      - q: Quanto custa?
+        a: "Uma comissão fixa por ingresso vendido, cobrada depois do evento ou descontada dos seus créditos, mensalmente para eventos que ficam meses à venda; veja os [preços](/pricing)."
+  - type: cta
+    id: start
+    title: Comece a vender hoje
+    text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
+    primary: { label: Criar seu evento, href: /start#create }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."

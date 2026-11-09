@@ -1,0 +1,29 @@
+title: "Para quem é: shows, teatro, festivais, locais"
+description: "Organizadores que vendem seus próprios ingressos: shows, teatro, espetáculos, festivais, turnês, master classes, treinamentos, locais e clubes, WordPress."
+h1: Organizadores que vendem seus próprios ingressos
+lead: Uma plataforma, eventos diferentes. Escolha o seu para ver quais partes mais importam, como é a primeira semana e o que outros organizadores da sua área perguntam primeiro.
+related:
+  - { label: Como funciona, href: /#how }
+  - { label: Preços, href: /pricing }
+  - { label: Clientes, href: /clients }
+sections:
+  - type: cards
+    id: list
+    eyebrow: Para quem é
+    title: Que tipo de evento você realiza?
+    items:
+      - { title: Shows, text: "Em pé e sentado, várias categorias de preço, pré-venda, leitura de ingressos na entrada.", link: { label: Para shows →, href: /solutions/concerts } }
+      - { title: Teatro, text: "Mapas de assentos iguais ao local, datas repetidas, convites para imprensa e parceiros.", link: { label: Para teatros →, href: /solutions/theatre } }
+      - { title: Espetáculos, text: "Shows no gelo, circo, dança: muitas datas, muitas cidades, um mapa por local reaproveitado.", link: { label: Para espetáculos →, href: /solutions/shows } }
+      - { title: Festivais, text: "Vários dias, muitas categorias, categorias que repassam os lugares não vendidos para a seguinte.", link: { label: Para festivais →, href: /solutions/festivals } }
+      - { title: Turnês, text: "Um espetáculo, muitas cidades e datas, uma página por promotor com link próprio.", link: { label: Para turnês →, href: /solutions/concert-tours } }
+      - { title: Master classes e treinamentos, text: "Grupos pequenos, datas recorrentes, e-mails e idioma do próprio anfitrião.", link: { label: Para anfitriões →, href: /solutions/master-classes } }
+      - { title: Locais e clubes, text: "Seu próprio local, muitos eventos por mês, um mapa de assentos reaproveitado, condições separadas.", link: { label: Para locais →, href: /solutions/venues } }
+      - { title: Sites em WordPress, text: "Plugin com pedidos do WooCommerce; a loja continua funcionando, os ingressos vêm do ArenaSoldOut.com.", link: { label: Para sites WordPress →, href: /solutions/wordpress } }
+  - type: cta
+    id: start
+    title: Comece a vender hoje
+    text: "Crie o evento, conecte sua conta de pagamentos, compartilhe o link. Um evento sem mapa de assentos entra à venda em 10 minutos; o mapa de assentos nós desenhamos para você, sem custo."
+    primary: { label: Criar seu evento, href: /start#create }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou escreva para nós: configuramos tudo com você em uma conversa."

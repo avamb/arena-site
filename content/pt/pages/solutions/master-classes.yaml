@@ -1,0 +1,38 @@
+title: "Venda de ingressos para masterclasses e treinamentos"
+description: "Venda vagas para masterclasses, treinamentos, degustações e oficinas: turmas pequenas com cota, datas recorrentes, seus e-mails, grátis e pague quanto quiser."
+h1: Masterclasses e treinamentos
+lead: Turmas pequenas, datas recorrentes, seus próprios e-mails no seu idioma. Uma página hospedada fica pronta em minutos; o widget se encaixa no site que você já tem. A Vino&Co, em Israel, vende suas degustações assim.
+related:
+  - { label: Códigos promocionais e janelas de preço, href: /product/pricing-tools }
+  - { label: Onde você vende, href: /product/sell }
+  - { label: Clientes, href: /clients }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para anfitriões
+    title: O que importa em uma oficina?
+    items:
+      - { title: Uma cota por data, text: "Doze vagas na terça, vinte no sábado; as datas esgotadas se fecham sozinhas.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Datas recorrentes, text: "Adicione sessões ao mesmo evento; preços e categorias são mantidos e o público escolhe a data.", link: { label: Event Center →, href: /#center } }
+      - { title: Gratuito e pague quanto quiser, text: "Inscrições sem pagamento, ou um preço mínimo e o comprador decide o valor.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Seu idioma, text: "Página, widget, e-mail e ingresso no idioma do comprador, inclusive hebraico da direita para a esquerda.", link: { label: Ingressos →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O que os anfitriões perguntam primeiro?
+    items:
+      - q: Não tenho site. Onde as pessoas compram?
+        a: "Em uma página hospedada, tickets.arenasoldout.com/seu-nome/seu-evento, pronta em minutos. Compartilhe o link em mensageiros e redes sociais."
+      - q: Posso cobrar apenas um sinal?
+        a: Defina o preço do ingresso como o valor do sinal e receba o resto no local; ou use pague quanto quiser com um valor mínimo.
+      - q: Os compradores recebem um lembrete?
+        a: Os compradores recebem o ingresso por e-mail e um e-mail quando uma data muda ou é cancelada. Lembretes antes da data não são enviados hoje.
+      - q: Quanto custa?
+        a: "Um valor fixo por ingresso pago; inscrições gratuitas não custam nada. Veja os [preços](/pricing)."
+  - type: cta
+    id: start
+    title: Comece a vender hoje
+    text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
+    primary: { label: Criar seu evento, href: /start#create }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."

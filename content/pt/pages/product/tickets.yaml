@@ -1,0 +1,47 @@
+title: "Ingressos com EAN-13 e QR, leitura e e-mails ao comprador"
+description: "Ingressos em PDF com EAN-13 e QR no idioma do comprador, app de leitura MACS para iOS e Android, ingresso de exemplo, e-mails se uma sessão muda ou é cancelada."
+h1: Um ingresso que lê
+lead: Cada ingresso é um PDF com código de barras EAN-13 e código QR, no idioma do comprador. Leia com o aplicativo ou com um leitor portátil, reenvie, reembolse, substitua quando uma data mudar.
+related:
+  - { label: Mapas de assentos, href: /product/seating }
+  - { label: "Confiabilidade: carga, backups, monitoramento", href: /product/reliability }
+  - { label: Ajuda para compradores de ingressos, href: /help/tickets }
+  - { label: "Aplicativo de leitura MACS: qualquer organizador, qualquer entrada", href: /product/scanner }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Ingressos
+    title: O que o comprador recebe?
+    items:
+      - q: O que há no ingresso?
+        a: "Evento, sessão, assento ou categoria, preço, o nome do comprador, um código de barras EAN-13 e um código QR. Um PDF por pedido, no idioma do comprador: inglês, russo, tcheco, hebraico ou espanhol na página, sete idiomas nos e-mails. Acrescentamos qualquer idioma novo em até 40 horas."
+      - q: O comprovante de pagamento vai no e-mail?
+        a: "Sim. O comprovante de pagamento vem anexado ao e-mail do ingresso, e o e-mail indica quem recebeu o pagamento: a sua organização e o seu provedor de pagamentos."
+      - q: Posso conferir se o comprador recebeu o ingresso?
+        a: "Sim. Cada e-mail mostra seu status no cartão do pedido: Enviado, Entregue, Lido. Você sempre vê se o comprador recebeu o ingresso e pode enviá-lo de novo se ele o perdeu."
+      - q: Como leio os ingressos na entrada?
+        a: "Com o [aplicativo de leitura MACS](#scanner) para iOS e Android, ou um leitor portátil de código de barras. O aplicativo também aceita ingressos vendidos pelos seus parceiros em outros sistemas, então uma porta atende todos os canais."
+      - q: Posso ver um ingresso antes de as vendas começarem?
+        a: Sim. Um ingresso de exemplo com marca d'água acompanha o evento, no Event Center ou no bot do Telegram.
+      - q: O que acontece quando uma data muda?
+        a: Os compradores recebem um e-mail no seu idioma com o ingresso atualizado anexado. O mesmo vale para um cancelamento, com o reembolso tratado por você.
+      - q: Posso reenviar ou reembolsar um ingresso?
+        a: Sim, pelo Event Center. Reenvie para um novo endereço, reembolse no cartão do comprador, o assento volta à venda.
+      - q: Existe um aplicativo para compradores?
+        a: Não. O PDF e o e-mail bastam na entrada; nada para instalar.
+  - type: cards
+    id: scanner
+    eyebrow: Na entrada
+    title: Qual aplicativo lê os ingressos?
+    lead: "O MACS é o aplicativo de controle de acesso do ArenaSoldOut.com. Instale-o nos celulares da equipe da porta, entre com a sua conta do Event Center e leia o EAN-13 ou o QR de cada ingresso: papel, PDF na tela ou o e-mail. Um só aplicativo lê ingressos de qualquer organizador da plataforma e ingressos de parceiros de outros sistemas, então um local, um festival ou um promotor que aluga um local usa os mesmos celulares em todos os eventos."
+    items:
+      - { title: iPhone e iPad, text: "MACS na App Store. Entre com a sua conta do Event Center; a lista de eventos e as sessões já estão lá.", link: { label: Abrir a App Store →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: Android, text: "MACS no Google Play. O mesmo aplicativo, a mesma conta; leitores portáteis com câmera ou laser também funcionam.", link: { label: Abrir o Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
+      - { title: "Qualquer organizador, um aplicativo", text: "A equipe da porta de um local lê ingressos de todo organizador que vende pelo ArenaSoldOut.com, e ingressos vendidos por parceiros em outros sistemas, sem trocar de aplicativo.", link: { label: "MACS como produto →", href: /product/scanner } }
+  - type: cta
+    id: start
+    title: Comece a vender hoje
+    text: Crie o evento, conecte sua conta de pagamentos, compartilhe o link. O ingresso de exemplo fica pronto junto com o evento.
+    primary: { label: Criar seu evento, href: /start#create }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou escreva para nós: configuramos tudo com você em uma conversa."
