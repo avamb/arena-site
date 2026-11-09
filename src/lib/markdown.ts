@@ -6,7 +6,7 @@ import type { CollectionEntry } from 'astro:content';
 import type { Section } from '../content.config';
 import { siteUrl, org, type LanguageCode } from '@config';
 import { plain, fill } from './inline';
-import { clients, tariff, tariffFor, facts, liveProviderNames, reasonVars, priceVars, type Nav } from './data';
+import { clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, type Nav } from './data';
 import { formatDate, currencySymbol, postPath } from './i18n';
 
 export type PageData = {
@@ -84,7 +84,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       const lpv = {
         lowMax: both((c, tf) => `${currencySymbol(c)}${tf.low_price.max_ticket}`), lowPercent: tariff.low_price.percent, lowMin: both((c, tf) => money(tf.low_price.min, c)),
         lowCap: both((c, tf) => money(tf.low_price.max, c)), lowSeat: both((c, tf) => money(tf.low_price.seating_extra, c)), percent: tariff.venues_percent,
-        cap: both((c, _, p) => money(p.data.per_ticket + p.data.seating_extra, c)),
+        cap: both((c, _, p) => money(venueCap(c, p.data.per_ticket, p.data.seating_extra), c)),
       };
       out.push(`**${plain(fill(s.lowPrice.title, lpv))}**`, '', plain(fill(s.lowPrice.text, lpv)), '');
       out.push(`**${s.venues.title}**`, '', plain(fill(s.venues.text, lpv)), '', plain(s.note), '', `[${s.terms.label}](${abs(s.terms.href)})`, '');

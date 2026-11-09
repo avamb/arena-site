@@ -1,6 +1,6 @@
 /** /facts.json: the same data as /facts, for agents and for the future MCP wrapper (doc 33 §3.10, items 4 and 12). */
 import type { APIRoute } from 'astro';
-import { facts, tariff, clients, getProviders, getMarkets, getPricing, getChangelog } from '@/lib/data';
+import { facts, tariff, venueCap, clients, getProviders, getMarkets, getPricing, getChangelog } from '@/lib/data';
 import { siteUrl, org, languages } from '@config';
 
 export const GET: APIRoute = async () => {
@@ -20,7 +20,7 @@ export const GET: APIRoute = async () => {
       prepaid_packages: tariff.packages.map((k) => ({ name: k.name, prepayment: k.prepay, per_ticket: k.per_ticket, with_seat: +(k.per_ticket + tariff.package_seating_extra).toFixed(2), tickets_without_seat: Math.floor(Math.round(k.prepay * 100) / Math.round(k.per_ticket * 100)), tickets_with_seat: Math.floor(Math.round(k.prepay * 100) / Math.round((k.per_ticket + tariff.package_seating_extra) * 100)) })),
       low_price_events: { applies_when: `every ticket of the event costs at most ${tariff.low_price.max_ticket} before promo codes (all categories and steps)`, percent: tariff.low_price.percent, min_per_ticket: tariff.low_price.min, max_per_ticket: tariff.low_price.max, seat_extra: tariff.low_price.seating_extra },
       permanent_venues_percent: tariff.venues_percent,
-      permanent_venues_cap_per_ticket: pricing.map((p) => ({ currency: p.data.currency, cap: +(p.data.per_ticket + p.data.seating_extra).toFixed(2) })),
+      permanent_venues_cap_per_ticket: pricing.map((p) => ({ currency: p.data.currency, cap: venueCap(p.data.currency, p.data.per_ticket, p.data.seating_extra) })),
       invoicing: tariff.invoicing,
       terms_url: `${siteUrl}/pricing/terms`,
     },
