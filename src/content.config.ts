@@ -126,9 +126,19 @@ export const section = z.discriminatedUnion('type', [
     }).optional(),
     note: z.string(),
     buyCredits: link.optional(),
+    /** Two plan cards as on the reference pricing page: pay as you go and pay upfront with credits, a $/€ switch, perks and the brand line. */
+    plans: z.object({
+      currency: z.string(),
+      payg: z.object({ name: z.string(), text: z.string(), bullets: z.array(z.string()) }),
+      upfront: z.object({ name: z.string(), text: z.string(), from: z.string(), bullets: z.array(z.string()) }),
+      perks: z.array(z.object({ big: z.string(), title: z.string(), text: z.string() })),
+      brand: z.string(),
+    }).optional(),
     terms: link,
   }),
   z.object({ type: z.literal('who'), ...sectionBase, items: z.array(z.object({ icon: z.string(), title: z.string(), text: z.string(), link: link })) }),
+  /* Home: the four reasons (doc 51 §1): benefit, speed, convenience, reliability. {price}, {seated}, {countries}, {since} come from data. */
+  z.object({ type: z.literal('reasons'), ...sectionBase, items: z.array(z.object({ icon: z.string(), title: z.string(), text: z.string(), bullets: z.array(z.string()).optional(), link: link.optional() })).length(4) }),
   z.object({ type: z.literal('clients'), ...sectionBase, cta: link, marksAria: z.string() }),
   z.object({ type: z.literal('changes'), ...sectionBase, cta: link, more: link, limit: z.number().optional() }),
   z.object({ type: z.literal('cta'), ...sectionBase, title: z.string(), text: z.string(), primary: link, secondary: link, note: z.string() }),
@@ -139,11 +149,15 @@ export const section = z.discriminatedUnion('type', [
   z.object({ type: z.literal('coverage'), ...sectionBase, labels: z.object({ countries: z.string(), note: z.string(), missing: z.string() }), cta: link }),
   z.object({ type: z.literal('markets'), ...sectionBase, preparing: z.object({ title: z.string(), text: z.string() }) }),
   z.object({ type: z.literal('cards'), ...sectionBase, items: z.array(z.object({ title: z.string(), text: z.string(), link: link.optional() })) }),
+  /** Side-by-side comparison with another platform: `us` and `them` per row, price placeholders allowed. */
+  z.object({ type: z.literal('compare'), ...sectionBase, cols: z.object({ what: z.string(), us: z.string(), them: z.string() }), rows: z.array(z.object({ what: z.string(), us: z.string(), them: z.string() })), note: z.string().optional() }),
   z.object({ type: z.literal('code'), ...sectionBase, code: z.string(), items: z.array(z.object({ key: z.string(), text: z.string() })), cta: link }),
   z.object({ type: z.literal('marks'), ...sectionBase }),
   z.object({ type: z.literal('changelog'), ...sectionBase }),
   z.object({ type: z.literal('posts'), ...sectionBase, empty: z.string() }),
   z.object({ type: z.literal('facts-table'), ...sectionBase }),
+  /* "Contact the team" form inline (doc 51 §1.3); its fields and messages are interface strings (i18n contact.*). */
+  z.object({ type: z.literal('contact-form'), ...sectionBase }),
   z.object({
     type: z.literal('onboarding'),
     ...sectionBase,

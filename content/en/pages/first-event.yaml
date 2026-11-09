@@ -1,0 +1,54 @@
+# "Your first event with us" (doc 51 §1.5): every step from the application to the scanner, linked from the home page.
+# The Markdown twin (/first-event.md), llms.txt and the HowTo JSON-LD (from the steps block) are generated.
+# Facts only from the code and the other pages: onboarding is "apply, we confirm" (no self-service yet, facts.yaml),
+# keys go into the Event Center or to the team (payments.yaml), MACS (product/scanner.yaml).
+title: "Your first event: from application to scanner"
+description: "Step by step: apply, get confirmed, connect your payment account once, create the event, send the venue plan, publish, sell, scan tickets at the door."
+h1: Your first event with ArenaSoldOut.com
+lead: "Eight steps from the application to the scanner at the door. With an account at a payment provider already open, an event without a seating plan goes on sale 10 minutes after your organization is confirmed."
+related:
+  - { label: Payment providers by country, href: /payments, text: "Which provider your company can connect, with methods and currencies." }
+  - { label: Seating plans, href: /product/seating, text: "What to send us so we draw your venue for free." }
+  - { label: MACS scanner app, href: /product/scanner, text: "Scanning tickets at the door on iOS and Android." }
+sections:
+  - type: steps
+    id: steps
+    eyebrow: Step by step
+    title: How do I put my first event on sale?
+    items:
+      - title: Send the application
+        text: "Five short steps on the [application form](/start): contact, organization, events, payments, consent. Or send the same in the [Telegram bot](https://t.me/EventsCentrBot). Your answers are saved as you go."
+      - title: We confirm your organization
+        text: "The team checks the application and creates your organization and your Event Center account, usually within a day, and tells you how to sign in."
+      - title: Connect your payment account, once
+        text: "Create API keys in your provider's dashboard (Stripe, Flitt, AllPay or another provider of your country) and paste them into the Event Center, or send them to the team. This is done once for the organization; every next event uses the same account. No account yet? Open one with a [provider of your country](/payments) first: that takes the provider's own time."
+      - title: Create the event
+        text: "In the Event Center in the browser, or in the Telegram bot from a photo of your poster: name, venue, dates and sessions, ticket categories and prices, the poster. Without a seating plan this takes about 10 minutes."
+      - title: Send the venue plan, if you sell seats
+        text: "We draw the plan for free, usually within a day, and show it to you before sales start. Any of these is enough: a PDF of the venue plan, a photo of a hand sketch, or a table of rows with the seats in each row (Excel or Google Sheets). An SVG is imported directly."
+      - title: Publish and share
+        text: "Put the event on sale. Share the link to the sales page we host, or add the ticket widget to your own site with three lines of code. Promo codes, prices by date and the service fee are set in the same place."
+      - title: Watch the sales
+        text: "Buyers pay into your payment account and get the ticket by e-mail in their language. Every order is in the Event Center, and every sale and refund lands in your Telegram group within seconds."
+      - title: Scan at the door
+        text: "Install the MACS app on iPhone or Android, sign in with your Event Center account, pick the session and scan the EAN-13 or the QR on paper or on a screen. As many phones as you have entrances."
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: What do organizers ask before the first event?
+    items:
+      - q: How long does it really take?
+        a: "Confirmation of the organization: usually within a day. After that, with a payment account already open, an event without a seating plan is on sale in about 10 minutes. A seated event waits for the plan we draw, usually a day. Opening a new account with a payment provider takes as long as the provider needs."
+      - q: What do I prepare?
+        a: "The event name, the venue, the dates and times, the ticket categories and prices, a poster, and the API keys of your payment account. For seats, the venue plan in any of the forms above."
+      - q: Can the team set it up for me?
+        a: "Yes. Send the details in the [Telegram bot](https://t.me/EventsCentrBot) or through the contact form and we create the event with you; you check it before sales start."
+      - q: What does the first event cost?
+        a: "The same as any other: a commission per ticket sold, invoiced after the event, or less with credits bought upfront. Seating plans and invitations cost nothing. Prices are on the [pricing page](/pricing)."
+  - type: cta
+    id: start
+    title: Start with the application
+    text: "Five short steps, saved as you go. The team confirms your organization, usually within a day."
+    primary: { label: Send the application, href: /start }
+    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
+    note: "Questions first? The “Contact the team” button is on every page."

@@ -23,7 +23,7 @@ sections:
   - type: cta
     id: start
     title: Start selling today
-    text: Create the event, connect your payment account, share the link. An event without a seating plan is on sale within the hour; a seating plan we draw with you.
+    text: "Create the event, connect your payment account, share the link. An event without a seating plan is on sale in 10 minutes; a seating plan we draw for you, free of charge."
     primary: { label: Create your event, href: /start#create }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
     note: "Or write to us: we set everything up with you on a call."

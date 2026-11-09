@@ -1,12 +1,17 @@
 title: "Contact ArenaSoldOut.com: Telegram, e-mail, application"
-description: "Reach the ArenaSoldOut.com team via the Telegram chat and bot, e-mail or the organizer application form. Ticket buyers: ask your organizer first."
-h1: Contact
-lead: Organizers reach the team in Telegram or through the form; the same people answer. Ticket buyers should write to the organizer of their event first; the buyer help page explains where to find the ticket.
+description: "Write to the ArenaSoldOut.com team with the form, in the Telegram chat or bot, or by e-mail. Ticket buyers: ask the organizer of your event first."
+h1: Contact the team
+lead: Organizers reach the team with the form below, in Telegram or by e-mail; the same people answer. Ticket buyers should write to the organizer of their event first; the buyer help page explains where to find the ticket.
 related:
   - { label: Start selling, href: /start }
   - { label: Help for ticket buyers, href: /help/tickets }
   - { label: Partners, href: /partners }
 sections:
+  - type: contact-form
+    id: write
+    eyebrow: Write to the team
+    title: How do I ask the team a question?
+    lead: "Write your question below. A person from the team answers by e-mail, usually the same working day. Questions and answers, without names and e-mails, become the answers on this site."
   - type: cards
     id: ways
     eyebrow: Contact

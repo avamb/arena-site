@@ -13,7 +13,10 @@ export const GET: APIRoute = async () => {
     pricing: {
       unit: 'platform commission per ticket sold, invoiced after the event or taken from a prepaid package',
       regions: pricing.map((p) => ({ region: p.data.region, currency: p.data.currency, per_ticket: p.data.per_ticket, with_seating_plan: +(p.data.per_ticket + p.data.seating_extra).toFixed(2), invitations: 0 })),
-      note: 'The same numbers in EUR (EU countries) and USD (all other countries). Amounts without VAT.',
+      note: `US dollars (all countries outside the EU) are the base. EUR prices (EU countries) are the USD prices at ${tariff.eur.rate_source} on ${tariff.eur.rate_date.toISOString().slice(0, 10)}, rounded to the cent. Amounts without VAT.`,
+      eur_rate: { usd_to_eur: tariff.eur.rate, date: tariff.eur.rate_date.toISOString().slice(0, 10), source: tariff.eur.rate_source },
+      prepaid_packages_eur: tariff.eur.packages.map((k) => ({ name: k.name, prepayment: k.prepay, per_ticket: k.per_ticket, with_seat: +(k.per_ticket + tariff.eur.package_seating_extra).toFixed(2) })),
+      low_price_events_eur: tariff.eur.low_price,
       prepaid_packages: tariff.packages.map((k) => ({ name: k.name, prepayment: k.prepay, per_ticket: k.per_ticket, with_seat: +(k.per_ticket + tariff.package_seating_extra).toFixed(2), tickets_without_seat: Math.floor(Math.round(k.prepay * 100) / Math.round(k.per_ticket * 100)), tickets_with_seat: Math.floor(Math.round(k.prepay * 100) / Math.round((k.per_ticket + tariff.package_seating_extra) * 100)) })),
       low_price_events: { applies_when: `every ticket of the event costs at most ${tariff.low_price.max_ticket} before promo codes (all categories and steps)`, percent: tariff.low_price.percent, min_per_ticket: tariff.low_price.min, max_per_ticket: tariff.low_price.max, seat_extra: tariff.low_price.seating_extra },
       permanent_venues_percent: tariff.venues_percent,

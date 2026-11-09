@@ -14,6 +14,10 @@ sections:
     items:
       - q: Can I use promo codes?
         a: Yes. A code can apply to one event, one session or one category, with a sale window, a minimum order and a per-buyer limit. Partners get their own codes.
+      - q: Is there a ready-made price scheme?
+        a: "Yes, Smart price. Choose a ready scheme of price steps by quantity and by date, instead of setting every step by hand. You can adjust it after."
+      - q: Can a ticket be sold only together with another one?
+        a: "Yes, with add-on categories. An add-on is sold only together with a ticket of a main category of the same session. For example, a child ticket cannot be sold without an adult ticket, and \"one more child\" is added to \"child plus adult\". When the main categories sell out, the session shows as sold out."
       - q: Can prices change on a date I set?
         a: Yes. Early-bird windows switch by date and time. Quantity steps open the next price when the current one sells out, so a sold-out tier never blocks sales.
       - q: Several prices for one event?

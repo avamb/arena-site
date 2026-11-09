@@ -47,14 +47,16 @@ sections:
       - title: Keys in your own account
         text: You create API keys in your provider's dashboard and paste them into the Event Center or send them to the team. The account stays yours; ArenaSoldOut.com only initiates payments into it.
       - title: Money to your account
-        text: Every order is paid to your account directly. Payouts to your bank follow your provider's schedule. Refunds and chargebacks are decided by you.
+        text: Every order is paid to your account directly. Payouts to your bank follow your provider's schedule. Refunds are decided by you and go back to the buyer through your provider, with any provider.
+      - title: Automatic chargeback handling
+        text: "When a buyer disputes a payment, ArenaSoldOut.com collects the evidence for you: payment data, the buyer's consent, the delivery of the ticket e-mails and every download of the ticket."
       - title: ArenaSoldOut.com holds nothing
-        text: The platform commission is invoiced after the event or taken from a prepaid package, separately. Nothing is deducted from your sales. If you ever leave, your payment account and your buyers' data stay with you.
+        text: The platform commission is invoiced after the event or taken from your credits, separately. Nothing is deducted from your sales. If you ever leave, your payment account and your buyers' data stay with you.
 
   - type: cta
     id: start
     title: Start selling today
-    text: Create the event, connect your payment account, share the link. An event without a seating plan is on sale within the hour; a seating plan we draw with you.
+    text: "Create the event, connect your payment account, share the link. An event without a seating plan is on sale in 10 minutes; a seating plan we draw for you, free of charge."
     primary: { label: Create your event, href: /start#create }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
     note: "Or write to us: we set everything up with you on a call."

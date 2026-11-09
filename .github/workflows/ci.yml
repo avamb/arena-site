@@ -36,6 +36,7 @@ jobs:
       - run: npm run check:agents
       - run: npm run check:links
       - run: npm run onboarding:test
+      - run: npm run contact:test
       - run: npm run analytics:test
       - uses: actions/upload-artifact@v4
         with:

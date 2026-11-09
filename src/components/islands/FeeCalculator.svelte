@@ -1,17 +1,17 @@
 <script lang="ts">
   /**
    * Fee calculator. One ticket category at a time: its price, the highest price of any ticket of the
-   * event (decides the tariff), quantity, seat or not, region (currency only; the numbers are equal).
+   * event (decides the tariff), quantity, seat or not, region (currency and its own numbers: US dollars are the base, euros are converted at a rate).
    * Numbers come from content/data via props; the arithmetic lives in $lib/fees.
    */
   import { standardFee, lowPriceFee, isLowPriceEvent, packageFor, packageFee, round2, type LowPrice, type Package } from '../../lib/fees';
-  type Region = { id: string; label: string; symbol: string; perTicket: number; seatingExtra: number };
+  type Region = { id: string; label: string; symbol: string; perTicket: number; seatingExtra: number; lowPrice: LowPrice; packages: Package[]; packageSeatingExtra: number };
   type Labels = {
     aria: string; button?: string; hint?: string; region: string; price: string; maxPrice: string; quantity: string; seating: string; result: string; sales: string;
     needMax: string; maxBelowPrice: string; lowRate: string; package: string; noPackage: string;
   };
-  let { labels, regions, lowPrice, packages, packageSeatingExtra, defaultPrice, defaultQuantity, intl }: {
-    labels: Labels; regions: Region[]; lowPrice: LowPrice; packages: Package[]; packageSeatingExtra: number;
+  let { labels, regions, defaultPrice, defaultQuantity, intl }: {
+    labels: Labels; regions: Region[];
     defaultPrice: number; defaultQuantity: number; intl: string;
   } = $props();
 
@@ -35,6 +35,7 @@
     const p = num(price), m = num(maxPrice), q = Math.floor(num(qty));
     if (m <= 0) return { error: labels.needMax } as const;
     if (m < p) return { error: labels.maxBelowPrice } as const;
+    const { lowPrice, packages, packageSeatingExtra } = region;
     const low = isLowPriceEvent(m, lowPrice);
     const perTicket = low ? lowPriceFee(p, lowPrice, seated) : standardFee(region.perTicket, region.seatingExtra, seated);
     const fee = round2(q * perTicket);

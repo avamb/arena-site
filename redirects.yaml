@@ -12,7 +12,6 @@ redirects:
   - { from: /termsconditions/, to: /legal/terms }
   - { from: /privacy-policy/, to: /legal/privacy }
   # product and features
-  - { from: /features/, to: /product/sell }
   - { from: /my-site/, to: /product/sell }
   - { from: /my-site-ticket-platform/, to: /product/sell }
   - { from: /my-site-white/, to: /product/sell }
@@ -100,7 +99,7 @@ redirects:
   # legacy locale roots and pages that still get impressions in Search Console (SEO-005)
   - { from: /et/hinnad/, to: /pricing }      # Estonian: prices
   - { from: /et/kkk/, to: /facts }           # Estonian: KKK = frequently asked questions
-  - { from: /et/omadused/, to: /product/sell }  # Estonian: features, same target as /features/
+  - { from: /et/omadused/, to: /features }  # Estonian: features; /features is the list of all features since 09.11.2026
   - { from: /my/, to: / }
   - { from: /no/, to: / }
   # WooCommerce test shop → buyer help

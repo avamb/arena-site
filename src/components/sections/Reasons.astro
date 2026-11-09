@@ -1,0 +1,31 @@
+---
+import type { Section } from '@/content.config';
+import type { CollectionEntry } from 'astro:content';
+import type { LanguageCode } from '@config';
+import { inline, fill } from '@/lib/inline';
+import { localePath } from '@/lib/i18n';
+import { reasonVars } from '@/lib/data';
+import Icon from '@/components/Icon.astro';
+interface Props { s: Extract<Section, { type: 'reasons' }>; lang: LanguageCode; pricing: CollectionEntry<'pricing'>[] }
+const { s, lang, pricing } = Astro.props;
+const vars = reasonVars(pricing);
+const resolve = (href: string) => localePath(lang, href);
+---
+<section class="section" id={s.id}>
+  <div class="wrap">
+    {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
+    {s.title && <h2 class="h2">{s.title}</h2>}
+    {s.lead && <p class="lead" set:html={inline(fill(s.lead, vars), { resolve })} />}
+    <div class="sols reasons">
+      {s.items.map((i) => (
+        <article class="card sol">
+          <div class="ic"><Icon name={i.icon as any} /></div>
+          <h3>{fill(i.title, vars)}</h3>
+          <p set:html={inline(fill(i.text, vars), { resolve })} />
+          {i.bullets && <ul class="reason-list">{i.bullets.map((b) => <li><Icon name="check" size={14} /><span set:html={inline(fill(b, vars), { resolve })} /></li>)}</ul>}
+          {i.link && <a href={localePath(lang, i.link.href)}>{i.link.label}</a>}
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

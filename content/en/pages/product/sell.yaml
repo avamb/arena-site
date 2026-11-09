@@ -4,7 +4,7 @@ description: "Embed the ticket widget with three lines, use the WordPress plugin
 h1: Your site, or ours. The money goes to you either way.
 lead: Two ways to sell, one Event Center behind them. Embed the widget on the site you already have, or share a hosted page we create in minutes. Every order lands in your own payment account.
 related:
-  - { label: Seating plans that match the venue, href: /product/seating, text: "Send a PDF, a spreadsheet or a sketch; the team builds the plan in." }
+  - { label: Seating plans that match the venue, href: /product/seating, text: "Send a PDF, a sketch or a table of rows; we draw the plan for free." }
   - { label: Payments into your own account, href: /payments, text: "Providers by country, statuses, how to connect." }
   - { label: WordPress sites, href: /solutions/wordpress, text: "Plugin with WooCommerce orders, two clients moved from ArenaSoldOut.com without downtime." }
 sections:
@@ -26,6 +26,26 @@ sections:
           - A separate page for each promoter
           - Ready in minutes, no design work
           - Links to your partner sellers on the same page
+  - type: cards
+    id: page
+    eyebrow: Your sales page
+    title: What else does my sales page do?
+    lead: "Everything below works on your event page on the platform and in the widget. Set it up in the Event Center."
+    items:
+      - title: Event materials on your sales page
+        text: "Add materials to your event on your sales page on the platform, if you do not have a site of your own: texts, photos and videos."
+      - title: Descriptions that look designed
+        text: "Headings, lists, links and quotes in the event description on your sales page. A neural network formats a plain text for you in one click."
+      - title: '"Notify me when sales open"'
+        text: "Buyers subscribe on your event page and get an e-mail the moment sales open, in their language."
+      - title: Abandoned cart reminders
+        text: "A buyer who reserved tickets and did not pay gets a reminder e-mail. In many cases these reminders lift sales strongly. You can offer a discount for consent to your newsletter."
+      - title: Refer a friend
+        text: "Every buyer gets a personal link. The friend gets a discount, and the buyer who brought the friend gets cashback to their card after the friend's event."
+      - title: Short links and QR codes for print
+        text: "A short go.arenasoldout.com link with a QR code for posters, flyers and social media: PNG, SVG, or a ready PDF insert in A5 and A6 for print. You can change where the link leads after printing. Every order is tied to its link, so you see which poster sold."
+      - title: A shop next to your tickets
+        text: "Sell goods together with tickets: wine, merchandise, gift sets. A storefront with variants, cart, courier delivery, refunds and e-mails. Our first shop client already sells through it."
   - type: faq
     id: questions
     eyebrow: Questions
@@ -44,7 +64,7 @@ sections:
   - type: cta
     id: start
     title: Start selling today
-    text: Create the event, connect your payment account, share the link. An event without a seating plan is on sale within the hour; a seating plan we draw with you.
+    text: "Create the event, connect your payment account, share the link. An event without a seating plan is on sale in 10 minutes; a seating plan we draw for you, free of charge."
     primary: { label: Create your event, href: /start#create }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
     note: "Or write to us: we set everything up with you on a call."

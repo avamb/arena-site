@@ -16,10 +16,15 @@ signin:
 start:
   label: Start selling
   href: /start
+contact:
+  label: Contact the team
+  href: /contact#write
 tagline: Ticketing platform for organizers. Seats and tickets, your own payment account, an Event Center for the team.
 footer:
   - title: Product
     links:
+      - { label: All features, href: /features }
+      - { label: Your first event, href: /first-event }
       - { label: Sell on your site or ours, href: /product/sell }
       - { label: Seating plans, href: /product/seating }
       - { label: Promo codes and price windows, href: /product/pricing-tools }
@@ -28,6 +33,7 @@ footer:
       - { label: E-tickets and scanning, href: /product/tickets }
       - { label: MACS scanner app, href: /product/scanner }
       - { label: Reliability, href: /product/reliability }
+      - { label: Ticket Tailor alternative, href: /tickettailor-alternative }
   - title: Who it is for
     links:
       - { label: Concerts, href: /solutions/concerts }
@@ -52,7 +58,7 @@ footer:
       - { label: Blog, href: /blog }
       - { label: Latest changes, href: /changes }
       - { label: Facts, href: /facts }
-      - { label: Contact, href: /contact }
+      - { label: Contact the team, href: /contact#write }
       - { label: Buyer help, href: /help/tickets }
   - title: Legal
     links:

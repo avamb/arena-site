@@ -1,0 +1,97 @@
+# Comparison page for organizers who look for a Ticket Tailor alternative (owner's request of 09.11.2026).
+# Ticket Tailor figures: tickettailor.com/pricing, read from their calculator in USD and EUR on 09.11.2026.
+# Re-check them before changing this page. Our figures come from content/data ({usd...} placeholders),
+# except the worked examples in the "examples" section: update those by hand when the tariff changes.
+# Only rows we could check on their public pricing page are in the table; everything else is about us.
+title: "Ticket Tailor alternative with lower ticket fees"
+description: "Compare ArenaSoldOut.com and Ticket Tailor: US$0.59 vs US$0.85 per ticket pay as you go, cheaper credits, free seating plans, payouts to your own account."
+h1: A Ticket Tailor alternative that costs less per ticket
+lead: "Ticket Tailor and ArenaSoldOut.com both charge a flat fee per ticket instead of a percentage of your revenue. At the same volume, ArenaSoldOut.com costs less: US$0.59 instead of US$0.85 per ticket pay as you go, and less with credits too. Below are both price lists side by side, as published on 9 November 2026."
+related:
+  - { label: Pricing, href: /pricing, text: "Pay as you go or credits, the calculator and every credit pack." }
+  - { label: All features, href: /features, text: "Everything ArenaSoldOut.com does, on one page." }
+  - { label: Seating plans, href: /product/seating, text: "We draw your venue for free from a PDF or a sketch." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Prices in US dollars
+    title: How much does a ticket cost on each platform?
+    lead: "Our commission per ticket sold next to Ticket Tailor's. Amounts without VAT, card processing paid to your payment provider on both platforms."
+    cols: { what: "", us: ArenaSoldOut.com, them: Ticket Tailor }
+    rows:
+      - { what: "Pay as you go, per ticket", us: "**{usdPrice}**", them: "US$0.85" }
+      - { what: "Pay as you go, ticket with a seat on a seating plan", us: "**{usdSeated}**", them: "US$1.70 (a seated ticket counts twice)" }
+      - { what: "Credits, around 100 tickets", us: "**US$0.52** per ticket", them: "US$0.70 per ticket" }
+      - { what: "Credits, around 500 tickets", us: "**US$0.46** per ticket", them: "US$0.60 per ticket" }
+      - { what: "Credits, around 1,000 tickets", us: "**US$0.43** per ticket", them: "US$0.52 per ticket" }
+      - { what: "Credits, around 2,500 tickets", us: "**US$0.40** per ticket", them: "US$0.47 per ticket" }
+      - { what: "Credits, around 5,000 tickets", us: "**US$0.38** per ticket", them: "US$0.43 per ticket" }
+      - { what: "More than 5,000 tickets a year", us: "Individual terms: [write to us](/contact)", them: "US$0.39 to US$0.30 per ticket" }
+      - { what: "Pay as you go in euro (EU)", us: "**{eurPrice}**", them: "€0.70" }
+      - { what: "Do credits expire?", us: "No, never", them: "No, never" }
+      - { what: "Registered charities", us: "50% off", them: "50% off" }
+      - { what: "Subscription", us: None, them: None }
+    note: "Ticket Tailor prices: [tickettailor.com/pricing](https://www.tickettailor.com/pricing), checked on 9 November 2026, USD unless stated. Our prices: [pricing](/pricing) and [detailed terms](/pricing/terms). Ticket Tailor is a trademark of its owner; ArenaSoldOut.com is not affiliated with it."
+
+  - type: prose
+    id: examples
+    title: What does that mean for one event?
+    body: |
+      **1,000 tickets, general admission, pay as you go.** ArenaSoldOut.com: 1,000 × US$0.59 = **US$590**. Ticket Tailor: 1,000 × US$0.85 = US$850. You keep **US$260** more.
+
+      **500 seated tickets, pay as you go.** ArenaSoldOut.com: 500 × US$1.09 = **US$545**. Ticket Tailor: 500 × US$1.70 = US$850. You keep **US$305** more, and we draw the seating plan for free.
+
+      **1,000 tickets a year, paid upfront with credits.** ArenaSoldOut.com credit pack 1K: **US$430**. Ticket Tailor, 1,000 credits: US$520. **US$90** less, and the credits never expire on either platform.
+
+      Count your own event in the [calculator on the pricing page](/pricing#packages).
+
+  - type: cards
+    id: more
+    eyebrow: Beyond the price
+    title: What else do you get with ArenaSoldOut.com?
+    items:
+      - title: Seating plans drawn for you, free
+        text: "Send a PDF, a photo of a hand sketch or a table of rows and seats. The team builds the venue; you never draw it yourself."
+        link: { label: Seating plans, href: /product/seating }
+      - title: Money straight to your account
+        text: "Buyers pay into your own Stripe, Flitt or AllPay account. ArenaSoldOut.com never holds funds and deducts nothing from your sales."
+        link: { label: Payments, href: /payments }
+      - title: Lower rate for cheap tickets
+        text: "When every ticket of the event costs {usdLowMax} or less: {lowPercent}% of the ticket price instead of the flat fee. Discos, runs, children's parties, excursions."
+        link: { label: How it works, href: /pricing#low-price }
+      - title: Buyers in their own language
+        text: "Buyer page, e-mails and tickets in the buyer's language, Hebrew right to left included. We add any new language within 40 hours."
+        link: { label: E-tickets, href: /product/tickets }
+      - title: Every sale in your Telegram
+        text: "Create an event from a poster photo in the Telegram bot and see every sale and refund in your group within seconds."
+        link: { label: Telegram bot, href: /product/telegram }
+      - title: A person who sets it up with you
+        text: "Not a help centre: our team connects your payment account, builds the plan and checks the first event with you."
+        link: { label: Your first event, href: /first-event }
+
+  - type: faq
+    id: questions
+    title: Questions organizers ask when they compare
+    items:
+      - q: Is ArenaSoldOut.com cheaper than Ticket Tailor?
+        a: "Yes, per ticket at every published volume up to 5,000 tickets a year: {usdPrice} instead of US$0.85 pay as you go, {usdSeated} instead of US$1.70 for a seated ticket, and from {usdFrom} per ticket with credits. Above 5,000 tickets a year we agree individual terms."
+      - q: Do you take a percentage of the ticket price?
+        a: "No. Like Ticket Tailor, we charge a flat fee per ticket sold. The only percentages are optional: the lower rate for events where every ticket costs {usdLowMax} or less, and the rate for permanent venues."
+      - q: Where does the buyer's money go?
+        a: "Into your own payment account with every order: Stripe, Flitt or AllPay. ArenaSoldOut.com never holds funds. Our commission is invoiced after the event or taken from your credits."
+      - q: Can I move my events from Ticket Tailor?
+        a: "Yes. Send us your event list and your seating plans; the team sets up the events and draws the plans for free, and you keep selling on Ticket Tailor until your page with us is ready."
+      - q: Do I pay a subscription?
+        a: "No. You pay only for tickets sold. Invitations and free tickets to paid events carry no commission."
+      - q: What about charities?
+        a: "Registered charities get 50% off our commission, as on Ticket Tailor. Write to us and we switch it on for your organization."
+      - q: How do I sell in euro?
+        a: "Venues in EU countries pay our commission in euro: {eurPrice} per ticket pay as you go. Tickets themselves are sold in the currency of your payment account."
+
+  - type: cta
+    id: start
+    title: Try it on your next event
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: See pricing, href: /pricing }
+    note: "Or write to us: we compare your current costs and set everything up with you on a call."
