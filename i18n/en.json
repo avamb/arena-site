@@ -54,5 +54,18 @@
   "blog.backToIndex": "All articles",
   "breadcrumbs": "Breadcrumbs",
   "post.author": "By {author}",
-  "post.updated": "Updated {date}"
+  "post.updated": "Updated {date}",
+  "consent.title": "Analytics on this site",
+  "consent.text": "We count visits to learn which pages help organizers and which do not. The data stays with Arena Sold Out and is not shared with anyone. You can change your choice at any time with “Cookie settings” at the bottom of the page.",
+  "consent.privacy": "Privacy policy",
+  "consent.necessary.name": "Necessary",
+  "consent.necessary.text": "Always on. Remembers your choice and your theme, and keeps the application form safe.",
+  "consent.analytics.name": "Analytics",
+  "consent.analytics.text": "Off until you accept. The pages you open, time on a page, how far you scroll, clicks on marked buttons and where your visit came from, linked by a random code in a cookie for 13 months.",
+  "consent.accept": "Accept analytics",
+  "consent.decline": "Decline analytics",
+  "consent.close": "Close",
+  "consent.settings": "Cookie settings",
+  "consent.state.on": "Analytics is on.",
+  "consent.state.off": "Analytics is off."
 }

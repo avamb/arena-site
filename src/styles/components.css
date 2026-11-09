@@ -428,3 +428,25 @@ footer{border-top:1px solid var(--line);padding-block:48px 28px;font-size:14px}
 .cov-foot{margin-top:18px;display:flex;justify-content:space-between;gap:8px 24px;flex-wrap:wrap;font-size:14px;color:var(--fg-2)}
 .cov-foot a{color:var(--fg);font-weight:600}
 @media (max-width:900px){.cov{padding-inline:20px}.cov-row{grid-template-columns:1fr}}
+
+/* Consent banner (spec 50). Fixed overlay: appearing never moves the page. Both choices are the same button. */
+.consent{position:fixed;inset-inline:0;bottom:0;z-index:60;padding:0 var(--gutter) max(12px,env(safe-area-inset-bottom));pointer-events:none}
+.consent[hidden]{display:none}
+.consent:focus{outline:none}
+.consent-box{pointer-events:auto;max-width:720px;max-height:calc(100dvh - 24px);overflow-y:auto;margin-inline:auto;background:var(--surface);color:var(--fg);border:1px solid var(--line-2);border-radius:var(--r-lg);box-shadow:var(--shadow-lg);padding:20px 22px;font-size:14px;line-height:1.5}
+.consent h2{font-size:16px;font-weight:700;margin:0 0 6px}
+.consent p{margin:0 0 10px;color:var(--fg-2)}
+.consent a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.consent-cats{margin:0 0 12px;display:grid;gap:8px}
+.consent-cats div{display:grid;grid-template-columns:minmax(0,9.5rem) minmax(0,1fr);gap:4px 14px}
+.consent-cats dt{font-weight:600;color:var(--fg)}
+.consent-cats dd{margin:0;color:var(--fg-2)}
+.consent-state{min-height:0;font-weight:600;color:var(--fg)!important}
+.consent-state:empty{display:none}
+.consent-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.consent-actions .btn{flex:1 1 11rem;justify-content:center}
+.consent-close{margin-inline-start:auto;background:none;border:0;padding:6px 4px;color:var(--fg-2);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.consent-close[hidden]{display:none}
+.linkbtn{background:none;border:0;padding:0;margin:0;color:inherit;font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.linkbtn:hover{color:var(--fg)}
+@media (max-width:560px){.consent-box{padding:16px}.consent-cats{font-size:13px}.consent-cats div{grid-template-columns:1fr}.consent-actions .btn{flex-basis:100%}}

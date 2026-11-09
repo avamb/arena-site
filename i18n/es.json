@@ -13,5 +13,18 @@
   "notTranslated": "Esta página aún no está traducida. Estás leyendo la versión en inglés.",
   "nav.menu": "Menú",
   "nav.close": "Cerrar",
-  "table.details": "Idiomas, límites y copias de seguridad"
+  "table.details": "Idiomas, límites y copias de seguridad",
+  "consent.title": "Analítica en este sitio",
+  "consent.text": "Contamos las visitas para saber qué páginas ayudan a los organizadores y cuáles no. Los datos se quedan en Arena Sold Out y no se comparten con nadie. Puedes cambiar tu elección cuando quieras en «Ajustes de cookies», al final de la página.",
+  "consent.privacy": "Política de privacidad",
+  "consent.necessary.name": "Necesarias",
+  "consent.necessary.text": "Siempre activas. Recuerdan tu elección y el tema, y protegen el formulario de solicitud.",
+  "consent.analytics.name": "Analítica",
+  "consent.analytics.text": "Desactivada hasta que aceptes. Las páginas que abres, el tiempo en cada una, hasta dónde te desplazas, los clics en botones marcados y de dónde llega tu visita, unidos por un código aleatorio en una cookie durante 13 meses.",
+  "consent.accept": "Aceptar analítica",
+  "consent.decline": "Rechazar analítica",
+  "consent.close": "Cerrar",
+  "consent.settings": "Ajustes de cookies",
+  "consent.state.on": "La analítica está activada.",
+  "consent.state.off": "La analítica está desactivada."
 }

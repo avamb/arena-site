@@ -13,6 +13,17 @@ const redirects = allRedirects(); // redirects.yaml + legacy_url of every import
 const headers = parse(readFileSync('headers.yaml', 'utf8')).headers;
 if (!indexing) headers[0].values['X-Robots-Tag'] = 'noindex, nofollow';
 
+// Own analytics (spec 50, A2): when ANALYTICS_ENDPOINT is set at build time, its origin must be allowed by the
+// CSP connect-src, or the browser blocks the tracker. Empty (default) changes nothing. Same variable as site.config.ts.
+const analyticsEndpoint = (process.env.ANALYTICS_ENDPOINT ?? '').trim();
+if (analyticsEndpoint) {
+  const origin = new URL(analyticsEndpoint).origin;
+  const csp = headers[0].values['Content-Security-Policy'];
+  const sources = (csp.match(/connect-src ([^;]*)/) ?? [])[1];
+  if (sources === undefined) throw new Error('edge: headers.yaml has no connect-src to extend for ANALYTICS_ENDPOINT');
+  if (!sources.split(/\s+/).includes(origin)) headers[0].values['Content-Security-Policy'] = csp.replace(/connect-src ([^;]*)/, `connect-src $1 ${origin}`);
+}
+
 const variants = (p) => (p.endsWith('*') ? [p] : p.endsWith('/') && p !== '/' ? [p, p.slice(0, -1)] : p.includes('.') ? [p] : [p, p + '/']);
 
 /* Cloudflare */

@@ -12,5 +12,18 @@
   },
   "nav.menu": "Meny",
   "nav.close": "Lukk",
-  "table.details": "Språk, grenser og sikkerhetskopier"
+  "table.details": "Språk, grenser og sikkerhetskopier",
+  "consent.title": "Statistikk på nettstedet",
+  "consent.text": "Vi teller besøk for å forstå hvilke sider som hjelper arrangører, og hvilke som ikke gjør det. Dataene blir hos Arena Sold Out og deles ikke med andre. Du kan endre valget når som helst under «Innstillinger for informasjonskapsler» nederst på siden.",
+  "consent.privacy": "Personvernerklæring",
+  "consent.necessary.name": "Nødvendige",
+  "consent.necessary.text": "Alltid på. Husker valget ditt og temaet, og beskytter søknadsskjemaet.",
+  "consent.analytics.name": "Statistikk",
+  "consent.analytics.text": "Av til du godtar. Sidene du åpner, tid på hver side, hvor langt du blar, klikk på merkede knapper og hvor besøket kom fra, koblet med en tilfeldig kode i en informasjonskapsel i 13 måneder.",
+  "consent.accept": "Godta statistikk",
+  "consent.decline": "Avslå statistikk",
+  "consent.close": "Lukk",
+  "consent.settings": "Innstillinger for informasjonskapsler",
+  "consent.state.on": "Statistikk er på.",
+  "consent.state.off": "Statistikk er av."
 }
