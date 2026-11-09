@@ -1,0 +1,31 @@
+title: "Confiabilidade: 800 pedidos por minuto, backups noturnos"
+description: "Testado sob carga: 800 pedidos por minuto e 1.000 compradores simultâneos. Alertas no Telegram, backups criptografados toda noite, Cloudflare na frente."
+h1: Aguenta um estádio?
+lead: Sim. A plataforma é testada sob carga, monitorada o tempo todo e tem backup toda noite. Os números abaixo trazem datas e ficam na página de fatos, onde são atualizados a cada versão.
+related:
+  - { label: Fatos com datas, href: /facts }
+  - { label: Últimas mudanças, href: /changes }
+  - { label: Para desenvolvedores, href: /developers }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Confiabilidade
+    title: O que foi medido?
+    items:
+      - q: Quanta carga foi testada?
+        a: "800 pedidos por minuto com 1.000 compradores na página ao mesmo tempo, em testes de carga de setembro de 2026. A data e os números estão na [página de fatos](/facts)."
+      - q: O que acontece se algo quebrar à noite?
+        a: Um monitor verifica a plataforma continuamente e alerta a equipe no Telegram antes que os organizadores percebam. A Cloudflare fica na frente de cada página e da API.
+      - q: Meus dados têm backup?
+        a: Toda noite, criptografado. Pedidos, compradores, mapas de assentos e eventos.
+      - q: E bots e reservas em massa?
+        a: As reservas de assentos expiram por cronômetro, os pedidos têm limite de frequência, e a Cloudflare filtra o tráfego abusivo antes que ele chegue à plataforma.
+      - q: Posso ver o histórico de mudanças?
+        a: "Sim, cada recurso que chegou aos organizadores está listado com a sua data na [página de mudanças](/changes)."
+  - type: cta
+    id: start
+    title: Comece a vender hoje
+    text: Crie o evento, conecte sua conta de pagamentos, compartilhe o link.
+    primary: { label: Criar seu evento, href: /start#create }
+    secondary: { label: Ler os fatos, href: /facts }
+    note: "Ou escreva para nós: configuramos tudo com você em uma conversa."

@@ -1,0 +1,61 @@
+title: "Paiements : votre propre compte de paiement, dans votre pays"
+description: "Les acheteurs paient sur le compte de paiement de l'organisateur. Pays où vous connectez un prestataire, avec moyens de paiement et devises."
+h1: Les acheteurs paient sur votre propre compte de paiement
+lead: Vous connectez le compte que vous avez déjà, ou vous en ouvrez un chez un prestataire de votre pays. Chaque commande y arrive directement. ArenaSoldOut.com ne détient jamais de fonds et ne touche jamais à vos versements.
+sections:
+  - type: coverage
+    id: countries
+    eyebrow: Pays
+    title: Dans quels pays puis-je vendre des billets ?
+    lead: Dans chaque pays où l'un des prestataires de paiement ci-dessous accepte votre société. Des organisateurs vendent avec ArenaSoldOut.com dans {countries} pays depuis {since}. Si votre entité juridique est enregistrée dans l'un de ces pays, vous connectez le compte du prestataire et vous vendez.
+    labels:
+      countries: Pays
+      note: Les prestataires ajoutent des pays au fil du temps ; nous confirmons le vôtre avant que vous ne commenciez.
+      missing: "Votre pays n'est pas listé ?"
+    cta: { label: Écrivez-nous, href: /contact }
+
+  - type: providers
+    id: providers
+    eyebrow: Prestataires
+    title: Quels prestataires de paiement fonctionnent avec ArenaSoldOut.com ?
+    lead: La liste est celle de ce qui tourne en production aujourd'hui. Un prestataire est ajouté quand son adaptateur est dans le code, jamais avant.
+    labels:
+      currencies: Devises
+      methods: Moyens de paiement
+      checkout: Dans le widget
+      statuses:
+        live: Actif
+        api: Via l'API
+        planned: En préparation
+        checkout_yes: "oui, page de paiement hébergée"
+        checkout_no: "pas encore"
+      methods_map:
+        card: cartes
+        apple_pay: Apple Pay
+        google_pay: Google Pay
+        bit: Bit
+        installments: paiement en plusieurs fois
+        bank_transfer: virement bancaire
+
+  - type: cards
+    id: connect
+    eyebrow: Comment connecter
+    title: Comment connecter mon compte de paiement ?
+    lead: Trois choses, en général sous un jour.
+    items:
+      - title: Des clés dans votre propre compte
+        text: Vous créez des clés API dans le tableau de bord de votre prestataire et vous les collez dans l'Event Center ou vous les envoyez à l'équipe. Le compte reste à vous ; ArenaSoldOut.com ne fait qu'initier des paiements vers celui-ci.
+      - title: L'argent sur votre compte
+        text: Chaque commande est payée directement sur votre compte. Les versements vers votre banque suivent le calendrier de votre prestataire. Les remboursements sont décidés par vous et reviennent à l'acheteur via votre prestataire, quel qu'il soit.
+      - title: Gestion automatique des rétrofacturations
+        text: "Quand un acheteur conteste un paiement, ArenaSoldOut.com rassemble les preuves pour vous : données de paiement, consentement de l'acheteur, envoi des e-mails de billet et chaque téléchargement du billet."
+      - title: ArenaSoldOut.com ne détient rien
+        text: La commission de plateforme est facturée après l'événement ou prélevée sur vos crédits, séparément. Rien n'est déduit de vos ventes. Si vous partez un jour, votre compte de paiement et les données de vos acheteurs restent chez vous.
+
+  - type: cta
+    id: start
+    title: Commencez à vendre dès aujourd'hui
+    text: "Créez l'événement, connectez votre compte de paiement, partagez le lien. Un événement sans plan de salle est en vente en 10 minutes ; un plan de salle, nous le dessinons pour vous, gratuitement."
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

@@ -1,0 +1,50 @@
+title: "Pierwsze wydarzenie: od zgłoszenia do skanera"
+description: "Krok po kroku: zgłoszenie, potwierdzenie, jednorazowe podłączenie konta płatności, utworzenie wydarzenia, plan sali, publikacja, sprzedaż, skanowanie biletów."
+h1: Twoje pierwsze wydarzenie z ArenaSoldOut.com
+lead: "Osiem kroków od zgłoszenia do skanera przy wejściu. Przy otwartym już koncie u operatora płatności wydarzenie bez planu sali trafia do sprzedaży 10 minut po potwierdzeniu twojej organizacji."
+related:
+  - { label: Operatorzy płatności według kraju, href: /payments, text: "Którego operatora może podłączyć twoja firma, z metodami i walutami." }
+  - { label: Plany sali, href: /product/seating, text: "Co nam wysłać, żebyśmy narysowali twój obiekt za darmo." }
+  - { label: Aplikacja skanera MACS, href: /product/scanner, text: "Skanowanie biletów przy wejściu na iOS i Androidzie." }
+sections:
+  - type: steps
+    id: steps
+    eyebrow: Krok po kroku
+    title: Jak wystawić pierwsze wydarzenie do sprzedaży?
+    items:
+      - title: Wyślij zgłoszenie
+        text: "Pięć krótkich kroków w [formularzu zgłoszeniowym](/start): kontakt, organizacja, wydarzenia, płatności, zgoda. Albo wyślij to samo w [bocie na Telegramie](https://t.me/EventsCentrBot). Twoje odpowiedzi są zapisywane na bieżąco."
+      - title: Potwierdzamy twoją organizację
+        text: "Zespół sprawdza zgłoszenie i tworzy twoją organizację oraz konto w Event Center, zwykle w ciągu doby, i informuje cię, jak się zalogować."
+      - title: Podłącz konto płatności, raz
+        text: "Utwórz klucze API w panelu swojego operatora (Stripe, Flitt, AllPay lub innego operatora z twojego kraju) i wklej je do Event Center albo wyślij zespołowi. Robisz to raz dla organizacji; każde kolejne wydarzenie korzysta z tego samego konta. Nie masz jeszcze konta? Najpierw otwórz je u [operatora z twojego kraju](/payments): to zajmuje tyle, ile potrzebuje sam operator."
+      - title: Utwórz wydarzenie
+        text: "W Event Center w przeglądarce albo w bocie na Telegramie ze zdjęcia plakatu: nazwa, obiekt, daty i terminy, kategorie biletów i ceny, plakat. Bez planu sali zajmuje to około 10 minut."
+      - title: Wyślij plan sali, jeśli sprzedajesz miejsca numerowane
+        text: "Rysujemy plan za darmo, zwykle w ciągu doby, i pokazujemy ci go przed startem sprzedaży. Wystarczy jedno z tych: PDF z planem obiektu, zdjęcie odręcznego szkicu lub tabela z rzędami i miejscami w każdym rzędzie (Excel lub Google Sheets). SVG importujemy bezpośrednio."
+      - title: Opublikuj i udostępnij
+        text: "Wystaw wydarzenie do sprzedaży. Udostępnij link do strony sprzedaży, którą hostujemy, albo dodaj widget biletowy do własnej strony trzema linijkami kodu. Kody promocyjne, ceny według daty i opłata serwisowa są ustawiane w tym samym miejscu."
+      - title: Obserwuj sprzedaż
+        text: "Kupujący płacą na twoje konto płatności i dostają bilet e-mailem w swoim języku. Każde zamówienie jest w Event Center, a każda sprzedaż i zwrot trafia do twojej grupy na Telegramie w kilka sekund."
+      - title: Skanuj przy wejściu
+        text: "Zainstaluj aplikację MACS na iPhonie lub Androidzie, zaloguj się kontem Event Center, wybierz termin i skanuj EAN-13 lub kod QR z papieru albo z ekranu. Tyle telefonów, ile masz wejść."
+  - type: faq
+    id: questions
+    eyebrow: Pytania
+    title: O co organizatorzy pytają przed pierwszym wydarzeniem?
+    items:
+      - q: Ile to naprawdę trwa?
+        a: "Potwierdzenie organizacji: zwykle w ciągu doby. Potem, przy otwartym już koncie płatności, wydarzenie bez planu sali jest w sprzedaży w około 10 minut. Wydarzenie z miejscami numerowanymi czeka na plan, który rysujemy, zwykle dobę. Otwarcie nowego konta u operatora płatności trwa tyle, ile potrzebuje operator."
+      - q: Co mam przygotować?
+        a: "Nazwę wydarzenia, obiekt, daty i godziny, kategorie biletów i ceny, plakat oraz klucze API twojego konta płatności. Dla miejsc numerowanych plan obiektu w jednej z form podanych wyżej."
+      - q: Czy zespół może skonfigurować to za mnie?
+        a: "Tak. Wyślij szczegóły w [bocie na Telegramie](https://t.me/EventsCentrBot) lub przez formularz kontaktowy, a utworzymy wydarzenie razem z tobą; sprawdzasz je przed startem sprzedaży."
+      - q: Ile kosztuje pierwsze wydarzenie?
+        a: "Tyle samo co każde inne: prowizja za sprzedany bilet, fakturowana po wydarzeniu, albo mniej przy kredytach kupionych z góry. Plany sali i zaproszenia nic nie kosztują. Ceny są na [stronie cennika](/pricing)."
+  - type: cta
+    id: start
+    title: Zacznij od zgłoszenia
+    text: "Pięć krótkich kroków, zapisywanych na bieżąco. Zespół potwierdza twoją organizację, zwykle w ciągu doby."
+    primary: { label: Wyślij zgłoszenie, href: /start }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Najpierw pytania? Przycisk „Skontaktuj się z zespołem” jest na każdej stronie."

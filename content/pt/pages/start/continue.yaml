@@ -1,0 +1,31 @@
+title: "Continue seu cadastro"
+description: "Informe o e-mail com que você se cadastrou e enviamos um link para o rascunho que você começou."
+h1: Continue seu cadastro
+lead: Informe o e-mail com que você se cadastrou. Enviamos um link para o seu rascunho, para você retomar de onde parou.
+sections:
+  - type: onboarding
+    id: form
+    mode: continue
+    ui:
+      noscript: "O formulário de cadastro precisa de JavaScript. Escreva para nós no Telegram e configuramos tudo manualmente."
+      optional: "(opcional)"
+      url_list_hint: "Um link por linha"
+      sending: "Enviando…"
+      email: "E-mail"
+      err_required: "Este campo é obrigatório"
+      err_invalid: "Confira este valor"
+      err_too_long: "Este valor é longo demais"
+      err_not_allowed: "Ainda não aceitamos cadastros deste país"
+      e_generic: "Algo deu errado. Tente de novo em um minuto ou escreva para nós no Telegram."
+      e_network: "Sem conexão com o servidor. Verifique sua internet e tente de novo."
+      e_unavailable: "O formulário não está disponível agora. Tente de novo em um minuto ou escreva para nós no Telegram."
+      e_session: "Seu rascunho não está mais disponível. Comece de novo, leva um minuto."
+      e_incomplete: "Faltam algumas respostas obrigatórias. Elas estão marcadas acima."
+      e_email_not_confirmed: "Confirme seu e-mail primeiro: abra o link na mensagem que enviamos e depois clique em Enviar de novo."
+      e_rate_limited: "Tentativas demais. Aguarde alguns minutos e tente de novo."
+      e_turnstile_failed: "A verificação antispam não passou. Espere um segundo até ela terminar e tente de novo."
+      e_captcha_not_configured: "O formulário não está disponível agora. Escreva para nós no Telegram."
+      e_captcha_unavailable: "Não foi possível executar a verificação antispam. Tente de novo em um minuto."
+      e_locked: "Este cadastro já foi enviado e não pode mais ser editado."
+      send_link: "Enviar o link para mim"
+      link_sent: "Se houver um rascunho aberto para este endereço, um link para continuar está a caminho. Verifique sua caixa de entrada e a pasta de spam."

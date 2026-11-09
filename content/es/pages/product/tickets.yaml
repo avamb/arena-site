@@ -1,0 +1,47 @@
+title: "Entradas electrónicas con EAN-13 y QR, escaneo, correos"
+description: "Entradas PDF con EAN-13 y QR en el idioma del comprador, app de escaneo MACS para iOS y Android, entradas de muestra, correos si una sesión se mueve o cancela."
+h1: Una entrada que se escanea
+lead: Cada entrada es un PDF con un código de barras EAN-13 y un código QR, en el idioma del comprador. Escanéala con la app o con un escáner de mano, reenvíala, reembólsala, sustitúyela cuando una fecha cambie.
+related:
+  - { label: Planos de asientos, href: /product/seating }
+  - { label: "Fiabilidad: carga, copias, vigilancia", href: /product/reliability }
+  - { label: Ayuda para compradores de entradas, href: /help/tickets }
+  - { label: "App de escaneo MACS: cualquier organizador, cualquier entrada", href: /product/scanner }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Entradas
+    title: ¿Qué recibe el comprador?
+    items:
+      - q: ¿Qué lleva la entrada?
+        a: "Evento, sesión, asiento o categoría, precio, el nombre del comprador, un código de barras EAN-13 y un código QR. Un PDF por pedido, en el idioma del comprador: inglés, ruso, checo, hebreo o español en la página, siete idiomas en los correos. Añadimos cualquier idioma nuevo en 40 horas."
+      - q: ¿Va el recibo de pago en el correo?
+        a: "Sí. El recibo de pago llega adjunto al correo de la entrada, y el correo indica quién recibió el pago: tu organización y tu proveedor de pagos."
+      - q: ¿Puedo comprobar que el comprador recibió la entrada?
+        a: "Sí. Cada correo muestra su estado en la ficha del pedido: Enviado, Entregado, Leído. Siempre ves si el comprador recibió la entrada, y puedes enviarla de nuevo si la perdió."
+      - q: ¿Cómo escaneo en la puerta?
+        a: "Con la [app de escaneo MACS](#scanner) para iOS y Android, o con un escáner de códigos de barras de mano. La app también acepta entradas vendidas por tus socios en otros sistemas, así que una puerta sirve para todos los canales."
+      - q: ¿Puedo ver una entrada antes de que empiece la venta?
+        a: Sí. Una entrada de muestra con marca de agua viene con el evento, desde el Event Center o el bot de Telegram.
+      - q: ¿Qué pasa cuando una fecha cambia?
+        a: Los compradores reciben un correo en su idioma con la entrada actualizada adjunta. Lo mismo para una cancelación, con el reembolso a cargo tuyo.
+      - q: ¿Puedo reenviar o reembolsar una entrada?
+        a: Sí, desde el Event Center. Reenvía a una dirección nueva, reembolsa a la tarjeta del comprador, el asiento vuelve a la venta.
+      - q: ¿Hay una app para compradores?
+        a: No. El PDF y el correo bastan en la puerta; no hay nada que instalar.
+  - type: cards
+    id: scanner
+    eyebrow: En la puerta
+    title: ¿Qué app escanea las entradas?
+    lead: "MACS es la app de control de acceso de ArenaSoldOut.com. Instálala en los móviles de tu personal de puerta, inicia sesión con tu cuenta del Event Center y escanea el EAN-13 o el QR de cada entrada: papel, PDF en una pantalla o el correo. Una sola app escanea entradas de cualquier organizador de la plataforma y entradas de socios de otros sistemas, así que un recinto, un festival o un promotor que alquila un recinto usa los mismos móviles para todos los eventos."
+    items:
+      - { title: iPhone y iPad, text: "MACS en la App Store. Inicia sesión con tu cuenta del Event Center; la lista de eventos y las sesiones ya están ahí.", link: { label: Abrir la App Store →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: Android, text: "MACS en Google Play. La misma app, la misma cuenta; también funcionan los escáneres de mano con cámara o láser.", link: { label: Abrir Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
+      - { title: "Cualquier organizador, una app", text: "El personal de puerta de un recinto escanea las entradas de cada organizador que vende con ArenaSoldOut.com, y las entradas vendidas por socios en otros sistemas, sin cambiar de app.", link: { label: "MACS como producto →", href: /product/scanner } }
+  - type: cta
+    id: start
+    title: Empieza a vender hoy
+    text: Crea el evento, conecta tu cuenta de pagos, comparte el enlace. La entrada de muestra está lista con el evento.
+    primary: { label: Crear tu evento, href: /start#create }
+    secondary: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

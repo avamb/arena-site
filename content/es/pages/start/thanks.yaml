@@ -1,0 +1,19 @@
+title: "Gracias, hemos recibido tu solicitud"
+description: "El equipo lee cada solicitud en persona y responde en un día laborable."
+h1: Gracias
+lead: El equipo lee cada solicitud en persona y responde en un día laborable, por correo o en el mensajero que indicaste.
+sections:
+  - type: cards
+    id: next
+    eyebrow: Mientras tanto
+    title: "¿Qué puedo hacer ahora?"
+    items:
+      - title: Prepara el cartel y los precios
+        text: El nombre del evento, las fechas, los precios de las entradas y una imagen del cartel es todo lo que necesita un evento sin plano de asientos para salir a la venta.
+        link: { label: Cómo funciona →, href: /#how }
+      - title: Busca las claves de tu cuenta de pagos
+        text: Si ya tienes una cuenta con un proveedor de tu país, las claves de API están en su panel. Si no, abrimos una contigo.
+        link: { label: Pagos →, href: /payments }
+      - title: Prueba el bot de Telegram
+        text: El bot crea un evento a partir de la foto de un cartel y te pide que confirmes las fechas, los precios y el recinto.
+        link: { label: Abrir el bot de Telegram →, href: https://t.me/EventsCentrBot }

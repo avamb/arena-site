@@ -1,0 +1,31 @@
+title: "Continua la tua richiesta"
+description: "Inserisci l'e-mail con cui hai fatto la richiesta e ti inviamo un link alla bozza che hai iniziato."
+h1: Continua la tua richiesta
+lead: Inserisci l'e-mail con cui hai fatto la richiesta. Ti inviamo un link alla tua bozza, così riparti da dove ti eri fermato.
+sections:
+  - type: onboarding
+    id: form
+    mode: continue
+    ui:
+      noscript: "Il modulo di richiesta richiede JavaScript. Scrivici invece su Telegram e ti configureremo a mano."
+      optional: "(facoltativo)"
+      url_list_hint: "Un link per riga"
+      sending: "Invio in corso…"
+      email: "E-mail"
+      err_required: "Questo campo è obbligatorio"
+      err_invalid: "Controlla questo valore"
+      err_too_long: "Il testo è troppo lungo"
+      err_not_allowed: "Per ora non accettiamo richieste da questo paese"
+      e_generic: "Qualcosa è andato storto. Riprova tra un minuto, oppure scrivici su Telegram."
+      e_network: "Nessuna connessione al server. Controlla la tua connessione a internet e riprova."
+      e_unavailable: "Il modulo non è disponibile in questo momento. Riprova tra un minuto, oppure scrivici su Telegram."
+      e_session: "La tua bozza non è più disponibile. Ricomincia, ci vuole un minuto."
+      e_incomplete: "Mancano alcune risposte obbligatorie. Sono segnate qui sopra."
+      e_email_not_confirmed: "Prima conferma la tua e-mail: apri il link nel messaggio che ti abbiamo inviato, poi premi di nuovo Invia."
+      e_rate_limited: "Troppi tentativi. Aspetta qualche minuto e riprova."
+      e_turnstile_failed: "Il controllo anti-spam non è stato superato. Aspetta un secondo che finisca e riprova."
+      e_captcha_not_configured: "Il modulo non è disponibile in questo momento. Scrivici su Telegram."
+      e_captcha_unavailable: "Non è stato possibile eseguire il controllo anti-spam. Riprova tra un minuto."
+      e_locked: "Questa richiesta è già stata inviata e non può più essere modificata."
+      send_link: "Inviami il link"
+      link_sent: "Se esiste una bozza aperta per questo indirizzo, un link per continuare è in arrivo. Controlla la posta in arrivo e la cartella spam."

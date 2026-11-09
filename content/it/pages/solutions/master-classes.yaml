@@ -1,0 +1,38 @@
+title: "Biglietti per master class, corsi e degustazioni"
+description: "Vendi posti per master class, corsi, degustazioni e workshop: piccoli gruppi con quota, date ricorrenti, e-mail tue, ingresso gratuito e paga quanto vuoi."
+h1: Master class e corsi
+lead: Piccoli gruppi, date ricorrenti, e-mail tue nella tua lingua. Una pagina ospitata è pronta in pochi minuti; il widget si adatta al sito che hai già. Vino&Co in Israele vende così le sue degustazioni.
+related:
+  - { label: Codici promozionali e finestre di prezzo, href: /product/pricing-tools }
+  - { label: Dove vendi, href: /product/sell }
+  - { label: Clienti, href: /clients }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Per chi organizza
+    title: Cosa conta per un workshop?
+    items:
+      - { title: Una quota per data, text: "Dodici posti martedì, venti sabato; le date esaurite si chiudono da sole.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Date ricorrenti, text: "Aggiungi sessioni allo stesso evento; prezzi e categorie restano, chi compra sceglie la data.", link: { label: Event Center →, href: /#center } }
+      - { title: Gratuito e paga quanto vuoi, text: "Iscrizioni senza pagamento, oppure un prezzo minimo e decide chi compra.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: La tua lingua, text: "Pagina, widget, e-mail e biglietto nella lingua dell'acquirente, compreso l'ebraico da destra a sinistra.", link: { label: Biglietti →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Domande
+    title: Cosa chiedono per primo gli organizzatori?
+    items:
+      - q: Non ho un sito. Dove comprano le persone?
+        a: "Su una pagina ospitata, tickets.arenasoldout.com/your-name/your-event, pronta in pochi minuti. Condividi il link nei messenger e sui social."
+      - q: Posso incassare solo una caparra?
+        a: Imposta il prezzo del biglietto sulla caparra e incassa il resto sul posto; oppure usa paga quanto vuoi con un minimo.
+      - q: Chi compra riceve un promemoria?
+        a: Chi compra riceve il biglietto via e-mail e un'e-mail quando una data cambia o viene annullata. I promemoria prima della data oggi non vengono inviati.
+      - q: Quanto costa?
+        a: "Un importo fisso per biglietto a pagamento; le iscrizioni gratuite non costano nulla. Vedi i [prezzi](/pricing)."
+  - type: cta
+    id: start
+    title: Inizia a vendere oggi
+    text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."

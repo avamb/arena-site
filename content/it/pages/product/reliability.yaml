@@ -1,0 +1,31 @@
+title: "Affidabilità: 800 ordini al minuto, backup notturni"
+description: "Testata a 800 ordini al minuto con 1.000 acquirenti contemporanei. Controllo continuo con avvisi su Telegram, backup cifrati ogni notte, Cloudflare davanti."
+h1: Reggerà uno stadio?
+lead: Sì. La piattaforma è testata sotto carico, sorvegliata giorno e notte e salvata ogni notte. I numeri qui sotto hanno una data e stanno nella pagina dei dati, dove vengono aggiornati a ogni rilascio.
+related:
+  - { label: Dati con le date, href: /facts }
+  - { label: Ultime novità, href: /changes }
+  - { label: Per sviluppatori, href: /developers }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Affidabilità
+    title: Che cosa è stato misurato?
+    items:
+      - q: Quanto carico è stato testato?
+        a: "800 ordini al minuto con 1.000 acquirenti contemporaneamente sulla pagina, nei test di carico di settembre 2026. La data e le cifre sono nella [pagina dei dati](/facts)."
+      - q: Che cosa succede se qualcosa si rompe di notte?
+        a: Un sistema di controllo verifica la piattaforma di continuo e avvisa il team su Telegram prima che gli organizzatori se ne accorgano. Cloudflare sta davanti a ogni pagina e all'API.
+      - q: I miei dati sono salvati?
+        a: Ogni notte, cifrati. Ordini, acquirenti, mappe dei posti ed eventi.
+      - q: E i bot e le prenotazioni in massa?
+        a: Le riserve dei posti scadono con un timer, gli ordini hanno un limite di frequenza, e Cloudflare filtra il traffico abusivo prima che raggiunga la piattaforma.
+      - q: Posso vedere la cronologia delle modifiche?
+        a: "Sì, ogni funzione arrivata agli organizzatori è elencata con la sua data nella [pagina delle novità](/changes)."
+  - type: cta
+    id: start
+    title: Inizia a vendere oggi
+    text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Leggi i dati, href: /facts }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."

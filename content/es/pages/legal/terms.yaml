@@ -1,0 +1,164 @@
+title: "Términos y condiciones"
+description: "Términos de la plataforma de venta de entradas ArenaSoldOut.com para organizadores: servicio, cuentas, proveedores de pagos, tarifas, contenido, responsabilidad"
+h1: "Términos y condiciones"
+lead: "Versión del 9 de octubre de 2026. Sustituye a la versión del 6 de mayo de 2024. La plataforma registra la versión vigente cuando la aceptaste. Esta es una traducción a título informativo; la versión en inglés es la vinculante."
+related:
+  - { label: Condiciones de precios detalladas, href: /pricing/terms }
+  - { label: Precios, href: /pricing }
+  - { label: Política de privacidad, href: /legal/privacy }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## 1. Introducción
+
+      Esta página establece los términos y condiciones legales (los «Términos») con los que ABH TEAM OÜ, que opera bajo la marca ArenaSoldOut.com («nosotros»), pone a tu disposición nuestra plataforma para vender entradas de eventos y productos y servicios asociados (el «Servicio»). El Servicio incluye el Event Center en app.arenasoldout.com, las páginas de venta alojadas y el widget de entradas en tickets.arenasoldout.com, la API pública, el plugin de WordPress, el bot de Telegram y la app de escaneo para la puerta.
+
+      Lee estos Términos con atención y asegúrate de entenderlos antes de solicitar una cuenta o de poner un evento a la venta a través del Servicio.
+
+      ## 2. Nuestro contrato contigo
+
+      Aceptas estos Términos y celebras un contrato vinculante con ABH TEAM OÜ cuando solicitas una cuenta mediante el formulario de este sitio web o a través del bot de Telegram, cuando nuestro equipo crea una cuenta para ti a petición tuya, o cuando tú o un miembro de tu equipo inicia sesión por primera vez en el Event Center o pone un evento a la venta. Si no estás de acuerdo con alguna parte de estos Términos, no uses el Servicio ni accedas a él.
+
+      Podemos modificar estos Términos de vez en cuando. La versión vigente se publica siempre en ArenaSoldOut.com/legal/terms con la fecha del último cambio. La plataforma registra la versión vigente cuando la aceptaste y todas las versiones posteriores. Seguir usando el Servicio después de un cambio significa que aceptas los Términos modificados.
+
+      ## 3. Naturaleza del servicio
+
+      Nuestro Servicio te da una cuenta en nuestra plataforma en línea para vender y gestionar entradas de eventos, planos de asientos y productos o servicios físicos o digitales asociados. Solo puedes tener una cuenta si eres el organizador del evento o un vendedor de entradas autorizado con el permiso expreso por escrito del organizador del evento para cada evento del que vendas entradas. Si usas el Servicio en nombre de una entidad, aceptas estos Términos en nombre de esa entidad y declaras que tienes autoridad para hacerlo.
+
+      Te prestamos el Servicio a ti y no tenemos ninguna relación contractual con tus clientes («Compradores de Entradas»). Cuando vendes entradas u otros productos y servicios a los Compradores de Entradas a través del Servicio, el contrato es entre tú y el Comprador de Entradas. Eres responsable de tus propias condiciones de venta con tus Compradores de Entradas, incluidos los reembolsos. Entregamos entradas y correos de servicio a los Compradores de Entradas en tu nombre, y nuestra página de ayuda para compradores de entradas los dirige a ti con cada pregunta sobre tu evento, tus entradas y los reembolsos.
+
+      Te comprometes:
+
+      - a gestionar toda la comunicación con tus Compradores de Entradas y a no remitirlos a nosotros para la atención al cliente;
+      - a responder en un plazo de 5 días a cualquier consulta que recibas de los Compradores de Entradas;
+      - a asumir toda la responsabilidad derivada de la relación contractual entre tú y el Comprador de Entradas;
+      - a notificar de inmediato a tus Compradores de Entradas, y a actualizar la página de tu evento, si tu evento se cancela, se aplaza o cambia de forma sustancial respecto de la información dada cuando se puso a la venta por primera vez. El Servicio te ayuda con esto enviando correos a los Compradores de Entradas cuando trasladas o cancelas una sesión.
+
+      Nos reservamos el derecho de suspender o terminar tu acceso al Servicio si incumples estos requisitos con tus Compradores de Entradas.
+
+      Al usar el Servicio, deberás:
+
+      - cumplir las leyes y obligaciones aplicables relacionadas con tus eventos, productos o servicios, y con la recepción de los ingresos por entradas, tarifas o donaciones;
+      - facilitarnos la información y el material que podamos razonablemente requerir para prestar el Servicio, y asegurarte de que sean exactos en todos los aspectos sustanciales;
+      - mantener y actualizar con prontitud esa información y ese material para que sigan siendo veraces, exactos y completos;
+      - cooperar con nosotros en todos los asuntos relacionados con el Servicio.
+
+      El acceso al Servicio puede suspenderse temporalmente y sin previo aviso en caso de fallo del sistema, mantenimiento o reparación, o por motivos ajenos a nuestro control. Tu acceso también puede suspenderse, o tu cuenta cancelarse, a nuestra discreción, incluso si sospechamos que usas el Servicio con fines fraudulentos o delictivos, si así nos lo aconsejan las fuerzas del orden, o si no has pagado nuestras facturas (véanse las secciones 6 y 11; normalmente te notificaríamos el impago antes de la suspensión o cancelación). No seremos responsables de ninguna pérdida o daño que pueda derivarse del uso indebido de nuestro Servicio.
+
+      ## 4. Tu cuenta
+
+      Las cuentas las crea nuestro equipo tras tu solicitud, o a través del bot de Telegram. Una vez que existe tu cuenta, puedes configurar tus eventos, planos de asientos y entradas y, siempre que tengas una cuenta de pagos con un Proveedor de Pagos (sección 5), vender entradas para tus eventos. También puedes configurar la venta de productos físicos o digitales asociados. Puedes añadir miembros de tu equipo a tu cuenta; eres responsable de sus actos en el Servicio.
+
+      Debes tener 18 años para tener una cuenta.
+
+      Para tu comodidad, mantenemos tu cuenta abierta durante 120 meses después de tu último inicio de sesión, por si decides volver a usar nuestro Servicio. Antes de cerrar tu cuenta y eliminar Tu Contenido, intentaremos enviar correos de aviso a la dirección de correo de la cuenta, para que tengas la oportunidad de mantener la cuenta abierta o de exportar los datos que quieras conservar.
+
+      Puedes cerrar tu cuenta en cualquier momento escribiendo a hello@arenasoldout.com desde la dirección de correo del titular de la cuenta.
+
+      No reembolsaremos ninguna tarifa ya pagada por el Servicio.
+
+      ### Seguridad de la cuenta
+
+      Eres responsable de mantener la confidencialidad de tu cuenta y eres plenamente responsable de toda la actividad que se produzca mediante el acceso a tu cuenta con tus credenciales. No compartas tus datos de inicio de sesión, claves de API, secretos de webhook ni el acceso a la app de escaneo con nadie ajeno a tu equipo. Te comprometes a notificarnos de inmediato en hello@arenasoldout.com cualquier uso no autorizado de tu cuenta, claves de API o apps, o cualquier otra brecha de seguridad. No seremos responsables de ninguna pérdida o daño derivado de tu incumplimiento de esta disposición.
+
+      La transmisión de información por internet no es completamente segura. No podemos garantizar la seguridad de los datos transmitidos a nuestra plataforma, y toda transmisión es por tu cuenta y riesgo. Una vez que hemos recibido tu información, usamos procedimientos y funciones de seguridad estrictos para evitar el acceso no autorizado.
+
+      ## 5. Proveedores de Pagos
+
+      Los Compradores de Entradas pagan tus entradas en tu propia cuenta con un proveedor de pagos admitido por el Servicio (un «Proveedor de Pagos»). Los proveedores, países y monedas actuales figuran en la página de pagos. Nunca recibimos ni retenemos el dinero que pagan los Compradores de Entradas; va del Comprador de Entradas a tu Proveedor de Pagos y de allí a tu cuenta bancaria. La adquirencia de tarjetas la pagas tú a tu Proveedor de Pagos según las condiciones de este, por separado de nuestras tarifas.
+
+      Usar un Proveedor de Pagos requiere que abras una cuenta con él, sujeta a los términos y condiciones y a la política de privacidad del propio Proveedor de Pagos. Tienes una relación directa con el Proveedor de Pagos y debes leer y aceptar sus condiciones antes de cobrar a los Compradores de Entradas a través del Servicio. Los reembolsos y los contracargos se resuelven entre tú, tu Proveedor de Pagos y el Comprador de Entradas; el Servicio te permite emitir reembolsos, y el dinero se devuelve desde tu cuenta de pagos.
+
+      Al desempeñar ciertas funciones, el Proveedor de Pagos actúa como encargado del tratamiento de datos para ti y para nosotros; en otros aspectos actúa como responsable del tratamiento según su propia política de privacidad. Al usar nuestro Servicio, reconoces y aceptas que compartimos con tu Proveedor de Pagos información personal e información sobre las transacciones realizadas a través del Servicio.
+
+      Si recibimos aviso de un Proveedor de Pagos de que tu uso de nuestro Servicio incumple sus condiciones o cualquier acuerdo entre tú y él, entre tú y nosotros, o entre tú y un Comprador de Entradas, o parece fraudulento, contrario a la normativa contra el blanqueo de capitales o parte de otra actividad dañina, podemos tomar medidas que incluyen, entre otras, los pasos necesarios para subsanar el incumplimiento, retirar tu posibilidad de usar el Servicio y suspender o terminar tu cuenta. Un Proveedor de Pagos puede negar sus servicios a cualquier persona, por cualquier motivo y en cualquier momento.
+
+      No tenemos ninguna responsabilidad, y por la presente declinamos toda responsabilidad (incluidas, entre otras, las pérdidas, costes, tarifas y sanciones de cualquier naturaleza), por el servicio que te presta un Proveedor de Pagos, incluidos los actos y omisiones del Proveedor de Pagos.
+
+      ## 6. Nuestras tarifas
+
+      Las tarifas por usar nuestro Servicio figuran en la página de precios y en las condiciones de precios detalladas, y se cobran por entrada vendida. Un uso facturable es la venta de una entrada de pago o de un producto o servicio asociado. Las invitaciones gratuitas y las entradas reembolsadas no se cobran. A los propietarios de recintos permanentes se les ofrece un porcentaje del precio de la entrada en lugar de la tarifa por entrada, según se describe en las condiciones de precios detalladas. También podemos ofrecer servicios complementarios, que se cobran según se especifique en nuestra plataforma o según se acuerde contigo.
+
+      Facturamos nuestra tarifa el día siguiente a cada sesión por las entradas vendidas para esa sesión; para los eventos a la venta durante varios meses podemos facturar mensualmente, de común acuerdo. Las condiciones de pago constan en la factura.
+
+      Las tarifas ya facturadas no son reembolsables, incluso cuando se cancela un evento.
+
+      ## 7. Contenido del organizador del evento y normas de contenido aceptable
+
+      Entre tú y nosotros, eres titular de todos los derechos sobre todo el contenido que subes a la plataforma, y eres responsable de su legalidad, fiabilidad, integridad, exactitud y calidad, incluidos textos, imágenes, carteles, planos de asientos, información sobre tus eventos y productos y servicios asociados, reseñas y comentarios («Tu Contenido»). Al subir Tu Contenido, nos concedes una licencia incondicional, no exclusiva, transferible, libre de regalías y de ámbito mundial para usar Tu Contenido de cualquier manera necesaria para la prestación del Servicio.
+
+      Cuando el Servicio lee información de un cartel u otro archivo que envías, por ejemplo para crear un evento en el bot de Telegram, tú confirmas cada campo antes de que se publique y sigues siendo responsable de su exactitud.
+
+      Debes cumplir las siguientes normas de contenido aceptable al enviar Tu Contenido a nuestra plataforma:
+
+      - Tu Contenido debe ser exacto y cumplir la ley aplicable en cada país desde el que se publique.
+      - No debes usar nuestra plataforma para recoger de los Compradores de Entradas o de los asistentes a eventos contenido que no necesites: por ejemplo datos de tarjeta (que recoge únicamente el Proveedor de Pagos), números de documentos oficiales o de seguridad social, contraseñas o cualquier otro dato personal excesivo o innecesario, en particular datos de categoría especial (origen racial o étnico, opiniones políticas, creencias religiosas o similares, afiliación sindical, salud física o mental, vida sexual, orientación sexual, datos biométricos o genéticos). Esto no te impide recoger datos de categoría especial en la medida necesaria para tu evento, por ejemplo para asignar asientos a personas con discapacidad.
+
+      Tu Contenido no debe:
+
+      - ser ilícito, dañino, amenazante, difamatorio, obsceno, engañoso, fraudulento, infractor, acosador, moralmente repugnante u ofensivo por motivos raciales o étnicos;
+      - facilitar actividades ilegales;
+      - mostrar imágenes sexualmente explícitas;
+      - promover la violencia;
+      - ser discriminatorio por motivos de raza, sexo, religión, nacionalidad, discapacidad, orientación sexual o edad;
+      - infringir ningún derecho de autor, derecho sobre bases de datos, marca u otro derecho de propiedad intelectual de otra persona;
+      - ocultar la identidad o poder engañar a cualquier persona.
+
+      Podemos retirar Tu Contenido de nuestra plataforma y del Servicio cuando, en nuestra exclusiva opinión, incumpla estas normas. Nos reservamos el derecho de suspender o terminar tu acceso al Servicio si las incumples de forma sustancial, de reclamarte el reembolso de los costes en que incurramos como consecuencia de tu incumplimiento y de revelar información a las autoridades policiales según se exija o según consideremos razonablemente necesario.
+
+      ## 8. Exención de responsabilidad
+
+      Aunque nos esforzamos por mantener el Servicio disponible las 24 horas del día, no garantizamos su disponibilidad y no seremos responsables si, por cualquier motivo, el Servicio no está disponible en cualquier momento o durante cualquier período.
+
+      El acceso al Servicio puede suspenderse temporalmente y sin previo aviso en caso de fallo del sistema, mantenimiento o reparación, o por motivos ajenos a nuestro control.
+
+      No garantizamos la exactitud ni la integridad del material de la plataforma. Podemos cambiar el material de la plataforma, o la funcionalidad del Servicio, en cualquier momento y sin previo aviso. Las capacidades actuales del Servicio, con fechas, se publican en la página de datos.
+
+      Prestamos el Servicio con un cuidado y una pericia razonables. El Servicio se presta «tal cual» y, salvo por las garantías contenidas en estos Términos, en la medida máxima permitida por la ley excluimos todas las declaraciones, garantías, condiciones y demás términos (incluidas, entre otras, las condiciones de calidad satisfactoria y de idoneidad para un fin determinado).
+
+      ## 9. Responsabilidad
+
+      No somos parte de ninguna transacción, otra relación o disputa entre tú y los Compradores de Entradas, o entre tú y los asistentes a eventos. No examinamos previamente a los Compradores de Entradas y no somos responsables de las transacciones fraudulentas de los Compradores de Entradas. Excluimos toda responsabilidad derivada de las acciones que podamos tomar en respuesta a incumplimientos de nuestras normas de contenido aceptable y de estos Términos. Aceptas indemnizarnos a nosotros y a nuestros directivos, administradores y socios frente a cualquier coste, reclamación o demanda, incluidos los honorarios legales razonables:
+
+      - en relación con cualquier disputa con uno o varios de tus Compradores de Entradas, o con tu relación con los Compradores de Entradas y los asistentes a eventos;
+      - formulada por cualquier tercero debido a Tu Contenido o a tu uso del Servicio, o derivada de ellos. Eres el único responsable de tus actos al usar el Servicio.
+
+      Nuestra responsabilidad total frente a ti por todas las demás pérdidas derivadas de la prestación del Servicio o relacionadas con ella, ya sea contractual, extracontractual (incluida la negligencia), por incumplimiento de un deber legal o de otro tipo, se limita a 50,00 USD.
+
+      Nada en estos Términos pretende limitar o excluir los derechos legales de los consumidores.
+
+      ## 10. Ley y jurisdicción
+
+      Estos Términos se rigen e interpretan de acuerdo con las leyes de la República de Estonia y el Derecho aplicable de la Unión Europea.
+
+      Cualquier disputa relacionada con estos Términos queda sometida a la jurisdicción exclusiva de los tribunales de Estonia.
+
+      ## 11. Pagos vencidos
+
+      El acceso a la plataforma, sus aplicaciones y servicios está condicionado a que no haya pagos vencidos de las facturas emitidas. Si una factura está vencida, el acceso a las aplicaciones y servicios puede restringirse. El acceso se restablece cuando se pagan todas las facturas y no existe ninguna deuda.
+
+      Las penalizaciones por pagos vencidos se aplican según se especifique en la factura.
+
+      ## 12. Datos personales de los Compradores de Entradas
+
+      Eres el responsable del tratamiento de los datos personales de tus Compradores de Entradas. Nosotros tratamos esos datos en tu nombre, como encargados del tratamiento, con el fin de vender y entregar entradas, dar acceso a los Compradores de Entradas en la puerta y notificarles los cambios en tus sesiones, según se describe en nuestra Política de privacidad, que forma parte de estos Términos. Eres responsable de informar a tus Compradores de Entradas sobre el tratamiento y de tus propias condiciones de venta. No usarás los datos de Compradores de Entradas exportados del Servicio para fines ajenos a tus eventos sin una base jurídica propia.
+
+      ## 13. Nuestros datos
+
+      ArenaSoldOut.com es una marca de ABH TEAM OÜ, que es propietaria y operadora de la plataforma y de este sitio web.
+
+      Estamos inscritos en el Registro Mercantil de Estonia con el número de registro 14162982, y nuestro domicilio social y centro de actividad está en:
+
+      Narva mnt 5a, Kesklinna district,
+      Tallinn city, Harju county,
+      10117 Estonia.
+
+      La versión en línea del registro está en https://www.inforegister.ee/
+
+      Puedes contactar con nosotros:
+
+      - por correo electrónico, en hello@arenasoldout.com;
+      - en el chat de Telegram y el bot de Telegram enlazados en la página de contacto;
+      - mediante el formulario de solicitud de este sitio web;
+      - por correo postal, a la dirección indicada arriba.

@@ -1,0 +1,9 @@
+title: "Fonctionnalités d'ArenaSoldOut.com en production, avec dates"
+description: "Ce que les organisateurs obtiennent avec ArenaSoldOut.com et depuis quand : places numérotées, compte de paiement propre, bot Telegram, widget, API."
+h1: Ce que fait ArenaSoldOut.com aujourd'hui
+lead: Tout ce qui suit tourne en production, avec la date de mise en service. Les fonctionnalités encore en construction sont listées à part, tout comme ce que le produit n'inclut pas.
+sections:
+  - type: facts-table
+    id: table
+    eyebrow: Faits
+    title: Ce qui fonctionne, depuis quand

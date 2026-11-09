@@ -1,0 +1,37 @@
+title: "Vendita biglietti su WordPress: plugin con WooCommerce"
+description: "Il plugin di ArenaSoldOut.com porta gli ordini in WooCommerce, con mappa dei posti, biglietti e scansione. Oppure incorpora il widget in una pagina."
+h1: Il tuo WordPress, il tuo checkout
+lead: Tieni il tuo sito e il tuo negozio. Il plugin crea ordini WooCommerce per ogni biglietto; la mappa dei posti, l'e-ticket e la scansione arrivano da ArenaSoldOut.com. Oppure incorpora il widget in qualsiasi pagina con due righe.
+related:
+  - { label: Dove vendi, href: /product/sell }
+  - { label: "Per sviluppatori: widget e API", href: /developers }
+  - { label: Pagamenti, href: /payments }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Per i siti WordPress
+    title: Quale opzione si adatta al mio sito?
+    items:
+      - { title: Il plugin, text: "Gli ordini arrivano in WooCommerce, il tuo negozio e i report continuano a funzionare; posti, biglietti e ingresso sono di ArenaSoldOut.com.", link: { label: Richiedi il plugin →, href: /start } }
+      - { title: Il widget, text: "Due righe in qualsiasi pagina o blocco; chi compra paga nel checkout ospitato del tuo provider, gli ordini restano nell'Event Center.", link: { label: Sviluppatori →, href: /developers } }
+      - { title: Passare da ArenaSoldOut.com, text: "Sessioni, mappe dei posti e clienti importati; due clienti sono passati senza interruzioni.", link: { label: Clienti →, href: /clients } }
+  - type: faq
+    id: questions
+    eyebrow: Domande
+    title: Cosa chiedono per primo i proprietari di siti WordPress?
+    items:
+      - q: Il plugin rallenterà il mio sito?
+        a: Il plugin parla con l'API di ArenaSoldOut.com al checkout; le pagine si caricano come prima. Il widget è un web component caricato una sola volta.
+      - q: Chi compra esce dal mio dominio?
+        a: Con il widget chi compra resta sulla tua pagina fino al checkout ospitato del provider, poi torna. Con il plugin il checkout è quello di WooCommerce.
+      - q: Quali provider di pagamento funzionano?
+        a: "Il tuo conto presso un provider del tuo paese; l'elenco con gli stati è sulla [pagina dei pagamenti](/payments). In Israele AllPay funziona oggi per le vendite WordPress."
+      - q: Chi lo installa?
+        a: Il team può installare e configurare il plugin insieme all'amministratore del tuo sito; il widget non richiede installazione.
+  - type: cta
+    id: start
+    title: Inizia a vendere sul tuo sito
+    text: Dicci l'indirizzo del sito e il provider che usi. Configuriamo il plugin o il widget insieme a te.
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Leggi la documentazione per sviluppatori, href: /developers }
+    note: I siti WooCommerce tengono il loro negozio.

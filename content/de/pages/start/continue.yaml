@@ -1,0 +1,31 @@
+title: "Antrag fortsetzen"
+description: "Geben Sie die E-Mail-Adresse ein, mit der Sie sich beworben haben, und wir senden einen Link zu Ihrem begonnenen Entwurf."
+h1: Antrag fortsetzen
+lead: Geben Sie die E-Mail-Adresse ein, mit der Sie sich beworben haben. Wir senden einen Link zu Ihrem Entwurf, damit Sie dort weitermachen, wo Sie aufgehört haben.
+sections:
+  - type: onboarding
+    id: form
+    mode: continue
+    ui:
+      noscript: "Das Antragsformular braucht JavaScript. Schreiben Sie uns stattdessen in Telegram, dann richten wir Sie von Hand ein."
+      optional: "(optional)"
+      url_list_hint: "Ein Link pro Zeile"
+      sending: "Wird gesendet…"
+      email: "E-Mail"
+      err_required: "Dieses Feld ist erforderlich"
+      err_invalid: "Bitte prüfen Sie diesen Wert"
+      err_too_long: "Das ist zu lang"
+      err_not_allowed: "Anträge aus diesem Land nehmen wir noch nicht an"
+      e_generic: "Etwas ist schiefgelaufen. Versuchen Sie es in einer Minute erneut oder schreiben Sie uns in Telegram."
+      e_network: "Keine Verbindung zum Server. Prüfen Sie Ihr Internet und versuchen Sie es erneut."
+      e_unavailable: "Das Formular ist gerade nicht verfügbar. Versuchen Sie es in einer Minute erneut oder schreiben Sie uns in Telegram."
+      e_session: "Ihr Entwurf ist nicht mehr verfügbar. Beginnen Sie neu, das dauert eine Minute."
+      e_incomplete: "Einige Pflichtangaben fehlen. Sie sind oben markiert."
+      e_email_not_confirmed: "Bestätigen Sie zuerst Ihre E-Mail-Adresse: Öffnen Sie den Link in der Nachricht, die wir Ihnen geschickt haben, und klicken Sie dann erneut auf Senden."
+      e_rate_limited: "Zu viele Versuche. Warten Sie einige Minuten und versuchen Sie es erneut."
+      e_turnstile_failed: "Die Spam-Prüfung wurde nicht bestanden. Warten Sie einen Moment, bis sie abgeschlossen ist, und versuchen Sie es erneut."
+      e_captcha_not_configured: "Das Formular ist gerade nicht verfügbar. Schreiben Sie uns in Telegram."
+      e_captcha_unavailable: "Die Spam-Prüfung konnte nicht ausgeführt werden. Versuchen Sie es in einer Minute erneut."
+      e_locked: "Dieser Antrag ist bereits gesendet und kann nicht mehr bearbeitet werden."
+      send_link: "Link senden"
+      link_sent: "Wenn für diese Adresse ein offener Entwurf existiert, ist ein Link zum Fortsetzen unterwegs. Prüfen Sie Posteingang und Spam-Ordner."

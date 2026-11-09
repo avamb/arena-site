@@ -1,0 +1,12 @@
+title: "Blog"
+description: "Articles pour organisateurs : argent et frais de service, vente sur votre propre site, plans de salle, démarrages rapides, et notes de l'équipe."
+h1: Blog
+lead: "Articles pour les organisateurs qui vendent leurs propres billets : argent et frais de service, vente sur votre propre site, plans de salle, ventes anticipées, marketing. L'archive de l'ancien site est ici avec ses dates d'origine et une note d'archive ; la plateforme a été reconstruite en 2026."
+related:
+  - { label: Tarifs, href: /pricing }
+  - { label: Dernières modifications de la plateforme, href: /changes }
+  - { label: Commencer à vendre, href: /start }
+sections:
+  - type: posts
+    id: posts
+    empty: L'archive est en cours de transfert. D'ici là, les dernières modifications de la plateforme figurent sur la page des modifications.

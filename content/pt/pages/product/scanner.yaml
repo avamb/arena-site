@@ -1,0 +1,50 @@
+title: "Aplicativo MACS: leitura de ingressos em iOS e Android"
+description: "O MACS lê ingressos EAN-13 e QR de todos os organizadores e parceiros, em iPhone, iPad, Android e leitores portáteis. Grátis nas lojas de aplicativos."
+h1: "MACS: o aplicativo na entrada"
+lead: Um aplicativo para todas as entradas. A equipe da porta entra, escolhe a sessão e lê o EAN-13 ou o QR do ingresso, em papel ou na tela. Ele aceita ingressos de qualquer organizador que vende pelo ArenaSoldOut.com e ingressos de parceiros de outros sistemas, então um local usa os mesmos celulares em todos os eventos.
+related:
+  - { label: Ingressos eletrônicos com EAN-13 e QR, href: /product/tickets }
+  - { label: "Locais e clubes: um mapa, todos os eventos", href: /solutions/venues }
+  - { label: Parceiros e agências, href: /partners }
+sections:
+  - type: cards
+    id: get
+    eyebrow: Baixe o aplicativo
+    title: Onde instalo o MACS?
+    lead: Grátis para organizadores da plataforma. Instale em quantos celulares você tiver de entradas e entre com a sua conta do Event Center.
+    items:
+      - { title: iPhone e iPad, text: "MACS na App Store. Entre com a sua conta do Event Center; seus eventos e sessões já estão lá.", link: { label: Abrir a App Store →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: Android, text: "MACS no Google Play. O mesmo aplicativo e a mesma conta; leitores portáteis Android com laser embutido também funcionam.", link: { label: Abrir o Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
+      - { title: Leitores portáteis, text: "Um leitor de código de barras USB ou Bluetooth conectado a um celular ou notebook lê o mesmo EAN-13; o aplicativo registra a leitura.", link: { label: Como os ingressos são feitos →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O que o leitor faz?
+    items:
+      - q: Quais ingressos ele lê?
+        a: "Todo ingresso emitido pelo ArenaSoldOut.com: o PDF com o código de barras EAN-13 e o código QR, impresso ou mostrado na tela, e o e-mail com o ingresso. Ingressos vendidos pelos seus parceiros em outros sistemas são aceitos junto com eles, então uma porta atende todos os canais de venda."
+      - q: Um aplicativo pode atender vários organizadores?
+        a: Sim. O MACS lê ingressos de qualquer organizador da plataforma. A equipe da porta de um local ou de um festival alterna entre eventos e sessões no aplicativo; cada organizador vê as leituras dos seus próprios eventos no Event Center.
+      - q: O que a equipe vê em uma leitura?
+        a: Se o ingresso é válido, com o assento ou a categoria, ou por que não é (já usado, cancelado, outra sessão). O organizador vê o número de entradas por sessão no Event Center.
+      - q: Preciso vender pelo ArenaSoldOut.com para usar o leitor?
+        a: "Hoje o MACS está incluído para organizadores que vendem pelo ArenaSoldOut.com, e aceita ingressos de parceiros de outros sistemas junto com os do ArenaSoldOut.com. A leitura somente, para ingressos vendidos em outro lugar, é oferecida sob consulta: escreva para nós com o seu sistema de ingressos e o evento."
+      - q: Quantos celulares podem ler ao mesmo tempo?
+        a: Quantos você tiver de entradas. As leituras são registradas de forma centralizada, então um ingresso admitido em um portão não é admitido de novo em outro.
+      - q: Quanto custa?
+        a: Nada além do preço por ingresso para organizadores da plataforma. As condições para uso somente de leitura são combinadas por evento; veja a página de preços para as condições da plataforma.
+  - type: cards
+    id: who
+    eyebrow: Quem usa
+    title: Quem lê ingressos com o MACS?
+    items:
+      - { title: Locais e clubes, text: "Um aplicativo para todos os promotores que alugam o local; o local vê todos os eventos, cada promotor vê os seus.", link: { label: Para locais e clubes →, href: /solutions/venues } }
+      - { title: Festivais, text: "Vários portões, muitos celulares, uma contagem. Ingressos de parceiros aceitos nos mesmos portões.", link: { label: Para festivais →, href: /solutions/festivals } }
+      - { title: Agências e parceiros, text: "Leia ingressos que você vendeu pelo ArenaSoldOut.com e ingressos dos sistemas que os seus clientes já usam.", link: { label: Parceiros →, href: /partners } }
+  - type: cta
+    id: start
+    title: Coloque o MACS na sua entrada
+    text: "Instale o aplicativo, entre com a sua conta do Event Center, leia. Leitura de ingressos vendidos em outro lugar: escreva para nós com o seu sistema de ingressos e o evento."
+    primary: { label: Fale conosco, href: /contact }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Grátis na App Store e no Google Play para organizadores da plataforma."

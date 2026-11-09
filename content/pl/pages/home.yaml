@@ -1,0 +1,329 @@
+title: "ArenaSoldOut.com: sprzedaż biletów, pieniądze u ciebie"
+description: "Platforma do sprzedaży biletów dla organizatorów. Wystaw wydarzenie w kilka minut, na własnej stronie lub na naszej. Kupujący płacą na twoje konto płatności."
+sections:
+  - type: hero
+    eyebrow: Platforma do sprzedaży biletów dla organizatorów
+    title: Sprzedawaj miejsca. Sprzedawaj bilety. Zachowaj pieniądze.
+    lead: Zacznij sprzedaż w kilka minut, na własnej stronie lub na stronie, którą dla ciebie hostujemy. Kupujący płacą na twoje konto płatności. Każdy bilet i każda wypłata pozostają pod twoją kontrolą.
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Utwórz wydarzenie, href: /start#create }
+    note: Podłącz konto płatności i udostępnij link. Wydarzenia bez planu sali trafiają do sprzedaży jeszcze dziś.
+    widget:
+      aria: Podgląd widgetu biletowego
+      event: Autumn Jazz Night
+      meta: "pt. 24 paź · 19:30 · Palác Akropolis, Praga"
+      sessions: [pt. 24 paź, sob. 25 paź]
+      stage: Scena
+      mapAria: "Plan sali: rzędy od A do J, pięć kategorii cenowych, wybierz wolne miejsca"
+      mapText: "Plan sali na 140 miejsc: rzędy od A do J, po siedem miejsc po obu stronach przejścia, pięć kategorii cenowych od pierwszych rzędów do tyłu balkonu, około jednej trzeciej miejsc sprzedanych, miejsca dla osób na wózkach na obu końcach rzędu J. Dwa miejsca w rzędzie G są wybrane na start; wybierz wolne miejsca, a koszyk poniżej przeliczy się sam. Miejsca są rezerwowane na 10 minut."
+      seatTitle: "Rząd {row}, miejsce {seat}"
+      legend: { sold: Sprzedane, held: Zarezerwowane, wheelchair: Miejsce dla wózka, selected: Wybrane }
+      currency: "€"
+      categories:
+        - { name: Pierwsze rzędy, price: 48, rows: AB }
+        - { name: Parter, price: 38, rows: CDE }
+        - { name: "Parter, tył", price: 32, rows: FG }
+        - { name: Balkon, price: 24, rows: HI }
+        - { name: "Balkon, tył", price: 18, rows: J }
+      feePercent: 5
+      holdMinutes: 10
+      line: "Rząd {row} · Miejsca {seats}"
+      lineOne: "Rząd {row} · Miejsce {seat}"
+      qty: "{n} × {price}"
+      fee: "Opłata serwisowa {percent}%"
+      held: Rezerwacja jeszcze przez
+      pay: "Zapłać {total}"
+      empty: Wybierz miejsca na planie
+      tips:
+        free: "{category}, {price}. Kliknij, aby dodać"
+        wheelchair: "Miejsce dla wózka, {category}, {price}. Kliknij, aby dodać"
+        selected: "W koszyku. Kliknij, aby usunąć"
+        sold: Już sprzedane
+        held: Zarezerwowane przez innego kupującego, jeszcze nieopłacone
+        blocked: Niedostępne w sprzedaży
+      modal:
+        title: Tak widzą to twoi kupujący
+        text: "Podgląd kasy na twojej stronie sprzedaży lub w widgecie na twojej stronie. Twoi kupujący płacą {total} na twoje konto płatności; miejsca, bilet i wejście bierzemy na siebie. Skonfiguruj wydarzenie, a ten plan będzie twój."
+        primary: { label: Zacznij sprzedaż, href: /start }
+        bot: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+        close: Zostań i oglądaj dalej
+  - type: facts
+    items:
+      - Organizatorzy w **31** krajach od 2019 roku
+      - "**800** zamówień na minutę w testach obciążeniowych"
+      - Bilety w **7** językach
+      - Wypłaty trafiają na **twoje** konto
+
+  - type: reasons
+    id: why
+    eyebrow: Dlaczego ArenaSoldOut.com
+    title: Dlaczego organizatorzy sprzedają bilety u nas?
+    lead: "Cztery powody, a za każdym fakty."
+    items:
+      - icon: wallet
+        title: Z każdego biletu zostaje ci więcej
+        text: "Stała opłata **{price}** za bilet, a nie procent od przychodu: bilet za $15 i bilet za $150 kosztują cię tyle samo. Kupujący płacą na twoje konto płatności, więc pieniądze są twoje w chwili zapłaty, a nie po wydarzeniu."
+        bullets:
+          - Nic nie jest potrącane z twojej sprzedaży, żadna rezerwa nie jest wstrzymywana
+          - Bez prowizji od zaproszeń i darmowych biletów
+          - Plan sali rysujemy dla ciebie za darmo
+        link: { label: Ceny i kalkulator →, href: /pricing }
+      - icon: clock
+        title: Sprzedaż w 10 minut
+        text: "Gdy twoja organizacja zostanie potwierdzona, zwykle w ciągu doby, wydarzenie bez planu sali trafia do sprzedaży w **10 minut**, jeśli masz już konto u operatora płatności. Konto podłączasz raz; każde kolejne wydarzenie wymaga tylko nazwy, dat i cen."
+        link: { label: "Twoje pierwsze wydarzenie, krok po kroku →", href: /first-event }
+      - icon: list-checks
+        title: To, o co proszą organizatorzy, już gotowe
+        text: "Bez modułów do dokupienia, bez wtyczek do instalowania:"
+        bullets:
+          - Widget na twojej stronie lub strona sprzedaży, którą hostujemy
+          - Miejsca siedzące i stojące w jednym wydarzeniu
+          - Kody promocyjne, ceny zmieniające się z datą
+          - Zaproszenia, zwroty, przeniesione terminy z e-mailami do kupujących
+          - Aplikacja skanera na iOS i Androida
+          - Każda sprzedaż w twojej grupie na Telegramie w kilka sekund
+        link: { label: Odpowiedzi w szczegółach →, href: "#answers" }
+      - icon: shield-check
+        title: Sprzedajemy bilety od {since} roku
+        text: "Organizatorzy w **{countries}** krajach od {since} roku: koncerty, teatry, festiwale, widowiska, warsztaty. **800** zamówień na minutę w testach obciążeniowych, nocne szyfrowane kopie zapasowe, watchdog, który alarmuje zespół, zanim ty cokolwiek zauważysz."
+        link: { label: Klienci i opinie →, href: /clients }
+
+  - type: steps
+    id: how
+    eyebrow: Jak to działa
+    title: Sprzedaż jeszcze dziś. Trzy pytania, które organizatorzy zadają najpierw.
+    items:
+      - title: Jak szybko mogę zacząć sprzedaż?
+        text: "Wydarzenie bez planu sali trafia do sprzedaży w 10 minut, gdy twoja organizacja jest potwierdzona, a konto płatności podłączone; podłączasz je raz. Przy sali z numerowanymi miejscami wyślij nam plan: narysujemy go za darmo, zwykle w ciągu doby."
+      - title: Czego potrzebuję?
+        text: "Nazwy i terminów wydarzenia, cen biletów, plakatu oraz własnego konta płatności: Stripe, Flitt, AllPay lub innego operatora z twojego kraju. Pieniądze trafiają do ciebie od pierwszego biletu."
+      - title: Jak to skonfigurować?
+        text: "W przeglądarce na komputerze lub telefonie, w „Event Center”*. Albo w Telegramie, gdzie bot czyta twój plakat i uzupełnia daty, ceny i miejsce do twojego potwierdzenia. Albo wyślij nam materiały, a skonfigurujemy to za ciebie."
+    note: "* „Event Center” to twoje konto organizatora na ArenaSoldOut.com: każde wydarzenie, zamówienie, zwrot, zaproszenie i termin, dla ciebie i twojego zespołu, w przeglądarce i w Telegramie. [Zobacz Event Center poniżej →](#center) Wszystkie kroki od zgłoszenia do skanera: [twoje pierwsze wydarzenie →](/first-event)"
+
+  - type: ways
+    id: where
+    eyebrow: Gdzie sprzedajesz
+    title: Na twojej stronie lub na naszej. Pieniądze i tak trafiają do ciebie.
+    items:
+      - title: Masz stronę
+        text: "Twoja strona jest kasą. Osadź widget biletowy na dowolnej podstronie: WordPress, Tilda, Wix, Webflow lub własny kod. Kupujący nie opuszczają twojej domeny."
+        bullets:
+          - Widget na dowolnej stronie, trzy linijki kodu
+          - Wtyczka WordPress z zamówieniami WooCommerce
+          - Twoje kolory, twoje czcionki, twój język
+      - title: Nie masz strony
+        text: "Hostujemy stronę sprzedaży: tickets.arenasoldout.com/your-name/your-event. Udostępnij jeden link w mediach społecznościowych, komunikatorach i na plakacie."
+        bullets:
+          - Strona dla każdego organizatora i każdego wydarzenia
+          - Osobna strona dla każdego promotora
+          - Gotowa w kilka minut, bez pracy projektowej
+          - Linki do twoich partnerów sprzedaży na tej samej stronie
+
+  - type: qa
+    id: answers
+    eyebrow: O co organizatorzy pytają dalej
+    title: Tak. A oto jak.
+    items:
+      - title: Czy mogę używać kodów promocyjnych?
+        text: Tak. Kod może obowiązywać dla jednego wydarzenia, jednego terminu lub jednej kategorii, z oknem czasowym, minimum i limitem na kupującego.
+      - title: Czy ceny mogą zmieniać się w ustalonym przeze mnie dniu?
+        text: Tak. Okna cen wczesnych (early bird) przełączają się według daty i godziny. Progi ilościowe otwierają kolejną cenę, gdy bieżąca się wyprzeda.
+        visual:
+          type: ladder
+          rungs:
+            - { price: US$24, width: 100, label: pierwsze 100 · sprzedane }
+            - { price: US$119, width: 62, label: kolejne 150 · w sprzedaży }
+            - { price: US$599, width: 0, label: otwiera się potem, next: true }
+      - title: Kilka cen w jednym wydarzeniu?
+        text: Tak. Kategorie z własną ceną, pulą i oknem sprzedaży, a do tego bilety darmowe i z ceną do wyboru przez kupującego.
+      - title: Czy mogę dodać opłatę serwisową?
+        text: Tak. Procent dla każdego kanału sprzedaży, pokazany kupującemu w osobnej linii i wpłacany na twoje konto razem z biletem. Sprawdź, czy twój kraj dopuszcza opłatę serwisową przy sprzedaży biletów.
+      - title: Z miejscami numerowanymi i bez?
+        text: "Tak, i jedno z drugim w jednym wydarzeniu: plan sali z kategoriami, strefy stojące z pulami. Wyślij nam plan swojej sali, a narysujemy go w systemie za darmo, zwykle w ciągu doby: wystarczy PDF, zdjęcie odręcznego szkicu lub tabela z rzędami i miejscami w każdym rzędzie (Excel lub Google Sheets). Nigdy nie wpisujesz go ręcznie."
+        visual:
+          type: plan
+          aria: Plan sali z parterem, dwiema lożami, balkonem i strefą stojącą
+          stage: Scena
+          parterre: Parter · 312
+          logeLeft: Loża L · 48
+          logeRight: Loża P · 48
+          balcony: Balkon · 180
+          standing: Strefa stojąca
+      - title: Czy skaner działa z biletami?
+        text: Tak. Każdy bilet to PDF z kodem kreskowym EAN-13 i kodem QR, w języku kupującego. Skanuj przy wejściu aplikacją skanera na iOS i Androida lub skanerem ręcznym. Aplikacja przyjmuje też bilety sprzedane przez twoich partnerów w innych systemach.
+        visual:
+          type: ticket
+          event: Autumn Jazz Night
+          meta: pt. 24 paź · 19:30 · Palác Akropolis
+          seat: Parter · Rząd G · Miejsce 7
+          code: "2173049188256"
+      - title: Jak sprawdzam swoją sprzedaż?
+        text: "W „Event Center”, twoim własnym koncie na tej stronie: otwierasz je na telefonie lub komputerze, nic nie trzeba instalować. Wszystkie twoje wydarzenia, każde zamówienie, zwroty i sumy dla każdego terminu, widoczne tylko dla ciebie i twojego zespołu. Wolisz Telegram? Każda sprzedaż i każdy zwrot trafia też do twojej grupy na Telegramie w kilka sekund, razem z kontaktem do kupującego. [Zobacz Event Center poniżej →](#center)"
+        visual:
+          type: telegram
+          from: ArenaSoldOut.com
+          lines:
+            - "**Opłacone** · Autumn Jazz Night · pt. 24 paź"
+            - Rząd G 7–8 · Parter
+            - "**€76.00** · Anna K. · +420 ••• 41 18"
+          time: "19:42"
+      - title: Zwroty, zaproszenia, zmiany terminów?
+        text: "Tak, z twojego konta „Event Center”. Zwróć bilet, wystaw zaproszenia, przenieś lub odwołaj termin: kupujący dostają e-mail w swoim języku z zaktualizowanym biletem."
+      - title: Czy poradzi sobie ze stadionem?
+        text: Tak. 800 zamówień na minutę przy 1000 kupujących jednocześnie na stronie w testach obciążeniowych, nocne szyfrowane kopie zapasowe, watchdog, który alarmuje nas, zanim ty cokolwiek zauważysz.
+
+  - type: center
+    id: center
+    eyebrow: Event Center
+    title: Zamówienia, bilety, zwroty i zaproszenia w jednym miejscu
+    lead: "„Event Center” to twoje własne konto na ArenaSoldOut.com. Otwierasz je na telefonie lub komputerze, nic nie trzeba instalować. Każde prowadzone przez ciebie wydarzenie, każde zamówienie, zwroty, zaproszenia i dane sprzedaży: widoczne tylko dla ciebie i twojego zespołu. Przewiń ekrany, aby zobaczyć, co potrafi."
+    bullets:
+      - Zamówienia i kupujący, z wyszukiwaniem i raportami CSV dla każdego terminu
+      - "Bilety: wyślij ponownie, zwróć, zaproś"
+      - "Terminy: dodawaj daty, przenoś lub odwołuj z e-mailami do kupujących"
+      - Ceny, kategorie, kody promocyjne, opłata serwisowa
+      - "Analityka sprzedaży: wyświetlenia, koszyki, płatności"
+      - "Role w zespole: właściciel, menedżer"
+    note: "Wolisz Telegram? Ten sam Event Center działa w bocie: utwórz wydarzenie ze zdjęcia plakatu, dostawaj każdą sprzedaż w swojej grupie."
+    stripAria: Ekrany Event Center, przewijaj na boki
+    screens:
+      - kind: orders
+        aria: "Event Center: lista zamówień"
+        title: Autumn Jazz Night
+        status: W sprzedaży
+        meta: pt. 24 paź · sprzedano 312 z 408
+        columns: [Zamówienie, Kupujący, Miejsca, Suma, Status]
+        rows:
+          - { order: "1000000512", buyer: Anna K., seats: G 7–8, total: €79.80, status: Opłacone, tone: ok }
+          - { order: "1000000511", buyer: Tomáš V., seats: H 6–7, total: €51.00, status: Opłacone, tone: ok }
+          - { order: "1000000509", buyer: Marta S., seats: C 2, total: €38.00, status: Zwrócone, tone: neutral }
+          - { order: "1000000508", buyer: Prasa, seats: A 1–4, total: €0.00, status: Zaproszenie, tone: neutral }
+          - { order: "1000000507", buyer: Jana R., seats: I 8–9, total: €48.00, status: Oczekuje, tone: warn }
+        actions: [Eksport CSV, Wyślij zaproszenia, Przenieś termin]
+        caption: 1 · Zamówienia
+      - kind: refund
+        aria: "Event Center: zwrot biletu"
+        title: Zamówienie 1000000509
+        tag: Zwrot
+        meta: Marta S. · C 2 · €38.00
+        rows:
+          - { label: Bilet, value: Parter · Rząd C · Miejsce 2 }
+          - { label: Zapłacono, value: €38.00 · karta · 12 paź }
+          - { label: Zwrot, value: €38.00 na kartę kupującego }
+          - { label: Miejsce, value: wraca do sprzedaży }
+          - { label: E-mail do kupującego, value: wysłany po czesku }
+        primary: Zwróć bilet
+        secondary: Anuluj
+        caption: 2 · Zwrot biletu
+      - kind: sales
+        aria: "Event Center: sprzedaż według terminów"
+        title: Sprzedaż według terminów
+        meta: październik · €11,284 · 4 terminy
+        rungs:
+          - { price: pt. 24, width: 76, label: "312 / 408 · €8,940" }
+          - { price: sob. 25, width: 34, label: "139 / 408 · €2,344" }
+          - { price: niedz. 26, width: 0, label: jeszcze nie w sprzedaży }
+        rows:
+          - { label: Źródła, value: twoja strona 61% · strona hostowana 29% · partnerzy 10% }
+          - { label: Zwroty, value: 3 bilety · €114.00 }
+        actions: [CSV dla terminu, Eksport do CRM]
+        caption: 3 · Sprzedaż i źródła
+
+  - type: money
+    id: money
+    eyebrow: Pieniądze
+    title: Kupujący płacą tobie. Nie nam.
+    lead: 100% każdej sprzedaży trafia do ciebie. Kupujący płaci cenę biletu, a jeśli ją dodasz, także opłatę serwisową, prosto na twoje konto płatności, w twojej walucie, na twoim wyciągu. ArenaSoldOut.com nigdy nie przechowuje twoich pieniędzy. Płacisz ArenaSoldOut.com prowizję platformy za każdy sprzedany bilet, po wydarzeniu lub z przedpłaconego pakietu. Zwroty i obciążenia zwrotne (chargebacki) to twoja decyzja, a nie polityka platformy.
+    flowAria: Przepływ płatności
+    nodes:
+      - { label: Kupujący, sub: "karta, Apple Pay, Google Pay" }
+      - { label: Twoja strona, sub: "lub strona sprzedaży, którą hostujemy" }
+      - { label: ArenaSoldOut.com, sub: "zamówienie, miejsca, bilet" }
+      - { label: Twoje konto płatności, providers: true, highlight: true }
+      - { label: Twój bank, sub: według harmonogramu operatora }
+    note: Płacisz ArenaSoldOut.com prowizję platformy za każdy sprzedany bilet. Nic nie jest potrącane z twojej sprzedaży, nic nie jest wstrzymywane.
+
+  - type: pricing
+    id: pricing
+    eyebrow: Cennik
+    title: Za bilet. Bez abonamentu.
+    lead: Tylko prowizja platformy. Obsługę kart (acquiring) płacisz swojemu operatorowi na jego warunkach, zależnych od twojego acquirera i banku.
+    compact: true
+    planBullets:
+      - "**{seated}** za bilet z miejscem wybranym na planie sali"
+      - "**Darmowe** zaproszenia i darmowe bilety na płatne wydarzenia: bez prowizji"
+      - "**[Kredyty](/pricing#packages)** obniżają prowizję za bilet"
+    cta: { label: Zacznij sprzedaż, href: /start }
+    buyCredits: { label: Kup kredyty, href: /pricing#packages }
+    plans:
+      currency: "Pokaż ceny w"
+      payg:
+        name: Płatność za sprzedane bilety
+        text: Prosta stała opłata za sprzedany bilet, płatna po wydarzeniu.
+        bullets:
+          - "**{seated}** za bilet z miejscem wybranym na planie sali"
+          - "Faktura po wydarzeniu, przelewem bankowym"
+          - "Bez abonamentu, bez umowy"
+      upfront:
+        name: Płatność z góry w kredytach
+        text: "Kup kredyty z góry i płać do {saving}% mniej za każdy bilet."
+        from: od
+        bullets:
+          - "**{fromSeated}** za bilet z miejscem"
+          - "Kredyty nigdy nie wygasają; doładowuj, kiedy chcesz"
+          - "Sprzedaż nigdy się nie zatrzymuje: gdy kredyty się skończą, reszta jest rozliczana po cenie płatności za sprzedane bilety"
+      perks:
+        - { big: "50%", title: Zarejestrowane organizacje charytatywne, text: "50% zniżki od naszej prowizji. Napisz do nas, a ją włączymy." }
+        - { big: "Za darmo", title: Zaproszenia, text: "Bez prowizji od zaproszeń i darmowych biletów na płatne wydarzenia." }
+        - { big: "Za darmo", title: Plan sali, text: "Rysujemy twój plan z PDF-a, zdjęcia szkicu lub tabeli z rzędami i miejscami." }
+        - { big: "{lowPercent}%", title: "Bilety do {lowMax}", text: "Dla wydarzeń, w których każdy bilet kosztuje {lowMax} lub mniej. [Jak to działa](#low-price)" }
+      brand: "Ceny zakładają linię **Tickets: ArenaSoldOut.com** z linkiem do nas na stronie twojego wydarzenia; widget biletowy pokazuje ją domyślnie. Aby sprzedawać bez niej, white label kosztuje **€45 miesięcznie za markę lub obiekt w krajach UE** i **US$45 miesięcznie za markę lub obiekt we wszystkich pozostałych krajach**. [Szczegółowe warunki →](/pricing/terms)"
+    currencyNote: "Prowizja w **dolarach amerykańskich** dla każdego kraju spoza UE i w **euro** dla obiektów w krajach UE. Podstawą są dolary; ceny w euro to ceny w dolarach według kursu EBC. Kwoty bez VAT."
+    lowPrice:
+      title: "Wydarzenia, w których każdy bilet kosztuje {lowMax} lub mniej"
+      text: "{lowPercent}% ceny biletu, co najmniej {lowMin} i najwyżej {lowCap} za bilet; {lowSeat} więcej za bilet z miejscem. Dotyczy całego wydarzenia, tylko jeśli żaden bilet z żadnej kategorii nie kosztuje więcej niż {lowMax}."
+    venues:
+      title: Stałe obiekty
+      text: "Teatry, kluby, stadiony, cyrki: **{percent}% ceny biletu**, najwyżej **{cap}** za bilet, tak samo z miejscem i bez. Faktura co miesiąc."
+      cta: { label: Porozmawiaj z nami, href: /contact }
+    note: "Płacisz po wydarzeniu albo kupujesz kredyty z góry i płacisz mniej za bilet. Pakiety kredytów, kalkulator i szczegółowe warunki są na stronie cennika: [kredyty i ich stawki →](/pricing#packages)"
+    terms: { label: Wszystkie ceny i kalkulator →, href: /pricing }
+
+  - type: who
+    id: who
+    eyebrow: Dla kogo
+    title: Dla organizatorów, którzy sprzedają własne bilety
+    items:
+      - { icon: music, title: Koncerty, text: "Miejsca stojące i siedzące, kilka kategorii cenowych, early bird, skanowanie przy wejściu.", link: { label: Dla koncertów →, href: /solutions/concerts } }
+      - { icon: drama, title: Teatr, text: "Plany sali zgodne z obiektem, powtarzalne terminy, zaproszenia dla prasy i partnerów.", link: { label: Dla teatrów →, href: /solutions/theatre } }
+      - { icon: box, title: Widowiska, text: "Pokazy na lodzie, cyrk, taniec: wiele terminów, wiele miast, jeden plan na obiekt używany wielokrotnie.", link: { label: Dla widowisk →, href: /solutions/shows } }
+      - { icon: tent, title: Festiwale, text: "Kilka dni, wiele kategorii, kategorie, które przekazują niesprzedane miejsca następnej.", link: { label: Dla festiwali →, href: /solutions/festivals } }
+      - { icon: waypoints, title: Trasy koncertowe, text: "Jeden spektakl, wiele miast i terminów, strona dla każdego promotora z własnym linkiem.", link: { label: Dla tras →, href: /solutions/concert-tours } }
+      - { icon: mic, title: Warsztaty i szkolenia, text: "Małe grupy, cykliczne terminy, własne e-maile i język prowadzącego.", link: { label: Dla prowadzących →, href: /solutions/master-classes } }
+      - { icon: building, title: Obiekty i kluby, text: "Własny obiekt, wiele wydarzeń w miesiącu, jeden plan sali używany wielokrotnie, osobne warunki.", link: { label: Dla obiektów →, href: /solutions/venues } }
+
+  - type: clients
+    id: clients
+    eyebrow: Klienci
+    title: Organizatorzy w {countries} krajach
+    lead: ArenaSoldOut.com sprzedaje bilety dla organizatorów od {since} roku; platforma, która za tym stoi, została przebudowana w 2026 roku, a organizatorzy przeszli razem z nią. Wcześniejsze platformy założycieli obsłużyły {track}. Ich słowa i logotypy są na stronie klientów.
+    cta: { label: Klienci i opinie, href: /clients }
+    marksAria: Klienci
+
+  - type: changes
+    id: changes
+    eyebrow: Ostatnie zmiany
+    title: Platforma rośnie co tydzień
+    lead: "Linijka dla każdej funkcji, która trafiła do organizatorów. Powiedz nam, czego potrzebujesz dalej: większość próśb organizatorów wdrażamy w ciągu kilku tygodni, a zespół odpowiada osobiście."
+    cta: { label: "Powiedz nam, czego potrzebujesz", href: /start }
+    more: { label: Pełna lista →, href: /changes }
+    limit: 10
+
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż już dziś
+    text: "Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Wydarzenie bez planu sali jest w sprzedaży w 10 minut; plan sali rysujemy dla ciebie za darmo."
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."

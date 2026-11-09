@@ -1,0 +1,50 @@
+title: "MACS-Scanner-App: Tickets scannen auf iOS und Android"
+description: "MACS scannt EAN-13- und QR-Tickets aller Veranstalter der Plattform und Partner, auf iPhone, iPad, Android und Handscannern. Kostenlos in den App-Stores."
+h1: "MACS: die App am Einlass"
+lead: Eine App für jeden Eingang. Das Einlasspersonal meldet sich an, wählt die Vorstellung und scannt den EAN-13 oder den QR-Code auf dem Ticket, auf Papier oder auf dem Bildschirm. Sie nimmt Tickets jedes Veranstalters an, der über ArenaSoldOut.com verkauft, und Partner-Tickets aus anderen Systemen, sodass eine Spielstätte für jedes Event dieselben Smartphones nutzt.
+related:
+  - { label: E-Tickets mit EAN-13 und QR, href: /product/tickets }
+  - { label: "Spielstätten und Clubs: ein Plan, jedes Event", href: /solutions/venues }
+  - { label: Partner und Agenturen, href: /partners }
+sections:
+  - type: cards
+    id: get
+    eyebrow: App herunterladen
+    title: Wo installiere ich MACS?
+    lead: Kostenlos für Veranstalter auf der Plattform. Installieren Sie sie auf so vielen Smartphones, wie Sie Eingänge haben, und melden Sie sich mit Ihrem Event-Center-Konto an.
+    items:
+      - { title: iPhone und iPad, text: "MACS im App Store. Melden Sie sich mit Ihrem Event-Center-Konto an; Ihre Events und Vorstellungen sind schon da.", link: { label: App Store öffnen →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: Android, text: "MACS bei Google Play. Dieselbe App und dasselbe Konto; Android-Handscanner mit eingebautem Laser funktionieren ebenfalls.", link: { label: Google Play öffnen →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
+      - { title: Handscanner, text: "Ein USB- oder Bluetooth-Barcodescanner, der an ein Smartphone oder einen Laptop angeschlossen ist, liest denselben EAN-13; die App erfasst den Scan.", link: { label: Wie Tickets aufgebaut sind →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: Was leistet der Scanner?
+    items:
+      - q: Welche Tickets scannt er?
+        a: "Jedes von ArenaSoldOut.com ausgestellte Ticket: das PDF mit dem EAN-13-Barcode und dem QR-Code, gedruckt oder auf dem Bildschirm gezeigt, und die E-Mail mit dem Ticket. Von Ihren Partnern in anderen Systemen verkaufte Tickets werden daneben akzeptiert, sodass ein Eingang für jeden Verkaufskanal funktioniert."
+      - q: Kann eine App mehrere Veranstalter bedienen?
+        a: Ja. MACS scannt Tickets jedes Veranstalters der Plattform. Das Einlasspersonal einer Spielstätte oder eines Festivals wechselt in der App zwischen Events und Vorstellungen; jeder Veranstalter sieht die Scans seiner eigenen Events im Event Center.
+      - q: Was sieht das Personal bei einem Scan?
+        a: Ob das Ticket gültig ist, mit Platz oder Kategorie, oder warum nicht (bereits verwendet, storniert, andere Vorstellung). Der Veranstalter sieht die Zahl der Eingelassenen pro Vorstellung im Event Center.
+      - q: Brauche ich das Ticketing von ArenaSoldOut.com, um den Scanner zu nutzen?
+        a: "Heute ist MACS für Veranstalter enthalten, die über ArenaSoldOut.com verkaufen, und nimmt neben ArenaSoldOut.com-Tickets auch Partner-Tickets aus anderen Systemen an. Nur Scannen, für anderswo verkaufte Tickets, bieten wir auf Anfrage an: Schreiben Sie uns mit Ihrem Ticketsystem und dem Event."
+      - q: Wie viele Smartphones können gleichzeitig scannen?
+        a: So viele, wie Sie Eingänge haben. Scans werden zentral erfasst, sodass ein an einem Tor eingelassenes Ticket an einem anderen nicht noch einmal eingelassen wird.
+      - q: Was kostet es?
+        a: Für Veranstalter auf der Plattform nichts zusätzlich zum Preis pro Ticket. Die Konditionen für reine Scan-Nutzung werden pro Event vereinbart; die Plattform-Konditionen stehen auf der Preisseite.
+  - type: cards
+    id: who
+    eyebrow: Wer sie nutzt
+    title: Wer scannt mit MACS?
+    items:
+      - { title: Spielstätten und Clubs, text: "Eine App für jeden Veranstalter, der die Spielstätte mietet; die Spielstätte sieht jedes Event, jeder Veranstalter sein eigenes.", link: { label: Für Spielstätten und Clubs →, href: /solutions/venues } }
+      - { title: Festivals, text: "Mehrere Tore, viele Smartphones, eine Zählung. Partner-Tickets werden an denselben Toren akzeptiert.", link: { label: Für Festivals →, href: /solutions/festivals } }
+      - { title: Agenturen und Partner, text: "Scannen Sie Tickets, die Sie über ArenaSoldOut.com verkauft haben, und Tickets aus den Systemen, die Ihre Kunden schon nutzen.", link: { label: Partner →, href: /partners } }
+  - type: cta
+    id: start
+    title: Bringen Sie MACS an Ihren Einlass
+    text: "App installieren, mit dem Event-Center-Konto anmelden, scannen. Scannen für anderswo verkaufte Tickets: Schreiben Sie uns mit Ihrem Ticketsystem und dem Event."
+    primary: { label: Kontakt aufnehmen, href: /contact }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Kostenlos im App Store und bei Google Play für Veranstalter auf der Plattform."

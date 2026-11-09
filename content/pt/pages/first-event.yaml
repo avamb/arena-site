@@ -1,0 +1,50 @@
+title: "Seu primeiro evento: do cadastro ao leitor de ingressos"
+description: "Passo a passo: envie o cadastro, seja confirmado, conecte sua conta de pagamentos, crie o evento, envie o mapa, publique, venda e leia os ingressos na entrada."
+h1: Seu primeiro evento com o ArenaSoldOut.com
+lead: "Oito passos do cadastro até o leitor de ingressos na entrada. Com uma conta em um provedor de pagamentos já aberta, um evento sem mapa de assentos entra à venda 10 minutos depois que sua organização for confirmada."
+related:
+  - { label: Provedores de pagamento por país, href: /payments, text: "Qual provedor a sua empresa pode conectar, com métodos e moedas." }
+  - { label: Mapas de assentos, href: /product/seating, text: "O que enviar para desenharmos o seu local de graça." }
+  - { label: Aplicativo de leitura MACS, href: /product/scanner, text: "Leitura de ingressos na entrada em iOS e Android." }
+sections:
+  - type: steps
+    id: steps
+    eyebrow: Passo a passo
+    title: Como coloco meu primeiro evento à venda?
+    items:
+      - title: Envie o cadastro
+        text: "Cinco passos curtos no [formulário de cadastro](/start): contato, organização, eventos, pagamentos, consentimento. Ou envie o mesmo no [bot do Telegram](https://t.me/EventsCentrBot). Suas respostas são salvas conforme você avança."
+      - title: Confirmamos a sua organização
+        text: "A equipe confere o cadastro e cria a sua organização e a sua conta no Event Center, em geral em até um dia, e diz como entrar."
+      - title: Conecte sua conta de pagamentos, uma vez
+        text: "Crie chaves de API no painel do seu provedor (Stripe, Flitt, AllPay ou outro provedor do seu país) e cole no Event Center, ou envie para a equipe. Isso é feito uma vez para a organização; cada evento seguinte usa a mesma conta. Ainda não tem conta? Abra uma com um [provedor do seu país](/payments) primeiro: isso leva o tempo do próprio provedor."
+      - title: Crie o evento
+        text: "No Event Center, no navegador, ou no bot do Telegram a partir de uma foto do seu cartaz: nome, local, datas e sessões, categorias de ingressos e preços, o cartaz. Sem mapa de assentos, leva cerca de 10 minutos."
+      - title: Envie o mapa do local, se você vende assentos
+        text: "Desenhamos o mapa de graça, em geral em até um dia, e mostramos a você antes de as vendas começarem. Qualquer um destes basta: um PDF do mapa do local, uma foto de um esboço à mão ou uma tabela de fileiras com os assentos de cada fileira (Excel ou Google Sheets). Um SVG é importado diretamente."
+      - title: Publique e compartilhe
+        text: "Coloque o evento à venda. Compartilhe o link da página de vendas que hospedamos, ou adicione o widget de ingressos ao seu próprio site com três linhas de código. Códigos promocionais, preços por data e a taxa de serviço são definidos no mesmo lugar."
+      - title: Acompanhe as vendas
+        text: "Os compradores pagam na sua conta de pagamentos e recebem o ingresso por e-mail no seu idioma. Cada pedido está no Event Center, e cada venda e reembolso chega ao seu grupo do Telegram em segundos."
+      - title: Leia os ingressos na entrada
+        text: "Instale o aplicativo MACS no iPhone ou no Android, entre com a sua conta do Event Center, escolha a sessão e leia o EAN-13 ou o QR em papel ou na tela. Quantos celulares você tiver de entradas."
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O que os organizadores perguntam antes do primeiro evento?
+    items:
+      - q: Quanto tempo leva de verdade?
+        a: "Confirmação da organização: em geral em até um dia. Depois disso, com uma conta de pagamentos já aberta, um evento sem mapa de assentos entra à venda em cerca de 10 minutos. Um evento com assentos marcados espera pelo mapa que desenhamos, em geral um dia. Abrir uma conta nova em um provedor de pagamentos leva o tempo que o provedor precisar."
+      - q: O que eu preparo?
+        a: "O nome do evento, o local, as datas e horários, as categorias de ingressos e preços, um cartaz e as chaves de API da sua conta de pagamentos. Para assentos, o mapa do local em qualquer uma das formas acima."
+      - q: A equipe pode configurar por mim?
+        a: "Sim. Envie os detalhes no [bot do Telegram](https://t.me/EventsCentrBot) ou pelo formulário de contato e criamos o evento com você; você confere antes de as vendas começarem."
+      - q: Quanto custa o primeiro evento?
+        a: "O mesmo que qualquer outro: uma comissão por ingresso vendido, cobrada depois do evento, ou menos com créditos comprados antecipadamente. Mapas de assentos e convites não custam nada. Os preços estão na [página de preços](/pricing)."
+  - type: cta
+    id: start
+    title: Comece pelo cadastro
+    text: "Cinco passos curtos, salvos conforme você avança. A equipe confirma a sua organização, em geral em até um dia."
+    primary: { label: Enviar o cadastro, href: /start }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Quer tirar dúvidas antes? O botão “Fale com a equipe” está em todas as páginas."

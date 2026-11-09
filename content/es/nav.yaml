@@ -1,0 +1,67 @@
+header:
+  - label: Cómo funciona
+    href: /#how
+  - label: Para quién es
+    href: /solutions
+  - label: Precios
+    href: /pricing
+  - label: Event Center
+    href: /#center
+  - label: Blog
+    href: /blog
+signin:
+  label: Iniciar sesión
+  href: https://app.arenasoldout.com
+start:
+  label: Empezar a vender
+  href: /start
+contact:
+  label: Contactar con el equipo
+  href: /contact#write
+tagline: Plataforma de venta de entradas para organizadores. Asientos y entradas, tu propia cuenta de pagos, un Event Center para el equipo.
+footer:
+  - title: Producto
+    links:
+      - { label: Todas las funciones, href: /features }
+      - { label: Tu primer evento, href: /first-event }
+      - { label: Vende en tu sitio o en el nuestro, href: /product/sell }
+      - { label: Planos de asientos, href: /product/seating }
+      - { label: Códigos promocionales y ventanas de precio, href: /product/pricing-tools }
+      - { label: Pagos, href: /payments }
+      - { label: Bot de Telegram, href: /product/telegram }
+      - { label: Entradas electrónicas y escaneo, href: /product/tickets }
+      - { label: App de escaneo MACS, href: /product/scanner }
+      - { label: Fiabilidad, href: /product/reliability }
+      - { label: Alternativa a Ticket Tailor, href: /tickettailor-alternative }
+  - title: Para quién es
+    links:
+      - { label: Conciertos, href: /solutions/concerts }
+      - { label: Teatro, href: /solutions/theatre }
+      - { label: Espectáculos, href: /solutions/shows }
+      - { label: Festivales, href: /solutions/festivals }
+      - { label: Giras de conciertos, href: /solutions/concert-tours }
+      - { label: Clases magistrales y formaciones, href: /solutions/master-classes }
+      - { label: Recintos y clubes, href: /solutions/venues }
+      - { label: Sitios WordPress, href: /solutions/wordpress }
+  - title: Para desarrolladores
+    links:
+      - { label: Documentación, href: /developers }
+      - { label: API pública, href: /developers#api }
+      - { label: Widget, href: /developers#widget }
+      - { label: Plugin de WordPress, href: /solutions/wordpress }
+      - { label: Socios, href: /partners }
+  - title: Empresa
+    links:
+      - { label: Acerca de, href: /company }
+      - { label: Clientes, href: /clients }
+      - { label: Blog, href: /blog }
+      - { label: Últimos cambios, href: /changes }
+      - { label: Datos, href: /facts }
+      - { label: Contactar con el equipo, href: /contact#write }
+      - { label: Ayuda para compradores, href: /help/tickets }
+  - title: Legal
+    links:
+      - { label: Términos y condiciones, href: /legal/terms }
+      - { label: Política de privacidad, href: /legal/privacy }
+      - { label: Condiciones de precios en detalle, href: /pricing/terms }
+copyright: "© 2019–2026 ArenaSoldOut.com · ABH TEAM OÜ · UE"

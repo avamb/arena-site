@@ -1,0 +1,57 @@
+title: "Comece a vender: cadastre-se como organizador"
+description: "Conte-nos sobre a sua organização e os seus eventos. A equipe configura sua organização, sua página de vendas e sua conta de pagamentos, em geral em um dia."
+h1: Comece a vender
+lead: "Conte-nos quem você é e onde vende. Configuramos sua organização e sua página de vendas e conectamos sua conta de pagamentos, em geral em um dia. Eventos sem mapa de assentos entram em venda hoje."
+sections:
+  - type: steps
+    id: how
+    eyebrow: O que acontece depois
+    title: Como começamos?
+    items:
+      - title: Você envia o cadastro
+        text: "Cinco etapas curtas: contato, organização, eventos, pagamentos e consentimento. Suas respostas são salvas conforme você avança, então você pode sair e voltar."
+      - title: Nós configuramos tudo
+        text: A equipe confere o cadastro, cria sua organização e sua página de vendas, conecta sua conta de pagamentos com você e, se você tem um local com assentos marcados, desenha o mapa de assentos sem custo a partir do seu PDF, croqui à mão ou tabela de fileiras.
+      - title: Você entra em venda
+        text: Compartilhe um único link ou coloque o widget no seu site. Cada venda chega ao seu Event Center e ao seu grupo do Telegram.
+  - type: onboarding
+    id: form
+    mode: apply
+    eyebrow: Cadastro
+    title: Conte-nos sobre você
+    ui:
+      noscript: "O formulário de cadastro precisa de JavaScript. Escreva para nós no Telegram e configuramos tudo manualmente."
+      optional: "(opcional)"
+      url_list_hint: "Um link por linha"
+      sending: "Enviando…"
+      email: "E-mail"
+      err_required: "Este campo é obrigatório"
+      err_invalid: "Confira este valor"
+      err_too_long: "Este valor é longo demais"
+      err_not_allowed: "Ainda não aceitamos cadastros deste país"
+      e_generic: "Algo deu errado. Tente de novo em um minuto ou escreva para nós no Telegram."
+      e_network: "Sem conexão com o servidor. Verifique sua internet e tente de novo."
+      e_unavailable: "O formulário não está disponível agora. Tente de novo em um minuto ou escreva para nós no Telegram."
+      e_session: "Seu rascunho não está mais disponível. Comece de novo, leva um minuto."
+      e_incomplete: "Faltam algumas respostas obrigatórias. Elas estão marcadas acima."
+      e_email_not_confirmed: "Confirme seu e-mail primeiro: abra o link na mensagem que enviamos e depois clique em Enviar de novo."
+      e_rate_limited: "Tentativas demais. Aguarde alguns minutos e tente de novo."
+      e_turnstile_failed: "A verificação antispam não passou. Espere um segundo até ela terminar e tente de novo."
+      e_captcha_not_configured: "O formulário não está disponível agora. Escreva para nós no Telegram."
+      e_captcha_unavailable: "Não foi possível executar a verificação antispam. Tente de novo em um minuto."
+      e_locked: "Este cadastro já foi enviado e não pode mais ser editado."
+      step_of: "Etapa {n} de {total}"
+      start_button: "Continuar"
+      start_note: "Enviamos um link para confirmar o seu e-mail. Você pode continuar preenchendo o formulário enquanto ele chega."
+      have_draft: "Continuar um rascunho anterior"
+      back: "Voltar"
+      next: "Avançar"
+      submit: "Enviar cadastro"
+      email_sent: "Enviamos um link de confirmação para {email}. Abra quando puder: o formulário já está salvo, e o e-mail precisa ser confirmado antes de você enviá-lo."
+      info_requested: "A equipe pediu mais detalhes:"
+      legal_lead: "Ao enviar o cadastro, você aceita"
+      terms: "os termos"
+      privacy: "a política de privacidade"
+    alt:
+      text: "Prefere o Telegram? O bot recebe o mesmo cadastro em um chat, e a mesma equipe responde por lá."
+      link: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }

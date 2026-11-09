@@ -1,0 +1,47 @@
+title: "Billets électroniques EAN-13 et QR, scan, e-mails acheteurs"
+description: "Billets PDF avec EAN-13 et QR dans la langue de l'acheteur, scan MACS pour iOS et Android, exemples de billets, e-mails en cas de report ou d'annulation."
+h1: Un billet qui se scanne
+lead: Chaque billet est un PDF avec un code-barres EAN-13 et un QR code, dans la langue de l'acheteur. Scannez-le avec l'application ou un scanner portable, renvoyez-le, remboursez-le, remplacez-le quand une date change.
+related:
+  - { label: Plans de salle, href: /product/seating }
+  - { label: "Fiabilité : charge, sauvegardes, surveillance", href: /product/reliability }
+  - { label: Aide pour les acheteurs de billets, href: /help/tickets }
+  - { label: "Application de scan MACS : tout organisateur, toute entrée", href: /product/scanner }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Billets
+    title: Que reçoit l'acheteur ?
+    items:
+      - q: Qu'y a-t-il sur le billet ?
+        a: "L'événement, la séance, la place ou la catégorie, le prix, le nom de l'acheteur, un code-barres EAN-13 et un QR code. Un PDF par commande, dans la langue de l'acheteur : anglais, russe, tchèque, hébreu ou espagnol sur la page, sept langues dans les e-mails. Nous ajoutons toute nouvelle langue sous 40 heures."
+      - q: Le reçu de paiement est-il dans l'e-mail ?
+        a: "Oui. Le reçu de paiement est joint à l'e-mail du billet, et l'e-mail indique qui a reçu le paiement : votre organisation et votre prestataire de paiement."
+      - q: Puis-je vérifier que l'acheteur a reçu le billet ?
+        a: "Oui. Chaque e-mail affiche son statut dans la fiche de commande : Envoyé, Distribué, Lu. Vous voyez toujours si l'acheteur a reçu le billet, et vous pouvez le renvoyer s'il l'a perdu."
+      - q: Comment scanner à l'entrée ?
+        a: "Avec l'[application de scan MACS](#scanner) pour iOS et Android, ou un lecteur de codes-barres portable. L'application accepte aussi les billets vendus par vos partenaires dans d'autres systèmes, donc une seule entrée sert tous les canaux."
+      - q: Puis-je voir un billet avant le début des ventes ?
+        a: Oui. Un exemple de billet avec filigrane est fourni avec l'événement, depuis l'Event Center ou le bot Telegram.
+      - q: Que se passe-t-il quand une date change ?
+        a: Les acheteurs reçoivent un e-mail dans leur langue avec le billet mis à jour en pièce jointe. Idem pour une annulation, le remboursement étant géré par vous.
+      - q: Puis-je renvoyer ou rembourser un billet ?
+        a: Oui, depuis l'Event Center. Renvoi à une nouvelle adresse, remboursement sur la carte de l'acheteur, la place est remise en vente.
+      - q: Existe-t-il une application pour les acheteurs ?
+        a: Non. Le PDF et l'e-mail suffisent à l'entrée ; rien à installer.
+  - type: cards
+    id: scanner
+    eyebrow: À l'entrée
+    title: Quelle application scanne les billets ?
+    lead: "MACS est l'application de contrôle d'accès d'ArenaSoldOut.com. Installez-la sur les téléphones de votre personnel d'accueil, connectez-vous avec votre compte Event Center et scannez l'EAN-13 ou le QR code de chaque billet : papier, PDF sur un écran ou e-mail. Une seule application scanne les billets de tout organisateur de la plateforme et les billets de partenaires issus d'autres systèmes : une salle, un festival ou un promoteur qui loue une salle utilise les mêmes téléphones pour chaque événement."
+    items:
+      - { title: iPhone et iPad, text: "MACS sur l'App Store. Connectez-vous avec votre compte Event Center ; la liste des événements et les séances y sont déjà.", link: { label: Ouvrir l'App Store →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: Android, text: "MACS sur Google Play. La même application, le même compte, les scanners portables avec caméra ou laser fonctionnent aussi.", link: { label: Ouvrir Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
+      - { title: "Tout organisateur, une seule application", text: "Le personnel d'accueil d'une salle scanne les billets de chaque organisateur qui vend via ArenaSoldOut.com, et les billets vendus par des partenaires dans d'autres systèmes, sans changer d'application.", link: { label: "MACS comme produit →", href: /product/scanner } }
+  - type: cta
+    id: start
+    title: Commencez à vendre dès aujourd'hui
+    text: Créez l'événement, connectez votre compte de paiement, partagez le lien. L'exemple de billet est prêt avec l'événement.
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

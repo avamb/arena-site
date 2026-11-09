@@ -1,0 +1,38 @@
+title: "Venda de ingressos para espetáculos: gelo, circo, dança"
+description: "Venda ingressos de espetáculos em turnê: um mapa por local, muitas datas, uma página por promotor, todas as cidades no Event Center, dinheiro na sua conta."
+h1: Espetáculos
+lead: Espetáculos no gelo, circo, dança e shows para a família têm muitas datas em muitos locais. Um evento, um mapa por local, uma página por promotor e as vendas de cada cidade em um só lugar.
+related:
+  - { label: Turnês de shows, href: /solutions/concert-tours }
+  - { label: Mapas de assentos, href: /product/seating }
+  - { label: Clientes, href: /clients }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para espetáculos
+    title: O que importa em um espetáculo?
+    items:
+      - { title: Um mapa por local, text: "O mapa de cada local é feito uma vez e reutilizado na visita seguinte; as versões guardam o histórico.", link: { label: Mapas de assentos →, href: /product/seating } }
+      - { title: Muitas datas, text: "Sessões por cidade e dia em um só evento; o público escolhe a data no widget e você vê os totais por sessão.", link: { label: Event Center →, href: /#center } }
+      - { title: Promotores locais, text: "Uma página por promotor com link e códigos próprios; todos os canais reportam a um só Event Center.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Ingressos família, text: "Categorias para crianças e grupos, faixas de quantidade, ingressos gratuitos para adultos acompanhantes.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O que produtores de espetáculos perguntam primeiro?
+    items:
+      - q: Um evento pode cobrir uma turnê inteira?
+        a: Sim. As sessões trazem a cidade, o local e o mapa; totais e relatórios em CSV saem por sessão e para o evento inteiro.
+      - q: Como lidamos com um local onde nunca nos apresentamos?
+        a: Envie o mapa dele em qualquer formato legível e a equipe o monta. A visita seguinte o reutiliza.
+      - q: Nossos ingressos também são vendidos por parceiros locais. A portaria dá conta?
+        a: Sim. O aplicativo leitor aceita ingressos de parceiros vindos de outros sistemas ao lado dos ingressos do ArenaSoldOut.com.
+      - q: Para onde vai o dinheiro?
+        a: "Para a sua própria conta de pagamentos, na sua moeda, junto com cada pedido. Veja os [pagamentos](/payments)."
+  - type: cta
+    id: start
+    title: Comece a vender hoje
+    text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
+    primary: { label: Criar seu evento, href: /start#create }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."

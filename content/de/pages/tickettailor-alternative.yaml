@@ -1,0 +1,92 @@
+title: "Ticket Tailor-Alternative mit niedrigeren Gebühren"
+description: "ArenaSoldOut.com vs. Ticket Tailor: US$0,59 statt US$0,85 pro Ticket bei Pay as you go, günstigere Credits, kostenlose Saalpläne, Auszahlung auf Ihr Konto."
+h1: Eine Ticket Tailor-Alternative, die pro Ticket weniger kostet
+lead: "Ticket Tailor und ArenaSoldOut.com berechnen beide eine feste Gebühr pro Ticket statt eines Prozentsatzes Ihres Umsatzes. Bei gleicher Menge kostet ArenaSoldOut.com weniger: US$0,59 statt US$0,85 pro Ticket bei Pay as you go, und auch mit Credits weniger. Unten stehen beide Preislisten nebeneinander, wie am 9. November 2026 veröffentlicht."
+related:
+  - { label: Preise, href: /pricing, text: "Pay as you go oder Credits, der Rechner und jedes Credit-Paket." }
+  - { label: Alle Funktionen, href: /features, text: "Alles, was ArenaSoldOut.com leistet, auf einer Seite." }
+  - { label: Saalpläne, href: /product/seating, text: "Wir zeichnen Ihre Spielstätte kostenlos nach einem PDF oder einer Skizze." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Preise in US-Dollar
+    title: Was kostet ein Ticket auf jeder Plattform?
+    lead: "Unsere Provision pro verkauftem Ticket neben der von Ticket Tailor. Beträge ohne MwSt., die Kartenabwicklung zahlen Sie auf beiden Plattformen an Ihren Zahlungsanbieter."
+    cols: { what: "", us: ArenaSoldOut.com, them: Ticket Tailor }
+    rows:
+      - { what: "Pay as you go, pro Ticket", us: "**{usdPrice}**", them: "US$0,85" }
+      - { what: "Pay as you go, Ticket mit Platz im Saalplan", us: "**{usdSeated}**", them: "US$1,70 (ein Ticket mit Platz zählt doppelt)" }
+      - { what: "Credits, etwa 100 Tickets", us: "**US$0,52** pro Ticket", them: "US$0,70 pro Ticket" }
+      - { what: "Credits, etwa 500 Tickets", us: "**US$0,46** pro Ticket", them: "US$0,60 pro Ticket" }
+      - { what: "Credits, etwa 1.000 Tickets", us: "**US$0,43** pro Ticket", them: "US$0,52 pro Ticket" }
+      - { what: "Credits, etwa 2.500 Tickets", us: "**US$0,40** pro Ticket", them: "US$0,47 pro Ticket" }
+      - { what: "Credits, etwa 5.000 Tickets", us: "**US$0,38** pro Ticket", them: "US$0,43 pro Ticket" }
+      - { what: "Mehr als 5.000 Tickets im Jahr", us: "Individuelle Konditionen: [schreiben Sie uns](/contact)", them: "US$0,39 bis US$0,30 pro Ticket" }
+      - { what: "Pay as you go in Euro (EU)", us: "**{eurPrice}**", them: "€0,70" }
+      - { what: "Verfallen Credits?", us: "Nein, nie", them: "Nein, nie" }
+      - { what: "Eingetragene gemeinnützige Organisationen", us: "50% Rabatt", them: "50% Rabatt" }
+      - { what: "Abo", us: Keins, them: Keins }
+    note: "Preise von Ticket Tailor: [tickettailor.com/pricing](https://www.tickettailor.com/pricing), geprüft am 9. November 2026, in USD, sofern nicht anders angegeben. Unsere Preise: [Preise](/pricing) und [detaillierte Bedingungen](/pricing/terms). Ticket Tailor ist eine Marke ihres Inhabers; ArenaSoldOut.com steht in keiner Verbindung zu ihr."
+
+  - type: prose
+    id: examples
+    title: Was bedeutet das für ein Event?
+    body: |
+      **1.000 Tickets ohne Platz, Pay as you go.** ArenaSoldOut.com: 1.000 × US$0,59 = **US$590**. Ticket Tailor: 1.000 × US$0,85 = US$850. Bei Ihnen bleiben **US$260** mehr.
+
+      **500 Tickets mit Platz, Pay as you go.** ArenaSoldOut.com: 500 × US$1,09 = **US$545**. Ticket Tailor: 500 × US$1,70 = US$850. Bei Ihnen bleiben **US$305** mehr, und den Saalplan zeichnen wir kostenlos.
+
+      **1.000 Tickets im Jahr, im Voraus mit Credits bezahlt.** Credit-Paket 1K von ArenaSoldOut.com: **US$430**. Ticket Tailor, 1.000 Credits: US$520. **US$90** weniger, und die Credits verfallen auf keiner der Plattformen.
+
+      Rechnen Sie Ihr eigenes Event im [Rechner auf der Preisseite](/pricing#packages) durch.
+
+  - type: cards
+    id: more
+    eyebrow: Mehr als der Preis
+    title: Was bekommen Sie sonst noch mit ArenaSoldOut.com?
+    items:
+      - title: Saalpläne, die wir für Sie zeichnen, kostenlos
+        text: "Senden Sie ein PDF, ein Foto einer Handskizze oder eine Tabelle mit Reihen und Plätzen. Das Team baut die Spielstätte nach; Sie zeichnen sie nie selbst."
+        link: { label: Saalpläne, href: /product/seating }
+      - title: Das Geld direkt auf Ihr Konto
+        text: "Käufer zahlen auf Ihr eigenes Stripe-, Flitt- oder AllPay-Konto. ArenaSoldOut.com hält nie Gelder und zieht nichts von Ihren Verkäufen ab."
+        link: { label: Zahlungen, href: /payments }
+      - title: Niedrigerer Satz für günstige Tickets
+        text: "Wenn jedes Ticket des Events {usdLowMax} oder weniger kostet: {lowPercent}% des Ticketpreises statt der festen Gebühr. Discos, Läufe, Kindergeburtstage, Ausflüge."
+        link: { label: So funktioniert es, href: /pricing#low-price }
+      - title: Käufer in ihrer eigenen Sprache
+        text: "Käuferseite, E-Mails und Tickets in der Sprache des Käufers, auch Hebräisch von rechts nach links. Jede neue Sprache fügen wir innerhalb von 40 Stunden hinzu."
+        link: { label: E-Tickets, href: /product/tickets }
+      - title: Jeder Verkauf in Ihrem Telegram
+        text: "Legen Sie im Telegram-Bot ein Event aus einem Plakatfoto an und sehen Sie jeden Verkauf und jede Erstattung binnen Sekunden in Ihrer Gruppe."
+        link: { label: Telegram-Bot, href: /product/telegram }
+      - title: Ein Mensch, der es gemeinsam mit Ihnen einrichtet
+        text: "Kein Hilfecenter: Unser Team verbindet Ihr Zahlungskonto, baut den Plan und prüft das erste Event mit Ihnen."
+        link: { label: Ihr erstes Event, href: /first-event }
+
+  - type: faq
+    id: questions
+    title: Fragen, die Veranstalter beim Vergleich stellen
+    items:
+      - q: Ist ArenaSoldOut.com günstiger als Ticket Tailor?
+        a: "Ja, pro Ticket bei jeder veröffentlichten Menge bis 5.000 Tickets im Jahr: {usdPrice} statt US$0,85 bei Pay as you go, {usdSeated} statt US$1,70 für ein Ticket mit Platz und ab {usdFrom} pro Ticket mit Credits. Über 5.000 Tickets im Jahr vereinbaren wir individuelle Konditionen."
+      - q: Nehmen Sie einen Prozentsatz des Ticketpreises?
+        a: "Nein. Wie Ticket Tailor berechnen wir eine feste Gebühr pro verkauftem Ticket. Die einzigen Prozentsätze sind optional: der niedrigere Satz für Events, bei denen jedes Ticket {usdLowMax} oder weniger kostet, und der Satz für feste Spielstätten."
+      - q: Wohin geht das Geld des Käufers?
+        a: "Mit jeder Bestellung auf Ihr eigenes Zahlungskonto: Stripe, Flitt oder AllPay. ArenaSoldOut.com hält nie Gelder. Unsere Provision wird nach der Veranstaltung in Rechnung gestellt oder von Ihren Credits abgezogen."
+      - q: Kann ich meine Events von Ticket Tailor umziehen?
+        a: "Ja. Senden Sie uns Ihre Eventliste und Ihre Saalpläne; das Team richtet die Events ein und zeichnet die Pläne kostenlos, und Sie verkaufen weiter über Ticket Tailor, bis Ihre Seite bei uns fertig ist."
+      - q: Zahle ich ein Abo?
+        a: "Nein. Sie zahlen nur für verkaufte Tickets. Freikarten und kostenlose Tickets zu kostenpflichtigen Events sind provisionsfrei."
+      - q: Und gemeinnützige Organisationen?
+        a: "Eingetragene gemeinnützige Organisationen erhalten 50% Rabatt auf unsere Provision, wie bei Ticket Tailor. Schreiben Sie uns, und wir schalten ihn für Ihre Organisation frei."
+      - q: Wie verkaufe ich in Euro?
+        a: "Spielstätten in EU-Ländern zahlen unsere Provision in Euro: {eurPrice} pro Ticket bei Pay as you go. Die Tickets selbst werden in der Währung Ihres Zahlungskontos verkauft."
+
+  - type: cta
+    id: start
+    title: Probieren Sie es bei Ihrem nächsten Event aus
+    text: Event anlegen, Zahlungskonto verbinden, Link teilen.
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Preise ansehen, href: /pricing }
+    note: "Oder schreiben Sie uns: Wir vergleichen Ihre aktuellen Kosten und richten alles gemeinsam mit Ihnen in einem Gespräch ein."

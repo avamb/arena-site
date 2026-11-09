@@ -7,7 +7,8 @@
 import Base from '@/layouts/Base.astro';
 import Sections from '@/components/Sections.astro';
 import { loadPage, pageRoutes, slugToPath } from '@/lib/pages';
-import { localePath } from '@/lib/i18n';
+import { localePath, getLanguage } from '@/lib/i18n';
+import { getPosts } from '@/lib/data';
 import { defaultLanguage } from '@config';
 
 export async function getStaticPaths() {
@@ -21,7 +22,10 @@ export async function getStaticPaths() {
 const { lang, slug } = Astro.props;
 const p = await loadPage(lang, slug);
 const mdPath = p.path === '/' ? '/index.md' : lang !== defaultLanguage && p.path === `/${lang}` ? `/${lang}/index.md` : `${p.path}.md`;
-const noindex = slug.startsWith('start/') && slug !== 'start';
+// Languages not yet in the menu are translated but not read by a person yet: their pages stay out of
+// search until the language is switched on (a blog index with archive posts in that language is the exception, it was indexed before).
+const hiddenLanguage = !getLanguage(lang).inMenu && !(slug === 'blog' && (await getPosts(lang)).length > 0);
+const noindex = (slug.startsWith('start/') && slug !== 'start') || hiddenLanguage;
 ---
 <Base lang={lang} path={p.path} title={p.page.data.title} description={p.page.data.description} translated={p.translated} jsonld={p.jsonld} markdownPath={mdPath} noindex={noindex}>
   <Sections p={p} />

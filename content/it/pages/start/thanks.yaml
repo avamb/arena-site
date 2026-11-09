@@ -1,0 +1,19 @@
+title: "Grazie, abbiamo ricevuto la tua richiesta"
+description: "Il team legge ogni richiesta di persona e risponde entro un giorno lavorativo."
+h1: Grazie
+lead: Il team legge ogni richiesta di persona e risponde entro un giorno lavorativo, via e-mail o nel messenger che hai indicato.
+sections:
+  - type: cards
+    id: next
+    eyebrow: Nel frattempo
+    title: Cosa posso fare adesso?
+    items:
+      - title: Prepara la locandina e i prezzi
+        text: Il nome dell'evento, le date, i prezzi dei biglietti e un'immagine della locandina sono tutto ciò che serve a un evento senza mappa dei posti per andare in vendita.
+        link: { label: Come funziona →, href: /#how }
+      - title: Trova le chiavi del tuo conto di pagamento
+        text: Se hai già un conto presso un provider del tuo paese, le chiavi API sono nella sua dashboard. Se non ce l'hai, lo apriamo insieme a te.
+        link: { label: Pagamenti →, href: /payments }
+      - title: Prova il bot Telegram
+        text: Il bot crea un evento da una foto della locandina e ti chiede di confermare date, prezzi e struttura.
+        link: { label: Apri il bot Telegram →, href: https://t.me/EventsCentrBot }

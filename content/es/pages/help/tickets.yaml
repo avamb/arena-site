@@ -1,0 +1,35 @@
+title: "Compré una entrada: dónde está y qué mostrar en la puerta"
+description: "Tu entrada es un PDF en el correo de confirmación con EAN-13 y código QR; muéstrala en el móvil o impresa. Reembolsos y cambios de fecha: al organizador."
+h1: Ayuda para compradores de entradas
+lead: Tu entrada es un PDF adjunto al correo de confirmación, con un código de barras y un código QR. Muéstrala en el móvil o impresa. Las preguntas sobre reembolsos y fechas van al organizador del evento, cuyo contacto está en la página de venta y en el correo.
+related:
+  - { label: Entradas electrónicas y escaneo, href: /product/tickets }
+  - { label: Contacto, href: /contact }
+  - { label: Política de privacidad, href: /legal/privacy }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Compradores
+    title: "¿Dónde está mi entrada?"
+    items:
+      - q: He pagado pero no tengo el correo
+        a: Revisa la carpeta de spam y la dirección que escribiste al pagar. Si pasados unos minutos el correo no está, escribe al organizador con tu nombre y la hora de la compra; puede reenviar la entrada a otra dirección.
+      - q: "¿Qué muestro en la puerta?"
+        a: El PDF en el móvil o impreso. El código de barras y el código QR se escanean una sola vez; una captura de pantalla del código también sirve.
+      - q: "¿Puedo pedir un reembolso?"
+        a: El reembolso lo decide el organizador del evento, según las condiciones que se muestran al pagar. Escribe al organizador; el reembolso vuelve a la tarjeta con la que pagaste.
+      - q: La fecha ha cambiado
+        a: Recibes un correo del organizador con la entrada actualizada adjunta. La entrada anterior deja de funcionar.
+      - q: "¿Puedo pasar la entrada a un amigo?"
+        a: Reenvía el PDF. La entrada se escanea una sola vez, la lleve quien la lleve.
+      - q: Tengo una pregunta sobre mi pago
+        a: El pago fue a la cuenta de pagos del propio organizador; el organizador lo ve en el Event Center y puede responderte. ArenaSoldOut.com no retiene el dinero de los compradores.
+      - q: "¿A dónde van mis datos?"
+        a: "Al organizador del evento, para entregar la entrada, y al proveedor de pagos, para el pago. Consulta la [política de privacidad](/legal/privacy)."
+  - type: cta
+    id: organizers
+    title: "¿Eres organizador?"
+    text: Crea el evento, conecta tu cuenta de pagos y comparte el enlace. Los compradores pagan en tu propia cuenta desde la primera entrada.
+    primary: { label: Empieza a vender, href: /start }
+    secondary: { label: Cómo funciona, href: /#how }
+    note: Los compradores de entradas escriben al organizador de su evento.

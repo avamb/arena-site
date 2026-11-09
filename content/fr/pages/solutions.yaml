@@ -1,0 +1,29 @@
+title: "Pour qui : concerts, théâtre, festivals, salles"
+description: "Organisateurs qui vendent leurs billets : concerts, théâtre, spectacles, festivals, tournées, masterclasses, formations, salles et clubs, sites WordPress."
+h1: Des organisateurs qui vendent leurs propres billets
+lead: Une plateforme, des événements différents. Choisissez le vôtre pour voir ce qui compte le plus, à quoi ressemble la première semaine et ce que demandent d'abord les autres organisateurs de votre domaine.
+related:
+  - { label: Comment ça marche, href: /#how }
+  - { label: Tarifs, href: /pricing }
+  - { label: Clients, href: /clients }
+sections:
+  - type: cards
+    id: list
+    eyebrow: Pour qui
+    title: Quel type d'événement organisez-vous ?
+    items:
+      - { title: Concerts, text: "Debout et assis, plusieurs catégories de prix, prévente, scan à l'entrée.", link: { label: Pour les concerts →, href: /solutions/concerts } }
+      - { title: Théâtre, text: "Des plans de salle fidèles à la salle, des dates récurrentes, des invitations pour la presse et les partenaires.", link: { label: Pour les théâtres →, href: /solutions/theatre } }
+      - { title: Spectacles, text: "Spectacles sur glace, cirque, danse : de nombreuses dates, de nombreuses villes, un plan par salle réutilisé.", link: { label: Pour les spectacles →, href: /solutions/shows } }
+      - { title: Festivals, text: "Plusieurs jours, de nombreuses catégories, des catégories qui transmettent leurs places invendues à la suivante.", link: { label: Pour les festivals →, href: /solutions/festivals } }
+      - { title: Tournées, text: "Un spectacle, plusieurs villes et dates, une page par promoteur avec son propre lien.", link: { label: Pour les tournées →, href: /solutions/concert-tours } }
+      - { title: Masterclasses et formations, text: "Petits groupes, dates récurrentes, e-mails et langue de l'animateur.", link: { label: Pour les animateurs →, href: /solutions/master-classes } }
+      - { title: Salles et clubs, text: "Votre propre salle, de nombreux événements par mois, un plan de salle réutilisé, des conditions distinctes.", link: { label: Pour les salles →, href: /solutions/venues } }
+      - { title: Sites sous WordPress, text: "Plugin avec commandes WooCommerce ; la boutique continue de fonctionner, les billets viennent d'ArenaSoldOut.com.", link: { label: Pour les sites WordPress →, href: /solutions/wordpress } }
+  - type: cta
+    id: start
+    title: Commencez à vendre dès aujourd'hui
+    text: "Créez l'événement, connectez votre compte de paiement, partagez le lien. Un événement sans plan de salle est en vente en 10 minutes ; un plan de salle, nous le dessinons pour vous, gratuitement."
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

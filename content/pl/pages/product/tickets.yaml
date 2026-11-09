@@ -1,0 +1,47 @@
+title: "E-bilety z EAN-13 i QR, skanowanie, e-maile do kupujących"
+description: "Bilety PDF z EAN-13 i QR w języku kupującego, aplikacja skanera MACS na iOS i Androida, bilety próbne, e-maile przy przeniesieniu lub odwołaniu terminu."
+h1: Bilet, który się skanuje
+lead: Każdy bilet to PDF z kodem kreskowym EAN-13 i kodem QR, w języku kupującego. Zeskanuj go aplikacją lub skanerem ręcznym, wyślij ponownie, zwróć, wymień, gdy termin się przesuwa.
+related:
+  - { label: Plany sali, href: /product/seating }
+  - { label: "Niezawodność: obciążenie, kopie zapasowe, watchdog", href: /product/reliability }
+  - { label: Pomoc dla kupujących bilety, href: /help/tickets }
+  - { label: "Aplikacja skanera MACS: dowolny organizator, dowolne wejście", href: /product/scanner }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Bilety
+    title: Co dostaje kupujący?
+    items:
+      - q: Co jest na bilecie?
+        a: "Wydarzenie, termin, miejsce lub kategoria, cena, imię kupującego, kod kreskowy EAN-13 i kod QR. Jeden PDF na zamówienie, w języku kupującego: angielskim, rosyjskim, czeskim, hebrajskim lub hiszpańskim na stronie, siedem języków w e-mailach. Każdy nowy język dodajemy w ciągu 40 godzin."
+      - q: Czy potwierdzenie płatności jest w e-mailu?
+        a: "Tak. Potwierdzenie płatności jest dołączone do e-maila z biletem, a e-mail wskazuje, kto otrzymał płatność: twoja organizacja i twój operator płatności."
+      - q: Czy mogę sprawdzić, że kupujący dostał bilet?
+        a: "Tak. Każdy e-mail pokazuje swój status w karcie zamówienia: Wysłany, Doręczony, Przeczytany. Zawsze widzisz, czy kupujący otrzymał bilet, i możesz go wysłać ponownie, jeśli go zgubił."
+      - q: Jak skanować przy wejściu?
+        a: "[Aplikacją skanera MACS](#scanner) na iOS i Androida albo skanerem ręcznym kodów kreskowych. Aplikacja przyjmuje też bilety sprzedane przez twoich partnerów w innych systemach, więc jedno wejście obsługuje każdy kanał."
+      - q: Czy mogę zobaczyć bilet przed startem sprzedaży?
+        a: Tak. Próbny bilet ze znakiem wodnym jest dostępny razem z wydarzeniem, z Event Center lub z bota na Telegramie.
+      - q: Co się dzieje, gdy termin się przesuwa?
+        a: Kupujący dostają e-mail w swoim języku z dołączonym zaktualizowanym biletem. To samo przy odwołaniu, ze zwrotem obsługiwanym przez ciebie.
+      - q: Czy mogę ponownie wysłać lub zwrócić bilet?
+        a: Tak, z Event Center. Wyślij ponownie na nowy adres, zwróć na kartę kupującego, miejsce wraca do sprzedaży.
+      - q: Czy jest aplikacja dla kupujących?
+        a: Nie. PDF i e-mail wystarczą przy wejściu; nic nie trzeba instalować.
+  - type: cards
+    id: scanner
+    eyebrow: Przy wejściu
+    title: Jaka aplikacja skanuje bilety?
+    lead: "MACS to aplikacja kontroli wejścia ArenaSoldOut.com. Zainstaluj ją na telefonach obsługi wejścia, zaloguj się kontem Event Center i skanuj EAN-13 lub kod QR na każdym bilecie: na papierze, w PDF-ie na ekranie lub w e-mailu. Jedna aplikacja skanuje bilety każdego organizatora na platformie i bilety partnerów z innych systemów, więc obiekt, festiwal lub promotor wynajmujący obiekt używa tych samych telefonów do każdego wydarzenia."
+    items:
+      - { title: iPhone i iPad, text: "MACS w App Store. Zaloguj się kontem Event Center; lista wydarzeń i terminy już tam są.", link: { label: Otwórz App Store →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: Android, text: "MACS w Google Play. Ta sama aplikacja, to samo konto, skanery ręczne z kamerą lub laserem też działają.", link: { label: Otwórz Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
+      - { title: "Dowolny organizator, jedna aplikacja", text: "Obsługa wejścia obiektu skanuje bilety każdego organizatora, który sprzedaje przez ArenaSoldOut.com, oraz bilety sprzedane przez partnerów w innych systemach, bez przełączania aplikacji.", link: { label: "MACS jako produkt →", href: /product/scanner } }
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż już dziś
+    text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Próbny bilet jest gotowy razem z wydarzeniem.
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."

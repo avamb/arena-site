@@ -1,0 +1,115 @@
+title: "Preise: pro Ticket, ohne Abo"
+description: "Provision pro verkauftem Ticket, kein Abo. Zahlen Sie nach der Veranstaltung oder kaufen Sie Credits im Voraus. Günstiger für Spielstätten. Freikarten gratis."
+h1: Pro Ticket. Kein Abo.
+lead: Sie zahlen ArenaSoldOut.com eine Plattform-Provision pro verkauftem Ticket. Pay as you go nach der Veranstaltung, oder Credits im Voraus kaufen und weniger pro Ticket zahlen. Die Kartenabwicklung zahlen Sie an Ihren eigenen Zahlungsanbieter zu dessen Konditionen.
+sections:
+  - type: pricing
+    id: plans
+    planBullets:
+      - "**{seated}** pro Ticket mit gewähltem Platz im Saalplan"
+      - "**Kostenlose** Freikarten und kostenlose Tickets zu kostenpflichtigen Events: keine Provision"
+      - "**Credits** senken die Provision pro Ticket, siehe unten"
+    cta: { label: Verkauf starten, href: /start }
+    buyCredits: { label: Credits kaufen, href: "#packages" }
+    plans:
+      currency: "Preise anzeigen in"
+      payg:
+        name: Pay as you go
+        text: Eine einfache Pauschale pro verkauftem Ticket, gezahlt nach der Veranstaltung.
+        bullets:
+          - "**{seated}** pro Ticket mit gewähltem Platz im Saalplan"
+          - "Rechnung nach der Veranstaltung, per Banküberweisung"
+          - "Kein Abo, kein Vertrag"
+      upfront:
+        name: Im Voraus zahlen mit Credits
+        text: "Kaufen Sie Credits im Voraus und zahlen Sie bis zu {saving}% weniger pro Ticket."
+        from: ab
+        bullets:
+          - "**{fromSeated}** pro Ticket mit Platz"
+          - "Credits verfallen nie; laden Sie auf, wann Sie möchten"
+          - "Der Verkauf stoppt nie: Sind die Credits aufgebraucht, wird der Rest zum Pay-as-you-go-Preis abgerechnet"
+      perks:
+        - { big: "50%", title: Eingetragene gemeinnützige Organisationen, text: "50% Rabatt auf unsere Provision. Schreiben Sie uns, wir schalten ihn frei." }
+        - { big: "Gratis", title: Freikarten, text: "Keine Provision auf Freikarten und kostenlose Tickets zu kostenpflichtigen Events." }
+        - { big: "Gratis", title: Saalplan, text: "Wir zeichnen Ihren Plan nach einem PDF, einem Foto einer Skizze oder einer Tabelle mit Reihen und Plätzen." }
+        - { big: "{lowPercent}%", title: "Tickets bis {lowMax}", text: "Für Events, bei denen jedes Ticket {lowMax} oder weniger kostet. [So funktioniert es](#low-price)" }
+      brand: "Die Preise setzen die Zeile **Tickets: ArenaSoldOut.com** mit einem Link zu uns auf Ihrer Eventseite voraus; das Ticket-Widget zeigt sie standardmäßig an. Um ohne sie zu verkaufen, kostet White Label **€45 im Monat pro Marke oder Spielstätte in EU-Ländern** und **US$45 im Monat pro Marke oder Spielstätte in allen anderen Ländern**. [Detaillierte Bedingungen →](/pricing/terms)"
+    currencyNote: "Provision in **US-Dollar** für jedes Land außerhalb der EU, einschließlich europäischer Länder außerhalb der EU, Asiens und des Nahen Ostens, und in **Euro** für Spielstätten in EU-Ländern. US-Dollar sind die Basis; Euro-Preise sind die Dollar-Preise zum EZB-Kurs. Das ist nur unsere Provision: Tickets werden in der Währung Ihres Zahlungskontos verkauft. Beträge ohne MwSt."
+    packages:
+      title: Credits im Voraus kaufen, weniger pro Ticket zahlen
+      text: "Sie kaufen einmal ein Credit-Paket; jedes verkaufte Ticket zieht seine Provision von Ihren Credits ab, zum Preis dieses Pakets. Credits verfallen nie und werden nur für unsere Leistungen verwendet. Sind die Credits mitten im Verkauf aufgebraucht, läuft der Verkauf weiter: Die restlichen Tickets werden zum Preis bei Zahlung nach der Veranstaltung abgerechnet."
+      cols: { name: Credit-Paket, prepay: Preis, plain: "Provision, ohne Platz", seated: "Provision, mit Platz", plainCount: "Tickets ohne Platz", seatedCount: "Oder Tickets mit Platz", saving: "Ersparnis ggü. Zahlung danach", buy: Kaufen }
+      buy: { label: Kaufen, currency: Zahlen in, none: Sprechen Sie mit uns, noneHref: /contact, note: "Beim Checkout fragt Stripe nach der E-Mail-Adresse, mit der Ihre Organisation bei ArenaSoldOut.com registriert ist. Geben Sie genau diese E-Mail-Adresse ein: Die Credits werden der Organisation gutgeschrieben, zu der sie gehört. Noch keine Organisation? Geben Sie die E-Mail-Adresse ein, mit der Sie sich registrieren werden, und die Credits werden ihr zugeordnet." }
+      note: "Credit-Pakete können Sie so oft kaufen, wie Sie möchten; ein Ticket zieht seine Provision aus dem Paket, aus dem es bezahlt wird. Sie können eine automatische Aufladung einschalten. Für Mengen über 5.000 Tickets im Jahr: individuelle Konditionen, schreiben Sie uns."
+    lowPrice:
+      title: "Events, bei denen jedes Ticket {lowMax} oder weniger kostet"
+      text: "{lowPercent}% des Ticketpreises, mindestens {lowMin} und höchstens {lowCap} pro Ticket; {lowSeat} mehr für ein Ticket mit Platz. Für Discos, Läufe, Marathons, Kindergeburtstage, Ausflüge. Das gilt für das ganze Event, und nur wenn **kein Ticket irgendeiner Kategorie oder Preisstufe**, auch späterer, vor Promo-Codes mehr als {lowMax} kostet. Ein Ticket darüber, und der Standardpreis gilt für alle Tickets des Events, auch die günstigen."
+      example: "Provision pro Ticket, Zahlung nach der Veranstaltung:"
+      cols: { price: Ticketpreis, plain: Provision, seated: Mit Platz }
+    venues:
+      title: Feste Spielstätten
+      text: "Theater, Clubs, Stadien, Zirkusse und andere Orte, die selbst Veranstaltungen ausrichten, ganzjährig oder saisonal: **{percent}% des Ticketpreises** (nach Promo-Codes, ohne Servicegebühr), höchstens **{cap}** pro Ticket, mit und ohne Platz gleich. Monatliche Rechnung. Keine Provision auf Freikarten. Unser Team schaltet den Spielstätten-Status frei."
+      example: "Bei einem Ticket für {ex25} beträgt die Provision {ex}; die Obergrenze von {cap} wird bei einem Ticketpreis von {capAt} erreicht."
+      cta: { label: Sprechen Sie mit uns, href: /contact }
+    calculator:
+      aria: Provisionsrechner
+      region: Land der Spielstätte
+      regionEu: EU (EUR)
+      regionWorld: Andere Länder (USD)
+      price: Ticketpreis dieser Kategorie
+      maxPrice: Höchster Preis eines Tickets im Event
+      quantity: Tickets dieser Kategorie
+      seating: Platz im Plan gewählt
+      result: Provision, Zahlung nach der Veranstaltung
+      button: Preis berechnen
+      hint: "Das Ergebnis aktualisiert sich beim Tippen. Die Provision hängt von der Zahl der Tickets und von Plätzen ab, nicht vom Ticketpreis, außer bei Events, bei denen jedes Ticket US$10 oder weniger kostet. Das ist der Preis bei Zahlung nach der Veranstaltung; die Option mit Credits steht darunter."
+      sales: Ihre Einnahmen {net}, ohne Kartenabwicklung
+      needMax: Geben Sie den höchsten Ticketpreis des Events ein, um die Provision zu sehen.
+      maxBelowPrice: Der höchste Preis im Event darf nicht niedriger sein als der Preis dieses Tickets.
+      lowRate: "Jedes Ticket kostet {max} oder weniger, daher gelten {percent}%, mindestens {min} und höchstens {cap} pro Ticket."
+      package: "Das Credit-Paket {name} ({prepay}) deckt es ab: {cost} für diese Tickets, {left} bleiben für die nächsten Events auf Ihrem Guthaben."
+      noPackage: "Mehr Tickets, als das größte Credit-Paket abdeckt: Schreiben Sie uns für Mengenkonditionen."
+    note: "Sie zahlen nach der Veranstaltung per Banküberweisung. Für Events, die mehrere Monate im Verkauf sind, und für feste Spielstätten stellen wir monatlich Rechnung. Zahlung nach der Veranstaltung steht Organisationen offen, die auf der Plattform bestätigt sind. Mengen- und individuelle Konditionen auf Anfrage."
+    terms: { label: Detaillierte Bedingungen →, href: /pricing/terms }
+
+  - type: faq
+    id: questions
+    eyebrow: Fragen zum Geld
+    title: Was kostet mich ein Ticket genau?
+    items:
+      - q: Wie viel kostet ein Ticket mit Platz?
+        a: "Bei Zahlung nach der Veranstaltung: US$1,09 außerhalb der EU, €0,97 in der EU. Ein Ticket ohne Platz kostet US$0,59 oder €0,53. Der Saalplan selbst kostet nichts: Wir zeichnen ihn kostenlos nach einem PDF, einem Foto einer Handskizze oder einer Tabelle mit Reihen und Plätzen. Mit Credits ist die Provision niedriger, und ein Platz kostet US$0,35 (€0,31) zusätzlich zum Credit-Preis."
+      - q: Wie funktionieren Credits?
+        a: "Sie kaufen einmal ein Credit-Paket. Jedes verkaufte Ticket zieht seine Provision zum Preis des Pakets von Ihren Credits ab, bis sie aufgebraucht sind. Credits verfallen nie, können jederzeit aufgeladen werden und werden nur für unsere Leistungen verwendet: Sie lassen sich weder auszahlen noch übertragen."
+      - q: Was, wenn die Credits mitten im Verkauf aufgebraucht sind?
+        a: Der Verkauf stoppt nicht. Die Tickets, die Ihre Credits nicht abgedeckt haben, kommen zum Preis bei Zahlung nach der Veranstaltung in die übliche Rechnung.
+      - q: Gibt es eine automatische Aufladung?
+        a: Ja. Sie können sie einschalten, und wenn Ihre Credits unter Ihren Schwellenwert fallen, wird das nächste Paket für Sie gekauft.
+      - q: Wohin geht das Geld des Käufers?
+        a: "Auf Ihr eigenes Zahlungskonto, mit jeder Bestellung. ArenaSoldOut.com hält nie Gelder. Der Käufer zahlt den Ticketpreis und, wenn Sie eine aufschlagen, Ihre Servicegebühr."
+      - q: Wann zahle ich ArenaSoldOut.com?
+        a: "Nach der Veranstaltung, per Banküberweisung, für die verkauften Tickets. Bei Events, die mehrere Monate im Verkauf sind, und bei festen Spielstätten einmal im Monat. Credits werden beim Kauf bezahlt."
+      - q: Wie sieht es mit der Kartenabwicklung aus?
+        a: Die Kartenabwicklung ist ein Vertrag zwischen Ihnen und Ihrem Zahlungsanbieter, zu dessen Konditionen. Sie ist nicht Teil unserer Provision, und wir schlagen nichts darauf.
+      - q: Muss ich ArenaSoldOut.com auf meiner Website nennen?
+        a: "Die Preise setzen voraus, dass die Eventseite ArenaSoldOut.com mit einem Link zu uns als Ticketbetreiber nennt; das Ticket-Widget zeigt diese Zeile standardmäßig an. Um ohne unseren Namen zu verkaufen, kostet White Label €45 im Monat pro Marke oder Spielstätte in EU-Ländern und US$45 im Monat pro Marke oder Spielstätte in allen anderen Ländern, bei einem nicht vollen Monat tageweise berechnet. Die [detaillierten Bedingungen](/pricing/terms) erklären, was eine Marke ist und was White Label verbirgt."
+      - q: Gibt es einen Rabatt für gemeinnützige Organisationen?
+        a: "Ja. Eingetragene gemeinnützige Organisationen zahlen 50% unserer Provision, bei Pay as you go und mit Credits. Schreiben Sie uns über die [Kontaktseite](/contact), und wir schalten es für Ihre Organisation frei."
+      - q: Sind Freikarten kostenlos?
+        a: Ja. Freikarten und kostenlose Tickets zu kostenpflichtigen Events sind provisionsfrei.
+      - q: Was passiert mit der Provision, wenn ein Ticket erstattet oder der Termin verlegt wird?
+        a: "Der Käufer erhält die Erstattung von Ihnen. Die Provision für einen bereits erfolgten Verkauf bleibt bestehen, und wir berechnen keine gesonderte Provision für die Bearbeitung der Erstattung, für das Verlegen des Termins oder für die E-Mails an die Käufer. Die eigenen Konditionen des Zahlungsanbieters sind Sache des Anbieters."
+      - q: Was, wenn ich das Event absage?
+        a: "Die bereits berechnete Provision wird nicht in Geld zurückgezahlt. Schreiben Sie uns zu Ihrem Fall, bevor das Event abgesagt wird."
+      - q: Eines meiner Tickets kostet mehr als US$10 (€10 in der EU), die übrigen sind günstig. Welcher Preis gilt?
+        a: "Der Standardpreis, für alle Tickets des Events: Der niedrigere Satz setzt voraus, dass jedes Ticket jeder Kategorie und Preisstufe US$10 oder weniger kostet (€10 in der EU). Ein Ticket für US$5 neben einem Ticket für US$25 gilt zum Standardpreis."
+      - q: Ich betreibe eine Spielstätte und richte viele Events im Monat aus. Gibt es ein anderes Angebot?
+        a: "Ja. Inhaber fester Spielstätten (Theater, Clubs, Stadien, Zirkusse und andere Orte, die selbst Veranstaltungen ausrichten, ganzjährig oder saisonal) zahlen {percent}% des Ticketpreises, berechnet nach Promo-Codes und ohne Ihre Servicegebühr. Die Provision pro Ticket ist auf US$1,09 (€1,09 in der EU) begrenzt, mit und ohne Platz gleich. Freikarten sind provisionsfrei. Wir stellen monatlich Rechnung. Unser Team schaltet den Spielstätten-Status frei: Schreiben Sie uns über die [Kontaktseite](/contact). Die vollständigen Bedingungen stehen in den [detaillierten Bedingungen](/pricing/terms)."
+
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: "Event anlegen, Zahlungskonto verbinden, Link teilen. Ein Event ohne Saalplan ist in 10 Minuten im Verkauf; einen Saalplan zeichnen wir für Sie kostenlos."
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

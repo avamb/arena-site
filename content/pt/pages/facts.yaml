@@ -1,0 +1,9 @@
+title: "Recursos do ArenaSoldOut.com em produção hoje, com datas"
+description: "Recursos do ArenaSoldOut.com em produção, com datas: assentos marcados, conta de pagamentos própria, bot do Telegram, widget, ingressos, API. Testado sob carga."
+h1: O que o ArenaSoldOut.com faz hoje
+lead: Tudo abaixo roda em produção, com a data em que entrou no ar. Os recursos ainda em construção estão listados à parte, assim como o que o produto não inclui.
+sections:
+  - type: facts-table
+    id: table
+    eyebrow: Fatos
+    title: O que funciona, desde quando

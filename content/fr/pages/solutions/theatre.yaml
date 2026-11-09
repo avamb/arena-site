@@ -1,0 +1,38 @@
+title: "Billetterie de théâtre : plans de salle, dates répétées"
+description: "Billetterie de théâtre : places numérotées fidèles à la salle, dates répétées sur un plan, invitations, remboursements, changements de date. 100 à 1 500 places."
+h1: Théâtre
+lead: Un plan fidèle à votre salle, dessiné gratuitement par nous à partir de votre PDF, croquis ou tableau de rangs, et réutilisé pour chaque représentation. Invitations pour la presse et les partenaires, remboursements et dates déplacées gérés depuis l'Event Center.
+related:
+  - { label: Plans de salle fidèles à la salle, href: /product/seating }
+  - { label: "Salles et clubs : conditions séparées", href: /solutions/venues }
+  - { label: Billets électroniques et contrôle, href: /product/tickets }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Pour les théâtres
+    title: Qu'est-ce qui compte pour un théâtre ?
+    items:
+      - { title: Le plan est le vôtre, text: "Rangs, loges, balcon, catégories par prix. Les versions protègent les billets vendus quand la disposition change.", link: { label: Plans de salle →, href: /product/seating } }
+      - { title: Dates répétées, text: "Ajoutez des séances au même événement ; le plan, les prix et les catégories sont repris. Déplacez ou annulez une date avec e-mails aux acheteurs.", link: { label: Event Center →, href: /#center } }
+      - { title: Invitations, text: "Billets gratuits pour des places précises, pour la presse, les partenaires et la troupe, contrôlés comme n'importe quel autre billet.", link: { label: Billets →, href: /product/tickets } }
+      - { title: Votre propre billetterie, text: "Vendez sur votre site avec le widget ou sur la page hébergée ; l'argent va sur votre compte, sans passer par une place de marché.", link: { label: Où vous vendez →, href: /product/sell } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: Que demandent d'abord les théâtres ?
+    items:
+      - q: Dessinez-vous le plan de salle ?
+        a: Oui, gratuitement. Envoyez un PDF du plan, la photo d'un croquis à la main ou un tableau de rangs avec les places de chaque rang ; nous le dessinons dans votre événement, en général sous un jour, et vous l'approuvez avant le début des ventes.
+      - q: Peut-on avoir des prix différents pour l'orchestre et le balcon ?
+        a: Oui. Des catégories avec leurs propres prix, quotas et fenêtres ; les fenêtres early bird s'activent par date.
+      - q: Nous donnons de nombreuses représentations par mois. Y a-t-il une offre différente ?
+        a: "Oui. Les salles permanentes se voient proposer un pourcentage du prix du billet à la place du tarif par billet ; voir les [salles](/solutions/venues) et les [tarifs](/pricing)."
+      - q: Les acheteurs peuvent-ils choisir leurs places sur un téléphone ?
+        a: Oui, le plan de salle fonctionne sur téléphone avec zoom par pincement, dans la langue de l'acheteur.
+  - type: cta
+    id: start
+    title: Envoyez-nous votre plan
+    text: "Un PDF, la photo d'un croquis à la main ou un tableau de rangs et de places suffit. Nous le dessinons gratuitement dans votre événement et vous le montrons avant le début des ventes."
+    primary: { label: Commencer à vendre, href: /start }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

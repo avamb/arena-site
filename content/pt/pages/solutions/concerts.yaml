@@ -1,0 +1,38 @@
+title: "Venda de ingressos para shows: pista, assentos, lotes"
+description: "Venda ingressos de shows no seu site ou em página hospedada: cotas de pista, categorias com assento, lote promocional, códigos de parceiros. O dinheiro é seu."
+h1: Shows
+lead: Pista e assento marcado no mesmo evento, várias categorias de preço, um lote promocional que liga em uma data e uma portaria que lê cada ingresso. O público paga na sua própria conta desde o primeiro ingresso.
+related:
+  - { label: Códigos promocionais e janelas de preço, href: /product/pricing-tools }
+  - { label: Ingressos eletrônicos e leitura, href: /product/tickets }
+  - { label: Festivais, href: /solutions/festivals }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para shows
+    title: O que importa em um show?
+    items:
+      - { title: Pista e assento marcado juntos, text: "Uma área de pista com cota ao lado de categorias com assento, em um só mapa e um só checkout.", link: { label: Mapas de assentos →, href: /product/seating } }
+      - { title: Lote promocional que troca sozinho, text: "Uma janela de preço por data e hora, ou uma faixa de quantidade que abre o preço seguinte quando o primeiro esgota.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Parceiros e promotores, text: "Uma página por promotor com link próprio, códigos promocionais por parceiro, todos os canais em um só Event Center.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: A portaria, text: "Aplicativo leitor para iOS e Android, EAN-13 e QR em cada ingresso, e ingressos de parceiros vindos de outros sistemas também são aceitos.", link: { label: Aplicativo leitor MACS →, href: /product/scanner } }
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O que organizadores de shows perguntam primeiro?
+    items:
+      - q: Em quanto tempo um show pode entrar em venda?
+        a: "Sem mapa de assentos, em 10 minutos depois que sua organização for confirmada e sua conta de pagamentos estiver conectada: nome, data, preços, pôster. Com assentos, em geral em até um dia, depois que desenhamos o mapa a partir do seu arquivo, sem custo."
+      - q: Posso vender uma categoria VIP com cota limitada?
+        a: Sim. Cada categoria tem seu próprio preço, sua cota e sua janela de venda; uma categoria esgotada pode passar os lugares não vendidos para a seguinte.
+      - q: Quanto um ingresso me custa?
+        a: "Um valor fixo por ingresso vendido, cobrado depois da sessão; veja os [preços](/pricing). Convites e reembolsos são gratuitos."
+      - q: Posso acompanhar as vendas em tempo real?
+        a: Sim. Cada venda chega ao seu grupo do Telegram em segundos e ao Event Center, com totais por sessão e exportação em CSV.
+  - type: cta
+    id: start
+    title: Coloque o show à venda hoje
+    text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
+    primary: { label: Criar seu evento, href: /start#create }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."

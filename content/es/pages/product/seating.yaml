@@ -1,0 +1,41 @@
+title: "Planos de asientos: plazas numeradas y zonas de pie"
+description: "Planos con versiones, importación SVG, asientos y entrada general mezclados, precios por categoría. Envía un PDF, un boceto o una tabla: lo dibujamos gratis."
+h1: Planos de asientos que coinciden con el recinto
+lead: Los asientos numerados están en el núcleo de la plataforma, no son un añadido. El equipo construye tu plano con lo que tengas, normalmente en un día, y lo reutiliza para cada fecha.
+related:
+  - { label: "Códigos promocionales, ventanas de precio y tramos por cantidad", href: /product/pricing-tools }
+  - { label: Entradas electrónicas con EAN-13 y QR, href: /product/tickets }
+  - { label: Para teatros, href: /solutions/theatre }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Asientos
+    title: ¿Cómo funcionan los asientos con ArenaSoldOut.com?
+    items:
+      - q: ¿Tengo que dibujar el plano yo mismo?
+        a: "No, nunca. Envíanos el plano y lo dibujamos en tu evento gratis, normalmente en un día. Basta cualquiera de estas opciones: un PDF del plano del recinto, una foto de un boceto a mano o una tabla de filas con los asientos de cada una (Excel o Google Sheets). Los archivos vectoriales (SVG) se importan directamente."
+      - q: ¿Puede un evento tener asientos y plazas de pie?
+        a: Sí, en un mismo plano. Filas reservadas con categorías, zonas de pie con cupos, cada categoría con su propio precio y periodo de venta.
+      - q: ¿Puedo cambiar el plano cuando ya han empezado las ventas?
+        a: Sí. Los planos tienen versiones, así que una nueva distribución para la próxima sesión no afecta a las entradas ya vendidas.
+      - q: ¿Cuánto me cuesta una entrada con asiento?
+        a: "La comisión por una entrada con asiento es de US$1,09 (€0,97 en países de la UE), frente a US$0,59 (€0,53) sin asiento; los créditos la reducen. El plano en sí es gratis. Consulta los [precios](/pricing)."
+      - q: ¿Elige el comprador el asiento desde el móvil?
+        a: Sí. El plano de asientos es el mismo en el widget y en la página alojada, con zoom con los dedos en el móvil, una leyenda por categoría y un temporizador de reserva para los asientos elegidos.
+      - q: ¿Y las invitaciones y los asientos para prensa?
+        a: Emite entradas gratuitas para asientos concretos desde el Event Center; se escanean en la puerta como cualquier entrada.
+  - type: cards
+    id: who
+    eyebrow: Recintos habituales
+    title: ¿Quién usa asientos numerados?
+    items:
+      - { title: Teatros, text: "De 100 a 1.500 asientos, fechas repetidas, invitaciones para prensa y socios.", link: { label: Para teatros →, href: /solutions/theatre } }
+      - { title: Salas de conciertos y clubes, text: "Un plano reutilizado para muchos eventos al mes, condiciones aparte para recintos permanentes.", link: { label: Para recintos →, href: /solutions/venues } }
+      - { title: Espectáculos en gira, text: "Un espectáculo, muchas ciudades, un plano por recinto que se reutiliza en la próxima visita.", link: { label: Para giras de conciertos →, href: /solutions/concert-tours } }
+  - type: cta
+    id: start
+    title: Envíanos tu plano
+    text: "Basta un PDF, una foto de un boceto a mano o una tabla de filas y asientos. Lo dibujamos en tu evento gratis y te mostramos el resultado antes de que empiece la venta."
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: Los eventos sin plano de asientos salen a la venta hoy mismo.

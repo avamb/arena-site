@@ -84,7 +84,7 @@ redirects:
   - { from: /news/, to: /blog }
   - { from: /category/*, to: /blog }
   - { from: /tag/*, to: /blog }
-  - { from: /ru/, to: /ru/blog }
+  # /ru/ is the Russian home page again since 09.11.2026 (translated site); the old redirect to /ru/blog is gone.
   - { from: /ru/stati/, to: /ru/blog }
   - { from: /ru/category/*, to: /ru/blog }
   - { from: /ru/tag/*, to: /ru/blog }

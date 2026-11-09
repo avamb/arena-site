@@ -1,0 +1,38 @@
+title: "Billetterie de tournée : plusieurs villes, page promoteur"
+description: "Vendez une tournée depuis un événement : séances par ville, plan par salle, pages de promoteurs avec liens et codes propres, contrôle dans chaque ville."
+h1: Tournées de concerts
+lead: Un spectacle, plusieurs villes et dates. Chaque ville a sa séance et son plan, chaque promoteur a une page avec son propre lien, et vous suivez toute la tournée dans un seul Event Center.
+related:
+  - { label: Spectacles, href: /solutions/shows }
+  - { label: Où vous vendez, href: /product/sell }
+  - { label: Paiements par pays, href: /payments }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Pour les tournées
+    title: Qu'est-ce qui compte en tournée ?
+    items:
+      - { title: Séances par ville, text: "Dates et salles dans un seul événement ; les acheteurs choisissent la ville, vous voyez les totaux par séance et pour la tournée.", link: { label: Event Center →, href: /#center } }
+      - { title: Pages de promoteurs, text: "Une page distincte pour chaque promoteur local, avec son lien et ses codes promo ; les ventes remontent chez vous.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: Plusieurs pays, text: "Vendez en Tchéquie, en Espagne, en France, en Géorgie ou en Israël avec le prestataire de chaque pays, sur votre propre compte.", link: { label: Paiements →, href: /payments } }
+      - { title: Langues des acheteurs, text: "Pages et billets dans la langue de l'acheteur, e-mails en sept langues, écriture de droite à gauche pour l'hébreu.", link: { label: Billets →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: Que demandent d'abord les organisateurs en tournée ?
+    items:
+      - q: Un événement peut-il couvrir plusieurs pays et devises ?
+        a: Les séances peuvent se tenir dans des pays différents ; le compte de paiement et la devise suivent l'organisation. Pour des devises distinctes, l'équipe configure un canal par pays.
+      - q: Les promoteurs voient-ils les ventes des autres ?
+        a: Non. Chaque promoteur ne voit que sa propre page ; l'organisateur voit tout.
+      - q: Une ville change de salle. Que deviennent les billets vendus ?
+        a: La séance se déplace avec les e-mails aux acheteurs et des billets mis à jour ; les places sont réattribuées avec vous sur le nouveau plan.
+      - q: Combien me coûte un billet en tournée ?
+        a: "Le même montant par billet dans chaque ville ; voir les [tarifs](/pricing)."
+  - type: cta
+    id: start
+    title: Commencez à vendre dès aujourd'hui
+    text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

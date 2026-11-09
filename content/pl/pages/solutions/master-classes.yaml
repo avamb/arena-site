@@ -1,0 +1,38 @@
+title: "Bilety na warsztaty, szkolenia i degustacje"
+description: "Sprzedawaj miejsca na warsztaty, szkolenia, degustacje i zajęcia: małe grupy z pulą, cykliczne terminy, e-maile, wejścia bezpłatne i płatne dowolną kwotą."
+h1: Warsztaty i szkolenia
+lead: Małe grupy, cykliczne terminy, własne e-maile w twoim języku. Strona hostowana jest gotowa w kilka minut; widget pasuje do strony, którą już masz. Vino&Co w Izraelu sprzedaje w ten sposób swoje degustacje.
+related:
+  - { label: Kody promocyjne i okna cenowe, href: /product/pricing-tools }
+  - { label: Gdzie sprzedajesz, href: /product/sell }
+  - { label: Klienci, href: /clients }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Dla prowadzących
+    title: Co jest ważne w warsztatach?
+    items:
+      - { title: Pula na każdy termin, text: "Dwanaście miejsc we wtorek, dwadzieścia w sobotę; wyprzedane terminy zamykają się same.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Cykliczne terminy, text: "Dodawaj sesje do tego samego wydarzenia; ceny i kategorie są przenoszone, kupujący wybierają datę.", link: { label: Event Center →, href: /#center } }
+      - { title: Wejścia bezpłatne i płatne dowolną kwotą, text: "Zapisy bez płatności albo cena minimalna, a kupujący decyduje o reszcie.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Twój język, text: "Strona, widget, e-mail i bilet w języku kupującego, także hebrajski od prawej do lewej.", link: { label: Bilety →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Pytania
+    title: O co prowadzący pytają najpierw?
+    items:
+      - q: Nie mam strony. Gdzie ludzie kupują?
+        a: "Na stronie hostowanej, tickets.arenasoldout.com/your-name/your-event, gotowej w kilka minut. Udostępnij link w komunikatorach i mediach społecznościowych."
+      - q: Czy mogę pobrać tylko zaliczkę?
+        a: Ustaw cenę biletu na wysokość zaliczki, a resztę pobierz na miejscu; albo użyj płatności dowolną kwotą z ceną minimalną.
+      - q: Czy kupujący dostają przypomnienie?
+        a: Kupujący dostają bilet e-mailem oraz e-mail, gdy termin zostaje przesunięty lub odwołany. Przypomnień przed terminem dziś nie wysyłamy.
+      - q: Ile to kosztuje?
+        a: "Stała kwota za każdy płatny bilet; bezpłatne zapisy nic nie kosztują. Zobacz [cennik](/pricing)."
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż już dziś
+    text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."

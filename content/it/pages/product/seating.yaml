@@ -1,0 +1,41 @@
+title: "Mappe dei posti: posti numerati e aree in piedi"
+description: "Mappe dei posti con versioni, importazione SVG, posti numerati e in piedi insieme, prezzi per categoria. Manda un PDF o uno schizzo: la disegniamo gratis."
+h1: Mappe dei posti fedeli alla struttura
+lead: I posti numerati sono nel nucleo della piattaforma, non un'aggiunta. Il team costruisce la tua mappa da qualsiasi cosa tu abbia, di solito entro un giorno, e la riutilizza per ogni data.
+related:
+  - { label: "Codici promozionali, finestre di prezzo e gradini di quantità", href: /product/pricing-tools }
+  - { label: Biglietti elettronici con EAN-13 e QR, href: /product/tickets }
+  - { label: Per i teatri, href: /solutions/theatre }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Posti
+    title: Come funzionano i posti con ArenaSoldOut.com?
+    items:
+      - q: Devo disegnare la mappa io?
+        a: "No, mai. Mandaci la mappa e la disegniamo nel tuo evento gratis, di solito entro un giorno. Basta una di queste cose: un PDF della pianta della struttura, una foto di uno schizzo a mano, o una tabella di file con i posti di ogni fila (Excel o Google Sheets). I file vettoriali (SVG) si importano direttamente."
+      - q: Un evento può avere posti numerati e posti in piedi?
+        a: Sì, in una sola mappa. File riservate con categorie, aree in piedi con quote, ogni categoria con il suo prezzo e la sua finestra di vendita.
+      - q: Posso cambiare la mappa dopo l'inizio delle vendite?
+        a: Sì. Le mappe hanno versioni, quindi una nuova disposizione per la sessione successiva non tocca i biglietti già venduti.
+      - q: Quanto mi costa un biglietto con posto?
+        a: "La commissione per un biglietto con posto è US$1,09 (€0,97 nei paesi UE), contro US$0,59 (€0,53) senza posto; i crediti la abbassano. La mappa in sé è gratis. Vedi i [prezzi](/pricing)."
+      - q: L'acquirente sceglie il posto da telefono?
+        a: Sì. La mappa dei posti è la stessa nel widget e sulla pagina ospitata, con zoom con le dita sui telefoni, una legenda per categoria e un timer di riserva per i posti selezionati.
+      - q: E gli inviti e i posti stampa?
+        a: Emetti biglietti gratuiti per posti precisi dall'Event Center; si scansionano all'ingresso come qualsiasi biglietto.
+  - type: cards
+    id: who
+    eyebrow: Strutture tipiche
+    title: Chi usa i posti numerati?
+    items:
+      - { title: Teatri, text: "Da 100 a 1.500 posti, date in replica, inviti per stampa e partner.", link: { label: Per i teatri →, href: /solutions/theatre } }
+      - { title: Sale da concerto e club, text: "Una mappa riutilizzata per molti eventi al mese, condizioni a parte per le strutture permanenti.", link: { label: Per le strutture →, href: /solutions/venues } }
+      - { title: Spettacoli in tournée, text: "Uno spettacolo, molte città, una mappa per struttura riutilizzata alla visita successiva.", link: { label: Per i tour di concerti →, href: /solutions/concert-tours } }
+  - type: cta
+    id: start
+    title: Mandaci la tua mappa
+    text: "Basta un PDF, una foto di uno schizzo a mano o una tabella di file e posti. La disegniamo nel tuo evento gratis e ti mostriamo il risultato prima che inizino le vendite."
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Apri il bot di Telegram, href: https://t.me/EventsCentrBot }
+    note: Gli eventi senza mappa dei posti sono in vendita oggi stesso.

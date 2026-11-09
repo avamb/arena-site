@@ -1,0 +1,26 @@
+title: "Clientes: organizadores en 31 países desde 2019"
+description: "Organizadores que venden sus propias entradas con ArenaSoldOut.com: teatros, festivales, conciertos, clases magistrales, parques. Trayectoria de los fundadores."
+h1: Organizadores en 31 países
+lead: ArenaSoldOut.com vende entradas para organizadores desde 2019. La plataforma que hay detrás se reconstruyó en 2026 y los organizadores se pasaron con ella, dos de ellos desde ArenaSoldOut.com sin tiempo de inactividad.
+sections:
+  - type: marks
+    id: marks
+    eyebrow: Clientes
+    title: "¿Quién vende con ArenaSoldOut.com?"
+
+  - type: prose
+    id: track-record
+    eyebrow: Trayectoria
+    title: "¿Quién lo ha construido?"
+    body: |
+      Las plataformas anteriores de los fundadores dieron servicio a espectáculos del Cirque du Soleil, estadios de la FIFA 2018, los World Choir Games y 800 shows sobre hielo. El equipo que gestiona hoy ArenaSoldOut.com responde a los organizadores en persona, en inglés, español, checo, ruso y hebreo.
+
+      Los testimonios y las fotos de los organizadores se están trasladando desde la web anterior y aparecerán en esta página.
+
+  - type: cta
+    id: start
+    title: Empieza a vender hoy
+    text: "Crea el evento, conecta tu cuenta de pagos y comparte el enlace. Un evento sin plano de asientos sale a la venta en 10 minutos; el plano de asientos lo dibujamos nosotros, sin coste."
+    primary: { label: Crea tu evento, href: /start#create }
+    secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

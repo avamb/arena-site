@@ -1,0 +1,64 @@
+title: "Detaillierte Preisbedingungen"
+description: "Provision: Zahlung nach Veranstaltung, Credits, Tickets bis US$10, 50% Rabatt für Gemeinnützige, Spielstätten, White Label €45/US$45 pro Monat, Erstattungen."
+h1: Detaillierte Bedingungen
+lead: Die Bedingungen hinter dem Preis pro Ticket. Standardkonditionen; Mengen- und individuelle Konditionen auf Anfrage. Alle Beträge ohne MwSt.
+sections:
+  - type: prose
+    id: terms
+    body: |
+      ## Wofür wir berechnen
+
+      Die Plattform-Provision wird pro verkauftem Ticket berechnet, nicht als Prozentsatz Ihres Umsatzes, außer in den beiden unten genannten Fällen. Ein Ticket für US$15 und ein Ticket für US$150 kosten Sie dasselbe. Freikarten und kostenlose Tickets zu kostenpflichtigen Events sind provisionsfrei.
+
+      ## Zahlung nach der Veranstaltung
+
+      US$0,59 pro Ticket ohne Platz und US$1,09 pro Ticket mit einem im Saalplan gewählten Platz (€0,53 und €0,97 für Spielstätten in EU-Ländern).
+
+      Die Preise werden in US-Dollar festgelegt. Euro-Preise sind die in Euro umgerechneten Dollar-Preise zum Referenzkurs der Europäischen Zentralbank (1 EUR = 1,1193 USD am 9. November 2026), auf den Cent gerundet; die [Preisseite](/pricing) zeigt beide. Zwei Beträge werden nicht umgerechnet: die Schwelle für Events mit günstigen Tickets liegt bei €10, und die Obergrenze für feste Spielstätten bei €1,09. Wir stellen nach der Veranstaltung für die verkauften Tickets Rechnung, und Sie zahlen per Banküberweisung. Bei Events, die mehrere Monate im Verkauf sind, und bei festen Spielstätten stellen wir einmal im Monat Rechnung. Zahlung nach der Veranstaltung steht Organisationen offen, die auf der Plattform bestätigt sind. Die Kartenabwicklung zahlen Sie an Ihren Zahlungsanbieter zu dessen Konditionen.
+
+      ## Credits
+
+      Sie kaufen einmal ein Credit-Paket, und jedes Ticket zieht seine Provision von Ihren Credits ab, zum Preis dieses Pakets. Ein Platz erhöht den Credit-Preis um US$0,35 (€0,31). Credits sind Guthaben auf Ihrem Konto: Sie verfallen nie, Sie können Credit-Pakete so oft kaufen, wie Sie möchten, und sie werden nur für unsere Leistungen verwendet. Sie lassen sich weder auszahlen noch übertragen. Sind die Credits mitten im Verkauf aufgebraucht, stoppt der Verkauf nicht: Die Tickets, die sie nicht abgedeckt haben, werden zum Preis bei Zahlung nach der Veranstaltung abgerechnet. Sie können eine automatische Aufladung einschalten. Die Credit-Pakete und ihre Preise stehen auf der [Preisseite](/pricing#packages).
+
+      ## Eingetragene gemeinnützige Organisationen
+
+      Eingetragene gemeinnützige Organisationen zahlen 50% der auf dieser Seite genannten Provision, bei Pay as you go und mit Credits. Unser Team schaltet den Rabatt für Ihre Organisation frei, sobald es die Registrierung gesehen hat: Schreiben Sie uns über die [Kontaktseite](/contact).
+
+      ## Events, bei denen jedes Ticket US$10 oder weniger kostet
+
+      Der niedrigere Satz gilt für das ganze Event: Er greift nur, wenn der höchste Preis eines Tickets des Events, vor Promo-Codes, US$10 oder weniger beträgt, **US$10 eingeschlossen** (€10 in EU-Ländern). Alle Kategorien und Preisstufen zählen, auch später hinzugefügte. Gibt es ein Ticket darüber, gilt der Standardpreis für alle Tickets des Events, auch die günstigen: Ein Event mit Tickets zu US$5 und US$25 gilt zum Standardpreis. Der Satz beträgt 4% des Ticketpreises, mindestens US$0,10 und höchstens US$0,35 pro Ticket, und US$0,20 mehr für ein Ticket mit Platz (in EU-Ländern: mindestens €0,09, höchstens €0,31, €0,18 mehr mit Platz).
+
+      ## Feste Spielstätten
+
+      Spielstätten, die selbst Veranstaltungen ausrichten, ganzjährig oder saisonal, zahlen 2% des Ticketpreises (nach Promo-Codes, ohne Servicegebühr), höchstens US$1,09 pro Ticket (€1,09 in EU-Ländern), mit und ohne Platz gleich. Wir stellen monatlich Rechnung. Unser Team schaltet den Spielstätten-Status frei: Schreiben Sie uns über die [Kontaktseite](/contact).
+
+      ## Ticketbetreiber auf der Eventseite oder White Label
+
+      Die Preise auf dieser Seite setzen voraus, dass die Seite, auf der Sie verkaufen, ArenaSoldOut.com als Ticketbetreiber nennt, mit einem Link zu arenasoldout.com. Eine Zeile wie "Tickets: ArenaSoldOut.com" neben den Tickets genügt, und das Ticket-Widget zeigt eine solche Zeile standardmäßig an, mit dem Widget müssen Sie also nichts ergänzen. Die von uns gehosteten Verkaufsseiten tragen immer unseren Namen.
+
+      Wenn Sie lieber ohne unseren Namen verkaufen, kostet White Label **€45 im Monat pro Marke oder Spielstätte** in EU-Ländern und **US$45 im Monat pro Marke oder Spielstätte** in allen anderen Ländern, in der Währung Ihrer Provision. Eine Marke ist der Veranstalter des Events, oder Ihre Organisation bei Events ohne Veranstalter: Zwei Veranstalter, die beide ohne unseren Namen verkaufen, sind zwei Marken. Eine feste Spielstätte, die ohne unseren Namen verkauft, zahlt für sich als eine Marke. Ein nicht voller Monat wird tageweise berechnet. Die Gebühr ist eine Zeile Ihrer Monatsrechnung; Credits bezahlen sie nicht.
+
+      Solange White Label aktiv ist, entfallen die Zeile im Widget, der Footer Ihres Shops und die Plattform-Zeile in den E-Mails an Käufer, und die E-Mails gehen unter dem Namen der Marke hinaus. Bestehen bleiben die von uns gehosteten Verkaufsseiten, die Links zu den Nutzungsbedingungen und zur Datenschutzerklärung der Plattform beim Checkout und die Angaben zum Verkäufer, wie das Gesetz es verlangt. Unser Team schaltet White Label für eine Marke ab einem von Ihnen gewählten Datum ein und aus: Schreiben Sie uns über die [Kontaktseite](/contact).
+
+      ## Erstattungen, Terminverlegungen und Absagen
+
+      Gibt ein Käufer ein Ticket zurück, zahlen Sie als Veranstalter ihm die Erstattung. Die Provision für einen bereits erfolgten Verkauf bleibt bestehen. Wir berechnen keine gesonderte Provision für die Bearbeitung einer Erstattung, für das Verlegen des Termins oder für die E-Mails an die Käufer. Es gelten die eigenen Konditionen des Zahlungsanbieters, wie der Anbieter sie nennt. Wird ein Event abgesagt, wird die bereits berechnete Provision nicht in Geld zurückgezahlt.
+
+      ## Währung
+
+      Die Provision wird in US-Dollar berechnet für jedes Land außerhalb der EU, einschließlich europäischer Länder außerhalb der EU, Asiens und des Nahen Ostens, und in Euro für Spielstätten in EU-Ländern. Euro-Preise sind die US-Dollar-Preise zum oben genannten EZB-Kurs. Die Währung der Provision ändert nichts an der Währung, in der Sie Tickets verkaufen. Hat eine Organisation Spielstätten in beiden Gruppen, erhält sie zwei Konten.
+
+      ## Berichte
+
+      Das Event Center liefert Summen pro Vorstellung und einen detaillierten CSV-Bericht pro Vorstellung. Exporte in Ihr CRM oder Ihre Buchhaltung richten wir auf Anfrage ein.
+
+      ## Datenschutz
+
+      ArenaSoldOut.com verarbeitet die Daten der Käufer im Auftrag des Veranstalters, um Tickets zu verkaufen und zuzustellen. Die [Datenschutzerklärung](/legal/privacy) beschreibt, was verarbeitet wird und wie lange; die [Nutzungsbedingungen](/legal/terms) sind der Vertrag mit dem Veranstalter.
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: "Event anlegen, Zahlungskonto verbinden, Link teilen. Ein Event ohne Saalplan ist in 10 Minuten im Verkauf; einen Saalplan zeichnen wir für Sie kostenlos."
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

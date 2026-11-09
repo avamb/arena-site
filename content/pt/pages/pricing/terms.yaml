@@ -1,0 +1,64 @@
+title: "Condições detalhadas de preços"
+description: "Comissão: pagamento após o evento, créditos, ingressos até US$10, entidades beneficentes com 50% de desconto, locais, white label €45/US$45 por mês por marca."
+h1: Condições detalhadas
+lead: As condições por trás do preço por ingresso. Condições padrão; condições de volume e individuais sob consulta. Todos os valores são sem impostos.
+sections:
+  - type: prose
+    id: terms
+    body: |
+      ## O que cobramos
+
+      A comissão da plataforma é cobrada por ingresso vendido, e não como porcentagem da sua receita, exceto nos dois casos abaixo. Um ingresso de US$15 e um ingresso de US$150 custam o mesmo para você. Convites e ingressos gratuitos em eventos pagos não têm comissão.
+
+      ## Pagamento depois do evento
+
+      US$0,59 por ingresso sem assento e US$1,09 por ingresso com assento escolhido no mapa do local (€0,53 e €0,97 para locais em países da UE).
+
+      Os preços são definidos em dólares americanos. Os preços em euros são os preços em dólar convertidos pela cotação de referência do Banco Central Europeu (1 EUR = 1,1193 USD em 9 de novembro de 2026) e arredondados para o centavo; a [página de preços](/pricing) mostra ambos. Dois valores não são convertidos: o limite para eventos com ingressos baratos é €10, e o teto para locais permanentes é €1,09. Emitimos a fatura depois do evento, pelos ingressos vendidos, e você paga por transferência bancária. Para eventos à venda por vários meses e para locais permanentes, emitimos a fatura uma vez por mês. O pagamento depois do evento está disponível para organizações confirmadas na plataforma. A adquirência de cartões é paga ao seu provedor de pagamentos, nas condições dele.
+
+      ## Créditos
+
+      Você compra um pacote de créditos uma vez e cada ingresso desconta sua comissão dos seus créditos, na taxa desse pacote. Um assento acrescenta US$0,35 (€0,31) à taxa dos créditos. Os créditos são dinheiro na sua conta: nunca expiram, você pode comprar pacotes de créditos quantas vezes quiser, e eles são usados apenas nos nossos serviços. Não podem ser sacados, transferidos nem convertidos em dinheiro. Se os créditos acabarem no meio das vendas, as vendas não param: os ingressos que eles não cobriram são cobrados pelo preço do pagamento depois do evento. Você pode ativar a recarga automática. Os pacotes de créditos e suas taxas estão na [página de preços](/pricing#packages).
+
+      ## Entidades beneficentes registradas
+
+      Entidades beneficentes registradas pagam 50% da comissão estabelecida nesta página, no pague conforme usa e com créditos. Nossa equipe ativa o desconto para a sua organização depois de ver o registro: escreva para nós pela [página de contato](/contact).
+
+      ## Eventos em que todos os ingressos custam US$10 ou menos
+
+      A taxa menor é uma propriedade do evento inteiro: vale apenas se o maior preço de qualquer ingresso do evento, antes dos códigos promocionais, for de US$10 ou menos, **US$10 incluído** (€10 nos países da UE). Todas as categorias e faixas de preço contam, inclusive as adicionadas depois. Se houver um ingresso acima disso, o preço padrão vale para todos os ingressos do evento, inclusive os baratos: um evento com ingressos de US$5 e de US$25 fica no preço padrão. A taxa é de 4% do preço do ingresso, no mínimo US$0,10 e no máximo US$0,35 por ingresso, e US$0,20 a mais para um ingresso com assento (nos países da UE: no mínimo €0,09, no máximo €0,31, €0,18 a mais com assento).
+
+      ## Locais permanentes
+
+      Locais que realizam eventos por conta própria, o ano todo ou por temporada, pagam 2% do preço do ingresso (após os códigos promocionais, sem a taxa de serviço), no máximo US$1,09 por ingresso (€1,09 nos países da UE), igual com e sem assento. Emitimos a fatura mensalmente. O status de local é ativado pela nossa equipe: escreva para nós pela [página de contato](/contact).
+
+      ## Operador de venda na página do evento, ou white label
+
+      Os preços desta página pressupõem que a página onde você vende cite o ArenaSoldOut.com como operador da venda de ingressos, com um link para arenasoldout.com. Basta uma linha como "Ingressos: ArenaSoldOut.com" ao lado dos ingressos, e o widget de ingressos exibe essa linha por padrão, então com o widget não há nada a acrescentar. As páginas de vendas que hospedamos sempre levam o nosso nome.
+
+      Se você prefere vender sem citar o nosso nome, o white label custa **€45 por mês por marca ou local** em países da UE e **US$45 por mês por marca ou local** em todos os outros países, na moeda da sua comissão. Marca é o promotor do evento, ou a sua organização no caso de eventos sem promotor: dois promotores que vendem sem o nosso nome são duas marcas. Um local permanente que vende sem o nosso nome paga por si mesmo como uma marca. Um mês incompleto é cobrado por dias. A cobrança é uma linha da sua fatura mensal; os créditos não a pagam.
+
+      Enquanto o white label estiver ativo, a linha do widget, o rodapé da sua loja e a linha da plataforma nos e-mails aos compradores deixam de aparecer, e os e-mails saem com o nome da marca. O que permanece: as páginas de vendas que hospedamos, os links para os termos e a política de privacidade da plataforma no checkout e os dados do vendedor, como exige a lei. Nossa equipe ativa e desativa o white label de uma marca a partir de uma data que você escolher: escreva para nós pela [página de contato](/contact).
+
+      ## Reembolsos, mudanças de data e cancelamento
+
+      Quando um comprador devolve um ingresso, o reembolso é pago ao comprador por você, o organizador. A comissão de uma venda que já ocorreu permanece. Não cobramos comissão separada pelo processamento de um reembolso, pela mudança de data nem pelos e-mails aos compradores. As condições do próprio provedor de pagamentos valem como o provedor as define. Se um evento for cancelado, a comissão já cobrada não é devolvida em dinheiro.
+
+      ## Moeda
+
+      A comissão é em dólares americanos para todos os países fora da UE, incluindo países europeus fora da UE, Ásia e Oriente Médio, e em euros para locais em países da UE. Os preços em euros são os preços em dólar americano pela cotação do BCE indicada acima. A moeda da comissão não altera a moeda em que você vende ingressos. Se uma organização tiver locais nos dois grupos, ela recebe duas contas.
+
+      ## Relatórios
+
+      O Event Center fornece totais por sessão e um relatório CSV detalhado por sessão. Exportações para o seu CRM ou sistema contábil são configuradas sob consulta.
+
+      ## Privacidade
+
+      O ArenaSoldOut.com processa os dados dos compradores em nome do organizador, com a finalidade de vender e entregar ingressos. A [política de privacidade](/legal/privacy) descreve o que é processado e por quanto tempo; os [termos e condições](/legal/terms) são o contrato do organizador.
+  - type: cta
+    id: start
+    title: Comece a vender hoje
+    text: "Crie o evento, conecte sua conta de pagamentos, compartilhe o link. Um evento sem mapa de assentos entra à venda em 10 minutos; o mapa de assentos nós desenhamos para você, sem custo."
+    primary: { label: Criar seu evento, href: /start#create }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou escreva para nós: configuramos tudo com você em uma conversa."

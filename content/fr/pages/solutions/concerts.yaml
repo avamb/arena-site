@@ -1,0 +1,38 @@
+title: "Billetterie de concerts : debout et assis, early bird"
+description: "Vendez des billets de concert sur votre site ou une page hébergée : quotas debout, catégories assises, early bird, codes promo. L'argent va chez vous."
+h1: Concerts
+lead: Debout et assis dans un même événement, plusieurs catégories de prix, une fenêtre early bird qui s'active à une date, et une porte qui contrôle chaque billet. Les acheteurs paient sur votre propre compte dès le premier billet.
+related:
+  - { label: Codes promo et fenêtres de prix, href: /product/pricing-tools }
+  - { label: Billets électroniques et contrôle, href: /product/tickets }
+  - { label: Festivals, href: /solutions/festivals }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Pour les concerts
+    title: Qu'est-ce qui compte pour un concert ?
+    items:
+      - { title: Debout et assis ensemble, text: "Une zone debout avec quota à côté de catégories assises, dans un seul plan et un seul paiement.", link: { label: Plans de salle →, href: /product/seating } }
+      - { title: Un early bird qui s'active seul, text: "Une fenêtre de prix par date et heure, ou un palier de quantité qui ouvre le prix suivant quand le premier est épuisé.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: Partenaires et promoteurs, text: "Une page par promoteur avec son lien, des codes promo par partenaire, tous les canaux dans un seul Event Center.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: La porte, text: "Application de contrôle pour iOS et Android, EAN-13 et QR sur chaque billet, billets de partenaires d'autres systèmes acceptés aussi.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: Que demandent d'abord les organisateurs de concerts ?
+    items:
+      - q: En combien de temps un concert peut-il être mis en vente ?
+        a: "Sans plan de salle, 10 minutes une fois votre organisation confirmée et votre compte de paiement connecté : nom, date, prix, affiche. Avec des places numérotées, en général sous un jour, après que nous avons dessiné gratuitement le plan à partir de votre fichier."
+      - q: Puis-je vendre une catégorie VIP avec un quota limité ?
+        a: Oui. Chaque catégorie a son prix, son quota et sa fenêtre de vente ; une catégorie épuisée peut transmettre ses places invendues à la suivante.
+      - q: Combien me coûte un billet ?
+        a: "Un montant fixe par billet vendu, facturé après la séance ; voir les [tarifs](/pricing). Les invitations et les remboursements sont gratuits."
+      - q: Puis-je suivre les ventes en direct ?
+        a: Oui. Chaque vente arrive dans votre groupe Telegram en quelques secondes et dans l'Event Center, avec les totaux par séance et un export CSV.
+  - type: cta
+    id: start
+    title: Mettez le concert en vente dès aujourd'hui
+    text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

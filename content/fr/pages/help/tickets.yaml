@@ -1,0 +1,35 @@
+title: "J'ai acheté un billet : où est-il, que montrer à la porte"
+description: "Votre billet est un PDF dans l'e-mail de confirmation, avec EAN-13 et QR code ; montrez-le sur téléphone ou imprimé. Remboursements : voir l'organisateur."
+h1: Aide pour les acheteurs de billets
+lead: Votre billet est un PDF joint à l'e-mail de confirmation, avec un code-barres et un QR code. Montrez-le sur votre téléphone ou imprimé. Les questions sur les remboursements et les dates vont à l'organisateur de l'événement, dont les coordonnées figurent sur la page de vente et dans l'e-mail.
+related:
+  - { label: Billets électroniques et contrôle, href: /product/tickets }
+  - { label: Contact, href: /contact }
+  - { label: Politique de confidentialité, href: /legal/privacy }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Acheteurs
+    title: Où est mon billet ?
+    items:
+      - q: J'ai payé mais je n'ai pas d'e-mail
+        a: Vérifiez le dossier des courriers indésirables et l'adresse saisie au paiement. Si l'e-mail n'est pas là après quelques minutes, écrivez à l'organisateur avec votre nom et l'heure de l'achat ; il peut renvoyer le billet à une autre adresse.
+      - q: Que montrer à la porte ?
+        a: Le PDF sur votre téléphone ou imprimé. Le code-barres et le QR code sont lus une seule fois ; une capture d'écran du code fonctionne aussi.
+      - q: Puis-je obtenir un remboursement ?
+        a: Les remboursements sont décidés par l'organisateur de l'événement, selon les conditions affichées au paiement. Écrivez à l'organisateur ; le remboursement revient sur la carte avec laquelle vous avez payé.
+      - q: La date a changé
+        a: Vous recevez un e-mail de l'organisateur avec le billet mis à jour en pièce jointe. L'ancien billet cesse de fonctionner.
+      - q: Puis-je transférer le billet à un ami ?
+        a: Transférez le PDF. Le billet est lu une seule fois, quelle que soit la personne qui le présente.
+      - q: J'ai une question sur mon paiement
+        a: Le paiement est allé sur le compte de paiement de l'organisateur ; l'organisateur le voit dans l'Event Center et peut répondre. ArenaSoldOut.com ne détient pas l'argent des acheteurs.
+      - q: Où vont mes données ?
+        a: "À l'organisateur de l'événement, pour livrer le billet, et au prestataire de paiement pour le paiement. Voir la [politique de confidentialité](/legal/privacy)."
+  - type: cta
+    id: organizers
+    title: Vous êtes organisateur ?
+    text: Créez l'événement, connectez votre compte de paiement, partagez le lien. Les acheteurs paient sur votre propre compte dès le premier billet.
+    primary: { label: Commencer à vendre, href: /start }
+    secondary: { label: Comment ça marche, href: /#how }
+    note: Les acheteurs de billets écrivent à l'organisateur de leur événement.

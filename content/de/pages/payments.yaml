@@ -1,0 +1,61 @@
+title: "Zahlungen: Ihr eigenes Zahlungskonto, in Ihrem Land"
+description: "Käufer zahlen auf das eigene Zahlungskonto des Veranstalters. Länder mit Zahlungsanbietern für Unternehmen, mit Zahlungsarten und Währungen."
+h1: Käufer zahlen auf Ihr eigenes Zahlungskonto
+lead: Sie verbinden das Konto, das Sie bereits haben, oder eröffnen eines bei einem Anbieter Ihres Landes. Jede Bestellung geht direkt dorthin. ArenaSoldOut.com hält nie Gelder und berührt Ihre Auszahlungen nie.
+sections:
+  - type: coverage
+    id: countries
+    eyebrow: Länder
+    title: In welchen Ländern kann ich Tickets verkaufen?
+    lead: In jedem Land, in dem einer der unten genannten Zahlungsanbieter Ihr Unternehmen akzeptiert. Veranstalter verkaufen seit {since} mit ArenaSoldOut.com in {countries} Ländern. Ist Ihre juristische Person in einem dieser Länder registriert, verbinden Sie das Konto des Anbieters und verkaufen.
+    labels:
+      countries: Länder
+      note: Anbieter erweitern ihre Länder mit der Zeit; wir bestätigen Ihres, bevor Sie beginnen.
+      missing: "Ihr Land fehlt in der Liste?"
+    cta: { label: Schreiben Sie uns, href: /contact }
+
+  - type: providers
+    id: providers
+    eyebrow: Anbieter
+    title: Welche Zahlungsanbieter funktionieren mit ArenaSoldOut.com?
+    lead: Die Liste zeigt, was heute im Produktivbetrieb läuft. Ein Anbieter kommt hinzu, wenn sein Adapter im Code ist, nie vorher.
+    labels:
+      currencies: Währungen
+      methods: Zahlungsarten
+      checkout: Im Widget
+      statuses:
+        live: Aktiv
+        api: Über die API
+        planned: In Vorbereitung
+        checkout_yes: "ja, gehosteter Checkout"
+        checkout_no: "noch nicht"
+      methods_map:
+        card: Karten
+        apple_pay: Apple Pay
+        google_pay: Google Pay
+        bit: Bit
+        installments: Ratenzahlung
+        bank_transfer: Banküberweisung
+
+  - type: cards
+    id: connect
+    eyebrow: So verbinden Sie
+    title: Wie verbinde ich mein Zahlungskonto?
+    lead: Drei Dinge, meist binnen eines Tages.
+    items:
+      - title: Schlüssel in Ihrem eigenen Konto
+        text: Sie erstellen API-Schlüssel im Dashboard Ihres Anbieters und fügen sie im Event Center ein oder senden sie dem Team. Das Konto bleibt Ihres; ArenaSoldOut.com löst nur Zahlungen darauf aus.
+      - title: Das Geld auf Ihr Konto
+        text: Jede Bestellung wird direkt auf Ihr Konto gezahlt. Auszahlungen an Ihre Bank folgen dem Zeitplan Ihres Anbieters. Über Erstattungen entscheiden Sie, und sie gehen über Ihren Anbieter an den Käufer zurück, bei jedem Anbieter.
+      - title: Automatische Bearbeitung von Rückbuchungen
+        text: "Bestreitet ein Käufer eine Zahlung, sammelt ArenaSoldOut.com die Nachweise für Sie: Zahlungsdaten, die Einwilligung des Käufers, die Zustellung der Ticket-E-Mails und jeden Download des Tickets."
+      - title: ArenaSoldOut.com hält nichts
+        text: Die Plattform-Provision wird getrennt davon nach der Veranstaltung in Rechnung gestellt oder von Ihren Credits abgezogen. Von Ihren Verkäufen wird nichts abgezogen. Wenn Sie uns je verlassen, bleiben Ihr Zahlungskonto und die Daten Ihrer Käufer bei Ihnen.
+
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: "Event anlegen, Zahlungskonto verbinden, Link teilen. Ein Event ohne Saalplan ist in 10 Minuten im Verkauf; einen Saalplan zeichnen wir für Sie kostenlos."
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

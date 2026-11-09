@@ -1,0 +1,37 @@
+title: "Codes promo, prévente, paliers, gratuit et prix libre"
+description: "Codes promo avec portée et limites, prix par date, paliers de quantité, chaînes de catégories, frais de service par canal, billets gratuits et à prix libre."
+h1: Des prix qui changent comme vous l'avez prévu
+lead: Prévente par date, prix suivant quand un palier est épuisé, codes pour les partenaires, frais de service par canal. Tout se règle dans l'Event Center et s'applique dans le widget et sur la page hébergée.
+related:
+  - { label: Plans de salle, href: /product/seating }
+  - { label: "Tarifs : par billet, sans abonnement", href: /pricing }
+  - { label: Pour les festivals, href: /solutions/festivals }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Outils de prix
+    title: Que puis-je faire avec les prix ?
+    items:
+      - q: Puis-je utiliser des codes promo ?
+        a: Oui. Un code peut s'appliquer à un événement, une séance ou une catégorie, avec une période de vente, une commande minimale et une limite par acheteur. Les partenaires reçoivent leurs propres codes.
+      - q: Existe-t-il un schéma de prix prêt à l'emploi ?
+        a: "Oui, le prix intelligent. Choisissez un schéma prêt de paliers de prix par quantité et par date, au lieu de régler chaque palier à la main. Vous pouvez l'ajuster ensuite."
+      - q: Un billet peut-il être vendu uniquement avec un autre ?
+        a: "Oui, avec les catégories complémentaires. Un complément ne se vend qu'avec un billet d'une catégorie principale de la même séance. Par exemple, un billet enfant ne peut pas être vendu sans billet adulte, et « un enfant de plus » s'ajoute à « enfant plus adulte ». Quand les catégories principales sont épuisées, la séance s'affiche comme complète."
+      - q: Les prix peuvent-ils changer à une date que je choisis ?
+        a: Oui. Les périodes de prévente changent selon la date et l'heure. Les paliers de quantité ouvrent le prix suivant quand le palier en cours est épuisé, donc un palier épuisé ne bloque jamais les ventes.
+      - q: Plusieurs prix pour un même événement ?
+        a: Oui. Des catégories avec leur propre prix, leur propre quota et leur propre période de vente. Les catégories peuvent former des chaînes qui transmettent les places invendues à la suivante.
+      - q: Puis-je ajouter des frais de service ?
+        a: Oui. Un pourcentage par canal de vente, affiché à l'acheteur sur une ligne distincte et versé sur votre compte avec le prix du billet.
+      - q: Billets gratuits et à prix libre ?
+        a: Oui, les deux. Des billets gratuits pour les invitations et les inscriptions, et des billets à prix libre avec un minimum que vous fixez.
+      - q: Les remises fonctionnent-elles avec les places numérotées ?
+        a: Oui. Les codes et les périodes s'appliquent aux catégories avec places numérotées comme aux zones debout.
+  - type: cta
+    id: start
+    title: Fixez vos prix dès aujourd'hui
+    text: Créez l'événement, ajoutez des catégories et des périodes, connectez votre compte de paiement, partagez le lien.
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Voir les tarifs, href: /pricing }
+    note: Conditions de volume et conditions individuelles sur demande.

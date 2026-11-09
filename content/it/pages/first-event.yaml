@@ -1,0 +1,50 @@
+title: "Il tuo primo evento: dalla richiesta allo scanner"
+description: "Passo dopo passo: richiesta, conferma, conto di pagamento, creazione dell'evento, mappa dei posti, pubblicazione, vendita, scansione dei biglietti."
+h1: Il tuo primo evento con ArenaSoldOut.com
+lead: "Otto passi dalla richiesta allo scanner all'ingresso. Con un account presso un fornitore di pagamenti già aperto, un evento senza mappa dei posti va in vendita 10 minuti dopo la conferma della tua organizzazione."
+related:
+  - { label: Fornitori di pagamenti per paese, href: /payments, text: "Quale fornitore può collegare la tua azienda, con metodi e valute." }
+  - { label: Mappe dei posti, href: /product/seating, text: "Che cosa mandarci perché disegniamo la tua struttura gratis." }
+  - { label: App scanner MACS, href: /product/scanner, text: "Scansione dei biglietti all'ingresso su iOS e Android." }
+sections:
+  - type: steps
+    id: steps
+    eyebrow: Passo dopo passo
+    title: Come metto in vendita il mio primo evento?
+    items:
+      - title: Invia la richiesta
+        text: "Cinque brevi passi nel [modulo di richiesta](/start): contatto, organizzazione, eventi, pagamenti, consenso. Oppure invia le stesse informazioni nel [bot di Telegram](https://t.me/EventsCentrBot). Le tue risposte vengono salvate man mano."
+      - title: Confermiamo la tua organizzazione
+        text: "Il team verifica la richiesta e crea la tua organizzazione e il tuo account Event Center, di solito entro un giorno, e ti dice come accedere."
+      - title: Collega il tuo conto di pagamento, una volta sola
+        text: "Crea le chiavi API nella dashboard del tuo fornitore (Stripe, Flitt, AllPay o un altro fornitore del tuo paese) e incollale nell'Event Center, oppure mandale al team. Si fa una volta per l'organizzazione; ogni evento successivo usa lo stesso conto. Non hai ancora un conto? Aprilo prima con un [fornitore del tuo paese](/payments): richiede i tempi del fornitore."
+      - title: Crea l'evento
+        text: "Nell'Event Center nel browser, oppure nel bot di Telegram da una foto della tua locandina: nome, luogo, date e sessioni, categorie e prezzi dei biglietti, la locandina. Senza mappa dei posti ci vogliono circa 10 minuti."
+      - title: Manda la mappa della struttura, se vendi posti numerati
+        text: "Disegniamo la mappa gratis, di solito entro un giorno, e te la mostriamo prima che inizino le vendite. Basta una di queste cose: un PDF della pianta della struttura, una foto di uno schizzo a mano, o una tabella di file con i posti di ogni fila (Excel o Google Sheets). Un SVG si importa direttamente."
+      - title: Pubblica e condividi
+        text: "Metti l'evento in vendita. Condividi il link alla pagina di vendita ospitata da noi, oppure aggiungi il widget dei biglietti al tuo sito con tre righe di codice. Codici promozionali, prezzi per data e commissione di servizio si impostano nello stesso posto."
+      - title: Tieni d'occhio le vendite
+        text: "Gli acquirenti pagano sul tuo conto di pagamento e ricevono il biglietto via e-mail nella loro lingua. Ogni ordine è nell'Event Center, e ogni vendita e rimborso arriva nel tuo gruppo Telegram in pochi secondi."
+      - title: Scansiona all'ingresso
+        text: "Installa l'app MACS su iPhone o Android, accedi con il tuo account Event Center, scegli la sessione e scansiona l'EAN-13 o il QR su carta o su schermo. Tanti telefoni quanti sono i tuoi ingressi."
+  - type: faq
+    id: questions
+    eyebrow: Domande
+    title: Che cosa chiedono gli organizzatori prima del primo evento?
+    items:
+      - q: Quanto ci vuole davvero?
+        a: "Conferma dell'organizzazione: di solito entro un giorno. Dopo, con un conto di pagamento già aperto, un evento senza mappa dei posti è in vendita in circa 10 minuti. Un evento con posti numerati aspetta la mappa che disegniamo noi, di solito un giorno. L'apertura di un nuovo conto presso un fornitore di pagamenti richiede il tempo che serve al fornitore."
+      - q: Che cosa preparo?
+        a: "Il nome dell'evento, il luogo, le date e gli orari, le categorie e i prezzi dei biglietti, una locandina e le chiavi API del tuo conto di pagamento. Per i posti numerati, la pianta della struttura in una qualsiasi delle forme indicate sopra."
+      - q: Il team può configurarlo al posto mio?
+        a: "Sì. Manda i dettagli nel [bot di Telegram](https://t.me/EventsCentrBot) o con il modulo di contatto e creiamo l'evento insieme a te; lo controlli prima che inizino le vendite."
+      - q: Quanto costa il primo evento?
+        a: "Come qualsiasi altro: una commissione per biglietto venduto, fatturata dopo l'evento, o meno con crediti comprati in anticipo. Mappe dei posti e inviti non costano nulla. I prezzi sono nella [pagina dei prezzi](/pricing)."
+  - type: cta
+    id: start
+    title: Inizia dalla richiesta
+    text: "Cinque brevi passi, salvati man mano. Il team conferma la tua organizzazione, di solito entro un giorno."
+    primary: { label: Invia la richiesta, href: /start }
+    secondary: { label: Apri il bot di Telegram, href: https://t.me/EventsCentrBot }
+    note: "Prima qualche domanda? Il pulsante “Contatta il team” è su ogni pagina."

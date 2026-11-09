@@ -1,0 +1,35 @@
+title: "Ho comprato un biglietto: dov'è, cosa mostrare all'ingresso"
+description: "Il tuo biglietto è un PDF nell'e-mail di conferma con EAN-13 e codice QR; mostralo sul telefono o stampato. Rimborsi e cambi di data: chiedi all'organizzatore."
+h1: Aiuto per chi compra i biglietti
+lead: Il tuo biglietto è un PDF allegato all'e-mail di conferma, con un codice a barre e un codice QR. Mostralo sul telefono o stampato. Le domande su rimborsi e date vanno all'organizzatore dell'evento, il cui contatto è sulla pagina di vendita e nell'e-mail.
+related:
+  - { label: E-ticket e scansione, href: /product/tickets }
+  - { label: Contatti, href: /contact }
+  - { label: Informativa sulla privacy, href: /legal/privacy }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Acquirenti
+    title: Dov'è il mio biglietto?
+    items:
+      - q: Ho pagato ma non ho ricevuto l'e-mail
+        a: Controlla la cartella spam e l'indirizzo che hai inserito al checkout. Se dopo qualche minuto l'e-mail non c'è, scrivi all'organizzatore con il tuo nome e l'ora dell'acquisto; può rinviare il biglietto a un altro indirizzo.
+      - q: Cosa mostro all'ingresso?
+        a: Il PDF sul telefono o stampato. Il codice a barre e il codice QR vengono scansionati una sola volta; funziona anche uno screenshot del codice.
+      - q: Posso ottenere un rimborso?
+        a: I rimborsi li decide l'organizzatore dell'evento, secondo le condizioni mostrate al checkout. Scrivi all'organizzatore; il rimborso torna sulla carta con cui hai pagato.
+      - q: La data è cambiata
+        a: Ricevi un'e-mail dall'organizzatore con il biglietto aggiornato in allegato. Il vecchio biglietto smette di funzionare.
+      - q: Posso passare il biglietto a un amico?
+        a: Inoltra il PDF. Il biglietto viene scansionato una sola volta, chiunque lo porti.
+      - q: Ho una domanda sul mio pagamento
+        a: Il pagamento è andato sul conto di pagamento dell'organizzatore; l'organizzatore lo vede nell'Event Center e può risponderti. ArenaSoldOut.com non detiene il denaro di chi compra.
+      - q: Dove vanno i miei dati?
+        a: "All'organizzatore dell'evento, per consegnare il biglietto, e al provider di pagamento per il pagamento. Vedi l'[informativa sulla privacy](/legal/privacy)."
+  - type: cta
+    id: organizers
+    title: Sei un organizzatore?
+    text: Crea l'evento, collega il tuo conto di pagamento, condividi il link. Chi compra paga sul tuo conto dal primo biglietto.
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Come funziona, href: /#how }
+    note: Chi compra un biglietto scrive all'organizzatore del proprio evento.

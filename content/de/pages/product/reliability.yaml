@@ -1,0 +1,31 @@
+title: "Zuverlässigkeit: 800 Bestellungen pro Minute, Backups"
+description: "Lasttest mit 800 Bestellungen pro Minute bei 1.000 gleichzeitigen Käufern. Watchdog mit Telegram-Warnungen, nächtliche verschlüsselte Backups, Cloudflare davor."
+h1: Hält es ein Stadion aus?
+lead: Ja. Die Plattform ist lastgetestet, wird rund um die Uhr überwacht und jede Nacht gesichert. Die Zahlen unten tragen Datumsangaben und stehen auf der Faktenseite, wo sie mit jedem Release aktualisiert werden.
+related:
+  - { label: Fakten mit Datum, href: /facts }
+  - { label: Letzte Änderungen, href: /changes }
+  - { label: Für Entwickler, href: /developers }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Zuverlässigkeit
+    title: Was wurde gemessen?
+    items:
+      - q: Welche Last wurde getestet?
+        a: "800 Bestellungen pro Minute bei 1.000 Käufern gleichzeitig auf der Seite, in Lasttests vom September 2026. Das Datum und die Zahlen stehen auf der [Faktenseite](/facts)."
+      - q: Was passiert, wenn nachts etwas ausfällt?
+        a: Ein Watchdog prüft die Plattform laufend und warnt das Team in Telegram, bevor Veranstalter es bemerken. Cloudflare steht vor jeder Seite und vor der API.
+      - q: Werden meine Daten gesichert?
+        a: Jede Nacht, verschlüsselt. Bestellungen, Käufer, Saalpläne und Events.
+      - q: Und Bots und Massenreservierungen?
+        a: Platzreservierungen laufen per Timer ab, Bestellungen sind begrenzt, und Cloudflare filtert missbräuchlichen Datenverkehr, bevor er die Plattform erreicht.
+      - q: Kann ich den Verlauf der Änderungen sehen?
+        a: "Ja, jede Funktion, die Veranstalter erreicht hat, steht mit Datum auf der [Änderungsseite](/changes)."
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: Event anlegen, Zahlungskonto verbinden, Link teilen.
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Fakten lesen, href: /facts }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

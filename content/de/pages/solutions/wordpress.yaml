@@ -1,0 +1,37 @@
+title: "Ticketverkauf mit WordPress: Plugin für WooCommerce"
+description: "Das Plugin von ArenaSoldOut.com legt Bestellungen in WooCommerce an, mit Saalplan, Tickets und Scan. Oder betten Sie das Widget auf jeder Seite ein."
+h1: Ihr WordPress, Ihr Checkout
+lead: Behalten Sie Ihre Website und Ihren Shop. Das Plugin legt für jedes Ticket WooCommerce-Bestellungen an; Saalplan, E-Ticket und Scan kommen von ArenaSoldOut.com. Oder betten Sie das Widget mit zwei Zeilen auf jeder Seite ein.
+related:
+  - { label: Wo Sie verkaufen, href: /product/sell }
+  - { label: "Für Entwickler: Widget und API", href: /developers }
+  - { label: Zahlungen, href: /payments }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Für WordPress-Websites
+    title: Welche Option passt zu meiner Website?
+    items:
+      - { title: Das Plugin, text: "Bestellungen landen in WooCommerce, Ihr Shop und Ihre Berichte funktionieren weiter; Plätze, Tickets und Einlass kommen von ArenaSoldOut.com.", link: { label: Plugin anfragen →, href: /start } }
+      - { title: Das Widget, text: "Zwei Zeilen auf jeder Seite oder in einem Block; Käufer zahlen im gehosteten Checkout Ihres Anbieters, die Bestellungen liegen im Event Center.", link: { label: Entwickler →, href: /developers } }
+      - { title: Wechsel von ArenaSoldOut.com, text: "Sessions, Saalpläne und Kunden importiert; zwei Kunden sind ohne Ausfallzeit umgezogen.", link: { label: Kunden →, href: /clients } }
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: Was fragen Betreiber von WordPress-Websites zuerst?
+    items:
+      - q: Macht das Plugin meine Website langsamer?
+        a: Das Plugin spricht beim Checkout mit der API von ArenaSoldOut.com; Seiten werden wie bisher dargestellt. Das Widget ist eine Web Component, die einmal geladen wird.
+      - q: Verlässt der Käufer meine Domain?
+        a: Mit dem Widget bleibt der Käufer auf Ihrer Seite bis zum gehosteten Checkout des Anbieters und kehrt dann zurück. Mit dem Plugin ist der Checkout der von WooCommerce.
+      - q: Welche Zahlungsanbieter funktionieren?
+        a: "Ihr eigenes Konto bei einem Anbieter Ihres Landes; die Liste mit Status steht auf der [Zahlungsseite](/payments). In Israel funktioniert AllPay heute für Verkäufe über WordPress."
+      - q: Wer installiert es?
+        a: Das Team kann das Plugin gemeinsam mit dem Administrator Ihrer Website installieren und konfigurieren; das Widget braucht keine Installation.
+  - type: cta
+    id: start
+    title: Verkaufen Sie auf Ihrer Website
+    text: Nennen Sie uns die Adresse der Website und den Anbieter, den Sie nutzen. Wir richten Plugin oder Widget gemeinsam mit Ihnen ein.
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Entwicklerdokumentation lesen, href: /developers }
+    note: WooCommerce-Websites behalten ihren Shop.

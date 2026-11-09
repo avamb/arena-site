@@ -1,0 +1,41 @@
+title: "Mapas de assentos: lugares marcados e áreas em pé"
+description: "Mapas de assentos com versões, importação de SVG, assentos marcados e entrada geral juntos, preços por categoria. Envie um PDF ou esboço, desenhamos de graça."
+h1: Mapas de assentos iguais ao local
+lead: Os assentos marcados fazem parte do núcleo da plataforma, não são um complemento. A equipe monta o seu mapa com o que você tiver, em geral em até um dia, e o reaproveita em todas as datas.
+related:
+  - { label: "Códigos promocionais, períodos de preço e lotes por quantidade", href: /product/pricing-tools }
+  - { label: Ingressos eletrônicos com EAN-13 e QR, href: /product/tickets }
+  - { label: Para teatros, href: /solutions/theatre }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Assentos
+    title: Como funcionam os assentos no ArenaSoldOut.com?
+    items:
+      - q: Preciso desenhar o mapa eu mesmo?
+        a: "Não, nunca. Envie o mapa para nós e o desenhamos no seu evento de graça, em geral em até um dia. Qualquer um destes basta: um PDF do mapa do local, uma foto de um esboço à mão ou uma tabela de fileiras com os assentos de cada fileira (Excel ou Google Sheets). Arquivos vetoriais (SVG) são importados diretamente."
+      - q: Um evento pode ter assentos e lugares em pé?
+        a: Sim, no mesmo mapa. Fileiras marcadas com categorias, áreas em pé com cotas, cada categoria com seu próprio preço e período de venda.
+      - q: Posso mudar o mapa depois que as vendas começaram?
+        a: Sim. Os mapas têm versões, então um novo layout para a próxima sessão não afeta os ingressos já vendidos.
+      - q: Quanto me custa um ingresso com assento?
+        a: "A comissão de um ingresso com assento é de US$1,09 (€0,97 nos países da UE), contra US$0,59 (€0,53) sem assento; os créditos a reduzem. O mapa em si é grátis. Veja [preços](/pricing)."
+      - q: O comprador escolhe o assento no celular?
+        a: Sim. O mapa de assentos é o mesmo no widget e na página hospedada, com zoom com pinça no celular, uma legenda por categoria e um cronômetro de reserva para os assentos escolhidos.
+      - q: E convites e assentos para a imprensa?
+        a: Emita ingressos gratuitos para assentos exatos pelo Event Center; eles são lidos na entrada como qualquer ingresso.
+  - type: cards
+    id: who
+    eyebrow: Locais típicos
+    title: Quem usa assentos marcados?
+    items:
+      - { title: Teatros, text: "De 100 a 1.500 assentos, datas repetidas, convites para imprensa e parceiros.", link: { label: Para teatros →, href: /solutions/theatre } }
+      - { title: Casas de show e clubes, text: "Um mapa reaproveitado em muitos eventos por mês, condições separadas para locais permanentes.", link: { label: Para locais →, href: /solutions/venues } }
+      - { title: Espetáculos em turnê, text: "Um espetáculo, muitas cidades, um mapa por local reaproveitado na visita seguinte.", link: { label: Para turnês →, href: /solutions/concert-tours } }
+  - type: cta
+    id: start
+    title: Envie o seu mapa
+    text: "Um PDF, uma foto de um esboço à mão ou uma tabela de fileiras e assentos basta. Desenhamos no seu evento de graça e mostramos o resultado antes de as vendas começarem."
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: Eventos sem mapa de assentos entram à venda hoje.

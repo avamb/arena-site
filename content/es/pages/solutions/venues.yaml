@@ -1,0 +1,38 @@
+title: "Venta de entradas para recintos y clubes: condiciones aparte"
+description: "Para recintos y clubes: un plano de asientos para todos los eventos, muchos eventos al mes, escaneo en la puerta y un porcentaje del precio en lugar de tarifa."
+h1: Recintos y clubes
+lead: "Tu propio recinto, muchos eventos al mes. El plano se crea una vez y se reutiliza, cada promotor que alquila el recinto vende a través de tu página o de la suya, y las condiciones son distintas: un porcentaje del precio de la entrada en lugar de la tarifa por entrada."
+related:
+  - { label: Precios y condiciones detalladas, href: /pricing }
+  - { label: Planos de asientos, href: /product/seating }
+  - { label: Teatro, href: /solutions/theatre }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para recintos
+    title: "¿Qué importa en un recinto?"
+    items:
+      - { title: "Un plano, todos los eventos", text: "Se crea una vez a partir de tu archivo y se reutiliza en cada evento; versiones para cada distribución del escenario.", link: { label: Planos de asientos →, href: /product/seating } }
+      - { title: Promotores que alquilan el recinto, text: "Una página por promotor con su propio enlace; el recinto ve todos los eventos y el promotor ve los suyos.", link: { label: Dónde vendes →, href: /product/sell } }
+      - { title: Condiciones aparte, text: "Un dos por ciento del precio de la entrada en lugar de la tarifa por entrada, sin tarifa en invitaciones ni reembolsos, condiciones por volumen a petición.", link: { label: Precios →, href: /pricing } }
+      - { title: La puerta, text: "App de escaneo para iOS y Android, escáneres de mano, y se aceptan entradas de socios de otros sistemas.", link: { label: App de escaneo MACS →, href: /product/scanner } }
+  - type: faq
+    id: questions
+    eyebrow: Preguntas
+    title: "¿Qué preguntan primero los propietarios de recintos?"
+    items:
+      - q: "¿Cuáles son las condiciones para un recinto permanente?"
+        a: "Un porcentaje del precio de la entrada en lugar de la tarifa por entrada, sin tarifa en invitaciones ni reembolsos. La cifra está en la [página de precios](/pricing); condiciones por volumen e individuales a petición."
+      - q: "¿Puede un promotor vender nuestros eventos en su propia web?"
+        a: Sí, con el widget en su web o con una página de promotor que alojamos nosotros. Las ventas de todos los canales aparecen en el Event Center del recinto.
+      - q: "¿Podemos pasarnos desde otro sistema de venta de entradas?"
+        a: "Sí. Sesiones, planos de asientos y clientes se importaron desde ArenaSoldOut.com para dos clientes sin tiempo de inactividad; otros sistemas, mediante la API de paquetes de eventos. Consulta [desarrolladores](/developers)."
+      - q: "¿Quién gestiona el Event Center?"
+        a: Tu equipo, con roles. El recinto es propietario de la organización; los gestores ven lo que tú permitas.
+  - type: cta
+    id: start
+    title: Habla con nosotros
+    text: Cuéntanos sobre el recinto y el número de eventos al mes. Configuramos contigo el plano y las condiciones.
+    primary: { label: Habla con nosotros, href: /start }
+    secondary: { label: Ver precios, href: /pricing }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

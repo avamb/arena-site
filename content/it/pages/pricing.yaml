@@ -1,0 +1,115 @@
+title: "Prezzi: per biglietto, senza abbonamento"
+description: "Commissione per biglietto venduto, senza abbonamento. Paghi dopo l'evento o compri crediti per pagare meno. Tariffe ridotte per strutture."
+h1: Per biglietto. Senza abbonamento.
+lead: Paghi ad ArenaSoldOut.com una commissione della piattaforma per ogni biglietto venduto. Paghi a consumo dopo l'evento, oppure compri crediti in anticipo e paghi meno per biglietto. L'acquiring delle carte lo paghi al tuo fornitore di pagamenti alle sue condizioni.
+sections:
+  - type: pricing
+    id: plans
+    planBullets:
+      - "**{seated}** per biglietto con un posto scelto sulla mappa della struttura"
+      - "Inviti e biglietti gratuiti a eventi a pagamento: **nessuna** commissione"
+      - "I **crediti** abbassano la commissione per biglietto, vedi sotto"
+    cta: { label: Inizia a vendere, href: /start }
+    buyCredits: { label: Compra crediti, href: "#packages" }
+    plans:
+      currency: "Mostra i prezzi in"
+      payg:
+        name: Paghi a consumo
+        text: Una semplice tariffa fissa per biglietto venduto, pagata dopo l'evento.
+        bullets:
+          - "**{seated}** per biglietto con un posto scelto sulla mappa della struttura"
+          - "Fattura dopo l'evento, con bonifico bancario"
+          - "Nessun abbonamento, nessun contratto"
+      upfront:
+        name: Paga in anticipo con i crediti
+        text: "Compra crediti in anticipo e paga fino al {saving}% in meno su ogni biglietto."
+        from: da
+        bullets:
+          - "**{fromSeated}** per biglietto con posto"
+          - "I crediti non scadono mai; ricarichi quando vuoi"
+          - "Le vendite non si fermano mai: se i crediti finiscono, il resto è fatturato al prezzo a consumo"
+      perks:
+        - { big: "50%", title: Enti benefici registrati, text: "50% di sconto sulla nostra commissione. Scrivici e lo attiviamo." }
+        - { big: "Gratis", title: Inviti, text: "Nessuna commissione su inviti e biglietti gratuiti a eventi a pagamento." }
+        - { big: "Gratis", title: Mappa dei posti, text: "Disegniamo la tua mappa da un PDF, da una foto di uno schizzo o da una tabella di file e posti." }
+        - { big: "{lowPercent}%", title: "Biglietti fino a {lowMax}", text: "Per eventi in cui ogni biglietto costa {lowMax} o meno. [Come funziona](#low-price)" }
+      brand: "I prezzi presuppongono la riga **Biglietti: ArenaSoldOut.com** con un link a noi sulla pagina del tuo evento; il widget dei biglietti la mostra di default. Per vendere senza, il white label costa **€45 al mese per marchio o struttura nei paesi UE** e **US$45 al mese per marchio o struttura in tutti gli altri paesi**. [Condizioni dettagliate →](/pricing/terms)"
+    currencyNote: "Commissione in **dollari USA** per ogni paese fuori dall'UE, compresi i paesi europei fuori dall'UE, l'Asia e il Medio Oriente, e in **euro** per le strutture nei paesi UE. Il dollaro è la base; i prezzi in euro sono i prezzi in dollari al cambio BCE. È solo la nostra commissione: i biglietti si vendono nella valuta del tuo conto di pagamento. Gli importi sono senza IVA."
+    packages:
+      title: Compra crediti in anticipo, paga meno per biglietto
+      text: "Compri un pacchetto di crediti una volta sola; ogni biglietto venduto preleva la sua commissione dai tuoi crediti, alla tariffa di quel pacchetto. I crediti non scadono mai e si usano solo per i nostri servizi. Se i crediti finiscono a metà delle vendite, le vendite continuano: i biglietti rimanenti sono fatturati al prezzo da pagare dopo l'evento."
+      cols: { name: Pacchetto di crediti, prepay: Prezzo, plain: "Commissione, senza posto", seated: "Commissione, con posto", plainCount: "Biglietti senza posto", seatedCount: "Oppure biglietti con posto", saving: "Risparmio rispetto al pagamento dopo", buy: Compra }
+      buy: { label: Compra, currency: Paga in, none: Parla con noi, noneHref: /contact, note: "Al checkout Stripe chiede l'e-mail con cui la tua organizzazione è registrata su ArenaSoldOut.com. Inserisci esattamente quell'e-mail: i crediti vengono aggiunti all'organizzazione a cui appartiene. Non hai ancora un'organizzazione? Inserisci l'e-mail con cui ti registrerai e i crediti saranno collegati a essa." }
+      note: "I pacchetti di crediti si possono comprare quante volte vuoi; un biglietto preleva la sua commissione dal pacchetto con cui è pagato. Puoi attivare una ricarica automatica. Per volumi superiori a 5.000 biglietti l'anno: condizioni individuali, scrivici."
+    lowPrice:
+      title: "Eventi in cui ogni biglietto costa {lowMax} o meno"
+      text: "{lowPercent}% del prezzo del biglietto, almeno {lowMin} e al massimo {lowCap} per biglietto; {lowSeat} in più per un biglietto con posto. Per discoteche, corse, maratone, feste per bambini, gite. Vale per l'intero evento, e solo se **nessun biglietto di alcuna categoria o gradino di prezzo**, compresi quelli successivi, costa più di {lowMax} prima dei codici promozionali. Basta un biglietto sopra quella soglia e il prezzo standard vale per tutti i biglietti dell'evento, anche quelli economici."
+      example: "Commissione per biglietto, pagamento dopo l'evento:"
+      cols: { price: Prezzo del biglietto, plain: Commissione, seated: Con posto }
+    venues:
+      title: Strutture permanenti
+      text: "Teatri, club, stadi, circhi e altri luoghi che organizzano eventi in proprio, tutto l'anno o a stagione: **{percent}% del prezzo del biglietto** (dopo i codici promozionali, senza la commissione di servizio), al massimo **{cap}** per biglietto, uguale con e senza posto. Fattura mensile. Nessuna commissione sugli inviti. Il nostro team attiva lo stato di struttura."
+      example: "Un biglietto da {ex25} costa {ex} di commissione; il tetto di {cap} si raggiunge con un prezzo del biglietto di {capAt}."
+      cta: { label: Parla con noi, href: /contact }
+    calculator:
+      aria: Calcolatore della commissione
+      region: Paese della struttura
+      regionEu: UE (EUR)
+      regionWorld: Altri paesi (USD)
+      price: Prezzo del biglietto di questa categoria
+      maxPrice: Prezzo più alto di un biglietto dell'evento
+      quantity: Biglietti di questa categoria
+      seating: Posto scelto sulla mappa
+      result: Commissione, pagata dopo l'evento
+      button: Scopri il prezzo
+      hint: "Il risultato si aggiorna mentre scrivi. La commissione dipende dal numero di biglietti e dai posti, non dal prezzo del biglietto, tranne che per gli eventi in cui ogni biglietto costa US$10 o meno. È il prezzo se paghi dopo l'evento; l'opzione con i crediti è mostrata sotto."
+      sales: le tue vendite {net}, acquiring escluso
+      needMax: Inserisci il prezzo più alto di un biglietto dell'evento per vedere la commissione.
+      maxBelowPrice: Il prezzo più alto dell'evento non può essere inferiore al prezzo di questo biglietto.
+      lowRate: "Ogni biglietto costa {max} o meno, quindi vale il {percent}%, almeno {min} e al massimo {cap} per biglietto."
+      package: "Il pacchetto di crediti {name} ({prepay}) lo copre: {cost} per questi biglietti, {left} restano nel tuo saldo per i prossimi eventi."
+      noPackage: "Più biglietti di quelli che copre il pacchetto di crediti più grande: scrivici per le condizioni per grandi volumi."
+    note: "Paghi dopo l'evento con bonifico bancario. Per gli eventi in vendita per diversi mesi e per le strutture permanenti fatturiamo ogni mese. Il pagamento dopo l'evento è aperto alle organizzazioni confermate sulla piattaforma. Condizioni per grandi volumi e individuali su richiesta."
+    terms: { label: Condizioni dettagliate →, href: /pricing/terms }
+
+  - type: faq
+    id: questions
+    eyebrow: Domande sul denaro
+    title: Quanto mi costa un biglietto, esattamente?
+    items:
+      - q: Quanto costa un biglietto con posto?
+        a: "Pagando dopo l'evento: US$1,09 fuori dall'UE, €0,97 nell'UE. Un biglietto senza posto costa US$0,59 o €0,53. La mappa dei posti in sé non costa nulla: la disegniamo gratis da un PDF, da una foto di uno schizzo a mano o da una tabella di file e posti. Con i crediti la commissione è più bassa, e un posto aggiunge US$0,35 (€0,31) alla tariffa dei crediti."
+      - q: Come funzionano i crediti?
+        a: "Compri un pacchetto di crediti una volta sola. Ogni biglietto venduto preleva la sua commissione dai tuoi crediti alla tariffa del pacchetto, finché non finiscono. I crediti non scadono mai, si possono ricaricare in qualsiasi momento e si usano solo per i nostri servizi: non si possono prelevare né trasferire."
+      - q: E se i crediti finiscono a metà delle vendite?
+        a: Le vendite non si fermano. I biglietti che i tuoi crediti non hanno coperto entrano nella fattura abituale al prezzo da pagare dopo l'evento.
+      - q: Esiste una ricarica automatica?
+        a: Sì. Puoi attivarla e, quando i tuoi crediti scendono sotto la tua soglia, il pacchetto successivo viene comprato per te.
+      - q: Dove va il denaro dell'acquirente?
+        a: "Sul tuo conto di pagamento, con ogni ordine. ArenaSoldOut.com non detiene mai fondi. L'acquirente paga il prezzo del biglietto e, se ne aggiungi una, la tua commissione di servizio."
+      - q: Quando pago ArenaSoldOut.com?
+        a: "Dopo l'evento, con bonifico bancario, per i biglietti venduti. Per gli eventi in vendita per diversi mesi e per le strutture permanenti, una volta al mese. I crediti si pagano al momento dell'acquisto."
+      - q: E l'acquiring delle carte?
+        a: L'acquiring delle carte è un contratto tra te e il tuo fornitore di pagamenti, alle condizioni del fornitore. Non fa parte della nostra commissione e non vi aggiungiamo nulla.
+      - q: Devo citare ArenaSoldOut.com sul mio sito?
+        a: "I prezzi presuppongono che la pagina dell'evento indichi ArenaSoldOut.com come operatore della vendita biglietti, con un link a noi; il widget dei biglietti mostra questa riga di default. Per vendere senza il nostro nome, il white label costa €45 al mese per marchio o struttura nei paesi UE e US$45 al mese per marchio o struttura in tutti gli altri paesi, calcolati a giorni per un mese non intero. Le [condizioni dettagliate](/pricing/terms) spiegano che cos'è un marchio e che cosa nasconde il white label."
+      - q: C'è uno sconto per gli enti benefici?
+        a: "Sì. Gli enti benefici registrati pagano il 50% della nostra commissione, a consumo e con i crediti. Scrivici dalla [pagina dei contatti](/contact) e lo attiviamo per la tua organizzazione."
+      - q: Gli inviti sono gratuiti?
+        a: Sì. Inviti e biglietti gratuiti a eventi a pagamento non hanno commissione.
+      - q: Che fine fa la commissione quando un biglietto viene rimborsato o la data si sposta?
+        a: "Il rimborso all'acquirente lo fai tu. La commissione per una vendita già avvenuta resta, e non addebitiamo una commissione separata per l'elaborazione del rimborso, per lo spostamento della data o per le e-mail agli acquirenti. Le condizioni proprie del fornitore di pagamenti sono quelle del fornitore."
+      - q: E se annullo l'evento?
+        a: "La commissione già addebitata non viene restituita in denaro. Scrivici del tuo caso prima che l'evento venga annullato."
+      - q: Uno dei miei biglietti costa più di US$10 (€10 nell'UE), gli altri sono economici. Quale prezzo vale?
+        a: "Quello standard, per tutti i biglietti dell'evento: la tariffa ridotta richiede che ogni biglietto di ogni categoria e gradino di prezzo costi US$10 o meno (€10 nell'UE). Un biglietto da US$5 accanto a uno da US$25 è al prezzo standard."
+      - q: Ho una struttura e organizzo molti eventi al mese. Esiste un'offerta diversa?
+        a: "Sì. I proprietari di strutture permanenti (teatri, club, stadi, circhi e altri luoghi che organizzano eventi in proprio, tutto l'anno o a stagione) pagano il {percent}% del prezzo del biglietto, calcolato dopo i codici promozionali e senza la tua commissione di servizio. La commissione per biglietto è limitata a US$1,09 (€1,09 nell'UE), uguale con e senza posto. Gli inviti non hanno commissione. Fatturiamo ogni mese. Il nostro team attiva lo stato di struttura: scrivici dalla [pagina dei contatti](/contact). Le condizioni complete sono nelle [condizioni dettagliate](/pricing/terms)."
+
+  - type: cta
+    id: start
+    title: Inizia a vendere oggi
+    text: "Crea l'evento, collega il tuo conto di pagamento, condividi il link. Un evento senza mappa dei posti è in vendita in 10 minuti; la mappa dei posti la disegniamo noi per te, gratis."
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Apri il bot di Telegram, href: https://t.me/EventsCentrBot }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."

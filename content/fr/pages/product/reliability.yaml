@@ -1,0 +1,31 @@
+title: "Fiabilité : 800 commandes par minute, sauvegardes"
+description: "Testé à 800 commandes par minute avec 1 000 acheteurs simultanés. Surveillance avec alertes Telegram, sauvegardes chiffrées chaque nuit, Cloudflare en façade."
+h1: Peut-elle tenir la charge d'un stade ?
+lead: Oui. La plateforme est testée en charge, surveillée en permanence et sauvegardée chaque nuit. Les chiffres ci-dessous sont datés et figurent sur la page des faits, où ils sont mis à jour à chaque version.
+related:
+  - { label: Faits datés, href: /facts }
+  - { label: Dernières évolutions, href: /changes }
+  - { label: Pour les développeurs, href: /developers }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Fiabilité
+    title: Qu'a-t-on mesuré ?
+    items:
+      - q: Quelle charge a été testée ?
+        a: "800 commandes par minute avec 1 000 acheteurs simultanés sur la page, lors des tests de charge de septembre 2026. La date et les chiffres sont sur la [page des faits](/facts)."
+      - q: Que se passe-t-il si quelque chose tombe en panne la nuit ?
+        a: Un système de surveillance contrôle la plateforme en continu et alerte l'équipe dans Telegram avant que les organisateurs ne remarquent quoi que ce soit. Cloudflare se place devant chaque page et devant l'API.
+      - q: Mes données sont-elles sauvegardées ?
+        a: Chaque nuit, chiffrées. Commandes, acheteurs, plans de salle et événements.
+      - q: Et les bots et les réservations en masse ?
+        a: Les retenues de places expirent sur minuteur, les commandes sont limitées en fréquence, et Cloudflare filtre le trafic abusif avant qu'il n'atteigne la plateforme.
+      - q: Puis-je voir l'historique des évolutions ?
+        a: "Oui, chaque fonctionnalité livrée aux organisateurs est listée avec sa date sur la [page des évolutions](/changes)."
+  - type: cta
+    id: start
+    title: Commencez à vendre dès aujourd'hui
+    text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Lire les faits, href: /facts }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

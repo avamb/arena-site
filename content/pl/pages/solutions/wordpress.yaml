@@ -1,0 +1,37 @@
+title: "Sprzedaż biletów na WordPressie: wtyczka z WooCommerce"
+description: "Wtyczka ArenaSoldOut.com przenosi zamówienia do WooCommerce, a plan sali, bilety i skanowanie pochodzą z platformy. Albo osadź widget na dowolnej stronie."
+h1: Twój WordPress, twój koszyk
+lead: Zachowaj swoją stronę i sklep. Wtyczka tworzy zamówienia WooCommerce dla każdego biletu; plan sali, e-bilet i skanowanie pochodzą z ArenaSoldOut.com. Albo osadź widget na dowolnej stronie dwiema linijkami.
+related:
+  - { label: Gdzie sprzedajesz, href: /product/sell }
+  - { label: "Dla developerów: widget i API", href: /developers }
+  - { label: Płatności, href: /payments }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Dla stron na WordPressie
+    title: Która opcja pasuje do mojej strony?
+    items:
+      - { title: Wtyczka, text: "Zamówienia trafiają do WooCommerce, twój sklep i raporty działają dalej; miejsca, bilety i wejście zapewnia ArenaSoldOut.com.", link: { label: Poproś o wtyczkę →, href: /start } }
+      - { title: Widget, text: "Dwie linijki na dowolnej stronie lub w bloku; kupujący płacą w hostowanym koszyku twojego dostawcy, zamówienia są w Event Center.", link: { label: Dla developerów →, href: /developers } }
+      - { title: Przejście z ArenaSoldOut.com, text: "Sesje, plany sali i klienci zaimportowani; dwóch klientów przeszło bez przerwy w działaniu.", link: { label: Klienci →, href: /clients } }
+  - type: faq
+    id: questions
+    eyebrow: Pytania
+    title: O co właściciele stron na WordPressie pytają najpierw?
+    items:
+      - q: Czy wtyczka spowolni moją stronę?
+        a: Wtyczka łączy się z API ArenaSoldOut.com przy płatności; strony renderują się jak wcześniej. Widget to komponent webowy ładowany raz.
+      - q: Czy kupujący opuszcza moją domenę?
+        a: Z widgetem kupujący zostaje na twojej stronie aż do hostowanego koszyka dostawcy płatności, a potem wraca. Z wtyczką koszyk jest własnym koszykiem WooCommerce.
+      - q: Którzy dostawcy płatności działają?
+        a: "Twoje własne konto u dostawcy z twojego kraju; lista ze statusami jest na [stronie płatności](/payments). W Izraelu AllPay działa dziś przy sprzedaży przez WordPress."
+      - q: Kto to instaluje?
+        a: Zespół może zainstalować i skonfigurować wtyczkę razem z administratorem twojej strony; widget nie wymaga instalacji.
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż na swojej stronie
+    text: Podaj adres strony i dostawcę, z którego korzystasz. Wtyczkę lub widget ustawimy razem z tobą.
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Przeczytaj dokumentację dla developerów, href: /developers }
+    note: Strony z WooCommerce zachowują swój sklep.

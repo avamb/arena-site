@@ -1,0 +1,48 @@
+title: "Dla developerów: trzy linijki na dowolnej stronie"
+description: "Osadź widget trzema linijkami lub użyj API: pakiet wydarzenia jednym wywołaniem, podpisane webhooki, klucze z zakresami, zdarzenia widgetu, wtyczka WordPress."
+h1: Trzy linijki na dowolnej stronie
+lead: Widget to komponent webowy. Wstaw go na dowolną stronę, ostyluj zmiennymi CSS, nasłuchuj jego zdarzeń. Cała reszta to publiczne API z podpisanymi webhookami.
+sections:
+  - type: code
+    id: widget
+    eyebrow: Widget
+    title: Jak umieścić bilety na mojej stronie?
+    code: |
+      <script type="module" src="https://tickets.arenasoldout.com/widget/v1/arena-tickets.js"></script>
+      <arena-tickets feed-token="YOUR_FEED_TOKEN" locale="en"></arena-tickets>
+    items:
+      - key: --arena-accent
+        text: "Twoje kolory: widget odczytuje --arena-accent, --arena-radius, --arena-bg i --arena-border-color z twojej strony"
+      - key: locale
+        text: "Język kupującego: en, ru, cs, he, es; hebrajski jest od prawej do lewej"
+      - key: arena:order_paid
+        text: "Zdarzenia widgetu arena:* do twojej analityki i własnych stron z podziękowaniem"
+      - key: feed-token
+        text: Jeden token na kanał sprzedaży; możesz go w każdej chwili unieważnić w Event Center
+    cta: { label: Pobierz feed token, href: /start }
+
+  - type: cards
+    id: api
+    eyebrow: Publiczne API
+    title: Co mogę zrobić przez API?
+    items:
+      - title: Pakiet wydarzenia jednym wywołaniem
+        text: Jedno żądanie tworzy wydarzenie, jego sesje, obiekt, ceny, plakat i publikację. Ten sam kształt, którego używa bot w Telegramie.
+      - title: Podpisane webhooki
+        text: Zamówienia, płatności, zwroty i zmiany sesji są dostarczane na twój endpoint z podpisem, który weryfikujesz. Ponowienia z narastającym opóźnieniem.
+      - title: Klucze API z zakresami
+        text: Klucz widzi jedną organizację i tylko te zakresy, które nadasz. Klucze obracasz i unieważniasz w Event Center.
+      - title: Wtyczka WordPress
+        text: Zamówienia trafiają do WooCommerce, sklep działa dalej, a plan sali i bilet pochodzą z ArenaSoldOut.com. Dzięki wtyczce dwóch klientów przeszło z ArenaSoldOut.com bez przerwy w działaniu.
+      - title: Importy
+        text: Sesje, plany sali i klienci zaimportowani z ArenaSoldOut.com. Inne systemy przez pakiet wydarzenia i plik CSV z klientami.
+      - title: OpenAPI
+        text: Opis OpenAPI jest publikowany razem z API. Poproś zespół o aktualny plik, dopóki nie będzie tu podlinkowany automatycznie.
+
+  - type: cta
+    id: start
+    title: Zacznij budować już dziś
+    text: Poproś o feed token i klucz API z zakresami. Zespół odpowie osobiście i może przygotować dla ciebie testową organizację.
+    primary: { label: Poproś o dostęp, href: /start }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: Płatności testowe działają w trybie testowym twojego dostawcy, nigdy na prawdziwych kartach.

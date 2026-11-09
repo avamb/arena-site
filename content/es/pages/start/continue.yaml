@@ -1,0 +1,31 @@
+title: "Continúa tu solicitud"
+description: "Escribe el correo con el que hiciste la solicitud y te enviamos un enlace al borrador que empezaste."
+h1: Continúa tu solicitud
+lead: Escribe el correo con el que hiciste la solicitud. Te enviamos un enlace a tu borrador para que retomes donde lo dejaste.
+sections:
+  - type: onboarding
+    id: form
+    mode: continue
+    ui:
+      noscript: "El formulario de solicitud necesita JavaScript. Escríbenos por Telegram y te configuraremos a mano."
+      optional: "(opcional)"
+      url_list_hint: "Un enlace por línea"
+      sending: "Enviando…"
+      email: "Correo"
+      err_required: "Este campo es obligatorio"
+      err_invalid: "Revisa este valor"
+      err_too_long: "Es demasiado largo"
+      err_not_allowed: "Todavía no aceptamos solicitudes de este país"
+      e_generic: "Algo salió mal. Inténtalo de nuevo en un minuto o escríbenos por Telegram."
+      e_network: "Sin conexión con el servidor. Revisa tu internet e inténtalo de nuevo."
+      e_unavailable: "El formulario no está disponible ahora. Inténtalo de nuevo en un minuto o escríbenos por Telegram."
+      e_session: "Tu borrador ya no está disponible. Empieza de nuevo, lleva un minuto."
+      e_incomplete: "Faltan algunas respuestas obligatorias. Están marcadas arriba."
+      e_email_not_confirmed: "Confirma primero tu correo: abre el enlace del mensaje que te enviamos y vuelve a pulsar Enviar."
+      e_rate_limited: "Demasiados intentos. Espera unos minutos e inténtalo de nuevo."
+      e_turnstile_failed: "La comprobación antispam no se superó. Espera un segundo a que termine e inténtalo de nuevo."
+      e_captcha_not_configured: "El formulario no está disponible ahora. Escríbenos por Telegram."
+      e_captcha_unavailable: "No se pudo ejecutar la comprobación antispam. Inténtalo de nuevo en un minuto."
+      e_locked: "Esta solicitud ya se envió y no se puede editar."
+      send_link: "Envíame el enlace"
+      link_sent: "Si hay un borrador abierto para esta dirección, un enlace para continuar está en camino. Revisa tu bandeja de entrada y la carpeta de spam."

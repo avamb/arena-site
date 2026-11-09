@@ -1,0 +1,40 @@
+title: "El bot de organizador en Telegram: evento desde un cartel"
+description: "Crea un evento desde la foto de un cartel, confirma lo que leyó el bot, añade fechas y equipo. Cada venta y reembolso llega a tu grupo de Telegram en segundos."
+h1: Gestiona el evento desde Telegram
+lead: El Event Center también vive en el bot. Basta la foto del cartel para empezar; cada lectura es un botón para confirmar, nada se publica sin ti.
+related:
+  - { label: Event Center en el navegador, href: /#center }
+  - { label: Vende en tu sitio o en el nuestro, href: /product/sell }
+  - { label: Empezar a vender, href: /start }
+sections:
+  - type: steps
+    id: how
+    eyebrow: Cómo funciona
+    title: ¿Qué hace el bot?
+    items:
+      - title: Lee el cartel
+        text: Envía una foto. El bot lee el nombre, las fechas, el recinto y los precios, y muestra cada valor como un botón para confirmar o editar.
+      - title: Construye el evento
+        text: Las sesiones, categorías, precios y el cartel pasan al evento. Añade miembros del equipo, recibe una entrada de muestra con marca de agua y publica cuando esté lista.
+      - title: Informa de cada venta
+        text: Cada venta y reembolso llega a tu grupo de organizador en segundos, con el nombre del comprador, los asientos, el importe y el contacto.
+  - type: faq
+    id: questions
+    eyebrow: Preguntas
+    title: ¿Es Telegram la única forma?
+    items:
+      - q: ¿Necesito Telegram para usar ArenaSoldOut.com?
+        a: "No. El mismo Event Center funciona en el navegador en ArenaSoldOut.com, y el equipo puede configurarlo todo por ti. Telegram es una forma, para organizadores que viven en el mensajero."
+      - q: ¿Qué idiomas habla el bot?
+        a: Inglés, ruso y español hoy; más idiomas seguirán a los del sitio.
+      - q: ¿Puede usarlo mi equipo?
+        a: Sí. Añade miembros del equipo con roles; el grupo de ventas puede incluir a todos los que necesiten ver los pedidos.
+      - q: ¿Funciona con el plano de asientos?
+        a: El bot crea eventos con categorías y fechas; el plano de asientos lo construye el equipo y se asocia al evento.
+  - type: cta
+    id: start
+    title: Abre el bot
+    text: Envía un cartel o simplemente saluda. El equipo responde en el mismo chat.
+    primary: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
+    secondary: { label: Empezar en el sitio, href: /start }
+    note: Los eventos sin plano de asientos salen a la venta hoy mismo.

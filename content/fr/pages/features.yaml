@@ -1,0 +1,158 @@
+title: "Fonctionnalités : billetterie, plans de salle, paiements"
+description: "Les fonctionnalités d'ArenaSoldOut.com sur une page : pages de vente, widget, plans de salle, prix, codes promo, paiements, billets, scanner, Event Center."
+h1: Toutes les fonctionnalités, sur une page
+lead: "Ce que fait ArenaSoldOut.com pour un organisateur, du premier billet à l'entrée. Chaque groupe renvoie à sa page avec les détails."
+related:
+  - { label: Tarifs, href: /pricing, text: "Paiement à l'usage par billet vendu, ou achetez des crédits et payez moins." }
+  - { label: ArenaSoldOut.com face à Ticket Tailor, href: /tickettailor-alternative, text: "Les tarifs et les fonctionnalités côte à côte." }
+  - { label: Votre premier événement, href: /first-event, text: "Quoi préparer et comment se passe la première vente." }
+sections:
+  - type: cards
+    id: selling
+    eyebrow: Vente
+    title: Où et comment vous vendez
+    lead: "Détails : [vendre sur votre site ou sur le nôtre](/product/sell)."
+    items:
+      - title: Une page de vente que nous hébergeons
+        text: "tickets.arenasoldout.com/your-name/your-event, prête en quelques minutes. Un seul lien pour les réseaux sociaux, les messageries et les affiches."
+      - title: Widget de billetterie sur votre site
+        text: "Trois lignes de code sur n'importe quel site : Tilda, Wix, Webflow ou sur mesure. Vos couleurs, vos polices, votre langue ; les acheteurs ne quittent jamais votre domaine."
+      - title: Des pages pour les promoteurs et les partenaires
+        text: "Une page distincte pour chaque promoteur, et des liens vers vos revendeurs partenaires sur la même page."
+      - title: Contenus de l'événement sur votre page de vente
+        text: "Ajoutez des contenus à votre événement sur votre page de vente de la plateforme, si vous n'avez pas de site : textes, photos et vidéos."
+      - title: Des descriptions soignées
+        text: "Titres, listes, liens et citations dans la description de l'événement sur votre page de vente. Un réseau de neurones met en forme un texte brut pour vous en un clic."
+      - title: '« Prévenez-moi à l''ouverture des ventes »'
+        text: "Les acheteurs s'abonnent sur la page de votre événement et reçoivent un e-mail dès l'ouverture des ventes."
+      - title: Rappels de paniers abandonnés
+        text: "Un acheteur qui a réservé des billets sans payer reçoit un rappel. Dans de nombreux cas, ces rappels font nettement progresser les ventes."
+      - title: Parrainage
+        text: "Chaque acheteur reçoit un lien personnel : l'ami obtient une remise, l'acheteur obtient un cashback après l'événement de l'ami."
+      - title: Liens courts et QR codes pour l'impression
+        text: "Des liens go.arenasoldout.com avec QR codes pour affiches et flyers : PNG, SVG ou encart PDF en A5 et A6. Modifiez la cible après l'impression."
+      - title: Une boutique à côté de vos billets
+        text: "Vendez du vin, des produits dérivés et des coffrets cadeaux avec les billets : variantes, panier, livraison, remboursements. Notre premier client boutique vend déjà ainsi."
+
+  - type: cards
+    id: seating
+    eyebrow: Plans de salle
+    title: Des plans de salle fidèles à la salle
+    lead: "Détails : [plans de salle](/product/seating)."
+    items:
+      - title: Nous dessinons le plan gratuitement
+        text: "Envoyez un PDF, une photo d'un croquis à la main ou un tableau de rangs et de places ; l'équipe construit la salle."
+      - title: Places assises et zones debout dans un même plan
+        text: "Des rangs réservés avec catégories et des zones debout avec quotas, chaque catégorie avec son propre prix et sa propre période de vente."
+      - title: Versions du plan
+        text: "Une nouvelle disposition pour la séance suivante ne touche pas aux billets déjà vendus."
+      - title: Choix des places sur téléphone
+        text: "Zoom par pincement, une légende par catégorie et un minuteur de retenue pour les places choisies, dans le widget et sur la page hébergée."
+      - title: Invitations et places presse
+        text: "Retenez des places pour les invités et la presse et émettez des invitations depuis l'Event Center, sans commission."
+
+  - type: cards
+    id: prices
+    eyebrow: Prix
+    title: Prix, codes promo et périodes de vente
+    lead: "Détails : [codes promo et périodes de prix](/product/pricing-tools)."
+    items:
+      - title: Prix intelligent
+        text: "Un schéma prêt de paliers de prix par quantité et par date, au lieu de régler chaque palier à la main."
+      - title: Catégories complémentaires
+        text: "Un complément ne se vend qu'avec un billet principal : un billet enfant ne peut pas être vendu sans billet adulte."
+      - title: Codes promo
+        text: "Pour un événement, une séance ou une catégorie, avec une période de vente, une commande minimale et une limite par acheteur. Les partenaires reçoivent leurs propres codes."
+      - title: Prévente et paliers de quantité
+        text: "Les prix changent à une date que vous fixez, ou ouvrent le palier suivant quand le palier en cours est épuisé."
+      - title: Catégories et chaînes
+        text: "Chaque catégorie avec son propre prix, son propre quota et sa propre période de vente ; les places invendues passent à la catégorie suivante."
+      - title: Frais de service
+        text: "Un pourcentage par canal de vente, affiché à l'acheteur sur une ligne distincte et versé sur votre compte."
+      - title: Billets gratuits et à prix libre
+        text: "Des billets gratuits pour les invitations et les inscriptions, et des billets à prix libre avec un minimum que vous fixez."
+
+  - type: cards
+    id: payments
+    eyebrow: Paiements
+    title: L'argent va sur votre propre compte
+    lead: "Détails : [paiements](/payments)."
+    items:
+      - title: Votre propre compte de paiement
+        text: "Les acheteurs paient sur votre compte Stripe, Flitt ou AllPay à chaque commande. ArenaSoldOut.com ne détient jamais de fonds."
+      - title: Remboursements via n'importe quel prestataire
+        text: "Vous décidez d'un remboursement dans l'Event Center ; il revient à l'acheteur via votre prestataire."
+      - title: Gestion automatique des rétrofacturations
+        text: "Quand un acheteur conteste un paiement, nous rassemblons les preuves : données de paiement, consentement, envoi des e-mails de billet et chaque téléchargement du billet."
+
+  - type: cards
+    id: tickets
+    eyebrow: Billets et entrée
+    title: Ce que reçoit l'acheteur, et comment vous le scannez
+    lead: "Détails : [billets électroniques](/product/tickets) et [application de scan MACS](/product/scanner)."
+    items:
+      - title: Billet électronique avec QR et EAN-13
+        text: "Un billet PDF dans l'e-mail de l'acheteur, prêt à présenter depuis un téléphone ou sur papier."
+      - title: Reçu de paiement dans l'e-mail du billet
+        text: "Le reçu est joint à l'e-mail du billet et indique le bénéficiaire."
+      - title: Statut de livraison de chaque e-mail
+        text: "Envoyé, Distribué, Lu : vérifiez que l'acheteur a reçu le billet et renvoyez-le en un clic."
+      - title: E-mails en 7 langues
+        text: "La page de l'acheteur, les e-mails et le billet dans la langue de l'acheteur. Nous ajoutons toute nouvelle langue sous 40 heures."
+      - title: Changements de date et annulations
+        text: "Les acheteurs reçoivent un e-mail avec le billet mis à jour quand une séance est reportée ou annulée."
+      - title: Application de scan pour iOS et Android
+        text: "MACS, notre application distincte pour l'entrée : autant de téléphones que vous voulez, une réponse claire à chaque scan."
+
+  - type: cards
+    id: center
+    eyebrow: Event Center
+    title: Gérez l'événement avec votre équipe
+    lead: "Détails : [Event Center](/#center) et [bot Telegram](/product/telegram)."
+    items:
+      - title: Commandes et acheteurs
+        text: "Recherche, filtres et rapports CSV par séance. Renvoyez, remboursez ou invitez en un clic."
+      - title: Séances
+        text: "Ajoutez des dates, reportez ou annulez une séance, et les acheteurs sont informés par e-mail."
+      - title: Analyse des ventes
+        text: "Vues, paniers et paiements par événement, pour voir où les acheteurs abandonnent."
+      - title: Rôles de l'équipe
+        text: "Rôles de propriétaire et de gestionnaire pour votre équipe, dans le navigateur sur téléphone ou ordinateur."
+      - title: Bot Telegram
+        text: "Créez un événement à partir d'une photo d'affiche et recevez chaque vente et chaque remboursement dans votre groupe Telegram en quelques secondes."
+
+  - type: cards
+    id: reliability
+    eyebrow: Fiabilité
+    title: Conçu pour les grandes ouvertures de vente
+    lead: "Détails : [fiabilité](/product/reliability) et [page des faits](/facts)."
+    items:
+      - title: 800 commandes par minute
+        text: "Avec 1 000 acheteurs simultanés sur la page, lors des tests de charge de septembre 2026."
+      - title: Surveillance et sauvegardes
+        text: "Contrôles continus avec alertes à l'équipe, sauvegardes chiffrées chaque nuit, Cloudflare en première ligne."
+      - title: Protection contre les bots
+        text: "Les retenues de places expirent sur minuteur, les commandes sont limitées en fréquence, le trafic abusif est filtré."
+
+  - type: cards
+    id: pricing
+    eyebrow: Tarifs
+    title: Ce que vous payez
+    lead: "Détails : [tarifs](/pricing) et [conditions détaillées](/pricing/terms)."
+    items:
+      - title: Paiement à l'usage
+        text: "{usdPrice} par billet vendu ({eurPrice} dans l'UE), facturé après l'événement. Sans abonnement, sans contrat."
+      - title: Crédits
+        text: "Achetez des crédits à l'avance et payez à partir de {usdFrom} par billet ({eurFrom} dans l'UE). Les crédits n'expirent jamais."
+      - title: 50% de remise pour les associations caritatives enregistrées
+        text: "Les associations caritatives enregistrées paient la moitié de notre commission."
+      - title: Invitations gratuites et plans de salle gratuits
+        text: "Aucune commission sur les invitations et les billets gratuits ; nous dessinons votre plan de salle gratuitement."
+
+  - type: cta
+    id: start
+    title: Commencez à vendre dès aujourd'hui
+    text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Voir les tarifs, href: /pricing }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

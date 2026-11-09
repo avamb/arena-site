@@ -1,0 +1,38 @@
+title: "Billetterie de spectacles : ice shows, cirque, danse"
+description: "Vendez des billets de spectacles en tournée : un plan par salle réutilisé, nombreuses dates, une page par promoteur, toutes les villes dans un Event Center."
+h1: Spectacles
+lead: Ice shows, cirque, danse et spectacles familiaux enchaînent les dates dans de nombreuses salles. Un événement, un plan par salle, une page par promoteur, et les ventes de chaque ville au même endroit.
+related:
+  - { label: Tournées de concerts, href: /solutions/concert-tours }
+  - { label: Plans de salle, href: /product/seating }
+  - { label: Clients, href: /clients }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Pour les spectacles
+    title: Qu'est-ce qui compte pour un spectacle ?
+    items:
+      - { title: Un plan par salle, text: "Le plan de chaque salle est construit une fois et réutilisé à la visite suivante ; les versions gardent l'historique.", link: { label: Plans de salle →, href: /product/seating } }
+      - { title: Nombreuses dates, text: "Séances par ville et par jour dans un seul événement ; les acheteurs choisissent la date dans le widget, vous voyez les totaux par séance.", link: { label: Event Center →, href: /#center } }
+      - { title: Promoteurs locaux, text: "Une page par promoteur avec son lien et ses codes ; chaque canal rend compte dans un seul Event Center.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: Billets famille, text: "Catégories pour enfants et groupes, paliers de quantité, billets gratuits pour les adultes accompagnateurs.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: Que demandent d'abord les producteurs de spectacles ?
+    items:
+      - q: Un événement peut-il couvrir toute une tournée ?
+        a: Oui. Les séances portent la ville, la salle et le plan ; les totaux et les rapports CSV sont fournis par séance et pour l'ensemble de l'événement.
+      - q: Comment gérer une salle où nous n'avons jamais joué ?
+        a: Envoyez son plan sous n'importe quelle forme lisible et l'équipe le construit. La visite suivante le réutilise.
+      - q: Nos billets sont aussi vendus par des partenaires locaux. La porte suivra-t-elle ?
+        a: Oui. L'application de contrôle accepte les billets de partenaires d'autres systèmes à côté des billets ArenaSoldOut.com.
+      - q: Où va l'argent ?
+        a: "Sur votre propre compte de paiement, dans votre devise, avec chaque commande. Voir les [paiements](/payments)."
+  - type: cta
+    id: start
+    title: Commencez à vendre dès aujourd'hui
+    text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

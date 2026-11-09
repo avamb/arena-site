@@ -1,0 +1,147 @@
+title: "Politique de confidentialité"
+description: "Comment ArenaSoldOut.com (ABH TEAM OÜ) traite les données personnelles des visiteurs, organisateurs et acheteurs : finalités, destinataires, durées, droits."
+h1: "Politique de confidentialité"
+lead: "Version du 2 novembre 2026. Remplace la version du 9 octobre 2026. S'applique au site web, à l'Event Center, aux pages de vente, au widget, à l'API, au bot Telegram et à l'application de contrôle. Ceci est une traduction à titre d'information ; la version anglaise fait foi."
+related:
+  - { label: Conditions générales, href: /legal/terms }
+  - { label: Aide pour les acheteurs de billets, href: /help/tickets }
+  - { label: Paiements, href: /payments }
+sections:
+  - type: prose
+    id: text
+    body: |
+      La présente politique de confidentialité explique comment ABH TEAM OÜ, qui exploite la plateforme de billetterie ArenaSoldOut.com (« nous », « ArenaSoldOut.com »), traite les données personnelles que nous collectons et recevons par le site web ArenaSoldOut.com, l'Event Center sur app.arenasoldout.com, les pages de vente hébergées et le widget de billetterie sur tickets.arenasoldout.com, l'API publique, le bot Telegram et l'application de contrôle (ensemble, les « services »).
+
+      Elle s'applique à trois groupes de personnes : les visiteurs du site web ; les organisateurs qui utilisent les services et les membres de leurs équipes (les « organisateurs ») ; et les personnes qui achètent des billets auprès d'organisateurs par l'intermédiaire des services (les « acheteurs de billets »).
+
+      En utilisant le site web ou les services, vous acceptez la présente politique de confidentialité et nos conditions générales. Si vous n'êtes pas d'accord, veuillez ne pas utiliser le site web ni les services.
+
+      ## 1. Quelles données nous collectons et traitons
+
+      1.1 Dans cette section, nous indiquons : (a) les catégories de données personnelles que nous pouvons traiter ; (b) les finalités pour lesquelles nous les traitons ; et (c) les bases juridiques du traitement.
+
+      1.2 Nous traitons les données de compte des organisateurs (les « données de compte ») : le nom de l'organisation et son pays, les noms, adresses e-mail et numéros de téléphone du titulaire du compte et des membres de l'équipe, les comptes Telegram des membres de l'équipe qui utilisent le bot Telegram, les journaux de connexion, les clés d'API et les paramètres. La source des données de compte est vous-même. Elles sont traitées pour faire fonctionner les services, vous les fournir, les sécuriser, conserver des sauvegardes et communiquer avec vous au sujet de votre compte et de vos événements. La base juridique est l'exécution de notre contrat avec vous (les conditions générales) et notre intérêt légitime à assurer la sécurité des services.
+
+      1.3 Nous traitons des données relatives à l'utilisation du site web et des services (les « données d'utilisation »). Le site web peut utiliser des statistiques sans cookie hébergées par nous : pages consultées, site de provenance, type et version du navigateur, système d'exploitation, pays et thème choisi (clair ou sombre). Il ne conserve pas votre adresse IP complète et ne dépose aucun cookie. Les services conservent des journaux de serveur avec l'adresse IP, l'heure et la requête, pour la sécurité et le dépannage. La base juridique est notre intérêt légitime à comprendre comment le site web est utilisé et à protéger les services.
+
+      1.3a Le site web dispose aussi de statistiques produit qui nous sont propres, et qui ne fonctionnent que si vous acceptez « Statistiques » dans la bannière de cookies. Elles enregistrent les pages que vous ouvrez, le temps passé sur une page, la profondeur de défilement, vos clics sur des boutons repérés (par exemple « Commencer à vendre » ou « Contact »), la langue de la page et la source de la visite (le site de provenance et les balises de campagne dans l'adresse). Elles relient vos visites par un code aléatoire conservé dans un cookie. Si vous commencez ensuite une candidature, le code est envoyé avec elle, afin que nous puissions voir quelles pages l'ont précédée. Ces données restent chez ArenaSoldOut.com, sont stockées sur nos propres serveurs dans l'Union européenne et ne sont pas transmises à des sociétés de publicité ou de statistiques. Leur base juridique est votre consentement, que vous pouvez retirer à tout moment (section 7). Si vous refusez, rien de tout cela n'est collecté.
+
+      1.3b Si vous arrivez par un lien dans un e-mail que nous vous avons envoyé, le lien contient un code de votre fiche de contact. La visite par le lien (la page, l'heure) est enregistrée même si vous refusez les statistiques, et rien d'autre n'est rattaché à vous sans votre consentement. La base juridique est notre intérêt légitime à savoir lesquels de nos e-mails ont été lus. Le code est retiré de l'adresse dès l'ouverture de la page. Vous pouvez vous y opposer à tout moment (section 5).
+
+      1.4 Nous traitons le contenu que les organisateurs publient par l'intermédiaire des services (les « données de publication ») : titres et descriptions d'événements, affiches, détails de salle et de séance, plans de salle, prix et conditions des billets. Il est traité pour publier l'événement sur la page de vente, dans le widget et sur le propre site de l'organisateur, et pour émettre les billets. La base juridique est l'exécution de notre contrat avec l'organisateur.
+
+      1.5 Nous traitons les informations contenues dans toute demande que vous nous envoyez (les « données de demande ») : le formulaire de candidature de ce site web (organisation, pays, prestataire de paiement, nom, e-mail, téléphone, message), les messages au bot Telegram et au chat Telegram, et les e-mails. Elles sont traitées pour vous répondre et configurer votre compte. La base juridique est l'accomplissement de démarches à votre demande avant la conclusion d'un contrat, et votre consentement lorsque vous nous contactez pour une autre raison. Le formulaire de candidature est protégé par Cloudflare Turnstile, qui vérifie que l'expéditeur est une personne (voir la section 6).
+
+      1.6 Nous traitons les données des acheteurs de billets et des transactions (les « données de transaction »). Lorsque vous achetez un billet auprès d'un organisateur par l'intermédiaire des services, nous traitons votre nom, votre adresse e-mail, votre numéro de téléphone si l'organisateur le demande, la langue que vous avez choisie, les places et billets achetés, le montant et l'état du paiement, l'historique de votre commande (remboursements, billets renvoyés et remplacés) et la lecture de votre billet à la porte. Nous traitons ces données pour le compte de l'organisateur, qui en est le responsable du traitement, afin d'émettre et de livrer votre billet électronique, de vous faire entrer à la porte, de traiter les remboursements que l'organisateur décide et de vous avertir lorsqu'une séance est déplacée ou annulée. L'organisateur voit votre commande dans l'Event Center et, s'il l'a activé, dans son propre groupe Telegram. Le paiement lui-même est géré par le prestataire de paiement que l'organisateur a connecté ; la liste actuelle figure sur la page des paiements. Nous ne recevons jamais vos données de carte ou bancaires et ne détenons jamais l'argent. Les questions sur votre billet, un remboursement ou l'événement vont à l'organisateur ; la page d'aide aux acheteurs de billets explique où trouver votre billet.
+
+      1.7 Nous traitons les données que vous nous donnez pour recevoir nos e-mails (les « données de notification »). Les e-mails de service et les messages Telegram sur votre compte, les factures et les événements font partie du contrat. Les lettres d'information ne sont envoyées qu'avec votre consentement, que vous pouvez retirer par le lien présent dans chaque lettre.
+
+      1.8 Nous pouvons traiter toute donnée personnelle vous concernant mentionnée dans la présente politique lorsque cela est nécessaire à la constatation, à l'exercice ou à la défense de droits en justice, que ce soit dans une procédure judiciaire ou dans une procédure administrative ou extrajudiciaire. La base juridique est notre intérêt légitime à protéger et à faire valoir nos droits, vos droits et ceux d'autrui.
+
+      1.9 Nous pouvons également traiter toute donnée personnelle vous concernant lorsque le traitement est nécessaire à la sauvegarde de vos intérêts vitaux ou de ceux d'une autre personne physique.
+
+      ## 2. Comment nous partageons les informations
+
+      2.1 Les données personnelles détenues dans les services sont stockées sur des serveurs situés dans l'Union européenne, exploités par nos hébergeurs dans le cadre d'accords de traitement des données, avec des sauvegardes chiffrées chaque nuit. Cloudflare, Inc. sert ce site web, protège les services et fournit la vérification Turnstile sur nos formulaires.
+
+      2.2 Pour faire fonctionner les services, vos données personnelles sont partagées, chacune dans la seule mesure nécessaire à sa tâche, avec : l'organisateur auprès duquel vous avez acheté un billet (acheteurs de billets) ; le prestataire de paiement connecté par l'organisateur ; les prestataires d'envoi d'e-mails qui envoient les billets et les e-mails de service ; Telegram, par lequel le bot Telegram, le chat Telegram et les notifications aux groupes des organisateurs sont acheminés selon la propre politique de confidentialité de Telegram ; nos prestataires d'hébergement, de statistiques, d'automatisation et d'assistance client. Selon nos instructions, ces parties peuvent accéder aux données personnelles, les traiter ou les stocker dans l'exercice de leurs fonctions pour nous.
+
+      2.3 Si nous sommes impliqués dans une fusion, une acquisition, un audit préalable à un financement, une réorganisation, une faillite, une mise sous administration judiciaire, la vente de tout ou partie de nos actifs, ou le transfert d'un service à un autre prestataire, vos données personnelles et autres informations peuvent être transférées à un successeur ou à une société affiliée dans le cadre de cette opération.
+
+      2.4 Nous divulguons des données personnelles si la loi ou la réglementation applicable l'exige, ou si nous estimons de bonne foi qu'une telle action est nécessaire pour : (a) respecter une obligation légale ; (b) protéger et défendre nos droits ou nos biens ; (c) agir en cas d'urgence pour protéger la sécurité personnelle des utilisateurs des services ou du public ; ou (d) nous protéger contre une responsabilité légale, que ce soit dans une procédure judiciaire ou dans une procédure administrative ou extrajudiciaire.
+
+      2.5 Avec votre consentement, nous pouvons partager des données avec des tiers en dehors du champ de la présente politique de confidentialité.
+
+      2.6 Les organisateurs modifient ou corrigent leurs données dans l'Event Center ou en écrivant à hello@arenasoldout.com. Les acheteurs de billets écrivent à l'organisateur de leur événement, ou à nous à la même adresse ; lorsque l'organisateur est le responsable du traitement, nous transmettons la demande à l'organisateur.
+
+      ## 3. Durée de conservation des données
+
+      3.1 Nous ne conservons vos informations que : (a) aussi longtemps que nécessaire pour atteindre les finalités pour lesquelles elles ont été collectées et traitées ; (b) lorsque la loi applicable prévoit une durée de conservation plus longue ; et (c) pendant la durée de conservation exigée par la loi. Ensuite, vos données personnelles sont supprimées, bloquées ou anonymisées, comme le prévoit la loi applicable.
+
+      3.2 Nous conservons les données personnelles comme suit :
+
+      (a) données de compte : tant que le compte est ouvert et jusqu'à 120 mois après la dernière connexion, comme prévu dans les conditions générales ; nous vous avertissons par e-mail avant de supprimer le compte ;
+
+      (b) données d'utilisation : statistiques sans cookie sous forme agrégée ; journaux de serveur pendant la période limitée nécessaire à la sécurité et au dépannage ; événements des statistiques produit pendant 13 mois, et le profil construit à partir d'eux (les pages visitées, la première source, l'étape d'une candidature) aussi longtemps que votre fiche de contact ou votre compte existe, après quoi il est supprimé ; le cookie visiteur vit 13 mois et l'enregistrement de votre choix de cookies 6 mois ;
+
+      (c) données de publication : tant que l'événement est publié et que le compte de l'organisateur est ouvert ;
+
+      (d) données de demande : les candidatures qui n'ont pas abouti à un compte sont supprimées 180 jours après le dernier contact ; les autres demandes, jusqu'à la clôture du dossier ;
+
+      (e) données de transaction : tant que le compte de l'organisateur est ouvert et que l'organisateur en a besoin pour les remboursements, litiges et rapports, puis pendant la durée exigée par le droit comptable et fiscal (en Estonie, sept ans pour les pièces justificatives comptables) ;
+
+      (f) données de notification : jusqu'à ce que vous retiriez votre consentement ; nous conservons la trace de votre désinscription afin de ne plus vous écrire.
+
+      ## 4. Sécurité
+
+      4.1 Nous nous engageons à protéger la vie privée des visiteurs du site web, des organisateurs et des acheteurs de billets. Nous prenons des mesures administratives et techniques raisonnables pour protéger les données personnelles contre la perte, l'usage abusif et l'accès, la divulgation, la modification ou la destruction non autorisés : connexions chiffrées, sauvegardes chiffrées chaque nuit, accès aux données des acheteurs de billets limité à l'équipe de l'organisateur et à notre personnel qui en a besoin, et surveillance des services.
+
+      4.2 Cependant, aucune méthode de transmission sur internet n'est totalement sûre. Même si nous nous efforçons de protéger vos données, nous ne pouvons garantir leur sécurité absolue.
+
+      ## 5. Droits en vertu du droit de l'UE
+
+      5.1 Cette section décrit vos droits en vertu du droit de l'UE (à ces fins, l'UE inclut les pays de l'Espace économique européen : Islande, Liechtenstein et Norvège).
+
+      Les « intérêts légitimes » désignent nos intérêts à mener notre activité et à gérer et fournir les services. La présente politique de confidentialité décrit quand nous traitons vos données personnelles pour nos intérêts légitimes, quels sont ces intérêts et quels sont vos droits. Nous n'utilisons pas vos données personnelles pour des activités dont l'incidence sur vous l'emporte sur nos intérêts, sauf si nous avons votre consentement ou si ces activités sont par ailleurs exigées ou autorisées par la loi.
+
+      5.2 Vous disposez des droits suivants concernant vos données personnelles :
+
+      (a) Droit d'accès : si nous traitons vos données personnelles, vous pouvez en demander une copie.
+
+      (b) Droit de rectification : si vos données personnelles sont inexactes ou incomplètes, vous pouvez nous demander de les corriger ou de les compléter. Si nous les avons partagées avec d'autres, nous les informons de la correction lorsque c'est possible.
+
+      (c) Droit à l'effacement : vous pouvez nous demander d'effacer vos données personnelles dans certaines circonstances, par exemple lorsque nous n'en avons plus besoin ou que vous retirez votre consentement. Si nous les avons partagées avec d'autres, nous les avertissons de la nécessité de l'effacement lorsque c'est possible.
+
+      (d) Droit à la limitation du traitement : vous pouvez nous demander de limiter ou de bloquer le traitement de vos données personnelles dans certaines circonstances, par exemple lorsque vous contestez leur exactitude ou vous opposez au traitement. Si nous les avons partagées avec d'autres, nous les informons de la limitation lorsque c'est possible.
+
+      (e) Droit d'opposition : vous pouvez nous demander à tout moment de cesser de traiter vos données personnelles, et nous le faisons lorsque nous nous appuyons sur un intérêt légitime, sauf si nous démontrons des motifs légitimes impérieux, et toujours lorsque nous les traitons à des fins de prospection.
+
+      (f) Droit à la portabilité des données : vous pouvez obtenir les données personnelles que vous nous avez fournies avec votre consentement ou dans le cadre de notre contrat avec vous, dans un format structuré et couramment utilisé.
+
+      (g) Droit de retirer son consentement : lorsque nous nous appuyons sur votre consentement, vous pouvez le retirer à tout moment ; cela n'affecte pas le traitement déjà effectué.
+
+      (h) Droit d'introduire une réclamation : si vous avez une préoccupation concernant nos pratiques de confidentialité, vous pouvez saisir l'autorité de protection des données de votre pays. Notre autorité de contrôle est l'Inspection estonienne de la protection des données (Andmekaitse Inspektsioon, www.aki.ee).
+
+      5.3 Pour exercer ces droits, écrivez à hello@arenasoldout.com. Nous répondons dans un délai d'un mois. Les acheteurs de billets peuvent aussi contacter l'organisateur de leur événement, qui est le responsable du traitement de leurs données.
+
+      ## 6. Cookies et technologies similaires
+
+      6.1 Un « cookie » est une petite information qu'un site web enregistre dans votre navigateur. Les navigateurs proposent aussi un stockage local, qui fonctionne de façon similaire mais n'est pas envoyé au serveur à chaque requête.
+
+      6.2 Le site web affiche une bannière de cookies avec deux catégories : « Nécessaires », toujours actives, et « Statistiques », désactivées tant que vous n'acceptez pas. Avant votre choix, il ne dépose aucun cookie. Lorsque vous choisissez, il enregistre votre réponse dans le cookie aso_consent (6 mois) ; celui-ci est strictement nécessaire, car c'est ainsi que nous retenons votre réponse. Seulement si vous acceptez les statistiques, il dépose aussi le cookie aso_aid, un code visiteur aléatoire (13 mois, de première partie, jamais prolongé par les visites suivantes). Aucun des deux cookies n'est partagé avec des tiers. Votre choix de thème (clair ou sombre) est stocké dans le stockage local de votre navigateur et ne nous est jamais envoyé. Les statistiques sans cookie décrites à la section 1.3 ne déposent aucun cookie. Le formulaire de candidature utilise Cloudflare Turnstile pour distinguer les personnes des envois automatisés ; la vérification s'exécute depuis challenges.cloudflare.com et peut utiliser ses propres cookies ou son propre stockage, selon la politique de confidentialité de Cloudflare.
+
+      6.3 L'Event Center, les pages de vente hébergées et le widget de billetterie utilisent des cookies et un stockage local strictement nécessaires : pour maintenir les organisateurs connectés, pour retenir vos places pendant que vous terminez une commande, pour mémoriser votre langue, et pour protéger les comptes et les commandes contre la fraude. Nous n'utilisons pas de cookies publicitaires ni de cookies de statistiques tiers.
+
+      ## 7. Comment contrôler les cookies
+
+      7.1 Vous pouvez bloquer ou supprimer les cookies et le stockage local dans les paramètres de votre navigateur ; l'aide de votre navigateur explique comment. Bloquer les cookies strictement nécessaires empêche de se connecter à l'Event Center et de terminer une commande de billets.
+
+      7.2 Vous pouvez modifier ou retirer votre choix concernant les statistiques à tout moment avec le lien « Paramètres des cookies » dans le pied de page de chaque page. Le retrait supprime le cookie aso_aid et arrête aussitôt toute collecte. Pour faire supprimer les événements déjà collectés sous votre code, écrivez à hello@arenasoldout.com.
+
+      ## 8. Révision et divisibilité
+
+      8.1 Nous pouvons mettre à jour la présente politique de confidentialité de temps à autre en publiant une nouvelle version sur cette page avec la date de la modification. Consultez cette page de temps en temps pour vous assurer que les changements vous conviennent.
+
+      8.2 Si une disposition de la présente politique est jugée illégale ou inapplicable par un tribunal ou une autre autorité compétente, les autres dispositions restent en vigueur.
+
+      8.3 Si une disposition illégale ou inapplicable devenait légale ou applicable par la suppression d'une partie de celle-ci, cette partie est réputée supprimée, et le reste de la disposition reste en vigueur.
+
+      ## 9. Comment nous contacter
+
+      9.1 Ce site web et les services sont détenus et exploités par ABH TEAM OÜ.
+
+      9.2 Nous sommes inscrits au registre du commerce estonien sous le numéro 14162982, et notre siège social et lieu d'activité se situe à l'adresse suivante :
+
+      Narva mnt 5a, Kesklinna district,
+      Tallinn city, Harju county,
+      10117 Estonia.
+
+      9.3 Vous pouvez nous contacter :
+
+      (a) par e-mail, à hello@arenasoldout.com ;
+
+      (b) dans le chat Telegram et le bot Telegram indiqués sur la page de contact ;
+
+      (c) avec le formulaire de candidature de ce site web ;
+
+      (d) par courrier, à l'adresse indiquée ci-dessus.

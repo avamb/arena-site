@@ -1,0 +1,14 @@
+title: "Dernières modifications"
+description: "Une ligne pour chaque fonctionnalité livrée aux organisateurs, avec la date. La plateforme évolue chaque semaine."
+h1: Dernières modifications
+lead: "Une ligne pour chaque fonctionnalité livrée aux organisateurs. Dites-nous ce qu'il vous faut ensuite : la plupart des demandes des organisateurs sont livrées en quelques semaines, et l'équipe répond en personne."
+sections:
+  - type: changelog
+    id: log
+  - type: cta
+    id: start
+    title: Dites-nous ce qu'il vous faut
+    text: La plupart des demandes des organisateurs sont livrées en quelques semaines. Écrivez ce qui manque pour votre événement et l'équipe répond en personne.
+    primary: { label: Dites-nous ce qu'il vous faut, href: /start }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

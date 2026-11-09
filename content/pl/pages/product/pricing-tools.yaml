@@ -1,0 +1,37 @@
+title: "Kody promocyjne, early bird, progi, darmowe i do wyboru"
+description: "Kody promocyjne z zakresem i limitami, okna cenowe według daty, progi ilościowe, łańcuchy kategorii, opłata serwisowa kanału, bilety darmowe i z ceną do wyboru."
+h1: Ceny, które zmieniają się tak, jak zaplanowałeś
+lead: Early bird według daty, kolejna cena po wyprzedaniu progu, kody dla partnerów, opłata serwisowa dla każdego kanału. Wszystko ustawiane w Event Center, stosowane w widgecie i na stronie hostowanej.
+related:
+  - { label: Plany sali, href: /product/seating }
+  - { label: "Cennik: za bilet, bez abonamentu", href: /pricing }
+  - { label: Dla festiwali, href: /solutions/festivals }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Narzędzia cenowe
+    title: Co mogę zrobić z cenami?
+    items:
+      - q: Czy mogę używać kodów promocyjnych?
+        a: Tak. Kod może obowiązywać dla jednego wydarzenia, jednego terminu lub jednej kategorii, z oknem sprzedaży, minimalnym zamówieniem i limitem na kupującego. Partnerzy dostają własne kody.
+      - q: Czy jest gotowy schemat cen?
+        a: "Tak, Smart price. Wybierz gotowy schemat progów cenowych według ilości i daty, zamiast ustawiać każdy próg ręcznie. Możesz go potem dostosować."
+      - q: Czy bilet można sprzedać tylko razem z innym?
+        a: "Tak, dzięki kategoriom dodatkowym. Dodatek jest sprzedawany tylko razem z biletem kategorii głównej tego samego terminu. Na przykład biletu dla dziecka nie można sprzedać bez biletu dla dorosłego, a „jeszcze jedno dziecko” dodaje się do „dziecko plus dorosły”. Gdy kategorie główne się wyprzedadzą, termin pokazuje się jako wyprzedany."
+      - q: Czy ceny mogą zmieniać się w ustalonym przeze mnie dniu?
+        a: Tak. Okna cen wczesnych (early bird) przełączają się według daty i godziny. Progi ilościowe otwierają kolejną cenę, gdy bieżąca się wyprzeda, więc wyprzedany próg nigdy nie blokuje sprzedaży.
+      - q: Kilka cen w jednym wydarzeniu?
+        a: Tak. Kategorie z własną ceną, pulą i oknem sprzedaży. Kategorie mogą tworzyć łańcuchy, które przekazują niesprzedane miejsca następnej.
+      - q: Czy mogę dodać opłatę serwisową?
+        a: Tak. Procent dla każdego kanału sprzedaży, pokazany kupującemu w osobnej linii i wpłacany na twoje konto razem z ceną biletu.
+      - q: Bilety darmowe i z ceną do wyboru?
+        a: Tak, jedne i drugie. Darmowe bilety na zaproszenia i rejestracje oraz bilety z ceną do wyboru przez kupującego, z ustalonym przez ciebie minimum.
+      - q: Czy zniżki działają z miejscami numerowanymi?
+        a: Tak. Kody i okna dotyczą kategorii z miejscami numerowanymi, tak samo jak stref stojących.
+  - type: cta
+    id: start
+    title: Ustaw ceny już dziś
+    text: Utwórz wydarzenie, dodaj kategorie i okna, podłącz konto płatności, udostępnij link.
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Zobacz cennik, href: /pricing }
+    note: Warunki wolumenowe i indywidualne na życzenie.

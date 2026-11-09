@@ -1,0 +1,40 @@
+title: "Bot do Telegram: crie um evento a partir de um cartaz"
+description: "Crie um evento com a foto de um cartaz, confirme o que o bot leu, adicione datas e equipe. Cada venda e reembolso chega ao seu grupo do Telegram em segundos."
+h1: Gerencie o evento pelo Telegram
+lead: O Event Center também está no bot. Uma foto do cartaz basta para começar; cada leitura é um botão para confirmar, nada é publicado sem você.
+related:
+  - { label: Event Center no navegador, href: /#center }
+  - { label: Venda no seu site ou no nosso, href: /product/sell }
+  - { label: Começar a vender, href: /start }
+sections:
+  - type: steps
+    id: how
+    eyebrow: Como funciona
+    title: O que o bot faz?
+    items:
+      - title: Lê o cartaz
+        text: Envie uma foto. O bot lê o nome, as datas, o local e os preços e mostra cada valor como um botão para confirmar ou editar.
+      - title: Monta o evento
+        text: Sessões, categorias, preços e o cartaz entram no evento. Adicione membros da equipe, receba um ingresso de exemplo com marca d'água, publique quando estiver pronto.
+      - title: Informa cada venda
+        text: Cada venda e reembolso chega ao seu grupo de organizador em segundos, com o nome do comprador, os assentos, o valor e o contato.
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O Telegram é o único caminho?
+    items:
+      - q: Preciso do Telegram para usar o ArenaSoldOut.com?
+        a: "Não. O mesmo Event Center funciona no navegador, no ArenaSoldOut.com, e a equipe pode configurar tudo por você. O Telegram é um dos caminhos, para organizadores que vivem no mensageiro."
+      - q: Em quais idiomas o bot fala?
+        a: Hoje em inglês, russo e espanhol; outros virão seguindo os idiomas do site.
+      - q: Minha equipe pode usá-lo?
+        a: Sim. Adicione membros da equipe com funções; o grupo de vendas pode incluir todos que precisam ver os pedidos.
+      - q: Funciona com o mapa de assentos?
+        a: O bot cria eventos com categorias e datas; o mapa de assentos é montado pela equipe e anexado ao evento.
+  - type: cta
+    id: start
+    title: Abra o bot
+    text: Envie um cartaz ou apenas diga olá. A equipe responde no mesmo chat.
+    primary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    secondary: { label: Começar pelo site, href: /start }
+    note: Eventos sem mapa de assentos entram à venda hoje.

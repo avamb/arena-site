@@ -1,0 +1,37 @@
+title: "Codici promozionali, early bird e prezzi a gradini"
+description: "Codici promozionali con limiti, prezzi per data, gradini di quantità, catene di categorie, commissione di servizio, biglietti gratuiti e a offerta libera."
+h1: Prezzi che cambiano come hai pianificato
+lead: Early bird per data, il prezzo successivo quando un gradino si esaurisce, codici per i partner, una commissione di servizio per canale. Tutto impostato nell'Event Center, applicato nel widget e sulla pagina ospitata.
+related:
+  - { label: Mappe dei posti, href: /product/seating }
+  - { label: "Prezzi: per biglietto, senza abbonamento", href: /pricing }
+  - { label: Per i festival, href: /solutions/festivals }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Strumenti di prezzo
+    title: Che cosa posso fare con i prezzi?
+    items:
+      - q: Posso usare codici promozionali?
+        a: Sì. Un codice può valere per un evento, una sessione o una categoria, con una finestra di vendita, un ordine minimo e un limite per acquirente. I partner ricevono codici propri.
+      - q: Esiste uno schema di prezzo già pronto?
+        a: "Sì, il Prezzo intelligente. Scegli uno schema pronto di gradini di prezzo per quantità e per data, invece di impostare ogni gradino a mano. Puoi modificarlo dopo."
+      - q: Un biglietto può essere venduto solo insieme a un altro?
+        a: "Sì, con le categorie aggiuntive. Un'aggiunta si vende solo insieme a un biglietto di una categoria principale della stessa sessione. Per esempio, un biglietto per bambini non può essere venduto senza un biglietto per adulti, e \"un altro bambino\" si aggiunge a \"bambino più adulto\". Quando le categorie principali si esauriscono, la sessione risulta esaurita."
+      - q: I prezzi possono cambiare a una data che scelgo?
+        a: Sì. Le finestre early bird cambiano per data e ora. I gradini di quantità aprono il prezzo successivo quando quello attuale si esaurisce, così un livello esaurito non blocca mai le vendite.
+      - q: Più prezzi per un solo evento?
+        a: Sì. Categorie con prezzo, quota e finestra di vendita propri. Le categorie possono formare catene che passano i posti invenduti alla successiva.
+      - q: Posso aggiungere una commissione di servizio?
+        a: Sì. Una percentuale per canale di vendita, mostrata all'acquirente come riga separata e versata sul tuo conto insieme al prezzo del biglietto.
+      - q: Biglietti gratuiti e a offerta libera?
+        a: Sì, entrambi. Biglietti gratuiti per inviti e registrazioni, e biglietti a offerta libera con un minimo che scegli tu.
+      - q: Gli sconti funzionano con i posti numerati?
+        a: Sì. Codici e finestre si applicano alle categorie con posti numerati come alle aree in piedi.
+  - type: cta
+    id: start
+    title: Imposta i tuoi prezzi oggi
+    text: Crea l'evento, aggiungi categorie e finestre, collega il tuo conto di pagamento, condividi il link.
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Vedi i prezzi, href: /pricing }
+    note: Condizioni per grandi volumi e individuali su richiesta.

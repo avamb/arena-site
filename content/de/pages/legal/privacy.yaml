@@ -1,0 +1,147 @@
+title: "Datenschutzerklärung"
+description: "Wie ArenaSoldOut.com (ABH TEAM OÜ) personenbezogene Daten von Besuchern, Veranstaltern, Käufern verarbeitet: Zweck, Empfänger, Speicherdauer, Rechte, Cookies."
+h1: "Datenschutzerklärung"
+lead: "Fassung vom 2. November 2026. Ersetzt die Fassung vom 9. Oktober 2026. Gilt für die Website, das Event Center, die Verkaufsseiten, das Widget, die API, den Telegram-Bot und die Scanner-App. Dies ist eine Übersetzung zur Information; die englische Fassung ist verbindlich."
+related:
+  - { label: Allgemeine Geschäftsbedingungen, href: /legal/terms }
+  - { label: Hilfe für Ticketkäufer, href: /help/tickets }
+  - { label: Zahlungen, href: /payments }
+sections:
+  - type: prose
+    id: text
+    body: |
+      Diese Datenschutzerklärung erläutert, wie die ABH TEAM OÜ, die die Ticketing-Plattform ArenaSoldOut.com betreibt („wir“, „ArenaSoldOut.com“), personenbezogene Daten behandelt, die wir über die Website ArenaSoldOut.com, das Event Center unter app.arenasoldout.com, die gehosteten Verkaufsseiten und das Ticket-Widget unter tickets.arenasoldout.com, die öffentliche API, den Telegram-Bot und die Scanner-App (zusammen die „Dienste“) erheben und erhalten.
+
+      Sie gilt für drei Personengruppen: Besucher der Website; Veranstalter, die die Dienste nutzen, und die Mitglieder ihrer Teams („Veranstalter“); und Personen, die über die Dienste Tickets von Veranstaltern kaufen („Ticketkäufer“).
+
+      Durch die Nutzung der Website oder der Dienste stimmen Sie dieser Datenschutzerklärung und unseren Allgemeinen Geschäftsbedingungen zu. Wenn Sie nicht zustimmen, nutzen Sie die Website oder die Dienste bitte nicht.
+
+      ## 1. Welche Daten wir erheben und verarbeiten
+
+      1.1 In diesem Abschnitt legen wir dar: (a) die Kategorien personenbezogener Daten, die wir verarbeiten können; (b) die Zwecke, zu denen wir sie verarbeiten; und (c) die Rechtsgrundlagen der Verarbeitung.
+
+      1.2 Wir verarbeiten Kontodaten von Veranstaltern („Kontodaten“): den Namen der Organisation und ihr Land, die Namen, E-Mail-Adressen und Telefonnummern des Kontoinhabers und der Teammitglieder, die Telegram-Konten von Teammitgliedern, die den Telegram-Bot nutzen, Anmeldeprotokolle, API-Keys und Einstellungen. Die Quelle der Kontodaten sind Sie. Sie werden verarbeitet, um die Dienste zu betreiben, sie Ihnen bereitzustellen, sie sicher zu halten, Backups zu führen und mit Ihnen über Ihr Konto und Ihre Veranstaltungen zu kommunizieren. Die Rechtsgrundlage ist die Erfüllung unseres Vertrags mit Ihnen (die Allgemeinen Geschäftsbedingungen) und unser berechtigtes Interesse an der Sicherheit der Dienste.
+
+      1.3 Wir verarbeiten Daten über die Nutzung der Website und der Dienste („Nutzungsdaten“). Die Website kann eine von uns gehostete cookiefreie Analyse verwenden: aufgerufene Seiten, verweisende Website, Browsertyp und -version, Betriebssystem, Land und das gewählte Design (hell oder dunkel). Sie speichert Ihre vollständige IP-Adresse nicht und setzt keine Cookies. Die Dienste führen Server-Logs mit IP-Adresse, Zeit und Anfrage, für Sicherheit und Fehlersuche. Die Rechtsgrundlage ist unser berechtigtes Interesse, zu verstehen, wie die Website genutzt wird, und die Dienste zu schützen.
+
+      1.3a Die Website hat außerdem eine eigene Produktanalyse, die nur funktioniert, wenn Sie im Cookie-Banner „Analytics“ akzeptieren. Sie erfasst die Seiten, die Sie öffnen, die Zeit, die Sie auf einer Seite verbringen, wie weit Sie scrollen, Ihre Klicks auf markierte Schaltflächen (zum Beispiel „Verkauf starten“ oder „Kontakt“), die Sprache der Seite und die Quelle des Besuchs (die verweisende Website und die Kampagnen-Tags in der Adresse). Sie verknüpft Ihre Besuche mit einem zufälligen Code, der in einem Cookie gespeichert wird. Wenn Sie anschließend einen Antrag beginnen, wird der Code mit ihm gesendet, damit wir sehen können, welche Seiten ihm vorausgingen. Diese Daten bleiben bei ArenaSoldOut.com, werden auf unseren eigenen Servern in der Europäischen Union gespeichert und nicht an Werbe- oder Analyseunternehmen weitergegeben. Ihre Rechtsgrundlage ist Ihre Einwilligung, die Sie jederzeit widerrufen können (Abschnitt 7). Wenn Sie ablehnen, wird nichts davon erhoben.
+
+      1.3b Wenn Sie über einen Link in einer E-Mail zu uns kommen, die wir Ihnen gesendet haben, enthält der Link einen Code Ihres Kontakteintrags. Der Besuch über den Link (die Seite, die Zeit) wird auch dann erfasst, wenn Sie Analytics ablehnen, und ohne Ihre Einwilligung wird nichts Weiteres mit Ihnen verknüpft. Die Rechtsgrundlage ist unser berechtigtes Interesse zu wissen, welche unserer E-Mails gelesen wurden. Der Code wird aus der Adresse entfernt, sobald die Seite sich öffnet. Sie können jederzeit widersprechen (Abschnitt 5).
+
+      1.4 Wir verarbeiten die Inhalte, die Veranstalter über die Dienste veröffentlichen („Veröffentlichungsdaten“): Veranstaltungstitel und -beschreibungen, Plakate, Angaben zu Spielstätte und Sessions, Saalpläne, Preise und Ticketbedingungen. Sie werden verarbeitet, um die Veranstaltung auf der Verkaufsseite, im Widget und auf der eigenen Website des Veranstalters zu veröffentlichen und Tickets auszustellen. Die Rechtsgrundlage ist die Erfüllung unseres Vertrags mit dem Veranstalter.
+
+      1.5 Wir verarbeiten die Informationen in jeder Anfrage, die Sie uns senden („Anfragedaten“): das Antragsformular auf dieser Website (Organisation, Land, Zahlungsanbieter, Name, E-Mail, Telefon, Nachricht), Nachrichten an den Telegram-Bot und den Telegram-Chat sowie E-Mails. Sie werden verarbeitet, um Ihnen zu antworten und Ihr Konto einzurichten. Die Rechtsgrundlage sind Schritte auf Ihre Anfrage vor Abschluss eines Vertrags und Ihre Einwilligung, wenn Sie uns aus einem anderen Grund kontaktieren. Das Antragsformular wird durch Cloudflare Turnstile geschützt, das prüft, dass der Absender eine Person ist (siehe Abschnitt 6).
+
+      1.6 Wir verarbeiten Daten von Ticketkäufern und Transaktionen („Transaktionsdaten“). Wenn Sie über die Dienste ein Ticket von einem Veranstalter kaufen, verarbeiten wir Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer, wenn der Veranstalter sie verlangt, die von Ihnen gewählte Sprache, die gekauften Plätze und Tickets, den Betrag und den Status der Zahlung, Ihren Bestellverlauf (Erstattungen, erneut gesendete und ersetzte Tickets) und den Scan Ihres Tickets am Einlass. Wir verarbeiten diese Daten im Auftrag des Veranstalters, der der Verantwortliche ist, um Ihr E-Ticket auszustellen und zuzustellen, Sie am Einlass zuzulassen, Erstattungen zu bearbeiten, die der Veranstalter beschließt, und Sie zu benachrichtigen, wenn eine Session verlegt oder abgesagt wird. Der Veranstalter sieht Ihre Bestellung im Event Center und, wenn der Veranstalter es eingeschaltet hat, in der eigenen Telegram-Gruppe des Veranstalters. Die Zahlung selbst wird vom Zahlungsanbieter abgewickelt, den der Veranstalter verbunden hat; die aktuelle Liste steht auf der Zahlungsseite. Wir erhalten nie Ihre Karten- oder Bankdaten und halten nie das Geld. Fragen zu Ihrem Ticket, zu einer Erstattung oder zur Veranstaltung gehen an den Veranstalter; die Hilfeseite für Ticketkäufer erklärt, wo Sie Ihr Ticket finden.
+
+      1.7 Wir verarbeiten die Daten, die Sie uns geben, um unsere E-Mails zu erhalten („Benachrichtigungsdaten“). Service-E-Mails und Telegram-Nachrichten zu Ihrem Konto, Rechnungen und Veranstaltungen sind Teil des Vertrags. Newsletter werden nur mit Ihrer Einwilligung gesendet, die Sie über den Link in jedem Newsletter widerrufen können.
+
+      1.8 Wir können alle in dieser Erklärung genannten personenbezogenen Daten von Ihnen verarbeiten, wenn dies zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist, sei es in Gerichtsverfahren oder in einem Verwaltungs- oder außergerichtlichen Verfahren. Die Rechtsgrundlage ist unser berechtigtes Interesse, unsere Rechte, Ihre Rechte und die Rechte anderer zu schützen und geltend zu machen.
+
+      1.9 Wir können Ihre personenbezogenen Daten auch verarbeiten, wenn die Verarbeitung erforderlich ist, um Ihre lebenswichtigen Interessen oder die lebenswichtigen Interessen einer anderen natürlichen Person zu schützen.
+
+      ## 2. Wie wir die Informationen weitergeben
+
+      2.1 Personenbezogene Daten in den Diensten werden auf Servern in der Europäischen Union gespeichert, die von unseren Hosting-Anbietern auf Grundlage von Auftragsverarbeitungsverträgen betrieben werden, mit nächtlichen verschlüsselten Backups. Cloudflare, Inc. liefert diese Website aus, schützt die Dienste und stellt die Turnstile-Prüfung in unseren Formularen bereit.
+
+      2.2 Zum Betrieb der Dienste werden Ihre personenbezogenen Daten, jeweils nur in dem für die Aufgabe nötigen Umfang, weitergegeben an: den Veranstalter, bei dem Sie ein Ticket gekauft haben (Ticketkäufer); den vom Veranstalter verbundenen Zahlungsanbieter; E-Mail-Zustelldienste, die Tickets und Service-E-Mails versenden; Telegram, über das der Telegram-Bot, der Telegram-Chat und Benachrichtigungen an Gruppen der Veranstalter nach der eigenen Datenschutzerklärung von Telegram zugestellt werden; unsere Anbieter für Hosting, Analyse, Automatisierung und Kundensupport. Nach unseren Anweisungen dürfen diese Parteien bei der Erfüllung ihrer Aufgaben für uns auf personenbezogene Daten zugreifen, sie verarbeiten oder speichern.
+
+      2.3 Wenn wir an einer Fusion, einer Übernahme, einer Due-Diligence-Prüfung für eine Finanzierung, einer Umstrukturierung, einer Insolvenz, einer Zwangsverwaltung, dem Verkauf aller oder eines Teils unserer Vermögenswerte oder dem Übergang eines Dienstes auf einen anderen Anbieter beteiligt sind, können Ihre personenbezogenen Daten und andere Informationen im Rahmen dieser Transaktion an einen Rechtsnachfolger oder ein verbundenes Unternehmen übertragen werden.
+
+      2.4 Wir geben personenbezogene Daten weiter, wenn Gesetze oder anwendbare Vorschriften dies verlangen oder wenn wir nach Treu und Glauben davon ausgehen, dass dies erforderlich ist, um: (a) einer rechtlichen Verpflichtung nachzukommen; (b) unsere Rechte oder unser Eigentum zu schützen und zu verteidigen; (c) in dringenden Fällen die persönliche Sicherheit von Nutzern der Dienste oder der Öffentlichkeit zu schützen; oder (d) uns vor rechtlicher Haftung zu schützen, sei es in Gerichtsverfahren oder in einem Verwaltungs- oder außergerichtlichen Verfahren.
+
+      2.5 Mit Ihrer Einwilligung können wir Daten außerhalb des Geltungsbereichs dieser Datenschutzerklärung an Dritte weitergeben.
+
+      2.6 Veranstalter ändern oder berichtigen ihre Daten im Event Center oder indem sie an hello@arenasoldout.com schreiben. Ticketkäufer schreiben an den Veranstalter ihrer Veranstaltung oder an uns unter derselben Adresse; wo der Veranstalter der Verantwortliche ist, leiten wir die Anfrage an den Veranstalter weiter.
+
+      ## 3. Wie lange wir Daten speichern
+
+      3.1 Wir speichern Ihre Informationen nur: (a) so lange, wie es zur Erfüllung der Zwecke, für die sie erhoben und verarbeitet wurden, erforderlich ist; (b) wenn das geltende Recht eine längere Speicherdauer vorsieht; und (c) für die gesetzlich vorgeschriebene Aufbewahrungsdauer. Danach werden Ihre personenbezogenen Daten nach den Vorgaben des geltenden Rechts gelöscht, gesperrt oder anonymisiert.
+
+      3.2 Wir bewahren personenbezogene Daten wie folgt auf:
+
+      (a) Kontodaten: solange das Konto geöffnet ist und bis zu 120 Monate nach der letzten Anmeldung, wie in den Allgemeinen Geschäftsbedingungen festgelegt; wir warnen Sie per E-Mail, bevor das Konto gelöscht wird;
+
+      (b) Nutzungsdaten: cookiefreie Analyse in aggregierter Form; Server-Logs für den begrenzten Zeitraum, der für Sicherheit und Fehlersuche nötig ist; Ereignisse der Produktanalyse 13 Monate lang, und das daraus aufgebaute Profil (die besuchten Seiten, die erste Quelle, die Phase eines Antrags), solange Ihr Kontakteintrag oder Ihr Konto besteht, danach wird es gelöscht; das Besucher-Cookie lebt 13 Monate und der Eintrag Ihrer Cookie-Auswahl 6 Monate;
+
+      (c) Veröffentlichungsdaten: solange die Veranstaltung veröffentlicht und das Konto des Veranstalters geöffnet ist;
+
+      (d) Anfragedaten: Anträge, die nicht zu einem Konto geführt haben, werden 180 Tage nach dem letzten Kontakt gelöscht; andere Anfragen, bis die Angelegenheit abgeschlossen ist;
+
+      (e) Transaktionsdaten: solange das Konto des Veranstalters geöffnet ist und der Veranstalter sie für Erstattungen, Streitfälle und Berichte braucht, und danach für die nach Buchhaltungs- und Steuerrecht vorgeschriebene Dauer (in Estland sieben Jahre für Buchhaltungsbelege);
+
+      (f) Benachrichtigungsdaten: bis Sie Ihre Einwilligung widerrufen; wir bewahren den Vermerk Ihrer Abmeldung auf, damit wir Ihnen nicht erneut schreiben.
+
+      ## 4. Sicherheit
+
+      4.1 Wir sind dem Schutz der Privatsphäre von Website-Besuchern, Veranstaltern und Ticketkäufern verpflichtet. Wir ergreifen angemessene administrative und technische Schritte, um personenbezogene Daten vor Verlust, Missbrauch und unbefugtem Zugriff, unbefugter Offenlegung, Veränderung oder Zerstörung zu schützen: verschlüsselte Verbindungen, nächtliche verschlüsselte Backups, Zugriff auf Daten von Ticketkäufern nur für das Team des Veranstalters und unsere Mitarbeiter, die ihn brauchen, sowie Überwachung der Dienste.
+
+      4.2 Keine Übertragungsmethode über das Internet ist jedoch vollständig sicher. Obwohl wir uns bemühen, Ihre Daten zu schützen, können wir ihre absolute Sicherheit nicht garantieren.
+
+      ## 5. Rechte nach EU-Recht
+
+      5.1 Dieser Abschnitt beschreibt Ihre Rechte nach EU-Recht (die EU umfasst hierfür die Länder des Europäischen Wirtschaftsraums Island, Liechtenstein und Norwegen).
+
+      „Berechtigte Interessen“ bezeichnet unsere Interessen an der Führung unseres Geschäfts und an der Verwaltung und Erbringung der Dienste. Diese Datenschutzerklärung beschreibt, wann wir Ihre personenbezogenen Daten für unsere berechtigten Interessen verarbeiten, welche Interessen das sind und welche Rechte Sie haben. Wir verwenden Ihre personenbezogenen Daten nicht für Tätigkeiten, bei denen die Auswirkungen auf Sie unsere Interessen überwiegen, es sei denn, wir haben Ihre Einwilligung oder diese Tätigkeiten sind anderweitig gesetzlich vorgeschrieben oder erlaubt.
+
+      5.2 Sie haben in Bezug auf Ihre personenbezogenen Daten die folgenden Rechte:
+
+      (a) Auskunftsrecht: Wenn wir Ihre personenbezogenen Daten verarbeiten, können Sie eine Kopie verlangen.
+
+      (b) Recht auf Berichtigung: Wenn Ihre personenbezogenen Daten unrichtig oder unvollständig sind, können Sie verlangen, dass wir sie berichtigen oder vervollständigen. Wenn wir sie an andere weitergegeben haben, informieren wir diese nach Möglichkeit über die Berichtigung.
+
+      (c) Recht auf Löschung: Sie können in bestimmten Fällen verlangen, dass wir Ihre personenbezogenen Daten löschen, zum Beispiel wenn wir sie nicht mehr benötigen oder Sie Ihre Einwilligung widerrufen. Wenn wir sie an andere weitergegeben haben, weisen wir diese nach Möglichkeit auf die Notwendigkeit der Löschung hin.
+
+      (d) Recht auf Einschränkung der Verarbeitung: Sie können in bestimmten Fällen verlangen, dass wir die Verarbeitung Ihrer personenbezogenen Daten einschränken oder sperren, zum Beispiel wenn Sie deren Richtigkeit bestreiten oder der Verarbeitung widersprechen. Wenn wir sie an andere weitergegeben haben, informieren wir diese nach Möglichkeit über die Einschränkung.
+
+      (e) Widerspruchsrecht: Sie können jederzeit verlangen, dass wir die Verarbeitung Ihrer personenbezogenen Daten beenden, und wir tun dies, wenn wir uns auf ein berechtigtes Interesse stützen, es sei denn, wir weisen zwingende berechtigte Gründe nach, und immer, wenn wir sie für Direktwerbung verarbeiten.
+
+      (f) Recht auf Datenübertragbarkeit: Sie können die personenbezogenen Daten, die Sie uns mit Ihrer Einwilligung oder aufgrund unseres Vertrags mit Ihnen gegeben haben, in einem strukturierten, gängigen Format erhalten.
+
+      (g) Recht auf Widerruf der Einwilligung: Wo wir uns auf Ihre Einwilligung stützen, können Sie sie jederzeit widerrufen; dies berührt nicht die bereits erfolgte Verarbeitung.
+
+      (h) Beschwerderecht: Wenn Sie Bedenken gegen unsere Datenschutzpraktiken haben, können Sie sich bei der Datenschutzbehörde Ihres Landes beschweren. Unsere Aufsichtsbehörde ist die estnische Datenschutzinspektion (Andmekaitse Inspektsioon, www.aki.ee).
+
+      5.3 Um diese Rechte auszuüben, schreiben Sie an hello@arenasoldout.com. Wir antworten innerhalb eines Monats. Ticketkäufer können sich auch an den Veranstalter ihrer Veranstaltung wenden, der der Verantwortliche für ihre Daten ist.
+
+      ## 6. Cookies und ähnliche Technologien
+
+      6.1 Ein „Cookie“ ist eine kleine Information, die eine Website in Ihrem Browser speichert. Browser bieten auch lokalen Speicher an, der ähnlich funktioniert, aber nicht bei jeder Anfrage an den Server gesendet wird.
+
+      6.2 Die Website zeigt ein Cookie-Banner mit zwei Kategorien: „Notwendig“, immer an, und „Analytics“, aus, bis Sie akzeptieren. Bevor Sie wählen, setzt sie kein Cookie. Wenn Sie wählen, speichert sie Ihre Antwort im Cookie aso_consent (6 Monate); dieses ist unbedingt erforderlich, denn so merken wir uns Ihre Antwort. Nur wenn Sie Analytics akzeptieren, setzt sie zusätzlich das Cookie aso_aid, einen zufälligen Besucher-Code (13 Monate, Erstanbieter, durch spätere Besuche nie verlängert). Keines der beiden Cookies wird an Dritte weitergegeben. Ihre Wahl des Designs (hell oder dunkel) wird im lokalen Speicher Ihres Browsers gespeichert und nie an uns gesendet. Die in Abschnitt 1.3 beschriebene cookiefreie Analyse setzt keine Cookies. Das Antragsformular nutzt Cloudflare Turnstile, um Personen von automatisierten Übermittlungen zu unterscheiden; die Prüfung läuft über challenges.cloudflare.com und kann nach der Datenschutzerklärung von Cloudflare eigene Cookies oder eigenen Speicher nutzen.
+
+      6.3 Das Event Center, die gehosteten Verkaufsseiten und das Ticket-Widget nutzen unbedingt erforderliche Cookies und lokalen Speicher: um Veranstalter angemeldet zu halten, um Ihre Plätze zu halten, während Sie eine Bestellung abschließen, um Ihre Sprache zu merken und um Konten und Bestellungen vor Betrug zu schützen. Wir verwenden keine Werbe-Cookies und keine Analyse-Cookies von Dritten.
+
+      ## 7. So steuern Sie Cookies
+
+      7.1 Sie können Cookies und lokalen Speicher in den Einstellungen Ihres Browsers blockieren oder löschen; die Hilfe Ihres Browsers erklärt, wie. Das Blockieren unbedingt erforderlicher Cookies verhindert die Anmeldung im Event Center und den Abschluss einer Ticketbestellung.
+
+      7.2 Sie können Ihre Auswahl zu Analytics jederzeit mit dem Link „Cookie-Einstellungen“ in der Fußzeile jeder Seite ändern oder widerrufen. Der Widerruf löscht das Cookie aso_aid und beendet die weitere Erhebung sofort. Damit die bereits unter Ihrem Code erhobenen Ereignisse gelöscht werden, schreiben Sie an hello@arenasoldout.com.
+
+      ## 8. Änderung und Salvatorische Klausel
+
+      8.1 Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, indem wir auf dieser Seite eine neue Fassung mit dem Datum der Änderung veröffentlichen. Prüfen Sie diese Seite gelegentlich, um sicherzugehen, dass Sie mit Änderungen einverstanden sind.
+
+      8.2 Wird eine Bestimmung dieser Erklärung von einem Gericht oder einer anderen zuständigen Behörde für rechtswidrig oder nicht durchsetzbar erklärt, bleiben die übrigen Bestimmungen in Kraft.
+
+      8.3 Wäre eine rechtswidrige oder nicht durchsetzbare Bestimmung rechtmäßig oder durchsetzbar, wenn ein Teil davon gestrichen würde, gilt dieser Teil als gestrichen, und der Rest der Bestimmung bleibt in Kraft.
+
+      ## 9. So erreichen Sie uns
+
+      9.1 Diese Website und die Dienste gehören der ABH TEAM OÜ und werden von ihr betrieben.
+
+      9.2 Wir sind im estnischen Handelsregister unter der Registernummer 14162982 eingetragen, und unser Sitz und Geschäftssitz ist:
+
+      Narva mnt 5a, Kesklinna district,
+      Tallinn city, Harju county,
+      10117 Estonia.
+
+      9.3 Sie können uns kontaktieren:
+
+      (a) per E-Mail an hello@arenasoldout.com;
+
+      (b) im Telegram-Chat und im Telegram-Bot, die auf der Kontaktseite verlinkt sind;
+
+      (c) über das Antragsformular auf dieser Website;
+
+      (d) per Post an die oben genannte Adresse.

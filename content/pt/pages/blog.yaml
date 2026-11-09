@@ -1,0 +1,12 @@
+title: "Blog"
+description: "Artigos para organizadores: dinheiro e taxas de serviço, venda no seu próprio site, mapas de assentos, vendas antecipadas e notas da equipe."
+h1: Blog
+lead: "Artigos para organizadores que vendem os próprios ingressos: dinheiro e taxas de serviço, venda no seu próprio site, mapas de assentos, vendas antecipadas, marketing. O arquivo do site anterior está aqui, com as datas originais e uma nota de arquivo; a plataforma foi reconstruída em 2026."
+related:
+  - { label: Preços, href: /pricing }
+  - { label: Últimas mudanças na plataforma, href: /changes }
+  - { label: Começar a vender, href: /start }
+sections:
+  - type: posts
+    id: posts
+    empty: O arquivo está sendo transferido. Até lá, as últimas mudanças na plataforma estão listadas na página de mudanças.

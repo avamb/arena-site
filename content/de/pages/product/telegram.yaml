@@ -1,0 +1,40 @@
+title: "Veranstalter-Bot in Telegram: Event aus einem Plakat"
+description: "Event aus einem Plakatfoto anlegen, Erkanntes bestätigen, Termine und Team ergänzen. Verkäufe und Erstattungen erscheinen in Sekunden in Ihrer Telegram-Gruppe."
+h1: Das Event aus Telegram führen
+lead: Das Event Center lebt auch im Bot. Ein Foto des Plakats genügt zum Start; jedes gelesene Feld ist eine Schaltfläche zum Bestätigen, ohne Sie wird nichts veröffentlicht.
+related:
+  - { label: Event Center im Browser, href: /#center }
+  - { label: Auf Ihrer oder unserer Website verkaufen, href: /product/sell }
+  - { label: Verkauf starten, href: /start }
+sections:
+  - type: steps
+    id: how
+    eyebrow: So funktioniert es
+    title: Was macht der Bot?
+    items:
+      - title: Liest das Plakat
+        text: Senden Sie ein Foto. Der Bot liest Namen, Termine, Spielstätte und Preise und zeigt jeden Wert als Schaltfläche zum Bestätigen oder Bearbeiten.
+      - title: Baut das Event
+        text: Vorstellungen, Kategorien, Preise und das Plakat gehen ins Event. Fügen Sie Teammitglieder hinzu, erhalten Sie ein Beispiel-Ticket mit Wasserzeichen und veröffentlichen Sie, wenn alles bereit ist.
+      - title: Meldet jeden Verkauf
+        text: Jeder Verkauf und jede Erstattung erscheint binnen Sekunden in Ihrer Veranstaltergruppe, mit Name des Käufers, Plätzen, Betrag und Kontakt.
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: Ist Telegram der einzige Weg?
+    items:
+      - q: Brauche ich Telegram, um ArenaSoldOut.com zu nutzen?
+        a: "Nein. Dasselbe Event Center funktioniert im Browser auf ArenaSoldOut.com, und das Team kann alles für Sie einrichten. Telegram ist ein Weg, für Veranstalter, die im Messenger zu Hause sind."
+      - q: Welche Sprachen spricht der Bot?
+        a: Heute Englisch, Russisch und Spanisch; weitere folgen den Sprachen der Website.
+      - q: Kann mein Team ihn nutzen?
+        a: Ja. Fügen Sie Teammitglieder mit Rollen hinzu; die Verkaufsgruppe kann alle einschließen, die Bestellungen sehen müssen.
+      - q: Funktioniert er mit dem Saalplan?
+        a: Der Bot legt Events mit Kategorien und Terminen an; ein Saalplan wird vom Team gebaut und dem Event zugeordnet.
+  - type: cta
+    id: start
+    title: Bot öffnen
+    text: Senden Sie ein Plakat oder sagen Sie einfach Hallo. Das Team antwortet im selben Chat.
+    primary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    secondary: { label: Stattdessen auf der Website starten, href: /start }
+    note: Events ohne Saalplan gehen heute in den Verkauf.

@@ -1,0 +1,158 @@
+title: "Funktionen: Ticketing, Saalplan, Zahlungen"
+description: "Alle Funktionen von ArenaSoldOut.com auf einer Seite: Verkaufsseiten und Widget, Saalpläne, Preise und Promo-Codes, Zahlungen, Tickets, Scanner, Event Center."
+h1: Alle Funktionen auf einer Seite
+lead: "Was ArenaSoldOut.com für einen Veranstalter leistet, vom ersten Ticket bis zum Einlass. Jede Gruppe verlinkt auf ihre Seite mit den Details."
+related:
+  - { label: Preise, href: /pricing, text: "Pay as you go pro verkauftem Ticket, oder Credits kaufen und weniger zahlen." }
+  - { label: ArenaSoldOut.com vs Ticket Tailor, href: /tickettailor-alternative, text: "Preise und Funktionen im Vergleich." }
+  - { label: Ihr erstes Event, href: /first-event, text: "Was Sie vorbereiten und wie der erste Verkauf abläuft." }
+sections:
+  - type: cards
+    id: selling
+    eyebrow: Verkauf
+    title: Wo und wie Sie verkaufen
+    lead: "Details: [auf Ihrer oder unserer Website verkaufen](/product/sell)."
+    items:
+      - title: Eine von uns gehostete Verkaufsseite
+        text: "tickets.arenasoldout.com/ihr-name/ihr-event, in Minuten bereit. Ein Link für soziale Netzwerke, Messenger und Plakate."
+      - title: Ticket-Widget auf Ihrer Website
+        text: "Drei Zeilen Code auf jeder Website: Tilda, Wix, Webflow oder individuell. Ihre Farben, Ihre Schriften, Ihre Sprache; Käufer verlassen Ihre Domain nie."
+      - title: Seiten für Veranstalter und Partner
+        text: "Eine eigene Seite für jeden Veranstalter und Links zu Ihren Partner-Verkäufern auf derselben Seite."
+      - title: Event-Materialien auf Ihrer Verkaufsseite
+        text: "Ergänzen Sie Ihr Event auf Ihrer Verkaufsseite auf der Plattform um Materialien, wenn Sie keine eigene Website haben: Texte, Fotos und Videos."
+      - title: Beschreibungen mit professionellem Aussehen
+        text: "Überschriften, Listen, Links und Zitate in der Eventbeschreibung auf Ihrer Verkaufsseite. Ein neuronales Netz formatiert einen einfachen Text für Sie mit einem Klick."
+      - title: '"Benachrichtigen, wenn der Verkauf startet"'
+        text: "Käufer abonnieren auf Ihrer Eventseite und erhalten eine E-Mail, sobald der Verkauf beginnt."
+      - title: Erinnerungen an abgebrochene Warenkörbe
+        text: "Ein Käufer, der Tickets reserviert und nicht bezahlt hat, erhält eine Erinnerung. In vielen Fällen steigern diese Erinnerungen den Verkauf deutlich."
+      - title: Freunde werben
+        text: "Jeder Käufer erhält einen persönlichen Link: Der Freund bekommt einen Rabatt, der Käufer Cashback nach dem Event des Freundes."
+      - title: Kurzlinks und QR-Codes für den Druck
+        text: "go.arenasoldout.com-Links mit QR-Codes für Plakate und Flyer: PNG, SVG oder eine PDF-Einlage in A5 und A6. Das Ziel lässt sich nach dem Druck ändern."
+      - title: Ein Shop neben Ihren Tickets
+        text: "Verkaufen Sie Wein, Merchandise und Geschenksets zusammen mit Tickets: Varianten, Warenkorb, Lieferung, Erstattungen. Unser erster Shop-Kunde verkauft bereits darüber."
+
+  - type: cards
+    id: seating
+    eyebrow: Saalplan
+    title: Saalpläne, die zur Spielstätte passen
+    lead: "Details: [Saalpläne](/product/seating)."
+    items:
+      - title: Wir zeichnen den Plan kostenlos
+        text: "Senden Sie ein PDF, ein Foto einer Handskizze oder eine Tabelle mit Reihen und Plätzen; das Team baut die Spielstätte nach."
+      - title: Sitzplätze und Stehbereiche in einem Plan
+        text: "Reservierte Reihen mit Kategorien und Stehbereiche mit Kontingenten, jede Kategorie mit eigenem Preis und eigenem Verkaufszeitraum."
+      - title: Planversionen
+        text: "Ein neues Layout für die nächste Vorstellung berührt die bereits verkauften Tickets nicht."
+      - title: Platzwahl auf dem Smartphone
+        text: "Zoomen mit zwei Fingern, eine Legende pro Kategorie und ein Reservierungs-Timer für die gewählten Plätze, im Widget und auf der gehosteten Seite."
+      - title: Freikarten und Pressenplätze
+        text: "Halten Sie Plätze für Gäste und Presse zurück und stellen Sie Freikarten aus dem Event Center aus, ohne Provision."
+
+  - type: cards
+    id: prices
+    eyebrow: Preise
+    title: Preise, Promo-Codes und Verkaufszeiträume
+    lead: "Details: [Promo-Codes und Preisstufen](/product/pricing-tools)."
+    items:
+      - title: Smart Price
+        text: "Ein fertiges Schema aus Preisstufen nach Menge und Datum, statt jede Stufe von Hand einzustellen."
+      - title: Zusatzkategorien
+        text: "Ein Zusatz wird nur zusammen mit einem Haupt-Ticket verkauft: Ein Kinderticket lässt sich nicht ohne Erwachsenenticket verkaufen."
+      - title: Promo-Codes
+        text: "Für ein Event, eine Vorstellung oder eine Kategorie, mit Verkaufszeitraum, Mindestbestellung und Limit pro Käufer. Partner erhalten eigene Codes."
+      - title: Early Bird und Mengenstufen
+        text: "Preise wechseln zu einem von Ihnen festgelegten Datum oder öffnen die nächste Stufe, wenn die aktuelle ausverkauft ist."
+      - title: Kategorien und Ketten
+        text: "Jede Kategorie mit eigenem Preis, Kontingent und Verkaufszeitraum; nicht verkaufte Plätze gehen an die nächste Kategorie."
+      - title: Servicegebühr
+        text: "Ein Prozentsatz pro Verkaufskanal, dem Käufer als eigene Zeile angezeigt und auf Ihr Konto gezahlt."
+      - title: Kostenlose Tickets und Zahl-was-Sie-möchten-Tickets
+        text: "Kostenlose Tickets für Freikarten und Anmeldungen sowie Zahl-was-Sie-möchten-Tickets mit einem von Ihnen festgelegten Mindestbetrag."
+
+  - type: cards
+    id: payments
+    eyebrow: Zahlungen
+    title: Das Geld geht auf Ihr eigenes Konto
+    lead: "Details: [Zahlungen](/payments)."
+    items:
+      - title: Ihr eigenes Zahlungskonto
+        text: "Käufer zahlen mit jeder Bestellung auf Ihr Stripe-, Flitt- oder AllPay-Konto. ArenaSoldOut.com hält nie Gelder."
+      - title: Erstattungen über jeden Anbieter
+        text: "Sie entscheiden im Event Center über eine Erstattung; sie geht über Ihren Anbieter an den Käufer zurück."
+      - title: Automatische Bearbeitung von Rückbuchungen
+        text: "Bestreitet ein Käufer eine Zahlung, sammeln wir die Nachweise: Zahlungsdaten, Einwilligung, Zustellung der Ticket-E-Mails und jeden Download des Tickets."
+
+  - type: cards
+    id: tickets
+    eyebrow: Tickets und Einlass
+    title: Was der Käufer erhält und wie Sie es scannen
+    lead: "Details: [E-Tickets](/product/tickets) und die [MACS-Scanner-App](/product/scanner)."
+    items:
+      - title: E-Ticket mit QR und EAN-13
+        text: "Ein PDF-Ticket in der E-Mail des Käufers, bereit zum Vorzeigen auf dem Smartphone oder auf Papier."
+      - title: Zahlungsbeleg in der Ticket-E-Mail
+        text: "Der Beleg hängt an der Ticket-E-Mail und nennt den Zahlungsempfänger."
+      - title: Zustellstatus jeder E-Mail
+        text: "Gesendet, Zugestellt, Gelesen: Prüfen Sie, ob der Käufer das Ticket erhalten hat, und senden Sie es mit einem Klick erneut."
+      - title: E-Mails in 7 Sprachen
+        text: "Käuferseite, E-Mails und Ticket in der Sprache des Käufers. Jede neue Sprache fügen wir innerhalb von 40 Stunden hinzu."
+      - title: Terminverlegungen und Absagen
+        text: "Käufer erhalten eine E-Mail mit dem aktualisierten Ticket, wenn eine Vorstellung verlegt oder abgesagt wird."
+      - title: Scanner-App für iOS und Android
+        text: "MACS, unsere eigene App am Einlass: beliebig viele Smartphones, eine klare Antwort bei jedem Scan."
+
+  - type: cards
+    id: center
+    eyebrow: Event Center
+    title: Das Event mit Ihrem Team durchführen
+    lead: "Details: [Event Center](/#center) und der [Telegram-Bot](/product/telegram)."
+    items:
+      - title: Bestellungen und Käufer
+        text: "Suche, Filter und CSV-Berichte pro Vorstellung. Erneut senden, erstatten oder einladen mit einem Klick."
+      - title: Vorstellungen
+        text: "Termine hinzufügen, eine Vorstellung verlegen oder absagen, und die Käufer werden per E-Mail informiert."
+      - title: Verkaufsanalyse
+        text: "Aufrufe, Warenkörbe und Zahlungen pro Event, damit Sie sehen, wo Käufer abspringen."
+      - title: Teamrollen
+        text: "Rollen für Inhaber und Manager Ihres Teams, im Browser auf dem Smartphone oder am Computer."
+      - title: Telegram-Bot
+        text: "Legen Sie ein Event aus einem Plakatfoto an und erhalten Sie jeden Verkauf und jede Erstattung binnen Sekunden in Ihrer Telegram-Gruppe."
+
+  - type: cards
+    id: reliability
+    eyebrow: Zuverlässigkeit
+    title: Gebaut für große Vorverkäufe
+    lead: "Details: [Zuverlässigkeit](/product/reliability) und die [Faktenseite](/facts)."
+    items:
+      - title: 800 Bestellungen pro Minute
+        text: "Bei 1.000 Käufern gleichzeitig auf der Seite, in Lasttests vom September 2026."
+      - title: Watchdog und Backups
+        text: "Laufende Prüfungen mit Warnungen an das Team, nächtliche verschlüsselte Backups, Cloudflare davor."
+      - title: Schutz vor Bots
+        text: "Platzreservierungen laufen per Timer ab, Bestellungen sind begrenzt, missbräuchlicher Datenverkehr wird gefiltert."
+
+  - type: cards
+    id: pricing
+    eyebrow: Preise
+    title: Was Sie zahlen
+    lead: "Details: [Preise](/pricing) und die [detaillierten Bedingungen](/pricing/terms)."
+    items:
+      - title: Pay as you go
+        text: "{usdPrice} pro verkauftem Ticket ({eurPrice} in der EU), Rechnung nach der Veranstaltung. Kein Abo, kein Vertrag."
+      - title: Credits
+        text: "Kaufen Sie Credits im Voraus und zahlen Sie ab {usdFrom} pro Ticket ({eurFrom} in der EU). Credits verfallen nie."
+      - title: 50% Rabatt für eingetragene gemeinnützige Organisationen
+        text: "Eingetragene gemeinnützige Organisationen zahlen die Hälfte unserer Provision."
+      - title: Kostenlose Freikarten und kostenlose Saalpläne
+        text: "Keine Provision auf Freikarten und kostenlose Tickets; wir zeichnen Ihren Saalplan kostenlos."
+
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: Event anlegen, Zahlungskonto verbinden, Link teilen.
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Preise ansehen, href: /pricing }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

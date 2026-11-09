@@ -1,0 +1,19 @@
+title: "Obrigado, recebemos seu cadastro"
+description: "A equipe lê cada cadastro pessoalmente e responde em até um dia útil."
+h1: Obrigado
+lead: A equipe lê cada cadastro pessoalmente e responde em até um dia útil, por e-mail ou no mensageiro que você indicou.
+sections:
+  - type: cards
+    id: next
+    eyebrow: Enquanto isso
+    title: O que posso fazer agora?
+    items:
+      - title: Prepare o pôster e os preços
+        text: O nome do evento, as datas, os preços dos ingressos e uma imagem de pôster são tudo o que um evento sem mapa de assentos precisa para entrar em venda.
+        link: { label: Como funciona →, href: /#how }
+      - title: Encontre as chaves da sua conta de pagamentos
+        text: Se você já tem uma conta em um provedor do seu país, as chaves de API estão no painel dele. Se não, abrimos uma com você.
+        link: { label: Pagamentos →, href: /payments }
+      - title: Experimente o bot do Telegram
+        text: O bot cria um evento a partir da foto de um pôster e pede que você confirme datas, preços e o local.
+        link: { label: Abrir o bot do Telegram →, href: https://t.me/EventsCentrBot }

@@ -1,0 +1,47 @@
+title: "Biglietti elettronici con EAN-13 e QR, scansione, e-mail"
+description: "Biglietti PDF con EAN-13 e QR nella lingua dell'acquirente, app scanner MACS per iOS e Android, biglietti di prova, e-mail se una sessione si sposta."
+h1: Un biglietto che si scansiona
+lead: Ogni biglietto è un PDF con un codice a barre EAN-13 e un codice QR, nella lingua dell'acquirente. Lo scansioni con l'app o con uno scanner portatile, lo reinvii, lo rimborsi, lo sostituisci quando una data si sposta.
+related:
+  - { label: Mappe dei posti, href: /product/seating }
+  - { label: "Affidabilità: carico, backup, controllo", href: /product/reliability }
+  - { label: Assistenza per gli acquirenti di biglietti, href: /help/tickets }
+  - { label: "App scanner MACS: qualsiasi organizzatore, qualsiasi ingresso", href: /product/scanner }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Biglietti
+    title: Che cosa riceve l'acquirente?
+    items:
+      - q: Che cosa c'è sul biglietto?
+        a: "Evento, sessione, posto o categoria, prezzo, il nome dell'acquirente, un codice a barre EAN-13 e un codice QR. Un PDF per ordine, nella lingua dell'acquirente: inglese, russo, ceco, ebraico o spagnolo sulla pagina, sette lingue nelle e-mail. Aggiungiamo qualsiasi nuova lingua entro 40 ore."
+      - q: La ricevuta di pagamento è nell'e-mail?
+        a: "Sì. La ricevuta di pagamento arriva allegata all'e-mail del biglietto, e l'e-mail indica chi ha ricevuto il pagamento: la tua organizzazione e il tuo fornitore di pagamenti."
+      - q: Posso verificare che l'acquirente abbia ricevuto il biglietto?
+        a: "Sì. Ogni e-mail mostra il suo stato nella scheda dell'ordine: Inviata, Consegnata, Letta. Vedi sempre se l'acquirente ha ricevuto il biglietto, e puoi reinviarlo se l'ha perso."
+      - q: Come scansiono all'ingresso?
+        a: "Con l'[app scanner MACS](#scanner) per iOS e Android, o con uno scanner portatile di codici a barre. L'app accetta anche i biglietti venduti dai tuoi partner in altri sistemi, così un solo ingresso funziona per ogni canale."
+      - q: Posso vedere un biglietto prima dell'inizio delle vendite?
+        a: Sì. Un biglietto di prova con filigrana arriva con l'evento, dall'Event Center o dal bot di Telegram.
+      - q: Che cosa succede quando una data si sposta?
+        a: Gli acquirenti ricevono un'e-mail nella loro lingua con il biglietto aggiornato allegato. Lo stesso per un annullamento, con il rimborso gestito da te.
+      - q: Posso reinviare o rimborsare un biglietto?
+        a: Sì, dall'Event Center. Reinvii a un nuovo indirizzo, rimborsi sulla carta dell'acquirente, il posto torna in vendita.
+      - q: Esiste un'app per gli acquirenti?
+        a: No. Il PDF e l'e-mail bastano all'ingresso; niente da installare.
+  - type: cards
+    id: scanner
+    eyebrow: All'ingresso
+    title: Quale app scansiona i biglietti?
+    lead: "MACS è l'app di controllo accessi di ArenaSoldOut.com. Installala sui telefoni del tuo personale all'ingresso, accedi con il tuo account Event Center e scansiona l'EAN-13 o il QR di ogni biglietto: carta, PDF su uno schermo, o l'e-mail. Un'app scansiona i biglietti di qualsiasi organizzatore della piattaforma e quelli dei partner da altri sistemi, così una struttura, un festival o un promoter che affitta una struttura usa gli stessi telefoni per ogni evento."
+    items:
+      - { title: iPhone e iPad, text: "MACS sull'App Store. Accedi con il tuo account Event Center; l'elenco degli eventi e le sessioni sono già lì.", link: { label: Apri l'App Store →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: Android, text: "MACS su Google Play. La stessa app, lo stesso account; funzionano anche gli scanner portatili con fotocamera o laser.", link: { label: Apri Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
+      - { title: "Qualsiasi organizzatore, un'app", text: "Il personale all'ingresso di una struttura scansiona i biglietti di ogni organizzatore che vende con ArenaSoldOut.com, e quelli venduti dai partner in altri sistemi, senza cambiare app.", link: { label: "MACS come prodotto →", href: /product/scanner } }
+  - type: cta
+    id: start
+    title: Inizia a vendere oggi
+    text: Crea l'evento, collega il tuo conto di pagamento, condividi il link. Il biglietto di prova è pronto con l'evento.
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Apri il bot di Telegram, href: https://t.me/EventsCentrBot }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."

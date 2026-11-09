@@ -1,0 +1,38 @@
+title: "Venta de entradas para shows: hielo, circo, danza"
+description: "Entradas para shows en gira: un plano por recinto reutilizable, muchas fechas, página por promotor, todas las ciudades en un Event Center, dinero en tu cuenta."
+h1: Shows
+lead: Los shows sobre hielo, el circo, la danza y los espectáculos familiares tienen muchas fechas en muchos recintos. Un evento, un plano por recinto, una página por promotor y las ventas de cada ciudad en un solo lugar.
+related:
+  - { label: Giras de conciertos, href: /solutions/concert-tours }
+  - { label: Planos de asientos, href: /product/seating }
+  - { label: Clientes, href: /clients }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para shows
+    title: "¿Qué importa en un show?"
+    items:
+      - { title: Un plano por recinto, text: "El plano de cada recinto se crea una vez y se reutiliza en la siguiente visita; las versiones guardan el historial.", link: { label: Planos de asientos →, href: /product/seating } }
+      - { title: Muchas fechas, text: "Sesiones por ciudad y día en un solo evento; los compradores eligen la fecha en el widget y tú ves los totales por sesión.", link: { label: Event Center →, href: /#center } }
+      - { title: Promotores locales, text: "Una página por promotor con su propio enlace y códigos; todos los canales informan a un solo Event Center.", link: { label: Dónde vendes →, href: /product/sell } }
+      - { title: Entradas familiares, text: "Categorías para niños y grupos, tramos por cantidad, entradas gratuitas para adultos acompañantes.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+  - type: faq
+    id: questions
+    eyebrow: Preguntas
+    title: "¿Qué preguntan primero los productores de shows?"
+    items:
+      - q: "¿Puede un evento cubrir una gira entera?"
+        a: Sí. Las sesiones llevan la ciudad, el recinto y el plano; los totales y los informes CSV se obtienen por sesión y para todo el evento.
+      - q: "¿Cómo lo hacemos con un recinto en el que nunca hemos actuado?"
+        a: Envía su plano en cualquier formato legible y el equipo lo incorpora. La próxima visita lo reutiliza.
+      - q: "Nuestras entradas también las venden socios locales. ¿Lo gestionará la puerta?"
+        a: Sí. La app de escaneo acepta las entradas de socios de otros sistemas junto a las entradas de ArenaSoldOut.com.
+      - q: "¿A dónde va el dinero?"
+        a: "A tu propia cuenta de pagos, en tu moneda, con cada pedido. Consulta los [pagos](/payments)."
+  - type: cta
+    id: start
+    title: Empieza a vender hoy
+    text: Crea el evento, conecta tu cuenta de pagos y comparte el enlace.
+    primary: { label: Crea tu evento, href: /start#create }
+    secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

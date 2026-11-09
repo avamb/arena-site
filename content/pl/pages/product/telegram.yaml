@@ -1,0 +1,40 @@
+title: "Bot organizatora w Telegramie: wydarzenie z plakatu"
+description: "Utwórz wydarzenie ze zdjęcia plakatu, potwierdź to, co odczytał bot, dodaj terminy i zespół. Każda sprzedaż i zwrot trafia na grupę Telegram w kilka sekund."
+h1: Prowadź wydarzenie z Telegramu
+lead: Event Center działa też w bocie. Do startu wystarczy zdjęcie plakatu; każdy odczyt to przycisk do potwierdzenia, nic nie jest publikowane bez ciebie.
+related:
+  - { label: Event Center w przeglądarce, href: /#center }
+  - { label: Sprzedaż na twojej stronie lub naszej, href: /product/sell }
+  - { label: Zacznij sprzedaż, href: /start }
+sections:
+  - type: steps
+    id: how
+    eyebrow: Jak to działa
+    title: Co robi bot?
+    items:
+      - title: Czyta plakat
+        text: Wyślij zdjęcie. Bot odczytuje nazwę, daty, miejsce i ceny i pokazuje każdą wartość jako przycisk do potwierdzenia lub poprawienia.
+      - title: Buduje wydarzenie
+        text: Terminy, kategorie, ceny i plakat trafiają do wydarzenia. Dodaj członków zespołu, odbierz próbny bilet ze znakiem wodnym, opublikuj, gdy będzie gotowe.
+      - title: Raportuje każdą sprzedaż
+        text: Każda sprzedaż i zwrot trafia do twojej grupy organizatora w kilka sekund, z imieniem kupującego, miejscami, kwotą i kontaktem.
+  - type: faq
+    id: questions
+    eyebrow: Pytania
+    title: Czy Telegram to jedyny sposób?
+    items:
+      - q: Czy potrzebuję Telegrama, żeby korzystać z ArenaSoldOut.com?
+        a: "Nie. To samo Event Center działa w przeglądarce na ArenaSoldOut.com, a zespół może skonfigurować wszystko za ciebie. Telegram to jeden ze sposobów, dla organizatorów, którzy żyją w komunikatorze."
+      - q: W jakich językach mówi bot?
+        a: Dziś po angielsku, rosyjsku i hiszpańsku; kolejne pojawią się wraz z językami strony.
+      - q: Czy mój zespół może z niego korzystać?
+        a: Tak. Dodaj członków zespołu z rolami; grupa sprzedażowa może obejmować wszystkich, którzy muszą widzieć zamówienia.
+      - q: Czy działa z planem sali?
+        a: Bot tworzy wydarzenia z kategoriami i terminami; plan sali jest budowany przez zespół i dołączany do wydarzenia.
+  - type: cta
+    id: start
+    title: Otwórz bota
+    text: Wyślij plakat albo po prostu się przywitaj. Zespół odpowiada w tym samym czacie.
+    primary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    secondary: { label: Zacznij zamiast tego na stronie, href: /start }
+    note: Wydarzenia bez planu sali trafiają do sprzedaży jeszcze dziś.

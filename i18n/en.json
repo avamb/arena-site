@@ -79,7 +79,7 @@
   "contact.error.unavailable": "The form is not available right now. Write to us in the Telegram chat or at {email}.",
   "contact.error.network": "No connection to the server. Check your internet and try again.",
   "consent.title": "Analytics on this site",
-  "consent.text": "We count visits to learn which pages help organizers and which do not. The data stays with Arena Sold Out and is not shared with anyone. You can change your choice at any time with “Cookie settings” at the bottom of the page.",
+  "consent.text": "We count visits to learn which pages help organizers and which do not. The data stays with ArenaSoldOut.com and is not shared with anyone. You can change your choice at any time with “Cookie settings” at the bottom of the page.",
   "consent.privacy": "Privacy policy",
   "consent.necessary.name": "Necessary",
   "consent.necessary.text": "Always on. Remembers your choice and your theme, and keeps the application form safe.",

@@ -1,0 +1,9 @@
+title: "ArenaSoldOut.com: Funktionen in Produktion, mit Datum"
+description: "Funktionen für Veranstalter mit Datum: Platzreservierung, eigenes Zahlungskonto, Telegram-Bot, Widget, E-Tickets, API. Lasttest bestanden."
+h1: Was ArenaSoldOut.com heute leistet
+lead: Alles unten läuft in Produktion, mit dem Datum, an dem es live ging. Funktionen, die noch gebaut werden, stehen getrennt, ebenso, was das Produkt nicht enthält.
+sections:
+  - type: facts-table
+    id: table
+    eyebrow: Fakten
+    title: Was funktioniert, seit wann

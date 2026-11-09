@@ -14,7 +14,8 @@ const def = 'en';
 
 const walk = (dir) => (existsSync(dir) ? readdirSync(dir).flatMap((f) => { const p = join(dir, f); return statSync(p).isDirectory() ? walk(p) : [p]; }) : []);
 const keysOf = (obj, prefix = '') => Object.entries(obj ?? {}).flatMap(([k, v]) => (v && typeof v === 'object' && !Array.isArray(v) ? keysOf(v, `${prefix}${k}.`) : Array.isArray(v) ? [`${prefix}${k}[${v.length}]`] : [`${prefix}${k}`]));
-const placeholders = (text) => [...text.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort().join(',');
+// YAML comments are not content: placeholders mentioned there do not count.
+const placeholders = (text) => [...text.replace(/^\s*#.*$/gm, '').matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort().join(',');
 const frontmatter = (text) => { const m = text.match(/^---\n([\s\S]*?)\n---/); return m ? parse(m[1]) : {}; };
 
 const originals = walk(`content/${def}`).filter((f) => /.(ya?ml|mdx?)$/.test(f)); // text files only, images sit next to posts

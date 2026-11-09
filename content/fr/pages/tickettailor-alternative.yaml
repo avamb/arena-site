@@ -1,0 +1,92 @@
+title: "Alternative à Ticket Tailor : frais par billet réduits"
+description: "Comparez ArenaSoldOut.com et Ticket Tailor : US$0,59 contre US$0,85 par billet à l'usage, crédits moins chers, plans de salle gratuits, versements directs."
+h1: Une alternative à Ticket Tailor qui coûte moins cher par billet
+lead: "Ticket Tailor et ArenaSoldOut.com facturent tous deux un forfait par billet plutôt qu'un pourcentage de votre chiffre d'affaires. À volume égal, ArenaSoldOut.com coûte moins : US$0,59 au lieu de US$0,85 par billet en paiement à l'usage, et moins aussi avec des crédits. Voici les deux grilles tarifaires côte à côte, telles que publiées le 9 novembre 2026."
+related:
+  - { label: Tarifs, href: /pricing, text: "Paiement à l'usage ou crédits, le calculateur et chaque pack de crédits." }
+  - { label: Toutes les fonctionnalités, href: /features, text: "Tout ce que fait ArenaSoldOut.com, sur une page." }
+  - { label: Plans de salle, href: /product/seating, text: "Nous dessinons votre salle gratuitement à partir d'un PDF ou d'un croquis." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Prix en dollars US
+    title: Combien coûte un billet sur chaque plateforme ?
+    lead: "Notre commission par billet vendu à côté de celle de Ticket Tailor. Montants hors TVA, l'encaissement par carte est réglé à votre prestataire de paiement sur les deux plateformes."
+    cols: { what: "", us: ArenaSoldOut.com, them: Ticket Tailor }
+    rows:
+      - { what: "Paiement à l'usage, par billet", us: "**{usdPrice}**", them: "US$0,85" }
+      - { what: "Paiement à l'usage, billet avec place sur un plan de salle", us: "**{usdSeated}**", them: "US$1,70 (un billet avec place compte double)" }
+      - { what: "Crédits, environ 100 billets", us: "**US$0,52** par billet", them: "US$0,70 par billet" }
+      - { what: "Crédits, environ 500 billets", us: "**US$0,46** par billet", them: "US$0,60 par billet" }
+      - { what: "Crédits, environ 1 000 billets", us: "**US$0,43** par billet", them: "US$0,52 par billet" }
+      - { what: "Crédits, environ 2 500 billets", us: "**US$0,40** par billet", them: "US$0,47 par billet" }
+      - { what: "Crédits, environ 5 000 billets", us: "**US$0,38** par billet", them: "US$0,43 par billet" }
+      - { what: "Plus de 5 000 billets par an", us: "Conditions individuelles : [écrivez-nous](/contact)", them: "US$0,39 à US$0,30 par billet" }
+      - { what: "Paiement à l'usage en euros (UE)", us: "**{eurPrice}**", them: "€0,70" }
+      - { what: "Les crédits expirent-ils ?", us: "Non, jamais", them: "Non, jamais" }
+      - { what: "Associations caritatives enregistrées", us: "50% de remise", them: "50% de remise" }
+      - { what: "Abonnement", us: Aucun, them: Aucun }
+    note: "Tarifs de Ticket Tailor : [tickettailor.com/pricing](https://www.tickettailor.com/pricing), vérifiés le 9 novembre 2026, en USD sauf indication contraire. Nos tarifs : [tarifs](/pricing) et [conditions détaillées](/pricing/terms). Ticket Tailor est une marque de son propriétaire ; ArenaSoldOut.com n'est pas affilié à celui-ci."
+
+  - type: prose
+    id: examples
+    title: Que cela donne-t-il pour un événement ?
+    body: |
+      **1 000 billets, accès libre, paiement à l'usage.** ArenaSoldOut.com : 1 000 × US$0,59 = **US$590**. Ticket Tailor : 1 000 × US$0,85 = US$850. Vous gardez **US$260** de plus.
+
+      **500 billets avec place, paiement à l'usage.** ArenaSoldOut.com : 500 × US$1,09 = **US$545**. Ticket Tailor : 500 × US$1,70 = US$850. Vous gardez **US$305** de plus, et nous dessinons le plan de salle gratuitement.
+
+      **1 000 billets par an, payés à l'avance avec des crédits.** Pack de crédits 1K d'ArenaSoldOut.com : **US$430**. Ticket Tailor, 1 000 crédits : US$520. **US$90** de moins, et les crédits n'expirent jamais sur aucune des deux plateformes.
+
+      Calculez votre propre événement dans le [calculateur de la page des tarifs](/pricing#packages).
+
+  - type: cards
+    id: more
+    eyebrow: Au-delà du prix
+    title: Qu'obtenez-vous d'autre avec ArenaSoldOut.com ?
+    items:
+      - title: Plans de salle dessinés pour vous, gratuitement
+        text: "Envoyez un PDF, une photo d'un croquis à la main ou un tableau de rangs et de places. L'équipe construit la salle ; vous ne la dessinez jamais vous-même."
+        link: { label: Plans de salle, href: /product/seating }
+      - title: L'argent directement sur votre compte
+        text: "Les acheteurs paient sur votre propre compte Stripe, Flitt ou AllPay. ArenaSoldOut.com ne détient jamais de fonds et ne déduit rien de vos ventes."
+        link: { label: Paiements, href: /payments }
+      - title: Tarif réduit pour les billets bon marché
+        text: "Quand chaque billet de l'événement coûte {usdLowMax} ou moins : {lowPercent}% du prix du billet au lieu du forfait. Soirées, courses, fêtes d'enfants, excursions."
+        link: { label: Comment ça marche, href: /pricing#low-price }
+      - title: Des acheteurs dans leur propre langue
+        text: "Page de l'acheteur, e-mails et billets dans la langue de l'acheteur, hébreu de droite à gauche compris. Nous ajoutons toute nouvelle langue sous 40 heures."
+        link: { label: Billets électroniques, href: /product/tickets }
+      - title: Chaque vente dans votre Telegram
+        text: "Créez un événement à partir d'une photo d'affiche dans le bot Telegram et voyez chaque vente et chaque remboursement dans votre groupe en quelques secondes."
+        link: { label: Bot Telegram, href: /product/telegram }
+      - title: Une personne qui configure avec vous
+        text: "Pas un centre d'aide : notre équipe connecte votre compte de paiement, construit le plan et vérifie le premier événement avec vous."
+        link: { label: Votre premier événement, href: /first-event }
+
+  - type: faq
+    id: questions
+    title: Les questions des organisateurs qui comparent
+    items:
+      - q: ArenaSoldOut.com est-il moins cher que Ticket Tailor ?
+        a: "Oui, par billet à chaque volume publié jusqu'à 5 000 billets par an : {usdPrice} au lieu de US$0,85 en paiement à l'usage, {usdSeated} au lieu de US$1,70 pour un billet avec place, et à partir de {usdFrom} par billet avec des crédits. Au-delà de 5 000 billets par an, nous convenons de conditions individuelles."
+      - q: Prenez-vous un pourcentage du prix du billet ?
+        a: "Non. Comme Ticket Tailor, nous facturons un forfait par billet vendu. Les seuls pourcentages sont optionnels : le tarif réduit pour les événements où chaque billet coûte {usdLowMax} ou moins, et le tarif des salles permanentes."
+      - q: Où va l'argent de l'acheteur ?
+        a: "Directement sur votre propre compte de paiement à chaque commande : Stripe, Flitt ou AllPay. ArenaSoldOut.com ne détient jamais de fonds. Notre commission est facturée après l'événement ou prélevée sur vos crédits."
+      - q: Puis-je transférer mes événements depuis Ticket Tailor ?
+        a: "Oui. Envoyez-nous la liste de vos événements et vos plans de salle ; l'équipe configure les événements et dessine les plans gratuitement, et vous continuez à vendre sur Ticket Tailor jusqu'à ce que votre page chez nous soit prête."
+      - q: Dois-je payer un abonnement ?
+        a: "Non. Vous ne payez que les billets vendus. Les invitations et les billets gratuits pour des événements payants ne supportent aucune commission."
+      - q: Et pour les associations caritatives ?
+        a: "Les associations caritatives enregistrées obtiennent 50% de remise sur notre commission, comme chez Ticket Tailor. Écrivez-nous et nous l'activons pour votre organisation."
+      - q: Comment vendre en euros ?
+        a: "Les salles des pays de l'UE paient notre commission en euros : {eurPrice} par billet en paiement à l'usage. Les billets eux-mêmes sont vendus dans la devise de votre compte de paiement."
+
+  - type: cta
+    id: start
+    title: Essayez sur votre prochain événement
+    text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
+    primary: { label: Commencer à vendre, href: /start }
+    secondary: { label: Voir les tarifs, href: /pricing }
+    note: "Ou écrivez-nous : nous comparons vos coûts actuels et configurons tout avec vous lors d'un appel."

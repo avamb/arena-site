@@ -1,0 +1,38 @@
+title: "Venda de ingressos para teatro: mapas e datas repetidas"
+description: "Ingressos para teatro com assentos marcados idênticos ao local, datas repetidas no mesmo mapa, convites, reembolsos e mudanças de data. De 100 a 1.500 lugares."
+h1: Teatro
+lead: Um mapa idêntico ao seu local, desenhado por nós sem custo a partir do seu PDF, croqui ou tabela de fileiras, e reutilizado em cada apresentação. Convites para imprensa e parceiros, reembolsos e mudanças de data resolvidos pelo Event Center.
+related:
+  - { label: Mapas de assentos idênticos ao local, href: /product/seating }
+  - { label: "Locais e casas de show: condições separadas", href: /solutions/venues }
+  - { label: Ingressos eletrônicos e leitura, href: /product/tickets }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para teatros
+    title: O que importa em um teatro?
+    items:
+      - { title: O mapa é seu, text: "Fileiras, camarotes, balcão, categorias por preço. As versões mantêm os ingressos vendidos seguros quando a disposição muda.", link: { label: Mapas de assentos →, href: /product/seating } }
+      - { title: Datas repetidas, text: "Adicione sessões ao mesmo evento; o mapa, os preços e as categorias são mantidos. Mude ou cancele uma data com e-mails para os compradores.", link: { label: Event Center →, href: /#center } }
+      - { title: Convites, text: "Ingressos gratuitos para assentos exatos, para imprensa, parceiros e elenco, lidos como qualquer outro ingresso.", link: { label: Ingressos →, href: /product/tickets } }
+      - { title: Sua própria bilheteria, text: "Venda no seu site com o widget ou na página hospedada; o dinheiro vai para a sua conta, e não passa por um marketplace.", link: { label: Onde você vende →, href: /product/sell } }
+  - type: faq
+    id: questions
+    eyebrow: Perguntas
+    title: O que os teatros perguntam primeiro?
+    items:
+      - q: Vocês desenham o mapa de assentos?
+        a: Sim, sem custo. Envie um PDF do mapa, uma foto de um croqui à mão ou uma tabela de fileiras com os assentos de cada uma; nós o desenhamos no seu evento, em geral em até um dia, e você o aprova antes de as vendas começarem.
+      - q: Podemos ter preços diferentes para a plateia e o balcão?
+        a: Sim. Categorias com preços, cotas e janelas próprios; as janelas de lote promocional trocam por data.
+      - q: Temos muitas apresentações por mês. Existe outra condição?
+        a: "Sim. Locais permanentes recebem uma porcentagem do preço do ingresso em vez da taxa por ingresso; veja [locais](/solutions/venues) e [preços](/pricing)."
+      - q: Os compradores podem escolher assentos no celular?
+        a: Sim, o mapa de assentos funciona no celular com zoom por pinça, no idioma do comprador.
+  - type: cta
+    id: start
+    title: Envie seu mapa
+    text: "Um PDF, uma foto de um croqui à mão ou uma tabela de fileiras e assentos bastam. Nós o desenhamos no seu evento sem custo e o mostramos a você antes de as vendas começarem."
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."

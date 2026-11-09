@@ -1,0 +1,38 @@
+title: "Ticketverkauf für Theater: Saalplan, wiederkehrende Termine"
+description: "Ticketverkauf für Theater mit Platzreservierung passend zur Spielstätte, wiederkehrende Termine auf einem Plan, Einladungen, Erstattungen. 100 bis 1.500 Plätze."
+h1: Theater
+lead: Ein Plan, der zu Ihrem Haus passt, von uns kostenlos nach Ihrem PDF, Ihrer Skizze oder Ihrer Tabelle mit Reihen gezeichnet und für jede Vorstellung wiederverwendet. Einladungen für Presse und Partner, Erstattungen und verlegte Termine im Event Center.
+related:
+  - { label: Saalpläne passend zur Spielstätte, href: /product/seating }
+  - { label: "Spielstätten und Clubs: eigene Konditionen", href: /solutions/venues }
+  - { label: E-Tickets und Scan, href: /product/tickets }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Für Theater
+    title: Was zählt bei einem Theater?
+    items:
+      - { title: Der Plan gehört Ihnen, text: "Reihen, Logen, Balkon, Kategorien nach Preis. Versionen schützen verkaufte Tickets, wenn sich die Bestuhlung ändert.", link: { label: Saalpläne →, href: /product/seating } }
+      - { title: Wiederkehrende Termine, text: "Fügen Sie demselben Event Sessions hinzu; Plan, Preise und Kategorien werden übernommen. Verlegen oder sagen Sie einen Termin ab, mit E-Mails an die Käufer.", link: { label: Event Center →, href: /#center } }
+      - { title: Einladungen, text: "Freikarten für genaue Plätze für Presse, Partner und Ensemble, gescannt wie jedes andere Ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Ihre eigene Kasse, text: "Verkaufen Sie auf Ihrer Website mit dem Widget oder auf der gehosteten Seite; das Geld geht auf Ihr Konto, nicht über einen Marktplatz.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: Was fragen Theater zuerst?
+    items:
+      - q: Zeichnen Sie den Saalplan?
+        a: Ja, kostenlos. Schicken Sie ein PDF des Plans, ein Foto einer Handskizze oder eine Tabelle mit Reihen und den Plätzen jeder Reihe; wir zeichnen ihn in Ihr Event, meist innerhalb eines Tages, und Sie geben ihn frei, bevor der Verkauf beginnt.
+      - q: Können wir unterschiedliche Preise für Parkett und Balkon haben?
+        a: Ja. Kategorien mit eigenen Preisen, Kontingenten und Fenstern; Early-Bird-Fenster schalten nach Datum um.
+      - q: Wir spielen viele Vorstellungen im Monat. Gibt es ein anderes Angebot?
+        a: "Ja. Festen Spielstätten bieten wir einen Prozentsatz des Ticketpreises statt der Gebühr pro Ticket an; siehe [Spielstätten](/solutions/venues) und [Preise](/pricing)."
+      - q: Können Käufer Plätze auf dem Handy wählen?
+        a: Ja, der Saalplan funktioniert auf Handys mit Pinch-Zoom, in der Sprache des Käufers.
+  - type: cta
+    id: start
+    title: Schicken Sie uns Ihren Plan
+    text: "Ein PDF, ein Foto einer Handskizze oder eine Tabelle mit Reihen und Plätzen genügt. Wir zeichnen ihn kostenlos in Ihr Event und zeigen ihn Ihnen, bevor der Verkauf beginnt."
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

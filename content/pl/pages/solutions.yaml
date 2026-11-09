@@ -1,0 +1,29 @@
+title: "Dla kogo: koncerty, teatr, festiwale, obiekty"
+description: "Organizatorzy sprzedający własne bilety: koncerty, teatr, widowiska, festiwale, trasy koncertowe, warsztaty i szkolenia, obiekty i kluby, strony WordPress."
+h1: Organizatorzy, którzy sprzedają własne bilety
+lead: Jedna platforma, różne wydarzenia. Wybierz swoje, aby zobaczyć, które elementy są najważniejsze, jak wygląda pierwszy tydzień i o co najpierw pytają inni organizatorzy z twojej branży.
+related:
+  - { label: Jak to działa, href: /#how }
+  - { label: Cennik, href: /pricing }
+  - { label: Klienci, href: /clients }
+sections:
+  - type: cards
+    id: list
+    eyebrow: Dla kogo
+    title: Jakie wydarzenia prowadzisz?
+    items:
+      - { title: Koncerty, text: "Miejsca stojące i siedzące, kilka kategorii cenowych, early bird, skanowanie przy wejściu.", link: { label: Dla koncertów →, href: /solutions/concerts } }
+      - { title: Teatr, text: "Plany sali zgodne z obiektem, powtarzalne terminy, zaproszenia dla prasy i partnerów.", link: { label: Dla teatrów →, href: /solutions/theatre } }
+      - { title: Widowiska, text: "Pokazy na lodzie, cyrk, taniec: wiele terminów, wiele miast, jeden plan na obiekt używany wielokrotnie.", link: { label: Dla widowisk →, href: /solutions/shows } }
+      - { title: Festiwale, text: "Kilka dni, wiele kategorii, kategorie, które przekazują niesprzedane miejsca następnej.", link: { label: Dla festiwali →, href: /solutions/festivals } }
+      - { title: Trasy koncertowe, text: "Jeden spektakl, wiele miast i terminów, strona dla każdego promotora z własnym linkiem.", link: { label: Dla tras koncertowych →, href: /solutions/concert-tours } }
+      - { title: Warsztaty i szkolenia, text: "Małe grupy, cykliczne terminy, własne e-maile i język prowadzącego.", link: { label: Dla prowadzących →, href: /solutions/master-classes } }
+      - { title: Obiekty i kluby, text: "Własny obiekt, wiele wydarzeń w miesiącu, jeden plan sali używany wielokrotnie, osobne warunki.", link: { label: Dla obiektów →, href: /solutions/venues } }
+      - { title: Strony na WordPressie, text: "Wtyczka z zamówieniami WooCommerce; sklep dalej działa, bilety pochodzą z ArenaSoldOut.com.", link: { label: Dla stron WordPress →, href: /solutions/wordpress } }
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż już dziś
+    text: "Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Wydarzenie bez planu sali jest w sprzedaży w 10 minut; plan sali rysujemy dla ciebie za darmo."
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."
