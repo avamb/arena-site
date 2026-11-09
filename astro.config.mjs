@@ -1,4 +1,5 @@
 // @ts-check
+import { existsSync } from 'node:fs';
 import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
 import sitemap from '@astrojs/sitemap';
@@ -26,7 +27,10 @@ export default defineConfig({
   integrations: [
     svelte(),
     sitemap({
-      filter: (page) => !/\/start\/(thanks|continue|confirm)/.test(page) && !page.endsWith('/404'),
+      // Pages of languages not in the menu yet are noindex: keep them out. Blog posts stay, and so does the blog index of a language that has archive posts.
+      filter: (page) => !/\/start\/(thanks|continue|confirm)/.test(page) && !page.endsWith('/404')
+        && !languages.some((l) => !l.inMenu && new RegExp(`^${siteUrl}/${l.code}(/(?!blog/).*)?/?$`).test(page)
+          && !(new RegExp(`^${siteUrl}/${l.code}/blog/?$`).test(page) && existsSync(`content/${l.code}/posts`))),
       i18n: {
         defaultLocale: defaultLanguage,
         locales: Object.fromEntries(languages.map((l) => [l.code, l.intl])),
