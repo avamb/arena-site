@@ -1,7 +1,7 @@
 ---
 import type { LanguageCode } from '@config';
 import { hosts } from '@config';
-import { nav } from '@/lib/data';
+import { navFor } from '@/lib/data';
 import { t, localePath, activeLanguages, getLanguage } from '@/lib/i18n';
 import Logo from './Logo.astro';
 import ThemeToggle from './islands/ThemeToggle.svelte';
@@ -9,6 +9,7 @@ import Icon from './Icon.astro';
 import { trackLabel } from '@/lib/track';
 interface Props { lang: LanguageCode; path: string }
 const { lang, path } = Astro.props;
+const nav = navFor(lang);
 const langs = activeLanguages();
 const current = getLanguage(lang);
 const signinHref = nav.signin.href.startsWith('http') ? nav.signin.href : hosts.app;

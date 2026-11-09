@@ -4,7 +4,7 @@
  * Nothing here is secret.
  */
 
-export type LanguageCode = 'en' | 'es' | 'cs' | 'ru' | 'no';
+export type LanguageCode = 'en' | 'es' | 'pt' | 'de' | 'fr' | 'it' | 'pl' | 'uk' | 'ru' | 'cs' | 'no';
 
 export interface Language {
   code: LanguageCode;
@@ -19,9 +19,17 @@ export interface Language {
 
 export const languages: Language[] = [
   { code: 'en', name: 'English', dir: 'ltr', intl: 'en-GB', inMenu: true },
+  // Wave 1 of the translation (owner, 09.11.2026). A language enters the menu after its home and
+  // pricing pages have been read by a person.
   { code: 'es', name: 'Español', dir: 'ltr', intl: 'es-ES', inMenu: false },
-  { code: 'cs', name: 'Čeština', dir: 'ltr', intl: 'cs-CZ', inMenu: false },
+  { code: 'pt', name: 'Português', dir: 'ltr', intl: 'pt-BR', inMenu: false },
+  { code: 'de', name: 'Deutsch', dir: 'ltr', intl: 'de-DE', inMenu: false },
+  { code: 'fr', name: 'Français', dir: 'ltr', intl: 'fr-FR', inMenu: false },
+  { code: 'it', name: 'Italiano', dir: 'ltr', intl: 'it-IT', inMenu: false },
+  { code: 'pl', name: 'Polski', dir: 'ltr', intl: 'pl-PL', inMenu: false },
+  { code: 'uk', name: 'Українська', dir: 'ltr', intl: 'uk-UA', inMenu: false },
   { code: 'ru', name: 'Русский', dir: 'ltr', intl: 'ru-RU', inMenu: false },
+  { code: 'cs', name: 'Čeština', dir: 'ltr', intl: 'cs-CZ', inMenu: false },
   /** Only one archive article exists in Norwegian; the language stays out of the menu. */
   { code: 'no', name: 'Norsk', dir: 'ltr', intl: 'nb-NO', inMenu: false },
 ];

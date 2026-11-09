@@ -1,12 +1,13 @@
 ---
 import type { LanguageCode } from '@config';
 import { hosts, analytics } from '@config';
-import { nav } from '@/lib/data';
+import { navFor } from '@/lib/data';
 import { t, localePath, getLanguage } from '@/lib/i18n';
 import Logo from './Logo.astro';
 import Icon from './Icon.astro';
 interface Props { lang: LanguageCode }
 const { lang } = Astro.props;
+const nav = navFor(lang);
 ---
 <footer>
   <div class="wrap">

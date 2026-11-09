@@ -5,7 +5,7 @@
  */
 import { defaultLanguage, languages, type LanguageCode } from '@config';
 import { getCollection } from 'astro:content';
-import { getPage, getProviders, getMarkets, getPricing, getChangelog, getPosts, pageSlugs, slugToPath, nav } from './data';
+import { getPage, getProviders, getMarkets, getPricing, getChangelog, getPosts, pageSlugs, slugToPath, navFor } from './data';
 import { pageToMarkdown, type PageData } from './markdown';
 import { localePath } from './i18n';
 import type { JsonLdInput } from './jsonld';
@@ -48,7 +48,7 @@ export async function loadPage(lang: LanguageCode, slug: string): Promise<Loaded
   const [providers, markets, pricing, changelog, posts] = await Promise.all([getProviders(), getMarkets(), getPricing(), getChangelog(), getPosts(lang)]);
   const path = localePath(lang, slugToPath(slug));
   const data: PageData = { lang, path, page, providers, markets, pricing, changelog, posts };
-  const markdown = pageToMarkdown(data, nav);
+  const markdown = pageToMarkdown(data, navFor(lang));
 
   const faq = page.data.sections.flatMap((s) => (s.type === 'qa' ? s.items.map((i) => ({ q: i.title, a: i.text })) : s.type === 'faq' ? s.items : []));
   const steps = page.data.sections.find((s) => s.type === 'steps');

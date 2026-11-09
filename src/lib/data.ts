@@ -86,6 +86,18 @@ export type Tariff = z.infer<typeof tariffSchema>;
 export type Facts = z.infer<typeof factsSchema>;
 
 export const nav: Nav = load('nav.yaml', navSchema);
+const navCache = new Map<string, Nav>();
+/** Header and footer in the page language: content/<lang>/nav.yaml (same keys and hrefs), else the English one. */
+export function navFor(lang: string): Nav {
+  if (lang === defaultLanguage) return nav;
+  if (!navCache.has(lang)) {
+    const file = new URL(`../${lang}/nav.yaml`, root);
+    let n = nav;
+    try { n = navSchema.parse(parse(readFileSync(file, 'utf8'))); } catch (e) { if ((e as NodeJS.ErrnoException).code !== 'ENOENT') throw e; }
+    navCache.set(lang, n);
+  }
+  return navCache.get(lang)!;
+}
 export const clients: Clients = load('clients.yaml', clientsSchema);
 export const tariff: Tariff = load('tariff.yaml', tariffSchema);
 export const facts: Facts = load('facts.yaml', factsSchema);
