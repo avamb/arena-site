@@ -3,7 +3,7 @@ import type { Section } from '@/content.config';
 import type { CollectionEntry } from 'astro:content';
 import type { LanguageCode } from '@config';
 import { inline, fill } from '@/lib/inline';
-import { tariff, tariffFor, packageLinks } from '@/lib/data';
+import { tariff, tariffFor, venueCap, packageLinks } from '@/lib/data';
 import { localePath, currencySymbol, getLanguage, t } from '@/lib/i18n';
 import { lowPriceFee, packageFee, packageCapacity, venueFee } from '@/lib/fees';
 import { trackLabel } from '@/lib/track';
@@ -25,12 +25,13 @@ const planVars = (p: (typeof pricing)[number]) => {
   const tf = tariffFor(c);
   const minPack = Math.min(...tf.packages.map((k) => k.per_ticket));
   const seated = seatedOf(p);
+  const cap = venueCap(c, p.data.per_ticket, p.data.seating_extra);
   return {
     price: fmt(p.data.per_ticket, c), seated: fmt(seated, c),
     from: fmt(minPack, c), fromSeated: fmt(minPack + tf.package_seating_extra, c), saving: saving(minPack, p.data.per_ticket),
     lowPercent: tf.low_price.percent, lowMax: `${currencySymbol(c)}${tf.low_price.max_ticket}`, percent: tariff.venues_percent,
     lowMin: fmt(tf.low_price.min, c), lowCap: fmt(tf.low_price.max, c), lowSeat: fmt(tf.low_price.seating_extra, c),
-    cap: fmt(seated, c), ex25: fmt(25, c), ex: fmt(venueFee(25, tariff.venues_percent, seated), c), capAt: fmt(seated * 100 / tariff.venues_percent, c),
+    cap: fmt(cap, c), ex25: fmt(25, c), ex: fmt(venueFee(25, tariff.venues_percent, cap), c), capAt: fmt(cap * 100 / tariff.venues_percent, c),
   };
 };
 const amt = (pick: (v: ReturnType<typeof planVars>) => string | number) =>
@@ -40,7 +41,7 @@ const each = (pick: (c: string, tf: ReturnType<typeof tariffFor>) => string | nu
   byCur.map((p) => `<span class="c-${p.data.currency.toLowerCase()}">${pick(p.data.currency, tariffFor(p.data.currency))}</span>`).join('');
 const fillCur = (text: string) => text.replace(/\{(\w+)\}/g, (m, k) => (k in planVars(base) ? amt((v) => (v as Record<string, string | number>)[k]) : m));
 const perTicketOf = (c: string) => byCur.find((r) => r.data.currency === c)!.data.per_ticket;
-const lowExamples: Record<string, number[]> = { USD: [2, 5, 9, 10], EUR: [2, 5, 8, 9] };
+const lowExamples: Record<string, number[]> = { USD: [2, 5, 9, 10], EUR: [2, 5, 9, 10] };
 const calcText = s.calculator;
 const buy = s.packages?.buy;
 const buyCurrencies = [{ id: 'usd', sym: 'US$' }, { id: 'eur', sym: '€' }];

@@ -49,6 +49,8 @@ export const tariffSchema = z.object({
     rate_date: z.coerce.date(),
     rate_source: z.string(),
     stripe_links_current: z.boolean(),
+    /** Permanent venues: cap per ticket in euro (in US dollars it is the seated pay-as-you-go price). */
+    venues_cap: z.number(),
     low_price: z.object({ max_ticket: z.number(), percent: z.number(), min: z.number(), max: z.number(), seating_extra: z.number() }),
     package_seating_extra: z.number(),
     packages: z.array(z.object({ name: z.string(), prepay: z.number(), per_ticket: z.number() })),
@@ -64,6 +66,11 @@ export const factsSchema = z.object({
 });
 
 /** Stripe Payment Links of the prepaid packages: links[package][currency]. Empty until scripts/stripe-packages.mjs has run. */
+/** Permanent venues: the cap per ticket in this currency. */
+export function venueCap(currency: string, perTicket: number, seatingExtra: number): number {
+  return currency.toUpperCase() === 'EUR' ? tariff.eur.venues_cap : +(perTicket + seatingExtra).toFixed(2);
+}
+
 /** The currency-dependent part of the tariff: US dollars are the base, euros come from `tariff.eur`. */
 export function tariffFor(currency: string) {
   const e = tariff.eur;
