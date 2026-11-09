@@ -3,10 +3,12 @@
 # old hosting provider, Google Analytics and advertising cookies removed; the three groups the
 # platform actually serves (website visitors, organizers, ticket buyers) described from facts.yaml
 # and the payments page. Points the owner still has to confirm are listed in the hand-over note.
+# 2026-11-02: own product analytics with a consent banner (spec 50, A2): sections 1.3, 3.2(b), 6.2, 7.1. The wording of
+# the e-mail-link paragraph and the legal bases awaits the owner's legal review.
 title: "Privacy Policy"
 description: "How ArenaSoldOut.com (ABH TEAM OÜ) processes personal data of visitors, organizers and ticket buyers: what, why, recipients, retention, your rights, cookies."
 h1: "Privacy Policy"
-lead: "Version of 9 October 2026. Replaces the version of 5 August 2023. Applies to the website, the Event Center, the sales pages, the widget, the API, the Telegram bot and the scanner app."
+lead: "Version of 2 November 2026. Replaces the version of 9 October 2026. Applies to the website, the Event Center, the sales pages, the widget, the API, the Telegram bot and the scanner app."
 related:
   - { label: Terms and conditions, href: /legal/terms }
   - { label: Help for ticket buyers, href: /help/tickets }
@@ -28,6 +30,10 @@ sections:
       1.2 We process account data of organizers ("account data"): the name of the organization and its country, the names, e-mail addresses and phone numbers of the account owner and the team members, the Telegram accounts of team members who use the Telegram bot, sign-in records, API keys and settings. The source of the account data is you. It is processed to operate the services, provide them to you, keep them secure, keep back-ups and communicate with you about your account and events. The legal basis is the performance of our contract with you (the Terms and Conditions) and our legitimate interest in keeping the services secure.
 
       1.3 We process data about the use of the website and the services ("usage data"). The website may use cookie-free analytics hosted by us: pages viewed, referring site, browser type and version, operating system, country, and the theme chosen (light or dark). It does not store your full IP address and sets no cookies. The services keep server logs with the IP address, the time and the request, for security and troubleshooting. The legal basis is our legitimate interest in understanding how the website is used and in protecting the services.
+
+      1.3a The website also has product analytics of our own, which works only if you accept "Analytics" in the cookie banner. It records the pages you open, the time you spend on a page, how far you scroll, your clicks on marked buttons (for example "Start selling" or "Contact"), the language of the page and the source of the visit (the referring site and the campaign tags in the address). It links your visits with a random code kept in a cookie. If you then start an application, the code is sent with it, so that we can see which pages came before it. This data stays with ArenaSoldOut.com, is stored on our own servers in the European Union and is not passed to advertising or analytics companies. Its legal basis is your consent, which you can withdraw at any time (section 7). If you decline, none of it is collected.
+
+      1.3b If you arrive through a link in an e-mail we sent to you, the link carries a code of your contact record. The visit through the link (the page, the time) is recorded even if you decline analytics, and nothing further is linked to you without your consent. The legal basis is our legitimate interest in knowing which of our e-mails were read. The code is removed from the address as soon as the page opens. You can object at any time (section 5).
 
       1.4 We process the content organizers publish through the services ("publication data"): event titles and descriptions, posters, venue and session details, seating plans, prices and ticket conditions. It is processed to publish the event on the sales page, in the widget and on the organizer's own site, and to issue tickets. The legal basis is the performance of our contract with the organizer.
 
@@ -63,7 +69,7 @@ sections:
 
       (a) account data: while the account is open and for up to 120 months after the last sign-in, as set out in the Terms and Conditions; we warn you by e-mail before deleting the account;
 
-      (b) usage data: analytics in aggregated form; server logs for the limited period needed for security and troubleshooting;
+      (b) usage data: cookie-free analytics in aggregated form; server logs for the limited period needed for security and troubleshooting; events of the product analytics for 13 months, and the profile built from them (the pages visited, the first source, the stage of an application) for as long as your contact record or account exists, after which it is deleted; the visitor cookie lives 13 months and the record of your cookie choice 6 months;
 
       (c) publication data: while the event is published and the organizer's account is open;
 
@@ -109,13 +115,15 @@ sections:
 
       6.1 A "cookie" is a small piece of information a website stores in your browser. Browsers also offer local storage, which works similarly but is not sent to the server with every request.
 
-      6.2 This website sets no cookies of its own and shows no cookie banner. Your theme choice (light or dark) is stored in your browser's local storage and is never sent to us. Analytics on the website is cookie-free. The application form uses Cloudflare Turnstile to tell people from automated submissions; the check runs from challenges.cloudflare.com and may use cookies or storage of its own, under Cloudflare's privacy policy.
+      6.2 The website shows a cookie banner with two categories: "Necessary", always on, and "Analytics", off until you accept. Before you choose, it sets no cookie. When you choose, it stores your answer in the cookie aso_consent (6 months); this one is strictly necessary, because it is how we remember your answer. Only if you accept analytics does it also set the cookie aso_aid, a random visitor code (13 months, first-party, never extended by later visits). Neither cookie is shared with third parties. Your theme choice (light or dark) is stored in your browser's local storage and is never sent to us. The cookie-free analytics described in section 1.3 sets no cookies. The application form uses Cloudflare Turnstile to tell people from automated submissions; the check runs from challenges.cloudflare.com and may use cookies or storage of its own, under Cloudflare's privacy policy.
 
       6.3 The Event Center, the hosted sales pages and the ticket widget use strictly necessary cookies and local storage: to keep organizers signed in, to hold your seats while you complete an order, to remember your language, and to protect accounts and orders against fraud. We do not use advertising cookies or third-party analytics cookies.
 
       ## 7. How to control cookies
 
       7.1 You can block or delete cookies and local storage in your browser settings; your browser's help explains how. Blocking strictly necessary cookies prevents signing in to the Event Center and completing a ticket order.
+
+      7.2 You can change or withdraw your choice about analytics at any time with the "Cookie settings" link in the footer of every page. Withdrawing deletes the aso_aid cookie and stops further collection at once. To have the events already collected under your code deleted, write to hello@arenasoldout.com.
 
       ## 8. Revision and severability
 

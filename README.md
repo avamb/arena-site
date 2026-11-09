@@ -17,6 +17,8 @@ nginx includes; `npm run preview` serves the build. `npm run check` runs every C
 (types, anti-slop grep, translation parity, redirects/headers parity, JSON-LD, agent files).
 `npm run onboarding:test` tests the pure helpers of the application form.
 
+`npm run analytics:test` tests the consent state, the cookies, the `cid` handling and the rule that nothing is sent before consent.
+
 Requirements: Node 22, npm 10. Lighthouse locally: `npm run lhci` (needs Chrome).
 
 ## Edit texts
@@ -71,6 +73,17 @@ Internal linking (SEO): breadcrumbs on every inner page (visible and as Breadcru
 block from `related:` before the final CTA, product and solution pages cross-linked in their cards and
 FAQ answers, blog posts with "Read next" (newest posts) and "Related pages" (product pages), home
 "Who it is for" cards linking to the solution pages, footer with product, solutions, company and legal.
+
+## Own analytics and the consent banner (spec 50, stage A2)
+
+Off by default. Set `ANALYTICS_ENDPOINT` at build time (CI reads the repository variable of the same name),
+for example `https://api.arenasoldout.com/v1/t`, and the build contains the tracker (`src/lib/arena-track.ts`,
+a vendored copy of the platform's `packages/arena-track`), the consent banner and the footer "Cookie settings"
+link; with the variable empty none of them exist and nothing is sent. The origin is added to the CSP
+`connect-src` automatically and the platform must list the site origin in `CORS_ALLOWED_ORIGINS`.
+Before consent nothing is sent, except the one batch of a visit that arrives through an e-mail link (`?cid=`)
+and the `consent` event itself; the visitor id `aso_aid` exists only after "Accept". Key buttons carry
+`data-track` labels from `src/lib/track.ts`. Umami keeps running next to it. Banner texts: `consent.*` in `i18n/`.
 
 ## Deploy
 

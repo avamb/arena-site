@@ -6,6 +6,7 @@ import { t, localePath, activeLanguages, getLanguage } from '@/lib/i18n';
 import Logo from './Logo.astro';
 import ThemeToggle from './islands/ThemeToggle.svelte';
 import Icon from './Icon.astro';
+import { trackLabel } from '@/lib/track';
 interface Props { lang: LanguageCode; path: string }
 const { lang, path } = Astro.props;
 const langs = activeLanguages();
@@ -20,7 +21,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
       {nav.header.map((l) => <a href={localePath(lang, l.href)}>{l.label}</a>)}
     </nav>
     <div class="nav-right">
-      <a class="signin" href={signinHref}>{nav.signin.label}</a>
+      <a class="signin" href={signinHref} data-track={trackLabel(signinHref, 'header')}>{nav.signin.label}</a>
       {langs.length > 1 ? (
         <form class="lang-menu" method="get">
           <label class="visually-hidden" for="lang-select">{t(lang, 'language')}</label>
@@ -34,7 +35,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
       )}
       <ThemeToggle client:load label={t(lang, 'theme.toggle')} />
       <a class="btn btn-ghost btn-sm contact-btn" href={localePath(lang, nav.contact.href)} data-contact-open><Icon name="message-circle" size={16} /><span>{nav.contact.label}</span></a>
-      <a class="btn btn-primary btn-sm" href={localePath(lang, nav.start.href)}>{nav.start.label}</a>
+      <a class="btn btn-primary btn-sm" href={localePath(lang, nav.start.href)} data-track={trackLabel(nav.start.href, 'header')}>{nav.start.label}</a>
       <button type="button" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-menu" data-label-open={t(lang, 'nav.menu')} data-label-close={t(lang, 'nav.close')}>
         <Icon name="menu" class="i-open" />
         <Icon name="x" class="i-close" />

@@ -15,6 +15,8 @@ concurrency:
 env:
   SITE_URL: https://arenasoldout.com
   SITE_INDEXING: 'true'
+  # Own product analytics (spec 50): collector URL, from the repository variable ANALYTICS_ENDPOINT. Empty = off.
+  ANALYTICS_ENDPOINT: ${{ vars.ANALYTICS_ENDPOINT }}
 
 jobs:
   build:
@@ -35,6 +37,7 @@ jobs:
       - run: npm run check:links
       - run: npm run onboarding:test
       - run: npm run contact:test
+      - run: npm run analytics:test
       - uses: actions/upload-artifact@v4
         with:
           name: dist

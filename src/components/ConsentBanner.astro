@@ -1,0 +1,34 @@
+---
+/**
+ * Consent banner (spec 50, decision 13.1). Rendered only when `analytics.endpoint` is configured, hidden
+ * until consent-banner.ts finds that the visitor has not chosen yet (or opens it from the footer link).
+ * It is a fixed overlay, so showing it never moves the page (no layout shift). Accept and Decline are the
+ * same button with the same weight; nothing is pre-selected.
+ */
+import type { LanguageCode } from '@config';
+import { analytics } from '@config';
+import { t, localePath } from '@/lib/i18n';
+interface Props { lang: LanguageCode }
+const { lang } = Astro.props;
+---
+{analytics.endpoint && (
+  <div id="aso-consent" class="consent" role="dialog" aria-modal="false" aria-labelledby="aso-consent-title" aria-describedby="aso-consent-text" tabindex="-1" hidden data-endpoint={analytics.endpoint} data-on={t(lang, 'consent.state.on')} data-off={t(lang, 'consent.state.off')}>
+    <div class="consent-box">
+      <h2 id="aso-consent-title">{t(lang, 'consent.title')}</h2>
+      <p id="aso-consent-text">{t(lang, 'consent.text')}{' '}<a href={localePath(lang, '/legal/privacy')}>{t(lang, 'consent.privacy')}</a></p>
+      <dl class="consent-cats">
+        <div><dt>{t(lang, 'consent.necessary.name')}</dt><dd>{t(lang, 'consent.necessary.text')}</dd></div>
+        <div><dt>{t(lang, 'consent.analytics.name')}</dt><dd>{t(lang, 'consent.analytics.text')}</dd></div>
+      </dl>
+      <p class="consent-state" role="status" data-consent-state></p>
+      <div class="consent-actions">
+        <button type="button" class="btn btn-primary" data-consent="decline">{t(lang, 'consent.decline')}</button>
+        <button type="button" class="btn btn-primary" data-consent="accept">{t(lang, 'consent.accept')}</button>
+        <button type="button" class="consent-close" data-consent="close" hidden>{t(lang, 'consent.close')}</button>
+      </div>
+    </div>
+  </div>
+)}
+<script>
+  import '@/scripts/consent-banner';
+</script>
