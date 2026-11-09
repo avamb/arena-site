@@ -6,7 +6,8 @@
  * (two Russian candidates), platform-as-a-service-paas, the-essential-functionality-of-a-ticket-system.
  * Every entry is checked by scripts/check-hreflang.mjs.
  */
-import type { LanguageCode } from '@config';
+import { existsSync } from 'node:fs';
+import { languages, defaultLanguage, type LanguageCode } from '@config';
 
 /** [English post slug, Russian post slug] */
 export const postPairs: [string, string][] = [
@@ -47,5 +48,23 @@ export function translationsOf(path: string): { lang: LanguageCode; path: string
   const norm = path.length > 1 ? path.replace(/\/$/, '') : path;
   const all = [...pagePairs, ...postPairs.map(([en, ru]) => [`/blog/${en}`, `/ru/blog/${ru}`] as [string, string])];
   const hit = all.find(([en, ru]) => en === norm || ru === norm);
-  return hit ? [{ lang: 'en', path: hit[0] }, { lang: 'ru', path: hit[1] }] : [];
+  if (hit) return [{ lang: 'en', path: hit[0] }, { lang: 'ru', path: hit[1] }];
+  return pageTranslations(norm);
+}
+
+/**
+ * Site pages (content/<lang>/pages/*.yaml) translated from the English original, in the languages of
+ * the menu (wave 1, 09.11.2026). Same slug in every language, so the alternates are certain.
+ * Blog paths are left to the pairs above; the application steps under /start/ are noindex.
+ */
+function pageTranslations(path: string): { lang: LanguageCode; path: string }[] {
+  const live = languages.filter((l) => l.inMenu);
+  const prefix = live.find((l) => l.code !== defaultLanguage && (path === `/${l.code}` || path.startsWith(`/${l.code}/`)));
+  const rest = prefix ? path.slice(prefix.code.length + 1) || '/' : path;
+  const slug = rest === '/' ? 'home' : rest.slice(1);
+  if (slug === 'blog' || slug.startsWith('blog/') || slug.startsWith('start/')) return [];
+  const has = (code: string) => existsSync(new URL(`../../content/${code}/pages/${slug}.yaml`, import.meta.url));
+  if (!has(defaultLanguage)) return [];
+  const out = live.filter((l) => has(l.code)).map((l) => ({ lang: l.code, path: l.code === defaultLanguage ? rest : `/${l.code}${rest === '/' ? '' : rest}` }));
+  return out.length > 1 ? out : [];
 }

@@ -17,7 +17,8 @@ const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[
 if (!urls.length) fail('sitemap has no URLs');
 for (const u of urls) {
   const html = u === '/' ? 'dist/index.html' : `dist${u.replace(/\/$/, '')}.html`;
-  const md = u === '/' ? 'dist/index.md' : `dist${u.replace(/\/$/, '')}.md`;
+  // A language home (/de) has its twin at /de/index.md, as [...path].md.ts writes it.
+  const md = u === '/' ? 'dist/index.md' : /^\/[a-z]{2}\/?$/.test(u) ? `dist${u.replace(/\/$/, '')}/index.md` : `dist${u.replace(/\/$/, '')}.md`;
   if (!existsSync(html)) fail(`sitemap URL without page: ${u}`);
   if (!existsSync(md)) fail(`no Markdown twin for ${u} (${md})`);
   if (existsSync(html)) {
