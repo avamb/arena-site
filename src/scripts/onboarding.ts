@@ -11,6 +11,7 @@ import {
   parseFailure, phoneOk, stepOfField,
   type Answers, type ApiFailure, type Application, type Field, type Schema, type Step,
 } from './onboarding-lib';
+import { consentedAid } from './consent-lib';
 
 const root = document.getElementById('onb');
 if (root) void main(root);
@@ -62,6 +63,11 @@ async function main(el: HTMLElement) {
     } catch {
       return { ok: false, err: { status: 0, code: 'network', fields: {} } };
     }
+  }
+
+  /** Visitor id for the analytics join (spec 50, section 3): sent only while the visitor has accepted analytics. */
+  function startAid(): { aid?: string } {
+    try { const aid = consentedAid(document.cookie); return aid ? { aid } : {}; } catch { return {}; }
   }
 
   // ---- Turnstile ---------------------------------------------------------------------------------
@@ -326,7 +332,7 @@ async function main(el: HTMLElement) {
     const cap = captcha();
     const widgets = contact.fields.map((f) => widget(f, undefined, true));
     const hp = h('div', { class: 'hp', 'aria-hidden': 'true' }, h('label', {}, 'Website', h('input', { type: 'text', name: 'website', tabindex: '-1', autocomplete: 'off' })));
-    const btn = h('button', { class: 'btn btn-primary', type: 'submit' }, ui.start_button ?? '');
+    const btn = h('button', { class: 'btn btn-primary', type: 'submit', 'data-track': 'apply.submit' }, ui.start_button ?? '');
     const form = h('form', { class: 'form', novalidate: '' }, hp, ...widgets.map((w) => w.node), cap.box,
       h('p', { class: 'hint onb-note' }, ui.start_note ?? ''),
       h('div', { class: 'hero-actions' }, btn, h('a', { class: 'btn btn-ghost', href: paths.continue ?? '/start/continue' }, ui.have_draft ?? '')));
@@ -346,6 +352,7 @@ async function main(el: HTMLElement) {
         first_name: String(vals.first_name ?? '').trim(), last_name: String(vals.last_name ?? '').trim(),
         email: String(vals.email ?? '').trim(), phone: String(vals.phone ?? '').trim(),
         locale: lang, source: 'site', turnstile_token: cap.token(), utm: collectUtm(location.search, document.referrer), honeypot,
+        ...startAid(),
       });
       busy(btn, false, ui.start_button ?? '');
       cap.reset();

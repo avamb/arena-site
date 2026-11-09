@@ -6,6 +6,7 @@ import { inline, fill } from '@/lib/inline';
 import { tariff, tariffFor, packageLinks } from '@/lib/data';
 import { localePath, currencySymbol, getLanguage, t } from '@/lib/i18n';
 import { lowPriceFee, packageFee, packageCapacity, venueFee } from '@/lib/fees';
+import { trackLabel } from '@/lib/track';
 import FeeCalculator from '@/components/islands/FeeCalculator.svelte';
 interface Props { s: Extract<Section, { type: 'pricing' }>; pricing: CollectionEntry<'pricing'>[]; lang: LanguageCode; top?: boolean }
 const { s, pricing, lang, top = false } = Astro.props;
@@ -102,13 +103,13 @@ const regions = byCur.map((p) => {
           <div class="reg">{p.data.region}</div>
           <div class="big num">{fmt(p.data.per_ticket, p.data.currency)}<small>{t(lang, 'pricing.perTicket')}</small></div>
           <ul>{s.planBullets.map((b) => <li set:html={inline(fill(b, { seated: fmt(p.data.per_ticket + p.data.seating_extra, p.data.currency) }))} />)}</ul>
-          <a class:list={['btn', p.data.highlighted ? 'btn-primary' : 'btn-ghost']} href={localePath(lang, s.cta.href)}>{s.cta.label}</a>
+          <a class:list={['btn', p.data.highlighted ? 'btn-primary' : 'btn-ghost']} href={localePath(lang, s.cta.href)} data-track={trackLabel(s.cta.href, 'plan')}>{s.cta.label}</a>
         </div>
       ))}
     </div>
     )}
     <p class="pr-note" set:html={inline(s.currencyNote)} />
-    {s.buyCredits && !s.plans && <p style="margin-top:18px"><a class="btn btn-credits" href={localePath(lang, s.buyCredits.href)}>{s.buyCredits.label}</a></p>}
+    {s.buyCredits && !s.plans && <p style="margin-top:18px"><a class="btn btn-credits" href={localePath(lang, s.buyCredits.href)} data-track="credits.buy">{s.buyCredits.label}</a></p>}
 
     {!s.compact && s.packages && (
       <div class="card pkgs" id="packages">
@@ -193,7 +194,7 @@ const regions = byCur.map((p) => {
         <p set:html={fillCur(inline(s.venues.text))} />
         {!s.compact && s.venues.example && <p class="pr-note" style="margin-top:10px" set:html={fillCur(s.venues.example)} />}
       </div>
-      <a class="btn btn-ghost btn-sm" href={localePath(lang, s.venues.cta.href)}>{s.venues.cta.label}</a>
+      <a class="btn btn-ghost btn-sm" href={localePath(lang, s.venues.cta.href)} data-track={trackLabel(s.venues.cta.href, 'venues')}>{s.venues.cta.label}</a>
     </div>
 
     {!s.compact && s.calculator && (

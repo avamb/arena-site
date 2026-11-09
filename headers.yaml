@@ -1,6 +1,8 @@
 # One source of truth for response headers (doc 33 §3.7a). scripts/build-edge.mjs turns this into
 # dist/_headers (Cloudflare) and ops/nginx/headers.conf (nginx). Patterns use the _headers syntax:
 # `/*` everything, `/_astro/*` a folder, `/*.md` an extension.
+# connect-src also gets the origin of ANALYTICS_ENDPOINT at build time when that variable is set (spec 50, A2);
+# api.arenasoldout.com is already listed, so the production endpoint adds nothing.
 # The X-Robots-Tag noindex header is added by the script while site.config.ts `indexing` is false.
 # Cloudflare combines values of headers set by several matching rules; a key written as "! Name"
 # first removes the value from the broader rule (nginx locations replace headers anyway, so the

@@ -15,6 +15,7 @@ import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 import ContactForm from '@/components/ContactForm.astro';
 import Icon from '@/components/Icon.astro';
+import ConsentBanner from '@/components/ConsentBanner.astro';
 
 interface Props {
   lang: LanguageCode;
@@ -107,6 +108,7 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
       </div>
     </dialog>
     <script>import '@/scripts/contact';</script>
+    <ConsentBanner lang={lang} />
     {umami.src && umami.websiteId && (
       <script is:inline define:vars={{ umamiSrc: umami.src, umamiId: umami.websiteId }}>
         /* Theme statistics (doc 33 §3.11, item 3): one event per view, no cookies. */
