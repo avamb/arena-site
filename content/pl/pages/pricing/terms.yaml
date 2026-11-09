@@ -1,0 +1,64 @@
+title: "Szczegółowe warunki cennika"
+description: "Prowizja platformy: płatność po wydarzeniu, kredyty, bilety do US$10, charytatywne 50% taniej, obiekty, white label €45/US$45 miesięcznie, zwroty, waluta."
+h1: Szczegółowe warunki
+lead: Warunki stojące za ceną za bilet. Warunki standardowe; warunki wolumenowe i indywidualne na życzenie. Wszystkie kwoty są bez VAT.
+sections:
+  - type: prose
+    id: terms
+    body: |
+      ## Za co pobieramy opłatę
+
+      Prowizja platformy jest pobierana za każdy sprzedany bilet, a nie jako procent twojego przychodu, z wyjątkiem dwóch przypadków opisanych niżej. Bilet za US$15 i bilet za US$150 kosztują cię tyle samo. Zaproszenia i darmowe bilety na płatne wydarzenia nie podlegają prowizji.
+
+      ## Płatność po wydarzeniu
+
+      US$0,59 za bilet bez miejsca i US$1,09 za bilet z miejscem wybranym na planie sali (€0,53 i €0,97 dla obiektów w krajach UE).
+
+      Ceny są ustalone w dolarach amerykańskich. Ceny w euro to ceny w dolarach przeliczone po kursie referencyjnym Europejskiego Banku Centralnego (1 EUR = 1,1193 USD na 9 listopada 2026) i zaokrąglone do centa; [strona cennika](/pricing) pokazuje oba. Dwie kwoty nie są przeliczane: próg dla wydarzeń z tanimi biletami to €10, a limit dla stałych obiektów to €1,09. Faktura jest wystawiana po wydarzeniu, za sprzedane bilety, a ty płacisz przelewem bankowym. Dla wydarzeń w sprzedaży przez kilka miesięcy i dla stałych obiektów wystawiamy fakturę raz w miesiącu. Płatność po wydarzeniu jest dostępna dla organizacji potwierdzonych na platformie. Obsługę kart (acquiring) płacisz swojemu operatorowi płatności na jego warunkach.
+
+      ## Kredyty
+
+      Pakiet kredytów kupujesz raz, a każdy bilet pobiera swoją prowizję z twoich kredytów według stawki tego pakietu. Miejsce dodaje US$0,35 (€0,31) do stawki kredytowej. Kredyty to pieniądze na twoim koncie: nigdy nie wygasają, pakiety kredytów możesz kupować tak często, jak chcesz, i są wydawane tylko na nasze usługi. Nie można ich wypłacić, przenieść ani zamienić na gotówkę. Jeśli kredyty skończą się w trakcie sprzedaży, sprzedaż się nie zatrzymuje: bilety, których nie pokryły, są rozliczane po cenie płatności po wydarzeniu. Możesz włączyć automatyczne doładowanie. Pakiety kredytów i ich stawki są na [stronie cennika](/pricing#packages).
+
+      ## Zarejestrowane organizacje charytatywne
+
+      Zarejestrowane organizacje charytatywne płacą 50% prowizji opisanej na tej stronie, przy płatności za sprzedane bilety i z kredytami. Nasz zespół włącza zniżkę dla twojej organizacji po zapoznaniu się z rejestracją: napisz do nas ze [strony kontaktowej](/contact).
+
+      ## Wydarzenia, w których każdy bilet kosztuje US$10 lub mniej
+
+      Niższa stawka dotyczy całego wydarzenia: obowiązuje tylko wtedy, gdy najwyższa cena dowolnego biletu wydarzenia, przed kodami promocyjnymi, wynosi US$10 lub mniej, **US$10 włącznie** (€10 w krajach UE). Liczą się wszystkie kategorie i progi cenowe, także dodane później. Jeśli jest bilet powyżej tej kwoty, standardowa cena obowiązuje dla każdego biletu wydarzenia, także tych tanich: wydarzenie z biletami za US$5 i US$25 jest rozliczane po cenie standardowej. Stawka to 4% ceny biletu, co najmniej US$0,10 i najwyżej US$0,35 za bilet, oraz US$0,20 więcej za bilet z miejscem (w krajach UE: co najmniej €0,09, najwyżej €0,31, €0,18 więcej z miejscem).
+
+      ## Stałe obiekty
+
+      Obiekty, które same organizują wydarzenia, przez cały rok lub sezonowo, płacą 2% ceny biletu (po kodach promocyjnych, bez opłaty serwisowej), najwyżej US$1,09 za bilet (€1,09 w krajach UE), tak samo z miejscem i bez. Faktury wystawiamy co miesiąc. Status obiektu włącza nasz zespół: napisz do nas ze [strony kontaktowej](/contact).
+
+      ## Operator sprzedaży biletów na stronie wydarzenia albo white label
+
+      Ceny na tej stronie zakładają, że strona, na której sprzedajesz, wymienia ArenaSoldOut.com jako operatora sprzedaży biletów, z linkiem do arenasoldout.com. Wystarczy linia typu „Tickets: ArenaSoldOut.com” obok biletów, a widget biletowy domyślnie pokazuje taką linię, więc przy widgecie nie trzeba nic dodawać. Strony sprzedaży, które hostujemy, zawsze zawierają naszą nazwę.
+
+      Jeśli wolisz sprzedawać bez wymieniania nas, white label kosztuje **€45 miesięcznie za markę lub obiekt** w krajach UE i **US$45 miesięcznie za markę lub obiekt** we wszystkich pozostałych krajach, w walucie twojej prowizji. Marka to promotor wydarzenia albo twoja organizacja w przypadku wydarzeń bez promotora: dwóch promotorów, którzy sprzedają bez naszej nazwy, to dwie marki. Stały obiekt, który sprzedaje bez naszej nazwy, płaci za siebie jako jedną markę. Niepełny miesiąc jest naliczany dniami. Opłata jest pozycją twojej miesięcznej faktury; kredyty jej nie pokrywają.
+
+      Gdy white label jest włączony, znikają linia w widgecie, stopka twojego sklepu i linia platformy w e-mailach do kupujących, a e-maile wychodzą pod nazwą marki. Zostają: strony sprzedaży, które hostujemy, linki do regulaminu i polityki prywatności platformy w kasie oraz dane sprzedawcy, zgodnie z wymogami prawa. Nasz zespół włącza i wyłącza white label dla marki od wybranej przez ciebie daty: napisz do nas ze [strony kontaktowej](/contact).
+
+      ## Zwroty, zmiany terminów i odwołanie
+
+      Gdy kupujący zwraca bilet, zwrot wypłacasz kupującemu ty, organizator. Prowizja za sprzedaż, która już się odbyła, zostaje. Nie pobieramy osobnej prowizji za obsługę zwrotu, przeniesienie terminu ani e-maile do kupujących. Własne warunki operatora płatności obowiązują tak, jak określa je operator. Jeśli wydarzenie zostanie odwołane, pobrana już prowizja nie jest zwracana w pieniądzach.
+
+      ## Waluta
+
+      Prowizja jest w dolarach amerykańskich dla każdego kraju spoza UE, w tym krajów europejskich spoza UE, Azji i Bliskiego Wschodu, oraz w euro dla obiektów w krajach UE. Ceny w euro to ceny w dolarach według kursu EBC podanego wyżej. Waluta prowizji nie zmienia waluty, w której sprzedajesz bilety. Jeśli jedna organizacja ma obiekty w obu grupach, dostaje dwa konta.
+
+      ## Raporty
+
+      Event Center daje sumy dla każdego terminu i szczegółowy raport CSV dla każdego terminu. Eksporty do twojego CRM lub systemu księgowego konfigurujemy na życzenie.
+
+      ## Prywatność
+
+      ArenaSoldOut.com przetwarza dane kupujących w imieniu organizatora w celu sprzedaży i dostarczania biletów. [Polityka prywatności](/legal/privacy) opisuje, co jest przetwarzane i jak długo; [regulamin](/legal/terms) jest umową z organizatorem.
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż już dziś
+    text: "Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Wydarzenie bez planu sali jest w sprzedaży w 10 minut; plan sali rysujemy dla ciebie za darmo."
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."

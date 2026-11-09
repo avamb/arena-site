@@ -1,0 +1,31 @@
+title: "Niezawodność: 800 zamówień na minutę, nocne kopie"
+description: "Testy obciążeniowe: 800 zamówień na minutę przy 1000 jednoczesnych kupujących. Watchdog z alertami na Telegramie, nocne szyfrowane kopie, Cloudflare z przodu."
+h1: Czy poradzi sobie ze stadionem?
+lead: Tak. Platforma jest testowana obciążeniowo, nadzorowana całą dobę i kopiowana co noc. Liczby poniżej mają daty i są na stronie z faktami, gdzie aktualizujemy je z każdym wydaniem.
+related:
+  - { label: Fakty z datami, href: /facts }
+  - { label: Ostatnie zmiany, href: /changes }
+  - { label: Dla programistów, href: /developers }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Niezawodność
+    title: Co zostało zmierzone?
+    items:
+      - q: Jakie obciążenie przetestowano?
+        a: "800 zamówień na minutę przy 1000 kupujących jednocześnie na stronie, w testach obciążeniowych z września 2026. Data i liczby są na [stronie z faktami](/facts)."
+      - q: Co się dzieje, jeśli coś zepsuje się w nocy?
+        a: Watchdog operacyjny stale sprawdza platformę i alarmuje zespół na Telegramie, zanim organizatorzy cokolwiek zauważą. Cloudflare stoi przed każdą stroną i API.
+      - q: Czy moje dane mają kopie zapasowe?
+        a: Co noc, szyfrowane. Zamówienia, kupujący, plany sali i wydarzenia.
+      - q: A co z botami i masowymi rezerwacjami?
+        a: Rezerwacje miejsc wygasają według licznika, liczba zamówień jest ograniczana, a Cloudflare filtruje nadużywający ruch, zanim dotrze do platformy.
+      - q: Czy mogę zobaczyć historię zmian?
+        a: "Tak, każda funkcja, która trafiła do organizatorów, jest wymieniona z datą na [stronie zmian](/changes)."
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż już dziś
+    text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Przeczytaj fakty, href: /facts }
+    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."

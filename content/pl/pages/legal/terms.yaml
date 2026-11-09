@@ -1,0 +1,164 @@
+title: "Regulamin"
+description: "Regulamin platformy biletowej ArenaSoldOut.com dla organizatorów: usługa, konta, dostawcy płatności, opłaty, treści, odpowiedzialność, dane kupujących, firma."
+h1: "Regulamin"
+lead: "Wersja z 9 października 2026 roku. Zastępuje wersję z 6 maja 2024 roku. Platforma zapisuje wersję obowiązującą w chwili jej zaakceptowania. To tłumaczenie ma charakter informacyjny; wiążąca jest wersja angielska."
+related:
+  - { label: Szczegółowe warunki cennika, href: /pricing/terms }
+  - { label: Cennik, href: /pricing }
+  - { label: Polityka prywatności, href: /legal/privacy }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## 1. Wprowadzenie
+
+      Ta strona określa warunki prawne („Regulamin”), na jakich ABH TEAM OÜ, działająca pod marką ArenaSoldOut.com („my”), udostępnia tobie naszą platformę do sprzedaży biletów na wydarzenia oraz powiązanych produktów i usług („Usługa”). Usługa obejmuje Event Center pod adresem app.arenasoldout.com, hostowane strony sprzedaży i widget biletowy pod adresem tickets.arenasoldout.com, publiczne API, wtyczkę WordPress, bota w Telegramie i aplikację skanera przy wejściu.
+
+      Przeczytaj uważnie ten Regulamin i upewnij się, że go rozumiesz, zanim zgłosisz się po konto lub wystawisz wydarzenie do sprzedaży w Usłudze.
+
+      ## 2. Nasza umowa z tobą
+
+      Akceptujesz ten Regulamin i zawierasz wiążącą umowę z ABH TEAM OÜ, gdy zgłaszasz się po konto przez formularz na tej stronie lub przez bota w Telegramie, gdy nasz zespół zakłada dla ciebie konto na twoje żądanie albo gdy ty lub członek twojego zespołu po raz pierwszy zaloguje się do Event Center lub wystawi wydarzenie do sprzedaży. Jeśli nie zgadzasz się z jakąkolwiek częścią tego Regulaminu, nie korzystaj z Usługi ani nie uzyskuj do niej dostępu.
+
+      Możemy od czasu do czasu zmieniać ten Regulamin. Aktualna wersja jest zawsze opublikowana pod adresem ArenaSoldOut.com/legal/terms z datą ostatniej zmiany. Platforma zapisuje wersję obowiązującą w chwili jej zaakceptowania oraz każdą późniejszą wersję. Dalsze korzystanie z Usługi po zmianie oznacza, że akceptujesz zmieniony Regulamin.
+
+      ## 3. Charakter usługi
+
+      Nasza Usługa daje ci konto na naszej platformie internetowej do sprzedaży biletów na wydarzenia i zarządzania nimi, planami sali oraz powiązanymi produktami i usługami fizycznymi lub cyfrowymi. Konto możesz mieć tylko wtedy, gdy jesteś organizatorem wydarzenia albo upoważnionym sprzedawcą biletów z wyraźnym pisemnym zezwoleniem organizatora wydarzenia na każde wydarzenie, na które sprzedajesz bilety. Jeśli korzystasz z Usługi w imieniu podmiotu, akceptujesz ten Regulamin w imieniu tego podmiotu i oświadczasz, że masz do tego upoważnienie.
+
+      Świadczymy Usługę tobie i nie mamy stosunku umownego z twoimi klientami („Kupującymi”). Gdy sprzedajesz bilety lub inne produkty i usługi Kupującym za pośrednictwem Usługi, umowa zawierana jest między tobą a Kupującym. Odpowiadasz za własne warunki sprzedaży wobec Kupujących, w tym za zwroty. Dostarczamy bilety i e-maile serwisowe Kupującym w twoim imieniu, a nasza strona pomocy dla kupujących bilety kieruje ich do ciebie z każdym pytaniem o twoje wydarzenie, bilety i zwroty.
+
+      Zobowiązujesz się:
+
+      - prowadzić całą komunikację z Kupującymi i nie odsyłać ich do nas po obsługę klienta;
+      - odpowiadać na każde zapytanie otrzymane od Kupujących w ciągu 5 dni;
+      - przyjąć całą odpowiedzialność wynikającą ze stosunku umownego między tobą a Kupującym;
+      - niezwłocznie powiadomić swoich Kupujących i zaktualizować stronę wydarzenia, jeśli wydarzenie zostanie odwołane, przełożone lub istotnie zmienione w porównaniu z informacjami podanymi przy wystawieniu go do sprzedaży. Usługa pomaga ci w tym, wysyłając e-maile do Kupujących, gdy przesuwasz lub odwołujesz sesję.
+
+      Zastrzegamy sobie prawo do zawieszenia lub zakończenia twojego dostępu do Usługi, jeśli nie spełniasz tych wymagań wobec swoich Kupujących.
+
+      Korzystając z Usługi, jesteś zobowiązany:
+
+      - przestrzegać obowiązującego prawa i obowiązków związanych z twoimi wydarzeniami, produktami lub usługami oraz z przyjmowaniem przychodów z biletów, opłat lub darowizn;
+      - przekazywać nam informacje i materiały, których możemy w uzasadniony sposób wymagać do świadczenia Usługi, i dbać o to, aby były one dokładne we wszystkich istotnych aspektach;
+      - utrzymywać te informacje i materiały oraz niezwłocznie je aktualizować, aby pozostawały prawdziwe, dokładne i kompletne;
+      - współpracować z nami we wszystkich sprawach związanych z Usługą.
+
+      Dostęp do Usługi może zostać zawieszony tymczasowo i bez powiadomienia w razie awarii systemu, konserwacji lub naprawy albo z przyczyn od nas niezależnych. Twój dostęp może zostać także zawieszony, a twoje konto anulowane według naszego uznania, w tym jeśli podejrzewamy, że używasz Usługi do celów oszukańczych lub przestępczych, jeśli zalecą nam to organy ścigania lub jeśli nie opłacisz naszych faktur (zobacz sekcje 6 i 11; zwykle powiadamiamy cię o braku płatności przed zawieszeniem lub anulowaniem). Nie ponosimy odpowiedzialności za żadne straty ani szkody, które mogą wyniknąć z niewłaściwego korzystania z naszej Usługi.
+
+      ## 4. Twoje konto
+
+      Konta zakłada nasz zespół po twoim zgłoszeniu albo odbywa się to przez bota w Telegramie. Gdy twoje konto już istnieje, możesz ustawiać swoje wydarzenia, plany sali i bilety oraz, pod warunkiem posiadania konta płatności u Dostawcy Płatności (sekcja 5), sprzedawać bilety na swoje wydarzenia. Możesz także ustawić sprzedaż powiązanych produktów fizycznych lub cyfrowych. Możesz dodawać do swojego konta członków zespołu; odpowiadasz za ich działania w Usłudze.
+
+      Aby mieć konto, musisz mieć ukończone 18 lat.
+
+      Dla twojej wygody utrzymujemy twoje konto otwarte przez 120 miesięcy od ostatniego logowania, na wypadek gdybyś zdecydował się znów korzystać z naszej Usługi. Przed zamknięciem konta i usunięciem Twoich Treści postaramy się wysłać ostrzegawcze e-maile na adres e-mail konta, abyś miał możliwość pozostawienia konta otwartego lub wyeksportowania danych, które chcesz zachować.
+
+      Możesz zamknąć swoje konto w dowolnym momencie, pisząc na adres hello@arenasoldout.com z adresu e-mail właściciela konta.
+
+      Nie zwracamy opłat za Usługę, które zostały już uiszczone.
+
+      ### Bezpieczeństwo konta
+
+      Odpowiadasz za zachowanie poufności swojego konta i ponosisz pełną odpowiedzialność za wszelką aktywność wynikającą z dostępu do twojego konta za pomocą twoich danych logowania. Nie udostępniaj danych logowania, kluczy API, sekretów webhooków ani dostępu do aplikacji skanera nikomu spoza swojego zespołu. Zobowiązujesz się niezwłocznie powiadomić nas pod adresem hello@arenasoldout.com o każdym nieuprawnionym użyciu twojego konta, kluczy API lub aplikacji albo o innym naruszeniu bezpieczeństwa. Nie ponosimy odpowiedzialności za straty ani szkody wynikające z niedopełnienia przez ciebie tego postanowienia.
+
+      Przesyłanie informacji przez internet nie jest całkowicie bezpieczne. Nie możemy zagwarantować bezpieczeństwa danych przesyłanych na naszą platformę, a każde przesłanie odbywa się na twoje ryzyko. Po otrzymaniu twoich informacji stosujemy ścisłe procedury i zabezpieczenia, aby zapobiec nieuprawnionemu dostępowi.
+
+      ## 5. Dostawcy Płatności
+
+      Kupujący płacą za twoje bilety na twoje własne konto u dostawcy płatności obsługiwanego przez Usługę („Dostawca Płatności”). Aktualni dostawcy, kraje i waluty są wymienieni na stronie płatności. Nigdy nie otrzymujemy ani nie przetrzymujemy pieniędzy zapłaconych przez Kupujących; trafiają one od Kupującego do twojego Dostawcy Płatności, a stamtąd na twoje konto bankowe. Opłatę za obsługę kart płacisz swojemu Dostawcy Płatności na jego własnych warunkach, osobno od naszych opłat.
+
+      Korzystanie z Dostawcy Płatności wymaga założenia u niego konta, z zastrzeżeniem jego własnego regulaminu i polityki prywatności. Masz bezpośredni stosunek z Dostawcą Płatności i musisz przeczytać oraz zaakceptować jego warunki, zanim zaczniesz przyjmować płatności od Kupujących za pośrednictwem Usługi. Zwroty i obciążenia zwrotne (chargebacki) rozlicza się między tobą, twoim Dostawcą Płatności i Kupującym; Usługa pozwala ci dokonywać zwrotów, a pieniądze wracają z twojego konta płatności.
+
+      Przy realizacji niektórych funkcji Dostawca Płatności działa jako podmiot przetwarzający dane dla ciebie i dla nas; pod innymi względami działa jako administrator na podstawie własnej polityki prywatności. Korzystając z naszej Usługi, przyjmujesz do wiadomości i zgadzasz się, że udostępniamy twojemu Dostawcy Płatności dane osobowe i informacje o transakcjach dokonanych za pośrednictwem Usługi.
+
+      Jeśli otrzymamy od Dostawcy Płatności zawiadomienie, że twoje korzystanie z naszej Usługi narusza jego warunki lub jakąkolwiek umowę między tobą a nim, między tobą a nami albo między tobą a Kupującym, lub wydaje się oszukańcze, narusza przepisy o przeciwdziałaniu praniu pieniędzy albo stanowi część innej szkodliwej działalności, możemy podjąć działania, w tym między innymi kroki niezbędne do naprawienia naruszenia, odebranie ci możliwości korzystania z Usługi oraz zawieszenie lub zakończenie twojego konta. Dostawca Płatności może odmówić swoich usług każdemu, z jakiegokolwiek powodu i w dowolnym momencie.
+
+      Nie ponosimy odpowiedzialności za usługę świadczoną ci przez Dostawcę Płatności, w tym za działania i zaniechania Dostawcy Płatności, i niniejszym wyłączamy wszelką odpowiedzialność (w tym między innymi za wszelkie straty, koszty, opłaty i kary jakiegokolwiek rodzaju) z nich wynikającą.
+
+      ## 6. Nasze opłaty
+
+      Opłaty za korzystanie z naszej Usługi są określone na stronie z cennikiem i w szczegółowych warunkach cennika i są pobierane za każdy sprzedany bilet. Użyciem podlegającym opłacie jest sprzedaż biletu płatnego lub powiązanego produktu albo usługi. Darmowe zaproszenia i zwrócone bilety nie są obciążane. Właścicielom stałych obiektów oferujemy procent ceny biletu zamiast opłaty za bilet, jak opisano w szczegółowych warunkach cennika. Możemy także oferować usługi dodatkowe, za które pobieramy opłaty określone na naszej platformie lub uzgodnione z tobą.
+
+      Fakturujemy naszą opłatę w dniu następującym po każdej sesji za bilety sprzedane na tę sesję; dla wydarzeń w sprzedaży przez kilka miesięcy możemy za porozumieniem fakturować miesięcznie. Warunki płatności są podane na fakturze.
+
+      Opłaty już zafakturowane nie podlegają zwrotowi, także w przypadku odwołania wydarzenia.
+
+      ## 7. Treści organizatora wydarzenia i standardy dopuszczalnych treści
+
+      W relacji między tobą a nami to ty posiadasz wszelkie prawa do wszystkich treści, które przesyłasz na platformę, i odpowiadasz za ich zgodność z prawem, rzetelność, integralność, dokładność i jakość; dotyczy to tekstów, zdjęć, plakatów, planów sali, informacji o twoich wydarzeniach i powiązanych produktach i usługach, recenzji i komentarzy („Twoje Treści”). Przesyłając Twoje Treści, udzielasz nam bezwarunkowej, niewyłącznej, zbywalnej, bezpłatnej, ogólnoświatowej licencji na korzystanie z Twoich Treści w każdy sposób niezbędny do świadczenia Usługi.
+
+      Gdy Usługa odczytuje informacje z plakatu lub innego pliku, który przesyłasz, na przykład aby utworzyć wydarzenie w bocie w Telegramie, potwierdzasz każde pole przed publikacją i pozostajesz odpowiedzialny za jego dokładność.
+
+      Przesyłając Twoje Treści na naszą platformę, musisz przestrzegać następujących standardów dopuszczalnych treści:
+
+      - Twoje Treści muszą być dokładne i zgodne z obowiązującym prawem w każdym kraju, z którego są publikowane.
+      - Nie wolno ci używać naszej platformy do zbierania od Kupujących lub uczestników wydarzeń treści, których nie potrzebujesz: na przykład danych kart (zbieranych wyłącznie przez Dostawcę Płatności), numerów dokumentów tożsamości lub ubezpieczenia społecznego, haseł lub jakichkolwiek innych nadmiernych albo niepotrzebnych danych osobowych, w szczególności danych szczególnych kategorii (pochodzenie rasowe lub etniczne, poglądy polityczne, przekonania religijne lub podobne, przynależność do związków zawodowych, zdrowie fizyczne lub psychiczne, życie seksualne, orientacja seksualna, dane biometryczne lub genetyczne). Nie przeszkadza ci to zbierać danych szczególnych kategorii w zakresie niezbędnym dla twojego wydarzenia, na przykład aby przydzielić miejsca osobom z niepełnosprawnościami.
+
+      Twoje Treści nie mogą:
+
+      - być niezgodne z prawem, szkodliwe, grożące, zniesławiające, obsceniczne, zwodnicze, oszukańcze, naruszające prawa, nękające, moralnie odrażające ani obraźliwe rasowo lub etnicznie;
+      - ułatwiać działalności niezgodnej z prawem;
+      - przedstawiać obrazów jednoznacznie seksualnych;
+      - propagować przemocy;
+      - być dyskryminujące ze względu na rasę, płeć, religię, narodowość, niepełnosprawność, orientację seksualną lub wiek;
+      - naruszać żadnych praw autorskich, praw do baz danych, znaków towarowych ani innych praw własności intelektualnej jakiejkolwiek innej osoby;
+      - ukrywać tożsamości ani prawdopodobnie wprowadzać kogokolwiek w błąd.
+
+      Możemy usunąć Twoje Treści z naszej platformy i Usługi, jeśli naszym zdaniem naruszają te standardy. Zastrzegamy sobie prawo do zawieszenia lub zakończenia twojego dostępu do Usługi w razie istotnego naruszenia tych standardów, do żądania od ciebie zwrotu kosztów poniesionych przez nas w wyniku twojego naruszenia oraz do ujawniania informacji organom ścigania, jeśli jest to wymagane lub uznamy to za uzasadnione.
+
+      ## 8. Wyłączenie gwarancji
+
+      Dokładamy starań, aby Usługa była dostępna 24 godziny na dobę, ale nie gwarantujemy jej dostępności i nie ponosimy odpowiedzialności, jeśli z jakiegokolwiek powodu Usługa jest niedostępna w jakimkolwiek momencie lub przez jakikolwiek okres.
+
+      Dostęp do Usługi może zostać zawieszony tymczasowo i bez powiadomienia w razie awarii systemu, konserwacji lub naprawy albo z przyczyn od nas niezależnych.
+
+      Nie gwarantujemy dokładności i kompletności materiałów na platformie. Możemy zmieniać materiały na platformie lub funkcjonalność Usługi w dowolnym momencie bez powiadomienia. Aktualne możliwości Usługi, z datami, są publikowane na stronie z faktami.
+
+      Świadczymy Usługę z należytą starannością i umiejętnościami. Usługa jest świadczona „w stanie, w jakim jest” i, z wyjątkiem gwarancji zawartych w tym Regulaminie, w maksymalnym zakresie dozwolonym przez prawo wyłączamy wszelkie oświadczenia, gwarancje, warunki i inne postanowienia (w tym między innymi warunki zadowalającej jakości i przydatności do określonego celu).
+
+      ## 9. Odpowiedzialność
+
+      Nie jesteśmy stroną żadnej transakcji, innego stosunku ani sporu między tobą a Kupującymi albo między tobą a uczestnikami wydarzeń. Nie weryfikujemy Kupujących z góry i nie odpowiadamy za oszukańcze transakcje Kupujących. Wyłączamy wszelką odpowiedzialność wynikającą z działań, które możemy podjąć w odpowiedzi na naruszenia naszych standardów dopuszczalnych treści i tego Regulaminu. Zobowiązujesz się zwolnić nas oraz naszych dyrektorów, członków zarządu i partnerów z odpowiedzialności za wszelkie koszty, roszczenia lub żądania, w tym uzasadnione koszty prawne:
+
+      - związane z jakimkolwiek sporem z jednym lub kilkoma twoimi Kupującymi albo z twoim stosunkiem z Kupującymi i uczestnikami wydarzeń;
+      - zgłoszone przez jakąkolwiek osobę trzecią z powodu Twoich Treści lub twojego korzystania z Usługi albo z nich wynikające. Ponosisz wyłączną odpowiedzialność za swoje działania podczas korzystania z Usługi.
+
+      Nasza łączna odpowiedzialność wobec ciebie za wszystkie inne straty wynikające z świadczenia Usługi lub z nią związane, czy to z tytułu umowy, deliktu (w tym zaniedbania), naruszenia obowiązku ustawowego czy w inny sposób, jest ograniczona do 50,00 USD.
+
+      Żadne postanowienie tego Regulaminu nie ma na celu ograniczania ani wyłączania ustawowych praw konsumentów.
+
+      ## 10. Prawo właściwe i jurysdykcja
+
+      Ten Regulamin podlega prawu Republiki Estońskiej i obowiązującemu prawu Unii Europejskiej oraz jest zgodnie z nimi interpretowany.
+
+      Wszelkie spory związane z tym Regulaminem podlegają wyłącznej jurysdykcji sądów Estonii.
+
+      ## 11. Zaległe płatności
+
+      Dostęp do platformy, jej aplikacji i usług jest uzależniony od braku zaległych płatności z wystawionych faktur. Jeśli faktura jest przeterminowana, dostęp do aplikacji i usług może zostać ograniczony. Dostęp zostaje przywrócony po zapłaceniu wszystkich faktur i przy braku jakiegokolwiek zadłużenia.
+
+      Kary za zaległe płatności stosuje się tak, jak określono na fakturze.
+
+      ## 12. Dane osobowe Kupujących
+
+      Jesteś administratorem danych osobowych swoich Kupujących. Przetwarzamy te dane w twoim imieniu, jako podmiot przetwarzający, w celu sprzedaży i dostarczania biletów, wpuszczania Kupujących przy wejściu i powiadamiania ich o zmianach twoich sesji, jak opisano w naszej Polityce prywatności, która stanowi część tego Regulaminu. Odpowiadasz za informowanie swoich Kupujących o przetwarzaniu oraz za własne warunki sprzedaży. Nie wolno ci używać danych Kupujących wyeksportowanych z Usługi do celów niezwiązanych z twoimi wydarzeniami bez własnej podstawy prawnej.
+
+      ## 13. Nasze dane
+
+      ArenaSoldOut.com jest marką ABH TEAM OÜ, która jest właścicielem i operatorem platformy oraz tej strony internetowej.
+
+      Jesteśmy zarejestrowani w estońskim Rejestrze Handlowym pod numerem 14162982, a nasza siedziba i miejsce prowadzenia działalności znajdują się pod adresem:
+
+      Narva mnt 5a, Kesklinna district,
+      Tallinn city, Harju county,
+      10117 Estonia.
+
+      Internetowa wersja rejestru jest dostępna pod adresem https://www.inforegister.ee/
+
+      Możesz się z nami skontaktować:
+
+      - e-mailem, pod adresem hello@arenasoldout.com;
+      - na czacie w Telegramie i w bocie w Telegramie, do których linki są na stronie kontaktowej;
+      - za pomocą formularza zgłoszeniowego na tej stronie;
+      - pocztą, na adres podany powyżej.

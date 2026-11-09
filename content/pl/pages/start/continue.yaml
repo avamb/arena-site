@@ -1,0 +1,31 @@
+title: "Kontynuuj zgłoszenie"
+description: "Wpisz e-mail, którym się zgłosiłeś, a wyślemy link do rozpoczętego szkicu."
+h1: Kontynuuj zgłoszenie
+lead: Wpisz e-mail, którym się zgłosiłeś. Wyślemy link do twojego szkicu, żebyś mógł wrócić tam, gdzie skończyłeś.
+sections:
+  - type: onboarding
+    id: form
+    mode: continue
+    ui:
+      noscript: "Formularz zgłoszeniowy wymaga JavaScriptu. Napisz do nas w Telegramie, a ustawimy wszystko ręcznie."
+      optional: "(opcjonalnie)"
+      url_list_hint: "Jeden link w wierszu"
+      sending: "Wysyłanie…"
+      email: "E-mail"
+      err_required: "To pole jest wymagane"
+      err_invalid: "Sprawdź tę wartość"
+      err_too_long: "To jest za długie"
+      err_not_allowed: "Nie przyjmujemy jeszcze zgłoszeń z tego kraju"
+      e_generic: "Coś poszło nie tak. Spróbuj ponownie za minutę lub napisz do nas w Telegramie."
+      e_network: "Brak połączenia z serwerem. Sprawdź internet i spróbuj ponownie."
+      e_unavailable: "Formularz jest teraz niedostępny. Spróbuj ponownie za minutę lub napisz do nas w Telegramie."
+      e_session: "Twój szkic nie jest już dostępny. Zacznij od nowa, to zajmie minutę."
+      e_incomplete: "Brakuje niektórych wymaganych odpowiedzi. Są zaznaczone powyżej."
+      e_email_not_confirmed: "Najpierw potwierdź e-mail: otwórz link z wiadomości, którą wysłaliśmy, a potem ponownie naciśnij Wyślij."
+      e_rate_limited: "Zbyt wiele prób. Poczekaj kilka minut i spróbuj ponownie."
+      e_turnstile_failed: "Kontrola antyspamowa nie powiodła się. Poczekaj chwilę, aż się zakończy, i spróbuj ponownie."
+      e_captcha_not_configured: "Formularz jest teraz niedostępny. Napisz do nas w Telegramie."
+      e_captcha_unavailable: "Nie udało się uruchomić kontroli antyspamowej. Spróbuj ponownie za minutę."
+      e_locked: "To zgłoszenie zostało już wysłane i nie można go edytować."
+      send_link: "Wyślij mi link"
+      link_sent: "Jeśli dla tego adresu istnieje otwarty szkic, link do kontynuacji jest w drodze. Sprawdź skrzynkę odbiorczą i folder ze spamem."

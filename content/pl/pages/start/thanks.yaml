@@ -1,0 +1,19 @@
+title: "Dziękujemy, mamy twoje zgłoszenie"
+description: "Zespół czyta każde zgłoszenie osobiście i odpowiada w ciągu jednego dnia roboczego."
+h1: Dziękujemy
+lead: Zespół czyta każde zgłoszenie osobiście i odpowiada w ciągu jednego dnia roboczego, e-mailem lub w komunikatorze, który podałeś.
+sections:
+  - type: cards
+    id: next
+    eyebrow: W międzyczasie
+    title: Co mogę zrobić teraz?
+    items:
+      - title: Przygotuj plakat i ceny
+        text: Nazwa wydarzenia, daty, ceny biletów i plakat to wszystko, czego potrzebuje wydarzenie bez planu sali, żeby trafić do sprzedaży.
+        link: { label: Jak to działa →, href: /#how }
+      - title: Znajdź klucze do konta płatności
+        text: Jeśli masz już konto u dostawcy z twojego kraju, klucze API są w jego panelu. Jeśli nie, otworzymy je razem z tobą.
+        link: { label: Płatności →, href: /payments }
+      - title: Wypróbuj bota w Telegramie
+        text: Bot tworzy wydarzenie ze zdjęcia plakatu i prosi o potwierdzenie dat, cen i obiektu.
+        link: { label: Otwórz bota w Telegramie →, href: https://t.me/EventsCentrBot }

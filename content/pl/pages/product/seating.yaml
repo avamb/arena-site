@@ -1,0 +1,41 @@
+title: "Plany sali: miejsca numerowane i strefy stojące"
+description: "Plany sali z wersjami, importem SVG, mieszanymi miejscami numerowanymi i stojącymi, cenami kategorii. Wyślij PDF, szkic lub tabelę rzędów, narysujemy za darmo."
+h1: Plany sali zgodne z obiektem
+lead: Miejsca numerowane są w rdzeniu platformy, a nie dodatkiem. Zespół buduje twój plan z tego, co masz, zwykle w ciągu doby, i używa go ponownie dla każdego terminu.
+related:
+  - { label: "Kody promocyjne, okna cenowe i progi ilościowe", href: /product/pricing-tools }
+  - { label: E-bilety z EAN-13 i QR, href: /product/tickets }
+  - { label: Dla teatrów, href: /solutions/theatre }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Miejsca
+    title: Jak działają miejsca numerowane w ArenaSoldOut.com?
+    items:
+      - q: Czy muszę sam rysować plan?
+        a: "Nie, nigdy. Wyślij nam plan, a narysujemy go w twoim wydarzeniu za darmo, zwykle w ciągu doby. Wystarczy jedno z tych: PDF z planem obiektu, zdjęcie odręcznego szkicu lub tabela z rzędami i miejscami w każdym rzędzie (Excel lub Google Sheets). Pliki wektorowe (SVG) importujemy bezpośrednio."
+      - q: Czy jedno wydarzenie może mieć miejsca numerowane i stojące?
+        a: Tak, w jednym planie. Rzędy z numerowanymi miejscami i kategoriami, strefy stojące z pulami, każda kategoria z własną ceną i oknem sprzedaży.
+      - q: Czy mogę zmienić plan po starcie sprzedaży?
+        a: Tak. Plany mają wersje, więc nowy układ na kolejny termin nie rusza już sprzedanych biletów.
+      - q: Ile kosztuje mnie bilet z miejscem?
+        a: "Prowizja za bilet z miejscem to US$1,09 (€0,97 w krajach UE), wobec US$0,59 (€0,53) bez miejsca; kredyty ją obniżają. Sam plan jest za darmo. Zobacz [cennik](/pricing)."
+      - q: Czy kupujący wybiera miejsce na telefonie?
+        a: Tak. Plan sali jest taki sam w widgecie i na stronie hostowanej, z powiększaniem gestem na telefonach, legendą dla każdej kategorii i licznikiem rezerwacji wybranych miejsc.
+      - q: A zaproszenia i miejsca dla prasy?
+        a: Wystawiaj darmowe bilety na konkretne miejsca z Event Center; skanują się przy wejściu jak każdy bilet.
+  - type: cards
+    id: who
+    eyebrow: Typowe obiekty
+    title: Kto korzysta z miejsc numerowanych?
+    items:
+      - { title: Teatry, text: "Od 100 do 1500 miejsc, powtarzalne terminy, zaproszenia dla prasy i partnerów.", link: { label: Dla teatrów →, href: /solutions/theatre } }
+      - { title: Sale koncertowe i kluby, text: "Jeden plan używany ponownie dla wielu wydarzeń w miesiącu, osobne warunki dla stałych obiektów.", link: { label: Dla obiektów →, href: /solutions/venues } }
+      - { title: Widowiska objazdowe, text: "Jeden spektakl, wiele miast, jeden plan na obiekt używany ponownie przy następnej wizycie.", link: { label: Dla tras koncertowych →, href: /solutions/concert-tours } }
+  - type: cta
+    id: start
+    title: Wyślij nam swój plan
+    text: "Wystarczy PDF, zdjęcie odręcznego szkicu lub tabela z rzędami i miejscami. Rysujemy go w twoim wydarzeniu za darmo i pokazujemy ci wynik przed startem sprzedaży."
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: Wydarzenia bez planu sali trafiają do sprzedaży jeszcze dziś.

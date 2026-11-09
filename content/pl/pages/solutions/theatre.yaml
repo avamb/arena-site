@@ -1,0 +1,38 @@
+title: "Sprzedaż biletów do teatru: plany sali, powtarzalne daty"
+description: "Bilety do teatru z numerowanymi miejscami zgodnymi z salą, powtarzalne daty na jednym planie, zaproszenia, zwroty i zmiany terminów. Od 100 do 1500 miejsc."
+h1: Teatr
+lead: Plan zgodny z twoją salą, narysowany przez nas bezpłatnie z twojego PDF, szkicu lub tabeli rzędów i używany przy każdym spektaklu. Zaproszenia dla prasy i partnerów, zwroty i przesunięte terminy obsługujesz z Event Center.
+related:
+  - { label: Plany sali zgodne z obiektem, href: /product/seating }
+  - { label: "Obiekty i kluby: osobne warunki", href: /solutions/venues }
+  - { label: E-bilety i skanowanie, href: /product/tickets }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Dla teatrów
+    title: Co jest ważne w teatrze?
+    items:
+      - { title: Plan jest twój, text: "Rzędy, loże, balkon, kategorie według ceny. Wersje chronią sprzedane bilety, gdy zmienia się układ sali.", link: { label: Plany sali →, href: /product/seating } }
+      - { title: Powtarzalne daty, text: "Dodawaj sesje do tego samego wydarzenia; plan, ceny i kategorie są przenoszone. Przesuń lub odwołaj termin razem z e-mailami do kupujących.", link: { label: Event Center →, href: /#center } }
+      - { title: Zaproszenia, text: "Darmowe bilety na konkretne miejsca dla prasy, partnerów i obsady, skanowane jak każdy inny bilet.", link: { label: Bilety →, href: /product/tickets } }
+      - { title: Własna kasa, text: "Sprzedawaj na swojej stronie przez widget lub na stronie hostowanej; pieniądze trafiają na twoje konto, a nie przez marketplace.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
+  - type: faq
+    id: questions
+    eyebrow: Pytania
+    title: O co teatry pytają najpierw?
+    items:
+      - q: Czy rysujecie plan sali?
+        a: Tak, bezpłatnie. Prześlij PDF z planem, zdjęcie odręcznego szkicu albo tabelę rzędów z liczbą miejsc w każdym rzędzie; wprowadzamy go do twojego wydarzenia, zwykle w ciągu doby, a ty zatwierdzasz go przed startem sprzedaży.
+      - q: Czy możemy mieć różne ceny na parterze i na balkonie?
+        a: Tak. Kategorie z własnymi cenami, pulami i oknami; okna early bird przełączają się według daty.
+      - q: Gramy wiele spektakli w miesiącu. Czy jest inna oferta?
+        a: "Tak. Stałym obiektom proponujemy procent ceny biletu zamiast opłaty za bilet; zobacz [obiekty](/solutions/venues) i [cennik](/pricing)."
+      - q: Czy kupujący mogą wybierać miejsca na telefonie?
+        a: Tak, mapa miejsc działa na telefonach z powiększaniem dwoma palcami, w języku kupującego.
+  - type: cta
+    id: start
+    title: Prześlij nam swój plan
+    text: "Wystarczy PDF, zdjęcie odręcznego szkicu albo tabela rzędów i miejsc. Bezpłatnie wprowadzamy go do twojego wydarzenia i pokazujemy ci przed startem sprzedaży."
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."

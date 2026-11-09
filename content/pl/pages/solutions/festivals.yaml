@@ -1,0 +1,38 @@
+title: "Sprzedaż biletów na festiwale: kilka dni, wiele kategorii"
+description: "Bilety na festiwale: karnety dzienne i pełne, kategorie z pulami, łańcuchy na niesprzedane miejsca, early bird według daty, skanowanie przy każdym wejściu."
+h1: Festiwale
+lead: Karnety dzienne i pełne, wiele kategorii z pulami, early bird włączany w wybranym dniu i łańcuch, który przekazuje niesprzedane miejsca z jednej kategorii do następnej. Skanowanie przy każdym wejściu w aplikacji.
+related:
+  - { label: Kody promocyjne i okna cenowe, href: /product/pricing-tools }
+  - { label: Koncerty, href: /solutions/concerts }
+  - { label: Niezawodność, href: /product/reliability }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Dla festiwali
+    title: Co jest ważne na festiwalu?
+    items:
+      - { title: Kategorie z pulami, text: "Dzień pierwszy, dzień drugi, karnet pełny, VIP, camping: każda kategoria z własną ceną, pulą i oknem sprzedaży.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Łańcuchy kategorii, text: "Gdy early bird się wyprzeda, jego niesprzedane miejsca przechodzą do następnej kategorii zamiast blokować sprzedaż.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Wejścia, text: "Aplikacja skanera na iOS i Androida przy każdej bramce; bilety partnerów z innych systemów także są przyjmowane.", link: { label: Aplikacja skanera MACS →, href: /product/scanner } }
+      - { title: Obciążenie, text: "800 zamówień na minutę przy 1000 jednoczesnych kupujących w testach obciążeniowych; pierwsza minuta sprzedaży jest uwzględniona.", link: { label: Niezawodność →, href: /product/reliability } }
+  - type: faq
+    id: questions
+    eyebrow: Pytania
+    title: O co organizatorzy festiwali pytają najpierw?
+    items:
+      - q: Czy kupujący może połączyć karnet dzienny i camping w jednym zamówieniu?
+        a: Tak, kilka kategorii jednego wydarzenia w jednym koszyku.
+      - q: Czy możemy zmienić ceny na ostatni tydzień?
+        a: Tak. Okna cenowe przełączają się według daty i godziny; progi ilościowe otwierają kolejną cenę, gdy próg się wyprzeda.
+      - q: Mamy darmowe bilety dla sponsorów. Jak to zrobić?
+        a: Darmowe bilety i zaproszenia z Event Center, bez opłaty platformy, skanowane jak każdy bilet.
+      - q: Ile to kosztuje?
+        a: "Stała prowizja za sprzedany bilet, rozliczana po wydarzeniu lub pobierana z twoich kredytów, miesięcznie dla wydarzeń w sprzedaży przez kilka miesięcy; zobacz [cennik](/pricing)."
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż już dziś
+    text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."

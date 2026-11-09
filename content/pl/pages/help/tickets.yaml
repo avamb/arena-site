@@ -1,0 +1,35 @@
+title: "Kupiłem bilet: gdzie jest i co pokazać przy wejściu"
+description: "Twój bilet to PDF w e-mailu z potwierdzeniem z kodem EAN-13 i QR; pokaż go na telefonie lub wydrukowany. Zwroty i zmiany terminów: zapytaj organizatora."
+h1: Pomoc dla kupujących bilety
+lead: Twój bilet to PDF w załączniku do e-maila z potwierdzeniem, z kodem kreskowym i kodem QR. Pokaż go na telefonie lub wydrukowany. Pytania o zwroty i terminy kieruj do organizatora wydarzenia, którego kontakt jest na stronie sprzedaży i w e-mailu.
+related:
+  - { label: E-bilety i skanowanie, href: /product/tickets }
+  - { label: Kontakt, href: /contact }
+  - { label: Polityka prywatności, href: /legal/privacy }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Kupujący
+    title: Gdzie jest mój bilet?
+    items:
+      - q: Zapłaciłem, ale nie mam e-maila
+        a: Sprawdź folder ze spamem i adres wpisany przy płatności. Jeśli po kilku minutach e-maila nadal nie ma, napisz do organizatora, podając imię i nazwisko oraz godzinę zakupu; może on wysłać bilet ponownie na inny adres.
+      - q: Co pokazać przy wejściu?
+        a: PDF na telefonie lub wydrukowany. Kod kreskowy i kod QR są skanowane raz; zrzut ekranu z kodem też działa.
+      - q: Czy mogę dostać zwrot pieniędzy?
+        a: O zwrotach decyduje organizator wydarzenia, na warunkach pokazanych przy płatności. Napisz do organizatora; zwrot wraca na kartę, którą zapłaciłeś.
+      - q: Zmienił się termin
+        a: Dostajesz e-mail od organizatora z zaktualizowanym biletem w załączniku. Stary bilet przestaje działać.
+      - q: Czy mogę przekazać bilet znajomemu?
+        a: Prześlij dalej PDF. Bilet jest skanowany raz, bez względu na to, kto go przyniesie.
+      - q: Mam pytanie o swoją płatność
+        a: Płatność trafiła na własne konto płatności organizatora; organizator widzi ją w Event Center i może odpowiedzieć. ArenaSoldOut.com nie przetrzymuje pieniędzy kupujących.
+      - q: Gdzie trafiają moje dane?
+        a: "Do organizatora wydarzenia, aby dostarczyć bilet, i do dostawcy płatności w celu realizacji płatności. Zobacz [politykę prywatności](/legal/privacy)."
+  - type: cta
+    id: organizers
+    title: Jesteś organizatorem?
+    text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Kupujący płacą na twoje własne konto od pierwszego biletu.
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Jak to działa, href: /#how }
+    note: Kupujący bilety piszą do organizatora swojego wydarzenia.

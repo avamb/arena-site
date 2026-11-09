@@ -1,0 +1,38 @@
+title: "Bilety dla obiektów i klubów: jeden plan, osobne warunki"
+description: "Dla stałych obiektów i klubów: jeden plan sali na każde wydarzenie, wiele wydarzeń w miesiącu, skanowanie przy wejściu, procent ceny biletu zamiast opłaty."
+h1: Obiekty i kluby
+lead: "Własny obiekt, wiele wydarzeń w miesiącu. Plan powstaje raz i jest używany ponownie, każdy promotor wynajmujący obiekt sprzedaje przez twoją stronę lub własną, a warunki są inne: procent ceny biletu zamiast opłaty za bilet."
+related:
+  - { label: Cennik i szczegółowe warunki, href: /pricing }
+  - { label: Plany sali, href: /product/seating }
+  - { label: Teatr, href: /solutions/theatre }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Dla obiektów
+    title: Co jest ważne w obiekcie?
+    items:
+      - { title: "Jeden plan, każde wydarzenie", text: "Powstaje raz z twojego pliku i służy każdemu wydarzeniu; wersje dla różnych układów sceny.", link: { label: Plany sali →, href: /product/seating } }
+      - { title: Promotorzy wynajmujący obiekt, text: "Strona dla każdego promotora z własnym linkiem; obiekt widzi wszystkie wydarzenia, promotor tylko swoje.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
+      - { title: Osobne warunki, text: "Dwa procent ceny biletu zamiast opłaty za bilet, bez opłaty za zaproszenia i zwroty, warunki wolumenowe na zapytanie.", link: { label: Cennik →, href: /pricing } }
+      - { title: Wejście, text: "Aplikacja skanera na iOS i Androida, skanery ręczne, bilety partnerów z innych systemów są przyjmowane.", link: { label: Aplikacja skanera MACS →, href: /product/scanner } }
+  - type: faq
+    id: questions
+    eyebrow: Pytania
+    title: O co właściciele obiektów pytają najpierw?
+    items:
+      - q: Jakie są warunki dla stałego obiektu?
+        a: "Procent ceny biletu zamiast opłaty za bilet, bez opłaty za zaproszenia i zwroty. Wartość podana jest na [stronie z cennikiem](/pricing); warunki wolumenowe i indywidualne na zapytanie."
+      - q: Czy promotor może sprzedawać nasze wydarzenia na własnej stronie?
+        a: Tak, przez widget na swojej stronie albo stronę promotora, którą hostujemy. Sprzedaż ze wszystkich kanałów pojawia się w Event Center obiektu.
+      - q: Czy możemy przejść z innego systemu biletowego?
+        a: "Tak. Sesje, plany sali i klienci zostali zaimportowani z ArenaSoldOut.com dla dwóch klientów bez przerwy w działaniu; inne systemy przez API pakietu wydarzenia. Zobacz [dla developerów](/developers)."
+      - q: Kto prowadzi Event Center?
+        a: Twój zespół, z rolami. Obiekt jest właścicielem organizacji; menedżerowie widzą to, na co im pozwolisz.
+  - type: cta
+    id: start
+    title: Porozmawiajmy
+    text: Opowiedz nam o obiekcie i liczbie wydarzeń w miesiącu. Plan i warunki ustawimy razem z tobą.
+    primary: { label: Porozmawiajmy, href: /start }
+    secondary: { label: Zobacz cennik, href: /pricing }
+    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."

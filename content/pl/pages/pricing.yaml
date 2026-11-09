@@ -1,0 +1,115 @@
+title: "Cennik: za bilet, bez abonamentu"
+description: "Prowizja za sprzedany bilet, bez abonamentu. Płać po wydarzeniu lub kup kredyty z góry taniej. Niższe stawki dla obiektów i tanich wydarzeń. Zaproszenia gratis."
+h1: Za bilet. Bez abonamentu.
+lead: Płacisz ArenaSoldOut.com prowizję platformy za każdy sprzedany bilet. Płatność za sprzedane bilety po wydarzeniu albo kredyty z góry, dzięki którym płacisz mniej za bilet. Obsługę kart (acquiring) płacisz własnemu operatorowi płatności na jego warunkach.
+sections:
+  - type: pricing
+    id: plans
+    planBullets:
+      - "**{seated}** za bilet z miejscem wybranym na planie sali"
+      - "**Darmowe** zaproszenia i darmowe bilety na płatne wydarzenia: bez prowizji"
+      - "**Kredyty** obniżają prowizję za bilet, zobacz niżej"
+    cta: { label: Zacznij sprzedaż, href: /start }
+    buyCredits: { label: Kup kredyty, href: "#packages" }
+    plans:
+      currency: "Pokaż ceny w"
+      payg:
+        name: Płatność za sprzedane bilety
+        text: Prosta stała opłata za sprzedany bilet, płatna po wydarzeniu.
+        bullets:
+          - "**{seated}** za bilet z miejscem wybranym na planie sali"
+          - "Faktura po wydarzeniu, przelewem bankowym"
+          - "Bez abonamentu, bez umowy"
+      upfront:
+        name: Płatność z góry w kredytach
+        text: "Kup kredyty z góry i płać do {saving}% mniej za każdy bilet."
+        from: od
+        bullets:
+          - "**{fromSeated}** za bilet z miejscem"
+          - "Kredyty nigdy nie wygasają; doładowuj, kiedy chcesz"
+          - "Sprzedaż nigdy się nie zatrzymuje: gdy kredyty się skończą, reszta jest rozliczana po cenie płatności za sprzedane bilety"
+      perks:
+        - { big: "50%", title: Zarejestrowane organizacje charytatywne, text: "50% zniżki od naszej prowizji. Napisz do nas, a ją włączymy." }
+        - { big: "Za darmo", title: Zaproszenia, text: "Bez prowizji od zaproszeń i darmowych biletów na płatne wydarzenia." }
+        - { big: "Za darmo", title: Plan sali, text: "Rysujemy twój plan z PDF-a, zdjęcia szkicu lub tabeli z rzędami i miejscami." }
+        - { big: "{lowPercent}%", title: "Bilety do {lowMax}", text: "Dla wydarzeń, w których każdy bilet kosztuje {lowMax} lub mniej. [Jak to działa](#low-price)" }
+      brand: "Ceny zakładają linię **Tickets: ArenaSoldOut.com** z linkiem do nas na stronie twojego wydarzenia; widget biletowy pokazuje ją domyślnie. Aby sprzedawać bez niej, white label kosztuje **€45 miesięcznie za markę lub obiekt w krajach UE** i **US$45 miesięcznie za markę lub obiekt we wszystkich pozostałych krajach**. [Szczegółowe warunki →](/pricing/terms)"
+    currencyNote: "Prowizja w **dolarach amerykańskich** dla każdego kraju spoza UE, w tym krajów europejskich spoza UE, Azji i Bliskiego Wschodu, oraz w **euro** dla obiektów w krajach UE. Podstawą są dolary; ceny w euro to ceny w dolarach według kursu EBC. To tylko nasza prowizja: bilety są sprzedawane w walucie twojego konta płatności. Kwoty bez VAT."
+    packages:
+      title: Kup kredyty z góry, płać mniej za bilet
+      text: "Pakiet kredytów kupujesz raz; każdy sprzedany bilet pobiera swoją prowizję z twoich kredytów, według stawki tego pakietu. Kredyty nigdy nie wygasają i są wydawane tylko na nasze usługi. Jeśli kredyty skończą się w trakcie sprzedaży, sprzedaż trwa dalej: pozostałe bilety są rozliczane po cenie płatności po wydarzeniu."
+      cols: { name: Pakiet kredytów, prepay: Cena, plain: "Prowizja, bez miejsca", seated: "Prowizja, z miejscem", plainCount: "Bilety bez miejsca", seatedCount: "Lub bilety z miejscem", saving: "Oszczędność wobec płatności po", buy: Kup }
+      buy: { label: Kup, currency: Płać w, none: Porozmawiaj z nami, noneHref: /contact, note: "Przy płatności Stripe poprosi o e-mail, na który zarejestrowana jest twoja organizacja w ArenaSoldOut.com. Wpisz dokładnie ten e-mail: kredyty zostaną dodane do organizacji, do której należy. Nie masz jeszcze organizacji? Wpisz e-mail, na który się zarejestrujesz, a kredyty zostaną do niego przypisane." }
+      note: "Pakiety kredytów możesz kupować tak często, jak chcesz; bilet pobiera prowizję z pakietu, z którego jest opłacany. Możesz włączyć automatyczne doładowanie. Przy wolumenach powyżej 5000 biletów rocznie: indywidualne warunki, napisz do nas."
+    lowPrice:
+      title: "Wydarzenia, w których każdy bilet kosztuje {lowMax} lub mniej"
+      text: "{lowPercent}% ceny biletu, co najmniej {lowMin} i najwyżej {lowCap} za bilet; {lowSeat} więcej za bilet z miejscem. Dla dyskotek, biegów, maratonów, urodzin dla dzieci, wycieczek. Dotyczy całego wydarzenia i tylko wtedy, gdy **żaden bilet z żadnej kategorii ani progu cenowego**, także późniejszego, nie kosztuje więcej niż {lowMax} przed kodami promocyjnymi. Jeden bilet powyżej tej kwoty, a standardowa cena obowiązuje dla wszystkich biletów wydarzenia, także tych tanich."
+      example: "Prowizja za bilet, płatność po wydarzeniu:"
+      cols: { price: Cena biletu, plain: Prowizja, seated: Z miejscem }
+    venues:
+      title: Stałe obiekty
+      text: "Teatry, kluby, stadiony, cyrki i inne miejsca, które same organizują wydarzenia, przez cały rok lub sezonowo: **{percent}% ceny biletu** (po kodach promocyjnych, bez opłaty serwisowej), najwyżej **{cap}** za bilet, tak samo z miejscem i bez. Faktura co miesiąc. Bez prowizji od zaproszeń. Status obiektu włącza nasz zespół."
+      example: "Bilet za {ex25} kosztuje {ex} prowizji; limit {cap} osiągany jest przy cenie biletu {capAt}."
+      cta: { label: Porozmawiaj z nami, href: /contact }
+    calculator:
+      aria: Kalkulator prowizji
+      region: Kraj obiektu
+      regionEu: UE (EUR)
+      regionWorld: Inne kraje (USD)
+      price: Cena biletu w tej kategorii
+      maxPrice: Najwyższa cena biletu w wydarzeniu
+      quantity: Bilety w tej kategorii
+      seating: Miejsce wybrane na planie
+      result: Prowizja, płatna po wydarzeniu
+      button: Sprawdź cenę
+      hint: "Wynik odświeża się w trakcie pisania. Prowizja zależy od liczby biletów i miejsc, a nie od ceny biletu, z wyjątkiem wydarzeń, w których każdy bilet kosztuje US$10 lub mniej. To cena przy płatności po wydarzeniu; opcja z kredytami jest pokazana pod nią."
+      sales: twoja sprzedaż {net}, bez obsługi kart
+      needMax: Wpisz najwyższą cenę biletu w wydarzeniu, aby zobaczyć prowizję.
+      maxBelowPrice: Najwyższa cena w wydarzeniu nie może być niższa niż cena tego biletu.
+      lowRate: "Każdy bilet kosztuje {max} lub mniej, więc obowiązuje {percent}%, co najmniej {min} i najwyżej {cap} za bilet."
+      package: "Pakiet kredytów {name} ({prepay}) pokrywa to: {cost} za te bilety, {left} zostaje na twoim saldzie na kolejne wydarzenia."
+      noPackage: "Więcej biletów, niż pokrywa największy pakiet kredytów: napisz do nas po warunki wolumenowe."
+    note: "Płacisz po wydarzeniu przelewem bankowym. Dla wydarzeń w sprzedaży przez kilka miesięcy i dla stałych obiektów wystawiamy faktury co miesiąc. Płatność po wydarzeniu jest dostępna dla organizacji potwierdzonych na platformie. Warunki wolumenowe i indywidualne na życzenie."
+    terms: { label: Szczegółowe warunki →, href: /pricing/terms }
+
+  - type: faq
+    id: questions
+    eyebrow: Pytania o pieniądze
+    title: Ile dokładnie kosztuje mnie bilet?
+    items:
+      - q: Ile kosztuje bilet z miejscem?
+        a: "Przy płatności po wydarzeniu: US$1,09 poza UE, €0,97 w UE. Bilet bez miejsca to US$0,59 lub €0,53. Sam plan sali nic nie kosztuje: rysujemy go za darmo z PDF-a, zdjęcia odręcznego szkicu lub tabeli z rzędami i miejscami. Przy kredytach prowizja jest niższa, a miejsce dodaje US$0,35 (€0,31) do stawki kredytowej."
+      - q: Jak działają kredyty?
+        a: "Pakiet kredytów kupujesz raz. Każdy sprzedany bilet pobiera swoją prowizję z twoich kredytów według stawki pakietu, aż się skończą. Kredyty nigdy nie wygasają, można je doładować w każdej chwili i są wydawane tylko na nasze usługi: nie można ich wypłacić ani przenieść."
+      - q: Co, jeśli kredyty skończą się w trakcie sprzedaży?
+        a: Sprzedaż się nie zatrzymuje. Bilety, których twoje kredyty nie pokryły, trafiają na zwykłą fakturę po cenie płatności po wydarzeniu.
+      - q: Czy jest automatyczne doładowanie?
+        a: Tak. Możesz je włączyć, a gdy twoje kredyty spadną poniżej ustalonego progu, kolejny pakiet zostanie kupiony za ciebie.
+      - q: Dokąd trafiają pieniądze kupującego?
+        a: "Na twoje własne konto płatności, z każdym zamówieniem. ArenaSoldOut.com nigdy nie przechowuje środków. Kupujący płaci cenę biletu i, jeśli ją dodasz, twoją opłatę serwisową."
+      - q: Kiedy płacę ArenaSoldOut.com?
+        a: "Po wydarzeniu, przelewem bankowym, za sprzedane bilety. Przy wydarzeniach w sprzedaży przez kilka miesięcy i przy stałych obiektach raz w miesiącu. Kredyty płaci się przy zakupie."
+      - q: A co z obsługą kart (acquiring)?
+        a: Obsługa kart to umowa między tobą a twoim operatorem płatności, na warunkach operatora. Nie wchodzi w skład naszej prowizji i niczego do niej nie dodajemy.
+      - q: Czy muszę wspominać ArenaSoldOut.com na swojej stronie?
+        a: "Ceny zakładają, że strona wydarzenia wymienia ArenaSoldOut.com jako operatora sprzedaży biletów, z linkiem do nas; widget biletowy pokazuje tę linię domyślnie. Aby sprzedawać bez naszej nazwy, white label kosztuje €45 miesięcznie za markę lub obiekt w krajach UE i US$45 miesięcznie za markę lub obiekt we wszystkich pozostałych krajach, naliczane dniami za niepełny miesiąc. [Szczegółowe warunki](/pricing/terms) wyjaśniają, czym jest marka i co white label ukrywa."
+      - q: Czy jest zniżka dla organizacji charytatywnych?
+        a: "Tak. Zarejestrowane organizacje charytatywne płacą 50% naszej prowizji, przy płatności za sprzedane bilety i z kredytami. Napisz do nas ze [strony kontaktowej](/contact), a włączymy to dla twojej organizacji."
+      - q: Czy zaproszenia są darmowe?
+        a: Tak. Zaproszenia i darmowe bilety na płatne wydarzenia nie podlegają prowizji.
+      - q: Co dzieje się z prowizją, gdy bilet jest zwracany lub termin się przesuwa?
+        a: "Zwrot kupujący otrzymuje od ciebie. Prowizja za sprzedaż, która już się odbyła, zostaje, a za obsługę zwrotu, przeniesienie terminu ani e-maile do kupujących nie pobieramy osobnej prowizji. Własne warunki operatora płatności to sprawa operatora."
+      - q: Co, jeśli odwołam wydarzenie?
+        a: "Pobrana już prowizja nie jest zwracana w pieniądzach. Napisz do nas o swojej sprawie, zanim wydarzenie zostanie odwołane."
+      - q: Jeden z moich biletów kosztuje więcej niż US$10 (€10 w UE), reszta jest tania. Jaka cena obowiązuje?
+        a: "Standardowa, dla wszystkich biletów wydarzenia: niższa stawka wymaga, aby każdy bilet każdej kategorii i progu cenowego kosztował US$10 lub mniej (€10 w UE). Bilet za US$5 obok biletu za US$25 jest rozliczany po cenie standardowej."
+      - q: Mam obiekt i organizuję wiele wydarzeń w miesiącu. Czy jest inna oferta?
+        a: "Tak. Właściciele stałych obiektów (teatrów, klubów, stadionów, cyrków i innych miejsc, które same organizują wydarzenia, przez cały rok lub sezonowo) płacą {percent}% ceny biletu, liczone po kodach promocyjnych i bez twojej opłaty serwisowej. Prowizja za bilet jest ograniczona do US$1,09 (€1,09 w UE), tak samo z miejscem i bez. Zaproszenia nie podlegają prowizji. Faktury wystawiamy co miesiąc. Status obiektu włącza nasz zespół: napisz do nas ze [strony kontaktowej](/contact). Pełne warunki są w [szczegółowych warunkach](/pricing/terms)."
+
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż już dziś
+    text: "Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Wydarzenie bez planu sali jest w sprzedaży w 10 minut; plan sali rysujemy dla ciebie za darmo."
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."

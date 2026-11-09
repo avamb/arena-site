@@ -1,0 +1,61 @@
+title: "Płatności: twoje konto płatności, w twoim kraju"
+description: "Kupujący płacą na własne konto płatności organizatora. Kraje, w których firma może podłączyć operatora płatności, z metodami i walutami."
+h1: Kupujący płacą na twoje własne konto płatności
+lead: Podłączasz konto, które już masz, albo otwierasz je u operatora z twojego kraju. Każde zamówienie trafia prosto na nie. ArenaSoldOut.com nigdy nie przechowuje środków i nigdy nie dotyka twoich wypłat.
+sections:
+  - type: coverage
+    id: countries
+    eyebrow: Kraje
+    title: W jakich krajach mogę sprzedawać bilety?
+    lead: W każdym kraju, w którym twoją firmę przyjmuje któryś z operatorów płatności poniżej. Organizatorzy sprzedają z ArenaSoldOut.com w {countries} krajach od {since} roku. Jeśli twój podmiot prawny jest zarejestrowany w jednym z tych krajów, podłączasz konto operatora i sprzedajesz.
+    labels:
+      countries: Kraje
+      note: Operatorzy z czasem dodają kraje; twój potwierdzamy, zanim zaczniesz.
+      missing: "Nie ma twojego kraju na liście?"
+    cta: { label: Napisz do nas, href: /contact }
+
+  - type: providers
+    id: providers
+    eyebrow: Operatorzy
+    title: Którzy operatorzy płatności działają z ArenaSoldOut.com?
+    lead: Lista pokazuje to, co działa dziś na produkcji. Operator jest dodawany, gdy jego adapter jest w kodzie, nigdy wcześniej.
+    labels:
+      currencies: Waluty
+      methods: Metody
+      checkout: W widgecie
+      statuses:
+        live: Działa
+        api: Przez API
+        planned: W przygotowaniu
+        checkout_yes: "tak, hostowana kasa"
+        checkout_no: "jeszcze nie"
+      methods_map:
+        card: karty
+        apple_pay: Apple Pay
+        google_pay: Google Pay
+        bit: Bit
+        installments: raty
+        bank_transfer: przelew bankowy
+
+  - type: cards
+    id: connect
+    eyebrow: Jak podłączyć
+    title: Jak podłączyć moje konto płatności?
+    lead: Trzy rzeczy, zwykle w ciągu doby.
+    items:
+      - title: Klucze na twoim własnym koncie
+        text: Tworzysz klucze API w panelu swojego operatora i wklejasz je do Event Center albo wysyłasz zespołowi. Konto pozostaje twoje; ArenaSoldOut.com tylko inicjuje płatności na nie.
+      - title: Pieniądze na twoje konto
+        text: Każde zamówienie jest opłacane bezpośrednio na twoje konto. Wypłaty na twój bank następują według harmonogramu twojego operatora. O zwrotach decydujesz ty, a wracają do kupującego przez twojego operatora, z dowolnym operatorem.
+      - title: Automatyczna obsługa chargebacków
+        text: "Gdy kupujący kwestionuje płatność, ArenaSoldOut.com zbiera dla ciebie dowody: dane płatności, zgodę kupującego, dostarczenie e-maili z biletem i każde pobranie biletu."
+      - title: ArenaSoldOut.com niczego nie przechowuje
+        text: Prowizja platformy jest fakturowana po wydarzeniu albo pobierana z twoich kredytów, osobno. Nic nie jest potrącane z twojej sprzedaży. Jeśli kiedykolwiek odejdziesz, twoje konto płatności i dane twoich kupujących zostają u ciebie.
+
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż już dziś
+    text: "Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Wydarzenie bez planu sali jest w sprzedaży w 10 minut; plan sali rysujemy dla ciebie za darmo."
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."

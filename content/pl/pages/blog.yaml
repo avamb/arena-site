@@ -1,0 +1,12 @@
+title: "Blog"
+description: "Artykuły dla organizatorów: pieniądze i opłaty serwisowe, sprzedaż na własnej stronie, plany sali, wczesna sprzedaż i notatki od zespołu."
+h1: Blog
+lead: "Artykuły dla organizatorów, którzy sprzedają własne bilety: pieniądze i opłaty serwisowe, sprzedaż na własnej stronie, plany sali, wczesna sprzedaż, marketing. Archiwum z poprzedniej strony jest tutaj z oryginalnymi datami i adnotacją o archiwum; platforma została przebudowana w 2026 roku."
+related:
+  - { label: Cennik, href: /pricing }
+  - { label: Najnowsze zmiany w platformie, href: /changes }
+  - { label: Zacznij sprzedaż, href: /start }
+sections:
+  - type: posts
+    id: posts
+    empty: Archiwum jest przenoszone. Do tego czasu najnowsze zmiany w platformie znajdziesz na stronie zmian.

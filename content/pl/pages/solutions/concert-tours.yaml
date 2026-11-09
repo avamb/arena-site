@@ -1,0 +1,38 @@
+title: "Bilety na trasy koncertowe: miasta, strona na promotora"
+description: "Sprzedawaj trasę koncertową z jednego wydarzenia: sesje według miast, plan sali dla każdego obiektu, strony promotorów z własnymi linkami i kodami, skanowanie."
+h1: Trasy koncertowe
+lead: Jeden show, wiele miast i dat. Każde miasto ma swoją sesję i plan, każdy promotor ma stronę z własnym linkiem, a całą trasę widzisz w jednym Event Center.
+related:
+  - { label: Pokazy i spektakle, href: /solutions/shows }
+  - { label: Gdzie sprzedajesz, href: /product/sell }
+  - { label: Płatności według krajów, href: /payments }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Dla tras koncertowych
+    title: Co jest ważne w trasie?
+    items:
+      - { title: Sesje według miast, text: "Daty i obiekty w jednym wydarzeniu; kupujący wybierają miasto, a ty widzisz sumy dla każdej sesji i dla całej trasy.", link: { label: Event Center →, href: /#center } }
+      - { title: Strony promotorów, text: "Osobna strona dla każdego lokalnego promotora z własnym linkiem i kodami promocyjnymi; sprzedaż zbiera się u ciebie.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
+      - { title: Kilka krajów, text: "Sprzedawaj w Czechach, Hiszpanii, Francji, Gruzji czy Izraelu przez dostawcę z danego kraju, na własne konto.", link: { label: Płatności →, href: /payments } }
+      - { title: Języki kupujących, text: "Strony i bilety w języku kupującego, e-maile w siedmiu językach, pismo od prawej do lewej dla hebrajskiego.", link: { label: Bilety →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Pytania
+    title: O co organizatorzy tras pytają najpierw?
+    items:
+      - q: Czy jedno wydarzenie może obejmować kilka krajów i walut?
+        a: Sesje mogą odbywać się w różnych krajach; konto płatności i waluta zależą od organizacji. Dla osobnych walut zespół ustawia kanał dla każdego kraju.
+      - q: Czy promotorzy widzą swoją sprzedaż nawzajem?
+        a: Nie. Każdy promotor widzi tylko własną stronę; organizator widzi wszystko.
+      - q: Miasto zmienia obiekt. Co z biletami, które już sprzedano?
+        a: Sesja przenosi się razem z e-mailami kupujących i zaktualizowanymi biletami; miejsca przypisujemy na nowo razem z tobą na nowym planie.
+      - q: Ile kosztuje mnie bilet w trasie?
+        a: "Ta sama kwota za bilet w każdym mieście; zobacz [cennik](/pricing)."
+  - type: cta
+    id: start
+    title: Zacznij sprzedaż już dziś
+    text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
+    primary: { label: Utwórz wydarzenie, href: /start#create }
+    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
+    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."

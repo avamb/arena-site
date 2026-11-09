@@ -1,0 +1,57 @@
+title: "Zacznij sprzedaż: zgłoszenie organizatora"
+description: "Opowiedz o swojej organizacji i wydarzeniach. Zespół ustawia organizację, stronę sprzedaży i konto płatności, zwykle w ciągu doby."
+h1: Zacznij sprzedaż
+lead: "Powiedz, kim jesteś i gdzie sprzedajesz. Ustawiamy twoją organizację, stronę sprzedaży i podłączamy konto płatności, zwykle w ciągu doby. Wydarzenia bez planu sali trafiają do sprzedaży jeszcze dziś."
+sections:
+  - type: steps
+    id: how
+    eyebrow: Co dalej
+    title: Jak zaczynamy?
+    items:
+      - title: Wysyłasz zgłoszenie
+        text: "Pięć krótkich kroków: kontakt, organizacja, wydarzenia, płatności i zgoda. Odpowiedzi zapisują się na bieżąco, więc możesz wyjść i wrócić."
+      - title: Ustawiamy twoje konto
+        text: Zespół sprawdza zgłoszenie, tworzy twoją organizację i stronę sprzedaży, razem z tobą podłącza konto płatności, a jeśli masz obiekt z miejscami numerowanymi, bezpłatnie rysuje plan sali z twojego PDF, odręcznego szkicu lub tabeli rzędów.
+      - title: Zaczynasz sprzedaż
+        text: Udostępnij jeden link albo umieść widget na swojej stronie. Każda sprzedaż trafia do Event Center i do twojej grupy w Telegramie.
+  - type: onboarding
+    id: form
+    mode: apply
+    eyebrow: Zgłoszenie
+    title: Opowiedz o sobie
+    ui:
+      noscript: "Formularz zgłoszeniowy wymaga JavaScriptu. Napisz do nas w Telegramie, a ustawimy wszystko ręcznie."
+      optional: "(opcjonalnie)"
+      url_list_hint: "Jeden link w wierszu"
+      sending: "Wysyłanie…"
+      email: "E-mail"
+      err_required: "To pole jest wymagane"
+      err_invalid: "Sprawdź tę wartość"
+      err_too_long: "To jest za długie"
+      err_not_allowed: "Nie przyjmujemy jeszcze zgłoszeń z tego kraju"
+      e_generic: "Coś poszło nie tak. Spróbuj ponownie za minutę lub napisz do nas w Telegramie."
+      e_network: "Brak połączenia z serwerem. Sprawdź internet i spróbuj ponownie."
+      e_unavailable: "Formularz jest teraz niedostępny. Spróbuj ponownie za minutę lub napisz do nas w Telegramie."
+      e_session: "Twój szkic nie jest już dostępny. Zacznij od nowa, to zajmie minutę."
+      e_incomplete: "Brakuje niektórych wymaganych odpowiedzi. Są zaznaczone powyżej."
+      e_email_not_confirmed: "Najpierw potwierdź e-mail: otwórz link z wiadomości, którą wysłaliśmy, a potem ponownie naciśnij Wyślij."
+      e_rate_limited: "Zbyt wiele prób. Poczekaj kilka minut i spróbuj ponownie."
+      e_turnstile_failed: "Kontrola antyspamowa nie powiodła się. Poczekaj chwilę, aż się zakończy, i spróbuj ponownie."
+      e_captcha_not_configured: "Formularz jest teraz niedostępny. Napisz do nas w Telegramie."
+      e_captcha_unavailable: "Nie udało się uruchomić kontroli antyspamowej. Spróbuj ponownie za minutę."
+      e_locked: "To zgłoszenie zostało już wysłane i nie można go edytować."
+      step_of: "Krok {n} z {total}"
+      start_button: "Dalej"
+      start_note: "Wysyłamy link do potwierdzenia e-maila. Możesz dalej wypełniać formularz, zanim dotrze."
+      have_draft: "Kontynuuj wcześniejszy szkic"
+      back: "Wstecz"
+      next: "Dalej"
+      submit: "Wyślij zgłoszenie"
+      email_sent: "Wysłaliśmy link potwierdzający na adres {email}. Otwórz go, gdy będziesz mógł: formularz jest już zapisany, a e-mail musi być potwierdzony przed wysłaniem."
+      info_requested: "Zespół poprosił o więcej szczegółów:"
+      legal_lead: "Wysyłając zgłoszenie, akceptujesz"
+      terms: "regulamin"
+      privacy: "politykę prywatności"
+    alt:
+      text: "Wolisz Telegram? Bot przyjmuje to samo zgłoszenie w czacie, a odpowiada ten sam zespół."
+      link: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }

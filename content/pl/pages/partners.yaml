@@ -1,0 +1,36 @@
+title: "Partnerzy: obiekty, promotorzy, agencje WP, developerzy"
+description: "Obiekty, promotorzy, agencje WordPress i developerzy współpracują z ArenaSoldOut.com: strony promotorów, wtyczka, widget, API, osobne warunki dla obiektów."
+h1: Partnerzy
+lead: Obiekty, które gospodarzą wydarzenia, promotorzy, którzy je sprzedają, agencje, które budują strony organizatorów, developerzy, którzy integrują. Każdy ma miejsce w platformie i osobę w zespole, z którą może porozmawiać.
+related:
+  - { label: Dla developerów, href: /developers }
+  - { label: Obiekty i kluby, href: /solutions/venues }
+  - { label: Kontakt, href: /contact }
+sections:
+  - type: cards
+    id: kinds
+    eyebrow: Partnerzy
+    title: Jak partnerzy współpracują z ArenaSoldOut.com?
+    items:
+      - { title: Obiekty, text: "Stały obiekt wnosi swój plan raz i oferuje go każdemu organizatorowi, który go wynajmuje; osobne warunki z procentem ceny biletu.", link: { label: Obiekty i kluby →, href: /solutions/venues } }
+      - { title: Promotorzy, text: "Strona dla każdego promotora z własnym linkiem i kodami; organizator widzi każdy kanał, promotor widzi swój.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
+      - { title: Agencje WordPress, text: "Wtyczka wprowadza zamówienia do WooCommerce; widget pasuje do każdego motywu. Zespół wspiera agencję podczas uruchomienia.", link: { label: WordPress →, href: /solutions/wordpress } }
+      - { title: Developerzy, text: "Publiczne API, pakiet wydarzenia jednym wywołaniem, podpisane webhooki, klucze z zakresami, zdarzenia widgetu; importy z ArenaSoldOut.com i innych systemów.", link: { label: Dla developerów →, href: /developers } }
+  - type: faq
+    id: questions
+    eyebrow: Pytania
+    title: O co partnerzy pytają najpierw?
+    items:
+      - q: Czy jest opłata za polecenie lub odsprzedaż?
+        a: Warunki partnerstwa ustalamy indywidualnie; napisz do zespołu, czym się zajmujesz i dla kogo.
+      - q: Czy bilet sprzedany przez partnera można zeskanować przy wejściu?
+        a: "Tak. [Aplikacja skanera MACS](/product/scanner) przyjmuje bilety partnerów z innych systemów obok biletów ArenaSoldOut.com, na iOS i Androidzie."
+      - q: Czy agencja może zarządzać kilkoma organizatorami?
+        a: Tak, z rolami w Event Center każdej organizacji i kluczami API z zakresami dla każdej organizacji.
+  - type: cta
+    id: start
+    title: Napisz do zespołu
+    text: Powiedz nam, kim jesteś i z kim pracujesz. Odpowiadamy osobiście w ciągu jednego dnia roboczego.
+    primary: { label: Napisz do nas, href: /contact }
+    secondary: { label: Przeczytaj dokumentację dla developerów, href: /developers }
+    note: "Albo w Telegramie: czat jest czytany w ciągu dnia w Europie i Izraelu."
