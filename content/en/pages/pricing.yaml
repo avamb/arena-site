@@ -103,10 +103,10 @@ sections:
         a: "The buyer gets the refund from you. The commission for a sale that already happened stays, and we do not charge a separate commission for processing the refund, for moving the date or for the e-mails to buyers. The payment provider's own terms are the provider's."
       - q: What if I cancel the event?
         a: "The commission already charged is not returned in money. Write to us about your case before the event is cancelled."
-      - q: One of my tickets costs more than US$10 (€9 in the EU), the rest are cheap. Which price applies?
-        a: "The standard one, to all tickets of the event: the lower rate needs every ticket of every category and price step to cost US$10 or less (€9 in the EU). A US$5 ticket next to a US$25 ticket is at the standard price."
+      - q: One of my tickets costs more than US$10 (€10 in the EU), the rest are cheap. Which price applies?
+        a: "The standard one, to all tickets of the event: the lower rate needs every ticket of every category and price step to cost US$10 or less (€10 in the EU). A US$5 ticket next to a US$25 ticket is at the standard price."
       - q: I own a venue and run many events a month. Is there a different deal?
-        a: "Yes. Owners of permanent venues (theatres, clubs, stadiums, circuses and other places that hold events themselves, all year or by season) pay {percent}% of the ticket price, calculated after promo codes and without your service fee. The commission per ticket is capped at the price of a ticket with a seat (US$1.09, or €0.97 in the EU), the same with and without a seat. Invitations carry no commission. We invoice monthly. Our team connects the venue status: write to us from the [contact page](/contact). Full conditions are in the [detailed terms](/pricing/terms)."
+        a: "Yes. Owners of permanent venues (theatres, clubs, stadiums, circuses and other places that hold events themselves, all year or by season) pay {percent}% of the ticket price, calculated after promo codes and without your service fee. The commission per ticket is capped at US$1.09 (€1.09 in the EU), the same with and without a seat. Invitations carry no commission. We invoice monthly. Our team connects the venue status: write to us from the [contact page](/contact). Full conditions are in the [detailed terms](/pricing/terms)."
 
   - type: cta
     id: start

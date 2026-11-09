@@ -8,7 +8,7 @@
 # euro numbers together, in this file and in pricing/eu.yaml.
 
 # Permanent venues: percent of the ticket price (after promo codes, without our fee), capped per
-# ticket at the venue's own seated pay-as-you-go price (US$1.09, or €0.97 in the EU).
+# ticket: US$1.09 (the seated pay-as-you-go price); in the EU €1.09, set in `eur.venues_cap`.
 venues_percent: 2
 
 # Events where EVERY ticket costs at most `max_ticket` before promo codes (inclusive), all categories
@@ -41,7 +41,8 @@ calculator:
   currency: EUR
 
 # Euro prices: the dollar numbers above at the ECB reference rate, rounded to the cent. Credit packs keep
-# the same ticket counts as in dollars (price = euro rate x tickets). The low-price threshold is US$10 = €9.
+# the same ticket counts as in dollars (price = euro rate x tickets). Not converted (owner, 09.11.2026): the
+# low-price threshold stays €10 and the venue cap stays €1.09.
 # stripe_links_current: false while the EUR Stripe Payment Links still charge the old euro amounts; the
 # pricing page then shows "Talk to us" instead of "Buy" in euros. Set it to true after the EUR links are
 # recreated at these prices (scripts/stripe-packages.mjs, Andrey).
@@ -51,11 +52,12 @@ eur:
   rate_source: "ECB reference rate, 1 EUR = 1.1193 USD"
   stripe_links_current: false
   low_price:
-    max_ticket: 9
+    max_ticket: 10
     percent: 4
     min: 0.09
     max: 0.31
     seating_extra: 0.18
+  venues_cap: 1.09
   package_seating_extra: 0.31
   packages:
     - { name: S, prepay: 14.70, per_ticket: 0.49 }
