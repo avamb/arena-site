@@ -1,0 +1,38 @@
+title: "Biglietti per tour concerti: più città, pagina per promoter"
+description: "Vendi un tour da un solo evento: sessioni per città, una mappa dei posti per struttura, pagine promoter con link e codici propri, scansione in ogni città."
+h1: Tour di concerti
+lead: Uno spettacolo, più città e date. Ogni città ha la sua sessione e la sua mappa, ogni promoter ha una pagina con il proprio link, e vedi l'intero tour in un unico Event Center.
+related:
+  - { label: Spettacoli, href: /solutions/shows }
+  - { label: Dove vendi, href: /product/sell }
+  - { label: Pagamenti per paese, href: /payments }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Per i tour di concerti
+    title: Cosa conta in tour?
+    items:
+      - { title: Sessioni per città, text: "Date e strutture in un solo evento; chi compra sceglie la città, tu vedi i totali per sessione e per l'intero tour.", link: { label: Event Center →, href: /#center } }
+      - { title: Pagine promoter, text: "Una pagina separata per ogni promoter locale, con link e codici promozionali propri; le vendite confluiscono da te.", link: { label: Dove vendi →, href: /product/sell } }
+      - { title: Più paesi, text: "Vendi in Cechia, Spagna, Francia, Georgia o Israele con il provider di ciascun paese, sul tuo conto.", link: { label: Pagamenti →, href: /payments } }
+      - { title: Le lingue di chi compra, text: "Pagine e biglietti nella lingua dell'acquirente, e-mail in sette lingue, da destra a sinistra per l'ebraico.", link: { label: Biglietti →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Domande
+    title: Cosa chiedono per primo gli organizzatori in tour?
+    items:
+      - q: Un evento può coprire più paesi e valute?
+        a: Le sessioni possono stare in paesi diversi; il conto di pagamento e la valuta seguono l'organizzazione. Per valute separate il team configura un canale per ogni paese.
+      - q: I promoter vedono le vendite degli altri?
+        a: No. Ogni promoter vede solo la propria pagina; l'organizzatore vede tutto.
+      - q: Una città cambia struttura. Che succede ai biglietti venduti?
+        a: La sessione si sposta con e-mail agli acquirenti e biglietti aggiornati; i posti vengono riassegnati insieme a te sulla nuova mappa.
+      - q: Quanto mi costa un biglietto in tour?
+        a: "Lo stesso importo per biglietto in ogni città; vedi i [prezzi](/pricing)."
+  - type: cta
+    id: start
+    title: Inizia a vendere oggi
+    text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."

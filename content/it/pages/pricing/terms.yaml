@@ -1,0 +1,64 @@
+title: "Condizioni dettagliate sui prezzi"
+description: "Commissione della piattaforma: pagamento dopo l'evento, crediti, biglietti fino a US$10, enti benefici, strutture, white label, rimborsi."
+h1: Condizioni dettagliate
+lead: Le condizioni dietro il prezzo per biglietto. Condizioni standard; condizioni per grandi volumi e individuali su richiesta. Tutti gli importi sono senza IVA.
+sections:
+  - type: prose
+    id: terms
+    body: |
+      ## Che cosa addebitiamo
+
+      La commissione della piattaforma è addebitata per biglietto venduto, non come percentuale dei tuoi incassi, tranne che nei due casi qui sotto. Un biglietto da US$15 e uno da US$150 ti costano lo stesso. Inviti e biglietti gratuiti a eventi a pagamento non hanno commissione.
+
+      ## Pagamento dopo l'evento
+
+      US$0,59 per biglietto senza posto e US$1,09 per biglietto con un posto scelto sulla mappa della struttura (€0,53 e €0,97 per le strutture nei paesi UE).
+
+      I prezzi sono fissati in dollari USA. I prezzi in euro sono i prezzi in dollari convertiti al tasso di riferimento della Banca centrale europea (1 EUR = 1,1193 USD al 9 novembre 2026) e arrotondati al centesimo; la [pagina dei prezzi](/pricing) mostra entrambi. Due importi non vengono convertiti: la soglia per gli eventi con biglietti economici è €10, e il tetto per le strutture permanenti è €1,09. Fatturiamo dopo l'evento, per i biglietti venduti, e paghi con bonifico bancario. Per gli eventi in vendita per diversi mesi e per le strutture permanenti fatturiamo una volta al mese. Il pagamento dopo l'evento è aperto alle organizzazioni confermate sulla piattaforma. L'acquiring delle carte lo paghi al tuo fornitore di pagamenti alle sue condizioni.
+
+      ## Crediti
+
+      Compri un pacchetto di crediti una volta sola e ogni biglietto preleva la sua commissione dai tuoi crediti alla tariffa di quel pacchetto. Un posto aggiunge US$0,35 (€0,31) alla tariffa dei crediti. I crediti sono denaro sul tuo conto: non scadono mai, puoi comprare pacchetti di crediti quante volte vuoi, e si usano solo per i nostri servizi. Non si possono prelevare, trasferire né convertire in contanti. Se i crediti finiscono a metà delle vendite, le vendite non si fermano: i biglietti che non hanno coperto sono fatturati al prezzo da pagare dopo l'evento. Puoi attivare una ricarica automatica. I pacchetti di crediti e le loro tariffe sono nella [pagina dei prezzi](/pricing#packages).
+
+      ## Enti benefici registrati
+
+      Gli enti benefici registrati pagano il 50% della commissione indicata in questa pagina, a consumo e con i crediti. Il nostro team attiva lo sconto per la tua organizzazione dopo aver visto la registrazione: scrivici dalla [pagina dei contatti](/contact).
+
+      ## Eventi in cui ogni biglietto costa US$10 o meno
+
+      La tariffa ridotta è una proprietà dell'intero evento: vale solo se il prezzo più alto di un biglietto dell'evento, prima dei codici promozionali, è US$10 o meno, **US$10 compresi** (€10 nei paesi UE). Contano tutte le categorie e i gradini di prezzo, compresi quelli aggiunti dopo. Se c'è un biglietto sopra quella soglia, il prezzo standard vale per ogni biglietto dell'evento, anche quelli economici: un evento con biglietti da US$5 e da US$25 è al prezzo standard. La tariffa è il 4% del prezzo del biglietto, almeno US$0,10 e al massimo US$0,35 per biglietto, e US$0,20 in più per un biglietto con posto (nei paesi UE: almeno €0,09, al massimo €0,31, €0,18 in più con un posto).
+
+      ## Strutture permanenti
+
+      Le strutture che organizzano eventi in proprio, tutto l'anno o a stagione, pagano il 2% del prezzo del biglietto (dopo i codici promozionali, senza la commissione di servizio), al massimo US$1,09 per biglietto (€1,09 nei paesi UE), uguale con e senza posto. Fatturiamo ogni mese. Lo stato di struttura lo attiva il nostro team: scrivici dalla [pagina dei contatti](/contact).
+
+      ## Operatore della vendita biglietti sulla pagina dell'evento, o white label
+
+      I prezzi di questa pagina presuppongono che la pagina in cui vendi indichi ArenaSoldOut.com come operatore della vendita biglietti, con un link ad arenasoldout.com. Basta una riga come "Biglietti: ArenaSoldOut.com" accanto ai biglietti, e il widget dei biglietti mostra una riga simile di default, quindi con il widget non c'è nulla da aggiungere. Le pagine di vendita che ospitiamo riportano sempre il nostro nome.
+
+      Se preferisci vendere senza citarci, il white label costa **€45 al mese per marchio o struttura** nei paesi UE e **US$45 al mese per marchio o struttura** in tutti gli altri paesi, nella valuta della tua commissione. Un marchio è il promoter dell'evento, o la tua organizzazione per gli eventi senza promoter: due promoter che vendono entrambi senza il nostro nome sono due marchi. Una struttura permanente che vende senza il nostro nome paga per sé come un unico marchio. Un mese non intero è calcolato a giorni. L'addebito è una riga della tua fattura mensile; i crediti non lo pagano.
+
+      Finché il white label è attivo, la riga del widget, il piè di pagina del tuo negozio e la riga della piattaforma nelle e-mail agli acquirenti scompaiono, e le e-mail partono con il nome del marchio. Ciò che resta: le pagine di vendita che ospitiamo, i link alle condizioni e all'informativa sulla privacy della piattaforma al checkout e i dati del venditore, come richiede la legge. Il nostro team attiva e disattiva il white label per un marchio da una data che scegli tu: scrivici dalla [pagina dei contatti](/contact).
+
+      ## Rimborsi, cambi di data e annullamento
+
+      Quando un acquirente restituisce un biglietto, il rimborso gli è pagato da te, l'organizzatore. La commissione per una vendita già avvenuta resta. Non addebitiamo una commissione separata per l'elaborazione di un rimborso, per lo spostamento della data o per le e-mail agli acquirenti. Le condizioni proprie del fornitore di pagamenti valgono come le indica il fornitore. Se un evento viene annullato, la commissione già addebitata non viene restituita in denaro.
+
+      ## Valuta
+
+      La commissione è in dollari USA per ogni paese fuori dall'UE, compresi i paesi europei fuori dall'UE, l'Asia e il Medio Oriente, e in euro per le strutture nei paesi UE. I prezzi in euro sono i prezzi in dollari USA al cambio BCE indicato sopra. La valuta della commissione non cambia la valuta in cui vendi i biglietti. Se un'organizzazione ha strutture in entrambi i gruppi, ottiene due account.
+
+      ## Report
+
+      L'Event Center fornisce i totali per sessione e un report CSV dettagliato per sessione. Le esportazioni verso il tuo CRM o il tuo sistema contabile si configurano su richiesta.
+
+      ## Privacy
+
+      ArenaSoldOut.com tratta i dati degli acquirenti per conto dell'organizzatore al fine di vendere e consegnare i biglietti. L'[informativa sulla privacy](/legal/privacy) descrive che cosa viene trattato e per quanto tempo; i [termini e condizioni](/legal/terms) sono il contratto con l'organizzatore.
+  - type: cta
+    id: start
+    title: Inizia a vendere oggi
+    text: "Crea l'evento, collega il tuo conto di pagamento, condividi il link. Un evento senza mappa dei posti è in vendita in 10 minuti; la mappa dei posti la disegniamo noi per te, gratis."
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Apri il bot di Telegram, href: https://t.me/EventsCentrBot }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."

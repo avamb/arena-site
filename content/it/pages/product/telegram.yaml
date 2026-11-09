@@ -1,0 +1,40 @@
+title: "Bot Telegram per organizzatori: evento da una locandina"
+description: "Crea un evento da una foto della locandina, conferma ciò che ha letto, aggiungi date e team. Ogni vendita arriva nel tuo gruppo Telegram in pochi secondi."
+h1: Gestisci l'evento da Telegram
+lead: L'Event Center vive anche nel bot. Basta una foto della locandina per iniziare; ogni lettura è un pulsante da confermare, nulla viene pubblicato senza di te.
+related:
+  - { label: Event Center nel browser, href: /#center }
+  - { label: Vendi sul tuo sito o sul nostro, href: /product/sell }
+  - { label: Inizia a vendere, href: /start }
+sections:
+  - type: steps
+    id: how
+    eyebrow: Come funziona
+    title: Che cosa fa il bot?
+    items:
+      - title: Legge la locandina
+        text: Mandi una foto. Il bot legge nome, date, luogo e prezzi e mostra ogni valore come un pulsante da confermare o modificare.
+      - title: Costruisce l'evento
+        text: Sessioni, categorie, prezzi e locandina entrano nell'evento. Aggiungi membri del team, ricevi un biglietto di prova con filigrana, pubblica quando sei pronto.
+      - title: Segnala ogni vendita
+        text: Ogni vendita e rimborso arriva nel tuo gruppo di organizzatore in pochi secondi, con nome dell'acquirente, posti, importo e contatto.
+  - type: faq
+    id: questions
+    eyebrow: Domande
+    title: Telegram è l'unico modo?
+    items:
+      - q: Mi serve Telegram per usare ArenaSoldOut.com?
+        a: "No. Lo stesso Event Center funziona nel browser su ArenaSoldOut.com, e il team può configurare tutto per te. Telegram è un modo, per gli organizzatori che vivono nel messenger."
+      - q: Quali lingue parla il bot?
+        a: Oggi inglese, russo e spagnolo; altre seguono le lingue del sito.
+      - q: Il mio team può usarlo?
+        a: Sì. Aggiungi membri del team con i ruoli; il gruppo delle vendite può includere tutti quelli che devono vedere gli ordini.
+      - q: Funziona con la mappa dei posti?
+        a: Il bot crea eventi con categorie e date; una mappa dei posti la costruisce il team e la collega all'evento.
+  - type: cta
+    id: start
+    title: Apri il bot
+    text: Manda una locandina o saluta soltanto. Il team risponde nella stessa chat.
+    primary: { label: Apri il bot di Telegram, href: https://t.me/EventsCentrBot }
+    secondary: { label: Inizia invece dal sito, href: /start }
+    note: Gli eventi senza mappa dei posti sono in vendita oggi stesso.

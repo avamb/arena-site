@@ -1,0 +1,38 @@
+title: "Biglietti per festival: più giorni, molte categorie"
+description: "Biglietteria per festival: pass giornalieri e completi, categorie con quote, catene che passano i posti invenduti, early bird, scansione a ogni ingresso."
+h1: Festival
+lead: Biglietti giornalieri e abbonamenti completi, molte categorie con quote, early bird che scatta a una data e una catena che passa i posti invenduti da una categoria alla successiva. Scansione a ogni ingresso con l'app.
+related:
+  - { label: Codici promozionali e finestre di prezzo, href: /product/pricing-tools }
+  - { label: Concerti, href: /solutions/concerts }
+  - { label: Affidabilità, href: /product/reliability }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Per i festival
+    title: Cosa conta per un festival?
+    items:
+      - { title: Categorie con quote, text: "Primo giorno, secondo giorno, abbonamento completo, VIP, campeggio: ciascuno con prezzo, quota e finestra di vendita propri.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Catene di categorie, text: "Quando l'early bird si esaurisce, i suoi posti invenduti passano alla categoria successiva invece di bloccare le vendite.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Ingressi, text: "App scanner per iOS e Android a ogni varco; accettati anche i biglietti dei partner emessi da altri sistemi.", link: { label: App scanner MACS →, href: /product/scanner } }
+      - { title: Carico, text: "800 ordini al minuto con 1.000 acquirenti simultanei nei test di carico; il minuto di apertura delle vendite è coperto.", link: { label: Affidabilità →, href: /product/reliability } }
+  - type: faq
+    id: questions
+    eyebrow: Domande
+    title: Cosa chiedono per primo gli organizzatori di festival?
+    items:
+      - q: Chi compra può combinare biglietto giornaliero e campeggio in un solo ordine?
+        a: Sì, più categorie dello stesso evento in un solo checkout.
+      - q: Possiamo cambiare i prezzi per l'ultima settimana?
+        a: Sì. Le finestre di prezzo scattano per data e ora; gli scaglioni di quantità aprono il prezzo successivo quando uno scaglione si esaurisce.
+      - q: Abbiamo biglietti gratuiti per gli sponsor. Come si fa?
+        a: Biglietti gratuiti e inviti dall'Event Center, senza commissione della piattaforma, scansionati come qualsiasi biglietto.
+      - q: Quanto costa?
+        a: "Una commissione fissa per biglietto venduto, fatturata dopo l'evento o prelevata dai tuoi crediti, mensile per gli eventi in vendita per mesi; vedi i [prezzi](/pricing)."
+  - type: cta
+    id: start
+    title: Inizia a vendere oggi
+    text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."

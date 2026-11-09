@@ -1,0 +1,34 @@
+title: "Conferma la tua e-mail"
+description: "Conferma dell'indirizzo e-mail per la richiesta come organizzatore."
+h1: Conferma la tua e-mail
+lead: Un momento, stiamo controllando il link.
+sections:
+  - type: onboarding
+    id: form
+    mode: confirm
+    ui:
+      noscript: "Il modulo di richiesta richiede JavaScript. Scrivici invece su Telegram e ti configureremo a mano."
+      optional: "(facoltativo)"
+      url_list_hint: "Un link per riga"
+      sending: "Invio in corso…"
+      email: "E-mail"
+      err_required: "Questo campo è obbligatorio"
+      err_invalid: "Controlla questo valore"
+      err_too_long: "Il testo è troppo lungo"
+      err_not_allowed: "Per ora non accettiamo richieste da questo paese"
+      e_generic: "Qualcosa è andato storto. Riprova tra un minuto, oppure scrivici su Telegram."
+      e_network: "Nessuna connessione al server. Controlla la tua connessione a internet e riprova."
+      e_unavailable: "Il modulo non è disponibile in questo momento. Riprova tra un minuto, oppure scrivici su Telegram."
+      e_session: "La tua bozza non è più disponibile. Ricomincia, ci vuole un minuto."
+      e_incomplete: "Mancano alcune risposte obbligatorie. Sono segnate qui sopra."
+      e_email_not_confirmed: "Prima conferma la tua e-mail: apri il link nel messaggio che ti abbiamo inviato, poi premi di nuovo Invia."
+      e_rate_limited: "Troppi tentativi. Aspetta qualche minuto e riprova."
+      e_turnstile_failed: "Il controllo anti-spam non è stato superato. Aspetta un secondo che finisca e riprova."
+      e_captcha_not_configured: "Il modulo non è disponibile in questo momento. Scrivici su Telegram."
+      e_captcha_unavailable: "Non è stato possibile eseguire il controllo anti-spam. Riprova tra un minuto."
+      e_locked: "Questa richiesta è già stata inviata e non può più essere modificata."
+      confirming: "Conferma della tua e-mail in corso…"
+      confirmed: "La tua e-mail è confermata. La tua bozza ti aspetta."
+      go_on: "Continua la richiesta"
+      confirm_failed: "Questo link è scaduto o è già stato usato. Possiamo inviartene uno nuovo."
+      send_new_link: "Inviami un nuovo link"

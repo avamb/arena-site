@@ -1,0 +1,158 @@
+title: "Funzioni: biglietti, posti, pagamenti, Event Center"
+description: "Tutte le funzioni di ArenaSoldOut.com in una pagina: vendita, mappe dei posti, prezzi e codici promozionali, pagamenti, biglietti, scanner."
+h1: Tutte le funzioni, in una pagina
+lead: "Che cosa fa ArenaSoldOut.com per un organizzatore, dal primo biglietto all'ingresso. Ogni gruppo rimanda alla sua pagina con i dettagli."
+related:
+  - { label: Prezzi, href: /pricing, text: "Paghi a consumo per biglietto venduto, oppure compri crediti e paghi meno." }
+  - { label: ArenaSoldOut.com e Ticket Tailor a confronto, href: /tickettailor-alternative, text: "Prezzi e funzioni affiancati." }
+  - { label: Il tuo primo evento, href: /first-event, text: "Che cosa preparare e come avviene la prima vendita." }
+sections:
+  - type: cards
+    id: selling
+    eyebrow: Vendita
+    title: Dove e come vendi
+    lead: "Dettagli: [vendi sul tuo sito o sul nostro](/product/sell)."
+    items:
+      - title: Una pagina di vendita ospitata da noi
+        text: "tickets.arenasoldout.com/your-name/your-event, pronta in pochi minuti. Un solo link per i social, i messenger e le locandine."
+      - title: Widget dei biglietti sul tuo sito
+        text: "Tre righe di codice su qualsiasi sito: Tilda, Wix, Webflow o personalizzato. I tuoi colori, i tuoi caratteri, la tua lingua; gli acquirenti non lasciano mai il tuo dominio."
+      - title: Pagine per promoter e partner
+        text: "Una pagina separata per ogni promoter, e link ai tuoi venditori partner sulla stessa pagina."
+      - title: Materiali dell'evento sulla tua pagina di vendita
+        text: "Aggiungi materiali al tuo evento sulla tua pagina di vendita sulla piattaforma, se non hai un sito tuo: testi, foto e video."
+      - title: Descrizioni curate nell'aspetto
+        text: "Titoli, elenchi, link e citazioni nella descrizione dell'evento sulla tua pagina di vendita. Una rete neurale formatta un testo semplice per te con un clic."
+      - title: '"Avvisami all''apertura delle vendite"'
+        text: "Gli acquirenti si iscrivono sulla pagina del tuo evento e ricevono un'e-mail nel momento in cui le vendite si aprono."
+      - title: Promemoria per i carrelli abbandonati
+        text: "Un acquirente che ha riservato i biglietti e non ha pagato riceve un promemoria. In molti casi questi promemoria fanno crescere molto le vendite."
+      - title: Porta un amico
+        text: "Ogni acquirente riceve un link personale: l'amico ottiene uno sconto, l'acquirente ottiene un cashback dopo l'evento dell'amico."
+      - title: Link brevi e codici QR per la stampa
+        text: "Link go.arenasoldout.com con codici QR per locandine e volantini: PNG, SVG o un inserto PDF in A5 e A6. Cambi la destinazione dopo la stampa."
+      - title: Un negozio accanto ai tuoi biglietti
+        text: "Vendi vino, merchandising e confezioni regalo insieme ai biglietti: varianti, carrello, consegna, rimborsi. Il nostro primo cliente con un negozio vende già così."
+
+  - type: cards
+    id: seating
+    eyebrow: Posti
+    title: Mappe dei posti fedeli alla struttura
+    lead: "Dettagli: [mappe dei posti](/product/seating)."
+    items:
+      - title: Disegniamo la mappa gratis
+        text: "Manda un PDF, una foto di uno schizzo a mano o una tabella di file e posti; il team costruisce la struttura."
+      - title: Posti numerati e aree in piedi in una sola mappa
+        text: "File riservate con categorie e aree in piedi con quote, ogni categoria con il suo prezzo e la sua finestra di vendita."
+      - title: Versioni della mappa
+        text: "Una nuova disposizione per la sessione successiva non tocca i biglietti già venduti."
+      - title: Scelta dei posti da telefono
+        text: "Zoom con le dita, una legenda per categoria e un timer di riserva per i posti selezionati, nel widget e sulla pagina ospitata."
+      - title: Inviti e posti stampa
+        text: "Riserva posti per ospiti e stampa ed emetti inviti dall'Event Center, senza commissione."
+
+  - type: cards
+    id: prices
+    eyebrow: Prezzi
+    title: Prezzi, codici promozionali e finestre di vendita
+    lead: "Dettagli: [codici promozionali e finestre di prezzo](/product/pricing-tools)."
+    items:
+      - title: Prezzo intelligente
+        text: "Uno schema pronto di gradini di prezzo per quantità e per data, invece di impostare ogni gradino a mano."
+      - title: Categorie aggiuntive
+        text: "Un'aggiunta si vende solo insieme a un biglietto principale: un biglietto ridotto per bambini non può essere venduto senza un biglietto per adulti."
+      - title: Codici promozionali
+        text: "Per un evento, una sessione o una categoria, con una finestra di vendita, un ordine minimo e un limite per acquirente. I partner ricevono codici propri."
+      - title: Early bird e gradini di quantità
+        text: "I prezzi cambiano a una data che scegli, oppure aprono il gradino successivo quando quello attuale si esaurisce."
+      - title: Categorie e catene
+        text: "Ogni categoria con il suo prezzo, la sua quota e la sua finestra di vendita; i posti invenduti passano alla categoria successiva."
+      - title: Commissione di servizio
+        text: "Una percentuale per canale di vendita, mostrata all'acquirente come riga separata e versata sul tuo conto."
+      - title: Biglietti gratuiti e a offerta libera
+        text: "Biglietti gratuiti per inviti e registrazioni, e biglietti a offerta libera con un minimo che scegli tu."
+
+  - type: cards
+    id: payments
+    eyebrow: Pagamenti
+    title: Il denaro va sul tuo conto
+    lead: "Dettagli: [pagamenti](/payments)."
+    items:
+      - title: Il tuo conto di pagamento
+        text: "Gli acquirenti pagano sul tuo conto Stripe, Flitt o AllPay con ogni ordine. ArenaSoldOut.com non detiene mai fondi."
+      - title: Rimborsi con qualsiasi fornitore
+        text: "Decidi tu un rimborso nell'Event Center; torna all'acquirente tramite il tuo fornitore."
+      - title: Gestione automatica dei chargeback
+        text: "Quando un acquirente contesta un pagamento, raccogliamo le prove: dati del pagamento, consenso, consegna delle e-mail con i biglietti e ogni download del biglietto."
+
+  - type: cards
+    id: tickets
+    eyebrow: Biglietti e ingresso
+    title: Che cosa riceve l'acquirente, e come lo scansioni
+    lead: "Dettagli: [biglietti elettronici](/product/tickets) e [app scanner MACS](/product/scanner)."
+    items:
+      - title: Biglietto elettronico con QR ed EAN-13
+        text: "Un biglietto PDF nell'e-mail dell'acquirente, pronto da mostrare dal telefono o su carta."
+      - title: Ricevuta di pagamento nell'e-mail del biglietto
+        text: "La ricevuta è allegata all'e-mail del biglietto e indica il beneficiario."
+      - title: Stato di consegna di ogni e-mail
+        text: "Inviata, Consegnata, Letta: verifica che l'acquirente abbia ricevuto il biglietto e reinvialo con un clic."
+      - title: E-mail in 7 lingue
+        text: "La pagina dell'acquirente, le e-mail e il biglietto nella lingua dell'acquirente. Aggiungiamo qualsiasi nuova lingua entro 40 ore."
+      - title: Cambi di data e annullamenti
+        text: "Gli acquirenti ricevono un'e-mail con il biglietto aggiornato quando una sessione viene spostata o annullata."
+      - title: App scanner per iOS e Android
+        text: "MACS, la nostra app separata per l'ingresso: un numero qualsiasi di telefoni, una risposta chiara a ogni scansione."
+
+  - type: cards
+    id: center
+    eyebrow: Event Center
+    title: Gestisci l'evento con il tuo team
+    lead: "Dettagli: [Event Center](/#center) e [bot di Telegram](/product/telegram)."
+    items:
+      - title: Ordini e acquirenti
+        text: "Ricerca, filtri e report CSV per sessione. Reinvia, rimborsa o invita con un clic."
+      - title: Sessioni
+        text: "Aggiungi date, sposta o annulla una sessione, e gli acquirenti sono informati via e-mail."
+      - title: Analisi delle vendite
+        text: "Visite, carrelli e pagamenti per evento, così vedi dove gli acquirenti abbandonano."
+      - title: Ruoli del team
+        text: "Ruoli di titolare e manager per il tuo team, nel browser da telefono o computer."
+      - title: Bot di Telegram
+        text: "Crea un evento da una foto della locandina e ricevi ogni vendita e rimborso nel tuo gruppo Telegram in pochi secondi."
+
+  - type: cards
+    id: reliability
+    eyebrow: Affidabilità
+    title: Costruita per le grandi aperture di vendita
+    lead: "Dettagli: [affidabilità](/product/reliability) e la [pagina dei dati](/facts)."
+    items:
+      - title: 800 ordini al minuto
+        text: "Con 1.000 acquirenti contemporaneamente sulla pagina, nei test di carico di settembre 2026."
+      - title: Controllo continuo e backup
+        text: "Verifiche continue con avvisi al team, backup cifrati ogni notte, Cloudflare davanti."
+      - title: Protezione dai bot
+        text: "Le riserve dei posti scadono con un timer, gli ordini hanno un limite di frequenza, il traffico abusivo viene filtrato."
+
+  - type: cards
+    id: pricing
+    eyebrow: Prezzi
+    title: Quanto paghi
+    lead: "Dettagli: [prezzi](/pricing) e [condizioni dettagliate](/pricing/terms)."
+    items:
+      - title: Paghi a consumo
+        text: "{usdPrice} per biglietto venduto ({eurPrice} nell'UE), fatturati dopo l'evento. Nessun abbonamento, nessun contratto."
+      - title: Crediti
+        text: "Compra crediti in anticipo e paga da {usdFrom} per biglietto ({eurFrom} nell'UE). I crediti non scadono mai."
+      - title: 50% di sconto per gli enti benefici registrati
+        text: "Gli enti benefici registrati pagano metà della nostra commissione."
+      - title: Inviti gratuiti e mappe dei posti gratuite
+        text: "Nessuna commissione su inviti e biglietti gratuiti; la tua mappa dei posti la disegniamo gratis."
+
+  - type: cta
+    id: start
+    title: Inizia a vendere oggi
+    text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Vedi i prezzi, href: /pricing }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."

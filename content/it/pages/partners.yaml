@@ -1,0 +1,36 @@
+title: "Partner: strutture, promoter, agenzie WP, sviluppatori"
+description: "Lavorano con ArenaSoldOut.com strutture, promoter, agenzie WordPress e sviluppatori: pagine promoter, plugin, widget, API, condizioni separate per strutture."
+h1: Partner
+lead: Strutture che ospitano eventi, promoter che li vendono, agenzie che costruiscono i siti degli organizzatori, sviluppatori che integrano. Ognuno ha un posto nella piattaforma e una persona del team con cui parlare.
+related:
+  - { label: Per sviluppatori, href: /developers }
+  - { label: Strutture e club, href: /solutions/venues }
+  - { label: Contatti, href: /contact }
+sections:
+  - type: cards
+    id: kinds
+    eyebrow: Partner
+    title: Come lavorano i partner con ArenaSoldOut.com?
+    items:
+      - { title: Strutture, text: "Una struttura permanente porta la sua mappa una volta e la offre a ogni organizzatore che la affitta; condizioni separate con una percentuale sul prezzo del biglietto.", link: { label: Strutture e club →, href: /solutions/venues } }
+      - { title: Promoter, text: "Una pagina per promoter con link e codici propri; l'organizzatore vede ogni canale, il promoter vede il proprio.", link: { label: Dove vendi →, href: /product/sell } }
+      - { title: Agenzie WordPress, text: "Il plugin porta gli ordini in WooCommerce; il widget si adatta a qualsiasi tema. Il team supporta l'agenzia durante il lancio.", link: { label: WordPress →, href: /solutions/wordpress } }
+      - { title: Sviluppatori, text: "API pubblica, pacchetto evento in una chiamata, webhook firmati, chiavi con ambito, eventi del widget; importazioni da ArenaSoldOut.com e da altri.", link: { label: Sviluppatori →, href: /developers } }
+  - type: faq
+    id: questions
+    eyebrow: Domande
+    title: Cosa chiedono per primo i partner?
+    items:
+      - q: Esiste una commissione per segnalazioni o rivendita?
+        a: Le condizioni di partnership si concordano caso per caso; scrivi al team cosa fai e per chi.
+      - q: Un biglietto venduto da un partner si può scansionare all'ingresso?
+        a: "Sì. L'[app scanner MACS](/product/scanner) accetta i biglietti dei partner emessi da altri sistemi insieme ai biglietti di ArenaSoldOut.com, su iOS e Android."
+      - q: Un'agenzia può gestire più organizzatori?
+        a: Sì, con ruoli nell'Event Center di ciascuna organizzazione e chiavi API con ambito per organizzazione.
+  - type: cta
+    id: start
+    title: Scrivi al team
+    text: Dicci chi sei e con chi lavori. Rispondiamo di persona entro un giorno lavorativo.
+    primary: { label: Contattaci, href: /contact }
+    secondary: { label: Leggi la documentazione per sviluppatori, href: /developers }
+    note: "Oppure su Telegram: la chat viene letta durante il giorno in Europa e in Israele."

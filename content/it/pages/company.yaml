@@ -1,0 +1,34 @@
+title: "ArenaSoldOut.com: biglietteria per organizzatori dal 2019"
+description: "ArenaSoldOut.com è una biglietteria per organizzatori, gestita da ABH TEAM OÜ (UE). Clienti in 31 paesi dal 2019; piattaforma ricostruita nel 2026."
+h1: Chi c'è dietro ArenaSoldOut.com
+lead: Un piccolo team che costruisce infrastruttura di biglietteria per gli organizzatori che vendono i propri biglietti. Non un marketplace, non un elenco di eventi. Organizzatori in 31 paesi dal 2019; la piattaforma che li serve è stata ricostruita nel 2026 e gli organizzatori sono passati con lei.
+related:
+  - { label: Clienti ed esperienza, href: /clients }
+  - { label: Fatti con date, href: /facts }
+  - { label: Ultime novità, href: /changes }
+sections:
+  - type: prose
+    id: story
+    eyebrow: Azienda
+    title: Cos'è ArenaSoldOut.com?
+    body: |
+      ArenaSoldOut.com è una piattaforma di biglietteria per organizzatori: posti numerati e ingresso libero nello stesso evento, il conto di pagamento dell'organizzatore, una pagina di vendita che ospitiamo noi o un widget sul sito dell'organizzatore, un Event Center nel browser e in Telegram. Chi compra paga direttamente l'organizzatore; la piattaforma non detiene mai il denaro.
+
+      L'azienda è ABH TEAM OÜ, registrata nell'Unione Europea. Le piattaforme precedenti dei fondatori hanno servito gli spettacoli del Cirque du Soleil, gli stadi dei Mondiali FIFA 2018, i World Choir Games e 800 ice show; ArenaSoldOut.com vende biglietti per gli organizzatori dal 2019 ed è stata ricostruita da zero nel 2026.
+
+      Il team risponde di persona agli organizzatori, in inglese, spagnolo, ceco, russo ed ebraico. La maggior parte delle richieste degli organizzatori viene rilasciata entro poche settimane; ognuna di quelle arrivate in produzione è elencata nella [pagina delle novità](/changes) con la sua data, e la [pagina dei fatti](/facts) dice cosa esiste, cosa no e da quando.
+  - type: cards
+    id: links
+    eyebrow: Dove guardare dopo
+    title: Cosa dovrei leggere per primo?
+    items:
+      - { title: Come funziona, text: "In vendita oggi: le tre domande che gli organizzatori fanno per prime.", link: { label: Come funziona →, href: /#how } }
+      - { title: Prezzi, text: "Per biglietto, nessun abbonamento; condizioni dettagliate in una pagina dedicata.", link: { label: Prezzi →, href: /pricing } }
+      - { title: Clienti, text: "Sedici organizzatori con il nome e l'esperienza dei fondatori.", link: { label: Clienti →, href: /clients } }
+  - type: cta
+    id: start
+    title: Parla con il team
+    text: Scrivi cosa organizzi e dove vendi. Il team risponde di persona entro un giorno lavorativo.
+    primary: { label: Contattaci, href: /contact }
+    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Oppure inizia subito: crea l'evento, collega il tuo conto di pagamento, condividi il link."

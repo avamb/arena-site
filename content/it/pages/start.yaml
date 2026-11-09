@@ -1,0 +1,57 @@
+title: "Inizia a vendere: candidati come organizzatore"
+description: "Raccontaci la tua organizzazione e i tuoi eventi. Il team configura organizzazione, pagina di vendita e conto di pagamento, di solito entro un giorno."
+h1: Inizia a vendere
+lead: "Dicci chi sei e dove vendi. Configuriamo la tua organizzazione, la tua pagina di vendita e colleghiamo il tuo conto di pagamento, di solito entro un giorno. Gli eventi senza mappa dei posti vanno in vendita oggi."
+sections:
+  - type: steps
+    id: how
+    eyebrow: Cosa succede dopo
+    title: Come iniziamo?
+    items:
+      - title: Invii la richiesta
+        text: "Cinque brevi passaggi: contatto, organizzazione, eventi, pagamenti e consenso. Le tue risposte vengono salvate man mano, così puoi uscire e tornare."
+      - title: Ti configuriamo
+        text: Il team controlla la richiesta, crea la tua organizzazione e la tua pagina di vendita, collega con te il conto di pagamento e, se hai una struttura con posti numerati, disegna gratis la mappa dei posti dal tuo PDF, schizzo a mano o tabella delle file.
+      - title: Vai in vendita
+        text: Condividi un solo link, oppure metti il widget sul tuo sito. Ogni vendita arriva nel tuo Event Center e nel tuo gruppo Telegram.
+  - type: onboarding
+    id: form
+    mode: apply
+    eyebrow: Richiesta
+    title: Parlaci di te
+    ui:
+      noscript: "Il modulo di richiesta richiede JavaScript. Scrivici invece su Telegram e ti configureremo a mano."
+      optional: "(facoltativo)"
+      url_list_hint: "Un link per riga"
+      sending: "Invio in corso…"
+      email: "E-mail"
+      err_required: "Questo campo è obbligatorio"
+      err_invalid: "Controlla questo valore"
+      err_too_long: "Il testo è troppo lungo"
+      err_not_allowed: "Per ora non accettiamo richieste da questo paese"
+      e_generic: "Qualcosa è andato storto. Riprova tra un minuto, oppure scrivici su Telegram."
+      e_network: "Nessuna connessione al server. Controlla la tua connessione a internet e riprova."
+      e_unavailable: "Il modulo non è disponibile in questo momento. Riprova tra un minuto, oppure scrivici su Telegram."
+      e_session: "La tua bozza non è più disponibile. Ricomincia, ci vuole un minuto."
+      e_incomplete: "Mancano alcune risposte obbligatorie. Sono segnate qui sopra."
+      e_email_not_confirmed: "Prima conferma la tua e-mail: apri il link nel messaggio che ti abbiamo inviato, poi premi di nuovo Invia."
+      e_rate_limited: "Troppi tentativi. Aspetta qualche minuto e riprova."
+      e_turnstile_failed: "Il controllo anti-spam non è stato superato. Aspetta un secondo che finisca e riprova."
+      e_captcha_not_configured: "Il modulo non è disponibile in questo momento. Scrivici su Telegram."
+      e_captcha_unavailable: "Non è stato possibile eseguire il controllo anti-spam. Riprova tra un minuto."
+      e_locked: "Questa richiesta è già stata inviata e non può più essere modificata."
+      step_of: "Passaggio {n} di {total}"
+      start_button: "Continua"
+      start_note: "Ti inviamo un link per confermare la tua e-mail. Puoi continuare a compilare il modulo mentre arriva."
+      have_draft: "Continua una bozza precedente"
+      back: "Indietro"
+      next: "Avanti"
+      submit: "Invia la richiesta"
+      email_sent: "Abbiamo inviato un link di conferma a {email}. Aprilo quando puoi: il modulo è già salvato e l'e-mail va confermata prima di inviarlo."
+      info_requested: "Il team ha chiesto più dettagli:"
+      legal_lead: "Inviando la richiesta accetti"
+      terms: "i termini"
+      privacy: "l'informativa sulla privacy"
+    alt:
+      text: "Preferisci Telegram? Il bot raccoglie la stessa richiesta in una chat e lì risponde lo stesso team."
+      link: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }

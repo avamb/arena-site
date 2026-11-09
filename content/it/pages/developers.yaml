@@ -1,0 +1,48 @@
+title: "Per sviluppatori: tre righe su qualsiasi sito"
+description: "Incorpora il widget con tre righe, o usa l'API pubblica: evento in una chiamata, webhook firmati, chiavi con ambito, eventi del widget, plugin WordPress."
+h1: Tre righe su qualsiasi sito
+lead: Il widget è un web component. Mettilo in qualsiasi pagina, stilizzalo con le variabili CSS, ascolta i suoi eventi. Tutto il resto è un'API pubblica con webhook firmati.
+sections:
+  - type: code
+    id: widget
+    eyebrow: Widget
+    title: Come metto i biglietti sul mio sito?
+    code: |
+      <script type="module" src="https://tickets.arenasoldout.com/widget/v1/arena-tickets.js"></script>
+      <arena-tickets feed-token="YOUR_FEED_TOKEN" locale="en"></arena-tickets>
+    items:
+      - key: --arena-accent
+        text: "I tuoi colori: il widget legge --arena-accent, --arena-radius, --arena-bg e --arena-border-color dalla tua pagina"
+      - key: locale
+        text: "Lingua dell'acquirente: en, ru, cs, he, es; l'ebraico è da destra a sinistra"
+      - key: arena:order_paid
+        text: "Eventi del widget arena:* per le tue analisi e le tue pagine di ringraziamento"
+      - key: feed-token
+        text: Un token per canale di vendita; revocalo in qualsiasi momento nell'Event Center
+    cta: { label: Ottieni un feed token, href: /start }
+
+  - type: cards
+    id: api
+    eyebrow: API pubblica
+    title: Cosa posso fare tramite l'API?
+    items:
+      - title: Pacchetto evento in una chiamata
+        text: Una sola richiesta crea l'evento, le sue sessioni, la struttura, i prezzi, la locandina e la pubblicazione. Lo stesso formato che usa il bot Telegram.
+      - title: Webhook firmati
+        text: Ordini, pagamenti, rimborsi e modifiche alle sessioni arrivano al tuo endpoint con una firma che verifichi tu. Nuovi tentativi con backoff.
+      - title: Chiavi API con ambito
+        text: Una chiave vede una sola organizzazione e solo gli ambiti che concedi. Ruota e revoca le chiavi nell'Event Center.
+      - title: Plugin WordPress
+        text: Gli ordini arrivano in WooCommerce, il negozio continua a funzionare, la mappa dei posti e il biglietto arrivano da ArenaSoldOut.com. Con il plugin due clienti sono passati da ArenaSoldOut.com senza interruzioni.
+      - title: Importazioni
+        text: Sessioni, mappe dei posti e clienti importati da ArenaSoldOut.com. Altri sistemi tramite il pacchetto evento e un CSV dei clienti.
+      - title: OpenAPI
+        text: La descrizione OpenAPI è pubblicata con l'API. Chiedi al team il file aggiornato finché non sarà collegato qui automaticamente.
+
+  - type: cta
+    id: start
+    title: Inizia a costruire oggi
+    text: Chiedi un feed token e una chiave API con ambito. Il team risponde di persona e può configurare per te un'organizzazione di prova.
+    primary: { label: Richiedi l'accesso, href: /start }
+    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
+    note: I pagamenti di prova passano dalla modalità test del tuo provider, mai da carte reali.

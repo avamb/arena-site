@@ -1,0 +1,9 @@
+title: "Funzioni di ArenaSoldOut.com in produzione oggi, con le date"
+description: "Cosa ottengono gli organizzatori con ArenaSoldOut.com e da quando: posti numerati, conto di pagamento, bot Telegram, widget, e-ticket, API. Test di carico."
+h1: Cosa fa oggi ArenaSoldOut.com
+lead: Tutto ciò che segue è in produzione, con la data in cui è andato online. Le funzioni ancora in sviluppo sono elencate a parte, così come ciò che il prodotto non include.
+sections:
+  - type: facts-table
+    id: table
+    eyebrow: Fatti
+    title: Cosa funziona, da quando

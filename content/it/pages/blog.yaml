@@ -1,0 +1,12 @@
+title: "Blog"
+description: "Articoli per organizzatori: incassi e commissioni di servizio, vendere sul proprio sito, mappe dei posti, partenze anticipate e note dal team."
+h1: Blog
+lead: "Articoli per gli organizzatori che vendono i propri biglietti: incassi e commissioni di servizio, vendere sul proprio sito, mappe dei posti, vendite anticipate, marketing. L'archivio del sito precedente è qui con le date originali e una nota di archivio; la piattaforma è stata ricostruita nel 2026."
+related:
+  - { label: Prezzi, href: /pricing }
+  - { label: Ultime novità della piattaforma, href: /changes }
+  - { label: Inizia a vendere, href: /start }
+sections:
+  - type: posts
+    id: posts
+    empty: L'archivio è in fase di trasferimento. Nel frattempo, le ultime novità della piattaforma sono elencate nella pagina delle novità.

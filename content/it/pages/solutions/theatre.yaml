@@ -1,0 +1,38 @@
+title: "Biglietti per il teatro: mappe dei posti, repliche"
+description: "Biglietteria teatrale con posti numerati fedeli alla sala, repliche su una sola mappa, inviti, rimborsi e cambi di data. Da 100 a 1.500 posti."
+h1: Teatro
+lead: Una mappa fedele alla tua sala, disegnata da noi gratis dal tuo PDF, schizzo o tabella delle file, e riutilizzata per ogni replica. Inviti per stampa e partner, rimborsi e cambi di data gestiti dall'Event Center.
+related:
+  - { label: Mappe dei posti fedeli alla sala, href: /product/seating }
+  - { label: "Strutture e club: condizioni separate", href: /solutions/venues }
+  - { label: E-ticket e scansione, href: /product/tickets }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Per i teatri
+    title: Cosa conta per un teatro?
+    items:
+      - { title: La mappa è tua, text: "File, palchi, galleria, categorie per prezzo. Le versioni proteggono i biglietti venduti quando cambia la disposizione.", link: { label: Mappe dei posti →, href: /product/seating } }
+      - { title: Repliche, text: "Aggiungi sessioni allo stesso evento; mappa, prezzi e categorie restano. Sposta o annulla una data con e-mail agli acquirenti.", link: { label: Event Center →, href: /#center } }
+      - { title: Inviti, text: "Biglietti gratuiti per posti precisi per stampa, partner e compagnia, scansionati come qualsiasi altro biglietto.", link: { label: Biglietti →, href: /product/tickets } }
+      - { title: La tua biglietteria, text: "Vendi sul tuo sito con il widget o sulla pagina ospitata; gli incassi vanno sul tuo conto, non passano da un marketplace.", link: { label: Dove vendi →, href: /product/sell } }
+  - type: faq
+    id: questions
+    eyebrow: Domande
+    title: Cosa chiedono per primo i teatri?
+    items:
+      - q: Disegnate voi la mappa dei posti?
+        a: Sì, gratis. Mandaci un PDF della mappa, la foto di uno schizzo a mano o una tabella delle file con i posti di ciascuna; la disegniamo nel tuo evento, di solito entro un giorno, e la approvi prima che le vendite inizino.
+      - q: Possiamo avere prezzi diversi per platea e galleria?
+        a: Sì. Categorie con prezzi, quote e finestre propri; le finestre early bird scattano per data.
+      - q: Facciamo molte repliche al mese. Esiste un'offerta diversa?
+        a: "Sì. Alle strutture permanenti offriamo una percentuale sul prezzo del biglietto al posto della commissione per biglietto; vedi [strutture](/solutions/venues) e [prezzi](/pricing)."
+      - q: Chi compra può scegliere i posti dal telefono?
+        a: Sì, la mappa dei posti funziona su telefono con zoom a due dita, nella lingua dell'acquirente.
+  - type: cta
+    id: start
+    title: Mandaci la tua mappa
+    text: "Basta un PDF, la foto di uno schizzo a mano o una tabella di file e posti. La disegniamo gratis nel tuo evento e te la mostriamo prima che le vendite inizino."
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."

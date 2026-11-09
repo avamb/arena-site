@@ -1,0 +1,38 @@
+title: "Biglietti per concerti: in piedi e a sedere, early bird"
+description: "Vendi biglietti per concerti sul tuo sito o su pagina ospitata: quote in piedi, posti a sedere, early bird, codici partner, scansione. Gli incassi vanno a te."
+h1: Concerti
+lead: In piedi e a sedere nello stesso evento, più categorie di prezzo, una finestra early bird che scatta a una data e un ingresso che scansiona ogni biglietto. Chi compra paga sul tuo conto dal primo biglietto.
+related:
+  - { label: Codici promozionali e finestre di prezzo, href: /product/pricing-tools }
+  - { label: E-ticket e scansione, href: /product/tickets }
+  - { label: Festival, href: /solutions/festivals }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Per i concerti
+    title: Cosa conta per un concerto?
+    items:
+      - { title: In piedi e a sedere insieme, text: "Un'area in piedi con una quota accanto alle categorie a sedere, in una sola mappa e un solo checkout.", link: { label: Mappe dei posti →, href: /product/seating } }
+      - { title: Early bird che scatta da solo, text: "Una finestra di prezzo per data e ora, oppure uno scaglione di quantità che apre il prezzo successivo quando il primo si esaurisce.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Partner e promoter, text: "Una pagina per promoter con il proprio link, codici promozionali per partner, ogni canale in un unico Event Center.", link: { label: Dove vendi →, href: /product/sell } }
+      - { title: L'ingresso, text: "App scanner per iOS e Android, EAN-13 e QR su ogni biglietto, accettati anche i biglietti dei partner emessi da altri sistemi.", link: { label: App scanner MACS →, href: /product/scanner } }
+  - type: faq
+    id: questions
+    eyebrow: Domande
+    title: Cosa chiedono per primo gli organizzatori di concerti?
+    items:
+      - q: Quanto in fretta può andare in vendita un concerto?
+        a: "Senza mappa dei posti, 10 minuti dopo che la tua organizzazione è confermata e il conto di pagamento è collegato: nome, data, prezzi, locandina. Con i posti numerati, di solito entro un giorno, dopo che disegniamo gratis la mappa dal tuo file."
+      - q: Posso vendere una categoria VIP con quota limitata?
+        a: Sì. Ogni categoria ha prezzo, quota e finestra di vendita propri; una categoria esaurita può passare i posti invenduti alla successiva.
+      - q: Quanto mi costa un biglietto?
+        a: "Un importo fisso per biglietto venduto, fatturato dopo la sessione; vedi i [prezzi](/pricing). Inviti e rimborsi sono gratuiti."
+      - q: Posso vedere le vendite in tempo reale?
+        a: Sì. Ogni vendita arriva nel tuo gruppo Telegram in pochi secondi e nell'Event Center con i totali per sessione e l'esportazione CSV.
+  - type: cta
+    id: start
+    title: Metti in vendita il concerto oggi
+    text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."

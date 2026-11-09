@@ -1,0 +1,29 @@
+title: "A chi è rivolto: concerti, teatro, festival, strutture"
+description: "Organizzatori che vendono i propri biglietti: concerti, teatro, spettacoli, festival, tour, masterclass e formazione, strutture e club, siti WordPress."
+h1: Organizzatori che vendono i propri biglietti
+lead: Una piattaforma, eventi diversi. Scegli il tuo per vedere quali parti contano di più, com'è la prima settimana e che cosa chiedono per primi gli altri organizzatori del tuo settore.
+related:
+  - { label: Come funziona, href: /#how }
+  - { label: Prezzi, href: /pricing }
+  - { label: Clienti, href: /clients }
+sections:
+  - type: cards
+    id: list
+    eyebrow: A chi è rivolto
+    title: Che tipo di evento organizzi?
+    items:
+      - { title: Concerti, text: "In piedi e con posti numerati, più categorie di prezzo, early bird, scansione all'ingresso.", link: { label: Per i concerti →, href: /solutions/concerts } }
+      - { title: Teatro, text: "Mappe dei posti fedeli alla sala, date in replica, inviti per stampa e partner.", link: { label: Per i teatri →, href: /solutions/theatre } }
+      - { title: Spettacoli, text: "Ice show, circo, danza: molte date, molte città, una mappa per struttura riutilizzata.", link: { label: Per gli spettacoli →, href: /solutions/shows } }
+      - { title: Festival, text: "Più giorni, molte categorie, categorie che passano i posti invenduti a quella successiva.", link: { label: Per i festival →, href: /solutions/festivals } }
+      - { title: Tour di concerti, text: "Uno spettacolo, molte città e date, una pagina per ogni promoter con il suo link.", link: { label: Per i tour di concerti →, href: /solutions/concert-tours } }
+      - { title: Masterclass e formazione, text: "Piccoli gruppi, date ricorrenti, le e-mail e la lingua di chi ospita.", link: { label: Per chi ospita →, href: /solutions/master-classes } }
+      - { title: Strutture e club, text: "La tua struttura, molti eventi al mese, una mappa dei posti riutilizzata, condizioni a parte.", link: { label: Per le strutture →, href: /solutions/venues } }
+      - { title: Siti WordPress, text: "Plugin con ordini WooCommerce; il negozio continua a funzionare, i biglietti arrivano da ArenaSoldOut.com.", link: { label: Per i siti WordPress →, href: /solutions/wordpress } }
+  - type: cta
+    id: start
+    title: Inizia a vendere oggi
+    text: "Crea l'evento, collega il tuo conto di pagamento, condividi il link. Un evento senza mappa dei posti è in vendita in 10 minuti; la mappa dei posti la disegniamo noi per te, gratis."
+    primary: { label: Crea il tuo evento, href: /start#create }
+    secondary: { label: Apri il bot di Telegram, href: https://t.me/EventsCentrBot }
+    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."
