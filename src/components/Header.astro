@@ -12,6 +12,8 @@ const { lang, path } = Astro.props;
 const nav = navFor(lang);
 const langs = activeLanguages();
 const current = getLanguage(lang);
+/** Short label in the switcher: the language code, except Ukrainian (uk), shown as UA so it is not read as United Kingdom. */
+const badge = (code: string) => (code === 'uk' ? 'UA' : code.toUpperCase());
 const signinHref = nav.signin.href.startsWith('http') ? nav.signin.href : hosts.app;
 const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
 ---
@@ -27,12 +29,12 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
         <form class="lang-menu" method="get">
           <label class="visually-hidden" for="lang-select">{t(lang, 'language')}</label>
           <select id="lang-select" onchange="location.href=this.value">
-            {langs.map((l) => <option value={localePath(l.code, stripped)} selected={l.code === lang}>{l.code.toUpperCase()}</option>)}
+            {langs.map((l) => <option value={localePath(l.code, stripped)} selected={l.code === lang} lang={l.code} title={l.name}>{badge(l.code)}</option>)}
           </select>
           <Icon name="chevron-down" size={10} />
         </form>
       ) : (
-        <span class="lang" aria-label={`${t(lang, 'language')}: ${current.name}`}>{lang.toUpperCase()} <Icon name="chevron-down" size={10} /></span>
+        <span class="lang" aria-label={`${t(lang, 'language')}: ${current.name}`}>{badge(lang)} <Icon name="chevron-down" size={10} /></span>
       )}
       <ThemeToggle client:load label={t(lang, 'theme.toggle')} />
       <a class="btn btn-ghost btn-sm contact-btn" href={localePath(lang, nav.contact.href)} data-contact-open><Icon name="message-circle" size={16} /><span>{nav.contact.label}</span></a>
@@ -54,7 +56,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
       <form class="lang-menu" method="get">
         <label class="visually-hidden" for="lang-select-menu">{t(lang, 'language')}</label>
         <select id="lang-select-menu" onchange="location.href=this.value">
-          {langs.map((l) => <option value={localePath(l.code, stripped)} selected={l.code === lang}>{l.code.toUpperCase()}</option>)}
+          {langs.map((l) => <option value={localePath(l.code, stripped)} selected={l.code === lang} lang={l.code} title={l.name}>{badge(l.code)}</option>)}
         </select>
         <Icon name="chevron-down" size={10} />
       </form>
