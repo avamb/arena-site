@@ -1,0 +1,50 @@
+title: "Votre premier événement : de la demande au scanner"
+description: "Pas à pas : demande, confirmation, compte de paiement, création de l'événement, plan, publication, ventes et scan des billets."
+h1: Votre premier événement avec ArenaSoldOut.com
+lead: "Huit étapes, de la demande au scanner à l'entrée. Avec un compte déjà ouvert chez un prestataire de paiement, un événement sans plan de salle est en vente 10 minutes après la confirmation de votre organisation."
+related:
+  - { label: Prestataires de paiement par pays, href: /payments, text: "Quel prestataire votre société peut connecter, avec les moyens de paiement et les devises." }
+  - { label: Plans de salle, href: /product/seating, text: "Ce qu'il faut nous envoyer pour que nous dessinions votre salle gratuitement." }
+  - { label: Application de scan MACS, href: /product/scanner, text: "Scanner les billets à l'entrée sur iOS et Android." }
+sections:
+  - type: steps
+    id: steps
+    eyebrow: Pas à pas
+    title: Comment mettre mon premier événement en vente ?
+    items:
+      - title: Envoyez la demande
+        text: "Cinq courtes étapes sur le [formulaire de demande](/start) : contact, organisation, événements, paiements, consentement. Ou envoyez la même chose dans le [bot Telegram](https://t.me/EventsCentrBot). Vos réponses sont enregistrées au fur et à mesure."
+      - title: Nous confirmons votre organisation
+        text: "L'équipe vérifie la demande et crée votre organisation et votre compte Event Center, en général sous un jour, puis vous indique comment vous connecter."
+      - title: Connectez votre compte de paiement, une seule fois
+        text: "Créez des clés API dans le tableau de bord de votre prestataire (Stripe, Flitt, AllPay ou un autre prestataire de votre pays) et collez-les dans l'Event Center, ou envoyez-les à l'équipe. Cela se fait une fois pour l'organisation ; chaque événement suivant utilise le même compte. Pas encore de compte ? Ouvrez-en un d'abord chez un [prestataire de votre pays](/payments) : cela prend le temps du prestataire."
+      - title: Créez l'événement
+        text: "Dans l'Event Center, dans le navigateur, ou dans le bot Telegram à partir d'une photo de votre affiche : nom, salle, dates et séances, catégories de billets et prix, affiche. Sans plan de salle, cela prend environ 10 minutes."
+      - title: Envoyez le plan de la salle, si vous vendez des places numérotées
+        text: "Nous dessinons le plan gratuitement, en général sous un jour, et nous vous le montrons avant le début des ventes. L'un de ces formats suffit : un PDF du plan de la salle, une photo d'un croquis à la main, ou un tableau de rangs avec les places de chaque rang (Excel ou Google Sheets). Un SVG est importé directement."
+      - title: Publiez et partagez
+        text: "Mettez l'événement en vente. Partagez le lien de la page de vente que nous hébergeons, ou ajoutez le widget de billetterie à votre propre site avec trois lignes de code. Les codes promo, les prix par date et les frais de service se règlent au même endroit."
+      - title: Suivez les ventes
+        text: "Les acheteurs paient sur votre compte de paiement et reçoivent le billet par e-mail dans leur langue. Chaque commande est dans l'Event Center, et chaque vente et chaque remboursement arrive dans votre groupe Telegram en quelques secondes."
+      - title: Scannez à l'entrée
+        text: "Installez l'application MACS sur iPhone ou Android, connectez-vous avec votre compte Event Center, choisissez la séance et scannez l'EAN-13 ou le QR code sur papier ou sur écran. Autant de téléphones que vous avez d'entrées."
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: Que demandent les organisateurs avant le premier événement ?
+    items:
+      - q: Combien de temps cela prend-il vraiment ?
+        a: "Confirmation de l'organisation : en général sous un jour. Ensuite, avec un compte de paiement déjà ouvert, un événement sans plan de salle est en vente en environ 10 minutes. Un événement avec places numérotées attend le plan que nous dessinons, en général un jour. L'ouverture d'un nouveau compte chez un prestataire de paiement prend le temps dont le prestataire a besoin."
+      - q: Que dois-je préparer ?
+        a: "Le nom de l'événement, la salle, les dates et les horaires, les catégories de billets et les prix, une affiche, et les clés API de votre compte de paiement. Pour les places numérotées, le plan de la salle sous l'un des formats ci-dessus."
+      - q: L'équipe peut-elle le configurer pour moi ?
+        a: "Oui. Envoyez les informations dans le [bot Telegram](https://t.me/EventsCentrBot) ou via le formulaire de contact et nous créons l'événement avec vous ; vous le vérifiez avant le début des ventes."
+      - q: Combien coûte le premier événement ?
+        a: "Autant que les suivants : une commission par billet vendu, facturée après l'événement, ou moins avec des crédits achetés à l'avance. Les plans de salle et les invitations ne coûtent rien. Les tarifs sont sur la [page des tarifs](/pricing)."
+  - type: cta
+    id: start
+    title: Commencez par la demande
+    text: "Cinq courtes étapes, enregistrées au fur et à mesure. L'équipe confirme votre organisation, en général sous un jour."
+    primary: { label: Envoyer la demande, href: /start }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Des questions d'abord ? Le bouton « Contacter l'équipe » est sur chaque page."

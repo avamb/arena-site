@@ -1,0 +1,31 @@
+title: "Continuez votre candidature"
+description: "Saisissez l'e-mail avec lequel vous avez postulé et nous envoyons un lien vers le brouillon commencé."
+h1: Continuez votre candidature
+lead: Saisissez l'e-mail avec lequel vous avez postulé. Nous envoyons un lien vers votre brouillon, pour reprendre là où vous vous êtes arrêté.
+sections:
+  - type: onboarding
+    id: form
+    mode: continue
+    ui:
+      noscript: "Le formulaire de candidature a besoin de JavaScript. Écrivez-nous plutôt sur Telegram et nous vous configurerons à la main."
+      optional: "(facultatif)"
+      url_list_hint: "Un lien par ligne"
+      sending: "Envoi…"
+      email: "E-mail"
+      err_required: "Ce champ est obligatoire"
+      err_invalid: "Vérifiez cette valeur"
+      err_too_long: "Ce texte est trop long"
+      err_not_allowed: "Nous n'acceptons pas encore les candidatures de ce pays"
+      e_generic: "Une erreur s'est produite. Réessayez dans une minute, ou écrivez-nous sur Telegram."
+      e_network: "Pas de connexion au serveur. Vérifiez votre connexion internet et réessayez."
+      e_unavailable: "Le formulaire n'est pas disponible pour le moment. Réessayez dans une minute, ou écrivez-nous sur Telegram."
+      e_session: "Votre brouillon n'est plus disponible. Recommencez, cela prend une minute."
+      e_incomplete: "Certaines réponses obligatoires manquent. Elles sont signalées ci-dessus."
+      e_email_not_confirmed: "Confirmez d'abord votre e-mail : ouvrez le lien dans le message que nous vous avons envoyé, puis appuyez de nouveau sur Envoyer."
+      e_rate_limited: "Trop de tentatives. Attendez quelques minutes et réessayez."
+      e_turnstile_failed: "La vérification anti-spam a échoué. Attendez une seconde qu'elle se termine et réessayez."
+      e_captcha_not_configured: "Le formulaire n'est pas disponible pour le moment. Écrivez-nous sur Telegram."
+      e_captcha_unavailable: "Impossible de lancer la vérification anti-spam. Réessayez dans une minute."
+      e_locked: "Cette candidature est déjà envoyée et ne peut plus être modifiée."
+      send_link: "Envoyez-moi le lien"
+      link_sent: "S'il existe un brouillon ouvert pour cette adresse, un lien pour continuer est en route. Vérifiez votre boîte de réception et le dossier des courriers indésirables."

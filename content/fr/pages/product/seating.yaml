@@ -1,0 +1,41 @@
+title: "Plans de salle : places numérotées et zones debout"
+description: "Plans de salle avec versions, import SVG, places assises et accès libre, prix par catégorie. Envoyez un PDF, un croquis ou un tableau de rangs : dessin gratuit."
+h1: Des plans de salle fidèles à la salle
+lead: Les places numérotées sont au cœur de la plateforme, pas une option. L'équipe construit votre plan à partir de ce que vous avez, en général sous un jour, et le réutilise pour chaque date.
+related:
+  - { label: "Codes promo, périodes de prix et paliers de quantité", href: /product/pricing-tools }
+  - { label: Billets électroniques avec EAN-13 et QR, href: /product/tickets }
+  - { label: Pour les théâtres, href: /solutions/theatre }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Plans de salle
+    title: Comment fonctionnent les places numérotées avec ArenaSoldOut.com ?
+    items:
+      - q: Dois-je dessiner le plan moi-même ?
+        a: "Non, jamais. Envoyez-nous le plan et nous le dessinons dans votre événement gratuitement, en général sous un jour. L'un de ces formats suffit : un PDF du plan de la salle, une photo d'un croquis à la main, ou un tableau de rangs avec les places de chaque rang (Excel ou Google Sheets). Les fichiers vectoriels (SVG) sont importés directement."
+      - q: Un même événement peut-il avoir des places numérotées et des places debout ?
+        a: Oui, dans un même plan. Des rangs réservés avec catégories, des zones debout avec quotas, chaque catégorie avec son propre prix et sa propre période de vente.
+      - q: Puis-je modifier le plan après le début des ventes ?
+        a: Oui. Les plans ont des versions, donc une nouvelle disposition pour la séance suivante ne touche pas aux billets déjà vendus.
+      - q: Combien me coûte un billet avec place ?
+        a: "La commission pour un billet avec place est de US$1,09 (€0,97 dans les pays de l'UE), contre US$0,59 (€0,53) sans place ; les crédits la réduisent. Le plan lui-même est gratuit. Voir les [tarifs](/pricing)."
+      - q: L'acheteur choisit-il sa place sur téléphone ?
+        a: Oui. Le plan est le même dans le widget et sur la page hébergée, avec zoom par pincement sur téléphone, une légende par catégorie et un minuteur de retenue pour les places choisies.
+      - q: Et les invitations et les places presse ?
+        a: Émettez des billets gratuits pour des places précises depuis l'Event Center ; ils se scannent à l'entrée comme n'importe quel billet.
+  - type: cards
+    id: who
+    eyebrow: Salles types
+    title: Qui utilise les places numérotées ?
+    items:
+      - { title: Théâtres, text: "De 100 à 1 500 places, dates récurrentes, invitations pour la presse et les partenaires.", link: { label: Pour les théâtres →, href: /solutions/theatre } }
+      - { title: Salles de concert et clubs, text: "Un plan réutilisé pour de nombreux événements par mois, des conditions distinctes pour les salles permanentes.", link: { label: Pour les salles →, href: /solutions/venues } }
+      - { title: Spectacles en tournée, text: "Un spectacle, plusieurs villes, un plan par salle réutilisé à la visite suivante.", link: { label: Pour les tournées →, href: /solutions/concert-tours } }
+  - type: cta
+    id: start
+    title: Envoyez-nous votre plan
+    text: "Un PDF, une photo d'un croquis à la main ou un tableau de rangs et de places suffit. Nous le dessinons dans votre événement gratuitement et vous montrons le résultat avant le début des ventes."
+    primary: { label: Commencer à vendre, href: /start }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: Les événements sans plan de salle sont en vente dès aujourd'hui.

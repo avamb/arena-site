@@ -1,0 +1,57 @@
+title: "Commencer à vendre : candidature d'organisateur"
+description: "Parlez-nous de votre organisation et de vos événements. L'équipe configure organisation, page de vente et compte de paiement, en général en un jour."
+h1: Commencer à vendre
+lead: "Dites-nous qui vous êtes et où vous vendez. Nous configurons votre organisation et votre page de vente, et connectons votre compte de paiement, en général sous un jour. Les événements sans plan de salle sont en vente aujourd'hui."
+sections:
+  - type: steps
+    id: how
+    eyebrow: La suite
+    title: Comment commencer ?
+    items:
+      - title: Vous envoyez la candidature
+        text: "Cinq courtes étapes : contact, organisation, événements, paiements et consentement. Vos réponses sont enregistrées au fur et à mesure, vous pouvez donc partir et revenir."
+      - title: Nous vous configurons
+        text: L'équipe vérifie la candidature, crée votre organisation et votre page de vente, connecte avec vous votre compte de paiement et, si vous avez une salle à places numérotées, dessine gratuitement le plan à partir de votre PDF, croquis à la main ou tableau de rangs.
+      - title: Vous mettez en vente
+        text: Partagez un seul lien, ou placez le widget sur votre site. Chaque vente arrive dans votre Event Center et dans votre groupe Telegram.
+  - type: onboarding
+    id: form
+    mode: apply
+    eyebrow: Candidature
+    title: Parlez-nous de vous
+    ui:
+      noscript: "Le formulaire de candidature a besoin de JavaScript. Écrivez-nous plutôt sur Telegram et nous vous configurerons à la main."
+      optional: "(facultatif)"
+      url_list_hint: "Un lien par ligne"
+      sending: "Envoi…"
+      email: "E-mail"
+      err_required: "Ce champ est obligatoire"
+      err_invalid: "Vérifiez cette valeur"
+      err_too_long: "Ce texte est trop long"
+      err_not_allowed: "Nous n'acceptons pas encore les candidatures de ce pays"
+      e_generic: "Une erreur s'est produite. Réessayez dans une minute, ou écrivez-nous sur Telegram."
+      e_network: "Pas de connexion au serveur. Vérifiez votre connexion internet et réessayez."
+      e_unavailable: "Le formulaire n'est pas disponible pour le moment. Réessayez dans une minute, ou écrivez-nous sur Telegram."
+      e_session: "Votre brouillon n'est plus disponible. Recommencez, cela prend une minute."
+      e_incomplete: "Certaines réponses obligatoires manquent. Elles sont signalées ci-dessus."
+      e_email_not_confirmed: "Confirmez d'abord votre e-mail : ouvrez le lien dans le message que nous vous avons envoyé, puis appuyez de nouveau sur Envoyer."
+      e_rate_limited: "Trop de tentatives. Attendez quelques minutes et réessayez."
+      e_turnstile_failed: "La vérification anti-spam a échoué. Attendez une seconde qu'elle se termine et réessayez."
+      e_captcha_not_configured: "Le formulaire n'est pas disponible pour le moment. Écrivez-nous sur Telegram."
+      e_captcha_unavailable: "Impossible de lancer la vérification anti-spam. Réessayez dans une minute."
+      e_locked: "Cette candidature est déjà envoyée et ne peut plus être modifiée."
+      step_of: "Étape {n} sur {total}"
+      start_button: "Continuer"
+      start_note: "Nous envoyons un lien pour confirmer votre e-mail. Vous pouvez continuer à remplir le formulaire pendant qu'il arrive."
+      have_draft: "Reprendre un brouillon précédent"
+      back: "Retour"
+      next: "Suivant"
+      submit: "Envoyer la candidature"
+      email_sent: "Nous avons envoyé un lien de confirmation à {email}. Ouvrez-le quand vous pouvez : le formulaire est déjà enregistré, et l'e-mail doit être confirmé avant l'envoi."
+      info_requested: "L'équipe a demandé plus de détails :"
+      legal_lead: "En envoyant la candidature, vous acceptez"
+      terms: "les conditions"
+      privacy: "la politique de confidentialité"
+    alt:
+      text: "Vous préférez Telegram ? Le bot reçoit la même candidature dans un chat et la même équipe y répond."
+      link: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }

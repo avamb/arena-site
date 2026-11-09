@@ -1,0 +1,36 @@
+title: "Partenaires : salles, promoteurs, agences, développeurs"
+description: "Comment salles, promoteurs, agences WordPress et développeurs travaillent avec ArenaSoldOut.com : pages de promoteurs, plugin, widget, API, conditions de salle."
+h1: Partenaires
+lead: Des salles qui accueillent des événements, des promoteurs qui les vendent, des agences qui construisent les sites des organisateurs, des développeurs qui intègrent. Chacun a sa place dans la plateforme et une personne de l'équipe avec qui parler.
+related:
+  - { label: Pour les développeurs, href: /developers }
+  - { label: Salles et clubs, href: /solutions/venues }
+  - { label: Contact, href: /contact }
+sections:
+  - type: cards
+    id: kinds
+    eyebrow: Partenaires
+    title: Comment les partenaires travaillent-ils avec ArenaSoldOut.com ?
+    items:
+      - { title: Salles, text: "Une salle permanente apporte son plan une fois et le propose à chaque organisateur qui la loue ; conditions séparées avec un pourcentage du prix du billet.", link: { label: Salles et clubs →, href: /solutions/venues } }
+      - { title: Promoteurs, text: "Une page par promoteur avec son lien et ses codes ; l'organisateur voit chaque canal, le promoteur voit le sien.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: Agences WordPress, text: "Le plugin place les commandes dans WooCommerce ; le widget s'adapte à n'importe quel thème. L'équipe accompagne l'agence pendant le lancement.", link: { label: WordPress →, href: /solutions/wordpress } }
+      - { title: Développeurs, text: "API publique, lot d'événement en un appel, webhooks signés, clés à portée limitée, événements du widget ; imports depuis ArenaSoldOut.com et d'autres.", link: { label: Développeurs →, href: /developers } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: Que demandent d'abord les partenaires ?
+    items:
+      - q: Y a-t-il une commission de parrainage ou de revente ?
+        a: Les conditions de partenariat sont convenues au cas par cas ; écrivez à l'équipe ce que vous faites et pour qui.
+      - q: Un billet vendu par un partenaire peut-il être contrôlé à la porte ?
+        a: "Oui. L'[application de contrôle MACS](/product/scanner) accepte les billets de partenaires d'autres systèmes à côté des billets ArenaSoldOut.com, sur iOS et Android."
+      - q: Une agence peut-elle gérer plusieurs organisateurs ?
+        a: Oui, avec des rôles dans l'Event Center de chaque organisation et des clés d'API à portée limitée par organisation.
+  - type: cta
+    id: start
+    title: Écrivez à l'équipe
+    text: Dites-nous qui vous êtes et avec qui vous travaillez. Nous répondons en personne sous un jour ouvré.
+    primary: { label: Nous contacter, href: /contact }
+    secondary: { label: Lire la documentation développeur, href: /developers }
+    note: "Ou sur Telegram : le chat est lu pendant la journée, en Europe et en Israël."

@@ -1,0 +1,164 @@
+title: "Conditions générales"
+description: "Conditions de la plateforme de billetterie ArenaSoldOut.com : service, comptes, prestataires de paiement, frais, contenu, responsabilité, données des acheteurs."
+h1: "Conditions générales"
+lead: "Version du 9 octobre 2026. Remplace la version du 6 mai 2024. La plateforme enregistre la version en vigueur au moment où vous l'avez acceptée. Ceci est une traduction à titre d'information ; la version anglaise fait foi."
+related:
+  - { label: Conditions tarifaires détaillées, href: /pricing/terms }
+  - { label: Tarifs, href: /pricing }
+  - { label: Politique de confidentialité, href: /legal/privacy }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## 1. Introduction
+
+      Cette page énonce les conditions juridiques (les « Conditions ») selon lesquelles ABH TEAM OÜ, exerçant sous la marque ArenaSoldOut.com (« nous »), met à votre disposition notre plateforme de vente de billets d'événements et de produits et services associés (le « Service »). Le Service comprend l'Event Center sur app.arenasoldout.com, les pages de vente hébergées et le widget de billetterie sur tickets.arenasoldout.com, l'API publique, le plugin WordPress, le bot Telegram et l'application de contrôle pour la porte.
+
+      Veuillez lire attentivement ces Conditions et vous assurer de les comprendre avant de demander un compte ou de mettre un événement en vente via le Service.
+
+      ## 2. Notre contrat avec vous
+
+      Vous acceptez ces Conditions et concluez un contrat contraignant avec ABH TEAM OÜ lorsque vous demandez un compte via le formulaire de ce site web ou via le bot Telegram, lorsque notre équipe crée un compte pour vous à votre demande, ou lorsque vous ou un membre de votre équipe vous connectez pour la première fois à l'Event Center ou mettez un événement en vente. Si vous n'acceptez pas une partie de ces Conditions, n'utilisez pas le Service et n'y accédez pas.
+
+      Nous pouvons modifier ces Conditions de temps à autre. La version actuelle est toujours publiée sur ArenaSoldOut.com/legal/terms avec la date de la dernière modification. La plateforme enregistre la version en vigueur au moment où vous l'avez acceptée et chaque version ultérieure. La poursuite de l'utilisation du Service après une modification signifie que vous acceptez les Conditions modifiées.
+
+      ## 3. Nature du service
+
+      Notre Service vous donne un compte sur notre plateforme en ligne pour vendre et gérer des billets d'événements, des plans de salle et des produits et services physiques ou numériques associés. Vous ne pouvez détenir un compte que si vous êtes l'organisateur de l'événement ou un vendeur de billets autorisé disposant de l'autorisation écrite expresse de l'organisateur pour chaque événement dont vous vendez les billets. Si vous utilisez le Service au nom d'une entité, vous acceptez ces Conditions au nom de cette entité et déclarez avoir le pouvoir de le faire.
+
+      Nous vous fournissons le Service et n'avons aucune relation contractuelle avec vos clients (les « Acheteurs de billets »). Lorsque vous vendez des billets ou d'autres produits et services aux Acheteurs de billets via le Service, le contrat est conclu entre vous et l'Acheteur de billets. Vous êtes responsable de vos propres conditions de vente avec vos Acheteurs de billets, y compris les remboursements. Nous livrons les billets et les e-mails de service aux Acheteurs de billets en votre nom, et notre page d'aide aux acheteurs de billets les oriente vers vous pour toute question sur votre événement, vos billets et les remboursements.
+
+      Vous vous engagez :
+
+      - à gérer toute la communication avec vos Acheteurs de billets et à ne pas les renvoyer vers nous pour l'assistance client ;
+      - à répondre à toute demande reçue des Acheteurs de billets dans un délai de 5 jours ;
+      - à assumer toute la responsabilité découlant de la relation contractuelle entre vous et l'Acheteur de billets ;
+      - à informer immédiatement vos Acheteurs de billets, et à mettre à jour la page de votre événement, si votre événement est annulé, reporté ou modifié de manière substantielle par rapport aux informations données lors de sa première mise en vente. Le Service vous y aide en envoyant un e-mail aux Acheteurs de billets lorsque vous déplacez ou annulez une séance.
+
+      Nous nous réservons le droit de suspendre ou de résilier votre accès au Service si vous ne respectez pas ces exigences envers vos Acheteurs de billets.
+
+      Lors de l'utilisation du Service, vous devez :
+
+      - respecter les lois et obligations applicables relatives à vos événements, produits ou services, et à la perception des recettes de billetterie, des frais ou des dons ;
+      - nous fournir les informations et le matériel que nous pouvons raisonnablement exiger pour fournir le Service, et veiller à ce qu'ils soient exacts à tous égards importants ;
+      - maintenir et mettre à jour rapidement ces informations et ce matériel afin qu'ils restent vrais, exacts et complets ;
+      - coopérer avec nous pour toutes les questions relatives au Service.
+
+      L'accès au Service peut être suspendu temporairement et sans préavis en cas de panne du système, de maintenance ou de réparation, ou pour des raisons indépendantes de notre volonté. Votre accès peut aussi être suspendu, ou votre compte résilié, à notre discrétion, notamment si nous soupçonnons que vous utilisez le Service à des fins frauduleuses ou criminelles, si les forces de l'ordre nous le recommandent, ou si vous n'avez pas payé nos factures (voir les sections 6 et 11 ; nous vous informerions en principe du défaut de paiement avant la suspension ou la résiliation). Nous ne serons pas responsables des pertes ou dommages pouvant résulter d'un usage abusif de notre Service.
+
+      ## 4. Votre compte
+
+      Les comptes sont créés par notre équipe après votre candidature, ou via le bot Telegram. Une fois votre compte créé, vous pouvez configurer vos événements, plans de salle et billets et, sous réserve de disposer d'un compte de paiement auprès d'un Prestataire de paiement (section 5), vendre des billets pour vos événements. Vous pouvez aussi mettre en place la vente de produits physiques ou numériques associés. Vous pouvez ajouter des membres de votre équipe à votre compte ; vous êtes responsable de leurs actions dans le Service.
+
+      Vous devez avoir 18 ans pour détenir un compte.
+
+      Pour votre commodité, nous gardons votre compte ouvert pendant 120 mois après votre dernière connexion, au cas où vous décideriez d'utiliser de nouveau notre Service. Avant de fermer votre compte et de supprimer Votre Contenu, nous tenterons d'envoyer des e-mails d'avertissement à l'adresse e-mail du compte, afin que vous ayez la possibilité de garder le compte ouvert ou d'exporter les données que vous souhaitez conserver.
+
+      Vous pouvez fermer votre compte à tout moment en écrivant à hello@arenasoldout.com depuis l'adresse e-mail du titulaire du compte.
+
+      Nous ne remboursons aucun frais déjà payé pour le Service.
+
+      ### Sécurité du compte
+
+      Vous êtes responsable du maintien de la confidentialité de votre compte et entièrement responsable de toute activité qui se produit par l'accès à votre compte avec vos identifiants. Ne partagez pas vos identifiants de connexion, clés d'API, secrets de webhook ou accès à l'application de contrôle avec quiconque en dehors de votre équipe. Vous vous engagez à nous informer immédiatement à hello@arenasoldout.com de toute utilisation non autorisée de votre compte, de vos clés d'API ou de vos applications, ou de toute autre atteinte à la sécurité. Nous ne serons pas responsables des pertes ou dommages résultant de votre manquement à cette disposition.
+
+      La transmission d'informations sur internet n'est pas totalement sûre. Nous ne pouvons garantir la sécurité des données transmises à notre plateforme, et toute transmission se fait à vos propres risques. Une fois vos informations reçues, nous appliquons des procédures strictes et des dispositifs de sécurité pour empêcher tout accès non autorisé.
+
+      ## 5. Prestataires de paiement
+
+      Les Acheteurs de billets paient vos billets sur votre propre compte auprès d'un prestataire de paiement pris en charge par le Service (un « Prestataire de paiement »). Les prestataires, pays et devises actuels sont listés sur la page des paiements. Nous ne recevons ni ne détenons jamais l'argent payé par les Acheteurs de billets ; il va de l'Acheteur de billets à votre Prestataire de paiement, puis de là à votre compte bancaire. L'acquisition des cartes est payée par vous à votre Prestataire de paiement selon ses propres conditions, séparément de nos frais.
+
+      Utiliser un Prestataire de paiement exige que vous ouvriez un compte chez lui, sous réserve des conditions générales et de la politique de confidentialité propres au Prestataire de paiement. Vous avez une relation directe avec le Prestataire de paiement et devez lire et accepter ses conditions avant d'encaisser des paiements d'Acheteurs de billets via le Service. Les remboursements et rétrofacturations sont réglés entre vous, votre Prestataire de paiement et l'Acheteur de billets ; le Service vous permet d'émettre des remboursements, et l'argent est restitué depuis votre compte de paiement.
+
+      Dans l'exercice de certaines fonctions, le Prestataire de paiement agit comme sous-traitant pour vous et pour nous ; à d'autres égards, il agit comme responsable du traitement selon sa propre politique de confidentialité. En utilisant notre Service, vous reconnaissez et acceptez que nous partagions des informations personnelles et des informations sur les transactions effectuées via le Service avec votre Prestataire de paiement.
+
+      Si nous recevons d'un Prestataire de paiement une notification selon laquelle votre utilisation de notre Service enfreint ses conditions ou tout accord entre vous et lui, entre vous et nous, ou entre vous et un Acheteur de billets, ou paraît frauduleuse, contraire à la réglementation sur le blanchiment d'argent ou relevant d'une autre activité nuisible, nous pouvons prendre des mesures incluant, sans s'y limiter, les mesures nécessaires pour remédier à la violation, la suppression de votre possibilité d'utiliser le Service, et la suspension ou la résiliation de votre compte. Un Prestataire de paiement peut refuser ses services à quiconque, pour quelque raison que ce soit, à tout moment.
+
+      Nous n'avons aucune responsabilité à l'égard du service fourni par un Prestataire de paiement, y compris les actes et omissions du Prestataire de paiement, et déclinons par les présentes toute responsabilité (y compris, sans s'y limiter, les pertes, coûts, frais et pénalités de toute nature) qui en découle.
+
+      ## 6. Nos frais
+
+      Les frais d'utilisation de notre Service sont indiqués sur la page des tarifs et dans les conditions tarifaires détaillées, et sont facturés par billet vendu. Une utilisation facturable est la vente d'un billet payant ou d'un produit ou service associé. Les invitations gratuites et les billets remboursés ne sont pas facturés. Les propriétaires de salles permanentes se voient proposer un pourcentage du prix du billet à la place des frais par billet, comme décrit dans les conditions tarifaires détaillées. Nous pouvons aussi proposer des services complémentaires, facturés comme indiqué sur notre plateforme ou convenu avec vous.
+
+      Nous facturons nos frais le lendemain de chaque séance pour les billets vendus pour cette séance ; pour les événements en vente pendant plusieurs mois, nous pouvons facturer mensuellement à la place, par accord. Les conditions de paiement sont indiquées sur la facture.
+
+      Les frais déjà facturés ne sont pas remboursables, y compris lorsqu'un événement est annulé.
+
+      ## 7. Contenu de l'organisateur et normes de contenu acceptable
+
+      Entre vous et nous, vous détenez tous les droits sur tout le contenu que vous téléversez sur la plateforme, et vous êtes responsable de sa légalité, de sa fiabilité, de son intégrité, de son exactitude et de sa qualité, y compris textes, images, affiches, plans de salle, informations sur vos événements et produits et services associés, avis et commentaires (« Votre Contenu »). En téléversant Votre Contenu, vous nous accordez une licence inconditionnelle, non exclusive, transférable, gratuite et mondiale d'utiliser Votre Contenu de toute manière nécessaire à la fourniture du Service.
+
+      Lorsque le Service lit des informations d'une affiche ou d'un autre fichier que vous envoyez, par exemple pour créer un événement dans le bot Telegram, vous confirmez chaque champ avant sa publication et restez responsable de son exactitude.
+
+      Vous devez respecter les normes de contenu acceptable suivantes lorsque vous soumettez Votre Contenu à notre plateforme :
+
+      - Votre Contenu doit être exact et conforme à la loi applicable dans chaque pays depuis lequel il est publié.
+      - Vous ne devez pas utiliser notre plateforme pour collecter auprès des Acheteurs de billets ou des participants à l'événement du contenu dont vous n'avez pas besoin : par exemple des données de carte (collectées uniquement par le Prestataire de paiement), des numéros d'identité nationale ou de sécurité sociale, des mots de passe, ou toute autre donnée personnelle excessive ou inutile, en particulier des données de catégorie particulière (origine raciale ou ethnique, opinions politiques, convictions religieuses ou similaires, appartenance syndicale, santé physique ou mentale, vie sexuelle, orientation sexuelle, données biométriques ou génétiques). Cela ne vous empêche pas de collecter des données de catégorie particulière dans la mesure nécessaire à votre événement, par exemple pour attribuer des places aux personnes en situation de handicap.
+
+      Votre Contenu ne doit pas :
+
+      - être illégal, nuisible, menaçant, diffamatoire, obscène, trompeur, frauduleux, contrefaisant, harcelant, moralement répugnant, ou offensant sur le plan racial ou ethnique ;
+      - faciliter une activité illégale ;
+      - représenter des images sexuellement explicites ;
+      - promouvoir la violence ;
+      - être discriminatoire en raison de la race, du sexe, de la religion, de la nationalité, du handicap, de l'orientation sexuelle ou de l'âge ;
+      - porter atteinte à un droit d'auteur, un droit sur une base de données, une marque ou tout autre droit de propriété intellectuelle d'une autre personne ;
+      - dissimuler une identité ou être susceptible de tromper toute personne.
+
+      Nous pouvons retirer Votre Contenu de notre plateforme et du Service lorsque, à notre seule appréciation, il enfreint ces normes. Nous nous réservons le droit de suspendre ou de résilier votre accès au Service si vous les enfreignez de manière substantielle, de vous demander le remboursement de tous les coûts que nous engageons du fait de votre violation, et de divulguer des informations aux autorités répressives comme requis ou comme nous le jugeons raisonnablement nécessaire.
+
+      ## 8. Exclusion de garantie
+
+      Bien que nous nous efforcions de maintenir le Service disponible 24 heures sur 24, nous ne garantissons pas sa disponibilité et ne serons pas responsables si, pour quelque raison que ce soit, le Service est indisponible à un moment ou pendant une période quelconque.
+
+      L'accès au Service peut être suspendu temporairement et sans préavis en cas de panne du système, de maintenance ou de réparation, ou pour des raisons indépendantes de notre volonté.
+
+      Nous ne garantissons pas l'exactitude et l'exhaustivité du contenu de la plateforme. Nous pouvons modifier le contenu de la plateforme, ou les fonctionnalités du Service, à tout moment et sans préavis. Les capacités actuelles du Service, avec leurs dates, sont publiées sur la page des faits.
+
+      Nous fournissons le Service avec un soin et une compétence raisonnables. Le Service est fourni « en l'état » et, sauf les garanties contenues dans ces Conditions, dans la mesure maximale permise par la loi, nous excluons toutes déclarations, garanties, conditions et autres stipulations (y compris, sans s'y limiter, les conditions de qualité satisfaisante et d'adéquation à un usage particulier).
+
+      ## 9. Responsabilité
+
+      Nous ne sommes partie à aucune transaction, autre relation ou litige entre vous et les Acheteurs de billets, ou entre vous et les participants à l'événement. Nous ne filtrons pas les Acheteurs de billets à l'avance et ne sommes pas responsables des transactions frauduleuses des Acheteurs de billets. Nous excluons toute responsabilité découlant des mesures que nous pouvons prendre en réponse à des violations de nos normes de contenu acceptable et de ces Conditions. Vous vous engagez à nous garantir, ainsi que nos dirigeants, administrateurs et partenaires, contre tout coût, réclamation ou demande, y compris les frais juridiques raisonnables :
+
+      - en lien avec tout litige avec un ou plusieurs de vos Acheteurs de billets, ou votre relation avec les Acheteurs de billets et les participants à l'événement ;
+      - formulés par un tiers en raison de Votre Contenu ou de votre utilisation du Service, ou en découlant. Vous êtes seul responsable de vos actions lors de l'utilisation du Service.
+
+      Notre responsabilité totale envers vous pour toutes les autres pertes découlant de la fourniture du Service ou s'y rapportant, que ce soit en matière contractuelle, délictuelle (y compris la négligence), de violation d'une obligation légale ou autre, est limitée à 50,00 USD.
+
+      Rien dans ces Conditions ne vise à limiter ou exclure les droits légaux des consommateurs.
+
+      ## 10. Droit applicable et juridiction
+
+      Ces Conditions sont régies et interprétées conformément au droit de la République d'Estonie et au droit applicable de l'Union européenne.
+
+      Tout litige relatif à ces Conditions relève de la compétence exclusive des tribunaux d'Estonie.
+
+      ## 11. Paiements en retard
+
+      L'accès à la plateforme, à ses applications et services est subordonné à l'absence de paiements en retard sur les factures émises. Si une facture est en retard, l'accès aux applications et services peut être restreint. L'accès est rétabli après le paiement de toutes les factures et en l'absence de toute dette.
+
+      Les pénalités pour paiements en retard sont appliquées comme indiqué sur la facture.
+
+      ## 12. Données personnelles des Acheteurs de billets
+
+      Vous êtes le responsable du traitement des données personnelles de vos Acheteurs de billets. Nous traitons ces données pour votre compte, en tant que sous-traitant, aux fins de vendre et de livrer les billets, de faire entrer les Acheteurs de billets à la porte et de les informer des changements de vos séances, comme décrit dans notre politique de confidentialité, qui fait partie de ces Conditions. Vous êtes responsable d'informer vos Acheteurs de billets du traitement et de vos propres conditions de vente. Vous ne devez pas utiliser les données des Acheteurs de billets exportées du Service à des fins sans rapport avec vos événements sans base légale qui vous soit propre.
+
+      ## 13. Nos coordonnées
+
+      ArenaSoldOut.com est une marque d'ABH TEAM OÜ, qui détient et exploite la plateforme et ce site web.
+
+      Nous sommes inscrits au registre du commerce estonien sous le numéro 14162982, et notre siège social et lieu d'activité se situe à l'adresse suivante :
+
+      Narva mnt 5a, Kesklinna district,
+      Tallinn city, Harju county,
+      10117 Estonia.
+
+      La version en ligne du registre se trouve sur https://www.inforegister.ee/
+
+      Vous pouvez nous contacter :
+
+      - par e-mail, à hello@arenasoldout.com ;
+      - dans le chat Telegram et le bot Telegram indiqués sur la page de contact ;
+      - avec le formulaire de candidature de ce site web ;
+      - par courrier, à l'adresse indiquée ci-dessus.

@@ -1,0 +1,115 @@
+title: "Tarifs : par billet, sans abonnement"
+description: "Commission par billet vendu, sans abonnement. Payez après l'événement ou achetez des crédits à l'avance. Tarifs réduits pour les salles. Invitations gratuites."
+h1: Par billet. Sans abonnement.
+lead: Vous versez à ArenaSoldOut.com une commission de plateforme par billet vendu. Paiement à l'usage après l'événement, ou achat de crédits à l'avance pour payer moins par billet. Les frais d'encaissement par carte sont réglés à votre propre prestataire de paiement, selon ses conditions.
+sections:
+  - type: pricing
+    id: plans
+    planBullets:
+      - "**{seated}** par billet avec une place choisie sur le plan de salle"
+      - "Invitations et billets **gratuits** pour des événements payants : aucune commission"
+      - "Les **crédits** réduisent la commission par billet, voir ci-dessous"
+    cta: { label: Commencer à vendre, href: /start }
+    buyCredits: { label: Acheter des crédits, href: "#packages" }
+    plans:
+      currency: "Afficher les prix en"
+      payg:
+        name: Paiement à l'usage
+        text: Un forfait simple par billet vendu, payé après l'événement.
+        bullets:
+          - "**{seated}** par billet avec une place choisie sur le plan de salle"
+          - "Facturation après l'événement, par virement bancaire"
+          - "Sans abonnement, sans contrat"
+      upfront:
+        name: Payer à l'avance avec des crédits
+        text: "Achetez des crédits à l'avance et payez jusqu'à {saving}% de moins sur chaque billet."
+        from: à partir de
+        bullets:
+          - "**{fromSeated}** par billet avec place"
+          - "Les crédits n'expirent jamais ; rechargez quand vous voulez"
+          - "Les ventes ne s'arrêtent jamais : si les crédits sont épuisés, le reste est facturé au tarif du paiement à l'usage"
+      perks:
+        - { big: "50%", title: Associations caritatives enregistrées, text: "50% de remise sur notre commission. Écrivez-nous et nous l'activons." }
+        - { big: "Gratuit", title: Invitations, text: "Aucune commission sur les invitations et les billets gratuits pour des événements payants." }
+        - { big: "Gratuit", title: Plan de salle, text: "Nous dessinons votre plan à partir d'un PDF, d'une photo de croquis ou d'un tableau de rangs et de places." }
+        - { big: "{lowPercent}%", title: "Billets jusqu'à {lowMax}", text: "Pour les événements où chaque billet coûte {lowMax} ou moins. [Comment ça marche](#low-price)" }
+      brand: "Les tarifs supposent la ligne **Billets : ArenaSoldOut.com** avec un lien vers nous sur votre page d'événement ; le widget de billetterie l'affiche par défaut. Pour vendre sans elle, la marque blanche coûte **€45 par mois par marque ou salle dans les pays de l'UE** et **US$45 par mois par marque ou salle dans tous les autres pays**. [Conditions détaillées →](/pricing/terms)"
+    currencyNote: "Commission en **dollars US** pour tous les pays hors UE, y compris les pays européens hors UE, l'Asie et le Moyen-Orient, et en **euros** pour les salles des pays de l'UE. Le dollar US sert de base ; les prix en euros sont les prix en dollars au taux de la BCE. Il s'agit uniquement de notre commission : les billets sont vendus dans la devise de votre compte de paiement. Montants hors TVA."
+    packages:
+      title: Achetez des crédits à l'avance, payez moins par billet
+      text: "Vous achetez un pack de crédits une fois ; chaque billet vendu prélève sa commission sur vos crédits, au tarif de ce pack. Les crédits n'expirent jamais et servent uniquement à payer nos services. Si les crédits sont épuisés en cours de vente, les ventes continuent : les billets restants sont facturés au tarif du paiement après l'événement."
+      cols: { name: Pack de crédits, prepay: Prix, plain: "Commission, sans place", seated: "Commission, avec place", plainCount: "Billets sans place", seatedCount: "Ou billets avec place", saving: "Économie par rapport au paiement après l'événement", buy: Acheter }
+      buy: { label: Acheter, currency: Payer en, none: Parlez-nous, noneHref: /contact, note: "Au paiement, Stripe demande l'adresse e-mail avec laquelle votre organisation est enregistrée sur ArenaSoldOut.com. Saisissez exactement cette adresse : les crédits sont ajoutés à l'organisation à laquelle elle appartient. Pas encore d'organisation ? Saisissez l'adresse avec laquelle vous vous inscrirez, et les crédits y seront rattachés." }
+      note: "Vous pouvez acheter des packs de crédits aussi souvent que vous le souhaitez ; un billet prélève sa commission sur le pack dont il est payé. Vous pouvez activer une recharge automatique. Pour plus de 5 000 billets par an : conditions individuelles, écrivez-nous."
+    lowPrice:
+      title: "Événements où chaque billet coûte {lowMax} ou moins"
+      text: "{lowPercent}% du prix du billet, au minimum {lowMin} et au maximum {lowCap} par billet ; {lowSeat} de plus pour un billet avec place. Pour les soirées, les courses, les marathons, les fêtes d'enfants, les excursions. Cela s'applique à l'événement entier, et seulement si **aucun billet d'aucune catégorie ni d'aucun palier de prix**, y compris les paliers ajoutés plus tard, ne coûte plus de {lowMax} avant codes promo. Un seul billet au-dessus, et le tarif standard s'applique à tous les billets de l'événement, y compris les moins chers."
+      example: "Commission par billet, paiement après l'événement :"
+      cols: { price: Prix du billet, plain: Commission, seated: Avec place }
+    venues:
+      title: Salles permanentes
+      text: "Théâtres, clubs, stades, cirques et autres lieux qui organisent eux-mêmes des événements, toute l'année ou par saison : **{percent}% du prix du billet** (après codes promo, hors frais de service), au maximum **{cap}** par billet, identique avec et sans place. Facturation mensuelle. Aucune commission sur les invitations. Notre équipe active le statut de salle."
+      example: "Un billet à {ex25} coûte {ex} de commission ; le plafond de {cap} est atteint pour un prix de billet de {capAt}."
+      cta: { label: Parlez-nous, href: /contact }
+    calculator:
+      aria: Calculateur de commission
+      region: Pays de la salle
+      regionEu: UE (EUR)
+      regionWorld: Autres pays (USD)
+      price: Prix du billet de cette catégorie
+      maxPrice: Prix le plus élevé d'un billet de l'événement
+      quantity: Billets de cette catégorie
+      seating: Place choisie sur le plan
+      result: Commission, payée après l'événement
+      button: Calculer le prix
+      hint: "Le résultat se met à jour pendant la saisie. La commission dépend du nombre de billets et des places, pas du prix du billet, sauf pour les événements où chaque billet coûte US$10 ou moins. C'est le tarif du paiement après l'événement ; l'option avec crédits est affichée en dessous."
+      sales: vos ventes {net}, frais d'encaissement non inclus
+      needMax: Saisissez le prix de billet le plus élevé de l'événement pour voir la commission.
+      maxBelowPrice: Le prix le plus élevé de l'événement ne peut pas être inférieur au prix de ce billet.
+      lowRate: "Chaque billet coûte {max} ou moins, donc {percent}% s'applique, au minimum {min} et au maximum {cap} par billet."
+      package: "Le pack de crédits {name} ({prepay}) couvre cette vente : {cost} pour ces billets, {left} restent sur votre solde pour les prochains événements."
+      noPackage: "Plus de billets que n'en couvre le plus grand pack de crédits : écrivez-nous pour des conditions de volume."
+    note: "Vous payez après l'événement par virement bancaire. Pour les événements en vente pendant plusieurs mois et pour les salles permanentes, nous facturons chaque mois. Le paiement après l'événement est ouvert aux organisations confirmées sur la plateforme. Conditions de volume et conditions individuelles sur demande."
+    terms: { label: Conditions détaillées →, href: /pricing/terms }
+
+  - type: faq
+    id: questions
+    eyebrow: Questions d'argent
+    title: Combien me coûte un billet, exactement ?
+    items:
+      - q: Combien coûte un billet avec place ?
+        a: "Avec paiement après l'événement : US$1,09 hors UE, €0,97 dans l'UE. Un billet sans place coûte US$0,59 ou €0,53. Le plan de salle lui-même ne coûte rien : nous le dessinons gratuitement à partir d'un PDF, d'une photo de croquis à la main ou d'un tableau de rangs et de places. Avec des crédits, la commission est plus basse, et une place ajoute US$0,35 (€0,31) au tarif des crédits."
+      - q: Comment fonctionnent les crédits ?
+        a: "Vous achetez un pack de crédits une fois. Chaque billet vendu prélève sa commission sur vos crédits au tarif du pack, jusqu'à épuisement. Les crédits n'expirent jamais, peuvent être rechargés à tout moment et servent uniquement à payer nos services : ils ne peuvent ni être retirés ni être transférés."
+      - q: Que se passe-t-il si les crédits sont épuisés en cours de vente ?
+        a: Les ventes ne s'arrêtent pas. Les billets que vos crédits n'ont pas couverts passent dans la facture habituelle au tarif du paiement après l'événement.
+      - q: Existe-t-il une recharge automatique ?
+        a: Oui. Vous pouvez l'activer, et lorsque vos crédits passent sous votre seuil, le pack suivant est acheté pour vous.
+      - q: Où va l'argent de l'acheteur ?
+        a: "Directement sur votre propre compte de paiement, à chaque commande. ArenaSoldOut.com ne détient jamais de fonds. L'acheteur paie le prix du billet et, si vous en ajoutez, vos frais de service."
+      - q: Quand dois-je payer ArenaSoldOut.com ?
+        a: "Après l'événement, par virement bancaire, pour les billets vendus. Pour les événements en vente pendant plusieurs mois et pour les salles permanentes, une fois par mois. Les crédits se paient à l'achat."
+      - q: Et les frais d'encaissement par carte ?
+        a: L'encaissement par carte est un contrat entre vous et votre prestataire de paiement, selon les conditions de ce dernier. Il ne fait pas partie de notre commission et nous n'y ajoutons rien.
+      - q: Dois-je mentionner ArenaSoldOut.com sur mon site ?
+        a: "Les tarifs supposent que la page de l'événement nomme ArenaSoldOut.com comme opérateur de billetterie, avec un lien vers nous ; le widget de billetterie affiche cette ligne par défaut. Pour vendre sans notre nom, la marque blanche coûte €45 par mois par marque ou salle dans les pays de l'UE et US$45 par mois par marque ou salle dans tous les autres pays, facturée au prorata des jours pour un mois incomplet. Les [conditions détaillées](/pricing/terms) expliquent ce qu'est une marque et ce que la marque blanche masque."
+      - q: Existe-t-il une remise pour les associations caritatives ?
+        a: "Oui. Les associations caritatives enregistrées paient 50% de notre commission, en paiement à l'usage comme avec des crédits. Écrivez-nous depuis la [page de contact](/contact) et nous l'activons pour votre organisation."
+      - q: Les invitations sont-elles gratuites ?
+        a: Oui. Les invitations et les billets gratuits pour des événements payants ne supportent aucune commission.
+      - q: Que devient la commission en cas de remboursement d'un billet ou de report de la date ?
+        a: "L'acheteur est remboursé par vous. La commission d'une vente déjà réalisée reste due, et nous ne facturons pas de commission distincte pour le traitement du remboursement, le report de la date ou les e-mails aux acheteurs. Les conditions propres au prestataire de paiement relèvent du prestataire."
+      - q: Et si j'annule l'événement ?
+        a: "La commission déjà facturée n'est pas restituée en argent. Écrivez-nous au sujet de votre cas avant l'annulation de l'événement."
+      - q: Un de mes billets coûte plus de US$10 (€10 dans l'UE), les autres sont bon marché. Quel tarif s'applique ?
+        a: "Le tarif standard, pour tous les billets de l'événement : le tarif réduit exige que chaque billet de chaque catégorie et de chaque palier de prix coûte US$10 ou moins (€10 dans l'UE). Un billet à US$5 à côté d'un billet à US$25 est au tarif standard."
+      - q: Je possède une salle et j'organise de nombreux événements par mois. Existe-t-il une autre offre ?
+        a: "Oui. Les propriétaires de salles permanentes (théâtres, clubs, stades, cirques et autres lieux qui organisent eux-mêmes des événements, toute l'année ou par saison) paient {percent}% du prix du billet, calculé après codes promo et hors vos frais de service. La commission par billet est plafonnée à US$1,09 (€1,09 dans l'UE), identique avec et sans place. Les invitations ne supportent aucune commission. Nous facturons chaque mois. Notre équipe active le statut de salle : écrivez-nous depuis la [page de contact](/contact). Les conditions complètes figurent dans les [conditions détaillées](/pricing/terms)."
+
+  - type: cta
+    id: start
+    title: Commencez à vendre dès aujourd'hui
+    text: "Créez l'événement, connectez votre compte de paiement, partagez le lien. Un événement sans plan de salle est en vente en 10 minutes ; un plan de salle, nous le dessinons pour vous, gratuitement."
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

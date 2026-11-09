@@ -1,0 +1,38 @@
+title: "Billetterie de festival : plusieurs jours et catégories"
+description: "Billetterie de festival : pass jour et complet, catégories à quotas, chaînes de places invendues, early bird par date, contrôle à chaque entrée."
+h1: Festivals
+lead: Pass jour et pass complet, nombreuses catégories avec quotas, early bird qui s'active à une date, et une chaîne qui transmet les places invendues d'une catégorie à la suivante. Contrôle à chaque entrée avec l'application.
+related:
+  - { label: Codes promo et fenêtres de prix, href: /product/pricing-tools }
+  - { label: Concerts, href: /solutions/concerts }
+  - { label: Fiabilité, href: /product/reliability }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Pour les festivals
+    title: Qu'est-ce qui compte pour un festival ?
+    items:
+      - { title: Catégories avec quotas, text: "Jour un, jour deux, pass complet, VIP, camping : chacun avec son prix, son quota et sa fenêtre de vente.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: Chaînes de catégories, text: "Quand l'early bird est épuisé, ses places invendues passent à la catégorie suivante au lieu de bloquer les ventes.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: Entrées, text: "Application de contrôle pour iOS et Android à chaque porte ; billets de partenaires d'autres systèmes acceptés aussi.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
+      - { title: Charge, text: "800 commandes par minute avec 1 000 acheteurs simultanés lors des tests de charge ; la minute d'ouverture des ventes est couverte.", link: { label: Fiabilité →, href: /product/reliability } }
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: Que demandent d'abord les organisateurs de festivals ?
+    items:
+      - q: Un acheteur peut-il combiner un pass jour et le camping dans une commande ?
+        a: Oui, plusieurs catégories d'un même événement dans un seul paiement.
+      - q: Peut-on changer les prix pour la dernière semaine ?
+        a: Oui. Les fenêtres de prix s'activent par date et heure ; les paliers de quantité ouvrent le prix suivant quand un palier est épuisé.
+      - q: Nous avons des billets gratuits pour les sponsors. Comment faire ?
+        a: Billets gratuits et invitations depuis l'Event Center, sans frais pour la plateforme, contrôlés comme n'importe quel billet.
+      - q: Combien ça coûte ?
+        a: "Une commission fixe par billet vendu, facturée après l'événement ou prélevée sur vos crédits, mensuellement pour les événements en vente pendant des mois ; voir les [tarifs](/pricing)."
+  - type: cta
+    id: start
+    title: Commencez à vendre dès aujourd'hui
+    text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

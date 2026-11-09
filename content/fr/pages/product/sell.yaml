@@ -1,0 +1,69 @@
+title: "Vendez des billets sur votre site ou sur une page hébergée"
+description: "Widget de billetterie en trois lignes, plugin WordPress ou page de vente hébergée. Les acheteurs paient sur votre propre compte de paiement."
+h1: Votre site, ou le nôtre. L'argent vous revient dans les deux cas.
+lead: Deux façons de vendre, un seul Event Center derrière. Intégrez le widget sur le site que vous avez déjà, ou partagez une page hébergée que nous créons en quelques minutes. Chaque commande arrive sur votre propre compte de paiement.
+related:
+  - { label: Des plans de salle fidèles à la salle, href: /product/seating, text: "Envoyez un PDF, un croquis ou un tableau de rangs ; nous dessinons le plan gratuitement." }
+  - { label: Paiements sur votre propre compte, href: /payments, text: "Prestataires par pays, statuts, comment connecter." }
+  - { label: Sites WordPress, href: /solutions/wordpress, text: "Plugin avec commandes WooCommerce, deux clients ont migré depuis l'ancien ArenaSoldOut.com sans interruption." }
+sections:
+  - type: ways
+    id: ways
+    eyebrow: Où vous vendez
+    title: Quelle option convient à mon événement ?
+    items:
+      - title: Vous avez un site
+        text: "Votre site est la caisse. Intégrez le widget de billetterie sur n'importe quelle page : WordPress, Tilda, Wix, Webflow ou code sur mesure. Les acheteurs ne quittent jamais votre domaine."
+        bullets:
+          - Widget sur n'importe quel site, trois lignes de code
+          - Plugin WordPress avec commandes WooCommerce
+          - Vos couleurs, vos polices, votre langue
+      - title: Vous n'avez pas de site
+        text: "Nous hébergeons la page de vente : tickets.arenasoldout.com/your-name/your-event. Partagez un seul lien sur les réseaux sociaux, les messageries et sur l'affiche."
+        bullets:
+          - Une page par organisateur et par événement
+          - Une page distincte pour chaque promoteur
+          - Prête en quelques minutes, sans travail de design
+          - Liens vers vos revendeurs partenaires sur la même page
+  - type: cards
+    id: page
+    eyebrow: Votre page de vente
+    title: Que fait d'autre ma page de vente ?
+    lead: "Tout ce qui suit fonctionne sur la page de votre événement sur la plateforme et dans le widget. Réglez-le dans l'Event Center."
+    items:
+      - title: Contenus de l'événement sur votre page de vente
+        text: "Ajoutez des contenus à votre événement sur votre page de vente de la plateforme, si vous n'avez pas de site : textes, photos et vidéos."
+      - title: Des descriptions soignées
+        text: "Titres, listes, liens et citations dans la description de l'événement sur votre page de vente. Un réseau de neurones met en forme un texte brut pour vous en un clic."
+      - title: '« Prévenez-moi à l''ouverture des ventes »'
+        text: "Les acheteurs s'abonnent sur la page de votre événement et reçoivent un e-mail, dans leur langue, dès l'ouverture des ventes."
+      - title: Rappels de paniers abandonnés
+        text: "Un acheteur qui a réservé des billets sans payer reçoit un e-mail de rappel. Dans de nombreux cas, ces rappels font nettement progresser les ventes. Vous pouvez proposer une remise en échange du consentement à votre lettre d'information."
+      - title: Parrainage
+        text: "Chaque acheteur reçoit un lien personnel. L'ami obtient une remise, et l'acheteur qui a amené l'ami obtient un cashback sur sa carte après l'événement de l'ami."
+      - title: Liens courts et QR codes pour l'impression
+        text: "Un lien court go.arenasoldout.com avec un QR code pour affiches, flyers et réseaux sociaux : PNG, SVG, ou un encart PDF prêt en A5 et A6 pour l'impression. Vous pouvez changer la destination du lien après l'impression. Chaque commande est rattachée à son lien, donc vous voyez quelle affiche a vendu."
+      - title: Une boutique à côté de vos billets
+        text: "Vendez des produits avec les billets : vin, produits dérivés, coffrets cadeaux. Une vitrine avec variantes, panier, livraison par coursier, remboursements et e-mails. Notre premier client boutique vend déjà ainsi."
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: Que fait le widget sur mon site ?
+    items:
+      - q: Comment mettre le widget sur mon site ?
+        a: "Deux lignes de HTML : une balise script et l'élément <arena-tickets> avec votre jeton de flux. Le widget affiche les séances, le plan de salle ou les catégories, le panier et le paiement. Les détails et le code sont sur la [page développeurs](/developers)."
+      - q: Ressemble-t-il à mon site ?
+        a: Oui. Le widget lit quatre variables CSS de votre page (couleur d'accent, rayon, arrière-plan, bordure) et suit la langue de l'acheteur. Pas d'iframe, pas de second design.
+      - q: Où l'acheteur paie-t-il ?
+        a: "Dans la page de paiement hébergée de votre propre prestataire de paiement, sur votre propre compte. ArenaSoldOut.com crée la commande, retient les places et émet le billet ; il ne détient jamais l'argent. Voir les [paiements](/payments)."
+      - q: Puis-je aussi vendre via des partenaires ?
+        a: Oui. Chaque promoteur obtient une page avec son propre lien, et la page hébergée peut lister vos revendeurs partenaires. Les ventes de tous les canaux apparaissent dans un seul Event Center.
+      - q: Et si je migre mon site vers une autre plateforme ?
+        a: Rien ne change pour les acheteurs. Le widget est un composant web ; il suit vos pages, et la page hébergée continue de fonctionner en solution de secours.
+  - type: cta
+    id: start
+    title: Commencez à vendre dès aujourd'hui
+    text: "Créez l'événement, connectez votre compte de paiement, partagez le lien. Un événement sans plan de salle est en vente en 10 minutes ; un plan de salle, nous le dessinons pour vous, gratuitement."
+    primary: { label: Créer votre événement, href: /start#create }
+    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."

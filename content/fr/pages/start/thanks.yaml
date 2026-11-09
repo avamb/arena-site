@@ -1,0 +1,19 @@
+title: "Merci, nous avons votre candidature"
+description: "L'équipe lit chaque candidature en personne et répond sous un jour ouvré."
+h1: Merci
+lead: L'équipe lit chaque candidature en personne et répond sous un jour ouvré, par e-mail ou dans la messagerie que vous avez indiquée.
+sections:
+  - type: cards
+    id: next
+    eyebrow: En attendant
+    title: Que puis-je faire maintenant ?
+    items:
+      - title: Préparez l'affiche et les prix
+        text: Le nom de l'événement, les dates, les prix des billets et une image d'affiche sont tout ce qu'il faut pour mettre en vente un événement sans plan de salle.
+        link: { label: Comment ça marche →, href: /#how }
+      - title: Retrouvez les clés de votre compte de paiement
+        text: Si vous avez déjà un compte chez un prestataire de votre pays, les clés d'API se trouvent dans son tableau de bord. Sinon, nous en ouvrons un avec vous.
+        link: { label: Paiements →, href: /payments }
+      - title: Essayez le bot Telegram
+        text: Le bot crée un événement à partir d'une photo d'affiche et vous demande de confirmer les dates, les prix et la salle.
+        link: { label: Ouvrir le bot Telegram →, href: https://t.me/EventsCentrBot }

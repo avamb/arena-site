@@ -1,0 +1,40 @@
+title: "Bot organisateur Telegram : un événement depuis une affiche"
+description: "Créez un événement depuis une affiche : le bot lit, vous confirmez, ajoutez dates et équipe. Chaque vente arrive dans le groupe Telegram en quelques secondes."
+h1: Gérez l'événement depuis Telegram
+lead: L'Event Center vit aussi dans le bot. Une photo de l'affiche suffit pour commencer ; chaque lecture est un bouton à confirmer, rien n'est publié sans vous.
+related:
+  - { label: Event Center dans le navigateur, href: /#center }
+  - { label: Vendre sur votre site ou sur le nôtre, href: /product/sell }
+  - { label: Commencer à vendre, href: /start }
+sections:
+  - type: steps
+    id: how
+    eyebrow: Comment ça marche
+    title: Que fait le bot ?
+    items:
+      - title: Lit l'affiche
+        text: Envoyez une photo. Le bot lit le nom, les dates, la salle et les prix, et affiche chaque valeur sous forme de bouton à confirmer ou à modifier.
+      - title: Construit l'événement
+        text: Les séances, les catégories, les prix et l'affiche entrent dans l'événement. Ajoutez des membres de l'équipe, obtenez un exemple de billet avec filigrane, publiez quand tout est prêt.
+      - title: Signale chaque vente
+        text: Chaque vente et chaque remboursement arrive dans votre groupe d'organisateur en quelques secondes, avec le nom de l'acheteur, les places, le montant et les coordonnées.
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: Telegram est-il le seul moyen ?
+    items:
+      - q: Ai-je besoin de Telegram pour utiliser ArenaSoldOut.com ?
+        a: "Non. Le même Event Center fonctionne dans le navigateur sur ArenaSoldOut.com, et l'équipe peut tout configurer pour vous. Telegram est une voie parmi d'autres, pour les organisateurs qui vivent dans la messagerie."
+      - q: Quelles langues parle le bot ?
+        a: Anglais, russe et espagnol aujourd'hui ; d'autres suivent selon les langues du site.
+      - q: Mon équipe peut-elle l'utiliser ?
+        a: Oui. Ajoutez des membres de l'équipe avec des rôles ; le groupe de ventes peut inclure tous ceux qui doivent voir les commandes.
+      - q: Fonctionne-t-il avec le plan de salle ?
+        a: Le bot crée des événements avec des catégories et des dates ; un plan de salle est intégré par l'équipe et rattaché à l'événement.
+  - type: cta
+    id: start
+    title: Ouvrez le bot
+    text: Envoyez une affiche ou dites simplement bonjour. L'équipe répond dans la même conversation.
+    primary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
+    secondary: { label: Commencer sur le site à la place, href: /start }
+    note: Les événements sans plan de salle sont en vente dès aujourd'hui.
