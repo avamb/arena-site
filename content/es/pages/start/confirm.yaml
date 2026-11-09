@@ -1,0 +1,34 @@
+title: "Confirma tu correo"
+description: "Confirmación de tu dirección de correo para la solicitud de organizador."
+h1: Confirma tu correo
+lead: Un momento, estamos comprobando el enlace.
+sections:
+  - type: onboarding
+    id: form
+    mode: confirm
+    ui:
+      noscript: "El formulario de solicitud necesita JavaScript. Escríbenos por Telegram y te configuraremos a mano."
+      optional: "(opcional)"
+      url_list_hint: "Un enlace por línea"
+      sending: "Enviando…"
+      email: "Correo"
+      err_required: "Este campo es obligatorio"
+      err_invalid: "Revisa este valor"
+      err_too_long: "Es demasiado largo"
+      err_not_allowed: "Todavía no aceptamos solicitudes de este país"
+      e_generic: "Algo salió mal. Inténtalo de nuevo en un minuto o escríbenos por Telegram."
+      e_network: "Sin conexión con el servidor. Revisa tu internet e inténtalo de nuevo."
+      e_unavailable: "El formulario no está disponible ahora. Inténtalo de nuevo en un minuto o escríbenos por Telegram."
+      e_session: "Tu borrador ya no está disponible. Empieza de nuevo, lleva un minuto."
+      e_incomplete: "Faltan algunas respuestas obligatorias. Están marcadas arriba."
+      e_email_not_confirmed: "Confirma primero tu correo: abre el enlace del mensaje que te enviamos y vuelve a pulsar Enviar."
+      e_rate_limited: "Demasiados intentos. Espera unos minutos e inténtalo de nuevo."
+      e_turnstile_failed: "La comprobación antispam no se superó. Espera un segundo a que termine e inténtalo de nuevo."
+      e_captcha_not_configured: "El formulario no está disponible ahora. Escríbenos por Telegram."
+      e_captcha_unavailable: "No se pudo ejecutar la comprobación antispam. Inténtalo de nuevo en un minuto."
+      e_locked: "Esta solicitud ya se envió y no se puede editar."
+      confirming: "Confirmando tu correo…"
+      confirmed: "Tu correo está confirmado. Tu borrador te está esperando."
+      go_on: "Continuar la solicitud"
+      confirm_failed: "Este enlace ha caducado o ya se usó. Podemos enviarte uno nuevo."
+      send_new_link: "Envíame un enlace nuevo"

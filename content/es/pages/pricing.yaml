@@ -1,0 +1,115 @@
+title: "Precios: por entrada, sin suscripción"
+description: "Comisión por entrada, sin suscripción. Paga tras el evento o compra créditos y paga menos. Tarifas menores para recintos y eventos baratos. Invitaciones gratis."
+h1: Por entrada. Sin suscripción.
+lead: Pagas a ArenaSoldOut.com una comisión de plataforma por cada entrada vendida. Pago por uso tras el evento, o compra créditos por adelantado y paga menos por entrada. La gestión de cobros con tarjeta se paga a tu propio proveedor de pagos, según sus condiciones.
+sections:
+  - type: pricing
+    id: plans
+    planBullets:
+      - "**{seated}** por entrada con asiento elegido en el plano del recinto"
+      - "**Gratis** invitaciones y entradas gratuitas a eventos de pago: sin comisión"
+      - "Los **créditos** bajan la comisión por entrada, mira más abajo"
+    cta: { label: Empezar a vender, href: /start }
+    buyCredits: { label: Comprar créditos, href: "#packages" }
+    plans:
+      currency: "Mostrar precios en"
+      payg:
+        name: Pago por uso
+        text: Una tarifa fija y sencilla por entrada vendida, que se paga después del evento.
+        bullets:
+          - "**{seated}** por entrada con asiento elegido en el plano del recinto"
+          - "Se factura después del evento, por transferencia bancaria"
+          - "Sin suscripción, sin contrato"
+      upfront:
+        name: Pago anticipado con créditos
+        text: "Compra créditos por adelantado y paga hasta un {saving}% menos por cada entrada."
+        from: desde
+        bullets:
+          - "**{fromSeated}** por entrada con asiento"
+          - "Los créditos no caducan; recarga cuando quieras"
+          - "Las ventas nunca se detienen: si se acaban los créditos, el resto se factura al precio de pago por uso"
+      perks:
+        - { big: "50%", title: Organizaciones benéficas registradas, text: "50% de descuento en nuestra comisión. Escríbenos y lo activamos." }
+        - { big: "Gratis", title: Invitaciones, text: "Sin comisión por invitaciones ni entradas gratuitas a eventos de pago." }
+        - { big: "Gratis", title: Plano de asientos, text: "Dibujamos tu plano a partir de un PDF, una foto de un boceto o una tabla de filas y asientos." }
+        - { big: "{lowPercent}%", title: "Entradas de hasta {lowMax}", text: "Para eventos en los que cada entrada cuesta {lowMax} o menos. [Cómo funciona](#low-price)" }
+      brand: "Los precios suponen la línea **Tickets: ArenaSoldOut.com** con un enlace a nosotros en la página de tu evento; el widget de entradas la muestra por defecto. Para vender sin ella, el white label cuesta **€45 al mes por marca o recinto en países de la UE** y **US$45 al mes por marca o recinto en todos los demás países**. [Condiciones detalladas →](/pricing/terms)"
+    currencyNote: "Comisión en **dólares estadounidenses** para todos los países fuera de la UE, incluidos los países europeos que no pertenecen a la UE, Asia y Oriente Medio, y en **euros** para recintos de países de la UE. El dólar es la base; los precios en euros son los precios en dólares al tipo del BCE. Esta es solo nuestra comisión: las entradas se venden en la moneda de tu cuenta de pagos. Los importes no incluyen IVA."
+    packages:
+      title: Compra créditos por adelantado y paga menos por entrada
+      text: "Compras un paquete de créditos una vez; cada entrada vendida toma su comisión de tus créditos, a la tarifa de ese paquete. Los créditos no caducan y se gastan solo en nuestros servicios. Si los créditos se acaban a mitad de las ventas, las ventas siguen: las entradas restantes se facturan al precio de pago tras el evento."
+      cols: { name: Paquete de créditos, prepay: Precio, plain: "Comisión, sin asiento", seated: "Comisión, con asiento", plainCount: "Entradas sin asiento", seatedCount: "O entradas con asiento", saving: "Ahorro frente a pagar después", buy: Comprar }
+      buy: { label: Comprar, currency: Pagar en, none: Habla con nosotros, noneHref: /contact, note: "En el pago, Stripe pide el correo con el que tu organización está registrada en ArenaSoldOut.com. Introduce exactamente ese correo: los créditos se añaden a la organización a la que pertenece. ¿Aún no tienes organización? Introduce el correo con el que te registrarás y los créditos quedarán asociados a él." }
+      note: "Los paquetes de créditos se pueden comprar tantas veces como quieras; una entrada toma su comisión del paquete con el que se paga. Puedes activar una recarga automática. Para volúmenes de más de 5.000 entradas al año: condiciones individuales, escríbenos."
+    lowPrice:
+      title: "Eventos en los que cada entrada cuesta {lowMax} o menos"
+      text: "{lowPercent}% del precio de la entrada, como mínimo {lowMin} y como máximo {lowCap} por entrada; {lowSeat} más por una entrada con asiento. Para discotecas, carreras, maratones, fiestas infantiles, excursiones. Se aplica a todo el evento, y solo si **ninguna entrada de ninguna categoría ni tramo de precio**, incluidos los posteriores, cuesta más de {lowMax} antes de los códigos promocionales. Con una sola entrada por encima de ese importe se aplica el precio estándar a todas las entradas del evento, también a las baratas."
+      example: "Comisión por entrada, pago tras el evento:"
+      cols: { price: Precio de la entrada, plain: Comisión, seated: Con asiento }
+    venues:
+      title: Recintos permanentes
+      text: "Teatros, clubes, estadios, circos y otros lugares que organizan eventos por sí mismos, todo el año o por temporada: **{percent}% del precio de la entrada** (después de los códigos promocionales, sin el cargo por servicio), como máximo **{cap}** por entrada, igual con asiento y sin él. Se factura cada mes. Sin comisión por invitaciones. Nuestro equipo activa el estatus de recinto."
+      example: "Una entrada de {ex25} cuesta {ex} de comisión; el tope de {cap} se alcanza con un precio de entrada de {capAt}."
+      cta: { label: Habla con nosotros, href: /contact }
+    calculator:
+      aria: Calculadora de comisión
+      region: País del recinto
+      regionEu: UE (EUR)
+      regionWorld: Otros países (USD)
+      price: Precio de la entrada de esta categoría
+      maxPrice: Precio más alto de cualquier entrada del evento
+      quantity: Entradas de esta categoría
+      seating: Asiento elegido en el plano
+      result: Comisión, pagadera tras el evento
+      button: Calcular el precio
+      hint: "El resultado se actualiza mientras escribes. La comisión depende del número de entradas y de los asientos, no del precio de la entrada, salvo en los eventos en los que cada entrada cuesta US$10 o menos. Este es el precio si pagas tras el evento; la opción de créditos aparece debajo."
+      sales: tus ventas {net}, sin incluir la gestión de cobros
+      needMax: Introduce el precio más alto de una entrada del evento para ver la comisión.
+      maxBelowPrice: El precio más alto del evento no puede ser menor que el precio de esta entrada.
+      lowRate: "Cada entrada cuesta {max} o menos, así que se aplica el {percent}%, como mínimo {min} y como máximo {cap} por entrada."
+      package: "El paquete de créditos {name} ({prepay}) lo cubre: {cost} por estas entradas, y {left} queda en tu saldo para los próximos eventos."
+      noPackage: "Más entradas de las que cubre el paquete de créditos más grande: escríbenos para condiciones por volumen."
+    note: "Pagas después del evento por transferencia bancaria. Para eventos a la venta durante varios meses y para recintos permanentes facturamos cada mes. El pago tras el evento está abierto a organizaciones confirmadas en la plataforma. Condiciones por volumen e individuales bajo petición."
+    terms: { label: Condiciones detalladas →, href: /pricing/terms }
+
+  - type: faq
+    id: questions
+    eyebrow: Preguntas sobre el dinero
+    title: ¿Cuánto me cuesta exactamente una entrada?
+    items:
+      - q: ¿Cuánto cuesta una entrada con asiento?
+        a: "Pagando después del evento: US$1,09 fuera de la UE, €0,97 en la UE. Una entrada sin asiento cuesta US$0,59 o €0,53. El plano de asientos en sí no cuesta nada: lo dibujamos gratis a partir de un PDF, una foto de un boceto a mano o una tabla de filas y asientos. Con créditos la comisión es menor, y un asiento suma US$0,35 (€0,31) a la tarifa de créditos."
+      - q: ¿Cómo funcionan los créditos?
+        a: "Compras un paquete de créditos una vez. Cada entrada vendida toma su comisión de tus créditos a la tarifa del paquete, hasta que se acaban. Los créditos no caducan, se pueden recargar en cualquier momento y se gastan solo en nuestros servicios: no se pueden retirar ni transferir."
+      - q: ¿Qué pasa si los créditos se acaban a mitad de las ventas?
+        a: Las ventas no se detienen. Las entradas que tus créditos no cubrieron pasan a la factura habitual al precio de pago tras el evento.
+      - q: ¿Hay recarga automática?
+        a: Sí. Puedes activarla, y cuando tus créditos bajan de tu umbral se compra el siguiente paquete por ti.
+      - q: ¿Adónde va el dinero del comprador?
+        a: "A tu propia cuenta de pagos, con cada pedido. ArenaSoldOut.com nunca retiene fondos. El comprador paga el precio de la entrada y, si lo añades, tu cargo por servicio."
+      - q: ¿Cuándo pago a ArenaSoldOut.com?
+        a: "Después del evento, por transferencia bancaria, por las entradas vendidas. Para eventos a la venta durante varios meses y para recintos permanentes, una vez al mes. Los créditos se pagan al comprarlos."
+      - q: ¿Y la gestión de cobros con tarjeta?
+        a: Es un contrato entre tú y tu proveedor de pagos, con las condiciones del proveedor. No forma parte de nuestra comisión y no le añadimos nada.
+      - q: ¿Tengo que mencionar ArenaSoldOut.com en mi sitio?
+        a: "Los precios suponen que la página del evento nombra a ArenaSoldOut.com como operador de venta de entradas, con un enlace a nosotros; el widget de entradas muestra esa línea por defecto. Para vender sin nuestro nombre, el white label cuesta €45 al mes por marca o recinto en países de la UE y US$45 al mes por marca o recinto en todos los demás países, cobrado por días en un mes incompleto. Las [condiciones detalladas](/pricing/terms) explican qué es una marca y qué oculta el white label."
+      - q: ¿Hay descuento para organizaciones benéficas?
+        a: "Sí. Las organizaciones benéficas registradas pagan el 50% de nuestra comisión, con pago por uso y con créditos. Escríbenos desde la [página de contacto](/contact) y lo activamos para tu organización."
+      - q: ¿Las invitaciones son gratis?
+        a: Sí. Las invitaciones y las entradas gratuitas a eventos de pago no llevan comisión.
+      - q: ¿Qué pasa con la comisión cuando se reembolsa una entrada o se cambia la fecha?
+        a: "El reembolso al comprador lo haces tú. La comisión de una venta que ya ocurrió se mantiene, y no cobramos una comisión aparte por procesar el reembolso, por cambiar la fecha ni por los correos a los compradores. Las condiciones propias del proveedor de pagos son las del proveedor."
+      - q: ¿Y si cancelo el evento?
+        a: "La comisión ya cobrada no se devuelve en dinero. Escríbenos sobre tu caso antes de cancelar el evento."
+      - q: Una de mis entradas cuesta más de US$10 (€10 en la UE) y las demás son baratas. ¿Qué precio se aplica?
+        a: "El estándar, a todas las entradas del evento: la tarifa menor exige que cada entrada de cada categoría y tramo de precio cueste US$10 o menos (€10 en la UE). Una entrada de US$5 junto a una de US$25 va al precio estándar."
+      - q: Tengo un recinto y organizo muchos eventos al mes. ¿Hay otro trato?
+        a: "Sí. Los propietarios de recintos permanentes (teatros, clubes, estadios, circos y otros lugares que organizan eventos por sí mismos, todo el año o por temporada) pagan el {percent}% del precio de la entrada, calculado después de los códigos promocionales y sin tu cargo por servicio. La comisión por entrada tiene un tope de US$1,09 (€1,09 en la UE), igual con asiento y sin él. Las invitaciones no llevan comisión. Facturamos cada mes. Nuestro equipo activa el estatus de recinto: escríbenos desde la [página de contacto](/contact). Las condiciones completas están en las [condiciones detalladas](/pricing/terms)."
+
+  - type: cta
+    id: start
+    title: Empieza a vender hoy
+    text: "Crea el evento, conecta tu cuenta de pagos, comparte el enlace. Un evento sin plano de asientos sale a la venta en 10 minutos; el plano de asientos lo dibujamos nosotros, sin coste."
+    primary: { label: Crear tu evento, href: /start#create }
+    secondary: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

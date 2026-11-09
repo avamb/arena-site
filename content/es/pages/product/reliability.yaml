@@ -1,0 +1,31 @@
+title: "Fiabilidad: 800 pedidos por minuto, copias nocturnas"
+description: "Pruebas de carga: 800 pedidos por minuto y 1.000 compradores a la vez. Vigilancia con avisos por Telegram, copias cifradas cada noche, Cloudflare por delante."
+h1: ¿Aguantará un estadio?
+lead: Sí. La plataforma se prueba bajo carga, se vigila a todas horas y se copia cada noche. Las cifras de abajo llevan fecha y están en la página de datos, donde se actualizan con cada versión.
+related:
+  - { label: Datos con fechas, href: /facts }
+  - { label: Últimos cambios, href: /changes }
+  - { label: Para desarrolladores, href: /developers }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Fiabilidad
+    title: ¿Qué se ha medido?
+    items:
+      - q: ¿Cuánta carga se ha probado?
+        a: "800 pedidos por minuto con 1.000 compradores en la página al mismo tiempo, en pruebas de carga de septiembre de 2026. La fecha y las cifras están en la [página de datos](/facts)."
+      - q: ¿Qué pasa si algo falla de noche?
+        a: Un sistema de vigilancia comprueba la plataforma de forma continua y avisa al equipo por Telegram antes de que los organizadores lo noten. Cloudflare está delante de cada página y de la API.
+      - q: ¿Se hace copia de mis datos?
+        a: Cada noche, cifrada. Pedidos, compradores, planos de asientos y eventos.
+      - q: ¿Y los bots y las reservas masivas?
+        a: Las reservas de asientos caducan con un temporizador, los pedidos tienen límite de frecuencia y Cloudflare filtra el tráfico abusivo antes de que llegue a la plataforma.
+      - q: ¿Puedo ver el historial de cambios?
+        a: "Sí, cada función que llegó a los organizadores aparece con su fecha en la [página de cambios](/changes)."
+  - type: cta
+    id: start
+    title: Empieza a vender hoy
+    text: Crea el evento, conecta tu cuenta de pagos, comparte el enlace.
+    primary: { label: Crear tu evento, href: /start#create }
+    secondary: { label: Leer los datos, href: /facts }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

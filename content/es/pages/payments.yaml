@@ -1,0 +1,61 @@
+title: "Pagos: tu propia cuenta de pagos, en tu país"
+description: "Los compradores pagan en la cuenta de pagos del propio organizador. Países donde una empresa puede conectar un proveedor de pagos, con métodos y monedas."
+h1: Los compradores pagan en tu propia cuenta de pagos
+lead: Conectas la cuenta que ya tienes, o abres una con un proveedor de tu país. Cada pedido va directamente a ella. ArenaSoldOut.com nunca retiene fondos y nunca toca tus cobros.
+sections:
+  - type: coverage
+    id: countries
+    eyebrow: Países
+    title: ¿En qué países puedo vender entradas?
+    lead: En todos los países donde acepte a tu empresa alguno de los proveedores de pagos de abajo. Organizadores han vendido con ArenaSoldOut.com en {countries} países desde {since}. Si tu entidad legal está registrada en uno de estos países, conectas la cuenta del proveedor y vendes.
+    labels:
+      countries: Países
+      note: Los proveedores añaden países con el tiempo; confirmamos el tuyo antes de que empieces.
+      missing: "¿Tu país no aparece?"
+    cta: { label: Escríbenos, href: /contact }
+
+  - type: providers
+    id: providers
+    eyebrow: Proveedores
+    title: ¿Qué proveedores de pagos funcionan con ArenaSoldOut.com?
+    lead: La lista es la de lo que funciona hoy en producción. Un proveedor se añade cuando su adaptador está en el código, nunca antes.
+    labels:
+      currencies: Monedas
+      methods: Métodos
+      checkout: En el widget
+      statuses:
+        live: Activo
+        api: A través de la API
+        planned: En preparación
+        checkout_yes: "sí, pago alojado"
+        checkout_no: "aún no"
+      methods_map:
+        card: tarjetas
+        apple_pay: Apple Pay
+        google_pay: Google Pay
+        bit: Bit
+        installments: pagos a plazos
+        bank_transfer: transferencia bancaria
+
+  - type: cards
+    id: connect
+    eyebrow: Cómo conectar
+    title: ¿Cómo conecto mi cuenta de pagos?
+    lead: Tres cosas, normalmente en un día.
+    items:
+      - title: Claves en tu propia cuenta
+        text: Creas claves de API en el panel de tu proveedor y las pegas en el Event Center o las envías al equipo. La cuenta sigue siendo tuya; ArenaSoldOut.com solo inicia pagos hacia ella.
+      - title: El dinero va a tu cuenta
+        text: Cada pedido se paga directamente en tu cuenta. Los cobros a tu banco siguen el calendario de tu proveedor. Los reembolsos los decides tú y vuelven al comprador a través de tu proveedor, con cualquier proveedor.
+      - title: Gestión automática de contracargos
+        text: "Cuando un comprador disputa un pago, ArenaSoldOut.com reúne las pruebas por ti: datos del pago, el consentimiento del comprador, la entrega de los correos con la entrada y cada descarga de la entrada."
+      - title: ArenaSoldOut.com no retiene nada
+        text: La comisión de la plataforma se factura después del evento o se toma de tus créditos, por separado. Nada se descuenta de tus ventas. Si algún día te vas, tu cuenta de pagos y los datos de tus compradores se quedan contigo.
+
+  - type: cta
+    id: start
+    title: Empieza a vender hoy
+    text: "Crea el evento, conecta tu cuenta de pagos, comparte el enlace. Un evento sin plano de asientos sale a la venta en 10 minutos; el plano de asientos lo dibujamos nosotros, sin coste."
+    primary: { label: Crear tu evento, href: /start#create }
+    secondary: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

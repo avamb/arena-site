@@ -1,0 +1,37 @@
+title: "Códigos promo, precio anticipado, tramos y precio libre"
+description: "Códigos promocionales con límites, precios por fecha, tramos por cantidad, cadenas de categorías, cargo por servicio, entradas gratis y de precio libre."
+h1: Precios que cambian como los planeaste
+lead: Precio anticipado por fecha, el siguiente precio cuando se agota un tramo, códigos para socios, un cargo por servicio por canal. Todo se configura en el Event Center y se aplica en el widget y en la página alojada.
+related:
+  - { label: Planos de asientos, href: /product/seating }
+  - { label: "Precios: por entrada, sin suscripción", href: /pricing }
+  - { label: Para festivales, href: /solutions/festivals }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Herramientas de precios
+    title: ¿Qué puedo hacer con los precios?
+    items:
+      - q: ¿Puedo usar códigos promocionales?
+        a: Sí. Un código puede aplicarse a un evento, una sesión o una categoría, con un periodo de venta, un pedido mínimo y un límite por comprador. Los socios reciben sus propios códigos.
+      - q: ¿Hay un esquema de precios ya preparado?
+        a: "Sí, el precio inteligente. Elige un esquema listo de tramos de precio por cantidad y por fecha, en lugar de fijar cada tramo a mano. Puedes ajustarlo después."
+      - q: ¿Se puede vender una entrada solo junto con otra?
+        a: "Sí, con categorías complementarias. Un complemento se vende solo junto con una entrada de una categoría principal de la misma sesión. Por ejemplo, una entrada infantil no se puede vender sin una de adulto, y \"un niño más\" se añade a \"niño más adulto\". Cuando se agotan las categorías principales, la sesión aparece como agotada."
+      - q: ¿Pueden cambiar los precios en la fecha que yo elija?
+        a: Sí. Las ventanas de precio anticipado cambian por fecha y hora. Los tramos por cantidad abren el siguiente precio cuando se agota el actual, así que un tramo agotado nunca bloquea las ventas.
+      - q: ¿Varios precios para un mismo evento?
+        a: Sí. Categorías con su propio precio, cupo y periodo de venta. Las categorías pueden formar cadenas que pasan las plazas sin vender a la siguiente.
+      - q: ¿Puedo añadir un cargo por servicio?
+        a: Sí. Un porcentaje por canal de venta, que el comprador ve como una línea aparte y que se paga en tu cuenta junto con el precio de la entrada.
+      - q: ¿Entradas gratuitas y de precio libre?
+        a: Sí, las dos. Entradas gratuitas para invitaciones y registros, y entradas de precio libre con un mínimo que fijas tú.
+      - q: ¿Funcionan los descuentos con asientos?
+        a: Sí. Los códigos y las ventanas se aplican a las categorías con asiento igual que a las zonas de pie.
+  - type: cta
+    id: start
+    title: Fija tus precios hoy
+    text: Crea el evento, añade categorías y ventanas, conecta tu cuenta de pagos, comparte el enlace.
+    primary: { label: Crear tu evento, href: /start#create }
+    secondary: { label: Ver precios, href: /pricing }
+    note: Condiciones por volumen e individuales bajo petición.

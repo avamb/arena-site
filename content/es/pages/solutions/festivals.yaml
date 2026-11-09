@@ -1,0 +1,38 @@
+title: "Venta de entradas para festivales: varios días"
+description: "Venta de entradas para festivales: abonos por día y completos, categorías con cupo, cadenas de plazas sin vender, preventa por fecha y escaneo en cada acceso."
+h1: Festivales
+lead: Abonos por día y abonos completos, muchas categorías con cupo, preventa que se activa en una fecha y una cadena que pasa las plazas sin vender de una categoría a la siguiente. Escaneo en cada acceso con la app.
+related:
+  - { label: Códigos promocionales y ventanas de precio, href: /product/pricing-tools }
+  - { label: Conciertos, href: /solutions/concerts }
+  - { label: Fiabilidad, href: /product/reliability }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para festivales
+    title: "¿Qué importa en un festival?"
+    items:
+      - { title: Categorías con cupo, text: "Día uno, día dos, abono completo, VIP, camping: cada una con su precio, cupo y ventana de venta.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: Cadenas de categorías, text: "Cuando se agota la preventa, sus plazas sin vender pasan a la siguiente categoría en lugar de bloquear la venta.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: Accesos, text: "App de escaneo para iOS y Android en cada puerta; también se aceptan entradas de socios de otros sistemas.", link: { label: App de escaneo MACS →, href: /product/scanner } }
+      - { title: Carga, text: "800 pedidos por minuto con 1.000 compradores simultáneos en pruebas de carga; el primer minuto de venta está cubierto.", link: { label: Fiabilidad →, href: /product/reliability } }
+  - type: faq
+    id: questions
+    eyebrow: Preguntas
+    title: "¿Qué preguntan primero los organizadores de festivales?"
+    items:
+      - q: "¿Puede un comprador combinar un abono de un día y camping en un mismo pedido?"
+        a: Sí, varias categorías de un mismo evento en un solo pago.
+      - q: "¿Podemos cambiar los precios la última semana?"
+        a: Sí. Las ventanas de precio se activan por fecha y hora; los tramos por cantidad abren el siguiente precio cuando se agota un tramo.
+      - q: "Tenemos entradas gratuitas para patrocinadores. ¿Cómo?"
+        a: Entradas gratuitas e invitaciones desde el Event Center, sin comisión de la plataforma, y se escanean como cualquier entrada.
+      - q: "¿Cuánto cuesta?"
+        a: "Una comisión fija por entrada vendida, facturada después del evento o descontada de tus créditos, mensual para eventos que llevan meses a la venta; consulta los [precios](/pricing)."
+  - type: cta
+    id: start
+    title: Empieza a vender hoy
+    text: Crea el evento, conecta tu cuenta de pagos y comparte el enlace.
+    primary: { label: Crea tu evento, href: /start#create }
+    secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

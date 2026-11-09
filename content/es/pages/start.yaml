@@ -1,0 +1,57 @@
+title: "Empieza a vender: solicitud de organizador"
+description: "Cuéntanos sobre tu organización y tus eventos. El equipo configura tu organización, tu página de venta y tu cuenta de pagos, normalmente en un día."
+h1: Empieza a vender
+lead: "Cuéntanos quién eres y dónde vendes. Configuramos tu organización y tu página de venta y conectamos tu cuenta de pagos, normalmente en un día. Los eventos sin plano de asientos salen a la venta hoy."
+sections:
+  - type: steps
+    id: how
+    eyebrow: Qué pasa después
+    title: "¿Cómo empezamos?"
+    items:
+      - title: Envías la solicitud
+        text: "Cinco pasos cortos: contacto, organización, eventos, pagos y consentimiento. Tus respuestas se guardan sobre la marcha, así que puedes salir y volver."
+      - title: Te configuramos
+        text: El equipo revisa la solicitud, crea tu organización y tu página de venta, conecta contigo tu cuenta de pagos y, si tienes un recinto con asientos, dibuja sin coste el plano de asientos a partir de tu PDF, boceto a mano o tabla de filas.
+      - title: Sales a la venta
+        text: Comparte un solo enlace o pon el widget en tu web. Cada venta llega a tu Event Center y a tu grupo de Telegram.
+  - type: onboarding
+    id: form
+    mode: apply
+    eyebrow: Solicitud
+    title: Cuéntanos sobre ti
+    ui:
+      noscript: "El formulario de solicitud necesita JavaScript. Escríbenos por Telegram y te configuraremos a mano."
+      optional: "(opcional)"
+      url_list_hint: "Un enlace por línea"
+      sending: "Enviando…"
+      email: "Correo"
+      err_required: "Este campo es obligatorio"
+      err_invalid: "Revisa este valor"
+      err_too_long: "Es demasiado largo"
+      err_not_allowed: "Todavía no aceptamos solicitudes de este país"
+      e_generic: "Algo salió mal. Inténtalo de nuevo en un minuto o escríbenos por Telegram."
+      e_network: "Sin conexión con el servidor. Revisa tu internet e inténtalo de nuevo."
+      e_unavailable: "El formulario no está disponible ahora. Inténtalo de nuevo en un minuto o escríbenos por Telegram."
+      e_session: "Tu borrador ya no está disponible. Empieza de nuevo, lleva un minuto."
+      e_incomplete: "Faltan algunas respuestas obligatorias. Están marcadas arriba."
+      e_email_not_confirmed: "Confirma primero tu correo: abre el enlace del mensaje que te enviamos y vuelve a pulsar Enviar."
+      e_rate_limited: "Demasiados intentos. Espera unos minutos e inténtalo de nuevo."
+      e_turnstile_failed: "La comprobación antispam no se superó. Espera un segundo a que termine e inténtalo de nuevo."
+      e_captcha_not_configured: "El formulario no está disponible ahora. Escríbenos por Telegram."
+      e_captcha_unavailable: "No se pudo ejecutar la comprobación antispam. Inténtalo de nuevo en un minuto."
+      e_locked: "Esta solicitud ya se envió y no se puede editar."
+      step_of: "Paso {n} de {total}"
+      start_button: "Continuar"
+      start_note: "Te enviamos un enlace para confirmar tu correo. Puedes seguir rellenando el formulario mientras llega."
+      have_draft: "Continuar un borrador anterior"
+      back: "Atrás"
+      next: "Siguiente"
+      submit: "Enviar solicitud"
+      email_sent: "Enviamos un enlace de confirmación a {email}. Ábrelo cuando puedas: el formulario ya está guardado, y el correo debe confirmarse antes de enviarlo."
+      info_requested: "El equipo pidió más detalles:"
+      legal_lead: "Al enviar la solicitud aceptas"
+      terms: "las condiciones"
+      privacy: "la política de privacidad"
+    alt:
+      text: "¿Prefieres Telegram? El bot recibe la misma solicitud en un chat y responde el mismo equipo."
+      link: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }

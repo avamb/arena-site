@@ -1,0 +1,69 @@
+title: "Vende entradas en tu sitio o en una página que alojamos"
+description: "Inserta el widget con tres líneas, usa el plugin de WordPress o comparte una página alojada. Los compradores pagan en tu cuenta de pagos en ambos casos."
+h1: En tu sitio o en el nuestro. El dinero va a ti en ambos casos.
+lead: Dos formas de vender, un solo Event Center detrás. Inserta el widget en el sitio que ya tienes, o comparte una página alojada que creamos en minutos. Cada pedido llega a tu propia cuenta de pagos.
+related:
+  - { label: Planos de asientos que coinciden con el recinto, href: /product/seating, text: "Envía un PDF, un boceto o una tabla de filas; dibujamos el plano gratis." }
+  - { label: Pagos en tu propia cuenta, href: /payments, text: "Proveedores por país, estados, cómo conectar." }
+  - { label: Sitios WordPress, href: /solutions/wordpress, text: "Plugin con pedidos de WooCommerce, dos clientes se pasaron desde ArenaSoldOut.com sin tiempo de inactividad." }
+sections:
+  - type: ways
+    id: ways
+    eyebrow: Dónde vendes
+    title: ¿Qué forma encaja con mi evento?
+    items:
+      - title: Tienes un sitio web
+        text: "Tu sitio es la caja. Inserta el widget de entradas en cualquier página: WordPress, Tilda, Wix, Webflow o código propio. Los compradores nunca salen de tu dominio."
+        bullets:
+          - Widget en cualquier sitio, tres líneas de código
+          - Plugin de WordPress con pedidos de WooCommerce
+          - Tus colores, tus fuentes, tu idioma
+      - title: No tienes un sitio web
+        text: "Alojamos la página de venta: tickets.arenasoldout.com/tu-nombre/tu-evento. Comparte un solo enlace en redes sociales, mensajería y en el cartel."
+        bullets:
+          - Una página por organizador y por evento
+          - Una página aparte para cada promotor
+          - Lista en minutos, sin trabajo de diseño
+          - Enlaces a tus vendedores asociados en la misma página
+  - type: cards
+    id: page
+    eyebrow: Tu página de venta
+    title: ¿Qué más hace mi página de venta?
+    lead: "Todo lo de abajo funciona en la página de tu evento en la plataforma y en el widget. Se configura en el Event Center."
+    items:
+      - title: Materiales del evento en tu página de venta
+        text: "Añade materiales a tu evento en tu página de venta de la plataforma, si no tienes un sitio propio: textos, fotos y vídeos."
+      - title: Descripciones con buen aspecto
+        text: "Títulos, listas, enlaces y citas en la descripción del evento en tu página de venta. Una red neuronal da formato a un texto sencillo con un clic."
+      - title: '"Avísame cuando se abra la venta"'
+        text: "Los compradores se suscriben en la página de tu evento y reciben un correo en el momento en que se abre la venta, en su idioma."
+      - title: Recordatorios de carritos abandonados
+        text: "Un comprador que reservó entradas y no pagó recibe un correo de recordatorio. En muchos casos estos recordatorios aumentan mucho las ventas. Puedes ofrecer un descuento a cambio del consentimiento para tu boletín."
+      - title: Recomienda a un amigo
+        text: "Cada comprador recibe un enlace personal. El amigo obtiene un descuento, y el comprador que lo trajo recibe un reembolso parcial en su tarjeta tras el evento del amigo."
+      - title: Enlaces cortos y códigos QR para imprimir
+        text: "Un enlace corto go.arenasoldout.com con un código QR para carteles, folletos y redes sociales: PNG, SVG o un inserto en PDF listo en A5 y A6 para imprimir. Puedes cambiar el destino del enlace después de imprimir. Cada pedido queda ligado a su enlace, así que ves qué cartel vendió."
+      - title: Una tienda junto a tus entradas
+        text: "Vende productos junto con las entradas: vino, merchandising, cestas de regalo. Un escaparate con variantes, carrito, envío por mensajería, reembolsos y correos. Nuestro primer cliente con tienda ya vende así."
+  - type: faq
+    id: questions
+    eyebrow: Preguntas
+    title: ¿Qué hace el widget en mi sitio?
+    items:
+      - q: ¿Cómo pongo el widget en mi sitio?
+        a: "Dos líneas de HTML: una etiqueta script y el elemento <arena-tickets> con tu token de feed. El widget muestra sesiones, el plano de asientos o las categorías, el carrito y el pago. Los detalles y el código están en la [página para desarrolladores](/developers)."
+      - q: ¿Se parece a mi sitio?
+        a: Sí. El widget lee cuatro variables CSS de tu página (color de acento, radio, fondo, borde) y sigue el idioma del comprador. Sin iframe, sin un segundo diseño.
+      - q: ¿Dónde paga el comprador?
+        a: "En el pago alojado de tu propio proveedor de pagos, en tu propia cuenta. ArenaSoldOut.com crea el pedido, reserva los asientos y emite la entrada; nunca retiene el dinero. Consulta [pagos](/payments)."
+      - q: ¿Puedo vender también a través de socios?
+        a: Sí. Cada promotor recibe una página con su propio enlace, y la página alojada puede listar a tus vendedores asociados. Las ventas de todos los canales aparecen en un solo Event Center.
+      - q: ¿Y si paso mi sitio a otra plataforma?
+        a: Nada cambia para los compradores. El widget es un componente web; se mueve con tus páginas, y la página alojada sigue funcionando como alternativa.
+  - type: cta
+    id: start
+    title: Empieza a vender hoy
+    text: "Crea el evento, conecta tu cuenta de pagos, comparte el enlace. Un evento sin plano de asientos sale a la venta en 10 minutos; el plano de asientos lo dibujamos nosotros, sin coste."
+    primary: { label: Crear tu evento, href: /start#create }
+    secondary: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

@@ -1,0 +1,38 @@
+title: "Venta de entradas para conciertos: de pie y sentado"
+description: "Vende entradas de conciertos en tu web o en una página alojada: aforo de pie, categorías con asiento, preventa, códigos de socios y escaneo. El dinero es tuyo."
+h1: Conciertos
+lead: De pie y sentado en un mismo evento, varias categorías de precio, una ventana de preventa que se activa en una fecha y una puerta que escanea cada entrada. Los compradores pagan en tu propia cuenta desde la primera entrada.
+related:
+  - { label: Códigos promocionales y ventanas de precio, href: /product/pricing-tools }
+  - { label: Entradas electrónicas y escaneo, href: /product/tickets }
+  - { label: Festivales, href: /solutions/festivals }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para conciertos
+    title: "¿Qué importa en un concierto?"
+    items:
+      - { title: De pie y sentado juntos, text: "Una zona de pie con cupo junto a categorías con asiento, en un solo plano y un solo pago.", link: { label: Planos de asientos →, href: /product/seating } }
+      - { title: Preventa que se activa sola, text: "Una ventana de precio por fecha y hora, o un tramo por cantidad que abre el siguiente precio cuando se agota el primero.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: Socios y promotores, text: "Una página por promotor con su propio enlace, códigos promocionales por socio, todos los canales en un solo Event Center.", link: { label: Dónde vendes →, href: /product/sell } }
+      - { title: La puerta, text: "App de escaneo para iOS y Android, EAN-13 y QR en cada entrada, y también se aceptan entradas de socios de otros sistemas.", link: { label: App de escaneo MACS →, href: /product/scanner } }
+  - type: faq
+    id: questions
+    eyebrow: Preguntas
+    title: "¿Qué preguntan primero los organizadores de conciertos?"
+    items:
+      - q: "¿Con qué rapidez puede salir a la venta un concierto?"
+        a: "Sin plano de asientos, 10 minutos una vez confirmada tu organización y conectada tu cuenta de pagos: nombre, fecha, precios, cartel. Con asientos, normalmente en un día, después de que dibujemos el plano a partir de tu archivo sin coste."
+      - q: "¿Puedo vender una categoría VIP con cupo limitado?"
+        a: Sí. Cada categoría tiene su propio precio, cupo y ventana de venta; una categoría agotada puede pasar sus plazas sin vender a la siguiente.
+      - q: "¿Cuánto me cuesta una entrada?"
+        a: "Un importe fijo por entrada vendida, facturado después de la sesión; consulta los [precios](/pricing). Las invitaciones y los reembolsos son gratis."
+      - q: "¿Puedo ver las ventas en tiempo real?"
+        a: Sí. Cada venta llega a tu grupo de Telegram en pocos segundos y al Event Center, con totales por sesión y exportación a CSV.
+  - type: cta
+    id: start
+    title: Pon hoy el concierto a la venta
+    text: Crea el evento, conecta tu cuenta de pagos y comparte el enlace.
+    primary: { label: Crea tu evento, href: /start#create }
+    secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

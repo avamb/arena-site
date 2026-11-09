@@ -1,0 +1,38 @@
+title: "Venta de entradas para giras: varias ciudades"
+description: "Vende una gira desde un solo evento: sesiones por ciudad, plano por recinto, páginas por promotor con enlaces y códigos propios, escaneo en cada ciudad."
+h1: Giras de conciertos
+lead: Un espectáculo, muchas ciudades y fechas. Cada ciudad tiene su sesión y su plano, cada promotor tiene una página con su propio enlace, y ves toda la gira en un solo Event Center.
+related:
+  - { label: Espectáculos, href: /solutions/shows }
+  - { label: Dónde vendes, href: /product/sell }
+  - { label: Pagos por país, href: /payments }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Para giras de conciertos
+    title: "¿Qué importa en una gira?"
+    items:
+      - { title: Sesiones por ciudad, text: "Fechas y recintos en un solo evento; los compradores eligen la ciudad y tú ves los totales por sesión y de toda la gira.", link: { label: Event Center →, href: /#center } }
+      - { title: Páginas para promotores, text: "Una página aparte para cada promotor local, con su propio enlace y códigos promocionales; las ventas se suman en tu cuenta.", link: { label: Dónde vendes →, href: /product/sell } }
+      - { title: Varios países, text: "Vende en Chequia, España, Francia, Georgia o Israel con el proveedor de cada país, directo a tu propia cuenta.", link: { label: Pagos →, href: /payments } }
+      - { title: Idiomas de los compradores, text: "Páginas y entradas en el idioma del comprador, correos en siete idiomas, escritura de derecha a izquierda para hebreo.", link: { label: Entradas →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Preguntas
+    title: "¿Qué preguntan primero los organizadores de giras?"
+    items:
+      - q: "¿Puede un evento abarcar varios países y monedas?"
+        a: Las sesiones pueden estar en países distintos; la cuenta de pagos y la moneda dependen de la organización. Para monedas distintas, el equipo configura un canal por país.
+      - q: "¿Los promotores ven las ventas de los demás?"
+        a: No. Cada promotor ve solo su propia página; el organizador lo ve todo.
+      - q: "Una ciudad cambia de recinto. ¿Qué pasa con las entradas vendidas?"
+        a: La sesión se traslada con los correos de los compradores y las entradas actualizadas; los asientos se reasignan contigo en el nuevo plano.
+      - q: "¿Cuánto me cuesta una entrada en una gira?"
+        a: "El mismo importe por entrada en todas las ciudades; consulta los [precios](/pricing)."
+  - type: cta
+    id: start
+    title: Empieza a vender hoy
+    text: Crea el evento, conecta tu cuenta de pagos y comparte el enlace.
+    primary: { label: Crea tu evento, href: /start#create }
+    secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

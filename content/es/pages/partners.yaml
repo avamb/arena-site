@@ -1,0 +1,36 @@
+title: "Socios: recintos, promotores, agencias y desarrolladores"
+description: "Cómo trabajan con ArenaSoldOut.com los recintos, promotores, agencias WordPress y desarrolladores: páginas de promotor, plugin, widget, API, condiciones aparte."
+h1: Socios
+lead: Recintos que acogen eventos, promotores que los venden, agencias que construyen las webs de los organizadores, desarrolladores que integran. Cada uno tiene su lugar en la plataforma y una persona del equipo con quien hablar.
+related:
+  - { label: Para desarrolladores, href: /developers }
+  - { label: Recintos y clubes, href: /solutions/venues }
+  - { label: Contacto, href: /contact }
+sections:
+  - type: cards
+    id: kinds
+    eyebrow: Socios
+    title: "¿Cómo trabajan los socios con ArenaSoldOut.com?"
+    items:
+      - { title: Recintos, text: "Un recinto permanente aporta su plano una vez y lo ofrece a cada organizador que lo alquila; condiciones aparte con un porcentaje del precio de la entrada.", link: { label: Recintos y clubes →, href: /solutions/venues } }
+      - { title: Promotores, text: "Una página por promotor con su propio enlace y códigos; el organizador ve todos los canales y el promotor ve el suyo.", link: { label: Dónde vendes →, href: /product/sell } }
+      - { title: Agencias WordPress, text: "El plugin lleva los pedidos a WooCommerce; el widget encaja con cualquier tema. El equipo da soporte a la agencia durante el lanzamiento.", link: { label: WordPress →, href: /solutions/wordpress } }
+      - { title: Desarrolladores, text: "API pública, paquete de evento en una llamada, webhooks firmados, claves con alcance, eventos del widget; importaciones desde ArenaSoldOut.com y otros.", link: { label: Desarrolladores →, href: /developers } }
+  - type: faq
+    id: questions
+    eyebrow: Preguntas
+    title: "¿Qué preguntan primero los socios?"
+    items:
+      - q: "¿Hay una comisión por recomendación o por reventa?"
+        a: Las condiciones de colaboración se acuerdan de forma individual; escribe al equipo con lo que haces y para quién.
+      - q: "¿Se puede escanear en la puerta una entrada vendida por un socio?"
+        a: "Sí. La [app de escaneo MACS](/product/scanner) acepta las entradas de socios de otros sistemas junto a las entradas de ArenaSoldOut.com, en iOS y Android."
+      - q: "¿Puede una agencia gestionar varios organizadores?"
+        a: Sí, con roles en el Event Center de cada organización y claves de API con alcance por organización.
+  - type: cta
+    id: start
+    title: Escribe al equipo
+    text: Cuéntanos quién eres y con quién trabajas. Respondemos en persona en un día laborable.
+    primary: { label: Contáctanos, href: /contact }
+    secondary: { label: Lee la documentación para desarrolladores, href: /developers }
+    note: "O en Telegram: el chat se lee durante el día en Europa e Israel."

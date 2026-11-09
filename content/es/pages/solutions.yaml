@@ -1,0 +1,29 @@
+title: "Para quién es: conciertos, teatro, festivales, recintos"
+description: "Organizadores que venden sus entradas: conciertos, teatro, espectáculos, festivales, giras, clases y formaciones, recintos y clubes, sitios WordPress."
+h1: Organizadores que venden sus propias entradas
+lead: Una plataforma, eventos distintos. Elige el tuyo para ver qué partes importan más, cómo es la primera semana y qué preguntan primero otros organizadores de tu sector.
+related:
+  - { label: Cómo funciona, href: /#how }
+  - { label: Precios, href: /pricing }
+  - { label: Clientes, href: /clients }
+sections:
+  - type: cards
+    id: list
+    eyebrow: Para quién es
+    title: ¿Qué tipo de evento organizas?
+    items:
+      - { title: Conciertos, text: "De pie y sentados, varias categorías de precio, precio anticipado, escaneo en la puerta.", link: { label: Para conciertos →, href: /solutions/concerts } }
+      - { title: Teatro, text: "Planos de asientos que coinciden con la sala, fechas repetidas, invitaciones para prensa y socios.", link: { label: Para teatros →, href: /solutions/theatre } }
+      - { title: Espectáculos, text: "Espectáculos sobre hielo, circo, danza: muchas fechas, muchas ciudades, un plano por recinto que se reutiliza.", link: { label: Para espectáculos →, href: /solutions/shows } }
+      - { title: Festivales, text: "Varios días, muchas categorías, categorías que pasan las plazas sin vender a la siguiente.", link: { label: Para festivales →, href: /solutions/festivals } }
+      - { title: Giras de conciertos, text: "Un espectáculo, muchas ciudades y fechas, una página por promotor con su propio enlace.", link: { label: Para giras de conciertos →, href: /solutions/concert-tours } }
+      - { title: Clases magistrales y formaciones, text: "Grupos pequeños, fechas recurrentes, los correos y el idioma del propio anfitrión.", link: { label: Para anfitriones →, href: /solutions/master-classes } }
+      - { title: Recintos y clubes, text: "Tu propio recinto, muchos eventos al mes, un plano de asientos reutilizado, condiciones aparte.", link: { label: Para recintos →, href: /solutions/venues } }
+      - { title: Sitios en WordPress, text: "Plugin con pedidos de WooCommerce; la tienda sigue funcionando, las entradas vienen de ArenaSoldOut.com.", link: { label: Para sitios WordPress →, href: /solutions/wordpress } }
+  - type: cta
+    id: start
+    title: Empieza a vender hoy
+    text: "Crea el evento, conecta tu cuenta de pagos, comparte el enlace. Un evento sin plano de asientos sale a la venta en 10 minutos; el plano de asientos lo dibujamos nosotros, sin coste."
+    primary: { label: Crear tu evento, href: /start#create }
+    secondary: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "O escríbenos: lo configuramos todo contigo en una llamada."

@@ -1,0 +1,50 @@
+title: "Tu primer evento: de la solicitud al escáner"
+description: "Paso a paso: solicita, confirma, conecta tu cuenta de pagos una vez, crea el evento, envía el plano, publica, vende y escanea las entradas en la puerta."
+h1: Tu primer evento con ArenaSoldOut.com
+lead: "Ocho pasos de la solicitud al escáner en la puerta. Con una cuenta ya abierta en un proveedor de pagos, un evento sin plano de asientos sale a la venta 10 minutos después de confirmar tu organización."
+related:
+  - { label: Proveedores de pago por país, href: /payments, text: "Qué proveedor puede conectar tu empresa, con métodos y monedas." }
+  - { label: Planos de asientos, href: /product/seating, text: "Qué enviarnos para que dibujemos tu recinto gratis." }
+  - { label: App de escaneo MACS, href: /product/scanner, text: "Escaneo de entradas en la puerta con iOS y Android." }
+sections:
+  - type: steps
+    id: steps
+    eyebrow: Paso a paso
+    title: ¿Cómo pongo a la venta mi primer evento?
+    items:
+      - title: Envía la solicitud
+        text: "Cinco pasos cortos en el [formulario de solicitud](/start): contacto, organización, eventos, pagos, consentimiento. O envía lo mismo en el [bot de Telegram](https://t.me/EventsCentrBot). Tus respuestas se guardan sobre la marcha."
+      - title: Confirmamos tu organización
+        text: "El equipo revisa la solicitud y crea tu organización y tu cuenta del Event Center, normalmente en un día, y te dice cómo iniciar sesión."
+      - title: Conecta tu cuenta de pagos, una vez
+        text: "Crea claves de API en el panel de tu proveedor (Stripe, Flitt, AllPay u otro proveedor de tu país) y pégalas en el Event Center, o envíalas al equipo. Se hace una vez para la organización; cada evento siguiente usa la misma cuenta. ¿Aún no tienes cuenta? Abre una primero con un [proveedor de tu país](/payments): eso lleva el tiempo del propio proveedor."
+      - title: Crea el evento
+        text: "En el Event Center en el navegador, o en el bot de Telegram a partir de una foto de tu cartel: nombre, recinto, fechas y sesiones, categorías de entradas y precios, el cartel. Sin plano de asientos esto lleva unos 10 minutos."
+      - title: Envía el plano del recinto, si vendes asientos
+        text: "Dibujamos el plano gratis, normalmente en un día, y te lo mostramos antes de que empiece la venta. Basta cualquiera de estas opciones: un PDF del plano del recinto, una foto de un boceto a mano o una tabla de filas con los asientos de cada una (Excel o Google Sheets). Un SVG se importa directamente."
+      - title: Publica y comparte
+        text: "Pon el evento a la venta. Comparte el enlace de la página de venta que alojamos, o añade el widget de entradas a tu propio sitio con tres líneas de código. Los códigos promocionales, los precios por fecha y el cargo por servicio se configuran en el mismo lugar."
+      - title: Sigue las ventas
+        text: "Los compradores pagan en tu cuenta de pagos y reciben la entrada por correo en su idioma. Cada pedido está en el Event Center, y cada venta y reembolso llega a tu grupo de Telegram en segundos."
+      - title: Escanea en la puerta
+        text: "Instala la app MACS en iPhone o Android, inicia sesión con tu cuenta del Event Center, elige la sesión y escanea el EAN-13 o el QR en papel o en pantalla. Tantos móviles como entradas tengas."
+  - type: faq
+    id: questions
+    eyebrow: Preguntas
+    title: ¿Qué preguntan los organizadores antes del primer evento?
+    items:
+      - q: ¿Cuánto tarda realmente?
+        a: "La confirmación de la organización: normalmente un día. Después, con una cuenta de pagos ya abierta, un evento sin plano de asientos está a la venta en unos 10 minutos. Un evento con asientos espera al plano que dibujamos, normalmente un día. Abrir una cuenta nueva con un proveedor de pagos tarda lo que necesite el proveedor."
+      - q: ¿Qué preparo?
+        a: "El nombre del evento, el recinto, las fechas y horas, las categorías de entradas y los precios, un cartel y las claves de API de tu cuenta de pagos. Para los asientos, el plano del recinto en cualquiera de las formas anteriores."
+      - q: ¿Puede el equipo configurarlo por mí?
+        a: "Sí. Envía los datos en el [bot de Telegram](https://t.me/EventsCentrBot) o por el formulario de contacto y creamos el evento contigo; tú lo revisas antes de que empiece la venta."
+      - q: ¿Cuánto cuesta el primer evento?
+        a: "Lo mismo que cualquier otro: una comisión por entrada vendida, facturada después del evento, o menos con créditos comprados por adelantado. Los planos de asientos y las invitaciones no cuestan nada. Los precios están en la [página de precios](/pricing)."
+  - type: cta
+    id: start
+    title: Empieza por la solicitud
+    text: "Cinco pasos cortos, guardados sobre la marcha. El equipo confirma tu organización, normalmente en un día."
+    primary: { label: Enviar la solicitud, href: /start }
+    secondary: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
+    note: "¿Prefieres preguntar antes? El botón «Contactar con el equipo» está en todas las páginas."
