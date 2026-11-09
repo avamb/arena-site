@@ -1,0 +1,12 @@
+title: "Blog"
+description: "Artikel für Veranstalter: Geld und Servicegebühren, Verkauf auf der eigenen Website, Saalplan, früher Start und Notizen aus dem Team."
+h1: Blog
+lead: "Artikel für Veranstalter, die ihre eigenen Tickets verkaufen: Geld und Servicegebühren, Verkauf auf der eigenen Website, Saalplan, früher Verkauf, Marketing. Das Archiv der früheren Website steht hier mit den ursprünglichen Daten und einem Archivhinweis; die Plattform wurde 2026 neu gebaut."
+related:
+  - { label: Preise, href: /pricing }
+  - { label: Neueste Änderungen an der Plattform, href: /changes }
+  - { label: Verkauf starten, href: /start }
+sections:
+  - type: posts
+    id: posts
+    empty: Das Archiv wird gerade umgezogen. Bis dahin stehen die neuesten Änderungen an der Plattform auf der Seite mit den Änderungen.

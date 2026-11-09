@@ -1,0 +1,26 @@
+title: "Kunden: Veranstalter in 31 Ländern seit 2019"
+description: "Veranstalter, die ihre eigenen Tickets mit ArenaSoldOut.com verkaufen: Theater, Festivals, Konzerte, Masterclasses, Parks. Erfahrung der Gründer."
+h1: Veranstalter in 31 Ländern
+lead: ArenaSoldOut.com verkauft seit 2019 Tickets für Veranstalter. Die Plattform dahinter wurde 2026 neu gebaut, und die Veranstalter sind mit ihr umgezogen, zwei von ihnen von ArenaSoldOut.com ohne Ausfallzeit.
+sections:
+  - type: marks
+    id: marks
+    eyebrow: Kunden
+    title: Wer verkauft mit ArenaSoldOut.com?
+
+  - type: prose
+    id: track-record
+    eyebrow: Erfahrung
+    title: Wer hat das gebaut?
+    body: |
+      Die früheren Plattformen der Gründer bedienten Shows des Cirque du Soleil, Stadien der FIFA 2018, die World Choir Games und 800 Eisshows. Das Team, das ArenaSoldOut.com heute betreibt, antwortet Veranstaltern persönlich, auf Englisch, Spanisch, Tschechisch, Russisch und Hebräisch.
+
+      Erfahrungsberichte und Fotos von Veranstaltern werden von der früheren Website umgezogen und erscheinen auf dieser Seite.
+
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: "Event anlegen, Zahlungskonto verbinden, Link teilen. Ein Event ohne Saalplan ist in 10 Minuten im Verkauf; einen Saalplan zeichnen wir für Sie kostenlos."
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

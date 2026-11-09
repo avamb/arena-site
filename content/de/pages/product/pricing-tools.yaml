@@ -1,0 +1,37 @@
+title: "Promo-Codes, Early Bird, Preisstufen, Zahl-was-Sie-möchten"
+description: "Promo-Codes mit Geltungsbereich und Limits, Preiszeiträume nach Datum, Mengenstufen, Kategorieketten, Servicegebühr je Kanal, Gratis- und Zahl-was-Sie-möchten."
+h1: Preise, die sich so ändern, wie Sie es geplant haben
+lead: Early Bird nach Datum, der nächste Preis, wenn eine Stufe ausverkauft ist, Codes für Partner, eine Servicegebühr pro Kanal. Alles wird im Event Center eingestellt und im Widget und auf der gehosteten Seite angewendet.
+related:
+  - { label: Saalpläne, href: /product/seating }
+  - { label: "Preise: pro Ticket, ohne Abo", href: /pricing }
+  - { label: Für Festivals, href: /solutions/festivals }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Preis-Werkzeuge
+    title: Was kann ich mit Preisen machen?
+    items:
+      - q: Kann ich Promo-Codes verwenden?
+        a: Ja. Ein Code kann für ein Event, eine Vorstellung oder eine Kategorie gelten, mit Verkaufszeitraum, Mindestbestellung und Limit pro Käufer. Partner erhalten eigene Codes.
+      - q: Gibt es ein fertiges Preisschema?
+        a: "Ja, Smart Price. Wählen Sie ein fertiges Schema aus Preisstufen nach Menge und Datum, statt jede Stufe von Hand einzustellen. Anschließend können Sie es anpassen."
+      - q: Kann ein Ticket nur zusammen mit einem anderen verkauft werden?
+        a: "Ja, mit Zusatzkategorien. Ein Zusatz wird nur zusammen mit einem Ticket einer Hauptkategorie derselben Vorstellung verkauft. Ein Kinderticket lässt sich zum Beispiel nicht ohne Erwachsenenticket verkaufen, und „ein weiteres Kind“ wird zu „Kind plus Erwachsener“ hinzugefügt. Sind die Hauptkategorien ausverkauft, wird die Vorstellung als ausverkauft angezeigt."
+      - q: Können sich Preise zu einem von mir festgelegten Datum ändern?
+        a: Ja. Early-Bird-Zeiträume wechseln nach Datum und Uhrzeit. Mengenstufen öffnen den nächsten Preis, wenn der aktuelle ausverkauft ist, sodass eine ausverkaufte Stufe den Verkauf nie blockiert.
+      - q: Mehrere Preise für ein Event?
+        a: Ja. Kategorien mit eigenem Preis, eigenem Kontingent und eigenem Verkaufszeitraum. Kategorien können Ketten bilden, die nicht verkaufte Plätze an die nächste weitergeben.
+      - q: Kann ich eine Servicegebühr aufschlagen?
+        a: Ja. Ein Prozentsatz pro Verkaufskanal, dem Käufer als eigene Zeile angezeigt und zusammen mit dem Ticketpreis auf Ihr Konto gezahlt.
+      - q: Kostenlose Tickets und Zahl-was-Sie-möchten?
+        a: Ja, beides. Kostenlose Tickets für Freikarten und Anmeldungen sowie Zahl-was-Sie-möchten-Tickets mit einem von Ihnen festgelegten Mindestbetrag.
+      - q: Funktionieren Rabatte mit Plätzen?
+        a: Ja. Codes und Zeiträume gelten für Kategorien mit Platz ebenso wie für Stehbereiche.
+  - type: cta
+    id: start
+    title: Legen Sie heute Ihre Preise fest
+    text: Event anlegen, Kategorien und Zeiträume hinzufügen, Zahlungskonto verbinden, Link teilen.
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Preise ansehen, href: /pricing }
+    note: Mengen- und individuelle Konditionen auf Anfrage.

@@ -1,0 +1,38 @@
+title: "Ticketverkauf für Shows: Eis, Zirkus, Tanz, viele Städte"
+description: "Tickets für Tourneeshows verkaufen: ein Saalplan pro Spielstätte wiederverwendet, viele Termine, eine Seite pro Veranstalter, alle Städte in einem Event Center."
+h1: Shows
+lead: Eisshows, Zirkus, Tanz und Familienshows laufen an vielen Terminen in vielen Spielstätten. Ein Event, ein Plan pro Spielstätte, eine Seite pro Veranstalter, und die Verkäufe jeder Stadt an einem Ort.
+related:
+  - { label: Konzerttourneen, href: /solutions/concert-tours }
+  - { label: Saalpläne, href: /product/seating }
+  - { label: Kunden, href: /clients }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Für Shows
+    title: Was zählt bei einer Show?
+    items:
+      - { title: Ein Plan pro Spielstätte, text: "Der Plan jeder Spielstätte wird einmal gebaut und beim nächsten Besuch wiederverwendet; Versionen bewahren den Verlauf.", link: { label: Saalpläne →, href: /product/seating } }
+      - { title: Viele Termine, text: "Sessions nach Stadt und Tag in einem Event; Käufer wählen den Termin im Widget, Sie sehen die Summen pro Session.", link: { label: Event Center →, href: /#center } }
+      - { title: Lokale Veranstalter, text: "Eine Seite pro Veranstalter mit eigenem Link und eigenen Codes; jeder Kanal meldet in ein Event Center.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Familientickets, text: "Kategorien für Kinder und Gruppen, Mengenstufen, Freikarten für begleitende Erwachsene.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: Was fragen Show-Produzenten zuerst?
+    items:
+      - q: Kann ein Event eine ganze Tournee abdecken?
+        a: Ja. Sessions tragen Stadt, Spielstätte und Plan; Summen und CSV-Berichte gibt es pro Session und für das ganze Event.
+      - q: Wie gehen wir mit einer Spielstätte um, in der wir noch nie gespielt haben?
+        a: Schicken Sie den Plan in einer beliebigen lesbaren Form, und das Team baut ihn ein. Beim nächsten Besuch wird er wiederverwendet.
+      - q: Unsere Tickets verkaufen auch lokale Partner. Kommt der Einlass damit zurecht?
+        a: Ja. Die Scanner-App akzeptiert Tickets von Partnern aus anderen Systemen neben Tickets von ArenaSoldOut.com.
+      - q: Wohin geht das Geld?
+        a: "Auf Ihr eigenes Zahlungskonto, in Ihrer Währung, mit jeder Bestellung. Siehe [Zahlungen](/payments)."
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: Event anlegen, Zahlungskonto verbinden, Link teilen.
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

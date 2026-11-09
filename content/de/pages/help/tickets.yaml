@@ -1,0 +1,35 @@
+title: "Ich habe ein Ticket gekauft: wo es ist, was am Einlass"
+description: "Ihr Ticket ist ein PDF in der Bestätigungs-E-Mail mit EAN-13 und QR-Code, auf dem Handy oder gedruckt. Erstattung, Terminänderung: fragen Sie den Veranstalter."
+h1: Hilfe für Ticketkäufer
+lead: Ihr Ticket ist ein PDF im Anhang der Bestätigungs-E-Mail, mit Barcode und QR-Code. Zeigen Sie es auf dem Handy oder gedruckt. Fragen zu Erstattungen und Terminen gehen an den Veranstalter des Events, dessen Kontakt auf der Verkaufsseite und in der E-Mail steht.
+related:
+  - { label: E-Tickets und Scan, href: /product/tickets }
+  - { label: Kontakt, href: /contact }
+  - { label: Datenschutzerklärung, href: /legal/privacy }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Käufer
+    title: Wo ist mein Ticket?
+    items:
+      - q: Ich habe bezahlt, aber keine E-Mail bekommen
+        a: Prüfen Sie den Spam-Ordner und die Adresse, die Sie im Checkout eingegeben haben. Ist die E-Mail nach einigen Minuten nicht da, schreiben Sie dem Veranstalter mit Ihrem Namen und der Uhrzeit des Kaufs; er kann das Ticket an eine andere Adresse erneut senden.
+      - q: Was zeige ich am Einlass vor?
+        a: Das PDF auf dem Handy oder gedruckt. Barcode und QR-Code werden einmal gescannt; ein Screenshot des Codes funktioniert ebenfalls.
+      - q: Kann ich eine Erstattung bekommen?
+        a: Über Erstattungen entscheidet der Veranstalter des Events, nach den Bedingungen, die im Checkout angezeigt werden. Schreiben Sie dem Veranstalter; die Erstattung geht auf die Karte zurück, mit der Sie bezahlt haben.
+      - q: Der Termin hat sich geändert
+        a: Sie erhalten eine E-Mail vom Veranstalter mit dem aktualisierten Ticket im Anhang. Das alte Ticket verliert seine Gültigkeit.
+      - q: Kann ich das Ticket an einen Freund weitergeben?
+        a: Leiten Sie das PDF weiter. Das Ticket wird einmal gescannt, egal wer es mitbringt.
+      - q: Ich habe eine Frage zu meiner Zahlung
+        a: Die Zahlung ging an das eigene Zahlungskonto des Veranstalters; der Veranstalter sieht sie im Event Center und kann antworten. ArenaSoldOut.com hält kein Geld von Käufern.
+      - q: Wohin gehen meine Daten?
+        a: "An den Veranstalter des Events, um das Ticket zuzustellen, und an den Zahlungsanbieter für die Zahlung. Siehe die [Datenschutzerklärung](/legal/privacy)."
+  - type: cta
+    id: organizers
+    title: Sind Sie Veranstalter?
+    text: Event anlegen, Zahlungskonto verbinden, Link teilen. Käufer zahlen vom ersten Ticket an auf Ihr eigenes Konto.
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: So funktioniert es, href: /#how }
+    note: Ticketkäufer schreiben an den Veranstalter ihres Events.

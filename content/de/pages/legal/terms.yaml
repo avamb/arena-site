@@ -1,0 +1,164 @@
+title: "Allgemeine Geschäftsbedingungen"
+description: "Bedingungen von ArenaSoldOut.com für Veranstalter: Leistung, Konten, Zahlungsanbieter, Gebühren, Inhalte, Haftung, Käuferdaten, Unternehmen."
+h1: "Allgemeine Geschäftsbedingungen"
+lead: "Fassung vom 9. Oktober 2026. Ersetzt die Fassung vom 6. Mai 2024. Die Plattform speichert die Fassung, die bei Ihrer Zustimmung galt. Dies ist eine Übersetzung zur Information; die englische Fassung ist verbindlich."
+related:
+  - { label: Detaillierte Preisbedingungen, href: /pricing/terms }
+  - { label: Preise, href: /pricing }
+  - { label: Datenschutzerklärung, href: /legal/privacy }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## 1. Einleitung
+
+      Diese Seite enthält die rechtlichen Geschäftsbedingungen (die „Bedingungen“), zu denen die ABH TEAM OÜ, die unter der Marke ArenaSoldOut.com tätig ist („wir“, „uns“), Ihnen unsere Plattform für den Verkauf von Veranstaltungstickets sowie damit verbundenen Produkten und Leistungen (den „Service“) zur Verfügung stellt. Zum Service gehören das Event Center unter app.arenasoldout.com, die gehosteten Verkaufsseiten und das Ticket-Widget unter tickets.arenasoldout.com, die öffentliche API, das WordPress-Plugin, der Telegram-Bot und die Scanner-App für den Einlass.
+
+      Bitte lesen Sie diese Bedingungen sorgfältig und stellen Sie sicher, dass Sie sie verstehen, bevor Sie ein Konto beantragen oder über den Service eine Veranstaltung in den Verkauf stellen.
+
+      ## 2. Unser Vertrag mit Ihnen
+
+      Sie stimmen diesen Bedingungen zu und schließen einen verbindlichen Vertrag mit der ABH TEAM OÜ, wenn Sie über das Formular auf dieser Website oder über den Telegram-Bot ein Konto beantragen, wenn unser Team auf Ihre Bitte hin ein Konto für Sie anlegt, oder wenn Sie oder ein Mitglied Ihres Teams sich erstmals im Event Center anmelden oder eine Veranstaltung in den Verkauf stellen. Wenn Sie einem Teil dieser Bedingungen nicht zustimmen, nutzen Sie den Service nicht und greifen Sie nicht darauf zu.
+
+      Wir können diese Bedingungen von Zeit zu Zeit ändern. Die aktuelle Fassung ist stets unter ArenaSoldOut.com/legal/terms mit dem Datum der letzten Änderung veröffentlicht. Die Plattform speichert die Fassung, die bei Ihrer Zustimmung galt, und jede spätere Fassung. Die weitere Nutzung des Service nach einer Änderung bedeutet, dass Sie die geänderten Bedingungen akzeptieren.
+
+      ## 3. Art des Service
+
+      Unser Service gibt Ihnen ein Konto auf unserer Online-Plattform, um Veranstaltungstickets, Saalpläne und damit verbundene physische oder digitale Produkte und Leistungen zu verkaufen und zu verwalten. Sie dürfen ein Konto nur halten, wenn Sie der Veranstalter sind oder ein bevollmächtigter Ticketverkäufer mit ausdrücklicher schriftlicher Erlaubnis des Veranstalters für jede Veranstaltung, für die Sie Tickets verkaufen. Wenn Sie den Service im Namen einer Einheit nutzen, stimmen Sie diesen Bedingungen im Namen dieser Einheit zu und versichern, dass Sie dazu befugt sind.
+
+      Wir erbringen den Service für Sie und haben keine vertragliche Beziehung zu Ihren Kunden („Ticketkäufer“). Wenn Sie über den Service Tickets oder andere Produkte und Leistungen an Ticketkäufer verkaufen, besteht der Vertrag zwischen Ihnen und dem Ticketkäufer. Sie sind für Ihre eigenen Verkaufsbedingungen gegenüber Ihren Ticketkäufern verantwortlich, einschließlich Erstattungen. Wir stellen Ticketkäufern in Ihrem Auftrag Tickets und Service-E-Mails zu, und unsere Hilfeseite für Ticketkäufer verweist sie mit jeder Frage zu Ihrer Veranstaltung, Ihren Tickets und Erstattungen an Sie.
+
+      Sie verpflichten sich:
+
+      - die gesamte Kommunikation mit Ihren Ticketkäufern selbst zu führen und sie für den Kundensupport nicht an uns zu verweisen;
+      - jede Anfrage von Ticketkäufern innerhalb von 5 Tagen zu beantworten;
+      - die gesamte Haftung aus dem Vertragsverhältnis zwischen Ihnen und dem Ticketkäufer zu übernehmen;
+      - Ihre Ticketkäufer unverzüglich zu benachrichtigen und Ihre Veranstaltungsseite zu aktualisieren, wenn Ihre Veranstaltung abgesagt, verschoben oder gegenüber den Angaben bei Verkaufsbeginn wesentlich geändert wird. Der Service unterstützt Sie dabei, indem er Ticketkäufern E-Mails sendet, wenn Sie eine Session verlegen oder absagen.
+
+      Wir behalten uns das Recht vor, Ihren Zugang zum Service auszusetzen oder zu beenden, wenn Sie diese Anforderungen gegenüber Ihren Ticketkäufern nicht erfüllen.
+
+      Bei der Nutzung des Service werden Sie:
+
+      - die geltenden Gesetze und Pflichten im Zusammenhang mit Ihren Veranstaltungen, Produkten oder Leistungen und mit dem Empfang von Ticketeinnahmen, Gebühren oder Spenden einhalten;
+      - uns die Informationen und Materialien zur Verfügung stellen, die wir zur Erbringung des Service billigerweise verlangen können, und sicherstellen, dass sie in allen wesentlichen Punkten richtig sind;
+      - diese Informationen und Materialien pflegen und unverzüglich aktualisieren, damit sie wahr, richtig und vollständig bleiben;
+      - in allen Angelegenheiten des Service mit uns zusammenarbeiten.
+
+      Der Zugang zum Service kann bei Systemausfall, Wartung oder Reparatur oder aus Gründen, die wir nicht zu vertreten haben, vorübergehend und ohne Vorankündigung ausgesetzt werden. Ihr Zugang kann auch nach unserem Ermessen ausgesetzt oder Ihr Konto gekündigt werden, unter anderem wenn wir vermuten, dass Sie den Service für betrügerische oder kriminelle Zwecke nutzen, wenn uns Strafverfolgungsbehörden dazu raten oder wenn Sie unsere Rechnungen nicht bezahlt haben (siehe Abschnitte 6 und 11; wir würden Sie in der Regel vor Aussetzung oder Kündigung über die Nichtzahlung informieren). Wir haften nicht für Verluste oder Schäden, die durch einen Missbrauch unseres Service entstehen können.
+
+      ## 4. Ihr Konto
+
+      Konten werden nach Ihrem Antrag von unserem Team oder über den Telegram-Bot angelegt. Sobald Ihr Konto besteht, können Sie Ihre Veranstaltungen, Saalpläne und Tickets einrichten und, sofern Sie ein Zahlungskonto bei einem Zahlungsanbieter haben (Abschnitt 5), Tickets für Ihre Veranstaltungen verkaufen. Sie können auch den Verkauf damit verbundener physischer oder digitaler Produkte einrichten. Sie können Mitglieder Ihres Teams zu Ihrem Konto hinzufügen; Sie sind für deren Handlungen im Service verantwortlich.
+
+      Sie müssen 18 Jahre alt sein, um ein Konto zu halten.
+
+      Zu Ihrer Bequemlichkeit halten wir Ihr Konto nach Ihrer letzten Anmeldung 120 Monate lang geöffnet, falls Sie unseren Service wieder nutzen möchten. Bevor wir Ihr Konto schließen und Ihre Inhalte löschen, versuchen wir, Warn-E-Mails an die E-Mail-Adresse des Kontos zu senden, damit Sie die Möglichkeit haben, das Konto geöffnet zu halten oder Daten, die Sie behalten möchten, zu exportieren.
+
+      Sie können Ihr Konto jederzeit schließen, indem Sie von der E-Mail-Adresse des Kontoinhabers an hello@arenasoldout.com schreiben.
+
+      Bereits gezahlte Gebühren für den Service erstatten wir nicht.
+
+      ### Kontosicherheit
+
+      Sie sind dafür verantwortlich, die Vertraulichkeit Ihres Kontos zu wahren, und voll verantwortlich für alle Aktivitäten, die durch den Zugang zu Ihrem Konto mit Ihren Zugangsdaten stattfinden. Geben Sie Ihre Anmeldedaten, API-Keys, Webhook-Secrets oder den Zugang zur Scanner-App an niemanden außerhalb Ihres Teams weiter. Sie verpflichten sich, uns unverzüglich unter hello@arenasoldout.com über jede unbefugte Nutzung Ihres Kontos, Ihrer API-Keys oder Apps oder über jede andere Verletzung der Sicherheit zu informieren. Wir haften nicht für Verluste oder Schäden, die daraus entstehen, dass Sie diese Bestimmung nicht einhalten.
+
+      Die Übertragung von Informationen über das Internet ist nicht vollständig sicher. Wir können die Sicherheit der an unsere Plattform übertragenen Daten nicht garantieren, und jede Übertragung erfolgt auf Ihr eigenes Risiko. Sobald wir Ihre Informationen erhalten haben, setzen wir strenge Verfahren und Sicherheitsfunktionen ein, um unbefugten Zugriff zu verhindern.
+
+      ## 5. Zahlungsanbieter
+
+      Ticketkäufer bezahlen Ihre Tickets auf Ihr eigenes Konto bei einem vom Service unterstützten Zahlungsanbieter (ein „Zahlungsanbieter“). Die aktuellen Anbieter, Länder und Währungen sind auf der Zahlungsseite aufgeführt. Wir erhalten oder halten das von Ticketkäufern gezahlte Geld nie; es geht vom Ticketkäufer an Ihren Zahlungsanbieter und von dort auf Ihr Bankkonto. Die Kartenabwicklung zahlen Sie an Ihren Zahlungsanbieter zu dessen eigenen Bedingungen, getrennt von unseren Gebühren.
+
+      Die Nutzung eines Zahlungsanbieters setzt voraus, dass Sie dort ein Konto einrichten, vorbehaltlich der eigenen Geschäftsbedingungen und der Datenschutzerklärung des Zahlungsanbieters. Sie stehen in einer direkten Beziehung zum Zahlungsanbieter und müssen dessen Bedingungen lesen und akzeptieren, bevor Sie über den Service Zahlungen von Ticketkäufern annehmen. Erstattungen und Rückbuchungen werden zwischen Ihnen, Ihrem Zahlungsanbieter und dem Ticketkäufer abgewickelt; der Service ermöglicht es Ihnen, Erstattungen auszulösen, und das Geld wird von Ihrem Zahlungskonto zurückgezahlt.
+
+      Bei der Ausführung bestimmter Funktionen handelt der Zahlungsanbieter als Auftragsverarbeiter für Sie und für uns; in anderer Hinsicht handelt er nach seiner eigenen Datenschutzerklärung als Verantwortlicher. Durch die Nutzung unseres Service erkennen Sie an und stimmen zu, dass wir personenbezogene Daten und Informationen über Transaktionen, die über den Service erfolgen, mit Ihrem Zahlungsanbieter teilen.
+
+      Wenn wir von einem Zahlungsanbieter die Mitteilung erhalten, dass Ihre Nutzung unseres Service gegen dessen Bedingungen oder gegen eine Vereinbarung zwischen Ihnen und ihm, Ihnen und uns oder Ihnen und einem Ticketkäufer verstößt oder betrügerisch erscheint, gegen Geldwäschevorschriften verstößt oder Teil sonstiger schädlicher Aktivitäten ist, können wir Maßnahmen ergreifen, einschließlich, aber nicht beschränkt auf die zur Behebung des Verstoßes erforderlichen Schritte, den Entzug Ihrer Möglichkeit, den Service zu nutzen, und die Aussetzung oder Kündigung Ihres Kontos. Ein Zahlungsanbieter kann seine Leistungen jedem, aus jedem Grund und jederzeit verweigern.
+
+      Wir sind nicht verantwortlich für die Leistung, die ein Zahlungsanbieter Ihnen gegenüber erbringt, einschließlich der Handlungen und Unterlassungen des Zahlungsanbieters, und schließen hiermit jede Haftung dafür aus (einschließlich, aber nicht beschränkt auf Verluste, Kosten, Gebühren und Strafen jeder Art).
+
+      ## 6. Unsere Gebühren
+
+      Die Gebühren für die Nutzung unseres Service stehen auf der Preisseite und in den detaillierten Preisbedingungen und werden pro verkauftem Ticket berechnet. Eine kostenpflichtige Nutzung ist der Verkauf eines bezahlten Tickets oder eines damit verbundenen Produkts oder einer Leistung. Freie Einladungen und erstattete Tickets werden nicht berechnet. Inhabern fester Spielstätten wird statt der Gebühr pro Ticket ein Prozentsatz des Ticketpreises angeboten, wie in den detaillierten Preisbedingungen beschrieben. Wir können auch zusätzliche Leistungen anbieten, die wie auf unserer Plattform angegeben oder wie mit Ihnen vereinbart berechnet werden.
+
+      Wir stellen unsere Gebühr am Tag nach jeder Session für die für diese Session verkauften Tickets in Rechnung; bei Veranstaltungen, die mehrere Monate im Verkauf sind, können wir nach Vereinbarung stattdessen monatlich abrechnen. Die Zahlungsbedingungen stehen auf der Rechnung.
+
+      Bereits in Rechnung gestellte Gebühren sind nicht erstattungsfähig, auch dann nicht, wenn eine Veranstaltung abgesagt wird.
+
+      ## 7. Inhalte des Veranstalters und Standards für zulässige Inhalte
+
+      Im Verhältnis zwischen Ihnen und uns besitzen Sie alle Rechte an allen Inhalten, die Sie auf die Plattform hochladen, und sind für deren Rechtmäßigkeit, Zuverlässigkeit, Integrität, Richtigkeit und Qualität verantwortlich, einschließlich Texten, Bildern, Plakaten, Saalplänen, Informationen zu Ihren Veranstaltungen und damit verbundenen Produkten und Leistungen, Bewertungen und Kommentaren („Ihre Inhalte“). Durch das Hochladen Ihrer Inhalte räumen Sie uns eine unbedingte, nicht ausschließliche, übertragbare, gebührenfreie, weltweite Lizenz ein, Ihre Inhalte in jeder für die Erbringung des Service erforderlichen Weise zu nutzen.
+
+      Wenn der Service Informationen aus einem Plakat oder einer anderen von Ihnen gesendeten Datei liest, zum Beispiel um im Telegram-Bot eine Veranstaltung anzulegen, bestätigen Sie jedes Feld, bevor es veröffentlicht wird, und bleiben für dessen Richtigkeit verantwortlich.
+
+      Sie müssen die folgenden Standards für zulässige Inhalte einhalten, wenn Sie Ihre Inhalte auf unsere Plattform stellen:
+
+      - Ihre Inhalte müssen richtig sein und dem geltenden Recht in jedem Land entsprechen, aus dem sie eingestellt werden.
+      - Sie dürfen unsere Plattform nicht nutzen, um von Ticketkäufern oder Veranstaltungsbesuchern Inhalte zu erheben, die Sie nicht benötigen: zum Beispiel Kartendaten (die nur der Zahlungsanbieter erhebt), Ausweis- oder Sozialversicherungsnummern, Passwörter oder andere übermäßige oder unnötige personenbezogene Daten, insbesondere besondere Kategorien von Daten (rassische oder ethnische Herkunft, politische Meinungen, religiöse oder ähnliche Überzeugungen, Gewerkschaftszugehörigkeit, körperliche oder psychische Gesundheit, Sexualleben, sexuelle Orientierung, biometrische oder genetische Daten). Das hindert Sie nicht daran, besondere Kategorien von Daten in dem für Ihre Veranstaltung erforderlichen Umfang zu erheben, zum Beispiel um Plätze für Menschen mit Behinderungen zuzuweisen.
+
+      Ihre Inhalte dürfen nicht:
+
+      - rechtswidrig, schädlich, bedrohend, verleumderisch, obszön, täuschend, betrügerisch, verletzend, belästigend, moralisch anstößig oder rassistisch oder ethnisch beleidigend sein;
+      - illegale Aktivitäten erleichtern;
+      - sexuell explizite Bilder zeigen;
+      - Gewalt fördern;
+      - aufgrund von Rasse, Geschlecht, Religion, Nationalität, Behinderung, sexueller Orientierung oder Alter diskriminieren;
+      - Urheberrechte, Datenbankrechte, Marken oder andere Rechte des geistigen Eigentums einer anderen Person verletzen;
+      - die Identität verschleiern oder geeignet sein, eine Person zu täuschen.
+
+      Wir können Ihre Inhalte von unserer Plattform und aus dem Service entfernen, wenn sie nach unserer alleinigen Einschätzung gegen diese Standards verstoßen. Wir behalten uns das Recht vor, Ihren Zugang zum Service auszusetzen oder zu beenden, wenn Sie wesentlich dagegen verstoßen, von Ihnen den Ersatz aller Kosten zu verlangen, die uns durch Ihren Verstoß entstehen, und Informationen an Strafverfolgungsbehörden weiterzugeben, soweit dies verlangt wird oder wir es für vertretbar notwendig halten.
+
+      ## 8. Haftungsausschluss
+
+      Wir bemühen uns, den Service 24 Stunden am Tag verfügbar zu halten, garantieren seine Verfügbarkeit aber nicht und haften nicht, wenn der Service aus irgendeinem Grund zu irgendeiner Zeit oder für irgendeinen Zeitraum nicht verfügbar ist.
+
+      Der Zugang zum Service kann bei Systemausfall, Wartung oder Reparatur oder aus Gründen, die wir nicht zu vertreten haben, vorübergehend und ohne Vorankündigung ausgesetzt werden.
+
+      Wir übernehmen keine Gewähr für die Richtigkeit und Vollständigkeit der Materialien auf der Plattform. Wir können die Materialien auf der Plattform oder die Funktionen des Service jederzeit ohne Vorankündigung ändern. Die aktuellen Fähigkeiten des Service sind mit Datum auf der Faktenseite veröffentlicht.
+
+      Wir erbringen den Service mit angemessener Sorgfalt und Sachkunde. Der Service wird „wie besehen“ bereitgestellt, und mit Ausnahme der in diesen Bedingungen enthaltenen Gewährleistungen schließen wir, soweit gesetzlich zulässig, alle Zusicherungen, Gewährleistungen, Bedingungen und sonstigen Bestimmungen aus (einschließlich, aber nicht beschränkt auf die Bedingungen zufriedenstellender Qualität und Eignung für einen bestimmten Zweck).
+
+      ## 9. Haftung
+
+      Wir sind nicht Partei einer Transaktion, sonstigen Beziehung oder Streitigkeit zwischen Ihnen und Ticketkäufern oder zwischen Ihnen und Veranstaltungsbesuchern. Wir prüfen Ticketkäufer nicht vorab und sind nicht für betrügerische Transaktionen von Ticketkäufern verantwortlich. Wir schließen jede Haftung aus, die aus Maßnahmen entsteht, die wir als Reaktion auf Verstöße gegen unsere Standards für zulässige Inhalte und diese Bedingungen ergreifen. Sie verpflichten sich, uns und unsere Führungskräfte, Direktoren und Partner von allen Kosten, Ansprüchen oder Forderungen freizustellen, einschließlich angemessener Rechtskosten:
+
+      - im Zusammenhang mit jeder Streitigkeit mit einem oder mehreren Ihrer Ticketkäufer oder Ihrer Beziehung zu Ticketkäufern und Veranstaltungsbesuchern;
+      - die von einem Dritten wegen Ihrer Inhalte oder Ihrer Nutzung des Service oder in deren Folge geltend gemacht werden. Sie allein sind für Ihre Handlungen bei der Nutzung des Service verantwortlich.
+
+      Unsere Gesamthaftung Ihnen gegenüber für alle sonstigen Verluste, die aus der Erbringung des Service oder in Verbindung damit entstehen, sei es aus Vertrag, unerlaubter Handlung (einschließlich Fahrlässigkeit), Verletzung gesetzlicher Pflichten oder anderweitig, ist auf USD 50,00 begrenzt.
+
+      Nichts in diesen Bedingungen zielt darauf ab, gesetzliche Rechte von Verbrauchern zu beschränken oder auszuschließen.
+
+      ## 10. Recht und Gerichtsstand
+
+      Diese Bedingungen unterliegen dem Recht der Republik Estland und dem anwendbaren Recht der Europäischen Union und werden danach ausgelegt.
+
+      Für jede Streitigkeit im Zusammenhang mit diesen Bedingungen sind ausschließlich die Gerichte Estlands zuständig.
+
+      ## 11. Überfällige Zahlungen
+
+      Der Zugang zur Plattform, ihren Anwendungen und Diensten setzt voraus, dass keine überfälligen Zahlungen auf ausgestellte Rechnungen bestehen. Ist eine Rechnung überfällig, kann der Zugang zu den Anwendungen und Diensten eingeschränkt werden. Der Zugang wird wiederhergestellt, wenn alle Rechnungen bezahlt sind und keine Schuld besteht.
+
+      Strafen für überfällige Zahlungen werden wie auf der Rechnung angegeben erhoben.
+
+      ## 12. Personenbezogene Daten der Ticketkäufer
+
+      Sie sind der Verantwortliche für die personenbezogenen Daten Ihrer Ticketkäufer. Wir verarbeiten diese Daten in Ihrem Auftrag als Auftragsverarbeiter zum Zweck des Verkaufs und der Zustellung von Tickets, des Einlasses von Ticketkäufern am Eingang und der Benachrichtigung über Änderungen Ihrer Sessions, wie in unserer Datenschutzerklärung beschrieben, die Bestandteil dieser Bedingungen ist. Sie sind dafür verantwortlich, Ihre Ticketkäufer über die Verarbeitung zu informieren, und für Ihre eigenen Verkaufsbedingungen. Sie dürfen aus dem Service exportierte Daten von Ticketkäufern nicht ohne eine eigene Rechtsgrundlage für Zwecke verwenden, die nichts mit Ihren Veranstaltungen zu tun haben.
+
+      ## 13. Unsere Angaben
+
+      ArenaSoldOut.com ist eine Marke der ABH TEAM OÜ, die die Plattform und diese Website besitzt und betreibt.
+
+      Wir sind im estnischen Handelsregister unter der Registernummer 14162982 eingetragen, und unser Sitz und Geschäftssitz ist:
+
+      Narva mnt 5a, Kesklinna district,
+      Tallinn city, Harju county,
+      10117 Estonia.
+
+      Die Online-Version des Registers finden Sie unter https://www.inforegister.ee/
+
+      Sie können uns kontaktieren:
+
+      - per E-Mail an hello@arenasoldout.com;
+      - im Telegram-Chat und im Telegram-Bot, die auf der Kontaktseite verlinkt sind;
+      - über das Antragsformular auf dieser Website;
+      - per Post an die oben genannte Adresse.

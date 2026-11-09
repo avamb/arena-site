@@ -1,0 +1,57 @@
+title: "Verkauf starten: als Veranstalter bewerben"
+description: "Erzählen Sie uns von Ihrer Organisation und Ihren Events. Das Team richtet Organisation, Verkaufsseite und Zahlungskonto ein, meist innerhalb eines Tages."
+h1: Verkauf starten
+lead: "Sagen Sie uns, wer Sie sind und wo Sie verkaufen. Wir richten Ihre Organisation und Ihre Verkaufsseite ein und verbinden Ihr Zahlungskonto, meist innerhalb eines Tages. Events ohne Saalplan gehen noch heute in den Verkauf."
+sections:
+  - type: steps
+    id: how
+    eyebrow: Was danach passiert
+    title: Wie fangen wir an?
+    items:
+      - title: Sie senden den Antrag
+        text: "Fünf kurze Schritte: Kontakt, Organisation, Events, Zahlungen und Einwilligung. Ihre Angaben werden laufend gespeichert, Sie können also unterbrechen und später weitermachen."
+      - title: Wir richten Sie ein
+        text: Das Team prüft den Antrag, legt Ihre Organisation und Ihre Verkaufsseite an, verbindet gemeinsam mit Ihnen Ihr Zahlungskonto und zeichnet, wenn Sie eine Spielstätte mit Sitzplätzen haben, den Saalplan kostenlos nach Ihrem PDF, Ihrer Handskizze oder Ihrer Tabelle mit Reihen.
+      - title: Sie gehen in den Verkauf
+        text: Teilen Sie einen Link oder setzen Sie das Widget auf Ihre Website. Jeder Verkauf landet in Ihrem Event Center und in Ihrer Telegram-Gruppe.
+  - type: onboarding
+    id: form
+    mode: apply
+    eyebrow: Antrag
+    title: Erzählen Sie uns von sich
+    ui:
+      noscript: "Das Antragsformular braucht JavaScript. Schreiben Sie uns stattdessen in Telegram, dann richten wir Sie von Hand ein."
+      optional: "(optional)"
+      url_list_hint: "Ein Link pro Zeile"
+      sending: "Wird gesendet…"
+      email: "E-Mail"
+      err_required: "Dieses Feld ist erforderlich"
+      err_invalid: "Bitte prüfen Sie diesen Wert"
+      err_too_long: "Das ist zu lang"
+      err_not_allowed: "Anträge aus diesem Land nehmen wir noch nicht an"
+      e_generic: "Etwas ist schiefgelaufen. Versuchen Sie es in einer Minute erneut oder schreiben Sie uns in Telegram."
+      e_network: "Keine Verbindung zum Server. Prüfen Sie Ihr Internet und versuchen Sie es erneut."
+      e_unavailable: "Das Formular ist gerade nicht verfügbar. Versuchen Sie es in einer Minute erneut oder schreiben Sie uns in Telegram."
+      e_session: "Ihr Entwurf ist nicht mehr verfügbar. Beginnen Sie neu, das dauert eine Minute."
+      e_incomplete: "Einige Pflichtangaben fehlen. Sie sind oben markiert."
+      e_email_not_confirmed: "Bestätigen Sie zuerst Ihre E-Mail-Adresse: Öffnen Sie den Link in der Nachricht, die wir Ihnen geschickt haben, und klicken Sie dann erneut auf Senden."
+      e_rate_limited: "Zu viele Versuche. Warten Sie einige Minuten und versuchen Sie es erneut."
+      e_turnstile_failed: "Die Spam-Prüfung wurde nicht bestanden. Warten Sie einen Moment, bis sie abgeschlossen ist, und versuchen Sie es erneut."
+      e_captcha_not_configured: "Das Formular ist gerade nicht verfügbar. Schreiben Sie uns in Telegram."
+      e_captcha_unavailable: "Die Spam-Prüfung konnte nicht ausgeführt werden. Versuchen Sie es in einer Minute erneut."
+      e_locked: "Dieser Antrag ist bereits gesendet und kann nicht mehr bearbeitet werden."
+      step_of: "Schritt {n} von {total}"
+      start_button: "Weiter"
+      start_note: "Wir senden einen Link zur Bestätigung Ihrer E-Mail-Adresse. Sie können das Formular weiter ausfüllen, während er unterwegs ist."
+      have_draft: "Einen früheren Entwurf fortsetzen"
+      back: "Zurück"
+      next: "Weiter"
+      submit: "Antrag senden"
+      email_sent: "Wir haben einen Bestätigungslink an {email} gesendet. Öffnen Sie ihn, wenn Sie Zeit haben: Das Formular ist schon gespeichert, und die E-Mail-Adresse muss bestätigt sein, bevor Sie es senden."
+      info_requested: "Das Team hat um weitere Angaben gebeten:"
+      legal_lead: "Mit dem Senden des Antrags akzeptieren Sie"
+      terms: "die Bedingungen"
+      privacy: "die Datenschutzerklärung"
+    alt:
+      text: "Lieber Telegram? Der Bot nimmt denselben Antrag in einem Chat entgegen, und dasselbe Team antwortet dort."
+      link: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }

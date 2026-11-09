@@ -1,0 +1,41 @@
+title: "Saalpläne: reservierte Plätze und Stehbereiche"
+description: "Saalpläne mit Versionen, SVG-Import, Sitz- und Stehplätze gemischt, Preise pro Kategorie. Senden Sie PDF, Skizze oder Tabelle, wir zeichnen kostenlos."
+h1: Saalpläne, die zur Spielstätte passen
+lead: Reservierte Plätze gehören zum Kern der Plattform, sie sind kein Zusatz. Das Team baut Ihren Plan aus allem, was Sie haben, meist binnen eines Tages, und nutzt ihn für jeden Termin wieder.
+related:
+  - { label: "Promo-Codes, Preiszeiträume und Mengenstufen", href: /product/pricing-tools }
+  - { label: E-Tickets mit EAN-13 und QR, href: /product/tickets }
+  - { label: Für Theater, href: /solutions/theatre }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Saalplan
+    title: Wie funktionieren Plätze mit ArenaSoldOut.com?
+    items:
+      - q: Muss ich den Plan selbst zeichnen?
+        a: "Nein, nie. Senden Sie uns den Plan, und wir zeichnen ihn kostenlos in Ihr Event, meist binnen eines Tages. Eines davon genügt: ein PDF des Saalplans, ein Foto einer Handskizze oder eine Tabelle mit Reihen und den Plätzen jeder Reihe (Excel oder Google Sheets). Vektordateien (SVG) werden direkt importiert."
+      - q: Kann ein Event Sitz- und Stehplätze haben?
+        a: Ja, in einem Plan. Reservierte Reihen mit Kategorien, Stehbereiche mit Kontingenten, jede Kategorie mit eigenem Preis und eigenem Verkaufszeitraum.
+      - q: Kann ich den Plan ändern, nachdem der Verkauf begonnen hat?
+        a: Ja. Pläne haben Versionen, sodass ein neues Layout für die nächste Vorstellung die bereits verkauften Tickets nicht berührt.
+      - q: Was kostet mich ein Ticket mit Platz?
+        a: "Die Provision für ein Ticket mit Platz beträgt US$1,09 (€0,97 in EU-Ländern), gegenüber US$0,59 (€0,53) ohne Platz; mit Credits sinkt sie. Der Plan selbst ist kostenlos. Siehe [Preise](/pricing)."
+      - q: Wählt der Käufer den Platz auf dem Smartphone?
+        a: Ja. Der Saalplan ist im Widget und auf der gehosteten Seite derselbe, mit Zoomen per Zwei-Finger-Geste auf dem Smartphone, einer Legende pro Kategorie und einem Reservierungs-Timer für gewählte Plätze.
+      - q: Und Freikarten und Pressenplätze?
+        a: Stellen Sie kostenlose Tickets für bestimmte Plätze aus dem Event Center aus; sie werden am Einlass wie jedes Ticket gescannt.
+  - type: cards
+    id: who
+    eyebrow: Typische Spielstätten
+    title: Wer nutzt reservierte Plätze?
+    items:
+      - { title: Theater, text: "100 bis 1.500 Plätze, wiederkehrende Termine, Freikarten für Presse und Partner.", link: { label: Für Theater →, href: /solutions/theatre } }
+      - { title: Konzerthallen und Clubs, text: "Ein Plan, mehrfach genutzt für viele Events im Monat, eigene Konditionen für feste Spielstätten.", link: { label: Für Spielstätten →, href: /solutions/venues } }
+      - { title: Tourneeshows, text: "Eine Show, viele Städte, ein Plan pro Spielstätte, beim nächsten Besuch wiederverwendet.", link: { label: Für Konzerttourneen →, href: /solutions/concert-tours } }
+  - type: cta
+    id: start
+    title: Senden Sie uns Ihren Plan
+    text: "Ein PDF, ein Foto einer Handskizze oder eine Tabelle mit Reihen und Plätzen genügt. Wir zeichnen ihn kostenlos in Ihr Event und zeigen Ihnen das Ergebnis vor dem Verkaufsstart."
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: Events ohne Saalplan gehen heute in den Verkauf.

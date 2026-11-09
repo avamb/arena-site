@@ -1,0 +1,47 @@
+title: "E-Tickets mit EAN-13 und QR, Scan, E-Mails an Käufer"
+description: "PDF-Tickets mit EAN-13 und QR in der Sprache des Käufers, die MACS-Scanner-App für iOS und Android, Beispiel-Tickets, E-Mails bei Terminverlegung oder Absage."
+h1: Ein Ticket, das sich scannen lässt
+lead: Jedes Ticket ist ein PDF mit EAN-13-Barcode und QR-Code, in der Sprache des Käufers. Scannen Sie es mit der App oder einem Handscanner, senden Sie es erneut, erstatten Sie es, ersetzen Sie es bei einer Terminverlegung.
+related:
+  - { label: Saalpläne, href: /product/seating }
+  - { label: "Zuverlässigkeit: Last, Backups, Watchdog", href: /product/reliability }
+  - { label: Hilfe für Ticketkäufer, href: /help/tickets }
+  - { label: "MACS-Scanner-App: jeder Veranstalter, jeder Eingang", href: /product/scanner }
+sections:
+  - type: faq
+    id: questions
+    eyebrow: Tickets
+    title: Was erhält der Käufer?
+    items:
+      - q: Was steht auf dem Ticket?
+        a: "Event, Vorstellung, Platz oder Kategorie, Preis, der Name des Käufers, ein EAN-13-Barcode und ein QR-Code. Ein PDF pro Bestellung, in der Sprache des Käufers: Englisch, Russisch, Tschechisch, Hebräisch oder Spanisch auf der Seite, sieben Sprachen in E-Mails. Jede neue Sprache fügen wir innerhalb von 40 Stunden hinzu."
+      - q: Ist der Zahlungsbeleg in der E-Mail?
+        a: "Ja. Der Zahlungsbeleg hängt an der Ticket-E-Mail, und die E-Mail nennt, wer die Zahlung erhalten hat: Ihre Organisation und Ihr Zahlungsanbieter."
+      - q: Kann ich prüfen, ob der Käufer das Ticket erhalten hat?
+        a: "Ja. Jede E-Mail zeigt ihren Status in der Bestellkarte: Gesendet, Zugestellt, Gelesen. Sie sehen stets, ob der Käufer das Ticket erhalten hat, und können es erneut senden, wenn er es verloren hat."
+      - q: Wie scanne ich am Einlass?
+        a: "Mit der [MACS-Scanner-App](#scanner) für iOS und Android oder einem Handbarcodescanner. Die App akzeptiert auch von Ihren Partnern in anderen Systemen verkaufte Tickets, sodass ein Eingang für jeden Kanal funktioniert."
+      - q: Kann ich ein Ticket vor dem Verkaufsstart sehen?
+        a: Ja. Ein Beispiel-Ticket mit Wasserzeichen gehört zum Event, aus dem Event Center oder dem Telegram-Bot.
+      - q: Was passiert, wenn ein Termin verlegt wird?
+        a: Käufer erhalten eine E-Mail in ihrer Sprache mit dem aktualisierten Ticket im Anhang. Ebenso bei einer Absage, wobei Sie die Erstattung abwickeln.
+      - q: Kann ich ein Ticket erneut senden oder erstatten?
+        a: Ja, aus dem Event Center. Erneut an eine neue Adresse senden, auf die Karte des Käufers erstatten, der Platz geht zurück in den Verkauf.
+      - q: Gibt es eine App für Käufer?
+        a: Nein. Das PDF und die E-Mail genügen am Einlass; es gibt nichts zu installieren.
+  - type: cards
+    id: scanner
+    eyebrow: Am Einlass
+    title: Welche App scannt die Tickets?
+    lead: "MACS ist die Zutrittskontroll-App von ArenaSoldOut.com. Installieren Sie sie auf den Smartphones Ihres Einlasspersonals, melden Sie sich mit Ihrem Event-Center-Konto an und scannen Sie den EAN-13 oder den QR-Code jedes Tickets: Papier, PDF auf dem Bildschirm oder die E-Mail. Eine App scannt Tickets jedes Veranstalters der Plattform und Partner-Tickets aus anderen Systemen, sodass eine Spielstätte, ein Festival oder ein Veranstalter, der eine Spielstätte mietet, für jedes Event dieselben Smartphones nutzt."
+    items:
+      - { title: iPhone und iPad, text: "MACS im App Store. Melden Sie sich mit Ihrem Event-Center-Konto an; die Eventliste und die Vorstellungen sind schon da.", link: { label: App Store öffnen →, href: "https://apps.apple.com/app/id6770095694" } }
+      - { title: Android, text: "MACS bei Google Play. Dieselbe App, dasselbe Konto, Handscanner mit Kamera oder Laser funktionieren ebenfalls.", link: { label: Google Play öffnen →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }
+      - { title: "Jeder Veranstalter, eine App", text: "Das Einlasspersonal einer Spielstätte scannt Tickets jedes Veranstalters, der über ArenaSoldOut.com verkauft, und von Partnern in anderen Systemen verkaufte Tickets, ohne die App zu wechseln.", link: { label: "MACS als Produkt →", href: /product/scanner } }
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: Event anlegen, Zahlungskonto verbinden, Link teilen. Das Beispiel-Ticket ist mit dem Event bereit.
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

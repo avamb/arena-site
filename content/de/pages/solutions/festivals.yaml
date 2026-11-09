@@ -1,0 +1,38 @@
+title: "Ticketverkauf für Festivals: mehrere Tage, viele Kategorien"
+description: "Festival-Ticketverkauf mit Tages- und Gesamtpässen, Kategorien mit Kontingenten, Ketten für unverkaufte Plätze, Early Bird nach Datum, Scan an jedem Eingang."
+h1: Festivals
+lead: Tagespässe und Gesamtpässe, viele Kategorien mit Kontingenten, Early Bird, der sich zu einem Datum umschaltet, und eine Kette, die unverkaufte Plätze von einer Kategorie an die nächste weitergibt. Scan an jedem Eingang mit der App.
+related:
+  - { label: Promo-Codes und Preisfenster, href: /product/pricing-tools }
+  - { label: Konzerte, href: /solutions/concerts }
+  - { label: Zuverlässigkeit, href: /product/reliability }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Für Festivals
+    title: Was zählt bei einem Festival?
+    items:
+      - { title: Kategorien mit Kontingenten, text: "Tag eins, Tag zwei, Gesamtpass, VIP, Camping: jede mit eigenem Preis, Kontingent und Verkaufsfenster.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Kategorienketten, text: "Ist der Early Bird ausverkauft, fließen seine unverkauften Plätze in die nächste Kategorie, statt den Verkauf zu blockieren.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Eingänge, text: "Scanner-App für iOS und Android an jedem Tor; Tickets von Partnern aus anderen Systemen werden ebenfalls akzeptiert.", link: { label: MACS Scanner-App →, href: /product/scanner } }
+      - { title: Last, text: "800 Bestellungen pro Minute bei 1.000 gleichzeitigen Käufern in Lasttests; die Eröffnungsminute des Verkaufs ist abgedeckt.", link: { label: Zuverlässigkeit →, href: /product/reliability } }
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: Was fragen Festivalveranstalter zuerst?
+    items:
+      - q: Kann ein Käufer Tagespass und Camping in einer Bestellung kombinieren?
+        a: Ja, mehrere Kategorien eines Events in einem Checkout.
+      - q: Können wir die Preise für die letzte Woche ändern?
+        a: Ja. Preisfenster schalten nach Datum und Uhrzeit um; Mengenstufen öffnen den nächsten Preis, wenn eine Stufe ausverkauft ist.
+      - q: Wir haben Freikarten für Sponsoren. Wie geht das?
+        a: Freikarten und Einladungen aus dem Event Center, ohne Plattformgebühr, gescannt wie jedes Ticket.
+      - q: Was kostet es?
+        a: "Eine feste Provision pro verkauftem Ticket, nach dem Event in Rechnung gestellt oder von Ihren Credits abgezogen, monatlich bei Events, die mehrere Monate im Verkauf sind; siehe [Preise](/pricing)."
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: Event anlegen, Zahlungskonto verbinden, Link teilen.
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

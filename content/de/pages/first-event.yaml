@@ -1,0 +1,50 @@
+title: "Ihr erstes Event: von der Anfrage bis zum Scanner"
+description: "Schritt für Schritt: Anfrage senden, bestätigen lassen, Zahlungskonto verbinden, Event anlegen, Saalplan senden, veröffentlichen, verkaufen, am Einlass scannen."
+h1: Ihr erstes Event mit ArenaSoldOut.com
+lead: "Acht Schritte von der Anfrage bis zum Scanner am Einlass. Ist bei einem Zahlungsanbieter bereits ein Konto eröffnet, geht ein Event ohne Saalplan 10 Minuten nach der Bestätigung Ihrer Organisation in den Verkauf."
+related:
+  - { label: Zahlungsanbieter nach Land, href: /payments, text: "Welchen Anbieter Ihr Unternehmen verbinden kann, mit Zahlungsarten und Währungen." }
+  - { label: Saalpläne, href: /product/seating, text: "Was Sie uns senden, damit wir Ihre Spielstätte kostenlos zeichnen." }
+  - { label: MACS-Scanner-App, href: /product/scanner, text: "Tickets am Einlass scannen, auf iOS und Android." }
+sections:
+  - type: steps
+    id: steps
+    eyebrow: Schritt für Schritt
+    title: Wie bringe ich mein erstes Event in den Verkauf?
+    items:
+      - title: Anfrage senden
+        text: "Fünf kurze Schritte im [Anfrageformular](/start): Kontakt, Organisation, Events, Zahlungen, Einwilligung. Oder senden Sie dasselbe im [Telegram-Bot](https://t.me/EventsCentrBot). Ihre Angaben werden laufend gespeichert."
+      - title: Wir bestätigen Ihre Organisation
+        text: "Das Team prüft die Anfrage und legt Ihre Organisation und Ihr Event-Center-Konto an, meist binnen eines Tages, und teilt Ihnen mit, wie Sie sich anmelden."
+      - title: Zahlungskonto verbinden, einmalig
+        text: "Erstellen Sie API-Schlüssel im Dashboard Ihres Anbieters (Stripe, Flitt, AllPay oder ein anderer Anbieter Ihres Landes) und fügen Sie sie im Event Center ein oder senden Sie sie dem Team. Das geschieht einmal für die Organisation; jedes weitere Event nutzt dasselbe Konto. Noch kein Konto? Eröffnen Sie zuerst eines bei einem [Anbieter Ihres Landes](/payments): Das dauert so lange, wie der Anbieter braucht."
+      - title: Event anlegen
+        text: "Im Event Center im Browser oder im Telegram-Bot aus einem Foto Ihres Plakats: Name, Spielstätte, Termine und Vorstellungen, Ticketkategorien und Preise, das Plakat. Ohne Saalplan dauert das etwa 10 Minuten."
+      - title: Saalplan senden, wenn Sie Plätze verkaufen
+        text: "Wir zeichnen den Plan kostenlos, meist binnen eines Tages, und zeigen ihn Ihnen vor dem Verkaufsstart. Eines davon genügt: ein PDF des Saalplans, ein Foto einer Handskizze oder eine Tabelle mit Reihen und den Plätzen jeder Reihe (Excel oder Google Sheets). Eine SVG-Datei wird direkt importiert."
+      - title: Veröffentlichen und teilen
+        text: "Schalten Sie das Event in den Verkauf. Teilen Sie den Link zur von uns gehosteten Verkaufsseite oder fügen Sie das Ticket-Widget mit drei Zeilen Code auf Ihrer eigenen Website ein. Promo-Codes, Preise nach Datum und die Servicegebühr stellen Sie an derselben Stelle ein."
+      - title: Verkäufe beobachten
+        text: "Käufer zahlen auf Ihr Zahlungskonto und erhalten das Ticket per E-Mail in ihrer Sprache. Jede Bestellung steht im Event Center, und jeder Verkauf und jede Erstattung erscheint binnen Sekunden in Ihrer Telegram-Gruppe."
+      - title: Am Einlass scannen
+        text: "Installieren Sie die MACS-App auf iPhone oder Android, melden Sie sich mit Ihrem Event-Center-Konto an, wählen Sie die Vorstellung und scannen Sie den EAN-13 oder den QR-Code auf Papier oder Bildschirm. So viele Smartphones, wie Sie Eingänge haben."
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: Was fragen Veranstalter vor dem ersten Event?
+    items:
+      - q: Wie lange dauert es wirklich?
+        a: "Bestätigung der Organisation: meist binnen eines Tages. Danach ist ein Event ohne Saalplan bei bereits eröffnetem Zahlungskonto in etwa 10 Minuten im Verkauf. Ein Event mit Sitzplätzen wartet auf den Plan, den wir zeichnen, meist einen Tag. Ein neues Konto bei einem Zahlungsanbieter zu eröffnen dauert so lange, wie der Anbieter braucht."
+      - q: Was bereite ich vor?
+        a: "Den Eventnamen, die Spielstätte, Termine und Uhrzeiten, die Ticketkategorien und Preise, ein Plakat und die API-Schlüssel Ihres Zahlungskontos. Für Plätze den Saalplan in einer der oben genannten Formen."
+      - q: Kann das Team es für mich einrichten?
+        a: "Ja. Senden Sie die Angaben im [Telegram-Bot](https://t.me/EventsCentrBot) oder über das Kontaktformular, und wir legen das Event gemeinsam mit Ihnen an; Sie prüfen es vor dem Verkaufsstart."
+      - q: Was kostet das erste Event?
+        a: "Dasselbe wie jedes andere: eine Provision pro verkauftem Ticket, in Rechnung gestellt nach der Veranstaltung, oder weniger mit im Voraus gekauften Credits. Saalpläne und Freikarten kosten nichts. Die Preise stehen auf der [Preisseite](/pricing)."
+  - type: cta
+    id: start
+    title: Beginnen Sie mit der Anfrage
+    text: "Fünf kurze Schritte, laufend gespeichert. Das Team bestätigt Ihre Organisation, meist binnen eines Tages."
+    primary: { label: Anfrage senden, href: /start }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Erst Fragen? Die Schaltfläche „Team kontaktieren“ finden Sie auf jeder Seite."

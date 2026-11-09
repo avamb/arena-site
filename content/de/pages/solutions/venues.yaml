@@ -1,0 +1,38 @@
+title: "Ticketverkauf für Spielstätten und Clubs: ein Plan"
+description: "Für feste Spielstätten und Clubs: ein Saalplan für jedes Event, viele Events im Monat, Scan am Einlass, ein Prozentsatz des Ticketpreises statt einer Gebühr."
+h1: Spielstätten und Clubs
+lead: "Ihre eigene Spielstätte, viele Events im Monat. Der Plan wird einmal gebaut und wiederverwendet, jeder Veranstalter, der die Spielstätte mietet, verkauft über Ihre oder seine Seite, und die Konditionen sind andere: ein Prozentsatz des Ticketpreises statt der Gebühr pro Ticket."
+related:
+  - { label: Preise und detaillierte Bedingungen, href: /pricing }
+  - { label: Saalpläne, href: /product/seating }
+  - { label: Theater, href: /solutions/theatre }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Für Spielstätten
+    title: Was zählt bei einer Spielstätte?
+    items:
+      - { title: "Ein Plan, jedes Event", text: "Einmal nach Ihrer Datei gebaut, für jedes Event wiederverwendet; Versionen für Bühnenaufbauten.", link: { label: Saalpläne →, href: /product/seating } }
+      - { title: "Veranstalter, die die Spielstätte mieten", text: "Eine Seite pro Veranstalter mit eigenem Link; die Spielstätte sieht jedes Event, der Veranstalter sieht seine eigenen.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Eigene Konditionen, text: "Zwei Prozent des Ticketpreises statt der Gebühr pro Ticket, keine Gebühr auf Einladungen und Erstattungen, Mengenkonditionen auf Anfrage.", link: { label: Preise →, href: /pricing } }
+      - { title: Der Einlass, text: "Scanner-App für iOS und Android, Handscanner, Tickets von Partnern aus anderen Systemen werden akzeptiert.", link: { label: MACS Scanner-App →, href: /product/scanner } }
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: Was fragen Betreiber von Spielstätten zuerst?
+    items:
+      - q: Welche Konditionen gelten für eine feste Spielstätte?
+        a: "Ein Prozentsatz des Ticketpreises statt der Gebühr pro Ticket, keine Gebühr auf Einladungen und Erstattungen. Die Zahl steht auf der [Preisseite](/pricing); Mengen- und individuelle Konditionen auf Anfrage."
+      - q: Kann ein Veranstalter unsere Events auf seiner eigenen Website verkaufen?
+        a: Ja, mit dem Widget auf seiner Website oder einer Veranstalterseite, die wir hosten. Verkäufe aus jedem Kanal erscheinen im Event Center der Spielstätte.
+      - q: Können wir von einem anderen Ticketsystem wechseln?
+        a: "Ja. Sessions, Saalpläne und Kunden wurden für zwei Kunden ohne Ausfallzeit von ArenaSoldOut.com importiert; andere Systeme über die Event-Bundle-API. Siehe [Entwickler](/developers)."
+      - q: Wer betreibt das Event Center?
+        a: Ihr Team, mit Rollen. Die Spielstätte besitzt die Organisation; Manager sehen, was Sie erlauben.
+  - type: cta
+    id: start
+    title: Sprechen Sie mit uns
+    text: Erzählen Sie uns von der Spielstätte und der Zahl der Events im Monat. Wir richten Plan und Konditionen gemeinsam mit Ihnen ein.
+    primary: { label: Sprechen Sie mit uns, href: /start }
+    secondary: { label: Preise ansehen, href: /pricing }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

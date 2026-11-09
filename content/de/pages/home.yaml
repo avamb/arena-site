@@ -1,0 +1,330 @@
+title: "ArenaSoldOut.com: Tickets verkaufen, Geld behalten"
+description: "Ticketverkauf für Veranstalter: in Minuten online, auf Ihrer Website oder einer von uns gehosteten Seite. Käufer zahlen auf Ihr eigenes Zahlungskonto."
+sections:
+  - type: hero
+    eyebrow: Ticketplattform für Veranstalter
+    title: Plätze verkaufen. Tickets verkaufen. Das Geld behalten.
+    lead: Starten Sie den Verkauf in Minuten, auf Ihrer eigenen Website oder auf einer Seite, die wir hosten. Käufer zahlen auf Ihr eigenes Zahlungskonto. Jedes Ticket und jede Auszahlung bleibt in Ihrer Hand.
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Event anlegen, href: /start#create }
+    note: Zahlungskonto verbinden, Link teilen. Events ohne Saalplan gehen noch heute in den Verkauf.
+    widget:
+      aria: Vorschau des Ticket-Widgets
+      event: Autumn Jazz Night
+      meta: "Fr 24. Okt · 19:30 · Palác Akropolis, Prag"
+      sessions: [Fr 24. Okt, Sa 25. Okt]
+      stage: Bühne
+      mapAria: "Saalplan: Reihen A bis J, fünf Preiskategorien, freie Plätze wählen"
+      mapText: "Saalplan einer Spielstätte mit 140 Plätzen: Reihen A bis J, je sieben Plätze links und rechts vom Gang, fünf Preiskategorien von den vorderen Reihen bis zum hinteren Balkon, etwa ein Drittel der Plätze verkauft, Rollstuhlplätze an beiden Enden der Reihe J. Zwei Plätze in Reihe G sind vorgewählt; wählen Sie freie Plätze, der Warenkorb darunter rechnet neu. Plätze werden 10 Minuten reserviert."
+      seatTitle: "Reihe {row}, Platz {seat}"
+      legend: { sold: Verkauft, held: Reserviert, wheelchair: Rollstuhlplatz, selected: Gewählt }
+      currency: "€"
+      categories:
+        - { name: Vordere Reihen, price: 48, rows: AB }
+        - { name: Parkett, price: 38, rows: CDE }
+        - { name: "Parkett hinten", price: 32, rows: FG }
+        - { name: Balkon, price: 24, rows: HI }
+        - { name: "Balkon hinten", price: 18, rows: J }
+      feePercent: 5
+      holdMinutes: 10
+      line: "Reihe {row} · Plätze {seats}"
+      lineOne: "Reihe {row} · Platz {seat}"
+      qty: "{n} × {price}"
+      fee: "Servicegebühr {percent}%"
+      held: Reserviert für
+      pay: "{total} zahlen"
+      empty: Wählen Sie Ihre Plätze im Plan
+      tips:
+        free: "{category}, {price}. Klicken zum Hinzufügen"
+        wheelchair: "Rollstuhlplatz, {category}, {price}. Klicken zum Hinzufügen"
+        selected: "In Ihrem Warenkorb. Klicken zum Entfernen"
+        sold: Bereits verkauft
+        held: Von einem anderen Käufer reserviert, noch nicht bezahlt
+        blocked: Nicht im Verkauf
+      modal:
+        title: So sehen Ihre Käufer den Kauf
+        text: "Eine Vorschau des Checkouts auf Ihrer Verkaufsseite oder im Widget auf Ihrer Website. Ihre Käufer zahlen {total} auf Ihr eigenes Zahlungskonto; um Plätze, Ticket und Einlass kümmern wir uns. Richten Sie Ihr Event ein, und dieser Plan gehört Ihnen."
+        primary: { label: Verkauf starten, href: /start }
+        bot: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+        close: Weiter ansehen
+  - type: facts
+    items:
+      - Veranstalter in **31** Ländern seit 2019
+      - "**800** Bestellungen pro Minute in Lasttests"
+      - Tickets in **7** Sprachen
+      - Auszahlungen gehen auf **Ihr** Konto
+
+  # {price}, {seated}, {countries} und {since} kommen aus content/data (pricing, clients).
+  - type: reasons
+    id: why
+    eyebrow: Warum ArenaSoldOut.com
+    title: Warum verkaufen Veranstalter ihre Tickets bei uns?
+    lead: "Vier Gründe, jeweils mit den Fakten dahinter."
+    items:
+      - icon: wallet
+        title: Sie behalten mehr von jedem Ticket
+        text: "Pauschal **{price}** pro Ticket, kein Prozentsatz Ihres Umsatzes: Ein Ticket für $15 und ein Ticket für $150 kosten Sie gleich viel. Käufer zahlen auf Ihr eigenes Zahlungskonto, das Geld gehört Ihnen also in dem Moment, in dem sie zahlen, nicht erst nach der Veranstaltung."
+        bullets:
+          - Nichts wird von Ihren Einnahmen abgezogen, keine Rücklage einbehalten
+          - Keine Provision auf Freikarten und kostenlose Tickets
+          - Ihren Saalplan zeichnen wir kostenlos
+        link: { label: Preise und Rechner →, href: /pricing }
+      - icon: clock
+        title: In 10 Minuten im Verkauf
+        text: "Sobald Ihre Organisation bestätigt ist, meist innerhalb eines Tages, geht ein Event ohne Saalplan in **10 Minuten** in den Verkauf, wenn Sie bereits ein Konto bei einem Zahlungsanbieter haben. Dieses Konto verbinden Sie einmal; jedes weitere Event braucht nur Namen, Termine und Preise."
+        link: { label: "Ihr erstes Event, Schritt für Schritt →", href: /first-event }
+      - icon: list-checks
+        title: Was Veranstalter verlangen, ist schon eingebaut
+        text: "Keine Module zu kaufen, keine Plugins zu installieren:"
+        bullets:
+          - Widget auf Ihrer Website oder eine Verkaufsseite, die wir hosten
+          - Sitz- und Stehplätze in einem Event
+          - Promo-Codes, Preise, die sich nach Datum ändern
+          - Freikarten, Erstattungen, verlegte Termine mit E-Mails an die Käufer
+          - Scanner-App für iOS und Android
+          - Jeder Verkauf in Sekunden in Ihrer Telegram-Gruppe
+        link: { label: Die Antworten im Detail →, href: "#answers" }
+      - icon: shield-check
+        title: Ticketverkauf seit {since}
+        text: "Veranstalter in **{countries}** Ländern seit {since}: Konzerte, Theater, Festivals, Shows, Masterclasses. **800** Bestellungen pro Minute in Lasttests, nächtliche verschlüsselte Backups, ein Watchdog, der das Team alarmiert, bevor Sie etwas merken."
+        link: { label: Kunden und Referenzen →, href: /clients }
+
+  - type: steps
+    id: how
+    eyebrow: So funktioniert es
+    title: Heute im Verkauf. Drei Fragen, die Veranstalter zuerst stellen.
+    items:
+      - title: Wie schnell kann ich in den Verkauf gehen?
+        text: "Ein Event ohne Saalplan geht in 10 Minuten in den Verkauf, sobald Ihre Organisation bestätigt und Ihr Zahlungskonto verbunden ist; das verbinden Sie einmal. Für eine Spielstätte mit Sitzplätzen schicken Sie uns Ihren Plan: Wir zeichnen ihn kostenlos, meist innerhalb eines Tages."
+      - title: Was brauche ich?
+        text: "Den Namen und den Zeitplan des Events, Ihre Ticketpreise, Ihr Plakat und Ihr eigenes Zahlungskonto: Stripe, Flitt, AllPay oder einen anderen Anbieter Ihres Landes. Das Geld geht ab dem ersten Ticket an Sie."
+      - title: Wie richte ich es ein?
+        text: "Im Browser am Computer oder Telefon, im „Event Center“*. Oder in Telegram, wo der Bot Ihr Plakat liest und Termine, Preise und Spielstätte zur Bestätigung einträgt. Oder Sie schicken es uns, und wir richten es ein."
+    note: "* Das „Event Center“ ist Ihr Veranstalterkonto bei ArenaSoldOut.com: jedes Event, jede Bestellung, Erstattung, Freikarte und Vorstellung, für Sie und Ihr Team, im Browser und in Telegram. [Das Event Center unten ansehen →](#center) Jeder Schritt von der Anmeldung bis zum Scanner: [Ihr erstes Event →](/first-event)"
+
+  - type: ways
+    id: where
+    eyebrow: Wo Sie verkaufen
+    title: Auf Ihrer Website oder auf unserer Seite. Das Geld geht in beiden Fällen an Sie.
+    items:
+      - title: Sie haben eine Website
+        text: "Ihre Website ist der Checkout. Binden Sie das Ticket-Widget auf jeder Seite ein: WordPress, Tilda, Wix, Webflow oder eigener Code. Käufer verlassen Ihre Domain nie."
+        bullets:
+          - Widget auf jeder Website, drei Zeilen Code
+          - WordPress-Plugin mit WooCommerce-Bestellungen
+          - Ihre Farben, Ihre Schriften, Ihre Sprache
+      - title: Sie haben keine Website
+        text: "Wir hosten die Verkaufsseite: tickets.arenasoldout.com/your-name/your-event. Teilen Sie einen Link in sozialen Netzwerken, Messengern und auf dem Plakat."
+        bullets:
+          - Eine Seite pro Veranstalter und pro Event
+          - Eine eigene Seite für jeden Promoter
+          - In Minuten fertig, ohne Designarbeit
+          - Links zu Ihren Partner-Verkäufern auf derselben Seite
+
+  - type: qa
+    id: answers
+    eyebrow: Was Veranstalter als Nächstes fragen
+    title: Ja. Und so geht es.
+    items:
+      - title: Kann ich Promo-Codes nutzen?
+        text: Ja. Ein Code kann für ein Event, eine Vorstellung oder eine Kategorie gelten, mit Zeitfenster, Mindestmenge und Limit pro Käufer.
+      - title: Können sich Preise zu einem von mir gesetzten Datum ändern?
+        text: Ja. Early-Bird-Fenster wechseln nach Datum und Uhrzeit. Mengenstufen öffnen den nächsten Preis, wenn der aktuelle ausverkauft ist.
+        visual:
+          type: ladder
+          rungs:
+            - { price: US$24, width: 100, label: erste 100 · verkauft }
+            - { price: US$119, width: 62, label: nächste 150 · im Verkauf }
+            - { price: US$599, width: 0, label: öffnet danach, next: true }
+      - title: Mehrere Preise für ein Event?
+        text: Ja. Kategorien mit eigenem Preis, Kontingent und Verkaufsfenster, dazu kostenlose Tickets und Tickets zum selbst gewählten Preis.
+      - title: Kann ich eine Servicegebühr aufschlagen?
+        text: Ja. Ein Prozentsatz pro Verkaufskanal, dem Käufer als eigene Zeile angezeigt und zusammen mit dem Ticket auf Ihr Konto gezahlt. Prüfen Sie, ob Ihr Land eine Servicegebühr auf Ticketverkäufe erlaubt.
+      - title: Mit Sitzplätzen und ohne?
+        text: "Ja, und beides in einem Event: ein Saalplan mit Kategorien, Stehbereiche mit Kontingenten. Schicken Sie uns den Plan Ihrer Spielstätte, wir zeichnen ihn kostenlos im System, meist innerhalb eines Tages: Ein PDF, ein Foto einer Handskizze oder eine Tabelle der Reihen mit den Plätzen je Reihe (Excel oder Google Sheets) genügt. Von Hand eingeben müssen Sie ihn nie."
+        visual:
+          type: plan
+          aria: Saalplan mit Parkett, zwei Logen, einem Balkon und einem Stehbereich
+          stage: Bühne
+          parterre: Parkett · 312
+          logeLeft: Loge L · 48
+          logeRight: Loge R · 48
+          balcony: Balkon · 180
+          standing: Stehplätze
+      - title: Funktioniert ein Scanner mit den Tickets?
+        text: Ja. Jedes Ticket ist ein PDF mit EAN-13-Barcode und QR-Code, in der Sprache des Käufers. Scannen Sie am Einlass mit der Scanner-App für iOS und Android oder mit einem Handscanner. Die App nimmt auch Tickets an, die Ihre Partner in anderen Systemen verkauft haben.
+        visual:
+          type: ticket
+          event: Autumn Jazz Night
+          meta: Fr 24. Okt · 19:30 · Palác Akropolis
+          seat: Parkett · Reihe G · Platz 7
+          code: "2173049188256"
+      - title: Wie sehe ich meine Verkäufe?
+        text: "In Ihrem „Event Center“, Ihrem eigenen Konto auf dieser Seite: am Telefon oder Computer öffnen, nichts zu installieren. Alle Ihre Events, jede Bestellung, Erstattungen und Summen pro Vorstellung, sichtbar nur für Sie und Ihr Team. Lieber Telegram? Jeder Verkauf und jede Erstattung landet auch in Sekunden in Ihrer Telegram-Gruppe, mit dem Kontakt des Käufers. [Das Event Center unten ansehen →](#center)"
+        visual:
+          type: telegram
+          from: ArenaSoldOut.com
+          lines:
+            - "**Bezahlt** · Autumn Jazz Night · Fr 24. Okt"
+            - Reihe G 7–8 · Parkett
+            - "**€76.00** · Anna K. · +420 ••• 41 18"
+          time: "19:42"
+      - title: Erstattungen, Freikarten, Terminänderungen?
+        text: "Ja, in Ihrem Konto im „Event Center“. Ein Ticket erstatten, Freikarten ausstellen, eine Vorstellung verlegen oder absagen: Käufer erhalten eine E-Mail in ihrer Sprache mit dem aktualisierten Ticket."
+      - title: Hält es ein Stadion aus?
+        text: Ja. 800 Bestellungen pro Minute bei 1.000 Käufern gleichzeitig auf der Seite in Lasttests, nächtliche verschlüsselte Backups, ein Watchdog, der uns alarmiert, bevor Sie etwas merken.
+
+  - type: center
+    id: center
+    eyebrow: Event Center
+    title: Bestellungen, Tickets, Erstattungen und Freikarten an einem Ort
+    lead: "Das „Event Center“ ist Ihr eigenes Konto bei ArenaSoldOut.com. Öffnen Sie es am Telefon oder Computer, nichts zu installieren. Jedes Event, jede Bestellung, Erstattungen, Freikarten und Verkaufszahlen: sichtbar nur für Sie und Ihr Team. Blättern Sie durch die Ansichten, um zu sehen, was es kann."
+    bullets:
+      - Bestellungen und Käufer, mit Suche und CSV-Berichten pro Vorstellung
+      - "Tickets: erneut senden, erstatten, einladen"
+      - "Vorstellungen: Termine hinzufügen, verlegen oder absagen, mit E-Mails an die Käufer"
+      - Preise, Kategorien, Promo-Codes, Servicegebühr
+      - "Verkaufsanalyse: Aufrufe, Warenkörbe, Zahlungen"
+      - "Teamrollen: Inhaber, Manager"
+    note: "Lieber Telegram? Dasselbe Event Center steckt im Bot: Event aus einem Plakatfoto anlegen, jeden Verkauf in Ihrer Gruppe erhalten."
+    stripAria: Ansichten des Event Centers, seitwärts scrollen
+    screens:
+      - kind: orders
+        aria: "Event Center: Bestellliste"
+        title: Autumn Jazz Night
+        status: Im Verkauf
+        meta: Fr 24. Okt · 312 von 408 verkauft
+        columns: [Bestellung, Käufer, Plätze, Summe, Status]
+        rows:
+          - { order: "1000000512", buyer: Anna K., seats: G 7–8, total: €79.80, status: Bezahlt, tone: ok }
+          - { order: "1000000511", buyer: Tomáš V., seats: H 6–7, total: €51.00, status: Bezahlt, tone: ok }
+          - { order: "1000000509", buyer: Marta S., seats: C 2, total: €38.00, status: Erstattet, tone: neutral }
+          - { order: "1000000508", buyer: Presse, seats: A 1–4, total: €0.00, status: Freikarte, tone: neutral }
+          - { order: "1000000507", buyer: Jana R., seats: I 8–9, total: €48.00, status: Ausstehend, tone: warn }
+        actions: [CSV exportieren, Freikarten senden, Vorstellung verlegen]
+        caption: 1 · Bestellungen
+      - kind: refund
+        aria: "Event Center: Ticket erstatten"
+        title: Bestellung 1000000509
+        tag: Erstattung
+        meta: Marta S. · C 2 · €38.00
+        rows:
+          - { label: Ticket, value: Parkett · Reihe C · Platz 2 }
+          - { label: Bezahlt, value: €38.00 · Karte · 12. Okt }
+          - { label: Erstattung, value: €38.00 auf die Karte des Käufers }
+          - { label: Platz, value: geht zurück in den Verkauf }
+          - { label: E-Mail an den Käufer, value: auf Tschechisch gesendet }
+        primary: Ticket erstatten
+        secondary: Abbrechen
+        caption: 2 · Ein Ticket erstatten
+      - kind: sales
+        aria: "Event Center: Verkäufe pro Vorstellung"
+        title: Verkäufe pro Vorstellung
+        meta: Oktober · €11,284 · 4 Vorstellungen
+        rungs:
+          - { price: Fr 24, width: 76, label: "312 / 408 · €8,940" }
+          - { price: Sa 25, width: 34, label: "139 / 408 · €2,344" }
+          - { price: So 26, width: 0, label: noch nicht im Verkauf }
+        rows:
+          - { label: Quellen, value: Ihre Website 61% · gehostete Seite 29% · Partner 10% }
+          - { label: Erstattungen, value: 3 Tickets · €114.00 }
+        actions: [CSV pro Vorstellung, Export ins CRM]
+        caption: 3 · Verkäufe und Quellen
+
+  - type: money
+    id: money
+    eyebrow: Geld
+    title: Käufer zahlen an Sie. Nicht an uns.
+    lead: 100% jedes Verkaufs gehen an Sie. Der Käufer zahlt den Ticketpreis und, wenn Sie eine aufschlagen, die Servicegebühr direkt auf Ihr eigenes Zahlungskonto, in Ihrer Währung, auf Ihrem Kontoauszug. ArenaSoldOut.com hält Ihr Geld nie. Sie zahlen ArenaSoldOut.com die Plattform-Provision pro verkauftem Ticket, nach der Veranstaltung oder aus einem vorausbezahlten Paket. Erstattungen und Chargebacks entscheiden Sie, nicht eine Plattformregel.
+    flowAria: Zahlungsfluss
+    nodes:
+      - { label: Käufer, sub: "Karte, Apple Pay, Google Pay" }
+      - { label: Ihre Website, sub: "oder die Verkaufsseite, die wir hosten" }
+      - { label: ArenaSoldOut.com, sub: "Bestellung, Plätze, Ticket" }
+      - { label: Ihr Zahlungskonto, providers: true, highlight: true }
+      - { label: Ihre Bank, sub: nach dem Zeitplan des Anbieters }
+    note: Sie zahlen ArenaSoldOut.com die Plattform-Provision pro verkauftem Ticket. Von Ihren Einnahmen wird nichts abgezogen, nichts einbehalten.
+
+  - type: pricing
+    id: pricing
+    eyebrow: Preise
+    title: Pro Ticket. Kein Abo.
+    lead: Nur die Plattform-Provision. Die Kartenabwicklung zahlen Sie an Ihren Anbieter zu dessen Konditionen, die von Ihrem Acquirer und Ihrer Bank abhängen.
+    compact: true
+    planBullets:
+      - "**{seated}** pro Ticket mit gewähltem Platz im Saalplan"
+      - "**Kostenlose** Freikarten und kostenlose Tickets zu kostenpflichtigen Events: keine Provision"
+      - "**[Credits](/pricing#packages)** senken die Provision pro Ticket"
+    cta: { label: Verkauf starten, href: /start }
+    buyCredits: { label: Credits kaufen, href: /pricing#packages }
+    plans:
+      currency: "Preise anzeigen in"
+      payg:
+        name: Pay as you go
+        text: Eine einfache Pauschale pro verkauftem Ticket, gezahlt nach der Veranstaltung.
+        bullets:
+          - "**{seated}** pro Ticket mit gewähltem Platz im Saalplan"
+          - "Rechnung nach der Veranstaltung, per Banküberweisung"
+          - "Kein Abo, kein Vertrag"
+      upfront:
+        name: Im Voraus zahlen mit Credits
+        text: "Kaufen Sie Credits im Voraus und zahlen Sie bis zu {saving}% weniger pro Ticket."
+        from: ab
+        bullets:
+          - "**{fromSeated}** pro Ticket mit Platz"
+          - "Credits verfallen nie; laden Sie auf, wann Sie möchten"
+          - "Der Verkauf stoppt nie: Sind die Credits aufgebraucht, wird der Rest zum Pay-as-you-go-Preis abgerechnet"
+      perks:
+        - { big: "50%", title: Eingetragene gemeinnützige Organisationen, text: "50% Rabatt auf unsere Provision. Schreiben Sie uns, wir schalten ihn frei." }
+        - { big: "Gratis", title: Freikarten, text: "Keine Provision auf Freikarten und kostenlose Tickets zu kostenpflichtigen Events." }
+        - { big: "Gratis", title: Saalplan, text: "Wir zeichnen Ihren Plan nach einem PDF, einem Foto einer Skizze oder einer Tabelle mit Reihen und Plätzen." }
+        - { big: "{lowPercent}%", title: "Tickets bis {lowMax}", text: "Für Events, bei denen jedes Ticket {lowMax} oder weniger kostet. [So funktioniert es](#low-price)" }
+      brand: "Die Preise setzen die Zeile **Tickets: ArenaSoldOut.com** mit einem Link zu uns auf Ihrer Eventseite voraus; das Ticket-Widget zeigt sie standardmäßig an. Um ohne sie zu verkaufen, kostet White Label **€45 im Monat pro Marke oder Spielstätte in EU-Ländern** und **US$45 im Monat pro Marke oder Spielstätte in allen anderen Ländern**. [Detaillierte Bedingungen →](/pricing/terms)"
+    currencyNote: "Provision in **US-Dollar** für jedes Land außerhalb der EU und in **Euro** für Spielstätten in EU-Ländern. US-Dollar sind die Basis; Euro-Preise sind die Dollar-Preise zum EZB-Kurs. Beträge ohne MwSt."
+    lowPrice:
+      title: "Events, bei denen jedes Ticket {lowMax} oder weniger kostet"
+      text: "{lowPercent}% des Ticketpreises, mindestens {lowMin} und höchstens {lowCap} pro Ticket; {lowSeat} mehr mit Platz. Das gilt für das ganze Event, nur wenn kein Ticket irgendeiner Kategorie mehr als {lowMax} kostet."
+    venues:
+      title: Feste Spielstätten
+      text: "Theater, Clubs, Stadien, Zirkusse: **{percent}% des Ticketpreises**, höchstens **{cap}** pro Ticket, mit und ohne Platz gleich. Monatliche Rechnung."
+      cta: { label: Sprechen Sie mit uns, href: /contact }
+    note: "Sie zahlen nach der Veranstaltung oder kaufen Credits im Voraus und zahlen weniger pro Ticket. Credit-Pakete, den Rechner und die detaillierten Bedingungen finden Sie auf der Preisseite: [Credits und ihre Preise →](/pricing#packages)"
+    terms: { label: Alle Preise und der Rechner →, href: /pricing }
+
+  - type: who
+    id: who
+    eyebrow: Für wen es ist
+    title: Veranstalter, die ihre eigenen Tickets verkaufen
+    items:
+      - { icon: music, title: Konzerte, text: "Steh- und Sitzplätze, mehrere Preiskategorien, Early Bird, Scannen am Einlass.", link: { label: Für Konzerte →, href: /solutions/concerts } }
+      - { icon: drama, title: Theater, text: "Saalpläne, die zur Spielstätte passen, wiederkehrende Termine, Freikarten für Presse und Partner.", link: { label: Für Theater →, href: /solutions/theatre } }
+      - { icon: box, title: Shows, text: "Eisshows, Zirkus, Tanz: viele Termine, viele Städte, ein Plan pro Spielstätte, mehrfach genutzt.", link: { label: Für Shows →, href: /solutions/shows } }
+      - { icon: tent, title: Festivals, text: "Mehrere Tage, viele Kategorien, Kategorien, die unverkaufte Plätze an die nächste weitergeben.", link: { label: Für Festivals →, href: /solutions/festivals } }
+      - { icon: waypoints, title: Konzerttourneen, text: "Eine Show, viele Städte und Termine, eine Seite pro Promoter mit eigenem Link.", link: { label: Für Tourneen →, href: /solutions/concert-tours } }
+      - { icon: mic, title: Masterclasses und Trainings, text: "Kleine Gruppen, wiederkehrende Termine, die eigenen E-Mails und die Sprache des Gastgebers.", link: { label: Für Gastgeber →, href: /solutions/master-classes } }
+      - { icon: building, title: Spielstätten und Clubs, text: "Ihre eigene Spielstätte, viele Events im Monat, ein mehrfach genutzter Saalplan, eigene Konditionen.", link: { label: Für Spielstätten →, href: /solutions/venues } }
+
+  - type: clients
+    id: clients
+    eyebrow: Kunden
+    title: Veranstalter in {countries} Ländern
+    lead: ArenaSoldOut.com verkauft seit {since} Tickets für Veranstalter; die Plattform dahinter wurde 2026 neu gebaut, und die Veranstalter sind mit umgezogen. Die früheren Plattformen der Gründer bedienten {track}. Ihre Aussagen und Logos stehen auf der Kundenseite.
+    cta: { label: Kunden und Referenzen, href: /clients }
+    marksAria: Kunden
+
+  - type: changes
+    id: changes
+    eyebrow: Neueste Änderungen
+    title: Die Plattform wächst jede Woche
+    lead: "Eine Zeile für jede Funktion, die bei den Veranstaltern angekommen ist. Sagen Sie uns, was Sie als Nächstes brauchen: Die meisten Wünsche von Veranstaltern sind innerhalb von Wochen umgesetzt, und das Team antwortet persönlich."
+    cta: { label: "Sagen Sie uns, was Sie brauchen", href: /start }
+    more: { label: Vollständige Liste →, href: /changes }
+    limit: 10
+
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: "Event anlegen, Zahlungskonto verbinden, Link teilen. Ein Event ohne Saalplan ist in 10 Minuten im Verkauf; einen Saalplan zeichnen wir für Sie kostenlos."
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

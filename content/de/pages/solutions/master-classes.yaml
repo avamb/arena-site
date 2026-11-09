@@ -1,0 +1,38 @@
+title: "Ticketverkauf für Masterclasses, Trainings, Verkostungen"
+description: "Plätze für Masterclasses, Trainings, Verkostungen und Workshops: kleine Gruppen mit Kontingent, wiederkehrende Termine, eigene E-Mails, Pay what you want."
+h1: Masterclasses und Trainings
+lead: Kleine Gruppen, wiederkehrende Termine, Ihre eigenen E-Mails in Ihrer Sprache. Eine gehostete Seite ist in Minuten fertig; das Widget passt zu der Website, die Sie schon haben. Vino&Co in Israel verkauft so seine Verkostungen.
+related:
+  - { label: Promo-Codes und Preisfenster, href: /product/pricing-tools }
+  - { label: Wo Sie verkaufen, href: /product/sell }
+  - { label: Kunden, href: /clients }
+sections:
+  - type: cards
+    id: what
+    eyebrow: Für Gastgeber
+    title: Was zählt bei einem Workshop?
+    items:
+      - { title: Ein Kontingent pro Termin, text: "Zwölf Plätze am Dienstag, zwanzig am Samstag; ausverkaufte Termine schließen sich selbst.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Wiederkehrende Termine, text: "Fügen Sie demselben Event Sessions hinzu; Preise und Kategorien werden übernommen, Käufer wählen den Termin.", link: { label: Event Center →, href: /#center } }
+      - { title: Kostenlos und Pay what you want, text: "Anmeldungen ohne Zahlung, oder ein Mindestpreis, und der Käufer entscheidet.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Ihre Sprache, text: "Seite, Widget, E-Mail und Ticket in der Sprache des Käufers, auch Hebräisch rechts-nach-links.", link: { label: Tickets →, href: /product/tickets } }
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: Was fragen Gastgeber zuerst?
+    items:
+      - q: Ich habe keine Website. Wo kaufen die Leute?
+        a: "Auf einer gehosteten Seite, tickets.arenasoldout.com/your-name/your-event, in Minuten fertig. Teilen Sie den Link in Messengern und sozialen Netzwerken."
+      - q: Kann ich nur eine Anzahlung einnehmen?
+        a: Setzen Sie den Ticketpreis auf die Anzahlung und kassieren Sie den Rest vor Ort; oder nutzen Sie Pay what you want mit einem Mindestpreis.
+      - q: Bekommen Käufer eine Erinnerung?
+        a: Käufer erhalten das Ticket per E-Mail und eine E-Mail, wenn ein Termin verlegt oder abgesagt wird. Erinnerungen vor dem Termin werden derzeit nicht versendet.
+      - q: Was kostet es?
+        a: "Ein fester Betrag pro bezahltem Ticket; kostenlose Anmeldungen kosten nichts. Siehe [Preise](/pricing)."
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: Event anlegen, Zahlungskonto verbinden, Link teilen.
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

@@ -1,0 +1,36 @@
+title: "Partner: Spielstätten, Veranstalter, WordPress-Agenturen"
+description: "Wie Spielstätten, Veranstalter, WordPress-Agenturen und Entwickler mit ArenaSoldOut.com arbeiten: Plugin, Widget, öffentliche API, eigene Konditionen."
+h1: Partner
+lead: Spielstätten, die Events ausrichten, Veranstalter, die sie verkaufen, Agenturen, die die Websites der Veranstalter bauen, Entwickler, die integrieren. Jeder hat einen Platz in der Plattform und eine Person im Team als Ansprechpartner.
+related:
+  - { label: Für Entwickler, href: /developers }
+  - { label: Spielstätten und Clubs, href: /solutions/venues }
+  - { label: Kontakt, href: /contact }
+sections:
+  - type: cards
+    id: kinds
+    eyebrow: Partner
+    title: Wie arbeiten Partner mit ArenaSoldOut.com?
+    items:
+      - { title: Spielstätten, text: "Eine feste Spielstätte bringt ihren Plan einmal ein und bietet ihn jedem Veranstalter an, der sie mietet; eigene Konditionen mit einem Prozentsatz des Ticketpreises.", link: { label: Spielstätten und Clubs →, href: /solutions/venues } }
+      - { title: Veranstalter, text: "Eine Seite pro Veranstalter mit eigenem Link und eigenen Codes; der Veranstalter sieht jeden Kanal, der Partner sieht seinen eigenen.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: WordPress-Agenturen, text: "Das Plugin legt Bestellungen in WooCommerce an; das Widget passt zu jedem Theme. Das Team unterstützt die Agentur beim Start.", link: { label: WordPress →, href: /solutions/wordpress } }
+      - { title: Entwickler, text: "Öffentliche API, Event-Bundle in einem Aufruf, signierte Webhooks, Keys mit Scopes, Widget-Events; Importe aus ArenaSoldOut.com und anderen.", link: { label: Entwickler →, href: /developers } }
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: Was fragen Partner zuerst?
+    items:
+      - q: Gibt es eine Vermittlungs- oder Wiederverkäufer-Provision?
+        a: Partnerschaftskonditionen werden individuell vereinbart; schreiben Sie dem Team, was Sie tun und für wen.
+      - q: Kann ein von einem Partner verkauftes Ticket am Einlass gescannt werden?
+        a: "Ja. Die [MACS Scanner-App](/product/scanner) akzeptiert Tickets von Partnern aus anderen Systemen neben Tickets von ArenaSoldOut.com, auf iOS und Android."
+      - q: Kann eine Agentur mehrere Veranstalter verwalten?
+        a: Ja, mit Rollen im Event Center jeder Organisation und API-Keys mit Scopes pro Organisation.
+  - type: cta
+    id: start
+    title: Schreiben Sie dem Team
+    text: Sagen Sie uns, wer Sie sind und mit wem Sie arbeiten. Wir antworten persönlich innerhalb eines Werktags.
+    primary: { label: Kontakt aufnehmen, href: /contact }
+    secondary: { label: Entwicklerdokumentation lesen, href: /developers }
+    note: "Oder in Telegram: Der Chat wird tagsüber in Europa und Israel gelesen."

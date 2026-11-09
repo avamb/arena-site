@@ -1,0 +1,29 @@
+title: "Für wen: Konzerte, Theater, Festivals, Spielstätten"
+description: "Veranstalter mit eigenen Tickets: Konzerte, Theater, Shows, Festivals, Konzerttourneen, Workshops, Trainings, Spielstätten und Clubs, WordPress-Websites."
+h1: Veranstalter, die eigene Tickets verkaufen
+lead: Eine Plattform, verschiedene Events. Wählen Sie Ihres, um zu sehen, welche Teile am wichtigsten sind, wie die erste Woche aussieht und was andere Veranstalter Ihrer Branche zuerst fragen.
+related:
+  - { label: So funktioniert es, href: /#how }
+  - { label: Preise, href: /pricing }
+  - { label: Kunden, href: /clients }
+sections:
+  - type: cards
+    id: list
+    eyebrow: Für wen
+    title: Welche Art von Event veranstalten Sie?
+    items:
+      - { title: Konzerte, text: "Steh- und Sitzplätze, mehrere Preiskategorien, Early Bird, Scan am Einlass.", link: { label: Für Konzerte →, href: /solutions/concerts } }
+      - { title: Theater, text: "Saalpläne, die zur Spielstätte passen, wiederkehrende Termine, Freikarten für Presse und Partner.", link: { label: Für Theater →, href: /solutions/theatre } }
+      - { title: Shows, text: "Eisshows, Zirkus, Tanz: viele Termine, viele Städte, ein Plan pro Spielstätte, mehrfach genutzt.", link: { label: Für Shows →, href: /solutions/shows } }
+      - { title: Festivals, text: "Mehrere Tage, viele Kategorien, Kategorien, die nicht verkaufte Plätze an die nächste weitergeben.", link: { label: Für Festivals →, href: /solutions/festivals } }
+      - { title: Konzerttourneen, text: "Eine Show, viele Städte und Termine, eine Seite pro Veranstalter mit eigenem Link.", link: { label: Für Konzerttourneen →, href: /solutions/concert-tours } }
+      - { title: Workshops und Trainings, text: "Kleine Gruppen, wiederkehrende Termine, eigene E-Mails und Sprache des Gastgebers.", link: { label: Für Gastgeber →, href: /solutions/master-classes } }
+      - { title: Spielstätten und Clubs, text: "Ihre eigene Spielstätte, viele Events im Monat, ein mehrfach genutzter Saalplan, eigene Konditionen.", link: { label: Für Spielstätten →, href: /solutions/venues } }
+      - { title: Websites auf WordPress, text: "Plugin mit WooCommerce-Bestellungen; der Shop läuft weiter, die Tickets kommen von ArenaSoldOut.com.", link: { label: Für WordPress-Websites →, href: /solutions/wordpress } }
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: "Event anlegen, Zahlungskonto verbinden, Link teilen. Ein Event ohne Saalplan ist in 10 Minuten im Verkauf; einen Saalplan zeichnen wir für Sie kostenlos."
+    primary: { label: Event anlegen, href: /start#create }
+    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
+    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."

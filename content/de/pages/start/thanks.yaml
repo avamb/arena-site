@@ -1,0 +1,19 @@
+title: "Danke, Ihr Antrag ist bei uns eingegangen"
+description: "Das Team liest jeden Antrag persönlich und antwortet innerhalb eines Werktags."
+h1: Danke
+lead: Das Team liest jeden Antrag persönlich und antwortet innerhalb eines Werktags, per E-Mail oder in dem Messenger, den Sie genannt haben.
+sections:
+  - type: cards
+    id: next
+    eyebrow: In der Zwischenzeit
+    title: Was kann ich jetzt tun?
+    items:
+      - title: Plakat und Preise vorbereiten
+        text: Name des Events, Termine, Ticketpreise und ein Plakatbild genügen, damit ein Event ohne Saalplan in den Verkauf gehen kann.
+        link: { label: So funktioniert es →, href: /#how }
+      - title: Schlüssel Ihres Zahlungskontos bereithalten
+        text: Wenn Sie schon ein Konto bei einem Anbieter Ihres Landes haben, stehen die API-Keys in dessen Dashboard. Wenn nicht, eröffnen wir gemeinsam mit Ihnen eines.
+        link: { label: Zahlungen →, href: /payments }
+      - title: Den Telegram-Bot ausprobieren
+        text: Der Bot legt aus einem Plakatfoto ein Event an und bittet Sie, Termine, Preise und die Spielstätte zu bestätigen.
+        link: { label: Telegram-Bot öffnen →, href: https://t.me/EventsCentrBot }

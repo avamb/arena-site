@@ -1,0 +1,41 @@
+title: "Kontakt zu ArenaSoldOut.com: Telegram, E-Mail, Antrag"
+description: "Schreiben Sie dem Team von ArenaSoldOut.com per Formular, Telegram oder E-Mail. Ticketkäufer: Fragen Sie zuerst den Veranstalter Ihres Events."
+h1: Kontakt zum Team
+lead: Veranstalter erreichen das Team mit dem Formular unten, in Telegram oder per E-Mail; es antworten dieselben Personen. Ticketkäufer schreiben zuerst an den Veranstalter ihres Events; die Hilfeseite für Käufer erklärt, wo sich das Ticket befindet.
+related:
+  - { label: Verkauf starten, href: /start }
+  - { label: Hilfe für Ticketkäufer, href: /help/tickets }
+  - { label: Partner, href: /partners }
+sections:
+  - type: contact-form
+    id: write
+    eyebrow: Schreiben Sie dem Team
+    title: Wie stelle ich dem Team eine Frage?
+    lead: "Schreiben Sie unten Ihre Frage. Eine Person aus dem Team antwortet per E-Mail, meist am selben Werktag. Fragen und Antworten, ohne Namen und E-Mail-Adressen, werden zu den Antworten auf dieser Website."
+  - type: cards
+    id: ways
+    eyebrow: Kontakt
+    title: Wie erreiche ich das Team?
+    items:
+      - { title: Telegram-Chat, text: "Der schnellste Weg. Das Team liest den Chat tagsüber in Europa und Israel.", link: { label: Telegram-Chat öffnen →, href: https://t.me/ArenaSoldOutChat } }
+      - { title: Telegram-Bot, text: "Legen Sie ein Event nach einem Plakat an oder sagen Sie einfach Hallo; das Team antwortet im selben Bot.", link: { label: Telegram-Bot öffnen →, href: https://t.me/EventsCentrBot } }
+      - { title: Antragsformular, text: "Erzählen Sie uns von Ihrem Event und wo Sie verkaufen; wir richten Sie ein, meist innerhalb eines Tages.", link: { label: Verkauf starten →, href: /start } }
+      - { title: E-Mail, text: "hello@arenasoldout.com für alles andere, auch für Partnerschaften und Presse.", link: { label: E-Mail schreiben →, href: "mailto:hello@arenasoldout.com" } }
+  - type: faq
+    id: questions
+    eyebrow: Fragen
+    title: An wen wende ich mich?
+    items:
+      - q: Ich habe ein Ticket gekauft und habe eine Frage
+        a: "Schreiben Sie an den Veranstalter des Events; sein Kontakt steht auf der Verkaufsseite und in der Ticket-E-Mail. Die [Hilfeseite für Käufer](/help/tickets) erklärt, wo das Ticket ist und was am Einlass zu tun ist."
+      - q: Ich bin Veranstalter und möchte starten
+        a: "Nutzen Sie das [Formular](/start) oder den Telegram-Bot. Das Team legt gemeinsam mit Ihnen Ihre Organisation und Ihre Verkaufsseite an und verbindet Ihr Zahlungskonto."
+      - q: Ich bin Entwickler oder Agentur
+        a: "Die [Entwicklerseite](/developers) zeigt das Widget und die API; [Partner](/partners) erklärt, wie Agenturen und Spielstätten mit uns arbeiten."
+  - type: cta
+    id: start
+    title: Starten Sie heute den Verkauf
+    text: Event anlegen, Zahlungskonto verbinden, Link teilen.
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Telegram-Chat öffnen, href: https://t.me/ArenaSoldOutChat }
+    note: "ABH TEAM OÜ, Europäische Union."
