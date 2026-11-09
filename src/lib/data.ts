@@ -43,6 +43,16 @@ export const tariffSchema = z.object({
   invoicing: z.string(),
   invoicing_monthly_after_months: z.number(),
   calculator: z.object({ default_price: z.number(), default_quantity: z.number(), currency: z.string() }),
+  /** Euro prices: the US dollar is the base, euro amounts are the dollar ones at `rate` (owner's decision of 09.11.2026). */
+  eur: z.object({
+    rate: z.number(),
+    rate_date: z.coerce.date(),
+    rate_source: z.string(),
+    stripe_links_current: z.boolean(),
+    low_price: z.object({ max_ticket: z.number(), percent: z.number(), min: z.number(), max: z.number(), seating_extra: z.number() }),
+    package_seating_extra: z.number(),
+    packages: z.array(z.object({ name: z.string(), prepay: z.number(), per_ticket: z.number() })),
+  }),
 });
 
 export const factsSchema = z.object({
@@ -54,6 +64,13 @@ export const factsSchema = z.object({
 });
 
 /** Stripe Payment Links of the prepaid packages: links[package][currency]. Empty until scripts/stripe-packages.mjs has run. */
+/** The currency-dependent part of the tariff: US dollars are the base, euros come from `tariff.eur`. */
+export function tariffFor(currency: string) {
+  const e = tariff.eur;
+  return currency.toUpperCase() === 'EUR'
+    ? { low_price: e.low_price, package_seating_extra: e.package_seating_extra, packages: e.packages }
+    : { low_price: tariff.low_price, package_seating_extra: tariff.package_seating_extra, packages: tariff.packages };
+}
 export const packageLinksSchema = z.object({ links: z.record(z.string(), z.record(z.string(), z.string().url())).default({}) });
 
 export type Nav = z.infer<typeof navSchema>;
@@ -133,6 +150,30 @@ export function liveMarketNames(markets: CollectionEntry<'markets'>[], lang: Lan
  * Placeholders of the home "reasons" block, from the price and client data so the copy never
  * carries a number of its own: {price} and {seated} per ticket in both currencies, {countries}, {since}.
  */
+/**
+ * Our prices as text placeholders for prose, FAQ, cards and comparison tables: {usdPrice}, {usdSeated},
+ * {usdFrom}, {usdFromSeated}, {usdLowMax}, the same with the eur prefix, and {fromSaving} (percent).
+ */
+export function priceVars(pricing: CollectionEntry<'pricing'>[]): Record<string, string | number> {
+  const out: Record<string, string | number> = {};
+  for (const p of pricing) {
+    const c = p.data.currency;
+    const k = c.toLowerCase();
+    const sym = c === 'USD' ? 'US$' : c === 'EUR' ? '€' : c + ' ';
+    const m = (n: number) => `${sym}${n.toFixed(2)}`;
+    const tf = tariffFor(c);
+    const minPack = Math.min(...tf.packages.map((x) => x.per_ticket));
+    out[`${k}Price`] = m(p.data.per_ticket);
+    out[`${k}Seated`] = m(p.data.per_ticket + p.data.seating_extra);
+    out[`${k}From`] = m(minPack);
+    out[`${k}FromSeated`] = m(minPack + tf.package_seating_extra);
+    out[`${k}LowMax`] = `${sym}${tf.low_price.max_ticket}`;
+    if (c === 'USD') out.fromSaving = Math.round((1 - minPack / p.data.per_ticket) * 100);
+  }
+  out.lowPercent = tariff.low_price.percent;
+  return out;
+}
+
 export function reasonVars(pricing: CollectionEntry<'pricing'>[]): Record<string, string | number> {
   const sym = (c: string) => new Intl.NumberFormat('en-GB', { style: 'currency', currency: c }).formatToParts(1).find((p) => p.type === 'currency')?.value ?? c;
   const both = (f: (p: CollectionEntry<'pricing'>) => number) => pricing.map((p) => `${sym(p.data.currency)}${f(p).toFixed(2)}`).join(' / ');

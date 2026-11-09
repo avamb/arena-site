@@ -19,7 +19,7 @@ sections:
       - q: Can I change the plan after sales started?
         a: Yes. Plans have versions, so a new layout for the next session does not touch the tickets already sold.
       - q: How much does a seated ticket cost me?
-        a: "The commission for a ticket with a seat is 1.09 (EUR in EU countries, USD elsewhere), against 0.59 without a seat; credits lower it. The plan itself is free. See [pricing](/pricing)."
+        a: "The commission for a ticket with a seat is US$1.09 (€0.97 in EU countries), against US$0.59 (€0.53) without a seat; credits lower it. The plan itself is free. See [pricing](/pricing)."
       - q: Does the buyer pick the seat on a phone?
         a: Yes. The seat map is the same in the widget and on the hosted page, with pinch zoom on phones, a legend per category and a hold timer for selected seats.
       - q: What about invitations and press seats?

@@ -23,6 +23,7 @@ tagline: Ticketing platform for organizers. Seats and tickets, your own payment 
 footer:
   - title: Product
     links:
+      - { label: All features, href: /features }
       - { label: Your first event, href: /first-event }
       - { label: Sell on your site or ours, href: /product/sell }
       - { label: Seating plans, href: /product/seating }
@@ -32,6 +33,7 @@ footer:
       - { label: E-tickets and scanning, href: /product/tickets }
       - { label: MACS scanner app, href: /product/scanner }
       - { label: Reliability, href: /product/reliability }
+      - { label: Ticket Tailor alternative, href: /tickettailor-alternative }
   - title: Who it is for
     links:
       - { label: Concerts, href: /solutions/concerts }

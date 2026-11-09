@@ -149,6 +149,8 @@ export const section = z.discriminatedUnion('type', [
   z.object({ type: z.literal('coverage'), ...sectionBase, labels: z.object({ countries: z.string(), note: z.string(), missing: z.string() }), cta: link }),
   z.object({ type: z.literal('markets'), ...sectionBase, preparing: z.object({ title: z.string(), text: z.string() }) }),
   z.object({ type: z.literal('cards'), ...sectionBase, items: z.array(z.object({ title: z.string(), text: z.string(), link: link.optional() })) }),
+  /** Side-by-side comparison with another platform: `us` and `them` per row, price placeholders allowed. */
+  z.object({ type: z.literal('compare'), ...sectionBase, cols: z.object({ what: z.string(), us: z.string(), them: z.string() }), rows: z.array(z.object({ what: z.string(), us: z.string(), them: z.string() })), note: z.string().optional() }),
   z.object({ type: z.literal('code'), ...sectionBase, code: z.string(), items: z.array(z.object({ key: z.string(), text: z.string() })), cta: link }),
   z.object({ type: z.literal('marks'), ...sectionBase }),
   z.object({ type: z.literal('changelog'), ...sectionBase }),

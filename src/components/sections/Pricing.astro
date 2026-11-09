@@ -3,7 +3,7 @@ import type { Section } from '@/content.config';
 import type { CollectionEntry } from 'astro:content';
 import type { LanguageCode } from '@config';
 import { inline, fill } from '@/lib/inline';
-import { tariff, packageLinks } from '@/lib/data';
+import { tariff, tariffFor, packageLinks } from '@/lib/data';
 import { localePath, currencySymbol, getLanguage, t } from '@/lib/i18n';
 import { lowPriceFee, packageFee, packageCapacity, venueFee } from '@/lib/fees';
 import FeeCalculator from '@/components/islands/FeeCalculator.svelte';
@@ -12,54 +12,62 @@ const { s, pricing, lang, top = false } = Astro.props;
 const intl = getLanguage(lang).intl;
 const Sub = s.title ? 'h3' : 'h2';
 const fmt = (n: number, c: string) => `${currencySymbol(c)}${n.toLocaleString(intl, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-const base = pricing[0];
-const baseCur = base.data.currency;
-const seated = +(base.data.per_ticket + base.data.seating_extra).toFixed(2);
+// US dollars are the base; euro amounts come from tariff.eur (converted at a rate). Every amount on the
+// section is printed in both currencies and one switch (#pc-usd / #pc-eur) shows one of them.
+const byCur = [...pricing].sort((a, b) => (a.data.currency === 'USD' ? -1 : b.data.currency === 'USD' ? 1 : 0));
+const base = byCur[0];
+const seatedOf = (p: (typeof pricing)[number]) => +(p.data.per_ticket + p.data.seating_extra).toFixed(2);
 const lp = tariff.low_price;
-// Placeholders of the copy; amounts are shown in the first region's currency, the numbers are equal everywhere.
-const vars = {
-  percent: tariff.venues_percent,
-  lowPercent: lp.percent, lowMax: `${currencySymbol(baseCur)}${lp.max_ticket}`, lowMin: fmt(lp.min, baseCur), lowCap: fmt(lp.max, baseCur), lowSeat: fmt(lp.seating_extra, baseCur),
-  cap: fmt(seated, baseCur),
+const saving = (fee: number, perTicket: number) => Math.round((1 - fee / perTicket) * 100);
+const planVars = (p: (typeof pricing)[number]) => {
+  const c = p.data.currency;
+  const tf = tariffFor(c);
+  const minPack = Math.min(...tf.packages.map((k) => k.per_ticket));
+  const seated = seatedOf(p);
+  return {
+    price: fmt(p.data.per_ticket, c), seated: fmt(seated, c),
+    from: fmt(minPack, c), fromSeated: fmt(minPack + tf.package_seating_extra, c), saving: saving(minPack, p.data.per_ticket),
+    lowPercent: tf.low_price.percent, lowMax: `${currencySymbol(c)}${tf.low_price.max_ticket}`, percent: tariff.venues_percent,
+    lowMin: fmt(tf.low_price.min, c), lowCap: fmt(tf.low_price.max, c), lowSeat: fmt(tf.low_price.seating_extra, c),
+    cap: fmt(seated, c), ex25: fmt(25, c), ex: fmt(venueFee(25, tariff.venues_percent, seated), c), capAt: fmt(seated * 100 / tariff.venues_percent, c),
+  };
 };
-const lowExamples = [2, 5, 9, 10];
-const exOf = (price: number) => ({ price, plain: lowPriceFee(price, lp, false), seat: lowPriceFee(price, lp, true) });
-const ps = tariff.package_seating_extra;
-const saving = (fee: number) => Math.round((1 - fee / base.data.per_ticket) * 100);
+const amt = (pick: (v: ReturnType<typeof planVars>) => string | number) =>
+  byCur.map((p) => `<span class="c-${p.data.currency.toLowerCase()}">${pick(planVars(p))}</span>`).join('');
+/** Same as amt, with the currency's own tariff (credit packs, low-price numbers) at hand. */
+const each = (pick: (c: string, tf: ReturnType<typeof tariffFor>) => string | number) =>
+  byCur.map((p) => `<span class="c-${p.data.currency.toLowerCase()}">${pick(p.data.currency, tariffFor(p.data.currency))}</span>`).join('');
+const fillCur = (text: string) => text.replace(/\{(\w+)\}/g, (m, k) => (k in planVars(base) ? amt((v) => (v as Record<string, string | number>)[k]) : m));
+const perTicketOf = (c: string) => byCur.find((r) => r.data.currency === c)!.data.per_ticket;
+const lowExamples: Record<string, number[]> = { USD: [2, 5, 9, 10], EUR: [2, 5, 8, 9] };
 const calcText = s.calculator;
 const buy = s.packages?.buy;
 const buyCurrencies = [{ id: 'usd', sym: 'US$' }, { id: 'eur', sym: '€' }];
-const minPack = Math.min(...tariff.packages.map((p) => p.per_ticket));
-const maxSaving = saving(minPack);
-const planVars = (p: (typeof pricing)[number]) => {
-  const c = p.data.currency;
+/** EUR Payment Links are used only once they charge the converted euro amounts. */
+const linkOf = (pack: string, cur: string) => (cur === 'eur' && !tariff.eur.stripe_links_current ? undefined : packageLinks[pack]?.[cur]);
+const curSwitch = byCur.length > 1 && !!(s.plans || buy);
+const regions = byCur.map((p) => {
+  const tf = tariffFor(p.data.currency);
   return {
-    price: fmt(p.data.per_ticket, c), seated: fmt(p.data.per_ticket + p.data.seating_extra, c),
-    from: fmt(minPack, c), fromSeated: fmt(minPack + ps, c), saving: maxSaving,
-    lowPercent: lp.percent, lowMax: `${currencySymbol(c)}${lp.max_ticket}`, percent: tariff.venues_percent,
+    id: p.id,
+    label: p.data.region,
+    symbol: currencySymbol(p.data.currency),
+    perTicket: p.data.per_ticket,
+    seatingExtra: p.data.seating_extra,
+    lowPrice: tf.low_price,
+    packages: tf.packages,
+    packageSeatingExtra: tf.package_seating_extra,
   };
-};
-// Currency switch: US dollars first, as the base; euro for venues in EU countries.
-const byCur = [...pricing].sort((a, b) => (a.data.currency === 'USD' ? -1 : b.data.currency === 'USD' ? 1 : 0));
-const amt = (pick: (v: ReturnType<typeof planVars>) => string | number) =>
-  byCur.map((p) => `<span class="c-${p.data.currency.toLowerCase()}">${pick(planVars(p))}</span>`).join('');
-const fillCur = (text: string) => text.replace(/\{(\w+)\}/g, (m, k) => (k in planVars(base) ? amt((v) => (v as Record<string, string | number>)[k]) : m));
-const regions = pricing.map((p) => ({
-  id: p.id,
-  label: p.data.region,
-  symbol: currencySymbol(p.data.currency),
-  perTicket: p.data.per_ticket,
-  seatingExtra: p.data.seating_extra,
-}));
+});
 ---
 <section class="section" id={s.id} style={top ? 'padding-top:0' : undefined}>
   <div class="wrap">
+    {curSwitch && byCur.map((p, i) => <input type="radio" name="planCur" id={`pc-${p.data.currency.toLowerCase()}`} checked={i === 0} class="pc-in" aria-label={p.data.currency} />)}
     {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
     {s.title && <h2 class="h2">{s.title}</h2>}
     {s.lead && <p class="lead" set:html={inline(s.lead)} />}
     {s.plans ? (
       <div class="pc">
-        {byCur.map((p, i) => <input type="radio" name="planCur" id={`pc-${p.data.currency.toLowerCase()}`} checked={i === 0} class="pc-in" />)}
         <div class="pc-pick" role="group" aria-label={s.plans.currency}>
           <span>{s.plans.currency}</span>
           {byCur.map((p) => <label for={`pc-${p.data.currency.toLowerCase()}`}>{p.data.currency === 'USD' ? '$ USD' : `${currencySymbol(p.data.currency)} ${p.data.currency}`}</label>)}
@@ -107,10 +115,10 @@ const regions = pricing.map((p) => ({
         <Sub class="h3">{s.packages.title}</Sub>
         <p class="pr-note" style="margin-top:6px" set:html={inline(s.packages.text)} />
         {buy && (
-          <fieldset class="cur-pick">
-            <legend>{buy.currency}</legend>
-            {buyCurrencies.map((c, i) => <><input type="radio" name="buyCur" id={`cur-${c.id}`} checked={i === 0} /><label for={`cur-${c.id}`}>{c.sym}</label></>)}
-          </fieldset>
+          <div class="cur-pick" role="group" aria-label={buy.currency}>
+            <span class="cur-legend">{buy.currency}</span>
+            {buyCurrencies.map((c) => <label for={`pc-${c.id}`}>{c.sym}</label>)}
+          </div>
         )}
         {buy?.note && <p class="pr-note" style="margin-top:8px"><strong>{buy.note}</strong></p>}
         <div class="tbl-wrap">
@@ -122,20 +130,24 @@ const regions = pricing.map((p) => ({
               </tr>
             </thead>
             <tbody>
-              {tariff.packages.map((p) => (
+              {tariff.packages.map((p, i) => (
                 <tr>
                   <th scope="row">{p.name}</th>
-                  <td class="num">{fmt(p.prepay, baseCur)}</td>
-                  <td class="num">{fmt(packageFee(p, ps, false), baseCur)}</td>
-                  <td class="num">{fmt(packageFee(p, ps, true), baseCur)}</td>
-                  <td class="num">{packageCapacity(p, ps, false).toLocaleString(intl)}</td>
-                  <td class="num">{packageCapacity(p, ps, true).toLocaleString(intl)}</td>
-                  <td class="num">{saving(p.per_ticket)}%</td>
+                  <td class="num" set:html={each((c, tf) => fmt(tf.packages[i].prepay, c))} />
+                  <td class="num" set:html={each((c, tf) => fmt(packageFee(tf.packages[i], tf.package_seating_extra, false), c))} />
+                  <td class="num" set:html={each((c, tf) => fmt(packageFee(tf.packages[i], tf.package_seating_extra, true), c))} />
+                  <td class="num" set:html={each((_, tf) => packageCapacity(tf.packages[i], tf.package_seating_extra, false).toLocaleString(intl))} />
+                  <td class="num" set:html={each((_, tf) => packageCapacity(tf.packages[i], tf.package_seating_extra, true).toLocaleString(intl))} />
+                  <td class="num" set:html={each((c, tf) => `${saving(tf.packages[i].per_ticket, perTicketOf(c))}%`)} />
                   {buy && (
                     <td class="buy-cell">
-                      {buyCurrencies.map((c) => packageLinks[p.name]?.[c.id]
-                        ? <a class={`btn btn-primary btn-sm buy-${c.id}`} href={packageLinks[p.name][c.id]} rel="noopener">{buy.label} · {c.sym}{p.prepay.toLocaleString(intl, { minimumFractionDigits: Number.isInteger(p.prepay) ? 0 : 2, maximumFractionDigits: 2 })}</a>
-                        : <a class={`btn btn-ghost btn-sm buy-${c.id}`} href={localePath(lang, buy.noneHref)}>{buy.none}</a>)}
+                      {buyCurrencies.map((c) => {
+                        const pk = tariffFor(c.id).packages[i];
+                        const href = linkOf(p.name, c.id);
+                        return href
+                          ? <a class={`btn btn-primary btn-sm buy-${c.id}`} href={href} rel="noopener">{buy.label} · {c.sym}{pk.prepay.toLocaleString(intl, { minimumFractionDigits: Number.isInteger(pk.prepay) ? 0 : 2, maximumFractionDigits: 2 })}</a>
+                          : <a class={`btn btn-ghost btn-sm buy-${c.id}`} href={localePath(lang, buy.noneHref)}>{buy.none}</a>;
+                      })}
                     </td>
                   )}
                 </tr>
@@ -150,8 +162,8 @@ const regions = pricing.map((p) => ({
     <div class="card venues" id="low-price">
       <div class="big num">{lp.percent}%</div>
       <div>
-        <Sub class="h3">{s.lowPrice.title.replace('{lowMax}', vars.lowMax)}</Sub>
-        <p set:html={inline(fill(s.lowPrice.text, vars))} />
+        <Sub class="h3" set:html={fillCur(s.lowPrice.title)} />
+        <p set:html={fillCur(inline(s.lowPrice.text))} />
         {!s.compact && s.lowPrice.cols && (
           <>
             <p class="pr-note" style="margin-top:10px">{s.lowPrice.example}</p>
@@ -159,8 +171,12 @@ const regions = pricing.map((p) => ({
               <table class="tbl tbl-sm">
                 <thead><tr><th>{s.lowPrice.cols.price}</th><th>{s.lowPrice.cols.plain}</th><th>{s.lowPrice.cols.seated}</th></tr></thead>
                 <tbody>
-                  {lowExamples.map(exOf).map((e) => (
-                    <tr><th scope="row">{fmt(e.price, baseCur)}</th><td class="num">{fmt(e.plain, baseCur)}</td><td class="num">{fmt(e.seat, baseCur)}</td></tr>
+                  {lowExamples.USD.map((_, i) => (
+                    <tr>
+                      <th scope="row" set:html={each((c) => fmt(lowExamples[c][i], c))} />
+                      <td class="num" set:html={each((c, tf) => fmt(lowPriceFee(lowExamples[c][i], tf.low_price, false), c))} />
+                      <td class="num" set:html={each((c, tf) => fmt(lowPriceFee(lowExamples[c][i], tf.low_price, true), c))} />
+                    </tr>
                   ))}
                 </tbody>
               </table>
@@ -174,8 +190,8 @@ const regions = pricing.map((p) => ({
       <div class="big num">{tariff.venues_percent}%</div>
       <div>
         <Sub class="h3">{s.venues.title}</Sub>
-        <p set:html={inline(fill(s.venues.text, vars))} />
-        {!s.compact && s.venues.example && <p class="pr-note" style="margin-top:10px">{fill(s.venues.example, { ...vars, ex25: fmt(25, baseCur), ex: fmt(venueFee(25, tariff.venues_percent, seated), baseCur), capAt: fmt(seated * 100 / tariff.venues_percent, baseCur) })}</p>}
+        <p set:html={fillCur(inline(s.venues.text))} />
+        {!s.compact && s.venues.example && <p class="pr-note" style="margin-top:10px" set:html={fillCur(s.venues.example)} />}
       </div>
       <a class="btn btn-ghost btn-sm" href={localePath(lang, s.venues.cta.href)}>{s.venues.cta.label}</a>
     </div>
@@ -185,9 +201,6 @@ const regions = pricing.map((p) => ({
         client:idle
         labels={s.calculator}
         regions={regions.map((r) => ({ ...r, label: r.id === 'eu' ? calcText!.regionEu : calcText!.regionWorld }))}
-        lowPrice={lp}
-        packages={tariff.packages}
-        packageSeatingExtra={ps}
         defaultPrice={tariff.calculator.default_price}
         defaultQuantity={tariff.calculator.default_quantity}
         intl={intl}

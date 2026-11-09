@@ -9,7 +9,7 @@ import type { LanguageCode } from '@config';
 import { hosts, onboardingTurnstileSiteKey } from '@config';
 import { marked } from 'marked';
 import { inline, fill } from '@/lib/inline';
-import { clients, facts, tariff } from '@/lib/data';
+import { clients, facts, tariff, getPricing, priceVars } from '@/lib/data';
 import Marquee from '@/components/Marquee.astro';
 import { localePath, postPath, formatDate, tObject, t, currencySymbol } from '@/lib/i18n';
 import { getPosts } from '@/lib/data';
@@ -29,7 +29,7 @@ interface Props {
 }
 const { s, lang, providers, markets, changelog, posts, first = false } = Astro.props;
 // Tariff numbers in prose and FAQ answers: {percent} (one source: content/data/tariff.yaml).
-const vars = { percent: tariff.venues_percent, countries: clients.countries, since: clients.countries_since };
+const vars = { percent: tariff.venues_percent, countries: clients.countries, since: clients.countries_since, ...priceVars(await getPricing()) };
 const pad = first ? 'padding-top:40px' : 'padding-top:0';
 const dateFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'changes.date');
 const postFmt = tObject<Intl.DateTimeFormatOptions>(lang, 'post.date');
@@ -113,8 +113,24 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
 
     {s.type === 'cards' && (
       <div class="cards-3">
-        {s.items.map((i) => <article class="card sol"><h3>{i.title}</h3><p set:html={inline(i.text)} />{i.link && <a href={localePath(lang, i.link.href)}>{i.link.label}</a>}</article>)}
+        {s.items.map((i) => <article class="card sol"><h3>{i.title}</h3><p set:html={inline(fill(i.text, vars))} />{i.link && <a href={localePath(lang, i.link.href)}>{i.link.label}</a>}</article>)}
       </div>
+    )}
+
+    {s.type === 'compare' && (
+      <>
+        <div class="tbl-wrap cmp-wrap">
+          <table class="tbl cmp">
+            <thead><tr><th scope="col">{s.cols.what}</th><th scope="col" class="cmp-us">{s.cols.us}</th><th scope="col">{s.cols.them}</th></tr></thead>
+            <tbody>
+              {s.rows.map((r) => (
+                <tr><th scope="row" set:html={inline(r.what)} /><td class="cmp-us" set:html={inline(fill(r.us, vars))} /><td set:html={inline(fill(r.them, vars))} /></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {s.note && <p class="pr-note" set:html={inline(fill(s.note, vars))} />}
+      </>
     )}
 
     {s.type === 'code' && (

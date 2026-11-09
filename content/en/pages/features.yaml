@@ -1,0 +1,161 @@
+# All features on one page (owner's request of 09.11.2026). The product pages keep their own texts; this
+# page lists everything in one place and links to them. Not listed on purpose (owner, 09.11.2026): the
+# Bil24 compatibility, the WordPress plugin, webhooks and API keys.
+title: "Features: ticketing, seating, payments, Event Center"
+description: "Every feature of ArenaSoldOut.com on one page: sales pages and widget, seating plans, prices and promo codes, payments, tickets, scanner, Event Center."
+h1: Every feature, on one page
+lead: "What ArenaSoldOut.com does for an organizer, from the first ticket to the door. Each group links to its page with the details."
+related:
+  - { label: Pricing, href: /pricing, text: "Pay as you go per ticket sold, or buy credits and pay less." }
+  - { label: ArenaSoldOut.com vs Ticket Tailor, href: /tickettailor-alternative, text: "Prices and features side by side." }
+  - { label: Your first event, href: /first-event, text: "What to prepare and how the first sale happens." }
+sections:
+  - type: cards
+    id: selling
+    eyebrow: Selling
+    title: Where and how you sell
+    lead: "Details: [sell on your site or ours](/product/sell)."
+    items:
+      - title: A sales page we host
+        text: "tickets.arenasoldout.com/your-name/your-event, ready in minutes. One link for social media, messengers and posters."
+      - title: Ticket widget on your site
+        text: "Three lines of code on any site: Tilda, Wix, Webflow or custom. Your colours, your fonts, your language; buyers never leave your domain."
+      - title: Pages for promoters and partners
+        text: "A separate page for each promoter, and links to your partner sellers on the same page."
+      - title: Event materials on your sales page
+        text: "Add materials to your event on your sales page on the platform, if you do not have a site of your own: texts, photos and videos."
+      - title: Descriptions that look designed
+        text: "Headings, lists, links and quotes in the event description on your sales page. A neural network formats a plain text for you in one click."
+      - title: '"Notify me when sales open"'
+        text: "Buyers subscribe on your event page and get an e-mail the moment sales open."
+      - title: Abandoned cart reminders
+        text: "A buyer who reserved tickets and did not pay gets a reminder. In many cases these reminders lift sales strongly."
+      - title: Refer a friend
+        text: "Every buyer gets a personal link: the friend gets a discount, the buyer gets cashback after the friend's event."
+      - title: Short links and QR codes for print
+        text: "go.arenasoldout.com links with QR codes for posters and flyers: PNG, SVG or a PDF insert in A5 and A6. Change the target after printing."
+      - title: A shop next to your tickets
+        text: "Sell wine, merchandise and gift sets together with tickets: variants, cart, delivery, refunds. Our first shop client already sells through it."
+
+  - type: cards
+    id: seating
+    eyebrow: Seating
+    title: Seating plans that match the venue
+    lead: "Details: [seating plans](/product/seating)."
+    items:
+      - title: We draw the plan for free
+        text: "Send a PDF, a photo of a hand sketch or a table of rows and seats; the team builds the venue."
+      - title: Seats and standing areas in one plan
+        text: "Reserved rows with categories and standing areas with quotas, each category with its own price and sale window."
+      - title: Plan versions
+        text: "A new layout for the next session does not touch the tickets already sold."
+      - title: Seat choice on a phone
+        text: "Pinch zoom, a legend per category and a hold timer for the selected seats, in the widget and on the hosted page."
+      - title: Invitations and press seats
+        text: "Hold seats for guests and press and issue invitations from the Event Center, with no commission."
+
+  - type: cards
+    id: prices
+    eyebrow: Prices
+    title: Prices, promo codes and sale windows
+    lead: "Details: [promo codes and price windows](/product/pricing-tools)."
+    items:
+      - title: Smart price
+        text: "A ready scheme of price steps by quantity and by date, instead of setting every step by hand."
+      - title: Add-on categories
+        text: "An add-on is sold only together with a main ticket: a child ticket cannot be sold without an adult ticket."
+      - title: Promo codes
+        text: "For one event, session or category, with a sale window, a minimum order and a per-buyer limit. Partners get their own codes."
+      - title: Early bird and quantity steps
+        text: "Prices switch on a date you set, or open the next step when the current one sells out."
+      - title: Categories and chains
+        text: "Each category with its own price, quota and sale window; unsold places pass to the next category."
+      - title: Service fee
+        text: "A percentage per sales channel, shown to the buyer as a separate line and paid into your account."
+      - title: Free and pay-what-you-want tickets
+        text: "Free tickets for invitations and registrations, and pay-what-you-want tickets with a minimum you set."
+
+  - type: cards
+    id: payments
+    eyebrow: Payments
+    title: Money goes to your own account
+    lead: "Details: [payments](/payments)."
+    items:
+      - title: Your own payment account
+        text: "Buyers pay into your Stripe, Flitt or AllPay account with every order. ArenaSoldOut.com never holds funds."
+      - title: Refunds through any provider
+        text: "You decide on a refund in the Event Center; it goes back to the buyer through your provider."
+      - title: Automatic chargeback handling
+        text: "When a buyer disputes a payment, we collect the evidence: payment data, consent, delivery of the ticket e-mails and every download of the ticket."
+
+  - type: cards
+    id: tickets
+    eyebrow: Tickets and the door
+    title: What the buyer gets, and how you scan it
+    lead: "Details: [e-tickets](/product/tickets) and the [MACS scanner app](/product/scanner)."
+    items:
+      - title: E-ticket with QR and EAN-13
+        text: "A PDF ticket in the buyer's e-mail, ready to show from a phone or on paper."
+      - title: Payment receipt in the ticket e-mail
+        text: "The receipt is attached to the ticket e-mail and names the payee."
+      - title: Delivery status of every e-mail
+        text: "Sent, Delivered, Read: check that the buyer got the ticket and resend it in one click."
+      - title: E-mails in 7 languages
+        text: "The buyer page, e-mails and ticket in the buyer's language. We add any new language within 40 hours."
+      - title: Date changes and cancellations
+        text: "Buyers get an e-mail with the updated ticket when a session moves or is cancelled."
+      - title: Scanner app for iOS and Android
+        text: "MACS, our separate app at the door: any number of phones, a clear answer on every scan."
+
+  - type: cards
+    id: center
+    eyebrow: Event Center
+    title: Run the event with your team
+    lead: "Details: [Event Center](/#center) and the [Telegram bot](/product/telegram)."
+    items:
+      - title: Orders and buyers
+        text: "Search, filters and CSV reports per session. Resend, refund or invite in a click."
+      - title: Sessions
+        text: "Add dates, move or cancel a session, and buyers are informed by e-mail."
+      - title: Sales analytics
+        text: "Views, carts and payments per event, so you see where buyers drop off."
+      - title: Team roles
+        text: "Owner and manager roles for your team, in the browser on a phone or a computer."
+      - title: Telegram bot
+        text: "Create an event from a poster photo and get every sale and refund in your Telegram group within seconds."
+
+  - type: cards
+    id: reliability
+    eyebrow: Reliability
+    title: Built for big on-sales
+    lead: "Details: [reliability](/product/reliability) and the [facts page](/facts)."
+    items:
+      - title: 800 orders a minute
+        text: "With 1,000 buyers on the page at the same time, in load tests of September 2026."
+      - title: Watchdog and backups
+        text: "Continuous checks with alerts to the team, nightly encrypted backups, Cloudflare in front."
+      - title: Protection from bots
+        text: "Seat holds expire on a timer, orders are rate-limited, abusive traffic is filtered."
+
+  - type: cards
+    id: pricing
+    eyebrow: Pricing
+    title: What you pay
+    lead: "Details: [pricing](/pricing) and the [detailed terms](/pricing/terms)."
+    items:
+      - title: Pay as you go
+        text: "{usdPrice} per ticket sold ({eurPrice} in the EU), invoiced after the event. No subscription, no contract."
+      - title: Credits
+        text: "Buy credits upfront and pay from {usdFrom} per ticket ({eurFrom} in the EU). Credits never expire."
+      - title: 50% off for registered charities
+        text: "Registered charities pay half of our commission."
+      - title: Free invitations and free seating plans
+        text: "No commission on invitations and free tickets; we draw your seating plan for free."
+
+  - type: cta
+    id: start
+    title: Start selling today
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: See pricing, href: /pricing }
+    note: "Or write to us: we set everything up with you on a call."

@@ -6,7 +6,7 @@ import type { CollectionEntry } from 'astro:content';
 import type { Section } from '../content.config';
 import { siteUrl, org, type LanguageCode } from '@config';
 import { plain, fill } from './inline';
-import { clients, tariff, facts, liveProviderNames, reasonVars, type Nav } from './data';
+import { clients, tariff, tariffFor, facts, liveProviderNames, reasonVars, priceVars, type Nav } from './data';
 import { formatDate, currencySymbol, postPath } from './i18n';
 
 export type PageData = {
@@ -22,12 +22,13 @@ export type PageData = {
 
 const abs = (p: string) => (p.startsWith('/') ? new URL(p, siteUrl).toString() : p);
 const money = (amount: number, currency: string) => `${currencySymbol(currency)}${amount.toFixed(2)}`;
-const vars = { percent: tariff.venues_percent };
+const baseVars = { percent: tariff.venues_percent };
 
 export function sectionToMarkdown(s: Section, d: PageData): string {
   const out: string[] = [];
   const h2 = (t?: string) => t && out.push(`## ${plain(t)}`, '');
   const lead = (t?: string) => t && out.push(plain(t), '');
+  const vars = { ...baseVars, ...priceVars(d.pricing) };
   switch (s.type) {
     case 'hero':
       out.push(`# ${plain(s.title)}`, '', plain(s.lead ?? ''), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, '', plain(s.note), '');
@@ -63,9 +64,9 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
     }
     case 'pricing': {
       h2(s.title); lead(s.lead);
-      const cur = d.pricing[0].data.currency;
-      const seat = d.pricing[0].data.per_ticket + d.pricing[0].data.seating_extra;
-      const lp = tariff.low_price;
+      // Every amount in each currency, US dollars first: "US$0.59 / €0.53".
+      const both = (f: (cur: string, tf: ReturnType<typeof tariffFor>, p: (typeof d.pricing)[number]) => string) =>
+        d.pricing.map((p) => f(p.data.currency, tariffFor(p.data.currency), p)).join(' / ');
       out.push('| Region | Without a seat | With a seat | Invitations |', '|---|---|---|---|');
       d.pricing.forEach((p) => out.push(`| ${p.data.region} | ${money(p.data.per_ticket, p.data.currency)} | ${money(p.data.per_ticket + p.data.seating_extra, p.data.currency)} | free |`));
       out.push('', plain(s.currencyNote), '');
@@ -73,13 +74,18 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
         out.push(`**${s.packages.title}**`, '', plain(s.packages.text), '');
         const c = s.packages.cols;
         out.push(`| ${c.name} | ${c.prepay} | ${c.plain} | ${c.seated} | ${c.plainCount} | ${c.seatedCount} | ${c.saving} |`, '|---|---|---|---|---|---|---|');
-        tariff.packages.forEach((k) => {
+        tariff.packages.forEach((k, i) => {
           const f = (x: number) => Math.round(x * 100);
-          out.push(`| ${k.name} | ${money(k.prepay, cur)} | ${money(k.per_ticket, cur)} | ${money(k.per_ticket + tariff.package_seating_extra, cur)} | ${Math.floor(f(k.prepay) / f(k.per_ticket))} | ${Math.floor(f(k.prepay) / f(k.per_ticket + tariff.package_seating_extra))} | ${Math.round((1 - k.per_ticket / d.pricing[0].data.per_ticket) * 100)}% |`);
+          const pk = (tf: ReturnType<typeof tariffFor>) => tf.packages[i];
+          out.push(`| ${k.name} | ${both((c, tf) => money(pk(tf).prepay, c))} | ${both((c, tf) => money(pk(tf).per_ticket, c))} | ${both((c, tf) => money(pk(tf).per_ticket + tf.package_seating_extra, c))} | ${Math.floor(f(k.prepay) / f(k.per_ticket))} | ${Math.floor(f(k.prepay) / f(k.per_ticket + tariff.package_seating_extra))} | ${Math.round((1 - k.per_ticket / d.pricing[0].data.per_ticket) * 100)}% |`);
         });
         out.push('', plain(s.packages.note), '');
       }
-      const lpv = { lowMax: `${currencySymbol(cur)}${lp.max_ticket}`, lowPercent: lp.percent, lowMin: money(lp.min, cur), lowCap: money(lp.max, cur), lowSeat: money(lp.seating_extra, cur), percent: tariff.venues_percent, cap: money(seat, cur) };
+      const lpv = {
+        lowMax: both((c, tf) => `${currencySymbol(c)}${tf.low_price.max_ticket}`), lowPercent: tariff.low_price.percent, lowMin: both((c, tf) => money(tf.low_price.min, c)),
+        lowCap: both((c, tf) => money(tf.low_price.max, c)), lowSeat: both((c, tf) => money(tf.low_price.seating_extra, c)), percent: tariff.venues_percent,
+        cap: both((c, _, p) => money(p.data.per_ticket + p.data.seating_extra, c)),
+      };
       out.push(`**${plain(fill(s.lowPrice.title, lpv))}**`, '', plain(fill(s.lowPrice.text, lpv)), '');
       out.push(`**${s.venues.title}**`, '', plain(fill(s.venues.text, lpv)), '', plain(s.note), '', `[${s.terms.label}](${abs(s.terms.href)})`, '');
       break;
@@ -147,7 +153,13 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
     }
     case 'cards':
       h2(s.title); lead(s.lead);
-      s.items.forEach((i) => out.push(`### ${plain(i.title)}`, '', plain(i.text), '', i.link ? `[${i.link.label}](${abs(i.link.href)})` : '', ''));
+      s.items.forEach((i) => out.push(`### ${plain(i.title)}`, '', plain(fill(i.text, vars)), '', i.link ? `[${i.link.label}](${abs(i.link.href)})` : '', ''));
+      break;
+    case 'compare':
+      h2(s.title); lead(s.lead);
+      out.push(`| ${s.cols.what} | ${s.cols.us} | ${s.cols.them} |`, '|---|---|---|');
+      s.rows.forEach((r) => out.push(`| ${plain(r.what)} | ${plain(fill(r.us, vars))} | ${plain(fill(r.them, vars))} |`));
+      out.push('', s.note ? plain(fill(s.note, vars)) : '', '');
       break;
     case 'code':
       h2(s.title); lead(s.lead);

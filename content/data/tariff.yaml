@@ -3,10 +3,12 @@
 # owner's decisions of 19.10: only approved numbers are public. Package steps above 5K, the
 # prepaid branch of the low-price tariff, the venue minimum for cinemas and the cancellation
 # bonus are proposals and stay off the site. Edit here, every page and facts.json follow.
-# The same numbers apply in EUR (EU countries) and USD (every other country): a decision, not a rate.
+# US dollars are the base (every country outside the EU). Euro prices (EU countries) are the dollar
+# prices converted at the rate in `eur` below: owner's decision of 09.11.2026. Change the rate and the
+# euro numbers together, in this file and in pricing/eu.yaml.
 
 # Permanent venues: percent of the ticket price (after promo codes, without our fee), capped per
-# ticket at the venue's own seated pay-as-you-go price (1.09 in the EU, 1.09 in USD elsewhere).
+# ticket at the venue's own seated pay-as-you-go price (US$1.09, or €0.97 in the EU).
 venues_percent: 2
 
 # Events where EVERY ticket costs at most `max_ticket` before promo codes (inclusive), all categories
@@ -37,3 +39,29 @@ calculator:
   default_price: 38
   default_quantity: 120
   currency: EUR
+
+# Euro prices: the dollar numbers above at the ECB reference rate, rounded to the cent. Credit packs keep
+# the same ticket counts as in dollars (price = euro rate x tickets). The low-price threshold is US$10 = €9.
+# stripe_links_current: false while the EUR Stripe Payment Links still charge the old euro amounts; the
+# pricing page then shows "Talk to us" instead of "Buy" in euros. Set it to true after the EUR links are
+# recreated at these prices (scripts/stripe-packages.mjs, Andrey).
+eur:
+  rate: 0.8934
+  rate_date: 2026-11-09
+  rate_source: "ECB reference rate, 1 EUR = 1.1193 USD"
+  stripe_links_current: false
+  low_price:
+    max_ticket: 9
+    percent: 4
+    min: 0.09
+    max: 0.31
+    seating_extra: 0.18
+  package_seating_extra: 0.31
+  packages:
+    - { name: S, prepay: 14.70, per_ticket: 0.49 }
+    - { name: M, prepay: 46, per_ticket: 0.46 }
+    - { name: L, prepay: 132, per_ticket: 0.44 }
+    - { name: XL, prepay: 205, per_ticket: 0.41 }
+    - { name: 1K, prepay: 380, per_ticket: 0.38 }
+    - { name: 2.5K, prepay: 900, per_ticket: 0.36 }
+    - { name: 5K, prepay: 1700, per_ticket: 0.34 }

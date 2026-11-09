@@ -70,7 +70,7 @@ sections:
     items:
       - icon: wallet
         title: You keep more of every ticket
-        text: "A flat **{price}** per ticket, not a percentage of your revenue: a €15 ticket and a €150 ticket cost you the same. Buyers pay into your own payment account, so the money is yours the moment they pay, not after the event."
+        text: "A flat **{price}** per ticket, not a percentage of your revenue: a $15 ticket and a $150 ticket cost you the same. Buyers pay into your own payment account, so the money is yours the moment they pay, not after the event."
         bullets:
           - Nothing deducted from your sales, no reserve held back
           - No commission on invitations and free tickets
@@ -286,8 +286,8 @@ sections:
         - { big: "Free", title: Invitations, text: "No commission on invitations and free tickets to paid events." }
         - { big: "Free", title: Seating plan, text: "We draw your plan from a PDF, a photo of a sketch or a table of rows and seats." }
         - { big: "{lowPercent}%", title: "Tickets up to {lowMax}", text: "For events where every ticket costs {lowMax} or less. [How it works](#low-price)" }
-      brand: "The prices assume the line **Tickets: ArenaSoldOut.com** with a link to us on your event page; the ticket widget shows it by default. To sell without it, white label costs **US$45 a month per brand**, or **€45** for venues in EU countries. [Detailed terms →](/pricing/terms)"
-    currencyNote: "Commission in **US dollars** for every country outside the EU and in **euro** for venues in EU countries. The numbers are the same in both currencies. Amounts are without VAT."
+      brand: "The prices assume the line **Tickets: ArenaSoldOut.com** with a link to us on your event page; the ticket widget shows it by default. To sell without it, white label costs **€45 a month per brand or venue in EU countries** and **US$45 a month per brand or venue in all other countries**. [Detailed terms →](/pricing/terms)"
+    currencyNote: "Commission in **US dollars** for every country outside the EU and in **euro** for venues in EU countries. US dollars are the base; euro prices are the dollar prices at the ECB rate. Amounts are without VAT."
     lowPrice:
       title: "Events where every ticket costs {lowMax} or less"
       text: "{lowPercent}% of the ticket price, at least {lowMin} and at most {lowCap} per ticket; {lowSeat} more with a seat. It applies to the whole event, only if no ticket of any category costs more than {lowMax}."

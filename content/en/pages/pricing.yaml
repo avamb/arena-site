@@ -35,8 +35,8 @@ sections:
         - { big: "Free", title: Invitations, text: "No commission on invitations and free tickets to paid events." }
         - { big: "Free", title: Seating plan, text: "We draw your plan from a PDF, a photo of a sketch or a table of rows and seats." }
         - { big: "{lowPercent}%", title: "Tickets up to {lowMax}", text: "For events where every ticket costs {lowMax} or less. [How it works](#low-price)" }
-      brand: "The prices assume the line **Tickets: ArenaSoldOut.com** with a link to us on your event page; the ticket widget shows it by default. To sell without it, white label costs **US$45 a month per brand**, or **€45** for venues in EU countries. [Detailed terms →](/pricing/terms)"
-    currencyNote: "Commission in **US dollars** for every country outside the EU, including European countries outside the EU, Asia and the Middle East, and in **euro** for venues in EU countries. The numbers are the same in both currencies. This is our commission only: tickets are sold in the currency of your payment account. Amounts are without VAT."
+      brand: "The prices assume the line **Tickets: ArenaSoldOut.com** with a link to us on your event page; the ticket widget shows it by default. To sell without it, white label costs **€45 a month per brand or venue in EU countries** and **US$45 a month per brand or venue in all other countries**. [Detailed terms →](/pricing/terms)"
+    currencyNote: "Commission in **US dollars** for every country outside the EU, including European countries outside the EU, Asia and the Middle East, and in **euro** for venues in EU countries. US dollars are the base; euro prices are the dollar prices at the ECB rate. This is our commission only: tickets are sold in the currency of your payment account. Amounts are without VAT."
     packages:
       title: Buy credits upfront, pay less per ticket
       text: "You buy a credit pack once; every ticket sold takes its commission from your credits, at the rate of that pack. Credits never expire and is spent only on our services. If credits run out in the middle of sales, sales go on: the remaining tickets are invoiced at the pay-after-the-event price."
@@ -80,7 +80,7 @@ sections:
     title: What does a ticket cost me, exactly?
     items:
       - q: How much is a ticket with a seat?
-        a: "Paying after the event: US$1.09 outside the EU, €1.09 in the EU. A ticket without a seat is US$0.59 or €0.59. The seating plan itself costs nothing: we draw it for free from a PDF, a photo of a hand sketch or a table of rows and seats. With credits the commission is lower, and a seat adds 0.35 to the credit rate."
+        a: "Paying after the event: US$1.09 outside the EU, €0.97 in the EU. A ticket without a seat is US$0.59 or €0.53. The seating plan itself costs nothing: we draw it for free from a PDF, a photo of a hand sketch or a table of rows and seats. With credits the commission is lower, and a seat adds US$0.35 (€0.31) to the credit rate."
       - q: How do credits work?
         a: "You buy a credit pack once. Every sold ticket takes its commission from your credits at the rate of the pack, until they run out. Credits never expire, can be topped up at any time and is spent only on our services: it cannot be withdrawn or transferred."
       - q: What if credits run out in the middle of sales?
@@ -94,7 +94,7 @@ sections:
       - q: What about card acquiring?
         a: Card acquiring is a contract between you and your payment provider, on the provider's terms. It is not part of our commission and we do not add anything to it.
       - q: Do I have to mention ArenaSoldOut.com on my site?
-        a: "The prices assume that the event page names ArenaSoldOut.com as the ticketing operator, with a link to us; the ticket widget shows that line by default. To sell without our name, white label costs €45 a month per brand in the EU and US$45 elsewhere, charged by days for a month that is not full. The [detailed terms](/pricing/terms) explain what a brand is and what white label hides."
+        a: "The prices assume that the event page names ArenaSoldOut.com as the ticketing operator, with a link to us; the ticket widget shows that line by default. To sell without our name, white label costs €45 a month per brand or venue in EU countries and US$45 a month per brand or venue in all other countries, charged by days for a month that is not full. The [detailed terms](/pricing/terms) explain what a brand is and what white label hides."
       - q: Is there a discount for charities?
         a: "Yes. Registered charities pay 50% of our commission, with pay as you go and with credits. Write to us from the [contact page](/contact) and we switch it on for your organization."
       - q: Are invitations free?
@@ -103,10 +103,10 @@ sections:
         a: "The buyer gets the refund from you. The commission for a sale that already happened stays, and we do not charge a separate commission for processing the refund, for moving the date or for the e-mails to buyers. The payment provider's own terms are the provider's."
       - q: What if I cancel the event?
         a: "The commission already charged is not returned in money. Write to us about your case before the event is cancelled."
-      - q: One of my tickets costs more than US$10 (€10), the rest are cheap. Which price applies?
-        a: "The standard one, to all tickets of the event: the lower rate needs every ticket of every category and price step to cost US$10 or less. A US$5 ticket next to a US$25 ticket is at the standard price."
+      - q: One of my tickets costs more than US$10 (€9 in the EU), the rest are cheap. Which price applies?
+        a: "The standard one, to all tickets of the event: the lower rate needs every ticket of every category and price step to cost US$10 or less (€9 in the EU). A US$5 ticket next to a US$25 ticket is at the standard price."
       - q: I own a venue and run many events a month. Is there a different deal?
-        a: "Yes. Owners of permanent venues (theatres, clubs, stadiums, circuses and other places that hold events themselves, all year or by season) pay {percent}% of the ticket price, calculated after promo codes and without your service fee. The commission per ticket is capped at the price of a ticket with a seat (US$1.09, or €1.09 in the EU), the same with and without a seat. Invitations carry no commission. We invoice monthly. Our team connects the venue status: write to us from the [contact page](/contact). Full conditions are in the [detailed terms](/pricing/terms)."
+        a: "Yes. Owners of permanent venues (theatres, clubs, stadiums, circuses and other places that hold events themselves, all year or by season) pay {percent}% of the ticket price, calculated after promo codes and without your service fee. The commission per ticket is capped at the price of a ticket with a seat (US$1.09, or €0.97 in the EU), the same with and without a seat. Invitations carry no commission. We invoice monthly. Our team connects the venue status: write to us from the [contact page](/contact). Full conditions are in the [detailed terms](/pricing/terms)."
 
   - type: cta
     id: start
