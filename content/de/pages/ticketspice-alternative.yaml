@@ -59,8 +59,8 @@ sections:
         text: "Legen Sie im Telegram-Bot ein Event aus einem Plakatfoto an und sehen Sie jeden Verkauf und jede Erstattung binnen Sekunden in Ihrer Gruppe."
         link: { label: Telegram-Bot, href: /product/telegram }
       - title: Selbst einrichten oder abgeben
-        text: "Sie legen Events in Minuten im Event Center oder im Telegram-Bot an; Saalpläne zeichnen wir kostenlos. Keine Zeit? Unser Event-Manager übernimmt es für Sie, als kostenpflichtige Leistung."
-        link: { label: Event-Manager, href: /pricing#services }
+        text: "Events, Preise und Kategorien legen Sie selbst im Event Center oder im Telegram-Bot an, in Minuten; Saalpläne zeichnen wir kostenlos. Keine Zeit? Unser Event-Manager übernimmt es für Sie, als bezahlte Leistung."
+        link: { label: Zusatzleistungen, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -75,7 +75,7 @@ sections:
       - q: Kann ich außerhalb der USA und Kanadas verkaufen?
         a: "Ja. Veranstalter in EU-Ländern zahlen unsere Provision in Euro, {eurPrice} pro Ticket bei Pay as you go; überall sonst in US-Dollar. Die Tickets werden in der Währung Ihres Zahlungskontos verkauft."
       - q: Kann ich meine Events von TicketSpice umziehen?
-        a: "Ja. Sie legen die Events in Minuten im Event Center oder im Telegram-Bot an, und wir zeichnen Ihre Saalpläne kostenlos nach Ihrem PDF oder Ihrer Skizze. Keine Zeit? Unser Event-Manager zieht sie für Sie um, als kostenpflichtige Leistung. Verkaufen Sie weiter über TicketSpice, bis Ihre Seite bei uns fertig ist."
+        a: "Ja. Sie legen Ihre Events im Event Center oder im Telegram-Bot an, wir zeichnen Ihre Saalpläne kostenlos, und Sie verkaufen weiter über TicketSpice, bis Ihre Seite bei uns fertig ist. Keine Zeit, es selbst einzurichten? Unser [Event-Manager](/pricing#services) übernimmt es für Sie, als bezahlte Leistung."
       - q: Zahle ich ein Abo?
         a: "Nein. Sie zahlen nur für verkaufte Tickets. Freikarten und kostenlose Tickets zu kostenpflichtigen Events sind provisionsfrei."
 
@@ -85,4 +85,4 @@ sections:
     text: Event anlegen, Zahlungskonto verbinden, Link teilen.
     primary: { label: Verkauf starten, href: /start }
     secondary: { label: Preise ansehen, href: /pricing }
-    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."
+    note: "Fragen? Schicken Sie uns, was Sie bei TicketSpice zahlen, und wir vergleichen es mit Ihren Kosten hier."

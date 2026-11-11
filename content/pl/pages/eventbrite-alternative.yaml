@@ -30,7 +30,7 @@ sections:
     body: |
       Wszystkie kwoty według cen obu platform z 11 listopada 2026.
 
-      **1000 biletów po US$30, płatność po wydarzeniu.** ArenaSoldOut.com: 1000 × US$0,62 = **US$620**. Eventbrite: 1000 × (3,7% z US$30 + US$1,79) = US$2900. Różnica to **US$2280**, przed obsługą kart po obu stronach.
+      **1000 biletów po US$30, płatność za sprzedane bilety.** ArenaSoldOut.com: 1000 × US$0,62 = **US$620**. Eventbrite: 1000 × (3,7% z US$30 + US$1,79) = US$2900. Różnica to **US$2280**, przed obsługą kart po obu stronach.
 
       **300 biletów z miejscami po US$60.** ArenaSoldOut.com: 300 × US$1,18 = **US$354**, a plan sali rysujemy za darmo. Eventbrite: 300 × (3,7% z US$60 + US$1,79) = US$1203.
 
@@ -58,9 +58,9 @@ sections:
       - title: Każda sprzedaż w twoim Telegramie
         text: "Utwórz wydarzenie ze zdjęcia plakatu w bocie na Telegramie i zobacz każdą sprzedaż i zwrot w swojej grupie w kilka sekund."
         link: { label: Bot w Telegramie, href: /product/telegram }
-      - title: Skonfiguruj sam albo oddaj nam
-        text: "Wydarzenia tworzysz w Event Center lub w bocie na Telegramie w kilka minut; plany sali rysujemy za darmo. Brak czasu? Nasz menedżer wydarzeń zrobi to za ciebie, jako płatna usługa."
-        link: { label: Menedżer wydarzeń, href: /pricing#services }
+      - title: Skonfiguruj sam albo zleć nam
+        text: "Wydarzenia, ceny i kategorie tworzysz sam w Event Center lub w bocie na Telegramie, w kilka minut; plany sali rysujemy za darmo. Nie masz czasu? Nasz event manager zrobi to za ciebie, jako usługa płatna."
+        link: { label: Usługi dodatkowe, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -75,7 +75,7 @@ sections:
       - q: Czy moje wydarzenie znajdzie się na rynku wydarzeń?
         a: "Nie. Eventbrite ma rynek, na którym kupujący przeglądają wydarzenia; ArenaSoldOut.com go nie ma. Sprzedajemy bilety na twojej stronie i na twojej własnej stronie wydarzenia, a kupujących przyprowadzasz własnymi kanałami."
       - q: Czy mogę przenieść swoje wydarzenia z Eventbrite?
-        a: "Tak. Wydarzenia tworzysz w Event Center lub w bocie na Telegramie w kilka minut, a plany sali rysujemy za darmo z twojego PDF-a lub szkicu. Brak czasu? Nasz menedżer wydarzeń przeniesie je za ciebie, jako płatna usługa. Sprzedawaj dalej na Eventbrite, dopóki twoja strona u nas nie będzie gotowa."
+        a: "Tak. Wydarzenia tworzysz w Event Center lub w bocie na Telegramie, plany sali rysujemy za darmo, a ty sprzedajesz dalej na Eventbrite, dopóki twoja strona u nas nie będzie gotowa. Nie masz czasu, by to skonfigurować? Nasz [event manager](/pricing#services) zrobi to za ciebie, jako usługa płatna."
       - q: Czy płacę abonament?
         a: "Nie. Płacisz tylko za sprzedane bilety, po wydarzeniu, albo kupujesz kredyty z góry od {usdFrom} za bilet. Kredyty nigdy nie wygasają."
 
@@ -85,4 +85,4 @@ sections:
     text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
     primary: { label: Zacznij sprzedaż, href: /start }
     secondary: { label: Zobacz cennik, href: /pricing }
-    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."
+    note: "Pytania? Wyślij nam, ile płacisz w Eventbrite, a porównamy to z twoimi kosztami tutaj."

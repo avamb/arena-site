@@ -65,9 +65,9 @@ sections:
       - title: Chaque vente dans votre Telegram
         text: "Créez un événement à partir d'une photo d'affiche dans le bot Telegram et voyez chaque vente et chaque remboursement dans votre groupe en quelques secondes."
         link: { label: Bot Telegram, href: /product/telegram }
-      - title: Configurez vous-même, ou confiez-nous la tâche
-        text: "Vous créez vos événements en quelques minutes dans l'Event Center ou le bot Telegram ; nous dessinons les plans de salle gratuitement. Pas le temps ? Notre gestionnaire d'événements s'en charge pour vous, en service payant."
-        link: { label: Gestionnaire d'événements, href: /pricing#services }
+      - title: Configurez vous-même, ou déléguez
+        text: "Vous créez vous-même les événements, les prix et les catégories dans l'Event Center ou le bot Telegram, en quelques minutes ; nous dessinons les plans de salle gratuitement. Pas le temps ? Notre gestionnaire d'événements s'en charge pour vous, en service payant."
+        link: { label: Services complémentaires, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -80,7 +80,7 @@ sections:
       - q: Où va l'argent de l'acheteur ?
         a: "Directement sur votre propre compte de paiement à chaque commande : Stripe, Flitt ou AllPay. ArenaSoldOut.com ne détient jamais de fonds. Notre commission est facturée après l'événement ou prélevée sur vos crédits."
       - q: Puis-je transférer mes événements depuis TicketSource ?
-        a: "Oui. Vous créez les événements en quelques minutes dans l'Event Center ou le bot Telegram, et nous dessinons vos plans de salle gratuitement à partir de votre PDF ou croquis. Pas le temps ? Notre gestionnaire d'événements les transfère pour vous, en service payant. Continuez à vendre sur TicketSource jusqu'à ce que votre page chez nous soit prête."
+        a: "Oui. Vous créez vos événements dans l'Event Center ou le bot Telegram, nous dessinons vos plans de salle gratuitement, et vous continuez à vendre sur TicketSource jusqu'à ce que votre page chez nous soit prête. Pas le temps de tout configurer vous-même ? Notre [gestionnaire d'événements](/pricing#services) s'en charge pour vous, en service payant."
       - q: Et pour les associations caritatives ?
         a: "Les associations caritatives enregistrées obtiennent 50% de remise sur notre commission. Écrivez-nous et nous l'activons pour votre organisation."
       - q: Dois-je payer un abonnement ?
@@ -92,4 +92,4 @@ sections:
     text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
     primary: { label: Commencer à vendre, href: /start }
     secondary: { label: Voir les tarifs, href: /pricing }
-    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."
+    note: "Des questions ? Envoyez-nous ce que vous payez chez TicketSource et nous le comparons à vos coûts ici."

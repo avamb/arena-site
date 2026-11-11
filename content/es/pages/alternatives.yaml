@@ -46,4 +46,4 @@ sections:
     text: Crea el evento, conecta tu cuenta de pagos, comparte el enlace.
     primary: { label: Empezar a vender, href: /start }
     secondary: { label: Ver precios, href: /pricing }
-    note: "¿Preguntas? Escríbenos: el equipo responde en un día laborable."
+    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."

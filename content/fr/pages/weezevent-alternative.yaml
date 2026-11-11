@@ -57,9 +57,9 @@ sections:
       - title: Chaque vente dans votre Telegram
         text: "Créez un événement à partir d'une photo d'affiche dans le bot Telegram et voyez chaque vente et chaque remboursement dans votre groupe en quelques secondes."
         link: { label: Bot Telegram, href: /product/telegram }
-      - title: Configurez vous-même, ou confiez-nous la tâche
-        text: "Vous créez vos événements en quelques minutes dans l'Event Center ou le bot Telegram ; nous dessinons les plans de salle gratuitement. Pas le temps ? Notre gestionnaire d'événements s'en charge pour vous, en service payant."
-        link: { label: Gestionnaire d'événements, href: /pricing#services }
+      - title: Configurez vous-même, ou déléguez
+        text: "Vous créez vous-même les événements, les prix et les catégories dans l'Event Center ou le bot Telegram, en quelques minutes ; nous dessinons les plans de salle gratuitement. Pas le temps ? Notre gestionnaire d'événements s'en charge pour vous, en service payant."
+        link: { label: Services complémentaires, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -72,7 +72,7 @@ sections:
       - q: Proposez-vous le paiement sans espèces et les bracelets RFID ?
         a: "Non. ArenaSoldOut.com vend des billets et les contrôle à l'entrée avec l'application de scan MACS. Si vous avez besoin du paiement sans espèces au bar, gardez un prestataire distinct pour cela."
       - q: Puis-je transférer mes événements depuis Weezevent ?
-        a: "Oui. Vous créez les événements en quelques minutes dans l'Event Center ou le bot Telegram, et nous dessinons vos plans de salle gratuitement à partir de votre PDF ou croquis. Pas le temps ? Notre gestionnaire d'événements les transfère pour vous, en service payant. Continuez à vendre sur Weezevent jusqu'à ce que votre page chez nous soit prête."
+        a: "Oui. Vous créez vos événements dans l'Event Center ou le bot Telegram, nous dessinons vos plans de salle gratuitement, et vous continuez à vendre sur Weezevent jusqu'à ce que votre page chez nous soit prête. Pas le temps de tout configurer vous-même ? Notre [gestionnaire d'événements](/pricing#services) s'en charge pour vous, en service payant."
       - q: Dois-je payer un abonnement ?
         a: "Non. Vous ne payez que les billets vendus. Les invitations et les billets gratuits pour des événements payants ne supportent aucune commission."
 
@@ -82,4 +82,4 @@ sections:
     text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
     primary: { label: Commencer à vendre, href: /start }
     secondary: { label: Voir les tarifs, href: /pricing }
-    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."
+    note: "Des questions ? Envoyez-nous ce que vous payez chez Weezevent et nous le comparons à vos coûts ici."

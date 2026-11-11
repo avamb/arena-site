@@ -16,7 +16,7 @@ sections:
         text: "Procent od każdego biletu plus stała kwota, wobec naszych stałych {usdPrice}. Wypłata po wydarzeniu, wobec pieniędzy na twoim koncie z każdym zamówieniem."
         link: { label: ArenaSoldOut.com i Eventbrite, href: /eventbrite-alternative }
       - title: Ticket Tailor
-        text: "Stała opłata za bilet w obu. Nasza jest niższa przy płatności po wydarzeniu i z kredytami, a miejsce nie liczy się jako dwa bilety."
+        text: "Stała opłata za bilet w obu. Nasza jest niższa przy płatności za sprzedane bilety i z kredytami, a miejsce nie liczy się jako dwa bilety."
         link: { label: ArenaSoldOut.com i Ticket Tailor, href: /tickettailor-alternative }
       - title: TicketSpice
         text: "Stała opłata za bilet w obu. Nasza jest niższa, a plany sali są przy każdym wydarzeniu, bez droższego planu."

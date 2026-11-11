@@ -58,9 +58,9 @@ sections:
       - title: Ogni vendita nel tuo Telegram
         text: "Crea un evento da una foto della locandina nel bot di Telegram e vedi ogni vendita e rimborso nel tuo gruppo in pochi secondi."
         link: { label: Bot di Telegram, href: /product/telegram }
-      - title: Configuri tu, oppure deleghi
-        text: "Crei gli eventi nell'Event Center o nel bot di Telegram in pochi minuti; le mappe dei posti le disegniamo gratis. Non hai tempo? Il nostro event manager lo fa per te, come servizio a pagamento."
-        link: { label: Event manager, href: /pricing#services }
+      - title: Configuri tu, oppure ci pensiamo noi
+        text: "Crei tu eventi, prezzi e categorie nell'Event Center o nel bot di Telegram, in pochi minuti; le mappe dei posti le disegniamo gratis. Non hai tempo? Il nostro event manager lo fa per te, come servizio a pagamento."
+        link: { label: Servizi extra, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -75,7 +75,7 @@ sections:
       - q: Il mio evento sarà in un marketplace?
         a: "No. Eventbrite ha un marketplace dove gli acquirenti sfogliano gli eventi; ArenaSoldOut.com no. Vendiamo biglietti sul tuo sito e sulla tua pagina evento, e gli acquirenti li porti tu con i tuoi canali."
       - q: Posso spostare i miei eventi da Eventbrite?
-        a: "Sì. Crei gli eventi nell'Event Center o nel bot di Telegram in pochi minuti, e noi disegniamo gratis le tue mappe dei posti da un PDF o da uno schizzo. Non hai tempo? Il nostro event manager li sposta per te, come servizio a pagamento. Continua a vendere su Eventbrite finché la tua pagina da noi non è pronta."
+        a: "Sì. Crei i tuoi eventi nell'Event Center o nel bot di Telegram, noi disegniamo gratis le tue mappe dei posti, e tu continui a vendere su Eventbrite finché la tua pagina da noi non è pronta. Non hai tempo di configurare? Il nostro [event manager](/pricing#services) lo fa per te, come servizio a pagamento."
       - q: Pago un abbonamento?
         a: "No. Paghi solo per i biglietti venduti, dopo l'evento, oppure compri i crediti in anticipo a partire da {usdFrom} per biglietto. I crediti non scadono mai."
 
@@ -85,4 +85,4 @@ sections:
     text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
     primary: { label: Inizia a vendere, href: /start }
     secondary: { label: Vedi i prezzi, href: /pricing }
-    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."
+    note: "Domande? Mandaci quanto paghi su Eventbrite e lo confrontiamo con i tuoi costi qui."

@@ -58,9 +58,9 @@ sections:
       - title: Chaque vente dans votre Telegram
         text: "Créez un événement à partir d'une photo d'affiche dans le bot Telegram et voyez chaque vente et chaque remboursement dans votre groupe en quelques secondes."
         link: { label: Bot Telegram, href: /product/telegram }
-      - title: Configurez vous-même, ou confiez-nous la tâche
-        text: "Vous créez vos événements en quelques minutes dans l'Event Center ou le bot Telegram ; nous dessinons les plans de salle gratuitement. Pas le temps ? Notre gestionnaire d'événements s'en charge pour vous, en service payant."
-        link: { label: Gestionnaire d'événements, href: /pricing#services }
+      - title: Configurez vous-même, ou déléguez
+        text: "Vous créez vous-même les événements, les prix et les catégories dans l'Event Center ou le bot Telegram, en quelques minutes ; nous dessinons les plans de salle gratuitement. Pas le temps ? Notre gestionnaire d'événements s'en charge pour vous, en service payant."
+        link: { label: Services complémentaires, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -75,7 +75,7 @@ sections:
       - q: Mon événement sera-t-il listé sur une place de marché ?
         a: "Non. Eventbrite a une place de marché où les acheteurs parcourent les événements ; ArenaSoldOut.com n'en a pas. Nous vendons des billets sur votre site et sur votre propre page d'événement, et vous amenez les acheteurs avec vos propres canaux."
       - q: Puis-je transférer mes événements depuis Eventbrite ?
-        a: "Oui. Vous créez les événements en quelques minutes dans l'Event Center ou le bot Telegram, et nous dessinons vos plans de salle gratuitement à partir de votre PDF ou croquis. Pas le temps ? Notre gestionnaire d'événements les transfère pour vous, en service payant. Continuez à vendre sur Eventbrite jusqu'à ce que votre page chez nous soit prête."
+        a: "Oui. Vous créez vos événements dans l'Event Center ou le bot Telegram, nous dessinons vos plans de salle gratuitement, et vous continuez à vendre sur Eventbrite jusqu'à ce que votre page chez nous soit prête. Pas le temps de tout configurer vous-même ? Notre [gestionnaire d'événements](/pricing#services) s'en charge pour vous, en service payant."
       - q: Dois-je payer un abonnement ?
         a: "Non. Vous ne payez que les billets vendus, après l'événement, ou vous achetez des crédits à l'avance à partir de {usdFrom} par billet. Les crédits n'expirent jamais."
 
@@ -85,4 +85,4 @@ sections:
     text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
     primary: { label: Commencer à vendre, href: /start }
     secondary: { label: Voir les tarifs, href: /pricing }
-    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."
+    note: "Des questions ? Envoyez-nous ce que vous payez chez Eventbrite et nous le comparons à vos coûts ici."

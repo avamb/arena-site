@@ -63,8 +63,8 @@ sections:
         text: "Create an event from a poster photo in the Telegram bot and see every sale and refund in your group within seconds."
         link: { label: Telegram bot, href: /product/telegram }
       - title: Set it up yourself, or hand it over
-        text: "You create events in the Event Center or the Telegram bot in minutes; we draw seating plans for free. No time? Our event manager does it for you, as a paid service."
-        link: { label: Event manager, href: /pricing#services }
+        text: "You create events, prices and categories yourself in the Event Center or the Telegram bot, in minutes; we draw seating plans for free. No time? Our event manager does it for you, as a paid service."
+        link: { label: Extra services, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -79,7 +79,7 @@ sections:
       - q: Will my event be listed in a marketplace?
         a: "No. Eventbrite has a marketplace where buyers browse events; ArenaSoldOut.com does not. We sell tickets on your site and on your own event page, and you bring the buyers with your own channels."
       - q: Can I move my events from Eventbrite?
-        a: "Yes. You create the events in the Event Center or the Telegram bot in minutes, and we draw your seating plans for free from your PDF or sketch. No time? Our event manager moves them for you, as a paid service. Keep selling on Eventbrite until your page with us is ready."
+        a: "Yes. You create your events in the Event Center or the Telegram bot, we draw your seating plans for free, and you keep selling on Eventbrite until your page with us is ready. No time to set it up yourself? Our [event manager](/pricing#services) does it for you, as a paid service."
       - q: Do I pay a subscription?
         a: "No. You pay only for tickets sold, after the event, or buy credits upfront from {usdFrom} per ticket. Credits never expire."
 
@@ -89,4 +89,4 @@ sections:
     text: Create the event, connect your payment account, share the link.
     primary: { label: Start selling, href: /start }
     secondary: { label: See pricing, href: /pricing }
-    note: "Questions? Write to us: the team answers within one working day."
+    note: "Questions? Send us what you pay on Eventbrite and we compare it with your costs here."
