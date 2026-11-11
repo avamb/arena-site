@@ -33,7 +33,7 @@ footer:
       - { label: E-tickets and scanning, href: /product/tickets }
       - { label: MACS scanner app, href: /product/scanner }
       - { label: Reliability, href: /product/reliability }
-      - { label: Ticket Tailor alternative, href: /tickettailor-alternative }
+      - { label: Compare with other platforms, href: /alternatives }
   - title: Who it is for
     links:
       - { label: Concerts, href: /solutions/concerts }

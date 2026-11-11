@@ -1,0 +1,51 @@
+# Hub of the comparison pages (Marina's request of 11.11.2026). Each card links to one "alternative" page.
+# Competitor figures and sources: docs/competitors/prices-2026-11-11.md and the Ticket Tailor page comment.
+title: "ArenaSoldOut.com compared with other ticketing platforms"
+description: "ArenaSoldOut.com next to Eventbrite, Ticket Tailor, TicketSpice, TicketSource and Weezevent: fees per ticket, payouts and seating plans."
+h1: ArenaSoldOut.com compared with other ticketing platforms
+lead: "Each page puts our price list next to one other platform's, as published on its own site, with the date we checked it. Where the other platform does something we do not, the page says so."
+related:
+  - { label: Pricing, href: /pricing, text: "Pay as you go or credits, the calculator and every credit pack." }
+  - { label: All features, href: /features, text: "Everything ArenaSoldOut.com does, on one page." }
+  - { label: Facts, href: /facts, text: "What works today, with dates, and what we do not offer." }
+sections:
+  - type: cards
+    id: pages
+    eyebrow: Side by side
+    title: Pick the platform you use now
+    items:
+      - title: Eventbrite
+        text: "A percentage of every ticket plus a fixed amount, against our flat {usdPrice}. Payouts after the event, against money in your account with every order."
+        link: { label: ArenaSoldOut.com vs Eventbrite, href: /eventbrite-alternative }
+      - title: Ticket Tailor
+        text: "A flat fee per ticket on both. Ours is lower pay as you go and with credits, and a seat does not count as two tickets."
+        link: { label: ArenaSoldOut.com vs Ticket Tailor, href: /tickettailor-alternative }
+      - title: TicketSpice
+        text: "A flat fee per ticket on both. Ours is lower, and seating plans come with every event instead of a higher plan."
+        link: { label: ArenaSoldOut.com vs TicketSpice, href: /ticketspice-alternative }
+      - title: TicketSource
+        text: "A percentage of each booking plus VAT, against our flat fee per ticket. Seating plans drawn for you instead of by you."
+        link: { label: ArenaSoldOut.com vs TicketSource, href: /ticketsource-alternative }
+      - title: Weezevent
+        text: "Ticket money in your own account with every order instead of a payout every 15 days, and numbered seating on every event."
+        link: { label: ArenaSoldOut.com vs Weezevent, href: /weezevent-alternative }
+
+  - type: prose
+    id: how
+    title: How we compare
+    body: |
+      **Only published prices.** A row goes into a table only if we could read it on the other platform's own pricing page or help centre. The source link and the date are under every table.
+
+      **Like for like.** Some platforms include the card fee in their commission; we do not, because the buyer pays into your own payment account and your provider charges its own card fee. Each page says which is which.
+
+      **What we do not do.** ArenaSoldOut.com has no marketplace where buyers browse events, and no cashless payments at the bar. The full list is on the [facts page](/facts).
+
+      Found a price that has changed? [Write to us](/contact) and we correct the page.
+
+  - type: cta
+    id: start
+    title: Try it on your next event
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: See pricing, href: /pricing }
+    note: "Or write to us: we compare your current costs and set everything up with you on a call."

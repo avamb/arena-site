@@ -1,0 +1,88 @@
+# Comparison page for organizers who look for a Weezevent alternative (Marina's request of 11.11.2026, wave 1).
+# Weezevent figures and sources: docs/competitors/prices-2026-11-11.md. Re-check them before changing this page.
+# Honesty rule for this page: Weezevent's commission includes bank fees and ours does not, so the page does
+# not claim a lower total. It compares cash flow, seating and the commission itself.
+# Our figures come from content/data ({eur...} placeholders).
+title: "Weezevent alternative: your ticket money with every order"
+description: "Compare ArenaSoldOut.com and Weezevent: ticket money in your own account with every order instead of every 15 days, seating plans on every event."
+h1: A Weezevent alternative that pays you with every order
+lead: "On Weezevent the ticket money is collected by Weezevent and paid out every 15 days. On ArenaSoldOut.com the buyer pays straight into your own payment account, and seating plans are part of every event. Below are both offers side by side, as published on 11 November 2026."
+related:
+  - { label: All comparisons, href: /alternatives, text: "ArenaSoldOut.com next to other ticketing platforms." }
+  - { label: Payments, href: /payments, text: "Which payment accounts you can connect, by country." }
+  - { label: Seating plans, href: /product/seating, text: "We draw your venue for free from a PDF or a sketch." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Prices in euro
+    title: How do the two offers compare?
+    lead: "Our commission per ticket sold next to Weezevent's commission for online ticketing. Weezevent's commission includes bank fees; with us the card fee is charged by your own payment provider, at your rate, on top of our commission."
+    cols: { what: "", us: ArenaSoldOut.com, them: Weezevent }
+    rows:
+      - { what: "How the fee is counted", us: "Flat fee per ticket", them: "2.5% of the ticket price, at least €0.99" }
+      - { what: "€20 ticket", us: "**{eurPrice}** + your provider's card fee", them: "€0.99, bank fees included" }
+      - { what: "€50 ticket", us: "**{eurPrice}** + your provider's card fee", them: "€1.25, bank fees included" }
+      - { what: "€100 ticket", us: "**{eurPrice}** + your provider's card fee", them: "€2.50, bank fees included" }
+      - { what: "When you get the money", us: "With every order, in your own account", them: "Every 15 days, paid out by Weezevent" }
+      - { what: "Who holds the buyer's money", us: "You, from the first order", them: "Weezevent, until the payout" }
+      - { what: "Numbered seating", us: "**{eurSeated}** per seated ticket, plan drawn for you free", them: "Tailor-made offer only, price on request" }
+      - { what: "Credits paid upfront", us: "From **{eurFrom}** per ticket, never expire", them: "Not on their price list" }
+      - { what: "Subscription", us: None, them: None }
+    note: "Weezevent prices: [weezevent.com/fr/nos-tarifs](https://weezevent.com/fr/nos-tarifs/) and [weezevent.com/en-gb/our-prices](https://weezevent.com/en-gb/our-prices/), checked on 11 November 2026, VAT included as published. Our prices: [pricing](/pricing) and [detailed terms](/pricing/terms), without VAT. Weezevent is a trademark of its owner; ArenaSoldOut.com is not affiliated with it."
+
+  - type: prose
+    id: examples
+    title: What does the difference mean in practice?
+    body: |
+      **Cash before the event.** A festival sells 2,000 tickets in the three weeks before the gates open. With ArenaSoldOut.com every payment lands in your own account the moment the order is paid, so you pay the stage, the sound and the security from ticket money. With a payout every 15 days, part of that money arrives after you needed it.
+
+      **A theatre with numbered seats.** With us the seating plan is part of every event: you send a PDF or a photo of a hand sketch, the team builds the plan for free, and a seated ticket costs {eurSeated}. On Weezevent numbered seating is in the tailor-made offer, priced on request.
+
+      **The commission itself.** Ours is {eurPrice} per ticket whatever the ticket costs; Weezevent's is 2.5% with a €0.99 minimum, bank fees included. Add your payment provider's card fee to ours to compare the totals for your ticket price.
+
+  - type: cards
+    id: more
+    eyebrow: Beyond the price
+    title: What else do you get with ArenaSoldOut.com?
+    items:
+      - title: Money straight to your account
+        text: "Buyers pay into your own Stripe, Flitt or AllPay account. ArenaSoldOut.com never holds funds and deducts nothing from your sales."
+        link: { label: Payments, href: /payments }
+      - title: Seating plans drawn for you, free
+        text: "Send a PDF, a photo of a hand sketch or a table of rows and seats. The team builds the venue; you never draw it yourself."
+        link: { label: Seating plans, href: /product/seating }
+      - title: Lower rate for cheap tickets
+        text: "When every ticket of the event costs {eurLowMax} or less: {lowPercent}% of the ticket price instead of the flat fee. Discos, runs, children's parties, excursions."
+        link: { label: How it works, href: /pricing#low-price }
+      - title: Buyers in their own language
+        text: "Buyer page, e-mails and tickets in the buyer's language, Hebrew right to left included. We add any new language within 40 hours."
+        link: { label: E-tickets, href: /product/tickets }
+      - title: Every sale in your Telegram
+        text: "Create an event from a poster photo in the Telegram bot and see every sale and refund in your group within seconds."
+        link: { label: Telegram bot, href: /product/telegram }
+      - title: A person who sets it up with you
+        text: "Not a help centre: our team connects your payment account, builds the plan and checks the first event with you."
+        link: { label: Your first event, href: /first-event }
+
+  - type: faq
+    id: questions
+    title: Questions organizers ask when they compare
+    items:
+      - q: Is ArenaSoldOut.com cheaper than Weezevent?
+        a: "Our commission is lower: {eurPrice} per ticket against at least €0.99 on Weezevent. Weezevent's commission includes bank fees and ours does not, so add your payment provider's card fee to ours to compare the totals for your ticket price."
+      - q: When do I get the ticket money?
+        a: "With every order. The buyer pays into your own payment account: Stripe, Flitt or AllPay. ArenaSoldOut.com never holds funds. Our commission is invoiced after the event or taken from your credits."
+      - q: Do you offer cashless payments and RFID wristbands?
+        a: "No. ArenaSoldOut.com sells tickets and checks them at the door with the MACS scanner app. If you need cashless payments at the bar, keep a separate provider for that."
+      - q: Can I move my events from Weezevent?
+        a: "Yes. Send us your event list and your seating plans; the team sets up the events and draws the plans for free, and you keep selling on Weezevent until your page with us is ready."
+      - q: Do I pay a subscription?
+        a: "No. You pay only for tickets sold. Invitations and free tickets to paid events carry no commission."
+
+  - type: cta
+    id: start
+    title: Try it on your next event
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: See pricing, href: /pricing }
+    note: "Or write to us: we compare your current costs and set everything up with you on a call."

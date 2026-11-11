@@ -1,0 +1,90 @@
+# Comparison page for organizers who look for an Eventbrite alternative (Marina's request of 11.11.2026, wave 1).
+# Eventbrite figures and sources: docs/competitors/prices-2026-11-11.md. Re-check them before changing this page.
+# Our figures come from content/data ({usd...} placeholders), except the worked examples in the "examples"
+# section: update those by hand when the tariff changes.
+title: "Eventbrite alternative with a flat fee per ticket"
+description: "Compare ArenaSoldOut.com and Eventbrite: a flat US$0.62 per ticket instead of 3.7% + US$1.79, and the buyer's money goes straight to your own account."
+h1: An Eventbrite alternative without a percentage of your ticket price
+lead: "Eventbrite takes a percentage of every ticket plus a fixed amount. ArenaSoldOut.com takes a flat fee per ticket, whatever the ticket costs, and the money goes to your own payment account with every order. Below are both price lists side by side, as published on 11 November 2026."
+related:
+  - { label: All comparisons, href: /alternatives, text: "ArenaSoldOut.com next to other ticketing platforms." }
+  - { label: Pricing, href: /pricing, text: "Pay as you go or credits, the calculator and every credit pack." }
+  - { label: Payments, href: /payments, text: "Which payment accounts you can connect, by country." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Price per ticket
+    title: How much does a ticket cost on each platform?
+    lead: "Our commission per ticket sold next to Eventbrite's service fee. Card processing is paid separately on both platforms in the US: to Eventbrite there, to your own payment provider with us."
+    cols: { what: "", us: ArenaSoldOut.com, them: Eventbrite }
+    rows:
+      - { what: "How the fee is counted", us: "Flat fee per ticket", them: "Percentage of the ticket price plus a fixed amount" }
+      - { what: "US, per paid ticket", us: "**{usdPrice}**", them: "3.7% + US$1.79" }
+      - { what: "US, US$20 ticket", us: "**{usdPrice}**", them: "US$2.53" }
+      - { what: "US, US$50 ticket", us: "**{usdPrice}**", them: "US$3.64" }
+      - { what: "US, US$100 ticket", us: "**{usdPrice}**", them: "US$5.49" }
+      - { what: "Ireland and the EU, per paid ticket", us: "**{eurPrice}**", them: "5.9% + €0.79 in Ireland" }
+      - { what: "Card processing", us: "Paid to your own payment provider", them: "2.9% of the order in the US, paid to Eventbrite" }
+      - { what: "When you get the money", us: "With every order, in your own account", them: "After the event, paid out by Eventbrite" }
+    note: "Eventbrite prices: [Eventbrite help centre](https://www.eventbrite.com/help/en-us/articles/755615/how-much-does-it-cost-for-organizers-to-use-eventbrite/) and [eventbrite.com/organizer/pricing](https://www.eventbrite.com/organizer/pricing/), checked on 11 November 2026, without VAT. Our prices: [pricing](/pricing) and [detailed terms](/pricing/terms). Eventbrite is a trademark of its owner; ArenaSoldOut.com is not affiliated with it."
+
+  - type: prose
+    id: examples
+    title: What does that mean for one event?
+    body: |
+      **1,000 tickets at US$30, pay as you go.** ArenaSoldOut.com: 1,000 × US$0.62 = **US$620**. Eventbrite: 1,000 × (3.7% of US$30 + US$1.79) = US$2,900. That is **US$2,280** of difference, before card processing on either side.
+
+      **300 seated tickets at US$60.** ArenaSoldOut.com: 300 × US$1.18 = **US$354**, and we draw the seating plan for free. Eventbrite: 300 × (3.7% of US$60 + US$1.79) = US$1,203.
+
+      **The more a ticket costs, the bigger the gap.** Our commission stays the same on a US$15 ticket and on a US$150 one. A percentage grows with the price.
+
+      Count your own event in the [calculator on the pricing page](/pricing#packages).
+
+  - type: cards
+    id: more
+    eyebrow: Beyond the price
+    title: What else is different with ArenaSoldOut.com?
+    items:
+      - title: The money is yours from the first order
+        text: "Buyers pay into your own Stripe, Flitt or AllPay account. ArenaSoldOut.com never holds funds, so there is no payout to wait for after the event."
+        link: { label: Payments, href: /payments }
+      - title: Seating plans drawn for you, free
+        text: "Send a PDF, a photo of a hand sketch or a table of rows and seats. The team builds the venue; you never draw it yourself."
+        link: { label: Seating plans, href: /product/seating }
+      - title: Lower rate for cheap tickets
+        text: "When every ticket of the event costs {usdLowMax} or less: {lowPercent}% of the ticket price instead of the flat fee. Discos, runs, children's parties, excursions."
+        link: { label: How it works, href: /pricing#low-price }
+      - title: Your page, your buyers
+        text: "Sell on your own site with the ticket widget or on your page with us. Buyers come to you, not to a catalogue next to other events."
+        link: { label: Sell on your site or ours, href: /product/sell }
+      - title: Every sale in your Telegram
+        text: "Create an event from a poster photo in the Telegram bot and see every sale and refund in your group within seconds."
+        link: { label: Telegram bot, href: /product/telegram }
+      - title: A person who sets it up with you
+        text: "Not a help centre: our team connects your payment account, builds the plan and checks the first event with you."
+        link: { label: Your first event, href: /first-event }
+
+  - type: faq
+    id: questions
+    title: Questions organizers ask when they compare
+    items:
+      - q: Is ArenaSoldOut.com cheaper than Eventbrite?
+        a: "On the commission, yes, at any ticket price: {usdPrice} per ticket instead of 3.7% + US$1.79 in the US, and {eurPrice} instead of 5.9% + €0.79 in Ireland. Card processing comes on top on both platforms in the US."
+      - q: Who pays the fee, me or the buyer?
+        a: "You decide. You can add your own service fee for the buyer on top of the ticket price, or keep the price as it is and pay our commission yourself. Invitations and free tickets to paid events carry no commission."
+      - q: Where does the buyer's money go?
+        a: "Into your own payment account with every order: Stripe, Flitt or AllPay. ArenaSoldOut.com never holds funds. Our commission is invoiced after the event or taken from your credits."
+      - q: Will my event be listed in a marketplace?
+        a: "No. Eventbrite has a marketplace where buyers browse events; ArenaSoldOut.com does not. We sell tickets on your site and on your own event page, and you bring the buyers with your own channels."
+      - q: Can I move my events from Eventbrite?
+        a: "Yes. Send us your event list and your seating plans; the team sets up the events and draws the plans for free, and you keep selling on Eventbrite until your page with us is ready."
+      - q: Do I pay a subscription?
+        a: "No. You pay only for tickets sold, after the event, or buy credits upfront from {usdFrom} per ticket. Credits never expire."
+
+  - type: cta
+    id: start
+    title: Try it on your next event
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: See pricing, href: /pricing }
+    note: "Or write to us: we compare your current costs and set everything up with you on a call."
