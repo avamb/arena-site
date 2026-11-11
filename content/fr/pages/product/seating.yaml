@@ -19,7 +19,7 @@ sections:
       - q: Puis-je modifier le plan après le début des ventes ?
         a: Oui. Les plans ont des versions, donc une nouvelle disposition pour la séance suivante ne touche pas aux billets déjà vendus.
       - q: Combien me coûte un billet avec place ?
-        a: "La commission pour un billet avec place est de US$1,09 (€0,97 dans les pays de l'UE), contre US$0,59 (€0,53) sans place ; les crédits la réduisent. Le plan lui-même est gratuit. Voir les [tarifs](/pricing)."
+        a: "La commission pour un billet avec place est de US$1,18 (€1,05 dans les pays de l'UE), contre US$0,62 (€0,55) sans place ; les crédits la réduisent. Le plan lui-même est gratuit. Voir les [tarifs](/pricing)."
       - q: L'acheteur choisit-il sa place sur téléphone ?
         a: Oui. Le plan est le même dans le widget et sur la page hébergée, avec zoom par pincement sur téléphone, une légende par catégorie et un minuteur de retenue pour les places choisies.
       - q: Et les invitations et les places presse ?

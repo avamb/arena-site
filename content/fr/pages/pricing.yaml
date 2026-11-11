@@ -78,7 +78,7 @@ sections:
     title: Combien me coûte un billet, exactement ?
     items:
       - q: Combien coûte un billet avec place ?
-        a: "Avec paiement après l'événement : US$1,09 hors UE, €0,97 dans l'UE. Un billet sans place coûte US$0,59 ou €0,53. Le plan de salle lui-même ne coûte rien : nous le dessinons gratuitement à partir d'un PDF, d'une photo de croquis à la main ou d'un tableau de rangs et de places. Avec des crédits, la commission est plus basse, et une place ajoute US$0,35 (€0,31) au tarif des crédits."
+        a: "Avec paiement après l'événement : US$1,18 hors UE, €1,05 dans l'UE. Un billet sans place coûte US$0,62 ou €0,55. Le plan de salle lui-même ne coûte rien : nous le dessinons gratuitement à partir d'un PDF, d'une photo de croquis à la main ou d'un tableau de rangs et de places. Avec des crédits, la commission est plus basse, et une place ajoute US$0,35 (€0,31) au tarif des crédits."
       - q: Comment fonctionnent les crédits ?
         a: "Vous achetez un pack de crédits une fois. Chaque billet vendu prélève sa commission sur vos crédits au tarif du pack, jusqu'à épuisement. Les crédits n'expirent jamais, peuvent être rechargés à tout moment et servent uniquement à payer nos services : ils ne peuvent ni être retirés ni être transférés."
       - q: Que se passe-t-il si les crédits sont épuisés en cours de vente ?
@@ -104,7 +104,7 @@ sections:
       - q: Un de mes billets coûte plus de US$10 (€10 dans l'UE), les autres sont bon marché. Quel tarif s'applique ?
         a: "Le tarif standard, pour tous les billets de l'événement : le tarif réduit exige que chaque billet de chaque catégorie et de chaque palier de prix coûte US$10 ou moins (€10 dans l'UE). Un billet à US$5 à côté d'un billet à US$25 est au tarif standard."
       - q: Je possède une salle et j'organise de nombreux événements par mois. Existe-t-il une autre offre ?
-        a: "Oui. Les propriétaires de salles permanentes (théâtres, clubs, stades, cirques et autres lieux qui organisent eux-mêmes des événements, toute l'année ou par saison) paient {percent}% du prix du billet, calculé après codes promo et hors vos frais de service. La commission par billet est plafonnée à US$1,09 (€1,09 dans l'UE), identique avec et sans place. Les invitations ne supportent aucune commission. Nous facturons chaque mois. Notre équipe active le statut de salle : écrivez-nous depuis la [page de contact](/contact). Les conditions complètes figurent dans les [conditions détaillées](/pricing/terms)."
+        a: "Oui. Les propriétaires de salles permanentes (théâtres, clubs, stades, cirques et autres lieux qui organisent eux-mêmes des événements, toute l'année ou par saison) paient {percent}% du prix du billet, calculé après codes promo et hors vos frais de service. La commission par billet est plafonnée à US$1,18 (€1,09 dans l'UE), identique avec et sans place. Les invitations ne supportent aucune commission. Nous facturons chaque mois. Notre équipe active le statut de salle : écrivez-nous depuis la [page de contact](/contact). Les conditions complètes figurent dans les [conditions détaillées](/pricing/terms)."
 
   - type: cta
     id: start

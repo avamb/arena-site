@@ -78,7 +78,7 @@ sections:
     title: ¿Cuánto me cuesta exactamente una entrada?
     items:
       - q: ¿Cuánto cuesta una entrada con asiento?
-        a: "Pagando después del evento: US$1,09 fuera de la UE, €0,97 en la UE. Una entrada sin asiento cuesta US$0,59 o €0,53. El plano de asientos en sí no cuesta nada: lo dibujamos gratis a partir de un PDF, una foto de un boceto a mano o una tabla de filas y asientos. Con créditos la comisión es menor, y un asiento suma US$0,35 (€0,31) a la tarifa de créditos."
+        a: "Pagando después del evento: US$1,18 fuera de la UE, €1,05 en la UE. Una entrada sin asiento cuesta US$0,62 o €0,55. El plano de asientos en sí no cuesta nada: lo dibujamos gratis a partir de un PDF, una foto de un boceto a mano o una tabla de filas y asientos. Con créditos la comisión es menor, y un asiento suma US$0,35 (€0,31) a la tarifa de créditos."
       - q: ¿Cómo funcionan los créditos?
         a: "Compras un paquete de créditos una vez. Cada entrada vendida toma su comisión de tus créditos a la tarifa del paquete, hasta que se acaban. Los créditos no caducan, se pueden recargar en cualquier momento y se gastan solo en nuestros servicios: no se pueden retirar ni transferir."
       - q: ¿Qué pasa si los créditos se acaban a mitad de las ventas?
@@ -104,7 +104,7 @@ sections:
       - q: Una de mis entradas cuesta más de US$10 (€10 en la UE) y las demás son baratas. ¿Qué precio se aplica?
         a: "El estándar, a todas las entradas del evento: la tarifa menor exige que cada entrada de cada categoría y tramo de precio cueste US$10 o menos (€10 en la UE). Una entrada de US$5 junto a una de US$25 va al precio estándar."
       - q: Tengo un recinto y organizo muchos eventos al mes. ¿Hay otro trato?
-        a: "Sí. Los propietarios de recintos permanentes (teatros, clubes, estadios, circos y otros lugares que organizan eventos por sí mismos, todo el año o por temporada) pagan el {percent}% del precio de la entrada, calculado después de los códigos promocionales y sin tu cargo por servicio. La comisión por entrada tiene un tope de US$1,09 (€1,09 en la UE), igual con asiento y sin él. Las invitaciones no llevan comisión. Facturamos cada mes. Nuestro equipo activa el estatus de recinto: escríbenos desde la [página de contacto](/contact). Las condiciones completas están en las [condiciones detalladas](/pricing/terms)."
+        a: "Sí. Los propietarios de recintos permanentes (teatros, clubes, estadios, circos y otros lugares que organizan eventos por sí mismos, todo el año o por temporada) pagan el {percent}% del precio de la entrada, calculado después de los códigos promocionales y sin tu cargo por servicio. La comisión por entrada tiene un tope de US$1,18 (€1,09 en la UE), igual con asiento y sin él. Las invitaciones no llevan comisión. Facturamos cada mes. Nuestro equipo activa el estatus de recinto: escríbenos desde la [página de contacto](/contact). Las condiciones completas están en las [condiciones detalladas](/pricing/terms)."
 
   - type: cta
     id: start
