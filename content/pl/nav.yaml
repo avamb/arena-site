@@ -32,7 +32,7 @@ footer:
       - { label: E-bilety i skanowanie, href: /product/tickets }
       - { label: Aplikacja skanera MACS, href: /product/scanner }
       - { label: Niezawodność, href: /product/reliability }
-      - { label: Alternatywa dla Ticket Tailor, href: /tickettailor-alternative }
+      - { label: Porównaj z innymi platformami, href: /alternatives }
   - title: Dla kogo
     links:
       - { label: Koncerty, href: /solutions/concerts }

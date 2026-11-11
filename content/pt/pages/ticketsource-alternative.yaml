@@ -1,0 +1,95 @@
+title: "Alternativa ao TicketSource com tarifa fixa por ingresso"
+description: "Compare ArenaSoldOut.com e TicketSource: tarifa fixa por ingresso em vez de porcentagem de cada reserva, e mapas de assentos desenhados para você de graça."
+h1: Uma alternativa ao TicketSource com tarifa fixa em vez de porcentagem
+lead: "O TicketSource cobra uma porcentagem de cada reserva paga. O ArenaSoldOut.com cobra uma tarifa fixa por ingresso, não importa quanto ele custe, e o dinheiro vai para a sua própria conta de pagamentos a cada pedido. Abaixo estão as duas listas de preços lado a lado, como publicadas em 11 de novembro de 2026."
+related:
+  - { label: Todas as comparações, href: /alternatives, text: "O ArenaSoldOut.com ao lado de outras plataformas de venda de ingressos." }
+  - { label: Preços, href: /pricing, text: "Pague conforme usa ou créditos, a calculadora e cada pacote de créditos." }
+  - { label: Mapas de assentos, href: /product/seating, text: "Desenhamos o seu local de graça a partir de um PDF ou de um esboço." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Preço por ingresso
+    title: Quanto custa um ingresso em cada plataforma?
+    lead: "Preços das duas plataformas em 11 de novembro de 2026. O TicketSource tem duas opções: o processamento de cartões próprio, com a taxa do cartão incluída, ou a sua própria conta Stripe a uma taxa menor. Os preços diferem entre o Reino Unido e a UE. Com o ArenaSoldOut.com você sempre usa a sua própria conta de pagamentos, então a comparação justa é com a segunda opção."
+    cols: { what: "", us: ArenaSoldOut.com, them: TicketSource }
+    rows:
+      - { what: "Como a taxa é calculada", us: "Tarifa fixa por ingresso", them: "Porcentagem de cada reserva paga" }
+      - { what: "Reino Unido, conta Stripe própria", us: "**{usdPrice}** por ingresso, cerca de £0,47", them: "4,5% + IVA" }
+      - { what: "Reino Unido, ingresso de £20, conta Stripe própria", us: "**{usdPrice}**, cerca de £0,47", them: "£1,08 (£0,90 + IVA)" }
+      - { what: "Reino Unido, ingresso de £50, conta Stripe própria", us: "**{usdPrice}**, cerca de £0,47", them: "£2,70 (£2,25 + IVA)" }
+      - { what: "Reino Unido, processamento de cartões deles", us: "Não oferecido: você sempre usa a sua própria conta", them: "7% + IVA, no mínimo £0,25 + IVA, taxa do cartão incluída" }
+      - { what: "UE, conta Stripe própria", us: "**{eurPrice}** por ingresso", them: "4,5%" }
+      - { what: "UE, ingresso de €20, conta Stripe própria", us: "**{eurPrice}**", them: "€0,90" }
+      - { what: "UE, ingresso de €50, conta Stripe própria", us: "**{eurPrice}**", them: "€2,25" }
+      - { what: "UE, processamento de cartões deles", us: "Não oferecido: você sempre usa a sua própria conta", them: "8,5%, no mínimo €0,30, taxa do cartão incluída" }
+      - { what: "Quando você recebe o dinheiro", us: "A cada pedido, na sua própria conta", them: "Com a sua própria conta Stripe: a cada pedido. Com o processamento deles: na segunda-feira depois do evento" }
+      - { what: "Quem monta o mapa de assentos", us: "A nossa equipe, de graça, a partir do seu PDF ou esboço", them: "Você, no editor de mapas de assentos" }
+      - { what: "Créditos pagos antecipadamente", us: "A partir de **{usdFrom}** por ingresso, nunca expiram", them: "Não estão na lista de preços deles" }
+      - { what: "Assinatura", us: Nenhuma, them: Nenhuma }
+    note: "Preços do TicketSource: [Reino Unido](https://www.ticketsource.com/pricing) e [UE](https://www.ticketsource.com/es/pricing), consultados em 11 de novembro de 2026. Nossos preços: [preços](/pricing) e [condições detalhadas](/pricing/terms). Organizadores em países da UE pagam a nossa comissão em euros, no resto do mundo em dólares americanos; os valores em libras são convertidos pela taxa de referência do BCE de 11 de novembro de 2026 (US$1 = £0,7515). TicketSource é marca registrada do seu titular; o ArenaSoldOut.com não é afiliado a ele."
+
+  - type: prose
+    id: examples
+    title: O que isso significa para um evento?
+    body: |
+      Todos os valores nos preços das duas plataformas em 11 de novembro de 2026. A nossa comissão é em dólares americanos; os valores em libras seguem a taxa de referência do BCE do mesmo dia, US$1 = £0,7515.
+
+      **400 ingressos a £25, conta Stripe própria nas duas.** ArenaSoldOut.com: 400 × US$0,62 = **US$248, cerca de £186**. TicketSource: 400 × (4,5% de £25 + IVA) = £540.
+
+      **250 ingressos com assento a £40.** ArenaSoldOut.com: 250 × US$1,18 = **US$295, cerca de £222**, e desenhamos o mapa de assentos de graça. TicketSource: 250 × (4,5% de £40 + IVA) = £540.
+
+      **300 ingressos a €30 na UE, conta Stripe própria nas duas.** ArenaSoldOut.com: 300 × €0,55 = **€165**. TicketSource: 300 × 4,5% de €30 = €405.
+
+      **Quanto mais caro o ingresso, maior a diferença.** A nossa comissão é a mesma num ingresso de £15 e num de £150. Uma porcentagem cresce com o preço.
+
+      Calcule o seu próprio evento na [calculadora da página de preços](/pricing#packages).
+
+  - type: cards
+    id: more
+    eyebrow: Além do preço
+    title: O que mais você recebe com o ArenaSoldOut.com?
+    items:
+      - title: Mapas de assentos desenhados para você, grátis
+        text: "Envie um PDF, uma foto de um esboço à mão ou uma tabela de fileiras e assentos. A equipe monta o local; você nunca precisa desenhá-lo."
+        link: { label: Mapas de assentos, href: /product/seating }
+      - title: Dinheiro direto na sua conta
+        text: "Os compradores pagam na sua própria conta Stripe, Flitt ou AllPay a cada pedido. O ArenaSoldOut.com nunca retém valores e não desconta nada das suas vendas."
+        link: { label: Pagamentos, href: /payments }
+      - title: Taxa menor para ingressos baratos
+        text: "Quando todos os ingressos do evento custam {usdLowMax} ou menos: {lowPercent}% do preço do ingresso em vez da tarifa fixa. Baladas, corridas, festas infantis, passeios."
+        link: { label: Como funciona, href: /pricing#low-price }
+      - title: Compradores no próprio idioma
+        text: "Página do comprador, e-mails e ingressos no idioma do comprador, inclusive hebraico da direita para a esquerda. Acrescentamos qualquer idioma novo em até 40 horas."
+        link: { label: Ingressos eletrônicos, href: /product/tickets }
+      - title: Cada venda no seu Telegram
+        text: "Crie um evento a partir da foto de um cartaz no bot do Telegram e veja cada venda e reembolso no seu grupo em segundos."
+        link: { label: Bot do Telegram, href: /product/telegram }
+      - title: Configure você mesmo, ou nos passe a tarefa
+        text: "Você cria eventos, preços e categorias no Event Center ou no bot do Telegram, em minutos; desenhamos os mapas de assentos de graça. Sem tempo? O nosso gerente de eventos faz isso por você, como serviço pago."
+        link: { label: Serviços extras, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Perguntas que os organizadores fazem ao comparar
+    items:
+      - q: O ArenaSoldOut.com é mais barato que o TicketSource?
+        a: "Com a sua própria conta Stripe nas duas, sim, em qualquer ingresso acima de cerca de £9 no Reino Unido e de cerca de €12 na UE: {usdPrice} por ingresso em vez de 4,5% mais IVA no Reino Unido, {eurPrice} em vez de 4,5% na UE. Em um ingresso de £20 são cerca de £0,47 contra £1,08; em um ingresso de €20, {eurPrice} contra €0,90."
+      - q: A taxa do cartão está incluída na comissão de vocês?
+        a: "Não. A taxa do cartão é cobrada pelo seu próprio provedor de pagamentos, na sua tarifa, e a nossa comissão é separada. O processamento próprio do TicketSource (7% + IVA no Reino Unido, 8,5% na UE) inclui a taxa do cartão; a opção de 4,5% deles com a sua própria conta Stripe, como a nossa, não inclui."
+      - q: Para onde vai o dinheiro do comprador?
+        a: "Para a sua própria conta de pagamentos, a cada pedido: Stripe, Flitt ou AllPay. O ArenaSoldOut.com nunca retém valores. Nossa comissão é cobrada depois do evento ou descontada dos seus créditos."
+      - q: Posso migrar meus eventos do TicketSource?
+        a: "Sim. Envie a lista dos seus eventos e os seus mapas de assentos; você cria os seus eventos no Event Center ou no bot do Telegram, desenhamos os seus mapas de assentos de graça, e você continua vendendo no TicketSource até a sua página conosco ficar pronta. Sem tempo para configurar sozinho? O nosso [gerente de eventos](/pricing#services) faz isso por você, como serviço pago."
+      - q: E as entidades beneficentes?
+        a: "Entidades beneficentes registradas têm 50% de desconto na nossa comissão. Escreva para nós e ativamos o desconto para a sua organização."
+      - q: Eu pago assinatura?
+        a: "Não. Você paga apenas pelos ingressos vendidos. Convites e ingressos gratuitos em eventos pagos não têm comissão."
+
+  - type: cta
+    id: start
+    title: Experimente no seu próximo evento
+    text: Crie o evento, conecte sua conta de pagamentos, compartilhe o link.
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Ver preços, href: /pricing }
+    note: "Dúvidas? Envie o que você paga no TicketSource e comparamos com os seus custos aqui."

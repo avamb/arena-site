@@ -1,0 +1,101 @@
+# Comparison page for organizers who look for a TicketSource alternative (Marina's request of 11.11.2026, wave 1).
+# TicketSource figures and sources: docs/competitors/prices-2026-11-11.md. Read in a browser on 11.11.2026:
+# ticketsource.com/pricing (UK, pounds) and ticketsource.com/es/pricing (EU, euro). Their site refuses automated
+# readers, so re-check in a browser. Our figures come from content/data ({usd...}, {eur...} placeholders).
+# Pound amounts next to our dollar prices ("about £0.47", the examples) are converted by hand at the ECB reference
+# rate of 11.11.2026, 1 EUR = 1.1127 USD = 0.83618 GBP, so US$1 = £0.7515. Update them with the tariff or the rate.
+title: "TicketSource alternative with a flat fee per ticket"
+description: "Compare ArenaSoldOut.com and TicketSource: a flat fee per ticket instead of a percentage of each booking, and seating plans drawn for you for free."
+h1: A TicketSource alternative with a flat fee instead of a percentage
+lead: "TicketSource charges a percentage of each paid booking. ArenaSoldOut.com charges a flat fee per ticket, whatever the ticket costs, and the money goes to your own payment account with every order. Below are both price lists side by side, as published on 11 November 2026."
+related:
+  - { label: All comparisons, href: /alternatives, text: "ArenaSoldOut.com next to other ticketing platforms." }
+  - { label: Pricing, href: /pricing, text: "Pay as you go or credits, the calculator and every credit pack." }
+  - { label: Seating plans, href: /product/seating, text: "We draw your venue for free from a PDF or a sketch." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Price per ticket
+    title: How much does a ticket cost on each platform?
+    lead: "Prices of both platforms as of 11 November 2026. TicketSource has two options: their own card processing, with the card fee included, or your own Stripe account at a lower rate. Prices differ between the UK and the EU. With ArenaSoldOut.com you always use your own payment account, so the fair comparison is with the second option."
+    cols: { what: "", us: ArenaSoldOut.com, them: TicketSource }
+    rows:
+      - { what: "How the fee is counted", us: "Flat fee per ticket", them: "Percentage of each paid booking" }
+      - { what: "UK, own Stripe account", us: "**{usdPrice}** per ticket, about £0.47", them: "4.5% + VAT" }
+      - { what: "UK, £20 ticket, own Stripe account", us: "**{usdPrice}**, about £0.47", them: "£1.08 (£0.90 + VAT)" }
+      - { what: "UK, £50 ticket, own Stripe account", us: "**{usdPrice}**, about £0.47", them: "£2.70 (£2.25 + VAT)" }
+      - { what: "UK, their own card processing", us: "Not offered: you always use your own account", them: "7% + VAT, at least £0.25 + VAT, card fee included" }
+      - { what: "EU, own Stripe account", us: "**{eurPrice}** per ticket", them: "4.5%" }
+      - { what: "EU, €20 ticket, own Stripe account", us: "**{eurPrice}**", them: "€0.90" }
+      - { what: "EU, €50 ticket, own Stripe account", us: "**{eurPrice}**", them: "€2.25" }
+      - { what: "EU, their own card processing", us: "Not offered: you always use your own account", them: "8.5%, at least €0.30, card fee included" }
+      - { what: "When you get the money", us: "With every order, in your own account", them: "With your own Stripe: with every order. With their processing: the Monday after the event" }
+      - { what: "Who builds the seating plan", us: "Our team, free, from your PDF or sketch", them: "You, in the seating plan designer" }
+      - { what: "Credits paid upfront", us: "From **{usdFrom}** per ticket, never expire", them: "Not on their price list" }
+      - { what: "Subscription", us: None, them: None }
+    note: "TicketSource prices: [UK](https://www.ticketsource.com/pricing) and [EU](https://www.ticketsource.com/es/pricing), checked on 11 November 2026. Our prices: [pricing](/pricing) and [detailed terms](/pricing/terms). Organizers in EU countries pay our commission in euro, everywhere else in US dollars; amounts in pounds are converted at the ECB reference rate of 11 November 2026 (US$1 = £0.7515). TicketSource is a trademark of its owner; ArenaSoldOut.com is not affiliated with it."
+
+  - type: prose
+    id: examples
+    title: What does that mean for one event?
+    body: |
+      All figures at the prices of both platforms as of 11 November 2026. Our commission is in US dollars; the amounts in pounds are at the ECB reference rate of the same day, US$1 = £0.7515.
+
+      **400 tickets at £25, own Stripe account on both.** ArenaSoldOut.com: 400 × US$0.62 = **US$248, about £186**. TicketSource: 400 × (4.5% of £25 + VAT) = £540.
+
+      **250 seated tickets at £40.** ArenaSoldOut.com: 250 × US$1.18 = **US$295, about £222**, and we draw the seating plan for free. TicketSource: 250 × (4.5% of £40 + VAT) = £540.
+
+      **300 tickets at €30 in the EU, own Stripe account on both.** ArenaSoldOut.com: 300 × €0.55 = **€165**. TicketSource: 300 × 4.5% of €30 = €405.
+
+      **The more a ticket costs, the bigger the gap.** Our commission stays the same on a £15 ticket and on a £150 one. A percentage grows with the price.
+
+      Count your own event in the [calculator on the pricing page](/pricing#packages).
+
+  - type: cards
+    id: more
+    eyebrow: Beyond the price
+    title: What else do you get with ArenaSoldOut.com?
+    items:
+      - title: Seating plans drawn for you, free
+        text: "Send a PDF, a photo of a hand sketch or a table of rows and seats. The team builds the venue; you never draw it yourself."
+        link: { label: Seating plans, href: /product/seating }
+      - title: Money straight to your account
+        text: "Buyers pay into your own Stripe, Flitt or AllPay account with every order. ArenaSoldOut.com never holds funds and deducts nothing from your sales."
+        link: { label: Payments, href: /payments }
+      - title: Lower rate for cheap tickets
+        text: "When every ticket of the event costs {usdLowMax} or less: {lowPercent}% of the ticket price instead of the flat fee. Discos, runs, children's parties, excursions."
+        link: { label: How it works, href: /pricing#low-price }
+      - title: Buyers in their own language
+        text: "Buyer page, e-mails and tickets in the buyer's language, Hebrew right to left included. We add any new language within 40 hours."
+        link: { label: E-tickets, href: /product/tickets }
+      - title: Every sale in your Telegram
+        text: "Create an event from a poster photo in the Telegram bot and see every sale and refund in your group within seconds."
+        link: { label: Telegram bot, href: /product/telegram }
+      - title: Set it up yourself, or hand it over
+        text: "You create events, prices and categories yourself in the Event Center or the Telegram bot, in minutes; we draw seating plans for free. No time? Our event manager does it for you, as a paid service."
+        link: { label: Extra services, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Questions organizers ask when they compare
+    items:
+      - q: Is ArenaSoldOut.com cheaper than TicketSource?
+        a: "With your own Stripe account on both, yes, on any ticket above about £9 in the UK and about €12 in the EU: {usdPrice} per ticket instead of 4.5% plus VAT in the UK, {eurPrice} instead of 4.5% in the EU. On a £20 ticket that is about £0.47 against £1.08; on a €20 ticket, {eurPrice} against €0.90."
+      - q: Is the card fee included in your commission?
+        a: "No. The card fee is charged by your own payment provider at your rate, and our commission is separate. TicketSource's own processing (7% + VAT in the UK, 8.5% in the EU) includes the card fee; their 4.5% option with your own Stripe account, like us, does not."
+      - q: Where does the buyer's money go?
+        a: "Into your own payment account with every order: Stripe, Flitt or AllPay. ArenaSoldOut.com never holds funds. Our commission is invoiced after the event or taken from your credits."
+      - q: Can I move my events from TicketSource?
+        a: "Yes. You create your events in the Event Center or the Telegram bot, we draw your seating plans for free, and you keep selling on TicketSource until your page with us is ready. No time to set it up yourself? Our [event manager](/pricing#services) does it for you, as a paid service."
+      - q: What about charities?
+        a: "Registered charities get 50% off our commission. Write to us and we switch it on for your organization."
+      - q: Do I pay a subscription?
+        a: "No. You pay only for tickets sold. Invitations and free tickets to paid events carry no commission."
+
+  - type: cta
+    id: start
+    title: Try it on your next event
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: See pricing, href: /pricing }
+    note: "Questions? Send us what you pay on TicketSource and we compare it with your costs here."

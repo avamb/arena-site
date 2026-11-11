@@ -1,0 +1,85 @@
+title: "Alternatywa dla Weezevent: pieniądze z każdym zamówieniem"
+description: "Porównaj ArenaSoldOut.com i Weezevent: pieniądze z biletów na twoim koncie z każdym zamówieniem, a nie co 15 dni, i plany sali przy każdym wydarzeniu."
+h1: Alternatywa dla Weezevent, która wypłaca z każdym zamówieniem
+lead: "W Weezevent pieniądze z biletów zbiera Weezevent i wypłaca co 15 dni. W ArenaSoldOut.com kupujący płaci prosto na twoje konto płatności, a plany sali są częścią każdego wydarzenia. Poniżej obie oferty obok siebie, w wersji opublikowanej 11 listopada 2026."
+related:
+  - { label: Wszystkie porównania, href: /alternatives, text: "ArenaSoldOut.com obok innych platform biletowych." }
+  - { label: Płatności, href: /payments, text: "Jakie konta płatności możesz podłączyć, według kraju." }
+  - { label: Plany sali, href: /product/seating, text: "Rysujemy twój obiekt za darmo z PDF-a lub szkicu." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Ceny w euro
+    title: Jak wypadają obie oferty?
+    lead: "Ceny obu platform z 11 listopada 2026. Nasza prowizja za sprzedany bilet obok prowizji Weezevent za sprzedaż online. Prowizja Weezevent zawiera opłaty bankowe; u nas opłatę kartową pobiera twój własny operator płatności, według twojej stawki, oprócz naszej prowizji."
+    cols: { what: "", us: ArenaSoldOut.com, them: Weezevent }
+    rows:
+      - { what: "Jak liczona jest opłata", us: "Stała opłata za bilet", them: "2,5% ceny biletu, co najmniej €0,99" }
+      - { what: "Bilet za €20", us: "**{eurPrice}** + opłata kartowa twojego operatora", them: "€0,99, opłaty bankowe wliczone" }
+      - { what: "Bilet za €50", us: "**{eurPrice}** + opłata kartowa twojego operatora", them: "€1,25, opłaty bankowe wliczone" }
+      - { what: "Bilet za €100", us: "**{eurPrice}** + opłata kartowa twojego operatora", them: "€2,50, opłaty bankowe wliczone" }
+      - { what: "Kiedy dostajesz pieniądze", us: "Z każdym zamówieniem, na twoje konto", them: "Co 15 dni, wypłata od Weezevent" }
+      - { what: "Kto trzyma pieniądze kupującego", us: "Ty, od pierwszego zamówienia", them: "Weezevent, do wypłaty" }
+      - { what: "Miejsca numerowane", us: "**{eurSeated}** za bilet z miejscem, plan rysowany za ciebie za darmo", them: "Tylko oferta szyta na miarę, cena na zapytanie" }
+      - { what: "Kredyty płatne z góry", us: "Od **{eurFrom}** za bilet, nigdy nie wygasają", them: "Brak w ich cenniku" }
+      - { what: "Abonament", us: Brak, them: Brak }
+    note: "Ceny Weezevent: [weezevent.com/fr/nos-tarifs](https://weezevent.com/fr/nos-tarifs/) i [weezevent.com/en-gb/our-prices](https://weezevent.com/en-gb/our-prices/), sprawdzone 11 listopada 2026, z VAT, tak jak opublikowano. Nasze ceny: [cennik](/pricing) i [szczegółowe warunki](/pricing/terms), bez VAT. Weezevent jest znakiem towarowym swojego właściciela; ArenaSoldOut.com nie jest z nim powiązane."
+
+  - type: prose
+    id: examples
+    title: Co ta różnica oznacza w praktyce?
+    body: |
+      Wszystkie kwoty według cen obu platform z 11 listopada 2026.
+
+      **Gotówka przed wydarzeniem.** Festiwal sprzedaje 2000 biletów w trzy tygodnie przed otwarciem bram. W ArenaSoldOut.com każda płatność trafia na twoje konto w chwili opłacenia zamówienia, więc scenę, nagłośnienie i ochronę opłacasz z pieniędzy za bilety. Przy wypłacie co 15 dni część tych pieniędzy przychodzi po tym, jak była potrzebna.
+
+      **Teatr z miejscami numerowanymi.** U nas plan sali jest częścią każdego wydarzenia: wysyłasz PDF lub zdjęcie odręcznego szkicu, zespół buduje plan za darmo, a bilet z miejscem kosztuje {eurSeated}. W Weezevent miejsca numerowane są w ofercie szytej na miarę, z ceną na zapytanie.
+
+      **Sama prowizja.** Nasza to {eurPrice} za bilet, niezależnie od jego ceny; w Weezevent to 2,5% z minimum €0,99, z opłatami bankowymi. Dolicz opłatę kartową swojego operatora płatności do naszej, aby porównać sumy dla twojej ceny biletu.
+
+  - type: cards
+    id: more
+    eyebrow: Poza ceną
+    title: Co jeszcze dostajesz z ArenaSoldOut.com?
+    items:
+      - title: Pieniądze prosto na twoje konto
+        text: "Kupujący płacą na twoje własne konto Stripe, Flitt lub AllPay. ArenaSoldOut.com nigdy nie przechowuje środków i niczego nie potrąca z twojej sprzedaży."
+        link: { label: Płatności, href: /payments }
+      - title: Plany sali rysowane za ciebie, za darmo
+        text: "Wyślij PDF, zdjęcie odręcznego szkicu lub tabelę z rzędami i miejscami. Zespół buduje obiekt; sam nigdy go nie rysujesz."
+        link: { label: Plany sali, href: /product/seating }
+      - title: Niższa stawka dla tanich biletów
+        text: "Gdy każdy bilet wydarzenia kosztuje {eurLowMax} lub mniej: {lowPercent}% ceny biletu zamiast stałej opłaty. Dyskoteki, biegi, urodziny dla dzieci, wycieczki."
+        link: { label: Jak to działa, href: /pricing#low-price }
+      - title: Kupujący w swoim języku
+        text: "Strona kupującego, e-maile i bilety w języku kupującego, także hebrajski od prawej do lewej. Każdy nowy język dodajemy w ciągu 40 godzin."
+        link: { label: E-bilety, href: /product/tickets }
+      - title: Każda sprzedaż w twoim Telegramie
+        text: "Utwórz wydarzenie ze zdjęcia plakatu w bocie na Telegramie i zobacz każdą sprzedaż i zwrot w swojej grupie w kilka sekund."
+        link: { label: Bot w Telegramie, href: /product/telegram }
+      - title: Skonfiguruj sam albo zleć nam
+        text: "Wydarzenia, ceny i kategorie tworzysz sam w Event Center lub w bocie na Telegramie, w kilka minut; plany sali rysujemy za darmo. Nie masz czasu? Nasz event manager zrobi to za ciebie, jako usługa płatna."
+        link: { label: Usługi dodatkowe, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Pytania organizatorów, którzy porównują
+    items:
+      - q: Czy ArenaSoldOut.com jest tańsze niż Weezevent?
+        a: "Nasza prowizja jest niższa: {eurPrice} za bilet wobec co najmniej €0,99 w Weezevent. Prowizja Weezevent zawiera opłaty bankowe, a nasza nie, więc dolicz opłatę kartową swojego operatora płatności do naszej, aby porównać sumy dla twojej ceny biletu."
+      - q: Kiedy dostaję pieniądze z biletów?
+        a: "Z każdym zamówieniem. Kupujący płaci na twoje własne konto płatności: Stripe, Flitt lub AllPay. ArenaSoldOut.com nigdy nie przechowuje środków. Nasza prowizja jest fakturowana po wydarzeniu albo pobierana z twoich kredytów."
+      - q: Czy oferujecie płatności bezgotówkowe i opaski RFID?
+        a: "Nie. ArenaSoldOut.com sprzedaje bilety i sprawdza je przy wejściu w aplikacji skanera MACS. Jeśli potrzebujesz płatności bezgotówkowych przy barze, zostaw do tego osobnego dostawcę."
+      - q: Czy mogę przenieść swoje wydarzenia z Weezevent?
+        a: "Tak. Wydarzenia tworzysz w Event Center lub w bocie na Telegramie, plany sali rysujemy za darmo, a ty sprzedajesz dalej na Weezevent, dopóki twoja strona u nas nie będzie gotowa. Nie masz czasu, by to skonfigurować? Nasz [event manager](/pricing#services) zrobi to za ciebie, jako usługa płatna."
+      - q: Czy płacę abonament?
+        a: "Nie. Płacisz tylko za sprzedane bilety. Zaproszenia i darmowe bilety na płatne wydarzenia nie podlegają prowizji."
+
+  - type: cta
+    id: start
+    title: Wypróbuj na swoim następnym wydarzeniu
+    text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Zobacz cennik, href: /pricing }
+    note: "Pytania? Wyślij nam, ile płacisz w Weezevent, a porównamy to z twoimi kosztami tutaj."
