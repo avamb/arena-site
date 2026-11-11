@@ -2,6 +2,8 @@
 # TicketSource figures and sources: docs/competitors/prices-2026-11-11.md. Their site refuses automated readers:
 # the figures come from search extracts of their official pricing page and must be checked in a browser before
 # this page goes live. Our figures come from content/data ({usd...} placeholders).
+# Pound amounts next to our dollar prices ("about £0.47", the examples) are converted by hand at the ECB reference
+# rate of 11.11.2026, 1 EUR = 1.1127 USD = 0.83618 GBP, so US$1 = £0.7515. Update them with the tariff or the rate.
 title: "TicketSource alternative with a flat fee per ticket"
 description: "Compare ArenaSoldOut.com and TicketSource: a flat US$0.62 per ticket instead of a percentage plus VAT, and seating plans drawn for you for free."
 h1: A TicketSource alternative with a flat fee instead of a percentage
@@ -15,26 +17,28 @@ sections:
     id: prices
     eyebrow: Price per ticket
     title: How much does a ticket cost on each platform?
-    lead: "TicketSource has two options: their own card processing, with the card fee included, or your own Stripe account at a lower rate. With ArenaSoldOut.com you always use your own payment account, so the fair comparison is with the second option."
+    lead: "Prices of both platforms as of 11 November 2026. TicketSource has two options: their own card processing, with the card fee included, or your own Stripe account at a lower rate. With ArenaSoldOut.com you always use your own payment account, so the fair comparison is with the second option."
     cols: { what: "", us: ArenaSoldOut.com, them: TicketSource }
     rows:
       - { what: "How the fee is counted", us: "Flat fee per ticket", them: "Percentage of each paid booking, plus VAT" }
-      - { what: "With your own Stripe account", us: "**{usdPrice}** per ticket", them: "4.5% + VAT" }
-      - { what: "£20 ticket, own Stripe account", us: "**{usdPrice}**", them: "£1.08 (£0.90 + VAT)" }
-      - { what: "£50 ticket, own Stripe account", us: "**{usdPrice}**", them: "£2.70 (£2.25 + VAT)" }
+      - { what: "With your own Stripe account", us: "**{usdPrice}** per ticket, about £0.47", them: "4.5% + VAT" }
+      - { what: "£20 ticket, own Stripe account", us: "**{usdPrice}**, about £0.47", them: "£1.08 (£0.90 + VAT)" }
+      - { what: "£50 ticket, own Stripe account", us: "**{usdPrice}**, about £0.47", them: "£2.70 (£2.25 + VAT)" }
       - { what: "Their own card processing", us: "Not offered: you always use your own account", them: "7% + VAT, at least £0.25 + VAT, card fee included" }
       - { what: "Who builds the seating plan", us: "Our team, free, from your PDF or sketch", them: "You, in the seating plan designer" }
       - { what: "Credits paid upfront", us: "From **{usdFrom}** per ticket, never expire", them: "Not on their price list" }
       - { what: "Subscription", us: None, them: None }
-    note: "TicketSource prices: [ticketsource.co.uk/pricing](https://www.ticketsource.co.uk/pricing), checked on 11 November 2026. Our prices: [pricing](/pricing) and [detailed terms](/pricing/terms). Organizers outside the EU pay our commission in US dollars. TicketSource is a trademark of its owner; ArenaSoldOut.com is not affiliated with it."
+    note: "TicketSource prices: [ticketsource.co.uk/pricing](https://www.ticketsource.co.uk/pricing), checked on 11 November 2026. Our prices: [pricing](/pricing) and [detailed terms](/pricing/terms). Organizers outside the EU pay our commission in US dollars; amounts in pounds are converted at the ECB reference rate of 11 November 2026 (US$1 = £0.7515). TicketSource is a trademark of its owner; ArenaSoldOut.com is not affiliated with it."
 
   - type: prose
     id: examples
     title: What does that mean for one event?
     body: |
-      **400 tickets at £25, own Stripe account on both.** ArenaSoldOut.com: 400 × US$0.62 = **US$248**. TicketSource: 400 × (4.5% of £25 + VAT) = £540.
+      All figures at the prices of both platforms as of 11 November 2026. Our commission is in US dollars; the amounts in pounds are at the ECB reference rate of the same day, US$1 = £0.7515.
 
-      **250 seated tickets at £40.** ArenaSoldOut.com: 250 × US$1.18 = **US$295**, and we draw the seating plan for free. TicketSource: 250 × (4.5% of £40 + VAT) = £540.
+      **400 tickets at £25, own Stripe account on both.** ArenaSoldOut.com: 400 × US$0.62 = **US$248, about £186**. TicketSource: 400 × (4.5% of £25 + VAT) = £540.
+
+      **250 seated tickets at £40.** ArenaSoldOut.com: 250 × US$1.18 = **US$295, about £222**, and we draw the seating plan for free. TicketSource: 250 × (4.5% of £40 + VAT) = £540.
 
       **The more a ticket costs, the bigger the gap.** Our commission stays the same on a £15 ticket and on a £150 one. A percentage grows with the price.
 
@@ -69,7 +73,7 @@ sections:
     title: Questions organizers ask when they compare
     items:
       - q: Is ArenaSoldOut.com cheaper than TicketSource?
-        a: "With your own Stripe account on both, yes, on any ticket above a few pounds: {usdPrice} per ticket instead of 4.5% of the booking plus VAT. On a £20 ticket that is {usdPrice} against £1.08."
+        a: "With your own Stripe account on both, yes, on any ticket above a few pounds: {usdPrice} per ticket instead of 4.5% of the booking plus VAT. On a £20 ticket that is {usdPrice}, about £0.47, against £1.08."
       - q: Is the card fee included in your commission?
         a: "No. The card fee is charged by your own payment provider at your rate, and our commission is separate. TicketSource's 7% option includes the card fee; their 4.5% option, like us, does not."
       - q: Where does the buyer's money go?

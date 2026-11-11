@@ -16,7 +16,7 @@ sections:
     id: prices
     eyebrow: Prices in euro
     title: How do the two offers compare?
-    lead: "Our commission per ticket sold next to Weezevent's commission for online ticketing. Weezevent's commission includes bank fees; with us the card fee is charged by your own payment provider, at your rate, on top of our commission."
+    lead: "Prices of both platforms as of 11 November 2026. Our commission per ticket sold next to Weezevent's commission for online ticketing. Weezevent's commission includes bank fees; with us the card fee is charged by your own payment provider, at your rate, on top of our commission."
     cols: { what: "", us: ArenaSoldOut.com, them: Weezevent }
     rows:
       - { what: "How the fee is counted", us: "Flat fee per ticket", them: "2.5% of the ticket price, at least €0.99" }
@@ -34,6 +34,8 @@ sections:
     id: examples
     title: What does the difference mean in practice?
     body: |
+      All figures at the prices of both platforms as of 11 November 2026.
+
       **Cash before the event.** A festival sells 2,000 tickets in the three weeks before the gates open. With ArenaSoldOut.com every payment lands in your own account the moment the order is paid, so you pay the stage, the sound and the security from ticket money. With a payout every 15 days, part of that money arrives after you needed it.
 
       **A theatre with numbered seats.** With us the seating plan is part of every event: you send a PDF or a photo of a hand sketch, the team builds the plan for free, and a seated ticket costs {eurSeated}. On Weezevent numbered seating is in the tailor-made offer, priced on request.

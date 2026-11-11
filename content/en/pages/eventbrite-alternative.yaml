@@ -15,7 +15,7 @@ sections:
     id: prices
     eyebrow: Price per ticket
     title: How much does a ticket cost on each platform?
-    lead: "Our commission per ticket sold next to Eventbrite's service fee. Card processing is paid separately on both platforms in the US: to Eventbrite there, to your own payment provider with us."
+    lead: "Prices of both platforms as of 11 November 2026. Our commission per ticket sold next to Eventbrite's service fee. Card processing is paid separately on both platforms in the US: to Eventbrite there, to your own payment provider with us."
     cols: { what: "", us: ArenaSoldOut.com, them: Eventbrite }
     rows:
       - { what: "How the fee is counted", us: "Flat fee per ticket", them: "Percentage of the ticket price plus a fixed amount" }
@@ -32,6 +32,8 @@ sections:
     id: examples
     title: What does that mean for one event?
     body: |
+      All figures at the prices of both platforms as of 11 November 2026.
+
       **1,000 tickets at US$30, pay as you go.** ArenaSoldOut.com: 1,000 × US$0.62 = **US$620**. Eventbrite: 1,000 × (3.7% of US$30 + US$1.79) = US$2,900. That is **US$2,280** of difference, before card processing on either side.
 
       **300 seated tickets at US$60.** ArenaSoldOut.com: 300 × US$1.18 = **US$354**, and we draw the seating plan for free. Eventbrite: 300 × (3.7% of US$60 + US$1.79) = US$1,203.

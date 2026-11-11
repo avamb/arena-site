@@ -15,7 +15,7 @@ sections:
     id: prices
     eyebrow: Prices in US dollars
     title: How much does a ticket cost on each platform?
-    lead: "Our commission per ticket sold next to TicketSpice's fee per paid ticket. Card processing is separate on both platforms."
+    lead: "Prices of both platforms as of 11 November 2026. Our commission per ticket sold next to TicketSpice's fee per paid ticket. Card processing is separate on both platforms."
     cols: { what: "", us: ArenaSoldOut.com, them: TicketSpice }
     rows:
       - { what: "Per paid ticket, general admission", us: "**{usdPrice}**", them: "US$0.99 on Standard" }
@@ -32,6 +32,8 @@ sections:
     id: examples
     title: What does that mean for one event?
     body: |
+      All figures at the prices of both platforms as of 11 November 2026.
+
       **1,000 tickets, general admission.** ArenaSoldOut.com: 1,000 × US$0.62 = **US$620**. TicketSpice Standard: 1,000 × US$0.99 = US$990. You keep **US$370** more.
 
       **500 seated tickets.** ArenaSoldOut.com: 500 × US$1.18 = **US$590**, and we draw the seating plan for free. TicketSpice Premium: 500 × US$1.49 = US$745. You keep **US$155** more and do not build the plan yourself.
