@@ -24,7 +24,7 @@ sections:
         text: "A flat fee per ticket on both. Ours is lower, and seating plans come with every event instead of a higher plan."
         link: { label: ArenaSoldOut.com vs TicketSpice, href: /ticketspice-alternative }
       - title: TicketSource
-        text: "A percentage of each booking plus VAT, against our flat fee per ticket. Seating plans drawn for you instead of by you."
+        text: "A percentage of each booking, against our flat fee per ticket. Seating plans drawn for you instead of by you."
         link: { label: ArenaSoldOut.com vs TicketSource, href: /ticketsource-alternative }
       - title: Weezevent
         text: "Ticket money in your own account with every order instead of a payout every 15 days, and numbered seating on every event."
