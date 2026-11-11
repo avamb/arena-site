@@ -106,7 +106,7 @@ sections:
       - title: What do I need?
         text: "The event name and schedule, your ticket prices, your poster, and your own payment account: Stripe, Flitt, AllPay or another provider of your country. Money goes to you from the first ticket."
       - title: Which way do I set it up?
-        text: "In the browser on a computer or a phone, in the “Event Center”*. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. Or send it to us and we set it up."
+        text: "In the browser on a computer or a phone, in the “Event Center”*. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. No time? Our [event manager](/pricing#services) does it for you, as a paid service."
     note: "* The “Event Center” is your organizer account on ArenaSoldOut.com: every event, order, refund, invitation and session, for you and your team, in the browser and in Telegram. [See the Event Center below →](#center) Every step from the application to the scanner: [your first event →](/first-event)"
 
   - type: ways
@@ -323,7 +323,7 @@ sections:
     id: changes
     eyebrow: Latest changes
     title: The platform grows every week
-    lead: "A line for every feature that reached organizers. Tell us what you need next: most requests from organizers ship within weeks, and the team answers in person."
+    lead: "A line for every feature that reached organizers. Tell us what you need next: most requests from organizers ship within weeks."
     cta: { label: Tell us what you need, href: /start }
     more: { label: Full list →, href: /changes }
     limit: 10
@@ -334,4 +334,4 @@ sections:
     text: "Create the event, connect your payment account, share the link. An event without a seating plan is on sale in 10 minutes; a seating plan we draw for you, free of charge."
     primary: { label: Create your event, href: /start#create }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Or write to us: we set everything up with you on a call."
+    note: "Questions? Write to us: the team answers within one working day."

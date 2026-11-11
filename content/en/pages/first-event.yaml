@@ -42,7 +42,7 @@ sections:
       - q: What do I prepare?
         a: "The event name, the venue, the dates and times, the ticket categories and prices, a poster, and the API keys of your payment account. For seats, the venue plan in any of the forms above."
       - q: Can the team set it up for me?
-        a: "Yes. Send the details in the [Telegram bot](https://t.me/EventsCentrBot) or through the contact form and we create the event with you; you check it before sales start."
+        a: "As a paid service, yes. An event manager from our team works as part of yours: creates events and sessions, checks prices, categories and the seating plan before sales, pulls reports. Terms are agreed with each organizer: [write to us](/contact). Setting up an event yourself takes about 10 minutes."
       - q: What does the first event cost?
         a: "The same as any other: a commission per ticket sold, invoiced after the event, or less with credits bought upfront. Seating plans and invitations cost nothing. Prices are on the [pricing page](/pricing)."
   - type: cta

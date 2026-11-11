@@ -43,6 +43,10 @@ sections:
 
       While white label is on, the widget line, the footer of your shop and the platform line in buyer e-mails are gone, and the e-mails go out under the brand's name. What stays: the sales pages we host, the links to the platform's terms and privacy policy at checkout and the seller details, as the law requires. Our team switches white label on and off for a brand from a date you choose: write to us from the [contact page](/contact).
 
+      ## Event manager
+
+      ArenaSoldOut.com is built so that organizers set everything up themselves: events, sessions, prices, categories, promo codes, reports. Our commission per ticket covers the platform and answers to questions; it does not include work done for you. If you have no time for that work, an event manager from our team can do it as part of your team: create events and sessions, check them before sales, pull reports, send invitations and resend tickets. This is a separate paid service; its scope and price are agreed with each organizer. Write to us from the [contact page](/contact).
+
       ## Refunds, date changes and cancellation
 
       When a buyer returns a ticket, the refund is paid to the buyer by you, the organizer. The commission for a sale that already happened stays. We do not charge a separate commission for processing a refund, for moving the date or for the e-mails to buyers. The payment provider's own terms apply as the provider states them. If an event is cancelled, the commission already charged is not returned in money.
@@ -64,4 +68,4 @@ sections:
     text: "Create the event, connect your payment account, share the link. An event without a seating plan is on sale in 10 minutes; a seating plan we draw for you, free of charge."
     primary: { label: Create your event, href: /start#create }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Or write to us: we set everything up with you on a call."
+    note: "Questions? Write to us: the team answers within one working day."

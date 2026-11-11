@@ -74,6 +74,21 @@ sections:
     note: "You pay after the event by bank transfer. For events on sale for several months and for permanent venues we invoice monthly. Paying after the event is open to organizations confirmed on the platform. Volume and individual terms on request."
     terms: { label: Detailed terms →, href: /pricing/terms }
 
+  - type: cards
+    id: services
+    eyebrow: Extra services
+    title: What else can I order?
+    lead: "Not part of the commission per ticket. Each is ordered separately."
+    items:
+      - title: Event manager
+        text: "No time to set up events yourself? A person from our team works as part of yours: creates events and sessions, checks prices, categories and the seating plan before sales, pulls the reports you need, sends invitations and resends tickets. Paid separately; the terms are agreed with each organizer."
+        link: { label: Write to us, href: /contact }
+      - title: White label
+        text: "Sell without the line Tickets: ArenaSoldOut.com: €45 a month per brand or venue in EU countries, US$45 in all other countries."
+        link: { label: Terms, href: /pricing/terms }
+      - title: Seating plan drawing
+        text: "Free. Send a PDF, a photo of a hand sketch or a table of rows and seats, and we draw the plan, usually within a day."
+        link: { label: Seating plans, href: /product/seating }
   - type: faq
     id: questions
     eyebrow: Questions about money
@@ -114,4 +129,4 @@ sections:
     text: "Create the event, connect your payment account, share the link. An event without a seating plan is on sale in 10 minutes; a seating plan we draw for you, free of charge."
     primary: { label: Create your event, href: /start#create }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Or write to us: we set everything up with you on a call."
+    note: "Questions? Write to us: the team answers within one working day."

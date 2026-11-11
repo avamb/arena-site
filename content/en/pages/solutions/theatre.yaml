@@ -35,4 +35,4 @@ sections:
     text: "A PDF, a photo of a hand sketch or a table of rows and seats is enough. We draw it into your event for free and show it to you before sales start."
     primary: { label: Start selling, href: /start }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Or write to us: we set everything up with you on a call."
+    note: "Questions? Write to us: the team answers within one working day."

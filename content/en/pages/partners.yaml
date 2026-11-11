@@ -30,7 +30,7 @@ sections:
   - type: cta
     id: start
     title: Write to the team
-    text: Tell us who you are and whom you work with. We answer in person within one working day.
+    text: Tell us who you are and whom you work with. We answer within one working day.
     primary: { label: Contact us, href: /contact }
     secondary: { label: Read the developer docs, href: /developers }
     note: "Or in Telegram: the chat is read during the day in Europe and Israel."

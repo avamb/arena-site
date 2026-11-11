@@ -31,7 +31,7 @@ sections:
   - type: cta
     id: start
     title: Start selling on your site
-    text: Tell us the site address and the provider you use. We set up the plugin or the widget with you.
+    text: Put the ticket widget on your site: three lines of code, and the sales run from your Event Center.
     primary: { label: Start selling, href: /start }
     secondary: { label: Read the developer docs, href: /developers }
     note: WooCommerce sites keep their shop.

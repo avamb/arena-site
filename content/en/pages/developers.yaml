@@ -43,7 +43,7 @@ sections:
   - type: cta
     id: start
     title: Start building today
-    text: Ask for a feed token and a scoped API key. The team answers in person and can set up a test organization for you.
+    text: Ask for a feed token and a scoped API key. The team answers and can open a test organization for you.
     primary: { label: Request access, href: /start }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
     note: Test payments run against your provider's test mode, never against live cards.
