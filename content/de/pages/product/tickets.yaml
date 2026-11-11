@@ -44,4 +44,4 @@ sections:
     text: Event anlegen, Zahlungskonto verbinden, Link teilen. Das Beispiel-Ticket ist mit dem Event bereit.
     primary: { label: Event anlegen, href: /start#create }
     secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."
+    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."

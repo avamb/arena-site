@@ -31,7 +31,7 @@ sections:
   - type: cta
     id: start
     title: Zacznij sprzedaż na swojej stronie
-    text: Podaj adres strony i dostawcę, z którego korzystasz. Wtyczkę lub widget ustawimy razem z tobą.
+    text: "Umieść widget biletowy na swojej stronie: trzy linijki kodu, a sprzedaż prowadzisz z Event Center."
     primary: { label: Zacznij sprzedaż, href: /start }
     secondary: { label: Przeczytaj dokumentację dla developerów, href: /developers }
     note: Strony z WooCommerce zachowują swój sklep.

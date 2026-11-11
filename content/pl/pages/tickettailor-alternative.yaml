@@ -60,9 +60,9 @@ sections:
       - title: Każda sprzedaż w twoim Telegramie
         text: "Utwórz wydarzenie ze zdjęcia plakatu w bocie na Telegramie i zobacz każdą sprzedaż i zwrot w swojej grupie w kilka sekund."
         link: { label: Bot w Telegramie, href: /product/telegram }
-      - title: Człowiek, który skonfiguruje to z tobą
-        text: "Nie centrum pomocy: nasz zespół podłącza twoje konto płatności, buduje plan i sprawdza z tobą pierwsze wydarzenie."
-        link: { label: Twoje pierwsze wydarzenie, href: /first-event }
+      - title: Skonfiguruj sam albo zleć nam
+        text: "Wydarzenia, ceny i kategorie tworzysz sam w Event Center lub w bocie na Telegramie, w kilka minut; plany sali rysujemy za darmo. Nie masz czasu? Nasz event manager zrobi to za ciebie, jako usługa płatna."
+        link: { label: Usługi dodatkowe, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -75,7 +75,7 @@ sections:
       - q: Dokąd trafiają pieniądze kupującego?
         a: "Na twoje własne konto płatności z każdym zamówieniem: Stripe, Flitt lub AllPay. ArenaSoldOut.com nigdy nie przechowuje środków. Nasza prowizja jest fakturowana po wydarzeniu albo pobierana z twoich kredytów."
       - q: Czy mogę przenieść swoje wydarzenia z Ticket Tailor?
-        a: "Tak. Wyślij nam listę wydarzeń i plany sali; zespół konfiguruje wydarzenia i rysuje plany za darmo, a ty sprzedajesz dalej na Ticket Tailor, dopóki twoja strona u nas nie będzie gotowa."
+        a: "Tak. Wydarzenia tworzysz w Event Center lub w bocie na Telegramie, plany sali rysujemy za darmo, a ty sprzedajesz dalej na Ticket Tailor, dopóki twoja strona u nas nie będzie gotowa. Nie masz czasu, by to skonfigurować? Nasz [event manager](/pricing#services) zrobi to za ciebie, jako usługa płatna."
       - q: Czy płacę abonament?
         a: "Nie. Płacisz tylko za sprzedane bilety. Zaproszenia i darmowe bilety na płatne wydarzenia nie podlegają prowizji."
       - q: A organizacje charytatywne?
@@ -89,4 +89,4 @@ sections:
     text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
     primary: { label: Zacznij sprzedaż, href: /start }
     secondary: { label: Zobacz cennik, href: /pricing }
-    note: "Albo napisz do nas: porównamy twoje obecne koszty i skonfigurujemy wszystko razem z tobą podczas rozmowy."
+    note: "Pytania? Wyślij nam, ile płacisz w Ticket Tailor, a porównamy to z twoimi kosztami tutaj."

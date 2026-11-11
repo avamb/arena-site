@@ -31,7 +31,7 @@ sections:
   - type: cta
     id: start
     title: Empieza a vender en tu web
-    text: Dinos la dirección de tu web y el proveedor que usas. Configuramos contigo el plugin o el widget.
+    text: "Pon el widget de entradas en tu web: tres líneas de código, y las ventas se gestionan desde tu Event Center."
     primary: { label: Empieza a vender, href: /start }
     secondary: { label: Lee la documentación para desarrolladores, href: /developers }
     note: Las webs con WooCommerce conservan su tienda.

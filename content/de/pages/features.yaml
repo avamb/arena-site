@@ -135,6 +135,19 @@ sections:
         text: "Platzreservierungen laufen per Timer ab, Bestellungen sind begrenzt, missbräuchlicher Datenverkehr wird gefiltert."
 
   - type: cards
+    id: services
+    eyebrow: Leistungen
+    title: Was unser Team für Sie tut
+    lead: "Details: [Zusatzleistungen](/pricing#services)."
+    items:
+      - title: Saalplan zeichnen, kostenlos
+        text: "Senden Sie ein PDF, eine Skizze oder eine Tabelle mit Reihen; wir zeichnen den Plan, meist innerhalb eines Tages."
+      - title: Event-Manager, kostenpflichtig
+        text: "Eine Person aus unserem Team arbeitet als Teil Ihres Teams: legt Events an, prüft sie vor dem Verkauf, erstellt Berichte. Konditionen werden mit jedem Veranstalter vereinbart."
+      - title: White Label
+        text: "Verkaufen Sie ohne unseren Namen: €45 im Monat pro Marke oder Spielstätte in der EU, US$45 anderswo."
+
+  - type: cards
     id: pricing
     eyebrow: Preise
     title: Was Sie zahlen
@@ -155,4 +168,4 @@ sections:
     text: Event anlegen, Zahlungskonto verbinden, Link teilen.
     primary: { label: Event anlegen, href: /start#create }
     secondary: { label: Preise ansehen, href: /pricing }
-    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."
+    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."

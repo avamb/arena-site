@@ -42,7 +42,7 @@ sections:
   - type: cta
     id: start
     title: Inizia a costruire oggi
-    text: Chiedi un feed token e una chiave API con ambito. Il team risponde di persona e può configurare per te un'organizzazione di prova.
+    text: Chiedi un feed token e una chiave API con ambito. Il team risponde e può aprire per te un'organizzazione di prova.
     primary: { label: Richiedi l'accesso, href: /start }
     secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
     note: I pagamenti di prova passano dalla modalità test del tuo provider, mai da carte reali.

@@ -26,7 +26,7 @@ sections:
       - q: "¿Los promotores ven las ventas de los demás?"
         a: No. Cada promotor ve solo su propia página; el organizador lo ve todo.
       - q: "Una ciudad cambia de recinto. ¿Qué pasa con las entradas vendidas?"
-        a: La sesión se traslada con los correos de los compradores y las entradas actualizadas; los asientos se reasignan contigo en el nuevo plano.
+        a: La sesión se traslada con los correos de los compradores y las entradas actualizadas; los asientos pasan al nuevo plano; el plano del nuevo recinto lo dibujamos gratis.
       - q: "¿Cuánto me cuesta una entrada en una gira?"
         a: "El mismo importe por entrada en todas las ciudades; consulta los [precios](/pricing)."
   - type: cta
@@ -35,4 +35,4 @@ sections:
     text: Crea el evento, conecta tu cuenta de pagos y comparte el enlace.
     primary: { label: Crea tu evento, href: /start#create }
     secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
-    note: "O escríbenos: lo configuramos todo contigo en una llamada."
+    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."

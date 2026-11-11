@@ -35,4 +35,4 @@ sections:
     text: "Basta con un PDF, una foto de un boceto a mano o una tabla de filas y asientos. Lo dibujamos en tu evento sin coste y te lo mostramos antes de que empiece la venta."
     primary: { label: Empieza a vender, href: /start }
     secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
-    note: "O escríbenos: lo configuramos todo contigo en una llamada."
+    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."

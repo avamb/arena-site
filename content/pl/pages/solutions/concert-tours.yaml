@@ -26,7 +26,7 @@ sections:
       - q: Czy promotorzy widzą swoją sprzedaż nawzajem?
         a: Nie. Każdy promotor widzi tylko własną stronę; organizator widzi wszystko.
       - q: Miasto zmienia obiekt. Co z biletami, które już sprzedano?
-        a: Sesja przenosi się razem z e-mailami kupujących i zaktualizowanymi biletami; miejsca przypisujemy na nowo razem z tobą na nowym planie.
+        a: Sesja przenosi się razem z e-mailami kupujących i zaktualizowanymi biletami; miejsca przechodzą na nowy plan; nowy obiekt rysujemy za darmo.
       - q: Ile kosztuje mnie bilet w trasie?
         a: "Ta sama kwota za bilet w każdym mieście; zobacz [cennik](/pricing)."
   - type: cta
@@ -35,4 +35,4 @@ sections:
     text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
     primary: { label: Utwórz wydarzenie, href: /start#create }
     secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."
+    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."

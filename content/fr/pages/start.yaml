@@ -1,7 +1,7 @@
 title: "Commencer à vendre : candidature d'organisateur"
-description: "Parlez-nous de votre organisation et de vos événements. L'équipe configure organisation, page de vente et compte de paiement, en général en un jour."
+description: "Parlez-nous de votre organisation et de vos événements. Nous la confirmons et connectons votre compte de paiement, sous un jour ; puis vous vendez seul."
 h1: Commencer à vendre
-lead: "Dites-nous qui vous êtes et où vous vendez. Nous configurons votre organisation et votre page de vente, et connectons votre compte de paiement, en général sous un jour. Les événements sans plan de salle sont en vente aujourd'hui."
+lead: "Dites-nous qui vous êtes et où vous vendez. Nous confirmons votre organisation et connectons votre compte de paiement une seule fois, en général sous un jour ; les événements, les prix et les ventes, vous les gérez vous-même. Les événements sans plan de salle sont en vente aujourd'hui."
 sections:
   - type: steps
     id: how
@@ -10,8 +10,8 @@ sections:
     items:
       - title: Vous envoyez la candidature
         text: "Cinq courtes étapes : contact, organisation, événements, paiements et consentement. Vos réponses sont enregistrées au fur et à mesure, vous pouvez donc partir et revenir."
-      - title: Nous vous configurons
-        text: L'équipe vérifie la candidature, crée votre organisation et votre page de vente, connecte avec vous votre compte de paiement et, si vous avez une salle à places numérotées, dessine gratuitement le plan à partir de votre PDF, croquis à la main ou tableau de rangs.
+      - title: Nous vous confirmons
+        text: L'équipe vérifie la candidature, confirme votre organisation et connecte votre compte de paiement une seule fois. Pour une salle à places numérotées, nous dessinons gratuitement le plan à partir de votre PDF, croquis à la main ou tableau de rangs. Les événements, les prix et les catégories, vous les créez vous-même dans l'Event Center ou le bot Telegram.
       - title: Vous mettez en vente
         text: Partagez un seul lien, ou placez le widget sur votre site. Chaque vente arrive dans votre Event Center et dans votre groupe Telegram.
   - type: onboarding

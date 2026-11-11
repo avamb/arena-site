@@ -58,4 +58,4 @@ sections:
     text: "Crie o evento, conecte sua conta de pagamentos, compartilhe o link. Um evento sem mapa de assentos entra à venda em 10 minutos; o mapa de assentos nós desenhamos para você, sem custo."
     primary: { label: Criar seu evento, href: /start#create }
     secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou escreva para nós: configuramos tudo com você em uma conversa."
+    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."

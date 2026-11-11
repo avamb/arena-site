@@ -35,4 +35,4 @@ sections:
     text: "Wystarczy PDF, zdjęcie odręcznego szkicu albo tabela rzędów i miejsc. Bezpłatnie wprowadzamy go do twojego wydarzenia i pokazujemy ci przed startem sprzedaży."
     primary: { label: Zacznij sprzedaż, href: /start }
     secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."
+    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."

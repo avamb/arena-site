@@ -40,6 +40,10 @@ sections:
 
       Enquanto o white label estiver ativo, a linha do widget, o rodapé da sua loja e a linha da plataforma nos e-mails aos compradores deixam de aparecer, e os e-mails saem com o nome da marca. O que permanece: as páginas de vendas que hospedamos, os links para os termos e a política de privacidade da plataforma no checkout e os dados do vendedor, como exige a lei. Nossa equipe ativa e desativa o white label de uma marca a partir de uma data que você escolher: escreva para nós pela [página de contato](/contact).
 
+      ## Gerente de eventos
+
+      O ArenaSoldOut.com foi feito para que os organizadores configurem tudo sozinhos: eventos, sessões, preços, categorias, códigos promocionais, relatórios. Nossa comissão por ingresso cobre a plataforma e as respostas às dúvidas; ela não inclui trabalho feito por nós em seu lugar. Se você não tem tempo para esse trabalho, um gerente de eventos da nossa equipe pode fazê-lo como parte da sua: criar eventos e sessões, conferi-los antes das vendas, extrair relatórios, enviar convites e reenviar ingressos. É um serviço pago à parte; o escopo e o preço são combinados com cada organizador. Escreva para nós pela [página de contato](/contact).
+
       ## Reembolsos, mudanças de data e cancelamento
 
       Quando um comprador devolve um ingresso, o reembolso é pago ao comprador por você, o organizador. A comissão de uma venda que já ocorreu permanece. Não cobramos comissão separada pelo processamento de um reembolso, pela mudança de data nem pelos e-mails aos compradores. As condições do próprio provedor de pagamentos valem como o provedor as define. Se um evento for cancelado, a comissão já cobrada não é devolvida em dinheiro.
@@ -61,4 +65,4 @@ sections:
     text: "Crie o evento, conecte sua conta de pagamentos, compartilhe o link. Um evento sem mapa de assentos entra à venda em 10 minutos; o mapa de assentos nós desenhamos para você, sem custo."
     primary: { label: Criar seu evento, href: /start#create }
     secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou escreva para nós: configuramos tudo com você em uma conversa."
+    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."

@@ -135,6 +135,19 @@ sections:
         text: "Las reservas de asientos caducan con un temporizador, los pedidos tienen límite de frecuencia y el tráfico abusivo se filtra."
 
   - type: cards
+    id: services
+    eyebrow: Servicios
+    title: Lo que hace nuestro equipo por ti
+    lead: "Detalles: [servicios adicionales](/pricing#services)."
+    items:
+      - title: Dibujo del plano de asientos, gratis
+        text: "Envía un PDF, un boceto o una tabla de filas; dibujamos el plano, normalmente en un día."
+      - title: Gestor de eventos, de pago
+        text: "Una persona de nuestro equipo trabaja como parte del tuyo: crea eventos, los revisa antes de la venta y prepara informes. Condiciones acordadas con cada organizador."
+      - title: White label
+        text: "Vende sin nuestro nombre: €45 al mes por marca o recinto en la UE, US$45 en el resto."
+
+  - type: cards
     id: pricing
     eyebrow: Precios
     title: Lo que pagas
@@ -155,4 +168,4 @@ sections:
     text: Crea el evento, conecta tu cuenta de pagos, comparte el enlace.
     primary: { label: Crear tu evento, href: /start#create }
     secondary: { label: Ver precios, href: /pricing }
-    note: "O escríbenos: lo configuramos todo contigo en una llamada."
+    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."

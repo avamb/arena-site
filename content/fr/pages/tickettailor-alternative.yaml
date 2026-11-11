@@ -60,9 +60,9 @@ sections:
       - title: Chaque vente dans votre Telegram
         text: "Créez un événement à partir d'une photo d'affiche dans le bot Telegram et voyez chaque vente et chaque remboursement dans votre groupe en quelques secondes."
         link: { label: Bot Telegram, href: /product/telegram }
-      - title: Une personne qui configure avec vous
-        text: "Pas un centre d'aide : notre équipe connecte votre compte de paiement, construit le plan et vérifie le premier événement avec vous."
-        link: { label: Votre premier événement, href: /first-event }
+      - title: Configurez vous-même, ou déléguez
+        text: "Vous créez vous-même les événements, les prix et les catégories dans l'Event Center ou le bot Telegram, en quelques minutes ; nous dessinons les plans de salle gratuitement. Pas le temps ? Notre gestionnaire d'événements s'en charge pour vous, en service payant."
+        link: { label: Services complémentaires, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -75,7 +75,7 @@ sections:
       - q: Où va l'argent de l'acheteur ?
         a: "Directement sur votre propre compte de paiement à chaque commande : Stripe, Flitt ou AllPay. ArenaSoldOut.com ne détient jamais de fonds. Notre commission est facturée après l'événement ou prélevée sur vos crédits."
       - q: Puis-je transférer mes événements depuis Ticket Tailor ?
-        a: "Oui. Envoyez-nous la liste de vos événements et vos plans de salle ; l'équipe configure les événements et dessine les plans gratuitement, et vous continuez à vendre sur Ticket Tailor jusqu'à ce que votre page chez nous soit prête."
+        a: "Oui. Vous créez vos événements dans l'Event Center ou le bot Telegram, nous dessinons vos plans de salle gratuitement, et vous continuez à vendre sur Ticket Tailor jusqu'à ce que votre page chez nous soit prête. Pas le temps de tout configurer vous-même ? Notre [gestionnaire d'événements](/pricing#services) s'en charge pour vous, en service payant."
       - q: Dois-je payer un abonnement ?
         a: "Non. Vous ne payez que les billets vendus. Les invitations et les billets gratuits pour des événements payants ne supportent aucune commission."
       - q: Et pour les associations caritatives ?
@@ -89,4 +89,4 @@ sections:
     text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
     primary: { label: Commencer à vendre, href: /start }
     secondary: { label: Voir les tarifs, href: /pricing }
-    note: "Ou écrivez-nous : nous comparons vos coûts actuels et configurons tout avec vous lors d'un appel."
+    note: "Des questions ? Envoyez-nous ce que vous payez chez Ticket Tailor et nous le comparons à vos coûts ici."

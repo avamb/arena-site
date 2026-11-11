@@ -40,6 +40,10 @@ sections:
 
       Gdy white label jest włączony, znikają linia w widgecie, stopka twojego sklepu i linia platformy w e-mailach do kupujących, a e-maile wychodzą pod nazwą marki. Zostają: strony sprzedaży, które hostujemy, linki do regulaminu i polityki prywatności platformy w kasie oraz dane sprzedawcy, zgodnie z wymogami prawa. Nasz zespół włącza i wyłącza white label dla marki od wybranej przez ciebie daty: napisz do nas ze [strony kontaktowej](/contact).
 
+      ## Event manager
+
+      ArenaSoldOut.com jest zbudowane tak, by organizatorzy ustawiali wszystko sami: wydarzenia, sesje, ceny, kategorie, kody promocyjne, raporty. Nasza prowizja za bilet obejmuje platformę i odpowiedzi na pytania; nie obejmuje pracy wykonywanej za ciebie. Jeśli nie masz czasu na tę pracę, event manager z naszego zespołu może ją wykonać jako część twojego zespołu: tworzyć wydarzenia i sesje, sprawdzać je przed sprzedażą, przygotowywać raporty, wysyłać zaproszenia i ponownie wysyłać bilety. To osobna usługa płatna; jej zakres i cenę ustalamy z każdym organizatorem. Napisz do nas ze [strony kontaktowej](/contact).
+
       ## Zwroty, zmiany terminów i odwołanie
 
       Gdy kupujący zwraca bilet, zwrot wypłacasz kupującemu ty, organizator. Prowizja za sprzedaż, która już się odbyła, zostaje. Nie pobieramy osobnej prowizji za obsługę zwrotu, przeniesienie terminu ani e-maile do kupujących. Własne warunki operatora płatności obowiązują tak, jak określa je operator. Jeśli wydarzenie zostanie odwołane, pobrana już prowizja nie jest zwracana w pieniądzach.
@@ -61,4 +65,4 @@ sections:
     text: "Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Wydarzenie bez planu sali jest w sprzedaży w 10 minut; plan sali rysujemy dla ciebie za darmo."
     primary: { label: Utwórz wydarzenie, href: /start#create }
     secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."
+    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."

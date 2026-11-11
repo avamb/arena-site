@@ -56,7 +56,7 @@
   "post.author": "Par {author}",
   "post.updated": "Mis à jour le {date}",
   "contact.title": "Écrire à l'équipe",
-  "contact.lead": "Une personne de l'équipe répond par e-mail, en général le même jour ouvré. Vous avez acheté un billet ? Écrivez à l'organisateur de votre événement : ses coordonnées figurent dans l'e-mail du billet.",
+  "contact.lead": "L'équipe répond par e-mail, en général le même jour ouvré. Vous avez acheté un billet ? Écrivez à l'organisateur de votre événement : ses coordonnées figurent dans l'e-mail du billet.",
   "contact.name": "Votre nom",
   "contact.email": "E-mail pour la réponse",
   "contact.topic": "Sujet",

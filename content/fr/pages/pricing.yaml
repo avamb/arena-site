@@ -72,6 +72,21 @@ sections:
     note: "Vous payez après l'événement par virement bancaire. Pour les événements en vente pendant plusieurs mois et pour les salles permanentes, nous facturons chaque mois. Le paiement après l'événement est ouvert aux organisations confirmées sur la plateforme. Conditions de volume et conditions individuelles sur demande."
     terms: { label: Conditions détaillées →, href: /pricing/terms }
 
+  - type: cards
+    id: services
+    eyebrow: Services complémentaires
+    title: Que puis-je commander d'autre ?
+    lead: "Ne fait pas partie de la commission par billet. Chaque service se commande séparément."
+    items:
+      - title: Gestionnaire d'événements
+        text: "Pas le temps de configurer vos événements ? Une personne de notre équipe travaille comme membre de la vôtre : elle crée les événements et les séances, vérifie les prix, les catégories et le plan de salle avant les ventes, sort les rapports dont vous avez besoin, envoie les invitations et renvoie les billets. Payant séparément ; les conditions sont convenues avec chaque organisateur."
+        link: { label: Écrivez-nous, href: /contact }
+      - title: Marque blanche
+        text: "Vendez sans la ligne Billets : ArenaSoldOut.com : €45 par mois par marque ou salle dans les pays de l'UE, US$45 dans tous les autres pays."
+        link: { label: Conditions, href: /pricing/terms }
+      - title: Dessin du plan de salle
+        text: "Gratuit. Envoyez un PDF, une photo d'un croquis à la main ou un tableau de rangs et de places, et nous dessinons le plan, en général sous un jour."
+        link: { label: Plans de salle, href: /product/seating }
   - type: faq
     id: questions
     eyebrow: Questions d'argent
@@ -112,4 +127,4 @@ sections:
     text: "Créez l'événement, connectez votre compte de paiement, partagez le lien. Un événement sans plan de salle est en vente en 10 minutes ; un plan de salle, nous le dessinons pour vous, gratuitement."
     primary: { label: Créer votre événement, href: /start#create }
     secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."
+    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."

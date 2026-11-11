@@ -98,7 +98,7 @@ sections:
       - title: Che cosa mi serve?
         text: "Il nome e il calendario dell'evento, i prezzi dei biglietti, la locandina e il tuo conto di pagamento: Stripe, Flitt, AllPay o un altro fornitore del tuo paese. Il denaro arriva a te dal primo biglietto."
       - title: In che modo lo configuro?
-        text: "Nel browser, da computer o telefono, nell'“Event Center”*. Oppure in Telegram, dove il bot legge la tua locandina e compila date, prezzi e luogo da confermare. Oppure mandacelo e lo configuriamo noi."
+        text: "Nel browser, da computer o telefono, nell'“Event Center”*. Oppure in Telegram, dove il bot legge la tua locandina e compila date, prezzi e luogo da confermare. Non hai tempo? Il nostro [event manager](/pricing#services) lo fa per te, come servizio a pagamento."
     note: "* L'“Event Center” è il tuo account di organizzatore su ArenaSoldOut.com: ogni evento, ordine, rimborso, invito e sessione, per te e il tuo team, nel browser e in Telegram. [Vedi l'Event Center qui sotto →](#center) Ogni passo, dalla richiesta allo scanner: [il tuo primo evento →](/first-event)"
 
   - type: ways
@@ -315,7 +315,7 @@ sections:
     id: changes
     eyebrow: Ultime novità
     title: La piattaforma cresce ogni settimana
-    lead: "Una riga per ogni funzione arrivata agli organizzatori. Dicci cosa ti serve dopo: la maggior parte delle richieste degli organizzatori viene rilasciata entro poche settimane, e il team risponde di persona."
+    lead: "Una riga per ogni funzione arrivata agli organizzatori. Dicci cosa ti serve dopo: la maggior parte delle richieste degli organizzatori viene rilasciata entro poche settimane."
     cta: { label: Dicci cosa ti serve, href: /start }
     more: { label: Elenco completo →, href: /changes }
     limit: 10
@@ -326,4 +326,4 @@ sections:
     text: "Crea l'evento, collega il tuo conto di pagamento, condividi il link. Un evento senza mappa dei posti è in vendita in 10 minuti; la mappa dei posti la disegniamo noi per te, gratis."
     primary: { label: Crea il tuo evento, href: /start#create }
     secondary: { label: Apri il bot di Telegram, href: https://t.me/EventsCentrBot }
-    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."
+    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."

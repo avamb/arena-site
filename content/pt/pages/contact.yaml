@@ -11,7 +11,7 @@ sections:
     id: write
     eyebrow: Escreva para a equipe
     title: Como faço uma pergunta à equipe?
-    lead: "Escreva sua pergunta abaixo. Uma pessoa da equipe responde por e-mail, em geral no mesmo dia útil. As perguntas e respostas, sem nomes e e-mails, viram as respostas deste site."
+    lead: "Escreva sua pergunta abaixo. A equipe responde por e-mail, em geral no mesmo dia útil. As perguntas e respostas, sem nomes e e-mails, viram as respostas deste site."
   - type: cards
     id: ways
     eyebrow: Contato
@@ -19,7 +19,7 @@ sections:
     items:
       - { title: Chat do Telegram, text: "O jeito mais rápido. A equipe lê o chat durante o dia na Europa e em Israel.", link: { label: Abrir o chat do Telegram →, href: https://t.me/ArenaSoldOutChat } }
       - { title: Bot do Telegram, text: "Crie um evento a partir de um pôster ou apenas diga olá; a equipe responde no mesmo bot.", link: { label: Abrir o bot do Telegram →, href: https://t.me/EventsCentrBot } }
-      - { title: Formulário de solicitação, text: "Conte-nos sobre o seu evento e onde você vende; configuramos tudo para você, em geral em um dia.", link: { label: Começar a vender →, href: /start } }
+      - { title: Formulário de solicitação, text: "Conte-nos sobre a sua organização e onde você vende; nós a confirmamos, em geral em um dia.", link: { label: Começar a vender →, href: /start } }
       - { title: E-mail, text: "hello@arenasoldout.com para todo o resto, inclusive parcerias e imprensa.", link: { label: Escrever um e-mail →, href: "mailto:hello@arenasoldout.com" } }
   - type: faq
     id: questions
@@ -29,7 +29,7 @@ sections:
       - q: Comprei um ingresso e tenho uma dúvida
         a: "Escreva ao organizador do evento; o contato dele está na página de vendas e no e-mail do ingresso. A [página de ajuda ao comprador](/help/tickets) explica onde está o ingresso e o que fazer na portaria."
       - q: Sou organizador e quero começar
-        a: "Use o [formulário](/start) ou o bot do Telegram. A equipe cria sua organização e sua página de vendas e conecta sua conta de pagamentos com você."
+        a: "Use o [formulário](/start) ou o bot do Telegram. Confirmamos sua organização e conectamos sua conta de pagamentos uma única vez; os eventos e as vendas você gerencia sozinho no Event Center."
       - q: Sou desenvolvedor ou agência
         a: "A [página para desenvolvedores](/developers) traz o widget e a API; [parceiros](/partners) explica como agências e locais trabalham conosco."
   - type: cta

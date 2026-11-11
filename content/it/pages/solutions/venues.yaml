@@ -32,7 +32,7 @@ sections:
   - type: cta
     id: start
     title: Parla con noi
-    text: Raccontaci la struttura e il numero di eventi al mese. Configuriamo mappa e condizioni insieme a te.
+    text: Raccontaci la struttura e il numero di eventi al mese. La mappa la disegniamo gratis e concordiamo le condizioni per la struttura.
     primary: { label: Parla con noi, href: /start }
     secondary: { label: Vedi i prezzi, href: /pricing }
-    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."
+    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."

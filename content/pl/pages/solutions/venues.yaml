@@ -32,7 +32,7 @@ sections:
   - type: cta
     id: start
     title: Porozmawiajmy
-    text: Opowiedz nam o obiekcie i liczbie wydarzeń w miesiącu. Plan i warunki ustawimy razem z tobą.
+    text: Opowiedz nam o obiekcie i liczbie wydarzeń w miesiącu. Plan narysujemy za darmo i ustalimy warunki dla obiektu.
     primary: { label: Porozmawiajmy, href: /start }
     secondary: { label: Zobacz cennik, href: /pricing }
-    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."
+    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."

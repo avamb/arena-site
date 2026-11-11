@@ -72,6 +72,21 @@ sections:
     note: "Płacisz po wydarzeniu przelewem bankowym. Dla wydarzeń w sprzedaży przez kilka miesięcy i dla stałych obiektów wystawiamy faktury co miesiąc. Płatność po wydarzeniu jest dostępna dla organizacji potwierdzonych na platformie. Warunki wolumenowe i indywidualne na życzenie."
     terms: { label: Szczegółowe warunki →, href: /pricing/terms }
 
+  - type: cards
+    id: services
+    eyebrow: Usługi dodatkowe
+    title: Co jeszcze mogę zamówić?
+    lead: "Poza prowizją za bilet. Każdą usługę zamawia się osobno."
+    items:
+      - title: Event manager
+        text: "Nie masz czasu, by samemu ustawiać wydarzenia? Osoba z naszego zespołu pracuje jako część twojego: tworzy wydarzenia i sesje, sprawdza ceny, kategorie i plan sali przed sprzedażą, przygotowuje potrzebne raporty, wysyła zaproszenia i ponownie wysyła bilety. Płatne osobno; warunki ustalamy z każdym organizatorem."
+        link: { label: Napisz do nas, href: /contact }
+      - title: White label
+        text: "Sprzedawaj bez linii Tickets: ArenaSoldOut.com: €45 miesięcznie za markę lub obiekt w krajach UE, US$45 we wszystkich pozostałych krajach."
+        link: { label: Warunki, href: /pricing/terms }
+      - title: Rysowanie planu sali
+        text: "Za darmo. Wyślij PDF, zdjęcie odręcznego szkicu lub tabelę rzędów i miejsc, a narysujemy plan, zwykle w ciągu doby."
+        link: { label: Plany sali, href: /product/seating }
   - type: faq
     id: questions
     eyebrow: Pytania o pieniądze
@@ -112,4 +127,4 @@ sections:
     text: "Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Wydarzenie bez planu sali jest w sprzedaży w 10 minut; plan sali rysujemy dla ciebie za darmo."
     primary: { label: Utwórz wydarzenie, href: /start#create }
     secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."
+    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."
