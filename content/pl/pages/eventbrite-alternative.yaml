@@ -1,0 +1,88 @@
+title: "Alternatywa dla Eventbrite ze stałą opłatą za bilet"
+description: "Porównaj ArenaSoldOut.com i Eventbrite: stałe US$0,62 za bilet zamiast 3,7% + US$1,79, a pieniądze kupującego trafiają prosto na twoje konto."
+h1: Alternatywa dla Eventbrite bez procentu od ceny biletu
+lead: "Eventbrite pobiera procent od każdego biletu plus stałą kwotę. ArenaSoldOut.com pobiera stałą opłatę za bilet, niezależnie od jego ceny, a pieniądze trafiają na twoje konto płatności z każdym zamówieniem. Poniżej oba cenniki obok siebie, w wersji opublikowanej 11 listopada 2026."
+related:
+  - { label: Wszystkie porównania, href: /alternatives, text: "ArenaSoldOut.com obok innych platform biletowych." }
+  - { label: Cennik, href: /pricing, text: "Płatność za sprzedane bilety lub kredyty, kalkulator i każdy pakiet kredytów." }
+  - { label: Płatności, href: /payments, text: "Jakie konta płatności możesz podłączyć, według kraju." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Cena za bilet
+    title: Ile kosztuje bilet na każdej platformie?
+    lead: "Ceny obu platform z 11 listopada 2026. Nasza prowizja za sprzedany bilet obok opłaty serwisowej Eventbrite. Obsługa kart jest płatna osobno na obu platformach w USA: tam Eventbrite, u nas twojemu operatorowi płatności."
+    cols: { what: "", us: ArenaSoldOut.com, them: Eventbrite }
+    rows:
+      - { what: "Jak liczona jest opłata", us: "Stała opłata za bilet", them: "Procent ceny biletu plus stała kwota" }
+      - { what: "USA, za płatny bilet", us: "**{usdPrice}**", them: "3,7% + US$1,79" }
+      - { what: "USA, bilet za US$20", us: "**{usdPrice}**", them: "US$2,53" }
+      - { what: "USA, bilet za US$50", us: "**{usdPrice}**", them: "US$3,64" }
+      - { what: "USA, bilet za US$100", us: "**{usdPrice}**", them: "US$5,49" }
+      - { what: "Irlandia i UE, za płatny bilet", us: "**{eurPrice}**", them: "5,9% + €0,79 w Irlandii" }
+      - { what: "Obsługa kart", us: "Płatna twojemu operatorowi płatności", them: "2,9% zamówienia w USA, płatne Eventbrite" }
+      - { what: "Kiedy dostajesz pieniądze", us: "Z każdym zamówieniem, na twoje konto", them: "Po wydarzeniu, wypłata od Eventbrite" }
+    note: "Ceny Eventbrite: [centrum pomocy Eventbrite](https://www.eventbrite.com/help/en-us/articles/755615/how-much-does-it-cost-for-organizers-to-use-eventbrite/) i [eventbrite.com/organizer/pricing](https://www.eventbrite.com/organizer/pricing/), sprawdzone 11 listopada 2026, bez VAT. Nasze ceny: [cennik](/pricing) i [szczegółowe warunki](/pricing/terms). Eventbrite jest znakiem towarowym swojego właściciela; ArenaSoldOut.com nie jest z nim powiązane."
+
+  - type: prose
+    id: examples
+    title: Co to oznacza dla jednego wydarzenia?
+    body: |
+      Wszystkie kwoty według cen obu platform z 11 listopada 2026.
+
+      **1000 biletów po US$30, płatność po wydarzeniu.** ArenaSoldOut.com: 1000 × US$0,62 = **US$620**. Eventbrite: 1000 × (3,7% z US$30 + US$1,79) = US$2900. Różnica to **US$2280**, przed obsługą kart po obu stronach.
+
+      **300 biletów z miejscami po US$60.** ArenaSoldOut.com: 300 × US$1,18 = **US$354**, a plan sali rysujemy za darmo. Eventbrite: 300 × (3,7% z US$60 + US$1,79) = US$1203.
+
+      **Im droższy bilet, tym większa różnica.** Nasza prowizja jest taka sama przy bilecie za US$15 i za US$150. Procent rośnie wraz z ceną.
+
+      Policz własne wydarzenie w [kalkulatorze na stronie cennika](/pricing#packages).
+
+  - type: cards
+    id: more
+    eyebrow: Poza ceną
+    title: Co jeszcze jest inne w ArenaSoldOut.com?
+    items:
+      - title: Pieniądze są twoje od pierwszego zamówienia
+        text: "Kupujący płacą na twoje własne konto Stripe, Flitt lub AllPay. ArenaSoldOut.com nigdy nie przechowuje środków, więc nie czekasz na wypłatę po wydarzeniu."
+        link: { label: Płatności, href: /payments }
+      - title: Plany sali rysowane za ciebie, za darmo
+        text: "Wyślij PDF, zdjęcie odręcznego szkicu lub tabelę z rzędami i miejscami. Zespół buduje obiekt; sam nigdy go nie rysujesz."
+        link: { label: Plany sali, href: /product/seating }
+      - title: Niższa stawka dla tanich biletów
+        text: "Gdy każdy bilet wydarzenia kosztuje {usdLowMax} lub mniej: {lowPercent}% ceny biletu zamiast stałej opłaty. Dyskoteki, biegi, urodziny dla dzieci, wycieczki."
+        link: { label: Jak to działa, href: /pricing#low-price }
+      - title: Twoja strona, twoi kupujący
+        text: "Sprzedawaj na własnej stronie z widżetem biletowym albo na swojej stronie u nas. Kupujący przychodzą do ciebie, a nie do katalogu obok innych wydarzeń."
+        link: { label: Sprzedaż na twojej stronie lub naszej, href: /product/sell }
+      - title: Każda sprzedaż w twoim Telegramie
+        text: "Utwórz wydarzenie ze zdjęcia plakatu w bocie na Telegramie i zobacz każdą sprzedaż i zwrot w swojej grupie w kilka sekund."
+        link: { label: Bot w Telegramie, href: /product/telegram }
+      - title: Skonfiguruj sam albo oddaj nam
+        text: "Wydarzenia tworzysz w Event Center lub w bocie na Telegramie w kilka minut; plany sali rysujemy za darmo. Brak czasu? Nasz menedżer wydarzeń zrobi to za ciebie, jako płatna usługa."
+        link: { label: Menedżer wydarzeń, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Pytania organizatorów, którzy porównują
+    items:
+      - q: Czy ArenaSoldOut.com jest tańsze niż Eventbrite?
+        a: "Pod względem prowizji tak, przy każdej cenie biletu: {usdPrice} za bilet zamiast 3,7% + US$1,79 w USA oraz {eurPrice} zamiast 5,9% + €0,79 w Irlandii. Obsługa kart dochodzi do tego na obu platformach w USA."
+      - q: Kto płaci opłatę, ja czy kupujący?
+        a: "Ty decydujesz. Możesz dodać własną opłatę serwisową dla kupującego do ceny biletu albo zostawić cenę bez zmian i samemu płacić naszą prowizję. Zaproszenia i darmowe bilety na płatne wydarzenia nie podlegają prowizji."
+      - q: Dokąd trafiają pieniądze kupującego?
+        a: "Na twoje własne konto płatności z każdym zamówieniem: Stripe, Flitt lub AllPay. ArenaSoldOut.com nigdy nie przechowuje środków. Nasza prowizja jest fakturowana po wydarzeniu albo pobierana z twoich kredytów."
+      - q: Czy moje wydarzenie znajdzie się na rynku wydarzeń?
+        a: "Nie. Eventbrite ma rynek, na którym kupujący przeglądają wydarzenia; ArenaSoldOut.com go nie ma. Sprzedajemy bilety na twojej stronie i na twojej własnej stronie wydarzenia, a kupujących przyprowadzasz własnymi kanałami."
+      - q: Czy mogę przenieść swoje wydarzenia z Eventbrite?
+        a: "Tak. Wydarzenia tworzysz w Event Center lub w bocie na Telegramie w kilka minut, a plany sali rysujemy za darmo z twojego PDF-a lub szkicu. Brak czasu? Nasz menedżer wydarzeń przeniesie je za ciebie, jako płatna usługa. Sprzedawaj dalej na Eventbrite, dopóki twoja strona u nas nie będzie gotowa."
+      - q: Czy płacę abonament?
+        a: "Nie. Płacisz tylko za sprzedane bilety, po wydarzeniu, albo kupujesz kredyty z góry od {usdFrom} za bilet. Kredyty nigdy nie wygasają."
+
+  - type: cta
+    id: start
+    title: Wypróbuj na swoim następnym wydarzeniu
+    text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Zobacz cennik, href: /pricing }
+    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."

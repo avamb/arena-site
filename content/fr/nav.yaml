@@ -32,7 +32,7 @@ footer:
       - { label: Billets électroniques et scan, href: /product/tickets }
       - { label: Application de scan MACS, href: /product/scanner }
       - { label: Fiabilité, href: /product/reliability }
-      - { label: Alternative à Ticket Tailor, href: /tickettailor-alternative }
+      - { label: Comparer avec d'autres plateformes, href: /alternatives }
   - title: Pour qui
     links:
       - { label: Concerts, href: /solutions/concerts }

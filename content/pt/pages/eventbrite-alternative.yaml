@@ -1,0 +1,88 @@
+title: "Alternativa ao Eventbrite com tarifa fixa por ingresso"
+description: "Compare ArenaSoldOut.com e Eventbrite: US$0,62 fixos por ingresso em vez de 3,7% + US$1,79, e o dinheiro do comprador vai direto para a sua conta."
+h1: Uma alternativa ao Eventbrite sem porcentagem do preço do ingresso
+lead: "O Eventbrite cobra uma porcentagem de cada ingresso mais um valor fixo. O ArenaSoldOut.com cobra uma tarifa fixa por ingresso, não importa quanto ele custe, e o dinheiro vai para a sua própria conta de pagamentos a cada pedido. Abaixo estão as duas listas de preços lado a lado, como publicadas em 11 de novembro de 2026."
+related:
+  - { label: Todas as comparações, href: /alternatives, text: "O ArenaSoldOut.com ao lado de outras plataformas de venda de ingressos." }
+  - { label: Preços, href: /pricing, text: "Pague conforme usa ou créditos, a calculadora e cada pacote de créditos." }
+  - { label: Pagamentos, href: /payments, text: "Quais contas de pagamento você pode conectar, por país." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Preço por ingresso
+    title: Quanto custa um ingresso em cada plataforma?
+    lead: "Preços das duas plataformas em 11 de novembro de 2026. A nossa comissão por ingresso vendido ao lado da taxa de serviço do Eventbrite. O processamento de cartões é pago separadamente nas duas plataformas nos EUA: ao Eventbrite lá, ao seu próprio provedor de pagamentos conosco."
+    cols: { what: "", us: ArenaSoldOut.com, them: Eventbrite }
+    rows:
+      - { what: "Como a taxa é calculada", us: "Tarifa fixa por ingresso", them: "Porcentagem do preço do ingresso mais um valor fixo" }
+      - { what: "EUA, por ingresso pago", us: "**{usdPrice}**", them: "3,7% + US$1,79" }
+      - { what: "EUA, ingresso de US$20", us: "**{usdPrice}**", them: "US$2,53" }
+      - { what: "EUA, ingresso de US$50", us: "**{usdPrice}**", them: "US$3,64" }
+      - { what: "EUA, ingresso de US$100", us: "**{usdPrice}**", them: "US$5,49" }
+      - { what: "Irlanda e UE, por ingresso pago", us: "**{eurPrice}**", them: "5,9% + €0,79 na Irlanda" }
+      - { what: "Processamento de cartões", us: "Pago ao seu próprio provedor de pagamentos", them: "2,9% do pedido nos EUA, pago ao Eventbrite" }
+      - { what: "Quando você recebe o dinheiro", us: "A cada pedido, na sua própria conta", them: "Depois do evento, repassado pelo Eventbrite" }
+    note: "Preços do Eventbrite: [central de ajuda do Eventbrite](https://www.eventbrite.com/help/en-us/articles/755615/how-much-does-it-cost-for-organizers-to-use-eventbrite/) e [eventbrite.com/organizer/pricing](https://www.eventbrite.com/organizer/pricing/), consultados em 11 de novembro de 2026, sem impostos. Nossos preços: [preços](/pricing) e [condições detalhadas](/pricing/terms). Eventbrite é marca registrada do seu titular; o ArenaSoldOut.com não é afiliado a ele."
+
+  - type: prose
+    id: examples
+    title: O que isso significa para um evento?
+    body: |
+      Todos os valores nos preços das duas plataformas em 11 de novembro de 2026.
+
+      **1.000 ingressos a US$30, pague conforme usa.** ArenaSoldOut.com: 1.000 × US$0,62 = **US$620**. Eventbrite: 1.000 × (3,7% de US$30 + US$1,79) = US$2.900. São **US$2.280** de diferença, antes do processamento de cartões de ambos os lados.
+
+      **300 ingressos com assento a US$60.** ArenaSoldOut.com: 300 × US$1,18 = **US$354**, e desenhamos o mapa de assentos de graça. Eventbrite: 300 × (3,7% de US$60 + US$1,79) = US$1.203.
+
+      **Quanto mais caro o ingresso, maior a diferença.** A nossa comissão é a mesma num ingresso de US$15 e num de US$150. Uma porcentagem cresce com o preço.
+
+      Calcule o seu próprio evento na [calculadora da página de preços](/pricing#packages).
+
+  - type: cards
+    id: more
+    eyebrow: Além do preço
+    title: O que mais é diferente no ArenaSoldOut.com?
+    items:
+      - title: O dinheiro é seu desde o primeiro pedido
+        text: "Os compradores pagam na sua própria conta Stripe, Flitt ou AllPay. O ArenaSoldOut.com nunca retém valores, então não há repasse para esperar depois do evento."
+        link: { label: Pagamentos, href: /payments }
+      - title: Mapas de assentos desenhados para você, grátis
+        text: "Envie um PDF, uma foto de um esboço à mão ou uma tabela de fileiras e assentos. A equipe monta o local; você nunca precisa desenhá-lo."
+        link: { label: Mapas de assentos, href: /product/seating }
+      - title: Taxa menor para ingressos baratos
+        text: "Quando todos os ingressos do evento custam {usdLowMax} ou menos: {lowPercent}% do preço do ingresso em vez da tarifa fixa. Baladas, corridas, festas infantis, passeios."
+        link: { label: Como funciona, href: /pricing#low-price }
+      - title: Sua página, seus compradores
+        text: "Venda no seu próprio site com o widget de ingressos ou na sua página conosco. Os compradores vêm até você, e não a um catálogo ao lado de outros eventos."
+        link: { label: Venda no seu site ou no nosso, href: /product/sell }
+      - title: Cada venda no seu Telegram
+        text: "Crie um evento a partir da foto de um cartaz no bot do Telegram e veja cada venda e reembolso no seu grupo em segundos."
+        link: { label: Bot do Telegram, href: /product/telegram }
+      - title: Configure você mesmo ou deixe com a gente
+        text: "Você cria eventos no Event Center ou no bot do Telegram em minutos; desenhamos os mapas de assentos de graça. Sem tempo? O nosso gerente de eventos faz isso por você, como serviço pago."
+        link: { label: Gerente de eventos, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Perguntas que os organizadores fazem ao comparar
+    items:
+      - q: O ArenaSoldOut.com é mais barato que o Eventbrite?
+        a: "Na comissão, sim, em qualquer preço de ingresso: {usdPrice} por ingresso em vez de 3,7% + US$1,79 nos EUA, e {eurPrice} em vez de 5,9% + €0,79 na Irlanda. O processamento de cartões vem além disso nas duas plataformas nos EUA."
+      - q: Quem paga a taxa, eu ou o comprador?
+        a: "Você decide. Você pode somar a sua própria taxa de serviço para o comprador ao preço do ingresso, ou manter o preço como está e pagar a nossa comissão você mesmo. Convites e ingressos gratuitos em eventos pagos não têm comissão."
+      - q: Para onde vai o dinheiro do comprador?
+        a: "Para a sua própria conta de pagamentos, a cada pedido: Stripe, Flitt ou AllPay. O ArenaSoldOut.com nunca retém valores. Nossa comissão é cobrada depois do evento ou descontada dos seus créditos."
+      - q: Meu evento será listado em um marketplace?
+        a: "Não. O Eventbrite tem um marketplace em que os compradores navegam por eventos; o ArenaSoldOut.com não tem. Vendemos ingressos no seu site e na sua própria página do evento, e você traz os compradores pelos seus próprios canais."
+      - q: Posso migrar meus eventos do Eventbrite?
+        a: "Sim. Você cria os eventos no Event Center ou no bot do Telegram em minutos, e desenhamos os seus mapas de assentos de graça a partir do seu PDF ou esboço. Sem tempo? O nosso gerente de eventos migra para você, como serviço pago. Continue vendendo no Eventbrite até a sua página conosco ficar pronta."
+      - q: Eu pago assinatura?
+        a: "Não. Você paga apenas pelos ingressos vendidos, depois do evento, ou compra créditos antecipadamente a partir de {usdFrom} por ingresso. Os créditos nunca expiram."
+
+  - type: cta
+    id: start
+    title: Experimente no seu próximo evento
+    text: Crie o evento, conecte sua conta de pagamentos, compartilhe o link.
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Ver preços, href: /pricing }
+    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."

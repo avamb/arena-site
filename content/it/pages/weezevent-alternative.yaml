@@ -1,0 +1,85 @@
+title: "Alternativa a Weezevent: il denaro a ogni ordine"
+description: "ArenaSoldOut.com e Weezevent a confronto: il denaro dei biglietti sul tuo conto a ogni ordine invece che ogni 15 giorni, mappe dei posti su ogni evento."
+h1: Un'alternativa a Weezevent che ti paga a ogni ordine
+lead: "Su Weezevent il denaro dei biglietti lo incassa Weezevent e te lo versa ogni 15 giorni. Su ArenaSoldOut.com l'acquirente paga direttamente sul tuo conto di pagamento, e le mappe dei posti fanno parte di ogni evento. Qui sotto trovi le due offerte affiancate, come pubblicate l'11 novembre 2026."
+related:
+  - { label: Tutti i confronti, href: /alternatives, text: "ArenaSoldOut.com accanto ad altre piattaforme di vendita biglietti." }
+  - { label: Pagamenti, href: /payments, text: "Quali conti di pagamento puoi collegare, paese per paese." }
+  - { label: Mappe dei posti, href: /product/seating, text: "Disegniamo la tua struttura gratis da un PDF o da uno schizzo." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Prezzi in euro
+    title: Come si confrontano le due offerte?
+    lead: "Prezzi di entrambe le piattaforme all'11 novembre 2026. La nostra commissione per biglietto venduto accanto alla commissione di Weezevent per la biglietteria online. La commissione di Weezevent include le spese bancarie; da noi la commissione della carta la applica il tuo fornitore di pagamenti, alla tua tariffa, in aggiunta alla nostra commissione."
+    cols: { what: "", us: ArenaSoldOut.com, them: Weezevent }
+    rows:
+      - { what: "Come si calcola la tariffa", us: "Tariffa fissa per biglietto", them: "2,5% del prezzo del biglietto, almeno €0,99" }
+      - { what: "Biglietto da €20", us: "**{eurPrice}** + la commissione della carta del tuo fornitore", them: "€0,99, spese bancarie incluse" }
+      - { what: "Biglietto da €50", us: "**{eurPrice}** + la commissione della carta del tuo fornitore", them: "€1,25, spese bancarie incluse" }
+      - { what: "Biglietto da €100", us: "**{eurPrice}** + la commissione della carta del tuo fornitore", them: "€2,50, spese bancarie incluse" }
+      - { what: "Quando ricevi il denaro", us: "A ogni ordine, sul tuo conto", them: "Ogni 15 giorni, versato da Weezevent" }
+      - { what: "Chi detiene il denaro dell'acquirente", us: "Tu, dal primo ordine", them: "Weezevent, fino al versamento" }
+      - { what: "Posti numerati", us: "**{eurSeated}** per biglietto con posto, mappa disegnata per te gratis", them: "Solo offerta su misura, prezzo su richiesta" }
+      - { what: "Crediti pagati in anticipo", us: "Da **{eurFrom}** per biglietto, non scadono mai", them: "Non nel loro listino" }
+      - { what: "Abbonamento", us: Nessuno, them: Nessuno }
+    note: "Prezzi di Weezevent: [weezevent.com/fr/nos-tarifs](https://weezevent.com/fr/nos-tarifs/) e [weezevent.com/en-gb/our-prices](https://weezevent.com/en-gb/our-prices/), verificati l'11 novembre 2026, IVA inclusa come pubblicato. I nostri prezzi: [prezzi](/pricing) e [condizioni dettagliate](/pricing/terms), IVA esclusa. Weezevent è un marchio del suo titolare; ArenaSoldOut.com non è affiliato a esso."
+
+  - type: prose
+    id: examples
+    title: Che cosa significa la differenza nella pratica?
+    body: |
+      Tutte le cifre ai prezzi di entrambe le piattaforme all'11 novembre 2026.
+
+      **Liquidità prima dell'evento.** Un festival vende 2.000 biglietti nelle tre settimane prima dell'apertura dei cancelli. Con ArenaSoldOut.com ogni pagamento arriva sul tuo conto nel momento in cui l'ordine è pagato, così paghi palco, audio e sicurezza con il denaro dei biglietti. Con un versamento ogni 15 giorni, una parte di quel denaro arriva dopo che ti serviva.
+
+      **Un teatro con posti numerati.** Da noi la mappa dei posti fa parte di ogni evento: mandi un PDF o la foto di uno schizzo a mano, il team costruisce la mappa gratis, e un biglietto con posto costa {eurSeated}. Su Weezevent i posti numerati sono nell'offerta su misura, con prezzo su richiesta.
+
+      **La commissione in sé.** La nostra è {eurPrice} per biglietto, qualunque sia il prezzo; quella di Weezevent è 2,5% con un minimo di €0,99, spese bancarie incluse. Aggiungi la commissione della carta del tuo fornitore alla nostra per confrontare i totali al prezzo del tuo biglietto.
+
+  - type: cards
+    id: more
+    eyebrow: Oltre il prezzo
+    title: Che cos'altro ottieni con ArenaSoldOut.com?
+    items:
+      - title: Il denaro direttamente sul tuo conto
+        text: "Gli acquirenti pagano sul tuo conto Stripe, Flitt o AllPay. ArenaSoldOut.com non detiene mai fondi e non trattiene nulla dalle tue vendite."
+        link: { label: Pagamenti, href: /payments }
+      - title: Mappe dei posti disegnate per te, gratis
+        text: "Manda un PDF, una foto di uno schizzo a mano o una tabella di file e posti. Il team costruisce la struttura; tu non la disegni mai."
+        link: { label: Mappe dei posti, href: /product/seating }
+      - title: Tariffa ridotta per i biglietti economici
+        text: "Quando ogni biglietto dell'evento costa {eurLowMax} o meno: {lowPercent}% del prezzo del biglietto invece della tariffa fissa. Discoteche, corse, feste per bambini, gite."
+        link: { label: Come funziona, href: /pricing#low-price }
+      - title: Acquirenti nella propria lingua
+        text: "Pagina dell'acquirente, e-mail e biglietti nella lingua dell'acquirente, ebraico da destra a sinistra compreso. Aggiungiamo qualsiasi nuova lingua entro 40 ore."
+        link: { label: Biglietti elettronici, href: /product/tickets }
+      - title: Ogni vendita nel tuo Telegram
+        text: "Crea un evento da una foto della locandina nel bot di Telegram e vedi ogni vendita e rimborso nel tuo gruppo in pochi secondi."
+        link: { label: Bot di Telegram, href: /product/telegram }
+      - title: Configuri tu, oppure deleghi
+        text: "Crei gli eventi nell'Event Center o nel bot di Telegram in pochi minuti; le mappe dei posti le disegniamo gratis. Non hai tempo? Il nostro event manager lo fa per te, come servizio a pagamento."
+        link: { label: Event manager, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Le domande degli organizzatori quando confrontano
+    items:
+      - q: ArenaSoldOut.com costa meno di Weezevent?
+        a: "La nostra commissione è più bassa: {eurPrice} per biglietto contro almeno €0,99 su Weezevent. La commissione di Weezevent include le spese bancarie e la nostra no, quindi aggiungi la commissione della carta del tuo fornitore alla nostra per confrontare i totali al prezzo del tuo biglietto."
+      - q: Quando ricevo il denaro dei biglietti?
+        a: "A ogni ordine. L'acquirente paga sul tuo conto di pagamento: Stripe, Flitt o AllPay. ArenaSoldOut.com non detiene mai fondi. La nostra commissione è fatturata dopo l'evento o prelevata dai tuoi crediti."
+      - q: Offri pagamenti cashless e braccialetti RFID?
+        a: "No. ArenaSoldOut.com vende biglietti e li controlla all'ingresso con l'app scanner MACS. Se ti servono pagamenti cashless al bar, tieni un fornitore separato per quello."
+      - q: Posso spostare i miei eventi da Weezevent?
+        a: "Sì. Crei gli eventi nell'Event Center o nel bot di Telegram in pochi minuti, e noi disegniamo gratis le tue mappe dei posti da un PDF o da uno schizzo. Non hai tempo? Il nostro event manager li sposta per te, come servizio a pagamento. Continua a vendere su Weezevent finché la tua pagina da noi non è pronta."
+      - q: Pago un abbonamento?
+        a: "No. Paghi solo per i biglietti venduti. Inviti e biglietti gratuiti a eventi a pagamento non hanno commissione."
+
+  - type: cta
+    id: start
+    title: Provalo sul tuo prossimo evento
+    text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Vedi i prezzi, href: /pricing }
+    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."

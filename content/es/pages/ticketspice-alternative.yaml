@@ -1,0 +1,88 @@
+title: "Alternativa a TicketSpice con asientos en todos los planes"
+description: "Compara ArenaSoldOut.com y TicketSpice: US$0,62 por entrada en lugar de US$0,99, entradas con asiento a US$1,18 sin cambiar de plan, dinero en tu cuenta."
+h1: Una alternativa a TicketSpice con planos de asientos incluidos
+lead: "TicketSpice y ArenaSoldOut.com cobran una tarifa fija por entrada, y en ambas pagas el procesamiento de tarjetas aparte. ArenaSoldOut.com cuesta menos por entrada, y un plano de asientos no exige un plan más caro. Abajo están las dos listas de precios lado a lado, tal como se publicaron el 11 de noviembre de 2026."
+related:
+  - { label: Todas las comparaciones, href: /alternatives, text: "ArenaSoldOut.com junto a otras plataformas de venta de entradas." }
+  - { label: Precios, href: /pricing, text: "Pago por uso o créditos, la calculadora y cada paquete de créditos." }
+  - { label: Planos de asientos, href: /product/seating, text: "Dibujamos tu recinto gratis a partir de un PDF o un boceto." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Precios en dólares estadounidenses
+    title: ¿Cuánto cuesta una entrada en cada plataforma?
+    lead: "Precios de ambas plataformas al 11 de noviembre de 2026. Nuestra comisión por entrada vendida junto a la tarifa de TicketSpice por entrada de pago. El procesamiento de tarjetas va aparte en ambas plataformas."
+    cols: { what: "", us: ArenaSoldOut.com, them: TicketSpice }
+    rows:
+      - { what: "Por entrada de pago, entrada general", us: "**{usdPrice}**", them: "US$0,99 en Standard" }
+      - { what: "Entrada con asiento en un plano de asientos", us: "**{usdSeated}**", them: "US$1,49 en Premium (los asientos reservados no están en Standard)" }
+      - { what: "Quién construye el plano de asientos", us: "Nuestro equipo, gratis, a partir de tu PDF o boceto", them: "Tú, en el constructor de recintos" }
+      - { what: "Créditos pagados por adelantado", us: "Desde **{usdFrom}** por entrada, nunca caducan", them: "No figuran en su lista de precios" }
+      - { what: "Procesamiento de tarjetas", us: "Se paga a tu propio proveedor de pagos", them: "2,9% + 30¢ por transacción" }
+      - { what: "Cuándo recibes el dinero", us: "Con cada pedido, en tu propia cuenta", them: "Cada semana, los miércoles, tras la verificación de identidad" }
+      - { what: "Precios en euros (UE)", us: "**{eurPrice}**, **{eurSeated}** con asiento", them: "Sus propios pagos: solo dólares estadounidenses y dólares canadienses" }
+      - { what: "Suscripción", us: Ninguna, them: Ninguna }
+    note: "Precios de TicketSpice: [ticketspice.com/pricing](https://www.ticketspice.com/pricing) y el [centro de ayuda de TicketSpice](https://help.ticketspice.com/en/articles/14172125-understand-webconnex-payments-payout-timing-and-when-you-ll-receive-your-funds), comprobados el 11 de noviembre de 2026. Nuestros precios: [precios](/pricing) y [condiciones detalladas](/pricing/terms). TicketSpice es una marca de su propietario; ArenaSoldOut.com no está afiliada a ella."
+
+  - type: prose
+    id: examples
+    title: ¿Qué significa esto para un evento?
+    body: |
+      Todas las cifras, a los precios de ambas plataformas al 11 de noviembre de 2026.
+
+      **1.000 entradas, entrada general.** ArenaSoldOut.com: 1.000 × US$0,62 = **US$620**. TicketSpice Standard: 1.000 × US$0,99 = US$990. Te quedas con **US$370** más.
+
+      **500 entradas con asiento.** ArenaSoldOut.com: 500 × US$1,18 = **US$590**, y dibujamos el plano de asientos gratis. TicketSpice Premium: 500 × US$1,49 = US$745. Te quedas con **US$155** más y no construyes el plano tú.
+
+      **1.000 entradas al año, pago anticipado con créditos.** Paquete de créditos 1K de ArenaSoldOut.com: **US$430**, o US$0,43 por entrada. Los créditos nunca caducan.
+
+      Calcula tu propio evento en la [calculadora de la página de precios](/pricing#packages).
+
+  - type: cards
+    id: more
+    eyebrow: Más allá del precio
+    title: ¿Qué más obtienes con ArenaSoldOut.com?
+    items:
+      - title: Planos de asientos dibujados para ti, gratis
+        text: "Envía un PDF, una foto de un boceto a mano o una tabla de filas y asientos. El equipo construye el recinto; tú nunca lo dibujas."
+        link: { label: Planos de asientos, href: /product/seating }
+      - title: El dinero va directo a tu cuenta
+        text: "Los compradores pagan en tu propia cuenta de Stripe, Flitt o AllPay con cada pedido. ArenaSoldOut.com nunca retiene fondos, así que no hay un pago semanal que esperar."
+        link: { label: Pagos, href: /payments }
+      - title: Tarifa menor para entradas baratas
+        text: "Cuando cada entrada del evento cuesta {usdLowMax} o menos: {lowPercent}% del precio de la entrada en lugar de la tarifa fija. Discotecas, carreras, fiestas infantiles, excursiones."
+        link: { label: Cómo funciona, href: /pricing#low-price }
+      - title: Compradores en su propio idioma
+        text: "La página del comprador, los correos y las entradas en el idioma del comprador, hebreo de derecha a izquierda incluido. Añadimos cualquier idioma nuevo en 40 horas."
+        link: { label: Entradas electrónicas, href: /product/tickets }
+      - title: Cada venta en tu Telegram
+        text: "Crea un evento a partir de la foto de un cartel en el bot de Telegram y ve cada venta y reembolso en tu grupo en segundos."
+        link: { label: Bot de Telegram, href: /product/telegram }
+      - title: Configúralo tú o encárganoslo
+        text: "Creas los eventos en el Event Center o en el bot de Telegram en minutos; dibujamos los planos de asientos gratis. ¿Sin tiempo? Nuestro gestor de eventos lo hace por ti, como servicio de pago."
+        link: { label: Gestor de eventos, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Preguntas que hacen los organizadores cuando comparan
+    items:
+      - q: ¿Es ArenaSoldOut.com más barata que TicketSpice?
+        a: "Por entrada, sí: {usdPrice} en lugar de US$0,99 en TicketSpice Standard, y {usdSeated} por una entrada con asiento en lugar de US$1,49 en TicketSpice Premium. Con créditos es desde {usdFrom} por entrada. El procesamiento de tarjetas va aparte en ambas."
+      - q: ¿Necesito un plan superior para los asientos reservados?
+        a: "No. Cada evento puede tener un plano de asientos; una entrada con asiento cuesta {usdSeated}. Tú no dibujas el plano: envíanos un PDF, una foto de un boceto o una tabla de filas y asientos, y el equipo lo construye gratis."
+      - q: ¿Adónde va el dinero del comprador?
+        a: "A tu propia cuenta de pagos con cada pedido: Stripe, Flitt o AllPay. ArenaSoldOut.com nunca retiene fondos. Nuestra comisión se factura después del evento o se toma de tus créditos."
+      - q: ¿Puedo vender fuera de EE. UU. y Canadá?
+        a: "Sí. Los organizadores de países de la UE pagan nuestra comisión en euros, {eurPrice} por entrada con pago por uso; en el resto del mundo, en dólares estadounidenses. Las entradas se venden en la moneda de tu cuenta de pagos."
+      - q: ¿Puedo pasar mis eventos desde TicketSpice?
+        a: "Sí. Creas los eventos en el Event Center o en el bot de Telegram en minutos, y dibujamos tus planos de asientos gratis a partir de tu PDF o boceto. ¿Sin tiempo? Nuestro gestor de eventos los pasa por ti, como servicio de pago. Sigue vendiendo en TicketSpice hasta que tu página con nosotros esté lista."
+      - q: ¿Pago una suscripción?
+        a: "No. Pagas solo por las entradas vendidas. Las invitaciones y las entradas gratuitas a eventos de pago no llevan comisión."
+
+  - type: cta
+    id: start
+    title: Pruébalo en tu próximo evento
+    text: Crea el evento, conecta tu cuenta de pagos, comparte el enlace.
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Ver precios, href: /pricing }
+    note: "¿Preguntas? Escríbenos: el equipo responde en un día laborable."

@@ -1,0 +1,88 @@
+title: "Alternativa a TicketSpice con mappe dei posti in ogni piano"
+description: "ArenaSoldOut.com e TicketSpice a confronto: US$0,62 per biglietto invece di US$0,99, biglietti con posto a US$1,18 senza cambiare piano, denaro sul tuo conto."
+h1: Un'alternativa a TicketSpice con le mappe dei posti incluse
+lead: "TicketSpice e ArenaSoldOut.com applicano entrambi una tariffa fissa per biglietto, e su entrambi l'elaborazione delle carte si paga a parte. ArenaSoldOut.com costa meno per biglietto, e una mappa dei posti non richiede un piano più caro. Qui sotto trovi i due listini affiancati, come pubblicati l'11 novembre 2026."
+related:
+  - { label: Tutti i confronti, href: /alternatives, text: "ArenaSoldOut.com accanto ad altre piattaforme di vendita biglietti." }
+  - { label: Prezzi, href: /pricing, text: "A consumo o con i crediti, il calcolatore e ogni pacchetto di crediti." }
+  - { label: Mappe dei posti, href: /product/seating, text: "Disegniamo la tua struttura gratis da un PDF o da uno schizzo." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Prezzi in dollari USA
+    title: Quanto costa un biglietto su ciascuna piattaforma?
+    lead: "Prezzi di entrambe le piattaforme all'11 novembre 2026. La nostra commissione per biglietto venduto accanto alla tariffa di TicketSpice per biglietto a pagamento. L'elaborazione delle carte è a parte su entrambe."
+    cols: { what: "", us: ArenaSoldOut.com, them: TicketSpice }
+    rows:
+      - { what: "Per biglietto a pagamento, senza posto numerato", us: "**{usdPrice}**", them: "US$0,99 con Standard" }
+      - { what: "Biglietto con posto su una mappa dei posti", us: "**{usdSeated}**", them: "US$1,49 con Premium (i posti riservati non sono in Standard)" }
+      - { what: "Chi costruisce la mappa dei posti", us: "Il nostro team, gratis, da un tuo PDF o schizzo", them: "Tu, nello strumento di creazione della struttura" }
+      - { what: "Crediti pagati in anticipo", us: "Da **{usdFrom}** per biglietto, non scadono mai", them: "Non nel loro listino" }
+      - { what: "Elaborazione delle carte", us: "Pagata al tuo fornitore di pagamenti", them: "2,9% + 30¢ per transazione" }
+      - { what: "Quando ricevi il denaro", us: "A ogni ordine, sul tuo conto", them: "Ogni settimana, di mercoledì, dopo la verifica dell'identità" }
+      - { what: "Prezzi in euro (UE)", us: "**{eurPrice}**, **{eurSeated}** con posto", them: "Con i loro pagamenti: solo dollari USA e dollari canadesi" }
+      - { what: "Abbonamento", us: Nessuno, them: Nessuno }
+    note: "Prezzi di TicketSpice: [ticketspice.com/pricing](https://www.ticketspice.com/pricing) e il [centro assistenza TicketSpice](https://help.ticketspice.com/en/articles/14172125-understand-webconnex-payments-payout-timing-and-when-you-ll-receive-your-funds), verificati l'11 novembre 2026. I nostri prezzi: [prezzi](/pricing) e [condizioni dettagliate](/pricing/terms). TicketSpice è un marchio del suo titolare; ArenaSoldOut.com non è affiliato a esso."
+
+  - type: prose
+    id: examples
+    title: Che cosa significa per un singolo evento?
+    body: |
+      Tutte le cifre ai prezzi di entrambe le piattaforme all'11 novembre 2026.
+
+      **1.000 biglietti senza posto numerato.** ArenaSoldOut.com: 1.000 × US$0,62 = **US$620**. TicketSpice Standard: 1.000 × US$0,99 = US$990. Ti restano **US$370** in più.
+
+      **500 biglietti con posto.** ArenaSoldOut.com: 500 × US$1,18 = **US$590**, e la mappa dei posti la disegniamo gratis. TicketSpice Premium: 500 × US$1,49 = US$745. Ti restano **US$155** in più e non costruisci tu la mappa.
+
+      **1.000 biglietti l'anno, pagati in anticipo con i crediti.** Pacchetto di crediti 1K di ArenaSoldOut.com: **US$430**, cioè US$0,43 per biglietto. I crediti non scadono mai.
+
+      Calcola il tuo evento nel [calcolatore della pagina dei prezzi](/pricing#packages).
+
+  - type: cards
+    id: more
+    eyebrow: Oltre il prezzo
+    title: Che cos'altro ottieni con ArenaSoldOut.com?
+    items:
+      - title: Mappe dei posti disegnate per te, gratis
+        text: "Manda un PDF, una foto di uno schizzo a mano o una tabella di file e posti. Il team costruisce la struttura; tu non la disegni mai."
+        link: { label: Mappe dei posti, href: /product/seating }
+      - title: Il denaro direttamente sul tuo conto
+        text: "Gli acquirenti pagano sul tuo conto Stripe, Flitt o AllPay a ogni ordine. ArenaSoldOut.com non detiene mai fondi, quindi non c'è nessun pagamento settimanale da aspettare."
+        link: { label: Pagamenti, href: /payments }
+      - title: Tariffa ridotta per i biglietti economici
+        text: "Quando ogni biglietto dell'evento costa {usdLowMax} o meno: {lowPercent}% del prezzo del biglietto invece della tariffa fissa. Discoteche, corse, feste per bambini, gite."
+        link: { label: Come funziona, href: /pricing#low-price }
+      - title: Acquirenti nella propria lingua
+        text: "Pagina dell'acquirente, e-mail e biglietti nella lingua dell'acquirente, ebraico da destra a sinistra compreso. Aggiungiamo qualsiasi nuova lingua entro 40 ore."
+        link: { label: Biglietti elettronici, href: /product/tickets }
+      - title: Ogni vendita nel tuo Telegram
+        text: "Crea un evento da una foto della locandina nel bot di Telegram e vedi ogni vendita e rimborso nel tuo gruppo in pochi secondi."
+        link: { label: Bot di Telegram, href: /product/telegram }
+      - title: Configuri tu, oppure deleghi
+        text: "Crei gli eventi nell'Event Center o nel bot di Telegram in pochi minuti; le mappe dei posti le disegniamo gratis. Non hai tempo? Il nostro event manager lo fa per te, come servizio a pagamento."
+        link: { label: Event manager, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Le domande degli organizzatori quando confrontano
+    items:
+      - q: ArenaSoldOut.com costa meno di TicketSpice?
+        a: "Per biglietto sì: {usdPrice} invece di US$0,99 con TicketSpice Standard, e {usdSeated} per un biglietto con posto invece di US$1,49 con TicketSpice Premium. Con i crediti si parte da {usdFrom} per biglietto. L'elaborazione delle carte è a parte su entrambe."
+      - q: Mi serve un piano più alto per i posti riservati?
+        a: "No. Ogni evento può avere una mappa dei posti; un biglietto con posto costa {usdSeated}. La mappa non la disegni tu: mandaci un PDF, una foto di uno schizzo o una tabella di file e posti, e il team la costruisce gratis."
+      - q: Dove va il denaro dell'acquirente?
+        a: "Sul tuo conto di pagamento con ogni ordine: Stripe, Flitt o AllPay. ArenaSoldOut.com non detiene mai fondi. La nostra commissione è fatturata dopo l'evento o prelevata dai tuoi crediti."
+      - q: Posso vendere fuori da Stati Uniti e Canada?
+        a: "Sì. Gli organizzatori nei paesi UE pagano la nostra commissione in euro, {eurPrice} per biglietto a consumo; nel resto del mondo in dollari USA. I biglietti si vendono nella valuta del tuo conto di pagamento."
+      - q: Posso spostare i miei eventi da TicketSpice?
+        a: "Sì. Crei gli eventi nell'Event Center o nel bot di Telegram in pochi minuti, e noi disegniamo gratis le tue mappe dei posti da un PDF o da uno schizzo. Non hai tempo? Il nostro event manager li sposta per te, come servizio a pagamento. Continua a vendere su TicketSpice finché la tua pagina da noi non è pronta."
+      - q: Pago un abbonamento?
+        a: "No. Paghi solo per i biglietti venduti. Inviti e biglietti gratuiti a eventi a pagamento non hanno commissione."
+
+  - type: cta
+    id: start
+    title: Provalo sul tuo prossimo evento
+    text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Vedi i prezzi, href: /pricing }
+    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."

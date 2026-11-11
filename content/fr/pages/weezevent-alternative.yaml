@@ -1,0 +1,85 @@
+title: "Alternative à Weezevent : l'argent à chaque commande"
+description: "Comparez ArenaSoldOut.com et Weezevent : argent des billets sur votre compte à chaque commande plutôt que tous les 15 jours, plans de salle partout."
+h1: Une alternative à Weezevent qui vous paie à chaque commande
+lead: "Chez Weezevent, l'argent des billets est encaissé par Weezevent et versé tous les 15 jours. Chez ArenaSoldOut.com, l'acheteur paie directement sur votre propre compte de paiement, et les plans de salle font partie de chaque événement. Voici les deux offres côte à côte, telles que publiées le 11 novembre 2026."
+related:
+  - { label: Toutes les comparaisons, href: /alternatives, text: "ArenaSoldOut.com face aux autres plateformes de billetterie." }
+  - { label: Paiements, href: /payments, text: "Les comptes de paiement que vous pouvez connecter, par pays." }
+  - { label: Plans de salle, href: /product/seating, text: "Nous dessinons votre salle gratuitement à partir d'un PDF ou d'un croquis." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Prix en euros
+    title: Comment les deux offres se comparent-elles ?
+    lead: "Prix des deux plateformes au 11 novembre 2026. Notre commission par billet vendu à côté de la commission de Weezevent pour la billetterie en ligne. La commission de Weezevent inclut les frais bancaires ; chez nous, les frais de carte sont facturés par votre propre prestataire de paiement, à votre taux, en plus de notre commission."
+    cols: { what: "", us: ArenaSoldOut.com, them: Weezevent }
+    rows:
+      - { what: "Comment les frais sont calculés", us: "Forfait par billet", them: "2,5% du prix du billet, au moins €0,99" }
+      - { what: "Billet à €20", us: "**{eurPrice}** + les frais de carte de votre prestataire", them: "€0,99, frais bancaires inclus" }
+      - { what: "Billet à €50", us: "**{eurPrice}** + les frais de carte de votre prestataire", them: "€1,25, frais bancaires inclus" }
+      - { what: "Billet à €100", us: "**{eurPrice}** + les frais de carte de votre prestataire", them: "€2,50, frais bancaires inclus" }
+      - { what: "Quand vous recevez l'argent", us: "À chaque commande, sur votre propre compte", them: "Tous les 15 jours, versé par Weezevent" }
+      - { what: "Qui détient l'argent de l'acheteur", us: "Vous, dès la première commande", them: "Weezevent, jusqu'au versement" }
+      - { what: "Places numérotées", us: "**{eurSeated}** par billet avec place, plan dessiné pour vous gratuitement", them: "Offre sur mesure uniquement, prix sur demande" }
+      - { what: "Crédits payés à l'avance", us: "À partir de **{eurFrom}** par billet, n'expirent jamais", them: "Absents de leur grille tarifaire" }
+      - { what: "Abonnement", us: Aucun, them: Aucun }
+    note: "Tarifs de Weezevent : [weezevent.com/fr/nos-tarifs](https://weezevent.com/fr/nos-tarifs/) et [weezevent.com/en-gb/our-prices](https://weezevent.com/en-gb/our-prices/), vérifiés le 11 novembre 2026, TVA incluse comme publié. Nos tarifs : [tarifs](/pricing) et [conditions détaillées](/pricing/terms), hors TVA. Weezevent est une marque de son propriétaire ; ArenaSoldOut.com n'est pas affilié à celui-ci."
+
+  - type: prose
+    id: examples
+    title: Que change la différence en pratique ?
+    body: |
+      Tous les chiffres sont calculés aux prix des deux plateformes au 11 novembre 2026.
+
+      **De la trésorerie avant l'événement.** Un festival vend 2 000 billets dans les trois semaines avant l'ouverture des portes. Avec ArenaSoldOut.com, chaque paiement arrive sur votre propre compte dès que la commande est payée : vous réglez la scène, le son et la sécurité avec l'argent des billets. Avec un versement tous les 15 jours, une partie de cet argent arrive après que vous en avez eu besoin.
+
+      **Un théâtre avec des places numérotées.** Chez nous, le plan de salle fait partie de chaque événement : vous envoyez un PDF ou une photo d'un croquis à la main, l'équipe construit le plan gratuitement, et un billet avec place coûte {eurSeated}. Chez Weezevent, les places numérotées relèvent de l'offre sur mesure, au prix sur demande.
+
+      **La commission elle-même.** La nôtre est de {eurPrice} par billet quel que soit son prix ; celle de Weezevent est de 2,5% avec un minimum de €0,99, frais bancaires inclus. Ajoutez les frais de carte de votre prestataire de paiement à la nôtre pour comparer les totaux au prix de votre billet.
+
+  - type: cards
+    id: more
+    eyebrow: Au-delà du prix
+    title: Qu'obtenez-vous d'autre avec ArenaSoldOut.com ?
+    items:
+      - title: L'argent directement sur votre compte
+        text: "Les acheteurs paient sur votre propre compte Stripe, Flitt ou AllPay. ArenaSoldOut.com ne détient jamais de fonds et ne déduit rien de vos ventes."
+        link: { label: Paiements, href: /payments }
+      - title: Plans de salle dessinés pour vous, gratuitement
+        text: "Envoyez un PDF, une photo d'un croquis à la main ou un tableau de rangs et de places. L'équipe construit la salle ; vous ne la dessinez jamais vous-même."
+        link: { label: Plans de salle, href: /product/seating }
+      - title: Tarif réduit pour les billets bon marché
+        text: "Quand chaque billet de l'événement coûte {eurLowMax} ou moins : {lowPercent}% du prix du billet au lieu du forfait. Soirées, courses, fêtes d'enfants, excursions."
+        link: { label: Comment ça marche, href: /pricing#low-price }
+      - title: Des acheteurs dans leur propre langue
+        text: "Page de l'acheteur, e-mails et billets dans la langue de l'acheteur, hébreu de droite à gauche compris. Nous ajoutons toute nouvelle langue sous 40 heures."
+        link: { label: Billets électroniques, href: /product/tickets }
+      - title: Chaque vente dans votre Telegram
+        text: "Créez un événement à partir d'une photo d'affiche dans le bot Telegram et voyez chaque vente et chaque remboursement dans votre groupe en quelques secondes."
+        link: { label: Bot Telegram, href: /product/telegram }
+      - title: Configurez vous-même, ou confiez-nous la tâche
+        text: "Vous créez vos événements en quelques minutes dans l'Event Center ou le bot Telegram ; nous dessinons les plans de salle gratuitement. Pas le temps ? Notre gestionnaire d'événements s'en charge pour vous, en service payant."
+        link: { label: Gestionnaire d'événements, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Les questions des organisateurs qui comparent
+    items:
+      - q: ArenaSoldOut.com est-il moins cher que Weezevent ?
+        a: "Notre commission est plus basse : {eurPrice} par billet contre au moins €0,99 chez Weezevent. La commission de Weezevent inclut les frais bancaires et la nôtre non : ajoutez les frais de carte de votre prestataire de paiement à la nôtre pour comparer les totaux au prix de votre billet."
+      - q: Quand ai-je l'argent des billets ?
+        a: "À chaque commande. L'acheteur paie sur votre propre compte de paiement : Stripe, Flitt ou AllPay. ArenaSoldOut.com ne détient jamais de fonds. Notre commission est facturée après l'événement ou prélevée sur vos crédits."
+      - q: Proposez-vous le paiement sans espèces et les bracelets RFID ?
+        a: "Non. ArenaSoldOut.com vend des billets et les contrôle à l'entrée avec l'application de scan MACS. Si vous avez besoin du paiement sans espèces au bar, gardez un prestataire distinct pour cela."
+      - q: Puis-je transférer mes événements depuis Weezevent ?
+        a: "Oui. Vous créez les événements en quelques minutes dans l'Event Center ou le bot Telegram, et nous dessinons vos plans de salle gratuitement à partir de votre PDF ou croquis. Pas le temps ? Notre gestionnaire d'événements les transfère pour vous, en service payant. Continuez à vendre sur Weezevent jusqu'à ce que votre page chez nous soit prête."
+      - q: Dois-je payer un abonnement ?
+        a: "Non. Vous ne payez que les billets vendus. Les invitations et les billets gratuits pour des événements payants ne supportent aucune commission."
+
+  - type: cta
+    id: start
+    title: Essayez sur votre prochain événement
+    text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
+    primary: { label: Commencer à vendre, href: /start }
+    secondary: { label: Voir les tarifs, href: /pricing }
+    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."
