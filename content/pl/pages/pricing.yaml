@@ -78,7 +78,7 @@ sections:
     title: Ile dokładnie kosztuje mnie bilet?
     items:
       - q: Ile kosztuje bilet z miejscem?
-        a: "Przy płatności po wydarzeniu: US$1,09 poza UE, €0,97 w UE. Bilet bez miejsca to US$0,59 lub €0,53. Sam plan sali nic nie kosztuje: rysujemy go za darmo z PDF-a, zdjęcia odręcznego szkicu lub tabeli z rzędami i miejscami. Przy kredytach prowizja jest niższa, a miejsce dodaje US$0,35 (€0,31) do stawki kredytowej."
+        a: "Przy płatności po wydarzeniu: US$1,18 poza UE, €1,05 w UE. Bilet bez miejsca to US$0,62 lub €0,55. Sam plan sali nic nie kosztuje: rysujemy go za darmo z PDF-a, zdjęcia odręcznego szkicu lub tabeli z rzędami i miejscami. Przy kredytach prowizja jest niższa, a miejsce dodaje US$0,35 (€0,31) do stawki kredytowej."
       - q: Jak działają kredyty?
         a: "Pakiet kredytów kupujesz raz. Każdy sprzedany bilet pobiera swoją prowizję z twoich kredytów według stawki pakietu, aż się skończą. Kredyty nigdy nie wygasają, można je doładować w każdej chwili i są wydawane tylko na nasze usługi: nie można ich wypłacić ani przenieść."
       - q: Co, jeśli kredyty skończą się w trakcie sprzedaży?
@@ -104,7 +104,7 @@ sections:
       - q: Jeden z moich biletów kosztuje więcej niż US$10 (€10 w UE), reszta jest tania. Jaka cena obowiązuje?
         a: "Standardowa, dla wszystkich biletów wydarzenia: niższa stawka wymaga, aby każdy bilet każdej kategorii i progu cenowego kosztował US$10 lub mniej (€10 w UE). Bilet za US$5 obok biletu za US$25 jest rozliczany po cenie standardowej."
       - q: Mam obiekt i organizuję wiele wydarzeń w miesiącu. Czy jest inna oferta?
-        a: "Tak. Właściciele stałych obiektów (teatrów, klubów, stadionów, cyrków i innych miejsc, które same organizują wydarzenia, przez cały rok lub sezonowo) płacą {percent}% ceny biletu, liczone po kodach promocyjnych i bez twojej opłaty serwisowej. Prowizja za bilet jest ograniczona do US$1,09 (€1,09 w UE), tak samo z miejscem i bez. Zaproszenia nie podlegają prowizji. Faktury wystawiamy co miesiąc. Status obiektu włącza nasz zespół: napisz do nas ze [strony kontaktowej](/contact). Pełne warunki są w [szczegółowych warunkach](/pricing/terms)."
+        a: "Tak. Właściciele stałych obiektów (teatrów, klubów, stadionów, cyrków i innych miejsc, które same organizują wydarzenia, przez cały rok lub sezonowo) płacą {percent}% ceny biletu, liczone po kodach promocyjnych i bez twojej opłaty serwisowej. Prowizja za bilet jest ograniczona do US$1,18 (€1,09 w UE), tak samo z miejscem i bez. Zaproszenia nie podlegają prowizji. Faktury wystawiamy co miesiąc. Status obiektu włącza nasz zespół: napisz do nas ze [strony kontaktowej](/contact). Pełne warunki są w [szczegółowych warunkach](/pricing/terms)."
 
   - type: cta
     id: start

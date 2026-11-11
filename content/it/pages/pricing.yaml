@@ -78,7 +78,7 @@ sections:
     title: Quanto mi costa un biglietto, esattamente?
     items:
       - q: Quanto costa un biglietto con posto?
-        a: "Pagando dopo l'evento: US$1,09 fuori dall'UE, €0,97 nell'UE. Un biglietto senza posto costa US$0,59 o €0,53. La mappa dei posti in sé non costa nulla: la disegniamo gratis da un PDF, da una foto di uno schizzo a mano o da una tabella di file e posti. Con i crediti la commissione è più bassa, e un posto aggiunge US$0,35 (€0,31) alla tariffa dei crediti."
+        a: "Pagando dopo l'evento: US$1,18 fuori dall'UE, €1,05 nell'UE. Un biglietto senza posto costa US$0,62 o €0,55. La mappa dei posti in sé non costa nulla: la disegniamo gratis da un PDF, da una foto di uno schizzo a mano o da una tabella di file e posti. Con i crediti la commissione è più bassa, e un posto aggiunge US$0,35 (€0,31) alla tariffa dei crediti."
       - q: Come funzionano i crediti?
         a: "Compri un pacchetto di crediti una volta sola. Ogni biglietto venduto preleva la sua commissione dai tuoi crediti alla tariffa del pacchetto, finché non finiscono. I crediti non scadono mai, si possono ricaricare in qualsiasi momento e si usano solo per i nostri servizi: non si possono prelevare né trasferire."
       - q: E se i crediti finiscono a metà delle vendite?
@@ -104,7 +104,7 @@ sections:
       - q: Uno dei miei biglietti costa più di US$10 (€10 nell'UE), gli altri sono economici. Quale prezzo vale?
         a: "Quello standard, per tutti i biglietti dell'evento: la tariffa ridotta richiede che ogni biglietto di ogni categoria e gradino di prezzo costi US$10 o meno (€10 nell'UE). Un biglietto da US$5 accanto a uno da US$25 è al prezzo standard."
       - q: Ho una struttura e organizzo molti eventi al mese. Esiste un'offerta diversa?
-        a: "Sì. I proprietari di strutture permanenti (teatri, club, stadi, circhi e altri luoghi che organizzano eventi in proprio, tutto l'anno o a stagione) pagano il {percent}% del prezzo del biglietto, calcolato dopo i codici promozionali e senza la tua commissione di servizio. La commissione per biglietto è limitata a US$1,09 (€1,09 nell'UE), uguale con e senza posto. Gli inviti non hanno commissione. Fatturiamo ogni mese. Il nostro team attiva lo stato di struttura: scrivici dalla [pagina dei contatti](/contact). Le condizioni complete sono nelle [condizioni dettagliate](/pricing/terms)."
+        a: "Sì. I proprietari di strutture permanenti (teatri, club, stadi, circhi e altri luoghi che organizzano eventi in proprio, tutto l'anno o a stagione) pagano il {percent}% del prezzo del biglietto, calcolato dopo i codici promozionali e senza la tua commissione di servizio. La commissione per biglietto è limitata a US$1,18 (€1,09 nell'UE), uguale con e senza posto. Gli inviti non hanno commissione. Fatturiamo ogni mese. Il nostro team attiva lo stato di struttura: scrivici dalla [pagina dei contatti](/contact). Le condizioni complete sono nelle [condizioni dettagliate](/pricing/terms)."
 
   - type: cta
     id: start

@@ -6,9 +6,13 @@
 # US dollars are the base (every country outside the EU). Euro prices (EU countries) are the dollar
 # prices converted at the rate in `eur` below: owner's decision of 09.11.2026. Change the rate and the
 # euro numbers together, in this file and in pricing/eu.yaml.
+# Pay-as-you-go base (owner, 11.11.2026): US$0.62, US$1.18 with a seat; at the rate €0.55 and €1.05.
+# Floor: the euro pay-as-you-go price never goes below €0.55 / €1.05 after a rate change, so it stays
+# above what current clients pay (€0.50 / €1.00, individual rates). If the rate pushes it lower, raise
+# the dollar price instead. Ticket Tailor for reference: US$0.85 / €0.70 per ticket, a seat counts twice.
 
 # Permanent venues: percent of the ticket price (after promo codes, without our fee), capped per
-# ticket: US$1.09 (the seated pay-as-you-go price); in the EU €1.09, set in `eur.venues_cap`.
+# ticket: US$1.18 (the seated pay-as-you-go price); in the EU €1.09, set in `eur.venues_cap`.
 venues_percent: 2
 
 # Events where EVERY ticket costs at most `max_ticket` before promo codes (inclusive), all categories

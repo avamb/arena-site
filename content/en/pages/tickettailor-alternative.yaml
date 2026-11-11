@@ -4,9 +4,9 @@
 # except the worked examples in the "examples" section: update those by hand when the tariff changes.
 # Only rows we could check on their public pricing page are in the table; everything else is about us.
 title: "Ticket Tailor alternative with lower ticket fees"
-description: "Compare ArenaSoldOut.com and Ticket Tailor: US$0.59 vs US$0.85 per ticket pay as you go, cheaper credits, free seating plans, payouts to your own account."
+description: "Compare ArenaSoldOut.com and Ticket Tailor: US$0.62 vs US$0.85 per ticket pay as you go, cheaper credits, free seating plans, payouts to your own account."
 h1: A Ticket Tailor alternative that costs less per ticket
-lead: "Ticket Tailor and ArenaSoldOut.com both charge a flat fee per ticket instead of a percentage of your revenue. At the same volume, ArenaSoldOut.com costs less: US$0.59 instead of US$0.85 per ticket pay as you go, and less with credits too. Below are both price lists side by side, as published on 9 November 2026."
+lead: "Ticket Tailor and ArenaSoldOut.com both charge a flat fee per ticket instead of a percentage of your revenue. At the same volume, ArenaSoldOut.com costs less: US$0.62 instead of US$0.85 per ticket pay as you go, and less with credits too. Below are both price lists side by side, as published on 9 November 2026."
 related:
   - { label: Pricing, href: /pricing, text: "Pay as you go or credits, the calculator and every credit pack." }
   - { label: All features, href: /features, text: "Everything ArenaSoldOut.com does, on one page." }
@@ -37,9 +37,9 @@ sections:
     id: examples
     title: What does that mean for one event?
     body: |
-      **1,000 tickets, general admission, pay as you go.** ArenaSoldOut.com: 1,000 × US$0.59 = **US$590**. Ticket Tailor: 1,000 × US$0.85 = US$850. You keep **US$260** more.
+      **1,000 tickets, general admission, pay as you go.** ArenaSoldOut.com: 1,000 × US$0.62 = **US$620**. Ticket Tailor: 1,000 × US$0.85 = US$850. You keep **US$230** more.
 
-      **500 seated tickets, pay as you go.** ArenaSoldOut.com: 500 × US$1.09 = **US$545**. Ticket Tailor: 500 × US$1.70 = US$850. You keep **US$305** more, and we draw the seating plan for free.
+      **500 seated tickets, pay as you go.** ArenaSoldOut.com: 500 × US$1.18 = **US$590**. Ticket Tailor: 500 × US$1.70 = US$850. You keep **US$260** more, and we draw the seating plan for free.
 
       **1,000 tickets a year, paid upfront with credits.** ArenaSoldOut.com credit pack 1K: **US$430**. Ticket Tailor, 1,000 credits: US$520. **US$90** less, and the credits never expire on either platform.
 

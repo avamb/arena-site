@@ -78,7 +78,7 @@ sections:
     title: Was kostet mich ein Ticket genau?
     items:
       - q: Wie viel kostet ein Ticket mit Platz?
-        a: "Bei Zahlung nach der Veranstaltung: US$1,09 außerhalb der EU, €0,97 in der EU. Ein Ticket ohne Platz kostet US$0,59 oder €0,53. Der Saalplan selbst kostet nichts: Wir zeichnen ihn kostenlos nach einem PDF, einem Foto einer Handskizze oder einer Tabelle mit Reihen und Plätzen. Mit Credits ist die Provision niedriger, und ein Platz kostet US$0,35 (€0,31) zusätzlich zum Credit-Preis."
+        a: "Bei Zahlung nach der Veranstaltung: US$1,18 außerhalb der EU, €1,05 in der EU. Ein Ticket ohne Platz kostet US$0,62 oder €0,55. Der Saalplan selbst kostet nichts: Wir zeichnen ihn kostenlos nach einem PDF, einem Foto einer Handskizze oder einer Tabelle mit Reihen und Plätzen. Mit Credits ist die Provision niedriger, und ein Platz kostet US$0,35 (€0,31) zusätzlich zum Credit-Preis."
       - q: Wie funktionieren Credits?
         a: "Sie kaufen einmal ein Credit-Paket. Jedes verkaufte Ticket zieht seine Provision zum Preis des Pakets von Ihren Credits ab, bis sie aufgebraucht sind. Credits verfallen nie, können jederzeit aufgeladen werden und werden nur für unsere Leistungen verwendet: Sie lassen sich weder auszahlen noch übertragen."
       - q: Was, wenn die Credits mitten im Verkauf aufgebraucht sind?
@@ -104,7 +104,7 @@ sections:
       - q: Eines meiner Tickets kostet mehr als US$10 (€10 in der EU), die übrigen sind günstig. Welcher Preis gilt?
         a: "Der Standardpreis, für alle Tickets des Events: Der niedrigere Satz setzt voraus, dass jedes Ticket jeder Kategorie und Preisstufe US$10 oder weniger kostet (€10 in der EU). Ein Ticket für US$5 neben einem Ticket für US$25 gilt zum Standardpreis."
       - q: Ich betreibe eine Spielstätte und richte viele Events im Monat aus. Gibt es ein anderes Angebot?
-        a: "Ja. Inhaber fester Spielstätten (Theater, Clubs, Stadien, Zirkusse und andere Orte, die selbst Veranstaltungen ausrichten, ganzjährig oder saisonal) zahlen {percent}% des Ticketpreises, berechnet nach Promo-Codes und ohne Ihre Servicegebühr. Die Provision pro Ticket ist auf US$1,09 (€1,09 in der EU) begrenzt, mit und ohne Platz gleich. Freikarten sind provisionsfrei. Wir stellen monatlich Rechnung. Unser Team schaltet den Spielstätten-Status frei: Schreiben Sie uns über die [Kontaktseite](/contact). Die vollständigen Bedingungen stehen in den [detaillierten Bedingungen](/pricing/terms)."
+        a: "Ja. Inhaber fester Spielstätten (Theater, Clubs, Stadien, Zirkusse und andere Orte, die selbst Veranstaltungen ausrichten, ganzjährig oder saisonal) zahlen {percent}% des Ticketpreises, berechnet nach Promo-Codes und ohne Ihre Servicegebühr. Die Provision pro Ticket ist auf US$1,18 (€1,09 in der EU) begrenzt, mit und ohne Platz gleich. Freikarten sind provisionsfrei. Wir stellen monatlich Rechnung. Unser Team schaltet den Spielstätten-Status frei: Schreiben Sie uns über die [Kontaktseite](/contact). Die vollständigen Bedingungen stehen in den [detaillierten Bedingungen](/pricing/terms)."
 
   - type: cta
     id: start

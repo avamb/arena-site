@@ -78,7 +78,7 @@ sections:
     title: Quanto custa exatamente um ingresso para mim?
     items:
       - q: Quanto custa um ingresso com assento?
-        a: "Pagando depois do evento: US$1,09 fora da UE, €0,97 na UE. Um ingresso sem assento custa US$0,59 ou €0,53. O mapa de assentos em si não custa nada: nós o desenhamos de graça a partir de um PDF, de uma foto de um esboço à mão ou de uma tabela de fileiras e assentos. Com créditos a comissão é menor, e um assento acrescenta US$0,35 (€0,31) à taxa dos créditos."
+        a: "Pagando depois do evento: US$1,18 fora da UE, €1,05 na UE. Um ingresso sem assento custa US$0,62 ou €0,55. O mapa de assentos em si não custa nada: nós o desenhamos de graça a partir de um PDF, de uma foto de um esboço à mão ou de uma tabela de fileiras e assentos. Com créditos a comissão é menor, e um assento acrescenta US$0,35 (€0,31) à taxa dos créditos."
       - q: Como funcionam os créditos?
         a: "Você compra um pacote de créditos uma vez. Cada ingresso vendido desconta sua comissão dos seus créditos, na taxa do pacote, até que acabem. Os créditos nunca expiram, podem ser recarregados a qualquer momento e são usados apenas nos nossos serviços: não podem ser sacados nem transferidos."
       - q: E se os créditos acabarem no meio das vendas?
@@ -104,7 +104,7 @@ sections:
       - q: Um dos meus ingressos custa mais de US$10 (€10 na UE), o resto é barato. Qual preço vale?
         a: "O padrão, para todos os ingressos do evento: a taxa menor exige que todos os ingressos de todas as categorias e faixas de preço custem US$10 ou menos (€10 na UE). Um ingresso de US$5 ao lado de um de US$25 fica no preço padrão."
       - q: Tenho um local e realizo muitos eventos por mês. Existe outra condição?
-        a: "Sim. Donos de locais permanentes (teatros, clubes, estádios, circos e outros espaços que realizam eventos por conta própria, o ano todo ou por temporada) pagam {percent}% do preço do ingresso, calculado após os códigos promocionais e sem a sua taxa de serviço. A comissão por ingresso é limitada a US$1,09 (€1,09 na UE), igual com e sem assento. Convites não têm comissão. Cobramos mensalmente. Nossa equipe ativa o status de local: escreva para nós pela [página de contato](/contact). As condições completas estão nas [condições detalhadas](/pricing/terms)."
+        a: "Sim. Donos de locais permanentes (teatros, clubes, estádios, circos e outros espaços que realizam eventos por conta própria, o ano todo ou por temporada) pagam {percent}% do preço do ingresso, calculado após os códigos promocionais e sem a sua taxa de serviço. A comissão por ingresso é limitada a US$1,18 (€1,09 na UE), igual com e sem assento. Convites não têm comissão. Cobramos mensalmente. Nossa equipe ativa o status de local: escreva para nós pela [página de contato](/contact). As condições completas estão nas [condições detalhadas](/pricing/terms)."
 
   - type: cta
     id: start
