@@ -170,6 +170,9 @@ export function createAnalytics(env: AnalyticsEnv): Analytics {
           // The address bar keeps the code; nothing else depends on it.
         }
       }
+      // The contact code of an e-mail link, kept in memory for this page only, for the Umami loader in Base.astro
+      // (it identifies the visit with it). Set even when own analytics is off: the code is already off the address bar.
+      if (cid !== null) (win as unknown as { __asoContact?: string }).__asoContact = cid;
       if (!endpoint) return;
       pendingCid = cid;
       visitCid = cid;
