@@ -21,6 +21,9 @@ import {
 
 export * from './consent-lib.ts';
 
+/** sessionStorage key of the e-mail contact code held for the Umami loader (spec 52 section 13). */
+const CONTACT_KEY = 'aso_contact';
+
 export interface AnalyticsEnv {
   win: Window;
   endpoint: string;
@@ -172,7 +175,17 @@ export function createAnalytics(env: AnalyticsEnv): Analytics {
       }
       // The contact code of an e-mail link, kept in memory for this page only, for the Umami loader in Base.astro
       // (it identifies the visit with it). Set even when own analytics is off: the code is already off the address bar.
-      if (cid !== null) (win as unknown as { __asoContact?: string }).__asoContact = cid;
+      // Umami 3 builds a session from the id it is sent, so every later page of the visit has to send it too, or it lands in
+      // another anonymous session. The code therefore stays in this tab's sessionStorage (gone when the tab closes, never a
+      // cookie, never sent anywhere but as the Umami distinct id). Owner decision 14.11: no consent step for a mailing recipient.
+      let contact = cid;
+      try {
+        if (cid !== null) win.sessionStorage.setItem(CONTACT_KEY, cid);
+        else contact = readCid('?cid=' + encodeURIComponent(win.sessionStorage.getItem(CONTACT_KEY) ?? ''));
+      } catch {
+        // Storage blocked: the landing page is still identified, the pages after it are not.
+      }
+      if (contact !== null) (win as unknown as { __asoContact?: string }).__asoContact = contact;
       if (!endpoint) return;
       pendingCid = cid;
       visitCid = cid;
