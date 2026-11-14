@@ -118,10 +118,35 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
           function shown() { var e = document.documentElement.getAttribute('data-theme'); return e || (mq.matches ? 'dark' : 'light'); }
           function source() { return document.documentElement.getAttribute('data-theme') ? 'choice' : 'device'; }
           /* Loaded after the page is idle so third-party analytics never competes with first paint (Lighthouse gate). */
+          /* Path of an e-mail contact (owner decision 13.11): the code of the contact record (pseudonym, no e-mail, no name)
+             that the short link carried as ?cid=. consent-banner.ts strips it from the address bar and keeps it in
+             window.__asoContact, so Umami never records it in the page address. The before-send hook puts it on EVERY
+             Umami payload from the first page view, so the whole session is linked to the contact (Umami "distinct id"). */
+          window.asoUmamiBeforeSend = function (type, payload) {
+            var c = window.__asoContact;
+            if (c && payload && !payload.id) payload.id = c;
+            return payload;
+          };
+          /* Key actions for the path report: the main buttons (data-track labels) and an opened FAQ question. */
+          document.addEventListener('click', function (ev) {
+            var t = ev.target && ev.target.closest ? ev.target.closest('[data-track]') : null;
+            if (t) send('cta_click', { name: t.getAttribute('data-track'), path: location.pathname });
+          }, true);
+          document.addEventListener('toggle', function (ev) {
+            var d = ev.target;
+            if (!d || d.tagName !== 'DETAILS' || !d.open || !d.closest('.faq')) return;
+            var s = d.querySelector('summary');
+            send('faq_open', { question: (s ? s.textContent : '').replace(/\s+/g, ' ').trim().slice(0, 100), path: location.pathname });
+          }, true);
           function load() {
             var el = document.createElement('script');
             el.src = umamiSrc; el.defer = true; el.setAttribute('data-website-id', umamiId); el.setAttribute('data-auto-track', 'true');
-            el.onload = function () { send('theme_view', { system_theme: mq.matches ? 'dark' : 'light', theme: shown(), theme_source: source() }); };
+            el.setAttribute('data-before-send', 'asoUmamiBeforeSend');
+            el.onload = function () {
+              send('theme_view', { system_theme: mq.matches ? 'dark' : 'light', theme: shown(), theme_source: source() });
+              /* Fallback for an Umami build that ignores the payload id: identify explicitly. */
+              if (window.__asoContact && window.umami && typeof window.umami.identify === 'function') window.umami.identify(window.__asoContact);
+            };
             document.head.appendChild(el);
           }
           window.addEventListener('load', function () { (window.requestIdleCallback || function (f) { setTimeout(f, 2000); })(load); });

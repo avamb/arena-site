@@ -149,6 +149,23 @@ test('a malformed cid is stripped from the address and never sent', () => {
   assert.deepEqual(b.history.replaced, ['/pricing']);
 });
 
+test('the contact code is kept for the Umami loader, even with own analytics off, and a bad code is not', () => {
+  const held = (b: ReturnType<typeof browser>) => (b.win as unknown as { __asoContact?: string }).__asoContact;
+  const on = browser({ url: `https://arenasoldout.com/ru/first-event/?utm_source=email&cid=${CID}` });
+  createAnalytics({ win: on.win, endpoint: on.endpoint }).start();
+  assert.equal(held(on), CID);
+  assert.deepEqual(on.history.replaced, ['/ru/first-event/?utm_source=email']);
+  const off = browser({ url: `https://arenasoldout.com/pricing?cid=${CID}` });
+  createAnalytics({ win: off.win, endpoint: '' }).start();
+  assert.equal(held(off), CID);
+  const bad = browser({ url: 'https://arenasoldout.com/pricing?cid=nope' });
+  createAnalytics({ win: bad.win, endpoint: bad.endpoint }).start();
+  assert.equal(held(bad), undefined);
+  const none = browser({ url: 'https://arenasoldout.com/pricing' });
+  createAnalytics({ win: none.win, endpoint: none.endpoint }).start();
+  assert.equal(held(none), undefined);
+});
+
 test('accept: consent cookie, aid cookie, then page_view and consent with the aid', () => {
   const b = browser();
   const a = createAnalytics({ win: b.win, endpoint: b.endpoint });
