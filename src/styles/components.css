@@ -480,24 +480,32 @@ footer{border-top:1px solid var(--line);padding-block:48px 28px;font-size:14px}
 .contact-inline{max-width:640px;padding:28px 24px}
 .section .lead a{color:var(--accent);font-weight:600}
 
-/* Consent banner (spec 50). Fixed overlay: appearing never moves the page. Both choices are the same button. */
-.consent{position:fixed;inset-inline:0;bottom:0;z-index:60;padding:0 var(--gutter) max(12px,env(safe-area-inset-bottom));pointer-events:none}
+/* Consent banner (spec 50). Compact fixed bar: appearing never moves the page. Both choices are the same button.
+   Phone: a slim bar at the bottom (title + Details + two buttons, about 100px); the full text opens on Details.
+   Wide screens: a small card in the bottom corner. */
+.consent{position:fixed;inset-inline:0;bottom:0;z-index:60;padding:0 12px max(10px,env(safe-area-inset-bottom));pointer-events:none}
 .consent[hidden]{display:none}
 .consent:focus{outline:none}
-.consent-box{pointer-events:auto;max-width:720px;max-height:calc(100dvh - 24px);overflow-y:auto;margin-inline:auto;background:var(--surface);color:var(--fg);border:1px solid var(--line-2);border-radius:var(--r-lg);box-shadow:var(--shadow-lg);padding:20px 22px;font-size:14px;line-height:1.5}
-.consent h2{font-size:16px;font-weight:700;margin:0 0 6px}
-.consent p{margin:0 0 10px;color:var(--fg-2)}
+.consent-box{pointer-events:auto;max-width:520px;max-height:calc(100dvh - 24px);overflow-y:auto;margin-inline:auto;background:var(--surface);color:var(--fg);border:1px solid var(--line-2);border-radius:var(--r-lg);box-shadow:var(--shadow-lg);padding:10px 12px;font-size:13px;line-height:1.4}
+.consent-head{display:flex;align-items:center;gap:6px 12px;margin:0 0 8px}
+.consent h2{flex:1 1 auto;min-width:0;font-size:14px;font-weight:700;line-height:1.3;margin:0}
+.consent p{margin:0 0 8px;color:var(--fg-2)}
 .consent a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px}
-.consent-cats{margin:0 0 12px;display:grid;gap:8px}
-.consent-cats div{display:grid;grid-template-columns:minmax(0,9.5rem) minmax(0,1fr);gap:4px 14px}
+.consent-more,.consent-close{flex:0 0 auto;background:none;border:0;padding:6px 2px;color:var(--accent);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.consent-more::after{content:"\25BE";display:inline-block;margin-inline-start:4px;font-size:11px;text-decoration:none}
+.consent-more[aria-expanded="true"]::after{transform:rotate(180deg)}
+.consent-close{color:var(--fg-2)}
+.consent-close[hidden],.consent-details[hidden]{display:none}
+.consent-details{max-height:min(44dvh,300px);overflow-y:auto;margin:0 0 8px;padding-bottom:2px}
+.consent-cats{margin:0 0 4px;display:grid;gap:8px}
+.consent-cats div{display:grid;grid-template-columns:1fr;gap:2px}
 .consent-cats dt{font-weight:600;color:var(--fg)}
 .consent-cats dd{margin:0;color:var(--fg-2)}
 .consent-state{min-height:0;font-weight:600;color:var(--fg)!important}
 .consent-state:empty{display:none}
-.consent-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.consent-actions .btn{flex:1 1 11rem;justify-content:center}
-.consent-close{margin-inline-start:auto;background:none;border:0;padding:6px 4px;color:var(--fg-2);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
-.consent-close[hidden]{display:none}
+.consent-actions{display:flex;gap:8px}
+.consent-actions .btn{flex:1 1 0;min-width:0;height:auto;min-height:40px;padding:6px 10px;justify-content:center;text-align:center;font-size:13px;line-height:1.2;overflow-wrap:anywhere}
+@media (max-width:767px){html[data-consent-bar] body{padding-bottom:var(--consent-h,0)}}
+@media (min-width:768px){.consent{inset-inline:auto;inset-inline-end:20px;bottom:max(20px,env(safe-area-inset-bottom));width:min(400px,calc(100vw - 40px));padding:0}.consent-box{max-width:none;margin-inline:0;padding:14px 16px;font-size:14px}.consent h2{font-size:15px}.consent-actions .btn{font-size:14px;min-height:42px}.consent-details{max-height:min(50dvh,340px)}}
 .linkbtn{background:none;border:0;padding:0;margin:0;color:inherit;font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
 .linkbtn:hover{color:var(--fg)}
-@media (max-width:560px){.consent-box{padding:16px}.consent-cats{font-size:13px}.consent-cats div{grid-template-columns:1fr}.consent-actions .btn{flex-basis:100%}}

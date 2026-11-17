@@ -88,6 +88,7 @@
   "consent.accept": "Aceitar análise de dados",
   "consent.decline": "Recusar análise de dados",
   "consent.close": "Fechar",
+  "consent.more": "Detalhes",
   "consent.settings": "Configurações de cookies",
   "consent.state.on": "A análise de dados está ativada.",
   "consent.state.off": "A análise de dados está desativada."
