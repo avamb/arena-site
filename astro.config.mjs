@@ -28,7 +28,7 @@ export default defineConfig({
     svelte(),
     sitemap({
       // Pages of languages not in the menu yet are noindex: keep them out. Blog posts stay, and so does the blog index of a language that has archive posts.
-      filter: (page) => !/\/start\/(thanks|continue|confirm)/.test(page) && !page.endsWith('/404')
+      filter: (page) => !/\/start\/(thanks|continue|confirm)|\/subscribe\/(confirm|unsubscribe)\/?$/.test(page) && !page.endsWith('/404')
         && !languages.some((l) => !l.inMenu && new RegExp(`^${siteUrl}/${l.code}(/(?!blog/).*)?/?$`).test(page)
           && !(new RegExp(`^${siteUrl}/${l.code}/blog/?$`).test(page) && existsSync(`content/${l.code}/posts`))),
       i18n: {

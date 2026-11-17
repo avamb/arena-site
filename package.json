@@ -23,6 +23,7 @@
     "lhci": "lhci autorun",
     "onboarding:test": "node --import tsx --test src/scripts/onboarding-lib.test.ts",
     "contact:test": "node --import tsx --test worker/contact.test.ts",
+    "subscribe:test": "node --import tsx --test worker/subscribe.test.ts src/scripts/subscribe-lib.test.ts",
     "analytics:test": "node --import tsx --test src/scripts/analytics.test.ts",
     "deploy": "wrangler deploy",
     "check:links": "node scripts/check-links.mjs",

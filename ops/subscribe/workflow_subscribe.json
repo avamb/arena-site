@@ -1,0 +1,942 @@
+{
+ "name": "Arena site: subscribe",
+ "nodes": [
+  {
+   "id": "webhook",
+   "name": "Site subscribe",
+   "webhookId": "arena-site-subscribe",
+   "type": "n8n-nodes-base.webhook",
+   "typeVersion": 2,
+   "position": [
+    0,
+    300
+   ],
+   "parameters": {
+    "httpMethod": "POST",
+    "path": "arena-site-subscribe",
+    "authentication": "headerAuth",
+    "responseMode": "responseNode",
+    "options": {}
+   },
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "pOK4dJv0E29U6JRR",
+     "name": "Arena site subscribe token"
+    }
+   }
+  },
+  {
+   "id": "prepare",
+   "name": "Prepare",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    240,
+    300
+   ],
+   "parameters": {
+    "jsCode": "// Subscription call from arenasoldout.com (worker/subscribe.ts in avamb/arena-site: Turnstile, the honeypot and the\n// field checks are already done there; the Worker also generated the token). Checked again here, because the\n// webhook is a public URL guarded only by a shared header.\nconst b = ($input.first().json.body) || {};\nconst cut = (v, n) => String(v == null ? '' : v).trim().slice(0, n);\nconst bad = (action) => [{ json: { route: 'bad', action } }];\nconst HEX32 = /^[0-9a-f]{32}$/;\nconst action = ['subscribe', 'confirm', 'unsubscribe'].includes(b.action) ? b.action : '';\nif (!action) return bad('');\nconst token = cut(b.token, 64);\nif (!HEX32.test(token)) return bad(action);\nif (action !== 'subscribe') return [{ json: { route: 'token', action, token } }];\n\n// No quote or backslash in an address: it goes into a Twenty filter string.\nconst email = cut(b.email, 200).toLowerCase();\nif (!/^[^\\s@\"\\\\]{1,64}@[^\\s@\"\\\\]{1,190}\\.[^\\s@\"\\\\]{2,}$/.test(email)) return bad(action);\nconst LANGS = ['en', 'es', 'cs', 'ru', 'no', 'he', 'uk', 'de', 'fr', 'it', 'pl', 'pt'];\nconst utm = {};\nfor (const k of ['source', 'medium', 'campaign', 'term', 'content']) { const v = cut((b.utm || {})[k], 100); if (v) utm[k] = v; }\nconst cid = /^[abcdefghjkmnpqrstuvwxyz23456789]{10}$/.test(cut(b.cid, 20)) ? cut(b.cid, 20) : '';\nconst page = cut(b.page, 300);\nreturn [{\n  json: {\n    route: 'subscribe', action, token, email, utm, cid,\n    lang: LANGS.includes(b.lang) ? b.lang : 'en',\n    source: b.source === 'popup' ? 'popup' : 'footer',\n    page: page.startsWith('/') && !page.startsWith('//') ? page : '/',\n    consent: /^\\d{4}-\\d{2}-\\d{2}$/.test(cut(b.consent, 20)) ? cut(b.consent, 20) : '',\n    receivedAt: cut(b.received_at, 40) || new Date().toISOString(),\n    country: cut(b.country, 2),\n  },\n}];\n"
+   }
+  },
+  {
+   "id": "route",
+   "name": "Route",
+   "type": "n8n-nodes-base.switch",
+   "typeVersion": 3.2,
+   "position": [
+    480,
+    300
+   ],
+   "parameters": {
+    "rules": {
+     "values": [
+      {
+       "conditions": {
+        "options": {
+         "caseSensitive": true,
+         "leftValue": "",
+         "typeValidation": "strict",
+         "version": 2
+        },
+        "conditions": [
+         {
+          "id": "Routesubscribe",
+          "leftValue": "={{ $json.route }}",
+          "rightValue": "subscribe",
+          "operator": {
+           "type": "string",
+           "operation": "equals"
+          }
+         }
+        ],
+        "combinator": "and"
+       },
+       "renameOutput": true,
+       "outputKey": "subscribe"
+      },
+      {
+       "conditions": {
+        "options": {
+         "caseSensitive": true,
+         "leftValue": "",
+         "typeValidation": "strict",
+         "version": 2
+        },
+        "conditions": [
+         {
+          "id": "Routetoken",
+          "leftValue": "={{ $json.route }}",
+          "rightValue": "token",
+          "operator": {
+           "type": "string",
+           "operation": "equals"
+          }
+         }
+        ],
+        "combinator": "and"
+       },
+       "renameOutput": true,
+       "outputKey": "token"
+      },
+      {
+       "conditions": {
+        "options": {
+         "caseSensitive": true,
+         "leftValue": "",
+         "typeValidation": "strict",
+         "version": 2
+        },
+        "conditions": [
+         {
+          "id": "Routebad",
+          "leftValue": "={{ $json.route }}",
+          "rightValue": "bad",
+          "operator": {
+           "type": "string",
+           "operation": "equals"
+          }
+         }
+        ],
+        "combinator": "and"
+       },
+       "renameOutput": true,
+       "outputKey": "bad"
+      }
+     ]
+    },
+    "options": {}
+   }
+  },
+  {
+   "id": "twenty-send-by-cid",
+   "name": "Twenty: send by cid",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    720,
+    100
+   ],
+   "retryOnFail": true,
+   "maxTries": 3,
+   "waitBetweenTries": 2000,
+   "parameters": {
+    "method": "GET",
+    "url": "={{ 'https://crm.arenasoldout.com/rest/outreachSends?limit=1&filter=' + encodeURIComponent('contactCode[eq]:\"' + ($json.cid || 'none') + '\"') }}",
+    "authentication": "genericCredentialType",
+    "genericAuthType": "httpHeaderAuth",
+    "options": {
+     "timeout": 30000
+    }
+   },
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "UIbE9X3GR29KtVxn",
+     "name": "Twenty CRM API"
+    }
+   },
+   "onError": "continueRegularOutput"
+  },
+  {
+   "id": "twenty-person-by-email",
+   "name": "Twenty: person by email",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    960,
+    100
+   ],
+   "retryOnFail": true,
+   "maxTries": 3,
+   "waitBetweenTries": 2000,
+   "parameters": {
+    "method": "GET",
+    "url": "={{ 'https://crm.arenasoldout.com/rest/people?limit=5&filter=' + encodeURIComponent('emails.primaryEmail[ilike]:\"' + $('Prepare').first().json.email + '\"') }}",
+    "authentication": "genericCredentialType",
+    "genericAuthType": "httpHeaderAuth",
+    "options": {
+     "timeout": 30000
+    }
+   },
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "UIbE9X3GR29KtVxn",
+     "name": "Twenty CRM API"
+    }
+   }
+  },
+  {
+   "id": "pick",
+   "name": "Pick",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    1200,
+    100
+   ],
+   "parameters": {
+    "jsCode": "// Which Twenty card does this subscription belong to?\n//  1. the card of the e-mail contact code `cid` (an outreachSend with that contactCode points at its person), so a\n//     reader who came from a letter is linked to the card we already hold, whatever address they typed;\n//  2. otherwise the card whose primary or additional e-mail IS the typed address (the filter is a case-insensitive\n//     pattern, so the match is repeated here exactly);\n//  3. otherwise none: a new card is created.\nconst p = $('Prepare').first().json;\nconst list = (node, key) => (((($(node).first() || { json: {} }).json || {}).data || {})[key]) || [];\nconst sends = list('Twenty: send by cid', 'outreachSends');\nconst people = list('Twenty: person by email', 'people');\nconst mail = (x) => String((x.emails && x.emails.primaryEmail) || '').toLowerCase();\nconst same = (x) => mail(x) === p.email || (x.emails && Array.isArray(x.emails.additionalEmails) && x.emails.additionalEmails.some((e) => String(e).toLowerCase() === p.email));\nconst byEmail = people.find(same) || null;\nconst cidPersonId = p.cid && sends.length && sends[0].personId ? String(sends[0].personId) : '';\nlet existing = byEmail;\nlet fetchId = '';\nif (cidPersonId && !(byEmail && byEmail.id === cidPersonId)) { existing = null; fetchId = cidPersonId; }\nreturn [{ json: { needFetch: fetchId ? 'yes' : 'no', fetchId, existing, fallback: byEmail, cidBound: Boolean(cidPersonId) } }];\n"
+   }
+  },
+  {
+   "id": "need-card",
+   "name": "Need card",
+   "type": "n8n-nodes-base.switch",
+   "typeVersion": 3.2,
+   "position": [
+    1440,
+    100
+   ],
+   "parameters": {
+    "rules": {
+     "values": [
+      {
+       "conditions": {
+        "options": {
+         "caseSensitive": true,
+         "leftValue": "",
+         "typeValidation": "strict",
+         "version": 2
+        },
+        "conditions": [
+         {
+          "id": "Need cardyes",
+          "leftValue": "={{ $json.needFetch }}",
+          "rightValue": "yes",
+          "operator": {
+           "type": "string",
+           "operation": "equals"
+          }
+         }
+        ],
+        "combinator": "and"
+       },
+       "renameOutput": true,
+       "outputKey": "yes"
+      },
+      {
+       "conditions": {
+        "options": {
+         "caseSensitive": true,
+         "leftValue": "",
+         "typeValidation": "strict",
+         "version": 2
+        },
+        "conditions": [
+         {
+          "id": "Need cardno",
+          "leftValue": "={{ $json.needFetch }}",
+          "rightValue": "no",
+          "operator": {
+           "type": "string",
+           "operation": "equals"
+          }
+         }
+        ],
+        "combinator": "and"
+       },
+       "renameOutput": true,
+       "outputKey": "no"
+      }
+     ]
+    },
+    "options": {}
+   }
+  },
+  {
+   "id": "twenty-card-by-id",
+   "name": "Twenty: card by id",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    1680,
+    0
+   ],
+   "retryOnFail": true,
+   "maxTries": 3,
+   "waitBetweenTries": 2000,
+   "parameters": {
+    "method": "GET",
+    "url": "={{ 'https://crm.arenasoldout.com/rest/people/' + $json.fetchId }}",
+    "authentication": "genericCredentialType",
+    "genericAuthType": "httpHeaderAuth",
+    "options": {
+     "timeout": 30000
+    }
+   },
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "UIbE9X3GR29KtVxn",
+     "name": "Twenty CRM API"
+    }
+   },
+   "onError": "continueRegularOutput"
+  },
+  {
+   "id": "build",
+   "name": "Build",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    1920,
+    100
+   ],
+   "parameters": {
+    "jsCode": "// Decide create / update / already-confirmed and build the Twenty body. A subscription never touches the cold-mail\n// fields (outreachStatus, doNotContact, emailBounced, ...): the warm list is a separate stream.\nconst p = $('Prepare').first().json;\nconst pk = $('Pick').first().json;\nconst j = $input.first().json;\nconst card = (pk.needFetch === 'yes' ? ((j.data && j.data.person) || pk.fallback) : pk.existing) || null;\nconst lower = (v) => String(v || '').toLowerCase();\nconst sameAddr = card && (lower(card.subscriptionEmail) === p.email || lower(card.emails && card.emails.primaryEmail) === p.email);\n// Already confirmed on this address: nothing to change and no second letter. The visitor sees the same \"check your inbox\" answer.\nconst mode = !card ? 'create' : (card.subscriptionStatus === 'CONFIRMED' && sameAddr ? 'already' : 'update');\nconst tags = Array.from(new Set([...(card && Array.isArray(card.tags) ? card.tags : []), 'SUBSCRIBER']));\nconst LANG1 = { ru: 'RU', en: 'EN', es: 'ES', de: 'DE', fr: 'FR', uk: 'UK', cs: 'CS', no: 'NO' };\nconst body = {\n  subscriptionStatus: 'PENDING', subscriptionEmail: p.email, subscriptionSource: p.source, subscriptionLanguage: p.lang,\n  subscriptionConsentAt: p.receivedAt, subscriptionConsentText: p.consent, subscriptionToken: p.token,\n  subscriptionUtm: Object.keys(p.utm).length ? JSON.stringify(p.utm) : '', subscriptionPage: p.page,\n  subscriptionConfirmedAt: null, subscriptionUnsubscribedAt: null, tags,\n};\nif (mode === 'create') {\n  body.name = { firstName: '', lastName: '' };\n  body.emails = { primaryEmail: p.email };\n  if (LANG1[p.lang]) body.language1 = LANG1[p.lang];\n}\nreturn [{ json: { mode, id: card ? card.id : '', body, cidBound: pk.cidBound } }];\n"
+   }
+  },
+  {
+   "id": "mode",
+   "name": "Mode",
+   "type": "n8n-nodes-base.switch",
+   "typeVersion": 3.2,
+   "position": [
+    2160,
+    100
+   ],
+   "parameters": {
+    "rules": {
+     "values": [
+      {
+       "conditions": {
+        "options": {
+         "caseSensitive": true,
+         "leftValue": "",
+         "typeValidation": "strict",
+         "version": 2
+        },
+        "conditions": [
+         {
+          "id": "Modecreate",
+          "leftValue": "={{ $json.mode }}",
+          "rightValue": "create",
+          "operator": {
+           "type": "string",
+           "operation": "equals"
+          }
+         }
+        ],
+        "combinator": "and"
+       },
+       "renameOutput": true,
+       "outputKey": "create"
+      },
+      {
+       "conditions": {
+        "options": {
+         "caseSensitive": true,
+         "leftValue": "",
+         "typeValidation": "strict",
+         "version": 2
+        },
+        "conditions": [
+         {
+          "id": "Modeupdate",
+          "leftValue": "={{ $json.mode }}",
+          "rightValue": "update",
+          "operator": {
+           "type": "string",
+           "operation": "equals"
+          }
+         }
+        ],
+        "combinator": "and"
+       },
+       "renameOutput": true,
+       "outputKey": "update"
+      },
+      {
+       "conditions": {
+        "options": {
+         "caseSensitive": true,
+         "leftValue": "",
+         "typeValidation": "strict",
+         "version": 2
+        },
+        "conditions": [
+         {
+          "id": "Modealready",
+          "leftValue": "={{ $json.mode }}",
+          "rightValue": "already",
+          "operator": {
+           "type": "string",
+           "operation": "equals"
+          }
+         }
+        ],
+        "combinator": "and"
+       },
+       "renameOutput": true,
+       "outputKey": "already"
+      }
+     ]
+    },
+    "options": {}
+   }
+  },
+  {
+   "id": "twenty-create-person",
+   "name": "Twenty: create person",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    2400,
+    0
+   ],
+   "retryOnFail": true,
+   "maxTries": 3,
+   "waitBetweenTries": 2000,
+   "parameters": {
+    "method": "POST",
+    "url": "https://crm.arenasoldout.com/rest/people",
+    "authentication": "genericCredentialType",
+    "genericAuthType": "httpHeaderAuth",
+    "options": {
+     "timeout": 30000
+    },
+    "sendBody": true,
+    "contentType": "json",
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify($json.body) }}"
+   },
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "UIbE9X3GR29KtVxn",
+     "name": "Twenty CRM API"
+    }
+   }
+  },
+  {
+   "id": "twenty-update-person",
+   "name": "Twenty: update person",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    2400,
+    200
+   ],
+   "retryOnFail": true,
+   "maxTries": 3,
+   "waitBetweenTries": 2000,
+   "parameters": {
+    "method": "PATCH",
+    "url": "={{ 'https://crm.arenasoldout.com/rest/people/' + $json.id }}",
+    "authentication": "genericCredentialType",
+    "genericAuthType": "httpHeaderAuth",
+    "options": {
+     "timeout": 30000
+    },
+    "sendBody": true,
+    "contentType": "json",
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify($json.body) }}"
+   },
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "UIbE9X3GR29KtVxn",
+     "name": "Twenty CRM API"
+    }
+   }
+  },
+  {
+   "id": "mail",
+   "name": "Mail",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    2640,
+    100
+   ],
+   "parameters": {
+    "jsCode": "// The confirmation letter (double opt-in). Sent from the MAIN domain (noreply@arenasoldout.com, the warm stream),\n// never from arenasoldout.org (cold mail). It carries the confirm link and an unsubscribe link; the page language\n// picks the text, languages without a text here (cs, no, he) get English, and the link points at the site page of\n// that language (the pages exist for the languages in the site menu, the others use the English page).\nconst p = $('Prepare').first().json;\nconst SITE = 'https://arenasoldout.com';\nconst T = {\n  en: { subject: 'Confirm your subscription', hi: 'Hello,', body: 'You asked to receive practical tips on selling tickets from ArenaSoldOut.com, one short e-mail every two weeks. Confirm your address to start:', button: 'Confirm subscription', ignore: 'If this was not you, ignore this e-mail: nothing will be sent to you.', unsub: 'Unsubscribe' },\n  ru: { subject: 'Подтвердите подписку', hi: 'Здравствуйте!', body: 'Вы попросили присылать практические советы по продаже билетов от ArenaSoldOut.com, одно короткое письмо раз в две недели. Подтвердите адрес, чтобы начать:', button: 'Подтвердить подписку', ignore: 'Если это были не вы, просто проигнорируйте письмо: ничего отправляться не будет.', unsub: 'Отписаться' },\n  es: { subject: 'Confirma tu suscripción', hi: 'Hola:', body: 'Has pedido recibir consejos prácticos para vender entradas de ArenaSoldOut.com, un correo breve cada dos semanas. Confirma tu dirección para empezar:', button: 'Confirmar suscripción', ignore: 'Si no has sido tú, ignora este correo: no te enviaremos nada.', unsub: 'Darse de baja' },\n  pt: { subject: 'Confirme a sua subscrição', hi: 'Olá,', body: 'Pediu para receber dicas práticas sobre venda de bilhetes da ArenaSoldOut.com, um e-mail curto de duas em duas semanas. Confirme o seu endereço para começar:', button: 'Confirmar subscrição', ignore: 'Se não foi você, ignore este e-mail: não será enviado nada.', unsub: 'Cancelar subscrição' },\n  de: { subject: 'Bitte bestätigen Sie Ihr Abonnement', hi: 'Guten Tag,', body: 'Sie möchten praktische Tipps zum Ticketverkauf von ArenaSoldOut.com erhalten, eine kurze E-Mail alle zwei Wochen. Bestätigen Sie Ihre Adresse, um zu beginnen:', button: 'Abonnement bestätigen', ignore: 'Wenn Sie das nicht waren, ignorieren Sie diese E-Mail: Es wird nichts an Sie gesendet.', unsub: 'Abmelden' },\n  fr: { subject: 'Confirmez votre abonnement', hi: 'Bonjour,', body: 'Vous avez demandé à recevoir des conseils pratiques sur la vente de billets de la part d’ArenaSoldOut.com, un court e-mail toutes les deux semaines. Confirmez votre adresse pour commencer :', button: 'Confirmer l’abonnement', ignore: 'Si ce n’était pas vous, ignorez cet e-mail : rien ne vous sera envoyé.', unsub: 'Se désabonner' },\n  it: { subject: 'Conferma la tua iscrizione', hi: 'Buongiorno,', body: 'Hai chiesto di ricevere consigli pratici sulla vendita di biglietti da ArenaSoldOut.com, una breve e-mail ogni due settimane. Conferma il tuo indirizzo per iniziare:', button: 'Conferma iscrizione', ignore: 'Se non sei stato tu, ignora questa e-mail: non ti verrà inviato nulla.', unsub: 'Annulla iscrizione' },\n  pl: { subject: 'Potwierdź subskrypcję', hi: 'Dzień dobry,', body: 'Prosisz o praktyczne wskazówki dotyczące sprzedaży biletów od ArenaSoldOut.com, jedna krótka wiadomość co dwa tygodnie. Potwierdź adres, aby zacząć:', button: 'Potwierdź subskrypcję', ignore: 'Jeśli to nie Ty, zignoruj tę wiadomość: nic do Ciebie nie wyślemy.', unsub: 'Wypisz się' },\n  uk: { subject: 'Підтвердьте підписку', hi: 'Вітаємо!', body: 'Ви попросили надсилати практичні поради з продажу квитків від ArenaSoldOut.com, один короткий лист раз на два тижні. Підтвердьте адресу, щоб почати:', button: 'Підтвердити підписку', ignore: 'Якщо це були не ви, просто проігноруйте лист: нічого надсилатися не буде.', unsub: 'Відписатися' },\n};\nconst L = T[p.lang] || T.en;\nconst MENU = ['es', 'pt', 'de', 'fr', 'it', 'pl', 'uk', 'ru'];\nconst prefix = MENU.includes(p.lang) ? '/' + p.lang : '';\nconst confirmUrl = `${SITE}${prefix}/subscribe/confirm?t=${p.token}`;\nconst unsubUrl = `${SITE}${prefix}/subscribe/unsubscribe?t=${p.token}`;\nconst esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\"/g, '&quot;');\nconst html = `<!doctype html><html lang=\"${esc(T[p.lang] ? p.lang : 'en')}\"><body style=\"margin:0;background:#f5f5f7;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1d1d1f\">\n<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td align=\"center\" style=\"padding:32px 16px\">\n<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"max-width:520px;background:#ffffff;border-radius:12px\">\n<tr><td style=\"padding:32px 32px 8px;font-size:18px;font-weight:700;color:#4f46e5\">ArenaSoldOut.com</td></tr>\n<tr><td style=\"padding:8px 32px 0;font-size:16px;line-height:1.55\">${esc(L.hi)}<br><br>${esc(L.body)}</td></tr>\n<tr><td style=\"padding:24px 32px\"><a href=\"${esc(confirmUrl)}\" style=\"display:inline-block;background:#4f46e5;color:#ffffff;text-decoration:none;padding:14px 24px;border-radius:8px;font-weight:600;font-size:16px\">${esc(L.button)}</a></td></tr>\n<tr><td style=\"padding:0 32px 24px;font-size:14px;line-height:1.5;color:#555\">${esc(L.ignore)}</td></tr>\n<tr><td style=\"padding:16px 32px 28px;border-top:1px solid #e5e5ea;font-size:12px;line-height:1.5;color:#777\">ArenaSoldOut.com · ABH TEAM OÜ<br><a href=\"${esc(unsubUrl)}\" style=\"color:#777\">${esc(L.unsub)}</a></td></tr>\n</table></td></tr></table></body></html>`;\nconst text = `${L.hi}\\n\\n${L.body}\\n${confirmUrl}\\n\\n${L.ignore}\\n\\n${L.unsub}: ${unsubUrl}\\nArenaSoldOut.com · ABH TEAM OÜ`;\nconst brevo = {\n  sender: { name: 'ArenaSoldOut.com', email: 'noreply@arenasoldout.com' },\n  replyTo: { email: 'hello@arenasoldout.com', name: 'ArenaSoldOut.com' },\n  to: [{ email: p.email }],\n  subject: L.subject,\n  htmlContent: html,\n  textContent: text,\n  headers: { 'List-Unsubscribe': `<${unsubUrl}>` },\n  tags: ['subscribe-confirm'],\n};\nreturn [{ json: { brevo } }];\n"
+   }
+  },
+  {
+   "id": "brevo",
+   "name": "Brevo: confirmation letter",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    2880,
+    100
+   ],
+   "parameters": {
+    "method": "POST",
+    "url": "https://api.brevo.com/v3/smtp/email",
+    "authentication": "predefinedCredentialType",
+    "nodeCredentialType": "sendInBlueApi",
+    "sendBody": true,
+    "contentType": "json",
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify($json.brevo) }}",
+    "options": {
+     "timeout": 30000
+    }
+   },
+   "credentials": {
+    "sendInBlueApi": {
+     "id": "s3JzTGPvNzwudf42",
+     "name": "Brevo API"
+    }
+   }
+  },
+  {
+   "id": "respond-ok",
+   "name": "Respond OK",
+   "type": "n8n-nodes-base.respondToWebhook",
+   "typeVersion": 1.1,
+   "position": [
+    3120,
+    100
+   ],
+   "parameters": {
+    "respondWith": "json",
+    "responseBody": "={{ JSON.stringify({ ok: true }) }}",
+    "options": {
+     "responseCode": 200
+    }
+   }
+  },
+  {
+   "id": "twenty-person-by-token",
+   "name": "Twenty: person by token",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    720,
+    500
+   ],
+   "retryOnFail": true,
+   "maxTries": 3,
+   "waitBetweenTries": 2000,
+   "parameters": {
+    "method": "GET",
+    "url": "={{ 'https://crm.arenasoldout.com/rest/people?limit=3&filter=' + encodeURIComponent('subscriptionToken[eq]:\"' + $json.token + '\"') }}",
+    "authentication": "genericCredentialType",
+    "genericAuthType": "httpHeaderAuth",
+    "options": {
+     "timeout": 30000
+    }
+   },
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "UIbE9X3GR29KtVxn",
+     "name": "Twenty CRM API"
+    }
+   }
+  },
+  {
+   "id": "decide",
+   "name": "Decide",
+   "type": "n8n-nodes-base.code",
+   "typeVersion": 2,
+   "position": [
+    960,
+    500
+   ],
+   "parameters": {
+    "jsCode": "// Confirm or unsubscribe by token. The token is the bearer secret of the link; it stays on the card after the\n// confirmation so that every later letter can carry a working unsubscribe link. Answers are decided here and sent by\n// \"Respond result\": code + body; `patch` says whether Twenty must be changed first.\nconst p = $('Prepare').first().json;\nconst people = ((($input.first().json || {}).data || {}).people) || [];\nconst card = people.find((x) => x.subscriptionToken === p.token) || null;\nconst DAY = 86400000;\nconst answer = (code, body, patch) => [{ json: { code, body, patch: patch ? 'yes' : 'no', id: card ? card.id : '', change: patch || {} } }];\nif (!card) return answer(404, { error: 'token' });\nconst lang = card.subscriptionLanguage || 'en';\nconst now = new Date().toISOString();\nconst st = card.subscriptionStatus;\nif (p.action === 'confirm') {\n  if (st === 'CONFIRMED') return answer(200, { ok: true, lang });\n  if (st !== 'PENDING') return answer(404, { error: 'token' });\n  const asked = Date.parse(card.subscriptionConsentAt || '');\n  if (!(asked > 0) || Date.now() - asked > 14 * DAY) return answer(410, { error: 'expired' });\n  return answer(200, { ok: true, lang }, { subscriptionStatus: 'CONFIRMED', subscriptionConfirmedAt: now });\n}\nif (st === 'UNSUBSCRIBED') return answer(200, { ok: true, lang });\nreturn answer(200, { ok: true, lang }, { subscriptionStatus: 'UNSUBSCRIBED', subscriptionUnsubscribedAt: now });\n"
+   }
+  },
+  {
+   "id": "patch-needed",
+   "name": "Patch needed",
+   "type": "n8n-nodes-base.switch",
+   "typeVersion": 3.2,
+   "position": [
+    1200,
+    500
+   ],
+   "parameters": {
+    "rules": {
+     "values": [
+      {
+       "conditions": {
+        "options": {
+         "caseSensitive": true,
+         "leftValue": "",
+         "typeValidation": "strict",
+         "version": 2
+        },
+        "conditions": [
+         {
+          "id": "Patch neededyes",
+          "leftValue": "={{ $json.patch }}",
+          "rightValue": "yes",
+          "operator": {
+           "type": "string",
+           "operation": "equals"
+          }
+         }
+        ],
+        "combinator": "and"
+       },
+       "renameOutput": true,
+       "outputKey": "yes"
+      },
+      {
+       "conditions": {
+        "options": {
+         "caseSensitive": true,
+         "leftValue": "",
+         "typeValidation": "strict",
+         "version": 2
+        },
+        "conditions": [
+         {
+          "id": "Patch neededno",
+          "leftValue": "={{ $json.patch }}",
+          "rightValue": "no",
+          "operator": {
+           "type": "string",
+           "operation": "equals"
+          }
+         }
+        ],
+        "combinator": "and"
+       },
+       "renameOutput": true,
+       "outputKey": "no"
+      }
+     ]
+    },
+    "options": {}
+   }
+  },
+  {
+   "id": "twenty-change-status",
+   "name": "Twenty: change status",
+   "type": "n8n-nodes-base.httpRequest",
+   "typeVersion": 4.2,
+   "position": [
+    1440,
+    440
+   ],
+   "retryOnFail": true,
+   "maxTries": 3,
+   "waitBetweenTries": 2000,
+   "parameters": {
+    "method": "PATCH",
+    "url": "={{ 'https://crm.arenasoldout.com/rest/people/' + $json.id }}",
+    "authentication": "genericCredentialType",
+    "genericAuthType": "httpHeaderAuth",
+    "options": {
+     "timeout": 30000
+    },
+    "sendBody": true,
+    "contentType": "json",
+    "specifyBody": "json",
+    "jsonBody": "={{ JSON.stringify($json.change) }}"
+   },
+   "credentials": {
+    "httpHeaderAuth": {
+     "id": "UIbE9X3GR29KtVxn",
+     "name": "Twenty CRM API"
+    }
+   }
+  },
+  {
+   "id": "respond-result",
+   "name": "Respond result",
+   "type": "n8n-nodes-base.respondToWebhook",
+   "typeVersion": 1.1,
+   "position": [
+    1680,
+    500
+   ],
+   "parameters": {
+    "respondWith": "json",
+    "responseBody": "={{ JSON.stringify($('Decide').first().json.body) }}",
+    "options": {
+     "responseCode": "={{ $('Decide').first().json.code }}"
+    }
+   }
+  },
+  {
+   "id": "respond-bad",
+   "name": "Respond bad",
+   "type": "n8n-nodes-base.respondToWebhook",
+   "typeVersion": 1.1,
+   "position": [
+    720,
+    700
+   ],
+   "parameters": {
+    "respondWith": "json",
+    "responseBody": "={{ JSON.stringify({ error: 'invalid' }) }}",
+    "options": {
+     "responseCode": 400
+    }
+   }
+  }
+ ],
+ "connections": {
+  "Site subscribe": {
+   "main": [
+    [
+     {
+      "node": "Prepare",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Prepare": {
+   "main": [
+    [
+     {
+      "node": "Route",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Route": {
+   "main": [
+    [
+     {
+      "node": "Twenty: send by cid",
+      "type": "main",
+      "index": 0
+     }
+    ],
+    [
+     {
+      "node": "Twenty: person by token",
+      "type": "main",
+      "index": 0
+     }
+    ],
+    [
+     {
+      "node": "Respond bad",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Twenty: send by cid": {
+   "main": [
+    [
+     {
+      "node": "Twenty: person by email",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Twenty: person by email": {
+   "main": [
+    [
+     {
+      "node": "Pick",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Pick": {
+   "main": [
+    [
+     {
+      "node": "Need card",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Need card": {
+   "main": [
+    [
+     {
+      "node": "Twenty: card by id",
+      "type": "main",
+      "index": 0
+     }
+    ],
+    [
+     {
+      "node": "Build",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Twenty: card by id": {
+   "main": [
+    [
+     {
+      "node": "Build",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Build": {
+   "main": [
+    [
+     {
+      "node": "Mode",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Mode": {
+   "main": [
+    [
+     {
+      "node": "Twenty: create person",
+      "type": "main",
+      "index": 0
+     }
+    ],
+    [
+     {
+      "node": "Twenty: update person",
+      "type": "main",
+      "index": 0
+     }
+    ],
+    [
+     {
+      "node": "Respond OK",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Twenty: create person": {
+   "main": [
+    [
+     {
+      "node": "Mail",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Twenty: update person": {
+   "main": [
+    [
+     {
+      "node": "Mail",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Mail": {
+   "main": [
+    [
+     {
+      "node": "Brevo: confirmation letter",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Brevo: confirmation letter": {
+   "main": [
+    [
+     {
+      "node": "Respond OK",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Twenty: person by token": {
+   "main": [
+    [
+     {
+      "node": "Decide",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Decide": {
+   "main": [
+    [
+     {
+      "node": "Patch needed",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Patch needed": {
+   "main": [
+    [
+     {
+      "node": "Twenty: change status",
+      "type": "main",
+      "index": 0
+     }
+    ],
+    [
+     {
+      "node": "Respond result",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  },
+  "Twenty: change status": {
+   "main": [
+    [
+     {
+      "node": "Respond result",
+      "type": "main",
+      "index": 0
+     }
+    ]
+   ]
+  }
+ },
+ "settings": {
+  "executionOrder": "v1",
+  "timezone": "Europe/Tallinn",
+  "executionTimeout": 60,
+  "errorWorkflow": "BXvWxtK4HirW0S2C",
+  "saveDataErrorExecution": "all",
+  "saveDataSuccessExecution": "none"
+ }
+}

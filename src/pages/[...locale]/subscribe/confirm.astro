@@ -1,0 +1,27 @@
+---
+/**
+ * Landing page of the confirmation link in the subscription e-mail: /subscribe/confirm?t=<token> (and
+ * /es/subscribe/confirm ... for every language in the menu). On load, src/scripts/subscribe.ts posts the
+ * token to /api/subscribe/confirm and shows the result in the status paragraph. noindex, no navigation
+ * entry, not in the sitemap (astro.config.mjs).
+ */
+import Base from '@/layouts/Base.astro';
+import { t, localePath, localeStaticPaths } from '@/lib/i18n';
+
+export function getStaticPaths() {
+  return localeStaticPaths();
+}
+const { lang } = Astro.props;
+const path = localePath(lang, '/subscribe/confirm');
+const title = t(lang, 'subscribe.confirm.title');
+const description = t(lang, 'subscribe.value');
+---
+<Base lang={lang} path={path} title={title} description={description} jsonld={{ path, title, description, lang }} noindex>
+  <div class="wrap page-head" style="padding-bottom:clamp(56px,8vw,104px)">
+    <h1>{t(lang, 'subscribe.confirm.title')}</h1>
+    <p class="lead form-status" role="status" aria-live="polite" data-sub-confirm data-lang={lang}
+      data-ok={t(lang, 'subscribe.confirm.ok')} data-expired={t(lang, 'subscribe.confirm.expired')} data-invalid={t(lang, 'subscribe.confirm.invalid')}
+      data-network={t(lang, 'subscribe.confirm.network')}>{t(lang, 'subscribe.confirm.loading')}</p>
+    <a class="btn btn-primary" href={localePath(lang, '/')} style="margin-top:24px">{t(lang, 'subscribe.home')}</a>
+  </div>
+</Base>

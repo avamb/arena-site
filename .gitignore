@@ -9,6 +9,7 @@ ops/nginx/headers.conf
 
 # env and secrets (never commit; see .env.example)
 .env
+.dev.vars
 .env.*
 !.env.example
 *.pem
