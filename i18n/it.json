@@ -88,6 +88,7 @@
   "consent.accept": "Accetta le analisi",
   "consent.decline": "Rifiuta le analisi",
   "consent.close": "Chiudi",
+  "consent.more": "Dettagli",
   "consent.settings": "Impostazioni cookie",
   "consent.state.on": "Le analisi sono attive.",
   "consent.state.off": "Le analisi sono disattive."

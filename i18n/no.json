@@ -46,6 +46,7 @@
   "consent.accept": "Godta statistikk",
   "consent.decline": "Avslå statistikk",
   "consent.close": "Lukk",
+  "consent.more": "Detaljer",
   "consent.settings": "Innstillinger for informasjonskapsler",
   "consent.state.on": "Statistikk er på.",
   "consent.state.off": "Statistikk er av."

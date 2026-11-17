@@ -88,6 +88,7 @@
   "consent.accept": "Analytics akzeptieren",
   "consent.decline": "Analytics ablehnen",
   "consent.close": "Schließen",
+  "consent.more": "Details",
   "consent.settings": "Cookie-Einstellungen",
   "consent.state.on": "Analytics ist an.",
   "consent.state.off": "Analytics ist aus."
