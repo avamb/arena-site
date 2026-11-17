@@ -148,7 +148,7 @@ export async function getPage(lang: LanguageCode, slug: string): Promise<{ page:
 /** Slugs of every page that exists in the default language, in site order. */
 export async function pageSlugs(): Promise<string[]> {
   const all = await getCollection('pages');
-  const order = ['home', 'product/sell', 'product/seating', 'product/pricing-tools', 'payments', 'product/telegram', 'product/tickets', 'product/reliability', 'solutions', 'solutions/concerts', 'solutions/theatre', 'solutions/shows', 'solutions/festivals', 'solutions/concert-tours', 'solutions/master-classes', 'solutions/venues', 'solutions/wordpress', 'pricing', 'pricing/terms', 'developers', 'clients', 'company', 'facts', 'blog', 'changes', 'start', 'contact', 'partners', 'help/tickets', 'legal/terms', 'legal/privacy', 'start/thanks'];
+  const order = ['home', 'product/sell', 'product/seating', 'product/pricing-tools', 'payments', 'product/telegram', 'product/tickets', 'product/reliability', 'solutions', 'solutions/concerts', 'solutions/theatre', 'solutions/shows', 'solutions/festivals', 'solutions/concert-tours', 'solutions/master-classes', 'solutions/venues', 'solutions/wordpress', 'pricing', 'pricing/terms', 'developers', 'clients', 'company', 'facts', 'blog', 'changes', 'start', 'contact', 'partners', 'help/tickets', 'legal/terms', 'legal/privacy', 'security', 'start/thanks'];
   const slugs = all.filter((p) => p.id.startsWith(`${defaultLanguage}/pages/`)).map((p) => p.id.replace(`${defaultLanguage}/pages/`, ''));
   return slugs.sort((a, b) => (order.indexOf(a) === -1 ? 99 : order.indexOf(a)) - (order.indexOf(b) === -1 ? 99 : order.indexOf(b)));
 }

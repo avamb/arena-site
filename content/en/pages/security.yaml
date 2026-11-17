@@ -1,0 +1,55 @@
+# Security page (owner's request 17.11.2026). Only what is in place today. Deliberately NOT said, until confirmed:
+# provider names (house rule, doc 33 §3.9), the data centre country or date, how long backups are kept and whether they are encrypted, a number of hours for
+# incident notice, a data processing agreement (DPA), any certification (ISO 27001, SOC 2), two-factor sign-in, disk encryption.
+title: "Security at ArenaSoldOut.com"
+description: "How ArenaSoldOut.com protects organizers' and buyers' data: hosting in the EU, hosted card payments, separation between organizers, backups, monitoring."
+h1: "Security at ArenaSoldOut.com"
+lead: "We handle ticket sales and buyer contact details for event organizers, so we keep security practical and specific. Here is what we do today."
+related:
+  - { label: Privacy policy, href: /legal/privacy }
+  - { label: Terms and conditions, href: /legal/terms }
+  - { label: Payments, href: /payments }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## Where your data lives
+
+      - The platform runs on Hetzner servers in the EU.
+      - Traffic to the platform goes through Cloudflare and is encrypted with HTTPS.
+      - Database backups are made every three hours and nightly, and copied to separate storage in the EU.
+
+      ## Payments
+
+      - Card details never reach our servers. Buyers pay on the payment provider's hosted page.
+      - Each organizer connects their own payment account, so ticket money goes to the organizer, not through us.
+
+      ## Separation between organizers
+
+      - Every organizer's events, orders and customers are isolated from other organizers. Access is checked on every request.
+      - Team members have roles (owner, manager). Managers cannot change payment settings, billing or team access.
+      - API keys are limited to one organization and can never carry platform-wide permissions.
+
+      ## Protection against abuse
+
+      - Public forms use bot protection. Sign-in, checkout and public APIs have rate limits.
+      - Webhook calls from payment providers are verified by signature.
+      - Sensitive actions are recorded in an audit log.
+
+      ## Tickets
+
+      - Every ticket has a unique random barcode that cannot be guessed from a neighbouring ticket. Scans are validated against our records.
+
+      ## Monitoring and recovery
+
+      - We monitor sales flow, failed deliveries and system errors and are alerted automatically.
+      - If a serious incident affects your data, we will tell affected organizers without undue delay and in line with GDPR.
+
+      ## Your data and privacy
+
+      - We process buyer data on the organizer's behalf. See our [Privacy policy](/legal/privacy).
+      - You can request export or deletion of your data at any time.
+
+      ## Report a vulnerability
+
+      Found a security issue? Write to support@arenasoldout.com with details. We reply to every report.
