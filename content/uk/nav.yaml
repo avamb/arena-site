@@ -63,5 +63,6 @@ footer:
     links:
       - { label: Умови й положення, href: /legal/terms }
       - { label: Політика конфіденційності, href: /legal/privacy }
+      - { label: Безпека, href: /security }
       - { label: Докладні умови цін, href: /pricing/terms }
 copyright: "© 2019–2026 ArenaSoldOut.com · ABH TEAM OÜ · EU"
