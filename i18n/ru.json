@@ -114,6 +114,7 @@
   "consent.accept": "Принять аналитику",
   "consent.decline": "Отказаться от аналитики",
   "consent.close": "Закрыть",
+  "consent.more": "Подробнее",
   "consent.settings": "Настройки cookie",
   "consent.state.on": "Аналитика включена.",
   "consent.state.off": "Аналитика выключена."
