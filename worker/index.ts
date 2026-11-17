@@ -6,8 +6,9 @@
  * No KV, D1, R2 or Durable Objects (doc 33 §3.7a).
  */
 import { handleContact, type ContactEnv } from './contact';
+import { handleSubscribe, type SubscribeEnv } from './subscribe';
 
-type Env = ContactEnv & { SITE_URL?: string; ASSETS?: { fetch: (req: Request) => Promise<Response> } };
+type Env = ContactEnv & SubscribeEnv & { SITE_URL?: string; ASSETS?: { fetch: (req: Request) => Promise<Response> } };
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
@@ -18,6 +19,7 @@ export default {
       return Response.redirect(`${site}${url.pathname}${url.search}`, 301);
     }
     if (url.pathname === '/api/contact') return handleContact(request, env);
+    if (url.pathname === '/api/subscribe' || url.pathname.startsWith('/api/subscribe/')) return handleSubscribe(request, env);
     if (env.ASSETS) return env.ASSETS.fetch(request);
     return new Response('Not found', { status: 404 });
   },

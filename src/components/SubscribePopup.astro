@@ -1,0 +1,32 @@
+---
+/**
+ * Subscription popup (warm list), included once in Base.astro. Two presentations of the same form, chosen
+ * by src/scripts/subscribe.ts when the rules in subscribe-lib.ts say "show": a centred <dialog> on a wide
+ * viewport, and a narrow bar fixed to the bottom (not modal, takes no focus) on a narrow one. Both start
+ * hidden and are out of the page flow, so showing them never moves the page. All numbers come from
+ * `subscribe` in site.config.ts and reach the script as data attributes.
+ */
+import type { LanguageCode } from '@config';
+import { subscribe, languages } from '@config';
+import { t } from '@/lib/i18n';
+import Icon from '@/components/Icon.astro';
+import SubscribeForm from '@/components/SubscribeForm.astro';
+interface Props { lang: LanguageCode }
+const { lang } = Astro.props;
+const config = { ...subscribe };
+---
+{subscribe.enabled && (
+  <div data-subscribe-root data-lang={lang} data-config={JSON.stringify(config)} data-langs={JSON.stringify(languages.map((l) => l.code))}>
+    <dialog id="subscribe-dialog" class="sub-dialog" aria-labelledby="sd-title" data-nosnippet>
+      <div class="sub-panel">
+        <button type="button" class="icon-btn sub-x" data-sub-close autofocus aria-label={t(lang, 'subscribe.close')}><Icon name="x" /></button>
+        <h2 class="sub-title" id="sd-title">{t(lang, 'subscribe.popup.title')}</h2>
+        <SubscribeForm lang={lang} prefix="sd" variant="popup" />
+      </div>
+    </dialog>
+    <div id="subscribe-bar" class="sub-bar" role="region" aria-label={t(lang, 'subscribe.popup.title')} hidden data-nosnippet>
+      <button type="button" class="icon-btn sub-x" data-sub-close aria-label={t(lang, 'subscribe.close')}><Icon name="x" /></button>
+      <SubscribeForm lang={lang} prefix="sb" variant="popup" />
+    </div>
+  </div>
+)}

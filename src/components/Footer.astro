@@ -5,6 +5,7 @@ import { navFor } from '@/lib/data';
 import { t, localePath, getLanguage } from '@/lib/i18n';
 import Logo from './Logo.astro';
 import Icon from './Icon.astro';
+import SubscribeForm from './SubscribeForm.astro';
 interface Props { lang: LanguageCode }
 const { lang } = Astro.props;
 const nav = navFor(lang);
@@ -23,6 +24,8 @@ const nav = navFor(lang);
         </div>
       ))}
     </div>
+    {/* Permanent subscription row: never dismissed, ignores the popup rules (subscribe-lib.ts). */}
+    <div class="fsub"><SubscribeForm lang={lang} prefix="sf" variant="footer" /></div>
     <div class="fbot">
       <span>{nav.copyright}</span>
       <div class="r">
