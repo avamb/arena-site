@@ -33,7 +33,7 @@ const html = `<!doctype html><html lang="${esc(T[p.lang] ? p.lang : 'en')}"><bod
 const text = `${L.hi}\n\n${L.body}\n${confirmUrl}\n\n${L.ignore}\n\n${L.unsub}: ${unsubUrl}\nArenaSoldOut.com · ABH TEAM OÜ`;
 const brevo = {
   sender: { name: 'ArenaSoldOut.com', email: 'noreply@arenasoldout.com' },
-  replyTo: { email: 'hello@arenasoldout.com', name: 'ArenaSoldOut.com' },
+  replyTo: { email: 'support@arenasoldout.com', name: 'ArenaSoldOut.com' },
   to: [{ email: p.email }],
   subject: L.subject,
   htmlContent: html,

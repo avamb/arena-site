@@ -53,7 +53,7 @@ export const org = {
   foundingYear: 2019,
   region: 'EU',
   sameAs: ['https://t.me/ArenaSoldOutChat'],
-  contactEmail: 'hello@arenasoldout.com',
+  contactEmail: 'support@arenasoldout.com',
   logo: '/brand/arena-logo.svg',
 };
 
