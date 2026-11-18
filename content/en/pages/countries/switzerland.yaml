@@ -45,7 +45,7 @@ sections:
   - type: cards
     id: where
     eyebrow: "Where you sell"
-    title: "Where do buyers find my tickets?"
+    title: "Where can I sell tickets?"
     lead: "In three places at once. Sales from all of them come into one Event Center."
     items:
       - title: "Our sales page"
@@ -68,13 +68,13 @@ sections:
       - q: "Can I pay less per ticket?"
         a: "Yes. Buy credits upfront and the price drops to {usdFrom} per ticket ({eurFrom} in the EU). Credits never expire. See [pricing](/pricing)."
       - q: "When do I pay ArenaSoldOut.com?"
-        a: "After the event, by bank transfer, for the tickets sold. For events on sale for several months and for permanent venues, once a month. Credits are paid when you buy them."
+        a: "After the event, for the tickets sold, if you choose to pay that way. You can also buy credits before the event."
       - q: "Where does the money for tickets go?"
         a: "To your own account with your payment provider, for every ticket sold. ArenaSoldOut.com never holds it."
       - q: "How fast can I start selling?"
         a: "We confirm your organization, usually within a day. With a payment account in place, an event without a seating plan goes on sale in 10 minutes. A seating plan we draw for free, usually within a day."
       - q: "How reliable is the platform?"
-        a: "Load tested at 800 orders a minute with 1,000 buyers at once. A watchdog alerts the team, backups run every night, encrypted, and Cloudflare stands in front. See [reliability](/product/reliability)."
+        a: "Load tested at 800 orders a minute with 1,000 buyers at once. A watchdog alerts the team, backups run every night, encrypted, and Cloudflare stands in front. Not a single outage has been recorded since the start in 2019, even with several tens of thousands of tickets sold in 5 minutes. See [reliability](/product/reliability)."
       - q: "I run a permanent venue. Is there a different deal?"
         a: "Yes. Theatres, clubs and other venues that hold events all year or by season pay {percent}% of the ticket price, with a cap per ticket, invoiced monthly. See [pricing](/pricing)."
       - q: "My tickets are cheap. Is there a lower price?"
