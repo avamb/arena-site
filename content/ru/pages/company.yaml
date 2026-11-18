@@ -6,7 +6,7 @@ related:
   - { label: Клиенты и опыт, href: /clients }
   - { label: Факты с датами, href: /facts }
   - { label: Последние изменения, href: /changes }
-  - { label: "Марина Баканова, основатель", href: /company/marina-bakanova }
+  - { label: "Марина Баканова, сооснователь", href: /company/marina-bakanova }
 sections:
   - type: prose
     id: story
