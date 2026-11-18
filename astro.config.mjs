@@ -1,5 +1,5 @@
 // @ts-check
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
@@ -41,6 +41,19 @@ function lastmodFor(url) {
   return hit ? dates.get(hit) : undefined;
 }
 
+/**
+ * True when the built page says noindex in its robots meta. The sitemap is written after the pages
+ * (astro:build:done), so the page decides and the sitemap follows: a page out of search is never listed.
+ */
+function builtNoindex(page) {
+  const path = new URL(page).pathname.replace(/\/$/, '');
+  try {
+    return /<meta name="robots" content="[^"]*noindex/.test(readFileSync(`dist${path || '/index'}.html`, 'utf8'));
+  } catch {
+    return false;
+  }
+}
+
 // Static only (doc 33 §3.7a): `dist/` is plain files; Workers Static Assets and nginx serve the
 // same folder. No adapter, no server rendering per request.
 export default defineConfig({
@@ -65,7 +78,8 @@ export default defineConfig({
       // Pages of languages not in the menu yet are noindex: keep them out. Blog posts stay, and so does the blog index of a language that has archive posts.
       filter: (page) => !/\/start\/(thanks|continue|confirm)|\/subscribe\/(confirm|unsubscribe)\/?$/.test(page) && !page.endsWith('/404')
         && !languages.some((l) => !l.inMenu && new RegExp(`^${siteUrl}/${l.code}(/(?!blog/).*)?/?$`).test(page)
-          && !(new RegExp(`^${siteUrl}/${l.code}/blog/?$`).test(page) && existsSync(`content/${l.code}/posts`))),
+          && !(new RegExp(`^${siteUrl}/${l.code}/blog/?$`).test(page) && existsSync(`content/${l.code}/posts`)))
+        && !builtNoindex(page),
       // hreflang in the sitemap uses the same bare language codes as the <link rel="alternate"> tags in the
       // HTML (en, es, pt...). Regional codes (en-GB, pt-BR) here would contradict the pages and narrow English to the UK.
       i18n: {
