@@ -32,7 +32,7 @@ sections:
       - title: Krótkie linki i kody QR do druku
         text: "Linki go.arenasoldout.com z kodami QR na plakaty i ulotki: PNG, SVG lub wkładka PDF w A5 i A6. Zmieniaj cel po wydrukowaniu."
       - title: Sklep obok twoich biletów
-        text: "Sprzedawaj wino, gadżety i zestawy upominkowe razem z biletami: warianty, koszyk, dostawa, zwroty. Nasz pierwszy klient ze sklepem już sprzedaje w ten sposób."
+        text: "Sprzedawaj wino, napoje w przedsprzedaży, gadżety i zestawy upominkowe razem z biletami: warianty, koszyk, odbiór na wydarzeniu lub własna wysyłka, zwroty. Nasz pierwszy klient ze sklepem już sprzedaje w ten sposób."
 
   - type: cards
     id: seating
