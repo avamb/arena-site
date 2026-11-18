@@ -7,7 +7,7 @@ import type { Section } from '../content.config';
 import { siteUrl, org, type LanguageCode } from '@config';
 import { plain, fill } from './inline';
 import { clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, countryRows, type Nav } from './data';
-import { formatDate, currencySymbol, postPath, localePath } from './i18n';
+import { formatDate, currencySymbol, postPath, localePath, t } from './i18n';
 import { pageLanguages } from './translations';
 
 export type PageData = {
@@ -68,8 +68,8 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       // Every amount in each currency, US dollars first: "US$0.59 / €0.53".
       const both = (f: (cur: string, tf: ReturnType<typeof tariffFor>, p: (typeof d.pricing)[number]) => string) =>
         d.pricing.map((p) => f(p.data.currency, tariffFor(p.data.currency), p)).join(' / ');
-      out.push('| Region | Without a seat | With a seat | Invitations |', '|---|---|---|---|');
-      d.pricing.forEach((p) => out.push(`| ${p.data.region} | ${money(p.data.per_ticket, p.data.currency)} | ${money(p.data.per_ticket + p.data.seating_extra, p.data.currency)} | free |`));
+      out.push(`| ${t(d.lang, 'md.pricing.region')} | ${t(d.lang, 'md.pricing.noSeat')} | ${t(d.lang, 'md.pricing.seat')} | ${t(d.lang, 'md.pricing.invitations')} |`, '|---|---|---|---|');
+      d.pricing.forEach((p) => out.push(`| ${t(d.lang, `pricing.region.${p.id}`)} | ${money(p.data.per_ticket, p.data.currency)} | ${money(p.data.per_ticket + p.data.seating_extra, p.data.currency)} | ${t(d.lang, 'md.pricing.free')} |`));
       out.push('', plain(s.currencyNote), '');
       if (s.packages) {
         out.push(`**${s.packages.title}**`, '', plain(s.packages.text), '');
@@ -203,7 +203,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       h2(s.title); lead(s.lead);
       out.push('| Capability | Status | Since | Note |', '|---|---|---|---|');
       facts.capabilities.forEach((c) => out.push(`| ${c.name} | ${c.status} | ${c.since ? c.since.toISOString().slice(0, 10) : ''} | ${c.note ?? ''} |`));
-      out.push('', `Buyer page languages: ${facts.languages.buyer_page.join(', ')}; any other language can be integrated on request. E-mails in ${facts.languages.emails} languages. Load test ${formatDate(d.lang, facts.limits.load_test_date, { dateStyle: 'medium' })}: ${facts.limits.orders_per_minute} orders a minute at ${facts.limits.concurrent_visitors} concurrent visitors. Backups: ${facts.backups}.`, '', `Updated ${facts.updated.toISOString().slice(0, 10)}.`, '');
+      out.push('', t(d.lang, 'md.facts.summary', { buyer: facts.languages.buyer_page.join(', '), emails: facts.languages.emails, date: formatDate(d.lang, facts.limits.load_test_date, { dateStyle: 'medium' }), orders: facts.limits.orders_per_minute, visitors: facts.limits.concurrent_visitors }), '', t(d.lang, 'md.facts.updated', { date: facts.updated.toISOString().slice(0, 10) }), '');
       break;
     case 'contact-form':
       h2(s.title); lead(s.lead);

@@ -24,8 +24,12 @@ const p = await loadPage(lang, slug);
 const mdPath = p.path === '/' ? '/index.md' : lang !== defaultLanguage && p.path === `/${lang}` ? `/${lang}/index.md` : `${p.path}.md`;
 // Languages not yet in the menu are translated but not read by a person yet: their pages stay out of
 // search until the language is switched on (a blog index with archive posts in that language is the exception, it was indexed before).
-const hiddenLanguage = !getLanguage(lang).inMenu && !(slug === 'blog' && (await getPosts(lang)).length > 0);
-const noindex = (slug.startsWith('start/') && slug !== 'start') || hiddenLanguage;
+const posts = slug === 'blog' ? (await getPosts(lang)).length : 0;
+const hiddenLanguage = !getLanguage(lang).inMenu && !(slug === 'blog' && posts > 0);
+// A blog index without a single published post in its language is a thin page (title "Blog", no articles):
+// out of search until the first post in that language is published, then it is indexed by itself.
+const emptyBlog = slug === 'blog' && posts === 0;
+const noindex = (slug.startsWith('start/') && slug !== 'start') || hiddenLanguage || emptyBlog;
 ---
 <Base lang={lang} path={p.path} title={p.page.data.title} description={p.page.data.description} translated={p.translated} jsonld={p.jsonld} markdownPath={mdPath} noindex={noindex}>
   <Sections p={p} />
