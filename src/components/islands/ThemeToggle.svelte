@@ -10,17 +10,10 @@
   function current(): boolean {
     const root = document.documentElement;
     const explicit = root.getAttribute('data-theme');
-    if (explicit) return explicit === 'dark';
-    return matchMedia('(prefers-color-scheme: dark)').matches;
+    return explicit === 'dark'; // light unless the visitor chose dark
   }
 
-  onMount(() => {
-    dark = current();
-    const mq = matchMedia('(prefers-color-scheme: dark)');
-    const onChange = () => { if (!document.documentElement.getAttribute('data-theme')) dark = mq.matches; };
-    mq.addEventListener('change', onChange);
-    return () => mq.removeEventListener('change', onChange);
-  });
+  onMount(() => { dark = current(); });
 
   function toggle() {
     const next = current() ? 'light' : 'dark';
