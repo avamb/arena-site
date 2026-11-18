@@ -135,6 +135,19 @@ sections:
         text: "Le riserve dei posti scadono con un timer, gli ordini hanno un limite di frequenza, il traffico abusivo viene filtrato."
 
   - type: cards
+    id: services
+    eyebrow: Servizi
+    title: Cosa fa il nostro team per te
+    lead: "Dettagli: [servizi extra](/pricing#services)."
+    items:
+      - title: Disegno della mappa dei posti, gratis
+        text: "Mandaci un PDF, uno schizzo o una tabella di file; disegniamo la mappa, di solito entro un giorno."
+      - title: Event manager, a pagamento
+        text: "Una persona del nostro team lavora come parte del tuo: crea eventi, li controlla prima delle vendite, estrae i report. Condizioni concordate con ogni organizzatore."
+      - title: White label
+        text: "Vendi senza il nostro nome: €45 al mese per marchio o struttura nell'UE, US$45 altrove."
+
+  - type: cards
     id: pricing
     eyebrow: Prezzi
     title: Quanto paghi
@@ -155,4 +168,4 @@ sections:
     text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
     primary: { label: Crea il tuo evento, href: /start#create }
     secondary: { label: Vedi i prezzi, href: /pricing }
-    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."
+    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."

@@ -30,7 +30,7 @@ sections:
   - type: cta
     id: start
     title: Napisz do zespołu
-    text: Powiedz nam, kim jesteś i z kim pracujesz. Odpowiadamy osobiście w ciągu jednego dnia roboczego.
+    text: Powiedz nam, kim jesteś i z kim pracujesz. Odpowiadamy w ciągu jednego dnia roboczego.
     primary: { label: Napisz do nas, href: /contact }
     secondary: { label: Przeczytaj dokumentację dla developerów, href: /developers }
     note: "Albo w Telegramie: czat jest czytany w ciągu dnia w Europie i Izraelu."

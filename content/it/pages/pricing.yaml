@@ -72,6 +72,21 @@ sections:
     note: "Paghi dopo l'evento con bonifico bancario. Per gli eventi in vendita per diversi mesi e per le strutture permanenti fatturiamo ogni mese. Il pagamento dopo l'evento è aperto alle organizzazioni confermate sulla piattaforma. Condizioni per grandi volumi e individuali su richiesta."
     terms: { label: Condizioni dettagliate →, href: /pricing/terms }
 
+  - type: cards
+    id: services
+    eyebrow: Servizi extra
+    title: Cos'altro posso ordinare?
+    lead: "Non fanno parte della commissione per biglietto. Ognuno si ordina separatamente."
+    items:
+      - title: Event manager
+        text: "Non hai tempo di configurare gli eventi? Una persona del nostro team lavora come parte del tuo: crea eventi e sessioni, controlla prezzi, categorie e mappa dei posti prima delle vendite, estrae i report che ti servono, invia inviti e reinvia biglietti. A pagamento a parte; le condizioni si concordano con ogni organizzatore."
+        link: { label: Scrivici, href: /contact }
+      - title: White label
+        text: "Vendi senza la riga Tickets: ArenaSoldOut.com: €45 al mese per marchio o struttura nei paesi dell'UE, US$45 in tutti gli altri paesi."
+        link: { label: Condizioni, href: /pricing/terms }
+      - title: Disegno della mappa dei posti
+        text: "Gratis. Mandaci un PDF, una foto di uno schizzo a mano o una tabella di file e posti, e disegniamo la mappa, di solito entro un giorno."
+        link: { label: Mappe dei posti, href: /product/seating }
   - type: faq
     id: questions
     eyebrow: Domande sul denaro
@@ -112,4 +127,4 @@ sections:
     text: "Crea l'evento, collega il tuo conto di pagamento, condividi il link. Un evento senza mappa dei posti è in vendita in 10 minuti; la mappa dei posti la disegniamo noi per te, gratis."
     primary: { label: Crea il tuo evento, href: /start#create }
     secondary: { label: Apri il bot di Telegram, href: https://t.me/EventsCentrBot }
-    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."
+    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."

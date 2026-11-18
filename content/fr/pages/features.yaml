@@ -135,6 +135,19 @@ sections:
         text: "Les retenues de places expirent sur minuteur, les commandes sont limitées en fréquence, le trafic abusif est filtré."
 
   - type: cards
+    id: services
+    eyebrow: Services
+    title: Ce que notre équipe fait pour vous
+    lead: "Détails : [services complémentaires](/pricing#services)."
+    items:
+      - title: Dessin du plan de salle, gratuit
+        text: "Envoyez un PDF, un croquis ou un tableau de rangs ; nous dessinons le plan, en général sous un jour."
+      - title: Gestionnaire d'événements, payant
+        text: "Une personne de notre équipe travaille comme membre de la vôtre : elle crée les événements, les vérifie avant les ventes, sort les rapports. Conditions convenues avec chaque organisateur."
+      - title: Marque blanche
+        text: "Vendez sans notre nom : €45 par mois par marque ou salle dans l'UE, US$45 ailleurs."
+
+  - type: cards
     id: pricing
     eyebrow: Tarifs
     title: Ce que vous payez
@@ -155,4 +168,4 @@ sections:
     text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
     primary: { label: Créer votre événement, href: /start#create }
     secondary: { label: Voir les tarifs, href: /pricing }
-    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."
+    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."

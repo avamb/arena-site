@@ -60,9 +60,9 @@ sections:
       - title: Cada venda no seu Telegram
         text: "Crie um evento a partir da foto de um cartaz no bot do Telegram e veja cada venda e reembolso no seu grupo em segundos."
         link: { label: Bot do Telegram, href: /product/telegram }
-      - title: Uma pessoa que configura com você
-        text: "Não é uma central de ajuda: nossa equipe conecta a sua conta de pagamentos, monta o mapa e confere o primeiro evento com você."
-        link: { label: Seu primeiro evento, href: /first-event }
+      - title: Configure você mesmo, ou nos passe a tarefa
+        text: "Você cria eventos, preços e categorias no Event Center ou no bot do Telegram, em minutos; desenhamos os mapas de assentos de graça. Sem tempo? O nosso gerente de eventos faz isso por você, como serviço pago."
+        link: { label: Serviços extras, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -75,7 +75,7 @@ sections:
       - q: Para onde vai o dinheiro do comprador?
         a: "Para a sua própria conta de pagamentos, a cada pedido: Stripe, Flitt ou AllPay. O ArenaSoldOut.com nunca retém valores. Nossa comissão é cobrada depois do evento ou descontada dos seus créditos."
       - q: Posso migrar meus eventos do Ticket Tailor?
-        a: "Sim. Envie a lista dos seus eventos e os seus mapas de assentos; a equipe configura os eventos e desenha os mapas de graça, e você continua vendendo no Ticket Tailor até a sua página conosco ficar pronta."
+        a: "Sim. Envie a lista dos seus eventos e os seus mapas de assentos; você cria os seus eventos no Event Center ou no bot do Telegram, desenhamos os seus mapas de assentos de graça, e você continua vendendo no Ticket Tailor até a sua página conosco ficar pronta. Sem tempo para configurar sozinho? O nosso [gerente de eventos](/pricing#services) faz isso por você, como serviço pago."
       - q: Eu pago assinatura?
         a: "Não. Você paga apenas pelos ingressos vendidos. Convites e ingressos gratuitos em eventos pagos não têm comissão."
       - q: E as entidades beneficentes?
@@ -89,4 +89,4 @@ sections:
     text: Crie o evento, conecte sua conta de pagamentos, compartilhe o link.
     primary: { label: Começar a vender, href: /start }
     secondary: { label: Ver preços, href: /pricing }
-    note: "Ou escreva para nós: comparamos os seus custos atuais e configuramos tudo com você em uma conversa."
+    note: "Dúvidas? Envie o que você paga no Ticket Tailor e comparamos com os seus custos aqui."

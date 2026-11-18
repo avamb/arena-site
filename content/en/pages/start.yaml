@@ -2,9 +2,9 @@
 # GET /v1/onboarding/form-schema (fields, lists and labels are not in this file) and posts to the
 # platform API directly (doc 34 §9). Only the form's own UI strings live here.
 title: "Start selling: apply as an organizer"
-description: "Tell us about your organization and events. The team sets up your organization, sales page and payment account, usually within a day."
+description: "Tell us about your organization and events. We confirm it and connect your payment account, usually within a day; then you sell on your own."
 h1: Start selling
-lead: "Tell us who you are and where you sell. We set up your organization, your sales page and connect your payment account, usually within a day. Events without a seating plan go on sale today."
+lead: "Tell us who you are and where you sell. We confirm your organization and connect your payment account once, usually within a day; events, prices and sales you run yourself. Events without a seating plan go on sale today."
 sections:
   - type: steps
     id: how
@@ -13,8 +13,8 @@ sections:
     items:
       - title: You send the application
         text: "Five short steps: contact, organization, events, payments and consent. Your answers are saved as you go, so you can leave and come back."
-      - title: We set you up
-        text: The team checks the application, creates your organization and your sales page, connects your payment account with you and, if you have a seated venue, draws the seating plan for free from your PDF, hand sketch or table of rows.
+      - title: We confirm you
+        text: The team checks the application, confirms your organization and connects your payment account once. For a seated venue we draw the seating plan for free from your PDF, hand sketch or table of rows. Events, prices and categories you create yourself in the Event Center or the Telegram bot.
       - title: You go on sale
         text: Share one link, or put the widget on your site. Every sale lands in your Event Center and in your Telegram group.
   - type: onboarding

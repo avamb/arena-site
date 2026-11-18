@@ -32,7 +32,7 @@ sections:
   - type: cta
     id: start
     title: Habla con nosotros
-    text: Cuéntanos sobre el recinto y el número de eventos al mes. Configuramos contigo el plano y las condiciones.
+    text: Cuéntanos sobre el recinto y el número de eventos al mes. Dibujamos el plano gratis y acordamos las condiciones del recinto.
     primary: { label: Habla con nosotros, href: /start }
     secondary: { label: Ver precios, href: /pricing }
-    note: "O escríbenos: lo configuramos todo contigo en una llamada."
+    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."

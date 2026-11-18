@@ -1,7 +1,7 @@
 title: "Inizia a vendere: candidati come organizzatore"
-description: "Raccontaci la tua organizzazione e i tuoi eventi. Il team configura organizzazione, pagina di vendita e conto di pagamento, di solito entro un giorno."
+description: "Raccontaci la tua organizzazione e i tuoi eventi. Confermiamo e colleghiamo il tuo conto di pagamento, di solito entro un giorno; poi vendi in autonomia."
 h1: Inizia a vendere
-lead: "Dicci chi sei e dove vendi. Configuriamo la tua organizzazione, la tua pagina di vendita e colleghiamo il tuo conto di pagamento, di solito entro un giorno. Gli eventi senza mappa dei posti vanno in vendita oggi."
+lead: "Dicci chi sei e dove vendi. Confermiamo la tua organizzazione e colleghiamo il tuo conto di pagamento una sola volta, di solito entro un giorno; eventi, prezzi e vendite li gestisci tu. Gli eventi senza mappa dei posti vanno in vendita oggi."
 sections:
   - type: steps
     id: how
@@ -10,8 +10,8 @@ sections:
     items:
       - title: Invii la richiesta
         text: "Cinque brevi passaggi: contatto, organizzazione, eventi, pagamenti e consenso. Le tue risposte vengono salvate man mano, così puoi uscire e tornare."
-      - title: Ti configuriamo
-        text: Il team controlla la richiesta, crea la tua organizzazione e la tua pagina di vendita, collega con te il conto di pagamento e, se hai una struttura con posti numerati, disegna gratis la mappa dei posti dal tuo PDF, schizzo a mano o tabella delle file.
+      - title: Ti confermiamo
+        text: Il team controlla la richiesta, conferma la tua organizzazione e collega il tuo conto di pagamento una sola volta. Se hai una struttura con posti numerati, disegniamo gratis la mappa dei posti dal tuo PDF, schizzo a mano o tabella delle file. Eventi, prezzi e categorie li crei tu nell'Event Center o nel bot di Telegram.
       - title: Vai in vendita
         text: Condividi un solo link, oppure metti il widget sul tuo sito. Ogni vendita arriva nel tuo Event Center e nel tuo gruppo Telegram.
   - type: onboarding

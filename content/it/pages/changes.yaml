@@ -1,14 +1,14 @@
 title: "Ultime novità"
 description: "Una riga per ogni funzione arrivata agli organizzatori, con la data. La piattaforma cresce ogni settimana."
 h1: Ultime novità
-lead: "Una riga per ogni funzione arrivata agli organizzatori. Dicci cosa ti serve dopo: la maggior parte delle richieste degli organizzatori viene rilasciata entro poche settimane, e il team risponde di persona."
+lead: "Una riga per ogni funzione arrivata agli organizzatori. Dicci cosa ti serve dopo: la maggior parte delle richieste degli organizzatori viene rilasciata entro poche settimane."
 sections:
   - type: changelog
     id: log
   - type: cta
     id: start
     title: Dicci cosa ti serve
-    text: La maggior parte delle richieste degli organizzatori viene rilasciata entro poche settimane. Scrivi cosa manca per il tuo evento e il team risponde di persona.
+    text: La maggior parte delle richieste degli organizzatori viene rilasciata entro poche settimane. Scrivi cosa manca per il tuo evento.
     primary: { label: Dicci cosa ti serve, href: /start }
     secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."
+    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."

@@ -26,7 +26,7 @@ sections:
       - q: Os promotores veem as vendas uns dos outros?
         a: Não. Cada promotor vê apenas a própria página; o organizador vê tudo.
       - q: Uma cidade muda de local. O que acontece com os ingressos vendidos?
-        a: A sessão é movida com e-mails para os compradores e ingressos atualizados; os assentos são remapeados com você no novo mapa.
+        a: A sessão é movida com e-mails para os compradores e ingressos atualizados; os assentos passam para o novo mapa; desenhamos o novo local de graça.
       - q: Quanto um ingresso me custa em turnê?
         a: "O mesmo valor por ingresso em todas as cidades; veja os [preços](/pricing)."
   - type: cta
@@ -35,4 +35,4 @@ sections:
     text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
     primary: { label: Criar seu evento, href: /start#create }
     secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."
+    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."

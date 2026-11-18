@@ -32,7 +32,7 @@ sections:
   - type: cta
     id: start
     title: Fale conosco
-    text: Conte-nos sobre o local e o número de eventos por mês. Configuramos o mapa e as condições com você.
+    text: Conte-nos sobre o local e o número de eventos por mês. Desenhamos o mapa de graça e combinamos as condições do local.
     primary: { label: Fale conosco, href: /start }
     secondary: { label: Ver preços, href: /pricing }
-    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."
+    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."

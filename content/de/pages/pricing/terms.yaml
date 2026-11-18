@@ -40,6 +40,10 @@ sections:
 
       Solange White Label aktiv ist, entfallen die Zeile im Widget, der Footer Ihres Shops und die Plattform-Zeile in den E-Mails an Käufer, und die E-Mails gehen unter dem Namen der Marke hinaus. Bestehen bleiben die von uns gehosteten Verkaufsseiten, die Links zu den Nutzungsbedingungen und zur Datenschutzerklärung der Plattform beim Checkout und die Angaben zum Verkäufer, wie das Gesetz es verlangt. Unser Team schaltet White Label für eine Marke ab einem von Ihnen gewählten Datum ein und aus: Schreiben Sie uns über die [Kontaktseite](/contact).
 
+      ## Event-Manager
+
+      ArenaSoldOut.com ist so gebaut, dass Veranstalter alles selbst einrichten: Events, Vorstellungen, Preise, Kategorien, Promo-Codes, Berichte. Unsere Provision pro Ticket deckt die Plattform und die Antworten auf Fragen ab; Arbeit, die für Sie erledigt wird, ist darin nicht enthalten. Haben Sie für diese Arbeit keine Zeit, kann ein Event-Manager aus unserem Team sie als Teil Ihres Teams übernehmen: Events und Vorstellungen anlegen, vor dem Verkauf prüfen, Berichte erstellen, Freikarten versenden und Tickets erneut senden. Das ist eine gesonderte kostenpflichtige Leistung; Umfang und Preis werden mit jedem Veranstalter vereinbart. Schreiben Sie uns über die [Kontaktseite](/contact).
+
       ## Erstattungen, Terminverlegungen und Absagen
 
       Gibt ein Käufer ein Ticket zurück, zahlen Sie als Veranstalter ihm die Erstattung. Die Provision für einen bereits erfolgten Verkauf bleibt bestehen. Wir berechnen keine gesonderte Provision für die Bearbeitung einer Erstattung, für das Verlegen des Termins oder für die E-Mails an die Käufer. Es gelten die eigenen Konditionen des Zahlungsanbieters, wie der Anbieter sie nennt. Wird ein Event abgesagt, wird die bereits berechnete Provision nicht in Geld zurückgezahlt.
@@ -61,4 +65,4 @@ sections:
     text: "Event anlegen, Zahlungskonto verbinden, Link teilen. Ein Event ohne Saalplan ist in 10 Minuten im Verkauf; einen Saalplan zeichnen wir für Sie kostenlos."
     primary: { label: Event anlegen, href: /start#create }
     secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."
+    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."

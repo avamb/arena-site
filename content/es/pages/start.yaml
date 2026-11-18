@@ -1,5 +1,5 @@
 title: "Empieza a vender: solicitud de organizador"
-description: "Cuéntanos sobre tu organización y tus eventos. El equipo configura tu organización, tu página de venta y tu cuenta de pagos, normalmente en un día."
+description: "Cuéntanos sobre tu organización y tus eventos. Confirmamos tu organización y conectamos tu cuenta de pagos, normalmente en un día; después vendes por tu cuenta."
 h1: Empieza a vender
 lead: "Cuéntanos quién eres y dónde vendes. Configuramos tu organización y tu página de venta y conectamos tu cuenta de pagos, normalmente en un día. Los eventos sin plano de asientos salen a la venta hoy."
 sections:
@@ -10,8 +10,8 @@ sections:
     items:
       - title: Envías la solicitud
         text: "Cinco pasos cortos: contacto, organización, eventos, pagos y consentimiento. Tus respuestas se guardan sobre la marcha, así que puedes salir y volver."
-      - title: Te configuramos
-        text: El equipo revisa la solicitud, crea tu organización y tu página de venta, conecta contigo tu cuenta de pagos y, si tienes un recinto con asientos, dibuja sin coste el plano de asientos a partir de tu PDF, boceto a mano o tabla de filas.
+      - title: Te confirmamos
+        text: El equipo revisa la solicitud, confirma tu organización y conecta tu cuenta de pagos una sola vez. Si tienes un recinto con asientos, dibujamos gratis el plano a partir de tu PDF, boceto a mano o tabla de filas. Los eventos, precios y categorías los creas tú en el Event Center o en el bot de Telegram.
       - title: Sales a la venta
         text: Comparte un solo enlace o pon el widget en tu web. Cada venta llega a tu Event Center y a tu grupo de Telegram.
   - type: onboarding

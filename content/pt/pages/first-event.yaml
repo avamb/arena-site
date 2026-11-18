@@ -38,7 +38,7 @@ sections:
       - q: O que eu preparo?
         a: "O nome do evento, o local, as datas e horários, as categorias de ingressos e preços, um cartaz e as chaves de API da sua conta de pagamentos. Para assentos, o mapa do local em qualquer uma das formas acima."
       - q: A equipe pode configurar por mim?
-        a: "Sim. Envie os detalhes no [bot do Telegram](https://t.me/EventsCentrBot) ou pelo formulário de contato e criamos o evento com você; você confere antes de as vendas começarem."
+        a: "Como serviço pago, sim. Um gerente de eventos da nossa equipe trabalha como parte da sua: cria eventos e sessões, confere preços, categorias e o mapa de assentos antes das vendas e extrai relatórios. As condições são combinadas com cada organizador: [escreva para nós](/contact). Configurar um evento sozinho leva cerca de 10 minutos."
       - q: Quanto custa o primeiro evento?
         a: "O mesmo que qualquer outro: uma comissão por ingresso vendido, cobrada depois do evento, ou menos com créditos comprados antecipadamente. Mapas de assentos e convites não custam nada. Os preços estão na [página de preços](/pricing)."
   - type: cta

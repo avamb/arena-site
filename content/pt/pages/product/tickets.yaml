@@ -44,4 +44,4 @@ sections:
     text: Crie o evento, conecte sua conta de pagamentos, compartilhe o link. O ingresso de exemplo fica pronto junto com o evento.
     primary: { label: Criar seu evento, href: /start#create }
     secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou escreva para nós: configuramos tudo com você em uma conversa."
+    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."

@@ -26,7 +26,7 @@ sections:
       - q: Sehen Veranstalter die Verkäufe der anderen?
         a: Nein. Jeder Veranstalter sieht nur seine eigene Seite; der Veranstalter der Tournee sieht alles.
       - q: Eine Stadt wechselt die Spielstätte. Was passiert mit verkauften Tickets?
-        a: Die Session wird verlegt, mit E-Mails an die Käufer und aktualisierten Tickets; die Plätze werden gemeinsam mit Ihnen auf den neuen Plan übertragen.
+        a: Die Session wird verlegt, mit E-Mails an die Käufer und aktualisierten Tickets; die Plätze wandern auf den neuen Plan; die neue Spielstätte zeichnen wir kostenlos.
       - q: Was kostet mich ein Ticket auf Tournee?
         a: "In jeder Stadt derselbe Betrag pro Ticket; siehe [Preise](/pricing)."
   - type: cta
@@ -35,4 +35,4 @@ sections:
     text: Event anlegen, Zahlungskonto verbinden, Link teilen.
     primary: { label: Event anlegen, href: /start#create }
     secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."
+    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."

@@ -1,14 +1,14 @@
 title: "Najnowsze zmiany"
 description: "Jedna linijka dla każdej funkcji, która trafiła do organizatorów, z datą. Platforma rośnie co tydzień."
 h1: Najnowsze zmiany
-lead: "Jedna linijka dla każdej funkcji, która trafiła do organizatorów. Napisz, czego potrzebujesz dalej: większość próśb organizatorów trafia do produkcji w ciągu kilku tygodni, a zespół odpowiada osobiście."
+lead: "Jedna linijka dla każdej funkcji, która trafiła do organizatorów. Napisz, czego potrzebujesz dalej: większość próśb organizatorów trafia do produkcji w ciągu kilku tygodni."
 sections:
   - type: changelog
     id: log
   - type: cta
     id: start
     title: Napisz, czego potrzebujesz
-    text: Większość próśb organizatorów trafia do produkcji w ciągu kilku tygodni. Napisz, czego brakuje dla twojego wydarzenia, a zespół odpowie osobiście.
+    text: Większość próśb organizatorów trafia do produkcji w ciągu kilku tygodni. Napisz, czego brakuje dla twojego wydarzenia.
     primary: { label: "Napisz, czego potrzebujesz", href: /start }
     secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."
+    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."

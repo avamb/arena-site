@@ -31,7 +31,7 @@ sections:
   - type: cta
     id: start
     title: Verkaufen Sie auf Ihrer Website
-    text: Nennen Sie uns die Adresse der Website und den Anbieter, den Sie nutzen. Wir richten Plugin oder Widget gemeinsam mit Ihnen ein.
+    text: "Setzen Sie das Ticket-Widget auf Ihre Website: drei Zeilen Code, und der Verkauf läuft aus Ihrem Event Center."
     primary: { label: Verkauf starten, href: /start }
     secondary: { label: Entwicklerdokumentation lesen, href: /developers }
     note: WooCommerce-Websites behalten ihren Shop.

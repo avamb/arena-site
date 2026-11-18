@@ -35,4 +35,4 @@ sections:
     text: "Un PDF, la photo d'un croquis à la main ou un tableau de rangs et de places suffit. Nous le dessinons gratuitement dans votre événement et vous le montrons avant le début des ventes."
     primary: { label: Commencer à vendre, href: /start }
     secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."
+    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."

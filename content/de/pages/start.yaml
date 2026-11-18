@@ -1,7 +1,7 @@
 title: "Verkauf starten: als Veranstalter bewerben"
-description: "Erzählen Sie uns von Ihrer Organisation und Ihren Events. Das Team richtet Organisation, Verkaufsseite und Zahlungskonto ein, meist innerhalb eines Tages."
+description: "Erzählen Sie uns von Ihrer Organisation. Wir bestätigen sie und verbinden Ihr Zahlungskonto, meist innerhalb eines Tages; danach verkaufen Sie selbst."
 h1: Verkauf starten
-lead: "Sagen Sie uns, wer Sie sind und wo Sie verkaufen. Wir richten Ihre Organisation und Ihre Verkaufsseite ein und verbinden Ihr Zahlungskonto, meist innerhalb eines Tages. Events ohne Saalplan gehen noch heute in den Verkauf."
+lead: "Sagen Sie uns, wer Sie sind und wo Sie verkaufen. Wir bestätigen Ihre Organisation und verbinden Ihr Zahlungskonto einmalig, meist innerhalb eines Tages; Events, Preise und Verkäufe führen Sie selbst durch. Events ohne Saalplan gehen noch heute in den Verkauf."
 sections:
   - type: steps
     id: how
@@ -10,8 +10,8 @@ sections:
     items:
       - title: Sie senden den Antrag
         text: "Fünf kurze Schritte: Kontakt, Organisation, Events, Zahlungen und Einwilligung. Ihre Angaben werden laufend gespeichert, Sie können also unterbrechen und später weitermachen."
-      - title: Wir richten Sie ein
-        text: Das Team prüft den Antrag, legt Ihre Organisation und Ihre Verkaufsseite an, verbindet gemeinsam mit Ihnen Ihr Zahlungskonto und zeichnet, wenn Sie eine Spielstätte mit Sitzplätzen haben, den Saalplan kostenlos nach Ihrem PDF, Ihrer Handskizze oder Ihrer Tabelle mit Reihen.
+      - title: Wir bestätigen Sie
+        text: Das Team prüft den Antrag, bestätigt Ihre Organisation und verbindet Ihr Zahlungskonto einmalig. Für eine Spielstätte mit Sitzplätzen zeichnen wir den Saalplan kostenlos nach Ihrem PDF, Ihrer Handskizze oder Ihrer Tabelle mit Reihen. Events, Preise und Kategorien legen Sie selbst im Event Center oder im Telegram-Bot an.
       - title: Sie gehen in den Verkauf
         text: Teilen Sie einen Link oder setzen Sie das Widget auf Ihre Website. Jeder Verkauf landet in Ihrem Event Center und in Ihrer Telegram-Gruppe.
   - type: onboarding

@@ -32,7 +32,7 @@ sections:
   - type: cta
     id: start
     title: Talk to us
-    text: Tell us about the venue and the number of events a month. We set up the plan and the terms with you.
+    text: Tell us about the venue and the number of events a month. We draw the plan for free and agree the venue terms.
     primary: { label: Talk to us, href: /start }
     secondary: { label: See pricing, href: /pricing }
-    note: "Or write to us: we set everything up with you on a call."
+    note: "Questions? Write to us: the team answers within one working day."

@@ -28,4 +28,4 @@ sections:
     text: Crea el evento, conecta tu cuenta de pagos, comparte el enlace.
     primary: { label: Crear tu evento, href: /start#create }
     secondary: { label: Leer los datos, href: /facts }
-    note: "O escríbenos: lo configuramos todo contigo en una llamada."
+    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."

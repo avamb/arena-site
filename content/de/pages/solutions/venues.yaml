@@ -32,7 +32,7 @@ sections:
   - type: cta
     id: start
     title: Sprechen Sie mit uns
-    text: Erzählen Sie uns von der Spielstätte und der Zahl der Events im Monat. Wir richten Plan und Konditionen gemeinsam mit Ihnen ein.
+    text: Erzählen Sie uns von der Spielstätte und der Zahl der Events im Monat. Wir zeichnen den Plan kostenlos und vereinbaren die Konditionen für die Spielstätte.
     primary: { label: Sprechen Sie mit uns, href: /start }
     secondary: { label: Preise ansehen, href: /pricing }
-    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."
+    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."

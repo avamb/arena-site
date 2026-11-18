@@ -32,7 +32,7 @@ sections:
   - type: cta
     id: start
     title: Parlons-en
-    text: Parlez-nous de la salle et du nombre d'événements par mois. Nous configurons le plan et les conditions avec vous.
+    text: Parlez-nous de la salle et du nombre d'événements par mois. Nous dessinons le plan gratuitement et convenons des conditions de la salle.
     primary: { label: Parlons-en, href: /start }
     secondary: { label: Voir les tarifs, href: /pricing }
-    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."
+    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."

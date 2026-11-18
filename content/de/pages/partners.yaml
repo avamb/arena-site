@@ -30,7 +30,7 @@ sections:
   - type: cta
     id: start
     title: Schreiben Sie dem Team
-    text: Sagen Sie uns, wer Sie sind und mit wem Sie arbeiten. Wir antworten persönlich innerhalb eines Werktags.
+    text: Sagen Sie uns, wer Sie sind und mit wem Sie arbeiten. Wir antworten innerhalb eines Werktags.
     primary: { label: Kontakt aufnehmen, href: /contact }
     secondary: { label: Entwicklerdokumentation lesen, href: /developers }
     note: "Oder in Telegram: Der Chat wird tagsüber in Europa und Israel gelesen."

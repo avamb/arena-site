@@ -1,14 +1,14 @@
 title: "Neueste Änderungen"
 description: "Eine Zeile für jede Funktion, die bei Veranstaltern angekommen ist, mit Datum. Die Plattform wächst jede Woche."
 h1: Neueste Änderungen
-lead: "Eine Zeile für jede Funktion, die bei Veranstaltern angekommen ist. Sagen Sie uns, was Sie als Nächstes brauchen: Die meisten Wünsche von Veranstaltern sind innerhalb weniger Wochen umgesetzt, und das Team antwortet persönlich."
+lead: "Eine Zeile für jede Funktion, die bei Veranstaltern angekommen ist. Sagen Sie uns, was Sie als Nächstes brauchen: Die meisten Wünsche von Veranstaltern sind innerhalb weniger Wochen umgesetzt."
 sections:
   - type: changelog
     id: log
   - type: cta
     id: start
     title: Sagen Sie uns, was Sie brauchen
-    text: Die meisten Wünsche von Veranstaltern sind innerhalb weniger Wochen umgesetzt. Schreiben Sie, was für Ihr Event fehlt, und das Team antwortet persönlich.
+    text: Die meisten Wünsche von Veranstaltern sind innerhalb weniger Wochen umgesetzt. Schreiben Sie, was für Ihr Event fehlt.
     primary: { label: "Sagen Sie uns, was Sie brauchen", href: /start }
     secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."
+    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."

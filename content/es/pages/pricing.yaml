@@ -72,6 +72,21 @@ sections:
     note: "Pagas después del evento por transferencia bancaria. Para eventos a la venta durante varios meses y para recintos permanentes facturamos cada mes. El pago tras el evento está abierto a organizaciones confirmadas en la plataforma. Condiciones por volumen e individuales bajo petición."
     terms: { label: Condiciones detalladas →, href: /pricing/terms }
 
+  - type: cards
+    id: services
+    eyebrow: Servicios adicionales
+    title: ¿Qué más puedo contratar?
+    lead: "No forman parte de la comisión por entrada. Cada uno se contrata por separado."
+    items:
+      - title: Gestor de eventos
+        text: "¿Sin tiempo para configurar los eventos tú mismo? Una persona de nuestro equipo trabaja como parte del tuyo: crea eventos y sesiones, revisa precios, categorías y el plano de asientos antes de la venta, prepara los informes que necesites, envía invitaciones y reenvía entradas. Se paga aparte; las condiciones se acuerdan con cada organizador."
+        link: { label: Escríbenos, href: /contact }
+      - title: White label
+        text: "Vende sin la línea Tickets: ArenaSoldOut.com: €45 al mes por marca o recinto en los países de la UE, US$45 en todos los demás."
+        link: { label: Condiciones, href: /pricing/terms }
+      - title: Dibujo del plano de asientos
+        text: "Gratis. Envía un PDF, una foto de un boceto a mano o una tabla de filas y asientos, y dibujamos el plano, normalmente en un día."
+        link: { label: Planos de asientos, href: /product/seating }
   - type: faq
     id: questions
     eyebrow: Preguntas sobre el dinero
@@ -112,4 +127,4 @@ sections:
     text: "Crea el evento, conecta tu cuenta de pagos, comparte el enlace. Un evento sin plano de asientos sale a la venta en 10 minutos; el plano de asientos lo dibujamos nosotros, sin coste."
     primary: { label: Crear tu evento, href: /start#create }
     secondary: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
-    note: "O escríbenos: lo configuramos todo contigo en una llamada."
+    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."

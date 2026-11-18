@@ -99,7 +99,7 @@ sections:
       - title: Was brauche ich?
         text: "Den Namen und den Zeitplan des Events, Ihre Ticketpreise, Ihr Plakat und Ihr eigenes Zahlungskonto: Stripe, Flitt, AllPay oder einen anderen Anbieter Ihres Landes. Das Geld geht ab dem ersten Ticket an Sie."
       - title: Wie richte ich es ein?
-        text: "Im Browser am Computer oder Telefon, im „Event Center“*. Oder in Telegram, wo der Bot Ihr Plakat liest und Termine, Preise und Spielstätte zur Bestätigung einträgt. Oder Sie schicken es uns, und wir richten es ein."
+        text: "Im Browser am Computer oder Telefon, im „Event Center“*. Oder in Telegram, wo der Bot Ihr Plakat liest und Termine, Preise und Spielstätte zur Bestätigung einträgt. Keine Zeit? Unser [Event-Manager](/pricing#services) übernimmt es für Sie, als bezahlte Leistung."
     note: "* Das „Event Center“ ist Ihr Veranstalterkonto bei ArenaSoldOut.com: jedes Event, jede Bestellung, Erstattung, Freikarte und Vorstellung, für Sie und Ihr Team, im Browser und in Telegram. [Das Event Center unten ansehen →](#center) Jeder Schritt von der Anmeldung bis zum Scanner: [Ihr erstes Event →](/first-event)"
 
   - type: ways
@@ -316,7 +316,7 @@ sections:
     id: changes
     eyebrow: Neueste Änderungen
     title: Die Plattform wächst jede Woche
-    lead: "Eine Zeile für jede Funktion, die bei den Veranstaltern angekommen ist. Sagen Sie uns, was Sie als Nächstes brauchen: Die meisten Wünsche von Veranstaltern sind innerhalb von Wochen umgesetzt, und das Team antwortet persönlich."
+    lead: "Eine Zeile für jede Funktion, die bei den Veranstaltern angekommen ist. Sagen Sie uns, was Sie als Nächstes brauchen: Die meisten Wünsche von Veranstaltern sind innerhalb von Wochen umgesetzt."
     cta: { label: "Sagen Sie uns, was Sie brauchen", href: /start }
     more: { label: Vollständige Liste →, href: /changes }
     limit: 10
@@ -327,4 +327,4 @@ sections:
     text: "Event anlegen, Zahlungskonto verbinden, Link teilen. Ein Event ohne Saalplan ist in 10 Minuten im Verkauf; einen Saalplan zeichnen wir für Sie kostenlos."
     primary: { label: Event anlegen, href: /start#create }
     secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."
+    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."

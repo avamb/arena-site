@@ -72,6 +72,21 @@ sections:
     note: "Sie zahlen nach der Veranstaltung per Banküberweisung. Für Events, die mehrere Monate im Verkauf sind, und für feste Spielstätten stellen wir monatlich Rechnung. Zahlung nach der Veranstaltung steht Organisationen offen, die auf der Plattform bestätigt sind. Mengen- und individuelle Konditionen auf Anfrage."
     terms: { label: Detaillierte Bedingungen →, href: /pricing/terms }
 
+  - type: cards
+    id: services
+    eyebrow: Zusatzleistungen
+    title: Was kann ich sonst bestellen?
+    lead: "Nicht Teil der Provision pro Ticket. Jede Leistung wird gesondert bestellt."
+    items:
+      - title: Event-Manager
+        text: "Keine Zeit, Events selbst anzulegen? Eine Person aus unserem Team arbeitet als Teil Ihres Teams: legt Events und Vorstellungen an, prüft Preise, Kategorien und Saalplan vor dem Verkauf, erstellt die Berichte, die Sie brauchen, versendet Freikarten und schickt Tickets erneut. Gesondert kostenpflichtig; die Konditionen werden mit jedem Veranstalter vereinbart."
+        link: { label: Schreiben Sie uns, href: /contact }
+      - title: White Label
+        text: "Verkaufen Sie ohne die Zeile Tickets: ArenaSoldOut.com: €45 im Monat pro Marke oder Spielstätte in EU-Ländern, US$45 in allen anderen Ländern."
+        link: { label: Konditionen, href: /pricing/terms }
+      - title: Saalplan zeichnen
+        text: "Kostenlos. Senden Sie ein PDF, ein Foto einer Handskizze oder eine Tabelle mit Reihen und Plätzen, und wir zeichnen den Plan, meist innerhalb eines Tages."
+        link: { label: Saalpläne, href: /product/seating }
   - type: faq
     id: questions
     eyebrow: Fragen zum Geld
@@ -112,4 +127,4 @@ sections:
     text: "Event anlegen, Zahlungskonto verbinden, Link teilen. Ein Event ohne Saalplan ist in 10 Minuten im Verkauf; einen Saalplan zeichnen wir für Sie kostenlos."
     primary: { label: Event anlegen, href: /start#create }
     secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."
+    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."
