@@ -1,0 +1,10 @@
+title: "Марина Баканова, засновниця ArenaSoldOut.com"
+description: "Марина Баканова: сервіси для організаторів заходів з 1996 року, перший інтернет-магазин у 1999, 20 років організації заходів, ArenaSoldOut.com з 2019."
+h1: "Марина Баканова"
+related:
+  - { label: "Статті в блозі", href: /blog }
+  - { label: "Про ArenaSoldOut.com", href: /company }
+sections:
+  - type: person
+    id: author
+    author: marina-bakanova

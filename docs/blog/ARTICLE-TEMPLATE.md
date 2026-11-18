@@ -13,6 +13,7 @@
 title: "At most 60 characters, with the search term"            # (check) 1-60
 description: "The direct answer to the article's question."       # (check) 70-160
 date: 2026-11-19
+author: marina-bakanova
 cover: ./images/<slug>/cover.jpg                                  # (check) required
 cover_alt: "What the cover shows, one sentence"                   # (check) required
 tags: [pricing]

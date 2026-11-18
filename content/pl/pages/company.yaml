@@ -6,6 +6,7 @@ related:
   - { label: Klienci i doświadczenie, href: /clients }
   - { label: Fakty z datami, href: /facts }
   - { label: Najnowsze zmiany, href: /changes }
+  - { label: "Marina Bakanova, założycielka", href: /company/marina-bakanova }
 sections:
   - type: prose
     id: story

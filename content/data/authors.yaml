@@ -1,0 +1,32 @@
+# Article authors (E-E-A-T): a post sets `author: <id>`, the page shows the name, photo and bio and
+# links the author page; Article JSON-LD gets a Person with sameAs. Photo in src/images/authors/<photo>.
+# The author page is content/<lang>/pages/<page>.yaml with a `person` section. Text by the owner, 18.11.2026.
+marina-bakanova:
+  photo: marina-bakanova.jpg
+  page: /company/marina-bakanova
+  sameAs:
+    - https://www.linkedin.com/in/marina-bakanova/
+  name:
+    en: Marina Bakanova
+    ru: Марина Баканова
+    uk: Марина Баканова
+  role:
+    en: Founder of ArenaSoldOut.com
+    es: Fundadora de ArenaSoldOut.com
+    pt: Fundadora da ArenaSoldOut.com
+    de: Gründerin von ArenaSoldOut.com
+    fr: Fondatrice d'ArenaSoldOut.com
+    it: Fondatrice di ArenaSoldOut.com
+    pl: Założycielka ArenaSoldOut.com
+    uk: Засновниця ArenaSoldOut.com
+    ru: Основатель ArenaSoldOut.com
+  bio:
+    en: "Services for event organizers since 1996. First online shop in 1999. In parallel, 20 years as an event organizer and in international business. The ArenaSoldOut.com platform since 2019."
+    es: "Servicios para organizadores de eventos desde 1996. Primera tienda online en 1999. En paralelo, 20 años como organizadora de eventos y en negocios internacionales. La plataforma ArenaSoldOut.com desde 2019."
+    pt: "Serviços para organizadores de eventos desde 1996. Primeira loja online em 1999. Em paralelo, 20 anos como organizadora de eventos e em negócios internacionais. A plataforma ArenaSoldOut.com desde 2019."
+    de: "Services für Veranstalter seit 1996. Erster eigener Onlineshop 1999. Parallel 20 Jahre Erfahrung als Veranstalterin und im internationalen Geschäft. Die Plattform ArenaSoldOut.com seit 2019."
+    fr: "Des services pour les organisateurs d'événements depuis 1996. Première boutique en ligne en 1999. En parallèle, 20 ans comme organisatrice d'événements et dans des entreprises internationales. La plateforme ArenaSoldOut.com depuis 2019."
+    it: "Servizi per organizzatori di eventi dal 1996. Primo negozio online nel 1999. In parallelo, 20 anni come organizzatrice di eventi e nel business internazionale. La piattaforma ArenaSoldOut.com dal 2019."
+    pl: "Usługi dla organizatorów wydarzeń od 1996 roku. Pierwszy własny sklep internetowy w 1999 roku. Równolegle 20 lat doświadczenia jako organizatorka wydarzeń i w biznesie międzynarodowym. Platforma ArenaSoldOut.com od 2019 roku."
+    uk: "Сервіси для організаторів заходів з 1996 року. Перший власний інтернет-магазин у 1999 році. Паралельно 20 років досвіду організаторки заходів і міжнародного бізнесу. Платформа ArenaSoldOut.com з 2019 року."
+    ru: "Сервисы для организаторов мероприятий с 1996 года. Первый собственный интернет-магазин в 1999 году. Параллельно 20 лет опыта организатора мероприятий и международного бизнеса. Платформа ArenaSoldOut.com с 2019 года."

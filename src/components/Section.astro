@@ -15,10 +15,13 @@ import Clients from './sections/Clients.astro';
 import Changes from './sections/Changes.astro';
 import Cta from './sections/Cta.astro';
 import Generic from './sections/Generic.astro';
+import AuthorCard from './AuthorCard.astro';
+import { authorFor } from '@/lib/data';
 interface Props { p: LoadedPage; s: LoadedPage['page']['data']['sections'][number]; first: boolean }
 const { p, s, first } = Astro.props;
 const { lang, providers, markets, pricing, changelog, posts } = p;
-const generic = !['hero', 'facts', 'steps', 'ways', 'qa', 'center', 'money', 'pricing', 'who', 'reasons', 'clients', 'changes', 'cta'].includes(s.type);
+const generic = !['hero', 'facts', 'steps', 'ways', 'qa', 'center', 'money', 'pricing', 'who', 'reasons', 'clients', 'changes', 'cta', 'person'].includes(s.type);
+const person = s.type === 'person' ? authorFor(s.author, lang) : undefined;
 ---
 {s.type === 'hero' && <Hero s={s} lang={lang} />}
 {s.type === 'facts' && <Facts s={s} />}
@@ -33,4 +36,5 @@ const generic = !['hero', 'facts', 'steps', 'ways', 'qa', 'center', 'money', 'pr
 {s.type === 'clients' && <Clients s={s} lang={lang} />}
 {s.type === 'changes' && <Changes s={s} changelog={changelog} lang={lang} />}
 {s.type === 'cta' && <Cta s={s} lang={lang} />}
+{person && <section class="section" id={s.id}><div class="wrap"><AuthorCard author={person} lang={lang} full /></div></section>}
 {generic && <Generic s={s as any} lang={lang} providers={providers} markets={markets} changelog={changelog} posts={posts} first={first} />}
