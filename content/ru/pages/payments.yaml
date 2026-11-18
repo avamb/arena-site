@@ -36,6 +36,8 @@ sections:
         bit: Bit
         installments: рассрочка
         bank_transfer: банковский перевод
+        ideal: iDEAL
+        twint: TWINT
 
   - type: cards
     id: connect

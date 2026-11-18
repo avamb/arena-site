@@ -36,6 +36,8 @@ sections:
         bit: Bit
         installments: pagamento a rate
         bank_transfer: bonifico bancario
+        ideal: iDEAL
+        twint: TWINT
 
   - type: cards
     id: connect

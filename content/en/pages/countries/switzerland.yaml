@@ -1,0 +1,70 @@
+# Switzerland (Marina, 18.11.2026): Stripe; TWINT works when the organizer turns it on in Stripe; prices in US$.
+title: "Event ticketing in Switzerland: TWINT, CHF and Stripe"
+description: "Sell tickets for events in Switzerland in Swiss francs through your own Stripe account, with TWINT and cards. Seating plans drawn for free."
+h1: Ticketing for events in Switzerland
+lead: Buyers in Switzerland pay in francs with TWINT or a card, into your own Stripe account.
+related:
+  - { label: All countries, href: /countries, text: "Providers, currencies and payment methods by country." }
+  - { label: Concert tours, href: /solutions/concert-tours, text: "Many cities and countries in one event, a page per promoter." }
+  - { label: Seating plans, href: /product/seating, text: "Send a PDF, a sketch or a table of rows; we draw the plan for free." }
+sections:
+  - type: glance
+    id: glance
+    eyebrow: At a glance
+    title: Switzerland at a glance
+    rows:
+      - { k: Payment provider, v: "Stripe" }
+      - { k: Currency, v: "Swiss franc (CHF)" }
+      - { k: Payment methods, v: "TWINT, cards, Apple Pay, Google Pay: the ones you turn on in Stripe" }
+      - { k: Buyer page, v: "English, Spanish, Russian, Czech, Hebrew; German, French and Italian on request" }
+      - { k: Our price, v: "{usdPrice} per ticket, {usdSeated} with a seat" }
+      - { k: VAT on our commission, v: "None" }
+
+  - type: prose
+    id: twint
+    eyebrow: TWINT
+    title: How do buyers pay with TWINT?
+    body: |
+      TWINT is the payment method most people in Switzerland use. You turn it on in your Stripe dashboard, and it appears in the checkout next to cards. Stripe sets its own fees for TWINT; you see them in your Stripe account. Every order is paid into your account, and ArenaSoldOut.com never holds your money.
+
+  - type: cards
+    id: where
+    eyebrow: Where you sell
+    title: Where do buyers find my tickets?
+    lead: In three places at once. Sales from all of them come into one Event Center.
+    items:
+      - title: Our sales page
+        text: We host a page for your event at tickets.arenasoldout.com/your-name/your-event. There is nothing to build.
+        link: { label: Where you sell →, href: /product/sell }
+      - title: Your own site
+        text: Put the ticket widget on the site you already have. Buyers choose seats and pay without leaving it.
+        link: { label: The widget →, href: /product/sell }
+      - title: Your social media
+        text: Share the link in social media and messengers, or print a QR code on the poster. Every order is tied to its link, so you see which one sold.
+        link: { label: Links and QR codes →, href: /product/sell }
+
+  - type: faq
+    id: questions
+    eyebrow: Questions
+    title: What do organizers ask before they start?
+    items:
+      - q: How much does a ticket cost me?
+        a: "{usdPrice} per ticket, {usdSeated} with a seat. You pay after the event, for tickets sold. Invitations carry no commission. See [pricing](/pricing)."
+      - q: How fast can I start selling?
+        a: We confirm your organization, usually within a day. With a payment account in place, an event without a seating plan goes on sale in 10 minutes. A seating plan we draw for free, usually within a day.
+      - q: My tickets are cheap. Is there a lower price?
+        a: "Yes. When every ticket of the event costs {usdLowMax} or less, the commission is {lowPercent}% of the ticket price. See [pricing](/pricing)."
+      - q: I run the same show every week. Do I create a new event each time?
+        a: No. You add a session to the same event; prices, categories and the seating plan carry over, and buyers pick the date.
+      - q: Can I see the sales of each event in real time?
+        a: Yes. The Event Center shows orders and totals per session, with a CSV report. Every sale and refund also comes to your Telegram group within seconds.
+      - q: Which payment methods will my buyers see?
+        a: The ones you turn on in your Stripe account. Turn on TWINT, and buyers in Switzerland see it next to cards.
+
+  - type: cta
+    id: start
+    title: Start selling today
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Create your event, href: /start#create }
+    secondary: { label: Contact the team, href: /contact#write }
+    note: We confirm your organization, connect your payment account and draw your seating plan for free.

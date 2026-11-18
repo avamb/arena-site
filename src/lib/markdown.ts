@@ -7,7 +7,7 @@ import type { Section } from '../content.config';
 import { siteUrl, org, type LanguageCode } from '@config';
 import { plain, fill } from './inline';
 import { clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, type Nav } from './data';
-import { formatDate, currencySymbol, postPath } from './i18n';
+import { formatDate, currencySymbol, postPath, localePath } from './i18n';
 
 export type PageData = {
   lang: LanguageCode;
@@ -151,6 +151,25 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       out.push('', `### ${plain(s.preparing.title)}`, '', plain(s.preparing.text), '', groups.map((g) => `- ${g}`).join('\n'), '');
       break;
     }
+    case 'countries': {
+      h2(s.title); lead(s.lead);
+      const names = new Intl.DisplayNames([d.lang], { type: 'region' });
+      out.push(`| ${s.labels.country} | ${s.labels.provider} | ${s.labels.currencies} | ${s.labels.methods} |`, '|---|---|---|---|');
+      d.markets.filter((m) => m.data.status === 'live').forEach((m) => {
+        const ps = m.data.providers.map((id) => d.providers.find((p) => p.id === id)).filter((p) => p !== undefined);
+        const name = names.of(m.data.iso2) ?? m.data.name.en;
+        out.push(`| ${m.data.page ? `[${name}](${abs(localePath(d.lang, '/' + m.data.page))})` : name} | ${ps.map((p) => p.data.name).join(', ')} | ${m.data.currencies.length ? m.data.currencies.join(', ') : s.labels.agreed} | ${(m.data.methods ?? [...new Set(ps.flatMap((p) => p.data.methods as string[]))]).map((x) => s.methods_map[x] ?? x).join(', ')} |`);
+      });
+      const planned = d.markets.filter((m) => m.data.status === 'planned').map((m) => names.of(m.data.iso2) ?? m.data.name.en).sort((a, b) => a.localeCompare(b, d.lang));
+      out.push('', `### ${plain(s.preparing.title)}`, '', plain(s.preparing.text), '', planned.join(', '), '');
+      break;
+    }
+    case 'glance':
+      h2(s.title); lead(s.lead);
+      out.push('| | |', '|---|---|');
+      s.rows.forEach((r) => out.push(`| ${plain(r.k)} | ${plain(fill(r.v, vars))} |`));
+      out.push('');
+      break;
     case 'cards':
       h2(s.title); lead(s.lead);
       s.items.forEach((i) => out.push(`### ${plain(i.title)}`, '', plain(fill(i.text, vars)), '', i.link ? `[${i.link.label}](${abs(i.link.href)})` : '', ''));

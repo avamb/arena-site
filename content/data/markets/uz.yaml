@@ -1,0 +1,9 @@
+iso2: UZ
+name:
+  en: Uzbekistan
+languages: [uz, ru, en]
+currencies: []
+providers: [flitt]
+status: live
+page: countries/caucasus-central-asia
+order: 11

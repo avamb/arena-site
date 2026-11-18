@@ -148,6 +148,16 @@ export const section = z.discriminatedUnion('type', [
   z.object({ type: z.literal('providers'), ...sectionBase, labels: z.object({ currencies: z.string(), methods: z.string(), checkout: z.string(), statuses: z.record(z.string()), methods_map: z.record(z.string()) }) }),
   z.object({ type: z.literal('coverage'), ...sectionBase, labels: z.object({ countries: z.string(), note: z.string(), missing: z.string() }), cta: link }),
   z.object({ type: z.literal('markets'), ...sectionBase, preparing: z.object({ title: z.string(), text: z.string() }) }),
+  /** Countries hub: every live market with its providers, currencies and methods (from data), links to country pages, then the planned ones. */
+  z.object({
+    type: z.literal('countries'),
+    ...sectionBase,
+    labels: z.object({ country: z.string(), provider: z.string(), currencies: z.string(), methods: z.string(), agreed: z.string() }),
+    methods_map: z.record(z.string()),
+    preparing: z.object({ title: z.string(), text: z.string() }),
+  }),
+  /** A country at a glance: label and value rows, price placeholders allowed. */
+  z.object({ type: z.literal('glance'), ...sectionBase, rows: z.array(z.object({ k: z.string(), v: z.string() })) }),
   z.object({ type: z.literal('cards'), ...sectionBase, items: z.array(z.object({ title: z.string(), text: z.string(), link: link.optional() })) }),
   /** Side-by-side comparison with another platform: `us` and `them` per row, price placeholders allowed. */
   z.object({ type: z.literal('compare'), ...sectionBase, cols: z.object({ what: z.string(), us: z.string(), them: z.string() }), rows: z.array(z.object({ what: z.string(), us: z.string(), them: z.string() })), note: z.string().optional() }),
@@ -227,7 +237,7 @@ const providers = defineCollection({
     name: z.string(),
     regions: z.array(z.string().length(2)),
     currencies: z.array(z.string().length(3)),
-    methods: z.array(z.enum(['card', 'apple_pay', 'google_pay', 'bit', 'installments', 'bank_transfer'])),
+    methods: z.array(z.enum(['card', 'apple_pay', 'google_pay', 'bit', 'installments', 'bank_transfer', 'ideal', 'twint'])),
     hosted_checkout: z.boolean(),
     status: z.enum(['live', 'api', 'planned']),
     entity_countries: z.array(z.string().length(2)).default([]),
@@ -246,6 +256,10 @@ const markets = defineCollection({
     currencies: z.array(z.string().length(3)),
     providers: z.array(z.string()),
     status: z.enum(['live', 'planned']),
+    /** Slug of the country page (`countries/israel`), linked from the countries table. */
+    page: z.string().optional(),
+    /** Methods buyers in this country typically see; defaults to all methods of the market's providers. */
+    methods: z.array(z.string()).optional(),
     vat_note: z.string().optional(),
     order: z.number().default(100),
   }),

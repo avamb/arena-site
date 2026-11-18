@@ -36,6 +36,8 @@ sections:
         bit: Bit
         installments: parcelamento
         bank_transfer: transferência bancária
+        ideal: iDEAL
+        twint: TWINT
 
   - type: cards
     id: connect

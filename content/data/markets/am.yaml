@@ -1,0 +1,9 @@
+iso2: AM
+name:
+  en: Armenia
+languages: [hy, ru, en]
+currencies: []
+providers: [flitt]
+status: live
+page: countries/caucasus-central-asia
+order: 9

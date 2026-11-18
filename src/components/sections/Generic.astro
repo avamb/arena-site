@@ -112,6 +112,41 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
       </>
     )}
 
+    {s.type === 'countries' && (
+      <>
+        <div class="table-scroll" tabindex="0" role="region" aria-label={s.title ?? t(lang, 'table.details')}>
+        <table class="facts-table countries-table">
+          <thead><tr><th>{s.labels.country}</th><th>{s.labels.provider}</th><th>{s.labels.currencies}</th><th>{s.labels.methods}</th></tr></thead>
+          <tbody>{liveMarkets.map((m) => {
+            const ps = m.data.providers.map((id) => providers.find((p) => p.id === id)).filter((p) => p !== undefined);
+            const name = regionNames.of(m.data.iso2) ?? marketName(m);
+            return (
+              <tr>
+                <td>{m.data.page ? <a href={localePath(lang, '/' + m.data.page)} style="color:var(--accent);font-weight:600">{name}</a> : name}</td>
+                <td>{ps.map((p) => p.data.name).join(', ')}</td>
+                <td>{m.data.currencies.length ? m.data.currencies.join(', ') : s.labels.agreed}</td>
+                <td>{(m.data.methods ?? [...new Set(ps.flatMap((p) => p.data.methods as string[]))]).map((x) => s.methods_map[x] ?? x).join(', ')}</td>
+              </tr>
+            );
+          })}</tbody>
+        </table>
+        </div>
+        <div class="card" style="margin-top:24px;padding:22px 24px">
+          <h3 style="font-size:19px;letter-spacing:-0.02em">{s.preparing.title}</h3>
+          <p style="color:var(--fg-2);margin-top:8px;max-width:62ch" set:html={inline(s.preparing.text)} />
+          <p style="color:var(--fg-2);margin-top:12px">{coverageNames(markets.filter((m) => m.data.status === 'planned').map((m) => m.data.iso2)).join(', ')}</p>
+        </div>
+      </>
+    )}
+
+    {s.type === 'glance' && (
+      <div class="table-scroll" tabindex="0" role="region" aria-label={s.title ?? t(lang, 'table.details')}>
+      <table class="facts-table glance-table">
+        <tbody>{s.rows.map((r) => <tr><th scope="row">{r.k}</th><td set:html={inline(fill(r.v, vars))} /></tr>)}</tbody>
+      </table>
+      </div>
+    )}
+
     {s.type === 'cards' && (
       <div class="cards-3">
         {s.items.map((i) => <article class="card sol"><h3>{i.title}</h3><p set:html={inline(fill(i.text, vars))} />{i.link && <a href={localePath(lang, i.link.href)}>{i.link.label}</a>}</article>)}

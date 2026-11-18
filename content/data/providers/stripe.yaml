@@ -1,9 +1,9 @@
 name: Stripe
-regions: [CZ, ES, FR]
-currencies: [EUR, CZK, USD, GBP]
-methods: [card, apple_pay, google_pay]
+regions: [CZ, ES, FR, NL, CH, BR]
+currencies: [EUR, CZK, CHF, BRL, USD, GBP]
+methods: [card, apple_pay, google_pay, ideal, twint]
 hosted_checkout: true
 status: live
-note: Hosted checkout in the widget and on hosted pages, webhooks per organization.
+note: Hosted checkout in the widget and on hosted pages. Buyers see the payment methods the organizer turns on in their own Stripe account.
 entity_countries: [AU, AT, BE, BR, BG, CA, HR, CY, CZ, DK, EE, FI, FR, DE, GI, GR, HK, HU, IE, IT, JP, LV, LI, LT, LU, MY, MT, MX, NL, NZ, NO, PL, PT, RO, SG, SK, SI, ES, SE, CH, TH, AE, GB, US]
 order: 1

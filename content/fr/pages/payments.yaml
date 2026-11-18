@@ -36,6 +36,8 @@ sections:
         bit: Bit
         installments: paiement en plusieurs fois
         bank_transfer: virement bancaire
+        ideal: iDEAL
+        twint: TWINT
 
   - type: cards
     id: connect
