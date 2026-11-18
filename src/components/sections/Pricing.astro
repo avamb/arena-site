@@ -52,7 +52,7 @@ const regions = byCur.map((p) => {
   const tf = tariffFor(p.data.currency);
   return {
     id: p.id,
-    label: p.data.region,
+    label: t(lang, `pricing.region.${p.id}`),
     symbol: currencySymbol(p.data.currency),
     perTicket: p.data.per_ticket,
     seatingExtra: p.data.seating_extra,
@@ -101,7 +101,7 @@ const regions = byCur.map((p) => {
     <div class="plans">
       {pricing.map((p) => (
         <div class:list={['card plan', { hi: p.data.highlighted }]}>
-          <div class="reg">{p.data.region}</div>
+          <div class="reg">{t(lang, `pricing.region.${p.id}`)}</div>
           <div class="big num">{fmt(p.data.per_ticket, p.data.currency)}<small>{t(lang, 'pricing.perTicket')}</small></div>
           <ul>{s.planBullets.map((b) => <li set:html={inline(fill(b, { seated: fmt(p.data.per_ticket + p.data.seating_extra, p.data.currency) }))} />)}</ul>
           <a class:list={['btn', p.data.highlighted ? 'btn-primary' : 'btn-ghost']} href={localePath(lang, s.cta.href)} data-track={trackLabel(s.cta.href, 'plan')}>{s.cta.label}</a>
