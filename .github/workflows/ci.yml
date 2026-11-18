@@ -33,9 +33,13 @@ jobs:
       - run: npm run check:types
       - run: npm run check:anti-slop
       - run: npm run check:i18n
+      - run: npm run check:i18n-lengths
       - run: npm run check:edge
       - run: npm run check:jsonld
       - run: npm run check:agents
+      - run: npm run check:h1
+      - run: npm run check:titles
+      - run: npm run check:hreflang
       - run: npm run check:links
       - run: npm run onboarding:test
       - run: npm run contact:test
