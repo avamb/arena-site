@@ -1,0 +1,112 @@
+title: "Venta de entradas en Suiza: TWINT, CHF y Stripe"
+description: "Vende entradas para eventos en Suiza en francos suizos con tu propia cuenta de Stripe, con TWINT y tarjetas. Planos de asientos dibujados gratis."
+h1: "Venta de entradas para eventos en Suiza"
+lead: "Los compradores en Suiza pagan en francos con TWINT o con tarjeta, y el dinero de cada entrada llega a tu propia cuenta de Stripe."
+related:
+  - { label: "Todos los países", href: "/countries", text: "Proveedores, monedas y métodos de pago por país." }
+  - { label: "Giras de conciertos", href: "/solutions/concert-tours", text: "Muchas ciudades y países en un solo evento, una página por promotor." }
+  - { label: "Planos de asientos", href: "/product/seating", text: "Envía un PDF, un boceto o una tabla de filas; dibujamos el plano gratis." }
+sections:
+  - type: glance
+    id: glance
+    eyebrow: "De un vistazo"
+    title: "Suiza de un vistazo"
+    rows:
+      - { k: "Proveedor de pagos", v: "Stripe" }
+      - { k: "Moneda", v: "Franco suizo (CHF)" }
+      - { k: "Métodos de pago", v: "TWINT, tarjetas, Apple Pay, Google Pay: los que actives en Stripe" }
+      - { k: "Página del comprador", v: "inglés, español, ruso, checo, hebreo; alemán, francés e italiano a petición" }
+      - { k: "Nuestro precio", v: "{usdPrice} por entrada, {usdSeated} con asiento; desde {usdFrom} con créditos" }
+      - { k: "IVA sobre nuestra comisión", v: "Ninguno" }
+
+  - type: cards
+    id: benefits
+    eyebrow: "Por qué ArenaSoldOut.com"
+    title: "¿Qué obtienen los organizadores?"
+    lead: "Una plataforma de venta de entradas hecha para organizadores: te quedas con más de cada entrada, vendes más y empiezas antes."
+    items:
+      - title: "Gana más con cada entrada"
+        text: "Un precio fijo de {usdPrice} por entrada, no un porcentaje del precio. Con créditos es menor, desde {usdFrom} por entrada. Las comisiones de tarjeta quedan entre tú y tu proveedor de pagos."
+        link: { label: "Precios →", href: "/pricing" }
+      - title: "Vende más"
+        text: "Códigos promocionales, precios de lanzamiento, enlaces para recomendar a un amigo, recordatorios de carritos abandonados y un correo a los suscriptores en cuanto se abre la venta."
+        link: { label: "Códigos promocionales y ventanas de precio →", href: "/product/pricing-tools" }
+      - title: "Empieza antes"
+        text: "Un evento sin plano de asientos sale a la venta en 10 minutos. Un plano de asientos lo dibujamos nosotros gratis, normalmente en un día."
+        link: { label: "Tu primer evento →", href: "/first-event" }
+
+  - type: prose
+    id: twint
+    eyebrow: "TWINT"
+    title: "¿Cómo pagan los compradores con TWINT?"
+    body: "TWINT es el método de pago que usa la mayoría de la gente en Suiza. Lo activas en tu panel de Stripe y aparece en el pago junto a las tarjetas. Stripe fija sus propias comisiones para TWINT; las ves en tu cuenta de Stripe. El dinero de cada entrada llega a tu cuenta, y ArenaSoldOut.com nunca lo retiene."
+
+  - type: cards
+    id: where
+    eyebrow: "Dónde vendes"
+    title: "¿Dónde puedo vender entradas?"
+    lead: "En tres lugares a la vez. Las ventas de todos ellos llegan a un único Event Center."
+    items:
+      - title: "Nuestra página de venta"
+        text: "Alojamos una página para tu evento en tickets.arenasoldout.com/tu-nombre/tu-evento. No hay nada que construir."
+        link: { label: "Dónde vendes →", href: "/product/sell" }
+      - title: "Tu propio sitio"
+        text: "Pon el widget de entradas en el sitio que ya tienes. Los compradores eligen asientos y pagan sin salir de él."
+        link: { label: "El widget →", href: "/product/sell" }
+      - title: "Tus redes sociales"
+        text: "Comparte el enlace en redes sociales y mensajeros, o imprime un código QR en el cartel. Cada pedido queda asociado a su enlace, así ves cuál vendió."
+        link: { label: "Enlaces y códigos QR →", href: "/product/sell" }
+
+  - type: faq
+    id: questions
+    eyebrow: "Preguntas"
+    title: "¿Qué preguntan los organizadores antes de empezar?"
+    items:
+      - q: "¿Cuánto me cuesta una entrada?"
+        a: "{usdPrice} por entrada, {usdSeated} con asiento. Pagas después del evento, por las entradas vendidas. Las invitaciones no llevan comisión. Consulta los [precios](/pricing)."
+      - q: "¿Puedo pagar menos por entrada?"
+        a: "Sí. Compra créditos por adelantado y el precio baja a {usdFrom} por entrada ({eurFrom} en la UE). Los créditos nunca caducan. Consulta los [precios](/pricing)."
+      - q: "¿Cuándo le pago a ArenaSoldOut.com?"
+        a: "Después del evento, por las entradas vendidas, si eliges pagar así. También puedes comprar créditos antes del evento."
+      - q: "¿A dónde va el dinero de las entradas?"
+        a: "A tu propia cuenta con tu proveedor de pagos, por cada entrada vendida. ArenaSoldOut.com nunca lo retiene."
+      - q: "¿Qué tan rápido puedo empezar a vender?"
+        a: "Confirmamos tu organización, normalmente en un día. Con una cuenta de pagos lista, un evento sin plano de asientos sale a la venta en 10 minutos. Un plano de asientos lo dibujamos gratis, normalmente en un día."
+      - q: "¿Qué tan fiable es la plataforma?"
+        a: "Probada con 800 pedidos por minuto y 1000 compradores a la vez. Un sistema de vigilancia avisa al equipo, las copias de seguridad se hacen cada noche, cifradas, y Cloudflare protege el acceso. No se ha registrado ni una sola caída desde el inicio en 2019, ni siquiera con varias decenas de miles de entradas vendidas en 5 minutos. Consulta la [fiabilidad](/product/reliability)."
+      - q: "Gestiono un recinto permanente. ¿Hay otra tarifa?"
+        a: "Sí. Los teatros, clubes y otros recintos que celebran eventos todo el año o por temporada pagan el {percent}% del precio de la entrada, con un tope por entrada, facturado cada mes. Consulta los [precios](/pricing)."
+      - q: "Mis entradas son baratas. ¿Hay un precio menor?"
+        a: "Sí. Cuando todas las entradas del evento cuestan {usdLowMax} o menos, la comisión es el {lowPercent}% del precio de la entrada. Consulta los [precios](/pricing)."
+      - q: "¿Puede un mismo evento tener entradas con precios distintos?"
+        a: "Sí. Categorías con su propio precio, precios de lanzamiento que cambian en una fecha, escalones de cantidad, entradas gratuitas y de pago libre."
+      - q: "¿Puedo usar códigos promocionales?"
+        a: "Sí, con un alcance (qué categorías y sesiones), fechas de validez y un límite por comprador. Consulta [códigos promocionales y ventanas de precio](/product/pricing-tools)."
+      - q: "¿Se puede vender una entrada infantil solo junto con una de adulto?"
+        a: "Sí, con categorías complementarias. Un complemento se vende solo junto con una entrada principal de la misma sesión, así que no se puede comprar una entrada infantil sin una de adulto."
+      - q: "¿Puedo vender bebidas o merchandising junto con las entradas?"
+        a: "Sí. Un vale de bebida puede ser una categoría complementaria: se vende solo junto con una entrada y llega como una entrada propia. El merchandising, el vino y los sets de regalo se venden en una tienda junto a tus entradas, con variantes, carrito, envío y reembolsos."
+      - q: "Hago el mismo espectáculo cada semana. ¿Creo un evento nuevo cada vez?"
+        a: "No. Añades una sesión al mismo evento; los precios, las categorías y el plano de asientos se mantienen, y los compradores eligen la fecha."
+      - q: "¿Puedo ver las ventas de cada evento en tiempo real?"
+        a: "Sí. En el Event Center, desde el teléfono o el ordenador, en el navegador, sin instalar nada: pedidos y totales por sesión y un informe CSV. Si usas Telegram, cada venta y cada reembolso llega también a tu grupo en segundos."
+      - q: "¿Necesito equipo especial en la puerta?"
+        a: "No. La aplicación MACS escanea entradas en cualquier iPhone o teléfono Android, desde papel o desde una pantalla. También funcionan los escáneres láser de mano y los lectores de códigos de barras USB o Bluetooth. Consulta [la aplicación MACS](/product/scanner)."
+      - q: "¿Cuánto cuesta la aplicación de escaneo MACS?"
+        a: "MACS está incluida para los organizadores que venden a través de ArenaSoldOut.com."
+      - q: "¿Qué métodos de pago verán mis compradores?"
+        a: "Los que actives en tu cuenta de Stripe. Activa TWINT y los compradores en Suiza lo verán junto a las tarjetas."
+
+  - type: prose
+    id: team
+    eyebrow: "Nuestro equipo"
+    title: "¿Preguntas o ideas?"
+    body: "Escribe al equipo. Respondemos preguntas sobre tu país, tu recinto y tu evento, y escuchamos ideas: construimos ArenaSoldOut.com para que vender entradas sea cómodo y te resulte rentable. [Contacta con el equipo](/contact#write)."
+
+  - type: cta
+    id: start
+    title: "Empieza a vender hoy"
+    text: "Crea el evento, conecta tu cuenta de pagos, comparte el enlace."
+    primary: { label: "Crea tu evento", href: "/start#create" }
+    secondary: { label: "Contacta con el equipo", href: "/contact#write" }
+    note: "Confirmamos tu organización, conectamos tu cuenta de pagos y dibujamos tu plano de asientos gratis."

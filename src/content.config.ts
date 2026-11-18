@@ -188,6 +188,8 @@ const pages = defineCollection({
     description: z.string(),
     /** Set when this file was translated from the `en` original; CI compares hashes (§3.6). */
     source_hash: z.string().optional(),
+    /** Set on the English original when the page exists only in some languages (`[en, ru]`): no routes, links or switcher entries elsewhere. */
+    languages: z.array(z.string()).optional(),
     h1: z.string().optional(),
     lead: z.string().optional(),
     /** Internal links shown as "Read next" before the final CTA (SEO interlinking). */

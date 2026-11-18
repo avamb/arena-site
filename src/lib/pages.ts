@@ -37,6 +37,8 @@ export async function pageRoutes(): Promise<{ lang: LanguageCode; slug: string }
   const out: { lang: LanguageCode; slug: string }[] = [];
   for (const l of languages) {
     for (const slug of slugs) {
+      const only = all.find((p) => p.id === `${defaultLanguage}/pages/${slug}`)?.data.languages;
+      if (only && !only.includes(l.code)) continue;
       if (l.inMenu || all.some((p) => p.id === `${l.code}/pages/${slug}`)) out.push({ lang: l.code, slug });
     }
   }

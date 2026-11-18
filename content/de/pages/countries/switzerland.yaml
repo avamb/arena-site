@@ -1,0 +1,112 @@
+title: "Ticketverkauf in der Schweiz: TWINT, CHF und Stripe"
+description: "Tickets für Veranstaltungen in der Schweiz in Franken verkaufen, über Ihr eigenes Stripe-Konto, mit TWINT und Karten. Saalpläne kostenlos gezeichnet."
+h1: "Ticketverkauf für Veranstaltungen in der Schweiz"
+lead: "Käufer in der Schweiz zahlen in Franken mit TWINT oder per Karte, und das Geld für jedes Ticket kommt auf Ihr eigenes Stripe-Konto."
+related:
+  - { label: "Alle Länder", href: "/countries", text: "Anbieter, Währungen und Zahlungsarten nach Land." }
+  - { label: "Konzerttourneen", href: "/solutions/concert-tours", text: "Viele Städte und Länder in einer Veranstaltung, eine Seite pro Promoter." }
+  - { label: "Saalpläne", href: "/product/seating", text: "Senden Sie ein PDF, eine Skizze oder eine Reihentabelle; wir zeichnen den Plan kostenlos." }
+sections:
+  - type: glance
+    id: glance
+    eyebrow: "Auf einen Blick"
+    title: "Die Schweiz auf einen Blick"
+    rows:
+      - { k: "Zahlungsanbieter", v: "Stripe" }
+      - { k: "Währung", v: "Schweizer Franken (CHF)" }
+      - { k: "Zahlungsarten", v: "TWINT, Karten, Apple Pay, Google Pay: die, die Sie in Stripe aktivieren" }
+      - { k: "Käuferseite", v: "Englisch, Spanisch, Russisch, Tschechisch, Hebräisch; Deutsch, Französisch und Italienisch auf Anfrage" }
+      - { k: "Unser Preis", v: "{usdPrice} pro Ticket, {usdSeated} mit Sitzplatz; ab {usdFrom} mit Credits" }
+      - { k: "MwSt. auf unsere Provision", v: "Keine" }
+
+  - type: cards
+    id: benefits
+    eyebrow: "Warum ArenaSoldOut.com"
+    title: "Was bekommen Veranstalter?"
+    lead: "Eine Ticketing-Plattform für Veranstalter: Sie behalten mehr von jedem Ticket, verkaufen mehr und starten früher."
+    items:
+      - title: "Mehr verdienen an jedem Ticket"
+        text: "Fest {usdPrice} pro Ticket, kein Prozentsatz des Preises. Mit Credits ist es weniger, ab {usdFrom} pro Ticket. Kartengebühren bleiben zwischen Ihnen und Ihrem Zahlungsanbieter."
+        link: { label: "Preise →", href: "/pricing" }
+      - title: "Mehr verkaufen"
+        text: "Promo-Codes, Frühbucherpreise, Weiterempfehlungs-Links, Erinnerungen bei abgebrochenen Warenkörben und eine E-Mail an Abonnenten, sobald der Verkauf startet."
+        link: { label: "Promo-Codes und Preisfenster →", href: "/product/pricing-tools" }
+      - title: "Früher verkaufen"
+        text: "Ein Event ohne Saalplan ist in 10 Minuten im Verkauf. Einen Saalplan zeichnen wir kostenlos für Sie, meist innerhalb eines Tages."
+        link: { label: "Ihr erstes Event →", href: "/first-event" }
+
+  - type: prose
+    id: twint
+    eyebrow: "TWINT"
+    title: "Wie zahlen Käufer mit TWINT?"
+    body: "TWINT ist die Zahlungsart, die die meisten Menschen in der Schweiz nutzen. Sie aktivieren sie in Ihrem Stripe-Dashboard, und sie erscheint an der Kasse neben den Karten. Stripe legt eigene Gebühren für TWINT fest; Sie sehen sie in Ihrem Stripe-Konto. Das Geld für jedes Ticket kommt auf Ihr Konto, und ArenaSoldOut.com hält es nie."
+
+  - type: cards
+    id: where
+    eyebrow: "Wo Sie verkaufen"
+    title: "Wo kann ich Tickets verkaufen?"
+    lead: "An drei Orten gleichzeitig. Die Verkäufe aus allen laufen in einem Event Center zusammen."
+    items:
+      - title: "Unsere Verkaufsseite"
+        text: "Wir hosten eine Seite für Ihre Veranstaltung unter tickets.arenasoldout.com/ihr-name/ihre-veranstaltung. Sie müssen nichts bauen."
+        link: { label: "Wo Sie verkaufen →", href: "/product/sell" }
+      - title: "Ihre eigene Website"
+        text: "Setzen Sie das Ticket-Widget auf Ihre bestehende Website. Käufer wählen Plätze und zahlen, ohne die Seite zu verlassen."
+        link: { label: "Das Widget →", href: "/product/sell" }
+      - title: "Ihre Social-Media-Kanäle"
+        text: "Teilen Sie den Link in sozialen Netzwerken und Messengern oder drucken Sie einen QR-Code auf das Plakat. Jede Bestellung ist ihrem Link zugeordnet, so sehen Sie, welcher verkauft hat."
+        link: { label: "Links und QR-Codes →", href: "/product/sell" }
+
+  - type: faq
+    id: questions
+    eyebrow: "Fragen"
+    title: "Was fragen Veranstalter vor dem Start?"
+    items:
+      - q: "Was kostet mich ein Ticket?"
+        a: "{usdPrice} pro Ticket, {usdSeated} mit Sitzplatz. Sie zahlen nach der Veranstaltung, für verkaufte Tickets. Freikarten sind provisionsfrei. Siehe [Preise](/pricing)."
+      - q: "Kann ich pro Ticket weniger zahlen?"
+        a: "Ja. Kaufen Sie Credits im Voraus, dann sinkt der Preis auf {usdFrom} pro Ticket ({eurFrom} in der EU). Credits verfallen nie. Siehe [Preise](/pricing)."
+      - q: "Wann zahle ich ArenaSoldOut.com?"
+        a: "Nach der Veranstaltung, für die verkauften Tickets, wenn Sie sich für diese Zahlweise entscheiden. Sie können auch vor der Veranstaltung Credits kaufen."
+      - q: "Wohin geht das Geld für die Tickets?"
+        a: "Auf Ihr eigenes Konto bei Ihrem Zahlungsanbieter, für jedes verkaufte Ticket. ArenaSoldOut.com hält es nie."
+      - q: "Wie schnell kann ich mit dem Verkauf beginnen?"
+        a: "Wir bestätigen Ihre Organisation, meist innerhalb eines Tages. Sobald ein Zahlungskonto besteht, ist ein Event ohne Saalplan in 10 Minuten im Verkauf. Einen Saalplan zeichnen wir kostenlos, meist innerhalb eines Tages."
+      - q: "Wie zuverlässig ist die Plattform?"
+        a: "Lasttest mit 800 Bestellungen pro Minute bei 1.000 Käufern gleichzeitig. Ein Watchdog alarmiert das Team, Backups laufen jede Nacht verschlüsselt, und Cloudflare steht davor. Seit dem Start 2019 wurde kein einziger Ausfall verzeichnet, auch nicht bei mehreren Zehntausend verkauften Tickets in 5 Minuten. Siehe [Zuverlässigkeit](/product/reliability)."
+      - q: "Ich betreibe eine feste Spielstätte. Gibt es ein anderes Modell?"
+        a: "Ja. Theater, Clubs und andere Spielstätten, die ganzjährig oder saisonweise Veranstaltungen durchführen, zahlen {percent}% des Ticketpreises, mit einer Obergrenze pro Ticket, monatlich in Rechnung gestellt. Siehe [Preise](/pricing)."
+      - q: "Meine Tickets sind günstig. Gibt es einen niedrigeren Preis?"
+        a: "Ja. Kostet jedes Ticket der Veranstaltung {usdLowMax} oder weniger, beträgt die Provision {lowPercent}% des Ticketpreises. Siehe [Preise](/pricing)."
+      - q: "Kann eine Veranstaltung Tickets zu verschiedenen Preisen haben?"
+        a: "Ja. Kategorien mit eigenen Preisen, Frühbucherpreise, die an einem Datum wechseln, Mengenstufen sowie kostenlose und Pay-what-you-want-Tickets."
+      - q: "Kann ich Promo-Codes nutzen?"
+        a: "Ja, mit Geltungsbereich (welche Kategorien und Termine), Gültigkeitsdaten und einem Limit pro Käufer. Siehe [Promo-Codes und Preisfenster](/product/pricing-tools)."
+      - q: "Kann ein Kinderticket nur zusammen mit einem Erwachsenenticket verkauft werden?"
+        a: "Ja, mit Zusatzkategorien. Ein Zusatz wird nur zusammen mit einem Haupt-Ticket desselben Termins verkauft, ein Kinderticket lässt sich also nicht ohne Erwachsenenticket kaufen."
+      - q: "Kann ich Getränke oder Merchandise zusammen mit den Tickets verkaufen?"
+        a: "Ja. Ein Getränkegutschein kann eine Zusatzkategorie sein: Er wird nur zusammen mit einem Ticket verkauft und kommt als eigenes Ticket an. Merchandise, Wein und Geschenksets verkaufen sich in einem Shop neben Ihren Tickets, mit Varianten, Warenkorb, Versand und Erstattungen."
+      - q: "Ich zeige jede Woche dieselbe Show. Lege ich jedes Mal ein neues Event an?"
+        a: "Nein. Sie fügen demselben Event einen Termin hinzu; Preise, Kategorien und der Saalplan werden übernommen, und Käufer wählen das Datum."
+      - q: "Kann ich die Verkäufe jeder Veranstaltung in Echtzeit sehen?"
+        a: "Ja. Im Event Center auf Handy oder Computer, im Browser, ohne Installation: Bestellungen und Summen pro Termin sowie ein CSV-Bericht. Wenn Sie Telegram nutzen, kommt auch jeder Verkauf und jede Erstattung innerhalb von Sekunden in Ihre Gruppe."
+      - q: "Brauche ich spezielle Geräte am Eingang?"
+        a: "Nein. Die MACS-App scannt Tickets auf jedem iPhone oder Android-Handy, vom Papier oder vom Bildschirm. Handscanner mit Laser sowie USB- oder Bluetooth-Barcodescanner funktionieren ebenfalls. Siehe [die MACS-App](/product/scanner)."
+      - q: "Was kostet die Scanner-App MACS?"
+        a: "MACS ist für Veranstalter, die über ArenaSoldOut.com verkaufen, inklusive."
+      - q: "Welche Zahlungsarten sehen meine Käufer?"
+        a: "Die, die Sie in Ihrem Stripe-Konto aktivieren. Aktivieren Sie TWINT, sehen Käufer in der Schweiz es neben den Karten."
+
+  - type: prose
+    id: team
+    eyebrow: "Unser Team"
+    title: "Fragen oder Ideen?"
+    body: "Schreiben Sie dem Team. Wir beantworten Fragen zu Ihrem Land, Ihrer Spielstätte und Ihrer Veranstaltung und hören uns Ideen an: Wir bauen ArenaSoldOut.com so, dass der Ticketverkauf bequem ist und sich für Sie lohnt. [Team kontaktieren](/contact#write)."
+
+  - type: cta
+    id: start
+    title: "Starten Sie heute den Verkauf"
+    text: "Event anlegen, Zahlungskonto verbinden, Link teilen."
+    primary: { label: "Event erstellen", href: "/start#create" }
+    secondary: { label: "Team kontaktieren", href: "/contact#write" }
+    note: "Wir bestätigen Ihre Organisation, verbinden Ihr Zahlungskonto und zeichnen Ihren Saalplan kostenlos."

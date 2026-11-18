@@ -14,7 +14,8 @@ import Marquee from '@/components/Marquee.astro';
 import { localePath, postPath, formatDate, tObject, t, currencySymbol } from '@/lib/i18n';
 import { trackLabel } from '@/lib/track';
 import { getPosts } from '@/lib/data';
-import { languages } from '@config';
+import { languages, defaultLanguage } from '@config';
+import { pageLanguages } from '@/lib/translations';
 import Icon from '@/components/Icon.astro';
 import ContactForm from '@/components/ContactForm.astro';
 
@@ -119,7 +120,7 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
           <thead><tr><th>{s.labels.country}</th><th>{s.labels.provider}</th><th>{s.labels.currencies}</th><th>{s.labels.methods}</th></tr></thead>
           <tbody>{countryRows(markets, providers, lang).map((r) => (
             <tr>
-              <td>{r.page ? <a href={localePath(lang, '/' + r.page)} style="color:var(--accent);font-weight:600">{r.name}</a> : r.name}</td>
+              <td>{r.page ? <a href={localePath(pageLanguages(r.page)?.includes(lang) === false ? defaultLanguage : lang, '/' + r.page)} style="color:var(--accent);font-weight:600">{r.name}</a> : r.name}</td>
               <td>{r.providers.join(', ')}</td>
               <td>{r.currencies.length ? r.currencies.join(', ') : s.labels.agreed}</td>
               <td>{r.methods.map((x) => s.methods_map[x] ?? x).join(', ')}</td>
