@@ -9,7 +9,7 @@ import type { LanguageCode } from '@config';
 import { hosts, onboardingTurnstileSiteKey } from '@config';
 import { marked } from 'marked';
 import { inline, fill } from '@/lib/inline';
-import { clients, facts, tariff, getPricing, priceVars } from '@/lib/data';
+import { clients, facts, tariff, getPricing, priceVars, countryRows } from '@/lib/data';
 import Marquee from '@/components/Marquee.astro';
 import { localePath, postPath, formatDate, tObject, t, currencySymbol } from '@/lib/i18n';
 import { trackLabel } from '@/lib/track';
@@ -117,18 +117,14 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
         <div class="table-scroll" tabindex="0" role="region" aria-label={s.title ?? t(lang, 'table.details')}>
         <table class="facts-table countries-table">
           <thead><tr><th>{s.labels.country}</th><th>{s.labels.provider}</th><th>{s.labels.currencies}</th><th>{s.labels.methods}</th></tr></thead>
-          <tbody>{liveMarkets.map((m) => {
-            const ps = m.data.providers.map((id) => providers.find((p) => p.id === id)).filter((p) => p !== undefined);
-            const name = regionNames.of(m.data.iso2) ?? marketName(m);
-            return (
-              <tr>
-                <td>{m.data.page ? <a href={localePath(lang, '/' + m.data.page)} style="color:var(--accent);font-weight:600">{name}</a> : name}</td>
-                <td>{ps.map((p) => p.data.name).join(', ')}</td>
-                <td>{m.data.currencies.length ? m.data.currencies.join(', ') : s.labels.agreed}</td>
-                <td>{(m.data.methods ?? [...new Set(ps.flatMap((p) => p.data.methods as string[]))]).map((x) => s.methods_map[x] ?? x).join(', ')}</td>
-              </tr>
-            );
-          })}</tbody>
+          <tbody>{countryRows(markets, providers, lang).map((r) => (
+            <tr>
+              <td>{r.page ? <a href={localePath(lang, '/' + r.page)} style="color:var(--accent);font-weight:600">{r.name}</a> : r.name}</td>
+              <td>{r.providers.join(', ')}</td>
+              <td>{r.currencies.length ? r.currencies.join(', ') : s.labels.agreed}</td>
+              <td>{r.methods.map((x) => s.methods_map[x] ?? x).join(', ')}</td>
+            </tr>
+          ))}</tbody>
         </table>
         </div>
         <div class="card" style="margin-top:24px;padding:22px 24px">

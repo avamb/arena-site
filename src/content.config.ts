@@ -241,6 +241,8 @@ const providers = defineCollection({
     hosted_checkout: z.boolean(),
     status: z.enum(['live', 'api', 'planned']),
     entity_countries: z.array(z.string().length(2)).default([]),
+    /** Methods shown for a country without market data of its own (the countries hub). Defaults to `methods`. */
+    base_methods: z.array(z.string()).optional(),
     note: z.string().optional(),
     order: z.number().default(100),
   }),

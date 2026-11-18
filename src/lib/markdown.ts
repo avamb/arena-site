@@ -6,7 +6,7 @@ import type { CollectionEntry } from 'astro:content';
 import type { Section } from '../content.config';
 import { siteUrl, org, type LanguageCode } from '@config';
 import { plain, fill } from './inline';
-import { clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, type Nav } from './data';
+import { clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, countryRows, type Nav } from './data';
 import { formatDate, currencySymbol, postPath, localePath } from './i18n';
 
 export type PageData = {
@@ -155,11 +155,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       h2(s.title); lead(s.lead);
       const names = new Intl.DisplayNames([d.lang], { type: 'region' });
       out.push(`| ${s.labels.country} | ${s.labels.provider} | ${s.labels.currencies} | ${s.labels.methods} |`, '|---|---|---|---|');
-      d.markets.filter((m) => m.data.status === 'live').forEach((m) => {
-        const ps = m.data.providers.map((id) => d.providers.find((p) => p.id === id)).filter((p) => p !== undefined);
-        const name = names.of(m.data.iso2) ?? m.data.name.en;
-        out.push(`| ${m.data.page ? `[${name}](${abs(localePath(d.lang, '/' + m.data.page))})` : name} | ${ps.map((p) => p.data.name).join(', ')} | ${m.data.currencies.length ? m.data.currencies.join(', ') : s.labels.agreed} | ${(m.data.methods ?? [...new Set(ps.flatMap((p) => p.data.methods as string[]))]).map((x) => s.methods_map[x] ?? x).join(', ')} |`);
-      });
+      countryRows(d.markets, d.providers, d.lang).forEach((r) => out.push(`| ${r.page ? `[${r.name}](${abs(localePath(d.lang, '/' + r.page))})` : r.name} | ${r.providers.join(', ')} | ${r.currencies.length ? r.currencies.join(', ') : s.labels.agreed} | ${r.methods.map((x) => s.methods_map[x] ?? x).join(', ')} |`));
       const planned = d.markets.filter((m) => m.data.status === 'planned').map((m) => names.of(m.data.iso2) ?? m.data.name.en).sort((a, b) => a.localeCompare(b, d.lang));
       out.push('', `### ${plain(s.preparing.title)}`, '', plain(s.preparing.text), '', planned.join(', '), '');
       break;

@@ -161,6 +161,24 @@ export function liveProviderNames(providers: CollectionEntry<'providers'>[]): st
   return providers.filter((p) => p.data.status !== 'planned').map((p) => p.data.name);
 }
 
+/**
+ * Every country an organizer can sell from (the countries hub): live markets plus every country where a
+ * working provider accepts companies. Market data (currencies, methods, page) wins over provider defaults.
+ */
+export function countryRows(markets: CollectionEntry<'markets'>[], providers: CollectionEntry<'providers'>[], lang: LanguageCode) {
+  const working = providers.filter((p) => p.data.status !== 'planned');
+  const live = markets.filter((m) => m.data.status === 'live');
+  const codes = [...new Set([...live.map((m) => m.data.iso2), ...working.flatMap((p) => p.data.entity_countries)])];
+  const names = new Intl.DisplayNames([lang], { type: 'region' });
+  return codes.map((iso2) => {
+    const m = live.find((x) => x.data.iso2 === iso2);
+    const ps = m ? m.data.providers.map((id) => working.find((p) => p.id === id)).filter((p) => p !== undefined) : working.filter((p) => p.data.entity_countries.includes(iso2));
+    const methods = m?.data.methods ?? [...new Set(ps.flatMap((p) => (p.data.base_methods ?? p.data.methods) as string[]))];
+    const name = iso2 === 'HK' && lang === 'en' ? 'Hong Kong' : names.of(iso2) ?? iso2;
+    return { iso2, name, page: m?.data.page, providers: ps.map((p) => p.data.name), currencies: m?.data.currencies ?? [], methods };
+  }).sort((a, b) => a.name.localeCompare(b.name, lang));
+}
+
 export function liveMarketNames(markets: CollectionEntry<'markets'>[], lang: LanguageCode): string[] {
   return markets.filter((m) => m.data.status === 'live').map((m) => m.data.name[lang] ?? m.data.name[defaultLanguage]);
 }
