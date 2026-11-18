@@ -24,6 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        # Full history: the sitemap takes <lastmod> from the last commit of each content file (astro.config.mjs).
+        with: { fetch-depth: 0 }
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - run: npm ci
@@ -39,6 +41,7 @@ jobs:
       - run: npm run contact:test
       - run: npm run subscribe:test
       - run: npm run analytics:test
+      - run: npm run edge:test
       - uses: actions/upload-artifact@v4
         with:
           name: dist
