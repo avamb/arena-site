@@ -32,7 +32,7 @@ sections:
       - title: Liens courts et QR codes pour l'impression
         text: "Des liens go.arenasoldout.com avec QR codes pour affiches et flyers : PNG, SVG ou encart PDF en A5 et A6. Modifiez la cible après l'impression."
       - title: Une boutique à côté de vos billets
-        text: "Vendez du vin, des boissons en précommande, des produits dérivés et des coffrets cadeaux avec les billets : variantes, panier, retrait sur place ou livraison par vos soins, remboursements. Notre premier client boutique vend déjà ainsi."
+        text: "Vendez du vin, des boissons en précommande, des produits dérivés et des coffrets cadeaux avec les billets : variantes, panier, retrait sur place ou livraison par vos soins, remboursements. La boutique s’active à part, conditions sur demande. Notre premier client boutique vend déjà ainsi."
 
   - type: cards
     id: seating
