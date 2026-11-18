@@ -7,7 +7,7 @@ import { defaultLanguage, languages, type LanguageCode } from '@config';
 import { getCollection } from 'astro:content';
 import { getPage, getProviders, getMarkets, getPricing, getChangelog, getPosts, pageSlugs, slugToPath, navFor } from './data';
 import { pageToMarkdown, type PageData } from './markdown';
-import { localePath } from './i18n';
+import { localePath, t } from './i18n';
 import type { JsonLdInput } from './jsonld';
 import { plain } from './inline';
 
@@ -19,7 +19,7 @@ const titleCase = (s: string) => s.replace(/-/g, ' ').replace(/^./, (c) => c.toU
 async function breadcrumbsFor(lang: LanguageCode, slug: string, name: string) {
   const parts = slug.split('/');
   const all = await getCollection('pages');
-  const crumbs = [{ name: 'Home', path: localePath(lang, '/') }];
+  const crumbs = [{ name: t(lang, 'crumbs.home'), path: localePath(lang, '/') }];
   for (let i = 0; i < parts.length; i++) {
     const partial = parts.slice(0, i + 1).join('/');
     const path = localePath(lang, '/' + partial);

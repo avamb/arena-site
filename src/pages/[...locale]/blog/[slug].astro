@@ -10,6 +10,7 @@ import Base from '@/layouts/Base.astro';
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import Related from '@/components/Related.astro';
 import { getPosts } from '@/lib/data';
+import { faqOf } from '@/lib/post-faq';
 import { localePath, postPath, formatDate, tObject, t } from '@/lib/i18n';
 import { languages, defaultLanguage, hosts } from '@config';
 
@@ -33,13 +34,15 @@ const all = (await getPosts(lang)).filter((p) => p.id !== post.id);
 const idx = all.findIndex((p) => p.data.date < post.data.date);
 const next = [...all.slice(0, 2), ...(idx >= 2 ? [all[idx]] : [])].slice(0, 3);
 const related = post.data.related ?? [
-  { label: lang === 'ru' ? 'Тариф: за билет, без подписки' : 'Pricing: per ticket, no subscription', href: '/pricing' },
-  { label: lang === 'ru' ? 'Где продавать: свой сайт или наша страница' : 'Where you sell: your site or ours', href: '/product/sell' },
-  { label: lang === 'ru' ? 'Начать продавать' : 'Start selling', href: '/start' },
+  { label: t(lang, 'post.related.pricing'), href: '/pricing' },
+  { label: t(lang, 'post.related.sell'), href: '/product/sell' },
+  { label: t(lang, 'post.related.start'), href: '/start' },
 ];
 const og = post.data.cover ? (await getImage({ src: post.data.cover, width: 1200, format: 'jpg' })).src : undefined;
 const blogIndex = localePath(lang, '/blog');
-const crumbs = [{ name: 'Home', path: localePath(lang, '/') }, { name: t(lang, 'blog.backToIndex'), path: blogIndex }, { name: post.data.title, path }];
+const crumbs = [{ name: t(lang, 'crumbs.home'), path: localePath(lang, '/') }, { name: t(lang, 'blog.backToIndex'), path: blogIndex }, { name: post.data.title, path }];
+// FAQ of a new article: the "## <post.faq>" section of the body, "### question" + answer (FAQPage in JSON-LD).
+const faq = post.data.archive ? [] : faqOf(post.body ?? '', t(lang, 'post.faq'));
 ---
 <Base
   lang={lang}
@@ -49,7 +52,7 @@ const crumbs = [{ name: 'Home', path: localePath(lang, '/') }, { name: t(lang, '
   markdownPath={`${path}.md`}
   image={og}
   ogType="article"
-  jsonld={{ path, title: post.data.title, description: post.data.description, lang, breadcrumbs: crumbs, article: { headline: post.data.title, date: post.data.date, updated: post.data.updated, author: post.data.author } }}
+  jsonld={{ path, title: post.data.title, description: post.data.description, lang, breadcrumbs: crumbs, faq, article: { headline: post.data.title, date: post.data.date, updated: post.data.updated, author: post.data.author } }}
 >
   <article class="wrap post">
     <Breadcrumbs lang={lang} items={crumbs} />
