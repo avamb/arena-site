@@ -1,5 +1,5 @@
 // New blog articles (not `archive: true`, not `draft: true`) follow the article template (18.11.2026):
-// title at most 60 characters, description 70-160, a cover with alt text, at least two internal links,
+// an author from content/data/authors.yaml, title at most 60 characters, description 70-160, a cover with alt text, at least two internal links,
 // a FAQ section under the language's `post.faq` heading with "### question" items, and no prices in the
 // text (prices live in content/data and on /pricing; link there instead).
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
@@ -7,6 +7,7 @@ import { join, dirname } from 'node:path';
 import { parse } from 'yaml';
 
 const en = JSON.parse(readFileSync('i18n/en.json', 'utf8'));
+const authors = Object.keys(parse(readFileSync('content/data/authors.yaml', 'utf8')) ?? {});
 const bad = [];
 let checked = 0;
 for (const lang of readdirSync('content').filter((d) => d !== 'data')) {
@@ -26,6 +27,7 @@ for (const lang of readdirSync('content').filter((d) => d !== 'data')) {
     const len = (s) => [...String(s ?? '')].length;
     if (len(fm.title) === 0 || len(fm.title) > 60) bad.push(`${file}: title is ${len(fm.title)} characters (1-60)`);
     if (len(fm.description) < 70 || len(fm.description) > 160) bad.push(`${file}: description is ${len(fm.description)} characters (70-160)`);
+    if (!authors.includes(fm.author)) bad.push(`${file}: author must be an id from content/data/authors.yaml (${authors.join(', ')}), got ${fm.author ?? 'none'}`);
     if (!fm.cover) bad.push(`${file}: no cover`);
     else if (!existsSync(join(dirname(file), fm.cover))) bad.push(`${file}: cover file not found: ${fm.cover}`);
     if (!String(fm.cover_alt ?? '').trim()) bad.push(`${file}: no cover_alt`);

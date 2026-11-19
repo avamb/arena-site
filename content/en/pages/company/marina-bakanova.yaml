@@ -1,0 +1,11 @@
+# Author page (E-E-A-T): photo, role, bio and LinkedIn come from content/data/authors.yaml.
+title: "Marina Bakanova, co-founder of ArenaSoldOut.com"
+description: "Marina Bakanova: services for event organizers since 1996, first online shop in 1999, 20 years organizing events, ArenaSoldOut.com since 2019."
+h1: "Marina Bakanova"
+related:
+  - { label: "Articles in the blog", href: /blog }
+  - { label: "About ArenaSoldOut.com", href: /company }
+sections:
+  - type: person
+    id: author
+    author: marina-bakanova

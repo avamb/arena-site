@@ -203,3 +203,26 @@ export function reasonVars(pricing: CollectionEntry<'pricing'>[]): Record<string
     since: clients.countries_since,
   };
 }
+
+/* ---------- Article authors (content/data/authors.yaml) ---------- */
+const localized = z.record(z.string());
+const authorsSchema = z.record(z.object({
+  photo: z.string(),
+  page: z.string(),
+  sameAs: z.array(z.string().url()).default([]),
+  name: localized,
+  role: localized,
+  bio: localized,
+}));
+export const authors = load('authors.yaml', authorsSchema);
+
+export type Author = { id: string; name: string; role: string; bio: string; page: string; photo: string; sameAs: string[]; image?: string };
+
+/** The author in a language (English as fallback), or undefined when `id` is not an author id (a plain name). */
+export function authorFor(id: string, lang: LanguageCode): Author | undefined {
+  const a = authors[id];
+  if (!a) return undefined;
+  const pick = (m: Record<string, string>) => m[lang] ?? m[defaultLanguage];
+  const page = lang === defaultLanguage ? a.page : `/${lang}${a.page}`;
+  return { id, name: pick(a.name), role: pick(a.role), bio: pick(a.bio), page, photo: a.photo, sameAs: a.sameAs ?? [] };
+}

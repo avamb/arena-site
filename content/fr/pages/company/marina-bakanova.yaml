@@ -1,0 +1,10 @@
+title: "Marina Bakanova, cofondatrice d'ArenaSoldOut.com"
+description: "Marina Bakanova : services pour organisateurs d'événements depuis 1996, première boutique en ligne en 1999, 20 ans d'événements, ArenaSoldOut.com depuis 2019."
+h1: "Marina Bakanova"
+related:
+  - { label: "Articles du blog", href: /blog }
+  - { label: "À propos d'ArenaSoldOut.com", href: /company }
+sections:
+  - type: person
+    id: author
+    author: marina-bakanova
