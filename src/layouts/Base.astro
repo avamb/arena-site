@@ -76,8 +76,7 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="theme-color" content="#F6F7FB" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F6F7FB" />
     <style is:inline set:html={maskCss}></style>
     <script is:inline>
       (function () { try { var t = localStorage.getItem('aso-theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
@@ -118,8 +117,8 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
         /* Theme statistics (doc 33 §3.11, item 3): one event per view, no cookies. */
         (function () {
           function send(name, data) { if (window.umami && typeof window.umami.track === 'function') window.umami.track(name, data); }
-          var mq = matchMedia('(prefers-color-scheme: dark)');
-          function shown() { var e = document.documentElement.getAttribute('data-theme'); return e || (mq.matches ? 'dark' : 'light'); }
+          var mq = matchMedia('(prefers-color-scheme: dark)'); /* the device setting, for the statistics only */
+          function shown() { return document.documentElement.getAttribute('data-theme') || 'light'; }
           function source() { return document.documentElement.getAttribute('data-theme') ? 'choice' : 'device'; }
           /* Loaded after the page is idle so third-party analytics never competes with first paint (Lighthouse gate). */
           /* Path of an e-mail contact (owner decision 13.11): the code of the contact record (pseudonym, no e-mail, no name)
