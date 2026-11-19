@@ -3,6 +3,8 @@ title: "Payments: your own payment account, in your country"
 description: "Buyers pay into the organizer's own payment account. Countries where a company can connect a payment provider, with methods and currencies."
 h1: Buyers pay into your own payment account
 lead: You connect the account you already have, or open one with a provider of your country. Every order goes straight to it. ArenaSoldOut.com never holds funds and never touches your payouts.
+related:
+  - { label: "Countries and payment methods", href: /countries, text: "Providers, currencies and payment methods in every country where you can sell." }
 sections:
   - type: coverage
     id: countries

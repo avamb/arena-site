@@ -5,5 +5,5 @@ languages: [uz, ru, en]
 currencies: []
 providers: [flitt]
 status: live
-page: countries/caucasus-central-asia
+page: countries/georgia-armenia-kazakhstan-uzbekistan
 order: 11

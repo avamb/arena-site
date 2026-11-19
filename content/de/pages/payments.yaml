@@ -2,6 +2,8 @@ title: "Zahlungen: Ihr eigenes Zahlungskonto, in Ihrem Land"
 description: "Käufer zahlen auf das eigene Zahlungskonto des Veranstalters. Länder mit Zahlungsanbietern für Unternehmen, mit Zahlungsarten und Währungen."
 h1: Käufer zahlen auf Ihr eigenes Zahlungskonto
 lead: Sie verbinden das Konto, das Sie bereits haben, oder eröffnen eines bei einem Anbieter Ihres Landes. Jede Bestellung geht direkt dorthin. ArenaSoldOut.com hält nie Gelder und berührt Ihre Auszahlungen nie.
+related:
+  - { label: "Länder und Zahlungsarten", href: /countries, text: "Zahlungsanbieter, Währungen und Zahlungsarten in jedem Land, in dem Sie verkaufen können." }
 sections:
   - type: coverage
     id: countries

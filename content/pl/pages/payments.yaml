@@ -2,6 +2,8 @@ title: "Płatności: twoje konto płatności, w twoim kraju"
 description: "Kupujący płacą na własne konto płatności organizatora. Kraje, w których firma może podłączyć operatora płatności, z metodami i walutami."
 h1: Kupujący płacą na twoje własne konto płatności
 lead: Podłączasz konto, które już masz, albo otwierasz je u operatora z twojego kraju. Każde zamówienie trafia prosto na nie. ArenaSoldOut.com nigdy nie przechowuje środków i nigdy nie dotyka twoich wypłat.
+related:
+  - { label: "Kraje i metody płatności", href: /countries, text: "Operatorzy, waluty i metody płatności w każdym kraju, w którym możesz sprzedawać." }
 sections:
   - type: coverage
     id: countries

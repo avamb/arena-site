@@ -2,6 +2,8 @@ title: "Paiements : votre propre compte de paiement, dans votre pays"
 description: "Les acheteurs paient sur le compte de paiement de l'organisateur. Pays où vous connectez un prestataire, avec moyens de paiement et devises."
 h1: Les acheteurs paient sur votre propre compte de paiement
 lead: Vous connectez le compte que vous avez déjà, ou vous en ouvrez un chez un prestataire de votre pays. Chaque commande y arrive directement. ArenaSoldOut.com ne détient jamais de fonds et ne touche jamais à vos versements.
+related:
+  - { label: "Pays et moyens de paiement", href: /countries, text: "Prestataires, devises et moyens de paiement dans chaque pays où vous pouvez vendre." }
 sections:
   - type: coverage
     id: countries
