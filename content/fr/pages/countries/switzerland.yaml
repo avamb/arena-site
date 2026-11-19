@@ -85,7 +85,7 @@ sections:
       - q: "Un billet enfant peut-il être vendu uniquement avec un billet adulte ?"
         a: "Oui, avec des catégories complémentaires. Un complément n'est vendu qu'avec un billet principal de la même séance : un billet enfant ne peut donc pas être acheté sans billet adulte."
       - q: "Puis-je vendre des boissons ou des produits dérivés avec les billets ?"
-        a: "Oui. Un bon pour une boisson peut être une catégorie complémentaire : il n'est vendu qu'avec un billet et arrive sous forme de billet à part. Les produits dérivés, le vin et les coffrets cadeaux se vendent dans une boutique à côté de vos billets, avec variantes, panier, livraison et remboursements."
+        a: "Oui. Un bon pour une boisson peut être une catégorie complémentaire : il n'est vendu qu'avec un billet et arrive sous forme de billet à part. Les produits dérivés, le vin et les coffrets cadeaux se vendent dans une boutique à côté de vos billets, avec variantes, panier, retrait sur place ou votre propre livraison, et remboursements. La boutique s'active séparément, conditions sur demande."
       - q: "Je donne le même spectacle chaque semaine. Dois-je créer un nouvel événement à chaque fois ?"
         a: "Non. Vous ajoutez une séance au même événement ; les prix, les catégories et le plan de salle sont repris, et les acheteurs choisissent la date."
       - q: "Puis-je voir les ventes de chaque événement en temps réel ?"

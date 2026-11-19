@@ -111,7 +111,7 @@ sections:
       - q: "Un biglietto bambino può essere venduto solo insieme a uno adulto?"
         a: "Sì, con le categorie aggiuntive. Un'aggiunta si vende solo insieme a un biglietto principale della stessa sessione, quindi un biglietto bambino non si può comprare senza uno adulto."
       - q: "Posso vendere bevande o merchandising insieme ai biglietti?"
-        a: "Sì. Un buono bevanda può essere una categoria aggiuntiva: si vende solo insieme a un biglietto e arriva come biglietto a sé. Merchandising, vino e set regalo si vendono in un negozio accanto ai tuoi biglietti, con varianti, carrello, consegna e rimborsi."
+        a: "Sì. Un buono bevanda può essere una categoria aggiuntiva: si vende solo insieme a un biglietto e arriva come biglietto a sé. Merchandising, vino e set regalo si vendono in un negozio accanto ai tuoi biglietti, con varianti, carrello, ritiro all'evento o consegna a cura tua, e rimborsi. Il negozio si attiva a parte, condizioni su richiesta."
       - q: "Faccio lo stesso spettacolo ogni settimana. Devo creare un nuovo evento ogni volta?"
         a: "No. Aggiungi una sessione allo stesso evento; prezzi, categorie e mappa dei posti restano, e gli acquirenti scelgono la data."
       - q: "Posso vedere le vendite di ogni evento in tempo reale?"

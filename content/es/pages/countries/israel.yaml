@@ -85,7 +85,7 @@ sections:
       - q: "¿Se puede vender una entrada infantil solo junto con una de adulto?"
         a: "Sí, con categorías complementarias. Un complemento se vende solo junto con una entrada principal de la misma sesión, así que no se puede comprar una entrada infantil sin una de adulto."
       - q: "¿Puedo vender bebidas o merchandising junto con las entradas?"
-        a: "Sí. Un vale de bebida puede ser una categoría complementaria: se vende solo junto con una entrada y llega como una entrada propia. El merchandising, el vino y los sets de regalo se venden en una tienda junto a tus entradas, con variantes, carrito, envío y reembolsos."
+        a: "Sí. Un vale de bebida puede ser una categoría complementaria: se vende solo junto con una entrada y llega como una entrada propia. El merchandising, el vino y los sets de regalo se venden en una tienda junto a tus entradas, con variantes, carrito, recogida en el evento o tu propio envío, y reembolsos. La tienda se activa por separado, condiciones a petición."
       - q: "Hago el mismo espectáculo cada semana. ¿Creo un evento nuevo cada vez?"
         a: "No. Añades una sesión al mismo evento; los precios, las categorías y el plano de asientos se mantienen, y los compradores eligen la fecha."
       - q: "¿Puedo ver las ventas de cada evento en tiempo real?"

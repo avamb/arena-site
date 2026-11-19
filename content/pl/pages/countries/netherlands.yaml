@@ -85,7 +85,7 @@ sections:
       - q: "Czy bilet dziecięcy można sprzedać tylko razem z biletem dla dorosłego?"
         a: "Tak, dzięki kategoriom dodatkowym. Dodatek jest sprzedawany tylko razem z biletem głównym na ten sam termin, więc biletu dziecięcego nie da się kupić bez biletu dla dorosłego."
       - q: "Czy mogę sprzedawać napoje lub gadżety razem z biletami?"
-        a: "Tak. Bon na napój może być kategorią dodatkową: jest sprzedawany tylko razem z biletem i przychodzi jako osobny bilet. Gadżety, wino i zestawy prezentowe sprzedają się w sklepie obok twoich biletów, z wariantami, koszykiem, dostawą i zwrotami."
+        a: "Tak. Bon na napój może być kategorią dodatkową: jest sprzedawany tylko razem z biletem i przychodzi jako osobny bilet. Gadżety, wino i zestawy prezentowe sprzedajesz w sklepie obok biletów: warianty, koszyk, odbiór na wydarzeniu lub własna dostawa, zwroty. Sklep jest uruchamiany osobno, warunki na zapytanie."
       - q: "Co tydzień gram ten sam spektakl. Czy za każdym razem tworzę nowe wydarzenie?"
         a: "Nie. Dodajesz termin do tego samego wydarzenia; ceny, kategorie i plan sali zostają, a kupujący wybierają datę."
       - q: "Czy mogę widzieć sprzedaż każdego wydarzenia na żywo?"

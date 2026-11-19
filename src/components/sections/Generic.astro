@@ -19,7 +19,7 @@ import { pageLanguages } from '@/lib/translations';
 import Icon from '@/components/Icon.astro';
 import ContactForm from '@/components/ContactForm.astro';
 
-type Generic = Exclude<Section, { type: 'hero' | 'facts' | 'steps' | 'ways' | 'qa' | 'center' | 'money' | 'pricing' | 'who' | 'reasons' | 'clients' | 'changes' | 'cta' }>;
+type Generic = Exclude<Section, { type: 'hero' | 'facts' | 'steps' | 'ways' | 'qa' | 'center' | 'money' | 'pricing' | 'who' | 'reasons' | 'clients' | 'changes' | 'cta' | 'person' }>;
 interface Props {
   s: Generic;
   lang: LanguageCode;

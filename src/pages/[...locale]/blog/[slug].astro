@@ -9,8 +9,10 @@ import { Image, getImage } from 'astro:assets';
 import Base from '@/layouts/Base.astro';
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import Related from '@/components/Related.astro';
-import { getPosts } from '@/lib/data';
+import { getPosts, authorFor } from '@/lib/data';
+import AuthorCard from '@/components/AuthorCard.astro';
 import { faqOf } from '@/lib/post-faq';
+import { withImage } from '@/lib/author-image';
 import { localePath, postPath, formatDate, tObject, t } from '@/lib/i18n';
 import { languages, defaultLanguage, hosts } from '@config';
 
@@ -42,6 +44,9 @@ const og = post.data.cover ? (await getImage({ src: post.data.cover, width: 1200
 const blogIndex = localePath(lang, '/blog');
 const crumbs = [{ name: t(lang, 'crumbs.home'), path: localePath(lang, '/') }, { name: t(lang, 'blog.backToIndex'), path: blogIndex }, { name: post.data.title, path }];
 // FAQ of a new article: the "## <post.faq>" section of the body, "### question" + answer (FAQPage in JSON-LD).
+// `author` is an id from content/data/authors.yaml for new articles, a plain name on archive posts.
+const person = await withImage(authorFor(post.data.author, lang));
+const authorName = person?.name ?? post.data.author;
 const faq = post.data.archive ? [] : faqOf(post.body ?? '', t(lang, 'post.faq'));
 ---
 <Base
@@ -52,7 +57,7 @@ const faq = post.data.archive ? [] : faqOf(post.body ?? '', t(lang, 'post.faq'))
   markdownPath={`${path}.md`}
   image={og}
   ogType="article"
-  jsonld={{ path, title: post.data.title, description: post.data.description, lang, breadcrumbs: crumbs, faq, article: { headline: post.data.title, date: post.data.date, updated: post.data.updated, author: post.data.author } }}
+  jsonld={{ path, title: post.data.title, description: post.data.description, lang, breadcrumbs: crumbs, faq, article: { headline: post.data.title, date: post.data.date, updated: post.data.updated, author: authorName, person } }}
 >
   <article class="wrap post">
     <Breadcrumbs lang={lang} items={crumbs} />
@@ -69,8 +74,9 @@ const faq = post.data.archive ? [] : faqOf(post.body ?? '', t(lang, 'post.faq'))
     {post.data.cover && <Image class="post-cover" src={post.data.cover} alt={post.data.cover_alt ?? ''} width={900} densities={[1, 2]} loading="eager" />}
     <div class="prose post-body"><Content /></div>
     <footer class="post-foot">
-      <p class="hero-note" style="color:var(--fg-2)">{t(lang, 'post.author', { author: post.data.author })} · <a href={blogIndex} style="color:var(--accent);font-weight:600">{t(lang, 'blog.backToIndex')}</a> · <a href={hosts.telegramChat} style="color:var(--accent);font-weight:600">Telegram</a></p>
+      <p class="hero-note" style="color:var(--fg-2)">{person ? <Fragment set:html={t(lang, 'post.author', { author: `<a href="${person.page}" style="color:var(--accent);font-weight:600">${authorName}</a>` })} /> : t(lang, 'post.author', { author: authorName })} · <a href={blogIndex} style="color:var(--accent);font-weight:600">{t(lang, 'blog.backToIndex')}</a> · <a href={hosts.telegramChat} style="color:var(--accent);font-weight:600">Telegram</a></p>
     </footer>
+    {person && <div class="post-author"><AuthorCard author={person} lang={lang} /></div>}
   </article>
   {next.length > 0 && <Related lang={lang} title={t(lang, 'blog.readNext')} items={next.map((p) => ({ label: p.data.title, href: postPath(lang, p.id.split('/').pop()!), text: p.data.description.slice(0, 120) }))} />}
   <Related lang={lang} title={t(lang, 'blog.related')} items={related} />
@@ -85,5 +91,6 @@ const faq = post.data.archive ? [] : faqOf(post.body ?? '', t(lang, 'post.faq'))
 .post-cover{margin-top:28px;border-radius:var(--r-lg);width:100%;height:auto;max-width:900px}
 .post-body{margin-top:28px}
 .post-body img{border-radius:var(--r);margin-top:14px;height:auto}
+.post-author{margin-top:28px;padding:20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface-2);max-width:72ch}
 .post-foot{margin-top:36px;padding-top:18px;border-top:1px solid var(--line)}
 </style>

@@ -5,11 +5,12 @@
  */
 import { defaultLanguage, languages, type LanguageCode } from '@config';
 import { getCollection } from 'astro:content';
-import { getPage, getProviders, getMarkets, getPricing, getChangelog, getPosts, pageSlugs, slugToPath, navFor } from './data';
+import { authorFor, getPage, getProviders, getMarkets, getPricing, getChangelog, getPosts, pageSlugs, slugToPath, navFor } from './data';
 import { pageToMarkdown, type PageData } from './markdown';
 import { localePath, t } from './i18n';
 import type { JsonLdInput } from './jsonld';
 import { plain } from './inline';
+import { withImage } from './author-image';
 
 export type LoadedPage = PageData & { translated: boolean; markdown: string; jsonld: JsonLdInput };
 
@@ -55,6 +56,7 @@ export async function loadPage(lang: LanguageCode, slug: string): Promise<Loaded
   const faq = page.data.sections.flatMap((s) => (s.type === 'qa' ? s.items.map((i) => ({ q: i.title, a: i.text })) : s.type === 'faq' ? s.items : []));
   const steps = page.data.sections.find((s) => s.type === 'steps');
   const hero = page.data.sections.find((s) => s.type === 'hero');
+  const personSection = page.data.sections.find((s) => s.type === 'person');
   const jsonld: JsonLdInput = {
     path,
     title: page.data.title,
@@ -63,6 +65,7 @@ export async function loadPage(lang: LanguageCode, slug: string): Promise<Loaded
     breadcrumbs: slug === 'home' ? undefined : await breadcrumbsFor(lang, slug, plain(page.data.h1 ?? page.data.title)),
     pricing: slug === 'home' || slug === 'pricing' ? pricing : undefined,
     faq: faq.length ? faq : undefined,
+    person: personSection && personSection.type === 'person' ? await withImage(authorFor(personSection.author, lang)) : undefined,
     howTo: steps && steps.type === 'steps' ? { name: steps.title ?? (hero && hero.type === 'hero' ? hero.title : page.data.title), steps: steps.items.map((i) => ({ name: i.title, text: i.text })) } : undefined,
   };
   return { ...data, translated, markdown, jsonld };

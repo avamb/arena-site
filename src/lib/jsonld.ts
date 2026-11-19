@@ -2,7 +2,8 @@
  * JSON-LD from the same data as the HTML (doc 33 §3.10, item 3). One graph per page; CI checks
  * every page has Organization and the page-specific types.
  */
-import type { Graph, Thing, Organization, WebSite, WebPage, Service, FAQPage, HowTo, Offer, BreadcrumbList, Article } from 'schema-dts';
+import type { Graph, Thing, Organization, WebSite, WebPage, Service, FAQPage, HowTo, Offer, BreadcrumbList, Article, Person } from 'schema-dts';
+import type { Author } from './data';
 import { org, siteUrl, hosts } from '@config';
 import { plain, fill } from './inline';
 import { tariff } from './data';
@@ -17,10 +18,27 @@ export type JsonLdInput = {
   pricing?: CollectionEntry<'pricing'>[];
   faq?: { q: string; a: string }[];
   howTo?: { name: string; steps: { name: string; text: string }[] };
-  article?: { headline: string; date: Date; updated?: Date; author: string };
+  /** A known author (authors.yaml) becomes a Person with sameAs; any other string a plain Person name. */
+  article?: { headline: string; date: Date; updated?: Date; author: string; person?: Author };
+  /** Author page: the Person is the page's main entity. */
+  person?: Author;
 };
 
 const absolute = (path: string) => new URL(path, siteUrl).toString();
+
+export function person(a: Author): Person {
+  return {
+    '@type': 'Person',
+    '@id': `${absolute(a.page)}#person`,
+    name: a.name,
+    jobTitle: a.role,
+    description: a.bio,
+    url: absolute(a.page),
+    ...(a.image ? { image: absolute(a.image) } : {}),
+    sameAs: a.sameAs,
+    worksFor: { '@id': `${siteUrl}/#organization` },
+  };
+}
 
 export function organization(): Organization {
   return {
@@ -107,6 +125,7 @@ export function buildGraph(input: JsonLdInput): Graph {
   if (input.pricing) graph.push(ticketingService(input.pricing));
   if (input.faq && input.faq.length) graph.push(faqPage(input.faq, input.path));
   if (input.howTo) graph.push(howTo(input.howTo, input.path));
+  if (input.person) { graph.push(person(input.person)); Object.assign(page, { mainEntity: { '@id': `${absolute(input.person.page)}#person` } }); }
   if (input.article) {
     const a: Article = {
       '@type': 'Article',
@@ -114,12 +133,13 @@ export function buildGraph(input: JsonLdInput): Graph {
       headline: input.article.headline,
       datePublished: input.article.date.toISOString(),
       dateModified: (input.article.updated ?? input.article.date).toISOString(),
-      author: input.article.author === org.name ? { '@id': `${siteUrl}/#organization` } : { '@type': 'Person', name: input.article.author },
+      author: input.article.person ? { '@id': `${absolute(input.article.person.page)}#person` } : input.article.author === org.name ? { '@id': `${siteUrl}/#organization` } : { '@type': 'Person', name: input.article.author },
       publisher: { '@id': `${siteUrl}/#organization` },
       mainEntityOfPage: absolute(input.path),
       inLanguage: input.lang,
     };
     graph.push(a);
+    if (input.article.person) graph.push(person(input.article.person));
   }
   return { '@context': 'https://schema.org', '@graph': graph };
 }

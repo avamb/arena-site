@@ -111,7 +111,7 @@ sections:
       - q: "Um ingresso infantil pode ser vendido somente junto com um ingresso de adulto?"
         a: "Sim, com categorias complementares. Um complemento só é vendido junto com um ingresso principal da mesma sessão, então não é possível comprar um ingresso infantil sem um de adulto."
       - q: "Posso vender bebidas ou produtos junto com os ingressos?"
-        a: "Sim. Um vale-bebida pode ser uma categoria complementar: ele só é vendido junto com um ingresso e chega como um ingresso à parte. Produtos, vinhos e kits de presente são vendidos em uma loja ao lado dos seus ingressos, com variações, carrinho, entrega e reembolsos."
+        a: "Sim. Um vale-bebida pode ser uma categoria complementar: ele só é vendido junto com um ingresso e chega como um ingresso à parte. Produtos, vinhos e kits de presente são vendidos em uma loja ao lado dos seus ingressos, com variações, carrinho, retirada no evento ou entrega própria e reembolsos. A loja é contratada à parte, condições sob consulta."
       - q: "Faço o mesmo show toda semana. Preciso criar um evento novo a cada vez?"
         a: "Não. Você acrescenta uma sessão ao mesmo evento; preços, categorias e mapa de assentos são mantidos, e os compradores escolhem a data."
       - q: "Posso ver as vendas de cada evento em tempo real?"

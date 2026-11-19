@@ -86,7 +86,7 @@ sections:
       - q: "Can a child ticket be sold only together with an adult ticket?"
         a: "Yes, with add-on categories. An add-on is sold only together with a main ticket of the same session, so a child ticket cannot be bought without an adult one."
       - q: "Can I sell drinks or merchandise with the tickets?"
-        a: "Yes. A drink voucher can be an add-on category: it is sold only together with a ticket and arrives as a ticket of its own. Merchandise, wine and gift sets sell in a shop next to your tickets, with variants, a cart, delivery and refunds."
+        a: "Yes. A drink voucher can be an add-on category: it is sold only together with a ticket and arrives as a ticket of its own. Merchandise, wine and gift sets sell in a shop next to your tickets, with variants, a cart, pickup at the event or your own delivery, and refunds. The shop is connected separately, terms on request."
       - q: "I run the same show every week. Do I create a new event each time?"
         a: "No. You add a session to the same event; prices, categories and the seating plan carry over, and buyers pick the date."
       - q: "Can I see the sales of each event in real time?"

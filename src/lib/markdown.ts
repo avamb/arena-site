@@ -6,7 +6,7 @@ import type { CollectionEntry } from 'astro:content';
 import type { Section } from '../content.config';
 import { siteUrl, org, type LanguageCode } from '@config';
 import { plain, fill } from './inline';
-import { clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, countryRows, type Nav } from './data';
+import { authorFor, clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, countryRows, type Nav } from './data';
 import { formatDate, currencySymbol, postPath, localePath, t } from './i18n';
 import { pageLanguages } from './translations';
 
@@ -121,6 +121,11 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       h2(s.title);
       out.push(plain(s.text), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, '', plain(s.note), '');
       break;
+    case 'person': {
+      const a = authorFor(s.author, d.lang);
+      if (a) out.push(`**${a.name}**, ${a.role}`, '', a.bio, '', ...a.sameAs.map((u) => `- ${u}`), '');
+      break;
+    }
     case 'prose':
       h2(s.title); out.push(fill(s.body, vars).trim(), '');
       break;

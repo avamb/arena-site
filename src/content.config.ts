@@ -163,6 +163,8 @@ export const section = z.discriminatedUnion('type', [
   z.object({ type: z.literal('compare'), ...sectionBase, cols: z.object({ what: z.string(), us: z.string(), them: z.string() }), rows: z.array(z.object({ what: z.string(), us: z.string(), them: z.string() })), note: z.string().optional() }),
   z.object({ type: z.literal('code'), ...sectionBase, code: z.string(), items: z.array(z.object({ key: z.string(), text: z.string() })), cta: link }),
   z.object({ type: z.literal('marks'), ...sectionBase }),
+  /** Author page: photo, name, role, bio and profile links from content/data/authors.yaml. */
+  z.object({ type: z.literal('person'), ...sectionBase, author: z.string() }),
   z.object({ type: z.literal('changelog'), ...sectionBase }),
   z.object({ type: z.literal('posts'), ...sectionBase, empty: z.string() }),
   z.object({ type: z.literal('facts-table'), ...sectionBase }),

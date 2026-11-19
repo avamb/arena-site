@@ -85,7 +85,7 @@ sections:
       - q: "Kann ein Kinderticket nur zusammen mit einem Erwachsenenticket verkauft werden?"
         a: "Ja, mit Zusatzkategorien. Ein Zusatz wird nur zusammen mit einem Haupt-Ticket desselben Termins verkauft, ein Kinderticket lässt sich also nicht ohne Erwachsenenticket kaufen."
       - q: "Kann ich Getränke oder Merchandise zusammen mit den Tickets verkaufen?"
-        a: "Ja. Ein Getränkegutschein kann eine Zusatzkategorie sein: Er wird nur zusammen mit einem Ticket verkauft und kommt als eigenes Ticket an. Merchandise, Wein und Geschenksets verkaufen sich in einem Shop neben Ihren Tickets, mit Varianten, Warenkorb, Versand und Erstattungen."
+        a: "Ja. Ein Getränkegutschein kann eine Zusatzkategorie sein: Er wird nur zusammen mit einem Ticket verkauft und kommt als eigenes Ticket an. Merchandise, Wein und Geschenksets verkaufen Sie in einem Shop neben Ihren Tickets, mit Varianten, Warenkorb, Abholung bei der Veranstaltung oder eigenem Versand und Erstattungen. Der Shop wird separat freigeschaltet, Konditionen auf Anfrage."
       - q: "Ich zeige jede Woche dieselbe Show. Lege ich jedes Mal ein neues Event an?"
         a: "Nein. Sie fügen demselben Event einen Termin hinzu; Preise, Kategorien und der Saalplan werden übernommen, und Käufer wählen das Datum."
       - q: "Kann ich die Verkäufe jeder Veranstaltung in Echtzeit sehen?"
