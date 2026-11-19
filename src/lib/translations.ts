@@ -14,6 +14,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { languages, defaultLanguage, type LanguageCode } from '@config';
 
 export const postGroups: Partial<Record<LanguageCode, string>>[] = [
+  { en: 'how-to-increase-event-revenue', es: 'como-aumentar-ingresos-evento', pt: 'como-aumentar-receita-evento', de: 'umsatz-veranstaltung-steigern', fr: 'augmenter-recettes-evenement', it: 'aumentare-incassi-evento', pl: 'jak-zwiekszyc-przychody-z-wydarzenia', uk: 'yak-zbilshyty-vyruchku-zakhodu', ru: 'kak-uvelichit-vyruchku-meropriyatiya' },
   { en: 'arenasoldout-com-applications-a-brief-guide', ru: 'prilozheniya-arenasoldout-com-kratkij-gajd' },
   { en: 'boosting-event-sales-innovative-moves-with-arenasoldout-com', ru: 'increasing-sales-at-events-innovative-steps-with-arenasoldout-com' },
   { en: 'custom-ticketing-platform-how-to-build-your-own', ru: 'sobstvennaya-biletnaya-platforma-kak-ee-sozdat' },

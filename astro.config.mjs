@@ -6,6 +6,7 @@ import svelte from '@astrojs/svelte';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import { languages, defaultLanguage, siteUrl } from './site.config.ts';
+import rehypeLocaleLinks from './src/lib/rehype-locale-links.mjs';
 
 /**
  * Last commit date of every file under content/, for <lastmod> in the sitemap. One `git log` pass; the
@@ -71,6 +72,10 @@ export default defineConfig({
       prefixDefaultLocale: false,
       redirectToDefaultLocale: false,
     },
+  },
+  markdown: {
+    // Links inside a post lead to pages in the post's own language.
+    rehypePlugins: [rehypeLocaleLinks],
   },
   integrations: [
     svelte(),
