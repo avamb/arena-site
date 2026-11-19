@@ -6,6 +6,7 @@ related:
   - { label: Spettacoli, href: /solutions/shows }
   - { label: Dove vendi, href: /product/sell }
   - { label: Pagamenti per paese, href: /payments }
+  - { label: "Paesi e metodi di pagamento", href: /countries }
 sections:
   - type: cards
     id: what

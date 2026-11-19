@@ -1,0 +1,138 @@
+title: "Billetterie par pays : prestataires de paiement et devises"
+description: "Où les organisateurs vendent des billets avec ArenaSoldOut.com : pays, prestataires de paiement, devises et moyens de paiement. L'argent va sur votre compte."
+h1: "Dans quels pays ArenaSoldOut.com fonctionne-t-il ?"
+lead: "Dans tous les pays où l'un de nos prestataires de paiement accepte votre société. L'argent de chaque billet arrive sur votre propre compte de paiement ; ArenaSoldOut.com n'encaisse jamais les paiements des billets."
+related:
+  - { label: "Paiements sur votre propre compte", href: "/payments", text: "Prestataires, statuts et comment connecter votre compte." }
+  - { label: "Tournées de concerts", href: "/solutions/concert-tours", text: "Plusieurs villes et pays dans un seul événement, une page par producteur." }
+  - { label: "Tarifs", href: "/pricing", text: "Payez après l'événement les billets vendus, ou achetez des crédits." }
+sections:
+  - type: cards
+    id: rules
+    eyebrow: "Dans tous les pays"
+    title: "Quelles règles sont les mêmes partout ?"
+    items:
+      - title: "Votre compte, votre argent"
+        text: "L'argent de chaque billet vendu arrive sur votre propre compte chez votre prestataire de paiement : Stripe, Flitt ou AllPay. ArenaSoldOut.com ne le détient jamais. Les versements vers votre banque suivent le calendrier de votre prestataire ; les remboursements repartent vers l'acheteur par votre prestataire."
+      - title: "Un seul prix, plus bas avec les crédits"
+        text: "{usdPrice} par billet, {usdSeated} avec une place ; dans l'UE {eurPrice} et {eurSeated}. Vous payez après l'événement, pour les billets vendus. Achetez des crédits à l'avance et le prix descend à {usdFrom} par billet ({eurFrom} dans l'UE)."
+      - title: "Pas de TVA sur notre commission"
+        text: "Nous facturons notre commission sans TVA."
+      - title: "Les moyens de paiement, c'est vous qui choisissez"
+        text: "Les acheteurs voient les moyens que vous activez dans le compte de votre prestataire."
+
+  - type: cards
+    id: benefits
+    eyebrow: "Pourquoi ArenaSoldOut.com"
+    title: "Qu'obtiennent les organisateurs ?"
+    lead: "Une plateforme de billetterie conçue pour les organisateurs : vous gardez plus sur chaque billet, vous vendez plus et vous démarrez plus tôt."
+    items:
+      - title: "Gagnez plus sur chaque billet"
+        text: "{usdPrice} fixes par billet, et non un pourcentage du prix. Avec des crédits, c'est moins, à partir de {usdFrom} par billet. Les frais de carte restent entre vous et votre prestataire de paiement."
+        link: { label: "Tarifs →", href: "/pricing" }
+      - title: "Vendez plus"
+        text: "Codes promo, prix early bird, liens de parrainage, relances de paniers abandonnés et un e-mail aux abonnés dès l'ouverture des ventes."
+        link: { label: "Codes promo et fenêtres de prix →", href: "/product/pricing-tools" }
+      - title: "Vendez plus tôt"
+        text: "Un événement sans plan de salle est en vente en 10 minutes. Un plan de salle, nous le dessinons gratuitement, en général sous un jour."
+        link: { label: "Votre premier événement →", href: "/first-event" }
+
+  - type: countries
+    id: list
+    eyebrow: "Pays"
+    title: "Pays, prestataires et moyens de paiement"
+    lead: "Tous les pays où l'un de nos prestataires accepte des sociétés. Les sociétés acceptées sont décidées par le prestataire, et les règles changent : vérifiez les conditions actuelles auprès du prestataire avant d'ouvrir un compte. Les pays qui ont leur propre page sont des liens."
+    labels:
+      country: "Pays"
+      provider: "Prestataire"
+      currencies: "Devises"
+      methods: "Moyens de paiement"
+      agreed: "à définir dans votre compte prestataire"
+    methods_map:
+      card: "cartes"
+      apple_pay: "Apple Pay"
+      google_pay: "Google Pay"
+      bit: "Bit"
+      installments: "paiement en plusieurs fois"
+      bank_transfer: "virement bancaire"
+      ideal: "iDEAL"
+      twint: "TWINT"
+    preparing:
+      title: "En préparation"
+      text: "Pays où nous ajoutons un prestataire de paiement. Votre pays n'est pas dans le tableau, ou vous voulez vendre dans l'un de ceux-ci dès maintenant ? [Écrivez-nous](/contact#write)."
+
+  - type: cards
+    id: where
+    eyebrow: "Où vous vendez"
+    title: "Où puis-je vendre des billets ?"
+    lead: "À trois endroits à la fois. Les ventes de tous arrivent dans un seul Event Center."
+    items:
+      - title: "Notre page de vente"
+        text: "Nous hébergeons une page pour votre événement à l'adresse tickets.arenasoldout.com/votre-nom/votre-evenement. Il n'y a rien à construire."
+        link: { label: "Où vous vendez →", href: "/product/sell" }
+      - title: "Votre propre site"
+        text: "Placez le widget de billetterie sur le site que vous avez déjà. Les acheteurs choisissent leurs places et paient sans le quitter."
+        link: { label: "Le widget →", href: "/product/sell" }
+      - title: "Vos réseaux sociaux"
+        text: "Partagez le lien sur les réseaux sociaux et les messageries, ou imprimez un QR code sur l'affiche. Chaque commande est liée à son lien, vous voyez donc lequel a vendu."
+        link: { label: "Liens et QR codes →", href: "/product/sell" }
+
+  - type: prose
+    id: abroad
+    eyebrow: "Tournées de concerts"
+    title: "Puis-je vendre un spectacle dans un autre pays ?"
+    body: "Oui. Une tournée peut franchir les frontières : des séances dans différentes villes et différents pays vivent dans un seul événement, et les acheteurs choisissent la date. Le compte de paiement et la devise suivent votre organisation. Si vous avez besoin d'une deuxième devise, nous mettons en place un canal de vente distinct pour ce pays. Voir [tournées de concerts](/solutions/concert-tours)."
+
+  - type: faq
+    id: questions
+    eyebrow: "Questions"
+    title: "Que demandent les organisateurs avant de commencer ?"
+    items:
+      - q: "Combien un billet me coûte-t-il ?"
+        a: "{usdPrice} par billet, {usdSeated} avec une place ; dans l'UE {eurPrice} et {eurSeated}. Vous payez après l'événement, pour les billets vendus. Les invitations ne portent aucune commission. Voir les [tarifs](/pricing)."
+      - q: "Puis-je payer moins par billet ?"
+        a: "Oui. Achetez des crédits à l'avance et le prix descend à {usdFrom} par billet ({eurFrom} dans l'UE). Les crédits n'expirent jamais. Voir les [tarifs](/pricing)."
+      - q: "Quand paie-je ArenaSoldOut.com ?"
+        a: "Après l'événement, pour les billets vendus, si vous choisissez de payer ainsi. Vous pouvez aussi acheter des crédits avant l'événement."
+      - q: "Où va l'argent des billets ?"
+        a: "Sur votre propre compte chez votre prestataire de paiement, pour chaque billet vendu. ArenaSoldOut.com ne le détient jamais."
+      - q: "En combien de temps puis-je commencer à vendre ?"
+        a: "Nous confirmons votre organisation, en général sous un jour. Avec un compte de paiement en place, un événement sans plan de salle est en vente en 10 minutes. Un plan de salle, nous le dessinons gratuitement, en général sous un jour."
+      - q: "Quelle est la fiabilité de la plateforme ?"
+        a: "Testée en charge à 800 commandes par minute avec 1 000 acheteurs en même temps. Une surveillance automatique alerte l'équipe, des sauvegardes chiffrées sont faites chaque nuit, et Cloudflare se place devant. Aucune panne n'a été enregistrée depuis le lancement en 2019, même avec plusieurs dizaines de milliers de billets vendus en 5 minutes. Voir [la fiabilité](/product/reliability)."
+      - q: "Je gère une salle permanente. Y a-t-il une autre formule ?"
+        a: "Oui. Les théâtres, clubs et autres salles qui organisent des événements toute l'année ou par saison paient {percent} % du prix du billet, avec un plafond par billet, facturé chaque mois. Voir les [tarifs](/pricing)."
+      - q: "Mes billets sont bon marché. Y a-t-il un prix plus bas ?"
+        a: "Oui. Quand chaque billet de l'événement coûte {usdLowMax} ou moins ({eurLowMax} dans l'UE), la commission est de {lowPercent} % du prix du billet. Voir les [tarifs](/pricing)."
+      - q: "Un même événement peut-il avoir des billets à des prix différents ?"
+        a: "Oui. Des catégories avec leurs propres prix, des prix early bird qui changent à une date, des paliers de quantité, des billets gratuits et à prix libre."
+      - q: "Puis-je utiliser des codes promo ?"
+        a: "Oui, avec un périmètre (quelles catégories et quelles séances), des dates de validité et une limite par acheteur. Voir [codes promo et fenêtres de prix](/product/pricing-tools)."
+      - q: "Un billet enfant peut-il être vendu uniquement avec un billet adulte ?"
+        a: "Oui, avec des catégories complémentaires. Un complément n'est vendu qu'avec un billet principal de la même séance : un billet enfant ne peut donc pas être acheté sans billet adulte."
+      - q: "Puis-je vendre des boissons ou des produits dérivés avec les billets ?"
+        a: "Oui. Un bon pour une boisson peut être une catégorie complémentaire : il n'est vendu qu'avec un billet et arrive sous forme de billet à part. Les produits dérivés, le vin et les coffrets cadeaux se vendent dans une boutique à côté de vos billets, avec variantes, panier, retrait sur place ou votre propre livraison, et remboursements. La boutique s'active séparément, conditions sur demande."
+      - q: "Je donne le même spectacle chaque semaine. Dois-je créer un nouvel événement à chaque fois ?"
+        a: "Non. Vous ajoutez une séance au même événement ; les prix, les catégories et le plan de salle sont repris, et les acheteurs choisissent la date."
+      - q: "Puis-je voir les ventes de chaque événement en temps réel ?"
+        a: "Oui. Dans l'Event Center, sur votre téléphone ou votre ordinateur, dans le navigateur, sans rien installer : commandes et totaux par séance, et un rapport CSV. Si vous utilisez Telegram, chaque vente et chaque remboursement arrivent aussi dans votre groupe en quelques secondes."
+      - q: "Ai-je besoin d'un équipement spécial à l'entrée ?"
+        a: "Non. L'application MACS scanne les billets sur n'importe quel iPhone ou téléphone Android, sur papier ou à l'écran. Les lecteurs laser portables et les lecteurs de codes-barres USB ou Bluetooth fonctionnent aussi. Voir [l'application MACS](/product/scanner)."
+      - q: "Combien coûte l'application de scan MACS ?"
+        a: "MACS est incluse pour les organisateurs qui vendent avec ArenaSoldOut.com."
+      - q: "Quels moyens de paiement mes acheteurs verront-ils ?"
+        a: "Ceux que vous activez dans le compte de votre prestataire de paiement."
+
+  - type: prose
+    id: team
+    eyebrow: "Notre équipe"
+    title: "Des questions ou des idées ?"
+    body: "Écrivez à l'équipe. Nous répondons aux questions sur votre pays, votre salle et votre événement, et nous écoutons les idées : nous construisons ArenaSoldOut.com pour que la vente de billets soit pratique et rentable pour vous. [Contactez l'équipe](/contact#write)."
+
+  - type: cta
+    id: start
+    title: "Commencez à vendre dès aujourd'hui"
+    text: "Créez l'événement, connectez votre compte de paiement, partagez le lien."
+    primary: { label: "Créer votre événement", href: "/start#create" }
+    secondary: { label: "Contacter l'équipe", href: "/contact#write" }
+    note: "Nous confirmons votre organisation, connectons votre compte de paiement et dessinons gratuitement votre plan de salle."

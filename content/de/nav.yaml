@@ -28,6 +28,7 @@ footer:
       - { label: Saalpläne, href: /product/seating }
       - { label: Promo-Codes und Preisfenster, href: /product/pricing-tools }
       - { label: Zahlungen, href: /payments }
+      - { label: Länder, href: /countries }
       - { label: Telegram-Bot, href: /product/telegram }
       - { label: E-Tickets und Scannen, href: /product/tickets }
       - { label: Scanner-App MACS, href: /product/scanner }

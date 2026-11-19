@@ -29,6 +29,7 @@ footer:
       - { label: Seating plans, href: /product/seating }
       - { label: Promo codes and price windows, href: /product/pricing-tools }
       - { label: Payments, href: /payments }
+      - { label: Countries, href: /countries }
       - { label: Telegram bot, href: /product/telegram }
       - { label: E-tickets and scanning, href: /product/tickets }
       - { label: MACS scanner app, href: /product/scanner }

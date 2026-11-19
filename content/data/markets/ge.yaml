@@ -5,4 +5,5 @@ languages: [en, ru]
 currencies: [GEL, EUR]
 providers: [flitt]
 status: live
+page: countries/georgia-armenia-kazakhstan-uzbekistan
 order: 4

@@ -2,6 +2,8 @@ title: "Pagamentos: sua própria conta de pagamentos, no seu país"
 description: "Os compradores pagam na conta de pagamentos do próprio organizador. Países em que uma empresa pode conectar um provedor de pagamentos, com métodos e moedas."
 h1: Os compradores pagam na sua própria conta de pagamentos
 lead: Você conecta a conta que já tem, ou abre uma com um provedor do seu país. Cada pedido vai direto para ela. O ArenaSoldOut.com nunca retém valores e nunca mexe nos seus repasses.
+related:
+  - { label: "Países e métodos de pagamento", href: /countries, text: "Provedores, moedas e métodos de pagamento em cada país onde você pode vender." }
 sections:
   - type: coverage
     id: countries
@@ -36,6 +38,8 @@ sections:
         bit: Bit
         installments: parcelamento
         bank_transfer: transferência bancária
+        ideal: iDEAL
+        twint: TWINT
 
   - type: cards
     id: connect

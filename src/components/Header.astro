@@ -7,6 +7,7 @@ import Logo from './Logo.astro';
 import ThemeToggle from './islands/ThemeToggle.svelte';
 import Icon from './Icon.astro';
 import { trackLabel } from '@/lib/track';
+import { pageLanguages, slugOfPath } from '@/lib/translations';
 interface Props { lang: LanguageCode; path: string }
 const { lang, path } = Astro.props;
 const nav = navFor(lang);
@@ -16,6 +17,9 @@ const current = getLanguage(lang);
 const badge = (code: string) => (code === 'uk' ? 'UA' : code.toUpperCase());
 const signinHref = nav.signin.href.startsWith('http') ? nav.signin.href : hosts.app;
 const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
+// A page kept to some languages (`languages:` in the English original) sends the others to its parent page.
+const only = pageLanguages(slugOfPath(path));
+const switchTo = (code: string) => (only && !only.includes(code) ? localePath(code as LanguageCode, stripped.replace(/\/[^/]+$/, '') || '/') : localePath(code as LanguageCode, stripped));
 ---
 <header class="header">
   <div class="wrap nav">
@@ -29,7 +33,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
         <form class="lang-menu" method="get">
           <label class="visually-hidden" for="lang-select">{t(lang, 'language')}</label>
           <select id="lang-select" onchange="location.href=this.value">
-            {langs.map((l) => <option value={localePath(l.code, stripped)} selected={l.code === lang} lang={l.code} title={l.name}>{badge(l.code)}</option>)}
+            {langs.map((l) => <option value={switchTo(l.code)} selected={l.code === lang} lang={l.code} title={l.name}>{badge(l.code)}</option>)}
           </select>
           <Icon name="chevron-down" size={10} />
         </form>
@@ -56,7 +60,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
       <form class="lang-menu" method="get">
         <label class="visually-hidden" for="lang-select-menu">{t(lang, 'language')}</label>
         <select id="lang-select-menu" onchange="location.href=this.value">
-          {langs.map((l) => <option value={localePath(l.code, stripped)} selected={l.code === lang} lang={l.code} title={l.name}>{badge(l.code)}</option>)}
+          {langs.map((l) => <option value={switchTo(l.code)} selected={l.code === lang} lang={l.code} title={l.name}>{badge(l.code)}</option>)}
         </select>
         <Icon name="chevron-down" size={10} />
       </form>

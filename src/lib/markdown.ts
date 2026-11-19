@@ -6,8 +6,9 @@ import type { CollectionEntry } from 'astro:content';
 import type { Section } from '../content.config';
 import { siteUrl, org, type LanguageCode } from '@config';
 import { plain, fill } from './inline';
-import { authorFor, clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, type Nav } from './data';
-import { formatDate, currencySymbol, postPath, t } from './i18n';
+import { authorFor, clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, countryRows, type Nav } from './data';
+import { formatDate, currencySymbol, postPath, localePath, t } from './i18n';
+import { pageLanguages } from './translations';
 
 export type PageData = {
   lang: LanguageCode;
@@ -156,6 +157,21 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       out.push('', `### ${plain(s.preparing.title)}`, '', plain(s.preparing.text), '', groups.map((g) => `- ${g}`).join('\n'), '');
       break;
     }
+    case 'countries': {
+      h2(s.title); lead(s.lead);
+      const names = new Intl.DisplayNames([d.lang], { type: 'region' });
+      out.push(`| ${s.labels.country} | ${s.labels.provider} | ${s.labels.currencies} | ${s.labels.methods} |`, '|---|---|---|---|');
+      countryRows(d.markets, d.providers, d.lang).forEach((r) => out.push(`| ${r.page ? `[${r.name}](${abs(localePath(pageLanguages(r.page)?.includes(d.lang) === false ? 'en' : d.lang, '/' + r.page))})` : r.name} | ${r.providers.join(', ')} | ${r.currencies.length ? r.currencies.join(', ') : s.labels.agreed} | ${r.methods.map((x) => s.methods_map[x] ?? x).join(', ')} |`));
+      const planned = d.markets.filter((m) => m.data.status === 'planned').map((m) => names.of(m.data.iso2) ?? m.data.name.en).sort((a, b) => a.localeCompare(b, d.lang));
+      out.push('', `### ${plain(s.preparing.title)}`, '', plain(s.preparing.text), '', planned.join(', '), '');
+      break;
+    }
+    case 'glance':
+      h2(s.title); lead(s.lead);
+      out.push('| | |', '|---|---|');
+      s.rows.forEach((r) => out.push(`| ${plain(r.k)} | ${plain(fill(r.v, vars))} |`));
+      out.push('');
+      break;
     case 'cards':
       h2(s.title); lead(s.lead);
       s.items.forEach((i) => out.push(`### ${plain(i.title)}`, '', plain(fill(i.text, vars)), '', i.link ? `[${i.link.label}](${abs(i.link.href)})` : '', ''));

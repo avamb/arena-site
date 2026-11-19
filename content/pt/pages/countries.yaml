@@ -1,0 +1,138 @@
+title: "Venda de ingressos por país: provedores de pagamento, moedas"
+description: "Onde organizadores vendem ingressos com o ArenaSoldOut.com: cada país, provedor de pagamento, moeda e método. O dinheiro vai sempre para a sua própria conta."
+h1: "Em quais países o ArenaSoldOut.com funciona?"
+lead: "Em todo país em que um dos nossos provedores de pagamento aceita a sua empresa. O dinheiro de cada ingresso vai para a sua própria conta de pagamentos; o ArenaSoldOut.com nunca recebe os pagamentos dos ingressos."
+related:
+  - { label: "Pagamentos na sua própria conta", href: "/payments", text: "Provedores, status e como conectar a sua conta." }
+  - { label: "Turnês de shows", href: "/solutions/concert-tours", text: "Várias cidades e países em um só evento, uma página por promotor." }
+  - { label: "Preços", href: "/pricing", text: "Pague depois do evento pelos ingressos vendidos, ou compre créditos." }
+sections:
+  - type: cards
+    id: rules
+    eyebrow: "Todos os países"
+    title: "Quais regras valem em todo lugar?"
+    items:
+      - title: "Sua conta, seu dinheiro"
+        text: "O dinheiro de cada ingresso vendido vai para a sua própria conta no seu provedor de pagamentos: Stripe, Flitt ou AllPay. O ArenaSoldOut.com nunca retém esse valor. Os repasses para o seu banco seguem o prazo do seu provedor; os reembolsos voltam ao comprador pelo seu provedor."
+      - title: "Um preço, menor com créditos"
+        text: "{usdPrice} por ingresso, {usdSeated} com assento; na UE, {eurPrice} e {eurSeated}. Você paga depois do evento, pelos ingressos vendidos. Compre créditos antecipadamente e o preço cai para {usdFrom} por ingresso ({eurFrom} na UE)."
+      - title: "Sem IVA sobre a nossa comissão"
+        text: "Emitimos a fatura da nossa comissão sem IVA."
+      - title: "Os métodos de pagamento são escolha sua"
+        text: "Os compradores veem os métodos que você ativa na conta do seu provedor."
+
+  - type: cards
+    id: benefits
+    eyebrow: "Por que o ArenaSoldOut.com"
+    title: "O que os organizadores recebem?"
+    lead: "Uma plataforma de venda de ingressos feita para organizadores: você fica com mais de cada ingresso, vende mais e começa mais cedo."
+    items:
+      - title: "Ganhe mais em cada ingresso"
+        text: "Um valor fixo de {usdPrice} por ingresso, e não um percentual do preço. Com créditos é menor, a partir de {usdFrom} por ingresso. As taxas de cartão ficam entre você e o seu provedor de pagamentos."
+        link: { label: "Preços →", href: "/pricing" }
+      - title: "Venda mais"
+        text: "Códigos promocionais, preços de lançamento, links de indicação, lembretes de carrinho abandonado e um e-mail para os inscritos no momento em que as vendas abrem."
+        link: { label: "Códigos promocionais e janelas de preço →", href: "/product/pricing-tools" }
+      - title: "Comece a vender mais cedo"
+        text: "Um evento sem mapa de assentos entra à venda em 10 minutos. O mapa de assentos nós desenhamos para você, sem custo, em geral em até um dia."
+        link: { label: "Seu primeiro evento →", href: "/first-event" }
+
+  - type: countries
+    id: list
+    eyebrow: "Países"
+    title: "Países, provedores e métodos de pagamento"
+    lead: "Todo país em que um dos nossos provedores aceita empresas. Quais empresas um provedor aceita é decisão do provedor, e as regras mudam: confira as condições atuais com o provedor antes de abrir uma conta. Os países com página própria são links."
+    labels:
+      country: "País"
+      provider: "Provedor"
+      currencies: "Moedas"
+      methods: "Métodos de pagamento"
+      agreed: "definido na conta do seu provedor"
+    methods_map:
+      card: "cartões"
+      apple_pay: "Apple Pay"
+      google_pay: "Google Pay"
+      bit: "Bit"
+      installments: "parcelamento"
+      bank_transfer: "transferência bancária"
+      ideal: "iDEAL"
+      twint: "TWINT"
+    preparing:
+      title: "Em preparação"
+      text: "Países em que estamos acrescentando um provedor de pagamentos. O seu país não está na tabela, ou você quer vender agora em um destes? [Escreva para nós](/contact#write)."
+
+  - type: cards
+    id: where
+    eyebrow: "Onde você vende"
+    title: "Onde posso vender ingressos?"
+    lead: "Em três lugares ao mesmo tempo. As vendas de todos eles chegam a um só Event Center."
+    items:
+      - title: "Nossa página de vendas"
+        text: "Hospedamos uma página para o seu evento em tickets.arenasoldout.com/seu-nome/seu-evento. Não há nada para construir."
+        link: { label: "Onde você vende →", href: "/product/sell" }
+      - title: "Seu próprio site"
+        text: "Coloque o widget de ingressos no site que você já tem. Os compradores escolhem os assentos e pagam sem sair dele."
+        link: { label: "O widget →", href: "/product/sell" }
+      - title: "Suas redes sociais"
+        text: "Compartilhe o link nas redes sociais e nos mensageiros, ou imprima um QR code no cartaz. Cada pedido fica ligado ao seu link, e assim você vê qual deles vendeu."
+        link: { label: "Links e QR codes →", href: "/product/sell" }
+
+  - type: prose
+    id: abroad
+    eyebrow: "Turnês de shows"
+    title: "Posso vender um show em outro país?"
+    body: "Sim. Uma turnê pode cruzar fronteiras: sessões em cidades e países diferentes ficam em um só evento, e os compradores escolhem a data. A conta de pagamentos e a moeda acompanham a sua organização. Se você precisa de uma segunda moeda, configuramos um canal de vendas separado para esse país. Veja [turnês de shows](/solutions/concert-tours)."
+
+  - type: faq
+    id: questions
+    eyebrow: "Perguntas"
+    title: "O que os organizadores perguntam antes de começar?"
+    items:
+      - q: "Quanto custa um ingresso para mim?"
+        a: "{usdPrice} por ingresso, {usdSeated} com assento; na UE, {eurPrice} e {eurSeated}. Você paga depois do evento, pelos ingressos vendidos. Convites não têm comissão. Veja [preços](/pricing)."
+      - q: "Posso pagar menos por ingresso?"
+        a: "Sim. Compre créditos antecipadamente e o preço cai para {usdFrom} por ingresso ({eurFrom} na UE). Os créditos nunca expiram. Veja [preços](/pricing)."
+      - q: "Quando eu pago ao ArenaSoldOut.com?"
+        a: "Depois do evento, pelos ingressos vendidos, se você escolher pagar assim. Você também pode comprar créditos antes do evento."
+      - q: "Para onde vai o dinheiro dos ingressos?"
+        a: "Para a sua própria conta no seu provedor de pagamentos, a cada ingresso vendido. O ArenaSoldOut.com nunca o retém."
+      - q: "Com que rapidez posso começar a vender?"
+        a: "Confirmamos a sua organização, em geral em até um dia. Com uma conta de pagamentos configurada, um evento sem mapa de assentos entra à venda em 10 minutos. O mapa de assentos nós desenhamos sem custo, em geral em até um dia."
+      - q: "Quão confiável é a plataforma?"
+        a: "Testada com carga de 800 pedidos por minuto e 1.000 compradores ao mesmo tempo. Um sistema de monitoramento avisa a equipe, os backups rodam toda noite, criptografados, e a Cloudflare fica na frente. Nenhuma queda foi registrada desde o início, em 2019, mesmo com várias dezenas de milhares de ingressos vendidos em 5 minutos. Veja [confiabilidade](/product/reliability)."
+      - q: "Eu administro um local permanente. Existe uma condição diferente?"
+        a: "Sim. Teatros, clubes e outros locais que realizam eventos o ano todo ou por temporada pagam {percent}% do preço do ingresso, com um teto por ingresso, faturado mensalmente. Veja [preços](/pricing)."
+      - q: "Meus ingressos são baratos. Existe um preço menor?"
+        a: "Sim. Quando todos os ingressos do evento custam {usdLowMax} ou menos ({eurLowMax} na UE), a comissão é de {lowPercent}% do preço do ingresso. Veja [preços](/pricing)."
+      - q: "Um evento pode ter ingressos com preços diferentes?"
+        a: "Sim. Categorias com preços próprios, preços de lançamento que mudam em uma data, faixas de quantidade, ingressos gratuitos e de pague o quanto quiser."
+      - q: "Posso usar códigos promocionais?"
+        a: "Sim, com um escopo (quais categorias e sessões), datas de validade e um limite por comprador. Veja [códigos promocionais e janelas de preço](/product/pricing-tools)."
+      - q: "Um ingresso infantil pode ser vendido somente junto com um ingresso de adulto?"
+        a: "Sim, com categorias complementares. Um complemento só é vendido junto com um ingresso principal da mesma sessão, então não é possível comprar um ingresso infantil sem um de adulto."
+      - q: "Posso vender bebidas ou produtos junto com os ingressos?"
+        a: "Sim. Um vale-bebida pode ser uma categoria complementar: ele só é vendido junto com um ingresso e chega como um ingresso à parte. Produtos, vinhos e kits de presente são vendidos em uma loja ao lado dos seus ingressos, com variações, carrinho, retirada no evento ou entrega própria e reembolsos. A loja é contratada à parte, condições sob consulta."
+      - q: "Faço o mesmo show toda semana. Preciso criar um evento novo a cada vez?"
+        a: "Não. Você acrescenta uma sessão ao mesmo evento; preços, categorias e mapa de assentos são mantidos, e os compradores escolhem a data."
+      - q: "Posso ver as vendas de cada evento em tempo real?"
+        a: "Sim. No Event Center, no celular ou no computador, pelo navegador, sem nada para instalar: pedidos e totais por sessão e um relatório em CSV. Se você usa o Telegram, cada venda e cada reembolso também chega ao seu grupo em segundos."
+      - q: "Preciso de equipamento especial na entrada?"
+        a: "Não. O aplicativo MACS lê ingressos em qualquer iPhone ou celular Android, no papel ou na tela. Leitores a laser portáteis e leitores de código de barras USB ou Bluetooth também funcionam. Veja [o aplicativo MACS](/product/scanner)."
+      - q: "Quanto custa o aplicativo leitor MACS?"
+        a: "O MACS está incluído para organizadores que vendem pelo ArenaSoldOut.com."
+      - q: "Quais métodos de pagamento os meus compradores vão ver?"
+        a: "Os que você ativa na conta do seu provedor de pagamentos."
+
+  - type: prose
+    id: team
+    eyebrow: "Nossa equipe"
+    title: "Dúvidas ou ideias?"
+    body: "Escreva para a equipe. Respondemos perguntas sobre o seu país, o seu local e o seu evento, e ouvimos ideias: construímos o ArenaSoldOut.com para que vender ingressos seja prático e compense para você. [Fale com a equipe](/contact#write)."
+
+  - type: cta
+    id: start
+    title: "Comece a vender hoje"
+    text: "Crie o evento, conecte a sua conta de pagamentos, compartilhe o link."
+    primary: { label: "Criar seu evento", href: "/start#create" }
+    secondary: { label: "Fale com a equipe", href: "/contact#write" }
+    note: "Confirmamos a sua organização, conectamos a sua conta de pagamentos e desenhamos o seu mapa de assentos sem custo."

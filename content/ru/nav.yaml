@@ -28,6 +28,7 @@ footer:
       - { label: Схемы зала, href: /product/seating }
       - { label: Промокоды и ценовые окна, href: /product/pricing-tools }
       - { label: Платежи, href: /payments }
+      - { label: Страны, href: /countries }
       - { label: Telegram-бот, href: /product/telegram }
       - { label: Электронные билеты и сканирование, href: /product/tickets }
       - { label: Приложение-сканер MACS, href: /product/scanner }

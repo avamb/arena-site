@@ -1,9 +1,9 @@
 name: Flitt
-regions: [GE]
+regions: [GE, AM, KZ, UZ]
 currencies: [EUR, GEL]
 methods: [card]
 hosted_checkout: true
 status: live
-note: Hosted checkout in the widget, EUR and GEL.
-entity_countries: [GE, UZ, MD, AM]
+note: Hosted checkout in the widget. Currencies are agreed with Flitt when the organizer opens the account.
+entity_countries: [GE, AM, KZ, UZ, MD]
 order: 2

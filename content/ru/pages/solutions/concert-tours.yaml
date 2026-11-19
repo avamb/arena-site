@@ -6,6 +6,7 @@ related:
   - { label: Шоу, href: /solutions/shows }
   - { label: Где вы продаёте, href: /product/sell }
   - { label: Платежи по странам, href: /payments }
+  - { label: "Страны и способы оплаты", href: /countries }
 sections:
   - type: cards
     id: what

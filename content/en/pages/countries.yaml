@@ -1,0 +1,139 @@
+# Countries hub (Marina, 18.11.2026). Countries, providers, currencies and methods come from content/data (markets, providers).
+title: "Ticketing by country: payment providers and currencies"
+description: "Where organizers sell tickets with ArenaSoldOut.com: every country, payment provider, currency and method. The money always goes to your own account."
+h1: "In which countries does ArenaSoldOut.com work?"
+lead: "In every country where one of our payment providers accepts your company. The money for every ticket comes to your own payment account; ArenaSoldOut.com never takes payments for tickets."
+related:
+  - { label: "Payments into your own account", href: "/payments", text: "Providers, statuses and how to connect your account." }
+  - { label: "Concert tours", href: "/solutions/concert-tours", text: "Many cities and countries in one event, a page per promoter." }
+  - { label: "Pricing", href: "/pricing", text: "Pay after the event for tickets sold, or buy credits." }
+sections:
+  - type: cards
+    id: rules
+    eyebrow: "Every country"
+    title: "Which rules are the same everywhere?"
+    items:
+      - title: "Your account, your money"
+        text: "The money for every ticket sold comes to your own account with your payment provider: Stripe, Flitt or AllPay. ArenaSoldOut.com never holds it. Payouts to your bank follow your provider's schedule; refunds go back to the buyer through your provider."
+      - title: "One price, lower with credits"
+        text: "{usdPrice} per ticket, {usdSeated} with a seat; in the EU {eurPrice} and {eurSeated}. You pay after the event, for tickets sold. Buy credits upfront and the price drops to {usdFrom} per ticket ({eurFrom} in the EU)."
+      - title: "No VAT on our commission"
+        text: "We invoice our commission without VAT."
+      - title: "Payment methods are your choice"
+        text: "Buyers see the methods you turn on in your provider's account."
+
+  - type: cards
+    id: benefits
+    eyebrow: "Why ArenaSoldOut.com"
+    title: "What do organizers get?"
+    lead: "A ticketing platform built for organizers: you keep more of every ticket, sell more and start sooner."
+    items:
+      - title: "Earn more on every ticket"
+        text: "A fixed {usdPrice} per ticket, not a percent of the price. With credits it is lower, from {usdFrom} per ticket. Card fees stay between you and your payment provider."
+        link: { label: "Pricing →", href: "/pricing" }
+      - title: "Sell more"
+        text: "Promo codes, early bird prices, refer-a-friend links, reminders for abandoned carts and an e-mail to subscribers the moment sales open."
+        link: { label: "Promo codes and price windows →", href: "/product/pricing-tools" }
+      - title: "Sell sooner"
+        text: "An event without a seating plan goes on sale in 10 minutes. A seating plan we draw for you for free, usually within a day."
+        link: { label: "Your first event →", href: "/first-event" }
+
+  - type: countries
+    id: list
+    eyebrow: "Countries"
+    title: "Countries, providers and payment methods"
+    lead: "Every country where one of our providers accepts companies. Which companies a provider accepts is decided by the provider, and the rules change: check the current terms with the provider before you open an account. Countries with a page of their own are links."
+    labels:
+      country: "Country"
+      provider: "Provider"
+      currencies: "Currencies"
+      methods: "Payment methods"
+      agreed: "set in your provider account"
+    methods_map:
+      card: "cards"
+      apple_pay: "Apple Pay"
+      google_pay: "Google Pay"
+      bit: "Bit"
+      installments: "instalments"
+      bank_transfer: "bank transfer"
+      ideal: "iDEAL"
+      twint: "TWINT"
+    preparing:
+      title: "In preparation"
+      text: "Countries where we are adding a payment provider. Your country is not in the table, or you want to sell in one of these now? [Write to us](/contact#write)."
+
+  - type: cards
+    id: where
+    eyebrow: "Where you sell"
+    title: "Where can I sell tickets?"
+    lead: "In three places at once. Sales from all of them come into one Event Center."
+    items:
+      - title: "Our sales page"
+        text: "We host a page for your event at tickets.arenasoldout.com/your-name/your-event. There is nothing to build."
+        link: { label: "Where you sell →", href: "/product/sell" }
+      - title: "Your own site"
+        text: "Put the ticket widget on the site you already have. Buyers choose seats and pay without leaving it."
+        link: { label: "The widget →", href: "/product/sell" }
+      - title: "Your social media"
+        text: "Share the link in social media and messengers, or print a QR code on the poster. Every order is tied to its link, so you see which one sold."
+        link: { label: "Links and QR codes →", href: "/product/sell" }
+
+  - type: prose
+    id: abroad
+    eyebrow: "Concert tours"
+    title: "Can I sell a show in another country?"
+    body: "Yes. A tour can cross borders: sessions in different cities and countries live in one event, and buyers choose the date. The payment account and the currency follow your organization. If you need a second currency, we set up a separate sales channel for that country. See [concert tours](/solutions/concert-tours)."
+
+  - type: faq
+    id: questions
+    eyebrow: "Questions"
+    title: "What do organizers ask before they start?"
+    items:
+      - q: "How much does a ticket cost me?"
+        a: "{usdPrice} per ticket, {usdSeated} with a seat; in the EU {eurPrice} and {eurSeated}. You pay after the event, for tickets sold. Invitations carry no commission. See [pricing](/pricing)."
+      - q: "Can I pay less per ticket?"
+        a: "Yes. Buy credits upfront and the price drops to {usdFrom} per ticket ({eurFrom} in the EU). Credits never expire. See [pricing](/pricing)."
+      - q: "When do I pay ArenaSoldOut.com?"
+        a: "After the event, for the tickets sold, if you choose to pay that way. You can also buy credits before the event."
+      - q: "Where does the money for tickets go?"
+        a: "To your own account with your payment provider, for every ticket sold. ArenaSoldOut.com never holds it."
+      - q: "How fast can I start selling?"
+        a: "We confirm your organization, usually within a day. With a payment account in place, an event without a seating plan goes on sale in 10 minutes. A seating plan we draw for free, usually within a day."
+      - q: "How reliable is the platform?"
+        a: "Load tested at 800 orders a minute with 1,000 buyers at once. A watchdog alerts the team, backups run every night, encrypted, and Cloudflare stands in front. Not a single outage has been recorded since the start in 2019, even with several tens of thousands of tickets sold in 5 minutes. See [reliability](/product/reliability)."
+      - q: "I run a permanent venue. Is there a different deal?"
+        a: "Yes. Theatres, clubs and other venues that hold events all year or by season pay {percent}% of the ticket price, with a cap per ticket, invoiced monthly. See [pricing](/pricing)."
+      - q: "My tickets are cheap. Is there a lower price?"
+        a: "Yes. When every ticket of the event costs {usdLowMax} or less ({eurLowMax} in the EU), the commission is {lowPercent}% of the ticket price. See [pricing](/pricing)."
+      - q: "Can one event have tickets at different prices?"
+        a: "Yes. Categories with their own prices, early bird prices that change on a date, quantity steps, free and pay-what-you-want tickets."
+      - q: "Can I use promo codes?"
+        a: "Yes, with a scope (which categories and sessions), dates of validity and a limit per buyer. See [promo codes and price windows](/product/pricing-tools)."
+      - q: "Can a child ticket be sold only together with an adult ticket?"
+        a: "Yes, with add-on categories. An add-on is sold only together with a main ticket of the same session, so a child ticket cannot be bought without an adult one."
+      - q: "Can I sell drinks or merchandise with the tickets?"
+        a: "Yes. A drink voucher can be an add-on category: it is sold only together with a ticket and arrives as a ticket of its own. Merchandise, wine and gift sets sell in a shop next to your tickets, with variants, a cart, pickup at the event or your own delivery, and refunds. The shop is connected separately, terms on request."
+      - q: "I run the same show every week. Do I create a new event each time?"
+        a: "No. You add a session to the same event; prices, categories and the seating plan carry over, and buyers pick the date."
+      - q: "Can I see the sales of each event in real time?"
+        a: "Yes. In the Event Center on your phone or computer, in the browser, with nothing to install: orders and totals per session and a CSV report. If you use Telegram, every sale and refund also comes to your group within seconds."
+      - q: "Do I need special equipment at the door?"
+        a: "No. The MACS app scans tickets on any iPhone or Android phone, from paper or a screen. Handheld laser scanners and USB or Bluetooth barcode scanners work too. See [the MACS app](/product/scanner)."
+      - q: "How much does the MACS scanner app cost?"
+        a: "MACS is included for organizers who sell through ArenaSoldOut.com."
+      - q: "Which payment methods will my buyers see?"
+        a: "The ones you turn on in your payment provider's account."
+
+  - type: prose
+    id: team
+    eyebrow: "Our team"
+    title: "Questions or ideas?"
+    body: "Write to the team. We answer questions about your country, your venue and your event, and we listen to ideas: we build ArenaSoldOut.com so that selling tickets is convenient and pays off for you. [Contact the team](/contact#write)."
+
+  - type: cta
+    id: start
+    title: "Start selling today"
+    text: "Create the event, connect your payment account, share the link."
+    primary: { label: "Create your event", href: "/start#create" }
+    secondary: { label: "Contact the team", href: "/contact#write" }
+    note: "We confirm your organization, connect your payment account and draw your seating plan for free."

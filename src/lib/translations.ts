@@ -48,6 +48,24 @@ type Alternate = { lang: LanguageCode; path: string };
 
 const prefixed = (lang: LanguageCode, rest: string) => (lang === defaultLanguage ? rest : `/${lang}${rest}`);
 
+/**
+ * Languages a site page is limited to (`languages:` in the English original), or null when it is in every language.
+ * Read from the file directly so the header and the route list agree without loading collections.
+ */
+export function pageLanguages(slug: string): string[] | null {
+  const file = new URL(`../../content/${defaultLanguage}/pages/${slug}.yaml`, import.meta.url);
+  if (!existsSync(file)) return null;
+  const m = readFileSync(file, 'utf8').match(/^languages:\s*\[([^\]]*)\]/m);
+  return m ? m[1].split(',').map((x) => x.trim()).filter(Boolean) : null;
+}
+
+/** Slug of a site path in any language: `/ru/countries/israel` → `countries/israel`, `/` → `home`. */
+export function slugOfPath(path: string): string {
+  const prefix = languages.find((l) => l.code !== defaultLanguage && (path === `/${l.code}` || path.startsWith(`/${l.code}/`)));
+  const rest = prefix ? path.slice(prefix.code.length + 1) || '/' : path;
+  return rest === '/' ? 'home' : rest.replace(/\/$/, '').slice(1);
+}
+
 /** Every address of the same page across languages, or [] when the page has no translation. */
 export function translationsOf(path: string): Alternate[] {
   const norm = path.length > 1 ? path.replace(/\/$/, '') : path;

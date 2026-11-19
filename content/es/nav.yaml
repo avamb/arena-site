@@ -28,6 +28,7 @@ footer:
       - { label: Planos de asientos, href: /product/seating }
       - { label: Códigos promocionales y ventanas de precio, href: /product/pricing-tools }
       - { label: Pagos, href: /payments }
+      - { label: Países, href: /countries }
       - { label: Bot de Telegram, href: /product/telegram }
       - { label: Entradas electrónicas y escaneo, href: /product/tickets }
       - { label: App de escaneo MACS, href: /product/scanner }

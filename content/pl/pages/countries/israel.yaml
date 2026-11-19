@@ -1,0 +1,112 @@
+title: "Sprzedaż biletów w Izraelu: szekle, Bit, własne konto"
+description: "Sprzedawaj bilety na wydarzenia w Izraelu w szeklach przez własne konto AllPay: Isracard, Leumi Card, Bit i raty. Plany sali rysujemy za darmo."
+h1: "Sprzedaż biletów na wydarzenia w Izraelu"
+lead: "Koncerty, stand-up, teatr i konferencje w Izraelu. Kupujący płacą w szeklach kartą, przez Bit lub w ratach, a pieniądze za każdy bilet trafiają na twoje własne konto AllPay."
+related:
+  - { label: "Wszystkie kraje", href: "/countries", text: "Operatorzy, waluty i metody płatności według krajów." }
+  - { label: "Trasy koncertowe", href: "/solutions/concert-tours", text: "Wiele miast i krajów w jednym wydarzeniu, osobna strona dla każdego promotora." }
+  - { label: "Plany sali", href: "/product/seating", text: "Wyślij PDF, szkic lub tabelę rzędów; plan narysujemy za darmo." }
+sections:
+  - type: glance
+    id: glance
+    eyebrow: "W skrócie"
+    title: "Izrael w skrócie"
+    rows:
+      - { k: "Operator płatności", v: "AllPay" }
+      - { k: "Waluta", v: "Szekel izraelski (ILS)" }
+      - { k: "Metody płatności", v: "Isracard, Leumi Card, Bit, raty" }
+      - { k: "Strona dla kupujących", v: "Hebrajski (od prawej do lewej), angielski, rosyjski, hiszpański, czeski; inne języki na prośbę" }
+      - { k: "Nasza cena", v: "{usdPrice} za bilet, {usdSeated} z miejscem; od {usdFrom} z kredytami" }
+      - { k: "VAT od naszej prowizji", v: "Brak" }
+
+  - type: cards
+    id: benefits
+    eyebrow: "Dlaczego ArenaSoldOut.com"
+    title: "Co dostają organizatorzy?"
+    lead: "Platforma biletowa stworzona dla organizatorów: zatrzymujesz więcej z każdego biletu, sprzedajesz więcej i zaczynasz szybciej."
+    items:
+      - title: "Zarabiaj więcej na każdym bilecie"
+        text: "Stałe {usdPrice} za bilet, a nie procent ceny. Z kredytami jest mniej, od {usdFrom} za bilet. Opłaty kartowe zostają między tobą a twoim operatorem płatności."
+        link: { label: "Cennik →", href: "/pricing" }
+      - title: "Sprzedawaj więcej"
+        text: "Kody promocyjne, ceny early bird, linki poleceń, przypomnienia o porzuconych koszykach i e-mail do subskrybentów w chwili startu sprzedaży."
+        link: { label: "Kody promocyjne i okna cenowe →", href: "/product/pricing-tools" }
+      - title: "Zacznij sprzedawać szybciej"
+        text: "Wydarzenie bez planu sali trafia do sprzedaży w 10 minut. Plan sali rysujemy dla ciebie za darmo, zwykle w ciągu doby."
+        link: { label: "Twoje pierwsze wydarzenie →", href: "/first-event" }
+
+  - type: prose
+    id: payments
+    eyebrow: "Płatności"
+    title: "Jak działają płatności w Izraelu?"
+    body: "Podłączasz swoje konto AllPay jeden raz. Pieniądze za każdy sprzedany bilet trafiają bezpośrednio na nie, wypłaty odbywają się według harmonogramu AllPay, a zwroty wracają do kupującego przez AllPay. ArenaSoldOut.com nigdy nie przechowuje twoich pieniędzy."
+
+  - type: cards
+    id: where
+    eyebrow: "Gdzie sprzedajesz"
+    title: "Gdzie mogę sprzedawać bilety?"
+    lead: "W trzech miejscach naraz. Sprzedaż ze wszystkich trafia do jednego Event Center."
+    items:
+      - title: "Nasza strona sprzedaży"
+        text: "Hostujemy stronę twojego wydarzenia pod adresem tickets.arenasoldout.com/twoja-nazwa/twoje-wydarzenie. Nie musisz nic budować."
+        link: { label: "Gdzie sprzedajesz →", href: "/product/sell" }
+      - title: "Twoja własna strona"
+        text: "Umieść widget biletowy na stronie, którą już masz. Kupujący wybierają miejsca i płacą, nie opuszczając jej."
+        link: { label: "Widget →", href: "/product/sell" }
+      - title: "Twoje media społecznościowe"
+        text: "Udostępnij link w mediach społecznościowych i komunikatorach albo wydrukuj kod QR na plakacie. Każde zamówienie jest przypisane do swojego linku, więc widzisz, który sprzedał."
+        link: { label: "Linki i kody QR →", href: "/product/sell" }
+
+  - type: faq
+    id: questions
+    eyebrow: "Pytania"
+    title: "O co pytają organizatorzy, zanim zaczną?"
+    items:
+      - q: "Ile kosztuje mnie bilet?"
+        a: "{usdPrice} za bilet, {usdSeated} z miejscem. Płacisz po wydarzeniu, za sprzedane bilety. Zaproszenia nie podlegają prowizji. Zobacz [cennik](/pricing)."
+      - q: "Czy mogę płacić mniej za bilet?"
+        a: "Tak. Kup kredyty z góry, a cena spadnie do {usdFrom} za bilet ({eurFrom} w UE). Kredyty nigdy nie wygasają. Zobacz [cennik](/pricing)."
+      - q: "Kiedy płacę ArenaSoldOut.com?"
+        a: "Po wydarzeniu, za sprzedane bilety, jeśli wybierzesz płatność za sprzedane bilety. Kredyty możesz też kupić przed wydarzeniem."
+      - q: "Dokąd trafiają pieniądze za bilety?"
+        a: "Na twoje własne konto u operatora płatności, za każdy sprzedany bilet. ArenaSoldOut.com nigdy ich nie przechowuje."
+      - q: "Jak szybko mogę zacząć sprzedawać?"
+        a: "Potwierdzamy twoją organizację, zwykle w ciągu doby. Gdy masz konto płatności, wydarzenie bez planu sali trafia do sprzedaży w 10 minut. Plan sali rysujemy za darmo, zwykle w ciągu doby."
+      - q: "Jak niezawodna jest platforma?"
+        a: "Testy obciążeniowe: 800 zamówień na minutę przy 1000 kupujących naraz. Watchdog alarmuje zespół, kopie zapasowe powstają co noc, szyfrowane, a przed systemem stoi Cloudflare. Od startu w 2019 roku nie odnotowano ani jednej awarii, nawet gdy w 5 minut sprzedano kilkadziesiąt tysięcy biletów. Zobacz [niezawodność](/product/reliability)."
+      - q: "Prowadzę stały obiekt. Czy jest inna oferta?"
+        a: "Tak. Teatry, kluby i inne obiekty, które organizują wydarzenia przez cały rok lub w sezonie, płacą {percent}% ceny biletu, z limitem na bilet, fakturowane co miesiąc. Zobacz [cennik](/pricing)."
+      - q: "Moje bilety są tanie. Czy jest niższa cena?"
+        a: "Tak. Gdy każdy bilet na wydarzenie kosztuje {usdLowMax} lub mniej, prowizja wynosi {lowPercent}% ceny biletu. Zobacz [cennik](/pricing)."
+      - q: "Czy jedno wydarzenie może mieć bilety w różnych cenach?"
+        a: "Tak. Kategorie z własnymi cenami, ceny early bird zmieniające się w określonym dniu, progi ilościowe, bilety bezpłatne i w formule płać ile chcesz."
+      - q: "Czy mogę używać kodów promocyjnych?"
+        a: "Tak, z zakresem (które kategorie i terminy), datami ważności i limitem na kupującego. Zobacz [kody promocyjne i okna cenowe](/product/pricing-tools)."
+      - q: "Czy bilet dziecięcy można sprzedać tylko razem z biletem dla dorosłego?"
+        a: "Tak, dzięki kategoriom dodatkowym. Dodatek jest sprzedawany tylko razem z biletem głównym na ten sam termin, więc biletu dziecięcego nie da się kupić bez biletu dla dorosłego."
+      - q: "Czy mogę sprzedawać napoje lub gadżety razem z biletami?"
+        a: "Tak. Bon na napój może być kategorią dodatkową: jest sprzedawany tylko razem z biletem i przychodzi jako osobny bilet. Gadżety, wino i zestawy prezentowe sprzedajesz w sklepie obok biletów: warianty, koszyk, odbiór na wydarzeniu lub własna dostawa, zwroty. Sklep jest uruchamiany osobno, warunki na zapytanie."
+      - q: "Co tydzień gram ten sam spektakl. Czy za każdym razem tworzę nowe wydarzenie?"
+        a: "Nie. Dodajesz termin do tego samego wydarzenia; ceny, kategorie i plan sali zostają, a kupujący wybierają datę."
+      - q: "Czy mogę widzieć sprzedaż każdego wydarzenia na żywo?"
+        a: "Tak. W Event Center na telefonie lub komputerze, w przeglądarce, bez niczego do instalowania: zamówienia i sumy dla każdego terminu oraz raport CSV. Jeśli używasz Telegrama, każda sprzedaż i zwrot trafia też do twojej grupy w ciągu kilku sekund."
+      - q: "Czy potrzebuję specjalnego sprzętu przy wejściu?"
+        a: "Nie. Aplikacja MACS skanuje bilety na każdym iPhonie i telefonie z Androidem, z papieru lub z ekranu. Działają też ręczne skanery laserowe oraz skanery kodów kreskowych USB i Bluetooth. Zobacz [aplikację MACS](/product/scanner)."
+      - q: "Ile kosztuje aplikacja skanująca MACS?"
+        a: "MACS jest wliczony dla organizatorów, którzy sprzedają przez ArenaSoldOut.com."
+      - q: "Czy potrzebuję izraelskiej firmy, aby otworzyć konto AllPay?"
+        a: "AllPay ustala zasady dla swoich kont i się one zmieniają. Sprawdź aktualne warunki u AllPay; podłączymy twoje konto, gdy będzie już otwarte."
+
+  - type: prose
+    id: team
+    eyebrow: "Nasz zespół"
+    title: "Pytania lub pomysły?"
+    body: "Napisz do zespołu. Odpowiadamy na pytania o twój kraj, twój obiekt i twoje wydarzenie oraz słuchamy pomysłów: tworzymy ArenaSoldOut.com tak, aby sprzedaż biletów była wygodna i opłacalna dla ciebie. [Napisz do zespołu](/contact#write)."
+
+  - type: cta
+    id: start
+    title: "Zacznij sprzedawać już dziś"
+    text: "Utwórz wydarzenie, podłącz konto płatności, udostępnij link."
+    primary: { label: "Utwórz wydarzenie", href: "/start#create" }
+    secondary: { label: "Napisz do zespołu", href: "/contact#write" }
+    note: "Potwierdzamy twoją organizację, podłączamy twoje konto płatności i rysujemy twój plan sali za darmo."

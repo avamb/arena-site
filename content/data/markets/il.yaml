@@ -5,4 +5,5 @@ languages: [he, en, ru]
 currencies: [ILS]
 providers: [allpay]
 status: live
+page: countries/israel
 order: 5
