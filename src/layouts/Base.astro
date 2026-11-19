@@ -117,6 +117,7 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
         /* Theme statistics (doc 33 §3.11, item 3): one event per view, no cookies. */
         (function () {
           function send(name, data) { if (window.umami && typeof window.umami.track === 'function') window.umami.track(name, data); }
+          var mq = matchMedia('(prefers-color-scheme: dark)'); /* the device setting, for the statistics only */
           function shown() { return document.documentElement.getAttribute('data-theme') || 'light'; }
           function source() { return document.documentElement.getAttribute('data-theme') ? 'choice' : 'device'; }
           /* Loaded after the page is idle so third-party analytics never competes with first paint (Lighthouse gate). */
