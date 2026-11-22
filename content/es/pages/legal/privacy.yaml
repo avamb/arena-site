@@ -1,8 +1,9 @@
 title: "Política de privacidad"
 description: "Cómo ArenaSoldOut.com (ABH TEAM OÜ) trata los datos personales de visitantes, organizadores y compradores: fines, destinatarios, plazos, derechos, cookies."
 h1: "Política de privacidad"
-lead: "Versión del 2 de noviembre de 2026. Sustituye a la versión del 9 de octubre de 2026. Se aplica al sitio web, al Event Center, a las páginas de venta, al widget, a la API, al bot de Telegram y a la app de escaneo. Esta es una traducción a título informativo; la versión en inglés es la vinculante."
+lead: "Versión del 22 de noviembre de 2026. Sustituye a la versión del 2 de noviembre de 2026. Se aplica al sitio web, al Event Center, a las páginas de venta, al widget, a la API, al bot de Telegram y a la app de escaneo. Esta es una traducción a título informativo; la versión en inglés es la vinculante."
 related:
+  - { label: Instrucciones para eliminar datos, href: /legal/data-deletion }
   - { label: Términos y condiciones, href: /legal/terms }
   - { label: Ayuda para compradores de entradas, href: /help/tickets }
   - { label: Pagos, href: /payments }
@@ -40,11 +41,17 @@ sections:
 
       1.9 También podemos tratar cualquiera de tus datos personales cuando el tratamiento sea necesario para proteger tus intereses vitales o los de otra persona física.
 
+      1.10 Tratamos datos de la conexión con Meta (Facebook) de los organizadores («datos de Meta»). Si un organizador conecta su cuenta comercial de Meta a los servicios a través de nuestra aplicación «Arena Sold Out», tratamos: el token de acceso que Meta emite para esta conexión; los ID del portfolio comercial de Meta del organizador y de las cuentas publicitarias, píxeles y páginas que eligió; los permisos que concedió el organizador; y las estadísticas publicitarias de las cuentas publicitarias elegidas (gasto, impresiones, clics, compras y su valor, por día y por campaña, conjunto de anuncios y anuncio). Se tratan para enviar a Meta las ventas de entradas del organizador como conversiones y para mostrar al organizador su gasto en publicidad junto a sus ventas en el Event Center. El token de acceso se guarda cifrado, no se muestra a nadie y no se escribe en los registros. La base jurídica es la ejecución de nuestro contrato con el organizador. El organizador puede eliminar la conexión en cualquier momento; las [instrucciones para eliminar datos](/es/legal/data-deletion) explican cómo hacerlo y cómo eliminar los datos de Meta.
+
+      1.11 Cuando un organizador ha activado el envío de conversiones a Meta, enviamos a Meta, por cuenta de ese organizador, un evento por cada compra completada en sus páginas de venta y en su widget: el número de pedido, la hora, el importe y la moneda, la dirección de la página y datos técnicos del navegador del comprador (dirección IP, tipo de navegador y, si existen, los identificadores de Meta _fbp, _fbc o fbclid). El correo electrónico y el teléfono del comprador se añaden solo si el comprador aceptó el seguimiento, y solo en forma cifrada con hash (SHA-256), que Meta usa para relacionar la compra con sus usuarios. El organizador es el responsable de estos datos y los usa para medir y mejorar su publicidad; nosotros los tratamos por su encargo. Meta los recibe según sus propias condiciones con el organizador y su propia política de privacidad. Los datos del navegador que guardamos para este fin se eliminan después de enviar el evento.
+
       ## 2. Cómo compartimos la información
 
       2.1 Los datos personales que obran en los servicios se almacenan en servidores ubicados en la Unión Europea, operados por nuestros proveedores de alojamiento con contratos de encargo de tratamiento, con copias de seguridad cifradas cada noche. Cloudflare, Inc. sirve este sitio web, protege los servicios y proporciona la comprobación Turnstile en nuestros formularios.
 
       2.2 Para operar los servicios, tus datos personales se comparten, cada uno solo en la medida necesaria para su función, con: el organizador al que compraste una entrada (compradores de entradas); el proveedor de pagos que el organizador conectó; los proveedores de envío de correo que envían las entradas y los correos de servicio; Telegram, a través del cual se entregan el bot de Telegram, el chat de Telegram y las notificaciones a los grupos de los organizadores, según la propia política de privacidad de Telegram; nuestros proveedores de alojamiento, analítica, automatización y atención al cliente. Siguiendo nuestras instrucciones, estas partes pueden acceder a los datos personales, tratarlos o almacenarlos mientras cumplen sus funciones para nosotros.
+
+      2.2a Si un organizador conectó su cuenta de Meta (sección 1.10), los datos descritos en las secciones 1.10 y 1.11 se comunican también a Meta Platforms Ireland Limited («Meta»), cada vez por instrucción de ese organizador.
 
       2.3 Si participamos en una fusión, adquisición, auditoría de financiación, reorganización, quiebra, administración concursal, venta de la totalidad o de una parte de nuestros activos o traspaso de un servicio a otro proveedor, tus datos personales y otra información pueden transferirse a un sucesor o a una empresa afiliada como parte de esa operación.
 
@@ -71,6 +78,8 @@ sections:
       (e) datos de transacción: mientras la cuenta del organizador esté abierta y el organizador los necesite para reembolsos, disputas e informes, y después durante el plazo que exijan las normas contables y fiscales (en Estonia, siete años para los documentos contables de origen);
 
       (f) datos de notificación: hasta que retires tu consentimiento; conservamos el registro de que te diste de baja para no volver a escribirte.
+
+      (g) datos de Meta: mientras la conexión esté activa; cuando el organizador elimina la conexión o pide eliminar los datos, eliminamos el token de acceso, los ID y las estadísticas publicitarias en el plazo de un mes; los datos del navegador para conversiones (sección 1.11): hasta que el evento se envía a Meta.
 
       ## 4. Seguridad
 
@@ -111,6 +120,8 @@ sections:
       6.2 El sitio web muestra un aviso de cookies con dos categorías: «Necesarias», siempre activas, y «Analítica», desactivada hasta que la aceptes. Antes de que elijas, no instala ninguna cookie. Cuando eliges, guarda tu respuesta en la cookie aso_consent (6 meses); esta es estrictamente necesaria, porque es la forma en que recordamos tu respuesta. Solo si aceptas la analítica instala también la cookie aso_aid, un código aleatorio de visitante (13 meses, propia, nunca ampliada por visitas posteriores). Ninguna de las dos cookies se comparte con terceros. Tu elección de tema (claro u oscuro) se guarda en el almacenamiento local de tu navegador y nunca se nos envía. La analítica sin cookies descrita en la sección 1.3 no instala cookies. El formulario de solicitud usa Cloudflare Turnstile para distinguir a las personas de los envíos automatizados; la comprobación se ejecuta desde challenges.cloudflare.com y puede usar cookies o almacenamiento propios, según la política de privacidad de Cloudflare.
 
       6.3 El Event Center, las páginas de venta alojadas y el widget de entradas usan cookies y almacenamiento local estrictamente necesarios: para mantener a los organizadores con la sesión iniciada, para reservar tus asientos mientras completas un pedido, para recordar tu idioma y para proteger las cuentas y los pedidos frente al fraude. No usamos cookies publicitarias ni cookies de analítica de terceros.
+
+      6.4 Un organizador puede instalar el píxel de Meta en su propio sitio web. Ese píxel y sus cookies (por ejemplo _fbp y _fbc) pertenecen al organizador y a Meta, y el organizador es responsable de pedir para ellos el consentimiento de sus visitantes. Si los valores de esas cookies están disponibles al comprar una entrada, los enviamos a Meta junto con la compra (sección 1.11).
 
       ## 7. Cómo controlar las cookies
 
