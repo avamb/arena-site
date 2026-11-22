@@ -1,0 +1,36 @@
+title: "Anleitung zur Datenlöschung"
+description: "So trennen Sie Ihr Meta-Werbekonto (Facebook) von Arena Sold Out und lassen Ihre Daten bei ABH TEAM OÜ löschen; Rechte von Ticketkäufern."
+h1: "Anleitung zur Datenlöschung"
+lead: "Fassung vom 22. November 2026. So entziehen Sie Arena Sold Out den Zugriff auf Ihr Meta-Konto (Facebook) und lassen Ihre Daten löschen. Dies ist eine Übersetzung zur Information; die englische Fassung ist verbindlich."
+related:
+  - { label: Datenschutzerklärung, href: /legal/privacy }
+  - { label: Allgemeine Geschäftsbedingungen, href: /legal/terms }
+  - { label: Hilfe für Ticketkäufer, href: /help/tickets }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## 1. Wer wir sind
+
+      Die Ticketplattform ArenaSoldOut.com und die Meta-App „Arena Sold Out“ werden von der ABH TEAM OÜ betrieben, eingetragen im estnischen Handelsregister unter der Registernummer 14162982, Narva mnt 5a, 10117 Tallinn, Estland.
+
+      ## 2. Veranstalter, die ein Meta-Werbekonto (Facebook) verbunden haben
+
+      Ein Veranstalter kann sein Meta-Werbekonto mit Arena Sold Out verbinden: um Ticketverkäufe als Conversions an Meta zu senden und die Werbeausgaben neben den Verkäufen zu sehen. Dafür speichern wir ein Zugriffstoken, die IDs des Pixels und des Werbekontos sowie die erhaltenen Werbestatistiken.
+
+      **Zugriff selbst entfernen.** Nach jedem dieser Schritte kann Arena Sold Out über Ihr Konto nichts mehr lesen oder senden:
+
+      - auf Facebook: Einstellungen und Privatsphäre → Einstellungen → Business-Integrationen, „Arena Sold Out“ suchen und auf „Entfernen“ tippen;
+      - in der Meta Business Suite: Einstellungen → Unternehmenseinstellungen → Integrationen (oder Konten → Apps), „Arena Sold Out“ suchen und entfernen.
+
+      **Löschung der gespeicherten Daten beantragen.** Schreiben Sie an support@arenasoldout.com von der E-Mail-Adresse Ihres Event-Center-Kontos, mit „Meta-Daten löschen“ und dem Namen Ihrer Organisation. Wir löschen das Zugriffstoken, die IDs von Pixel und Werbekonto sowie die Werbestatistiken und bestätigen dies per E-Mail. Wir antworten innerhalb eines Monats. Daten, die wir gesetzlich aufbewahren müssen, bleiben nur für diese Frist gespeichert (Abschnitt 3 der Datenschutzerklärung).
+
+      Daten, die Meta bereits über Ihr Konto erhalten hat, verwaltet Meta nach seiner eigenen Datenschutzrichtlinie.
+
+      ## 3. Ticketkäufer
+
+      Ihre Rechte an Ihren personenbezogenen Daten (Auskunft, Berichtigung, Löschung und weitere) stehen in [Abschnitt 5 der Datenschutzerklärung](/de/legal/privacy). Ihre Ticketdaten verarbeiten wir im Auftrag des Veranstalters, der dafür Verantwortlicher ist: Richten Sie Ihre Anfrage an den Veranstalter, dessen Kontakt auf der Verkaufsseite und in der E-Mail mit Ihrem Ticket steht. Sie können auch an support@arenasoldout.com schreiben; wir leiten die Anfrage an den Veranstalter weiter.
+
+      ## 4. Mehr dazu
+
+      Was wir verarbeiten, wozu und wie lange: [Datenschutzerklärung](/de/legal/privacy).
