@@ -553,3 +553,10 @@ footer{border-top:1px solid var(--line);padding-block:48px 28px;font-size:14px}
 @media (max-width:720px){.sub-footer .sub-value,.sub-footer .sub-row{flex-basis:100%;max-width:none}}
 @media (max-width:480px){.sub-footer .sub-row{flex-direction:column}.sub-footer .sub-row .btn{width:100%}}
 @media (prefers-reduced-motion: reduce){.sub-dialog,.sub-bar{animation:none}}
+
+/* Data deletion confirmation (legal/data-deletion?code=...): hidden until the inline script finds a valid code */
+.deletion-status{padding-bottom:0}
+.deletion-status .card{max-width:68ch;padding:22px 26px;background:var(--accent-soft);border-color:var(--accent-line)}
+.deletion-status h2{font-size:21px;letter-spacing:-0.02em}
+.deletion-status p{margin-top:10px;color:var(--fg-2);overflow-wrap:anywhere}
+.deletion-status code{font-family:var(--mono);color:var(--fg);font-weight:600;background:var(--surface);padding:2px 8px;border-radius:6px}

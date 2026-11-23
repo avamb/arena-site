@@ -7,6 +7,12 @@ related:
   - { label: Умови використання, href: /legal/terms }
   - { label: Допомога покупцям квитків, href: /help/tickets }
 sections:
+  # Shown only when Meta sends the person here after our data-deletion callback (?code=<confirmation code>).
+  - type: deletion-status
+    id: request
+    title: "Ваш запит на видалення даних отримано"
+    code_label: "Код підтвердження:"
+    text: "Підключення Meta (Facebook) і пов’язані з ним дані (токен доступу, ідентифікатори пікселя й рекламного акаунта, рекламна статистика) видалено з Arena Sold Out. Якщо у вас є питання щодо цього запиту, напишіть на support@arenasoldout.com і вкажіть код підтвердження."
   - type: prose
     id: text
     body: |

@@ -126,6 +126,8 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       if (a) out.push(`**${a.name}**, ${a.role}`, '', a.bio, '', ...a.sameAs.map((u) => `- ${u}`), '');
       break;
     }
+    case 'deletion-status':
+      break; // only for redirected visitors
     case 'prose':
       h2(s.title); out.push(fill(s.body, vars).trim(), '');
       break;

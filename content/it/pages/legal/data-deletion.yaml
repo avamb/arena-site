@@ -7,6 +7,12 @@ related:
   - { label: Termini e condizioni, href: /legal/terms }
   - { label: Aiuto per chi acquista biglietti, href: /help/tickets }
 sections:
+  # Shown only when Meta sends the person here after our data-deletion callback (?code=<confirmation code>).
+  - type: deletion-status
+    id: request
+    title: "La tua richiesta di cancellazione dei dati è stata ricevuta"
+    code_label: "Codice di conferma:"
+    text: "La connessione Meta (Facebook) e i dati collegati (il token di accesso, gli ID del pixel e dell’account pubblicitario e le statistiche pubblicitarie) sono stati eliminati da Arena Sold Out. Per domande su questa richiesta, scrivi a support@arenasoldout.com indicando il codice di conferma."
   - type: prose
     id: text
     body: |
