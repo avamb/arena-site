@@ -21,6 +21,7 @@ const related = page.data.related ?? [];
     {page.data.lead && <p class="lead">{page.data.lead}</p>}
   </div>
 )}
-{body.map((s, i) => <Section p={p} s={s} first={!hasHero && i === 0} />)}
+{/* A hidden deletion-status block (shown only with ?code=) must not take the first section's top padding. */}
+{body.map((s, i) => <Section p={p} s={s} first={!hasHero && i === body.findIndex((x) => x.type !== 'deletion-status')} />)}
 <Related lang={lang} items={related} />
 {tail && <Section p={p} s={tail} first={false} />}

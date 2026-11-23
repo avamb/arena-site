@@ -46,6 +46,30 @@ const coverageNames = (codes: string[]) => codes.map((c) => (c === 'HK' && lang 
 const providerName = (id: string) => providers.find((p) => p.id === id)?.data.name ?? id;
 const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) => l.code !== lang).map(async (l) => ({ l, n: (await getPosts(l.code)).length })))).filter((x) => x.n > 0) : [];
 ---
+{s.type === 'deletion-status' && (
+  <>
+    <section class="section deletion-status" id={s.id} hidden data-deletion-status style="padding-top:40px">
+      <div class="wrap">
+        <div class="card" role="status">
+          <h2>{s.title}</h2>
+          <p>{s.code_label} <code data-code></code></p>
+          <p set:html={inline(fill(s.text, vars))} />
+        </div>
+      </div>
+    </section>
+    <script is:inline>
+      (function () {
+        var c = new URLSearchParams(location.search).get('code');
+        if (!c || !/^[A-Za-z0-9-]{1,64}$/.test(c)) return;
+        var s = document.querySelector('[data-deletion-status]');
+        if (!s) return;
+        s.querySelector('[data-code]').textContent = c;
+        s.hidden = false;
+      })();
+    </script>
+  </>
+)}
+{s.type !== 'deletion-status' && (
 <section class="section" id={s.id} style={pad}>
   <div class="wrap">
     {s.eyebrow && <p class="eyebrow">{s.eyebrow}</p>}
@@ -240,4 +264,5 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
     )}
   </div>
 </section>
+)}
 {s.type === 'onboarding' && <script src="@/scripts/onboarding.ts"></script>}

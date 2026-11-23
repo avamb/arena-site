@@ -144,6 +144,8 @@ export const section = z.discriminatedUnion('type', [
   z.object({ type: z.literal('cta'), ...sectionBase, title: z.string(), text: z.string(), primary: link, secondary: link, note: z.string() }),
   /* generic blocks for inner pages */
   z.object({ type: z.literal('prose'), ...sectionBase, body: z.string() }),
+  /* Shown only when the URL has ?code=... (data deletion redirect); hidden otherwise. */
+  z.object({ type: z.literal('deletion-status'), ...sectionBase, code_label: z.string(), text: z.string() }),
   z.object({ type: z.literal('faq'), ...sectionBase, items: z.array(z.object({ q: z.string(), a: z.string() })) }),
   z.object({ type: z.literal('providers'), ...sectionBase, labels: z.object({ currencies: z.string(), methods: z.string(), checkout: z.string(), statuses: z.record(z.string()), methods_map: z.record(z.string()) }) }),
   z.object({ type: z.literal('coverage'), ...sectionBase, labels: z.object({ countries: z.string(), note: z.string(), missing: z.string() }), cta: link }),
