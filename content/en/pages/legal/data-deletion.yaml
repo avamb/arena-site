@@ -5,7 +5,7 @@
 title: "Data deletion instructions"
 description: "How to disconnect your Meta (Facebook) ad account from Arena Sold Out and ask ABH TEAM OÜ to delete the data, and how ticket buyers exercise their rights."
 h1: "Data deletion instructions"
-lead: "Version of 22 November 2026. How to remove the access of Arena Sold Out to your Meta (Facebook) account and have your data deleted."
+lead: "Version of 23 November 2026. How to remove the access of Arena Sold Out to your Meta (Facebook) account and have your data deleted."
 related:
   - { label: Privacy policy, href: /legal/privacy }
   - { label: Terms and conditions, href: /legal/terms }
@@ -22,8 +22,9 @@ sections:
 
       An organizer can connect its Meta ad account to Arena Sold Out: to send ticket sales to Meta as conversions and to see advertising spend next to sales. For this we keep an access token, the IDs of the pixel and the ad account, and the advertising statistics we received.
 
-      **Remove the access yourself.** After either of these steps, Arena Sold Out can no longer read or send anything through your account:
+      **Remove the access yourself.** After any of these steps, Arena Sold Out can no longer read or send anything through your account:
 
+      - in the Event Center, as the owner of the organization: Advertising → Meta → Disconnect (we then also ask Meta to revoke the access and delete the stored access token at once);
       - on Facebook: Settings and privacy → Settings → Business integrations, find "Arena Sold Out" and press Remove;
       - in Meta Business Suite: Settings → Business settings → Integrations (or Accounts → Apps), find "Arena Sold Out" and remove it.
 

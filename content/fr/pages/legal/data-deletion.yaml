@@ -1,7 +1,7 @@
 title: "Instructions de suppression des données"
 description: "Comment déconnecter votre compte publicitaire Meta (Facebook) d'Arena Sold Out, faire supprimer vos données par ABH TEAM OÜ, et les droits des acheteurs."
 h1: "Instructions de suppression des données"
-lead: "Version du 22 novembre 2026. Comment retirer l'accès d'Arena Sold Out à votre compte Meta (Facebook) et faire supprimer vos données. Ceci est une traduction à titre d'information ; la version anglaise fait foi."
+lead: "Version du 23 novembre 2026. Comment retirer l'accès d'Arena Sold Out à votre compte Meta (Facebook) et faire supprimer vos données. Ceci est une traduction à titre d'information ; la version anglaise fait foi."
 related:
   - { label: Politique de confidentialité, href: /legal/privacy }
   - { label: Conditions générales, href: /legal/terms }
@@ -18,8 +18,9 @@ sections:
 
       Un organisateur peut connecter son compte publicitaire Meta à Arena Sold Out : pour envoyer ses ventes de billets à Meta comme conversions et voir ses dépenses publicitaires à côté des ventes. Pour cela, nous conservons un jeton d'accès, les identifiants du pixel et du compte publicitaire, ainsi que les statistiques publicitaires reçues.
 
-      **Retirez l'accès vous-même.** Après l'une ou l'autre de ces étapes, Arena Sold Out ne peut plus rien lire ni envoyer via votre compte :
+      **Retirez l'accès vous-même.** Après l'une de ces étapes, Arena Sold Out ne peut plus rien lire ni envoyer via votre compte :
 
+      - dans l'Event Center, en tant que propriétaire de l'organisation : Advertising → Meta → Disconnect (nous demandons alors aussi à Meta de retirer l'accès et supprimons aussitôt le jeton d'accès conservé) ;
       - sur Facebook : Paramètres et confidentialité → Paramètres → Intégrations professionnelles, trouvez « Arena Sold Out » et appuyez sur Supprimer ;
       - dans Meta Business Suite : Paramètres → Paramètres de l'entreprise → Intégrations (ou Comptes → Applications), trouvez « Arena Sold Out » et supprimez-la.
 
