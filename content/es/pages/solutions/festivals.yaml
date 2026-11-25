@@ -1,12 +1,15 @@
-title: "Venta de entradas para festivales: varios días"
+title: "Venta de entradas para festivales: abonos y categorías"
 description: "Venta de entradas para festivales: abonos por día y completos, categorías con cupo, cadenas de plazas sin vender, preventa por fecha y escaneo en cada acceso."
-h1: Festivales
+h1: Venta de entradas para festivales
+tagline: Un festival empieza mucho antes de montar el primer escenario.
 lead: Abonos por día y abonos completos, muchas categorías con cupo, preventa que se activa en una fecha y una cadena que pasa las plazas sin vender de una categoría a la siguiente. Escaneo en cada acceso con la app.
 related:
   - { label: Códigos promocionales y ventanas de precio, href: /product/pricing-tools }
   - { label: Conciertos, href: /solutions/concerts }
   - { label: Fiabilidad, href: /product/reliability }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para festivales
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Categorías con cupo, text: "Día uno, día dos, abono completo, VIP, camping: cada una con su precio, cupo y ventana de venta.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
       - { title: Cadenas de categorías, text: "Cuando se agota la preventa, sus plazas sin vender pasan a la siguiente categoría en lugar de bloquear la venta.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
-      - { title: Accesos, text: "App de escaneo para iOS y Android en cada puerta; también se aceptan entradas de socios de otros sistemas.", link: { label: App de escaneo MACS →, href: /product/scanner } }
-      - { title: Carga, text: "800 pedidos por minuto con 1.000 compradores simultáneos en pruebas de carga; el primer minuto de venta está cubierto.", link: { label: Fiabilidad →, href: /product/reliability } }
+      - { title: Preventa y tramos de precio, text: "Un precio anticipado que termina en la fecha que elijas, o un precio que sube cuando se agota un tramo por cantidad.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: Códigos promocionales con límites, text: "Códigos para socios, fans de los artistas o tu boletín, con un periodo de validez y un límite por comprador.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: Invitaciones sin comisión, text: "Entradas gratuitas para patrocinadores, artistas y prensa, que se escanean en el acceso como cualquier otra entrada.", link: { label: Entradas →, href: /product/tickets } }
+      - { title: Accesos, text: "La app de escaneo MACS para iOS y Android en cada puerta; también se aceptan entradas de socios de otros sistemas.", link: { label: App de escaneo MACS →, href: /product/scanner } }
+      - { title: Entradas en el acceso, text: "Coloca en el acceso un código QR impreso con un enlace corto de compra: la gente lo escanea y compra allí mismo.", link: { label: Dónde vendes →, href: /product/sell } }
+      - { title: Una apertura de ventas a lo grande, text: "800 pedidos por minuto con 1.000 compradores simultáneos en pruebas de carga: el primer minuto de venta va sobre ruedas.", link: { label: Fiabilidad →, href: /product/reliability } }
+      - { title: Ventas en Telegram, text: "Cada venta y cada reembolso aparecen en tu grupo de Telegram en segundos, con el contacto del comprador.", link: { label: Telegram →, href: /product/telegram } }
   - type: faq
     id: questions
     eyebrow: Preguntas
@@ -28,11 +36,11 @@ sections:
       - q: "Tenemos entradas gratuitas para patrocinadores. ¿Cómo?"
         a: Entradas gratuitas e invitaciones desde el Event Center, sin comisión de la plataforma, y se escanean como cualquier entrada.
       - q: "¿Cuánto cuesta?"
-        a: "Una comisión fija por entrada vendida, facturada después del evento o descontada de tus créditos, mensual para eventos que llevan meses a la venta; consulta los [precios](/pricing)."
+        a: "Una comisión fija por entrada vendida, facturada después del evento o pagada con tus créditos, mensual para eventos que llevan meses a la venta; consulta los [precios](/pricing)."
   - type: cta
     id: start
-    title: Empieza a vender hoy
+    title: Tu mejor evento está por llegar. ¿Empezamos por las entradas?
     text: Crea el evento, conecta tu cuenta de pagos y comparte el enlace.
-    primary: { label: Crea tu evento, href: /start#create }
-    secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
-    note: "O escríbenos: lo configuramos todo contigo en una llamada."
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Crear tu evento, href: /start#create }
+    tertiary: { label: Contactar con el equipo, href: /contact#write }

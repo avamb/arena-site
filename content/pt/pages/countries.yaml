@@ -4,7 +4,7 @@ h1: "Em quais países o ArenaSoldOut.com funciona?"
 lead: "Em todo país em que um dos nossos provedores de pagamento aceita a sua empresa. O dinheiro de cada ingresso vai para a sua própria conta de pagamentos; o ArenaSoldOut.com nunca recebe os pagamentos dos ingressos."
 related:
   - { label: "Pagamentos na sua própria conta", href: "/payments", text: "Provedores, status e como conectar a sua conta." }
-  - { label: "Turnês de shows", href: "/solutions/concert-tours", text: "Várias cidades e países em um só evento, uma página por promotor." }
+  - { label: "Turnês de shows", href: "/solutions/concert-tours", text: "Várias cidades e países em um só evento, uma página por produtor." }
   - { label: "Preços", href: "/pricing", text: "Pague depois do evento pelos ingressos vendidos, ou compre créditos." }
 sections:
   - type: cards
@@ -31,8 +31,8 @@ sections:
         text: "Um valor fixo de {usdPrice} por ingresso, e não um percentual do preço. Com créditos é menor, a partir de {usdFrom} por ingresso. As taxas de cartão ficam entre você e o seu provedor de pagamentos."
         link: { label: "Preços →", href: "/pricing" }
       - title: "Venda mais"
-        text: "Códigos promocionais, preços de lançamento, links de indicação, lembretes de carrinho abandonado e um e-mail para os inscritos no momento em que as vendas abrem."
-        link: { label: "Códigos promocionais e janelas de preço →", href: "/product/pricing-tools" }
+        text: "Cupons de desconto, preços de lançamento, links de indicação, lembretes de carrinho abandonado e um e-mail para os inscritos no momento em que as vendas abrem."
+        link: { label: "Cupons de desconto e janelas de preço →", href: "/product/pricing-tools" }
       - title: "Comece a vender mais cedo"
         text: "Um evento sem mapa de assentos entra à venda em 10 minutos. O mapa de assentos nós desenhamos para você, sem custo, em geral em até um dia."
         link: { label: "Seu primeiro evento →", href: "/first-event" }
@@ -106,8 +106,8 @@ sections:
         a: "Sim. Quando todos os ingressos do evento custam {usdLowMax} ou menos ({eurLowMax} na UE), a comissão é de {lowPercent}% do preço do ingresso. Veja [preços](/pricing)."
       - q: "Um evento pode ter ingressos com preços diferentes?"
         a: "Sim. Categorias com preços próprios, preços de lançamento que mudam em uma data, faixas de quantidade, ingressos gratuitos e de pague o quanto quiser."
-      - q: "Posso usar códigos promocionais?"
-        a: "Sim, com um escopo (quais categorias e sessões), datas de validade e um limite por comprador. Veja [códigos promocionais e janelas de preço](/product/pricing-tools)."
+      - q: "Posso usar cupons de desconto?"
+        a: "Sim, com um escopo (quais categorias e sessões), datas de validade e um limite por comprador. Veja [cupons de desconto e janelas de preço](/product/pricing-tools)."
       - q: "Um ingresso infantil pode ser vendido somente junto com um ingresso de adulto?"
         a: "Sim, com categorias complementares. Um complemento só é vendido junto com um ingresso principal da mesma sessão, então não é possível comprar um ingresso infantil sem um de adulto."
       - q: "Posso vender bebidas ou produtos junto com os ingressos?"

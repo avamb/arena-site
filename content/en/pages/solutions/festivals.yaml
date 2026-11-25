@@ -1,12 +1,15 @@
-title: "Festival ticketing: several days, many categories"
+title: "Festival ticketing software: day passes, many categories"
 description: "Festival ticketing with day and full passes, categories with quotas, chains that pass unsold places on, early bird by date, scanning at every entrance."
-h1: Festivals
+h1: Festival ticketing
+tagline: A festival starts long before the gates open.
 lead: Day passes and full passes, many categories with quotas, early bird that switches on a date, and a chain that hands unsold places from one category to the next. Scanning at every entrance with the app.
 related:
   - { label: Promo codes and price windows, href: /product/pricing-tools }
   - { label: Concerts, href: /solutions/concerts }
   - { label: Reliability, href: /product/reliability }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: For festivals
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Categories with quotas, text: "Day one, day two, full pass, VIP, camping: each with its own price, quota and sale window.", link: { label: Pricing tools →, href: /product/pricing-tools } }
       - { title: Category chains, text: "When early bird sells out, its unsold places flow to the next category instead of blocking sales.", link: { label: Pricing tools →, href: /product/pricing-tools } }
-      - { title: Entrances, text: "Scanner app for iOS and Android at every gate; partners' tickets from other systems accepted too.", link: { label: MACS scanner app →, href: /product/scanner } }
-      - { title: Load, text: "800 orders a minute at 1,000 concurrent buyers in load tests; the opening minute of sales is covered.", link: { label: Reliability →, href: /product/reliability } }
+      - { title: Early bird and price steps, text: "An early price that ends on the date you set, or a price that goes up when a quantity step sells out.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: Promo codes with limits, text: "Codes for partners, artists' fans or your newsletter, with a date window and a limit per buyer.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: Invitations without commission, text: "Free tickets for sponsors, artists and press, scanned at the gate like any other ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Entrances, text: "The MACS scanner app for iOS and Android at every gate; partners' tickets from other systems accepted too.", link: { label: MACS scanner app →, href: /product/scanner } }
+      - { title: Tickets at the gate, text: "Put a printed QR code with a short purchase link at the entrance: people scan it and buy on the spot.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: A big opening day, text: "800 orders a minute at 1,000 concurrent buyers in load tests: the first minute of sales goes smoothly.", link: { label: Reliability →, href: /product/reliability } }
+      - { title: Sales in Telegram, text: "Every sale and refund appears in your Telegram group within seconds, with the buyer's contact.", link: { label: Telegram →, href: /product/telegram } }
   - type: faq
     id: questions
     eyebrow: Questions
@@ -28,11 +36,11 @@ sections:
       - q: We have sponsors' free tickets. How?
         a: Free tickets and invitations from the Event Center, no platform charge, scanned like any ticket.
       - q: What does it cost?
-        a: "A fixed commission per ticket sold, invoiced after the event or taken from your credits, monthly for events on sale for months; see [pricing](/pricing)."
+        a: "A fixed commission per ticket sold, invoiced after the event or paid with your credits, monthly for events on sale for months; see [pricing](/pricing)."
   - type: cta
     id: start
-    title: Start selling today
+    title: Your best event is yet to come. Shall we start with the tickets?
     text: Create the event, connect your payment account, share the link.
-    primary: { label: Create your event, href: /start#create }
-    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Or write to us: we set everything up with you on a call."
+    primary: { label: Start selling, href: /start }
+    secondary: { label: Create your event, href: /start#create }
+    tertiary: { label: Contact the team, href: /contact#write }

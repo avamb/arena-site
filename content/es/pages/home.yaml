@@ -1,13 +1,29 @@
-title: "ArenaSoldOut.com: venta de entradas y asientos, tu dinero"
-description: "Plataforma de venta de entradas para organizadores. Vende en minutos, en tu sitio o en una página que alojamos. Los compradores pagan en tu cuenta de pagos."
+title: "Venta de entradas para organizadores: ArenaSoldOut.com"
+description: "Plataforma de venta de entradas para organizadores. Vende en minutos, en tu web o en una página que alojamos. Los compradores pagan en tu cuenta de pagos."
 sections:
+
   - type: hero
     eyebrow: Plataforma de venta de entradas para organizadores
-    title: Vende asientos. Vende entradas. Quédate con el dinero.
-    lead: Empieza a vender en minutos, en tu sitio o en una página que alojamos nosotros. Los compradores pagan en tu propia cuenta de pagos. Cada entrada y cada cobro quedan bajo tu control.
+    title: Tu concierto empieza con una entrada.
+    rotate: [Tu concierto, Tu festival, Tu estreno, Tu espectáculo, Tu taller, Tu fiesta infantil]
+    lead: "Entradas con asientos numerados o sin ellos: para artistas, bandas, promotores, salas, festivales, teatros y talleres. Sencillo para tu primer evento, profesional para el centésimo."
+    widgetNote: "Así eligen sus asientos los compradores. En los eventos sin asientos numerados todo es aún más sencillo: el comprador elige la categoría de entrada y la cantidad."
     primary: { label: Empezar a vender, href: /start }
     secondary: { label: Crear tu evento, href: /start#create }
-    note: Conecta tu cuenta de pagos y comparte el enlace. Los eventos sin plano de asientos salen a la venta hoy mismo.
+    benefits:
+      - icon: clock
+        title: A la venta hoy
+        text: Un evento sin asientos numerados sale a la venta en 10 minutos si ya tienes conectada tu cuenta de pagos.
+      - icon: list-checks
+        title: Todo lo que necesita un organizador
+        text: Planos de sala, precios de preventa, códigos promocionales, invitaciones, sesiones, control de acceso, ventas por Telegram y mucho más.
+        link: { label: Todas las funciones →, href: /features }
+      - icon: wallet
+        title: Tu dinero, bajo tu control
+        text: Los compradores pagan en tu propia cuenta de pagos con cada pedido.
+      - icon: shield-check
+        title: Rentable
+        text: "Desde **{price}** por entrada vendida, no un porcentaje de tus ingresos. Sin suscripción."
     widget:
       aria: Vista previa del widget de entradas
       event: Autumn Jazz Night
@@ -47,6 +63,7 @@ sections:
         primary: { label: Empezar a vender, href: /start }
         bot: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
         close: Seguir explorando
+
   - type: facts
     items:
       - Organizadores en **31** países desde 2019
@@ -54,39 +71,21 @@ sections:
       - Entradas en **7** idiomas
       - Los cobros van a **tu** cuenta
 
-  - type: reasons
-    id: why
-    eyebrow: Por qué ArenaSoldOut.com
-    title: ¿Por qué los organizadores venden entradas con nosotros?
-    lead: "Cuatro razones, cada una con los datos que la respaldan."
+  - type: paycountries
+    id: countries
+
+  - type: who
+    id: who
+    eyebrow: Para quién es
+    title: Para quien tiene un público esperando
     items:
-      - icon: wallet
-        title: Te quedas con más de cada entrada
-        text: "**{price}** fijos por entrada, no un porcentaje de tus ingresos: una entrada de US$15 y una de US$150 te cuestan lo mismo. Los compradores pagan en tu propia cuenta de pagos, así que el dinero es tuyo en el momento del pago, no después del evento."
-        bullets:
-          - Nada se descuenta de tus ventas, no retenemos ninguna reserva
-          - Sin comisión por invitaciones ni entradas gratuitas
-          - Tu plano de asientos, dibujado por nosotros gratis
-        link: { label: Precios y calculadora →, href: /pricing }
-      - icon: clock
-        title: A la venta en 10 minutos
-        text: "Cuando tu organización está confirmada, normalmente en un día, un evento sin plano de asientos sale a la venta en **10 minutos**, si ya tienes una cuenta con un proveedor de pagos. Conectas esa cuenta una vez; cada evento siguiente solo necesita su nombre, fechas y precios."
-        link: { label: "Tu primer evento, paso a paso →", href: /first-event }
-      - icon: list-checks
-        title: Lo que piden los organizadores, ya construido
-        text: "Sin módulos que comprar ni plugins que instalar:"
-        bullets:
-          - Widget en tu sitio o una página de venta que alojamos
-          - Asientos y zonas de pie en un mismo evento
-          - Códigos promocionales, precios que cambian por fecha
-          - Invitaciones, reembolsos, fechas cambiadas con correos a los compradores
-          - App de escaneo para iOS y Android
-          - Cada venta en tu grupo de Telegram en segundos
-        link: { label: Las respuestas en detalle →, href: "#answers" }
-      - icon: shield-check
-        title: Vendemos entradas desde {since}
-        text: "Organizadores en **{countries}** países desde {since}: conciertos, teatros, festivales, espectáculos, clases magistrales. **800** pedidos por minuto en pruebas de carga, copias de seguridad cifradas cada noche, un sistema de vigilancia que avisa al equipo antes de que tú lo notes."
-        link: { label: Clientes y testimonios →, href: /clients }
+      - { icon: music, title: Conciertos, text: "De pie y sentados, varias categorías de precio, precio anticipado, escaneo en la puerta.", link: { label: Para conciertos →, href: /solutions/concerts } }
+      - { icon: drama, title: Teatro, text: "Planos de asientos que coinciden con la sala, fechas repetidas, invitaciones para prensa y socios.", link: { label: Para teatros →, href: /solutions/theatre } }
+      - { icon: box, title: Espectáculos, text: "Espectáculos sobre hielo, circo, danza: muchas fechas, muchas ciudades, y el plano de cada recinto se puede reutilizar.", link: { label: Para espectáculos →, href: /solutions/shows } }
+      - { icon: tent, title: Festivales, text: "Varios días, muchas categorías, categorías que pasan las plazas sin vender a la siguiente.", link: { label: Para festivales →, href: /solutions/festivals } }
+      - { icon: waypoints, title: Giras de conciertos, text: "Un espectáculo, muchas ciudades y fechas, una página por promotor con su propio enlace.", link: { label: Para giras →, href: /solutions/concert-tours } }
+      - { icon: mic, title: Clases magistrales y formaciones, text: "Grupos pequeños, fechas recurrentes, los correos y el idioma del propio anfitrión.", link: { label: Para anfitriones →, href: /solutions/master-classes } }
+      - { icon: building, title: Recintos y clubes, text: "Tu propio recinto, muchos eventos al mes, uno o varios planos de asientos para todos ellos, condiciones aparte.", link: { label: Para recintos →, href: /solutions/venues } }
 
   - type: steps
     id: how
@@ -104,43 +103,55 @@ sections:
   - type: ways
     id: where
     eyebrow: Dónde vendes
-    title: En tu sitio o en el nuestro. El dinero va a ti en ambos casos.
+    title: En tu web, en nuestra página, en webs de socios y en redes sociales. El dinero te llega en cualquier caso.
     items:
-      - title: Tienes un sitio web
-        text: "Tu sitio es la caja. Inserta el widget de entradas en cualquier página: WordPress, Tilda, Wix, Webflow o código propio. Los compradores nunca salen de tu dominio."
+      - title: Tu web
+        text: "Tu web es tu taquilla. Inserta el widget de entradas en cualquier página: WordPress, Tilda, Wix, Webflow o código propio. Los compradores nunca salen de tu dominio."
         bullets:
-          - Widget en cualquier sitio, tres líneas de código
-          - Plugin de WordPress con pedidos de WooCommerce
+          - Widget en cualquier web, tres líneas de código
+          - Integración con WordPress
           - Tus colores, tus fuentes, tu idioma
-      - title: No tienes un sitio web
-        text: "Alojamos la página de venta: tickets.arenasoldout.com/tu-nombre/tu-evento. Comparte un solo enlace en redes sociales, mensajería y en el cartel."
+      - title: Nuestra página de venta
+        text: "Alojamos la página de venta: tickets.arenasoldout.com/tu-nombre/tu-evento. Un solo enlace para el cartel, el boletín y la mensajería."
         bullets:
           - Una página por organizador y por evento
-          - Una página aparte para cada promotor
           - Lista en minutos, sin trabajo de diseño
           - Enlaces a tus vendedores asociados en la misma página
+      - title: Webs de socios
+        text: "El mismo widget se coloca en la web de una sala, un promotor o una agencia. Cada promotor tiene su propia página de venta y su propio enlace."
+        bullets:
+          - Widget en la web de un socio
+          - Una página y un enlace aparte para cada promotor
+          - Todas las ventas de los socios en un solo Event Center
+      - title: Redes sociales y mensajería
+        text: "Un enlace de venta en Instagram, Facebook, Telegram y WhatsApp, en el cartel y en el boletín. Un código QR con un enlace corto en la puerta: lo escanean y compran la entrada allí mismo."
+        bullets:
+          - Un solo enlace para todos los canales
+          - Un código QR en el cartel y en la puerta
+          - El origen de las ventas, con etiquetas UTM
 
   - type: qa
     id: answers
-    eyebrow: Lo que preguntan después los organizadores
-    title: Sí. Y así funciona.
+    eyebrow: Funciones
+    title: Todo lo que necesita un organizador, en una sola plataforma
+    more: { label: Todas las funciones →, href: /features }
     items:
-      - title: ¿Puedo usar códigos promocionales?
-        text: Sí. Un código puede aplicarse a un evento, una sesión o una categoría, con un periodo de validez, un mínimo y un límite por comprador.
-      - title: ¿Pueden cambiar los precios en la fecha que yo elija?
-        text: Sí. Las ventanas de precio anticipado cambian por fecha y hora. Los tramos por cantidad abren el siguiente precio cuando se agota el actual.
+      - title: Códigos promocionales
+        text: Un código puede aplicarse a un evento, una sesión o una categoría, con un periodo de validez, un mínimo y un límite por comprador.
+      - title: Precios que cambian solos
+        text: Las ventanas de preventa cambian por fecha y hora. Los tramos por cantidad abren el siguiente precio cuando se agota el actual.
         visual:
           type: ladder
           rungs:
             - { price: US$24, width: 100, label: primeras 100 · vendidas }
             - { price: US$119, width: 62, label: siguientes 150 · en venta }
             - { price: US$599, width: 0, label: se abre después, next: true }
-      - title: ¿Varios precios para un mismo evento?
-        text: Sí. Categorías con su propio precio, cupo y periodo de venta, además de entradas gratuitas y de precio libre.
-      - title: ¿Puedo añadir un cargo por servicio?
-        text: Sí. Un porcentaje por canal de venta, que el comprador ve como una línea aparte y que se paga en tu cuenta junto con la entrada. Comprueba que tu país permite un cargo por servicio en la venta de entradas.
-      - title: ¿Con asientos y sin ellos?
-        text: "Sí, y las dos cosas en un mismo evento: un plano de asientos con categorías y zonas de pie con cupos. Envíanos el plano de tu recinto y lo dibujamos en el sistema gratis, normalmente en un día: basta un PDF, una foto de un boceto a mano o una tabla de filas con los asientos de cada una (Excel o Google Sheets). Nunca tienes que introducirlo a mano."
+      - title: Categorías y entradas gratuitas
+        text: Categorías con su propio precio, cupo y periodo de venta, además de entradas gratuitas y de precio libre.
+      - title: Tu propio cargo por servicio
+        text: Un porcentaje por canal de venta, que el comprador ve como una línea aparte y que llega a tu cuenta junto con la entrada, íntegro para ti. Comprueba que tu país permite un cargo por servicio en la venta de entradas.
+      - title: Asientos y zonas de pie
+        text: "Un plano de asientos con categorías y zonas de pie con cupos, en un mismo evento. Envíanos el plano de tu recinto y lo dibujamos en el sistema gratis, normalmente en un día: basta un PDF, una foto de un boceto a mano o una tabla de filas con los asientos de cada una (Excel o Google Sheets). Nunca tienes que introducirlo a mano."
         visual:
           type: plan
           aria: Plano de un recinto con platea, dos palcos, un balcón y una zona de pie
@@ -150,16 +161,16 @@ sections:
           logeRight: Palco der. · 48
           balcony: Balcón · 180
           standing: De pie
-      - title: ¿Funciona un escáner con las entradas?
-        text: Sí. Cada entrada es un PDF con un código de barras EAN-13 y un QR, en el idioma del comprador. Escanea en la puerta con la app de escaneo para iOS y Android o con un escáner de mano. La app también acepta las entradas vendidas por tus socios en otros sistemas.
+      - title: Entradas y acceso
+        text: Cada entrada es un PDF con un código de barras EAN-13 y un QR, en el idioma del comprador. Escanea en la puerta con la app de escaneo para iOS y Android o con un escáner de mano. La app también acepta las entradas vendidas por tus socios en otros sistemas.
         visual:
           type: ticket
           event: Autumn Jazz Night
           meta: Vie 24 oct · 19:30 · Palác Akropolis
           seat: Platea · Fila G · Asiento 7
           code: "2173049188256"
-      - title: ¿Cómo veo mis ventas?
-        text: "En tu «Event Center», tu propia cuenta en este sitio: ábrelo en un móvil o un ordenador, sin instalar nada. Todos tus eventos, cada pedido, reembolsos y totales por sesión, visibles solo para ti y tu equipo. ¿Prefieres Telegram? Cada venta y cada reembolso también llegan a tu grupo de Telegram en segundos, con el contacto del comprador. [Ver el Event Center más abajo →](#center)"
+      - title: Ventas en tiempo real
+        text: "En tu «Event Center», tu propia cuenta en este sitio: ábrelo en un móvil o un ordenador, sin instalar nada. Todos tus eventos, cada pedido, reembolsos y totales por sesión, visibles solo para ti y tu equipo. Las etiquetas UTM muestran de dónde vienen los compradores. ¿Prefieres Telegram? Cada venta y cada reembolso también llegan a tu grupo de Telegram en segundos, con el contacto del comprador. [Ver el Event Center más abajo →](#center)"
         visual:
           type: telegram
           from: ArenaSoldOut.com
@@ -168,10 +179,14 @@ sections:
             - Fila G 7–8 · Platea
             - "**€76,00** · Anna K. · +420 ••• 41 18"
           time: "19:42"
-      - title: ¿Reembolsos, invitaciones, cambios de fecha?
-        text: "Sí, desde tu cuenta del «Event Center». Reembolsa una entrada, emite invitaciones, mueve o cancela una sesión: los compradores reciben un correo en su idioma con la entrada actualizada."
-      - title: ¿Aguantará un estadio?
-        text: Sí. 800 pedidos por minuto con 1.000 compradores en la página a la vez en pruebas de carga, copias de seguridad cifradas cada noche, un sistema de vigilancia que nos avisa antes de que lo notes.
+      - title: Reembolsos, invitaciones, cambios de fecha
+        text: "Todo desde tu cuenta del «Event Center»: reembolsa una entrada, emite invitaciones, mueve o cancela una sesión. Si un evento se cancela o cambia de fecha, tú decides qué pasa con el dinero: reembolsar a todos u ofrecer una nueva fecha. Los compradores reciben un correo en su idioma con la entrada actualizada."
+      - title: Fiabilidad
+        text: 800 pedidos por minuto con 1.000 compradores en la página a la vez en pruebas de carga, copias de seguridad cifradas cada noche, un sistema de vigilancia que cuida la plataforma día y noche.
+      - title: Un código QR en la puerta
+        text: Imprime un código QR con un enlace corto de compra y colócalo en la puerta. La gente lo escanea y compra su entrada allí mismo, aunque haya venido sin ella.
+      - title: API a petición
+        text: La API, los webhooks y la importación de eventos en una sola llamada se configuran a petición, cuando tus ventas necesitan conectarse con tu propio sistema.
 
   - type: center
     id: center
@@ -234,7 +249,7 @@ sections:
     id: money
     eyebrow: Dinero
     title: Los compradores te pagan a ti. No a nosotros.
-    lead: El 100% de cada venta es tuyo. El comprador paga el precio de la entrada, y el cargo por servicio si lo añades, directamente en tu propia cuenta de pagos, en tu moneda, en tu extracto. ArenaSoldOut.com nunca retiene tu dinero. Tú pagas a ArenaSoldOut.com la comisión de la plataforma por cada entrada vendida, después del evento o con un paquete prepago. Los reembolsos y las contracargos son decisión tuya, no una política de la plataforma.
+    lead: El 100% de cada venta es tuyo. El comprador paga el precio de la entrada, y el cargo por servicio si lo añades, directamente en tu propia cuenta de pagos, en tu moneda, en tu extracto. ArenaSoldOut.com nunca retiene tu dinero. Tú pagas a ArenaSoldOut.com la comisión de la plataforma por cada entrada vendida, después del evento o con un paquete prepago. Los reembolsos y los contracargos son decisión tuya, no una política de la plataforma.
     flowAria: Flujo de pago
     nodes:
       - { label: Comprador, sub: "tarjeta, Apple Pay, Google Pay" }
@@ -243,6 +258,18 @@ sections:
       - { label: Tu cuenta de pagos, providers: true, highlight: true }
       - { label: Tu banco, sub: según el calendario del proveedor }
     note: Tú pagas a ArenaSoldOut.com la comisión de la plataforma por cada entrada vendida. Nada se descuenta de tus ventas, nada se retiene.
+    calc:
+      title: Cuánto te queda a ti
+      currency: Moneda
+      tickets: Entradas
+      price: Precio de la entrada
+      fee: Tu cargo por servicio por entrada
+      seated: Asientos numerados
+      revenue: Ingresos por entradas
+      feeLine: Tu cargo por servicio, íntegro para ti
+      commission: Comisión de ArenaSoldOut.com
+      total: Te queda a ti
+      note: Las comisiones por pago con tarjeta se pagan a tu proveedor de pagos según sus propias tarifas y no forman parte de esta suma.
 
   - type: pricing
     id: pricing
@@ -290,19 +317,6 @@ sections:
     note: "Pagas después del evento, o compras créditos por adelantado y pagas menos por entrada. Los paquetes de créditos, la calculadora y las condiciones detalladas están en la página de precios: [créditos y sus tarifas →](/pricing#packages)"
     terms: { label: Todos los precios y la calculadora →, href: /pricing }
 
-  - type: who
-    id: who
-    eyebrow: Para quién es
-    title: Organizadores que venden sus propias entradas
-    items:
-      - { icon: music, title: Conciertos, text: "De pie y sentados, varias categorías de precio, precio anticipado, escaneo en la puerta.", link: { label: Para conciertos →, href: /solutions/concerts } }
-      - { icon: drama, title: Teatro, text: "Planos de asientos que coinciden con la sala, fechas repetidas, invitaciones para prensa y socios.", link: { label: Para teatros →, href: /solutions/theatre } }
-      - { icon: box, title: Espectáculos, text: "Espectáculos sobre hielo, circo, danza: muchas fechas, muchas ciudades, un plano por recinto que se reutiliza.", link: { label: Para espectáculos →, href: /solutions/shows } }
-      - { icon: tent, title: Festivales, text: "Varios días, muchas categorías, categorías que pasan las plazas sin vender a la siguiente.", link: { label: Para festivales →, href: /solutions/festivals } }
-      - { icon: waypoints, title: Giras de conciertos, text: "Un espectáculo, muchas ciudades y fechas, una página por promotor con su propio enlace.", link: { label: Para giras →, href: /solutions/concert-tours } }
-      - { icon: mic, title: Clases magistrales y formaciones, text: "Grupos pequeños, fechas recurrentes, los correos y el idioma del propio anfitrión.", link: { label: Para anfitriones →, href: /solutions/master-classes } }
-      - { icon: building, title: Recintos y clubes, text: "Tu propio recinto, muchos eventos al mes, un plano de asientos reutilizado, condiciones aparte.", link: { label: Para recintos →, href: /solutions/venues } }
-
   - type: clients
     id: clients
     eyebrow: Clientes
@@ -311,19 +325,74 @@ sections:
     cta: { label: Clientes y testimonios, href: /clients }
     marksAria: Clientes
 
-  - type: changes
-    id: changes
-    eyebrow: Últimos cambios
-    title: La plataforma crece cada semana
-    lead: "Una línea por cada función que llegó a los organizadores. Cuéntanos qué necesitas después: la mayoría de las peticiones de los organizadores se entregan en pocas semanas, y el equipo responde en persona."
-    cta: { label: Cuéntanos qué necesitas, href: /start }
-    more: { label: Lista completa →, href: /changes }
-    limit: 10
+  - type: faq
+    id: faq
+    eyebrow: Preguntas
+    title: Lo que preguntan los organizadores
+    items:
+      - q: "¿Cuánto cuesta empezar?"
+        a: "Nada. No hay suscripción ni pagos adicionales mensuales o anuales. Pagas una comisión por cada entrada vendida, desde {usdPrice}. Las invitaciones y las entradas gratuitas no llevan comisión. [Precios y calculadora →](/pricing)"
+      - q: "¿Hay algún pago adicional, mensual o anual?"
+        a: "No. Ni pagos mensuales o anuales, ni suscripción. Solo pagas una comisión por cada entrada vendida."
+      - q: "Vendo entradas por WhatsApp y los compradores me llaman. ¿Para qué necesito una plataforma de venta de entradas?"
+        a: "Para dejar de atender cada pedido a mano. Los compradores eligen sus asientos y pagan a cualquier hora, también de noche; el dinero llega directamente a tu cuenta y la entrada con código QR, al correo del comprador. Puedes seguir compartiendo el enlace de venta por WhatsApp, y tu tiempo lo dedicas al evento, no a mensajes y listas."
+      - q: "¿Quién paga el cargo por servicio, yo o el comprador?"
+        a: "Tú decides. Puedes añadir tu propio cargo por servicio al precio de la entrada, y te llega íntegro con el pago. Nuestra comisión por entrada no cambia."
+      - q: "¿Cuándo recibo el dinero?"
+        a: "Con cada pedido. El comprador paga directamente en tu cuenta de pagos; ArenaSoldOut.com nunca retiene el dinero. Las transferencias a tu banco siguen el calendario de tu proveedor."
+      - q: "¿Puedo integrar la venta de entradas en mi propia web?"
+        a: "Sí. El widget de entradas va en cualquier página con tres líneas de código: WordPress, Tilda, Wix, Webflow o código propio. Los compradores eligen sus asientos y entradas sin salir de tu web. [Para desarrolladores →](/developers)"
+      - q: "¿Cómo funciona el control de acceso el día del evento?"
+        a: "Cada entrada es un PDF con un código QR y un código de barras EAN-13. En la puerta, la app MACS para iOS y Android escanea las entradas con un móvil cualquiera; también sirve un escáner de mano. La app acepta además las entradas vendidas por tus socios en otros sistemas. [App de escaneo MACS →](/product/scanner)"
+      - q: "¿Se pueden comprar entradas en la misma puerta?"
+        a: "Sí. Imprime un código QR con un enlace corto de compra y colócalo en la puerta. La gente lo escanea con el móvil y compra su entrada allí mismo."
+      - q: "¿Qué pasa si el evento se cancela o cambia de fecha?"
+        a: "Tú decides. Reembolsa a todos los compradores, ofrece una nueva fecha en lugar del reembolso o elige otra opción. Los compradores reciben un correo en su idioma con la entrada actualizada."
+      - q: "¿Puedo ver de dónde vienen los compradores?"
+        a: "Sí. Añade etiquetas UTM a tus enlaces de venta y el Event Center te muestra qué canal ha traído los pedidos."
+      - q: "Nunca he vendido entradas. ¿Esto es para mí?"
+        a: "Sí. Te acompañamos paso a paso: [tu primer evento →](/first-event). Dibujamos tu plano de asientos gratis y, si lo prefieres, lo configuramos todo contigo en una llamada."
+      - q: "¿Cómo contacto con el equipo de ArenaSoldOut.com si tengo una pregunta?"
+        a: "Escríbenos por Telegram, a través del [formulario del sitio](/contact#write) o a hello@arenasoldout.com. Te responden personas del equipo."
+
+  - type: reasons
+    id: why
+    eyebrow: Por qué ArenaSoldOut.com
+    title: ¿Por qué los organizadores venden entradas con nosotros?
+    lead: "Cuatro razones, cada una con los datos que la respaldan."
+    items:
+      - icon: wallet
+        title: Te quedas con más de cada entrada
+        text: "**{price}** fijos por entrada, no un porcentaje de tus ingresos: una entrada de US$15 y una de US$150 te cuestan lo mismo. Los compradores pagan en tu propia cuenta de pagos, así que el dinero es tuyo en el momento del pago, no después del evento."
+        bullets:
+          - Nada se descuenta de tus ventas, no retenemos ninguna reserva
+          - Sin comisión por invitaciones ni entradas gratuitas
+          - Tu plano de asientos, dibujado por nosotros gratis
+        link: { label: Precios y calculadora →, href: /pricing }
+      - icon: clock
+        title: A la venta en 10 minutos
+        text: "Cuando tu organización está confirmada, normalmente en un día, un evento sin plano de asientos sale a la venta en **10 minutos**, si ya tienes una cuenta con un proveedor de pagos. Conectas esa cuenta una vez; cada evento siguiente solo necesita su nombre, fechas y precios."
+        link: { label: "Tu primer evento, paso a paso →", href: /first-event }
+      - icon: list-checks
+        title: Lo que piden los organizadores, ya construido
+        text: "Sin módulos que comprar ni nada que instalar:"
+        bullets:
+          - Widget en tu sitio o una página de venta que alojamos
+          - Asientos y zonas de pie en un mismo evento
+          - Códigos promocionales, precios que cambian por fecha
+          - Invitaciones, reembolsos, fechas cambiadas con correos a los compradores
+          - App de escaneo para iOS y Android
+          - Cada venta en tu grupo de Telegram en segundos
+        link: { label: Las funciones en detalle →, href: "#answers" }
+      - icon: shield-check
+        title: Vendemos entradas desde {since}
+        text: "Organizadores en **{countries}** países desde {since}: conciertos, teatros, festivales, espectáculos, clases magistrales. **800** pedidos por minuto en pruebas de carga, copias de seguridad cifradas cada noche, un sistema de vigilancia que cuida la plataforma día y noche."
+        link: { label: Clientes y testimonios →, href: /clients }
 
   - type: cta
     id: start
-    title: Empieza a vender hoy
-    text: "Crea el evento, conecta tu cuenta de pagos, comparte el enlace. Un evento sin plano de asientos sale a la venta en 10 minutos; el plano de asientos lo dibujamos nosotros, sin coste."
-    primary: { label: Crear tu evento, href: /start#create }
-    secondary: { label: Abrir el bot de Telegram, href: https://t.me/EventsCentrBot }
-    note: "O escríbenos: lo configuramos todo contigo en una llamada."
+    title: Tu mejor evento está por llegar. ¿Empezamos por las entradas?
+    text: Crea el evento, conecta tu cuenta de pagos, comparte el enlace. Dibujamos tu plano de asientos gratis.
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Crear tu evento, href: /start#create }
+    tertiary: { label: Contactar con el equipo, href: /contact#write }

@@ -1,9 +1,9 @@
 # Header and footer navigation. `href` values are site routes; the language prefix is added by the layout.
 header:
-  - label: How it works
-    href: /#how
   - label: Who it is for
     href: /solutions
+  - label: How it works
+    href: /#how
   - label: Pricing
     href: /pricing
   - label: Event Center
@@ -50,7 +50,7 @@ footer:
       - { label: Docs, href: /developers }
       - { label: Public API, href: /developers#api }
       - { label: Widget, href: /developers#widget }
-      - { label: WordPress plugin, href: /solutions/wordpress }
+      - { label: WordPress integration, href: /solutions/wordpress }
       - { label: Partners, href: /partners }
   - title: Company
     links:

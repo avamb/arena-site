@@ -29,8 +29,8 @@ sections:
         text: "Stałe {usdPrice} za bilet, a nie procent ceny. Z kredytami jest mniej, od {usdFrom} za bilet. Opłaty kartowe zostają między tobą a twoim operatorem płatności."
         link: { label: "Cennik →", href: "/pricing" }
       - title: "Sprzedawaj więcej"
-        text: "Kody promocyjne, ceny early bird, linki poleceń, przypomnienia o porzuconych koszykach i e-mail do subskrybentów w chwili startu sprzedaży."
-        link: { label: "Kody promocyjne i okna cenowe →", href: "/product/pricing-tools" }
+        text: "Kody rabatowe, ceny early bird, linki poleceń, przypomnienia o porzuconych koszykach i e-mail do subskrybentów w chwili startu sprzedaży."
+        link: { label: "Kody rabatowe i okna cenowe →", href: "/product/pricing-tools" }
       - title: "Zacznij sprzedawać szybciej"
         text: "Wydarzenie bez planu sali trafia do sprzedaży w 10 minut. Plan sali rysujemy dla ciebie za darmo, zwykle w ciągu doby."
         link: { label: "Twoje pierwsze wydarzenie →", href: "/first-event" }
@@ -80,8 +80,8 @@ sections:
         a: "Tak. Gdy każdy bilet na wydarzenie kosztuje {usdLowMax} lub mniej, prowizja wynosi {lowPercent}% ceny biletu. Zobacz [cennik](/pricing)."
       - q: "Czy jedno wydarzenie może mieć bilety w różnych cenach?"
         a: "Tak. Kategorie z własnymi cenami, ceny early bird zmieniające się w określonym dniu, progi ilościowe, bilety bezpłatne i w formule płać ile chcesz."
-      - q: "Czy mogę używać kodów promocyjnych?"
-        a: "Tak, z zakresem (które kategorie i terminy), datami ważności i limitem na kupującego. Zobacz [kody promocyjne i okna cenowe](/product/pricing-tools)."
+      - q: "Czy mogę używać kodów rabatowych?"
+        a: "Tak, z zakresem (które kategorie i terminy), datami ważności i limitem na kupującego. Zobacz [kody rabatowe i okna cenowe](/product/pricing-tools)."
       - q: "Czy bilet dziecięcy można sprzedać tylko razem z biletem dla dorosłego?"
         a: "Tak, dzięki kategoriom dodatkowym. Dodatek jest sprzedawany tylko razem z biletem głównym na ten sam termin, więc biletu dziecięcego nie da się kupić bez biletu dla dorosłego."
       - q: "Czy mogę sprzedawać napoje lub gadżety razem z biletami?"

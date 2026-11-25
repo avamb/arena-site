@@ -1,37 +1,45 @@
-title: "Vente de billets sur WordPress : plugin avec WooCommerce"
-description: "Le plugin ArenaSoldOut.com crée les commandes dans WooCommerce, avec plan de salle, billets et contrôle. Ou intégrez le widget sur n'importe quelle page."
-h1: Votre WordPress, votre paiement
-lead: Gardez votre site et votre boutique. Le plugin crée une commande WooCommerce pour chaque billet ; le plan de salle, le billet électronique et le contrôle viennent d'ArenaSoldOut.com. Ou intégrez le widget sur n'importe quelle page en deux lignes.
+title: "Billetterie WordPress : vendez des billets sur votre site"
+description: "Intégration WordPress : le widget ArenaSoldOut.com sur n'importe quelle page ou bloc, avec plan de salle, billets et contrôle. L'argent vous revient."
+h1: Votre WordPress, votre caisse
+lead: Gardez votre site. Le widget de billetterie s'installe sur n'importe quelle page ou bloc WordPress en trois lignes de code ; le plan de salle, le billet électronique et le contrôle viennent d'ArenaSoldOut.com, et les acheteurs paient sur votre propre compte.
 related:
   - { label: Où vous vendez, href: /product/sell }
   - { label: "Pour les développeurs : widget et API", href: /developers }
   - { label: Paiements, href: /payments }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Pour les sites WordPress
-    title: Quelle option convient à mon site ?
+    title: Que gagne votre site WordPress ?
     items:
-      - { title: Le plugin, text: "Les commandes arrivent dans WooCommerce, votre boutique et vos rapports continuent de fonctionner ; places, billets et porte sont ceux d'ArenaSoldOut.com.", link: { label: Demander le plugin →, href: /start } }
-      - { title: Le widget, text: "Deux lignes sur n'importe quelle page ou dans un bloc ; les acheteurs paient dans le paiement hébergé de votre prestataire, les commandes sont dans l'Event Center.", link: { label: Développeurs →, href: /developers } }
-      - { title: Migration depuis l'ancien ArenaSoldOut.com, text: "Séances, plans de salle et clients importés ; deux clients ont migré sans aucune interruption.", link: { label: Clients →, href: /clients } }
+      - { title: Intégration WordPress, text: "Le widget de billetterie sur n'importe quelle page, article ou bloc de votre site WordPress : les acheteurs choisissent leurs places et paient sans le quitter.", link: { label: Développeurs →, href: /developers } }
+      - { title: Trois lignes de code, text: "Collez le widget dans une page ou un bloc HTML personnalisé ; les acheteurs paient dans le paiement hébergé de votre prestataire, les commandes sont dans l'Event Center.", link: { label: Développeurs →, href: /developers } }
+      - { title: Venir d'un autre système, text: "Séances, plans de salle et clients vous suivent ; deux clients sont déjà passés de leur ancien système de billetterie sans aucune interruption.", link: { label: Clients →, href: /clients } }
+      - { title: Plans de salle dessinés gratuitement, text: "Envoyez un PDF, un tableur ou un croquis à la main et l'équipe dessine le plan ; les acheteurs choisissent leurs places directement sur votre site.", link: { label: Plans de salle →, href: /product/seating } }
+      - { title: L'argent sur votre compte, text: "Les acheteurs paient via un prestataire de votre pays, directement sur votre propre compte ; ArenaSoldOut.com ne détient jamais l'argent.", link: { label: Paiements →, href: /payments } }
+      - { title: Codes promo et tarifs de prévente, text: "Des codes avec une période de validité et une limite par acheteur, des tarifs de prévente qui prennent fin à une date, des billets gratuits et à prix libre.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: D'où viennent les acheteurs, text: "Ajoutez des balises UTM à vos liens et voyez quelle publication, quelle newsletter ou quel partenaire amène des acheteurs sur votre site.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: Ventes sur Telegram, text: "Chaque vente et chaque remboursement apparaît dans votre groupe Telegram en quelques secondes, avec les coordonnées de l'acheteur.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: À l'entrée, text: "Billets électroniques avec QR code et EAN-13, contrôlés avec l'application MACS pour iOS et Android.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
   - type: faq
     id: questions
     eyebrow: Questions
     title: Que demandent d'abord les propriétaires de sites WordPress ?
     items:
-      - q: Le plugin va-t-il ralentir mon site ?
-        a: Le plugin appelle l'API d'ArenaSoldOut.com au paiement ; les pages s'affichent comme avant. Le widget est un composant web chargé une seule fois.
+      - q: Le widget va-t-il ralentir mon site ?
+        a: Non. Le widget est un composant web chargé une seule fois ; vos pages s'affichent comme avant.
       - q: L'acheteur quitte-t-il mon domaine ?
-        a: Avec le widget, l'acheteur reste sur votre page jusqu'au paiement hébergé du prestataire, puis revient. Avec le plugin, le paiement est celui de WooCommerce.
+        a: L'acheteur reste sur votre page jusqu'au paiement hébergé du prestataire, puis revient.
       - q: Quels prestataires de paiement fonctionnent ?
-        a: "Votre propre compte chez un prestataire de votre pays ; la liste avec les statuts se trouve sur la [page des paiements](/payments). En Israël, AllPay fonctionne aujourd'hui pour les ventes WordPress."
-      - q: Qui l'installe ?
-        a: L'équipe peut installer et configurer le plugin avec l'administrateur de votre site ; le widget ne demande aucune installation.
+        a: "Votre propre compte chez un prestataire de votre pays ; la liste avec les statuts se trouve sur la [page des paiements](/payments)."
+      - q: Qui s'en occupe ?
+        a: Vous collez trois lignes de code, ou l'équipe installe le widget avec l'administrateur de votre site lors d'un appel.
   - type: cta
     id: start
-    title: Commencez à vendre sur votre site
-    text: Indiquez-nous l'adresse du site et le prestataire que vous utilisez. Nous configurons le plugin ou le widget avec vous.
+    title: Votre plus bel événement est encore à venir. On commence par les billets ?
+    text: Indiquez-nous l'adresse du site et le prestataire que vous utilisez. Nous configurons le widget avec vous.
     primary: { label: Commencer à vendre, href: /start }
-    secondary: { label: Lire la documentation développeur, href: /developers }
-    note: Les sites WooCommerce gardent leur boutique.
+    secondary: { label: Créer votre événement, href: /start#create }
+    tertiary: { label: Écrire à l'équipe, href: /contact#write }

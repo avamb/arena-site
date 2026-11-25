@@ -1,12 +1,15 @@
-title: "Venda de ingressos para shows: pista, assentos, lotes"
-description: "Venda ingressos de shows no seu site ou em página hospedada: cotas de pista, categorias com assento, lote promocional, códigos de parceiros. O dinheiro é seu."
-h1: Shows
+title: "Sistema de ingressos para shows: pista, assentos e lotes"
+description: "Venda ingressos de shows no seu site ou em página hospedada: cotas de pista, categorias com assento, lote promocional, cupons de parceiros. O dinheiro é seu."
+h1: Venda de ingressos para shows
+tagline: Um show começa muito antes da primeira nota.
 lead: Pista e assento marcado no mesmo evento, várias categorias de preço, um lote promocional que liga em uma data e uma portaria que lê cada ingresso. O público paga na sua própria conta desde o primeiro ingresso.
 related:
-  - { label: Códigos promocionais e janelas de preço, href: /product/pricing-tools }
+  - { label: Cupons de desconto e janelas de preço, href: /product/pricing-tools }
   - { label: Ingressos eletrônicos e leitura, href: /product/tickets }
   - { label: Festivais, href: /solutions/festivals }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para shows
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Pista e assento marcado juntos, text: "Uma área de pista com cota ao lado de categorias com assento, em um só mapa e um só checkout.", link: { label: Mapas de assentos →, href: /product/seating } }
       - { title: Lote promocional que troca sozinho, text: "Uma janela de preço por data e hora, ou uma faixa de quantidade que abre o preço seguinte quando o primeiro esgota.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
-      - { title: Parceiros e promotores, text: "Uma página por promotor com link próprio, códigos promocionais por parceiro, todos os canais em um só Event Center.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Parceiros e produtores, text: "Uma página por produtor com link próprio, cupons de desconto por parceiro, todos os canais em um só Event Center.", link: { label: Onde você vende →, href: /product/sell } }
       - { title: A portaria, text: "Aplicativo leitor para iOS e Android, EAN-13 e QR em cada ingresso, e ingressos de parceiros vindos de outros sistemas também são aceitos.", link: { label: Aplicativo leitor MACS →, href: /product/scanner } }
+      - { title: Seu mapa de assentos de graça, text: "Envie um PDF, uma planilha ou um esboço do local feito à mão: nossa equipe desenha o mapa, e você não precisa digitar nada.", link: { label: Mapas de assentos →, href: /product/seating } }
+      - { title: Categorias e VIP, text: "Cada categoria tem seu próprio preço, sua cota e sua janela de venda; quando uma categoria esgota, os lugares que sobraram podem passar para a seguinte.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Vendas em tempo real, text: "Cada venda chega ao seu grupo do Telegram em segundos; os parâmetros UTM mostram qual canal trouxe os compradores.", link: { label: Bot do Telegram →, href: /product/telegram } }
+      - { title: Cancelado ou remarcado, text: "Você decide: reembolsar todos ou oferecer uma nova data. Os compradores recebem um e-mail com o ingresso atualizado.", link: { label: Ingressos eletrônicos →, href: /product/tickets } }
+      - { title: Um QR code na entrada, text: "Coloque na entrada um QR code com um link curto de compra: quem chegou sem ingresso compra o seu enquanto espera na fila." }
   - type: faq
     id: questions
     eyebrow: Perguntas
@@ -31,8 +39,8 @@ sections:
         a: Sim. Cada venda chega ao seu grupo do Telegram em segundos e ao Event Center, com totais por sessão e exportação em CSV.
   - type: cta
     id: start
-    title: Coloque o show à venda hoje
+    title: Seu melhor evento ainda está por vir. Vamos começar pelos ingressos?
     text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
-    primary: { label: Criar seu evento, href: /start#create }
-    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Criar seu evento, href: /start#create }
+    tertiary: { label: Fale com a equipe, href: /contact#write }

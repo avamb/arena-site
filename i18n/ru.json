@@ -132,5 +132,21 @@
   "consent.more": "Подробнее",
   "consent.settings": "Настройки cookie",
   "consent.state.on": "Аналитика включена.",
-  "consent.state.off": "Аналитика выключена."
+  "consent.state.off": "Аналитика выключена.",
+  "paycountries.eyebrow": "Страны и оплата",
+  "paycountries.title": "Продавайте билеты в своей стране",
+  "paycountries.lead": "Найдите свою страну и посмотрите, как в ней платят покупатели.",
+  "paycountries.methods": "Способы оплаты:",
+  "paycountries.all": "во всех странах",
+  "paycountries.pick": "Нажмите на свою страну, чтобы увидеть её способы оплаты.",
+  "paycountries.missing": "Вашей страны нет в списке? Напишите нам →",
+  "paycountries.via.stripe": "Через Stripe, а также способы, которые вы включите в своём аккаунте Stripe.",
+  "paycountries.via.flitt": "Через Flitt.",
+  "paycountries.via.allpay": "Через AllPay: Isracard, Leumi Card.",
+  "paycountries.method.card": "Банковские карты",
+  "paycountries.method.apple_pay": "Apple Pay",
+  "paycountries.method.google_pay": "Google Pay",
+  "paycountries.method.ideal": "iDEAL",
+  "paycountries.method.twint": "TWINT",
+  "paycountries.method.bit": "Bit"
 }

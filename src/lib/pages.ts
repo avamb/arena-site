@@ -53,7 +53,7 @@ export async function loadPage(lang: LanguageCode, slug: string): Promise<Loaded
   const data: PageData = { lang, path, page, providers, markets, pricing, changelog, posts };
   const markdown = pageToMarkdown(data, navFor(lang));
 
-  const faq = page.data.sections.flatMap((s) => (s.type === 'qa' ? s.items.map((i) => ({ q: i.title, a: i.text })) : s.type === 'faq' ? s.items : []));
+  const faq = page.data.sections.flatMap((s) => (s.type === 'qa' ? s.items.filter((i) => i.title.trim().endsWith('?')).map((i) => ({ q: i.title, a: i.text })) : s.type === 'faq' ? s.items : []));
   const steps = page.data.sections.find((s) => s.type === 'steps');
   const hero = page.data.sections.find((s) => s.type === 'hero');
   const personSection = page.data.sections.find((s) => s.type === 'person');

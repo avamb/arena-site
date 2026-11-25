@@ -132,5 +132,21 @@
   "consent.more": "Details",
   "consent.settings": "Cookie settings",
   "consent.state.on": "Analytics is on.",
-  "consent.state.off": "Analytics is off."
+  "consent.state.off": "Analytics is off.",
+  "paycountries.eyebrow": "Countries and payments",
+  "paycountries.title": "Sell tickets in your country",
+  "paycountries.lead": "Find your country and see how buyers pay there.",
+  "paycountries.methods": "Payment methods:",
+  "paycountries.all": "in all countries",
+  "paycountries.pick": "Click your country to see its payment methods.",
+  "paycountries.missing": "Your country is not on the list? Write to us →",
+  "paycountries.via.stripe": "Through Stripe, plus any methods you turn on in your Stripe account.",
+  "paycountries.via.flitt": "Through Flitt.",
+  "paycountries.via.allpay": "Through AllPay: Isracard, Leumi Card.",
+  "paycountries.method.card": "Bank cards",
+  "paycountries.method.apple_pay": "Apple Pay",
+  "paycountries.method.google_pay": "Google Pay",
+  "paycountries.method.ideal": "iDEAL",
+  "paycountries.method.twint": "TWINT",
+  "paycountries.method.bit": "Bit"
 }

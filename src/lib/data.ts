@@ -174,7 +174,7 @@ export function countryRows(markets: CollectionEntry<'markets'>[], providers: Co
     const m = live.find((x) => x.data.iso2 === iso2);
     const ps = m ? m.data.providers.map((id) => working.find((p) => p.id === id)).filter((p) => p !== undefined) : working.filter((p) => p.data.entity_countries.includes(iso2));
     const methods = m?.data.methods ?? [...new Set(ps.flatMap((p) => (p.data.base_methods ?? p.data.methods) as string[]))];
-    const name = iso2 === 'HK' && lang === 'en' ? 'Hong Kong' : names.of(iso2) ?? iso2;
+    const name = iso2 === 'HK' ? (names.of(iso2) ?? 'Hong Kong').replace(/\s*\(.*\)$/, '').replace(/ SAR China$/, '') : names.of(iso2) ?? iso2;
     return { iso2, name, page: m?.data.page, providers: ps.map((p) => p.data.name), currencies: m?.data.currencies ?? [], methods };
   }).sort((a, b) => a.name.localeCompare(b.name, lang));
 }

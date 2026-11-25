@@ -1,8 +1,8 @@
 header:
-  - label: Как это работает
-    href: /#how
   - label: Для кого
     href: /solutions
+  - label: Как это работает
+    href: /#how
   - label: Цены
     href: /pricing
   - label: Event Center
@@ -49,7 +49,7 @@ footer:
       - { label: Документация, href: /developers }
       - { label: Публичный API, href: /developers#api }
       - { label: Виджет, href: /developers#widget }
-      - { label: Плагин для WordPress, href: /solutions/wordpress }
+      - { label: Интеграция с WordPress, href: /solutions/wordpress }
       - { label: Партнёры, href: /partners }
   - title: Компания
     links:

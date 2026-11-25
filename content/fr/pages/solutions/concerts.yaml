@@ -1,12 +1,15 @@
-title: "Billetterie de concerts : debout et assis, early bird"
+title: "Billetterie de concerts en ligne : debout, assis, early bird"
 description: "Vendez des billets de concert sur votre site ou une page hébergée : quotas debout, catégories assises, early bird, codes promo. L'argent va chez vous."
-h1: Concerts
-lead: Debout et assis dans un même événement, plusieurs catégories de prix, une fenêtre early bird qui s'active à une date, et une porte qui contrôle chaque billet. Les acheteurs paient sur votre propre compte dès le premier billet.
+h1: Billetterie de concerts
+tagline: Un concert commence bien avant la première note.
+lead: Debout et assis dans un même événement, plusieurs catégories de prix, une fenêtre early bird qui s'active à une date, et une entrée où chaque billet est contrôlé. Les acheteurs paient sur votre propre compte dès le premier billet.
 related:
   - { label: Codes promo et fenêtres de prix, href: /product/pricing-tools }
   - { label: Billets électroniques et contrôle, href: /product/tickets }
   - { label: Festivals, href: /solutions/festivals }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Pour les concerts
@@ -15,7 +18,12 @@ sections:
       - { title: Debout et assis ensemble, text: "Une zone debout avec quota à côté de catégories assises, dans un seul plan et un seul paiement.", link: { label: Plans de salle →, href: /product/seating } }
       - { title: Un early bird qui s'active seul, text: "Une fenêtre de prix par date et heure, ou un palier de quantité qui ouvre le prix suivant quand le premier est épuisé.", link: { label: Outils de prix →, href: /product/pricing-tools } }
       - { title: Partenaires et promoteurs, text: "Une page par promoteur avec son lien, des codes promo par partenaire, tous les canaux dans un seul Event Center.", link: { label: Où vous vendez →, href: /product/sell } }
-      - { title: La porte, text: "Application de contrôle pour iOS et Android, EAN-13 et QR sur chaque billet, billets de partenaires d'autres systèmes acceptés aussi.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
+      - { title: À l'entrée, text: "Application de contrôle pour iOS et Android, EAN-13 et QR sur chaque billet, billets de partenaires d'autres systèmes acceptés aussi.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
+      - { title: Votre plan de salle offert, text: "Envoyez un PDF, un tableur ou un croquis à la main de la salle : notre équipe dessine le plan, vous ne le saisissez jamais à la main.", link: { label: Plans de salle →, href: /product/seating } }
+      - { title: Catégories et VIP, text: "Chaque catégorie a son prix, son quota et sa fenêtre de vente ; les places restantes d'une catégorie close peuvent passer à la suivante.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: Les ventes en temps réel, text: "Chaque vente arrive dans votre groupe Telegram en quelques secondes ; les balises UTM montrent quel canal a amené les acheteurs.", link: { label: Bot Telegram →, href: /product/telegram } }
+      - { title: Annulé ou reporté, text: "C'est vous qui décidez : rembourser tout le monde ou proposer une nouvelle date. Les acheteurs reçoivent un e-mail avec le billet mis à jour.", link: { label: Billets électroniques →, href: /product/tickets } }
+      - { title: Un QR code à l'entrée, text: "Affichez un QR code avec un lien d'achat court : ceux qui sont venus sans billet l'achètent pendant qu'ils font la queue." }
   - type: faq
     id: questions
     eyebrow: Questions
@@ -31,8 +39,8 @@ sections:
         a: Oui. Chaque vente arrive dans votre groupe Telegram en quelques secondes et dans l'Event Center, avec les totaux par séance et un export CSV.
   - type: cta
     id: start
-    title: Mettez le concert en vente dès aujourd'hui
+    title: Votre plus bel événement est encore à venir. On commence par les billets ?
     text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
-    primary: { label: Créer votre événement, href: /start#create }
-    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."
+    primary: { label: Commencer à vendre, href: /start }
+    secondary: { label: Créer votre événement, href: /start#create }
+    tertiary: { label: Écrire à l'équipe, href: /contact#write }

@@ -1,5 +1,5 @@
 title: "Funkcje: bilety, plan sali, płatności, Event Center"
-description: "Wszystkie funkcje ArenaSoldOut.com na jednej stronie: strony sprzedaży i widget, plany sali, ceny i kody promocyjne, płatności, bilety, skaner, Event Center."
+description: "Wszystkie funkcje ArenaSoldOut.com na jednej stronie: strony sprzedaży i widget, plany sali, ceny i kody rabatowe, płatności, bilety, skaner, Event Center."
 h1: Wszystkie funkcje na jednej stronie
 lead: "Co ArenaSoldOut.com robi dla organizatora, od pierwszego biletu do wejścia. Każda grupa prowadzi do swojej strony ze szczegółami."
 related:
@@ -54,14 +54,14 @@ sections:
   - type: cards
     id: prices
     eyebrow: Ceny
-    title: Ceny, kody promocyjne i okna sprzedaży
-    lead: "Szczegóły: [kody promocyjne i okna cenowe](/product/pricing-tools)."
+    title: Ceny, kody rabatowe i okna sprzedaży
+    lead: "Szczegóły: [kody rabatowe i okna cenowe](/product/pricing-tools)."
     items:
       - title: Smart price
         text: "Gotowy schemat progów cenowych według ilości i daty, zamiast ustawiania każdego progu ręcznie."
       - title: Kategorie dodatkowe
         text: "Dodatek jest sprzedawany tylko razem z biletem głównym: biletu dla dziecka nie można sprzedać bez biletu dla dorosłego."
-      - title: Kody promocyjne
+      - title: Kody rabatowe
         text: "Dla jednego wydarzenia, terminu lub kategorii, z oknem sprzedaży, minimalnym zamówieniem i limitem na kupującego. Partnerzy dostają własne kody."
       - title: Early bird i progi ilościowe
         text: "Ceny przełączają się w ustalonym przez ciebie dniu albo otwierają kolejny próg, gdy bieżący się wyprzeda."

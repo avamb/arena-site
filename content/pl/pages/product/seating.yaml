@@ -3,7 +3,7 @@ description: "Plany sali z wersjami, importem SVG, mieszanymi miejscami numerowa
 h1: Plany sali zgodne z obiektem
 lead: Miejsca numerowane są w rdzeniu platformy, a nie dodatkiem. Zespół buduje twój plan z tego, co masz, zwykle w ciągu doby, i używa go ponownie dla każdego terminu.
 related:
-  - { label: "Kody promocyjne, okna cenowe i progi ilościowe", href: /product/pricing-tools }
+  - { label: "Kody rabatowe, okna cenowe i progi ilościowe", href: /product/pricing-tools }
   - { label: E-bilety z EAN-13 i QR, href: /product/tickets }
   - { label: Dla teatrów, href: /solutions/theatre }
 sections:

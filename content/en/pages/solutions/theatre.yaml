@@ -1,21 +1,29 @@
 title: "Theatre ticketing: seating plans, repeat dates"
 description: "Theatre ticketing with reserved seating that matches the venue, repeat dates on one plan, invitations, refunds and date changes. 100 to 1,500 seats."
 h1: Theatre
+tagline: A performance begins long before the curtain rises.
 lead: A plan that matches your venue, drawn by us for free from your PDF, sketch or table of rows, and reused for every performance. Invitations for press and partners, refunds and moved dates handled from the Event Center.
 related:
   - { label: Seating plans that match the venue, href: /product/seating }
   - { label: "Venues and clubs: separate terms", href: /solutions/venues }
   - { label: E-tickets and scanning, href: /product/tickets }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: For theatres
     title: What matters for a theatre?
     items:
-      - { title: The plan is yours, text: "Rows, loges, balcony, categories by price. Versions keep sold tickets safe when the layout changes.", link: { label: Seating plans →, href: /product/seating } }
-      - { title: Repeat dates, text: "Add sessions to the same event; the plan, prices and categories carry over. Move or cancel a date with buyer e-mails.", link: { label: Event Center →, href: /#center } }
-      - { title: Invitations, text: "Free tickets for exact seats for press, partners and the cast, scanned like any other ticket.", link: { label: Tickets →, href: /product/tickets } }
-      - { title: Your own box office, text: "Sell on your site with the widget or on the hosted page; money goes to your account, not through a marketplace.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: The plan is yours, text: "Stalls, loges, balcony, categories by price. Send a PDF, a spreadsheet or a hand sketch and the team draws the plan for free; versions keep sold tickets safe when the layout changes.", link: { label: Seating plans →, href: /product/seating } }
+      - { title: Repeat dates, text: "Add performances to the same event; the plan, prices and categories carry over, and buyers pick the date.", link: { label: Event Center →, href: /#center } }
+      - { title: Invitations without commission, text: "Free tickets for exact seats for press, partners and the cast, scanned at the door like any other ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Your own box office, text: "Sell on your site with the widget or on the hosted page; the money goes straight to your own account.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: Promo codes and early prices, text: "Codes for subscribers, schools or partners with a date window and a limit per buyer; an early price that ends on the date you set.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: "A performance moves? You decide", text: "Refund everyone, offer a new date instead, or choose another solution. Buyers get an e-mail with the updated ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Sales in Telegram, text: "Every sale and refund appears in your Telegram group within seconds, with the buyer's contact.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: The door, text: "The MACS scanner app for iOS and Android checks every ticket. A printed QR code with a short purchase link at the entrance lets latecomers buy on the spot.", link: { label: MACS scanner app →, href: /product/scanner } }
+      - { title: Your service fee is yours, text: "Add your own service fee for buyers on top of the ticket price; it goes to you in full.", link: { label: Pricing →, href: /pricing } }
   - type: faq
     id: questions
     eyebrow: Questions
@@ -31,8 +39,8 @@ sections:
         a: Yes, the seat map works on phones with pinch zoom, in the buyer's language.
   - type: cta
     id: start
-    title: Send us your plan
+    title: Your best event is yet to come. Shall we start with the tickets?
     text: "A PDF, a photo of a hand sketch or a table of rows and seats is enough. We draw it into your event for free and show it to you before sales start."
     primary: { label: Start selling, href: /start }
-    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Or write to us: we set everything up with you on a call."
+    secondary: { label: Create your event, href: /start#create }
+    tertiary: { label: Contact the team, href: /contact#write }
