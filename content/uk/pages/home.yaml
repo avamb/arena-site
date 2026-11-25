@@ -1,7 +1,7 @@
 # Home page (uk). Structure follows content/en/pages/home.yaml; approved lines from docs/specs/2026-11-25-lines-9-languages.html.
 # Inline marks: **bold**, [link text](href). Nothing else is interpreted.
 title: "Продаж квитків для організаторів заходів: ArenaSoldOut.com"
-description: "Платформа продажу квитків для організаторів. Продаж за кілька хвилин, на вашому сайті або на нашій сторінці. Покупці платять на ваш платіжний акаунт."
+description: "Продаж квитків на концерти, вистави, фестивалі та майстер-класи. З місцями й без, на вашому сайті чи нашій сторінці. Гроші одразу на ваш рахунок, без підписки."
 sections:
 
   - type: hero

@@ -31,12 +31,16 @@ interface Props {
   image?: string;
   ogType?: 'website' | 'article';
 }
-const { lang, path, title, description, translated = true, jsonld, markdownPath, noindex = false, image = '/brand/og-default.png', ogType = 'website' } = Astro.props;
+const { lang, path, title, description, translated = true, jsonld, markdownPath, noindex = false, image: imageProp, ogType = 'website' } = Astro.props;
+/* The brand card in the page language (public/brand/og-<lang>.png, the home h1); the old English card for other languages. */
+const cardLanguages = ['en', 'ru', 'es', 'pt', 'de', 'fr', 'it', 'pl', 'uk'];
+const defaultImage = cardLanguages.includes(lang) ? `/brand/og-${lang}.png` : '/brand/og-default.png';
+const image = imageProp ?? defaultImage;
 const language = getLanguage(lang);
 const robots = !indexing || !translated || noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
 const canonical = new URL(path, siteUrl).toString();
 const ogImage = new URL(image, siteUrl).toString();
-const isDefaultImage = image === '/brand/og-default.png';
+const isDefaultImage = image === defaultImage;
 // hreflang only for genuine translations (src/lib/translations.ts); x-default is the English member.
 const alternates = translationsOf(path).map((x) => ({ code: x.lang, href: new URL(x.path, siteUrl).toString() }));
 const graph = jsonld ? JSON.stringify(buildGraph(jsonld)) : undefined;
