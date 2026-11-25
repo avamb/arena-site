@@ -29,8 +29,8 @@ sections:
         text: "Fest {usdPrice} pro Ticket, kein Prozentsatz des Preises. Mit Credits ist es weniger, ab {usdFrom} pro Ticket. Kartengebühren bleiben zwischen Ihnen und Ihrem Zahlungsanbieter."
         link: { label: "Preise →", href: "/pricing" }
       - title: "Mehr verkaufen"
-        text: "Promo-Codes, Frühbucherpreise, Weiterempfehlungs-Links, Erinnerungen bei abgebrochenen Warenkörben und eine E-Mail an Abonnenten, sobald der Verkauf startet."
-        link: { label: "Promo-Codes und Preisfenster →", href: "/product/pricing-tools" }
+        text: "Rabattcodes, Frühbucherpreise, Weiterempfehlungs-Links, Erinnerungen bei abgebrochenen Warenkörben und eine E-Mail an Abonnenten, sobald der Verkauf startet."
+        link: { label: "Rabattcodes und Preisfenster →", href: "/product/pricing-tools" }
       - title: "Früher verkaufen"
         text: "Ein Event ohne Saalplan ist in 10 Minuten im Verkauf. Einen Saalplan zeichnen wir kostenlos für Sie, meist innerhalb eines Tages."
         link: { label: "Ihr erstes Event →", href: "/first-event" }
@@ -80,8 +80,8 @@ sections:
         a: "Ja. Kostet jedes Ticket der Veranstaltung {usdLowMax} oder weniger, beträgt die Provision {lowPercent}% des Ticketpreises. Siehe [Preise](/pricing)."
       - q: "Kann eine Veranstaltung Tickets zu verschiedenen Preisen haben?"
         a: "Ja. Kategorien mit eigenen Preisen, Frühbucherpreise, die an einem Datum wechseln, Mengenstufen sowie kostenlose und Pay-what-you-want-Tickets."
-      - q: "Kann ich Promo-Codes nutzen?"
-        a: "Ja, mit Geltungsbereich (welche Kategorien und Termine), Gültigkeitsdaten und einem Limit pro Käufer. Siehe [Promo-Codes und Preisfenster](/product/pricing-tools)."
+      - q: "Kann ich Rabattcodes nutzen?"
+        a: "Ja, mit Geltungsbereich (welche Kategorien und Termine), Gültigkeitsdaten und einem Limit pro Käufer. Siehe [Rabattcodes und Preisfenster](/product/pricing-tools)."
       - q: "Kann ein Kinderticket nur zusammen mit einem Erwachsenenticket verkauft werden?"
         a: "Ja, mit Zusatzkategorien. Ein Zusatz wird nur zusammen mit einem Haupt-Ticket desselben Termins verkauft, ein Kinderticket lässt sich also nicht ohne Erwachsenenticket kaufen."
       - q: "Kann ich Getränke oder Merchandise zusammen mit den Tickets verkaufen?"

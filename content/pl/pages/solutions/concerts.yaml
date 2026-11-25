@@ -1,12 +1,15 @@
-title: "Sprzedaż biletów na koncerty: stojące i siedzące, early bird"
+title: "System biletowy na koncerty: stojące, siedzące, early bird"
 description: "Sprzedawaj bilety na koncerty na własnej lub hostowanej stronie: pule stojące, kategorie siedzące, early bird, kody partnerów, skanowanie. Pieniądze są twoje."
-h1: Koncerty
+h1: Sprzedaż biletów na koncerty
+tagline: Koncert zaczyna się na długo przed pierwszym dźwiękiem.
 lead: Miejsca stojące i siedzące w jednym wydarzeniu, kilka kategorii cenowych, okno early bird włączane w wybranym dniu i wejście, które skanuje każdy bilet. Kupujący płacą na twoje konto od pierwszego biletu.
 related:
-  - { label: Kody promocyjne i okna cenowe, href: /product/pricing-tools }
+  - { label: Kody rabatowe i okna cenowe, href: /product/pricing-tools }
   - { label: E-bilety i skanowanie, href: /product/tickets }
   - { label: Festiwale, href: /solutions/festivals }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Dla koncertów
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Stojące i siedzące razem, text: "Strefa stojąca z pulą obok kategorii siedzących, w jednym planie i jednym koszyku.", link: { label: Plany sali →, href: /product/seating } }
       - { title: "Early bird, który włącza się sam", text: "Okno cenowe według daty i godziny albo próg ilościowy, który otwiera kolejną cenę, gdy pierwsza się wyprzedaje.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
-      - { title: Partnerzy i promotorzy, text: "Strona dla każdego promotora z własnym linkiem, kody promocyjne dla partnerów, wszystkie kanały w jednym Event Center.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
+      - { title: Partnerzy i promotorzy, text: "Strona dla każdego promotora z własnym linkiem, kody rabatowe dla partnerów, wszystkie kanały w jednym Event Center.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
       - { title: Wejście, text: "Aplikacja skanera na iOS i Androida, EAN-13 i QR na każdym bilecie, bilety partnerów z innych systemów także są przyjmowane.", link: { label: Aplikacja skanera MACS →, href: /product/scanner } }
+      - { title: Plan sali za darmo, text: "Wyślij PDF, arkusz kalkulacyjny lub odręczny szkic sali: nasz zespół narysuje plan, a ty nigdy nie wpisujesz go ręcznie.", link: { label: Plany sali →, href: /product/seating } }
+      - { title: Kategorie i VIP, text: "Każda kategoria ma własną cenę, pulę i okno sprzedaży; niesprzedane miejsca z wyprzedanej kategorii mogą przejść do następnej.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Sprzedaż na bieżąco, text: "Każda sprzedaż trafia do twojej grupy w Telegramie w ciągu kilku sekund; tagi UTM pokazują, który kanał przyprowadził kupujących.", link: { label: Bot w Telegramie →, href: /product/telegram } }
+      - { title: Koncert odwołany lub przeniesiony, text: "Ty decydujesz: zwracasz pieniądze wszystkim albo proponujesz nowy termin. Kupujący dostają e-mail z zaktualizowanym biletem.", link: { label: E-bilety →, href: /product/tickets } }
+      - { title: Kod QR przy wejściu, text: "Powieś kod QR z krótkim linkiem do zakupu: kto przyszedł bez biletu, kupi go, czekając w kolejce." }
   - type: faq
     id: questions
     eyebrow: Pytania
@@ -31,8 +39,8 @@ sections:
         a: Tak. Każda sprzedaż trafia do twojej grupy w Telegramie w ciągu kilku sekund oraz do Event Center z sumami dla sesji i eksportem CSV.
   - type: cta
     id: start
-    title: Wystaw koncert na sprzedaż już dziś
+    title: Twoje najlepsze wydarzenie wciąż przed tobą. Zaczniemy od biletów?
     text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
-    primary: { label: Utwórz wydarzenie, href: /start#create }
-    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Utwórz wydarzenie, href: /start#create }
+    tertiary: { label: Skontaktuj się z zespołem, href: /contact#write }

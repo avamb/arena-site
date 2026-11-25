@@ -1,13 +1,29 @@
-title: "ArenaSoldOut.com: sprzedaż biletów, pieniądze u ciebie"
-description: "Platforma do sprzedaży biletów dla organizatorów. Wystaw wydarzenie w kilka minut, na własnej stronie lub na naszej. Kupujący płacą na twoje konto płatności."
+title: "Platforma biletowa dla organizatorów: ArenaSoldOut.com"
+description: "Sprzedaż biletów na koncerty, spektakle, festiwale i warsztaty. Z miejscami lub bez, na twojej stronie albo naszej. Pieniądze od razu u ciebie, bez abonamentu."
 sections:
+
   - type: hero
     eyebrow: Platforma do sprzedaży biletów dla organizatorów
-    title: Sprzedawaj miejsca. Sprzedawaj bilety. Zachowaj pieniądze.
-    lead: Zacznij sprzedaż w kilka minut, na własnej stronie lub na stronie, którą dla ciebie hostujemy. Kupujący płacą na twoje konto płatności. Każdy bilet i każda wypłata pozostają pod twoją kontrolą.
+    title: Koncert zaczyna się od biletu.
+    rotate: [Koncert, Festiwal, Premiera, Spektakl, Masterclass, Impreza dla dzieci]
+    lead: "Sprzedaż biletów z miejscami numerowanymi i bez: dla artystów, zespołów, promotorów, klubów, festiwali, teatrów i warsztatów. Prosto przy pierwszym wydarzeniu, profesjonalnie przy setnym."
+    widgetNote: "Tak kupujący wybierają miejsca na sali. Przy wydarzeniach bez miejsc numerowanych jest jeszcze prościej: kupujący wybiera kategorię i liczbę biletów."
     primary: { label: Zacznij sprzedaż, href: /start }
     secondary: { label: Utwórz wydarzenie, href: /start#create }
-    note: Podłącz konto płatności i udostępnij link. Wydarzenia bez planu sali trafiają do sprzedaży jeszcze dziś.
+    benefits:
+      - icon: clock
+        title: W sprzedaży jeszcze dziś
+        text: Wydarzenie bez miejsc numerowanych trafia do sprzedaży w 10 minut, jeśli twoje konto płatności jest już podłączone.
+      - icon: list-checks
+        title: Wszystkie funkcje, których potrzebuje organizator
+        text: Plany sal, ceny early bird, kody rabatowe, zaproszenia, terminy, kontrola wejść, sprzedaż w Telegramie i wiele więcej.
+        link: { label: Wszystkie funkcje →, href: /features }
+      - icon: wallet
+        title: Twoje pieniądze pod twoją kontrolą
+        text: Kupujący płacą na twoje konto płatności przy każdym zamówieniu.
+      - icon: shield-check
+        title: Opłacalnie
+        text: "Od **{price}** za sprzedany bilet, a nie procent od przychodu. Bez abonamentu."
     widget:
       aria: Podgląd widgetu biletowego
       event: Autumn Jazz Night
@@ -47,6 +63,7 @@ sections:
         primary: { label: Zacznij sprzedaż, href: /start }
         bot: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
         close: Zostań i oglądaj dalej
+
   - type: facts
     items:
       - Organizatorzy w **31** krajach od 2019 roku
@@ -54,39 +71,21 @@ sections:
       - Bilety w **7** językach
       - Wypłaty trafiają na **twoje** konto
 
-  - type: reasons
-    id: why
-    eyebrow: Dlaczego ArenaSoldOut.com
-    title: Dlaczego organizatorzy sprzedają bilety u nas?
-    lead: "Cztery powody, a za każdym fakty."
+  - type: paycountries
+    id: countries
+
+  - type: who
+    id: who
+    eyebrow: Dla kogo
+    title: Dla tych, na których czeka publiczność
     items:
-      - icon: wallet
-        title: Z każdego biletu zostaje ci więcej
-        text: "Stała opłata **{price}** za bilet, a nie procent od przychodu: bilet za $15 i bilet za $150 kosztują cię tyle samo. Kupujący płacą na twoje konto płatności, więc pieniądze są twoje w chwili zapłaty, a nie po wydarzeniu."
-        bullets:
-          - Nic nie jest potrącane z twojej sprzedaży, żadna rezerwa nie jest wstrzymywana
-          - Bez prowizji od zaproszeń i darmowych biletów
-          - Plan sali rysujemy dla ciebie za darmo
-        link: { label: Ceny i kalkulator →, href: /pricing }
-      - icon: clock
-        title: Sprzedaż w 10 minut
-        text: "Gdy twoja organizacja zostanie potwierdzona, zwykle w ciągu doby, wydarzenie bez planu sali trafia do sprzedaży w **10 minut**, jeśli masz już konto u operatora płatności. Konto podłączasz raz; każde kolejne wydarzenie wymaga tylko nazwy, dat i cen."
-        link: { label: "Twoje pierwsze wydarzenie, krok po kroku →", href: /first-event }
-      - icon: list-checks
-        title: To, o co proszą organizatorzy, już gotowe
-        text: "Bez modułów do dokupienia, bez wtyczek do instalowania:"
-        bullets:
-          - Widget na twojej stronie lub strona sprzedaży, którą hostujemy
-          - Miejsca siedzące i stojące w jednym wydarzeniu
-          - Kody promocyjne, ceny zmieniające się z datą
-          - Zaproszenia, zwroty, przeniesione terminy z e-mailami do kupujących
-          - Aplikacja skanera na iOS i Androida
-          - Każda sprzedaż w twojej grupie na Telegramie w kilka sekund
-        link: { label: Odpowiedzi w szczegółach →, href: "#answers" }
-      - icon: shield-check
-        title: Sprzedajemy bilety od {since} roku
-        text: "Organizatorzy w **{countries}** krajach od {since} roku: koncerty, teatry, festiwale, widowiska, warsztaty. **800** zamówień na minutę w testach obciążeniowych, nocne szyfrowane kopie zapasowe, watchdog, który alarmuje zespół, zanim ty cokolwiek zauważysz."
-        link: { label: Klienci i opinie →, href: /clients }
+      - { icon: music, title: Koncerty, text: "Miejsca stojące i siedzące, kilka kategorii cenowych, early bird, skanowanie przy wejściu.", link: { label: Dla koncertów →, href: /solutions/concerts } }
+      - { icon: drama, title: Teatr, text: "Plany sali zgodne z obiektem, powtarzalne terminy, zaproszenia dla prasy i partnerów.", link: { label: Dla teatrów →, href: /solutions/theatre } }
+      - { icon: box, title: Widowiska, text: "Pokazy na lodzie, cyrk, taniec: wiele terminów, wiele miast, a plan każdego obiektu możesz wykorzystać ponownie.", link: { label: Dla widowisk →, href: /solutions/shows } }
+      - { icon: tent, title: Festiwale, text: "Kilka dni, wiele kategorii, kategorie, które przekazują niesprzedane miejsca następnej.", link: { label: Dla festiwali →, href: /solutions/festivals } }
+      - { icon: waypoints, title: Trasy koncertowe, text: "Jeden spektakl, wiele miast i terminów, strona dla każdego promotora z własnym linkiem.", link: { label: Dla tras →, href: /solutions/concert-tours } }
+      - { icon: mic, title: Warsztaty i szkolenia, text: "Małe grupy, cykliczne terminy, własne e-maile i język prowadzącego.", link: { label: Dla prowadzących →, href: /solutions/master-classes } }
+      - { icon: building, title: Obiekty i kluby, text: "Własny obiekt, wiele wydarzeń w miesiącu, jeden lub kilka planów sali dla wszystkich wydarzeń, osobne warunki.", link: { label: Dla obiektów →, href: /solutions/venues } }
 
   - type: steps
     id: how
@@ -104,43 +103,55 @@ sections:
   - type: ways
     id: where
     eyebrow: Gdzie sprzedajesz
-    title: Na twojej stronie lub na naszej. Pieniądze i tak trafiają do ciebie.
+    title: Na twojej stronie, na naszej stronie, u partnerów i w mediach społecznościowych. Pieniądze zawsze trafiają do ciebie.
     items:
-      - title: Masz stronę
+      - title: Twoja strona
         text: "Twoja strona jest kasą. Osadź widget biletowy na dowolnej podstronie: WordPress, Tilda, Wix, Webflow lub własny kod. Kupujący nie opuszczają twojej domeny."
         bullets:
           - Widget na dowolnej stronie, trzy linijki kodu
-          - Wtyczka WordPress z zamówieniami WooCommerce
+          - Integracja z WordPressem
           - Twoje kolory, twoje czcionki, twój język
-      - title: Nie masz strony
-        text: "Hostujemy stronę sprzedaży: tickets.arenasoldout.com/your-name/your-event. Udostępnij jeden link w mediach społecznościowych, komunikatorach i na plakacie."
+      - title: Nasza strona sprzedaży
+        text: "Hostujemy stronę sprzedaży: tickets.arenasoldout.com/your-name/your-event. Jeden link na plakat, do newslettera i do komunikatorów."
         bullets:
           - Strona dla każdego organizatora i każdego wydarzenia
-          - Osobna strona dla każdego promotora
           - Gotowa w kilka minut, bez pracy projektowej
           - Linki do twoich partnerów sprzedaży na tej samej stronie
+      - title: Strony partnerów
+        text: "Ten sam widget możesz umieścić na stronie obiektu, promotora lub agencji. Każdy promotor dostaje własną stronę sprzedaży i własny link."
+        bullets:
+          - Widget na stronie partnera
+          - Osobna strona i link dla każdego promotora
+          - Cała sprzedaż partnerów w jednym Event Center
+      - title: Media społecznościowe i komunikatory
+        text: "Link do sprzedaży na Instagramie, Facebooku, Telegramie i WhatsAppie, na plakacie i w newsletterze. Przy wejściu kod QR z krótkim linkiem: ludzie skanują go i od razu kupują bilet."
+        bullets:
+          - Jeden link do każdego kanału
+          - Kod QR na plakacie i przy wejściu
+          - Źródła sprzedaży według tagów UTM
 
   - type: qa
     id: answers
-    eyebrow: O co organizatorzy pytają dalej
-    title: Tak. A oto jak.
+    eyebrow: Funkcje
+    title: Wszystko, czego potrzebuje organizator, na jednej platformie
+    more: { label: Wszystkie funkcje →, href: /features }
     items:
-      - title: Czy mogę używać kodów promocyjnych?
-        text: Tak. Kod może obowiązywać dla jednego wydarzenia, jednego terminu lub jednej kategorii, z oknem czasowym, minimum i limitem na kupującego.
-      - title: Czy ceny mogą zmieniać się w ustalonym przeze mnie dniu?
-        text: Tak. Okna cen wczesnych (early bird) przełączają się według daty i godziny. Progi ilościowe otwierają kolejną cenę, gdy bieżąca się wyprzeda.
+      - title: Kody rabatowe
+        text: Kod może obowiązywać dla jednego wydarzenia, jednego terminu lub jednej kategorii, z oknem czasowym, minimum i limitem na kupującego.
+      - title: Ceny, które zmieniają się same
+        text: Okna cen wczesnych (early bird) przełączają się według daty i godziny. Progi ilościowe otwierają kolejną cenę, gdy bieżąca się wyprzeda.
         visual:
           type: ladder
           rungs:
             - { price: US$24, width: 100, label: pierwsze 100 · sprzedane }
             - { price: US$119, width: 62, label: kolejne 150 · w sprzedaży }
             - { price: US$599, width: 0, label: otwiera się potem, next: true }
-      - title: Kilka cen w jednym wydarzeniu?
-        text: Tak. Kategorie z własną ceną, pulą i oknem sprzedaży, a do tego bilety darmowe i z ceną do wyboru przez kupującego.
-      - title: Czy mogę dodać opłatę serwisową?
-        text: Tak. Procent dla każdego kanału sprzedaży, pokazany kupującemu w osobnej linii i wpłacany na twoje konto razem z biletem. Sprawdź, czy twój kraj dopuszcza opłatę serwisową przy sprzedaży biletów.
-      - title: Z miejscami numerowanymi i bez?
-        text: "Tak, i jedno z drugim w jednym wydarzeniu: plan sali z kategoriami, strefy stojące z pulami. Wyślij nam plan swojej sali, a narysujemy go w systemie za darmo, zwykle w ciągu doby: wystarczy PDF, zdjęcie odręcznego szkicu lub tabela z rzędami i miejscami w każdym rzędzie (Excel lub Google Sheets). Nigdy nie wpisujesz go ręcznie."
+      - title: Kategorie i darmowe bilety
+        text: Kategorie z własną ceną, pulą i oknem sprzedaży, a do tego bilety darmowe i z ceną do wyboru przez kupującego.
+      - title: Własna opłata serwisowa
+        text: Procent dla każdego kanału sprzedaży, pokazany kupującemu w osobnej linii i wpłacany na twoje konto razem z biletem, w całości dla ciebie. Sprawdź, czy twój kraj dopuszcza opłatę serwisową przy sprzedaży biletów.
+      - title: Miejsca siedzące i stojące
+        text: "Plan sali z kategoriami i strefy stojące z pulami w jednym wydarzeniu. Wyślij nam plan swojej sali, a narysujemy go w systemie za darmo, zwykle w ciągu doby: wystarczy PDF, zdjęcie odręcznego szkicu lub tabela z rzędami i miejscami w każdym rzędzie (Excel lub Google Sheets). Nigdy nie wpisujesz go ręcznie."
         visual:
           type: plan
           aria: Plan sali z parterem, dwiema lożami, balkonem i strefą stojącą
@@ -150,16 +161,16 @@ sections:
           logeRight: Loża P · 48
           balcony: Balkon · 180
           standing: Strefa stojąca
-      - title: Czy skaner działa z biletami?
-        text: Tak. Każdy bilet to PDF z kodem kreskowym EAN-13 i kodem QR, w języku kupującego. Skanuj przy wejściu aplikacją skanera na iOS i Androida lub skanerem ręcznym. Aplikacja przyjmuje też bilety sprzedane przez twoich partnerów w innych systemach.
+      - title: Bilety i wejście
+        text: Każdy bilet to PDF z kodem kreskowym EAN-13 i kodem QR, w języku kupującego. Skanuj przy wejściu aplikacją skanera na iOS i Androida lub skanerem ręcznym. Aplikacja przyjmuje też bilety sprzedane przez twoich partnerów w innych systemach.
         visual:
           type: ticket
           event: Autumn Jazz Night
           meta: pt. 24 paź · 19:30 · Palác Akropolis
           seat: Parter · Rząd G · Miejsce 7
           code: "2173049188256"
-      - title: Jak sprawdzam swoją sprzedaż?
-        text: "W „Event Center”, twoim własnym koncie na tej stronie: otwierasz je na telefonie lub komputerze, nic nie trzeba instalować. Wszystkie twoje wydarzenia, każde zamówienie, zwroty i sumy dla każdego terminu, widoczne tylko dla ciebie i twojego zespołu. Wolisz Telegram? Każda sprzedaż i każdy zwrot trafia też do twojej grupy na Telegramie w kilka sekund, razem z kontaktem do kupującego. [Zobacz Event Center poniżej →](#center)"
+      - title: Sprzedaż na bieżąco
+        text: "W „Event Center”, twoim własnym koncie na tej stronie: otwierasz je na telefonie lub komputerze, nic nie trzeba instalować. Wszystkie twoje wydarzenia, każde zamówienie, zwroty i sumy dla każdego terminu, widoczne tylko dla ciebie i twojego zespołu. Tagi UTM pokazują, skąd przychodzą kupujący. Wolisz Telegram? Każda sprzedaż i każdy zwrot trafia też do twojej grupy na Telegramie w kilka sekund, razem z kontaktem do kupującego. [Zobacz Event Center poniżej →](#center)"
         visual:
           type: telegram
           from: ArenaSoldOut.com
@@ -168,10 +179,14 @@ sections:
             - Rząd G 7–8 · Parter
             - "**€76.00** · Anna K. · +420 ••• 41 18"
           time: "19:42"
-      - title: Zwroty, zaproszenia, zmiany terminów?
-        text: "Tak, z twojego konta „Event Center”. Zwróć bilet, wystaw zaproszenia, przenieś lub odwołaj termin: kupujący dostają e-mail w swoim języku z zaktualizowanym biletem."
-      - title: Czy poradzi sobie ze stadionem?
-        text: Tak. 800 zamówień na minutę przy 1000 kupujących jednocześnie na stronie w testach obciążeniowych, nocne szyfrowane kopie zapasowe, watchdog, który alarmuje nas, zanim ty cokolwiek zauważysz.
+      - title: Zwroty, zaproszenia, zmiany terminów
+        text: "Wszystko z twojego konta „Event Center”: zwróć bilet, wystaw zaproszenia, przenieś lub odwołaj termin. Jeśli wydarzenie zostanie odwołane lub przeniesione, to ty decydujesz, co dzieje się z pieniędzmi: zwracasz je wszystkim albo proponujesz nowy termin. Kupujący dostają e-mail w swoim języku z zaktualizowanym biletem."
+      - title: Niezawodność
+        text: 800 zamówień na minutę przy 1000 kupujących jednocześnie na stronie w testach obciążeniowych, nocne szyfrowane kopie zapasowe, watchdog, który pilnuje platformy przez całą dobę.
+      - title: Kod QR przy wejściu
+        text: Wydrukuj kod QR z krótkim linkiem do zakupu i powieś go przy wejściu. Ludzie skanują go i kupują bilet na miejscu, nawet jeśli przyszli bez biletu.
+      - title: API na zapytanie
+        text: API, webhooki i import wydarzeń jednym wywołaniem uruchamiamy na zapytanie, gdy twoja sprzedaż ma się łączyć z twoim własnym systemem.
 
   - type: center
     id: center
@@ -182,7 +197,7 @@ sections:
       - Zamówienia i kupujący, z wyszukiwaniem i raportami CSV dla każdego terminu
       - "Bilety: wyślij ponownie, zwróć, zaproś"
       - "Terminy: dodawaj daty, przenoś lub odwołuj z e-mailami do kupujących"
-      - Ceny, kategorie, kody promocyjne, opłata serwisowa
+      - Ceny, kategorie, kody rabatowe, opłata serwisowa
       - "Analityka sprzedaży: wyświetlenia, koszyki, płatności"
       - "Role w zespole: właściciel, menedżer"
     note: "Wolisz Telegram? Ten sam Event Center działa w bocie: utwórz wydarzenie ze zdjęcia plakatu, dostawaj każdą sprzedaż w swojej grupie."
@@ -243,6 +258,18 @@ sections:
       - { label: Twoje konto płatności, providers: true, highlight: true }
       - { label: Twój bank, sub: według harmonogramu operatora }
     note: Płacisz ArenaSoldOut.com prowizję platformy za każdy sprzedany bilet. Nic nie jest potrącane z twojej sprzedaży, nic nie jest wstrzymywane.
+    calc:
+      title: Ile zostaje u ciebie
+      currency: Waluta
+      tickets: Liczba biletów
+      price: Cena biletu
+      fee: Twoja opłata serwisowa za bilet
+      seated: Miejsca numerowane
+      revenue: Przychód z biletów
+      feeLine: Twoja opłata serwisowa, w całości twoja
+      commission: Prowizja ArenaSoldOut.com
+      total: Zostaje u ciebie
+      note: Opłaty za obsługę kart płacisz swojemu operatorowi płatności według jego stawek; nie wchodzą w tę kwotę.
 
   - type: pricing
     id: pricing
@@ -290,19 +317,6 @@ sections:
     note: "Płacisz po wydarzeniu albo kupujesz kredyty z góry i płacisz mniej za bilet. Pakiety kredytów, kalkulator i szczegółowe warunki są na stronie cennika: [kredyty i ich stawki →](/pricing#packages)"
     terms: { label: Wszystkie ceny i kalkulator →, href: /pricing }
 
-  - type: who
-    id: who
-    eyebrow: Dla kogo
-    title: Dla organizatorów, którzy sprzedają własne bilety
-    items:
-      - { icon: music, title: Koncerty, text: "Miejsca stojące i siedzące, kilka kategorii cenowych, early bird, skanowanie przy wejściu.", link: { label: Dla koncertów →, href: /solutions/concerts } }
-      - { icon: drama, title: Teatr, text: "Plany sali zgodne z obiektem, powtarzalne terminy, zaproszenia dla prasy i partnerów.", link: { label: Dla teatrów →, href: /solutions/theatre } }
-      - { icon: box, title: Widowiska, text: "Pokazy na lodzie, cyrk, taniec: wiele terminów, wiele miast, jeden plan na obiekt używany wielokrotnie.", link: { label: Dla widowisk →, href: /solutions/shows } }
-      - { icon: tent, title: Festiwale, text: "Kilka dni, wiele kategorii, kategorie, które przekazują niesprzedane miejsca następnej.", link: { label: Dla festiwali →, href: /solutions/festivals } }
-      - { icon: waypoints, title: Trasy koncertowe, text: "Jeden spektakl, wiele miast i terminów, strona dla każdego promotora z własnym linkiem.", link: { label: Dla tras →, href: /solutions/concert-tours } }
-      - { icon: mic, title: Warsztaty i szkolenia, text: "Małe grupy, cykliczne terminy, własne e-maile i język prowadzącego.", link: { label: Dla prowadzących →, href: /solutions/master-classes } }
-      - { icon: building, title: Obiekty i kluby, text: "Własny obiekt, wiele wydarzeń w miesiącu, jeden plan sali używany wielokrotnie, osobne warunki.", link: { label: Dla obiektów →, href: /solutions/venues } }
-
   - type: clients
     id: clients
     eyebrow: Klienci
@@ -311,19 +325,74 @@ sections:
     cta: { label: Klienci i opinie, href: /clients }
     marksAria: Klienci
 
-  - type: changes
-    id: changes
-    eyebrow: Ostatnie zmiany
-    title: Platforma rośnie co tydzień
-    lead: "Linijka dla każdej funkcji, która trafiła do organizatorów. Powiedz nam, czego potrzebujesz dalej: większość próśb organizatorów wdrażamy w ciągu kilku tygodni, a zespół odpowiada osobiście."
-    cta: { label: "Powiedz nam, czego potrzebujesz", href: /start }
-    more: { label: Pełna lista →, href: /changes }
-    limit: 10
+  - type: faq
+    id: faq
+    eyebrow: Pytania
+    title: O co pytają organizatorzy
+    items:
+      - q: Ile kosztuje start?
+        a: "Nic. Nie ma abonamentu ani dodatkowych opłat miesięcznych czy rocznych. Płacisz prowizję za każdy sprzedany bilet, od {usdPrice}. Zaproszenia i darmowe bilety są bez prowizji. [Ceny i kalkulator →](/pricing)"
+      - q: Czy są jakieś dodatkowe opłaty, miesięczne lub roczne?
+        a: Nie. Żadnych opłat miesięcznych ani rocznych, żadnego abonamentu. Płacisz tylko prowizję za każdy sprzedany bilet.
+      - q: Sprzedaję bilety przez WhatsAppa, a kupujący do mnie dzwonią. Po co mi platforma biletowa?
+        a: "Żeby nie przyjmować każdego zamówienia ręcznie. Kupujący wybierają miejsca i płacą o każdej porze, także w nocy; pieniądze trafiają prosto na twoje konto, a bilet z kodem QR do skrzynki e-mail kupującego. Link do sprzedaży możesz dalej wysyłać na WhatsAppie: twój czas idzie na wydarzenie, a nie na wiadomości i listy."
+      - q: Kto płaci opłatę serwisową, ja czy kupujący?
+        a: Ty decydujesz. Możesz doliczyć własną opłatę serwisową do ceny biletu, a całość trafia do ciebie razem z płatnością. Nasza prowizja za bilet pozostaje taka sama.
+      - q: Kiedy dostaję pieniądze?
+        a: Przy każdym zamówieniu. Kupujący płaci prosto na twoje konto płatności; ArenaSoldOut.com nigdy nie przechowuje pieniędzy. Wypłaty do twojego banku idą według harmonogramu twojego operatora.
+      - q: Czy mogę osadzić sprzedaż biletów na własnej stronie?
+        a: "Tak. Widget biletowy umieścisz na dowolnej stronie trzema linijkami kodu: WordPress, Tilda, Wix, Webflow lub własny kod. Kupujący wybierają miejsca i bilety bezpośrednio na twojej stronie. [Dla developerów →](/developers)"
+      - q: Jak działa kontrola wejść w dniu wydarzenia?
+        a: "Każdy bilet to PDF z kodem QR i kodem kreskowym EAN-13. Przy wejściu aplikacja MACS na iOS i Androida skanuje bilety zwykłym telefonem; sprawdzi się też skaner ręczny. Aplikacja przyjmuje również bilety sprzedane przez twoich partnerów w innych systemach. [Aplikacja skanera MACS →](/product/scanner)"
+      - q: Czy można kupić bilet tuż przy wejściu?
+        a: Tak. Wydrukuj kod QR z krótkim linkiem do zakupu i powieś go przy wejściu. Ludzie skanują go telefonem i kupują bilet na miejscu.
+      - q: Co się dzieje, gdy wydarzenie zostanie odwołane lub przeniesione?
+        a: Ty decydujesz. Zwracasz pieniądze wszystkim kupującym, proponujesz nowy termin zamiast zwrotu albo wybierasz inne rozwiązanie. Kupujący dostają e-mail w swoim języku z zaktualizowanym biletem.
+      - q: Czy widzę, skąd przychodzą kupujący?
+        a: Tak. Dodaj tagi UTM do linków sprzedażowych, a Event Center pokaże, który kanał przyniósł zamówienia.
+      - q: Pierwszy raz sprzedaję bilety. Czy to dla mnie?
+        a: "Tak. Przeprowadzimy cię przez wszystko krok po kroku: [twoje pierwsze wydarzenie →](/first-event). Plan sali narysujemy za darmo, a jeśli wolisz, skonfigurujemy wszystko razem z tobą podczas rozmowy."
+      - q: Jak skontaktować się z zespołem ArenaSoldOut.com, gdy mam pytanie?
+        a: "Napisz do nas na Telegramie, przez [formularz na stronie](/contact#write) lub na hello@arenasoldout.com. Odpowiadają ludzie z zespołu."
+
+  - type: reasons
+    id: why
+    eyebrow: Dlaczego ArenaSoldOut.com
+    title: Dlaczego organizatorzy sprzedają bilety u nas?
+    lead: "Cztery powody, a za każdym fakty."
+    items:
+      - icon: wallet
+        title: Z każdego biletu zostaje ci więcej
+        text: "Stała opłata **{price}** za bilet, a nie procent od przychodu: bilet za $15 i bilet za $150 kosztują cię tyle samo. Kupujący płacą na twoje konto płatności, więc pieniądze są twoje w chwili zapłaty, a nie po wydarzeniu."
+        bullets:
+          - Nic nie jest potrącane z twojej sprzedaży, żadna rezerwa nie jest wstrzymywana
+          - Bez prowizji od zaproszeń i darmowych biletów
+          - Plan sali rysujemy dla ciebie za darmo
+        link: { label: Ceny i kalkulator →, href: /pricing }
+      - icon: clock
+        title: Sprzedaż w 10 minut
+        text: "Gdy twoja organizacja zostanie potwierdzona, zwykle w ciągu doby, wydarzenie bez planu sali trafia do sprzedaży w **10 minut**, jeśli masz już konto u operatora płatności. Konto podłączasz raz; każde kolejne wydarzenie wymaga tylko nazwy, dat i cen."
+        link: { label: "Twoje pierwsze wydarzenie, krok po kroku →", href: /first-event }
+      - icon: list-checks
+        title: To, o co proszą organizatorzy, już gotowe
+        text: "Nic do dokupienia ani do instalowania:"
+        bullets:
+          - Widget na twojej stronie lub strona sprzedaży, którą hostujemy
+          - Miejsca siedzące i stojące w jednym wydarzeniu
+          - Kody rabatowe, ceny zmieniające się z datą
+          - Zaproszenia, zwroty, przeniesione terminy z e-mailami do kupujących
+          - Aplikacja skanera na iOS i Androida
+          - Każda sprzedaż w twojej grupie na Telegramie w kilka sekund
+        link: { label: Funkcje w szczegółach →, href: "#answers" }
+      - icon: shield-check
+        title: Sprzedajemy bilety od {since} roku
+        text: "Organizatorzy w **{countries}** krajach od {since} roku: koncerty, teatry, festiwale, widowiska, warsztaty. **800** zamówień na minutę w testach obciążeniowych, nocne szyfrowane kopie zapasowe, watchdog, który pilnuje platformy przez całą dobę."
+        link: { label: Klienci i opinie →, href: /clients }
 
   - type: cta
     id: start
-    title: Zacznij sprzedaż już dziś
-    text: "Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Wydarzenie bez planu sali jest w sprzedaży w 10 minut; plan sali rysujemy dla ciebie za darmo."
-    primary: { label: Utwórz wydarzenie, href: /start#create }
-    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."
+    title: Twoje najlepsze wydarzenie wciąż przed tobą. Zaczniemy od biletów?
+    text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Plan sali narysujemy dla ciebie za darmo.
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Utwórz wydarzenie, href: /start#create }
+    tertiary: { label: Skontaktuj się z zespołem, href: /contact#write }

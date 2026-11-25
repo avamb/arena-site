@@ -1,8 +1,8 @@
 header:
-  - label: Come funziona
-    href: /#how
   - label: A chi è rivolto
     href: /solutions
+  - label: Come funziona
+    href: /#how
   - label: Prezzi
     href: /pricing
   - label: Event Center
@@ -49,7 +49,7 @@ footer:
       - { label: Documentazione, href: /developers }
       - { label: API pubblica, href: /developers#api }
       - { label: Widget, href: /developers#widget }
-      - { label: Plugin WordPress, href: /solutions/wordpress }
+      - { label: Integrazione con WordPress, href: /solutions/wordpress }
       - { label: Partner, href: /partners }
   - title: Azienda
     links:

@@ -3,16 +3,32 @@
 # four reasons block, 10 minutes to sale, the free seating plan with its formats, the first-event page.
 # Change texts here, not in components.
 # Inline marks: **bold**, [link text](href). Nothing else is interpreted.
-title: "ArenaSoldOut.com: sell seats, sell tickets, keep the money"
-description: "Ticketing platform for organizers. Put your event on sale in minutes, on your own site or on a page we host. Buyers pay into your own payment account."
+title: "Event ticketing platform for organizers: ArenaSoldOut.com"
+description: "Sell tickets to concerts, shows, festivals and master classes, with or without seats, on your site or ours. Money goes straight to you. No subscription."
 sections:
+
   - type: hero
     eyebrow: Ticketing platform for organizers
-    title: Sell seats. Sell tickets. Keep the money.
-    lead: Start selling in minutes, on your own site or on a page we host. Buyers pay into your own payment account. Every ticket and every payout stays under your control.
+    title: Every concert starts with a ticket.
+    rotate: [Every concert, Every festival, Every premiere, Every show, Every master class, Every children's party]
+    lead: "Tickets with reserved seats or without: for artists, bands, promoters, venues, festivals, theatres and master classes. Simple for your first event, professional for your hundredth."
+    widgetNote: "This is how buyers pick their seats. Events without reserved seats are simpler still: buyers choose a ticket category and a quantity."
     primary: { label: Start selling, href: /start }
     secondary: { label: Create your event, href: /start#create }
-    note: Connect your payment account, share the link. Events without a seating plan go on sale today.
+    benefits:
+      - icon: clock
+        title: On sale today
+        text: An event without reserved seats goes on sale in 10 minutes once your payment account is connected.
+      - icon: list-checks
+        title: Every feature organizers need
+        text: Seating plans, early bird prices, promo codes, invitations, sessions, door scanning, Telegram sales and much more.
+        link: { label: All features →, href: /features }
+      - icon: wallet
+        title: Your money, your control
+        text: Buyers pay into your own payment account with every order.
+      - icon: shield-check
+        title: Good value
+        text: "From **{price}** per ticket sold, not a percentage of your revenue. No subscription."
     widget:
       aria: Ticket widget preview
       event: Autumn Jazz Night
@@ -53,6 +69,7 @@ sections:
         primary: { label: Start selling, href: /start }
         bot: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
         close: Keep exploring
+
   - type: facts
     items:
       - Organizers in **31** countries since 2019
@@ -62,39 +79,22 @@ sections:
 
   # Doc 51 §1.1: the page rests on four reasons. Benefit is worded without competitors' numbers (owner, 02.11.2026);
   # {price}, {seated}, {countries} and {since} come from content/data (pricing, clients).
-  - type: reasons
-    id: why
-    eyebrow: Why ArenaSoldOut.com
-    title: Why do organizers sell tickets with us?
-    lead: "Four reasons, each with the facts behind it."
+
+  - type: paycountries
+    id: countries
+
+  - type: who
+    id: who
+    eyebrow: Who it is for
+    title: For the people audiences are waiting for
     items:
-      - icon: wallet
-        title: You keep more of every ticket
-        text: "A flat **{price}** per ticket, not a percentage of your revenue: a $15 ticket and a $150 ticket cost you the same. Buyers pay into your own payment account, so the money is yours the moment they pay, not after the event."
-        bullets:
-          - Nothing deducted from your sales, no reserve held back
-          - No commission on invitations and free tickets
-          - Your seating plan drawn by us for free
-        link: { label: Prices and the calculator →, href: /pricing }
-      - icon: clock
-        title: On sale in 10 minutes
-        text: "Once your organization is confirmed, usually within a day, an event without a seating plan goes on sale in **10 minutes**, if you already have an account with a payment provider. You connect that account once; every next event needs only its name, dates and prices."
-        link: { label: "Your first event, step by step →", href: /first-event }
-      - icon: list-checks
-        title: What organizers ask for, already built
-        text: "No modules to buy, no plugins to install:"
-        bullets:
-          - Widget on your site, or a sales page we host
-          - Seats and standing places in one event
-          - Promo codes, prices that change by date
-          - Invitations, refunds, moved dates with buyer e-mails
-          - Scanner app for iOS and Android
-          - Every sale in your Telegram group within seconds
-        link: { label: The answers in detail →, href: "#answers" }
-      - icon: shield-check
-        title: Selling tickets since {since}
-        text: "Organizers in **{countries}** countries since {since}: concerts, theatres, festivals, shows, master classes. **800** orders a minute in load tests, nightly encrypted backups, a watchdog that alerts the team before you notice."
-        link: { label: Clients and testimonials →, href: /clients }
+      - { icon: music, title: Concerts, text: "Standing and seated, several price categories, early bird, scanning at the door.", link: { label: For concerts →, href: /solutions/concerts } }
+      - { icon: drama, title: Theatre, text: "Seating plans that match the venue, repeat dates, invitations for press and partners.", link: { label: For theatres →, href: /solutions/theatre } }
+      - { icon: box, title: Shows, text: "Ice shows, circus, dance: many dates, many cities, and the plan of each venue can be reused.", link: { label: For shows →, href: /solutions/shows } }
+      - { icon: tent, title: Festivals, text: "Several days, many categories, categories that hand over unsold places to the next one.", link: { label: For festivals →, href: /solutions/festivals } }
+      - { icon: waypoints, title: Concert tours, text: "One show, many cities and dates, a page per promoter with its own link.", link: { label: For tours →, href: /solutions/concert-tours } }
+      - { icon: mic, title: Master classes and trainings, text: "Small groups, recurring dates, the host's own e-mails and language.", link: { label: For hosts →, href: /solutions/master-classes } }
+      - { icon: building, title: Venues and clubs, text: "Your own venue, many events a month, one or several seating plans for all of them, separate terms.", link: { label: For venues →, href: /solutions/venues } }
 
   - type: steps
     id: how
@@ -112,43 +112,55 @@ sections:
   - type: ways
     id: where
     eyebrow: Where you sell
-    title: Your site, or ours. The money goes to you either way.
+    title: On your website, on our page, on partner sites and on social media. The money comes to you either way.
     items:
-      - title: You have a site
+      - title: Your website
         text: "Your site is the checkout. Embed the ticket widget on any page: WordPress, Tilda, Wix, Webflow or custom code. Buyers never leave your domain."
         bullets:
           - Widget on any site, three lines of code
-          - WordPress plugin with WooCommerce orders
+          - WordPress integration
           - Your colours, your fonts, your language
-      - title: You do not have a site
-        text: "We host the sales page: tickets.arenasoldout.com/your-name/your-event. Share one link in social media, messengers and on the poster."
+      - title: Our sales page
+        text: "We host the sales page: tickets.arenasoldout.com/your-name/your-event. One link for the poster, the newsletter and messengers."
         bullets:
           - A page per organizer and per event
-          - A separate page for each promoter
           - Ready in minutes, no design work
           - Links to your partner sellers on the same page
+      - title: Partner sites
+        text: "The same widget goes on the site of a venue, a promoter or an agency. Every promoter gets a sales page and a link of their own."
+        bullets:
+          - Widget on a partner's site
+          - A separate page and link for each promoter
+          - All partner sales in one Event Center
+      - title: Social media and messengers
+        text: "A sales link on Instagram, Facebook, Telegram and WhatsApp, on the poster and in the newsletter. A QR code with a short link at the door: people scan it and buy a ticket on the spot."
+        bullets:
+          - One link for every channel
+          - A QR code on the poster and at the door
+          - Sales sources by UTM tags
 
   - type: qa
     id: answers
-    eyebrow: What organizers ask next
-    title: Yes. And here is how.
+    eyebrow: Features
+    title: Everything an organizer needs, on one platform
+    more: { label: All features →, href: /features }
     items:
-      - title: Can I use promo codes?
-        text: Yes. A code can apply to one event, one session or one category, with a window, a minimum and a per-buyer limit.
-      - title: Can prices change on a date I set?
-        text: Yes. Early-bird windows switch by date and time. Quantity steps open the next price when the current one sells out.
+      - title: Promo codes
+        text: A code can apply to one event, one session or one category, with a window, a minimum and a per-buyer limit.
+      - title: Prices that change by themselves
+        text: Early-bird windows switch by date and time. Quantity steps open the next price when the current one sells out.
         visual:
           type: ladder
           rungs:
             - { price: US$24, width: 100, label: first 100 · sold }
             - { price: US$119, width: 62, label: next 150 · selling }
             - { price: US$599, width: 0, label: opens after, next: true }
-      - title: Several prices for one event?
-        text: Yes. Categories with their own price, quota and sale window, plus free and pay-what-you-want tickets.
-      - title: Can I add a service fee?
-        text: Yes. A percentage per sales channel, shown to the buyer as a separate line and paid into your account with the ticket. Check that your country allows a service fee on ticket sales.
-      - title: With seats and without?
-        text: "Yes, and both in one event: a seating plan with categories, standing areas with quotas. Send us your venue plan and we draw it in the system for free, usually within a day: a PDF, a photo of a hand sketch or a table of rows with the seats in each row (Excel or Google Sheets) is enough. You never enter it by hand."
+      - title: Categories and free tickets
+        text: Categories with their own price, quota and sale window, plus free and pay-what-you-want tickets.
+      - title: Your own service fee
+        text: A percentage per sales channel, shown to the buyer as a separate line and paid into your account with the ticket, all of it yours. Check that your country allows a service fee on ticket sales.
+      - title: Seats and standing
+        text: "A seating plan with categories and standing areas with quotas, in one event. Send us your venue plan and we draw it in the system for free, usually within a day: a PDF, a photo of a hand sketch or a table of rows with the seats in each row (Excel or Google Sheets) is enough. You never enter it by hand."
         visual:
           type: plan
           aria: Venue plan with parterre, two loges, a balcony and a standing area
@@ -158,16 +170,16 @@ sections:
           logeRight: Loge R · 48
           balcony: Balcony · 180
           standing: Standing
-      - title: Does a scanner work with the tickets?
-        text: Yes. Every ticket is a PDF with an EAN-13 barcode and a QR, in the buyer's language. Scan at the door with the scanner app for iOS and Android or a handheld scanner. The app also takes tickets sold by your partners in other systems.
+      - title: Tickets and entry
+        text: Every ticket is a PDF with an EAN-13 barcode and a QR, in the buyer's language. Scan at the door with the scanner app for iOS and Android or a handheld scanner. The app also takes tickets sold by your partners in other systems.
         visual:
           type: ticket
           event: Autumn Jazz Night
           meta: Fri 24 Oct · 19:30 · Palác Akropolis
           seat: Parterre · Row G · Seat 7
           code: "2173049188256"
-      - title: How do I see my sales?
-        text: "In your “Event Center”, your own account on this site: open it on a phone or a computer, nothing to install. All your events, every order, refunds and per-session totals, visible to you and your team only. Prefer Telegram? Every sale and refund also lands in your Telegram group within seconds, with the buyer's contact. [See the Event Center below →](#center)"
+      - title: Sales in real time
+        text: "In your “Event Center”, your own account on this site: open it on a phone or a computer, nothing to install. All your events, every order, refunds and per-session totals, visible to you and your team only. UTM tags show where buyers come from. Prefer Telegram? Every sale and refund also lands in your Telegram group within seconds, with the buyer's contact. [See the Event Center below →](#center)"
         visual:
           type: telegram
           from: ArenaSoldOut.com
@@ -176,10 +188,14 @@ sections:
             - Row G 7–8 · Parterre
             - "**€76.00** · Anna K. · +420 ••• 41 18"
           time: "19:42"
-      - title: Refunds, invitations, date changes?
-        text: "Yes, from your “Event Center” account. Refund a ticket, issue invitations, move or cancel a session: buyers get an e-mail in their language with the updated ticket."
-      - title: Will it hold a stadium?
-        text: Yes. 800 orders a minute with 1,000 buyers on the page at once in load tests, nightly encrypted backups, a watchdog that alerts us before you notice.
+      - title: Refunds, invitations, date changes
+        text: "All from your “Event Center” account: refund a ticket, issue invitations, move or cancel a session. If an event is cancelled or moved, you decide what happens to the money: refund everyone or offer a new date. Buyers get an e-mail in their language with the updated ticket."
+      - title: Reliability
+        text: 800 orders a minute with 1,000 buyers on the page at once in load tests, nightly encrypted backups, a watchdog that keeps an eye on the platform around the clock.
+      - title: A QR code at the door
+        text: Print a QR code with a short purchase link and put it up at the entrance. People scan it and buy a ticket on the spot, even if they came without one.
+      - title: API on request
+        text: The API, webhooks and importing events in one call are set up on request, when your sales need to connect to your own system.
 
   - type: center
     id: center
@@ -251,6 +267,18 @@ sections:
       - { label: Your payment account, providers: true, highlight: true }
       - { label: Your bank, sub: on the provider's schedule }
     note: You pay ArenaSoldOut.com the platform commission per ticket sold. Nothing is deducted from your sales, nothing is held.
+    calc:
+      title: How much stays with you
+      currency: Currency
+      tickets: Tickets
+      price: Ticket price
+      fee: Your service fee per ticket
+      seated: Reserved seats
+      revenue: Ticket revenue
+      feeLine: Your service fee, all yours
+      commission: ArenaSoldOut.com commission
+      total: Stays with you
+      note: Card processing fees are paid to your payment provider at its own rates and are not part of this sum.
 
   - type: pricing
     id: pricing
@@ -298,19 +326,6 @@ sections:
     note: "You pay after the event, or buy credits upfront and pay less per ticket. Credit packs, the calculator and the detailed terms are on the pricing page: [credits and their rates →](/pricing#packages)"
     terms: { label: All prices and the calculator →, href: /pricing }
 
-  - type: who
-    id: who
-    eyebrow: Who it is for
-    title: Organizers who sell their own tickets
-    items:
-      - { icon: music, title: Concerts, text: "Standing and seated, several price categories, early bird, scanning at the door.", link: { label: For concerts →, href: /solutions/concerts } }
-      - { icon: drama, title: Theatre, text: "Seating plans that match the venue, repeat dates, invitations for press and partners.", link: { label: For theatres →, href: /solutions/theatre } }
-      - { icon: box, title: Shows, text: "Ice shows, circus, dance: many dates, many cities, one plan per venue reused.", link: { label: For shows →, href: /solutions/shows } }
-      - { icon: tent, title: Festivals, text: "Several days, many categories, categories that hand over unsold places to the next one.", link: { label: For festivals →, href: /solutions/festivals } }
-      - { icon: waypoints, title: Concert tours, text: "One show, many cities and dates, a page per promoter with its own link.", link: { label: For tours →, href: /solutions/concert-tours } }
-      - { icon: mic, title: Master classes and trainings, text: "Small groups, recurring dates, the host's own e-mails and language.", link: { label: For hosts →, href: /solutions/master-classes } }
-      - { icon: building, title: Venues and clubs, text: "Your own venue, many events a month, one seating plan reused, separate terms.", link: { label: For venues →, href: /solutions/venues } }
-
   - type: clients
     id: clients
     eyebrow: Clients
@@ -319,19 +334,74 @@ sections:
     cta: { label: Clients and testimonials, href: /clients }
     marksAria: Clients
 
-  - type: changes
-    id: changes
-    eyebrow: Latest changes
-    title: The platform grows every week
-    lead: "A line for every feature that reached organizers. Tell us what you need next: most requests from organizers ship within weeks, and the team answers in person."
-    cta: { label: Tell us what you need, href: /start }
-    more: { label: Full list →, href: /changes }
-    limit: 10
+  - type: faq
+    id: faq
+    eyebrow: Questions
+    title: What organizers ask
+    items:
+      - q: How much does it cost to start?
+        a: "Nothing. There is no subscription and no extra monthly or yearly payment. You pay a commission per ticket sold, from {usdPrice}. Invitations and free tickets carry no commission. [Prices and the calculator →](/pricing)"
+      - q: Are there any extra payments, monthly or yearly?
+        a: No. No monthly or yearly payments, no subscription. You only pay a commission per ticket sold.
+      - q: I sell tickets over WhatsApp and buyers call me. Why do I need a ticketing platform?
+        a: "So you no longer take every order by hand. Buyers pick their seats and pay at any hour, even at night; the money goes straight to your account and the ticket with a QR code goes to the buyer's inbox. You can keep sharing the sales link on WhatsApp: your time goes into the event, not into messages and lists."
+      - q: Who pays the service fee, me or the buyer?
+        a: You decide. You can add your own service fee to the ticket price, and all of it comes to you with the payment. Our commission per ticket stays the same.
+      - q: When do I get the money?
+        a: With every order. The buyer pays straight into your payment account; ArenaSoldOut.com never holds the money. Payouts to your bank follow your provider's schedule.
+      - q: Can I embed ticket sales on my own website?
+        a: "Yes. The ticket widget goes on any page with three lines of code: WordPress, Tilda, Wix, Webflow or custom code. Buyers pick their seats and tickets right on your site. [For developers →](/developers)"
+      - q: How does access control work on the day of the event?
+        a: "Every ticket is a PDF with a QR code and an EAN-13 barcode. At the door, the MACS app for iOS and Android scans the tickets on an ordinary phone; a handheld scanner works too. The app also takes tickets sold by your partners in other systems. [MACS scanner app →](/product/scanner)"
+      - q: Can people buy tickets right at the entrance?
+        a: Yes. Print a QR code with a short purchase link and put it up at the entrance. People scan it with their phone and buy a ticket on the spot.
+      - q: What happens if the event is cancelled or moved?
+        a: You decide. Refund every buyer, offer a new date instead of a refund, or choose another option. Buyers get an e-mail in their language with the updated ticket.
+      - q: Can I see where buyers come from?
+        a: Yes. Add UTM tags to your sales links and the Event Center shows which channel brought the orders.
+      - q: I have never sold tickets before. Is this for me?
+        a: "Yes. We walk you through it step by step: [your first event →](/first-event). We draw your seating plan for free and, if you prefer, set everything up with you on a call."
+      - q: How do I reach the ArenaSoldOut.com team if I have a question?
+        a: "Write to us on Telegram, through the [form on the site](/contact#write) or at hello@arenasoldout.com. People from the team answer."
+
+  - type: reasons
+    id: why
+    eyebrow: Why ArenaSoldOut.com
+    title: Why do organizers sell tickets with us?
+    lead: "Four reasons, each with the facts behind it."
+    items:
+      - icon: wallet
+        title: You keep more of every ticket
+        text: "A flat **{price}** per ticket, not a percentage of your revenue: a $15 ticket and a $150 ticket cost you the same. Buyers pay into your own payment account, so the money is yours the moment they pay, not after the event."
+        bullets:
+          - Nothing deducted from your sales, no reserve held back
+          - No commission on invitations and free tickets
+          - Your seating plan drawn by us for free
+        link: { label: Prices and the calculator →, href: /pricing }
+      - icon: clock
+        title: On sale in 10 minutes
+        text: "Once your organization is confirmed, usually within a day, an event without a seating plan goes on sale in **10 minutes**, if you already have an account with a payment provider. You connect that account once; every next event needs only its name, dates and prices."
+        link: { label: "Your first event, step by step →", href: /first-event }
+      - icon: list-checks
+        title: What organizers ask for, already built
+        text: "No modules to buy, nothing to install:"
+        bullets:
+          - Widget on your site, or a sales page we host
+          - Seats and standing places in one event
+          - Promo codes, prices that change by date
+          - Invitations, refunds, moved dates with buyer e-mails
+          - Scanner app for iOS and Android
+          - Every sale in your Telegram group within seconds
+        link: { label: The features in detail →, href: "#answers" }
+      - icon: shield-check
+        title: Selling tickets since {since}
+        text: "Organizers in **{countries}** countries since {since}: concerts, theatres, festivals, shows, master classes. **800** orders a minute in load tests, nightly encrypted backups, a watchdog that keeps an eye on the platform around the clock."
+        link: { label: Clients and testimonials →, href: /clients }
 
   - type: cta
     id: start
-    title: Start selling today
-    text: "Create the event, connect your payment account, share the link. An event without a seating plan is on sale in 10 minutes; a seating plan we draw for you, free of charge."
-    primary: { label: Create your event, href: /start#create }
-    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Or write to us: we set everything up with you on a call."
+    title: Your best event is yet to come. Shall we start with the tickets?
+    text: Create the event, connect your payment account, share the link. We draw your seating plan for free.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: Create your event, href: /start#create }
+    tertiary: { label: Contact the team, href: /contact#write }

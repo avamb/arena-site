@@ -1,21 +1,29 @@
 title: "Venda de ingressos para espetáculos: gelo, circo, dança"
-description: "Venda ingressos de espetáculos em turnê: um mapa por local, muitas datas, uma página por promotor, todas as cidades no Event Center, dinheiro na sua conta."
+description: "Venda ingressos de espetáculos em turnê: um mapa por local, muitas datas, uma página por produtor, todas as cidades no Event Center, dinheiro na sua conta."
 h1: Espetáculos
-lead: Espetáculos no gelo, circo, dança e shows para a família têm muitas datas em muitos locais. Um evento, um mapa por local, uma página por promotor e as vendas de cada cidade em um só lugar.
+tagline: Um espetáculo começa muito antes de alguém subir ao palco.
+lead: Espetáculos no gelo, circo, dança e atrações infantis têm muitas datas em muitos locais. Um evento, um mapa por local, uma página por produtor e as vendas de cada cidade em um só lugar.
 related:
   - { label: Turnês de shows, href: /solutions/concert-tours }
   - { label: Mapas de assentos, href: /product/seating }
   - { label: Clientes, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para espetáculos
     title: O que importa em um espetáculo?
     items:
-      - { title: Um mapa por local, text: "O mapa de cada local é feito uma vez e reutilizado na visita seguinte; as versões guardam o histórico.", link: { label: Mapas de assentos →, href: /product/seating } }
+      - { title: Um mapa por local, text: "Envie um PDF, uma planilha ou um croqui à mão e a equipe desenha o mapa de cada local de graça. Ele é reaproveitado na visita seguinte; as versões guardam o histórico.", link: { label: Mapas de assentos →, href: /product/seating } }
       - { title: Muitas datas, text: "Sessões por cidade e dia em um só evento; o público escolhe a data no widget e você vê os totais por sessão.", link: { label: Event Center →, href: /#center } }
-      - { title: Promotores locais, text: "Uma página por promotor com link e códigos próprios; todos os canais reportam a um só Event Center.", link: { label: Onde você vende →, href: /product/sell } }
-      - { title: Ingressos família, text: "Categorias para crianças e grupos, faixas de quantidade, ingressos gratuitos para adultos acompanhantes.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Produtores locais, text: "Uma página por produtor com link e cupons próprios; as vendas de todos os canais se reúnem em um só Event Center.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Crianças e grupos, text: "Categorias separadas para crianças e grupos, ingressos gratuitos para adultos acompanhantes.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: De onde vêm os compradores, text: "Adicione parâmetros UTM aos seus links e veja qual post, newsletter ou parceiro traz as vendas em cada cidade.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Vendas no Telegram, text: "Cada venda e cada reembolso, de todas as cidades, aparecem no seu grupo do Telegram em segundos, com o contato do comprador.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: A portaria, text: "O aplicativo leitor MACS para iOS e Android confere os seus ingressos e os dos parceiros vindos de outros sistemas na mesma entrada.", link: { label: Aplicativo leitor MACS →, href: /product/scanner } }
+      - { title: "Mudança de data? Você decide", text: "Reembolse todos, ofereça uma nova data ou escolha outra solução. Os compradores recebem um e-mail com o ingresso atualizado.", link: { label: Ingressos →, href: /product/tickets } }
+      - { title: Dinheiro na sua conta, text: "Os compradores pagam por um provedor do seu país direto na sua própria conta; o ArenaSoldOut.com nunca retém o dinheiro.", link: { label: Pagamentos →, href: /payments } }
   - type: faq
     id: questions
     eyebrow: Perguntas
@@ -31,8 +39,8 @@ sections:
         a: "Para a sua própria conta de pagamentos, na sua moeda, junto com cada pedido. Veja os [pagamentos](/payments)."
   - type: cta
     id: start
-    title: Comece a vender hoje
+    title: Seu melhor evento ainda está por vir. Vamos começar pelos ingressos?
     text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
-    primary: { label: Criar seu evento, href: /start#create }
-    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Criar seu evento, href: /start#create }
+    tertiary: { label: Fale com a equipe, href: /contact#write }

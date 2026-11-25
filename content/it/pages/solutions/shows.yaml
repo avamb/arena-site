@@ -1,21 +1,29 @@
 title: "Biglietti per spettacoli: ice show, circo, danza, più città"
 description: "Vendi biglietti per spettacoli in tournée: una mappa per struttura riutilizzata, molte date, una pagina per promoter, tutte le città in un Event Center."
 h1: Spettacoli
-lead: Ice show, circo, danza e spettacoli per famiglie girano con molte date in molte strutture. Un evento, una mappa per struttura, una pagina per promoter e le vendite di ogni città in un unico posto.
+tagline: Uno show inizia molto prima che si accendano le luci.
+lead: Ice show, circo, danza e spettacoli per bambini girano con molte date in molte strutture. Un evento, una mappa per struttura, una pagina per promoter e le vendite di ogni città in un unico posto.
 related:
   - { label: Tour di concerti, href: /solutions/concert-tours }
   - { label: Mappe dei posti, href: /product/seating }
   - { label: Clienti, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Per gli spettacoli
     title: Cosa conta per uno spettacolo?
     items:
-      - { title: Una mappa per struttura, text: "La mappa di ogni struttura si costruisce una volta e si riutilizza alla visita successiva; le versioni conservano lo storico.", link: { label: Mappe dei posti →, href: /product/seating } }
+      - { title: Una mappa per struttura, text: "Mandaci un PDF, un foglio di calcolo o uno schizzo a mano e il team disegna gratis la mappa di ogni struttura. Alla visita successiva si riutilizza; le versioni conservano lo storico.", link: { label: Mappe dei posti →, href: /product/seating } }
       - { title: Molte date, text: "Sessioni per città e giorno in un solo evento; chi compra sceglie la data nel widget, tu vedi i totali per sessione.", link: { label: Event Center →, href: /#center } }
-      - { title: Promoter locali, text: "Una pagina per promoter con link e codici propri; ogni canale riporta nello stesso Event Center.", link: { label: Dove vendi →, href: /product/sell } }
-      - { title: Biglietti famiglia, text: "Categorie per bambini e gruppi, scaglioni di quantità, biglietti gratuiti per gli adulti accompagnatori.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Promoter locali, text: "Una pagina per promoter con link e codici propri; le vendite di ogni canale si riuniscono in un unico Event Center.", link: { label: Dove vendi →, href: /product/sell } }
+      - { title: Bambini e gruppi, text: "Categorie separate per bambini e gruppi, biglietti gratuiti per gli adulti accompagnatori.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Da dove arrivano gli acquirenti, text: "Aggiungi i tag UTM ai tuoi link e vedi quale post, newsletter o partner porta le vendite in ogni città.", link: { label: Dove vendi →, href: /product/sell } }
+      - { title: Vendite su Telegram, text: "Ogni vendita e ogni rimborso da ogni città compare nel tuo gruppo Telegram in pochi secondi, con il contatto dell'acquirente.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: L'ingresso, text: "L'app scanner MACS per iOS e Android controlla allo stesso ingresso i tuoi biglietti e quelli dei partner emessi da altri sistemi.", link: { label: App scanner MACS →, href: /product/scanner } }
+      - { title: "Una data si sposta? Decidi tu", text: "Rimborsa tutti, proponi una nuova data al posto del rimborso o scegli un'altra soluzione. Gli acquirenti ricevono un'e-mail con il biglietto aggiornato.", link: { label: Biglietti →, href: /product/tickets } }
+      - { title: Incassi sul tuo conto, text: "Chi compra paga tramite un provider del tuo paese direttamente sul tuo conto; ArenaSoldOut.com non detiene mai il denaro.", link: { label: Pagamenti →, href: /payments } }
   - type: faq
     id: questions
     eyebrow: Domande
@@ -23,7 +31,7 @@ sections:
     items:
       - q: Un solo evento può coprire un intero tour?
         a: Sì. Le sessioni portano la città, la struttura e la mappa; totali e report CSV arrivano per sessione e per l'intero evento.
-      - q: Come gestiamo una struttura in cui non abbiamo mai suonato?
+      - q: Come gestiamo una struttura in cui non siamo mai stati?
         a: Mandaci la sua mappa in qualsiasi forma leggibile e il team la costruisce. La visita successiva la riutilizza.
       - q: I nostri biglietti li vendono anche partner locali. L'ingresso reggerà?
         a: Sì. L'app scanner accetta i biglietti dei partner emessi da altri sistemi insieme ai biglietti di ArenaSoldOut.com.
@@ -31,8 +39,8 @@ sections:
         a: "Sul tuo conto di pagamento, nella tua valuta, a ogni ordine. Vedi i [pagamenti](/payments)."
   - type: cta
     id: start
-    title: Inizia a vendere oggi
+    title: Il tuo evento migliore deve ancora arrivare. Cominciamo dai biglietti?
     text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
-    primary: { label: Crea il tuo evento, href: /start#create }
-    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Crea il tuo evento, href: /start#create }
+    tertiary: { label: Contatta il team, href: /contact#write }

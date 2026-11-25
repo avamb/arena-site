@@ -1,0 +1,53 @@
+---
+/**
+ * Home and audience pages: every country an organizer can sell in (from provider and market data, never a
+ * hand list), then the payment methods of the country the visitor picks. Owner, 25.11.2026: a visitor looks
+ * for their own country first, then its payment methods. Without JS the list and the summary of all methods stay.
+ */
+import type { Section } from '@/content.config';
+import type { CollectionEntry } from 'astro:content';
+import type { LanguageCode } from '@config';
+import { countryRows } from '@/lib/data';
+import { localePath, t } from '@/lib/i18n';
+interface Props { s: Extract<Section, { type: 'paycountries' }>; lang: LanguageCode; providers: CollectionEntry<'providers'>[]; markets: CollectionEntry<'markets'>[] }
+const { s, lang, providers, markets } = Astro.props;
+/* "installments" is not shown anywhere on the site (owner, 25.11.2026). */
+const hidden = new Set(['installments']);
+const label = (m: string) => t(lang, `paycountries.method.${m}`);
+const rows = countryRows(markets, providers, lang).map((r) => {
+  const methods = (r.methods as string[]).filter((m) => !hidden.has(m));
+  const via = r.providers.map((p) => t(lang, `paycountries.via.${p.toLowerCase()}`)).join(' ');
+  return { ...r, methods: methods.map(label), via };
+});
+const allMethods = [...new Set(rows.flatMap((r) => r.methods))];
+---
+<section class="section paycountries" id={s.id ?? 'countries'}>
+  <div class="wrap">
+    <p class="eyebrow">{s.eyebrow ?? t(lang, 'paycountries.eyebrow')}</p>
+    <h2 class="h2">{s.title ?? t(lang, 'paycountries.title')}</h2>
+    <p class="lead">{s.lead ?? t(lang, 'paycountries.lead')}</p>
+    <ul class="pcn-list">
+      {rows.map((r) => (
+        <li><button type="button" class="pcn" aria-pressed="false" data-name={r.name} data-methods={JSON.stringify(r.methods)} data-via={r.via}>{r.name}</button></li>
+      ))}
+    </ul>
+    <div class="card pcn-out" aria-live="polite">
+      <p class="pcn-head"><span class="pcn-label">{t(lang, 'paycountries.methods')}</span> <b class="pcn-name">{t(lang, 'paycountries.all')}</b></p>
+      <p class="pcn-methods">{allMethods.map((m) => <span class="pcn-m">{m}</span>)}</p>
+      <p class="pcn-via">{t(lang, 'paycountries.pick')}</p>
+    </div>
+    <p class="pcn-missing"><a href={localePath(lang, '/contact#write')}>{t(lang, 'paycountries.missing')}</a></p>
+  </div>
+</section>
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>('.paycountries')) {
+    const name = root.querySelector('.pcn-name')!, methods = root.querySelector('.pcn-methods')!, via = root.querySelector('.pcn-via')!;
+    const buttons = [...root.querySelectorAll<HTMLButtonElement>('.pcn')];
+    for (const b of buttons) b.addEventListener('click', () => {
+      for (const x of buttons) x.setAttribute('aria-pressed', String(x === b));
+      name.textContent = b.dataset.name ?? '';
+      methods.replaceChildren(...JSON.parse(b.dataset.methods || '[]').map((m: string) => Object.assign(document.createElement('span'), { className: 'pcn-m', textContent: m })));
+      via.textContent = b.dataset.via ?? '';
+    });
+  }
+</script>

@@ -1,21 +1,29 @@
 title: "Show ticketing: ice shows, circus, dance, many cities"
 description: "Sell tickets for touring shows: one plan per venue reused, many dates, a page per promoter, all cities in one Event Center, money in your own account."
 h1: Shows
-lead: Ice shows, circus, dance and family shows run many dates in many venues. One event, a plan per venue, a page per promoter, and every city's sales in one place.
+tagline: A show starts long before anyone steps on stage.
+lead: Ice shows, circus, dance and children's shows run many dates in many venues. One event, a plan per venue, a page per promoter, and every city's sales in one place.
 related:
   - { label: Concert tours, href: /solutions/concert-tours }
   - { label: Seating plans, href: /product/seating }
   - { label: Clients, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: For shows
     title: What matters for a show?
     items:
-      - { title: A plan per venue, text: "Each venue's plan is built once and reused on the next visit; versions keep history.", link: { label: Seating plans →, href: /product/seating } }
+      - { title: A plan per venue, text: "Send a PDF, a spreadsheet or a hand sketch and the team draws each venue's plan for free. It is reused on the next visit; versions keep history.", link: { label: Seating plans →, href: /product/seating } }
       - { title: Many dates, text: "Sessions by city and day in one event; buyers pick the date in the widget, you see totals per session.", link: { label: Event Center →, href: /#center } }
-      - { title: Local promoters, text: "A page per promoter with its own link and codes; every channel reports into one Event Center.", link: { label: Where you sell →, href: /product/sell } }
-      - { title: Family tickets, text: "Categories for children and groups, quantity steps, free tickets for accompanying adults.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: Local promoters, text: "A page per promoter with its own link and codes; sales from every channel come together in one Event Center.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: Children and groups, text: "Separate categories for children and groups, free tickets for accompanying adults.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: Where buyers come from, text: "Add UTM tags to your links and see which post, newsletter or partner brings the sales in each city.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: Sales in Telegram, text: "Every sale and refund from every city appears in your Telegram group within seconds, with the buyer's contact.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: The door, text: "The MACS scanner app for iOS and Android checks your tickets and partners' tickets from other systems at the same entrance.", link: { label: MACS scanner app →, href: /product/scanner } }
+      - { title: "A date moves? You decide", text: "Refund everyone, offer a new date instead, or choose another solution. Buyers get an e-mail with the updated ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Money in your account, text: "Buyers pay through a provider in your country straight into your own account; ArenaSoldOut.com never holds the money.", link: { label: Payments →, href: /payments } }
   - type: faq
     id: questions
     eyebrow: Questions
@@ -31,8 +39,8 @@ sections:
         a: "Into your own payment account, in your currency, with every order. See [payments](/payments)."
   - type: cta
     id: start
-    title: Start selling today
+    title: Your best event is yet to come. Shall we start with the tickets?
     text: Create the event, connect your payment account, share the link.
-    primary: { label: Create your event, href: /start#create }
-    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Or write to us: we set everything up with you on a call."
+    primary: { label: Start selling, href: /start }
+    secondary: { label: Create your event, href: /start#create }
+    tertiary: { label: Contact the team, href: /contact#write }

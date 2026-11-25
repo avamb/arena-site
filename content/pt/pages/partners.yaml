@@ -1,7 +1,7 @@
-title: "Parceiros: locais, promotores, agências e desenvolvedores"
-description: "Como locais, promotores, agências WordPress e desenvolvedores usam o ArenaSoldOut.com: páginas de promotor, plugin, widget, API e condições para locais."
+title: "Parceiros: locais, produtores, agências e desenvolvedores"
+description: "Como locais, produtores, agências WordPress e desenvolvedores usam o ArenaSoldOut.com: páginas de produtor, plugin, widget, API e condições para locais."
 h1: Parceiros
-lead: Locais que recebem eventos, promotores que os vendem, agências que constroem os sites dos organizadores, desenvolvedores que integram. Cada um tem um lugar na plataforma e uma pessoa da equipe para conversar.
+lead: Locais que recebem eventos, produtores que os vendem, agências que constroem os sites dos organizadores, desenvolvedores que integram. Cada um tem um lugar na plataforma e uma pessoa da equipe para conversar.
 related:
   - { label: Para desenvolvedores, href: /developers }
   - { label: Locais e casas de show, href: /solutions/venues }
@@ -13,7 +13,7 @@ sections:
     title: Como os parceiros trabalham com o ArenaSoldOut.com?
     items:
       - { title: Locais, text: "Um local permanente traz o seu mapa uma vez e o oferece a cada organizador que o aluga; condições separadas com uma porcentagem do preço do ingresso.", link: { label: Locais e casas de show →, href: /solutions/venues } }
-      - { title: Promotores, text: "Uma página por promotor com link e códigos próprios; o organizador vê todos os canais, o promotor vê o seu.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Produtores, text: "Uma página por produtor com link e cupons próprios; o organizador vê todos os canais, o produtor vê o seu.", link: { label: Onde você vende →, href: /product/sell } }
       - { title: Agências WordPress, text: "O plugin envia os pedidos ao WooCommerce; o widget se encaixa em qualquer tema. A equipe apoia a agência durante o lançamento.", link: { label: WordPress →, href: /solutions/wordpress } }
       - { title: Desenvolvedores, text: "API pública, pacote de evento em uma chamada, webhooks assinados, chaves com escopo, eventos do widget; importações do ArenaSoldOut.com e de outros.", link: { label: Desenvolvedores →, href: /developers } }
   - type: faq

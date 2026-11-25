@@ -1,6 +1,7 @@
 title: "Venta de entradas para giras: varias ciudades"
 description: "Vende una gira desde un solo evento: sesiones por ciudad, plano por recinto, páginas por promotor con enlaces y códigos propios, escaneo en cada ciudad."
 h1: Giras de conciertos
+tagline: Una gira empieza mucho antes de la primera ciudad.
 lead: Un espectáculo, muchas ciudades y fechas. Cada ciudad tiene su sesión y su plano, cada promotor tiene una página con su propio enlace, y ves toda la gira en un solo Event Center.
 related:
   - { label: Espectáculos, href: /solutions/shows }
@@ -8,15 +9,22 @@ related:
   - { label: Pagos por país, href: /payments }
   - { label: "Países y métodos de pago", href: /countries }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para giras de conciertos
     title: "¿Qué importa en una gira?"
     items:
       - { title: Sesiones por ciudad, text: "Fechas y recintos en un solo evento; los compradores eligen la ciudad y tú ves los totales por sesión y de toda la gira.", link: { label: Event Center →, href: /#center } }
+      - { title: Un plano para cada recinto, text: "Envía un PDF, una hoja de cálculo o un boceto a mano y el equipo dibuja gratis el plano de cada recinto; en la siguiente visita ya está listo.", link: { label: Planos de asientos →, href: /product/seating } }
       - { title: Páginas para promotores, text: "Una página aparte para cada promotor local, con su propio enlace y códigos promocionales; las ventas se suman en tu cuenta.", link: { label: Dónde vendes →, href: /product/sell } }
+      - { title: De dónde vienen los compradores, text: "Añade etiquetas UTM a tus enlaces y comprueba qué publicación, boletín o socio vende entradas en cada ciudad.", link: { label: Dónde vendes →, href: /product/sell } }
       - { title: Varios países, text: "Vende en Chequia, España, Francia, Georgia o Israel con el proveedor de cada país, directo a tu propia cuenta.", link: { label: Pagos →, href: /payments } }
       - { title: Idiomas de los compradores, text: "Páginas y entradas en el idioma del comprador, correos en siete idiomas, escritura de derecha a izquierda para hebreo.", link: { label: Entradas →, href: /product/tickets } }
+      - { title: Toda la gira en Telegram, text: "Cada venta y cada reembolso de cada ciudad aparecen en tu grupo de Telegram en segundos, con el contacto del comprador.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: "¿Cambia una fecha? Tú decides", text: "Reembolsa a todos, ofrece una nueva fecha o elige otra solución. Los compradores reciben un correo con la entrada actualizada.", link: { label: Entradas →, href: /product/tickets } }
+      - { title: La puerta en cada ciudad, text: "La app de escaneo MACS para iOS y Android en cada recinto; también se aceptan entradas de socios locales de otros sistemas.", link: { label: App de escaneo MACS →, href: /product/scanner } }
   - type: faq
     id: questions
     eyebrow: Preguntas
@@ -27,13 +35,13 @@ sections:
       - q: "¿Los promotores ven las ventas de los demás?"
         a: No. Cada promotor ve solo su propia página; el organizador lo ve todo.
       - q: "Una ciudad cambia de recinto. ¿Qué pasa con las entradas vendidas?"
-        a: La sesión se traslada con los correos de los compradores y las entradas actualizadas; los asientos se reasignan contigo en el nuevo plano.
+        a: La sesión se traslada y los compradores reciben un correo con la entrada actualizada; los asientos se reasignan contigo en el nuevo plano.
       - q: "¿Cuánto me cuesta una entrada en una gira?"
         a: "El mismo importe por entrada en todas las ciudades; consulta los [precios](/pricing)."
   - type: cta
     id: start
-    title: Empieza a vender hoy
+    title: Tu mejor evento está por llegar. ¿Empezamos por las entradas?
     text: Crea el evento, conecta tu cuenta de pagos y comparte el enlace.
-    primary: { label: Crea tu evento, href: /start#create }
-    secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
-    note: "O escríbenos: lo configuramos todo contigo en una llamada."
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Crear tu evento, href: /start#create }
+    tertiary: { label: Contactar con el equipo, href: /contact#write }

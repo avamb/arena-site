@@ -1,37 +1,45 @@
-title: "Ticketverkauf mit WordPress: Plugin für WooCommerce"
-description: "Das Plugin von ArenaSoldOut.com legt Bestellungen in WooCommerce an, mit Saalplan, Tickets und Scan. Oder betten Sie das Widget auf jeder Seite ein."
+title: "WordPress-Ticketing: Tickets auf Ihrer eigenen Website"
+description: "WordPress-Integration: das Ticket-Widget von ArenaSoldOut.com auf jeder Seite oder in jedem Block, mit Saalplan, Tickets und Scan. Das Geld geht an Sie."
 h1: Ihr WordPress, Ihr Checkout
-lead: Behalten Sie Ihre Website und Ihren Shop. Das Plugin legt für jedes Ticket WooCommerce-Bestellungen an; Saalplan, E-Ticket und Scan kommen von ArenaSoldOut.com. Oder betten Sie das Widget mit zwei Zeilen auf jeder Seite ein.
+lead: Behalten Sie Ihre Website. Das Ticket-Widget kommt mit drei Zeilen Code auf jede WordPress-Seite oder in jeden Block; Saalplan, E-Ticket und Scan kommen von ArenaSoldOut.com, und Käufer zahlen auf Ihr eigenes Konto.
 related:
   - { label: Wo Sie verkaufen, href: /product/sell }
   - { label: "Für Entwickler: Widget und API", href: /developers }
   - { label: Zahlungen, href: /payments }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Für WordPress-Websites
-    title: Welche Option passt zu meiner Website?
+    title: Was bekommt Ihre WordPress-Website?
     items:
-      - { title: Das Plugin, text: "Bestellungen landen in WooCommerce, Ihr Shop und Ihre Berichte funktionieren weiter; Plätze, Tickets und Einlass kommen von ArenaSoldOut.com.", link: { label: Plugin anfragen →, href: /start } }
-      - { title: Das Widget, text: "Zwei Zeilen auf jeder Seite oder in einem Block; Käufer zahlen im gehosteten Checkout Ihres Anbieters, die Bestellungen liegen im Event Center.", link: { label: Entwickler →, href: /developers } }
-      - { title: Wechsel von ArenaSoldOut.com, text: "Sessions, Saalpläne und Kunden importiert; zwei Kunden sind ohne Ausfallzeit umgezogen.", link: { label: Kunden →, href: /clients } }
+      - { title: WordPress-Integration, text: "Das Ticket-Widget auf jeder Seite, in jedem Beitrag oder Block Ihrer WordPress-Website: Käufer wählen Plätze und zahlen, ohne sie zu verlassen.", link: { label: Entwickler →, href: /developers } }
+      - { title: Drei Zeilen Code, text: "Fügen Sie das Widget in eine Seite oder einen Block „Individuelles HTML“ ein; Käufer zahlen im gehosteten Checkout Ihres Anbieters, die Bestellungen liegen im Event Center.", link: { label: Entwickler →, href: /developers } }
+      - { title: Wechsel von einem anderen System, text: "Sessions, Saalpläne und Kundendaten ziehen mit um; zwei Kunden sind ohne Ausfallzeit von ihrem bisherigen Ticketsystem gewechselt.", link: { label: Kunden →, href: /clients } }
+      - { title: Saalpläne kostenlos gezeichnet, text: "Schicken Sie ein PDF, eine Tabelle oder eine Handskizze, und das Team zeichnet den Plan; Käufer wählen ihre Plätze direkt auf Ihrer Website.", link: { label: Saalpläne →, href: /product/seating } }
+      - { title: Geld auf Ihrem Konto, text: "Käufer zahlen über einen Anbieter in Ihrem Land direkt auf Ihr eigenes Konto; ArenaSoldOut.com hält das Geld nie.", link: { label: Zahlungen →, href: /payments } }
+      - { title: Rabattcodes und Frühbucherpreise, text: "Codes mit Zeitfenster und Limit pro Käufer, Frühbucherpreise, die an einem Datum enden, kostenlose Tickets und Tickets zum selbst gewählten Preis.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Woher die Käufer kommen, text: "Ergänzen Sie Ihre Links um UTM-Parameter und sehen Sie, welcher Beitrag, Newsletter oder Partner Käufer auf Ihre Website bringt.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Verkäufe in Telegram, text: "Jeder Verkauf und jede Erstattung erscheint in Sekunden in Ihrer Telegram-Gruppe, mit dem Kontakt des Käufers.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: Der Einlass, text: "E-Tickets mit QR-Code und EAN-13, geprüft mit der Scanner-App MACS für iOS und Android.", link: { label: MACS Scanner-App →, href: /product/scanner } }
   - type: faq
     id: questions
     eyebrow: Fragen
     title: Was fragen Betreiber von WordPress-Websites zuerst?
     items:
-      - q: Macht das Plugin meine Website langsamer?
-        a: Das Plugin spricht beim Checkout mit der API von ArenaSoldOut.com; Seiten werden wie bisher dargestellt. Das Widget ist eine Web Component, die einmal geladen wird.
+      - q: Macht das Widget meine Website langsamer?
+        a: Nein. Das Widget ist eine Web Component, die einmal geladen wird; Ihre Seiten werden wie bisher dargestellt.
       - q: Verlässt der Käufer meine Domain?
-        a: Mit dem Widget bleibt der Käufer auf Ihrer Seite bis zum gehosteten Checkout des Anbieters und kehrt dann zurück. Mit dem Plugin ist der Checkout der von WooCommerce.
+        a: Der Käufer bleibt auf Ihrer Seite bis zum gehosteten Checkout des Anbieters und kehrt dann zurück.
       - q: Welche Zahlungsanbieter funktionieren?
-        a: "Ihr eigenes Konto bei einem Anbieter Ihres Landes; die Liste mit Status steht auf der [Zahlungsseite](/payments). In Israel funktioniert AllPay heute für Verkäufe über WordPress."
-      - q: Wer installiert es?
-        a: Das Team kann das Plugin gemeinsam mit dem Administrator Ihrer Website installieren und konfigurieren; das Widget braucht keine Installation.
+        a: "Ihr eigenes Konto bei einem Anbieter Ihres Landes; die Liste mit Status steht auf der [Zahlungsseite](/payments)."
+      - q: Wer richtet es ein?
+        a: Sie fügen drei Zeilen Code ein, oder das Team richtet das Widget gemeinsam mit dem Administrator Ihrer Website in einem Gespräch ein.
   - type: cta
     id: start
-    title: Verkaufen Sie auf Ihrer Website
-    text: Nennen Sie uns die Adresse der Website und den Anbieter, den Sie nutzen. Wir richten Plugin oder Widget gemeinsam mit Ihnen ein.
+    title: Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?
+    text: Nennen Sie uns die Adresse der Website und den Anbieter, den Sie nutzen. Wir richten das Widget gemeinsam mit Ihnen ein.
     primary: { label: Verkauf starten, href: /start }
-    secondary: { label: Entwicklerdokumentation lesen, href: /developers }
-    note: WooCommerce-Websites behalten ihren Shop.
+    secondary: { label: Event anlegen, href: /start#create }
+    tertiary: { label: Team kontaktieren, href: /contact#write }

@@ -1,22 +1,30 @@
 title: "Ticketverkauf für Konzerttourneen: Seite pro Veranstalter"
 description: "Konzerttournee in einem Event verkaufen: Sessions pro Stadt, ein Saalplan pro Spielstätte, Veranstalterseiten mit eigenen Links und Codes, Scan in jeder Stadt."
 h1: Konzerttourneen
-lead: Eine Show, viele Städte und Termine. Jede Stadt bekommt ihre Session und ihren Plan, jeder Veranstalter eine Seite mit eigenem Link, und Sie sehen die ganze Tournee in einem Event Center.
+tagline: Eine Tournee beginnt lange vor der ersten Stadt.
+lead: Eine Show, viele Städte und Termine. Jede Stadt bekommt ihre Session und ihren Plan, jeder Veranstalter eine Seite mit eigenem Link, und Sie sehen die ganze Konzerttournee in einem Event Center.
 related:
   - { label: Shows, href: /solutions/shows }
   - { label: Wo Sie verkaufen, href: /product/sell }
   - { label: Zahlungen nach Land, href: /payments }
   - { label: "Länder und Zahlungsarten", href: /countries }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Für Konzerttourneen
-    title: Was zählt auf Tournee?
+    title: Was zählt auf einer Konzerttournee?
     items:
-      - { title: Sessions pro Stadt, text: "Termine und Spielstätten in einem Event; Käufer wählen die Stadt, Sie sehen die Summen pro Session und für die ganze Tournee.", link: { label: Event Center →, href: /#center } }
-      - { title: Veranstalterseiten, text: "Eine eigene Seite für jeden lokalen Veranstalter mit eigenem Link und eigenen Promo-Codes; die Verkäufe laufen bei Ihnen zusammen.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Sessions pro Stadt, text: "Termine und Spielstätten in einem Event; Käufer wählen die Stadt, Sie sehen die Summen pro Session und für die ganze Konzerttournee.", link: { label: Event Center →, href: /#center } }
+      - { title: Ein Plan für jede Spielstätte, text: "Schicken Sie ein PDF, eine Tabelle oder eine Handskizze, und das Team zeichnet den Plan jeder Spielstätte kostenlos; beim nächsten Besuch ist er schon da.", link: { label: Saalpläne →, href: /product/seating } }
+      - { title: Veranstalterseiten, text: "Eine eigene Seite für jeden lokalen Veranstalter mit eigenem Link und eigenen Rabattcodes; die Verkäufe laufen bei Ihnen zusammen.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Woher die Käufer kommen, text: "Ergänzen Sie Ihre Links um UTM-Parameter und sehen Sie, welcher Beitrag, Newsletter oder Partner in jeder Stadt Tickets verkauft.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
       - { title: Mehrere Länder, text: "Verkaufen Sie in Tschechien, Spanien, Frankreich, Georgien oder Israel mit dem Anbieter des jeweiligen Landes, auf Ihr eigenes Konto.", link: { label: Zahlungen →, href: /payments } }
       - { title: Sprachen der Käufer, text: "Seiten und Tickets in der Sprache des Käufers, E-Mails in sieben Sprachen, rechts-nach-links für Hebräisch.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Die ganze Konzerttournee in Telegram, text: "Jeder Verkauf und jede Erstattung aus jeder Stadt erscheint in Sekunden in Ihrer Telegram-Gruppe, mit dem Kontakt des Käufers.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: "Ein Stadttermin wird verlegt? Sie entscheiden", text: "Allen erstatten, stattdessen einen neuen Termin anbieten oder eine andere Lösung wählen. Käufer erhalten eine E-Mail mit dem aktualisierten Ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Der Einlass in jeder Stadt, text: "Die Scanner-App MACS für iOS und Android in jeder Spielstätte; Tickets lokaler Partner aus anderen Systemen werden ebenfalls akzeptiert.", link: { label: MACS Scanner-App →, href: /product/scanner } }
   - type: faq
     id: questions
     eyebrow: Fragen
@@ -27,13 +35,13 @@ sections:
       - q: Sehen Veranstalter die Verkäufe der anderen?
         a: Nein. Jeder Veranstalter sieht nur seine eigene Seite; der Veranstalter der Tournee sieht alles.
       - q: Eine Stadt wechselt die Spielstätte. Was passiert mit verkauften Tickets?
-        a: Die Session wird verlegt, mit E-Mails an die Käufer und aktualisierten Tickets; die Plätze werden gemeinsam mit Ihnen auf den neuen Plan übertragen.
-      - q: Was kostet mich ein Ticket auf Tournee?
+        a: Die Session wird verlegt, und Käufer erhalten eine E-Mail mit dem aktualisierten Ticket; die Plätze werden gemeinsam mit Ihnen auf den neuen Plan übertragen.
+      - q: Was kostet mich ein Ticket auf einer Konzerttournee?
         a: "In jeder Stadt derselbe Betrag pro Ticket; siehe [Preise](/pricing)."
   - type: cta
     id: start
-    title: Starten Sie heute den Verkauf
+    title: Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?
     text: Event anlegen, Zahlungskonto verbinden, Link teilen.
-    primary: { label: Event anlegen, href: /start#create }
-    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Oder schreiben Sie uns: Wir richten alles gemeinsam mit Ihnen in einem Gespräch ein."
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Event anlegen, href: /start#create }
+    tertiary: { label: Team kontaktieren, href: /contact#write }

@@ -12,12 +12,13 @@ const { s, lang } = Astro.props;
     <div class="cta">
       <div class="mesh" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
       <h2>{s.title}</h2>
-      <p set:html={inline(s.text)} />
+      {s.text && <p set:html={inline(s.text)} />}
       <div class="hero-actions">
         <a class="btn btn-primary" href={localePath(lang, s.primary.href)} data-track={trackLabel(s.primary.href, 'cta')}>{s.primary.label}</a>
         <a class="btn btn-band" href={localePath(lang, s.secondary.href)} data-track={trackLabel(s.secondary.href, 'cta_secondary')}>{s.secondary.label}</a>
+        {s.tertiary && <a class="btn btn-band" href={localePath(lang, s.tertiary.href)} data-track={trackLabel(s.tertiary.href, 'cta_tertiary')}>{s.tertiary.label}</a>}
       </div>
-      <p class="hero-note" style="margin-top:18px">{s.note}</p>
+      {s.note && <p class="hero-note" style="margin-top:18px">{s.note}</p>}
     </div>
   </div>
 </section>

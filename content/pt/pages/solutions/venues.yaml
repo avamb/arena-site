@@ -1,38 +1,46 @@
 title: "Ingressos para casas de show: um mapa, condições separadas"
 description: "Para locais permanentes e casas de show: um mapa reutilizado em cada evento, muitos eventos por mês, leitura na portaria, porcentagem do preço em vez de taxa."
 h1: Locais e casas de show
-lead: "Seu próprio local, muitos eventos por mês. O mapa é feito uma vez e reutilizado, cada promotor que aluga o local vende pela sua página ou pela dele, e as condições são diferentes: uma porcentagem do preço do ingresso em vez da taxa por ingresso."
+tagline: Uma casa de show ganha vida muito antes de abrir as portas.
+lead: "Seu próprio local, muitos eventos por mês. O mapa é feito uma vez e reutilizado, cada produtor que aluga o local vende pela sua página ou pela dele, e as condições são diferentes: uma porcentagem do preço do ingresso em vez da taxa por ingresso."
 related:
   - { label: Preços e condições detalhadas, href: /pricing }
   - { label: Mapas de assentos, href: /product/seating }
   - { label: Teatro, href: /solutions/theatre }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para locais
     title: O que importa em um local?
     items:
-      - { title: "Um mapa, todos os eventos", text: "Feito uma vez a partir do seu arquivo e reutilizado em cada evento; versões para as disposições de palco.", link: { label: Mapas de assentos →, href: /product/seating } }
-      - { title: Promotores que alugam o local, text: "Uma página por promotor com link próprio; o local vê todos os eventos e o promotor vê os seus.", link: { label: Onde você vende →, href: /product/sell } }
-      - { title: Condições separadas, text: "Dois por cento do preço do ingresso em vez da taxa por ingresso, sem taxa sobre convites e reembolsos, condições por volume sob consulta.", link: { label: Preços →, href: /pricing } }
-      - { title: A portaria, text: "Aplicativo leitor para iOS e Android, leitores de mão, ingressos de parceiros vindos de outros sistemas aceitos.", link: { label: Aplicativo leitor MACS →, href: /product/scanner } }
+      - { title: "Um mapa, todos os eventos", text: "Envie um PDF, uma planilha ou um croqui à mão e a equipe desenha o mapa de graça; ele é reaproveitado em cada evento, com versões para diferentes disposições de palco.", link: { label: Mapas de assentos →, href: /product/seating } }
+      - { title: Produtores que alugam o local, text: "Uma página por produtor com link próprio; o local vê todos os eventos e o produtor vê os seus.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Condições separadas, text: "Uma porcentagem do preço do ingresso em vez da taxa por ingresso, sem comissão sobre convites e reembolsos, condições por volume sob consulta.", link: { label: Preços →, href: /pricing } }
+      - { title: Cupons de desconto e pré-venda, text: "Cupons para o público fiel e para parceiros, com limite por comprador, preços de pré-venda que terminam em uma data, ingressos gratuitos e de valor livre.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: A portaria, text: "O aplicativo leitor MACS para iOS e Android, leitores portáteis, ingressos de parceiros vindos de outros sistemas aceitos.", link: { label: Aplicativo leitor MACS →, href: /product/scanner } }
+      - { title: Ingressos na porta, text: "Coloque na entrada um QR code impresso com um link curto de compra: o público escaneia e compra na hora.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Vendas no Telegram, text: "Cada venda e cada reembolso, de todos os eventos, aparecem no seu grupo do Telegram em segundos, com o contato do comprador.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: "Mudança no evento? Você decide", text: "Reembolse todos, ofereça uma nova data ou escolha outra solução. Os compradores recebem um e-mail com o ingresso atualizado.", link: { label: Ingressos →, href: /product/tickets } }
+      - { title: Pronto para grandes aberturas de vendas, text: "800 pedidos por minuto com 1.000 compradores simultâneos em testes de carga, backups criptografados toda noite.", link: { label: Confiabilidade →, href: /product/reliability } }
   - type: faq
     id: questions
     eyebrow: Perguntas
     title: O que donos de locais perguntam primeiro?
     items:
       - q: Quais são as condições para um local permanente?
-        a: "Uma porcentagem do preço do ingresso em vez da taxa por ingresso, sem taxa sobre convites e reembolsos. O número está na [página de preços](/pricing); condições por volume e individuais sob consulta."
-      - q: Um promotor pode vender nossos eventos no site dele?
-        a: Sim, com o widget no site dele ou com uma página de promotor que hospedamos. As vendas de todos os canais aparecem no Event Center do local.
+        a: "Uma porcentagem do preço do ingresso em vez da taxa por ingresso, sem comissão sobre convites e reembolsos. O número está na [página de preços](/pricing); condições por volume e individuais sob consulta."
+      - q: Um produtor pode vender nossos eventos no site dele?
+        a: Sim, com o widget no site dele ou com uma página de produtor que hospedamos. As vendas de todos os canais aparecem no Event Center do local.
       - q: Podemos migrar de outro sistema de venda de ingressos?
-        a: "Sim. Sessões, mapas de assentos e clientes foram importados do ArenaSoldOut.com para dois clientes sem nenhuma interrupção; outros sistemas pela API de pacote de eventos. Veja [desenvolvedores](/developers)."
+        a: "Sim. Dois clientes já migraram do sistema de ingressos que usavam antes, sem nenhuma interrupção, com sessões, mapas de assentos e clientes; outros sistemas pela API sob consulta. Veja [desenvolvedores](/developers)."
       - q: Quem opera o Event Center?
         a: Sua equipe, com funções. O local é dono da organização; os gerentes veem o que você permitir.
   - type: cta
     id: start
-    title: Fale conosco
+    title: Seu melhor evento ainda está por vir. Vamos começar pelos ingressos?
     text: Conte-nos sobre o local e o número de eventos por mês. Configuramos o mapa e as condições com você.
-    primary: { label: Fale conosco, href: /start }
-    secondary: { label: Ver preços, href: /pricing }
-    note: "Ou escreva para nós: configuramos tudo com você em uma chamada."
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Criar seu evento, href: /start#create }
+    tertiary: { label: Fale com a equipe, href: /contact#write }

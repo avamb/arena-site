@@ -1,12 +1,15 @@
 title: "Bilety na warsztaty, szkolenia i degustacje"
 description: "Sprzedawaj miejsca na warsztaty, szkolenia, degustacje i zajęcia: małe grupy z pulą, cykliczne terminy, e-maile, wejścia bezpłatne i płatne dowolną kwotą."
 h1: Warsztaty i szkolenia
+tagline: Warsztaty zaczynają się od pierwszego zapisu.
 lead: Małe grupy, cykliczne terminy, własne e-maile w twoim języku. Strona hostowana jest gotowa w kilka minut; widget pasuje do strony, którą już masz. Vino&Co w Izraelu sprzedaje w ten sposób swoje degustacje.
 related:
-  - { label: Kody promocyjne i okna cenowe, href: /product/pricing-tools }
+  - { label: Kody rabatowe i okna cenowe, href: /product/pricing-tools }
   - { label: Gdzie sprzedajesz, href: /product/sell }
   - { label: Klienci, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Dla prowadzących
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Pula na każdy termin, text: "Dwanaście miejsc we wtorek, dwadzieścia w sobotę; wyprzedane terminy zamykają się same.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
       - { title: Cykliczne terminy, text: "Dodawaj sesje do tego samego wydarzenia; ceny i kategorie są przenoszone, kupujący wybierają datę.", link: { label: Event Center →, href: /#center } }
-      - { title: Wejścia bezpłatne i płatne dowolną kwotą, text: "Zapisy bez płatności albo cena minimalna, a kupujący decyduje o reszcie.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Wejścia bezpłatne i płatne dowolną kwotą, text: "Bezpłatne zapisy albo cena minimalna, a kupujący sam decyduje, ile do niej dołoży.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Kody rabatowe i wczesne ceny, text: "Kod dla stałych uczestników lub partnera z limitem na kupującego; wczesna cena, która kończy się w wybranym przez ciebie dniu.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Sprzedaż w Telegramie, text: "Każda sprzedaż i każdy zwrot pojawia się w twojej grupie na Telegramie w kilka sekund, razem z kontaktem do kupującego.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: Skąd przychodzą uczestnicy, text: "Dodaj tagi UTM do linków i zobacz, który post, newsletter lub partner przynosi zapisy.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
       - { title: Twój język, text: "Strona, widget, e-mail i bilet w języku kupującego, także hebrajski od prawej do lewej.", link: { label: Bilety →, href: /product/tickets } }
+      - { title: "Termin przeniesiony? Ty decydujesz", text: "Zwracasz pieniądze wszystkim, proponujesz nowy termin albo wybierasz inne rozwiązanie. Uczestnicy dostają e-mail z zaktualizowanym biletem.", link: { label: Bilety →, href: /product/tickets } }
+      - { title: Bez abonamentu i dodatkowych opłat, text: "Bez abonamentu i bez opłat miesięcznych czy rocznych: prowizja za każdy płatny bilet, a bezpłatne zapisy nic nie kosztują.", link: { label: Cennik →, href: /pricing } }
   - type: faq
     id: questions
     eyebrow: Pytania
@@ -31,8 +39,8 @@ sections:
         a: "Stała kwota za każdy płatny bilet; bezpłatne zapisy nic nie kosztują. Zobacz [cennik](/pricing)."
   - type: cta
     id: start
-    title: Zacznij sprzedaż już dziś
+    title: Twoje najlepsze wydarzenie wciąż przed tobą. Zaczniemy od biletów?
     text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
-    primary: { label: Utwórz wydarzenie, href: /start#create }
-    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Albo napisz do nas: wszystko ustawimy razem z tobą na rozmowie."
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Utwórz wydarzenie, href: /start#create }
+    tertiary: { label: Skontaktuj się z zespołem, href: /contact#write }

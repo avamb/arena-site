@@ -23,7 +23,7 @@ sections:
       - title: Saalplan senden, wenn Sie Plätze verkaufen
         text: "Wir zeichnen den Plan kostenlos, meist binnen eines Tages, und zeigen ihn Ihnen vor dem Verkaufsstart. Eines davon genügt: ein PDF des Saalplans, ein Foto einer Handskizze oder eine Tabelle mit Reihen und den Plätzen jeder Reihe (Excel oder Google Sheets). Eine SVG-Datei wird direkt importiert."
       - title: Veröffentlichen und teilen
-        text: "Schalten Sie das Event in den Verkauf. Teilen Sie den Link zur von uns gehosteten Verkaufsseite oder fügen Sie das Ticket-Widget mit drei Zeilen Code auf Ihrer eigenen Website ein. Promo-Codes, Preise nach Datum und die Servicegebühr stellen Sie an derselben Stelle ein."
+        text: "Schalten Sie das Event in den Verkauf. Teilen Sie den Link zur von uns gehosteten Verkaufsseite oder fügen Sie das Ticket-Widget mit drei Zeilen Code auf Ihrer eigenen Website ein. Rabattcodes, Preise nach Datum und die Servicegebühr stellen Sie an derselben Stelle ein."
       - title: Verkäufe beobachten
         text: "Käufer zahlen auf Ihr Zahlungskonto und erhalten das Ticket per E-Mail in ihrer Sprache. Jede Bestellung steht im Event Center, und jeder Verkauf und jede Erstattung erscheint binnen Sekunden in Ihrer Telegram-Gruppe."
       - title: Am Einlass scannen

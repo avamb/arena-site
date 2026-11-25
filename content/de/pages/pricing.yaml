@@ -43,12 +43,12 @@ sections:
       note: "Credit-Pakete können Sie so oft kaufen, wie Sie möchten; ein Ticket zieht seine Provision aus dem Paket, aus dem es bezahlt wird. Sie können eine automatische Aufladung einschalten. Für Mengen über 5.000 Tickets im Jahr: individuelle Konditionen, schreiben Sie uns."
     lowPrice:
       title: "Events, bei denen jedes Ticket {lowMax} oder weniger kostet"
-      text: "{lowPercent}% des Ticketpreises, mindestens {lowMin} und höchstens {lowCap} pro Ticket; {lowSeat} mehr für ein Ticket mit Platz. Für Discos, Läufe, Marathons, Kindergeburtstage, Ausflüge. Das gilt für das ganze Event, und nur wenn **kein Ticket irgendeiner Kategorie oder Preisstufe**, auch späterer, vor Promo-Codes mehr als {lowMax} kostet. Ein Ticket darüber, und der Standardpreis gilt für alle Tickets des Events, auch die günstigen."
+      text: "{lowPercent}% des Ticketpreises, mindestens {lowMin} und höchstens {lowCap} pro Ticket; {lowSeat} mehr für ein Ticket mit Platz. Für Discos, Läufe, Marathons, Kindergeburtstage, Ausflüge. Das gilt für das ganze Event, und nur wenn **kein Ticket irgendeiner Kategorie oder Preisstufe**, auch späterer, vor Rabattcodes mehr als {lowMax} kostet. Ein Ticket darüber, und der Standardpreis gilt für alle Tickets des Events, auch die günstigen."
       example: "Provision pro Ticket, Zahlung nach der Veranstaltung:"
       cols: { price: Ticketpreis, plain: Provision, seated: Mit Platz }
     venues:
       title: Feste Spielstätten
-      text: "Theater, Clubs, Stadien, Zirkusse und andere Orte, die selbst Veranstaltungen ausrichten, ganzjährig oder saisonal: **{percent}% des Ticketpreises** (nach Promo-Codes, ohne Servicegebühr), höchstens **{cap}** pro Ticket, mit und ohne Platz gleich. Monatliche Rechnung. Keine Provision auf Freikarten. Unser Team schaltet den Spielstätten-Status frei."
+      text: "Theater, Clubs, Stadien, Zirkusse und andere Orte, die selbst Veranstaltungen ausrichten, ganzjährig oder saisonal: **{percent}% des Ticketpreises** (nach Rabattcodes, ohne Servicegebühr), höchstens **{cap}** pro Ticket, mit und ohne Platz gleich. Monatliche Rechnung. Keine Provision auf Freikarten. Unser Team schaltet den Spielstätten-Status frei."
       example: "Bei einem Ticket für {ex25} beträgt die Provision {ex}; die Obergrenze von {cap} wird bei einem Ticketpreis von {capAt} erreicht."
       cta: { label: Sprechen Sie mit uns, href: /contact }
     calculator:
@@ -104,7 +104,7 @@ sections:
       - q: Eines meiner Tickets kostet mehr als US$10 (€10 in der EU), die übrigen sind günstig. Welcher Preis gilt?
         a: "Der Standardpreis, für alle Tickets des Events: Der niedrigere Satz setzt voraus, dass jedes Ticket jeder Kategorie und Preisstufe US$10 oder weniger kostet (€10 in der EU). Ein Ticket für US$5 neben einem Ticket für US$25 gilt zum Standardpreis."
       - q: Ich betreibe eine Spielstätte und richte viele Events im Monat aus. Gibt es ein anderes Angebot?
-        a: "Ja. Inhaber fester Spielstätten (Theater, Clubs, Stadien, Zirkusse und andere Orte, die selbst Veranstaltungen ausrichten, ganzjährig oder saisonal) zahlen {percent}% des Ticketpreises, berechnet nach Promo-Codes und ohne Ihre Servicegebühr. Die Provision pro Ticket ist auf US$1,18 (€1,09 in der EU) begrenzt, mit und ohne Platz gleich. Freikarten sind provisionsfrei. Wir stellen monatlich Rechnung. Unser Team schaltet den Spielstätten-Status frei: Schreiben Sie uns über die [Kontaktseite](/contact). Die vollständigen Bedingungen stehen in den [detaillierten Bedingungen](/pricing/terms)."
+        a: "Ja. Inhaber fester Spielstätten (Theater, Clubs, Stadien, Zirkusse und andere Orte, die selbst Veranstaltungen ausrichten, ganzjährig oder saisonal) zahlen {percent}% des Ticketpreises, berechnet nach Rabattcodes und ohne Ihre Servicegebühr. Die Provision pro Ticket ist auf US$1,18 (€1,09 in der EU) begrenzt, mit und ohne Platz gleich. Freikarten sind provisionsfrei. Wir stellen monatlich Rechnung. Unser Team schaltet den Spielstätten-Status frei: Schreiben Sie uns über die [Kontaktseite](/contact). Die vollständigen Bedingungen stehen in den [detaillierten Bedingungen](/pricing/terms)."
 
   - type: cta
     id: start

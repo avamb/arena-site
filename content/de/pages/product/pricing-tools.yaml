@@ -1,5 +1,5 @@
-title: "Promo-Codes, Early Bird, Preisstufen, Zahl-was-Sie-möchten"
-description: "Promo-Codes mit Geltungsbereich und Limits, Preiszeiträume nach Datum, Mengenstufen, Kategorieketten, Servicegebühr je Kanal, Gratis- und Zahl-was-Sie-möchten."
+title: "Rabattcodes, Early Bird, Preisstufen, Zahl-was-Sie-möchten"
+description: "Rabattcodes mit Geltungsbereich und Limits, Preiszeiträume nach Datum, Mengenstufen, Kategorieketten, Servicegebühr je Kanal, Gratis- und Zahl-was-Sie-möchten."
 h1: Preise, die sich so ändern, wie Sie es geplant haben
 lead: Early Bird nach Datum, der nächste Preis, wenn eine Stufe ausverkauft ist, Codes für Partner, eine Servicegebühr pro Kanal. Alles wird im Event Center eingestellt und im Widget und auf der gehosteten Seite angewendet.
 related:
@@ -12,7 +12,7 @@ sections:
     eyebrow: Preis-Werkzeuge
     title: Was kann ich mit Preisen machen?
     items:
-      - q: Kann ich Promo-Codes verwenden?
+      - q: Kann ich Rabattcodes verwenden?
         a: Ja. Ein Code kann für ein Event, eine Vorstellung oder eine Kategorie gelten, mit Verkaufszeitraum, Mindestbestellung und Limit pro Käufer. Partner erhalten eigene Codes.
       - q: Gibt es ein fertiges Preisschema?
         a: "Ja, Smart Price. Wählen Sie ein fertiges Schema aus Preisstufen nach Menge und Datum, statt jede Stufe von Hand einzustellen. Anschließend können Sie es anpassen."

@@ -32,8 +32,16 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
   const vars = { ...baseVars, ...priceVars(d.pricing) };
   switch (s.type) {
     case 'hero':
-      out.push(`# ${plain(s.title)}`, '', plain(s.lead ?? ''), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, '', plain(s.note), '');
+      out.push(`# ${plain(s.title)}`, '', plain(s.lead ?? ''), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, '');
+      if (s.note) out.push(plain(s.note), '');
+      if (s.benefits) { s.benefits.forEach((b) => out.push(`- **${plain(b.title)}**: ${plain(fill(b.text, reasonVars(d.pricing)))}`)); out.push(''); }
       break;
+    case 'paycountries': {
+      h2(s.title ?? t(d.lang, 'paycountries.title'));
+      countryRows(d.markets, d.providers, d.lang).forEach((r) => out.push(`- ${r.name}: ${(r.methods as string[]).filter((m) => m !== 'installments').map((m) => t(d.lang, `paycountries.method.${m}`)).join(', ')}`));
+      out.push('');
+      break;
+    }
     case 'facts':
       s.items.forEach((i) => out.push(`- ${plain(i)}`));
       out.push('');
@@ -51,6 +59,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
     case 'qa':
       h2(s.title); lead(s.lead);
       s.items.forEach((i) => out.push(`### ${plain(i.title)}`, '', plain(i.text), ''));
+      if (s.more) out.push(`[${s.more.label}](${abs(s.more.href)})`, '');
       break;
     case 'center':
       h2(s.title); lead(s.lead);
@@ -119,7 +128,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       break;
     case 'cta':
       h2(s.title);
-      out.push(plain(s.text), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, '', plain(s.note), '');
+      out.push(plain(s.text ?? ''), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, ...(s.tertiary ? [`- [${s.tertiary.label}](${abs(s.tertiary.href)})`] : []), '', plain(s.note ?? ''), '');
       break;
     case 'person': {
       const a = authorFor(s.author, d.lang);
@@ -226,7 +235,7 @@ export function pageToMarkdown(d: PageData, nav: Nav): string {
   const { page } = d;
   const head: string[] = [];
   const hasHero = page.data.sections.some((s) => s.type === 'hero');
-  if (!hasHero) head.push(`# ${plain(page.data.h1 ?? page.data.title)}`, '', plain(page.data.lead ?? page.data.description), '');
+  if (!hasHero) head.push(`# ${plain(page.data.h1 ?? page.data.title)}`, '', ...(page.data.tagline ? [plain(page.data.tagline), ''] : []), plain(page.data.lead ?? page.data.description), '');
   const body = page.data.sections.map((s) => sectionToMarkdown(s, d)).join('\n');
   const footer = ['---', '', `${nav.copyright}. Canonical: ${abs(d.path)}. Facts: ${abs('/facts')}. All pages: ${abs('/llms.txt')}.`, ''];
   return [`<!-- ${plain(page.data.title)} · ${abs(d.path)} · generated from content/${page.id}.yaml -->`, '', ...head, body, ...footer].join('\n');

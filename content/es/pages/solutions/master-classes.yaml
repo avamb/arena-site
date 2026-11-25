@@ -1,12 +1,15 @@
 title: "Venta de entradas para clases, talleres y catas"
 description: "Vende plazas para clases, formaciones, catas y talleres: grupos pequeños con cupo, fechas recurrentes, tus propios correos, gratis o pago a voluntad."
 h1: Clases magistrales y formaciones
+tagline: Un taller empieza con la primera persona que se apunta.
 lead: Grupos pequeños, fechas recurrentes, tus propios correos en tu idioma. Una página alojada está lista en minutos; el widget se adapta a la web que ya tienes. Vino&Co, en Israel, vende así sus catas.
 related:
   - { label: Códigos promocionales y ventanas de precio, href: /product/pricing-tools }
   - { label: Dónde vendes, href: /product/sell }
   - { label: Clientes, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para anfitriones
@@ -14,15 +17,20 @@ sections:
     items:
       - { title: Un cupo por fecha, text: "Doce plazas el martes, veinte el sábado; las fechas agotadas se cierran solas.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
       - { title: Fechas recurrentes, text: "Añade sesiones al mismo evento; los precios y las categorías se mantienen y los compradores eligen la fecha.", link: { label: Event Center →, href: /#center } }
-      - { title: Gratis y pago a voluntad, text: "Inscripciones sin pago, o un precio mínimo y el comprador decide.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: Gratis y pago a voluntad, text: "Inscripciones sin pago, o un precio mínimo y el comprador decide cuánto añadir.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: Códigos promocionales y precios anticipados, text: "Un código para tus habituales o para un socio, con un límite por comprador; un precio anticipado que termina en la fecha que elijas.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: Ventas en Telegram, text: "Cada venta y cada reembolso aparecen en tu grupo de Telegram en segundos, con el contacto del comprador.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: De dónde viene la gente, text: "Añade etiquetas UTM a tus enlaces y comprueba qué publicación, boletín o socio trae las inscripciones.", link: { label: Dónde vendes →, href: /product/sell } }
       - { title: Tu idioma, text: "Página, widget, correo y entrada en el idioma del comprador, incluido el hebreo de derecha a izquierda.", link: { label: Entradas →, href: /product/tickets } }
+      - { title: "¿Cambia una fecha? Tú decides", text: "Reembolsa a todos, ofrece una nueva fecha o elige otra solución. Los participantes reciben un correo con la entrada actualizada.", link: { label: Entradas →, href: /product/tickets } }
+      - { title: Sin suscripción ni pagos adicionales, text: "Sin suscripción ni pagos mensuales o anuales: una comisión por entrada de pago, y las inscripciones gratuitas no cuestan nada.", link: { label: Precios →, href: /pricing } }
   - type: faq
     id: questions
     eyebrow: Preguntas
     title: "¿Qué preguntan primero los anfitriones?"
     items:
       - q: "No tengo web. ¿Dónde compra la gente?"
-        a: "En una página alojada, tickets.arenasoldout.com/your-name/your-event, lista en minutos. Comparte el enlace en mensajería y redes sociales."
+        a: "En una página alojada, tickets.arenasoldout.com/tu-nombre/tu-evento, lista en minutos. Comparte el enlace en mensajería y redes sociales."
       - q: "¿Puedo cobrar solo un depósito?"
         a: Fija el precio de la entrada en el importe del depósito y cobra el resto en el lugar; o usa pago a voluntad con un mínimo.
       - q: "¿Los compradores reciben un recordatorio?"
@@ -31,8 +39,8 @@ sections:
         a: "Un importe fijo por entrada de pago; las inscripciones gratuitas no cuestan nada. Consulta los [precios](/pricing)."
   - type: cta
     id: start
-    title: Empieza a vender hoy
+    title: Tu mejor evento está por llegar. ¿Empezamos por las entradas?
     text: Crea el evento, conecta tu cuenta de pagos y comparte el enlace.
-    primary: { label: Crea tu evento, href: /start#create }
-    secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
-    note: "O escríbenos: lo configuramos todo contigo en una llamada."
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Crear tu evento, href: /start#create }
+    tertiary: { label: Contactar con el equipo, href: /contact#write }

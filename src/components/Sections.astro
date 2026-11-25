@@ -18,6 +18,7 @@ const related = page.data.related ?? [];
   <div class="wrap page-head">
     <Breadcrumbs lang={lang} items={p.jsonld.breadcrumbs ?? []} />
     <h1>{page.data.h1 ?? page.data.title}</h1>
+    {page.data.tagline && <p class="tagline">{page.data.tagline}</p>}
     {page.data.lead && <p class="lead">{page.data.lead}</p>}
   </div>
 )}

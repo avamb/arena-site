@@ -38,7 +38,7 @@ sections:
     eyebrow: Quem usa
     title: Quem lê ingressos com o MACS?
     items:
-      - { title: Locais e clubes, text: "Um aplicativo para todos os promotores que alugam o local; o local vê todos os eventos, cada promotor vê os seus.", link: { label: Para locais e clubes →, href: /solutions/venues } }
+      - { title: Locais e clubes, text: "Um aplicativo para todos os produtores que alugam o local; o local vê todos os eventos, cada produtor vê os seus.", link: { label: Para locais e clubes →, href: /solutions/venues } }
       - { title: Festivais, text: "Vários portões, muitos celulares, uma contagem. Ingressos de parceiros aceitos nos mesmos portões.", link: { label: Para festivais →, href: /solutions/festivals } }
       - { title: Agências e parceiros, text: "Leia ingressos que você vendeu pelo ArenaSoldOut.com e ingressos dos sistemas que os seus clientes já usam.", link: { label: Parceiros →, href: /partners } }
   - type: cta

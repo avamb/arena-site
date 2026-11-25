@@ -16,7 +16,7 @@ sections:
       - { title: Teatro, text: "Mapas de assentos iguais ao local, datas repetidas, convites para imprensa e parceiros.", link: { label: Para teatros →, href: /solutions/theatre } }
       - { title: Espetáculos, text: "Shows no gelo, circo, dança: muitas datas, muitas cidades, um mapa por local reaproveitado.", link: { label: Para espetáculos →, href: /solutions/shows } }
       - { title: Festivais, text: "Vários dias, muitas categorias, categorias que repassam os lugares não vendidos para a seguinte.", link: { label: Para festivais →, href: /solutions/festivals } }
-      - { title: Turnês, text: "Um espetáculo, muitas cidades e datas, uma página por promotor com link próprio.", link: { label: Para turnês →, href: /solutions/concert-tours } }
+      - { title: Turnês, text: "Um espetáculo, muitas cidades e datas, uma página por produtor com link próprio.", link: { label: Para turnês →, href: /solutions/concert-tours } }
       - { title: Master classes e treinamentos, text: "Grupos pequenos, datas recorrentes, e-mails e idioma do próprio anfitrião.", link: { label: Para anfitriões →, href: /solutions/master-classes } }
       - { title: Locais e clubes, text: "Seu próprio local, muitos eventos por mês, um mapa de assentos reaproveitado, condições separadas.", link: { label: Para locais →, href: /solutions/venues } }
       - { title: Sites em WordPress, text: "Plugin com pedidos do WooCommerce; a loja continua funcionando, os ingressos vêm do ArenaSoldOut.com.", link: { label: Para sites WordPress →, href: /solutions/wordpress } }

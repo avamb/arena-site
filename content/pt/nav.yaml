@@ -1,8 +1,8 @@
 header:
-  - label: Como funciona
-    href: /#how
   - label: Para quem é
     href: /solutions
+  - label: Como funciona
+    href: /#how
   - label: Preços
     href: /pricing
   - label: Event Center
@@ -26,7 +26,7 @@ footer:
       - { label: Seu primeiro evento, href: /first-event }
       - { label: Venda no seu site ou no nosso, href: /product/sell }
       - { label: Mapas de assentos, href: /product/seating }
-      - { label: Códigos promocionais e períodos de preço, href: /product/pricing-tools }
+      - { label: Cupons de desconto e períodos de preço, href: /product/pricing-tools }
       - { label: Pagamentos, href: /payments }
       - { label: Países, href: /countries }
       - { label: Bot do Telegram, href: /product/telegram }
@@ -49,7 +49,7 @@ footer:
       - { label: Documentação, href: /developers }
       - { label: API pública, href: /developers#api }
       - { label: Widget, href: /developers#widget }
-      - { label: Plugin do WordPress, href: /solutions/wordpress }
+      - { label: Integração com WordPress, href: /solutions/wordpress }
       - { label: Parceiros, href: /partners }
   - title: Empresa
     links:

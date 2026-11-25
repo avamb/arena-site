@@ -1,7 +1,7 @@
-title: "Códigos promocionais, pré-venda, lotes, grátis e valor livre"
-description: "Códigos promocionais com limites, preços por período, lotes, sequências de categorias, taxa de serviço por canal, ingressos grátis e de valor livre."
+title: "Cupons de desconto, pré-venda, lotes, grátis e valor livre"
+description: "Cupons de desconto com limites, preços por período, lotes, sequências de categorias, taxa de serviço por canal, ingressos grátis e de valor livre."
 h1: Preços que mudam do jeito que você planejou
-lead: Pré-venda por data, o próximo preço quando um lote esgota, códigos para parceiros, uma taxa de serviço por canal. Tudo definido no Event Center, aplicado no widget e na página hospedada.
+lead: Pré-venda por data, o próximo preço quando um lote esgota, cupons para parceiros, uma taxa de serviço por canal. Tudo definido no Event Center, aplicado no widget e na página hospedada.
 related:
   - { label: Mapas de assentos, href: /product/seating }
   - { label: "Preços: por ingresso, sem assinatura", href: /pricing }
@@ -12,8 +12,8 @@ sections:
     eyebrow: Ferramentas de preço
     title: O que posso fazer com os preços?
     items:
-      - q: Posso usar códigos promocionais?
-        a: Sim. Um código pode valer para um evento, uma sessão ou uma categoria, com período de venda, pedido mínimo e limite por comprador. Os parceiros recebem códigos próprios.
+      - q: Posso usar cupons de desconto?
+        a: Sim. Um cupom pode valer para um evento, uma sessão ou uma categoria, com período de venda, pedido mínimo e limite por comprador. Os parceiros recebem cupons próprios.
       - q: Existe um esquema de preços pronto?
         a: "Sim, o Smart price (preço inteligente). Escolha um esquema pronto de faixas de preço por quantidade e por data, em vez de definir cada faixa à mão. Você pode ajustá-lo depois."
       - q: Um ingresso pode ser vendido só junto com outro?
@@ -27,7 +27,7 @@ sections:
       - q: Ingressos gratuitos e de valor livre?
         a: Sim, os dois. Ingressos gratuitos para convites e inscrições, e ingressos de valor livre com um mínimo que você define.
       - q: Os descontos funcionam com assentos?
-        a: Sim. Códigos e períodos valem para categorias com assento e também para áreas em pé.
+        a: Sim. Cupons e períodos valem para categorias com assento e também para áreas em pé.
   - type: cta
     id: start
     title: Defina seus preços hoje

@@ -1,12 +1,15 @@
-title: "Billetterie de festival : plusieurs jours et catégories"
+title: "Billetterie de festivals en ligne : pass jour, catégories"
 description: "Billetterie de festival : pass jour et complet, catégories à quotas, chaînes de places invendues, early bird par date, contrôle à chaque entrée."
-h1: Festivals
+h1: Billetterie de festivals
+tagline: Un festival commence bien avant l'ouverture des grilles.
 lead: Pass jour et pass complet, nombreuses catégories avec quotas, early bird qui s'active à une date, et une chaîne qui transmet les places invendues d'une catégorie à la suivante. Contrôle à chaque entrée avec l'application.
 related:
   - { label: Codes promo et fenêtres de prix, href: /product/pricing-tools }
   - { label: Concerts, href: /solutions/concerts }
   - { label: Fiabilité, href: /product/reliability }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Pour les festivals
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Catégories avec quotas, text: "Jour un, jour deux, pass complet, VIP, camping : chacun avec son prix, son quota et sa fenêtre de vente.", link: { label: Outils de prix →, href: /product/pricing-tools } }
       - { title: Chaînes de catégories, text: "Quand l'early bird est épuisé, ses places invendues passent à la catégorie suivante au lieu de bloquer les ventes.", link: { label: Outils de prix →, href: /product/pricing-tools } }
-      - { title: Entrées, text: "Application de contrôle pour iOS et Android à chaque porte ; billets de partenaires d'autres systèmes acceptés aussi.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
-      - { title: Charge, text: "800 commandes par minute avec 1 000 acheteurs simultanés lors des tests de charge ; la minute d'ouverture des ventes est couverte.", link: { label: Fiabilité →, href: /product/reliability } }
+      - { title: Early bird et paliers de prix, text: "Un tarif early bird qui prend fin à la date que vous fixez, ou un prix qui monte quand un palier de quantité est épuisé.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: Codes promo avec limites, text: "Des codes pour les partenaires, les fans des artistes ou votre newsletter, avec une période de validité et une limite par acheteur.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: Invitations sans commission, text: "Billets gratuits pour les sponsors, les artistes et la presse, contrôlés à l'entrée comme n'importe quel autre billet.", link: { label: Billets →, href: /product/tickets } }
+      - { title: Entrées, text: "L'application de contrôle MACS pour iOS et Android à chaque entrée ; billets de partenaires d'autres systèmes acceptés aussi.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
+      - { title: Billets à l'entrée, text: "Affichez à l'entrée un QR code imprimé avec un lien d'achat court : on le scanne et on achète sur place.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: Le grand jour de la mise en vente, text: "800 commandes par minute avec 1 000 acheteurs simultanés lors des tests de charge : la première minute des ventes se déroule sans accroc.", link: { label: Fiabilité →, href: /product/reliability } }
+      - { title: Ventes sur Telegram, text: "Chaque vente et chaque remboursement apparaît dans votre groupe Telegram en quelques secondes, avec les coordonnées de l'acheteur.", link: { label: Telegram →, href: /product/telegram } }
   - type: faq
     id: questions
     eyebrow: Questions
@@ -28,11 +36,11 @@ sections:
       - q: Nous avons des billets gratuits pour les sponsors. Comment faire ?
         a: Billets gratuits et invitations depuis l'Event Center, sans frais pour la plateforme, contrôlés comme n'importe quel billet.
       - q: Combien ça coûte ?
-        a: "Une commission fixe par billet vendu, facturée après l'événement ou prélevée sur vos crédits, mensuellement pour les événements en vente pendant des mois ; voir les [tarifs](/pricing)."
+        a: "Une commission fixe par billet vendu, facturée après l'événement ou réglée avec vos crédits, mensuellement pour les événements en vente pendant des mois ; voir les [tarifs](/pricing)."
   - type: cta
     id: start
-    title: Commencez à vendre dès aujourd'hui
+    title: Votre plus bel événement est encore à venir. On commence par les billets ?
     text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
-    primary: { label: Créer votre événement, href: /start#create }
-    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."
+    primary: { label: Commencer à vendre, href: /start }
+    secondary: { label: Créer votre événement, href: /start#create }
+    tertiary: { label: Écrire à l'équipe, href: /contact#write }

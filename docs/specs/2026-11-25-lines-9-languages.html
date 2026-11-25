@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Строки сайта на 9 языках</title>
+<style>
+:root{--bg:#F6F7FB;--surface:#FCFCFE;--fg:#0B1020;--fg2:#4D536B;--fg3:#646A88;--accent:#001489;--soft:#E7EAF9;--line:#DDE0EC;--warn:#8A5A00;--warnbg:#FFF4DC}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0B1020;--surface:#121831;--fg:#EEF0F8;--fg2:#B2B7D0;--fg3:#858DAE;--accent:#8FA3FF;--soft:#1A2452;--line:#2A3358;--warn:#F2C46B;--warnbg:#3A2C0A}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:24px;font-weight:600;margin:0 0 6px}
+.intro{color:var(--fg2);margin:0 0 18px;max-width:780px}
+nav{position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:2;display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--line);margin-bottom:16px}
+nav button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:4px 10px;cursor:pointer}
+nav button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+section{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 14px}
+h2{font-size:16px;font-weight:600;margin:0 0 2px}
+.where{font-size:12.5px;color:var(--fg3);margin:0 0 10px}
+.st{display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;margin-left:6px;vertical-align:2px;background:var(--soft);color:var(--accent)}
+.st.new{background:var(--warnbg);color:var(--warn)}
+table{width:100%;border-collapse:collapse}
+td{padding:7px 8px;border-top:1px solid var(--line);vertical-align:top}
+td.l{width:44px;font-size:12px;font-weight:600;color:var(--fg3);text-transform:uppercase;padding-top:9px}
+td.t{font-size:15.5px}
+td.t small{display:block;color:var(--fg2);font-size:13px;margin-top:2px}
+td.n{width:34%;font-size:12.5px;color:var(--fg2)}
+tr.hide{display:none}
+.rot{color:var(--accent);font-weight:600}
+@media (max-width:700px){td.n{display:block;width:auto;border-top:none;padding-top:0}tr{display:block}td.l,td.t{display:inline-block}td.t{width:calc(100% - 50px)}}
+</style>
+</head>
+<body>
+<main>
+<h1>Строки сайта на 9 языках</h1>
+<p class="intro">Каждая строка написана на своём языке заново, а не переведена: свой образ, где он есть у культуры, обращение как на сайте сейчас (es, it, pl на «ты»; de, fr, uk, ru на «вы»; pt бразильский), местные слова для билетов и событий. Справа пометки, почему выбрана именно такая форма. Фильтр языков сверху.</p>
+<nav id="nav"></nav>
+<div id="out"></div>
+</main>
+<script>
+const L=['ru','en','es','pt','de','fr','it','pl','uk'];
+const D=[
+{k:'Главная · h1 (слово меняется)',w:'Hero главной. Слово в скобках меняется по кругу; без JS стоит первое.',s:'утверждено (ru)',r:{
+ru:['<span class="rot">[Концерт · Фестиваль · Премьера · Спектакль · Шоу · Мастер-класс · Детский праздник]</span> начинается с билета.','Отсылка к «Театр начинается с вешалки».'],
+en:['<span class="rot">[Every concert · Every festival · Every premiere · Every show · Every master class · Every children\'s party]</span> starts with a ticket.','«Every» вместо артикля: звучит как общая истина, а не про одно событие.'],
+es:['<span class="rot">[Tu concierto · Tu festival · Tu estreno · Tu espectáculo · Tu taller · Tu fiesta infantil]</span> empieza con una entrada.','«Tu» одинаково для мужского и женского рода, поэтому фраза держится со всеми словами. Билет в Испании «entrada», не «billete».'],
+pt:['<span class="rot">[Todo show · Todo festival · Toda estreia · Todo espetáculo · Toda masterclass · Toda festa infantil]</span> começa com um ingresso.','В Бразилии концерт это «show», билет «ingresso». «Todo/Toda» меняется вместе со словом.'],
+de:['<span class="rot">[Ein Konzert · Ein Festival · Eine Premiere · Eine Show · Ein Workshop · Ein Kinderfest]</span> beginnt mit einem Ticket.','Артикль меняется вместе со словом, иначе род сломает фразу.'],
+fr:['<span class="rot">[Un concert · Un festival · Une première · Un spectacle · Une masterclass · Une fête d\'enfants]</span> commence par un billet.','«Commence par», а не «avec»: так по-французски говорят о первом шаге.'],
+it:['<span class="rot">[Un concerto · Un festival · Una prima · Uno spettacolo · Una masterclass · Una festa per bambini]</span> inizia con un biglietto.','Премьера в театре по-итальянски «la prima».'],
+pl:['<span class="rot">[Koncert · Festiwal · Premiera · Spektakl · Masterclass · Impreza dla dzieci]</span> zaczyna się od biletu.','Глагол не зависит от рода, слово меняется свободно.'],
+uk:['<span class="rot">[Концерт · Фестиваль · Прем\'єра · Вистава · Шоу · Майстер-клас · Дитяче свято]</span> починається з квитка.','Та же отсылка, что в ru: «Театр починається з вішалки» украинцы тоже знают.']}},
+{k:'Главная · подзаголовок',w:'Под h1.',s:'утверждено (ru)',r:{
+ru:['Билеты для артистов, групп, промоутеров, площадок, фестивалей, театров и мастер-классов. Просто для первого мероприятия, профессионально для сотого.',''],
+en:['Ticketing for artists, bands, promoters, venues, festivals, theatres and master classes. Simple for your first event, professional for your hundredth.',''],
+es:['Venta de entradas para artistas, bandas, promotores, salas, festivales, teatros y talleres. Sencillo para tu primer evento, profesional para el centésimo.','«Sala» по-испански это и концертная площадка, и клуб.'],
+pt:['Venda de ingressos para artistas, bandas, produtores, casas de show, festivais, teatros e masterclasses. Simples para o seu primeiro evento, profissional para o centésimo.','Промоутер в Бразилии «produtor», площадка «casa de show».'],
+de:['Ticketing für Künstler, Bands, Promoter, Spielstätten, Festivals, Theater und Workshops. Einfach für Ihre erste Veranstaltung, professionell für Ihre hundertste.','«Spielstätte» так говорят о площадках в немецкой индустрии.'],
+fr:['Billetterie pour artistes, groupes, promoteurs, salles, festivals, théâtres et masterclasses. Simple pour votre premier événement, professionnel pour le centième.',''],
+it:['Biglietteria per artisti, band, promoter, locali, festival, teatri e masterclass. Semplice per il tuo primo evento, professionale per il centesimo.','«Locale» это площадка и клуб в живой речи.'],
+pl:['Sprzedaż biletów dla artystów, zespołów, promotorów, klubów, festiwali, teatrów i warsztatów. Prosto przy pierwszym wydarzeniu, profesjonalnie przy setnym.','«Przy pierwszym… przy setnym» естественнее, чем «dla pierwszego».'],
+uk:['Квитки для артистів, гуртів, промоутерів, майданчиків, фестивалів, театрів і майстер-класів. Просто для першого заходу, професійно для сотого.','Група по-українськи «гурт».']}},
+{k:'Главная · 4 выгоды',w:'Под кнопками hero: заголовок и строка.',s:'новое',r:{
+ru:['<b>В продаже уже сегодня.</b> Мероприятие без мест поступает в продажу за 10 минут, если платёжный аккаунт уже подключён.<br><b>Все функции, которые нужны организатору.</b> Схемы залов, ранние цены, промокоды, приглашения, сеансы, сканер на входе, продажи в Telegram и многое другое.<br><b>Деньги под вашим контролем.</b> Покупатели платят на ваш аккаунт с каждым заказом.<br><b>Выгодно.</b> От {usdPrice} за проданный билет, а не процент от выручки. Без подписки.',''],
+en:['<b>On sale today.</b> An event without reserved seats goes on sale in 10 minutes once your payment account is connected.<br><b>Every feature organizers need.</b> Seating plans, early bird prices, promo codes, invitations, sessions, door scanning, Telegram sales and much more.<br><b>Your money, your control.</b> Buyers pay into your own payment account with every order.<br><b>Good value.</b> From {usdPrice} per ticket sold, not a percentage of your revenue. No subscription.',''],
+es:['<b>A la venta hoy.</b> Un evento sin asientos numerados sale a la venta en 10 minutos si ya tienes conectada tu cuenta de pagos.<br><b>Todo lo que necesita un organizador.</b> Planos de sala, precios de preventa, códigos promocionales, invitaciones, sesiones, control de acceso, ventas por Telegram y mucho más.<br><b>Tu dinero, bajo tu control.</b> Los compradores pagan en tu propia cuenta de pagos con cada pedido.<br><b>Rentable.</b> Desde {usdPrice} por entrada vendida, no un porcentaje de tus ingresos. Sin suscripción.','Early bird по-испански «preventa». «Control de acceso» так называют вход по билетам.'],
+pt:['<b>À venda hoje.</b> Um evento sem lugares marcados começa a vender em 10 minutos, se a sua conta de pagamentos já estiver conectada.<br><b>Todas as funções que um organizador precisa.</b> Mapas de assentos, lotes, cupons de desconto, convites, sessões, leitura de ingressos na entrada, vendas pelo Telegram e muito mais.<br><b>Seu dinheiro, sob seu controle.</b> Os compradores pagam direto na sua conta de pagamentos, a cada pedido.<br><b>Vale a pena.</b> A partir de {usdPrice} por ingresso vendido, não uma porcentagem do seu faturamento. Sem assinatura.','Ранние цены в Бразилии это «lotes» (1º lote, 2º lote): так говорят все организаторы.'],
+de:['<b>Heute im Verkauf.</b> Eine Veranstaltung ohne Sitzplätze ist in 10 Minuten im Verkauf, wenn Ihr Zahlungskonto bereits verbunden ist.<br><b>Alle Funktionen, die Veranstalter brauchen.</b> Saalpläne, Frühbucherpreise, Rabattcodes, Freikarten, Termine, Einlasskontrolle, Verkauf über Telegram und vieles mehr.<br><b>Ihr Geld, Ihre Kontrolle.</b> Käufer zahlen bei jeder Bestellung direkt auf Ihr eigenes Zahlungskonto.<br><b>Fairer Preis.</b> Ab {usdPrice} pro verkauftem Ticket statt eines Prozentsatzes vom Umsatz. Ohne Abo.','Early bird по-немецки «Frühbucherpreis», пригласительные «Freikarten».'],
+fr:['<b>En vente aujourd\'hui.</b> Un événement sans placement numéroté est en vente en 10 minutes, dès que votre compte de paiement est connecté.<br><b>Toutes les fonctions dont un organisateur a besoin.</b> Plans de salle, tarifs early bird, codes promo, invitations, séances, contrôle d\'accès, ventes sur Telegram et bien plus.<br><b>Votre argent, sous votre contrôle.</b> Les acheteurs paient sur votre propre compte de paiement, à chaque commande.<br><b>Avantageux.</b> À partir de {usdPrice} par billet vendu, et non un pourcentage de vos recettes. Sans abonnement.','«Placement numéroté» стандартный термин французской билетной индустрии.'],
+it:['<b>In vendita oggi.</b> Un evento senza posti numerati va in vendita in 10 minuti, se il tuo conto di pagamento è già collegato.<br><b>Tutte le funzioni che servono a un organizzatore.</b> Mappe dei posti, prezzi early bird, codici sconto, inviti, più date, controllo accessi, vendite su Telegram e molto altro.<br><b>I tuoi soldi, sotto il tuo controllo.</b> Gli acquirenti pagano sul tuo conto di pagamento a ogni ordine.<br><b>Conveniente.</b> Da {usdPrice} per biglietto venduto, non una percentuale sull\'incasso. Nessun abbonamento.','Сеансы по-итальянски естественнее «più date».'],
+pl:['<b>W sprzedaży jeszcze dziś.</b> Wydarzenie bez miejsc numerowanych trafia do sprzedaży w 10 minut, jeśli twoje konto płatności jest już podłączone.<br><b>Wszystkie funkcje, których potrzebuje organizator.</b> Plany sal, ceny early bird, kody rabatowe, zaproszenia, terminy, kontrola wejść, sprzedaż w Telegramie i wiele więcej.<br><b>Twoje pieniądze pod twoją kontrolą.</b> Kupujący płacą na twoje konto płatności przy każdym zamówieniu.<br><b>Opłacalnie.</b> Od {usdPrice} za sprzedany bilet, a nie procent od przychodu. Bez abonamentu.',''],
+uk:['<b>У продажу вже сьогодні.</b> Захід без місць надходить у продаж за 10 хвилин, якщо платіжний акаунт уже підключено.<br><b>Усі функції, потрібні організатору.</b> Схеми залів, ранні ціни, промокоди, запрошення, сеанси, сканер на вході, продажі в Telegram і багато іншого.<br><b>Гроші під вашим контролем.</b> Покупці платять на ваш акаунт із кожного замовлення.<br><b>Вигідно.</b> Від {usdPrice} за проданий квиток, а не відсоток від виручки. Без підписки.','']}},
+{k:'Главная · страны и оплата',w:'Заголовок блока со всеми странами.',s:'новое',r:{
+ru:['Продавайте билеты в своей стране',''],en:['Sell tickets in your country',''],es:['Vende entradas en tu país',''],pt:['Venda ingressos no seu país',''],de:['Verkaufen Sie Tickets in Ihrem Land',''],fr:['Vendez des billets dans votre pays',''],it:['Vendi biglietti nel tuo paese',''],pl:['Sprzedawaj bilety w swoim kraju',''],uk:['Продавайте квитки у своїй країні','']}},
+{k:'Главная · для кого',w:'Заголовок блока аудиторий.',s:'утверждено (ru)',r:{
+ru:['Для тех, кого ждут зрители',''],
+en:['For the people audiences are waiting for','«For everyone an audience is waiting for» звучит тяжело; так короче и теплее.'],
+es:['Para quien tiene un público esperando','Дословное «para quienes el público espera» грамматически шатко; так звучит живо.'],
+pt:['Para quem tem um público esperando',''],
+de:['Für alle, auf die ein Publikum wartet',''],
+fr:['Pour ceux que le public attend','Самая естественная форма из всех языков.'],
+it:['Per chi ha un pubblico che lo aspetta',''],
+pl:['Dla tych, na których czeka publiczność',''],
+uk:['Для тих, на кого чекають глядачі','']}},
+{k:'Главная · где вы продаёте',w:'Новый заголовок блока «Где вы продаёте».',s:'новое',r:{
+ru:['На вашем сайте, на нашей странице, у партнёров и в соцсетях. Деньги в любом случае идут вам.',''],
+en:['On your website, on our page, on partner sites and on social media. The money comes to you either way.',''],
+es:['En tu web, en nuestra página, en webs de socios y en redes sociales. El dinero te llega igual.',''],
+pt:['No seu site, na nossa página, em sites de parceiros e nas redes sociais. O dinheiro vai para você de qualquer jeito.',''],
+de:['Auf Ihrer Website, auf unserer Seite, bei Partnern und in sozialen Netzwerken. Das Geld geht in jedem Fall an Sie.',''],
+fr:['Sur votre site, sur notre page, chez vos partenaires et sur les réseaux sociaux. L\'argent vous revient dans tous les cas.',''],
+it:['Sul tuo sito, sulla nostra pagina, sui siti dei partner e sui social. I soldi arrivano a te in ogni caso.',''],
+pl:['Na twojej stronie, na naszej stronie, u partnerów i w mediach społecznościowych. Pieniądze zawsze trafiają do ciebie.',''],
+uk:['На вашому сайті, на нашій сторінці, у партнерів і в соцмережах. Гроші в будь-якому разі надходять вам.','']}},
+{k:'Главная · все функции',w:'Заголовок блока функций.',s:'новое',r:{
+ru:['Всё, что нужно организатору, на одной платформе',''],en:['Everything an organizer needs, on one platform',''],es:['Todo lo que necesita un organizador, en una sola plataforma',''],pt:['Tudo o que um organizador precisa, em uma só plataforma',''],de:['Alles, was Veranstalter brauchen, auf einer Plattform',''],fr:['Tout ce dont un organisateur a besoin, sur une seule plateforme',''],it:['Tutto ciò che serve a un organizzatore, in un\'unica piattaforma',''],pl:['Wszystko, czego potrzebuje organizator, na jednej platformie',''],uk:['Усе, що потрібно організатору, на одній платформі','']}},
+{k:'Финальный призыв',w:'Последний блок главной и страниц аудиторий.',s:'утверждено (ru)',r:{
+ru:['Впереди ваше лучшее событие. Начнём с билетов?',''],
+en:['Your best event is yet to come. Shall we start with the tickets?','«Yet to come» звучит как обещание праздника, а не как срок.'],
+es:['Tu mejor evento está por llegar. ¿Empezamos por las entradas?','«Está por llegar» — так говорят о хорошем, что впереди.'],
+pt:['Seu melhor evento ainda está por vir. Vamos começar pelos ingressos?',''],
+de:['Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?',''],
+fr:['Votre plus bel événement est encore à venir. On commence par les billets ?','«Plus bel» теплее, чем «meilleur». Пробел перед «?» по правилам французской типографики.'],
+it:['Il tuo evento migliore deve ancora arrivare. Cominciamo dai biglietti?',''],
+pl:['Twoje najlepsze wydarzenie wciąż przed tobą. Zaczniemy od biletów?',''],
+uk:['Попереду ваша найкраща подія. Почнімо з квитків?','«Почнімо» — живая форма приглашения в украинском.']}},
+{k:'Концерты',w:'Живая строка под h1 страницы.',s:'утверждено (ru)',r:{
+ru:['Концерт начинается задолго до первой ноты.',''],en:['A concert starts long before the first note.',''],es:['Un concierto empieza mucho antes de la primera nota.',''],pt:['Um show começa muito antes da primeira nota.',''],de:['Ein Konzert beginnt lange vor dem ersten Ton.','«Ton» по-немецки естественнее, чем «Note».'],fr:['Un concert commence bien avant la première note.',''],it:['Un concerto inizia molto prima della prima nota.',''],pl:['Koncert zaczyna się na długo przed pierwszym dźwiękiem.','«Dźwięk» звучит естественнее, чем «nuta».'],uk:['Концерт починається задовго до першої ноти.','']}},
+{k:'Театр',w:'Своя театральная традиция в каждом языке.',s:'утверждено (ru)',r:{
+ru:['Спектакль начинается задолго до третьего звонка.',''],
+en:['A performance begins long before the curtain rises.','Звонков в англоязычном театре нет, есть занавес.'],
+es:['Una función empieza mucho antes de que se levante el telón.','«Función» так называют спектакль в Испании и Латинской Америке.'],
+pt:['Uma peça começa muito antes do terceiro sinal.','В бразильских театрах тоже дают «terceiro sinal», образ тот же, что в ru.'],
+de:['Eine Vorstellung beginnt, lange bevor sich der Vorhang hebt.','Запятая перед «lange bevor» по правилам немецкой пунктуации.'],
+fr:['Le spectacle commence bien avant les trois coups.','«Les trois coups» — французская театральная традиция перед поднятием занавеса.'],
+it:['Uno spettacolo inizia molto prima che si alzi il sipario.',''],
+pl:['Spektakl zaczyna się na długo przed podniesieniem kurtyny.',''],
+uk:['Вистава починається задовго до третього дзвоника.','Та же традиция, что в ru.']}},
+{k:'Шоу',w:'',s:'утверждено (ru)',r:{
+ru:['Шоу начинается задолго до выхода на сцену.',''],en:['A show starts long before anyone steps on stage.',''],es:['Un espectáculo empieza mucho antes de salir a escena.',''],pt:['Um espetáculo começa muito antes de alguém subir ao palco.','«Show» в Бразилии значит концерт, поэтому здесь «espetáculo».'],de:['Eine Show beginnt, lange bevor jemand die Bühne betritt.',''],fr:['Un spectacle commence bien avant l\'entrée en scène.',''],it:['Uno show inizia molto prima che si accendano le luci.','Образ «выход на сцену» занят строкой сольных артистов, здесь свет.'],pl:['Show zaczyna się na długo przed zapaleniem świateł.','То же, что в it: «выход на сцену» уже у сольных артистов.'],uk:['Шоу починається задовго до виходу на сцену.','']}},
+{k:'Фестивали',w:'',s:'утверждено (ru)',r:{
+ru:['Фестиваль начинается задолго до открытия ворот.',''],en:['A festival starts long before the gates open.',''],es:['Un festival empieza mucho antes de montar el primer escenario.','«Abrir puertas» занято площадками; монтаж сцены — тоже узнаваемый для организатора момент.'],pt:['Um festival começa muito antes de os portões abrirem.',''],de:['Ein Festival beginnt, lange bevor sich die Tore öffnen.',''],fr:['Un festival commence bien avant l\'ouverture des grilles.','«Portes» занято площадками, у фестиваля ограды и «grilles».'],it:['Un festival inizia molto prima che si aprano i cancelli.',''],pl:['Festiwal zaczyna się na długo przed otwarciem bram.',''],uk:['Фестиваль починається задовго до відкриття воріт.','']}},
+{k:'Концертные туры',w:'',s:'утверждено (ru)',r:{
+ru:['Гастроли начинаются задолго до первого города.',''],en:['A concert tour starts long before the first city.','Только «concert tour»: правило сайта для английского.'],es:['Una gira empieza mucho antes de la primera ciudad.',''],pt:['Uma turnê começa muito antes da primeira cidade.',''],de:['Eine Tournee beginnt lange vor der ersten Stadt.',''],fr:['Une tournée commence bien avant la première ville.',''],it:['Un tour inizia molto prima della prima città.',''],pl:['Trasa koncertowa zaczyna się na długo przed pierwszym miastem.',''],uk:['Гастролі починаються задовго до першого міста.','']}},
+{k:'Площадки и клубы',w:'',s:'утверждено (ru)',r:{
+ru:['Площадка оживает задолго до открытия дверей.',''],en:['A venue comes alive long before the doors open.',''],es:['Una sala cobra vida mucho antes de abrir puertas.','«Abrir puertas» — так в Испании пишут на афишах время входа.'],pt:['Uma casa de show ganha vida muito antes de abrir as portas.',''],de:['Eine Spielstätte erwacht, lange bevor sich die Türen öffnen.',''],fr:['Une salle s\'anime bien avant l\'ouverture des portes.',''],it:['Un locale prende vita molto prima dell\'apertura delle porte.',''],pl:['Klub ożywa na długo przed otwarciem drzwi.',''],uk:['Майданчик оживає задовго до відкриття дверей.','']}},
+{k:'Мастер-классы',w:'',s:'утверждено (ru)',r:{
+ru:['Мастер-класс начинается с первого записавшегося.',''],en:['A master class starts with the first person who signs up.',''],es:['Un taller empieza con la primera persona que se apunta.','«Apuntarse» — живое испанское «записаться».'],pt:['Uma masterclass começa com a primeira inscrição.',''],de:['Ein Workshop beginnt mit der ersten Anmeldung.',''],fr:['Une masterclass commence avec le premier inscrit.',''],it:['Una masterclass inizia con il primo iscritto.',''],pl:['Warsztaty zaczynają się od pierwszego zapisu.','По-польски «warsztaty» во множественном числе.'],uk:['Майстер-клас починається з першого, хто записався.','']}},
+{k:'Выставки и музеи',w:'',s:'утверждено (ru)',r:{
+ru:['Выставка начинается задолго до первого зала.',''],en:['An exhibition begins long before the first room.','«Hall» на сайте не используем, «room» точнее для выставки.'],es:['Una exposición empieza mucho antes de la primera sala.',''],pt:['Uma exposição começa muito antes da primeira sala.',''],de:['Eine Ausstellung beginnt lange vor dem ersten Raum.',''],fr:['Une exposition commence bien avant la première salle.',''],it:['Una mostra inizia molto prima della prima sala.','Выставка по-итальянски «mostra».'],pl:['Wystawa zaczyna się na długo przed pierwszą salą.',''],uk:['Виставка починається задовго до першої зали.','']}},
+{k:'Сольные артисты',w:'',s:'утверждено (ru)',r:{
+ru:['Ваш выход начинается задолго до сцены.',''],en:['Your moment starts long before you walk on stage.',''],es:['Tu momento empieza mucho antes de subir al escenario.',''],pt:['Seu momento começa muito antes de você subir ao palco.',''],de:['Ihr Auftritt beginnt lange vor der Bühne.',''],fr:['Votre moment commence bien avant de monter sur scène.',''],it:['Il tuo momento inizia molto prima di salire sul palco.',''],pl:['Twój występ zaczyna się na długo przed wejściem na scenę.',''],uk:['Ваш вихід починається задовго до сцени.','']}},
+{k:'Детские мероприятия',w:'',s:'утверждено (ru)',r:{
+ru:['Праздник начинается задолго до первого воздушного шарика.',''],en:['A children\'s party starts long before the first balloon.',''],es:['Una fiesta infantil empieza mucho antes del primer globo.',''],pt:['Uma festa infantil começa muito antes do primeiro balão.',''],de:['Ein Kinderfest beginnt lange vor dem ersten Luftballon.',''],fr:['Une fête d\'enfants commence bien avant le premier ballon.',''],it:['Una festa per bambini inizia molto prima del primo palloncino.',''],pl:['Impreza dla dzieci zaczyna się na długo przed pierwszym balonikiem.',''],uk:['Свято починається задовго до першої повітряної кульки.','']}},
+{k:'White label',w:'Новая строка: смысл white label — клиент продаёт под своим именем и не называет нас билетной платформой.',s:'новое',r:{
+ru:['Ваше имя на афише. Наше остаётся за кулисами.','Афиша и кулисы — язык самой индустрии; брендов на билетах нет, поэтому про билеты ни слова.'],
+en:['Your name in the spotlight. Ours stays backstage.',''],
+es:['Tu nombre en el cartel. El nuestro, entre bastidores.',''],
+pt:['Seu nome no cartaz. O nosso fica nos bastidores.',''],
+de:['Ihr Name im Rampenlicht. Unserer bleibt hinter den Kulissen.',''],
+fr:['Votre nom à l\'affiche. Le nôtre reste en coulisses.','«Être à l\'affiche» — устойчивое выражение о тех, кого публика видит.'],
+it:['Il tuo nome in cartellone. Il nostro resta dietro le quinte.',''],
+pl:['Twoja marka na afiszu. Nasza zostaje za kulisami.','«Marka», не «nazwisko»: white label берут компании.'],
+uk:['Ваше ім\'я на афіші. Наше лишається за лаштунками.','']}}
+];
+let on=new Set(L);
+const nav=document.getElementById('nav'),out=document.getElementById('out');
+function draw(){
+nav.innerHTML='<button data-a="1">Все языки</button>'+L.map(l=>`<button data-l="${l}" class="${on.has(l)?'on':''}">${l}</button>`).join('');
+out.innerHTML=D.map(d=>`<section><h2>${d.k}<span class="st ${d.s==='новое'?'new':''}">${d.s}</span></h2>${d.w?`<p class="where">${d.w}</p>`:''}<table>${L.map(l=>`<tr class="${on.has(l)?'':'hide'}"><td class="l">${l}</td><td class="t" lang="${l}">${d.r[l][0]}</td><td class="n">${d.r[l][1]||''}</td></tr>`).join('')}</table></section>`).join('');
+nav.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(b.dataset.a){on=new Set(L)}else{const l=b.dataset.l;if(on.size===L.length){on=new Set([l])}else{on.has(l)?on.delete(l):on.add(l);if(!on.size)on=new Set(L)}}draw()});
+}
+draw();
+</script>
+</body>
+</html>
