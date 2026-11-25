@@ -575,7 +575,8 @@ footer{border-top:1px solid var(--line);padding-block:48px 28px;font-size:14px}
 @media (max-width:480px){.hero-benefits{grid-template-columns:minmax(0,1fr)}}
 @media (prefers-reduced-motion: reduce){.hero-rot .rot{transition:none}}
 /* Countries, then payment methods */
-.pcn-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.pcn-list{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 0;padding:0;list-style:none}
+.pcn-list li{margin:0}
 .pcn{font:inherit;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--fg);cursor:pointer}
 .pcn:hover{border-color:var(--accent-line)}
 .pcn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}

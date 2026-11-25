@@ -26,11 +26,11 @@ const allMethods = [...new Set(rows.flatMap((r) => r.methods))];
     <p class="eyebrow">{s.eyebrow ?? t(lang, 'paycountries.eyebrow')}</p>
     <h2 class="h2">{s.title ?? t(lang, 'paycountries.title')}</h2>
     <p class="lead">{s.lead ?? t(lang, 'paycountries.lead')}</p>
-    <div class="pcn-list" role="list">
+    <ul class="pcn-list">
       {rows.map((r) => (
-        <button type="button" class="pcn" role="listitem" aria-pressed="false" data-name={r.name} data-methods={JSON.stringify(r.methods)} data-via={r.via}>{r.name}</button>
+        <li><button type="button" class="pcn" aria-pressed="false" data-name={r.name} data-methods={JSON.stringify(r.methods)} data-via={r.via}>{r.name}</button></li>
       ))}
-    </div>
+    </ul>
     <div class="card pcn-out" aria-live="polite">
       <p class="pcn-head"><span class="pcn-label">{t(lang, 'paycountries.methods')}</span> <b class="pcn-name">{t(lang, 'paycountries.all')}</b></p>
       <p class="pcn-methods">{allMethods.map((m) => <span class="pcn-m">{m}</span>)}</p>
