@@ -17,7 +17,7 @@ Other sessions (Статьи, SEO, page edits) read this before writing titles, 
 
 | # | Cluster | Queries (lang en unless marked) | Intent | Target page | Status | Data |
 |---|---|---|---|---|---|---|
-| 1 | Ticketing platform (category) | ticketing platform, ticketing platforms, ticket platform, tickets platform, ticket system, tickets system, ticket online system, event ticketing platform, event ticketing system, ticket system for events, online ticketing system for events, event ticketing software, best event ticketing software, ticket sales system, ticket selling system, ticket sales platform, ticketing sale platform, online ticket sales platform, ticket selling solution, sold out arena | tool / brand | `/` (home) | decision: partly | SR: event ticketing software 1,000–1,300 KD 30–49; event ticketing platform 590 KD 34; online ticket sales platform 140 KD 38; online ticketing system for events 50 KD 22. GSC: ticketing platform 75 impr. pos 46; ticket sales system 36 / pos 53; event ticketing platform 32 / pos 81; ticket selling solution 41 / pos 17 |
+| 1 | Ticketing platform (category) | ticket solution, ticketing sales system, ticket sales systems, ticketing platform, ticketing platforms, ticket platform, tickets platform, ticket system, tickets system, ticket online system, event ticketing platform, event ticketing system, ticket system for events, online ticketing system for events, event ticketing software, best event ticketing software, ticket sales system, ticket selling system, ticket sales platform, ticketing sale platform, online ticket sales platform, ticket selling solution, sold out arena | tool / brand | `/` (home) | decision: partly | SR: event ticketing software 1,000–1,300 KD 30–49; event ticketing platform 590 KD 34; online ticket sales platform 140 KD 38; online ticketing system for events 50 KD 22. GSC: ticketing platform 75 impr. pos 46; ticket sales system 36 / pos 53; event ticketing platform 32 / pos 81; ticket selling solution 41 / pos 17 |
 | 2 | Sell tickets on your own website | sell tickets on your website, ticket sales on your website, ticket platform for website ticketing, creating an online ticket shop, "event organiser + ticket selling + sell tickets" combinations, sprzedaż biletów na własnej stronie (pl) | tool | `/product/sell` (pl: `/pl/product/sell`) | en partly, pl covered | GSC |
 | 3 | How to sell tickets on your own website (guide) | sell tickets on your own website (as a how-to) | how-to | post `i-want-my-own-website-for-selling-tickets` (ranked pos 48), rewrite or new article | partly | GSC pos 48 |
 | 4 | Concert ticketing | concert ticketing system, concert ticketing software | tool | `/solutions/concerts` | partly | SR: concert ticketing software 210 KD 15 CPC $7.47. Marina sent "concert ticketing system" again 2026-11-26: priority |
@@ -25,16 +25,29 @@ Other sessions (Статьи, SEO, page edits) read this before writing titles, 
 | 6 | Festival ticketing | festival ticketing software | tool | `/solutions/festivals` | partly | SR 170 KD 9 |
 | 7 | Exhibitions, museums, excursions | ticket sales system for exhibitions, exhibition ticket sales system, excursion online selling software | tool | new page `/solutions/exhibitions` (exhibitions, museums, excursions, tours) | gap | GSC |
 | 8 | White label | white label ticketing platform, white label event ticketing platform | tool | new page `/product/white-label` | decision: gap | SR 140 KD 10 CPC $17.31 (the event variant: no volume) |
+| 9a | TicketSource alternative | alternative to ticketsource | vs | `/ticketsource-alternative` | covered | GSC 2026-11-26 |
 | 9 | Eventbrite alternative | eventbrite alternative | vs | `/eventbrite-alternative` | covered | SR 320 KD 11 |
 | 10 | Ticket Tailor alternative | ticket tailor alternative | vs | `/tickettailor-alternative` | covered | SR 30 KD 20 |
 | 11 | WordPress plugin | wordpress ticketing plugin, wordpress event ticketing plugin, wordpress plugin ticketing system, best wordpress ticketing plugin, woocommerce ticketing plugin | tool | `/solutions/wordpress` | partly | SR: wordpress ticketing plugin 30 KD 41 |
-| 12 | Increase ticket sales | how to increase ticket sales, how to boost ticket sales, how to increase ticket sales for an event | how-to | post `increasing-ticket-sales-guide-for-event-organizers` | partly | GSC |
+| 12 | Increase ticket sales | how to sell more tickets to an event, how to increase ticket sales, how to boost ticket sales, how to increase ticket sales for an event | how-to | post `increasing-ticket-sales-guide-for-event-organizers` | partly | GSC |
 | 13 | What is a ticketing system | what is a ticketing system | how-to | post `ticket-platform-vs-ticket-system-understanding-the-difference-2` | partly | GSC. Competing post: `the-essential-functionality-of-a-ticket-system`; that one should link to this one, not target the query |
 | 14 | Ticketing problems | event ticketing issues, event ticketing challenges | how-to | new article | gap | GSC |
 | 15 | Buyer data ownership | data ownership event ticketing | how-to | post `customer-database-key-asset-for-event-organizers-on-ticketing-platforms` | partly | GSC |
 | 16 | Ticket sales automation | ticket sales automation | how-to | new article (or section in cluster 14 article) | gap | GSC |
 | 17 | Service fees (nl) | servicekosten ticketverkoop (nl) | how-to | nl not on the site (wave 2); en twin: post `service-fees-in-ticket-sales-size-matters` | gap (nl) | GSC |
-| – | Not our offer | event ticketing software free, event ticketing software self hosted, wordpress ticketing plugin free | no-fit | none | do not target | AC |
+| 18 | Platform fees compared | ticketing platform fees | vs | `/alternatives` (fees per ticket next to Eventbrite, Ticket Tailor, TicketSpice, TicketSource, Weezevent) | partly | GSC 2026-11-26 |
+| 19 | Billetsystem (da/no) | billet system | tool | Danish/Norwegian "billetsystem"; da not planned, no is hidden (wave 2); nothing to target now | gap (lang) | GSC 2026-11-26 |
+| – | Not our offer | event ticketing software free, event ticketing software self hosted, wordpress ticketing plugin free, how to build a ticket comparison website (aggregator builders, not organizers) | no-fit | none | do not target | AC, GSC |
+
+### Batch 2 (2026-11-26)
+
+Marina re-sent most of batch 1 as "next to work on" (clusters 1, 2, 5, 12, 14): treat these as priority.
+New queries: ticket solution, ticketing sales system, ticket sales systems (→ 1); how to sell more tickets to an event (→ 12);
+alternative to ticketsource (→ 9a, covered); ticketing platform fees (→ 18); billet system (→ 19); how to build a ticket comparison website (no-fit).
+
+**Conflict to fix:** `/alternatives` title "ArenaSoldOut.com compared with other ticketing platforms" also targets "ticketing platforms",
+which home owns (cluster 1). Proposal: retitle `/alternatives` around fees, e.g. "Ticketing platform fees compared: ArenaSoldOut.com and others" (≤60),
+so it owns cluster 18 and stops competing with home.
 
 ### Notes per cluster
 
