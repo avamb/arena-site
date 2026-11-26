@@ -43,6 +43,10 @@ Other sessions (Статьи, SEO, page edits) read this before writing titles, 
    already say "Ticketing platform for organizers"; the title is a slogan without the term.
    Proposal: title "Event ticketing platform for organizers: ArenaSoldOut.com" (or similar ≤60), h1 stays.
    Changing the home title is Marina's decision. `/features` links to home with "event ticketing software".
+   Update 2026-11-26: main now has title "Event ticketing platform for organizers: ArenaSoldOut.com" (covers
+   ticketing platform, event ticketing platform). Marina re-sent "ticket sales system", "ticket platform",
+   "ticket system", "ticketing platform" as next to work on. Still missing on home: "ticket sales system" /
+   "ticket system" (description or a section heading); "ticket platform" is close enough to the title.
 2. **Sell page.** pl title matches the query word for word. en title "Sell tickets on your own site or on a page we host":
    "site" → "website" is the only gap.
 3. **Guide** targets the how-to wording and links to `/product/sell` with anchor "sell tickets on your website".
@@ -65,7 +69,7 @@ Other sessions (Статьи, SEO, page edits) read this before writing titles, 
 
 ### Priority queue (value for organizers × chance to rank)
 
-1. Home title → cluster 1 (decision).
+1. Home → cluster 1: title done on main; add "ticket sales system" to description or a section (priority, 2026-11-26).
 2. `/solutions/concerts` + solo artist section → clusters 4, 5.
 3. `/solutions/festivals` title → cluster 6.
 4. `/product/sell` title "website" → cluster 2.
