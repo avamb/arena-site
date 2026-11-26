@@ -20,7 +20,7 @@ Other sessions (Статьи, SEO, page edits) read this before writing titles, 
 | 1 | Ticketing platform (category) | ticketing platform, ticketing platforms, ticket platform, tickets platform, ticket system, tickets system, ticket online system, event ticketing platform, event ticketing system, ticket system for events, online ticketing system for events, event ticketing software, best event ticketing software, ticket sales system, ticket selling system, ticket sales platform, ticketing sale platform, online ticket sales platform, ticket selling solution, sold out arena | tool / brand | `/` (home) | decision: partly | SR: event ticketing software 1,000–1,300 KD 30–49; event ticketing platform 590 KD 34; online ticket sales platform 140 KD 38; online ticketing system for events 50 KD 22. GSC: ticketing platform 75 impr. pos 46; ticket sales system 36 / pos 53; event ticketing platform 32 / pos 81; ticket selling solution 41 / pos 17 |
 | 2 | Sell tickets on your own website | sell tickets on your website, ticket sales on your website, ticket platform for website ticketing, creating an online ticket shop, "event organiser + ticket selling + sell tickets" combinations, sprzedaż biletów na własnej stronie (pl) | tool | `/product/sell` (pl: `/pl/product/sell`) | en partly, pl covered | GSC |
 | 3 | How to sell tickets on your own website (guide) | sell tickets on your own website (as a how-to) | how-to | post `i-want-my-own-website-for-selling-tickets` (ranked pos 48), rewrite or new article | partly | GSC pos 48 |
-| 4 | Concert ticketing | concert ticketing system, concert ticketing software | tool | `/solutions/concerts` | partly | SR: concert ticketing software 210 KD 15 CPC $7.47 |
+| 4 | Concert ticketing | concert ticketing system, concert ticketing software | tool | `/solutions/concerts` | partly | SR: concert ticketing software 210 KD 15 CPC $7.47. Marina sent "concert ticketing system" again 2026-11-26: priority |
 | 5 | Solo artist / single event | single performer ticket sales system, ticket sales system for a single performer, single event ticket sales system | tool | `/solutions/concerts` (new section for solo artists and one-off events) | gap | GSC |
 | 6 | Festival ticketing | festival ticketing software | tool | `/solutions/festivals` | partly | SR 170 KD 9 |
 | 7 | Exhibitions, museums, excursions | ticket sales system for exhibitions, exhibition ticket sales system, excursion online selling software | tool | new page `/solutions/exhibitions` (exhibitions, museums, excursions, tours) | gap | GSC |
@@ -47,7 +47,9 @@ Other sessions (Статьи, SEO, page edits) read this before writing titles, 
    "site" → "website" is the only gap.
 3. **Guide** targets the how-to wording and links to `/product/sell` with anchor "sell tickets on your website".
    Old post description is an off-topic intro, needs a rewrite (Статьи session).
-4. **Concerts** title has "Concert ticketing", not "software/system": add one of them to title or h1.
+4. **Concerts.** Since main f1e0fde the title is "Concert ticketing software: standing, seated, early bird".
+   "system" is still missing: put it in h1 (now just "Concert ticketing") or description, not in the title again.
+   Marina re-sent "concert ticketing system" on 2026-11-26 and wants to work on it soon.
 5. **Solo artist:** queries come from GSC only, small volume; one section + FAQ on concerts page, no new page.
 7. **Exhibitions:** no page today. An old post `how-to-create-a-website-for-ticket-sales-...-exhibitions-museums-tours-excursions...`
    carries these words in the title only. Pricing already names excursions under low-price tickets.
