@@ -30,7 +30,7 @@ sections:
   - type: cta
     id: start
     title: Escreva para a equipe
-    text: Conte-nos quem você é e com quem trabalha. Respondemos pessoalmente em até um dia útil.
+    text: Conte-nos quem você é e com quem trabalha. Respondemos em até um dia útil.
     primary: { label: Fale conosco, href: /contact }
     secondary: { label: Ler a documentação para desenvolvedores, href: /developers }
     note: "Ou no Telegram: o chat é lido durante o dia na Europa e em Israel."

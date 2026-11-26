@@ -138,6 +138,19 @@ sections:
         text: "Seat holds expire on a timer, orders are rate-limited, abusive traffic is filtered."
 
   - type: cards
+    id: services
+    eyebrow: Services
+    title: What our team does for you
+    lead: "Details: [extra services](/pricing#services)."
+    items:
+      - title: Seating plan drawing, free
+        text: "Send a PDF, a sketch or a table of rows; we draw the plan, usually within a day."
+      - title: Event manager, paid
+        text: "A person from our team works as part of yours: creates events, checks them before sales, pulls reports. Terms agreed with each organizer."
+      - title: White label
+        text: "Sell without our name: €45 a month per brand or venue in the EU, US$45 elsewhere."
+
+  - type: cards
     id: pricing
     eyebrow: Pricing
     title: What you pay
@@ -158,4 +171,4 @@ sections:
     text: Create the event, connect your payment account, share the link.
     primary: { label: Create your event, href: /start#create }
     secondary: { label: See pricing, href: /pricing }
-    note: "Or write to us: we set everything up with you on a call."
+    note: "Questions? Write to us: the team answers within one working day."

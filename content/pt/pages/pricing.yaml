@@ -72,6 +72,21 @@ sections:
     note: "Você paga depois do evento, por transferência bancária. Para eventos à venda por vários meses e para locais permanentes, cobramos mensalmente. O pagamento depois do evento está disponível para organizações confirmadas na plataforma. Condições de volume e individuais sob consulta."
     terms: { label: Condições detalhadas →, href: /pricing/terms }
 
+  - type: cards
+    id: services
+    eyebrow: Serviços extras
+    title: O que mais posso contratar?
+    lead: "Não fazem parte da comissão por ingresso. Cada um é contratado separadamente."
+    items:
+      - title: Gerente de eventos
+        text: "Sem tempo para configurar os eventos sozinho? Uma pessoa da nossa equipe trabalha como parte da sua: cria eventos e sessões, confere preços, categorias e o mapa de assentos antes das vendas, extrai os relatórios de que você precisa, envia convites e reenvia ingressos. Pago à parte; as condições são combinadas com cada organizador."
+        link: { label: Escreva para nós, href: /contact }
+      - title: White label
+        text: "Venda sem a linha Tickets: ArenaSoldOut.com: €45 por mês por marca ou local em países da UE, US$45 em todos os outros países."
+        link: { label: Condições, href: /pricing/terms }
+      - title: Desenho do mapa de assentos
+        text: "Grátis. Envie um PDF, uma foto de um croqui à mão ou uma tabela de fileiras e assentos, e desenhamos o mapa, em geral em um dia."
+        link: { label: Mapas de assentos, href: /product/seating }
   - type: faq
     id: questions
     eyebrow: Perguntas sobre dinheiro
@@ -112,4 +127,4 @@ sections:
     text: "Crie o evento, conecte sua conta de pagamentos, compartilhe o link. Um evento sem mapa de assentos entra à venda em 10 minutos; o mapa de assentos nós desenhamos para você, sem custo."
     primary: { label: Criar seu evento, href: /start#create }
     secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou escreva para nós: configuramos tudo com você em uma conversa."
+    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."

@@ -40,6 +40,10 @@ sections:
 
       Finché il white label è attivo, la riga del widget, il piè di pagina del tuo negozio e la riga della piattaforma nelle e-mail agli acquirenti scompaiono, e le e-mail partono con il nome del marchio. Ciò che resta: le pagine di vendita che ospitiamo, i link alle condizioni e all'informativa sulla privacy della piattaforma al checkout e i dati del venditore, come richiede la legge. Il nostro team attiva e disattiva il white label per un marchio da una data che scegli tu: scrivici dalla [pagina dei contatti](/contact).
 
+      ## Event manager
+
+      ArenaSoldOut.com è costruito perché gli organizzatori configurino tutto da soli: eventi, sessioni, prezzi, categorie, codici promozionali, report. La nostra commissione per biglietto copre la piattaforma e le risposte alle domande; non include il lavoro svolto per te. Se non hai tempo per questo lavoro, un event manager del nostro team può farlo come parte del tuo: creare eventi e sessioni, controllarli prima delle vendite, estrarre i report, inviare inviti e reinviare biglietti. È un servizio a pagamento separato; ambito e prezzo si concordano con ogni organizzatore. Scrivici dalla [pagina dei contatti](/contact).
+
       ## Rimborsi, cambi di data e annullamento
 
       Quando un acquirente restituisce un biglietto, il rimborso gli è pagato da te, l'organizzatore. La commissione per una vendita già avvenuta resta. Non addebitiamo una commissione separata per l'elaborazione di un rimborso, per lo spostamento della data o per le e-mail agli acquirenti. Le condizioni proprie del fornitore di pagamenti valgono come le indica il fornitore. Se un evento viene annullato, la commissione già addebitata non viene restituita in denaro.
@@ -61,4 +65,4 @@ sections:
     text: "Crea l'evento, collega il tuo conto di pagamento, condividi il link. Un evento senza mappa dei posti è in vendita in 10 minuti; la mappa dei posti la disegniamo noi per te, gratis."
     primary: { label: Crea il tuo evento, href: /start#create }
     secondary: { label: Apri il bot di Telegram, href: https://t.me/EventsCentrBot }
-    note: "Oppure scrivici: configuriamo tutto insieme a te in una chiamata."
+    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."

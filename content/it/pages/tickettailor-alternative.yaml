@@ -60,9 +60,9 @@ sections:
       - title: Ogni vendita nel tuo Telegram
         text: "Crea un evento da una foto della locandina nel bot di Telegram e vedi ogni vendita e rimborso nel tuo gruppo in pochi secondi."
         link: { label: Bot di Telegram, href: /product/telegram }
-      - title: Una persona che configura tutto con te
-        text: "Non un centro assistenza: il nostro team collega il tuo conto di pagamento, costruisce la mappa e verifica il primo evento insieme a te."
-        link: { label: Il tuo primo evento, href: /first-event }
+      - title: Configuri tu, oppure ci pensiamo noi
+        text: "Crei tu eventi, prezzi e categorie nell'Event Center o nel bot di Telegram, in pochi minuti; le mappe dei posti le disegniamo gratis. Non hai tempo? Il nostro event manager lo fa per te, come servizio a pagamento."
+        link: { label: Servizi extra, href: /pricing#services }
 
   - type: faq
     id: questions
@@ -75,7 +75,7 @@ sections:
       - q: Dove va il denaro dell'acquirente?
         a: "Sul tuo conto di pagamento con ogni ordine: Stripe, Flitt o AllPay. ArenaSoldOut.com non detiene mai fondi. La nostra commissione è fatturata dopo l'evento o prelevata dai tuoi crediti."
       - q: Posso spostare i miei eventi da Ticket Tailor?
-        a: "Sì. Mandaci l'elenco dei tuoi eventi e le tue mappe dei posti; il team configura gli eventi e disegna le mappe gratis, e tu continui a vendere su Ticket Tailor finché la tua pagina da noi non è pronta."
+        a: "Sì. Crei i tuoi eventi nell'Event Center o nel bot di Telegram, noi disegniamo gratis le tue mappe dei posti, e tu continui a vendere su Ticket Tailor finché la tua pagina da noi non è pronta. Non hai tempo di configurare? Il nostro [event manager](/pricing#services) lo fa per te, come servizio a pagamento."
       - q: Pago un abbonamento?
         a: "No. Paghi solo per i biglietti venduti. Inviti e biglietti gratuiti a eventi a pagamento non hanno commissione."
       - q: E gli enti benefici?
@@ -89,4 +89,4 @@ sections:
     text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
     primary: { label: Inizia a vendere, href: /start }
     secondary: { label: Vedi i prezzi, href: /pricing }
-    note: "Oppure scrivici: confrontiamo i tuoi costi attuali e configuriamo tutto insieme a te in una chiamata."
+    note: "Domande? Mandaci quanto paghi su Ticket Tailor e lo confrontiamo con i tuoi costi qui."

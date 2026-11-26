@@ -106,7 +106,7 @@ sections:
       - title: What do I need?
         text: "The event name and schedule, your ticket prices, your poster, and your own payment account: Stripe, Flitt, AllPay or another provider of your country. Money goes to you from the first ticket."
       - title: Which way do I set it up?
-        text: "In the browser on a computer or a phone, in the “Event Center”*. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. Or send it to us and we set it up."
+        text: "In the browser on a computer or a phone, in the “Event Center”*. Or in Telegram, where the bot reads your poster and fills in dates, prices and the venue for you to confirm. No time? Our [event manager](/pricing#services) does it for you, as a paid service."
     note: "* The “Event Center” is your organizer account on ArenaSoldOut.com: every event, order, refund, invitation and session, for you and your team, in the browser and in Telegram. [See the Event Center below →](#center) Every step from the application to the scanner: [your first event →](/first-event)"
 
   - type: ways
@@ -360,7 +360,7 @@ sections:
       - q: Can I see where buyers come from?
         a: Yes. Add UTM tags to your sales links and the Event Center shows which channel brought the orders.
       - q: I have never sold tickets before. Is this for me?
-        a: "Yes. We walk you through it step by step: [your first event →](/first-event). We draw your seating plan for free and, if you prefer, set everything up with you on a call."
+        a: "Yes. We walk you through it step by step: [your first event →](/first-event). We draw your seating plan for free No time? Our [event manager](/pricing#services) does it for you, as a paid service."
       - q: How do I reach the ArenaSoldOut.com team if I have a question?
         a: "Write to us on Telegram, through the [form on the site](/contact#write) or at hello@arenasoldout.com. People from the team answer."
 

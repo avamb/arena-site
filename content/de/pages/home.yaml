@@ -99,7 +99,7 @@ sections:
       - title: Was brauche ich?
         text: "Den Namen und den Zeitplan des Events, Ihre Ticketpreise, Ihr Plakat und Ihr eigenes Zahlungskonto: Stripe, Flitt, AllPay oder einen anderen Anbieter Ihres Landes. Das Geld geht ab dem ersten Ticket an Sie."
       - title: Wie richte ich es ein?
-        text: "Im Browser am Computer oder Telefon, im „Event Center“*. Oder in Telegram, wo der Bot Ihr Plakat liest und Termine, Preise und Spielstätte zur Bestätigung einträgt. Oder Sie schicken es uns, und wir richten es ein."
+        text: "Im Browser am Computer oder Telefon, im „Event Center“*. Oder in Telegram, wo der Bot Ihr Plakat liest und Termine, Preise und Spielstätte zur Bestätigung einträgt. Keine Zeit? Unser [Event-Manager](/pricing#services) übernimmt es für Sie, als bezahlte Leistung."
     note: "* Das „Event Center“ ist Ihr Veranstalterkonto bei ArenaSoldOut.com: jedes Event, jede Bestellung, Erstattung, Freikarte und Vorstellung, für Sie und Ihr Team, im Browser und in Telegram. [Das Event Center unten ansehen →](#center) Jeder Schritt von der Anmeldung bis zum Scanner: [Ihr erstes Event →](/first-event)"
 
   - type: ways
@@ -353,7 +353,7 @@ sections:
       - q: Kann ich sehen, woher die Käufer kommen?
         a: Ja. Ergänzen Sie Ihre Verkaufslinks um UTM-Parameter, und das Event Center zeigt, welcher Kanal die Bestellungen gebracht hat.
       - q: Ich habe noch nie Tickets verkauft. Ist das etwas für mich?
-        a: "Ja. Wir begleiten Sie Schritt für Schritt: [Ihr erstes Event →](/first-event). Ihren Saalplan zeichnen wir kostenlos, und wenn Sie möchten, richten wir alles gemeinsam mit Ihnen in einem Gespräch ein."
+        a: "Ja. Wir begleiten Sie Schritt für Schritt: [Ihr erstes Event →](/first-event). Ihren Saalplan zeichnen wir kostenlos. Keine Zeit? Unser [Event-Manager](/pricing#services) übernimmt das für Sie, als kostenpflichtiger Service."
       - q: Wie erreiche ich das Team von ArenaSoldOut.com, wenn ich eine Frage habe?
         a: "Schreiben Sie uns auf Telegram, über das [Formular auf der Website](/contact#write) oder an hello@arenasoldout.com. Es antworten Menschen aus dem Team."
 

@@ -30,7 +30,7 @@ sections:
   - type: cta
     id: start
     title: Escribe al equipo
-    text: Cuéntanos quién eres y con quién trabajas. Respondemos en persona en un día laborable.
+    text: Cuéntanos quién eres y con quién trabajas. Respondemos en un día laborable.
     primary: { label: Contáctanos, href: /contact }
     secondary: { label: Lee la documentación para desarrolladores, href: /developers }
     note: "O en Telegram: el chat se lee durante el día en Europa e Israel."

@@ -39,7 +39,7 @@ sections:
   - type: cta
     id: start
     title: Your best event is yet to come. Shall we start with the tickets?
-    text: Tell us the site address and the provider you use. We set up the widget with you.
+    text: Tell us the site address and the provider you use. The widget goes on your site in three lines of code, and the sales run from your Event Center.
     primary: { label: Start selling, href: /start }
     secondary: { label: Create your event, href: /start#create }
     tertiary: { label: Contact the team, href: /contact#write }

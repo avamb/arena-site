@@ -40,7 +40,7 @@ sections:
   - type: cta
     id: start
     title: Twoje najlepsze wydarzenie wciąż przed tobą. Zaczniemy od biletów?
-    text: Opowiedz nam o obiekcie i liczbie wydarzeń w miesiącu. Plan i warunki ustawimy razem z tobą.
+    text: Opowiedz nam o obiekcie i liczbie wydarzeń w miesiącu. Plan sali narysujemy za darmo, a warunki dla obiektu ustalimy z tobą.
     primary: { label: Zacznij sprzedaż, href: /start }
     secondary: { label: Utwórz wydarzenie, href: /start#create }
     tertiary: { label: Skontaktuj się z zespołem, href: /contact#write }

@@ -38,7 +38,7 @@ sections:
       - q: Was bereite ich vor?
         a: "Den Eventnamen, die Spielstätte, Termine und Uhrzeiten, die Ticketkategorien und Preise, ein Plakat und die API-Schlüssel Ihres Zahlungskontos. Für Plätze den Saalplan in einer der oben genannten Formen."
       - q: Kann das Team es für mich einrichten?
-        a: "Ja. Senden Sie die Angaben im [Telegram-Bot](https://t.me/EventsCentrBot) oder über das Kontaktformular, und wir legen das Event gemeinsam mit Ihnen an; Sie prüfen es vor dem Verkaufsstart."
+        a: "Als bezahlte Leistung, ja. Ein Event-Manager aus unserem Team arbeitet als Teil Ihres Teams: legt Events und Vorstellungen an, prüft Preise, Kategorien und Saalplan vor dem Verkauf und erstellt Berichte. Die Konditionen werden mit jedem Veranstalter vereinbart: [Schreiben Sie uns](/contact). Ein Event selbst anzulegen dauert etwa 10 Minuten."
       - q: Was kostet das erste Event?
         a: "Dasselbe wie jedes andere: eine Provision pro verkauftem Ticket, in Rechnung gestellt nach der Veranstaltung, oder weniger mit im Voraus gekauften Credits. Saalpläne und Freikarten kosten nichts. Die Preise stehen auf der [Preisseite](/pricing)."
   - type: cta

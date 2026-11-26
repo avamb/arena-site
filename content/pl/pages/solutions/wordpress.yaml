@@ -39,7 +39,7 @@ sections:
   - type: cta
     id: start
     title: Twoje najlepsze wydarzenie wciąż przed tobą. Zaczniemy od biletów?
-    text: Podaj adres strony i dostawcę płatności, z którego korzystasz. Widget skonfigurujemy razem z tobą.
+    text: Podaj adres strony i dostawcę płatności, z którego korzystasz. Widget trafia na twoją stronę w trzech linijkach kodu, a sprzedażą zarządzasz w Event Center.
     primary: { label: Zacznij sprzedaż, href: /start }
     secondary: { label: Utwórz wydarzenie, href: /start#create }
     tertiary: { label: Skontaktuj się z zespołem, href: /contact#write }

@@ -97,7 +97,7 @@ sections:
       - title: O que eu preciso?
         text: "O nome e a programação do evento, os preços dos ingressos, o seu cartaz e a sua própria conta de pagamentos: Stripe, Flitt, AllPay ou outro provedor do seu país. O dinheiro vai para você desde o primeiro ingresso."
       - title: De que forma eu configuro?
-        text: "No navegador, no computador ou no celular, no “Event Center”*. Ou no Telegram, onde o bot lê o seu cartaz e preenche datas, preços e o local para você confirmar. Ou envie para nós e configuramos por você."
+        text: "No navegador, no computador ou no celular, no “Event Center”*. Ou no Telegram, onde o bot lê o seu cartaz e preenche datas, preços e o local para você confirmar. Sem tempo? O nosso [gerente de eventos](/pricing#services) faz isso por você, como serviço pago."
     note: "* O “Event Center” é a sua conta de organizador no ArenaSoldOut.com: cada evento, pedido, reembolso, convite e sessão, para você e sua equipe, no navegador e no Telegram. [Veja o Event Center abaixo →](#center) Cada etapa, do cadastro ao leitor de ingressos: [seu primeiro evento →](/first-event)"
 
   - type: ways
@@ -351,7 +351,7 @@ sections:
       - q: Consigo ver de onde vêm os compradores?
         a: Sim. Adicione parâmetros UTM aos seus links de venda e o Event Center mostra qual canal trouxe os pedidos.
       - q: Nunca vendi ingressos. Isso é para mim?
-        a: "Sim. Mostramos tudo passo a passo: [seu primeiro evento →](/first-event). Desenhamos o seu mapa de assentos de graça e, se você preferir, configuramos tudo junto com você em uma chamada."
+        a: "Sim. Mostramos tudo passo a passo: [seu primeiro evento →](/first-event). Desenhamos o seu mapa de assentos de graça. Sem tempo? Nosso [gerente de eventos](/pricing#services) faz isso por você, como serviço pago."
       - q: Como falo com a equipe do ArenaSoldOut.com se tiver uma dúvida?
         a: "Escreva para nós no Telegram, pelo [formulário do site](/contact#write) ou para hello@arenasoldout.com. Quem responde são pessoas da equipe."
 

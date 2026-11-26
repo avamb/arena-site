@@ -30,7 +30,7 @@ sections:
   - type: cta
     id: start
     title: Écrivez à l'équipe
-    text: Dites-nous qui vous êtes et avec qui vous travaillez. Nous répondons en personne sous un jour ouvré.
+    text: Dites-nous qui vous êtes et avec qui vous travaillez. Nous répondons sous un jour ouvré.
     primary: { label: Nous contacter, href: /contact }
     secondary: { label: Lire la documentation développeur, href: /developers }
     note: "Ou sur Telegram : le chat est lu pendant la journée, en Europe et en Israël."

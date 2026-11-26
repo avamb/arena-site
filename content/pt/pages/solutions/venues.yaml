@@ -40,7 +40,7 @@ sections:
   - type: cta
     id: start
     title: Seu melhor evento ainda está por vir. Vamos começar pelos ingressos?
-    text: Conte-nos sobre o local e o número de eventos por mês. Configuramos o mapa e as condições com você.
+    text: Conte-nos sobre o local e o número de eventos por mês. Desenhamos o mapa de graça e combinamos as condições do local.
     primary: { label: Começar a vender, href: /start }
     secondary: { label: Criar seu evento, href: /start#create }
     tertiary: { label: Fale com a equipe, href: /contact#write }

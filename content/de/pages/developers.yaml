@@ -42,7 +42,7 @@ sections:
   - type: cta
     id: start
     title: Fangen Sie heute an zu bauen
-    text: Fordern Sie ein Feed-Token und einen API-Key mit Scopes an. Das Team antwortet persönlich und kann eine Testorganisation für Sie einrichten.
+    text: Fordern Sie ein Feed-Token und einen API-Key mit Scopes an. Das Team antwortet und kann eine Testorganisation für Sie eröffnen.
     primary: { label: Zugang anfragen, href: /start }
     secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
     note: Testzahlungen laufen im Testmodus Ihres Anbieters, nie mit echten Karten.

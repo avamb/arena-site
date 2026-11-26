@@ -1,7 +1,7 @@
 title: "Comece a vender: cadastre-se como organizador"
-description: "Conte-nos sobre a sua organização e os seus eventos. A equipe configura sua organização, sua página de vendas e sua conta de pagamentos, em geral em um dia."
+description: "Conte-nos sobre sua organização e seus eventos. Confirmamos e conectamos sua conta de pagamentos, em geral em um dia; depois você vende por conta própria."
 h1: Comece a vender
-lead: "Conte-nos quem você é e onde vende. Configuramos sua organização e sua página de vendas e conectamos sua conta de pagamentos, em geral em um dia. Eventos sem mapa de assentos entram em venda hoje."
+lead: "Conte-nos quem você é e onde vende. Confirmamos sua organização e conectamos sua conta de pagamentos uma única vez, em geral em um dia; eventos, preços e vendas você gerencia sozinho. Eventos sem mapa de assentos entram em venda hoje."
 sections:
   - type: steps
     id: how
@@ -10,8 +10,8 @@ sections:
     items:
       - title: Você envia o cadastro
         text: "Cinco etapas curtas: contato, organização, eventos, pagamentos e consentimento. Suas respostas são salvas conforme você avança, então você pode sair e voltar."
-      - title: Nós configuramos tudo
-        text: A equipe confere o cadastro, cria sua organização e sua página de vendas, conecta sua conta de pagamentos com você e, se você tem um local com assentos marcados, desenha o mapa de assentos sem custo a partir do seu PDF, croqui à mão ou tabela de fileiras.
+      - title: Nós confirmamos o seu cadastro
+        text: A equipe confere o cadastro, confirma sua organização e conecta sua conta de pagamentos uma única vez. Para um local com assentos marcados, desenhamos o mapa de assentos sem custo a partir do seu PDF, croqui à mão ou tabela de fileiras. Eventos, preços e categorias você mesmo cria no Event Center ou no bot do Telegram.
       - title: Você entra em venda
         text: Compartilhe um único link ou coloque o widget no seu site. Cada venda chega ao seu Event Center e ao seu grupo do Telegram.
   - type: onboarding

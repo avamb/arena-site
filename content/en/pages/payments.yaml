@@ -63,4 +63,4 @@ sections:
     text: "Create the event, connect your payment account, share the link. An event without a seating plan is on sale in 10 minutes; a seating plan we draw for you, free of charge."
     primary: { label: Create your event, href: /start#create }
     secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Or write to us: we set everything up with you on a call."
+    note: "Questions? Write to us: the team answers within one working day."

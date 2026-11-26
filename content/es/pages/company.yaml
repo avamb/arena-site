@@ -17,7 +17,7 @@ sections:
 
       La empresa es ABH TEAM OÜ, registrada en la Unión Europea. Las plataformas anteriores de los fundadores dieron servicio a espectáculos del Cirque du Soleil, estadios de la FIFA 2018, los World Choir Games y 800 shows sobre hielo; ArenaSoldOut.com vende entradas para organizadores desde 2019 y se reconstruyó desde cero en 2026.
 
-      El equipo responde a los organizadores en persona, en inglés, español, checo, ruso y hebreo. La mayoría de las peticiones de los organizadores se entregan en semanas; todas las que llegaron a producción figuran en la [página de cambios](/changes) con su fecha, y la [página de datos](/facts) dice qué existe, qué no y desde cuándo.
+      El equipo responde a los organizadores en inglés, español, checo, ruso y hebreo. La mayoría de las peticiones de los organizadores se entregan en semanas; todas las que llegaron a producción figuran en la [página de cambios](/changes) con su fecha, y la [página de datos](/facts) dice qué existe, qué no y desde cuándo.
   - type: cards
     id: links
     eyebrow: Qué mirar después
@@ -29,7 +29,7 @@ sections:
   - type: cta
     id: start
     title: Habla con el equipo
-    text: Escribe qué organizas y dónde vendes. El equipo te responde en persona en un día laborable.
+    text: Escribe qué organizas y dónde vendes. El equipo responde en un día laborable.
     primary: { label: Contáctanos, href: /contact }
     secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
     note: "O empieza ya: crea el evento, conecta tu cuenta de pagos y comparte el enlace."

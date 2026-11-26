@@ -40,7 +40,7 @@ sections:
   - type: cta
     id: start
     title: Il tuo evento migliore deve ancora arrivare. Cominciamo dai biglietti?
-    text: Raccontaci la struttura e il numero di eventi al mese. Configuriamo mappa e condizioni insieme a te.
+    text: Raccontaci la struttura e il numero di eventi al mese. Disegniamo la mappa gratis e concordiamo le condizioni per la struttura.
     primary: { label: Inizia a vendere, href: /start }
     secondary: { label: Crea il tuo evento, href: /start#create }
     tertiary: { label: Contatta il team, href: /contact#write }

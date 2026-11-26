@@ -44,4 +44,4 @@ sections:
     text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link. Próbny bilet jest gotowy razem z wydarzeniem.
     primary: { label: Utwórz wydarzenie, href: /start#create }
     secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."
+    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."

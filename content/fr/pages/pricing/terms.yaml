@@ -40,6 +40,10 @@ sections:
 
       Tant que la marque blanche est activée, la ligne du widget, le pied de page de votre boutique et la ligne de la plateforme dans les e-mails aux acheteurs disparaissent, et les e-mails partent sous le nom de la marque. Ce qui reste : les pages de vente que nous hébergeons, les liens vers les conditions et la politique de confidentialité de la plateforme au paiement et les coordonnées du vendeur, comme l'exige la loi. Notre équipe active et désactive la marque blanche pour une marque à partir d'une date de votre choix : écrivez-nous depuis la [page de contact](/contact).
 
+      ## Gestionnaire d'événements
+
+      ArenaSoldOut.com est conçu pour que les organisateurs configurent tout eux-mêmes : événements, séances, prix, catégories, codes promo, rapports. Notre commission par billet couvre la plateforme et les réponses aux questions ; elle n'inclut pas le travail fait à votre place. Si vous n'avez pas le temps pour ce travail, un gestionnaire d'événements de notre équipe peut le faire comme membre de la vôtre : créer des événements et des séances, les vérifier avant les ventes, sortir les rapports, envoyer les invitations et renvoyer les billets. C'est un service payant distinct ; son périmètre et son prix sont convenus avec chaque organisateur. Écrivez-nous depuis la [page de contact](/contact).
+
       ## Remboursements, changements de date et annulation
 
       Lorsqu'un acheteur rend un billet, le remboursement est versé à l'acheteur par vous, l'organisateur. La commission d'une vente déjà réalisée reste due. Nous ne facturons pas de commission distincte pour le traitement d'un remboursement, le report de la date ou les e-mails aux acheteurs. Les conditions propres au prestataire de paiement s'appliquent telles que le prestataire les énonce. Si un événement est annulé, la commission déjà facturée n'est pas restituée en argent.
@@ -61,4 +65,4 @@ sections:
     text: "Créez l'événement, connectez votre compte de paiement, partagez le lien. Un événement sans plan de salle est en vente en 10 minutes ; un plan de salle, nous le dessinons pour vous, gratuitement."
     primary: { label: Créer votre événement, href: /start#create }
     secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Ou écrivez-nous : nous configurons tout avec vous lors d'un appel."
+    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."

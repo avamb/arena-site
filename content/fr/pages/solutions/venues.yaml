@@ -40,7 +40,7 @@ sections:
   - type: cta
     id: start
     title: Votre plus bel événement est encore à venir. On commence par les billets ?
-    text: Parlez-nous de la salle et du nombre d'événements par mois. Nous configurons le plan et les conditions avec vous.
+    text: Parlez-nous de la salle et du nombre d'événements par mois. Nous dessinons le plan gratuitement et convenons des conditions pour la salle.
     primary: { label: Commencer à vendre, href: /start }
     secondary: { label: Créer votre événement, href: /start#create }
     tertiary: { label: Écrire à l'équipe, href: /contact#write }

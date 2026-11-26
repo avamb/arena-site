@@ -42,7 +42,7 @@ sections:
   - type: cta
     id: start
     title: Commencez à construire dès aujourd'hui
-    text: Demandez un jeton de flux et une clé d'API à portée limitée. L'équipe répond en personne et peut créer une organisation de test pour vous.
+    text: Demandez un jeton de flux et une clé d'API à portée limitée. L'équipe répond et peut ouvrir une organisation de test pour vous.
     primary: { label: Demander l'accès, href: /start }
     secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
     note: Les paiements de test passent par le mode test de votre prestataire, jamais par de vraies cartes.

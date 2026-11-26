@@ -97,7 +97,7 @@ sections:
       - title: De quoi ai-je besoin ?
         text: "Le nom et le calendrier de l'événement, vos prix de billets, votre affiche, et votre propre compte de paiement : Stripe, Flitt, AllPay ou un autre prestataire de votre pays. L'argent vous revient dès le premier billet."
       - title: Comment le configurer ?
-        text: "Dans le navigateur, sur ordinateur ou téléphone, dans l'« Event Center »*. Ou dans Telegram, où le bot lit votre affiche et remplit les dates, les prix et la salle pour que vous confirmiez. Ou envoyez-nous le tout et nous le configurons."
+        text: "Dans le navigateur, sur ordinateur ou téléphone, dans l'« Event Center »*. Ou dans Telegram, où le bot lit votre affiche et remplit les dates, les prix et la salle pour que vous confirmiez. Pas le temps ? Notre [gestionnaire d'événements](/pricing#services) s'en charge pour vous, en service payant."
     note: "* L'« Event Center » est votre compte d'organisateur sur ArenaSoldOut.com : chaque événement, commande, remboursement, invitation et séance, pour vous et votre équipe, dans le navigateur et dans Telegram. [Voir l'Event Center plus bas →](#center) Chaque étape, de la demande au scanner : [votre premier événement →](/first-event)"
 
   - type: ways
@@ -351,7 +351,7 @@ sections:
       - q: Puis-je voir d'où viennent les acheteurs ?
         a: Oui. Ajoutez des balises UTM à vos liens de vente et l'Event Center montre quel canal a apporté les commandes.
       - q: Je n'ai jamais vendu de billets. Est-ce pour moi ?
-        a: "Oui. Nous vous guidons pas à pas : [votre premier événement →](/first-event). Nous dessinons gratuitement votre plan de salle et, si vous le souhaitez, nous configurons tout avec vous lors d'un appel."
+        a: "Oui. Nous vous guidons pas à pas : [votre premier événement →](/first-event). Nous dessinons gratuitement votre plan de salle. Pas le temps ? Notre [gestionnaire d'événements](/pricing#services) s'en charge pour vous, en service payant."
       - q: Comment joindre l'équipe ArenaSoldOut.com si j'ai une question ?
         a: "Écrivez-nous sur Telegram, via le [formulaire du site](/contact#write) ou à hello@arenasoldout.com. Ce sont des personnes de l'équipe qui vous répondent."
 

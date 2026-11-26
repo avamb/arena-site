@@ -135,6 +135,19 @@ sections:
         text: "Rezerwacje miejsc wygasają według licznika, liczba zamówień jest ograniczana, nadużywający ruch jest filtrowany."
 
   - type: cards
+    id: services
+    eyebrow: Usługi
+    title: Co robi dla ciebie nasz zespół
+    lead: "Szczegóły: [usługi dodatkowe](/pricing#services)."
+    items:
+      - title: Rysowanie planu sali, za darmo
+        text: "Wyślij PDF, szkic lub tabelę rzędów; narysujemy plan, zwykle w ciągu doby."
+      - title: Event manager, płatnie
+        text: "Osoba z naszego zespołu pracuje jako część twojego: tworzy wydarzenia, sprawdza je przed sprzedażą, przygotowuje raporty. Warunki ustalamy z każdym organizatorem."
+      - title: White label
+        text: "Sprzedawaj bez naszej nazwy: €45 miesięcznie za markę lub obiekt w UE, US$45 w pozostałych krajach."
+
+  - type: cards
     id: pricing
     eyebrow: Cennik
     title: Co płacisz
@@ -155,4 +168,4 @@ sections:
     text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
     primary: { label: Utwórz wydarzenie, href: /start#create }
     secondary: { label: Zobacz cennik, href: /pricing }
-    note: "Albo napisz do nas: skonfigurujemy wszystko razem z tobą podczas rozmowy."
+    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."

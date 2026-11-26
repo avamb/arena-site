@@ -38,7 +38,7 @@ sections:
       - q: Que dois-je préparer ?
         a: "Le nom de l'événement, la salle, les dates et les horaires, les catégories de billets et les prix, une affiche, et les clés API de votre compte de paiement. Pour les places numérotées, le plan de la salle sous l'un des formats ci-dessus."
       - q: L'équipe peut-elle le configurer pour moi ?
-        a: "Oui. Envoyez les informations dans le [bot Telegram](https://t.me/EventsCentrBot) ou via le formulaire de contact et nous créons l'événement avec vous ; vous le vérifiez avant le début des ventes."
+        a: "Oui, en service payant. Un gestionnaire d'événements de notre équipe travaille comme membre de la vôtre : il crée les événements et les séances, vérifie les prix, les catégories et le plan de salle avant les ventes, et sort les rapports. Les conditions sont convenues avec chaque organisateur : [écrivez-nous](/contact). Créer un événement soi-même prend environ 10 minutes."
       - q: Combien coûte le premier événement ?
         a: "Autant que les suivants : une commission par billet vendu, facturée après l'événement, ou moins avec des crédits achetés à l'avance. Les plans de salle et les invitations ne coûtent rien. Les tarifs sont sur la [page des tarifs](/pricing)."
   - type: cta

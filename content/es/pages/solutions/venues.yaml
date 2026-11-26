@@ -40,7 +40,7 @@ sections:
   - type: cta
     id: start
     title: Tu mejor evento está por llegar. ¿Empezamos por las entradas?
-    text: Cuéntanos sobre el recinto y el número de eventos al mes. Configuramos contigo el plano y las condiciones.
+    text: Cuéntanos sobre el recinto y el número de eventos al mes. Dibujamos el plano gratis y acordamos las condiciones del recinto.
     primary: { label: Empezar a vender, href: /start }
     secondary: { label: Crear tu evento, href: /start#create }
     tertiary: { label: Contactar con el equipo, href: /contact#write }

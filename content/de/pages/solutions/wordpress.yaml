@@ -39,7 +39,7 @@ sections:
   - type: cta
     id: start
     title: Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?
-    text: Nennen Sie uns die Adresse der Website und den Anbieter, den Sie nutzen. Wir richten das Widget gemeinsam mit Ihnen ein.
+    text: Nennen Sie uns die Adresse der Website und den Anbieter, den Sie nutzen. Das Widget kommt mit drei Zeilen Code auf Ihre Website, den Verkauf steuern Sie im Event Center.
     primary: { label: Verkauf starten, href: /start }
     secondary: { label: Event anlegen, href: /start#create }
     tertiary: { label: Team kontaktieren, href: /contact#write }

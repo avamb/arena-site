@@ -135,6 +135,19 @@ sections:
         text: "As reservas de assentos expiram por cronômetro, os pedidos têm limite de frequência, o tráfego abusivo é filtrado."
 
   - type: cards
+    id: services
+    eyebrow: Serviços
+    title: O que a nossa equipe faz por você
+    lead: "Detalhes: [serviços extras](/pricing#services)."
+    items:
+      - title: Desenho do mapa de assentos, grátis
+        text: "Envie um PDF, um croqui ou uma tabela de fileiras; desenhamos o mapa, em geral em um dia."
+      - title: Gerente de eventos, pago
+        text: "Uma pessoa da nossa equipe trabalha como parte da sua: cria eventos, confere-os antes das vendas, extrai relatórios. Condições combinadas com cada organizador."
+      - title: White label
+        text: "Venda sem o nosso nome: €45 por mês por marca ou local na UE, US$45 nos demais países."
+
+  - type: cards
     id: pricing
     eyebrow: Preços
     title: O que você paga
@@ -155,4 +168,4 @@ sections:
     text: Crie o evento, conecte sua conta de pagamentos, compartilhe o link.
     primary: { label: Criar seu evento, href: /start#create }
     secondary: { label: Ver preços, href: /pricing }
-    note: "Ou escreva para nós: configuramos tudo com você em uma conversa."
+    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."

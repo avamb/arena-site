@@ -24,7 +24,7 @@ sections:
     title: ¿Es Telegram la única forma?
     items:
       - q: ¿Necesito Telegram para usar ArenaSoldOut.com?
-        a: "No. El mismo Event Center funciona en el navegador en ArenaSoldOut.com, y el equipo puede configurarlo todo por ti. Telegram es una forma, para organizadores que viven en el mensajero."
+        a: "No. El mismo Event Center funciona en el navegador en ArenaSoldOut.com, y un [gestor de eventos](/pricing#services) de nuestro equipo puede hacer el trabajo por ti, como servicio de pago. Telegram es una forma, para organizadores que viven en el mensajero."
       - q: ¿Qué idiomas habla el bot?
         a: Inglés, ruso y español hoy; más idiomas seguirán a los del sitio.
       - q: ¿Puede usarlo mi equipo?

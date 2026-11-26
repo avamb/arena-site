@@ -39,7 +39,7 @@ sections:
   - type: cta
     id: start
     title: Seu melhor evento ainda está por vir. Vamos começar pelos ingressos?
-    text: Informe o endereço do site e o provedor que você usa. Configuramos o widget com você.
+    text: Informe o endereço do site e o provedor que você usa. O widget entra no seu site com três linhas de código, e as vendas são geridas no seu Event Center.
     primary: { label: Começar a vender, href: /start }
     secondary: { label: Criar seu evento, href: /start#create }
     tertiary: { label: Fale com a equipe, href: /contact#write }

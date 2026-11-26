@@ -42,7 +42,7 @@ sections:
   - type: cta
     id: start
     title: Zacznij budować już dziś
-    text: Poproś o feed token i klucz API z zakresami. Zespół odpowie osobiście i może przygotować dla ciebie testową organizację.
+    text: Poproś o feed token i klucz API z zakresami. Zespół odpowie i może otworzyć dla ciebie testową organizację.
     primary: { label: Poproś o dostęp, href: /start }
     secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
     note: Płatności testowe działają w trybie testowym twojego dostawcy, nigdy na prawdziwych kartach.

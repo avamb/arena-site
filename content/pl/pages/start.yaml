@@ -1,7 +1,7 @@
 title: "Zacznij sprzedaż: zgłoszenie organizatora"
-description: "Opowiedz o swojej organizacji i wydarzeniach. Zespół ustawia organizację, stronę sprzedaży i konto płatności, zwykle w ciągu doby."
+description: "Opowiedz o swojej organizacji i wydarzeniach. Potwierdzamy ją i podłączamy konto płatności, zwykle w ciągu doby; potem sprzedajesz samodzielnie."
 h1: Zacznij sprzedaż
-lead: "Powiedz, kim jesteś i gdzie sprzedajesz. Ustawiamy twoją organizację, stronę sprzedaży i podłączamy konto płatności, zwykle w ciągu doby. Wydarzenia bez planu sali trafiają do sprzedaży jeszcze dziś."
+lead: "Powiedz, kim jesteś i gdzie sprzedajesz. Potwierdzamy twoją organizację i jednorazowo podłączamy konto płatności, zwykle w ciągu doby; wydarzenia, ceny i sprzedaż prowadzisz sam. Wydarzenia bez planu sali trafiają do sprzedaży jeszcze dziś."
 sections:
   - type: steps
     id: how
@@ -10,8 +10,8 @@ sections:
     items:
       - title: Wysyłasz zgłoszenie
         text: "Pięć krótkich kroków: kontakt, organizacja, wydarzenia, płatności i zgoda. Odpowiedzi zapisują się na bieżąco, więc możesz wyjść i wrócić."
-      - title: Ustawiamy twoje konto
-        text: Zespół sprawdza zgłoszenie, tworzy twoją organizację i stronę sprzedaży, razem z tobą podłącza konto płatności, a jeśli masz obiekt z miejscami numerowanymi, bezpłatnie rysuje plan sali z twojego PDF, odręcznego szkicu lub tabeli rzędów.
+      - title: Potwierdzamy twoje konto
+        text: Zespół sprawdza zgłoszenie, potwierdza twoją organizację i jednorazowo podłącza konto płatności. Dla obiektu z miejscami numerowanymi bezpłatnie rysujemy plan sali z twojego PDF, odręcznego szkicu lub tabeli rzędów. Wydarzenia, ceny i kategorie tworzysz sam w Event Center lub w bocie na Telegramie.
       - title: Zaczynasz sprzedaż
         text: Udostępnij jeden link albo umieść widget na swojej stronie. Każda sprzedaż trafia do Event Center i do twojej grupy w Telegramie.
   - type: onboarding

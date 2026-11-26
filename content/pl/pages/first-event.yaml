@@ -38,7 +38,7 @@ sections:
       - q: Co mam przygotować?
         a: "Nazwę wydarzenia, obiekt, daty i godziny, kategorie biletów i ceny, plakat oraz klucze API twojego konta płatności. Dla miejsc numerowanych plan obiektu w jednej z form podanych wyżej."
       - q: Czy zespół może skonfigurować to za mnie?
-        a: "Tak. Wyślij szczegóły w [bocie na Telegramie](https://t.me/EventsCentrBot) lub przez formularz kontaktowy, a utworzymy wydarzenie razem z tobą; sprawdzasz je przed startem sprzedaży."
+        a: "Jako usługa płatna, tak. Event manager z naszego zespołu pracuje jako część twojego: tworzy wydarzenia i sesje, sprawdza ceny, kategorie i plan sali przed sprzedażą, przygotowuje raporty. Warunki ustalamy z każdym organizatorem: [napisz do nas](/contact). Samodzielne utworzenie wydarzenia zajmuje około 10 minut."
       - q: Ile kosztuje pierwsze wydarzenie?
         a: "Tyle samo co każde inne: prowizja za sprzedany bilet, fakturowana po wydarzeniu, albo mniej przy kredytach kupionych z góry. Plany sali i zaproszenia nic nie kosztują. Ceny są na [stronie cennika](/pricing)."
   - type: cta

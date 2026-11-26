@@ -40,7 +40,7 @@ sections:
   - type: cta
     id: start
     title: Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?
-    text: Erzählen Sie uns von der Spielstätte und der Zahl der Events im Monat. Wir richten Plan und Konditionen gemeinsam mit Ihnen ein.
+    text: Erzählen Sie uns von der Spielstätte und der Zahl der Events im Monat. Den Saalplan zeichnen wir kostenlos, die Konditionen für die Spielstätte vereinbaren wir mit Ihnen.
     primary: { label: Verkauf starten, href: /start }
     secondary: { label: Event anlegen, href: /start#create }
     tertiary: { label: Team kontaktieren, href: /contact#write }

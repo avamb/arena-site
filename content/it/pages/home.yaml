@@ -96,7 +96,7 @@ sections:
       - title: Che cosa mi serve?
         text: "Il nome e il calendario dell'evento, i prezzi dei biglietti, la locandina e il tuo conto di pagamento: Stripe, Flitt, AllPay o un altro fornitore del tuo paese. Il denaro arriva a te dal primo biglietto."
       - title: In che modo lo configuro?
-        text: "Nel browser, da computer o telefono, nell'“Event Center”*. Oppure in Telegram, dove il bot legge la tua locandina e compila date, prezzi e luogo da confermare. Oppure mandacelo e lo configuriamo noi."
+        text: "Nel browser, da computer o telefono, nell'“Event Center”*. Oppure in Telegram, dove il bot legge la tua locandina e compila date, prezzi e luogo da confermare. Non hai tempo? Il nostro [event manager](/pricing#services) lo fa per te, come servizio a pagamento."
     note: "* L'“Event Center” è il tuo account di organizzatore su ArenaSoldOut.com: ogni evento, ordine, rimborso, invito e sessione, per te e il tuo team, nel browser e in Telegram. [Vedi l'Event Center qui sotto →](#center) Ogni passo, dalla richiesta allo scanner: [il tuo primo evento →](/first-event)"
 
   - type: ways
@@ -350,7 +350,7 @@ sections:
       - q: Posso vedere da dove arrivano gli acquirenti?
         a: Sì. Aggiungi i tag UTM ai tuoi link di vendita e l'Event Center mostra quale canale ha portato gli ordini.
       - q: Non ho mai venduto biglietti. Fa per me?
-        a: "Sì. Ti accompagniamo passo dopo passo: [il tuo primo evento →](/first-event). La tua mappa dei posti la disegniamo gratis e, se preferisci, configuriamo tutto insieme a te in una chiamata."
+        a: "Sì. Ti accompagniamo passo dopo passo: [il tuo primo evento →](/first-event). La tua mappa dei posti la disegniamo gratis. Non hai tempo? Il nostro [event manager](/pricing#services) lo fa per te, come servizio a pagamento."
       - q: Come contatto il team di ArenaSoldOut.com se ho una domanda?
         a: "Scrivici su Telegram, tramite il [modulo sul sito](/contact#write) o a hello@arenasoldout.com. Ti rispondono persone del team."
 
