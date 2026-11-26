@@ -1,7 +1,7 @@
 title: "Instrukcja usuwania danych"
 description: "Jak odłączyć konto reklamowe Meta (Facebook) od Arena Sold Out i poprosić ABH TEAM OÜ o usunięcie danych oraz jak kupujący bilety korzystają ze swoich praw."
 h1: "Instrukcja usuwania danych"
-lead: "Wersja z 22 listopada 2026 roku. Jak odebrać Arena Sold Out dostęp do twojego konta Meta (Facebook) i usunąć twoje dane. To tłumaczenie ma charakter informacyjny; wiążąca jest wersja angielska."
+lead: "Wersja z 23 listopada 2026 roku. Jak odebrać Arena Sold Out dostęp do twojego konta Meta (Facebook) i usunąć twoje dane. To tłumaczenie ma charakter informacyjny; wiążąca jest wersja angielska."
 related:
   - { label: Polityka prywatności, href: /legal/privacy }
   - { label: Regulamin, href: /legal/terms }
@@ -20,6 +20,7 @@ sections:
 
       **Odbierz dostęp samodzielnie.** Po każdym z tych kroków Arena Sold Out nie może już niczego odczytać ani wysłać przez twoje konto:
 
+      - w Event Center, jako właściciel organizacji: Advertising → Meta → Disconnect (prosimy wtedy także Meta o cofnięcie dostępu i od razu usuwamy zapisany token dostępu);
       - na Facebooku: Ustawienia i prywatność → Ustawienia → Integracje firmowe, znajdź „Arena Sold Out” i kliknij Usuń;
       - w Meta Business Suite: Ustawienia → Ustawienia firmy → Integracje (lub Konta → Aplikacje), znajdź „Arena Sold Out” i usuń ją.
 

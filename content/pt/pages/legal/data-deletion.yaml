@@ -1,7 +1,7 @@
 title: "Instruções para exclusão de dados"
 description: "Como desconectar sua conta de anúncios da Meta (Facebook) do Arena Sold Out, pedir à ABH TEAM OÜ que exclua os dados e os direitos dos compradores."
 h1: "Instruções para exclusão de dados"
-lead: "Versão de 22 de novembro de 2026. Como remover o acesso do Arena Sold Out à sua conta da Meta (Facebook) e excluir seus dados. Esta é uma tradução para fins informativos; a versão em inglês é a que prevalece."
+lead: "Versão de 23 de novembro de 2026. Como remover o acesso do Arena Sold Out à sua conta da Meta (Facebook) e excluir seus dados. Esta é uma tradução para fins informativos; a versão em inglês é a que prevalece."
 related:
   - { label: Política de Privacidade, href: /legal/privacy }
   - { label: Termos e condições, href: /legal/terms }
@@ -20,6 +20,7 @@ sections:
 
       **Remova o acesso você mesmo.** Depois de qualquer um destes passos, o Arena Sold Out não consegue mais ler nem enviar nada pela sua conta:
 
+      - no Event Center, como proprietário da organização: Advertising → Meta → Disconnect (nesse momento também pedimos à Meta que revogue o acesso e excluímos na hora o token de acesso guardado);
       - no Facebook: Configurações e privacidade → Configurações → Integrações comerciais, encontre "Arena Sold Out" e toque em Remover;
       - no Meta Business Suite: Configurações → Configurações do negócio → Integrações (ou Contas → Apps), encontre "Arena Sold Out" e remova-o.
 

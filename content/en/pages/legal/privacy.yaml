@@ -8,10 +8,13 @@
 # 2026-11-22: Meta integration (app "Arena Sold Out"): 1.10, 1.11, 2.2a, 3.2(g), 6.4. Facts from the platform:
 # spec 66 (connection, encrypted token, insights) and package conversions (Purchase event; e-mail and phone
 # hashed and only with tracking consent; buyer context deleted after sending). Awaits the owner's legal review.
+# 2026-11-23: Meta App Review pack (arena-platform docs/ops/meta_app_review_pack_ru.md §3.6): processors named in 2.1
+# (Hetzner Online GmbH, Cloudflare, Inc.) and 2.2 (Brevo, the SMTP sender of the platform), the transfer basis for
+# Cloudflare (2.1a), AES-256-GCM for the Meta token (1.10, secretbox package), requests of authorities (2.4a).
 title: "Privacy Policy"
 description: "How ArenaSoldOut.com (ABH TEAM OÜ) processes personal data of visitors, organizers and ticket buyers: what, why, recipients, retention, your rights, cookies."
 h1: "Privacy Policy"
-lead: "Version of 22 November 2026. Replaces the version of 2 November 2026. Applies to the website, the Event Center, the sales pages, the widget, the API, the Telegram bot and the scanner app."
+lead: "Version of 23 November 2026. Replaces the version of 22 November 2026. Applies to the website, the Event Center, the sales pages, the widget, the API, the Telegram bot and the scanner app."
 related:
   - { label: Data deletion instructions, href: /legal/data-deletion }
   - { label: Terms and conditions, href: /legal/terms }
@@ -51,21 +54,25 @@ sections:
 
       1.9 We may also process any of your personal data where the processing is necessary to protect your vital interests or the vital interests of another natural person.
 
-      1.10 We process data of the Meta (Facebook) connection of organizers ("Meta data"). If an organizer connects its Meta business account to the services through our app "Arena Sold Out", we process: the access token that Meta issues for this connection; the IDs of the organizer's Meta business portfolio and of the ad accounts, pixels and pages the organizer chose; the permissions the organizer granted; and the advertising statistics of the chosen ad accounts (spend, impressions, clicks, purchases and their value, by day and by campaign, ad set and ad). It is processed to send the organizer's ticket sales to Meta as conversions and to show the organizer its advertising spend next to its sales in the Event Center. The access token is stored encrypted, is never shown to anyone and is not written to logs. The legal basis is the performance of our contract with the organizer. The organizer can remove the connection at any time; the [data deletion instructions](/legal/data-deletion) explain how, and how to have the Meta data deleted.
+      1.10 We process data of the Meta (Facebook) connection of organizers ("Meta data"). If an organizer connects its Meta business account to the services through our app "Arena Sold Out", we process: the access token that Meta issues for this connection; the IDs of the organizer's Meta business portfolio and of the ad accounts, pixels and pages the organizer chose; the permissions the organizer granted; and the advertising statistics of the chosen ad accounts (spend, impressions, clicks, purchases and their value, by day and by campaign, ad set and ad). It is processed to send the organizer's ticket sales to Meta as conversions and to show the organizer its advertising spend next to its sales in the Event Center. The access token is stored encrypted (AES-256-GCM, with a key kept separately from the database), is never shown to anyone and is not written to logs. The legal basis is the performance of our contract with the organizer. The organizer can remove the connection at any time; the [data deletion instructions](/legal/data-deletion) explain how, and how to have the Meta data deleted.
 
       1.11 When an organizer has switched on sending conversions to Meta, we send to Meta, on that organizer's behalf, an event for each completed purchase on its sales pages and in its widget: the order number, the time, the amount and the currency, the address of the page, and technical data of the buyer's browser (IP address, browser type and, where present, the Meta identifiers _fbp, _fbc or fbclid). The buyer's e-mail address and phone number are added only if the buyer agreed to tracking, and only in hashed form (SHA-256), which Meta uses to match the purchase with its users. The organizer is the controller of this data and uses it to measure and improve its advertising; we process it on the organizer's behalf. Meta receives it under its own terms with the organizer and under its own privacy policy. The browser data we keep for this purpose is deleted after the event has been sent.
 
       ## 2. How we share the information
 
-      2.1 Personal data held in the services is stored on servers located in the European Union, operated by our hosting providers under data processing agreements, with nightly encrypted back-ups. Cloudflare, Inc. serves this website, protects the services and provides the Turnstile check on our forms.
+      2.1 Personal data held in the services is stored on servers of Hetzner Online GmbH (Germany) located in the European Union, under a data processing agreement, with nightly encrypted back-ups. Cloudflare, Inc. (United States) serves this website, protects the services against attacks and provides the Turnstile check on our forms; requests to the website and the services pass through its network.
 
-      2.2 To operate the services, your personal data is shared, each only to the extent needed for its task, with: the organizer you bought a ticket from (ticket buyers); the payment provider connected by the organizer; e-mail delivery providers that send tickets and service e-mails; Telegram, through which the Telegram bot, the Telegram chat and notifications to organizers' groups are delivered under Telegram's own privacy policy; our hosting, analytics, automation and customer support providers. Following our instructions, these parties may access, process or store personal data while performing their duties for us.
+      2.1a Cloudflare, Inc. is a company in the United States, so personal data passing through its network may be transferred outside the European Economic Area. Such transfers rely on the European Commission's standard contractual clauses included in Cloudflare's data processing terms and, where applicable, on the EU-U.S. Data Privacy Framework.
+
+      2.2 To operate the services, your personal data is shared, each only to the extent needed for its task, with: the organizer you bought a ticket from (ticket buyers); the payment provider connected by the organizer; e-mail delivery providers (currently Brevo, France) that send tickets and service e-mails; Telegram, through which the Telegram bot, the Telegram chat and notifications to organizers' groups are delivered under Telegram's own privacy policy; our hosting, analytics, automation and customer support providers. Following our instructions, these parties may access, process or store personal data while performing their duties for us.
 
       2.2a If an organizer connected its Meta account (section 1.10), the data described in sections 1.10 and 1.11 is also shared with Meta Platforms Ireland Limited ("Meta"), each time on that organizer's instruction.
 
       2.3 If we are involved in a merger, acquisition, financing due diligence, reorganisation, bankruptcy, receivership, sale of all or a portion of our assets, or transition of a service to another provider, your personal data and other information may be transferred to a successor or affiliate as part of that transaction.
 
       2.4 We disclose personal data if required to do so by law or applicable regulation, or in the good-faith belief that such action is necessary to: (a) comply with a legal obligation; (b) protect and defend our rights or property; (c) act in urgent circumstances to protect the personal safety of users of the services or the public; or (d) protect us against legal liability, whether in court proceedings or in an administrative or out-of-court procedure.
+
+      2.4a When a public authority asks us for personal data, we check that the request is lawful, disclose only the minimum data needed to answer it, challenge requests we consider unlawful, and keep a record of each request, our answer and the reasons for it.
 
       2.5 With your consent, we may share data with third parties outside the scope of this Privacy Policy.
 
