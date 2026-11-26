@@ -1,12 +1,15 @@
-title: "Biglietti per master class, corsi e degustazioni"
-description: "Vendi posti per master class, corsi, degustazioni e workshop: piccoli gruppi con quota, date ricorrenti, e-mail tue, ingresso gratuito e paga quanto vuoi."
-h1: Master class e corsi
+title: "Biglietti per masterclass, corsi e degustazioni"
+description: "Vendi posti per masterclass, corsi, degustazioni e workshop: piccoli gruppi con quota, date ricorrenti, e-mail tue, ingresso gratuito e paga quanto vuoi."
+h1: Masterclass e corsi
+tagline: Una masterclass inizia con il primo iscritto.
 lead: Piccoli gruppi, date ricorrenti, e-mail tue nella tua lingua. Una pagina ospitata è pronta in pochi minuti; il widget si adatta al sito che hai già. Vino&Co in Israele vende così le sue degustazioni.
 related:
   - { label: Codici promozionali e finestre di prezzo, href: /product/pricing-tools }
   - { label: Dove vendi, href: /product/sell }
   - { label: Clienti, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Per chi organizza
@@ -15,7 +18,12 @@ sections:
       - { title: Una quota per data, text: "Dodici posti martedì, venti sabato; le date esaurite si chiudono da sole.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
       - { title: Date ricorrenti, text: "Aggiungi sessioni allo stesso evento; prezzi e categorie restano, chi compra sceglie la data.", link: { label: Event Center →, href: /#center } }
       - { title: Gratuito e paga quanto vuoi, text: "Iscrizioni senza pagamento, oppure un prezzo minimo e decide chi compra.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Codici promozionali e prezzi early bird, text: "Un codice per i tuoi clienti abituali o per un partner, con un limite per acquirente; un prezzo early bird che termina alla data che scegli tu.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Vendite su Telegram, text: "Ogni vendita e ogni rimborso compare nel tuo gruppo Telegram in pochi secondi, con il contatto dell'acquirente.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: Da dove arrivano le persone, text: "Aggiungi i tag UTM ai tuoi link e vedi quale post, newsletter o partner porta le iscrizioni.", link: { label: Dove vendi →, href: /product/sell } }
       - { title: La tua lingua, text: "Pagina, widget, e-mail e biglietto nella lingua dell'acquirente, compreso l'ebraico da destra a sinistra.", link: { label: Biglietti →, href: /product/tickets } }
+      - { title: "Una data si sposta? Decidi tu", text: "Rimborsa tutti, proponi una nuova data al posto del rimborso o scegli un'altra soluzione. I partecipanti ricevono un'e-mail con il biglietto aggiornato.", link: { label: Biglietti →, href: /product/tickets } }
+      - { title: "Nessun abbonamento, nessun pagamento aggiuntivo", text: "Nessun abbonamento e nessun pagamento mensile o annuale: una commissione per ogni biglietto a pagamento, e le iscrizioni gratuite non costano nulla.", link: { label: Prezzi →, href: /pricing } }
   - type: faq
     id: questions
     eyebrow: Domande
@@ -31,8 +39,8 @@ sections:
         a: "Un importo fisso per biglietto a pagamento; le iscrizioni gratuite non costano nulla. Vedi i [prezzi](/pricing)."
   - type: cta
     id: start
-    title: Inizia a vendere oggi
+    title: Il tuo evento migliore deve ancora arrivare. Cominciamo dai biglietti?
     text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
-    primary: { label: Crea il tuo evento, href: /start#create }
-    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Crea il tuo evento, href: /start#create }
+    tertiary: { label: Contatta il team, href: /contact#write }

@@ -7,6 +7,7 @@ import Logo from './Logo.astro';
 import ThemeToggle from './islands/ThemeToggle.svelte';
 import Icon from './Icon.astro';
 import { trackLabel } from '@/lib/track';
+import { pageLanguages, slugOfPath } from '@/lib/translations';
 interface Props { lang: LanguageCode; path: string }
 const { lang, path } = Astro.props;
 const nav = navFor(lang);
@@ -16,6 +17,9 @@ const current = getLanguage(lang);
 const badge = (code: string) => (code === 'uk' ? 'UA' : code.toUpperCase());
 const signinHref = nav.signin.href.startsWith('http') ? nav.signin.href : hosts.app;
 const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
+// A page kept to some languages (`languages:` in the English original) sends the others to its parent page.
+const only = pageLanguages(slugOfPath(path));
+const switchTo = (code: string) => (only && !only.includes(code) ? localePath(code as LanguageCode, stripped.replace(/\/[^/]+$/, '') || '/') : localePath(code as LanguageCode, stripped));
 ---
 <header class="header">
   <div class="wrap nav">
@@ -29,7 +33,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
         <form class="lang-menu" method="get">
           <label class="visually-hidden" for="lang-select">{t(lang, 'language')}</label>
           <select id="lang-select" onchange="location.href=this.value">
-            {langs.map((l) => <option value={localePath(l.code, stripped)} selected={l.code === lang} lang={l.code} title={l.name}>{badge(l.code)}</option>)}
+            {langs.map((l) => <option value={switchTo(l.code)} selected={l.code === lang} lang={l.code} title={l.name}>{badge(l.code)}</option>)}
           </select>
           <Icon name="chevron-down" size={10} />
         </form>
@@ -37,7 +41,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
         <span class="lang" aria-label={`${t(lang, 'language')}: ${current.name}`}>{badge(lang)} <Icon name="chevron-down" size={10} /></span>
       )}
       <ThemeToggle client:load label={t(lang, 'theme.toggle')} />
-      <a class="btn btn-ghost btn-sm contact-btn" href={localePath(lang, nav.contact.href)} data-contact-open><Icon name="message-circle" size={16} /><span>{nav.contact.label}</span></a>
+      <a class="btn btn-ghost btn-sm contact-btn" href={localePath(lang, nav.contact.href)} title={nav.contact.label} data-contact-open><Icon name="message-circle" size={16} /><span>{nav.contact.label}</span></a>
       <a class="btn btn-primary btn-sm" href={localePath(lang, nav.start.href)} data-track={trackLabel(nav.start.href, 'header')}>{nav.start.label}</a>
       <button type="button" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-menu" data-label-open={t(lang, 'nav.menu')} data-label-close={t(lang, 'nav.close')}>
         <Icon name="menu" class="i-open" />
@@ -56,7 +60,7 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
       <form class="lang-menu" method="get">
         <label class="visually-hidden" for="lang-select-menu">{t(lang, 'language')}</label>
         <select id="lang-select-menu" onchange="location.href=this.value">
-          {langs.map((l) => <option value={localePath(l.code, stripped)} selected={l.code === lang} lang={l.code} title={l.name}>{badge(l.code)}</option>)}
+          {langs.map((l) => <option value={switchTo(l.code)} selected={l.code === lang} lang={l.code} title={l.name}>{badge(l.code)}</option>)}
         </select>
         <Icon name="chevron-down" size={10} />
       </form>
@@ -82,6 +86,6 @@ const stripped = path.replace(new RegExp(`^/${lang}(?=/|$)`), '') || '/';
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && isOpen()) { set(false); btn.focus(); }
     });
-    window.matchMedia('(min-width: 901px)').addEventListener('change', (e) => { if (e.matches && isOpen()) set(false); });
+    window.matchMedia('(min-width: 1180px)').addEventListener('change', (e) => { if (e.matches && isOpen()) set(false); });
   }
 </script>

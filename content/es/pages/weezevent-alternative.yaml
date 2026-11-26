@@ -1,0 +1,85 @@
+title: "Alternativa a Weezevent: tu dinero con cada pedido"
+description: "Compara ArenaSoldOut.com y Weezevent: el dinero de las entradas en tu propia cuenta con cada pedido en lugar de cada 15 días, planos de asientos en cada evento."
+h1: Una alternativa a Weezevent que te paga con cada pedido
+lead: "En Weezevent el dinero de las entradas lo cobra Weezevent y te lo paga cada 15 días. En ArenaSoldOut.com el comprador paga directo en tu propia cuenta de pagos, y los planos de asientos forman parte de cada evento. Abajo están las dos ofertas lado a lado, tal como se publicaron el 11 de noviembre de 2026."
+related:
+  - { label: Todas las comparaciones, href: /alternatives, text: "ArenaSoldOut.com junto a otras plataformas de venta de entradas." }
+  - { label: Pagos, href: /payments, text: "Qué cuentas de pagos puedes conectar, por país." }
+  - { label: Planos de asientos, href: /product/seating, text: "Dibujamos tu recinto gratis a partir de un PDF o un boceto." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Precios en euros
+    title: ¿Cómo se comparan las dos ofertas?
+    lead: "Precios de ambas plataformas al 11 de noviembre de 2026. Nuestra comisión por entrada vendida junto a la comisión de Weezevent por la venta de entradas en línea. La comisión de Weezevent incluye los gastos bancarios; con nosotros la tarifa de la tarjeta la cobra tu propio proveedor de pagos, a tu tarifa, además de nuestra comisión."
+    cols: { what: "", us: ArenaSoldOut.com, them: Weezevent }
+    rows:
+      - { what: "Cómo se calcula la tarifa", us: "Tarifa fija por entrada", them: "2,5% del precio de la entrada, mínimo €0,99" }
+      - { what: "Entrada de €20", us: "**{eurPrice}** + la tarifa de tarjeta de tu proveedor", them: "€0,99, gastos bancarios incluidos" }
+      - { what: "Entrada de €50", us: "**{eurPrice}** + la tarifa de tarjeta de tu proveedor", them: "€1,25, gastos bancarios incluidos" }
+      - { what: "Entrada de €100", us: "**{eurPrice}** + la tarifa de tarjeta de tu proveedor", them: "€2,50, gastos bancarios incluidos" }
+      - { what: "Cuándo recibes el dinero", us: "Con cada pedido, en tu propia cuenta", them: "Cada 15 días, pagado por Weezevent" }
+      - { what: "Quién tiene el dinero del comprador", us: "Tú, desde el primer pedido", them: "Weezevent, hasta el pago" }
+      - { what: "Asientos numerados", us: "**{eurSeated}** por entrada con asiento, plano dibujado gratis para ti", them: "Solo en la oferta a medida, precio bajo petición" }
+      - { what: "Créditos pagados por adelantado", us: "Desde **{eurFrom}** por entrada, nunca caducan", them: "No figuran en su lista de precios" }
+      - { what: "Suscripción", us: Ninguna, them: Ninguna }
+    note: "Precios de Weezevent: [weezevent.com/fr/nos-tarifs](https://weezevent.com/fr/nos-tarifs/) y [weezevent.com/en-gb/our-prices](https://weezevent.com/en-gb/our-prices/), comprobados el 11 de noviembre de 2026, con IVA incluido tal como se publican. Nuestros precios: [precios](/pricing) y [condiciones detalladas](/pricing/terms), sin IVA. Weezevent es una marca de su propietario; ArenaSoldOut.com no está afiliada a ella."
+
+  - type: prose
+    id: examples
+    title: ¿Qué significa la diferencia en la práctica?
+    body: |
+      Todas las cifras, a los precios de ambas plataformas al 11 de noviembre de 2026.
+
+      **Efectivo antes del evento.** Un festival vende 2.000 entradas en las tres semanas previas a la apertura de puertas. Con ArenaSoldOut.com cada pago llega a tu propia cuenta en cuanto se paga el pedido, así que pagas el escenario, el sonido y la seguridad con el dinero de las entradas. Con un pago cada 15 días, parte de ese dinero llega después de que lo necesitaras.
+
+      **Un teatro con asientos numerados.** Con nosotros el plano de asientos forma parte de cada evento: envías un PDF o una foto de un boceto a mano, el equipo construye el plano gratis, y una entrada con asiento cuesta {eurSeated}. En Weezevent los asientos numerados están en la oferta a medida, con precio bajo petición.
+
+      **La comisión en sí.** La nuestra es {eurPrice} por entrada cueste lo que cueste; la de Weezevent es 2,5% con un mínimo de €0,99, gastos bancarios incluidos. Suma la tarifa de tarjeta de tu proveedor de pagos a la nuestra para comparar los totales con el precio de tu entrada.
+
+  - type: cards
+    id: more
+    eyebrow: Más allá del precio
+    title: ¿Qué más obtienes con ArenaSoldOut.com?
+    items:
+      - title: El dinero va directo a tu cuenta
+        text: "Los compradores pagan en tu propia cuenta de Stripe, Flitt o AllPay. ArenaSoldOut.com nunca retiene fondos y no descuenta nada de tus ventas."
+        link: { label: Pagos, href: /payments }
+      - title: Planos de asientos dibujados para ti, gratis
+        text: "Envía un PDF, una foto de un boceto a mano o una tabla de filas y asientos. El equipo construye el recinto; tú nunca lo dibujas."
+        link: { label: Planos de asientos, href: /product/seating }
+      - title: Tarifa menor para entradas baratas
+        text: "Cuando cada entrada del evento cuesta {eurLowMax} o menos: {lowPercent}% del precio de la entrada en lugar de la tarifa fija. Discotecas, carreras, fiestas infantiles, excursiones."
+        link: { label: Cómo funciona, href: /pricing#low-price }
+      - title: Compradores en su propio idioma
+        text: "La página del comprador, los correos y las entradas en el idioma del comprador, hebreo de derecha a izquierda incluido. Añadimos cualquier idioma nuevo en 40 horas."
+        link: { label: Entradas electrónicas, href: /product/tickets }
+      - title: Cada venta en tu Telegram
+        text: "Crea un evento a partir de la foto de un cartel en el bot de Telegram y ve cada venta y reembolso en tu grupo en segundos."
+        link: { label: Bot de Telegram, href: /product/telegram }
+      - title: Configúralo tú o delégalo
+        text: "Creas eventos, precios y categorías tú mismo en el Event Center o en el bot de Telegram, en minutos; los planos de asientos los dibujamos gratis. ¿Sin tiempo? Nuestro gestor de eventos lo hace por ti, como servicio de pago."
+        link: { label: Servicios adicionales, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Preguntas que hacen los organizadores cuando comparan
+    items:
+      - q: ¿Es ArenaSoldOut.com más barata que Weezevent?
+        a: "Nuestra comisión es menor: {eurPrice} por entrada frente a al menos €0,99 en Weezevent. La comisión de Weezevent incluye los gastos bancarios y la nuestra no, así que suma la tarifa de tarjeta de tu proveedor de pagos a la nuestra para comparar los totales con el precio de tu entrada."
+      - q: ¿Cuándo recibo el dinero de las entradas?
+        a: "Con cada pedido. El comprador paga en tu propia cuenta de pagos: Stripe, Flitt o AllPay. ArenaSoldOut.com nunca retiene fondos. Nuestra comisión se factura después del evento o se toma de tus créditos."
+      - q: ¿Ofrecéis pagos sin efectivo y pulseras RFID?
+        a: "No. ArenaSoldOut.com vende entradas y las comprueba en la puerta con la app de escaneo MACS. Si necesitas pagos sin efectivo en la barra, mantén un proveedor aparte para eso."
+      - q: ¿Puedo pasar mis eventos desde Weezevent?
+        a: "Sí. Creas tus eventos en el Event Center o en el bot de Telegram, nosotros dibujamos tus planos de asientos gratis, y sigues vendiendo en Weezevent hasta que tu página con nosotros esté lista. ¿Sin tiempo para configurarlo tú? Nuestro [gestor de eventos](/pricing#services) lo hace por ti, como servicio de pago."
+      - q: ¿Pago una suscripción?
+        a: "No. Pagas solo por las entradas vendidas. Las invitaciones y las entradas gratuitas a eventos de pago no llevan comisión."
+
+  - type: cta
+    id: start
+    title: Pruébalo en tu próximo evento
+    text: Crea el evento, conecta tu cuenta de pagos, comparte el enlace.
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Ver precios, href: /pricing }
+    note: "¿Dudas? Envíanos lo que pagas en Weezevent y lo comparamos con tus costes aquí."

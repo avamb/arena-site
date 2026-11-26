@@ -1,0 +1,29 @@
+---
+/**
+ * Landing page of the unsubscribe link in every subscription e-mail: /subscribe/unsubscribe?t=<token>.
+ * The page only shows a button: the request to /api/subscribe/unsubscribe is sent on a click, never on
+ * load (mail scanners open links). noindex, no navigation entry, not in the sitemap (astro.config.mjs).
+ */
+import Base from '@/layouts/Base.astro';
+import { t, localePath, localeStaticPaths } from '@/lib/i18n';
+
+export function getStaticPaths() {
+  return localeStaticPaths();
+}
+const { lang } = Astro.props;
+const path = localePath(lang, '/subscribe/unsubscribe');
+const title = t(lang, 'subscribe.unsubscribe.title');
+const description = t(lang, 'subscribe.unsubscribe.text');
+---
+<Base lang={lang} path={path} title={title} description={description} jsonld={{ path, title, description, lang }} noindex>
+  <div class="wrap page-head" style="padding-bottom:clamp(56px,8vw,104px)">
+    <h1>{t(lang, 'subscribe.unsubscribe.title')}</h1>
+    <p class="lead">{t(lang, 'subscribe.unsubscribe.text')}</p>
+    <div data-sub-unsub data-done={t(lang, 'subscribe.unsubscribe.done')} data-invalid={t(lang, 'subscribe.unsubscribe.invalid')}
+      data-network={t(lang, 'subscribe.confirm.network')} style="margin-top:24px;display:grid;gap:12px;justify-items:start">
+      <button class="btn btn-primary" type="button">{t(lang, 'subscribe.unsubscribe.button')}</button>
+      <p class="form-status" role="status" aria-live="polite" data-status></p>
+    </div>
+    <a class="btn btn-ghost" href={localePath(lang, '/')} style="margin-top:24px">{t(lang, 'subscribe.home')}</a>
+  </div>
+</Base>

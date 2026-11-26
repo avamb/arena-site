@@ -1,0 +1,36 @@
+title: "Istruzioni per la cancellazione dei dati"
+description: "Come scollegare il tuo account pubblicitario Meta (Facebook) da Arena Sold Out, chiedere ad ABH TEAM OÜ di cancellare i dati e i diritti degli acquirenti."
+h1: "Istruzioni per la cancellazione dei dati"
+lead: "Versione del 22 novembre 2026. Come revocare l'accesso di Arena Sold Out al tuo account Meta (Facebook) e far cancellare i tuoi dati. Questa è una traduzione a scopo informativo; fa fede la versione inglese."
+related:
+  - { label: Informativa sulla privacy, href: /legal/privacy }
+  - { label: Termini e condizioni, href: /legal/terms }
+  - { label: Aiuto per chi acquista biglietti, href: /help/tickets }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## 1. Chi siamo
+
+      La piattaforma di biglietteria ArenaSoldOut.com e l'app Meta "Arena Sold Out" sono gestite da ABH TEAM OÜ, iscritta nel Registro commerciale estone con il numero di registrazione 14162982, Narva mnt 5a, 10117 Tallinn, Estonia.
+
+      ## 2. Organizzatori che hanno collegato un account pubblicitario Meta (Facebook)
+
+      Un organizzatore può collegare il proprio account pubblicitario Meta ad Arena Sold Out: per inviare a Meta le vendite di biglietti come conversioni e vedere la spesa pubblicitaria accanto alle vendite. Per questo conserviamo un token di accesso, gli ID del pixel e dell'account pubblicitario e le statistiche pubblicitarie ricevute.
+
+      **Revoca l'accesso da solo.** Dopo uno qualsiasi di questi passaggi, Arena Sold Out non può più leggere né inviare nulla tramite il tuo account:
+
+      - su Facebook: Impostazioni e privacy → Impostazioni → Integrazioni aziendali, trova "Arena Sold Out" e tocca Rimuovi;
+      - in Meta Business Suite: Impostazioni → Impostazioni aziendali → Integrazioni (oppure Account → App), trova "Arena Sold Out" e rimuovila.
+
+      **Chiedici di cancellare i dati conservati.** Scrivi a support@arenasoldout.com dall'indirizzo e-mail del tuo account Event Center, indicando "Cancellare i dati Meta" e il nome della tua organizzazione. Cancelliamo il token di accesso, gli ID del pixel e dell'account pubblicitario e le statistiche pubblicitarie, e lo confermiamo per e-mail. Rispondiamo entro un mese. I dati che la legge ci obbliga a conservare restano solo per quel periodo (sezione 3 dell'informativa sulla privacy).
+
+      I dati che Meta ha già ricevuto tramite il tuo account sono conservati da Meta secondo la propria informativa sulla privacy.
+
+      ## 3. Acquirenti di biglietti
+
+      I tuoi diritti sui tuoi dati personali (accesso, rettifica, cancellazione e gli altri) sono descritti nella [sezione 5 dell'informativa sulla privacy](/it/legal/privacy). I dati dei tuoi biglietti sono trattati per conto dell'organizzatore del tuo evento, che ne è il titolare: invia la richiesta all'organizzatore, il cui contatto è sulla pagina di vendita e nell'e-mail con il biglietto. Puoi anche scrivere a support@arenasoldout.com: inoltreremo la richiesta all'organizzatore.
+
+      ## 4. Per saperne di più
+
+      Cosa trattiamo, perché e per quanto tempo: [informativa sulla privacy](/it/legal/privacy).

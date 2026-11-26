@@ -1,0 +1,36 @@
+title: "Instruções para exclusão de dados"
+description: "Como desconectar sua conta de anúncios da Meta (Facebook) do Arena Sold Out, pedir à ABH TEAM OÜ que exclua os dados e os direitos dos compradores."
+h1: "Instruções para exclusão de dados"
+lead: "Versão de 22 de novembro de 2026. Como remover o acesso do Arena Sold Out à sua conta da Meta (Facebook) e excluir seus dados. Esta é uma tradução para fins informativos; a versão em inglês é a que prevalece."
+related:
+  - { label: Política de Privacidade, href: /legal/privacy }
+  - { label: Termos e condições, href: /legal/terms }
+  - { label: Ajuda para compradores de ingressos, href: /help/tickets }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## 1. Quem somos
+
+      A plataforma de ingressos ArenaSoldOut.com e o aplicativo da Meta "Arena Sold Out" são operados pela ABH TEAM OÜ, registrada no Registro Comercial da Estônia sob o número de registro 14162982, Narva mnt 5a, 10117 Tallinn, Estônia.
+
+      ## 2. Organizadores que conectaram uma conta de anúncios da Meta (Facebook)
+
+      Um organizador pode conectar sua conta de anúncios da Meta ao Arena Sold Out: para enviar as vendas de ingressos à Meta como conversões e ver os gastos com anúncios ao lado das vendas. Para isso guardamos um token de acesso, os IDs do pixel e da conta de anúncios e as estatísticas de anúncios recebidas.
+
+      **Remova o acesso você mesmo.** Depois de qualquer um destes passos, o Arena Sold Out não consegue mais ler nem enviar nada pela sua conta:
+
+      - no Facebook: Configurações e privacidade → Configurações → Integrações comerciais, encontre "Arena Sold Out" e toque em Remover;
+      - no Meta Business Suite: Configurações → Configurações do negócio → Integrações (ou Contas → Apps), encontre "Arena Sold Out" e remova-o.
+
+      **Peça que excluamos os dados guardados.** Escreva para support@arenasoldout.com a partir do e-mail da sua conta no Event Center, com "Excluir dados da Meta" e o nome da sua organização. Excluímos o token de acesso, os IDs do pixel e da conta de anúncios e as estatísticas de anúncios, e confirmamos por e-mail. Respondemos em até um mês. Os dados que a lei nos obriga a guardar ficam guardados apenas por esse prazo (seção 3 da Política de Privacidade).
+
+      Os dados que a Meta já recebeu pela sua conta ficam com a Meta, conforme a política de privacidade dela.
+
+      ## 3. Compradores de ingressos
+
+      Seus direitos sobre seus dados pessoais (acesso, retificação, eliminação e os demais) estão na [seção 5 da Política de Privacidade](/pt/legal/privacy). Os dados dos seus ingressos são tratados em nome do organizador do seu evento, que é o controlador: envie sua solicitação ao organizador, cujo contato está na página de vendas e no e-mail com o seu ingresso. Você também pode escrever para support@arenasoldout.com, e encaminhamos a solicitação ao organizador.
+
+      ## 4. Mais informações
+
+      O que tratamos, por quê e por quanto tempo: [Política de Privacidade](/pt/legal/privacy).

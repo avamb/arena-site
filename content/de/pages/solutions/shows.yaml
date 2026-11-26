@@ -1,21 +1,29 @@
 title: "Ticketverkauf für Shows: Eis, Zirkus, Tanz, viele Städte"
 description: "Tickets für Tourneeshows verkaufen: ein Saalplan pro Spielstätte wiederverwendet, viele Termine, eine Seite pro Veranstalter, alle Städte in einem Event Center."
 h1: Shows
-lead: Eisshows, Zirkus, Tanz und Familienshows laufen an vielen Terminen in vielen Spielstätten. Ein Event, ein Plan pro Spielstätte, eine Seite pro Veranstalter, und die Verkäufe jeder Stadt an einem Ort.
+tagline: Eine Show beginnt, lange bevor jemand die Bühne betritt.
+lead: Eisshows, Zirkus, Tanz und Kindershows laufen an vielen Terminen in vielen Spielstätten. Ein Event, ein Plan pro Spielstätte, eine Seite pro Veranstalter, und die Verkäufe jeder Stadt an einem Ort.
 related:
   - { label: Konzerttourneen, href: /solutions/concert-tours }
   - { label: Saalpläne, href: /product/seating }
   - { label: Kunden, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Für Shows
     title: Was zählt bei einer Show?
     items:
-      - { title: Ein Plan pro Spielstätte, text: "Der Plan jeder Spielstätte wird einmal gebaut und beim nächsten Besuch wiederverwendet; Versionen bewahren den Verlauf.", link: { label: Saalpläne →, href: /product/seating } }
+      - { title: Ein Plan pro Spielstätte, text: "Schicken Sie ein PDF, eine Tabelle oder eine Handskizze, und das Team zeichnet den Plan jeder Spielstätte kostenlos. Beim nächsten Besuch wird er wiederverwendet; Versionen bewahren den Verlauf.", link: { label: Saalpläne →, href: /product/seating } }
       - { title: Viele Termine, text: "Sessions nach Stadt und Tag in einem Event; Käufer wählen den Termin im Widget, Sie sehen die Summen pro Session.", link: { label: Event Center →, href: /#center } }
-      - { title: Lokale Veranstalter, text: "Eine Seite pro Veranstalter mit eigenem Link und eigenen Codes; jeder Kanal meldet in ein Event Center.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
-      - { title: Familientickets, text: "Kategorien für Kinder und Gruppen, Mengenstufen, Freikarten für begleitende Erwachsene.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Lokale Veranstalter, text: "Eine Seite pro Veranstalter mit eigenem Link und eigenen Codes; die Verkäufe aller Kanäle laufen in einem Event Center zusammen.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Kinder und Gruppen, text: "Eigene Kategorien für Kinder und Gruppen, Freikarten für begleitende Erwachsene.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Woher die Käufer kommen, text: "Ergänzen Sie Ihre Links um UTM-Parameter und sehen Sie, welcher Beitrag, Newsletter oder Partner in jeder Stadt die Verkäufe bringt.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Verkäufe in Telegram, text: "Jeder Verkauf und jede Erstattung aus jeder Stadt erscheint in Sekunden in Ihrer Telegram-Gruppe, mit dem Kontakt des Käufers.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: Der Einlass, text: "Die Scanner-App MACS für iOS und Android prüft am selben Eingang Ihre Tickets und die Tickets von Partnern aus anderen Systemen.", link: { label: MACS Scanner-App →, href: /product/scanner } }
+      - { title: "Ein Termin wird verlegt? Sie entscheiden", text: "Allen erstatten, stattdessen einen neuen Termin anbieten oder eine andere Lösung wählen. Käufer erhalten eine E-Mail mit dem aktualisierten Ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Geld auf Ihrem Konto, text: "Käufer zahlen über einen Anbieter in Ihrem Land direkt auf Ihr eigenes Konto; ArenaSoldOut.com hält das Geld nie.", link: { label: Zahlungen →, href: /payments } }
   - type: faq
     id: questions
     eyebrow: Fragen
@@ -31,8 +39,8 @@ sections:
         a: "Auf Ihr eigenes Zahlungskonto, in Ihrer Währung, mit jeder Bestellung. Siehe [Zahlungen](/payments)."
   - type: cta
     id: start
-    title: Starten Sie heute den Verkauf
+    title: Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?
     text: Event anlegen, Zahlungskonto verbinden, Link teilen.
-    primary: { label: Event anlegen, href: /start#create }
-    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Event anlegen, href: /start#create }
+    tertiary: { label: Team kontaktieren, href: /contact#write }

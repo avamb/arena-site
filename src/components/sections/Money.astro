@@ -1,11 +1,19 @@
 ---
 import type { Section } from '@/content.config';
 import type { CollectionEntry } from 'astro:content';
+import type { LanguageCode } from '@config';
 import { inline } from '@/lib/inline';
-import { liveProviderNames } from '@/lib/data';
-interface Props { s: Extract<Section, { type: 'money' }>; providers: CollectionEntry<'providers'>[] }
-const { s, providers } = Astro.props;
+import { liveProviderNames, tariffFor } from '@/lib/data';
+import { currencySymbol, getLanguage } from '@/lib/i18n';
+import KeepCalculator from '@/components/islands/KeepCalculator.svelte';
+interface Props { s: Extract<Section, { type: 'money' }>; providers: CollectionEntry<'providers'>[]; pricing: CollectionEntry<'pricing'>[]; lang: LanguageCode }
+const { s, providers, pricing, lang } = Astro.props;
 const names = liveProviderNames(providers).join(' · ');
+/* US dollars first: the base price; euros at the rate in tariff.yaml. */
+const rates = [...pricing]
+  .sort((a, b) => (a.data.currency === 'USD' ? -1 : b.data.currency === 'USD' ? 1 : 0))
+  .map((p) => ({ id: p.id, code: p.data.currency, symbol: currencySymbol(p.data.currency), perTicket: p.data.per_ticket, seatingExtra: p.data.seating_extra, lowPrice: tariffFor(p.data.currency).low_price }));
+const intl = getLanguage(lang).intl ?? lang;
 ---
 <section class="money section" id={s.id}>
   <div class="wrap">
@@ -27,5 +35,6 @@ const names = liveProviderNames(providers).join(' · ');
         <div class="flow-note"><i aria-hidden="true"></i>{s.note}</div>
       </div>
     </div>
+    {s.calc && <KeepCalculator client:visible labels={s.calc} rates={rates} intl={intl} />}
   </div>
 </section>

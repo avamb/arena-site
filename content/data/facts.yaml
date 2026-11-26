@@ -55,9 +55,8 @@ capabilities:
   - name: Web registration for "Create your event"
     status: partial
     note: Being built; today the Telegram bot and "Start, we set you up".
-  - name: AllPay inside the hosted checkout of the widget
-    status: partial
-    note: AllPay is live for WordPress sales through the API; the hosted checkout follows the Flitt pattern.
+  - name: AllPay inside the hosted checkout of the widget (Isracard, Leumi Card, Bit, instalments)
+    status: yes
   - name: Waitlists
     status: no
   - name: Access codes

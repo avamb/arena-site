@@ -1,9 +1,9 @@
 # Header and footer navigation. `href` values are site routes; the language prefix is added by the layout.
 header:
-  - label: How it works
-    href: /#how
   - label: Who it is for
     href: /solutions
+  - label: How it works
+    href: /#how
   - label: Pricing
     href: /pricing
   - label: Event Center
@@ -29,11 +29,12 @@ footer:
       - { label: Seating plans, href: /product/seating }
       - { label: Promo codes and price windows, href: /product/pricing-tools }
       - { label: Payments, href: /payments }
+      - { label: Countries, href: /countries }
       - { label: Telegram bot, href: /product/telegram }
       - { label: E-tickets and scanning, href: /product/tickets }
       - { label: MACS scanner app, href: /product/scanner }
       - { label: Reliability, href: /product/reliability }
-      - { label: Ticket Tailor alternative, href: /tickettailor-alternative }
+      - { label: Compare with other platforms, href: /alternatives }
   - title: Who it is for
     links:
       - { label: Concerts, href: /solutions/concerts }
@@ -49,7 +50,7 @@ footer:
       - { label: Docs, href: /developers }
       - { label: Public API, href: /developers#api }
       - { label: Widget, href: /developers#widget }
-      - { label: WordPress plugin, href: /solutions/wordpress }
+      - { label: WordPress integration, href: /solutions/wordpress }
       - { label: Partners, href: /partners }
   - title: Company
     links:
@@ -64,5 +65,7 @@ footer:
     links:
       - { label: Terms and conditions, href: /legal/terms }
       - { label: Privacy policy, href: /legal/privacy }
+      - { label: Data deletion, href: /legal/data-deletion }
+      - { label: Security, href: /security }
       - { label: Detailed pricing terms, href: /pricing/terms }
 copyright: "© 2019–2026 ArenaSoldOut.com · ABH TEAM OÜ · EU"

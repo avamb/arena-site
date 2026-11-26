@@ -1,21 +1,30 @@
 title: "Concert tour ticketing: many cities, a page per promoter"
 description: "Sell a concert tour from one event: sessions by city, a seating plan per venue, promoter pages with their own links and codes, scanning in every city."
 h1: Concert tours
-lead: One show, many cities and dates. Each city gets its session and plan, each promoter gets a page with its own link, and you see the whole tour in one Event Center.
+tagline: A concert tour starts long before the first city.
+lead: One show, many cities and dates. Each city gets its session and plan, each promoter gets a page with its own link, and you see the whole concert tour in one Event Center.
 related:
   - { label: Shows, href: /solutions/shows }
   - { label: Where you sell, href: /product/sell }
   - { label: Payments by country, href: /payments }
+  - { label: "Countries and payment methods", href: /countries }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: For concert tours
-    title: What matters on tour?
+    title: What matters on a concert tour?
     items:
-      - { title: Sessions by city, text: "Dates and venues in one event; buyers choose the city, you see totals per session and for the tour.", link: { label: Event Center →, href: /#center } }
+      - { title: Sessions by city, text: "Dates and venues in one event; buyers choose the city, you see totals per session and for the whole concert tour.", link: { label: Event Center →, href: /#center } }
+      - { title: A plan for every venue, text: "Send a PDF, a spreadsheet or a hand sketch and the team draws each venue's plan for free; on the next visit it is already there.", link: { label: Seating plans →, href: /product/seating } }
       - { title: Promoter pages, text: "A separate page for each local promoter with its own link and promo codes; sales roll up to you.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: Where buyers come from, text: "Add UTM tags to your links and see which post, newsletter or partner sells tickets in each city.", link: { label: Where you sell →, href: /product/sell } }
       - { title: Several countries, text: "Sell in Czechia, Spain, France, Georgia or Israel with the provider of each country, into your own account.", link: { label: Payments →, href: /payments } }
       - { title: Buyers' languages, text: "Pages and tickets in the buyer's language, e-mails in seven languages, right-to-left for Hebrew.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: The whole concert tour in Telegram, text: "Every sale and refund from every city appears in your Telegram group within seconds, with the buyer's contact.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: "A city moves? You decide", text: "Refund everyone, offer a new date instead, or choose another solution. Buyers get an e-mail with the updated ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: The door in every city, text: "The MACS scanner app for iOS and Android at every venue; local partners' tickets from other systems accepted too.", link: { label: MACS scanner app →, href: /product/scanner } }
   - type: faq
     id: questions
     eyebrow: Questions
@@ -26,13 +35,13 @@ sections:
       - q: Do promoters see each other's sales?
         a: No. Each promoter sees only its own page; the organizer sees everything.
       - q: A city moves to another venue. What happens to sold tickets?
-        a: The session moves with buyer e-mails and updated tickets; seats move to the new plan; we draw the new venue for free.
-      - q: What does a ticket cost me on tour?
+        a: The session moves and buyers get an e-mail with the updated ticket; seats are remapped with you on the new plan.
+      - q: What does a ticket cost me on a concert tour?
         a: "The same per-ticket amount in every city; see [pricing](/pricing)."
   - type: cta
     id: start
-    title: Start selling today
+    title: Your best event is yet to come. Shall we start with the tickets?
     text: Create the event, connect your payment account, share the link.
-    primary: { label: Create your event, href: /start#create }
-    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Questions? Write to us: the team answers within one working day."
+    primary: { label: Start selling, href: /start }
+    secondary: { label: Create your event, href: /start#create }
+    tertiary: { label: Contact the team, href: /contact#write }

@@ -1,8 +1,9 @@
 title: "Informativa sulla privacy"
 description: "Come ArenaSoldOut.com (ABH TEAM OÜ) tratta i dati di visitatori, organizzatori e acquirenti: quali, perché, destinatari, conservazione, diritti, cookie."
 h1: "Informativa sulla privacy"
-lead: "Versione del 2 novembre 2026. Sostituisce la versione del 9 ottobre 2026. Si applica al sito web, all'Event Center, alle pagine di vendita, al widget, all'API, al bot Telegram e all'app scanner. Questa è una traduzione a scopo informativo; fa fede la versione inglese."
+lead: "Versione del 22 novembre 2026. Sostituisce la versione del 2 novembre 2026. Si applica al sito web, all'Event Center, alle pagine di vendita, al widget, all'API, al bot Telegram e all'app scanner. Questa è una traduzione a scopo informativo; fa fede la versione inglese."
 related:
+  - { label: Istruzioni per la cancellazione dei dati, href: /legal/data-deletion }
   - { label: Termini e condizioni, href: /legal/terms }
   - { label: Aiuto per chi compra i biglietti, href: /help/tickets }
   - { label: Pagamenti, href: /payments }
@@ -40,11 +41,17 @@ sections:
 
       1.9 Possiamo inoltre trattare qualsiasi tuo dato personale quando il trattamento è necessario per proteggere i tuoi interessi vitali o gli interessi vitali di un'altra persona fisica.
 
+      1.10 Trattiamo i dati del collegamento degli organizzatori a Meta (Facebook) ("dati Meta"). Se un organizzatore collega il proprio account aziendale Meta ai servizi tramite la nostra app "Arena Sold Out", trattiamo: il token di accesso che Meta rilascia per questo collegamento; gli ID del portfolio business Meta dell'organizzatore e degli account pubblicitari, pixel e pagine che ha scelto; le autorizzazioni concesse dall'organizzatore; e le statistiche pubblicitarie degli account pubblicitari scelti (spesa, impressioni, clic, acquisti e il loro valore, per giorno e per campagna, gruppo di inserzioni e inserzione). Sono trattati per inviare a Meta le vendite di biglietti dell'organizzatore come conversioni e per mostrare all'organizzatore la spesa pubblicitaria accanto alle vendite nell'Event Center. Il token di accesso è conservato cifrato, non viene mostrato a nessuno e non viene scritto nei log. La base giuridica è l'esecuzione del nostro contratto con l'organizzatore. L'organizzatore può rimuovere il collegamento in qualsiasi momento; le [istruzioni per la cancellazione dei dati](/it/legal/data-deletion) spiegano come fare e come far cancellare i dati Meta.
+
+      1.11 Quando un organizzatore ha attivato l'invio delle conversioni a Meta, inviamo a Meta, per conto di quell'organizzatore, un evento per ogni acquisto completato sulle sue pagine di vendita e nel suo widget: il numero dell'ordine, l'ora, l'importo e la valuta, l'indirizzo della pagina e dati tecnici del browser dell'acquirente (indirizzo IP, tipo di browser e, se presenti, gli identificatori Meta _fbp, _fbc o fbclid). L'indirizzo e-mail e il numero di telefono dell'acquirente sono aggiunti solo se l'acquirente ha accettato il tracciamento, e solo in forma di hash (SHA-256), che Meta usa per abbinare l'acquisto ai propri utenti. Il titolare di questi dati è l'organizzatore, che li usa per misurare e migliorare la propria pubblicità; noi li trattiamo per suo conto. Meta li riceve secondo i propri termini con l'organizzatore e la propria informativa sulla privacy. I dati del browser che conserviamo a questo scopo sono cancellati dopo l'invio dell'evento.
+
       ## 2. Come condividiamo le informazioni
 
       2.1 I dati personali conservati nei servizi sono memorizzati su server situati nell'Unione Europea, gestiti dai nostri fornitori di hosting in base ad accordi sul trattamento dei dati, con backup notturni cifrati. Cloudflare, Inc. serve questo sito web, protegge i servizi e fornisce il controllo Turnstile sui nostri moduli.
 
       2.2 Per gestire i servizi, i tuoi dati personali vengono condivisi, ciascuno nella misura necessaria al proprio compito, con: l'organizzatore da cui hai acquistato un biglietto (acquirenti); il provider di pagamento collegato dall'organizzatore; i fornitori di invio e-mail che inviano biglietti ed e-mail di servizio; Telegram, tramite cui vengono recapitati il bot Telegram, la chat Telegram e le notifiche ai gruppi degli organizzatori, secondo l'informativa sulla privacy di Telegram; i nostri fornitori di hosting, analisi, automazione e assistenza clienti. Seguendo le nostre istruzioni, queste parti possono accedere ai dati personali, trattarli o conservarli nello svolgimento dei loro compiti per noi.
+
+      2.2a Se un organizzatore ha collegato il proprio account Meta (sezione 1.10), i dati descritti nelle sezioni 1.10 e 1.11 sono comunicati anche a Meta Platforms Ireland Limited ("Meta"), ogni volta su istruzione di quell'organizzatore.
 
       2.3 Se siamo coinvolti in una fusione, acquisizione, due diligence per un finanziamento, riorganizzazione, fallimento, amministrazione controllata, vendita di tutti o di parte dei nostri beni, o passaggio di un servizio a un altro fornitore, i tuoi dati personali e altre informazioni possono essere trasferiti a un successore o a una società affiliata nell'ambito di tale operazione.
 
@@ -52,7 +59,7 @@ sections:
 
       2.5 Con il tuo consenso, possiamo condividere dati con terzi al di fuori dell'ambito della presente Informativa sulla privacy.
 
-      2.6 Gli organizzatori modificano o correggono i propri dati nell'Event Center o scrivendo a hello@arenasoldout.com. Gli acquirenti scrivono all'organizzatore del proprio evento, o a noi allo stesso indirizzo; quando il titolare del trattamento è l'organizzatore, inoltriamo la richiesta all'organizzatore.
+      2.6 Gli organizzatori modificano o correggono i propri dati nell'Event Center o scrivendo a support@arenasoldout.com. Gli acquirenti scrivono all'organizzatore del proprio evento, o a noi allo stesso indirizzo; quando il titolare del trattamento è l'organizzatore, inoltriamo la richiesta all'organizzatore.
 
       ## 3. Per quanto tempo conserviamo i dati
 
@@ -71,6 +78,8 @@ sections:
       (e) dati delle transazioni: finché l'account dell'organizzatore è aperto e l'organizzatore ne ha bisogno per rimborsi, controversie e report, e dopo di che per il periodo richiesto dalla normativa contabile e fiscale (in Estonia, sette anni per i documenti contabili di origine);
 
       (f) dati di notifica: finché non revochi il consenso; conserviamo la registrazione della tua disiscrizione per non scriverti più.
+
+      (g) dati Meta: finché il collegamento è attivo; quando l'organizzatore rimuove il collegamento o chiede di cancellare i dati, cancelliamo il token di accesso, gli ID e le statistiche pubblicitarie entro un mese; i dati del browser per le conversioni (sezione 1.11): fino all'invio dell'evento a Meta.
 
       ## 4. Sicurezza
 
@@ -102,7 +111,7 @@ sections:
 
       (h) Diritto di proporre reclamo: se hai dubbi sulle nostre pratiche in materia di privacy, puoi presentare reclamo all'autorità per la protezione dei dati del tuo paese. La nostra autorità di controllo è l'Ispettorato estone per la protezione dei dati (Andmekaitse Inspektsioon, www.aki.ee).
 
-      5.3 Per esercitare questi diritti, scrivi a hello@arenasoldout.com. Rispondiamo entro un mese. Gli acquirenti possono anche contattare l'organizzatore del proprio evento, che è il titolare del trattamento dei loro dati.
+      5.3 Per esercitare questi diritti, scrivi a support@arenasoldout.com. Rispondiamo entro un mese. Gli acquirenti possono anche contattare l'organizzatore del proprio evento, che è il titolare del trattamento dei loro dati.
 
       ## 6. Cookie e tecnologie simili
 
@@ -112,11 +121,13 @@ sections:
 
       6.3 L'Event Center, le pagine di vendita ospitate e il widget dei biglietti usano cookie e archiviazione locale strettamente necessari: per mantenere gli organizzatori connessi, per riservare i tuoi posti mentre completi un ordine, per ricordare la tua lingua e per proteggere account e ordini dalle frodi. Non usiamo cookie pubblicitari né cookie di analisi di terzi.
 
+      6.4 Un organizzatore può installare il pixel di Meta sul proprio sito web. Quel pixel e i suoi cookie (ad esempio _fbp e _fbc) appartengono all'organizzatore e a Meta, e l'organizzatore è responsabile di chiedere per essi il consenso dei propri visitatori. Se i valori di questi cookie sono disponibili all'acquisto di un biglietto, li trasmettiamo a Meta insieme all'acquisto (sezione 1.11).
+
       ## 7. Come controllare i cookie
 
       7.1 Puoi bloccare o eliminare cookie e archiviazione locale nelle impostazioni del tuo browser; la guida del browser spiega come. Bloccare i cookie strettamente necessari impedisce di accedere all'Event Center e di completare un ordine di biglietti.
 
-      7.2 Puoi cambiare o revocare la tua scelta sull'analisi in qualsiasi momento con il link "Impostazioni dei cookie" nel piè di pagina di ogni pagina. La revoca elimina il cookie aso_aid e interrompe subito ulteriori raccolte. Per far eliminare gli eventi già raccolti con il tuo codice, scrivi a hello@arenasoldout.com.
+      7.2 Puoi cambiare o revocare la tua scelta sull'analisi in qualsiasi momento con il link "Impostazioni dei cookie" nel piè di pagina di ogni pagina. La revoca elimina il cookie aso_aid e interrompe subito ulteriori raccolte. Per far eliminare gli eventi già raccolti con il tuo codice, scrivi a support@arenasoldout.com.
 
       ## 8. Revisione e separabilità
 
@@ -138,7 +149,7 @@ sections:
 
       9.3 Puoi contattarci:
 
-      (a) via e-mail, a hello@arenasoldout.com;
+      (a) via e-mail, a support@arenasoldout.com;
 
       (b) nella chat Telegram e nel bot Telegram collegati nella pagina dei contatti;
 

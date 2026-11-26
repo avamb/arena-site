@@ -1,5 +1,5 @@
 title: "Recursos: ingressos, assentos, pagamentos, Event Center"
-description: "Todos os recursos do ArenaSoldOut.com em uma página: venda e widget, mapas de assentos, preços e códigos promocionais, pagamentos, ingressos, Event Center."
+description: "Todos os recursos do ArenaSoldOut.com em uma página: venda e widget, mapas de assentos, preços e cupons de desconto, pagamentos, ingressos, Event Center."
 h1: Todos os recursos, em uma página
 lead: "O que o ArenaSoldOut.com faz por um organizador, do primeiro ingresso até a entrada. Cada grupo leva à sua página com os detalhes."
 related:
@@ -17,8 +17,8 @@ sections:
         text: "tickets.arenasoldout.com/your-name/your-event, pronta em minutos. Um só link para redes sociais, mensageiros e cartazes."
       - title: Widget de ingressos no seu site
         text: "Três linhas de código em qualquer site: Tilda, Wix, Webflow ou código próprio. Suas cores, suas fontes, seu idioma; os compradores nunca saem do seu domínio."
-      - title: Páginas para promotores e parceiros
-        text: "Uma página separada para cada promotor e links para os seus parceiros de venda na mesma página."
+      - title: Páginas para produtores e parceiros
+        text: "Uma página separada para cada produtor e links para os seus parceiros de venda na mesma página."
       - title: Materiais do evento na sua página de vendas
         text: "Adicione materiais ao seu evento na sua página de vendas na plataforma, se você não tem um site próprio: textos, fotos e vídeos."
       - title: Descrições com aparência de design
@@ -32,7 +32,7 @@ sections:
       - title: Links curtos e QR codes para impressão
         text: "Links go.arenasoldout.com com QR codes para cartazes e folhetos: PNG, SVG ou um encarte em PDF nos formatos A5 e A6. Mude o destino depois da impressão."
       - title: Uma loja junto dos seus ingressos
-        text: "Venda vinho, produtos e kits de presente junto com os ingressos: variações, carrinho, entrega, reembolsos. Nosso primeiro cliente com loja já vende por ela."
+        text: "Venda vinho, bebidas por encomenda, produtos e kits de presente junto com os ingressos: variações, carrinho, retirada no evento ou entrega própria, reembolsos. A loja é contratada à parte, condições sob consulta. Nosso primeiro cliente com loja já vende por ela."
 
   - type: cards
     id: seating
@@ -54,15 +54,15 @@ sections:
   - type: cards
     id: prices
     eyebrow: Preços
-    title: Preços, códigos promocionais e períodos de venda
-    lead: "Detalhes: [códigos promocionais e períodos de preço](/product/pricing-tools)."
+    title: Preços, cupons de desconto e períodos de venda
+    lead: "Detalhes: [cupons de desconto e períodos de preço](/product/pricing-tools)."
     items:
       - title: "Smart price (preço inteligente)"
         text: "Um esquema pronto de faixas de preço por quantidade e por data, em vez de definir cada faixa à mão."
       - title: Categorias complementares
         text: "Um complemento só é vendido junto com um ingresso principal: um ingresso infantil não pode ser vendido sem um ingresso de adulto."
-      - title: Códigos promocionais
-        text: "Para um evento, sessão ou categoria, com período de venda, pedido mínimo e limite por comprador. Os parceiros recebem códigos próprios."
+      - title: Cupons de desconto
+        text: "Para um evento, sessão ou categoria, com período de venda, pedido mínimo e limite por comprador. Os parceiros recebem cupons próprios."
       - title: Pré-venda e lotes por quantidade
         text: "Os preços mudam em uma data que você define, ou abrem a próxima faixa quando a atual esgota."
       - title: Categorias e sequências

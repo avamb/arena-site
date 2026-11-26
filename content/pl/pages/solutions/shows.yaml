@@ -1,21 +1,29 @@
 title: "Bilety na pokazy: lodowe, cyrk, taniec, wiele miast"
 description: "Sprzedawaj bilety na objazdowe pokazy: jeden plan na obiekt, wielokrotnie, wiele dat, strona na promotora, wszystkie miasta w Event Center, pieniądze na koncie."
 h1: Pokazy
-lead: Pokazy na lodzie, cyrk, taniec i widowiska rodzinne grają wiele dat w wielu obiektach. Jedno wydarzenie, plan na każdy obiekt, strona na każdego promotora i sprzedaż ze wszystkich miast w jednym miejscu.
+tagline: Show zaczyna się na długo przed zapaleniem świateł.
+lead: Pokazy na lodzie, cyrk, taniec i widowiska dla dzieci grają wiele dat w wielu obiektach. Jedno wydarzenie, plan na każdy obiekt, strona na każdego promotora i sprzedaż ze wszystkich miast w jednym miejscu.
 related:
   - { label: Trasy koncertowe, href: /solutions/concert-tours }
   - { label: Plany sali, href: /product/seating }
   - { label: Klienci, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Dla pokazów
     title: Co jest ważne w pokazie?
     items:
-      - { title: Plan na każdy obiekt, text: "Plan każdego obiektu powstaje raz i wraca przy następnej wizycie; wersje zachowują historię.", link: { label: Plany sali →, href: /product/seating } }
+      - { title: Plan na każdy obiekt, text: "Wyślij PDF, arkusz kalkulacyjny lub odręczny szkic, a zespół bezpłatnie narysuje plan każdego obiektu. Plan wraca przy następnej wizycie; wersje zachowują historię.", link: { label: Plany sali →, href: /product/seating } }
       - { title: Wiele dat, text: "Sesje według miast i dni w jednym wydarzeniu; kupujący wybierają datę w widgecie, a ty widzisz sumy dla każdej sesji.", link: { label: Event Center →, href: /#center } }
-      - { title: Lokalni promotorzy, text: "Strona dla każdego promotora z własnym linkiem i kodami; każdy kanał raportuje do jednego Event Center.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
-      - { title: Bilety rodzinne, text: "Kategorie dla dzieci i grup, progi ilościowe, darmowe bilety dla towarzyszących dorosłych.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Lokalni promotorzy, text: "Strona dla każdego promotora z własnym linkiem i kodami; sprzedaż ze wszystkich kanałów spływa do jednego Event Center.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
+      - { title: Dzieci i grupy, text: "Osobne kategorie dla dzieci i grup, darmowe bilety dla dorosłych opiekunów.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Skąd przychodzą kupujący, text: "Dodaj tagi UTM do linków i zobacz, który post, newsletter lub partner przynosi sprzedaż w każdym mieście.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
+      - { title: Sprzedaż w Telegramie, text: "Każda sprzedaż i każdy zwrot z każdego miasta pojawia się w twojej grupie na Telegramie w kilka sekund, razem z kontaktem do kupującego.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: Wejście, text: "Aplikacja skanera MACS na iOS i Androida sprawdza przy tym samym wejściu twoje bilety i bilety partnerów z innych systemów.", link: { label: Aplikacja skanera MACS →, href: /product/scanner } }
+      - { title: "Termin przeniesiony? Ty decydujesz", text: "Zwracasz pieniądze wszystkim, proponujesz nowy termin albo wybierasz inne rozwiązanie. Kupujący dostają e-mail z zaktualizowanym biletem.", link: { label: Bilety →, href: /product/tickets } }
+      - { title: Pieniądze na twoim koncie, text: "Kupujący płacą przez dostawcę płatności z twojego kraju prosto na twoje konto; ArenaSoldOut.com nigdy nie przechowuje pieniędzy.", link: { label: Płatności →, href: /payments } }
   - type: faq
     id: questions
     eyebrow: Pytania
@@ -31,8 +39,8 @@ sections:
         a: "Na twoje własne konto płatności, w twojej walucie, z każdym zamówieniem. Zobacz [płatności](/payments)."
   - type: cta
     id: start
-    title: Zacznij sprzedaż już dziś
+    title: Twoje najlepsze wydarzenie wciąż przed tobą. Zaczniemy od biletów?
     text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
-    primary: { label: Utwórz wydarzenie, href: /start#create }
-    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Utwórz wydarzenie, href: /start#create }
+    tertiary: { label: Skontaktuj się z zespołem, href: /contact#write }

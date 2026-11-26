@@ -90,9 +90,9 @@ only from data (`<Providers status="live" />`).
 
 - Form `/start`: idle, submitting, success (thanks page, also without JS), validation error per
   field, server error with a retry and the Telegram alternative, honeypot silently accepted.
-- Theme: light, dark, visitor's explicit choice persisted; no flash on load.
+- Theme: light by default for every visitor (owner, 19.11.2026: light text on dark blue reads worse); dark only by the visitor's explicit choice, persisted; no flash on load.
 - Reduced motion: hero mesh and reveal animations off, timer static.
-- No JS: seat map, calculator defaults, theme from device, form posts normally.
+- No JS: seat map, calculator defaults, light theme, form posts normally.
 - Untranslated page in a non-default language: English content with a "not yet translated"
   note and `noindex` (section 3.6), never a 404.
 - Dev subdomain (`new.arenasoldout.com`): `noindex` everywhere, `robots.txt` disallows all,

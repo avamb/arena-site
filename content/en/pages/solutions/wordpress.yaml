@@ -1,37 +1,45 @@
-title: "Ticket sales on WordPress: plugin with WooCommerce"
-description: "The ArenaSoldOut.com plugin puts orders into WooCommerce, with seating, tickets and scanning from the platform. Or embed the widget on any page."
+title: "WordPress ticketing: sell tickets on your own site"
+description: "WordPress integration: put the ArenaSoldOut.com ticket widget on any page or block, with seating, tickets and scanning from the platform. Money goes to you."
 h1: Your WordPress, your checkout
-lead: Keep your site and your shop. The plugin creates WooCommerce orders for every ticket; the seating plan, the e-ticket and the scanning come from ArenaSoldOut.com. Or embed the widget on any page with two lines.
+lead: Keep your site. The ticket widget goes on any WordPress page or block with three lines of code; the seating plan, the e-ticket and the scanning come from ArenaSoldOut.com, and buyers pay into your own account.
 related:
   - { label: Where you sell, href: /product/sell }
   - { label: "For developers: widget and API", href: /developers }
   - { label: Payments, href: /payments }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: For WordPress sites
-    title: Which option fits my site?
+    title: What does your WordPress site get?
     items:
-      - { title: The plugin, text: "Orders land in WooCommerce, your shop and reports keep working; seats, tickets and the door are ArenaSoldOut.com's.", link: { label: Ask for the plugin →, href: /start } }
-      - { title: The widget, text: "Two lines on any page or in a block; buyers pay in the hosted checkout of your provider, orders live in the Event Center.", link: { label: Developers →, href: /developers } }
-      - { title: Moving from ArenaSoldOut.com, text: "Sessions, seating plans and customers imported; two clients moved with zero downtime.", link: { label: Clients →, href: /clients } }
+      - { title: WordPress integration, text: "The ticket widget on any page, post or block of your WordPress site: buyers choose seats and pay without leaving it.", link: { label: Developers →, href: /developers } }
+      - { title: Three lines of code, text: "Paste the widget into a page or a custom HTML block; buyers pay in the hosted checkout of your provider, orders live in the Event Center.", link: { label: Developers →, href: /developers } }
+      - { title: Moving from another system, text: "Sessions, seating plans and customers come with you; two clients moved from their previous ticketing system with zero downtime.", link: { label: Clients →, href: /clients } }
+      - { title: Seating plans drawn for free, text: "Send a PDF, a spreadsheet or a hand sketch and the team draws the plan; buyers pick seats right on your site.", link: { label: Seating plans →, href: /product/seating } }
+      - { title: Money in your account, text: "Buyers pay through a provider in your country straight into your own account; ArenaSoldOut.com never holds the money.", link: { label: Payments →, href: /payments } }
+      - { title: Promo codes and early prices, text: "Codes with a date window and a limit per buyer, early prices that end on a date, free and pay-what-you-want tickets.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: Where buyers come from, text: "Add UTM tags to your links and see which post, newsletter or partner brings buyers to your site.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: Sales in Telegram, text: "Every sale and refund appears in your Telegram group within seconds, with the buyer's contact.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: The door, text: "E-tickets with a QR code and EAN-13, checked with the MACS scanner app for iOS and Android.", link: { label: MACS scanner app →, href: /product/scanner } }
   - type: faq
     id: questions
     eyebrow: Questions
     title: What do WordPress site owners ask first?
     items:
-      - q: Will the plugin slow my site down?
-        a: The plugin talks to ArenaSoldOut.com's API on checkout; pages render as before. The widget is a web component loaded once.
+      - q: Will the widget slow my site down?
+        a: No. The widget is a web component loaded once; your pages render as before.
       - q: Does the buyer leave my domain?
-        a: With the widget the buyer stays on your page until the provider's hosted checkout, then returns. With the plugin the checkout is WooCommerce's own.
+        a: The buyer stays on your page until the provider's hosted checkout, then returns.
       - q: Which payment providers work?
-        a: "Your own account with a provider of your country; the list with statuses is on the [payments page](/payments). In Israel, AllPay works for WordPress sales today."
-      - q: Who installs it?
-        a: The team can install and configure the plugin with your site admin; the widget needs no installation.
+        a: "Your own account with a provider of your country; the list with statuses is on the [payments page](/payments)."
+      - q: Who sets it up?
+        a: You paste three lines of code, or the team sets the widget up with your site admin on a call.
   - type: cta
     id: start
-    title: Start selling on your site
-    text: "Put the ticket widget on your site: three lines of code, and the sales run from your Event Center."
+    title: Your best event is yet to come. Shall we start with the tickets?
+    text: Tell us the site address and the provider you use. The widget goes on your site in three lines of code, and the sales run from your Event Center.
     primary: { label: Start selling, href: /start }
-    secondary: { label: Read the developer docs, href: /developers }
-    note: WooCommerce sites keep their shop.
+    secondary: { label: Create your event, href: /start#create }
+    tertiary: { label: Contact the team, href: /contact#write }

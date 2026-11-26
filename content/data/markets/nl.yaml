@@ -1,0 +1,10 @@
+iso2: NL
+name:
+  en: Netherlands
+languages: [nl, en]
+currencies: [EUR]
+providers: [stripe]
+methods: [ideal, card, apple_pay, google_pay]
+status: live
+page: countries/netherlands
+order: 6

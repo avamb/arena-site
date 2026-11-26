@@ -53,7 +53,7 @@ export const org = {
   foundingYear: 2019,
   region: 'EU',
   sameAs: ['https://t.me/ArenaSoldOutChat'],
-  contactEmail: 'hello@arenasoldout.com',
+  contactEmail: 'support@arenasoldout.com',
   logo: '/brand/arena-logo.svg',
 };
 
@@ -113,3 +113,28 @@ export const allowedAgents = [
   'Applebot-Extended',
   'CCBot',
 ];
+
+/**
+ * E-mail subscription (warm list). Every popup parameter lives here; the footer form is always shown and
+ * ignores all of them. The popup appears when the visitor has scrolled `scrollPercent` of the page OR
+ * `afterSeconds` have passed, whichever comes first, at most once per visit.
+ */
+export const subscribe = {
+  /** Share of the scrollable page, in percent, that triggers the popup. */
+  scrollPercent: 45,
+  /** Seconds on the page that trigger the popup when the visitor has not scrolled enough. */
+  afterSeconds: 40,
+  /** After the visitor closes the popup it stays away for this many days. A subscribed visitor never sees it again. */
+  pauseDays: 30,
+  /** Version of the consent text, sent with every sign-up so the stored consent names the text it was given on. */
+  consentVersion: '2026-11-17',
+  /**
+   * Pages without the popup. Matched against the path WITHOUT the language prefix, as a prefix of segments:
+   * '/start' also excludes '/start/x' and '/es/start', but not '/startup'.
+   */
+  excludePaths: ['/start', '/checkout', '/pay'],
+  /** Viewport width in pixels up to which the popup is a narrow bar at the bottom instead of a centred dialog. */
+  mobileMaxWidth: 720,
+  /** Kill switch for the popup only. */
+  enabled: true,
+};

@@ -1,21 +1,29 @@
 title: "Billetterie de théâtre : plans de salle, dates répétées"
 description: "Billetterie de théâtre : places numérotées fidèles à la salle, dates répétées sur un plan, invitations, remboursements, changements de date. 100 à 1 500 places."
 h1: Théâtre
+tagline: Le spectacle commence bien avant les trois coups.
 lead: Un plan fidèle à votre salle, dessiné gratuitement par nous à partir de votre PDF, croquis ou tableau de rangs, et réutilisé pour chaque représentation. Invitations pour la presse et les partenaires, remboursements et dates déplacées gérés depuis l'Event Center.
 related:
   - { label: Plans de salle fidèles à la salle, href: /product/seating }
   - { label: "Salles et clubs : conditions séparées", href: /solutions/venues }
   - { label: Billets électroniques et contrôle, href: /product/tickets }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Pour les théâtres
     title: Qu'est-ce qui compte pour un théâtre ?
     items:
-      - { title: Le plan est le vôtre, text: "Rangs, loges, balcon, catégories par prix. Les versions protègent les billets vendus quand la disposition change.", link: { label: Plans de salle →, href: /product/seating } }
-      - { title: Dates répétées, text: "Ajoutez des séances au même événement ; le plan, les prix et les catégories sont repris. Déplacez ou annulez une date avec e-mails aux acheteurs.", link: { label: Event Center →, href: /#center } }
-      - { title: Invitations, text: "Billets gratuits pour des places précises, pour la presse, les partenaires et la troupe, contrôlés comme n'importe quel autre billet.", link: { label: Billets →, href: /product/tickets } }
-      - { title: Votre propre billetterie, text: "Vendez sur votre site avec le widget ou sur la page hébergée ; l'argent va sur votre compte, sans passer par une place de marché.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: Le plan est le vôtre, text: "Orchestre, loges, balcon, catégories par prix. Envoyez un PDF, un tableur ou un croquis à la main et l'équipe dessine le plan gratuitement ; les versions protègent les billets vendus quand la disposition change.", link: { label: Plans de salle →, href: /product/seating } }
+      - { title: Dates répétées, text: "Ajoutez des représentations au même événement ; le plan, les prix et les catégories sont repris, et les acheteurs choisissent la date.", link: { label: Event Center →, href: /#center } }
+      - { title: Invitations sans commission, text: "Billets gratuits pour des places précises, pour la presse, les partenaires et la troupe, contrôlés à l'entrée comme n'importe quel autre billet.", link: { label: Billets →, href: /product/tickets } }
+      - { title: Votre propre billetterie, text: "Vendez sur votre site avec le widget ou sur la page hébergée ; l'argent va directement sur votre propre compte.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: Codes promo et tarifs de prévente, text: "Des codes pour les abonnés, les écoles ou les partenaires, avec une période de validité et une limite par acheteur ; un tarif de prévente qui prend fin à la date que vous fixez.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: "Une représentation est déplacée ? C'est vous qui décidez", text: "Remboursez tout le monde, proposez une nouvelle date à la place, ou choisissez une autre solution. Les acheteurs reçoivent un e-mail avec le billet mis à jour.", link: { label: Billets →, href: /product/tickets } }
+      - { title: Ventes sur Telegram, text: "Chaque vente et chaque remboursement apparaît dans votre groupe Telegram en quelques secondes, avec les coordonnées de l'acheteur.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: À l'entrée, text: "L'application de contrôle MACS pour iOS et Android vérifie chaque billet. Un QR code imprimé avec un lien d'achat court, affiché à l'entrée, permet aux retardataires d'acheter sur place.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
+      - { title: Vos frais de service sont à vous, text: "Ajoutez vos propres frais de service pour les acheteurs en plus du prix du billet ; ils vous reviennent en totalité.", link: { label: Tarifs →, href: /pricing } }
   - type: faq
     id: questions
     eyebrow: Questions
@@ -31,8 +39,8 @@ sections:
         a: Oui, le plan de salle fonctionne sur téléphone avec zoom par pincement, dans la langue de l'acheteur.
   - type: cta
     id: start
-    title: Envoyez-nous votre plan
+    title: Votre plus bel événement est encore à venir. On commence par les billets ?
     text: "Un PDF, la photo d'un croquis à la main ou un tableau de rangs et de places suffit. Nous le dessinons gratuitement dans votre événement et vous le montrons avant le début des ventes."
     primary: { label: Commencer à vendre, href: /start }
-    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."
+    secondary: { label: Créer votre événement, href: /start#create }
+    tertiary: { label: Écrire à l'équipe, href: /contact#write }

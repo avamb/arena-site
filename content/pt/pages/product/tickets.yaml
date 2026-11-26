@@ -33,7 +33,7 @@ sections:
     id: scanner
     eyebrow: Na entrada
     title: Qual aplicativo lê os ingressos?
-    lead: "O MACS é o aplicativo de controle de acesso do ArenaSoldOut.com. Instale-o nos celulares da equipe da porta, entre com a sua conta do Event Center e leia o EAN-13 ou o QR de cada ingresso: papel, PDF na tela ou o e-mail. Um só aplicativo lê ingressos de qualquer organizador da plataforma e ingressos de parceiros de outros sistemas, então um local, um festival ou um promotor que aluga um local usa os mesmos celulares em todos os eventos."
+    lead: "O MACS é o aplicativo de controle de acesso do ArenaSoldOut.com. Instale-o nos celulares da equipe da porta, entre com a sua conta do Event Center e leia o EAN-13 ou o QR de cada ingresso: papel, PDF na tela ou o e-mail. Um só aplicativo lê ingressos de qualquer organizador da plataforma e ingressos de parceiros de outros sistemas, então um local, um festival ou um produtor que aluga um local usa os mesmos celulares em todos os eventos."
     items:
       - { title: iPhone e iPad, text: "MACS na App Store. Entre com a sua conta do Event Center; a lista de eventos e as sessões já estão lá.", link: { label: Abrir a App Store →, href: "https://apps.apple.com/app/id6770095694" } }
       - { title: Android, text: "MACS no Google Play. O mesmo aplicativo, a mesma conta; leitores portáteis com câmera ou laser também funcionam.", link: { label: Abrir o Google Play →, href: "https://play.google.com/store/apps/details?id=com.arenasoldout.macs" } }

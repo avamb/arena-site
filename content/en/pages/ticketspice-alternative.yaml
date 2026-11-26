@@ -1,0 +1,92 @@
+# Comparison page for organizers who look for a TicketSpice alternative (Marina's request of 11.11.2026, wave 1).
+# TicketSpice figures and sources: docs/competitors/prices-2026-11-11.md. Re-check them before changing this page.
+# Our figures come from content/data ({usd...} placeholders), except the worked examples in the "examples"
+# section: update those by hand when the tariff changes.
+title: "TicketSpice alternative with seating on every plan"
+description: "Compare ArenaSoldOut.com and TicketSpice: US$0.62 per ticket instead of US$0.99, seated tickets at US$1.18 without a plan upgrade, money in your own account."
+h1: A TicketSpice alternative with seating plans included
+lead: "TicketSpice and ArenaSoldOut.com both charge a flat fee per ticket, and on both you pay card processing separately. ArenaSoldOut.com costs less per ticket, and a seating plan does not need a more expensive plan. Below are both price lists side by side, as published on 11 November 2026."
+related:
+  - { label: All comparisons, href: /alternatives, text: "ArenaSoldOut.com next to other ticketing platforms." }
+  - { label: Pricing, href: /pricing, text: "Pay as you go or credits, the calculator and every credit pack." }
+  - { label: Seating plans, href: /product/seating, text: "We draw your venue for free from a PDF or a sketch." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Prices in US dollars
+    title: How much does a ticket cost on each platform?
+    lead: "Prices of both platforms as of 11 November 2026. Our commission per ticket sold next to TicketSpice's fee per paid ticket. Card processing is separate on both platforms."
+    cols: { what: "", us: ArenaSoldOut.com, them: TicketSpice }
+    rows:
+      - { what: "Per paid ticket, general admission", us: "**{usdPrice}**", them: "US$0.99 on Standard" }
+      - { what: "Ticket with a seat on a seating plan", us: "**{usdSeated}**", them: "US$1.49 on Premium (reserved seating is not on Standard)" }
+      - { what: "Who builds the seating plan", us: "Our team, free, from your PDF or sketch", them: "You, in the venue builder" }
+      - { what: "Credits paid upfront", us: "From **{usdFrom}** per ticket, never expire", them: "Not on their price list" }
+      - { what: "Card processing", us: "Paid to your own payment provider", them: "2.9% + 30¢ per transaction" }
+      - { what: "When you get the money", us: "With every order, in your own account", them: "Weekly, on Wednesdays, after identity verification" }
+      - { what: "Prices in euro (EU)", us: "**{eurPrice}**, **{eurSeated}** with a seat", them: "Their own payments: US dollars and Canadian dollars only" }
+      - { what: "Subscription", us: None, them: None }
+    note: "TicketSpice prices: [ticketspice.com/pricing](https://www.ticketspice.com/pricing) and the [TicketSpice help centre](https://help.ticketspice.com/en/articles/14172125-understand-webconnex-payments-payout-timing-and-when-you-ll-receive-your-funds), checked on 11 November 2026. Our prices: [pricing](/pricing) and [detailed terms](/pricing/terms). TicketSpice is a trademark of its owner; ArenaSoldOut.com is not affiliated with it."
+
+  - type: prose
+    id: examples
+    title: What does that mean for one event?
+    body: |
+      All figures at the prices of both platforms as of 11 November 2026.
+
+      **1,000 tickets, general admission.** ArenaSoldOut.com: 1,000 × US$0.62 = **US$620**. TicketSpice Standard: 1,000 × US$0.99 = US$990. You keep **US$370** more.
+
+      **500 seated tickets.** ArenaSoldOut.com: 500 × US$1.18 = **US$590**, and we draw the seating plan for free. TicketSpice Premium: 500 × US$1.49 = US$745. You keep **US$155** more and do not build the plan yourself.
+
+      **1,000 tickets a year, paid upfront with credits.** ArenaSoldOut.com credit pack 1K: **US$430**, or US$0.43 per ticket. The credits never expire.
+
+      Count your own event in the [calculator on the pricing page](/pricing#packages).
+
+  - type: cards
+    id: more
+    eyebrow: Beyond the price
+    title: What else do you get with ArenaSoldOut.com?
+    items:
+      - title: Seating plans drawn for you, free
+        text: "Send a PDF, a photo of a hand sketch or a table of rows and seats. The team builds the venue; you never draw it yourself."
+        link: { label: Seating plans, href: /product/seating }
+      - title: Money straight to your account
+        text: "Buyers pay into your own Stripe, Flitt or AllPay account with every order. ArenaSoldOut.com never holds funds, so there is no weekly payout to wait for."
+        link: { label: Payments, href: /payments }
+      - title: Lower rate for cheap tickets
+        text: "When every ticket of the event costs {usdLowMax} or less: {lowPercent}% of the ticket price instead of the flat fee. Discos, runs, children's parties, excursions."
+        link: { label: How it works, href: /pricing#low-price }
+      - title: Buyers in their own language
+        text: "Buyer page, e-mails and tickets in the buyer's language, Hebrew right to left included. We add any new language within 40 hours."
+        link: { label: E-tickets, href: /product/tickets }
+      - title: Every sale in your Telegram
+        text: "Create an event from a poster photo in the Telegram bot and see every sale and refund in your group within seconds."
+        link: { label: Telegram bot, href: /product/telegram }
+      - title: Set it up yourself, or hand it over
+        text: "You create events, prices and categories yourself in the Event Center or the Telegram bot, in minutes; we draw seating plans for free. No time? Our event manager does it for you, as a paid service."
+        link: { label: Extra services, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Questions organizers ask when they compare
+    items:
+      - q: Is ArenaSoldOut.com cheaper than TicketSpice?
+        a: "Per ticket, yes: {usdPrice} instead of US$0.99 on TicketSpice Standard, and {usdSeated} for a seated ticket instead of US$1.49 on TicketSpice Premium. With credits it is from {usdFrom} per ticket. Card processing is separate on both."
+      - q: Do I need a higher plan for reserved seating?
+        a: "No. Every event can have a seating plan; a ticket with a seat costs {usdSeated}. You do not draw the plan: send us a PDF, a photo of a sketch or a table of rows and seats, and the team builds it for free."
+      - q: Where does the buyer's money go?
+        a: "Into your own payment account with every order: Stripe, Flitt or AllPay. ArenaSoldOut.com never holds funds. Our commission is invoiced after the event or taken from your credits."
+      - q: Can I sell outside the US and Canada?
+        a: "Yes. Organizers in EU countries pay our commission in euro, {eurPrice} per ticket pay as you go; everywhere else in US dollars. Tickets are sold in the currency of your payment account."
+      - q: Can I move my events from TicketSpice?
+        a: "Yes. You create your events in the Event Center or the Telegram bot, we draw your seating plans for free, and you keep selling on TicketSpice until your page with us is ready. No time to set it up yourself? Our [event manager](/pricing#services) does it for you, as a paid service."
+      - q: Do I pay a subscription?
+        a: "No. You pay only for tickets sold. Invitations and free tickets to paid events carry no commission."
+
+  - type: cta
+    id: start
+    title: Try it on your next event
+    text: Create the event, connect your payment account, share the link.
+    primary: { label: Start selling, href: /start }
+    secondary: { label: See pricing, href: /pricing }
+    note: "Questions? Send us what you pay on TicketSpice and we compare it with your costs here."

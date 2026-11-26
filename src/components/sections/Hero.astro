@@ -1,26 +1,65 @@
 ---
 import type { Section } from '@/content.config';
 import type { LanguageCode } from '@config';
-import { inline } from '@/lib/inline';
+import type { CollectionEntry } from 'astro:content';
+import { inline, fill } from '@/lib/inline';
+import { reasonVars } from '@/lib/data';
 import { localePath } from '@/lib/i18n';
 import { trackLabel } from '@/lib/track';
 import HeroWidget from '@/components/islands/HeroWidget.svelte';
-interface Props { s: Extract<Section, { type: 'hero' }>; lang: LanguageCode }
-const { s, lang } = Astro.props;
+import Icon from '@/components/Icon.astro';
+interface Props { s: Extract<Section, { type: 'hero' }>; lang: LanguageCode; pricing: CollectionEntry<'pricing'>[] }
+const { s, lang, pricing } = Astro.props;
+const vars = reasonVars(pricing);
+/* The title starts with rotate[0]; that word turns into the next one every few seconds. Without JS, or with
+   reduced motion, the static title stays: search engines and screen readers read one plain h1. */
+const rot = s.rotate && s.rotate.length > 1 && s.title.startsWith(s.rotate[0]) ? s.rotate : null;
+const tail = rot ? s.title.slice(rot[0].length).trim() : s.title;
 ---
 <section class="hero" id={s.id}>
   <div class="mesh" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
   <div class="wrap hero-grid">
     <div class="hero-copy">
       {s.eyebrow && <p class="eyebrow reveal">{s.eyebrow}</p>}
-      <h1 class="reveal">{s.title}</h1>
+      {rot ? (
+        <h1 class="reveal hero-rot"><span class="rot" data-words={JSON.stringify(rot)}>{rot[0]}</span> {tail}</h1>
+      ) : (
+        <h1 class="reveal">{s.title}</h1>
+      )}
       {s.lead && <p class="lead reveal" set:html={inline(s.lead)} />}
       <div class="hero-actions reveal" data-nosnippet>
         <a class="btn btn-primary" href={localePath(lang, s.primary.href)} data-track={trackLabel(s.primary.href, 'hero')}>{s.primary.label}</a>
         <a class="btn btn-band" href={localePath(lang, s.secondary.href)} data-track={trackLabel(s.secondary.href, 'hero_secondary')}>{s.secondary.label}</a>
       </div>
-      <p class="hero-note reveal" data-nosnippet>{s.note}</p>
+      {s.note && <p class="hero-note reveal" data-nosnippet>{s.note}</p>}
     </div>
-    {s.widget && <div data-nosnippet style="display:contents"><HeroWidget client:idle w={s.widget} /></div>}
+    {s.widget && (s.widgetNote ? (
+      <div class="hero-side"><div data-nosnippet style="display:contents"><HeroWidget client:idle w={s.widget} /></div><p class="hero-side-note">{s.widgetNote}</p></div>
+    ) : <div data-nosnippet style="display:contents"><HeroWidget client:idle w={s.widget} /></div>)}
+    {s.benefits && (
+      <ul class="hero-benefits reveal">
+        {s.benefits.map((b) => (
+          <li>
+            <span class="ic"><Icon name={b.icon as any} size={20} /></span>
+            <b>{b.title}</b>
+            <span set:html={inline(fill(b.text, vars))} />
+            {b.link && <a href={localePath(lang, b.link.href)}>{b.link.label}</a>}
+          </li>
+        ))}
+      </ul>
+    )}
   </div>
 </section>
+{rot && (
+  <script>
+    const el = document.querySelector<HTMLElement>('.hero-rot .rot');
+    if (el && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const words: string[] = JSON.parse(el.dataset.words || '[]');
+      let i = 0;
+      setInterval(() => {
+        el.classList.add('out');
+        setTimeout(() => { i = (i + 1) % words.length; el.textContent = words[i]; el.classList.remove('out'); }, 260);
+      }, 2400);
+    }
+  </script>
+)}

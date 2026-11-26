@@ -16,6 +16,7 @@ import Footer from '@/components/Footer.astro';
 import ContactForm from '@/components/ContactForm.astro';
 import Icon from '@/components/Icon.astro';
 import ConsentBanner from '@/components/ConsentBanner.astro';
+import SubscribePopup from '@/components/SubscribePopup.astro';
 
 interface Props {
   lang: LanguageCode;
@@ -30,12 +31,16 @@ interface Props {
   image?: string;
   ogType?: 'website' | 'article';
 }
-const { lang, path, title, description, translated = true, jsonld, markdownPath, noindex = false, image = '/brand/og-default.png', ogType = 'website' } = Astro.props;
+const { lang, path, title, description, translated = true, jsonld, markdownPath, noindex = false, image: imageProp, ogType = 'website' } = Astro.props;
+/* The brand card in the page language (public/brand/og-<lang>.png, the home h1); the old English card for other languages. */
+const cardLanguages = ['en', 'ru', 'es', 'pt', 'de', 'fr', 'it', 'pl', 'uk'];
+const defaultImage = cardLanguages.includes(lang) ? `/brand/og-${lang}.png` : '/brand/og-default.png';
+const image = imageProp ?? defaultImage;
 const language = getLanguage(lang);
 const robots = !indexing || !translated || noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
 const canonical = new URL(path, siteUrl).toString();
 const ogImage = new URL(image, siteUrl).toString();
-const isDefaultImage = image === '/brand/og-default.png';
+const isDefaultImage = image === defaultImage;
 // hreflang only for genuine translations (src/lib/translations.ts); x-default is the English member.
 const alternates = translationsOf(path).map((x) => ({ code: x.lang, href: new URL(x.path, siteUrl).toString() }));
 const graph = jsonld ? JSON.stringify(buildGraph(jsonld)) : undefined;
@@ -75,8 +80,7 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="theme-color" content="#F6F7FB" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F6F7FB" />
     <style is:inline set:html={maskCss}></style>
     <script is:inline>
       (function () { try { var t = localStorage.getItem('aso-theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
@@ -108,20 +112,48 @@ const maskCss = `:root{--logo-mask:${svgMask('arena-logo.svg')};--mark-mask:${sv
       </div>
     </dialog>
     <script>import '@/scripts/contact';</script>
+    {/* Subscription popup (warm list) once per page; the footer carries the permanent form. Rules: src/scripts/subscribe-lib.ts. */}
+    <SubscribePopup lang={lang} />
+    <script>import '@/scripts/subscribe';</script>
     <ConsentBanner lang={lang} />
     {umami.src && umami.websiteId && (
       <script is:inline define:vars={{ umamiSrc: umami.src, umamiId: umami.websiteId }}>
         /* Theme statistics (doc 33 §3.11, item 3): one event per view, no cookies. */
         (function () {
           function send(name, data) { if (window.umami && typeof window.umami.track === 'function') window.umami.track(name, data); }
-          var mq = matchMedia('(prefers-color-scheme: dark)');
-          function shown() { var e = document.documentElement.getAttribute('data-theme'); return e || (mq.matches ? 'dark' : 'light'); }
+          var mq = matchMedia('(prefers-color-scheme: dark)'); /* the device setting, for the statistics only */
+          function shown() { return document.documentElement.getAttribute('data-theme') || 'light'; }
           function source() { return document.documentElement.getAttribute('data-theme') ? 'choice' : 'device'; }
           /* Loaded after the page is idle so third-party analytics never competes with first paint (Lighthouse gate). */
+          /* Path of an e-mail contact (owner decision 13.11): the code of the contact record (pseudonym, no e-mail, no name)
+             that the short link carried as ?cid=. consent-banner.ts strips it from the address bar and keeps it in
+             window.__asoContact, so Umami never records it in the page address. The before-send hook puts it on EVERY
+             Umami payload from the first page view, so the whole session is linked to the contact (Umami "distinct id"). */
+          window.asoUmamiBeforeSend = function (type, payload) {
+            var c = window.__asoContact;
+            if (c && payload && !payload.id) payload.id = c;
+            return payload;
+          };
+          /* Key actions for the path report: the main buttons (data-track labels) and an opened FAQ question. */
+          document.addEventListener('click', function (ev) {
+            var t = ev.target && ev.target.closest ? ev.target.closest('[data-track]') : null;
+            if (t) send('cta_click', { name: t.getAttribute('data-track'), path: location.pathname });
+          }, true);
+          document.addEventListener('toggle', function (ev) {
+            var d = ev.target;
+            if (!d || d.tagName !== 'DETAILS' || !d.open || !d.closest('.faq')) return;
+            var s = d.querySelector('summary');
+            send('faq_open', { question: (s ? s.textContent : '').replace(/\s+/g, ' ').trim().slice(0, 100), path: location.pathname });
+          }, true);
           function load() {
             var el = document.createElement('script');
             el.src = umamiSrc; el.defer = true; el.setAttribute('data-website-id', umamiId); el.setAttribute('data-auto-track', 'true');
-            el.onload = function () { send('theme_view', { system_theme: mq.matches ? 'dark' : 'light', theme: shown(), theme_source: source() }); };
+            el.setAttribute('data-before-send', 'asoUmamiBeforeSend');
+            el.onload = function () {
+              send('theme_view', { system_theme: mq.matches ? 'dark' : 'light', theme: shown(), theme_source: source() });
+              /* Fallback for an Umami build that ignores the payload id: identify explicitly. */
+              if (window.__asoContact && window.umami && typeof window.umami.identify === 'function') window.umami.identify(window.__asoContact);
+            };
             document.head.appendChild(el);
           }
           window.addEventListener('load', function () { (window.requestIdleCallback || function (f) { setTimeout(f, 2000); })(load); });

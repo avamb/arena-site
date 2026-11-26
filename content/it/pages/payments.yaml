@@ -2,6 +2,8 @@ title: "Pagamenti: il tuo conto di pagamento, nel tuo paese"
 description: "Gli acquirenti pagano sul conto di pagamento dell'organizzatore. I paesi in cui un'azienda può collegare un fornitore di pagamenti, con metodi e valute."
 h1: Gli acquirenti pagano sul tuo conto di pagamento
 lead: Colleghi il conto che hai già, oppure ne apri uno con un fornitore del tuo paese. Ogni ordine va direttamente lì. ArenaSoldOut.com non detiene mai fondi e non tocca mai i tuoi pagamenti.
+related:
+  - { label: "Paesi e metodi di pagamento", href: /countries, text: "Provider, valute e metodi di pagamento in ogni paese dove puoi vendere." }
 sections:
   - type: coverage
     id: countries
@@ -36,6 +38,8 @@ sections:
         bit: Bit
         installments: pagamento a rate
         bank_transfer: bonifico bancario
+        ideal: iDEAL
+        twint: TWINT
 
   - type: cards
     id: connect

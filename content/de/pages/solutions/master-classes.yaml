@@ -1,12 +1,15 @@
-title: "Ticketverkauf für Masterclasses, Trainings, Verkostungen"
-description: "Plätze für Masterclasses, Trainings, Verkostungen und Workshops: kleine Gruppen mit Kontingent, wiederkehrende Termine, eigene E-Mails, Pay what you want."
-h1: Masterclasses und Trainings
+title: "Ticketverkauf für Workshops, Trainings und Verkostungen"
+description: "Plätze für Workshops, Masterclasses, Trainings und Verkostungen: kleine Gruppen mit Kontingent, wiederkehrende Termine, eigene E-Mails, Pay what you want."
+h1: Workshops und Trainings
+tagline: Ein Workshop beginnt mit der ersten Anmeldung.
 lead: Kleine Gruppen, wiederkehrende Termine, Ihre eigenen E-Mails in Ihrer Sprache. Eine gehostete Seite ist in Minuten fertig; das Widget passt zu der Website, die Sie schon haben. Vino&Co in Israel verkauft so seine Verkostungen.
 related:
-  - { label: Promo-Codes und Preisfenster, href: /product/pricing-tools }
+  - { label: Rabattcodes und Preisfenster, href: /product/pricing-tools }
   - { label: Wo Sie verkaufen, href: /product/sell }
   - { label: Kunden, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Für Gastgeber
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Ein Kontingent pro Termin, text: "Zwölf Plätze am Dienstag, zwanzig am Samstag; ausverkaufte Termine schließen sich selbst.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
       - { title: Wiederkehrende Termine, text: "Fügen Sie demselben Event Sessions hinzu; Preise und Kategorien werden übernommen, Käufer wählen den Termin.", link: { label: Event Center →, href: /#center } }
-      - { title: Kostenlos und Pay what you want, text: "Anmeldungen ohne Zahlung, oder ein Mindestpreis, und der Käufer entscheidet.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Kostenlos und Pay what you want, text: "Kostenlose Anmeldungen, oder ein Mindestpreis, und der Käufer entscheidet, wie viel er dazugibt.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Rabattcodes und Frühbucherpreise, text: "Ein Code für Ihre Stammgäste oder einen Partner mit Limit pro Käufer; ein Frühbucherpreis, der an dem von Ihnen gewählten Datum endet.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Verkäufe in Telegram, text: "Jeder Verkauf und jede Erstattung erscheint in Sekunden in Ihrer Telegram-Gruppe, mit dem Kontakt des Käufers.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: Woher die Teilnehmer kommen, text: "Ergänzen Sie Ihre Links um UTM-Parameter und sehen Sie, welcher Beitrag, Newsletter oder Partner Anmeldungen bringt.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
       - { title: Ihre Sprache, text: "Seite, Widget, E-Mail und Ticket in der Sprache des Käufers, auch Hebräisch rechts-nach-links.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: "Ein Termin wird verlegt? Sie entscheiden", text: "Allen erstatten, stattdessen einen neuen Termin anbieten oder eine andere Lösung wählen. Teilnehmer erhalten eine E-Mail mit dem aktualisierten Ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: "Kein Abo, keine zusätzlichen Zahlungen", text: "Kein Abo und keine monatlichen oder jährlichen Zahlungen: eine Provision pro bezahltem Ticket, kostenlose Anmeldungen kosten nichts.", link: { label: Preise →, href: /pricing } }
   - type: faq
     id: questions
     eyebrow: Fragen
@@ -31,8 +39,8 @@ sections:
         a: "Ein fester Betrag pro bezahltem Ticket; kostenlose Anmeldungen kosten nichts. Siehe [Preise](/pricing)."
   - type: cta
     id: start
-    title: Starten Sie heute den Verkauf
+    title: Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?
     text: Event anlegen, Zahlungskonto verbinden, Link teilen.
-    primary: { label: Event anlegen, href: /start#create }
-    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Event anlegen, href: /start#create }
+    tertiary: { label: Team kontaktieren, href: /contact#write }

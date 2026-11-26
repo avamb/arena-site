@@ -1,9 +1,10 @@
 iso2: CH
 name:
   en: Switzerland
-group: Switzerland
-languages: [en]
+languages: [de, fr, it, en]
 currencies: [CHF]
-providers: []
-status: planned
-order: 13
+providers: [stripe]
+methods: [twint, card, apple_pay, google_pay]
+status: live
+page: countries/switzerland
+order: 7

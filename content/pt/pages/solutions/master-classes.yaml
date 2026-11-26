@@ -1,12 +1,15 @@
 title: "Venda de ingressos para masterclasses e treinamentos"
 description: "Venda vagas para masterclasses, treinamentos, degustações e oficinas: turmas pequenas com cota, datas recorrentes, seus e-mails, grátis e pague quanto quiser."
 h1: Masterclasses e treinamentos
+tagline: Uma masterclass começa com a primeira inscrição.
 lead: Turmas pequenas, datas recorrentes, seus próprios e-mails no seu idioma. Uma página hospedada fica pronta em minutos; o widget se encaixa no site que você já tem. A Vino&Co, em Israel, vende suas degustações assim.
 related:
-  - { label: Códigos promocionais e janelas de preço, href: /product/pricing-tools }
+  - { label: Cupons de desconto e janelas de preço, href: /product/pricing-tools }
   - { label: Onde você vende, href: /product/sell }
   - { label: Clientes, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para anfitriões
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Uma cota por data, text: "Doze vagas na terça, vinte no sábado; as datas esgotadas se fecham sozinhas.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
       - { title: Datas recorrentes, text: "Adicione sessões ao mesmo evento; preços e categorias são mantidos e o público escolhe a data.", link: { label: Event Center →, href: /#center } }
-      - { title: Gratuito e pague quanto quiser, text: "Inscrições sem pagamento, ou um preço mínimo e o comprador decide o valor.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Gratuito e pague quanto quiser, text: "Inscrições gratuitas, ou um preço mínimo e o comprador decide quanto acrescentar.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Cupons de desconto e pré-venda, text: "Um cupom para quem já é da casa ou para um parceiro, com limite por comprador; um preço de pré-venda que vale até a data que você definir.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Vendas no Telegram, text: "Cada venda e cada reembolso aparecem no seu grupo do Telegram em segundos, com o contato do comprador.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: De onde vêm as pessoas, text: "Adicione parâmetros UTM aos seus links e veja qual post, newsletter ou parceiro traz as inscrições.", link: { label: Onde você vende →, href: /product/sell } }
       - { title: Seu idioma, text: "Página, widget, e-mail e ingresso no idioma do comprador, inclusive hebraico da direita para a esquerda.", link: { label: Ingressos →, href: /product/tickets } }
+      - { title: "Mudança de data? Você decide", text: "Reembolse todos, ofereça uma nova data ou escolha outra solução. Os participantes recebem um e-mail com o ingresso atualizado.", link: { label: Ingressos →, href: /product/tickets } }
+      - { title: "Sem assinatura, sem pagamentos extras", text: "Sem assinatura e sem pagamentos mensais ou anuais: uma comissão por ingresso pago, e as inscrições gratuitas não custam nada.", link: { label: Preços →, href: /pricing } }
   - type: faq
     id: questions
     eyebrow: Perguntas
@@ -31,8 +39,8 @@ sections:
         a: "Um valor fixo por ingresso pago; inscrições gratuitas não custam nada. Veja os [preços](/pricing)."
   - type: cta
     id: start
-    title: Comece a vender hoje
+    title: Seu melhor evento ainda está por vir. Vamos começar pelos ingressos?
     text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
-    primary: { label: Criar seu evento, href: /start#create }
-    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
-    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Criar seu evento, href: /start#create }
+    tertiary: { label: Fale com a equipe, href: /contact#write }

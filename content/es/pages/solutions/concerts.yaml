@@ -1,12 +1,15 @@
-title: "Venta de entradas para conciertos: de pie y sentado"
+title: "Venta de entradas para conciertos: de pie, sentado, preventa"
 description: "Vende entradas de conciertos en tu web o en una página alojada: aforo de pie, categorías con asiento, preventa, códigos de socios y escaneo. El dinero es tuyo."
-h1: Conciertos
+h1: Venta de entradas para conciertos
+tagline: Un concierto empieza mucho antes de la primera nota.
 lead: De pie y sentado en un mismo evento, varias categorías de precio, una ventana de preventa que se activa en una fecha y una puerta que escanea cada entrada. Los compradores pagan en tu propia cuenta desde la primera entrada.
 related:
   - { label: Códigos promocionales y ventanas de precio, href: /product/pricing-tools }
   - { label: Entradas electrónicas y escaneo, href: /product/tickets }
   - { label: Festivales, href: /solutions/festivals }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para conciertos
@@ -16,6 +19,11 @@ sections:
       - { title: Preventa que se activa sola, text: "Una ventana de precio por fecha y hora, o un tramo por cantidad que abre el siguiente precio cuando se agota el primero.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
       - { title: Socios y promotores, text: "Una página por promotor con su propio enlace, códigos promocionales por socio, todos los canales en un solo Event Center.", link: { label: Dónde vendes →, href: /product/sell } }
       - { title: La puerta, text: "App de escaneo para iOS y Android, EAN-13 y QR en cada entrada, y también se aceptan entradas de socios de otros sistemas.", link: { label: App de escaneo MACS →, href: /product/scanner } }
+      - { title: "Tu plano de asientos, gratis", text: "Envía un PDF, una hoja de cálculo o un boceto a mano del recinto: nuestro equipo dibuja el plano y tú nunca lo introduces a mano.", link: { label: Planos de asientos →, href: /product/seating } }
+      - { title: Categorías y VIP, text: "Cada categoría tiene su propio precio, cupo y ventana de venta; las plazas sin vender de una categoría agotada pueden pasar a la siguiente.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: Ventas en tiempo real, text: "Cada venta llega a tu grupo de Telegram en segundos; las etiquetas UTM muestran qué canal ha traído a los compradores.", link: { label: Bot de Telegram →, href: /product/telegram } }
+      - { title: Si se cancela o cambia de fecha, text: "Tú decides: reembolsar a todos u ofrecer una nueva fecha. Los compradores reciben un correo con la entrada actualizada.", link: { label: Entradas electrónicas →, href: /product/tickets } }
+      - { title: Un código QR en la puerta, text: "Coloca un código QR con un enlace corto de compra: quien llega sin entrada la compra mientras hace cola." }
   - type: faq
     id: questions
     eyebrow: Preguntas
@@ -31,8 +39,8 @@ sections:
         a: Sí. Cada venta llega a tu grupo de Telegram en pocos segundos y al Event Center, con totales por sesión y exportación a CSV.
   - type: cta
     id: start
-    title: Pon hoy el concierto a la venta
+    title: Tu mejor evento está por llegar. ¿Empezamos por las entradas?
     text: Crea el evento, conecta tu cuenta de pagos y comparte el enlace.
-    primary: { label: Crea tu evento, href: /start#create }
-    secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
-    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Crear tu evento, href: /start#create }
+    tertiary: { label: Contactar con el equipo, href: /contact#write }

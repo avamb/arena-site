@@ -148,7 +148,7 @@ export async function getPage(lang: LanguageCode, slug: string): Promise<{ page:
 /** Slugs of every page that exists in the default language, in site order. */
 export async function pageSlugs(): Promise<string[]> {
   const all = await getCollection('pages');
-  const order = ['home', 'product/sell', 'product/seating', 'product/pricing-tools', 'payments', 'product/telegram', 'product/tickets', 'product/reliability', 'solutions', 'solutions/concerts', 'solutions/theatre', 'solutions/shows', 'solutions/festivals', 'solutions/concert-tours', 'solutions/master-classes', 'solutions/venues', 'solutions/wordpress', 'pricing', 'pricing/terms', 'developers', 'clients', 'company', 'facts', 'blog', 'changes', 'start', 'contact', 'partners', 'help/tickets', 'legal/terms', 'legal/privacy', 'start/thanks'];
+  const order = ['home', 'product/sell', 'product/seating', 'product/pricing-tools', 'payments', 'product/telegram', 'product/tickets', 'product/reliability', 'solutions', 'solutions/concerts', 'solutions/theatre', 'solutions/shows', 'solutions/festivals', 'solutions/concert-tours', 'solutions/master-classes', 'solutions/venues', 'solutions/wordpress', 'pricing', 'pricing/terms', 'developers', 'clients', 'company', 'facts', 'blog', 'changes', 'start', 'contact', 'partners', 'help/tickets', 'legal/terms', 'legal/privacy', 'legal/data-deletion', 'security', 'start/thanks'];
   const slugs = all.filter((p) => p.id.startsWith(`${defaultLanguage}/pages/`)).map((p) => p.id.replace(`${defaultLanguage}/pages/`, ''));
   return slugs.sort((a, b) => (order.indexOf(a) === -1 ? 99 : order.indexOf(a)) - (order.indexOf(b) === -1 ? 99 : order.indexOf(b)));
 }
@@ -159,6 +159,24 @@ export function slugToPath(slug: string): string {
 
 export function liveProviderNames(providers: CollectionEntry<'providers'>[]): string[] {
   return providers.filter((p) => p.data.status !== 'planned').map((p) => p.data.name);
+}
+
+/**
+ * Every country an organizer can sell from (the countries hub): live markets plus every country where a
+ * working provider accepts companies. Market data (currencies, methods, page) wins over provider defaults.
+ */
+export function countryRows(markets: CollectionEntry<'markets'>[], providers: CollectionEntry<'providers'>[], lang: LanguageCode) {
+  const working = providers.filter((p) => p.data.status !== 'planned');
+  const live = markets.filter((m) => m.data.status === 'live');
+  const codes = [...new Set([...live.map((m) => m.data.iso2), ...working.flatMap((p) => p.data.entity_countries)])];
+  const names = new Intl.DisplayNames([lang], { type: 'region' });
+  return codes.map((iso2) => {
+    const m = live.find((x) => x.data.iso2 === iso2);
+    const ps = m ? m.data.providers.map((id) => working.find((p) => p.id === id)).filter((p) => p !== undefined) : working.filter((p) => p.data.entity_countries.includes(iso2));
+    const methods = m?.data.methods ?? [...new Set(ps.flatMap((p) => (p.data.base_methods ?? p.data.methods) as string[]))];
+    const name = iso2 === 'HK' ? (names.of(iso2) ?? 'Hong Kong').replace(/\s*\(.*\)$/, '').replace(/ SAR China$/, '') : names.of(iso2) ?? iso2;
+    return { iso2, name, page: m?.data.page, providers: ps.map((p) => p.data.name), currencies: m?.data.currencies ?? [], methods };
+  }).sort((a, b) => a.name.localeCompare(b.name, lang));
 }
 
 export function liveMarketNames(markets: CollectionEntry<'markets'>[], lang: LanguageCode): string[] {
@@ -202,4 +220,27 @@ export function reasonVars(pricing: CollectionEntry<'pricing'>[]): Record<string
     countries: clients.countries,
     since: clients.countries_since,
   };
+}
+
+/* ---------- Article authors (content/data/authors.yaml) ---------- */
+const localized = z.record(z.string());
+const authorsSchema = z.record(z.object({
+  photo: z.string(),
+  page: z.string(),
+  sameAs: z.array(z.string().url()).default([]),
+  name: localized,
+  role: localized,
+  bio: localized,
+}));
+export const authors = load('authors.yaml', authorsSchema);
+
+export type Author = { id: string; name: string; role: string; bio: string; page: string; photo: string; sameAs: string[]; image?: string };
+
+/** The author in a language (English as fallback), or undefined when `id` is not an author id (a plain name). */
+export function authorFor(id: string, lang: LanguageCode): Author | undefined {
+  const a = authors[id];
+  if (!a) return undefined;
+  const pick = (m: Record<string, string>) => m[lang] ?? m[defaultLanguage];
+  const page = lang === defaultLanguage ? a.page : `/${lang}${a.page}`;
+  return { id, name: pick(a.name), role: pick(a.role), bio: pick(a.bio), page, photo: a.photo, sameAs: a.sameAs ?? [] };
 }

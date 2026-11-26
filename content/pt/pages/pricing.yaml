@@ -43,12 +43,12 @@ sections:
       note: "Você pode comprar pacotes de créditos quantas vezes quiser; cada ingresso desconta sua comissão do pacote com o qual é pago. Você pode ativar a recarga automática. Para volumes acima de 5.000 ingressos por ano: condições individuais, escreva para nós."
     lowPrice:
       title: "Eventos em que todos os ingressos custam {lowMax} ou menos"
-      text: "{lowPercent}% do preço do ingresso, no mínimo {lowMin} e no máximo {lowCap} por ingresso; {lowSeat} a mais para um ingresso com assento. Para baladas, corridas, maratonas, festas infantis, passeios. Vale para o evento inteiro, e somente se **nenhum ingresso de qualquer categoria ou faixa de preço**, inclusive as posteriores, custar mais de {lowMax} antes dos códigos promocionais. Um ingresso acima disso e o preço padrão vale para todos os ingressos do evento, inclusive os baratos."
+      text: "{lowPercent}% do preço do ingresso, no mínimo {lowMin} e no máximo {lowCap} por ingresso; {lowSeat} a mais para um ingresso com assento. Para baladas, corridas, maratonas, festas infantis, passeios. Vale para o evento inteiro, e somente se **nenhum ingresso de qualquer categoria ou faixa de preço**, inclusive as posteriores, custar mais de {lowMax} antes dos cupons de desconto. Um ingresso acima disso e o preço padrão vale para todos os ingressos do evento, inclusive os baratos."
       example: "Comissão por ingresso, pagamento depois do evento:"
       cols: { price: Preço do ingresso, plain: Comissão, seated: Com assento }
     venues:
       title: Locais permanentes
-      text: "Teatros, clubes, estádios, circos e outros espaços que realizam eventos por conta própria, o ano todo ou por temporada: **{percent}% do preço do ingresso** (após códigos promocionais, sem a taxa de serviço), no máximo **{cap}** por ingresso, igual com e sem assento. Cobrança mensal. Sem comissão sobre convites. Nossa equipe ativa o status de local."
+      text: "Teatros, clubes, estádios, circos e outros espaços que realizam eventos por conta própria, o ano todo ou por temporada: **{percent}% do preço do ingresso** (após os cupons de desconto, sem a taxa de serviço), no máximo **{cap}** por ingresso, igual com e sem assento. Cobrança mensal. Sem comissão sobre convites. Nossa equipe ativa o status de local."
       example: "Um ingresso de {ex25} custa {ex} de comissão; o limite de {cap} é atingido com um ingresso de {capAt}."
       cta: { label: Fale conosco, href: /contact }
     calculator:
@@ -119,7 +119,7 @@ sections:
       - q: Um dos meus ingressos custa mais de US$10 (€10 na UE), o resto é barato. Qual preço vale?
         a: "O padrão, para todos os ingressos do evento: a taxa menor exige que todos os ingressos de todas as categorias e faixas de preço custem US$10 ou menos (€10 na UE). Um ingresso de US$5 ao lado de um de US$25 fica no preço padrão."
       - q: Tenho um local e realizo muitos eventos por mês. Existe outra condição?
-        a: "Sim. Donos de locais permanentes (teatros, clubes, estádios, circos e outros espaços que realizam eventos por conta própria, o ano todo ou por temporada) pagam {percent}% do preço do ingresso, calculado após os códigos promocionais e sem a sua taxa de serviço. A comissão por ingresso é limitada a US$1,18 (€1,09 na UE), igual com e sem assento. Convites não têm comissão. Cobramos mensalmente. Nossa equipe ativa o status de local: escreva para nós pela [página de contato](/contact). As condições completas estão nas [condições detalhadas](/pricing/terms)."
+        a: "Sim. Donos de locais permanentes (teatros, clubes, estádios, circos e outros espaços que realizam eventos por conta própria, o ano todo ou por temporada) pagam {percent}% do preço do ingresso, calculado após os cupons de desconto e sem a sua taxa de serviço. A comissão por ingresso é limitada a US$1,18 (€1,09 na UE), igual com e sem assento. Convites não têm comissão. Cobramos mensalmente. Nossa equipe ativa o status de local: escreva para nós pela [página de contato](/contact). As condições completas estão nas [condições detalhadas](/pricing/terms)."
 
   - type: cta
     id: start

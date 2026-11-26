@@ -1,21 +1,29 @@
 title: "Ticketverkauf für Theater: Saalplan, wiederkehrende Termine"
-description: "Ticketverkauf für Theater mit Platzreservierung passend zur Spielstätte, wiederkehrende Termine auf einem Plan, Einladungen, Erstattungen. 100 bis 1.500 Plätze."
+description: "Ticketverkauf für Theater mit Platzreservierung passend zur Spielstätte, wiederkehrende Termine auf einem Plan, Freikarten, Erstattungen. 100 bis 1.500 Plätze."
 h1: Theater
-lead: Ein Plan, der zu Ihrem Haus passt, von uns kostenlos nach Ihrem PDF, Ihrer Skizze oder Ihrer Tabelle mit Reihen gezeichnet und für jede Vorstellung wiederverwendet. Einladungen für Presse und Partner, Erstattungen und verlegte Termine im Event Center.
+tagline: Eine Vorstellung beginnt, lange bevor sich der Vorhang hebt.
+lead: Ein Plan, der zu Ihrem Haus passt, von uns kostenlos nach Ihrem PDF, Ihrer Skizze oder Ihrer Tabelle mit Reihen gezeichnet und für jede Vorstellung wiederverwendet. Freikarten für Presse und Partner, Erstattungen und verlegte Termine im Event Center.
 related:
   - { label: Saalpläne passend zur Spielstätte, href: /product/seating }
   - { label: "Spielstätten und Clubs: eigene Konditionen", href: /solutions/venues }
   - { label: E-Tickets und Scan, href: /product/tickets }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Für Theater
     title: Was zählt bei einem Theater?
     items:
-      - { title: Der Plan gehört Ihnen, text: "Reihen, Logen, Balkon, Kategorien nach Preis. Versionen schützen verkaufte Tickets, wenn sich die Bestuhlung ändert.", link: { label: Saalpläne →, href: /product/seating } }
-      - { title: Wiederkehrende Termine, text: "Fügen Sie demselben Event Sessions hinzu; Plan, Preise und Kategorien werden übernommen. Verlegen oder sagen Sie einen Termin ab, mit E-Mails an die Käufer.", link: { label: Event Center →, href: /#center } }
-      - { title: Einladungen, text: "Freikarten für genaue Plätze für Presse, Partner und Ensemble, gescannt wie jedes andere Ticket.", link: { label: Tickets →, href: /product/tickets } }
-      - { title: Ihre eigene Kasse, text: "Verkaufen Sie auf Ihrer Website mit dem Widget oder auf der gehosteten Seite; das Geld geht auf Ihr Konto, nicht über einen Marktplatz.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Der Plan gehört Ihnen, text: "Parkett, Logen, Balkon, Kategorien nach Preis. Schicken Sie ein PDF, eine Tabelle oder eine Handskizze, und das Team zeichnet den Plan kostenlos; Versionen schützen verkaufte Tickets, wenn sich die Bestuhlung ändert.", link: { label: Saalpläne →, href: /product/seating } }
+      - { title: Wiederkehrende Termine, text: "Fügen Sie demselben Event Vorstellungen hinzu; Plan, Preise und Kategorien werden übernommen, und Käufer wählen den Termin.", link: { label: Event Center →, href: /#center } }
+      - { title: Freikarten ohne Provision, text: "Freikarten für genaue Plätze für Presse, Partner und Ensemble, am Einlass gescannt wie jedes andere Ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Ihre eigene Kasse, text: "Verkaufen Sie auf Ihrer Website mit dem Widget oder auf der gehosteten Seite; das Geld geht direkt auf Ihr eigenes Konto.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Rabattcodes und Frühbucherpreise, text: "Codes für Abonnenten, Schulen oder Partner mit Zeitfenster und Limit pro Käufer; ein Frühbucherpreis, der an dem von Ihnen gewählten Datum endet.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: "Eine Vorstellung wird verlegt? Sie entscheiden", text: "Allen erstatten, stattdessen einen neuen Termin anbieten oder eine andere Lösung wählen. Käufer erhalten eine E-Mail mit dem aktualisierten Ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Verkäufe in Telegram, text: "Jeder Verkauf und jede Erstattung erscheint in Sekunden in Ihrer Telegram-Gruppe, mit dem Kontakt des Käufers.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: Der Einlass, text: "Die Scanner-App MACS für iOS und Android prüft jedes Ticket. Mit einem ausgedruckten QR-Code und kurzem Kauflink am Eingang kaufen Kurzentschlossene direkt vor Ort.", link: { label: MACS Scanner-App →, href: /product/scanner } }
+      - { title: Ihre Servicegebühr gehört Ihnen, text: "Schlagen Sie eine eigene Servicegebühr für Käufer auf den Ticketpreis auf; sie geht vollständig an Sie.", link: { label: Preise →, href: /pricing } }
   - type: faq
     id: questions
     eyebrow: Fragen
@@ -31,8 +39,8 @@ sections:
         a: Ja, der Saalplan funktioniert auf Handys mit Pinch-Zoom, in der Sprache des Käufers.
   - type: cta
     id: start
-    title: Schicken Sie uns Ihren Plan
+    title: Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?
     text: "Ein PDF, ein Foto einer Handskizze oder eine Tabelle mit Reihen und Plätzen genügt. Wir zeichnen ihn kostenlos in Ihr Event und zeigen ihn Ihnen, bevor der Verkauf beginnt."
     primary: { label: Verkauf starten, href: /start }
-    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."
+    secondary: { label: Event anlegen, href: /start#create }
+    tertiary: { label: Team kontaktieren, href: /contact#write }

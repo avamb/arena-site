@@ -1,38 +1,46 @@
 title: "Ticketing for venues and clubs: one plan, separate terms"
 description: "For permanent venues and clubs: one seating plan reused for every event, many events a month, door scanning, a percentage of the ticket price instead of a fee."
 h1: Venues and clubs
+tagline: A venue comes alive long before the doors open.
 lead: "Your own venue, many events a month. The plan is built once and reused, every promoter who rents the venue sells through your page or theirs, and the terms are different: a percentage of the ticket price instead of the per-ticket fee."
 related:
   - { label: Pricing and detailed terms, href: /pricing }
   - { label: Seating plans, href: /product/seating }
   - { label: Theatre, href: /solutions/theatre }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: For venues
     title: What matters for a venue?
     items:
-      - { title: "One plan, every event", text: "Built once from your file, reused for every event; versions for stage layouts.", link: { label: Seating plans →, href: /product/seating } }
+      - { title: "One plan, every event", text: "Send a PDF, a spreadsheet or a hand sketch and the team draws the plan for free; it is reused for every event, with versions for different stage layouts.", link: { label: Seating plans →, href: /product/seating } }
       - { title: Promoters who rent the venue, text: "A page per promoter with its own link; the venue sees every event, the promoter sees its own.", link: { label: Where you sell →, href: /product/sell } }
-      - { title: Separate terms, text: "Two percent of the ticket price instead of the per-ticket fee, no fee on invitations and refunds, volume terms on request.", link: { label: Pricing →, href: /pricing } }
-      - { title: The door, text: "Scanner app for iOS and Android, handheld scanners, partners' tickets from other systems accepted.", link: { label: MACS scanner app →, href: /product/scanner } }
+      - { title: Separate terms, text: "A percentage of the ticket price instead of the per-ticket fee, no commission on invitations and refunds, volume terms on request.", link: { label: Pricing →, href: /pricing } }
+      - { title: Promo codes and early prices, text: "Codes for regulars and partners with a limit per buyer, early prices that end on a date, free and pay-what-you-want tickets.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: The door, text: "The MACS scanner app for iOS and Android, handheld scanners, partners' tickets from other systems accepted.", link: { label: MACS scanner app →, href: /product/scanner } }
+      - { title: Tickets at the door, text: "Put a printed QR code with a short purchase link at the entrance: guests scan it and buy on the spot.", link: { label: Where you sell →, href: /product/sell } }
+      - { title: Sales in Telegram, text: "Every sale and refund for every event appears in your Telegram group within seconds, with the buyer's contact.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: "An event moves? You decide", text: "Refund everyone, offer a new date instead, or choose another solution. Buyers get an e-mail with the updated ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Ready for a big on-sale, text: "800 orders a minute at 1,000 concurrent buyers in load tests, nightly encrypted backups.", link: { label: Reliability →, href: /product/reliability } }
   - type: faq
     id: questions
     eyebrow: Questions
     title: What do venue owners ask first?
     items:
       - q: What are the terms for a permanent venue?
-        a: "A percentage of the ticket price instead of the per-ticket fee, no fee on invitations and refunds. The number is on the [pricing page](/pricing); volume and individual terms on request."
+        a: "A percentage of the ticket price instead of the per-ticket fee, no commission on invitations and refunds. The number is on the [pricing page](/pricing); volume and individual terms on request."
       - q: Can a promoter sell our events on their own site?
         a: Yes, with the widget on their site or a promoter page we host. Sales from every channel appear in the venue's Event Center.
       - q: Can we move from another ticketing system?
-        a: "Yes. Sessions, seating plans and customers were imported from ArenaSoldOut.com for two clients with zero downtime; other systems through the event bundle API. See [developers](/developers)."
+        a: "Yes. Two clients have already moved from their previous ticketing system with zero downtime, with sessions, seating plans and customers; other systems through the API on request. See [developers](/developers)."
       - q: Who runs the Event Center?
         a: Your team, with roles. The venue owns the organization; managers see what you allow.
   - type: cta
     id: start
-    title: Talk to us
+    title: Your best event is yet to come. Shall we start with the tickets?
     text: Tell us about the venue and the number of events a month. We draw the plan for free and agree the venue terms.
-    primary: { label: Talk to us, href: /start }
-    secondary: { label: See pricing, href: /pricing }
-    note: "Questions? Write to us: the team answers within one working day."
+    primary: { label: Start selling, href: /start }
+    secondary: { label: Create your event, href: /start#create }
+    tertiary: { label: Contact the team, href: /contact#write }

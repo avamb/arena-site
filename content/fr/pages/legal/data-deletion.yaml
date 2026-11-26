@@ -1,0 +1,36 @@
+title: "Instructions de suppression des données"
+description: "Comment déconnecter votre compte publicitaire Meta (Facebook) d'Arena Sold Out, faire supprimer vos données par ABH TEAM OÜ, et les droits des acheteurs."
+h1: "Instructions de suppression des données"
+lead: "Version du 22 novembre 2026. Comment retirer l'accès d'Arena Sold Out à votre compte Meta (Facebook) et faire supprimer vos données. Ceci est une traduction à titre d'information ; la version anglaise fait foi."
+related:
+  - { label: Politique de confidentialité, href: /legal/privacy }
+  - { label: Conditions générales, href: /legal/terms }
+  - { label: Aide aux acheteurs de billets, href: /help/tickets }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## 1. Qui nous sommes
+
+      La plateforme de billetterie ArenaSoldOut.com et l'application Meta « Arena Sold Out » sont exploitées par ABH TEAM OÜ, immatriculée au registre du commerce estonien sous le numéro 14162982, Narva mnt 5a, 10117 Tallinn, Estonie.
+
+      ## 2. Organisateurs ayant connecté un compte publicitaire Meta (Facebook)
+
+      Un organisateur peut connecter son compte publicitaire Meta à Arena Sold Out : pour envoyer ses ventes de billets à Meta comme conversions et voir ses dépenses publicitaires à côté des ventes. Pour cela, nous conservons un jeton d'accès, les identifiants du pixel et du compte publicitaire, ainsi que les statistiques publicitaires reçues.
+
+      **Retirez l'accès vous-même.** Après l'une ou l'autre de ces étapes, Arena Sold Out ne peut plus rien lire ni envoyer via votre compte :
+
+      - sur Facebook : Paramètres et confidentialité → Paramètres → Intégrations professionnelles, trouvez « Arena Sold Out » et appuyez sur Supprimer ;
+      - dans Meta Business Suite : Paramètres → Paramètres de l'entreprise → Intégrations (ou Comptes → Applications), trouvez « Arena Sold Out » et supprimez-la.
+
+      **Demandez-nous de supprimer les données conservées.** Écrivez à support@arenasoldout.com depuis l'adresse e-mail de votre compte Event Center, en indiquant « Supprimer les données Meta » et le nom de votre organisation. Nous supprimons le jeton d'accès, les identifiants du pixel et du compte publicitaire et les statistiques publicitaires, et le confirmons par e-mail. Nous répondons dans un délai d'un mois. Les données que la loi nous oblige à conserver ne sont gardées que pendant cette durée (section 3 de la politique de confidentialité).
+
+      Les données que Meta a déjà reçues via votre compte sont détenues par Meta selon sa propre politique de confidentialité.
+
+      ## 3. Acheteurs de billets
+
+      Vos droits sur vos données personnelles (accès, rectification, effacement et les autres) figurent à la [section 5 de la politique de confidentialité](/fr/legal/privacy). Les données de vos billets sont traitées pour le compte de l'organisateur de votre événement, qui en est le responsable du traitement : adressez votre demande à l'organisateur, dont le contact figure sur la page de vente et dans l'e-mail contenant votre billet. Vous pouvez aussi écrire à support@arenasoldout.com, et nous transmettons la demande à l'organisateur.
+
+      ## 4. En savoir plus
+
+      Ce que nous traitons, pourquoi et combien de temps : [politique de confidentialité](/fr/legal/privacy).

@@ -1,0 +1,9 @@
+iso2: AM
+name:
+  en: Armenia
+languages: [hy, ru, en]
+currencies: []
+providers: [flitt]
+status: live
+page: countries/georgia-armenia-kazakhstan-uzbekistan
+order: 9

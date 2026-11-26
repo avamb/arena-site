@@ -1,0 +1,55 @@
+# Security page (owner's request 17.11.2026). Only what is in place today. Deliberately NOT said, until confirmed:
+# the data centre country or date, how long backups are kept and whether they are encrypted, a number of hours for
+# incident notice, a data processing agreement (DPA), any certification (ISO 27001, SOC 2), two-factor sign-in, disk encryption.
+title: "Sicurezza su ArenaSoldOut.com"
+description: "Come ArenaSoldOut.com protegge i dati di organizzatori e acquirenti: hosting nell'UE, pagamenti sulla pagina del fornitore, separazione tra organizzatori."
+h1: "Sicurezza su ArenaSoldOut.com"
+lead: "Gestiamo la vendita dei biglietti e i dati di contatto degli acquirenti per conto degli organizzatori di eventi, quindi trattiamo la sicurezza in modo pratico e concreto. Ecco cosa facciamo oggi."
+related:
+  - { label: Informativa sulla privacy, href: /legal/privacy }
+  - { label: Termini e condizioni, href: /legal/terms }
+  - { label: Pagamenti, href: /payments }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## Dove si trovano i tuoi dati
+
+      - La piattaforma funziona su server Hetzner nell'UE.
+      - Il traffico verso la piattaforma passa da Cloudflare ed è cifrato con HTTPS.
+      - I backup del database vengono fatti ogni tre ore e ogni notte, e copiati su uno spazio di archiviazione separato nell'UE.
+
+      ## Pagamenti
+
+      - I dati della carta non arrivano mai sui nostri server. Gli acquirenti pagano sulla pagina ospitata dal fornitore di pagamenti.
+      - Ogni organizzatore collega il proprio conto di pagamento, quindi il denaro dei biglietti va all'organizzatore e non passa da noi.
+
+      ## Separazione tra organizzatori
+
+      - Eventi, ordini e clienti di ogni organizzatore sono isolati da quelli degli altri. L'accesso viene controllato a ogni richiesta.
+      - I membri del team hanno dei ruoli (titolare, manager). I manager non possono modificare le impostazioni di pagamento, la fatturazione né l'accesso del team.
+      - Le chiavi API sono limitate a una sola organizzazione e non possono mai avere permessi validi per l'intera piattaforma.
+
+      ## Protezione dagli abusi
+
+      - I moduli pubblici usano una protezione anti-bot. Accesso, checkout e API pubbliche hanno limiti di frequenza.
+      - Le chiamate webhook dei fornitori di pagamento vengono verificate tramite firma.
+      - Le azioni sensibili vengono registrate in un audit log.
+
+      ## Biglietti
+
+      - Ogni biglietto ha un codice a barre casuale e unico, che non si può indovinare partendo dal biglietto accanto. Le scansioni vengono validate rispetto ai nostri registri.
+
+      ## Monitoraggio e ripristino
+
+      - Monitoriamo il flusso delle vendite, gli invii falliti e gli errori di sistema, e riceviamo avvisi automatici.
+      - Se un incidente grave riguarda i tuoi dati, informeremo gli organizzatori interessati senza ingiustificato ritardo e in linea con il GDPR.
+
+      ## I tuoi dati e la privacy
+
+      - Trattiamo i dati degli acquirenti per conto dell'organizzatore. Vedi la nostra [Informativa sulla privacy](/legal/privacy).
+      - Puoi chiedere in qualsiasi momento l'esportazione o la cancellazione dei tuoi dati.
+
+      ## Segnalare una vulnerabilità
+
+      Hai trovato un problema di sicurezza? Scrivi a support@arenasoldout.com con i dettagli. Rispondiamo a ogni segnalazione.

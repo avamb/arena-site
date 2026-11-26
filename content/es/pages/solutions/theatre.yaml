@@ -1,21 +1,29 @@
 title: "Venta de entradas para teatro: plano de asientos"
 description: "Entradas para teatros con asientos numerados fieles a la sala, fechas repetidas en un plano, invitaciones, reembolsos y cambios de fecha. De 100 a 1.500."
 h1: Teatro
+tagline: Una función empieza mucho antes de que se levante el telón.
 lead: Un plano que refleja tu sala, dibujado por nosotros sin coste a partir de tu PDF, boceto o tabla de filas, y reutilizado en cada función. Invitaciones para prensa y socios, reembolsos y cambios de fecha desde el Event Center.
 related:
   - { label: Planos de asientos que reflejan la sala, href: /product/seating }
   - { label: "Recintos y clubes: condiciones aparte", href: /solutions/venues }
   - { label: Entradas electrónicas y escaneo, href: /product/tickets }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para teatros
     title: "¿Qué importa en un teatro?"
     items:
-      - { title: El plano es tuyo, text: "Filas, palcos, anfiteatro, categorías por precio. Las versiones protegen las entradas vendidas cuando cambia la distribución.", link: { label: Planos de asientos →, href: /product/seating } }
-      - { title: Fechas repetidas, text: "Añade sesiones al mismo evento; el plano, los precios y las categorías se mantienen. Cambia o cancela una fecha con correos a los compradores.", link: { label: Event Center →, href: /#center } }
-      - { title: Invitaciones, text: "Entradas gratuitas para asientos concretos, para prensa, socios y elenco, que se escanean como cualquier otra entrada.", link: { label: Entradas →, href: /product/tickets } }
-      - { title: Tu propia taquilla, text: "Vende en tu web con el widget o en la página alojada; el dinero va a tu cuenta, no pasa por un marketplace.", link: { label: Dónde vendes →, href: /product/sell } }
+      - { title: El plano es tuyo, text: "Platea, palcos, anfiteatro, categorías por precio. Envía un PDF, una hoja de cálculo o un boceto a mano y el equipo dibuja el plano gratis; las versiones protegen las entradas vendidas cuando cambia la distribución.", link: { label: Planos de asientos →, href: /product/seating } }
+      - { title: Fechas repetidas, text: "Añade funciones al mismo evento; el plano, los precios y las categorías se mantienen, y los compradores eligen la fecha.", link: { label: Event Center →, href: /#center } }
+      - { title: Invitaciones sin comisión, text: "Entradas gratuitas para asientos concretos, para prensa, socios y elenco, que se escanean en la puerta como cualquier otra entrada.", link: { label: Entradas →, href: /product/tickets } }
+      - { title: Tu propia taquilla, text: "Vende en tu web con el widget o en la página alojada; el dinero va directamente a tu propia cuenta.", link: { label: Dónde vendes →, href: /product/sell } }
+      - { title: Códigos promocionales y preventa, text: "Códigos para abonados, colegios o socios con un periodo de validez y un límite por comprador; un precio anticipado que termina en la fecha que elijas.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: "¿Cambia una función? Tú decides", text: "Reembolsa a todos, ofrece una nueva fecha o elige otra solución. Los compradores reciben un correo con la entrada actualizada.", link: { label: Entradas →, href: /product/tickets } }
+      - { title: Ventas en Telegram, text: "Cada venta y cada reembolso aparecen en tu grupo de Telegram en segundos, con el contacto del comprador.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: La puerta, text: "La app de escaneo MACS para iOS y Android comprueba cada entrada. Un código QR impreso con un enlace corto de compra junto a la puerta permite comprar allí mismo a quien llega a última hora.", link: { label: App de escaneo MACS →, href: /product/scanner } }
+      - { title: Tu cargo por servicio es tuyo, text: "Añade tu propio cargo por servicio al precio de la entrada; te llega íntegro.", link: { label: Precios →, href: /pricing } }
   - type: faq
     id: questions
     eyebrow: Preguntas
@@ -31,8 +39,8 @@ sections:
         a: Sí, el mapa de asientos funciona en móviles con zoom táctil, en el idioma del comprador.
   - type: cta
     id: start
-    title: Envíanos tu plano
+    title: Tu mejor evento está por llegar. ¿Empezamos por las entradas?
     text: "Basta con un PDF, una foto de un boceto a mano o una tabla de filas y asientos. Lo dibujamos en tu evento sin coste y te lo mostramos antes de que empiece la venta."
-    primary: { label: Empieza a vender, href: /start }
-    secondary: { label: Abre el bot de Telegram, href: https://t.me/EventsCentrBot }
-    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Crear tu evento, href: /start#create }
+    tertiary: { label: Contactar con el equipo, href: /contact#write }

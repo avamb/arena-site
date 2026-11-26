@@ -11,8 +11,10 @@ const walk = (dir, exts) => readdirSync(dir).flatMap((f) => {
   return statSync(p).isDirectory() ? walk(p, exts) : exts.includes(extname(f)) ? [p] : [];
 });
 
-// Archive posts and legal texts are transferred as they were (owner decision); copy rules apply to the site's own texts only.
-const isArchive = (f) => /[\\/]posts[\\/]|[\\/]pages[\\/]legal[\\/]/.test(f);
+// Archive posts (`archive: true`) and legal texts are transferred as they were (owner decision); copy
+// rules apply to the site's own texts only, new blog articles included.
+const frontmatterOf = (f) => readFileSync(f, 'utf8').split(/\r?\n---/)[0];
+const isArchive = (f) => /[\\/]pages[\\/]legal[\\/]/.test(f) || (/[\\/]posts[\\/]/.test(f) && /^archive:\s*true\s*$/m.test(frontmatterOf(f)));
 const content = [...walk('content', ['.yaml', '.yml', '.md', '.mdx']).filter((f) => !isArchive(f)), ...walk('i18n', ['.json'])];
 const code = [...walk('src', ['.astro', '.svelte', '.css', '.ts'])];
 const findings = [];
@@ -22,7 +24,7 @@ const scan = (files, rules, exempt = {}) => {
   for (const file of files) {
     const lines = readFileSync(file, 'utf8').split('\n');
     lines.forEach((l, i) => {
-      if (l.trimStart().startsWith('#') && file.startsWith('content')) return; // YAML comments
+      if (l.trimStart().startsWith('#') && /\.ya?ml$/.test(file)) return; // YAML comments (a # line in Markdown is a heading and is checked)
       for (const [rule, re] of rules) if (re.test(l) && !(exempt[rule] ?? []).some((e) => file.split('\\').join('/').endsWith(e))) flag(file, i + 1, rule, l);
     });
   }

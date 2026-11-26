@@ -1,5 +1,5 @@
-title: "Kody promocyjne, early bird, progi, darmowe i do wyboru"
-description: "Kody promocyjne z zakresem i limitami, okna cenowe według daty, progi ilościowe, łańcuchy kategorii, opłata serwisowa kanału, bilety darmowe i z ceną do wyboru."
+title: "Kody rabatowe, early bird, progi, darmowe i do wyboru"
+description: "Kody rabatowe z zakresem i limitami, okna cenowe według daty, progi ilościowe, łańcuchy kategorii, opłata serwisowa kanału, bilety darmowe i z ceną do wyboru."
 h1: Ceny, które zmieniają się tak, jak zaplanowałeś
 lead: Early bird według daty, kolejna cena po wyprzedaniu progu, kody dla partnerów, opłata serwisowa dla każdego kanału. Wszystko ustawiane w Event Center, stosowane w widgecie i na stronie hostowanej.
 related:
@@ -12,7 +12,7 @@ sections:
     eyebrow: Narzędzia cenowe
     title: Co mogę zrobić z cenami?
     items:
-      - q: Czy mogę używać kodów promocyjnych?
+      - q: Czy mogę używać kodów rabatowych?
         a: Tak. Kod może obowiązywać dla jednego wydarzenia, jednego terminu lub jednej kategorii, z oknem sprzedaży, minimalnym zamówieniem i limitem na kupującego. Partnerzy dostają własne kody.
       - q: Czy jest gotowy schemat cen?
         a: "Tak, Smart price. Wybierz gotowy schemat progów cenowych według ilości i daty, zamiast ustawiać każdy próg ręcznie. Możesz go potem dostosować."

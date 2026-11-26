@@ -1,5 +1,5 @@
 title: "Funktionen: Ticketing, Saalplan, Zahlungen"
-description: "Alle Funktionen von ArenaSoldOut.com auf einer Seite: Verkaufsseiten und Widget, Saalpläne, Preise und Promo-Codes, Zahlungen, Tickets, Scanner, Event Center."
+description: "Alle Funktionen von ArenaSoldOut.com auf einer Seite: Verkaufsseiten und Widget, Saalpläne, Preise und Rabattcodes, Zahlungen, Tickets, Scanner, Event Center."
 h1: Alle Funktionen auf einer Seite
 lead: "Was ArenaSoldOut.com für einen Veranstalter leistet, vom ersten Ticket bis zum Einlass. Jede Gruppe verlinkt auf ihre Seite mit den Details."
 related:
@@ -32,7 +32,7 @@ sections:
       - title: Kurzlinks und QR-Codes für den Druck
         text: "go.arenasoldout.com-Links mit QR-Codes für Plakate und Flyer: PNG, SVG oder eine PDF-Einlage in A5 und A6. Das Ziel lässt sich nach dem Druck ändern."
       - title: Ein Shop neben Ihren Tickets
-        text: "Verkaufen Sie Wein, Merchandise und Geschenksets zusammen mit Tickets: Varianten, Warenkorb, Lieferung, Erstattungen. Unser erster Shop-Kunde verkauft bereits darüber."
+        text: "Verkaufen Sie Wein, vorbestellte Getränke, Merchandise und Geschenksets zusammen mit Tickets: Varianten, Warenkorb, Abholung vor Ort oder eigener Versand, Erstattungen. Der Shop wird separat freigeschaltet, Konditionen auf Anfrage. Unser erster Shop-Kunde verkauft bereits darüber."
 
   - type: cards
     id: seating
@@ -54,14 +54,14 @@ sections:
   - type: cards
     id: prices
     eyebrow: Preise
-    title: Preise, Promo-Codes und Verkaufszeiträume
-    lead: "Details: [Promo-Codes und Preisstufen](/product/pricing-tools)."
+    title: Preise, Rabattcodes und Verkaufszeiträume
+    lead: "Details: [Rabattcodes und Preisstufen](/product/pricing-tools)."
     items:
       - title: Smart Price
         text: "Ein fertiges Schema aus Preisstufen nach Menge und Datum, statt jede Stufe von Hand einzustellen."
       - title: Zusatzkategorien
         text: "Ein Zusatz wird nur zusammen mit einem Haupt-Ticket verkauft: Ein Kinderticket lässt sich nicht ohne Erwachsenenticket verkaufen."
-      - title: Promo-Codes
+      - title: Rabattcodes
         text: "Für ein Event, eine Vorstellung oder eine Kategorie, mit Verkaufszeitraum, Mindestbestellung und Limit pro Käufer. Partner erhalten eigene Codes."
       - title: Early Bird und Mengenstufen
         text: "Preise wechseln zu einem von Ihnen festgelegten Datum oder öffnen die nächste Stufe, wenn die aktuelle ausverkauft ist."

@@ -1,0 +1,40 @@
+# Data deletion instructions (2026-11-22). Required by Meta for the app "Arena Sold Out" (Meta for
+# Developers, field "Data deletion instructions URL"). Facts from the privacy policy: operator and
+# registration number (§9.2), the address for requests and the one-month answer (§5.3), ticket buyers'
+# rights and the organizer as controller (§1.6, §2.6, §5). Nothing here goes beyond the policy.
+title: "Data deletion instructions"
+description: "How to disconnect your Meta (Facebook) ad account from Arena Sold Out and ask ABH TEAM OÜ to delete the data, and how ticket buyers exercise their rights."
+h1: "Data deletion instructions"
+lead: "Version of 22 November 2026. How to remove the access of Arena Sold Out to your Meta (Facebook) account and have your data deleted."
+related:
+  - { label: Privacy policy, href: /legal/privacy }
+  - { label: Terms and conditions, href: /legal/terms }
+  - { label: Help for ticket buyers, href: /help/tickets }
+sections:
+  - type: prose
+    id: text
+    body: |
+      ## 1. Who we are
+
+      The ArenaSoldOut.com ticketing platform and the Meta app "Arena Sold Out" are operated by ABH TEAM OÜ, registered in the Estonian Commercial Register under registration number 14162982, Narva mnt 5a, 10117 Tallinn, Estonia.
+
+      ## 2. Organizers who connected a Meta (Facebook) ad account
+
+      An organizer can connect its Meta ad account to Arena Sold Out: to send ticket sales to Meta as conversions and to see advertising spend next to sales. For this we keep an access token, the IDs of the pixel and the ad account, and the advertising statistics we received.
+
+      **Remove the access yourself.** After either of these steps, Arena Sold Out can no longer read or send anything through your account:
+
+      - on Facebook: Settings and privacy → Settings → Business integrations, find "Arena Sold Out" and press Remove;
+      - in Meta Business Suite: Settings → Business settings → Integrations (or Accounts → Apps), find "Arena Sold Out" and remove it.
+
+      **Ask us to delete the stored data.** Write to support@arenasoldout.com from the e-mail address of your Event Center account and say "Delete Meta data" and the name of your organization. We delete the access token, the pixel and ad account IDs and the advertising statistics, and confirm by e-mail. We answer within one month. Data the law requires us to keep is kept only for that period (section 3 of the privacy policy).
+
+      Data that Meta has already received through your account is held by Meta under its own privacy policy.
+
+      ## 3. Ticket buyers
+
+      Your rights over your personal data (access, rectification, erasure and the others) are set out in [section 5 of the privacy policy](/legal/privacy). Your ticket data is processed on behalf of the organizer of your event, who is its controller: send your request to the organizer, whose contact is on the sales page and in the e-mail with your ticket. You can also write to support@arenasoldout.com, and we forward the request to the organizer.
+
+      ## 4. More
+
+      What we process, why and for how long: [privacy policy](/legal/privacy).

@@ -1,38 +1,46 @@
 title: "Venta de entradas para recintos y clubes: condiciones aparte"
 description: "Para recintos y clubes: un plano de asientos para todos los eventos, muchos eventos al mes, escaneo en la puerta y un porcentaje del precio en lugar de tarifa."
 h1: Recintos y clubes
+tagline: Una sala cobra vida mucho antes de abrir puertas.
 lead: "Tu propio recinto, muchos eventos al mes. El plano se crea una vez y se reutiliza, cada promotor que alquila el recinto vende a través de tu página o de la suya, y las condiciones son distintas: un porcentaje del precio de la entrada en lugar de la tarifa por entrada."
 related:
   - { label: Precios y condiciones detalladas, href: /pricing }
   - { label: Planos de asientos, href: /product/seating }
   - { label: Teatro, href: /solutions/theatre }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para recintos
     title: "¿Qué importa en un recinto?"
     items:
-      - { title: "Un plano, todos los eventos", text: "Se crea una vez a partir de tu archivo y se reutiliza en cada evento; versiones para cada distribución del escenario.", link: { label: Planos de asientos →, href: /product/seating } }
+      - { title: "Un plano, todos los eventos", text: "Envía un PDF, una hoja de cálculo o un boceto a mano y el equipo dibuja el plano gratis; se reutiliza en cada evento, con versiones para cada distribución del escenario.", link: { label: Planos de asientos →, href: /product/seating } }
       - { title: Promotores que alquilan el recinto, text: "Una página por promotor con su propio enlace; el recinto ve todos los eventos y el promotor ve los suyos.", link: { label: Dónde vendes →, href: /product/sell } }
-      - { title: Condiciones aparte, text: "Un dos por ciento del precio de la entrada en lugar de la tarifa por entrada, sin tarifa en invitaciones ni reembolsos, condiciones por volumen a petición.", link: { label: Precios →, href: /pricing } }
-      - { title: La puerta, text: "App de escaneo para iOS y Android, escáneres de mano, y se aceptan entradas de socios de otros sistemas.", link: { label: App de escaneo MACS →, href: /product/scanner } }
+      - { title: Condiciones aparte, text: "Un porcentaje del precio de la entrada en lugar de la tarifa por entrada, sin comisión en invitaciones ni reembolsos, condiciones por volumen a petición.", link: { label: Precios →, href: /pricing } }
+      - { title: Códigos promocionales y precios anticipados, text: "Códigos para habituales y socios con un límite por comprador, precios anticipados que terminan en una fecha, entradas gratuitas y de precio libre.", link: { label: Herramientas de precio →, href: /product/pricing-tools } }
+      - { title: La puerta, text: "App de escaneo MACS para iOS y Android, escáneres de mano, y se aceptan entradas de socios de otros sistemas.", link: { label: App de escaneo MACS →, href: /product/scanner } }
+      - { title: Entradas en la puerta, text: "Coloca en la puerta un código QR impreso con un enlace corto de compra: los asistentes lo escanean y compran allí mismo.", link: { label: Dónde vendes →, href: /product/sell } }
+      - { title: Ventas en Telegram, text: "Cada venta y cada reembolso de cada evento aparecen en tu grupo de Telegram en segundos, con el contacto del comprador.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: "¿Cambia un evento? Tú decides", text: "Reembolsa a todos, ofrece una nueva fecha o elige otra solución. Los compradores reciben un correo con la entrada actualizada.", link: { label: Entradas →, href: /product/tickets } }
+      - { title: Listo para una gran apertura de ventas, text: "800 pedidos por minuto con 1.000 compradores simultáneos en pruebas de carga, copias de seguridad cifradas cada noche.", link: { label: Fiabilidad →, href: /product/reliability } }
   - type: faq
     id: questions
     eyebrow: Preguntas
     title: "¿Qué preguntan primero los propietarios de recintos?"
     items:
       - q: "¿Cuáles son las condiciones para un recinto permanente?"
-        a: "Un porcentaje del precio de la entrada en lugar de la tarifa por entrada, sin tarifa en invitaciones ni reembolsos. La cifra está en la [página de precios](/pricing); condiciones por volumen e individuales a petición."
+        a: "Un porcentaje del precio de la entrada en lugar de la tarifa por entrada, sin comisión en invitaciones ni reembolsos. La cifra está en la [página de precios](/pricing); condiciones por volumen e individuales a petición."
       - q: "¿Puede un promotor vender nuestros eventos en su propia web?"
         a: Sí, con el widget en su web o con una página de promotor que alojamos nosotros. Las ventas de todos los canales aparecen en el Event Center del recinto.
       - q: "¿Podemos pasarnos desde otro sistema de venta de entradas?"
-        a: "Sí. Sesiones, planos de asientos y clientes se importaron desde ArenaSoldOut.com para dos clientes sin tiempo de inactividad; otros sistemas, mediante la API de paquetes de eventos. Consulta [desarrolladores](/developers)."
+        a: "Sí. Dos clientes ya se han pasado desde su anterior sistema de venta de entradas sin interrumpir la venta, con sesiones, planos de asientos y clientes; desde otros sistemas, mediante la API a petición. Consulta [desarrolladores](/developers)."
       - q: "¿Quién gestiona el Event Center?"
         a: Tu equipo, con roles. El recinto es propietario de la organización; los gestores ven lo que tú permitas.
   - type: cta
     id: start
-    title: Habla con nosotros
+    title: Tu mejor evento está por llegar. ¿Empezamos por las entradas?
     text: Cuéntanos sobre el recinto y el número de eventos al mes. Dibujamos el plano gratis y acordamos las condiciones del recinto.
-    primary: { label: Habla con nosotros, href: /start }
-    secondary: { label: Ver precios, href: /pricing }
-    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Crear tu evento, href: /start#create }
+    tertiary: { label: Contactar con el equipo, href: /contact#write }

@@ -92,11 +92,22 @@ const widget = z.object({
 const sectionBase = { id: z.string().optional(), eyebrow: z.string().optional(), title: z.string().optional(), lead: z.string().optional() };
 
 export const section = z.discriminatedUnion('type', [
-  z.object({ type: z.literal('hero'), ...sectionBase, title: z.string(), primary: link, secondary: link, note: z.string(), widget: widget.optional() }),
+  /* `rotate`: words that replace the first one in the title in turn (the title starts with rotate[0]); `benefits`: the row under the buttons. */
+  z.object({
+    type: z.literal('hero'), ...sectionBase, title: z.string(), rotate: z.array(z.string()).optional(), primary: link, secondary: link, note: z.string().optional(),
+    benefits: z.array(z.object({ icon: z.string(), title: z.string(), text: z.string(), link: link.optional() })).optional(), widget: widget.optional(),
+    /** One line under the seating widget: the plan is for seated events, events without seats are simpler still. */
+    widgetNote: z.string().optional(),
+  }),
   z.object({ type: z.literal('facts'), ...sectionBase, items: z.array(z.string()) }),
   z.object({ type: z.literal('steps'), ...sectionBase, items: z.array(z.object({ title: z.string(), text: z.string() })), note: z.string().optional() }),
   z.object({ type: z.literal('ways'), ...sectionBase, items: z.array(z.object({ title: z.string(), text: z.string(), bullets: z.array(z.string()) })) }),
-  z.object({ type: z.literal('qa'), ...sectionBase, items: z.array(z.object({ title: z.string(), text: z.string(), visual: visual.optional() })) }),
+  z.object({ type: z.literal('qa'), ...sectionBase, items: z.array(z.object({ title: z.string(), text: z.string(), visual: visual.optional() })), more: link.optional() }),
+  /* Every country where a live provider takes payments, then the payment methods of the country the visitor picks. */
+  z.object({
+    type: z.literal('paycountries'), ...sectionBase,
+    /* Labels live in i18n (paycountries.*), so the block is one line on every page. */
+  }),
   z.object({ type: z.literal('center'), ...sectionBase, bullets: z.array(z.string()), note: z.string(), stripAria: z.string(), screens: z.array(ecScreen) }),
   z.object({
     type: z.literal('money'),
@@ -104,6 +115,11 @@ export const section = z.discriminatedUnion('type', [
     flowAria: z.string(),
     nodes: z.array(z.object({ label: z.string(), sub: z.string().optional(), providers: z.boolean().optional(), highlight: z.boolean().optional() })),
     note: z.string(),
+    /** "How much stays with you": tickets, price, the organizer's own fee to buyers (all theirs), our commission from data. */
+    calc: z.object({
+      title: z.string(), currency: z.string(), tickets: z.string(), price: z.string(), fee: z.string(), seated: z.string(),
+      revenue: z.string(), feeLine: z.string(), commission: z.string(), total: z.string(), note: z.string(),
+    }).optional(),
   }),
   z.object({
     type: z.literal('pricing'),
@@ -141,18 +157,30 @@ export const section = z.discriminatedUnion('type', [
   z.object({ type: z.literal('reasons'), ...sectionBase, items: z.array(z.object({ icon: z.string(), title: z.string(), text: z.string(), bullets: z.array(z.string()).optional(), link: link.optional() })).length(4) }),
   z.object({ type: z.literal('clients'), ...sectionBase, cta: link, marksAria: z.string() }),
   z.object({ type: z.literal('changes'), ...sectionBase, cta: link, more: link, limit: z.number().optional() }),
-  z.object({ type: z.literal('cta'), ...sectionBase, title: z.string(), text: z.string(), primary: link, secondary: link, note: z.string() }),
+  z.object({ type: z.literal('cta'), ...sectionBase, title: z.string(), text: z.string().optional(), primary: link, secondary: link, tertiary: link.optional(), note: z.string().optional() }),
   /* generic blocks for inner pages */
   z.object({ type: z.literal('prose'), ...sectionBase, body: z.string() }),
   z.object({ type: z.literal('faq'), ...sectionBase, items: z.array(z.object({ q: z.string(), a: z.string() })) }),
   z.object({ type: z.literal('providers'), ...sectionBase, labels: z.object({ currencies: z.string(), methods: z.string(), checkout: z.string(), statuses: z.record(z.string()), methods_map: z.record(z.string()) }) }),
   z.object({ type: z.literal('coverage'), ...sectionBase, labels: z.object({ countries: z.string(), note: z.string(), missing: z.string() }), cta: link }),
   z.object({ type: z.literal('markets'), ...sectionBase, preparing: z.object({ title: z.string(), text: z.string() }) }),
+  /** Countries hub: every live market with its providers, currencies and methods (from data), links to country pages, then the planned ones. */
+  z.object({
+    type: z.literal('countries'),
+    ...sectionBase,
+    labels: z.object({ country: z.string(), provider: z.string(), currencies: z.string(), methods: z.string(), agreed: z.string() }),
+    methods_map: z.record(z.string()),
+    preparing: z.object({ title: z.string(), text: z.string() }),
+  }),
+  /** A country at a glance: label and value rows, price placeholders allowed. */
+  z.object({ type: z.literal('glance'), ...sectionBase, rows: z.array(z.object({ k: z.string(), v: z.string() })) }),
   z.object({ type: z.literal('cards'), ...sectionBase, items: z.array(z.object({ title: z.string(), text: z.string(), link: link.optional() })) }),
   /** Side-by-side comparison with another platform: `us` and `them` per row, price placeholders allowed. */
   z.object({ type: z.literal('compare'), ...sectionBase, cols: z.object({ what: z.string(), us: z.string(), them: z.string() }), rows: z.array(z.object({ what: z.string(), us: z.string(), them: z.string() })), note: z.string().optional() }),
   z.object({ type: z.literal('code'), ...sectionBase, code: z.string(), items: z.array(z.object({ key: z.string(), text: z.string() })), cta: link }),
   z.object({ type: z.literal('marks'), ...sectionBase }),
+  /** Author page: photo, name, role, bio and profile links from content/data/authors.yaml. */
+  z.object({ type: z.literal('person'), ...sectionBase, author: z.string() }),
   z.object({ type: z.literal('changelog'), ...sectionBase }),
   z.object({ type: z.literal('posts'), ...sectionBase, empty: z.string() }),
   z.object({ type: z.literal('facts-table'), ...sectionBase }),
@@ -178,7 +206,11 @@ const pages = defineCollection({
     description: z.string(),
     /** Set when this file was translated from the `en` original; CI compares hashes (§3.6). */
     source_hash: z.string().optional(),
+    /** Set on the English original when the page exists only in some languages (`[en, ru]`): no routes, links or switcher entries elsewhere. */
+    languages: z.array(z.string()).optional(),
     h1: z.string().optional(),
+    /** The page's own live line under the h1 (docs/specs/2026-11-25-clear-and-alive-site.md §7). */
+    tagline: z.string().optional(),
     lead: z.string().optional(),
     /** Internal links shown as "Read next" before the final CTA (SEO interlinking). */
     related: z.array(z.object({ label: z.string(), href: z.string(), text: z.string().optional() })).optional(),
@@ -227,10 +259,12 @@ const providers = defineCollection({
     name: z.string(),
     regions: z.array(z.string().length(2)),
     currencies: z.array(z.string().length(3)),
-    methods: z.array(z.enum(['card', 'apple_pay', 'google_pay', 'bit', 'installments', 'bank_transfer'])),
+    methods: z.array(z.enum(['card', 'apple_pay', 'google_pay', 'bit', 'installments', 'bank_transfer', 'ideal', 'twint'])),
     hosted_checkout: z.boolean(),
     status: z.enum(['live', 'api', 'planned']),
     entity_countries: z.array(z.string().length(2)).default([]),
+    /** Methods shown for a country without market data of its own (the countries hub). Defaults to `methods`. */
+    base_methods: z.array(z.string()).optional(),
     note: z.string().optional(),
     order: z.number().default(100),
   }),
@@ -246,6 +280,10 @@ const markets = defineCollection({
     currencies: z.array(z.string().length(3)),
     providers: z.array(z.string()),
     status: z.enum(['live', 'planned']),
+    /** Slug of the country page (`countries/israel`), linked from the countries table. */
+    page: z.string().optional(),
+    /** Methods buyers in this country typically see; defaults to all methods of the market's providers. */
+    methods: z.array(z.string()).optional(),
     vat_note: z.string().optional(),
     order: z.number().default(100),
   }),

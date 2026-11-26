@@ -1,8 +1,8 @@
 header:
-  - label: Як це працює
-    href: /#how
   - label: Для кого
     href: /solutions
+  - label: Як це працює
+    href: /#how
   - label: Ціни
     href: /pricing
   - label: Event Center
@@ -23,16 +23,17 @@ footer:
   - title: Продукт
     links:
       - { label: Усі функції, href: /features }
-      - { label: Ваша перша подія, href: /first-event }
+      - { label: Ваш перший захід, href: /first-event }
       - { label: Продаж на вашому сайті або нашому, href: /product/sell }
       - { label: Схеми залів, href: /product/seating }
       - { label: Промокоди та цінові періоди, href: /product/pricing-tools }
       - { label: Платежі, href: /payments }
+      - { label: Країни, href: /countries }
       - { label: Telegram-бот, href: /product/telegram }
       - { label: Електронні квитки та сканування, href: /product/tickets }
       - { label: Застосунок-сканер MACS, href: /product/scanner }
       - { label: Надійність, href: /product/reliability }
-      - { label: Альтернатива Ticket Tailor, href: /tickettailor-alternative }
+      - { label: Порівняння з іншими платформами, href: /alternatives }
   - title: Для кого
     links:
       - { label: Концерти, href: /solutions/concerts }
@@ -48,7 +49,7 @@ footer:
       - { label: Документація, href: /developers }
       - { label: Публічний API, href: /developers#api }
       - { label: Віджет, href: /developers#widget }
-      - { label: Плагін для WordPress, href: /solutions/wordpress }
+      - { label: Інтеграція з WordPress, href: /solutions/wordpress }
       - { label: Партнери, href: /partners }
   - title: Компанія
     links:
@@ -63,5 +64,7 @@ footer:
     links:
       - { label: Умови й положення, href: /legal/terms }
       - { label: Політика конфіденційності, href: /legal/privacy }
+      - { label: Видалення даних, href: /legal/data-deletion }
+      - { label: Безпека, href: /security }
       - { label: Докладні умови цін, href: /pricing/terms }
 copyright: "© 2019–2026 ArenaSoldOut.com · ABH TEAM OÜ · EU"

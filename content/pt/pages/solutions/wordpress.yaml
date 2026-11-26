@@ -1,37 +1,45 @@
-title: "Venda de ingressos no WordPress: plugin com WooCommerce"
-description: "O plugin do ArenaSoldOut.com envia pedidos ao WooCommerce, com assentos, ingressos e leitura da plataforma. Ou incorpore o widget em qualquer página."
+title: "Venda de ingressos no WordPress: no seu próprio site"
+description: "Integração com WordPress: o widget de ingressos do ArenaSoldOut.com em qualquer página ou bloco, com assentos, ingressos e leitura na entrada. O dinheiro é seu."
 h1: Seu WordPress, seu checkout
-lead: Fique com o seu site e a sua loja. O plugin cria pedidos do WooCommerce para cada ingresso; o mapa de assentos, o ingresso eletrônico e a leitura vêm do ArenaSoldOut.com. Ou incorpore o widget em qualquer página com duas linhas.
+lead: Fique com o seu site. O widget de ingressos entra em qualquer página ou bloco do WordPress com três linhas de código; o mapa de assentos, o ingresso eletrônico e a leitura na entrada vêm do ArenaSoldOut.com, e os compradores pagam na sua própria conta.
 related:
   - { label: Onde você vende, href: /product/sell }
   - { label: "Para desenvolvedores: widget e API", href: /developers }
   - { label: Pagamentos, href: /payments }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para sites WordPress
-    title: Qual opção serve para o meu site?
+    title: O que o seu site WordPress ganha?
     items:
-      - { title: O plugin, text: "Os pedidos chegam ao WooCommerce, sua loja e seus relatórios continuam funcionando; assentos, ingressos e portaria são do ArenaSoldOut.com.", link: { label: Peça o plugin →, href: /start } }
-      - { title: O widget, text: "Duas linhas em qualquer página ou bloco; os compradores pagam no checkout hospedado do seu provedor, e os pedidos ficam no Event Center.", link: { label: Desenvolvedores →, href: /developers } }
-      - { title: Migrando do ArenaSoldOut.com, text: "Sessões, mapas de assentos e clientes importados; dois clientes migraram sem nenhuma interrupção.", link: { label: Clientes →, href: /clients } }
+      - { title: Integração com WordPress, text: "O widget de ingressos em qualquer página, post ou bloco do seu site WordPress: os compradores escolhem os assentos e pagam sem sair dele.", link: { label: Desenvolvedores →, href: /developers } }
+      - { title: Três linhas de código, text: "Cole o widget em uma página ou em um bloco de HTML personalizado; os compradores pagam no checkout hospedado do seu provedor, e os pedidos ficam no Event Center.", link: { label: Desenvolvedores →, href: /developers } }
+      - { title: Vindo de outro sistema, text: "Sessões, mapas de assentos e clientes vêm com você; dois clientes migraram do sistema de ingressos que usavam antes sem nenhuma interrupção.", link: { label: Clientes →, href: /clients } }
+      - { title: Mapas de assentos desenhados de graça, text: "Envie um PDF, uma planilha ou um croqui à mão e a equipe desenha o mapa; os compradores escolhem os assentos ali mesmo, no seu site.", link: { label: Mapas de assentos →, href: /product/seating } }
+      - { title: Dinheiro na sua conta, text: "Os compradores pagam por um provedor do seu país direto na sua própria conta; o ArenaSoldOut.com nunca retém o dinheiro.", link: { label: Pagamentos →, href: /payments } }
+      - { title: Cupons de desconto e pré-venda, text: "Cupons com período de validade e limite por comprador, preços de pré-venda que terminam em uma data, ingressos gratuitos e de valor livre.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: De onde vêm os compradores, text: "Adicione parâmetros UTM aos seus links e veja qual post, newsletter ou parceiro leva compradores ao seu site.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Vendas no Telegram, text: "Cada venda e cada reembolso aparecem no seu grupo do Telegram em segundos, com o contato do comprador.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: A portaria, text: "Ingressos eletrônicos com QR code e EAN-13, conferidos com o aplicativo leitor MACS para iOS e Android.", link: { label: Aplicativo leitor MACS →, href: /product/scanner } }
   - type: faq
     id: questions
     eyebrow: Perguntas
     title: O que donos de sites WordPress perguntam primeiro?
     items:
-      - q: O plugin deixa meu site mais lento?
-        a: O plugin consulta a API do ArenaSoldOut.com no checkout; as páginas são renderizadas como antes. O widget é um web component carregado uma única vez.
+      - q: O widget deixa meu site mais lento?
+        a: Não. O widget é um web component carregado uma única vez; as suas páginas são renderizadas como antes.
       - q: O comprador sai do meu domínio?
-        a: Com o widget, o comprador fica na sua página até o checkout hospedado do provedor e depois volta. Com o plugin, o checkout é o próprio do WooCommerce.
+        a: O comprador fica na sua página até o checkout hospedado do provedor e depois volta.
       - q: Quais provedores de pagamento funcionam?
-        a: "Sua própria conta em um provedor do seu país; a lista com os status está na [página de pagamentos](/payments). Em Israel, o AllPay funciona hoje para vendas no WordPress."
-      - q: Quem instala?
-        a: A equipe pode instalar e configurar o plugin junto com o administrador do seu site; o widget não precisa de instalação.
+        a: "Sua própria conta em um provedor do seu país; a lista com os status está na [página de pagamentos](/payments)."
+      - q: Quem configura?
+        a: Você cola três linhas de código, ou a equipe configura o widget junto com o administrador do seu site em uma chamada.
   - type: cta
     id: start
-    title: Comece a vender no seu site
-    text: "Coloque o widget de ingressos no seu site: três linhas de código, e as vendas são gerenciadas no seu Event Center."
+    title: Seu melhor evento ainda está por vir. Vamos começar pelos ingressos?
+    text: Informe o endereço do site e o provedor que você usa. O widget entra no seu site com três linhas de código, e as vendas são geridas no seu Event Center.
     primary: { label: Começar a vender, href: /start }
-    secondary: { label: Ler a documentação para desenvolvedores, href: /developers }
-    note: Sites com WooCommerce mantêm a sua loja.
+    secondary: { label: Criar seu evento, href: /start#create }
+    tertiary: { label: Fale com a equipe, href: /contact#write }

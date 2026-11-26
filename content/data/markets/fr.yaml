@@ -4,5 +4,6 @@ name:
 languages: [en]
 currencies: [EUR]
 providers: [stripe]
+methods: [card, apple_pay, google_pay]
 status: live
 order: 3

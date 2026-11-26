@@ -1,38 +1,46 @@
 title: "Billetterie salles et clubs : un plan, conditions propres"
-description: "Pour salles permanentes et clubs : un plan réutilisé pour chaque événement, nombreux événements par mois, contrôle à la porte, pourcentage du prix du billet."
+description: "Pour salles permanentes et clubs : un plan réutilisé pour chaque événement, nombreux événements par mois, contrôle à l'entrée, pourcentage du prix du billet."
 h1: Salles et clubs
+tagline: Une salle s'anime bien avant l'ouverture des portes.
 lead: "Votre propre salle, de nombreux événements par mois. Le plan est construit une fois et réutilisé, chaque promoteur qui loue la salle vend via votre page ou la sienne, et les conditions sont différentes : un pourcentage du prix du billet au lieu du tarif par billet."
 related:
   - { label: Tarifs et conditions détaillées, href: /pricing }
   - { label: Plans de salle, href: /product/seating }
   - { label: Théâtre, href: /solutions/theatre }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Pour les salles
     title: Qu'est-ce qui compte pour une salle ?
     items:
-      - { title: "Un plan, chaque événement", text: "Construit une fois à partir de votre fichier, réutilisé pour chaque événement ; des versions pour les configurations de scène.", link: { label: Plans de salle →, href: /product/seating } }
+      - { title: Un plan pour tous vos événements, text: "Envoyez un PDF, un tableur ou un croquis à la main et l'équipe dessine le plan gratuitement ; il est réutilisé pour chaque événement, avec des versions pour les différentes configurations de scène.", link: { label: Plans de salle →, href: /product/seating } }
       - { title: Promoteurs qui louent la salle, text: "Une page par promoteur avec son propre lien ; la salle voit chaque événement, le promoteur voit les siens.", link: { label: Où vous vendez →, href: /product/sell } }
-      - { title: Conditions séparées, text: "Deux pour cent du prix du billet au lieu du tarif par billet, aucun frais sur les invitations et remboursements, conditions de volume sur demande.", link: { label: Tarifs →, href: /pricing } }
-      - { title: La porte, text: "Application de contrôle pour iOS et Android, lecteurs portables, billets de partenaires d'autres systèmes acceptés.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
+      - { title: Conditions distinctes, text: "Un pourcentage du prix du billet au lieu du tarif par billet, aucune commission sur les invitations et les remboursements, conditions de volume sur demande.", link: { label: Tarifs →, href: /pricing } }
+      - { title: Codes promo et tarifs de prévente, text: "Des codes pour les habitués et les partenaires avec une limite par acheteur, des tarifs de prévente qui prennent fin à une date, des billets gratuits et à prix libre.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: À l'entrée, text: "L'application de contrôle MACS pour iOS et Android, des lecteurs portables, les billets de partenaires d'autres systèmes acceptés.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
+      - { title: Billets à l'entrée, text: "Affichez à l'entrée un QR code imprimé avec un lien d'achat court : vos visiteurs le scannent et achètent sur place.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: Ventes sur Telegram, text: "Chaque vente et chaque remboursement, pour chaque événement, apparaît dans votre groupe Telegram en quelques secondes, avec les coordonnées de l'acheteur.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: "Un événement est déplacé ? C'est vous qui décidez", text: "Remboursez tout le monde, proposez une nouvelle date à la place, ou choisissez une autre solution. Les acheteurs reçoivent un e-mail avec le billet mis à jour.", link: { label: Billets →, href: /product/tickets } }
+      - { title: Prête pour les grandes mises en vente, text: "800 commandes par minute avec 1 000 acheteurs simultanés lors des tests de charge, sauvegardes chiffrées chaque nuit.", link: { label: Fiabilité →, href: /product/reliability } }
   - type: faq
     id: questions
     eyebrow: Questions
     title: Que demandent d'abord les propriétaires de salles ?
     items:
       - q: Quelles sont les conditions pour une salle permanente ?
-        a: "Un pourcentage du prix du billet au lieu du tarif par billet, aucun frais sur les invitations et remboursements. Le chiffre figure sur la [page des tarifs](/pricing) ; conditions de volume et individuelles sur demande."
+        a: "Un pourcentage du prix du billet au lieu du tarif par billet, aucune commission sur les invitations et les remboursements. Le chiffre figure sur la [page des tarifs](/pricing) ; conditions de volume et individuelles sur demande."
       - q: Un promoteur peut-il vendre nos événements sur son propre site ?
         a: Oui, avec le widget sur son site ou une page de promoteur que nous hébergeons. Les ventes de chaque canal apparaissent dans l'Event Center de la salle.
-      - q: Peut-on quitter un autre système de billetterie ?
-        a: "Oui. Séances, plans de salle et clients ont été importés depuis ArenaSoldOut.com pour deux clients sans aucune interruption ; d'autres systèmes via l'API de lot d'événements. Voir les [développeurs](/developers)."
+      - q: Peut-on passer d'un autre système de billetterie ?
+        a: "Oui. Deux clients sont déjà passés de leur ancien système de billetterie sans aucune interruption, avec leurs séances, leurs plans de salle et leurs clients ; pour les autres systèmes, l'API sur demande. Voir les [développeurs](/developers)."
       - q: Qui gère l'Event Center ?
         a: Votre équipe, avec des rôles. La salle possède l'organisation ; les gestionnaires voient ce que vous autorisez.
   - type: cta
     id: start
-    title: Parlons-en
-    text: Parlez-nous de la salle et du nombre d'événements par mois. Nous dessinons le plan gratuitement et convenons des conditions de la salle.
-    primary: { label: Parlons-en, href: /start }
-    secondary: { label: Voir les tarifs, href: /pricing }
-    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."
+    title: Votre plus bel événement est encore à venir. On commence par les billets ?
+    text: Parlez-nous de la salle et du nombre d'événements par mois. Nous dessinons le plan gratuitement et convenons des conditions pour la salle.
+    primary: { label: Commencer à vendre, href: /start }
+    secondary: { label: Créer votre événement, href: /start#create }
+    tertiary: { label: Écrire à l'équipe, href: /contact#write }

@@ -1,0 +1,35 @@
+This repository contains two kinds of material under different terms.
+
+1. Source code — MIT License (below). This covers the build setup, scripts, components, styles,
+   the Cloudflare Worker and the nginx configuration: everything under src/, scripts/, worker/,
+   ops/, i18n/ (interface strings only) and the configuration files in the repository root.
+
+2. Content and brand — All rights reserved. The texts, blog posts and data in content/, the brand
+   assets in design/brand/ and public/ (logos, marks, favicons, photos, images), the design
+   documents in design/ and the name and trademark "ArenaSoldOut" are not covered by the MIT
+   License. They may not be copied, republished or used to build another site without written
+   permission from ArenaSoldOut.
+
+-------------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2026 ArenaSoldOut
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

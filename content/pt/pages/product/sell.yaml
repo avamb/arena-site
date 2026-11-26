@@ -22,7 +22,7 @@ sections:
         text: "Nós hospedamos a página de vendas: tickets.arenasoldout.com/your-name/your-event. Compartilhe um só link nas redes sociais, nos mensageiros e no cartaz."
         bullets:
           - Uma página por organizador e por evento
-          - Uma página separada para cada promotor
+          - Uma página separada para cada produtor
           - Pronta em minutos, sem trabalho de design
           - Links para os seus parceiros de venda na mesma página
   - type: cards
@@ -44,7 +44,7 @@ sections:
       - title: Links curtos e QR codes para impressão
         text: "Um link curto go.arenasoldout.com com um QR code para cartazes, folhetos e redes sociais: PNG, SVG ou um encarte em PDF pronto nos formatos A5 e A6 para impressão. Você pode mudar o destino do link depois da impressão. Cada pedido fica ligado ao seu link, então você vê qual cartaz vendeu."
       - title: Uma loja junto dos seus ingressos
-        text: "Venda produtos junto com os ingressos: vinho, mercadorias, kits de presente. Uma vitrine com variações, carrinho, entrega por motoboy, reembolsos e e-mails. Nosso primeiro cliente com loja já vende por ela."
+        text: "Venda produtos junto com os ingressos: vinho, bebidas por encomenda para o evento, mercadorias, kits de presente. Uma vitrine com variações, carrinho, reembolsos e e-mails. O comprador retira o pedido no evento, ou você envia pelo correio ou por entrega que você organiza. A loja é contratada à parte, condições sob consulta. Nosso primeiro cliente com loja já vende por ela."
   - type: faq
     id: questions
     eyebrow: Perguntas
@@ -57,7 +57,7 @@ sections:
       - q: Onde o comprador paga?
         a: "No checkout hospedado do seu próprio provedor de pagamentos, na sua própria conta. O ArenaSoldOut.com cria o pedido, reserva os assentos e emite o ingresso; nunca retém o dinheiro. Veja [pagamentos](/payments)."
       - q: Posso vender também por parceiros?
-        a: Sim. Cada promotor recebe uma página com link próprio, e a página hospedada pode listar os seus parceiros de venda. As vendas de todos os canais aparecem em um só Event Center.
+        a: Sim. Cada produtor recebe uma página com link próprio, e a página hospedada pode listar os seus parceiros de venda. As vendas de todos os canais aparecem em um só Event Center.
       - q: E se eu mudar meu site para outra plataforma?
         a: Nada muda para os compradores. O widget é um web component; ele se move com as suas páginas, e a página hospedada continua funcionando como alternativa.
   - type: cta

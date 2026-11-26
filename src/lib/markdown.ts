@@ -6,8 +6,9 @@ import type { CollectionEntry } from 'astro:content';
 import type { Section } from '../content.config';
 import { siteUrl, org, type LanguageCode } from '@config';
 import { plain, fill } from './inline';
-import { clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, type Nav } from './data';
-import { formatDate, currencySymbol, postPath } from './i18n';
+import { authorFor, clients, tariff, tariffFor, venueCap, facts, liveProviderNames, reasonVars, priceVars, countryRows, type Nav } from './data';
+import { formatDate, currencySymbol, postPath, localePath, t } from './i18n';
+import { pageLanguages } from './translations';
 
 export type PageData = {
   lang: LanguageCode;
@@ -31,8 +32,16 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
   const vars = { ...baseVars, ...priceVars(d.pricing) };
   switch (s.type) {
     case 'hero':
-      out.push(`# ${plain(s.title)}`, '', plain(s.lead ?? ''), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, '', plain(s.note), '');
+      out.push(`# ${plain(s.title)}`, '', plain(s.lead ?? ''), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, '');
+      if (s.note) out.push(plain(s.note), '');
+      if (s.benefits) { s.benefits.forEach((b) => out.push(`- **${plain(b.title)}**: ${plain(fill(b.text, reasonVars(d.pricing)))}`)); out.push(''); }
       break;
+    case 'paycountries': {
+      h2(s.title ?? t(d.lang, 'paycountries.title'));
+      countryRows(d.markets, d.providers, d.lang).forEach((r) => out.push(`- ${r.name}: ${(r.methods as string[]).filter((m) => m !== 'installments').map((m) => t(d.lang, `paycountries.method.${m}`)).join(', ')}`));
+      out.push('');
+      break;
+    }
     case 'facts':
       s.items.forEach((i) => out.push(`- ${plain(i)}`));
       out.push('');
@@ -50,6 +59,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
     case 'qa':
       h2(s.title); lead(s.lead);
       s.items.forEach((i) => out.push(`### ${plain(i.title)}`, '', plain(i.text), ''));
+      if (s.more) out.push(`[${s.more.label}](${abs(s.more.href)})`, '');
       break;
     case 'center':
       h2(s.title); lead(s.lead);
@@ -67,8 +77,8 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       // Every amount in each currency, US dollars first: "US$0.59 / €0.53".
       const both = (f: (cur: string, tf: ReturnType<typeof tariffFor>, p: (typeof d.pricing)[number]) => string) =>
         d.pricing.map((p) => f(p.data.currency, tariffFor(p.data.currency), p)).join(' / ');
-      out.push('| Region | Without a seat | With a seat | Invitations |', '|---|---|---|---|');
-      d.pricing.forEach((p) => out.push(`| ${p.data.region} | ${money(p.data.per_ticket, p.data.currency)} | ${money(p.data.per_ticket + p.data.seating_extra, p.data.currency)} | free |`));
+      out.push(`| ${t(d.lang, 'md.pricing.region')} | ${t(d.lang, 'md.pricing.noSeat')} | ${t(d.lang, 'md.pricing.seat')} | ${t(d.lang, 'md.pricing.invitations')} |`, '|---|---|---|---|');
+      d.pricing.forEach((p) => out.push(`| ${t(d.lang, `pricing.region.${p.id}`)} | ${money(p.data.per_ticket, p.data.currency)} | ${money(p.data.per_ticket + p.data.seating_extra, p.data.currency)} | ${t(d.lang, 'md.pricing.free')} |`));
       out.push('', plain(s.currencyNote), '');
       if (s.packages) {
         out.push(`**${s.packages.title}**`, '', plain(s.packages.text), '');
@@ -118,8 +128,13 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       break;
     case 'cta':
       h2(s.title);
-      out.push(plain(s.text), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, '', plain(s.note), '');
+      out.push(plain(s.text ?? ''), '', `- [${s.primary.label}](${abs(s.primary.href)})`, `- [${s.secondary.label}](${abs(s.secondary.href)})`, ...(s.tertiary ? [`- [${s.tertiary.label}](${abs(s.tertiary.href)})`] : []), '', plain(s.note ?? ''), '');
       break;
+    case 'person': {
+      const a = authorFor(s.author, d.lang);
+      if (a) out.push(`**${a.name}**, ${a.role}`, '', a.bio, '', ...a.sameAs.map((u) => `- ${u}`), '');
+      break;
+    }
     case 'prose':
       h2(s.title); out.push(fill(s.body, vars).trim(), '');
       break;
@@ -151,6 +166,21 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       out.push('', `### ${plain(s.preparing.title)}`, '', plain(s.preparing.text), '', groups.map((g) => `- ${g}`).join('\n'), '');
       break;
     }
+    case 'countries': {
+      h2(s.title); lead(s.lead);
+      const names = new Intl.DisplayNames([d.lang], { type: 'region' });
+      out.push(`| ${s.labels.country} | ${s.labels.provider} | ${s.labels.currencies} | ${s.labels.methods} |`, '|---|---|---|---|');
+      countryRows(d.markets, d.providers, d.lang).forEach((r) => out.push(`| ${r.page ? `[${r.name}](${abs(localePath(pageLanguages(r.page)?.includes(d.lang) === false ? 'en' : d.lang, '/' + r.page))})` : r.name} | ${r.providers.join(', ')} | ${r.currencies.length ? r.currencies.join(', ') : s.labels.agreed} | ${r.methods.map((x) => s.methods_map[x] ?? x).join(', ')} |`));
+      const planned = d.markets.filter((m) => m.data.status === 'planned').map((m) => names.of(m.data.iso2) ?? m.data.name.en).sort((a, b) => a.localeCompare(b, d.lang));
+      out.push('', `### ${plain(s.preparing.title)}`, '', plain(s.preparing.text), '', planned.join(', '), '');
+      break;
+    }
+    case 'glance':
+      h2(s.title); lead(s.lead);
+      out.push('| | |', '|---|---|');
+      s.rows.forEach((r) => out.push(`| ${plain(r.k)} | ${plain(fill(r.v, vars))} |`));
+      out.push('');
+      break;
     case 'cards':
       h2(s.title); lead(s.lead);
       s.items.forEach((i) => out.push(`### ${plain(i.title)}`, '', plain(fill(i.text, vars)), '', i.link ? `[${i.link.label}](${abs(i.link.href)})` : '', ''));
@@ -187,7 +217,7 @@ export function sectionToMarkdown(s: Section, d: PageData): string {
       h2(s.title); lead(s.lead);
       out.push('| Capability | Status | Since | Note |', '|---|---|---|---|');
       facts.capabilities.forEach((c) => out.push(`| ${c.name} | ${c.status} | ${c.since ? c.since.toISOString().slice(0, 10) : ''} | ${c.note ?? ''} |`));
-      out.push('', `Buyer page languages: ${facts.languages.buyer_page.join(', ')}; any other language can be integrated on request. E-mails in ${facts.languages.emails} languages. Load test ${formatDate(d.lang, facts.limits.load_test_date, { dateStyle: 'medium' })}: ${facts.limits.orders_per_minute} orders a minute at ${facts.limits.concurrent_visitors} concurrent visitors. Backups: ${facts.backups}.`, '', `Updated ${facts.updated.toISOString().slice(0, 10)}.`, '');
+      out.push('', t(d.lang, 'md.facts.summary', { buyer: facts.languages.buyer_page.join(', '), emails: facts.languages.emails, date: formatDate(d.lang, facts.limits.load_test_date, { dateStyle: 'medium' }), orders: facts.limits.orders_per_minute, visitors: facts.limits.concurrent_visitors }), '', t(d.lang, 'md.facts.updated', { date: facts.updated.toISOString().slice(0, 10) }), '');
       break;
     case 'contact-form':
       h2(s.title); lead(s.lead);
@@ -205,7 +235,7 @@ export function pageToMarkdown(d: PageData, nav: Nav): string {
   const { page } = d;
   const head: string[] = [];
   const hasHero = page.data.sections.some((s) => s.type === 'hero');
-  if (!hasHero) head.push(`# ${plain(page.data.h1 ?? page.data.title)}`, '', plain(page.data.lead ?? page.data.description), '');
+  if (!hasHero) head.push(`# ${plain(page.data.h1 ?? page.data.title)}`, '', ...(page.data.tagline ? [plain(page.data.tagline), ''] : []), plain(page.data.lead ?? page.data.description), '');
   const body = page.data.sections.map((s) => sectionToMarkdown(s, d)).join('\n');
   const footer = ['---', '', `${nav.copyright}. Canonical: ${abs(d.path)}. Facts: ${abs('/facts')}. All pages: ${abs('/llms.txt')}.`, ''];
   return [`<!-- ${plain(page.data.title)} · ${abs(d.path)} · generated from content/${page.id}.yaml -->`, '', ...head, body, ...footer].join('\n');

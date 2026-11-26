@@ -1,21 +1,29 @@
-title: "Billetterie de spectacles : ice shows, cirque, danse"
+title: "Billetterie de spectacles : sur glace, cirque, danse"
 description: "Vendez des billets de spectacles en tournée : un plan par salle réutilisé, nombreuses dates, une page par promoteur, toutes les villes dans un Event Center."
 h1: Spectacles
-lead: Ice shows, cirque, danse et spectacles familiaux enchaînent les dates dans de nombreuses salles. Un événement, un plan par salle, une page par promoteur, et les ventes de chaque ville au même endroit.
+tagline: Un spectacle commence bien avant l'entrée en scène.
+lead: Les spectacles sur glace, le cirque, la danse et les spectacles pour enfants enchaînent les dates dans de nombreuses salles. Un événement, un plan par salle, une page par promoteur, et les ventes de chaque ville au même endroit.
 related:
   - { label: Tournées de concerts, href: /solutions/concert-tours }
   - { label: Plans de salle, href: /product/seating }
   - { label: Clients, href: /clients }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Pour les spectacles
     title: Qu'est-ce qui compte pour un spectacle ?
     items:
-      - { title: Un plan par salle, text: "Le plan de chaque salle est construit une fois et réutilisé à la visite suivante ; les versions gardent l'historique.", link: { label: Plans de salle →, href: /product/seating } }
+      - { title: Un plan par salle, text: "Envoyez un PDF, un tableur ou un croquis à la main et l'équipe dessine gratuitement le plan de chaque salle. Il est réutilisé au prochain passage ; les versions gardent l'historique.", link: { label: Plans de salle →, href: /product/seating } }
       - { title: Nombreuses dates, text: "Séances par ville et par jour dans un seul événement ; les acheteurs choisissent la date dans le widget, vous voyez les totaux par séance.", link: { label: Event Center →, href: /#center } }
-      - { title: Promoteurs locaux, text: "Une page par promoteur avec son lien et ses codes ; chaque canal rend compte dans un seul Event Center.", link: { label: Où vous vendez →, href: /product/sell } }
-      - { title: Billets famille, text: "Catégories pour enfants et groupes, paliers de quantité, billets gratuits pour les adultes accompagnateurs.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: Promoteurs locaux, text: "Une page par promoteur avec son lien et ses codes ; les ventes de tous les canaux se retrouvent dans un seul Event Center.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: Enfants et groupes, text: "Des catégories distinctes pour les enfants et les groupes, des billets gratuits pour les adultes accompagnateurs.", link: { label: Outils de prix →, href: /product/pricing-tools } }
+      - { title: D'où viennent les acheteurs, text: "Ajoutez des balises UTM à vos liens et voyez quelle publication, quelle newsletter ou quel partenaire apporte les ventes dans chaque ville.", link: { label: Où vous vendez →, href: /product/sell } }
+      - { title: Ventes sur Telegram, text: "Chaque vente et chaque remboursement, dans chaque ville, apparaît dans votre groupe Telegram en quelques secondes, avec les coordonnées de l'acheteur.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: À l'entrée, text: "L'application de contrôle MACS pour iOS et Android vérifie à la même entrée vos billets et ceux que vos partenaires vendent dans d'autres systèmes.", link: { label: Application de contrôle MACS →, href: /product/scanner } }
+      - { title: "Une date est déplacée ? C'est vous qui décidez", text: "Remboursez tout le monde, proposez une nouvelle date à la place, ou choisissez une autre solution. Les acheteurs reçoivent un e-mail avec le billet mis à jour.", link: { label: Billets →, href: /product/tickets } }
+      - { title: L'argent sur votre compte, text: "Les acheteurs paient via un prestataire de votre pays, directement sur votre propre compte ; ArenaSoldOut.com ne détient jamais l'argent.", link: { label: Paiements →, href: /payments } }
   - type: faq
     id: questions
     eyebrow: Questions
@@ -24,15 +32,15 @@ sections:
       - q: Un événement peut-il couvrir toute une tournée ?
         a: Oui. Les séances portent la ville, la salle et le plan ; les totaux et les rapports CSV sont fournis par séance et pour l'ensemble de l'événement.
       - q: Comment gérer une salle où nous n'avons jamais joué ?
-        a: Envoyez son plan sous n'importe quelle forme lisible et l'équipe le construit. La visite suivante le réutilise.
-      - q: Nos billets sont aussi vendus par des partenaires locaux. La porte suivra-t-elle ?
+        a: Envoyez son plan sous n'importe quelle forme lisible et l'équipe le construit. Au prochain passage, il est réutilisé.
+      - q: Nos billets sont aussi vendus par des partenaires locaux. Le contrôle à l'entrée suivra-t-il ?
         a: Oui. L'application de contrôle accepte les billets de partenaires d'autres systèmes à côté des billets ArenaSoldOut.com.
       - q: Où va l'argent ?
         a: "Sur votre propre compte de paiement, dans votre devise, avec chaque commande. Voir les [paiements](/payments)."
   - type: cta
     id: start
-    title: Commencez à vendre dès aujourd'hui
+    title: Votre plus bel événement est encore à venir. On commence par les billets ?
     text: Créez l'événement, connectez votre compte de paiement, partagez le lien.
-    primary: { label: Créer votre événement, href: /start#create }
-    secondary: { label: Ouvrir le bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Des questions ? Écrivez-nous : l'équipe répond sous un jour ouvré."
+    primary: { label: Commencer à vendre, href: /start }
+    secondary: { label: Créer votre événement, href: /start#create }
+    tertiary: { label: Écrire à l'équipe, href: /contact#write }

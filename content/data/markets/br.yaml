@@ -1,9 +1,9 @@
 iso2: BR
 name:
   en: Brazil
-group: South America
-languages: [en, es]
+languages: [pt, en]
 currencies: [BRL]
-providers: []
-status: planned
-order: 20
+providers: [stripe]
+methods: [card, apple_pay, google_pay]
+status: live
+order: 8

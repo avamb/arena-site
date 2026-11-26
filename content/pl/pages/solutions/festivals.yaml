@@ -1,12 +1,15 @@
-title: "Sprzedaż biletów na festiwale: kilka dni, wiele kategorii"
+title: "System biletowy na festiwale: karnety, wiele kategorii"
 description: "Bilety na festiwale: karnety dzienne i pełne, kategorie z pulami, łańcuchy na niesprzedane miejsca, early bird według daty, skanowanie przy każdym wejściu."
-h1: Festiwale
+h1: Sprzedaż biletów na festiwale
+tagline: Festiwal zaczyna się na długo przed otwarciem bram.
 lead: Karnety dzienne i pełne, wiele kategorii z pulami, early bird włączany w wybranym dniu i łańcuch, który przekazuje niesprzedane miejsca z jednej kategorii do następnej. Skanowanie przy każdym wejściu w aplikacji.
 related:
-  - { label: Kody promocyjne i okna cenowe, href: /product/pricing-tools }
+  - { label: Kody rabatowe i okna cenowe, href: /product/pricing-tools }
   - { label: Koncerty, href: /solutions/concerts }
   - { label: Niezawodność, href: /product/reliability }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Dla festiwali
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Kategorie z pulami, text: "Dzień pierwszy, dzień drugi, karnet pełny, VIP, camping: każda kategoria z własną ceną, pulą i oknem sprzedaży.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
       - { title: Łańcuchy kategorii, text: "Gdy early bird się wyprzeda, jego niesprzedane miejsca przechodzą do następnej kategorii zamiast blokować sprzedaż.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
-      - { title: Wejścia, text: "Aplikacja skanera na iOS i Androida przy każdej bramce; bilety partnerów z innych systemów także są przyjmowane.", link: { label: Aplikacja skanera MACS →, href: /product/scanner } }
-      - { title: Obciążenie, text: "800 zamówień na minutę przy 1000 jednoczesnych kupujących w testach obciążeniowych; pierwsza minuta sprzedaży jest uwzględniona.", link: { label: Niezawodność →, href: /product/reliability } }
+      - { title: Early bird i progi cenowe, text: "Wczesna cena, która kończy się w wybranym przez ciebie dniu, albo cena, która rośnie, gdy wyprzeda się próg ilościowy.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Kody rabatowe z limitami, text: "Kody dla partnerów, fanów artystów lub czytelników twojego newslettera, z oknem czasowym i limitem na kupującego.", link: { label: Narzędzia cenowe →, href: /product/pricing-tools } }
+      - { title: Zaproszenia bez prowizji, text: "Darmowe bilety dla sponsorów, artystów i prasy, skanowane przy bramce jak każdy inny bilet.", link: { label: Bilety →, href: /product/tickets } }
+      - { title: Wejścia, text: "Aplikacja skanera MACS na iOS i Androida przy każdej bramce; bilety partnerów z innych systemów także są przyjmowane.", link: { label: Aplikacja skanera MACS →, href: /product/scanner } }
+      - { title: Bilety przy bramce, text: "Ustaw przy wejściu wydrukowany kod QR z krótkim linkiem do zakupu: ludzie skanują go i kupują bilet na miejscu.", link: { label: Gdzie sprzedajesz →, href: /product/sell } }
+      - { title: Wielkie otwarcie sprzedaży, text: "800 zamówień na minutę przy 1000 jednoczesnych kupujących w testach obciążeniowych: pierwsza minuta sprzedaży przebiega płynnie.", link: { label: Niezawodność →, href: /product/reliability } }
+      - { title: Sprzedaż w Telegramie, text: "Każda sprzedaż i każdy zwrot pojawia się w twojej grupie na Telegramie w kilka sekund, razem z kontaktem do kupującego.", link: { label: Telegram →, href: /product/telegram } }
   - type: faq
     id: questions
     eyebrow: Pytania
@@ -28,11 +36,11 @@ sections:
       - q: Mamy darmowe bilety dla sponsorów. Jak to zrobić?
         a: Darmowe bilety i zaproszenia z Event Center, bez opłaty platformy, skanowane jak każdy bilet.
       - q: Ile to kosztuje?
-        a: "Stała prowizja za sprzedany bilet, rozliczana po wydarzeniu lub pobierana z twoich kredytów, miesięcznie dla wydarzeń w sprzedaży przez kilka miesięcy; zobacz [cennik](/pricing)."
+        a: "Stała prowizja za sprzedany bilet, rozliczana po wydarzeniu lub opłacana twoimi kredytami, co miesiąc dla wydarzeń, które są w sprzedaży przez kilka miesięcy; zobacz [cennik](/pricing)."
   - type: cta
     id: start
-    title: Zacznij sprzedaż już dziś
+    title: Twoje najlepsze wydarzenie wciąż przed tobą. Zaczniemy od biletów?
     text: Utwórz wydarzenie, podłącz konto płatności, udostępnij link.
-    primary: { label: Utwórz wydarzenie, href: /start#create }
-    secondary: { label: Otwórz bota w Telegramie, href: https://t.me/EventsCentrBot }
-    note: "Pytania? Napisz do nas: zespół odpowiada w ciągu jednego dnia roboczego."
+    primary: { label: Zacznij sprzedaż, href: /start }
+    secondary: { label: Utwórz wydarzenie, href: /start#create }
+    tertiary: { label: Skontaktuj się z zespołem, href: /contact#write }

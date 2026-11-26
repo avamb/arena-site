@@ -1,0 +1,49 @@
+title: "ArenaSoldOut.com frente a otras plataformas de entradas"
+description: "ArenaSoldOut.com junto a Eventbrite, Ticket Tailor, TicketSpice, TicketSource y Weezevent: tarifas por entrada, cobros y planos de asientos."
+h1: ArenaSoldOut.com comparada con otras plataformas de venta de entradas
+lead: "Precios al 11 de noviembre de 2026. Cada página pone nuestra lista de precios junto a la de otra plataforma, tal como se publica en su propio sitio, con la fecha en que la comprobamos. Donde la otra plataforma hace algo que nosotros no hacemos, la página lo dice."
+related:
+  - { label: Precios, href: /pricing, text: "Pago por uso o créditos, la calculadora y cada paquete de créditos." }
+  - { label: Todas las funciones, href: /features, text: "Todo lo que hace ArenaSoldOut.com, en una página." }
+  - { label: Datos, href: /facts, text: "Qué funciona hoy, con fechas, y qué no ofrecemos." }
+sections:
+  - type: cards
+    id: pages
+    eyebrow: Lado a lado
+    title: Elige la plataforma que usas ahora
+    items:
+      - title: Eventbrite
+        text: "Un porcentaje de cada entrada más un importe fijo, frente a nuestros {usdPrice} fijos. Pagos después del evento, frente al dinero en tu cuenta con cada pedido."
+        link: { label: ArenaSoldOut.com frente a Eventbrite, href: /eventbrite-alternative }
+      - title: Ticket Tailor
+        text: "Una tarifa fija por entrada en ambas. La nuestra es menor con pago por uso y con créditos, y un asiento no cuenta como dos entradas."
+        link: { label: ArenaSoldOut.com frente a Ticket Tailor, href: /tickettailor-alternative }
+      - title: TicketSpice
+        text: "Una tarifa fija por entrada en ambas. La nuestra es menor, y los planos de asientos vienen con cada evento en lugar de con un plan superior."
+        link: { label: ArenaSoldOut.com frente a TicketSpice, href: /ticketspice-alternative }
+      - title: TicketSource
+        text: "Un porcentaje de cada reserva, frente a nuestra tarifa fija por entrada. Planos de asientos dibujados para ti en lugar de por ti."
+        link: { label: ArenaSoldOut.com frente a TicketSource, href: /ticketsource-alternative }
+      - title: Weezevent
+        text: "El dinero de las entradas en tu propia cuenta con cada pedido en lugar de un pago cada 15 días, y asientos numerados en cada evento."
+        link: { label: ArenaSoldOut.com frente a Weezevent, href: /weezevent-alternative }
+
+  - type: prose
+    id: how
+    title: Cómo comparamos
+    body: |
+      **Solo precios publicados.** Una fila entra en una tabla solo si pudimos leerla en la página de precios o en el centro de ayuda de la otra plataforma. El enlace a la fuente y la fecha están debajo de cada tabla.
+
+      **En igualdad de condiciones.** Algunas plataformas incluyen la tarifa de la tarjeta en su comisión; nosotros no, porque el comprador paga en tu propia cuenta de pagos y tu proveedor cobra su propia tarifa de tarjeta. Cada página indica cuál es cuál.
+
+      **Lo que no hacemos.** ArenaSoldOut.com no tiene un mercado donde los compradores exploren eventos, ni pagos sin efectivo en la barra. La lista completa está en la [página de datos](/facts).
+
+      ¿Has encontrado un precio que cambió? [Escríbenos](/contact) y corregimos la página.
+
+  - type: cta
+    id: start
+    title: Pruébalo en tu próximo evento
+    text: Crea el evento, conecta tu cuenta de pagos, comparte el enlace.
+    primary: { label: Empezar a vender, href: /start }
+    secondary: { label: Ver precios, href: /pricing }
+    note: "¿Dudas? Escríbenos: el equipo responde en un día laborable."

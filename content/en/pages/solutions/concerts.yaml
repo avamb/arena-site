@@ -1,12 +1,15 @@
-title: "Concert ticketing: standing and seated, early bird"
+title: "Concert ticketing software: standing, seated, early bird"
 description: "Sell concert tickets on your own site or a hosted page: standing quotas, seated categories, early bird, partner promo codes, scanning. Money goes to you."
-h1: Concerts
+h1: Concert ticketing
+tagline: A concert starts long before the first note.
 lead: Standing and seated in one event, several price categories, an early-bird window that switches on a date, and a door that scans every ticket. Buyers pay into your own account from the first ticket.
 related:
   - { label: Promo codes and price windows, href: /product/pricing-tools }
   - { label: E-tickets and scanning, href: /product/tickets }
   - { label: Festivals, href: /solutions/festivals }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: For concerts
@@ -16,6 +19,11 @@ sections:
       - { title: Early bird that switches itself, text: "A price window by date and time, or a quantity step that opens the next price when the first one sells out.", link: { label: Pricing tools →, href: /product/pricing-tools } }
       - { title: Partners and promoters, text: "A page per promoter with its own link, promo codes per partner, every channel in one Event Center.", link: { label: Where you sell →, href: /product/sell } }
       - { title: The door, text: "Scanner app for iOS and Android, EAN-13 and QR on every ticket, partners' tickets from other systems accepted too.", link: { label: MACS scanner app →, href: /product/scanner } }
+      - { title: Your seating plan for free, text: "Send a PDF, a spreadsheet or a hand sketch of the venue: our team draws the plan, you never enter it by hand.", link: { label: Seating plans →, href: /product/seating } }
+      - { title: Categories and VIP, text: "Every category has its own price, quota and sale window; when a category closes, its unsold places can move to the next one.", link: { label: Pricing tools →, href: /product/pricing-tools } }
+      - { title: Sales in real time, text: "Every sale lands in your Telegram group within seconds; UTM tags show which channel brought the buyers.", link: { label: Telegram bot →, href: /product/telegram } }
+      - { title: Cancelled or moved, text: "You decide: refund everyone or offer a new date. Buyers get an e-mail with the updated ticket.", link: { label: E-tickets →, href: /product/tickets } }
+      - { title: A QR code at the door, text: "Put up a QR code with a short purchase link: people who came without a ticket buy one while they queue." }
   - type: faq
     id: questions
     eyebrow: Questions
@@ -24,15 +32,15 @@ sections:
       - q: How fast can a concert go on sale?
         a: "Without a seating plan, 10 minutes once your organization is confirmed and your payment account is connected: name, date, prices, poster. With seats, usually within a day, after we draw the plan from your file for free."
       - q: Can I sell a VIP category with a limited quota?
-        a: Yes. Each category has its own price, quota and sale window; a sold-out category can hand its unsold places to the next one.
+        a: Yes. Each category has its own price, quota and sale window; when a category closes, its unsold places can move to the next one.
       - q: What does a ticket cost me?
         a: "A fixed amount per ticket sold, invoiced after the session; see [pricing](/pricing). Invitations and refunds are free."
       - q: Can I see sales as they happen?
         a: Yes. Every sale lands in your Telegram group within seconds and in the Event Center with per-session totals and a CSV export.
   - type: cta
     id: start
-    title: Put the concert on sale today
+    title: Your best event is yet to come. Shall we start with the tickets?
     text: Create the event, connect your payment account, share the link.
-    primary: { label: Create your event, href: /start#create }
-    secondary: { label: Open the Telegram bot, href: https://t.me/EventsCentrBot }
-    note: "Questions? Write to us: the team answers within one working day."
+    primary: { label: Start selling, href: /start }
+    secondary: { label: Create your event, href: /start#create }
+    tertiary: { label: Contact the team, href: /contact#write }

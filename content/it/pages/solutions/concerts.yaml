@@ -1,12 +1,15 @@
-title: "Biglietti per concerti: in piedi e a sedere, early bird"
+title: "Biglietteria per concerti: in piedi, a sedere, early bird"
 description: "Vendi biglietti per concerti sul tuo sito o su pagina ospitata: quote in piedi, posti a sedere, early bird, codici partner, scansione. Gli incassi vanno a te."
-h1: Concerti
+h1: Biglietteria per concerti
+tagline: Un concerto inizia molto prima della prima nota.
 lead: In piedi e a sedere nello stesso evento, più categorie di prezzo, una finestra early bird che scatta a una data e un ingresso che scansiona ogni biglietto. Chi compra paga sul tuo conto dal primo biglietto.
 related:
   - { label: Codici promozionali e finestre di prezzo, href: /product/pricing-tools }
   - { label: E-ticket e scansione, href: /product/tickets }
   - { label: Festival, href: /solutions/festivals }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Per i concerti
@@ -16,6 +19,11 @@ sections:
       - { title: Early bird che scatta da solo, text: "Una finestra di prezzo per data e ora, oppure uno scaglione di quantità che apre il prezzo successivo quando il primo si esaurisce.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
       - { title: Partner e promoter, text: "Una pagina per promoter con il proprio link, codici promozionali per partner, ogni canale in un unico Event Center.", link: { label: Dove vendi →, href: /product/sell } }
       - { title: L'ingresso, text: "App scanner per iOS e Android, EAN-13 e QR su ogni biglietto, accettati anche i biglietti dei partner emessi da altri sistemi.", link: { label: App scanner MACS →, href: /product/scanner } }
+      - { title: "La tua mappa dei posti, gratis", text: "Mandaci un PDF, un foglio di calcolo o uno schizzo a mano della sala: la mappa la disegna il nostro team, tu non devi mai inserirla a mano.", link: { label: Mappe dei posti →, href: /product/seating } }
+      - { title: Categorie e VIP, text: "Ogni categoria ha prezzo, quota e finestra di vendita propri; quando una categoria chiude, i posti rimasti possono passare alla successiva.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Vendite in tempo reale, text: "Ogni vendita arriva nel tuo gruppo Telegram in pochi secondi; i tag UTM mostrano quale canale ha portato gli acquirenti.", link: { label: Bot Telegram →, href: /product/telegram } }
+      - { title: Annullato o spostato, text: "Decidi tu: rimborsare tutti o proporre una nuova data. Gli acquirenti ricevono un'e-mail con il biglietto aggiornato.", link: { label: E-ticket →, href: /product/tickets } }
+      - { title: Un codice QR all'ingresso, text: "Appendi un codice QR con un link breve per l'acquisto: chi è arrivato senza biglietto lo compra mentre è in fila." }
   - type: faq
     id: questions
     eyebrow: Domande
@@ -31,8 +39,8 @@ sections:
         a: Sì. Ogni vendita arriva nel tuo gruppo Telegram in pochi secondi e nell'Event Center con i totali per sessione e l'esportazione CSV.
   - type: cta
     id: start
-    title: Metti in vendita il concerto oggi
+    title: Il tuo evento migliore deve ancora arrivare. Cominciamo dai biglietti?
     text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
-    primary: { label: Crea il tuo evento, href: /start#create }
-    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Crea il tuo evento, href: /start#create }
+    tertiary: { label: Contatta il team, href: /contact#write }

@@ -6,8 +6,9 @@
  * No KV, D1, R2 or Durable Objects (doc 33 §3.7a).
  */
 import { handleContact, type ContactEnv } from './contact';
+import { handleSubscribe, type SubscribeEnv } from './subscribe';
 
-type Env = ContactEnv & { SITE_URL?: string; ASSETS?: { fetch: (req: Request) => Promise<Response> } };
+type Env = ContactEnv & SubscribeEnv & { SITE_URL?: string; ASSETS?: { fetch: (req: Request) => Promise<Response> } };
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
@@ -18,7 +19,18 @@ export default {
       return Response.redirect(`${site}${url.pathname}${url.search}`, 301);
     }
     if (url.pathname === '/api/contact') return handleContact(request, env);
-    if (env.ASSETS) return env.ASSETS.fetch(request);
+    if (url.pathname === '/api/subscribe' || url.pathname.startsWith('/api/subscribe/')) return handleSubscribe(request, env);
+    if (env.ASSETS) return permanent(await env.ASSETS.fetch(request));
     return new Response('Not found', { status: 404 });
   },
 } satisfies ExportedHandler<Env>;
+
+/**
+ * Static Assets answer `/pricing/` -> `/pricing` and `/index.html` -> `/` (html_handling) with a 307. These
+ * addresses move for good, so search engines get a 301 and pass the old address's signals to the new one.
+ * Redirects from redirects.yaml carry their own code (301 by default) and are left as they are.
+ */
+export function permanent(res: Response): Response {
+  if (res.status !== 307 || !res.headers.get('Location')) return res;
+  return new Response(null, { status: 301, headers: res.headers });
+}

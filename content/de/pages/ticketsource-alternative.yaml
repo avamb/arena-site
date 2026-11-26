@@ -1,0 +1,95 @@
+title: "TicketSource-Alternative mit fester Gebühr pro Ticket"
+description: "ArenaSoldOut.com vs. TicketSource: feste Gebühr pro Ticket statt eines Prozentsatzes jeder Buchung, und Saalpläne, die wir kostenlos für Sie zeichnen."
+h1: Eine TicketSource-Alternative mit fester Gebühr statt Prozentsatz
+lead: "TicketSource berechnet einen Prozentsatz jeder bezahlten Buchung. ArenaSoldOut.com berechnet eine feste Gebühr pro Ticket, egal was das Ticket kostet, und das Geld geht mit jeder Bestellung auf Ihr eigenes Zahlungskonto. Unten stehen beide Preislisten nebeneinander, wie am 11. November 2026 veröffentlicht."
+related:
+  - { label: Alle Vergleiche, href: /alternatives, text: "ArenaSoldOut.com neben anderen Ticketplattformen." }
+  - { label: Preise, href: /pricing, text: "Pay as you go oder Credits, der Rechner und jedes Credit-Paket." }
+  - { label: Saalpläne, href: /product/seating, text: "Wir zeichnen Ihre Spielstätte kostenlos nach einem PDF oder einer Skizze." }
+sections:
+  - type: compare
+    id: prices
+    eyebrow: Preis pro Ticket
+    title: Was kostet ein Ticket auf jeder Plattform?
+    lead: "Preise beider Plattformen Stand 11. November 2026. TicketSource hat zwei Optionen: die eigene Kartenabwicklung, mit eingeschlossener Kartengebühr, oder Ihr eigenes Stripe-Konto zu einem niedrigeren Satz. Die Preise unterscheiden sich zwischen Großbritannien und der EU. Bei ArenaSoldOut.com nutzen Sie immer Ihr eigenes Zahlungskonto, daher ist die zweite Option der faire Vergleich."
+    cols: { what: "", us: ArenaSoldOut.com, them: TicketSource }
+    rows:
+      - { what: "Wie die Gebühr berechnet wird", us: "Feste Gebühr pro Ticket", them: "Prozentsatz jeder bezahlten Buchung" }
+      - { what: "Großbritannien, eigenes Stripe-Konto", us: "**{usdPrice}** pro Ticket, etwa £0,47", them: "4,5% + MwSt." }
+      - { what: "Großbritannien, Ticket zu £20, eigenes Stripe-Konto", us: "**{usdPrice}**, etwa £0,47", them: "£1,08 (£0,90 + MwSt.)" }
+      - { what: "Großbritannien, Ticket zu £50, eigenes Stripe-Konto", us: "**{usdPrice}**, etwa £0,47", them: "£2,70 (£2,25 + MwSt.)" }
+      - { what: "Großbritannien, ihre eigene Kartenabwicklung", us: "Nicht angeboten: Sie nutzen immer Ihr eigenes Konto", them: "7% + MwSt., mindestens £0,25 + MwSt., Kartengebühr eingeschlossen" }
+      - { what: "EU, eigenes Stripe-Konto", us: "**{eurPrice}** pro Ticket", them: "4,5%" }
+      - { what: "EU, Ticket zu €20, eigenes Stripe-Konto", us: "**{eurPrice}**", them: "€0,90" }
+      - { what: "EU, Ticket zu €50, eigenes Stripe-Konto", us: "**{eurPrice}**", them: "€2,25" }
+      - { what: "EU, ihre eigene Kartenabwicklung", us: "Nicht angeboten: Sie nutzen immer Ihr eigenes Konto", them: "8,5%, mindestens €0,30, Kartengebühr eingeschlossen" }
+      - { what: "Wann Sie das Geld bekommen", us: "Mit jeder Bestellung, auf Ihrem eigenen Konto", them: "Mit eigenem Stripe: mit jeder Bestellung. Mit ihrer Abwicklung: am Montag nach der Veranstaltung" }
+      - { what: "Wer den Saalplan erstellt", us: "Unser Team, kostenlos, nach Ihrem PDF oder Ihrer Skizze", them: "Sie, im Saalplan-Designer" }
+      - { what: "Credits im Voraus bezahlt", us: "Ab **{usdFrom}** pro Ticket, verfallen nie", them: "Nicht in ihrer Preisliste" }
+      - { what: "Abo", us: Keins, them: Keins }
+    note: "Preise von TicketSource: [Großbritannien](https://www.ticketsource.com/pricing) und [EU](https://www.ticketsource.com/es/pricing), geprüft am 11. November 2026. Unsere Preise: [Preise](/pricing) und [detaillierte Bedingungen](/pricing/terms). Veranstalter in EU-Ländern zahlen unsere Provision in Euro, überall sonst in US-Dollar; Beträge in Pfund sind zum EZB-Referenzkurs vom 11. November 2026 umgerechnet (US$1 = £0,7515). TicketSource ist eine Marke ihres Inhabers; ArenaSoldOut.com steht in keiner Verbindung zu ihr."
+
+  - type: prose
+    id: examples
+    title: Was bedeutet das für ein Event?
+    body: |
+      Alle Zahlen zu den Preisen beider Plattformen Stand 11. November 2026. Unsere Provision ist in US-Dollar; die Beträge in Pfund gelten zum EZB-Referenzkurs desselben Tages, US$1 = £0,7515.
+
+      **400 Tickets zu £25, bei beiden eigenes Stripe-Konto.** ArenaSoldOut.com: 400 × US$0,62 = **US$248, etwa £186**. TicketSource: 400 × (4,5% von £25 + MwSt.) = £540.
+
+      **250 Tickets mit Platz zu £40.** ArenaSoldOut.com: 250 × US$1,18 = **US$295, etwa £222**, und den Saalplan zeichnen wir kostenlos. TicketSource: 250 × (4,5% von £40 + MwSt.) = £540.
+
+      **300 Tickets zu €30 in der EU, bei beiden eigenes Stripe-Konto.** ArenaSoldOut.com: 300 × €0,55 = **€165**. TicketSource: 300 × 4,5% von €30 = €405.
+
+      **Je mehr ein Ticket kostet, desto größer der Abstand.** Unsere Provision bleibt bei einem Ticket zu £15 und bei einem zu £150 gleich. Ein Prozentsatz wächst mit dem Preis.
+
+      Rechnen Sie Ihr eigenes Event im [Rechner auf der Preisseite](/pricing#packages) durch.
+
+  - type: cards
+    id: more
+    eyebrow: Mehr als der Preis
+    title: Was bekommen Sie sonst noch mit ArenaSoldOut.com?
+    items:
+      - title: Saalpläne, die wir für Sie zeichnen, kostenlos
+        text: "Senden Sie ein PDF, ein Foto einer Handskizze oder eine Tabelle mit Reihen und Plätzen. Das Team baut die Spielstätte nach; Sie zeichnen sie nie selbst."
+        link: { label: Saalpläne, href: /product/seating }
+      - title: Das Geld direkt auf Ihr Konto
+        text: "Käufer zahlen mit jeder Bestellung auf Ihr eigenes Stripe-, Flitt- oder AllPay-Konto. ArenaSoldOut.com hält nie Gelder und zieht nichts von Ihren Verkäufen ab."
+        link: { label: Zahlungen, href: /payments }
+      - title: Niedrigerer Satz für günstige Tickets
+        text: "Wenn jedes Ticket des Events {usdLowMax} oder weniger kostet: {lowPercent}% des Ticketpreises statt der festen Gebühr. Discos, Läufe, Kindergeburtstage, Ausflüge."
+        link: { label: So funktioniert es, href: /pricing#low-price }
+      - title: Käufer in ihrer eigenen Sprache
+        text: "Käuferseite, E-Mails und Tickets in der Sprache des Käufers, auch Hebräisch von rechts nach links. Jede neue Sprache fügen wir innerhalb von 40 Stunden hinzu."
+        link: { label: E-Tickets, href: /product/tickets }
+      - title: Jeder Verkauf in Ihrem Telegram
+        text: "Legen Sie im Telegram-Bot ein Event aus einem Plakatfoto an und sehen Sie jeden Verkauf und jede Erstattung binnen Sekunden in Ihrer Gruppe."
+        link: { label: Telegram-Bot, href: /product/telegram }
+      - title: Selbst einrichten oder abgeben
+        text: "Events, Preise und Kategorien legen Sie selbst im Event Center oder im Telegram-Bot an, in Minuten; Saalpläne zeichnen wir kostenlos. Keine Zeit? Unser Event-Manager übernimmt es für Sie, als bezahlte Leistung."
+        link: { label: Zusatzleistungen, href: /pricing#services }
+
+  - type: faq
+    id: questions
+    title: Fragen, die Veranstalter beim Vergleich stellen
+    items:
+      - q: Ist ArenaSoldOut.com günstiger als TicketSource?
+        a: "Mit eigenem Stripe-Konto bei beiden ja, bei jedem Ticket über etwa £9 in Großbritannien und über etwa €12 in der EU: {usdPrice} pro Ticket statt 4,5% plus MwSt. in Großbritannien, {eurPrice} statt 4,5% in der EU. Bei einem Ticket zu £20 sind das etwa £0,47 gegen £1,08; bei einem Ticket zu €20 {eurPrice} gegen €0,90."
+      - q: Ist die Kartengebühr in Ihrer Provision enthalten?
+        a: "Nein. Die Kartengebühr berechnet Ihr eigener Zahlungsanbieter zu Ihrem Satz, und unsere Provision kommt getrennt dazu. Die eigene Abwicklung von TicketSource (7% + MwSt. in Großbritannien, 8,5% in der EU) schließt die Kartengebühr ein; ihre Option mit 4,5% und Ihrem eigenen Stripe-Konto tut das, wie bei uns, nicht."
+      - q: Wohin geht das Geld des Käufers?
+        a: "Mit jeder Bestellung auf Ihr eigenes Zahlungskonto: Stripe, Flitt oder AllPay. ArenaSoldOut.com hält nie Gelder. Unsere Provision wird nach der Veranstaltung in Rechnung gestellt oder von Ihren Credits abgezogen."
+      - q: Kann ich meine Events von TicketSource umziehen?
+        a: "Ja. Sie legen Ihre Events im Event Center oder im Telegram-Bot an, wir zeichnen Ihre Saalpläne kostenlos, und Sie verkaufen weiter über TicketSource, bis Ihre Seite bei uns fertig ist. Keine Zeit, es selbst einzurichten? Unser [Event-Manager](/pricing#services) übernimmt es für Sie, als bezahlte Leistung."
+      - q: Und gemeinnützige Organisationen?
+        a: "Eingetragene gemeinnützige Organisationen erhalten 50% Rabatt auf unsere Provision. Schreiben Sie uns, und wir schalten ihn für Ihre Organisation frei."
+      - q: Zahle ich ein Abo?
+        a: "Nein. Sie zahlen nur für verkaufte Tickets. Freikarten und kostenlose Tickets zu kostenpflichtigen Events sind provisionsfrei."
+
+  - type: cta
+    id: start
+    title: Probieren Sie es bei Ihrem nächsten Event aus
+    text: Event anlegen, Zahlungskonto verbinden, Link teilen.
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Preise ansehen, href: /pricing }
+    note: "Fragen? Schicken Sie uns, was Sie bei TicketSource zahlen, und wir vergleichen es mit Ihren Kosten hier."

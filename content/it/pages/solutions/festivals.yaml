@@ -1,12 +1,15 @@
-title: "Biglietti per festival: più giorni, molte categorie"
+title: "Biglietteria per festival: pass giornalieri, molte categorie"
 description: "Biglietteria per festival: pass giornalieri e completi, categorie con quote, catene che passano i posti invenduti, early bird, scansione a ogni ingresso."
-h1: Festival
+h1: Biglietteria per festival
+tagline: Un festival inizia molto prima che si aprano i cancelli.
 lead: Biglietti giornalieri e abbonamenti completi, molte categorie con quote, early bird che scatta a una data e una catena che passa i posti invenduti da una categoria alla successiva. Scansione a ogni ingresso con l'app.
 related:
   - { label: Codici promozionali e finestre di prezzo, href: /product/pricing-tools }
   - { label: Concerti, href: /solutions/concerts }
   - { label: Affidabilità, href: /product/reliability }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Per i festival
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Categorie con quote, text: "Primo giorno, secondo giorno, abbonamento completo, VIP, campeggio: ciascuno con prezzo, quota e finestra di vendita propri.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
       - { title: Catene di categorie, text: "Quando l'early bird si esaurisce, i suoi posti invenduti passano alla categoria successiva invece di bloccare le vendite.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
-      - { title: Ingressi, text: "App scanner per iOS e Android a ogni varco; accettati anche i biglietti dei partner emessi da altri sistemi.", link: { label: App scanner MACS →, href: /product/scanner } }
+      - { title: Early bird e scaglioni di prezzo, text: "Un prezzo early bird che termina alla data che scegli tu, oppure un prezzo che sale quando uno scaglione di quantità si esaurisce.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Codici promozionali con limiti, text: "Codici per partner, fan degli artisti o iscritti alla tua newsletter, con una finestra di date e un limite per acquirente.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: Inviti senza commissione, text: "Biglietti gratuiti per sponsor, artisti e stampa, scansionati al varco come qualsiasi altro biglietto.", link: { label: Biglietti →, href: /product/tickets } }
+      - { title: Ingressi, text: "L'app scanner MACS per iOS e Android a ogni varco; accettati anche i biglietti dei partner emessi da altri sistemi.", link: { label: App scanner MACS →, href: /product/scanner } }
+      - { title: Biglietti all'ingresso, text: "Metti all'ingresso un codice QR stampato con un link breve per l'acquisto: le persone lo inquadrano e comprano sul posto.", link: { label: Dove vendi →, href: /product/sell } }
       - { title: Carico, text: "800 ordini al minuto con 1.000 acquirenti simultanei nei test di carico; il minuto di apertura delle vendite è coperto.", link: { label: Affidabilità →, href: /product/reliability } }
+      - { title: Vendite su Telegram, text: "Ogni vendita e ogni rimborso compare nel tuo gruppo Telegram in pochi secondi, con il contatto dell'acquirente.", link: { label: Telegram →, href: /product/telegram } }
   - type: faq
     id: questions
     eyebrow: Domande
@@ -31,8 +39,8 @@ sections:
         a: "Una commissione fissa per biglietto venduto, fatturata dopo l'evento o prelevata dai tuoi crediti, mensile per gli eventi in vendita per mesi; vedi i [prezzi](/pricing)."
   - type: cta
     id: start
-    title: Inizia a vendere oggi
+    title: Il tuo evento migliore deve ancora arrivare. Cominciamo dai biglietti?
     text: Crea l'evento, collega il tuo conto di pagamento, condividi il link.
-    primary: { label: Crea il tuo evento, href: /start#create }
-    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Crea il tuo evento, href: /start#create }
+    tertiary: { label: Contatta il team, href: /contact#write }

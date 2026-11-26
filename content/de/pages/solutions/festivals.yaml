@@ -1,12 +1,15 @@
-title: "Ticketverkauf für Festivals: mehrere Tage, viele Kategorien"
+title: "Ticketsystem für Festivals: Tagespässe, viele Kategorien"
 description: "Festival-Ticketverkauf mit Tages- und Gesamtpässen, Kategorien mit Kontingenten, Ketten für unverkaufte Plätze, Early Bird nach Datum, Scan an jedem Eingang."
-h1: Festivals
+h1: Ticketverkauf für Festivals
+tagline: Ein Festival beginnt, lange bevor sich die Tore öffnen.
 lead: Tagespässe und Gesamtpässe, viele Kategorien mit Kontingenten, Early Bird, der sich zu einem Datum umschaltet, und eine Kette, die unverkaufte Plätze von einer Kategorie an die nächste weitergibt. Scan an jedem Eingang mit der App.
 related:
-  - { label: Promo-Codes und Preisfenster, href: /product/pricing-tools }
+  - { label: Rabattcodes und Preisfenster, href: /product/pricing-tools }
   - { label: Konzerte, href: /solutions/concerts }
   - { label: Zuverlässigkeit, href: /product/reliability }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Für Festivals
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Kategorien mit Kontingenten, text: "Tag eins, Tag zwei, Gesamtpass, VIP, Camping: jede mit eigenem Preis, Kontingent und Verkaufsfenster.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
       - { title: Kategorienketten, text: "Ist der Early Bird ausverkauft, fließen seine unverkauften Plätze in die nächste Kategorie, statt den Verkauf zu blockieren.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
-      - { title: Eingänge, text: "Scanner-App für iOS und Android an jedem Tor; Tickets von Partnern aus anderen Systemen werden ebenfalls akzeptiert.", link: { label: MACS Scanner-App →, href: /product/scanner } }
-      - { title: Last, text: "800 Bestellungen pro Minute bei 1.000 gleichzeitigen Käufern in Lasttests; die Eröffnungsminute des Verkaufs ist abgedeckt.", link: { label: Zuverlässigkeit →, href: /product/reliability } }
+      - { title: Frühbucherpreise und Preisstufen, text: "Ein Frühbucherpreis, der an dem von Ihnen gewählten Datum endet, oder ein Preis, der steigt, wenn eine Mengenstufe ausverkauft ist.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Rabattcodes mit Limit, text: "Codes für Partner, die Fans der Künstler oder Ihren Newsletter, mit Zeitfenster und Limit pro Käufer.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Freikarten ohne Provision, text: "Freikarten für Sponsoren, Künstler und Presse, am Tor gescannt wie jedes andere Ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Eingänge, text: "Die Scanner-App MACS für iOS und Android an jedem Tor; Tickets von Partnern aus anderen Systemen werden ebenfalls akzeptiert.", link: { label: MACS Scanner-App →, href: /product/scanner } }
+      - { title: Tickets am Eingang, text: "Stellen Sie einen ausgedruckten QR-Code mit kurzem Kauflink am Eingang auf: Besucher scannen ihn und kaufen direkt vor Ort.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Ein großer Verkaufsstart, text: "800 Bestellungen pro Minute bei 1.000 gleichzeitigen Käufern in Lasttests: Auch die erste Minute des Vorverkaufs läuft stabil.", link: { label: Zuverlässigkeit →, href: /product/reliability } }
+      - { title: Verkäufe in Telegram, text: "Jeder Verkauf und jede Erstattung erscheint in Sekunden in Ihrer Telegram-Gruppe, mit dem Kontakt des Käufers.", link: { label: Telegram →, href: /product/telegram } }
   - type: faq
     id: questions
     eyebrow: Fragen
@@ -28,11 +36,11 @@ sections:
       - q: Wir haben Freikarten für Sponsoren. Wie geht das?
         a: Freikarten und Einladungen aus dem Event Center, ohne Plattformgebühr, gescannt wie jedes Ticket.
       - q: Was kostet es?
-        a: "Eine feste Provision pro verkauftem Ticket, nach dem Event in Rechnung gestellt oder von Ihren Credits abgezogen, monatlich bei Events, die mehrere Monate im Verkauf sind; siehe [Preise](/pricing)."
+        a: "Eine feste Provision pro verkauftem Ticket, nach dem Event in Rechnung gestellt oder mit Ihren Credits bezahlt, monatlich bei Events, die mehrere Monate im Verkauf sind; siehe [Preise](/pricing)."
   - type: cta
     id: start
-    title: Starten Sie heute den Verkauf
+    title: Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?
     text: Event anlegen, Zahlungskonto verbinden, Link teilen.
-    primary: { label: Event anlegen, href: /start#create }
-    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Event anlegen, href: /start#create }
+    tertiary: { label: Team kontaktieren, href: /contact#write }

@@ -23,7 +23,7 @@ sections:
       - title: Wyślij plan sali, jeśli sprzedajesz miejsca numerowane
         text: "Rysujemy plan za darmo, zwykle w ciągu doby, i pokazujemy ci go przed startem sprzedaży. Wystarczy jedno z tych: PDF z planem obiektu, zdjęcie odręcznego szkicu lub tabela z rzędami i miejscami w każdym rzędzie (Excel lub Google Sheets). SVG importujemy bezpośrednio."
       - title: Opublikuj i udostępnij
-        text: "Wystaw wydarzenie do sprzedaży. Udostępnij link do strony sprzedaży, którą hostujemy, albo dodaj widget biletowy do własnej strony trzema linijkami kodu. Kody promocyjne, ceny według daty i opłata serwisowa są ustawiane w tym samym miejscu."
+        text: "Wystaw wydarzenie do sprzedaży. Udostępnij link do strony sprzedaży, którą hostujemy, albo dodaj widget biletowy do własnej strony trzema linijkami kodu. Kody rabatowe, ceny według daty i opłata serwisowa są ustawiane w tym samym miejscu."
       - title: Obserwuj sprzedaż
         text: "Kupujący płacą na twoje konto płatności i dostają bilet e-mailem w swoim języku. Każde zamówienie jest w Event Center, a każda sprzedaż i zwrot trafia do twojej grupy na Telegramie w kilka sekund."
       - title: Skanuj przy wejściu

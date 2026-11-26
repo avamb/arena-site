@@ -43,12 +43,12 @@ sections:
       note: "Pakiety kredytów możesz kupować tak często, jak chcesz; bilet pobiera prowizję z pakietu, z którego jest opłacany. Możesz włączyć automatyczne doładowanie. Przy wolumenach powyżej 5000 biletów rocznie: indywidualne warunki, napisz do nas."
     lowPrice:
       title: "Wydarzenia, w których każdy bilet kosztuje {lowMax} lub mniej"
-      text: "{lowPercent}% ceny biletu, co najmniej {lowMin} i najwyżej {lowCap} za bilet; {lowSeat} więcej za bilet z miejscem. Dla dyskotek, biegów, maratonów, urodzin dla dzieci, wycieczek. Dotyczy całego wydarzenia i tylko wtedy, gdy **żaden bilet z żadnej kategorii ani progu cenowego**, także późniejszego, nie kosztuje więcej niż {lowMax} przed kodami promocyjnymi. Jeden bilet powyżej tej kwoty, a standardowa cena obowiązuje dla wszystkich biletów wydarzenia, także tych tanich."
+      text: "{lowPercent}% ceny biletu, co najmniej {lowMin} i najwyżej {lowCap} za bilet; {lowSeat} więcej za bilet z miejscem. Dla dyskotek, biegów, maratonów, urodzin dla dzieci, wycieczek. Dotyczy całego wydarzenia i tylko wtedy, gdy **żaden bilet z żadnej kategorii ani progu cenowego**, także późniejszego, nie kosztuje więcej niż {lowMax} przed kodami rabatowymi. Jeden bilet powyżej tej kwoty, a standardowa cena obowiązuje dla wszystkich biletów wydarzenia, także tych tanich."
       example: "Prowizja za bilet, płatność za sprzedane bilety:"
       cols: { price: Cena biletu, plain: Prowizja, seated: Z miejscem }
     venues:
       title: Stałe obiekty
-      text: "Teatry, kluby, stadiony, cyrki i inne miejsca, które same organizują wydarzenia, przez cały rok lub sezonowo: **{percent}% ceny biletu** (po kodach promocyjnych, bez opłaty serwisowej), najwyżej **{cap}** za bilet, tak samo z miejscem i bez. Faktura co miesiąc. Bez prowizji od zaproszeń. Status obiektu włącza nasz zespół."
+      text: "Teatry, kluby, stadiony, cyrki i inne miejsca, które same organizują wydarzenia, przez cały rok lub sezonowo: **{percent}% ceny biletu** (po kodach rabatowych, bez opłaty serwisowej), najwyżej **{cap}** za bilet, tak samo z miejscem i bez. Faktura co miesiąc. Bez prowizji od zaproszeń. Status obiektu włącza nasz zespół."
       example: "Bilet za {ex25} kosztuje {ex} prowizji; limit {cap} osiągany jest przy cenie biletu {capAt}."
       cta: { label: Porozmawiaj z nami, href: /contact }
     calculator:
@@ -119,7 +119,7 @@ sections:
       - q: Jeden z moich biletów kosztuje więcej niż US$10 (€10 w UE), reszta jest tania. Jaka cena obowiązuje?
         a: "Standardowa, dla wszystkich biletów wydarzenia: niższa stawka wymaga, aby każdy bilet każdej kategorii i progu cenowego kosztował US$10 lub mniej (€10 w UE). Bilet za US$5 obok biletu za US$25 jest rozliczany po cenie standardowej."
       - q: Mam obiekt i organizuję wiele wydarzeń w miesiącu. Czy jest inna oferta?
-        a: "Tak. Właściciele stałych obiektów (teatrów, klubów, stadionów, cyrków i innych miejsc, które same organizują wydarzenia, przez cały rok lub sezonowo) płacą {percent}% ceny biletu, liczone po kodach promocyjnych i bez twojej opłaty serwisowej. Prowizja za bilet jest ograniczona do US$1,18 (€1,09 w UE), tak samo z miejscem i bez. Zaproszenia nie podlegają prowizji. Faktury wystawiamy co miesiąc. Status obiektu włącza nasz zespół: napisz do nas ze [strony kontaktowej](/contact). Pełne warunki są w [szczegółowych warunkach](/pricing/terms)."
+        a: "Tak. Właściciele stałych obiektów (teatrów, klubów, stadionów, cyrków i innych miejsc, które same organizują wydarzenia, przez cały rok lub sezonowo) płacą {percent}% ceny biletu, liczone po kodach rabatowych i bez twojej opłaty serwisowej. Prowizja za bilet jest ograniczona do US$1,18 (€1,09 w UE), tak samo z miejscem i bez. Zaproszenia nie podlegają prowizji. Faktury wystawiamy co miesiąc. Status obiektu włącza nasz zespół: napisz do nas ze [strony kontaktowej](/contact). Pełne warunki są w [szczegółowych warunkach](/pricing/terms)."
 
   - type: cta
     id: start

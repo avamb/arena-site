@@ -3,7 +3,7 @@ description: "Mapas de assentos com versões, importação de SVG, assentos marc
 h1: Mapas de assentos iguais ao local
 lead: Os assentos marcados fazem parte do núcleo da plataforma, não são um complemento. A equipe monta o seu mapa com o que você tiver, em geral em até um dia, e o reaproveita em todas as datas.
 related:
-  - { label: "Códigos promocionais, períodos de preço e lotes por quantidade", href: /product/pricing-tools }
+  - { label: "Cupons de desconto, períodos de preço e lotes por quantidade", href: /product/pricing-tools }
   - { label: Ingressos eletrônicos com EAN-13 e QR, href: /product/tickets }
   - { label: Para teatros, href: /solutions/theatre }
 sections:

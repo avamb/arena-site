@@ -1,21 +1,30 @@
-title: "Venda de ingressos para turnês: cidades e promotores"
-description: "Venda uma turnê em um único evento: sessões por cidade, mapa de assentos por local, páginas de promotor com links e códigos próprios, leitura em cada cidade."
+title: "Venda de ingressos para turnês: cidades e produtores"
+description: "Venda uma turnê em um único evento: sessões por cidade, mapa de assentos por local, páginas de produtor com links e cupons próprios, leitura em cada cidade."
 h1: Turnês de shows
-lead: Um show, várias cidades e datas. Cada cidade tem sua sessão e seu mapa, cada promotor tem uma página com link próprio, e você vê a turnê inteira em um único Event Center.
+tagline: Uma turnê começa muito antes da primeira cidade.
+lead: Um show, várias cidades e datas. Cada cidade tem sua sessão e seu mapa, cada produtor tem uma página com link próprio, e você vê a turnê inteira em um único Event Center.
 related:
-  - { label: Shows, href: /solutions/shows }
+  - { label: Espetáculos, href: /solutions/shows }
   - { label: Onde você vende, href: /product/sell }
   - { label: Pagamentos por país, href: /payments }
+  - { label: "Países e métodos de pagamento", href: /countries }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para turnês de shows
     title: O que importa em uma turnê?
     items:
-      - { title: Sessões por cidade, text: "Datas e locais em um só evento; o público escolhe a cidade e você vê os totais por sessão e da turnê.", link: { label: Event Center →, href: /#center } }
-      - { title: Páginas de promotor, text: "Uma página separada para cada promotor local, com link e códigos promocionais próprios; as vendas chegam consolidadas para você.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Sessões por cidade, text: "Datas e locais em um só evento; o público escolhe a cidade e você vê os totais por sessão e da turnê inteira.", link: { label: Event Center →, href: /#center } }
+      - { title: Um mapa para cada local, text: "Envie um PDF, uma planilha ou um croqui à mão e a equipe desenha o mapa de cada local de graça; na visita seguinte, ele já está lá.", link: { label: Mapas de assentos →, href: /product/seating } }
+      - { title: Páginas de produtor, text: "Uma página separada para cada produtor local, com link e cupons de desconto próprios; as vendas chegam consolidadas para você.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: De onde vêm os compradores, text: "Adicione parâmetros UTM aos seus links e veja qual post, newsletter ou parceiro vende ingressos em cada cidade.", link: { label: Onde você vende →, href: /product/sell } }
       - { title: Vários países, text: "Venda na República Tcheca, Espanha, França, Geórgia ou Israel com o provedor de cada país, direto na sua própria conta.", link: { label: Pagamentos →, href: /payments } }
       - { title: Idiomas do público, text: "Páginas e ingressos no idioma do comprador, e-mails em sete idiomas, escrita da direita para a esquerda no hebraico.", link: { label: Ingressos →, href: /product/tickets } }
+      - { title: A turnê inteira no Telegram, text: "Cada venda e cada reembolso, de todas as cidades, aparecem no seu grupo do Telegram em segundos, com o contato do comprador.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: "Mudança de cidade? Você decide", text: "Reembolse todos, ofereça uma nova data ou escolha outra solução. Os compradores recebem um e-mail com o ingresso atualizado.", link: { label: Ingressos →, href: /product/tickets } }
+      - { title: A portaria em cada cidade, text: "O aplicativo leitor MACS para iOS e Android em cada local; ingressos de parceiros locais vindos de outros sistemas também são aceitos.", link: { label: Aplicativo leitor MACS →, href: /product/scanner } }
   - type: faq
     id: questions
     eyebrow: Perguntas
@@ -23,16 +32,16 @@ sections:
     items:
       - q: Um evento pode abranger vários países e moedas?
         a: As sessões podem ficar em países diferentes; a conta de pagamentos e a moeda seguem a organização. Para moedas separadas, a equipe configura um canal por país.
-      - q: Os promotores veem as vendas uns dos outros?
-        a: Não. Cada promotor vê apenas a própria página; o organizador vê tudo.
+      - q: Os produtores veem as vendas uns dos outros?
+        a: Não. Cada produtor vê apenas a própria página; o organizador vê tudo.
       - q: Uma cidade muda de local. O que acontece com os ingressos vendidos?
-        a: A sessão é movida com e-mails para os compradores e ingressos atualizados; os assentos passam para o novo mapa; desenhamos o novo local de graça.
-      - q: Quanto um ingresso me custa em turnê?
+        a: A sessão muda de local e os compradores recebem um e-mail com o ingresso atualizado; os assentos são remapeados com você no novo mapa.
+      - q: Quanto um ingresso me custa em uma turnê?
         a: "O mesmo valor por ingresso em todas as cidades; veja os [preços](/pricing)."
   - type: cta
     id: start
-    title: Comece a vender hoje
+    title: Seu melhor evento ainda está por vir. Vamos começar pelos ingressos?
     text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
-    primary: { label: Criar seu evento, href: /start#create }
-    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
-    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Criar seu evento, href: /start#create }
+    tertiary: { label: Fale com a equipe, href: /contact#write }

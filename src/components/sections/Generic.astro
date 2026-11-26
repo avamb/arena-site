@@ -9,16 +9,17 @@ import type { LanguageCode } from '@config';
 import { hosts, onboardingTurnstileSiteKey } from '@config';
 import { marked } from 'marked';
 import { inline, fill } from '@/lib/inline';
-import { clients, facts, tariff, getPricing, priceVars } from '@/lib/data';
+import { clients, facts, tariff, getPricing, priceVars, countryRows } from '@/lib/data';
 import Marquee from '@/components/Marquee.astro';
 import { localePath, postPath, formatDate, tObject, t, currencySymbol } from '@/lib/i18n';
 import { trackLabel } from '@/lib/track';
 import { getPosts } from '@/lib/data';
-import { languages } from '@config';
+import { languages, defaultLanguage } from '@config';
+import { pageLanguages } from '@/lib/translations';
 import Icon from '@/components/Icon.astro';
 import ContactForm from '@/components/ContactForm.astro';
 
-type Generic = Exclude<Section, { type: 'hero' | 'facts' | 'steps' | 'ways' | 'qa' | 'center' | 'money' | 'pricing' | 'who' | 'reasons' | 'clients' | 'changes' | 'cta' }>;
+type Generic = Exclude<Section, { type: 'hero' | 'facts' | 'steps' | 'ways' | 'qa' | 'center' | 'money' | 'pricing' | 'who' | 'reasons' | 'clients' | 'changes' | 'cta' | 'person' }>;
 interface Props {
   s: Generic;
   lang: LanguageCode;
@@ -110,6 +111,37 @@ const otherBlogs = s.type === 'posts' ? (await Promise.all(languages.filter((l) 
           <ul class="list-plain" style="margin-top:12px;color:var(--fg-2)">{plannedGroups.map((g) => <li>{g}</li>)}</ul>
         </div>
       </>
+    )}
+
+    {s.type === 'countries' && (
+      <>
+        <div class="table-scroll" tabindex="0" role="region" aria-label={s.title ?? t(lang, 'table.details')}>
+        <table class="facts-table countries-table">
+          <thead><tr><th>{s.labels.country}</th><th>{s.labels.provider}</th><th>{s.labels.currencies}</th><th>{s.labels.methods}</th></tr></thead>
+          <tbody>{countryRows(markets, providers, lang).map((r) => (
+            <tr>
+              <td>{r.page ? <a href={localePath(pageLanguages(r.page)?.includes(lang) === false ? defaultLanguage : lang, '/' + r.page)} style="color:var(--accent);font-weight:600">{r.name}</a> : r.name}</td>
+              <td>{r.providers.join(', ')}</td>
+              <td>{r.currencies.length ? r.currencies.join(', ') : s.labels.agreed}</td>
+              <td>{r.methods.map((x) => s.methods_map[x] ?? x).join(', ')}</td>
+            </tr>
+          ))}</tbody>
+        </table>
+        </div>
+        <div class="card" style="margin-top:24px;padding:22px 24px">
+          <h3 style="font-size:19px;letter-spacing:-0.02em">{s.preparing.title}</h3>
+          <p style="color:var(--fg-2);margin-top:8px;max-width:62ch" set:html={inline(s.preparing.text)} />
+          <p style="color:var(--fg-2);margin-top:12px">{coverageNames(markets.filter((m) => m.data.status === 'planned').map((m) => m.data.iso2)).join(', ')}</p>
+        </div>
+      </>
+    )}
+
+    {s.type === 'glance' && (
+      <div class="table-scroll" tabindex="0" role="region" aria-label={s.title ?? t(lang, 'table.details')}>
+      <table class="facts-table glance-table">
+        <tbody>{s.rows.map((r) => <tr><th scope="row">{r.k}</th><td set:html={inline(fill(r.v, vars))} /></tr>)}</tbody>
+      </table>
+      </div>
     )}
 
     {s.type === 'cards' && (

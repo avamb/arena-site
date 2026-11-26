@@ -1,21 +1,29 @@
-title: "Biglietti per strutture e club: una mappa, termini separati"
+title: "Biglietti per locali e club: una mappa, condizioni dedicate"
 description: "Per strutture permanenti e club: una mappa dei posti per ogni evento, molti eventi al mese, scansione all'ingresso, una percentuale al posto della commissione."
 h1: Strutture e club
+tagline: Un locale prende vita molto prima dell'apertura delle porte.
 lead: "La tua struttura, molti eventi al mese. La mappa si costruisce una volta e si riutilizza, ogni promoter che affitta la struttura vende dalla tua pagina o dalla sua, e le condizioni sono diverse: una percentuale sul prezzo del biglietto al posto della commissione per biglietto."
 related:
   - { label: Prezzi e condizioni dettagliate, href: /pricing }
   - { label: Mappe dei posti, href: /product/seating }
   - { label: Teatro, href: /solutions/theatre }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Per le strutture
     title: Cosa conta per una struttura?
     items:
-      - { title: "Una mappa, ogni evento", text: "Costruita una volta dal tuo file, riutilizzata per ogni evento; versioni per le disposizioni del palco.", link: { label: Mappe dei posti →, href: /product/seating } }
+      - { title: "Una mappa, ogni evento", text: "Mandaci un PDF, un foglio di calcolo o uno schizzo a mano e il team disegna gratis la mappa; si riutilizza per ogni evento, con versioni per le diverse disposizioni del palco.", link: { label: Mappe dei posti →, href: /product/seating } }
       - { title: Promoter che affittano la struttura, text: "Una pagina per promoter con il proprio link; la struttura vede ogni evento, il promoter vede il proprio.", link: { label: Dove vendi →, href: /product/sell } }
-      - { title: Condizioni separate, text: "Due percento del prezzo del biglietto al posto della commissione per biglietto, nessuna commissione su inviti e rimborsi, condizioni per volumi su richiesta.", link: { label: Prezzi →, href: /pricing } }
-      - { title: L'ingresso, text: "App scanner per iOS e Android, scanner portatili, accettati i biglietti dei partner emessi da altri sistemi.", link: { label: App scanner MACS →, href: /product/scanner } }
+      - { title: Condizioni separate, text: "Una percentuale sul prezzo del biglietto al posto della commissione per biglietto, nessuna commissione su inviti e rimborsi, condizioni per volumi su richiesta.", link: { label: Prezzi →, href: /pricing } }
+      - { title: Codici promozionali e prezzi early bird, text: "Codici per clienti abituali e partner con un limite per acquirente, prezzi early bird che terminano a una data, biglietti gratuiti e a offerta libera.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: L'ingresso, text: "App scanner MACS per iOS e Android, scanner portatili, accettati i biglietti dei partner emessi da altri sistemi.", link: { label: App scanner MACS →, href: /product/scanner } }
+      - { title: Biglietti all'ingresso, text: "Metti all'ingresso un codice QR stampato con un link breve per l'acquisto: gli ospiti lo inquadrano e comprano sul posto.", link: { label: Dove vendi →, href: /product/sell } }
+      - { title: Vendite su Telegram, text: "Ogni vendita e ogni rimborso di ogni evento compare nel tuo gruppo Telegram in pochi secondi, con il contatto dell'acquirente.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: "Un evento si sposta? Decidi tu", text: "Rimborsa tutti, proponi una nuova data al posto del rimborso o scegli un'altra soluzione. Gli acquirenti ricevono un'e-mail con il biglietto aggiornato.", link: { label: Biglietti →, href: /product/tickets } }
+      - { title: Pronti per le grandi aperture di vendita, text: "800 ordini al minuto con 1.000 acquirenti simultanei nei test di carico, backup cifrati ogni notte.", link: { label: Affidabilità →, href: /product/reliability } }
   - type: faq
     id: questions
     eyebrow: Domande
@@ -26,13 +34,13 @@ sections:
       - q: Un promoter può vendere i nostri eventi sul suo sito?
         a: Sì, con il widget sul suo sito o con una pagina promoter che ospitiamo noi. Le vendite di ogni canale compaiono nell'Event Center della struttura.
       - q: Possiamo passare da un altro sistema di biglietteria?
-        a: "Sì. Sessioni, mappe dei posti e clienti sono stati importati da ArenaSoldOut.com per due clienti senza interruzioni; altri sistemi tramite l'API del pacchetto evento. Vedi gli [sviluppatori](/developers)."
+        a: "Sì. Due clienti sono già passati dal loro precedente sistema di biglietteria senza alcuna interruzione, con sessioni, mappe dei posti e clienti; da altri sistemi tramite l'API su richiesta. Vedi gli [sviluppatori](/developers)."
       - q: Chi gestisce l'Event Center?
         a: Il tuo team, con ruoli. La struttura possiede l'organizzazione; i responsabili vedono ciò che consenti.
   - type: cta
     id: start
-    title: Parla con noi
-    text: Raccontaci la struttura e il numero di eventi al mese. La mappa la disegniamo gratis e concordiamo le condizioni per la struttura.
-    primary: { label: Parla con noi, href: /start }
-    secondary: { label: Vedi i prezzi, href: /pricing }
-    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."
+    title: Il tuo evento migliore deve ancora arrivare. Cominciamo dai biglietti?
+    text: Raccontaci la struttura e il numero di eventi al mese. Disegniamo la mappa gratis e concordiamo le condizioni per la struttura.
+    primary: { label: Inizia a vendere, href: /start }
+    secondary: { label: Crea il tuo evento, href: /start#create }
+    tertiary: { label: Contatta il team, href: /contact#write }

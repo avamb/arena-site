@@ -1,12 +1,15 @@
-title: "Ticketverkauf für Konzerte: Steh- und Sitzplätze"
+title: "Ticketsystem für Konzerte: Steh- und Sitzplätze, Early Bird"
 description: "Konzerttickets auf Ihrer Website oder einer gehosteten Seite: Stehplatz-Kontingente, Sitzkategorien, Early Bird, Partner-Codes, Scan. Das Geld geht an Sie."
-h1: Konzerte
+h1: Ticketverkauf für Konzerte
+tagline: Ein Konzert beginnt lange vor dem ersten Ton.
 lead: Steh- und Sitzplätze in einem Event, mehrere Preiskategorien, ein Early-Bird-Zeitraum, der sich zu einem Datum umschaltet, und ein Einlass, der jedes Ticket scannt. Käufer zahlen vom ersten Ticket an auf Ihr eigenes Konto.
 related:
-  - { label: Promo-Codes und Preisfenster, href: /product/pricing-tools }
+  - { label: Rabattcodes und Preisfenster, href: /product/pricing-tools }
   - { label: E-Tickets und Scan, href: /product/tickets }
   - { label: Festivals, href: /solutions/festivals }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Für Konzerte
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Steh- und Sitzplätze zusammen, text: "Ein Stehbereich mit Kontingent neben Sitzkategorien, in einem Plan und einem Checkout.", link: { label: Saalpläne →, href: /product/seating } }
       - { title: "Early Bird, der sich selbst umschaltet", text: "Ein Preisfenster nach Datum und Uhrzeit, oder eine Mengenstufe, die den nächsten Preis öffnet, wenn die erste ausverkauft ist.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
-      - { title: Partner und Veranstalter, text: "Eine Seite pro Veranstalter mit eigenem Link, Promo-Codes pro Partner, alle Kanäle in einem Event Center.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Partner und Veranstalter, text: "Eine Seite pro Veranstalter mit eigenem Link, Rabattcodes pro Partner, alle Kanäle in einem Event Center.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
       - { title: Der Einlass, text: "Scanner-App für iOS und Android, EAN-13 und QR auf jedem Ticket, Tickets von Partnern aus anderen Systemen werden ebenfalls akzeptiert.", link: { label: MACS Scanner-App →, href: /product/scanner } }
+      - { title: Ihr Saalplan kostenlos, text: "Schicken Sie ein PDF, eine Tabelle oder eine Handskizze der Spielstätte: Unser Team zeichnet den Plan, von Hand eingeben müssen Sie ihn nie.", link: { label: Saalpläne →, href: /product/seating } }
+      - { title: Kategorien und VIP, text: "Jede Kategorie hat ihren eigenen Preis, ihr Kontingent und ihr Verkaufsfenster; eine ausverkaufte Kategorie kann ihre unverkauften Plätze an die nächste weitergeben.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Verkäufe in Echtzeit, text: "Jeder Verkauf landet in Sekunden in Ihrer Telegram-Gruppe; UTM-Parameter zeigen, welcher Kanal die Käufer gebracht hat.", link: { label: Telegram-Bot →, href: /product/telegram } }
+      - { title: Abgesagt oder verlegt, text: "Sie entscheiden: allen erstatten oder einen neuen Termin anbieten. Käufer erhalten eine E-Mail mit dem aktualisierten Ticket.", link: { label: E-Tickets →, href: /product/tickets } }
+      - { title: Ein QR-Code am Einlass, text: "Hängen Sie einen QR-Code mit kurzem Kauflink auf: Wer ohne Ticket gekommen ist, kauft es noch in der Warteschlange." }
   - type: faq
     id: questions
     eyebrow: Fragen
@@ -31,8 +39,8 @@ sections:
         a: Ja. Jeder Verkauf landet innerhalb von Sekunden in Ihrer Telegram-Gruppe und im Event Center, mit Summen pro Session und CSV-Export.
   - type: cta
     id: start
-    title: Stellen Sie das Konzert heute in den Verkauf
+    title: Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?
     text: Event anlegen, Zahlungskonto verbinden, Link teilen.
-    primary: { label: Event anlegen, href: /start#create }
-    secondary: { label: Telegram-Bot öffnen, href: https://t.me/EventsCentrBot }
-    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Event anlegen, href: /start#create }
+    tertiary: { label: Team kontaktieren, href: /contact#write }

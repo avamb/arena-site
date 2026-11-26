@@ -1,8 +1,8 @@
 header:
-  - label: Jak to działa
-    href: /#how
   - label: Dla kogo
     href: /solutions
+  - label: Jak to działa
+    href: /#how
   - label: Cennik
     href: /pricing
   - label: Event Center
@@ -26,13 +26,14 @@ footer:
       - { label: Twoje pierwsze wydarzenie, href: /first-event }
       - { label: Sprzedaż na twojej stronie lub naszej, href: /product/sell }
       - { label: Plany sali, href: /product/seating }
-      - { label: Kody promocyjne i okna cenowe, href: /product/pricing-tools }
+      - { label: Kody rabatowe i okna cenowe, href: /product/pricing-tools }
       - { label: Płatności, href: /payments }
+      - { label: Kraje, href: /countries }
       - { label: Bot w Telegramie, href: /product/telegram }
       - { label: E-bilety i skanowanie, href: /product/tickets }
       - { label: Aplikacja skanera MACS, href: /product/scanner }
       - { label: Niezawodność, href: /product/reliability }
-      - { label: Alternatywa dla Ticket Tailor, href: /tickettailor-alternative }
+      - { label: Porównaj z innymi platformami, href: /alternatives }
   - title: Dla kogo
     links:
       - { label: Koncerty, href: /solutions/concerts }
@@ -48,7 +49,7 @@ footer:
       - { label: Dokumentacja, href: /developers }
       - { label: Publiczne API, href: /developers#api }
       - { label: Widget, href: /developers#widget }
-      - { label: Wtyczka WordPress, href: /solutions/wordpress }
+      - { label: Integracja z WordPressem, href: /solutions/wordpress }
       - { label: Partnerzy, href: /partners }
   - title: Firma
     links:
@@ -63,5 +64,7 @@ footer:
     links:
       - { label: Regulamin, href: /legal/terms }
       - { label: Polityka prywatności, href: /legal/privacy }
+      - { label: Usuwanie danych, href: /legal/data-deletion }
+      - { label: Bezpieczeństwo, href: /security }
       - { label: Szczegółowe warunki cennika, href: /pricing/terms }
 copyright: "© 2019–2026 ArenaSoldOut.com · ABH TEAM OÜ · EU"

@@ -189,3 +189,10 @@ redirects.yaml, headers.yaml   single source for Cloudflare and nginx
 wrangler.toml       Worker config (no secrets)
 design/             brief, prototype, brand vectors, doc 33, anti-slop catalog
 ```
+
+## License
+
+The code is MIT. The texts, blog posts, brand assets, photos and design documents are
+All rights reserved (ArenaSoldOut). See [LICENSE](LICENSE) for which folders are which.
+
+Found a security problem? Please write to support@arenasoldout.com instead of opening a public issue.

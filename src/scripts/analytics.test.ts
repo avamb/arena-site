@@ -149,6 +149,49 @@ test('a malformed cid is stripped from the address and never sent', () => {
   assert.deepEqual(b.history.replaced, ['/pricing']);
 });
 
+test('the contact code is kept for the Umami loader, even with own analytics off, and a bad code is not', () => {
+  const held = (b: ReturnType<typeof browser>) => (b.win as unknown as { __asoContact?: string }).__asoContact;
+  const on = browser({ url: `https://arenasoldout.com/ru/first-event/?utm_source=email&cid=${CID}` });
+  createAnalytics({ win: on.win, endpoint: on.endpoint }).start();
+  assert.equal(held(on), CID);
+  assert.deepEqual(on.history.replaced, ['/ru/first-event/?utm_source=email']);
+  const off = browser({ url: `https://arenasoldout.com/pricing?cid=${CID}` });
+  createAnalytics({ win: off.win, endpoint: '' }).start();
+  assert.equal(held(off), CID);
+  const bad = browser({ url: 'https://arenasoldout.com/pricing?cid=nope' });
+  createAnalytics({ win: bad.win, endpoint: bad.endpoint }).start();
+  assert.equal(held(bad), undefined);
+  const none = browser({ url: 'https://arenasoldout.com/pricing' });
+  createAnalytics({ win: none.win, endpoint: none.endpoint }).start();
+  assert.equal(held(none), undefined);
+});
+
+test('the contact code survives to the next page of the visit through sessionStorage, and junk in storage is ignored', () => {
+  const held = (b: ReturnType<typeof browser>) => (b.win as unknown as { __asoContact?: string }).__asoContact;
+  const store = new Map<string, string>();
+  const fake = { getItem: (k: string) => store.get(k) ?? null, setItem: (k: string, v: string) => void store.set(k, v) };
+  const withStore = (url: string) => {
+    const b = browser({ url });
+    (b.win as unknown as { sessionStorage: typeof fake }).sessionStorage = fake;
+    return b;
+  };
+  const first = withStore(`https://arenasoldout.com/ru/first-event?cid=${CID}`);
+  createAnalytics({ win: first.win, endpoint: '' }).start();
+  assert.equal(held(first), CID);
+  assert.equal(store.get('aso_contact'), CID);
+  const next = withStore('https://arenasoldout.com/ru/pricing');
+  createAnalytics({ win: next.win, endpoint: '' }).start();
+  assert.equal(held(next), CID);
+  store.set('aso_contact', 'not a code');
+  const junk = withStore('https://arenasoldout.com/ru/pricing');
+  createAnalytics({ win: junk.win, endpoint: '' }).start();
+  assert.equal(held(junk), undefined);
+  store.clear();
+  const other = withStore('https://arenasoldout.com/ru/pricing');
+  createAnalytics({ win: other.win, endpoint: '' }).start();
+  assert.equal(held(other), undefined);
+});
+
 test('accept: consent cookie, aid cookie, then page_view and consent with the aid', () => {
   const b = browser();
   const a = createAnalytics({ win: b.win, endpoint: b.endpoint });

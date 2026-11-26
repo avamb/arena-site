@@ -1,0 +1,114 @@
+# Georgia, Armenia, Kazakhstan, Uzbekistan (Marina, 18-19.11.2026: name the countries only, never a region name, on the site or in the address): Flitt in all four; currencies agreed with Flitt.
+languages: [en, ru]
+title: "Event ticketing in Georgia, Armenia, Kazakhstan, Uzbekistan"
+description: "Sell tickets in Georgia, Armenia, Kazakhstan and Uzbekistan through your own Flitt account, with the checkout inside the ticket widget."
+h1: "Ticketing in Georgia, Armenia, Kazakhstan and Uzbekistan"
+lead: "In all four countries buyers pay through Flitt right inside the ticket widget, and the money for every ticket comes to your own Flitt account."
+related:
+  - { label: "All countries", href: "/countries", text: "Providers, currencies and payment methods by country." }
+  - { label: "Concert tours", href: "/solutions/concert-tours", text: "Many cities and countries in one event, a page per promoter." }
+  - { label: "Seating plans", href: "/product/seating", text: "Send a PDF, a sketch or a table of rows; we draw the plan for free." }
+sections:
+  - type: glance
+    id: glance
+    eyebrow: "At a glance"
+    title: "The four countries at a glance"
+    rows:
+      - { k: "Payment provider", v: "Flitt" }
+      - { k: "Currency", v: "Agreed with Flitt when you open the account" }
+      - { k: "Payment methods", v: "Cards" }
+      - { k: "Buyer page", v: "Russian, English, Spanish, Czech, Hebrew; other languages on request" }
+      - { k: "Our price", v: "{usdPrice} per ticket, {usdSeated} with a seat; from {usdFrom} with credits" }
+      - { k: "VAT on our commission", v: "None" }
+
+  - type: cards
+    id: benefits
+    eyebrow: "Why ArenaSoldOut.com"
+    title: "What do organizers get?"
+    lead: "A ticketing platform built for organizers: you keep more of every ticket, sell more and start sooner."
+    items:
+      - title: "Earn more on every ticket"
+        text: "A fixed {usdPrice} per ticket, not a percent of the price. With credits it is lower, from {usdFrom} per ticket. Card fees stay between you and your payment provider."
+        link: { label: "Pricing →", href: "/pricing" }
+      - title: "Sell more"
+        text: "Promo codes, early bird prices, refer-a-friend links, reminders for abandoned carts and an e-mail to subscribers the moment sales open."
+        link: { label: "Promo codes and price windows →", href: "/product/pricing-tools" }
+      - title: "Sell sooner"
+        text: "An event without a seating plan goes on sale in 10 minutes. A seating plan we draw for you for free, usually within a day."
+        link: { label: "Your first event →", href: "/first-event" }
+
+  - type: prose
+    id: payments
+    eyebrow: "Payments"
+    title: "How do payments work?"
+    body: "You connect your Flitt account once. The money for every ticket sold is paid to it directly, payouts follow Flitt's schedule, and refunds go back to the buyer through Flitt. ArenaSoldOut.com never holds your money."
+
+  - type: cards
+    id: where
+    eyebrow: "Where you sell"
+    title: "Where can I sell tickets?"
+    lead: "In three places at once. Sales from all of them come into one Event Center."
+    items:
+      - title: "Our sales page"
+        text: "We host a page for your event at tickets.arenasoldout.com/your-name/your-event. There is nothing to build."
+        link: { label: "Where you sell →", href: "/product/sell" }
+      - title: "Your own site"
+        text: "Put the ticket widget on the site you already have. Buyers choose seats and pay without leaving it."
+        link: { label: "The widget →", href: "/product/sell" }
+      - title: "Your social media"
+        text: "Share the link in social media and messengers, or print a QR code on the poster. Every order is tied to its link, so you see which one sold."
+        link: { label: "Links and QR codes →", href: "/product/sell" }
+
+  - type: faq
+    id: questions
+    eyebrow: "Questions"
+    title: "What do organizers ask before they start?"
+    items:
+      - q: "How much does a ticket cost me?"
+        a: "{usdPrice} per ticket, {usdSeated} with a seat. You pay after the event, for tickets sold. Invitations carry no commission. See [pricing](/pricing)."
+      - q: "Can I pay less per ticket?"
+        a: "Yes. Buy credits upfront and the price drops to {usdFrom} per ticket ({eurFrom} in the EU). Credits never expire. See [pricing](/pricing)."
+      - q: "When do I pay ArenaSoldOut.com?"
+        a: "After the event, for the tickets sold, if you choose to pay that way. You can also buy credits before the event."
+      - q: "Where does the money for tickets go?"
+        a: "To your own account with your payment provider, for every ticket sold. ArenaSoldOut.com never holds it."
+      - q: "How fast can I start selling?"
+        a: "We confirm your organization, usually within a day. With a payment account in place, an event without a seating plan goes on sale in 10 minutes. A seating plan we draw for free, usually within a day."
+      - q: "How reliable is the platform?"
+        a: "Load tested at 800 orders a minute with 1,000 buyers at once. A watchdog alerts the team, backups run every night, encrypted, and Cloudflare stands in front. Not a single outage has been recorded since the start in 2019, even with several tens of thousands of tickets sold in 5 minutes. See [reliability](/product/reliability)."
+      - q: "I run a permanent venue. Is there a different deal?"
+        a: "Yes. Theatres, clubs and other venues that hold events all year or by season pay {percent}% of the ticket price, with a cap per ticket, invoiced monthly. See [pricing](/pricing)."
+      - q: "My tickets are cheap. Is there a lower price?"
+        a: "Yes. When every ticket of the event costs {usdLowMax} or less, the commission is {lowPercent}% of the ticket price. See [pricing](/pricing)."
+      - q: "Can one event have tickets at different prices?"
+        a: "Yes. Categories with their own prices, early bird prices that change on a date, quantity steps, free and pay-what-you-want tickets."
+      - q: "Can I use promo codes?"
+        a: "Yes, with a scope (which categories and sessions), dates of validity and a limit per buyer. See [promo codes and price windows](/product/pricing-tools)."
+      - q: "Can a child ticket be sold only together with an adult ticket?"
+        a: "Yes, with add-on categories. An add-on is sold only together with a main ticket of the same session, so a child ticket cannot be bought without an adult one."
+      - q: "Can I sell drinks or merchandise with the tickets?"
+        a: "Yes. A drink voucher can be an add-on category: it is sold only together with a ticket and arrives as a ticket of its own. Merchandise, wine and gift sets sell in a shop next to your tickets, with variants, a cart, pickup at the event or your own delivery, and refunds. The shop is connected separately, terms on request."
+      - q: "I run the same show every week. Do I create a new event each time?"
+        a: "No. You add a session to the same event; prices, categories and the seating plan carry over, and buyers pick the date."
+      - q: "Can I see the sales of each event in real time?"
+        a: "Yes. In the Event Center on your phone or computer, in the browser, with nothing to install: orders and totals per session and a CSV report. If you use Telegram, every sale and refund also comes to your group within seconds."
+      - q: "Do I need special equipment at the door?"
+        a: "No. The MACS app scans tickets on any iPhone or Android phone, from paper or a screen. Handheld laser scanners and USB or Bluetooth barcode scanners work too. See [the MACS app](/product/scanner)."
+      - q: "How much does the MACS scanner app cost?"
+        a: "MACS is included for organizers who sell through ArenaSoldOut.com."
+      - q: "Which currency will my buyers pay in?"
+        a: "The one set in your Flitt account. Flitt confirms the currencies for your country when you open the account."
+
+  - type: prose
+    id: team
+    eyebrow: "Our team"
+    title: "Questions or ideas?"
+    body: "Write to the team. We answer questions about your country, your venue and your event, and we listen to ideas: we build ArenaSoldOut.com so that selling tickets is convenient and pays off for you. [Contact the team](/contact#write)."
+
+  - type: cta
+    id: start
+    title: "Start selling today"
+    text: "Create the event, connect your payment account, share the link."
+    primary: { label: "Create your event", href: "/start#create" }
+    secondary: { label: "Contact the team", href: "/contact#write" }
+    note: "We confirm your organization, connect your payment account and draw your seating plan for free."

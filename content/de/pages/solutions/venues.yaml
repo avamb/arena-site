@@ -1,38 +1,46 @@
 title: "Ticketverkauf für Spielstätten und Clubs: ein Plan"
 description: "Für feste Spielstätten und Clubs: ein Saalplan für jedes Event, viele Events im Monat, Scan am Einlass, ein Prozentsatz des Ticketpreises statt einer Gebühr."
 h1: Spielstätten und Clubs
+tagline: Eine Spielstätte erwacht, lange bevor sich die Türen öffnen.
 lead: "Ihre eigene Spielstätte, viele Events im Monat. Der Plan wird einmal gebaut und wiederverwendet, jeder Veranstalter, der die Spielstätte mietet, verkauft über Ihre oder seine Seite, und die Konditionen sind andere: ein Prozentsatz des Ticketpreises statt der Gebühr pro Ticket."
 related:
   - { label: Preise und detaillierte Bedingungen, href: /pricing }
   - { label: Saalpläne, href: /product/seating }
   - { label: Theater, href: /solutions/theatre }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Für Spielstätten
     title: Was zählt bei einer Spielstätte?
     items:
-      - { title: "Ein Plan, jedes Event", text: "Einmal nach Ihrer Datei gebaut, für jedes Event wiederverwendet; Versionen für Bühnenaufbauten.", link: { label: Saalpläne →, href: /product/seating } }
+      - { title: "Ein Plan, jedes Event", text: "Schicken Sie ein PDF, eine Tabelle oder eine Handskizze, und das Team zeichnet den Plan kostenlos; er wird für jedes Event wiederverwendet, mit Versionen für verschiedene Bühnenaufbauten.", link: { label: Saalpläne →, href: /product/seating } }
       - { title: "Veranstalter, die die Spielstätte mieten", text: "Eine Seite pro Veranstalter mit eigenem Link; die Spielstätte sieht jedes Event, der Veranstalter sieht seine eigenen.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
-      - { title: Eigene Konditionen, text: "Zwei Prozent des Ticketpreises statt der Gebühr pro Ticket, keine Gebühr auf Einladungen und Erstattungen, Mengenkonditionen auf Anfrage.", link: { label: Preise →, href: /pricing } }
-      - { title: Der Einlass, text: "Scanner-App für iOS und Android, Handscanner, Tickets von Partnern aus anderen Systemen werden akzeptiert.", link: { label: MACS Scanner-App →, href: /product/scanner } }
+      - { title: Eigene Konditionen, text: "Ein Prozentsatz des Ticketpreises statt der Gebühr pro Ticket, keine Provision auf Freikarten und Erstattungen, Mengenkonditionen auf Anfrage.", link: { label: Preise →, href: /pricing } }
+      - { title: Rabattcodes und Frühbucherpreise, text: "Codes für Stammgäste und Partner mit Limit pro Käufer, Frühbucherpreise, die an einem Datum enden, kostenlose Tickets und Tickets zum selbst gewählten Preis.", link: { label: Preis-Tools →, href: /product/pricing-tools } }
+      - { title: Der Einlass, text: "Die Scanner-App MACS für iOS und Android, Handscanner, Tickets von Partnern aus anderen Systemen werden akzeptiert.", link: { label: MACS Scanner-App →, href: /product/scanner } }
+      - { title: Tickets am Eingang, text: "Stellen Sie einen ausgedruckten QR-Code mit kurzem Kauflink am Eingang auf: Gäste scannen ihn und kaufen direkt vor Ort.", link: { label: Wo Sie verkaufen →, href: /product/sell } }
+      - { title: Verkäufe in Telegram, text: "Jeder Verkauf und jede Erstattung zu jedem Event erscheint in Sekunden in Ihrer Telegram-Gruppe, mit dem Kontakt des Käufers.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: "Ein Event wird verlegt? Sie entscheiden", text: "Allen erstatten, stattdessen einen neuen Termin anbieten oder eine andere Lösung wählen. Käufer erhalten eine E-Mail mit dem aktualisierten Ticket.", link: { label: Tickets →, href: /product/tickets } }
+      - { title: Bereit für einen großen Verkaufsstart, text: "800 Bestellungen pro Minute bei 1.000 gleichzeitigen Käufern in Lasttests, nächtliche verschlüsselte Backups.", link: { label: Zuverlässigkeit →, href: /product/reliability } }
   - type: faq
     id: questions
     eyebrow: Fragen
     title: Was fragen Betreiber von Spielstätten zuerst?
     items:
       - q: Welche Konditionen gelten für eine feste Spielstätte?
-        a: "Ein Prozentsatz des Ticketpreises statt der Gebühr pro Ticket, keine Gebühr auf Einladungen und Erstattungen. Die Zahl steht auf der [Preisseite](/pricing); Mengen- und individuelle Konditionen auf Anfrage."
+        a: "Ein Prozentsatz des Ticketpreises statt der Gebühr pro Ticket, keine Provision auf Freikarten und Erstattungen. Die Zahl steht auf der [Preisseite](/pricing); Mengen- und individuelle Konditionen auf Anfrage."
       - q: Kann ein Veranstalter unsere Events auf seiner eigenen Website verkaufen?
         a: Ja, mit dem Widget auf seiner Website oder einer Veranstalterseite, die wir hosten. Verkäufe aus jedem Kanal erscheinen im Event Center der Spielstätte.
       - q: Können wir von einem anderen Ticketsystem wechseln?
-        a: "Ja. Sessions, Saalpläne und Kunden wurden für zwei Kunden ohne Ausfallzeit von ArenaSoldOut.com importiert; andere Systeme über die Event-Bundle-API. Siehe [Entwickler](/developers)."
+        a: "Ja. Zwei Kunden sind bereits ohne Ausfallzeit von ihrem bisherigen Ticketsystem zu uns gewechselt, mit Sessions, Saalplänen und Kundendaten; andere Systeme über die API auf Anfrage. Siehe [Entwickler](/developers)."
       - q: Wer betreibt das Event Center?
         a: Ihr Team, mit Rollen. Die Spielstätte besitzt die Organisation; Manager sehen, was Sie erlauben.
   - type: cta
     id: start
-    title: Sprechen Sie mit uns
-    text: Erzählen Sie uns von der Spielstätte und der Zahl der Events im Monat. Wir zeichnen den Plan kostenlos und vereinbaren die Konditionen für die Spielstätte.
-    primary: { label: Sprechen Sie mit uns, href: /start }
-    secondary: { label: Preise ansehen, href: /pricing }
-    note: "Fragen? Schreiben Sie uns: Das Team antwortet innerhalb eines Werktags."
+    title: Ihre beste Veranstaltung liegt noch vor Ihnen. Fangen wir mit den Tickets an?
+    text: Erzählen Sie uns von der Spielstätte und der Zahl der Events im Monat. Den Saalplan zeichnen wir kostenlos, die Konditionen für die Spielstätte vereinbaren wir mit Ihnen.
+    primary: { label: Verkauf starten, href: /start }
+    secondary: { label: Event anlegen, href: /start#create }
+    tertiary: { label: Team kontaktieren, href: /contact#write }

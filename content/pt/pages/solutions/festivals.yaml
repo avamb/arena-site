@@ -1,12 +1,15 @@
-title: "Venda de ingressos para festivais: dias e categorias"
+title: "Sistema de ingressos para festivais: passes e categorias"
 description: "Ingressos para festivais com passes diários e completos, categorias com cotas, cadeias que repassam lugares não vendidos, lote por data, leitura na entrada."
-h1: Festivais
+h1: Venda de ingressos para festivais
+tagline: Um festival começa muito antes de os portões abrirem.
 lead: Passes diários e passes completos, muitas categorias com cotas, lote promocional que liga em uma data e uma cadeia que repassa os lugares não vendidos de uma categoria para a seguinte. Leitura em cada entrada com o aplicativo.
 related:
-  - { label: Códigos promocionais e janelas de preço, href: /product/pricing-tools }
+  - { label: Cupons de desconto e janelas de preço, href: /product/pricing-tools }
   - { label: Shows, href: /solutions/concerts }
   - { label: Confiabilidade, href: /product/reliability }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Para festivais
@@ -14,8 +17,13 @@ sections:
     items:
       - { title: Categorias com cotas, text: "Dia um, dia dois, passe completo, VIP, camping: cada um com seu preço, sua cota e sua janela de venda.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
       - { title: Cadeias de categorias, text: "Quando o lote promocional esgota, os lugares não vendidos passam para a categoria seguinte em vez de travar as vendas.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
-      - { title: Entradas, text: "Aplicativo leitor para iOS e Android em cada portão; ingressos de parceiros vindos de outros sistemas também são aceitos.", link: { label: Aplicativo leitor MACS →, href: /product/scanner } }
-      - { title: Carga, text: "800 pedidos por minuto com 1.000 compradores simultâneos em testes de carga; o primeiro minuto de vendas está coberto.", link: { label: Confiabilidade →, href: /product/reliability } }
+      - { title: Pré-venda e lotes, text: "Um preço de pré-venda que vale até a data que você definir, ou um preço que sobe quando um lote esgota.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Cupons de desconto com limite, text: "Cupons para parceiros, fãs dos artistas ou a sua newsletter, com período de validade e limite por comprador.", link: { label: Ferramentas de preço →, href: /product/pricing-tools } }
+      - { title: Convites sem comissão, text: "Ingressos gratuitos para patrocinadores, artistas e imprensa, lidos no portão como qualquer outro ingresso.", link: { label: Ingressos →, href: /product/tickets } }
+      - { title: Entradas, text: "O aplicativo leitor MACS para iOS e Android em cada portão; ingressos de parceiros vindos de outros sistemas também são aceitos.", link: { label: Aplicativo leitor MACS →, href: /product/scanner } }
+      - { title: Ingressos no portão, text: "Coloque na entrada um QR code impresso com um link curto de compra: as pessoas escaneiam e compram na hora.", link: { label: Onde você vende →, href: /product/sell } }
+      - { title: Pronto para a abertura das vendas, text: "800 pedidos por minuto com 1.000 compradores simultâneos em testes de carga: o primeiro minuto de vendas corre tranquilo.", link: { label: Confiabilidade →, href: /product/reliability } }
+      - { title: Vendas no Telegram, text: "Cada venda e cada reembolso aparecem no seu grupo do Telegram em segundos, com o contato do comprador.", link: { label: Telegram →, href: /product/telegram } }
   - type: faq
     id: questions
     eyebrow: Perguntas
@@ -28,11 +36,11 @@ sections:
       - q: Temos ingressos gratuitos de patrocinadores. Como fazer?
         a: Ingressos gratuitos e convites pelo Event Center, sem cobrança da plataforma, lidos como qualquer ingresso.
       - q: Quanto custa?
-        a: "Uma comissão fixa por ingresso vendido, cobrada depois do evento ou descontada dos seus créditos, mensalmente para eventos que ficam meses à venda; veja os [preços](/pricing)."
+        a: "Uma comissão fixa por ingresso vendido, cobrada depois do evento ou paga com os seus créditos, mensalmente para eventos que ficam meses à venda; veja os [preços](/pricing)."
   - type: cta
     id: start
-    title: Comece a vender hoje
+    title: Seu melhor evento ainda está por vir. Vamos começar pelos ingressos?
     text: Crie o evento, conecte sua conta de pagamentos e compartilhe o link.
-    primary: { label: Criar seu evento, href: /start#create }
-    secondary: { label: Abrir o bot do Telegram, href: https://t.me/EventsCentrBot }
-    note: "Dúvidas? Escreva para nós: a equipe responde em até um dia útil."
+    primary: { label: Começar a vender, href: /start }
+    secondary: { label: Criar seu evento, href: /start#create }
+    tertiary: { label: Fale com a equipe, href: /contact#write }

@@ -24,7 +24,7 @@ sections:
     title: Czy Telegram to jedyny sposób?
     items:
       - q: Czy potrzebuję Telegrama, żeby korzystać z ArenaSoldOut.com?
-        a: "Nie. To samo Event Center działa w przeglądarce na ArenaSoldOut.com, a zespół może skonfigurować wszystko za ciebie. Telegram to jeden ze sposobów, dla organizatorów, którzy żyją w komunikatorze."
+        a: "Nie. To samo Event Center działa w przeglądarce na ArenaSoldOut.com, a [event manager](/pricing#services) z naszego zespołu może wykonać tę pracę za ciebie, jako płatna usługa. Telegram to jeden ze sposobów, dla organizatorów, którzy żyją w komunikatorze."
       - q: W jakich językach mówi bot?
         a: Dziś po angielsku, rosyjsku i hiszpańsku; kolejne pojawią się wraz z językami strony.
       - q: Czy mój zespół może z niego korzystać?

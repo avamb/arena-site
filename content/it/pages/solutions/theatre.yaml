@@ -1,21 +1,29 @@
 title: "Biglietti per il teatro: mappe dei posti, repliche"
 description: "Biglietteria teatrale con posti numerati fedeli alla sala, repliche su una sola mappa, inviti, rimborsi e cambi di data. Da 100 a 1.500 posti."
 h1: Teatro
+tagline: Uno spettacolo inizia molto prima che si alzi il sipario.
 lead: Una mappa fedele alla tua sala, disegnata da noi gratis dal tuo PDF, schizzo o tabella delle file, e riutilizzata per ogni replica. Inviti per stampa e partner, rimborsi e cambi di data gestiti dall'Event Center.
 related:
   - { label: Mappe dei posti fedeli alla sala, href: /product/seating }
   - { label: "Strutture e club: condizioni separate", href: /solutions/venues }
   - { label: E-ticket e scansione, href: /product/tickets }
 sections:
+  - type: paycountries
+    id: countries
   - type: cards
     id: what
     eyebrow: Per i teatri
     title: Cosa conta per un teatro?
     items:
-      - { title: La mappa è tua, text: "File, palchi, galleria, categorie per prezzo. Le versioni proteggono i biglietti venduti quando cambia la disposizione.", link: { label: Mappe dei posti →, href: /product/seating } }
-      - { title: Repliche, text: "Aggiungi sessioni allo stesso evento; mappa, prezzi e categorie restano. Sposta o annulla una data con e-mail agli acquirenti.", link: { label: Event Center →, href: /#center } }
-      - { title: Inviti, text: "Biglietti gratuiti per posti precisi per stampa, partner e compagnia, scansionati come qualsiasi altro biglietto.", link: { label: Biglietti →, href: /product/tickets } }
-      - { title: La tua biglietteria, text: "Vendi sul tuo sito con il widget o sulla pagina ospitata; gli incassi vanno sul tuo conto, non passano da un marketplace.", link: { label: Dove vendi →, href: /product/sell } }
+      - { title: La mappa è tua, text: "Platea, palchi, galleria, categorie per prezzo. Mandaci un PDF, un foglio di calcolo o uno schizzo a mano e il team disegna la mappa gratis; le versioni proteggono i biglietti venduti quando cambia la disposizione.", link: { label: Mappe dei posti →, href: /product/seating } }
+      - { title: Repliche, text: "Aggiungi repliche allo stesso evento; mappa, prezzi e categorie restano, e chi compra sceglie la data.", link: { label: Event Center →, href: /#center } }
+      - { title: Inviti senza commissione, text: "Biglietti gratuiti per posti precisi per stampa, partner e compagnia, scansionati all'ingresso come qualsiasi altro biglietto.", link: { label: Biglietti →, href: /product/tickets } }
+      - { title: La tua biglietteria, text: "Vendi sul tuo sito con il widget o sulla pagina ospitata; gli incassi vanno direttamente sul tuo conto.", link: { label: Dove vendi →, href: /product/sell } }
+      - { title: Codici promozionali e prezzi early bird, text: "Codici per abbonati, scuole o partner con una finestra di date e un limite per acquirente; un prezzo early bird che termina alla data che scegli tu.", link: { label: Strumenti di prezzo →, href: /product/pricing-tools } }
+      - { title: "Una replica si sposta? Decidi tu", text: "Rimborsa tutti, proponi una nuova data al posto del rimborso o scegli un'altra soluzione. Gli acquirenti ricevono un'e-mail con il biglietto aggiornato.", link: { label: Biglietti →, href: /product/tickets } }
+      - { title: Vendite su Telegram, text: "Ogni vendita e ogni rimborso compare nel tuo gruppo Telegram in pochi secondi, con il contatto dell'acquirente.", link: { label: Telegram →, href: /product/telegram } }
+      - { title: L'ingresso, text: "L'app scanner MACS per iOS e Android controlla ogni biglietto. Un codice QR stampato all'ingresso, con un link breve per l'acquisto, permette a chi decide all'ultimo di comprare sul posto.", link: { label: App scanner MACS →, href: /product/scanner } }
+      - { title: La tua commissione di servizio è tua, text: "Aggiungi la tua commissione di servizio al prezzo del biglietto; arriva tutta a te.", link: { label: Prezzi →, href: /pricing } }
   - type: faq
     id: questions
     eyebrow: Domande
@@ -31,8 +39,8 @@ sections:
         a: Sì, la mappa dei posti funziona su telefono con zoom a due dita, nella lingua dell'acquirente.
   - type: cta
     id: start
-    title: Mandaci la tua mappa
+    title: Il tuo evento migliore deve ancora arrivare. Cominciamo dai biglietti?
     text: "Basta un PDF, la foto di uno schizzo a mano o una tabella di file e posti. La disegniamo gratis nel tuo evento e te la mostriamo prima che le vendite inizino."
     primary: { label: Inizia a vendere, href: /start }
-    secondary: { label: Apri il bot Telegram, href: https://t.me/EventsCentrBot }
-    note: "Domande? Scrivici: il team risponde entro un giorno lavorativo."
+    secondary: { label: Crea il tuo evento, href: /start#create }
+    tertiary: { label: Contatta il team, href: /contact#write }
